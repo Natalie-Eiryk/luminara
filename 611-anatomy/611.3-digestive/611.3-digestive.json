@@ -1,0 +1,260 @@
+{
+  "id": "611.3",
+  "title": "Digestive System",
+  "category": "lab-exam-ii",
+  "description": "Lab practical questions for digestive system anatomy",
+  "questions": [
+    {
+      "id": "611.3.01",
+      "q": "You're scanning a GI tract slide under the microscope and see deep folds in the mucosa. The muscle layer is unusually thick, and you can trace a distinct lesser and greater curvature. What structure are you examining?",
+      "options": [
+        "Stomach",
+        "Duodenum (first part of small intestine)",
+        "Esophagus",
+        "Jejunum (middle small intestine)"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Digestive",
+      "tags": [
+        "stomach",
+        "rugae",
+        "gross-anatomy"
+      ],
+      "explain": "The deep mucosal folds (rugae), thick muscularis externa (three layers instead of two), and the distinctive greater and lesser curvatures are diagnostic for the stomach. Rugae allow the stomach to expand from ~50 mL empty to 1-1.5 L after a meal—about a 20-30x volume change. The small intestine has permanent circular folds (plicae circulares), not temporary rugae, and lacks the curvature landmarks.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Exactly. The stomach is the only GI structure with all three features: rugae (temporary folds that flatten when the stomach fills), greater and lesser curvatures (the J-shaped outline you can trace on a model), and a three-layered muscularis externa (longitudinal, circular, and oblique—most of the GI tract only has two layers). Rugae are expansion joints—when empty, the stomach mucosa is deeply folded; when you eat, those folds smooth out to accommodate 1-1.5 liters of chyme. The duodenum and jejunum have permanent circular folds (plicae circulares) that don't flatten, and they're tubular without curvatures."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "The duodenum does have folds, but they're plicae circulares—permanent circular folds that increase surface area for absorption. They don't flatten like rugae do. The duodenum also lacks the greater/lesser curvature landmarks (it's a C-shaped tube, not J-shaped like the stomach), and it has only two muscle layers (circular and longitudinal), not three. If you see Brunner's glands in the submucosa, that's diagnostic for duodenum."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "The esophagus does have longitudinal folds when empty, but they're much shallower than rugae and they run lengthwise (not irregular like stomach rugae). The esophagus is a straight tube—no greater or lesser curvature. Its mucosa is stratified squamous epithelium (protection against abrasion), while the stomach has simple columnar epithelium with gastric pits. The esophagus also has a mixed skeletal/smooth muscle muscularis (upper third skeletal, middle mixed, lower smooth), while the stomach is all smooth muscle."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "The jejunum has permanent plicae circulares (circular folds) that are tall and closely spaced, but they don't flatten—they're structural, not temporary like rugae. The jejunum is a long, coiled tube without curvatures. Its diagnostic feature is abundant villi and crypts (increasing surface area for absorption), while the stomach has gastric pits that secrete acid and pepsinogen. The jejunum has only two muscle layers; the stomach has three."
+        }
+      ],
+      "mechanism": {
+        "title": "Why the Stomach Needs Rugae: Expansion Engineering",
+        "content": "The stomach faces a unique challenge: it needs to hold almost nothing when empty (to avoid a constant feeling of fullness) but expand dramatically to hold a meal. Rugae solve this by creating temporary folds. When the stomach is empty (~50 mL), the mucosa is deeply folded into rugae. When you eat, the smooth muscle in the muscularis externa relaxes (receptive relaxation, mediated by the vagus nerve and VIP/NO signaling), and the rugae flatten out—the same surface area now lines a much larger volume (1-1.5 L). It's like an accordion: same material, different configuration. The greater and lesser curvatures are permanent anatomical landmarks (the greater curvature is where the greater omentum attaches; the lesser curvature is where the lesser omentum attaches), but rugae are functional—they appear and disappear based on filling state.",
+        "metaphor": "Rugae are like the folded sides of a paper lunch bag. When empty, the bag is flat with deep creases. When you put a sandwich in it, the creases flatten and the bag expands—same amount of paper, much more volume. The stomach does this with mucosa instead of paper. Plicae circulares (in the small intestine) are more like the ridges inside a corrugated cardboard box—permanent structures that don't flatten, designed to increase surface area, not accommodate volume changes."
+      },
+      "scaffoldFile": "611.3.01-scaffolds/611.3.01-scaffolds.json"
+    },
+    {
+      "id": "611.3.02",
+      "q": "You're viewing a cross-section of the GI tract under the microscope. The mucosa has finger-like projections extending into the lumen, each containing a central lacteal and capillary network. What structure are you examining?",
+      "options": [
+        "Small intestine (duodenum, jejunum, or ileum)",
+        "Large intestine (colon)",
+        "Stomach",
+        "Esophagus"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Digestive",
+      "tags": [
+        "small-intestine",
+        "villi",
+        "histology"
+      ],
+      "explain": "The finger-like projections are villi, which are diagnostic for the small intestine. Each villus contains a central lacteal (lymphatic capillary for fat absorption) and blood capillaries. Villi increase surface area ~10-fold; combined with microvilli on the epithelial cells (the brush border), the small intestine achieves ~200 m² of absorptive surface—about the size of a tennis court—in a 6-meter tube. The large intestine has no villi (only crypts), the stomach has gastric pits (not villi), and the esophagus has a flat mucosa.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Exactly. Villi are the defining feature of the small intestine. Each villus is a finger-like projection of the mucosa, covered with simple columnar epithelium (mostly enterocytes with a brush border of microvilli). Inside each villus is a central lacteal (a lymphatic capillary that absorbs dietary fats as chylomicrons) and a network of blood capillaries (absorbing amino acids, monosaccharides, water-soluble vitamins). Between the villi are intestinal crypts (crypts of Lieberkühn), where stem cells divide to continuously renew the epithelium (the entire intestinal lining is replaced every 3-5 days). This villus + crypt architecture is unique to the small intestine—the large intestine has crypts but no villi."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "The large intestine (colon) has deep crypts lined with lots of goblet cells (for mucus secretion—lubrication for moving solid waste), but it has NO villi. The mucosa is flat except for the crypts. This makes sense functionally: the colon's job is to absorb water and electrolytes and compact waste, not to absorb nutrients. The lack of villi and the abundance of goblet cells are the two key histological features that distinguish colon from small intestine under the microscope."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "The stomach has gastric pits, not villi. Gastric pits are invaginations (pockets going into the mucosa, not projections extending out of it), and at the base of each pit are gastric glands that secrete acid (parietal cells), pepsinogen (chief cells), and mucus (mucous neck cells). The stomach's job is digestion (breaking down proteins with acid and pepsin), not absorption—so it doesn't need the massive surface area that villi provide. The mucosa is simple columnar epithelium, but the cells are specialized for secretion, not absorption."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "The esophagus has a flat mucosa with longitudinal folds when empty, but no villi. Its mucosa is stratified squamous epithelium (non-keratinized)—thick and protective, designed to resist abrasion from swallowing solid food. The esophagus is a conduit; it doesn't digest or absorb nutrients, so it has no need for the increased surface area that villi provide. If you see stratified squamous epithelium in the GI tract, it's either esophagus, oral cavity, or anal canal (the parts exposed to mechanical stress)."
+        }
+      ],
+      "mechanism": {
+        "title": "Villi: The Surface Area Engineering of Absorption",
+        "content": "The small intestine needs to absorb ~9 liters of fluid per day (2 L from diet, 7 L from secretions—saliva, gastric juice, bile, pancreatic juice, intestinal secretions) plus all the nutrients from digestion. That requires massive surface area. The small intestine achieves this through three levels of folding: (1) Plicae circulares (permanent circular folds, 3x increase), (2) Villi (finger-like projections, 10x increase), (3) Microvilli (the brush border on each enterocyte, 20x increase). Multiply them: 3 × 10 × 20 = 600-fold increase in surface area compared to a smooth tube. That's how 6 meters of intestine becomes ~200 m². Each villus has a dual circulatory system: blood capillaries (absorb amino acids, monosaccharides, water-soluble vitamins directly into portal blood → liver) and a central lacteal (absorbs fats as chylomicrons into lymph → thoracic duct → bloodstream, bypassing the liver initially). The large intestine doesn't need this—it's absorbing water and electrolytes, which don't require the same surface area—so it has crypts (for mucus production) but no villi.",
+        "metaphor": "Imagine trying to dry a beach towel. If you hang it flat, it takes hours. But if you accordion-fold it (plicae circulares), then add fringe along every fold (villi), then make the fringe out of terrycloth loops (microvilli), you've just increased the surface area exposed to air by 600x—same towel, dries in minutes. The small intestine is doing the same thing, but for absorption instead of evaporation. The colon is like a smooth plastic tube—it doesn't need the surface area, so it keeps it simple."
+      },
+      "scaffoldFile": "611.3.02-scaffolds/611.3.02-scaffolds.json"
+    },
+    {
+      "id": "611.3.03",
+      "q": "You're looking at a model of the large intestine. At the junction with the small intestine, you see a blind pouch extending inferiorly with a worm-like appendage attached. What structure is this pouch?",
+      "options": [
+        "Cecum",
+        "Ascending colon",
+        "Sigmoid colon",
+        "Rectum"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Digestive",
+      "tags": [
+        "colon",
+        "cecum",
+        "gross-anatomy"
+      ],
+      "explain": "The cecum is the blind pouch at the beginning of the large intestine, located in the right lower quadrant. The ileocecal valve connects the ileum (end of small intestine) to the cecum. The vermiform appendix attaches to the posteromedial surface of the cecum, about 2-3 cm below the ileocecal valve. The cecum is the only part of the colon with a blind inferior end—the ascending colon continues superiorly from the cecum, so it has no blind pouch.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Exactly. The cecum is the blind pouch (a cul-de-sac) at the start of the large intestine. It sits in the right iliac fossa (right lower quadrant), just inferior to the ileocecal valve (where the ileum delivers chyme into the large intestine). The vermiform appendix—a narrow, worm-like tube about 8-10 cm long—attaches to the posteromedial wall of the cecum. The appendix is packed with lymphoid tissue (part of the gut-associated lymphoid tissue, GALT), which is why appendicitis causes right lower quadrant pain and rebound tenderness at McBurney's point (1/3 of the way from the right anterior superior iliac spine to the umbilicus). From the cecum, the large intestine continues upward as the ascending colon."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "The ascending colon is the vertical segment that extends superiorly (upward) from the cecum along the right side of the abdomen. It doesn't have a blind pouch—it's a continuation of the large intestine. The ascending colon runs from the cecum (right iliac fossa) to the hepatic flexure (right upper quadrant, where it bends to become the transverse colon). It's retroperitoneal (mostly covered by peritoneum only on its anterior surface), while the cecum is intraperitoneal (almost fully covered). The ascending colon has no appendix attached to it."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "The sigmoid colon is the S-shaped segment in the left lower quadrant, just before the rectum. It's named for its curved shape (sigma = S in Greek). It's intraperitoneal, suspended by the sigmoid mesocolon (a fold of peritoneum), which makes it quite mobile—this mobility is why sigmoid volvulus (twisting) is relatively common. The sigmoid has no blind pouch and no appendix. It's the last segment before the rectum, which begins at the level of the S3 vertebra."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "The rectum is the final segment of the large intestine, extending from the sigmoid colon (at S3) to the anal canal. It follows the curve of the sacrum (hence 'rectum'—although it's not actually straight). The rectum has three internal transverse folds (rectal valves of Houston) that help support fecal mass. It has no blind pouch, no appendix, and no haustra (the sacculations seen in the rest of the colon). The rectum transitions to the anal canal at the pelvic floor, where the epithelium changes from simple columnar to stratified squamous."
+        }
+      ],
+      "mechanism": {
+        "title": "The Cecum and Appendix: Anatomy and Clinical Significance",
+        "content": "The cecum is the widest part of the large intestine (~7.5 cm diameter) and the first segment to receive chyme from the ileum via the ileocecal valve. The ileocecal valve is a sphincter that prevents backflow—it keeps colonic bacteria (trillions of them) from migrating backward into the small intestine. The cecum is a fermentation chamber where gut bacteria break down undigested polysaccharides (fiber) into short-chain fatty acids, which the colon can absorb. The appendix, attached to the cecum, is a narrow tube packed with lymphoid follicles. It's thought to be a 'safe house' for gut bacteria—after diarrheal illness wipes out the colon's microbiome, the appendix can reseed it. But the appendix's narrow lumen and blind-end structure make it prone to obstruction (by a fecalith—a hardened piece of feces—or lymphoid hyperplasia), which causes inflammation (appendicitis). If untreated, the appendix can rupture, spilling bacteria into the peritoneal cavity (peritonitis—a surgical emergency).",
+        "metaphor": "Think of the cecum as a dead-end street where the highway (small intestine) ends. The ileocecal valve is the traffic light that lets cars in but doesn't let them back out. The appendix is like a narrow alley branching off the dead-end street—if a piece of trash (fecalith) blocks the alley, pressure builds up, the walls get inflamed, and eventually the alley can burst. The ascending colon is the new road that starts from the dead-end street and goes up the right side of town."
+      },
+      "scaffoldFile": "611.3.03-scaffolds/611.3.03-scaffolds.json"
+    },
+    {
+      "id": "611.3.04",
+      "q": "You're tracing the biliary tree on a model. You identify a duct draining the right and left hepatic lobes, a duct draining the gallbladder, and a duct that results from their merger. The merged duct joins the pancreatic duct before entering the duodenum. What are these three ducts, in order from liver → gallbladder → duodenum?",
+      "options": [
+        "Common hepatic duct → Cystic duct → Common bile duct",
+        "Right hepatic duct → Left hepatic duct → Common bile duct",
+        "Cystic duct → Common hepatic duct → Common bile duct",
+        "Common bile duct → Cystic duct → Common hepatic duct"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Digestive",
+      "tags": [
+        "ducts",
+        "biliary-tree",
+        "gross-anatomy"
+      ],
+      "explain": "The common hepatic duct is formed by the merger of the right and left hepatic ducts, draining bile from the liver. The cystic duct drains the gallbladder. The common hepatic duct and cystic duct join to form the common bile duct, which merges with the pancreatic duct at the hepatopancreatic ampulla (ampulla of Vater) before entering the duodenum at the major duodenal papilla. The sphincter of Oddi controls bile and pancreatic enzyme release.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Exactly. The biliary tree flows like this: Liver hepatocytes secrete bile → bile canaliculi → right and left hepatic ducts → merge to form the common hepatic duct. The gallbladder (a storage sac for bile) drains via the cystic duct. The common hepatic duct and cystic duct join to form the common bile duct. The common bile duct descends behind the pancreas and merges with the main pancreatic duct at the hepatopancreatic ampulla (ampulla of Vater), which opens into the duodenum at the major duodenal papilla. The sphincter of Oddi (a smooth muscle sphincter surrounding the ampulla) controls the release of bile and pancreatic enzymes into the duodenum—it's relaxed during digestion (stimulated by CCK) and contracted between meals (to allow bile to back up into the gallbladder for storage and concentration)."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "The right and left hepatic ducts do exist—they drain the right and left lobes of the liver, respectively, and they merge to form the common hepatic duct. But the question asks for the three ducts in the sequence liver → gallbladder → duodenum, which is common hepatic (from liver) → cystic (from gallbladder) → common bile (their merger, going to duodenum). The right and left hepatic ducts are upstream—they're part of the intrahepatic biliary tree, before it merges into the common hepatic duct."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "You've got the right three ducts, but the order is reversed. The cystic duct drains the gallbladder, and it joins the common hepatic duct (from the liver) to form the common bile duct. The flow is: common hepatic (liver output) + cystic (gallbladder output) → common bile (final pathway to duodenum). If you reversed it, bile would be flowing from the duodenum backward into the liver—not anatomically or physiologically possible."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "The common bile duct is the final duct—the endpoint of the merger, not the starting point. The sequence is: common hepatic (from liver) + cystic (from gallbladder) → common bile (to duodenum). If the common bile duct came first, there would be nothing for it to merge with. The anatomy flows like a river system: small tributaries (right and left hepatic ducts) → larger tributary (common hepatic duct) + branch from reservoir (cystic duct) → main river (common bile duct) → empties into the sea (duodenum)."
+        }
+      ],
+      "mechanism": {
+        "title": "The Biliary Tree: Plumbing for Fat Digestion",
+        "content": "Hepatocytes (liver cells) continuously produce bile—a mixture of bile salts, phospholipids, cholesterol, bilirubin, and electrolytes. Bile salts are the key functional component: they're amphipathic molecules (detergent-like) that emulsify dietary fats, breaking large lipid droplets into smaller ones so pancreatic lipase can access them. Bile flows from hepatocytes → bile canaliculi → bile ductules → right and left hepatic ducts → common hepatic duct. Between meals, the sphincter of Oddi is closed, so bile backs up the cystic duct into the gallbladder, where it's stored and concentrated (the gallbladder absorbs water, concentrating bile ~5-10x). When you eat a fatty meal, CCK (released by duodenal I cells in response to fats and proteins) causes gallbladder contraction and sphincter of Oddi relaxation. Bile is ejected from the gallbladder → cystic duct → common bile duct → ampulla of Vater → duodenum. If cholesterol precipitates out of bile in the gallbladder, it forms gallstones (cholelithiasis). If a stone blocks the common bile duct, bile backs up into the liver and bloodstream, causing obstructive jaundice (yellowing of skin/eyes from elevated bilirubin).",
+        "metaphor": "The biliary tree is like a city water system. The liver is the water treatment plant (producing bile continuously). The gallbladder is a water tower (storing bile and concentrating it). The common hepatic duct is the main pipe from the treatment plant. The cystic duct is the pipe to/from the water tower. The common bile duct is the final distribution pipe to the customer (duodenum). The sphincter of Oddi is a valve—closed between meals (water backs up into the tower for storage), open during meals (water flows directly to the customer). If a stone blocks the pipe, pressure backs up and the whole system gets congested (jaundice)."
+      },
+      "scaffoldFile": "611.3.04-scaffolds/611.3.04-scaffolds.json"
+    },
+    {
+      "id": "611.3.05",
+      "q": "You're examining a histological slide of the recto-anal junction. At the proximal end, you see simple columnar epithelium. At the distal end, you see stratified squamous epithelium. What functional principle explains this epithelial transition?",
+      "options": [
+        "Transition from absorption/secretion (columnar) to mechanical protection (stratified squamous)",
+        "Transition from mechanical protection (columnar) to absorption (stratified squamous)",
+        "Both regions are identical—no transition occurs",
+        "Transition from stratified squamous (protection) to simple columnar (absorption)"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Digestive",
+      "tags": [
+        "histology",
+        "epithelium",
+        "recto-anal-junction"
+      ],
+      "explain": "The rectum (proximal) has simple columnar epithelium for mucus secretion and minor water absorption. The anal canal (distal) has stratified squamous epithelium (non-keratinized at first, then keratinized near the external anal orifice) to resist mechanical abrasion from fecal passage. This is the same principle as the esophagus (stratified squamous for abrasion resistance) transitioning to the stomach (simple columnar for secretion/absorption).",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Exactly. The epithelial transition at the recto-anal junction follows a key anatomical principle: epithelium matches function. The rectum's job is to hold feces and secrete mucus (lubrication), so it has simple columnar epithelium—tall cells optimized for secretion (goblet cells produce mucus). The anal canal's job is to withstand the mechanical stress of defecation—solid waste passing through under voluntary control. Stratified squamous epithelium is tough, multilayered, and resistant to abrasion. The transition happens at the pectinate line (dentate line), about 2 cm above the anal orifice. Above the line: simple columnar epithelium, visceral innervation (no pain sensation), venous drainage to portal system. Below the line: stratified squamous epithelium, somatic innervation (pain sensation), venous drainage to systemic system. This is why internal hemorrhoids (above the line) are usually painless, while external hemorrhoids (below the line) are painful."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "You've reversed it. Simple columnar epithelium is specialized for secretion and absorption—tall cells with lots of organelles for protein synthesis (mucus) or transport (water and electrolytes). Stratified squamous epithelium is multilayered and protective—it's designed to resist mechanical abrasion, not to secrete or absorb. Think of the esophagus (stratified squamous—resists abrasion from swallowing) versus the small intestine (simple columnar with villi—maximizes absorption). The rectum has simple columnar for mucus secretion; the anal canal has stratified squamous for mechanical protection during defecation."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "There is definitely a transition—it's one of the most important histological landmarks in the GI tract. The pectinate line (dentate line) marks the transition from simple columnar epithelium (above) to stratified squamous epithelium (below). This transition is embryologically significant (it's where the endodermal hindgut meets the ectodermal proctodeum), anatomically significant (different blood supply, innervation, lymphatic drainage above vs. below), and clinically significant (different pain sensation, different types of hemorrhoids, different cancer types)."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "You've got the epithelial types right, but the direction is reversed. The proximal end (rectum, closer to the colon) has simple columnar epithelium. The distal end (anal canal, closer to the external environment) has stratified squamous epithelium. The flow is: simple columnar → stratified squamous, not the other way around. This makes functional sense: the rectum is still part of the 'internal plumbing' (secretion, mucus production), while the anal canal is the 'exit port' (mechanical stress, abrasion resistance)."
+        }
+      ],
+      "mechanism": {
+        "title": "The Pectinate Line: Embryology Becomes Anatomy",
+        "content": "The recto-anal junction is where two embryonic structures meet. The rectum develops from the endoderm (hindgut)—the same germ layer as the rest of the GI tract. The distal part of the anal canal develops from the ectoderm (proctodeum)—an invagination of surface ectoderm. The pectinate line (dentate line) marks where these two embryonic tissues fuse. This developmental origin creates a sharp anatomical boundary: ABOVE the pectinate line (rectal side): simple columnar epithelium, internal rectal venous plexus (drains to portal system via superior rectal vein), visceral innervation (no pain fibers—sympathetic/parasympathetic only), lymphatic drainage to internal iliac nodes. BELOW the pectinate line (anal side): stratified squamous epithelium (non-keratinized at first, becoming keratinized near the external orifice), external rectal venous plexus (drains to systemic system via inferior rectal vein), somatic innervation (inferior rectal nerve—pudendal nerve branch, carries pain fibers), lymphatic drainage to superficial inguinal nodes. Clinically, this matters: internal hemorrhoids (above the line) are usually painless (no somatic pain fibers), while external hemorrhoids (below the line) are painful. Rectal cancer (above the line) spreads to internal iliac nodes; anal cancer (below the line) spreads to inguinal nodes.",
+        "metaphor": "The pectinate line is like the border between two countries that were once separate and then merged. Above the border (rectal territory), the laws, language, and infrastructure are all 'internal GI tract'—simple columnar epithelium, portal venous drainage, visceral innervation. Below the border (anal territory), everything is 'external body surface'—stratified squamous epithelium, systemic venous drainage, somatic innervation. The border is sharp and permanent because it's written into the embryological constitution—it's where endoderm met ectoderm during development."
+      },
+      "scaffoldFile": "611.3.05-scaffolds/611.3.05-scaffolds.json"
+    },
+    {
+      "id": "611.3.06",
+      "q": "You're examining a cross-section of the small intestine wall under the microscope. Moving from the lumen outward, you see four distinct layers. The innermost layer has villi and crypts. What is this layer called, and what is its primary function?",
+      "options": [
+        "Mucosa—absorption and secretion",
+        "Submucosa—vascular and neural support",
+        "Muscularis externa—peristalsis and segmentation",
+        "Serosa—protection and lubrication"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Digestive",
+      "tags": [
+        "layers",
+        "mucosa",
+        "histology"
+      ],
+      "explain": "The mucosa is the innermost layer of the GI tract, consisting of three sub-layers: epithelium (simple columnar with villi and crypts in the small intestine), lamina propria (loose connective tissue with blood/lymph vessels, GALT), and muscularis mucosae (thin smooth muscle layer). The mucosa's primary functions are absorption (nutrients, water, electrolytes) and secretion (mucus, enzymes, hormones). The villi and crypts dramatically increase surface area for these functions.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Exactly. The mucosa is the innermost layer—the layer in direct contact with the lumen. In the small intestine, it consists of three sub-layers: (1) Epithelium—simple columnar with goblet cells, forming villi (projections into the lumen for absorption) and crypts (invaginations into the lamina propria, where stem cells reside and secretory cells produce enzymes). (2) Lamina propria—loose connective tissue containing blood capillaries, lacteals (lymphatic capillaries), and gut-associated lymphoid tissue (GALT—Peyer's patches, isolated lymphoid follicles). (3) Muscularis mucosae—a thin layer of smooth muscle that moves the villi (like waving fingers to increase mixing with chyme). The mucosa is responsible for absorption (enterocytes with brush border enzymes and transporters), secretion (goblet cells produce mucus; enteroendocrine cells secrete hormones like CCK, secretin, GIP), and immune surveillance (GALT)."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "The submucosa is the second layer (just deep to the mucosa). It's a dense irregular connective tissue layer containing larger blood vessels (arterioles, venules) and lymphatics, and the submucosal nerve plexus (Meissner's plexus—parasympathetic ganglia that regulate mucosal secretion and blood flow). In the duodenum, the submucosa contains Brunner's glands (secrete alkaline mucus to neutralize stomach acid). The submucosa provides vascular and neural support to the mucosa, but it doesn't have villi or crypts—those are features of the mucosa."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "The muscularis externa is the third layer (also called muscularis propria). It has two sub-layers of smooth muscle: an inner circular layer (contracts to narrow the lumen—segmentation) and an outer longitudinal layer (contracts to shorten the tube—peristalsis). Between these two layers is the myenteric nerve plexus (Auerbach's plexus—parasympathetic ganglia that regulate motility). The muscularis externa is responsible for mechanical movement (mixing and propulsion), not absorption or secretion. It has no villi or crypts."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "The serosa (or adventitia) is the outermost layer. In intraperitoneal segments of the GI tract (e.g., stomach, jejunum, ileum, transverse colon, sigmoid colon), the serosa is a layer of visceral peritoneum—simple squamous epithelium (mesothelium) over a thin layer of connective tissue. It secretes serous fluid for lubrication (reduces friction as GI organs move against each other). In retroperitoneal segments (e.g., duodenum, ascending colon, descending colon, rectum), the outermost layer is adventitia—connective tissue without mesothelium. The serosa has no villi or crypts—those are features of the mucosa."
+        }
+      ],
+      "mechanism": {
+        "title": "The Four-Layer Structure of the GI Tract: Form Follows Function",
+        "content": "The GI tract wall has a consistent four-layer structure from esophagus to anus (with regional variations): (1) MUCOSA (innermost)—epithelium + lamina propria + muscularis mucosae. Function: interface with luminal contents. Epithelium type varies by region (stratified squamous in esophagus/anal canal for protection; simple columnar in stomach/intestines for secretion/absorption). The lamina propria contains the blood/lymph vessels that absorb nutrients and the GALT that samples antigens. The muscularis mucosae moves the mucosa (wrinkles the stomach to mix chyme; waves the villi to enhance absorption). (2) SUBMUCOSA—dense irregular connective tissue with larger vessels and Meissner's plexus. Function: vascular and neural support for the mucosa. In the duodenum, Brunner's glands are here. (3) MUSCULARIS EXTERNA—inner circular + outer longitudinal smooth muscle layers, with Auerbach's plexus between them. Function: motility (peristalsis propels; segmentation mixes). The stomach has a third oblique layer for extra churning power. (4) SEROSA/ADVENTITIA (outermost)—visceral peritoneum (if intraperitoneal) or connective tissue (if retroperitoneal). Function: protection, lubrication, anchoring. This four-layer plan is so consistent that pathologists can identify the layer of origin of a tumor just by looking at where it starts.",
+        "metaphor": "Think of the GI tract wall like a multilayer hose. The innermost layer (mucosa) is the lining that touches the water—it absorbs nutrients, secretes mucus, and defends against pathogens (like a filter + coating). The submucosa is the support layer—plumbing and wiring (blood vessels and nerves). The muscularis externa is the pump layer—muscles that squeeze the hose to move contents forward (peristalsis) or churn them in place (segmentation). The serosa is the outer protective jacket—slippery so the hose can slide against other organs without friction. Each layer has a specialized job, and together they coordinate to move and process 9 liters of fluid and all your nutrients every day."
+      },
+      "scaffoldFile": "611.3.06-scaffolds/611.3.06-scaffolds.json"
+    }
+  ]
+}

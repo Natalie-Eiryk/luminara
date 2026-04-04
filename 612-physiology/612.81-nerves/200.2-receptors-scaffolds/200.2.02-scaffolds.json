@@ -1,0 +1,159 @@
+{
+  "parentId": "200.2.02",
+  "parentQuestion": "We can touch our finger to our nose while our eyes are closed because we can sense the position and movement of our joints as well as the length of stretch in our muscles. These sensations create awareness of our body's positioning. The receptors most likely responsible for this ability are ___.",
+  "scaffolds": [
+    {
+      "q": "Can you sense where your arm is without looking at it?",
+      "options": [
+        "No, you must see your limbs to know where they are",
+        "Yes, this is called proprioception",
+        "Only if someone tells you",
+        "Only during the day"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "PROPRIOCEPTION is your body's internal GPS. You know where your limbs are WITHOUT needing to see them. It's unconscious position awareness.",
+      "wrongExplains": {
+        "0": "You definitely can sense limb position without vision — that's proprioception.",
+        "2": "You don't need external information. Your body has internal position sensors.",
+        "3": "Proprioception works 24/7, regardless of lighting conditions."
+      }
+    },
+    {
+      "q": "Why can you touch your nose with eyes closed?",
+      "options": [
+        "Lucky guessing",
+        "Your body knows where your finger and nose are (proprioception)",
+        "Sound helps you locate your nose",
+        "Your nose glows in the dark"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The finger-to-nose test is a classic test of PROPRIOCEPTION. Your brain knows EXACTLY where every body part is, even in the dark.",
+      "wrongExplains": {
+        "0": "It's not guessing — it's precise neural feedback from proprioceptors.",
+        "2": "Sound doesn't help locate body parts. Proprioceptors provide position sense.",
+        "3": "Your nose doesn't glow. Internal position sensors guide the movement."
+      }
+    },
+    {
+      "q": "What do proprioceptors detect?",
+      "options": [
+        "Only pain",
+        "Body position and movement",
+        "Only temperature",
+        "Only vision"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "PROPRIOCEPTORS detect BODY POSITION and MOVEMENT. They include muscle spindles (muscle length), Golgi tendon organs (muscle tension), and joint receptors (joint angle).",
+      "wrongExplains": {
+        "0": "Pain is detected by nociceptors. Proprioceptors detect position.",
+        "2": "Temperature is detected by thermoreceptors. Proprioceptors detect position.",
+        "3": "Vision uses photoreceptors. Proprioceptors are internal position sensors."
+      }
+    },
+    {
+      "q": "What do muscle spindles detect?",
+      "options": [
+        "Blood pressure",
+        "How much a muscle is stretched (muscle length)",
+        "Body temperature",
+        "Sounds"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "MUSCLE SPINDLES are STRETCH SENSORS inside muscles. They tell your brain how long or short each muscle is, enabling precise position awareness.",
+      "wrongExplains": {
+        "0": "Blood pressure is detected by baroreceptors. Spindles detect muscle stretch.",
+        "2": "Temperature is detected by thermoreceptors. Spindles detect muscle length.",
+        "3": "Sounds are detected by hair cells in the ear. Spindles are in muscles."
+      }
+    },
+    {
+      "q": "What do joint receptors detect?",
+      "options": [
+        "Blood flow",
+        "The angle and movement of joints",
+        "Light intensity",
+        "Taste"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Receptors in JOINT CAPSULES detect JOINT POSITION. Is your elbow bent or straight? Your joint receptors know and report to your brain.",
+      "wrongExplains": {
+        "0": "Blood flow is monitored by vascular receptors. Joint receptors detect position.",
+        "2": "Light is detected by photoreceptors in the eyes. Joint receptors detect joint angle.",
+        "3": "Taste uses gustatory receptors on the tongue. Joint receptors are in joints."
+      }
+    },
+    {
+      "q": "What do exteroceptors detect?",
+      "options": [
+        "Internal organ function",
+        "Stimuli from OUTSIDE the body (touch, temperature, light, sound)",
+        "Only muscle position",
+        "Only blood chemistry"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "EXTERO- means 'outside.' EXTEROCEPTORS detect the EXTERNAL world — things touching you, temperature around you, light, and sound.",
+      "wrongExplains": {
+        "0": "Internal organs are monitored by interoceptors. Exteroceptors detect external stimuli.",
+        "2": "Muscle position is proprioception. Exteroceptors detect the outside world.",
+        "3": "Blood chemistry is detected by chemoreceptors internally. Exteroceptors face outward."
+      }
+    },
+    {
+      "q": "What do interoceptors detect?",
+      "options": [
+        "Only external touch",
+        "Stimuli from INSIDE the body (organ stretch, blood pressure)",
+        "Only light and sound",
+        "Only smell"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "INTERO- means 'inside.' INTEROCEPTORS monitor INTERNAL ORGANS — fullness of bladder, stomach stretch, blood pressure in arteries.",
+      "wrongExplains": {
+        "0": "External touch is detected by exteroceptors. Interoceptors are internal.",
+        "2": "Light and sound are external stimuli detected by exteroceptors.",
+        "3": "Smell is external (olfactory). Interoceptors monitor internal body states."
+      }
+    },
+    {
+      "q": "Are proprioceptors a type of exteroceptor or interoceptor?",
+      "options": [
+        "Exteroceptor — they detect external stimuli",
+        "Interoceptor — they monitor internal body position",
+        "Neither — they don't exist",
+        "Both at the same time"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "PROPRIOCEPTORS are INTEROCEPTORS that specifically monitor the musculoskeletal system — muscles, tendons, and joints. They're your internal body position system.",
+      "wrongExplains": {
+        "0": "Proprioceptors are internal sensors, not external. They're a type of interoceptor.",
+        "2": "Proprioceptors definitely exist — they're essential for movement control.",
+        "3": "They're specifically interoceptors — internal position sensors."
+      }
+    },
+    {
+      "q": "The ability to touch your nose with eyes closed is provided by which receptors?",
+      "options": [
+        "Exteroceptors",
+        "Proprioceptors",
+        "Nociceptors",
+        "Chemoreceptors"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "PROPRIOCEPTORS! They detect muscle length (spindles), muscle tension (Golgi tendon organs), and joint angle. Together they create your sense of BODY POSITION.",
+      "wrongExplains": {
+        "0": "Exteroceptors detect external stimuli. Position sense requires proprioceptors.",
+        "2": "Nociceptors detect pain. Position sense requires proprioceptors.",
+        "3": "Chemoreceptors detect chemicals. Position sense requires proprioceptors."
+      }
+    }
+  ]
+}

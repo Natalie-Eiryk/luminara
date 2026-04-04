@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.59",
+  "parentQuestion": "Alveolar macrophages are also called:",
+  "narrative": {
+    "setting": "The Magic School Bus floats in an alveolus, watching large amoeba-like cells patrol the air space. Ms. Frizzle points at one engulfing a carbon particle. 'The lung's janitors,' she says. 'Always cleaning, always vigilant. They earned their nickname honestly.'",
+    "character": "Mr. Edgar",
+    "tension": "Coal miners' lungs turn black from overwhelmed macrophages. Smokers accumulate tar faster than these cells can clear it. Tuberculosis bacteria specifically target and hide inside them. Understanding alveolar macrophages isn't just immunology - it's understanding why some occupational exposures cause irreversible lung disease."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.59.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Macrophages,' Ms. Frizzle begins. 'Big eaters - macro = large, phage = eat. Part of the innate immune system. Found throughout the body, but we're focusing on the ones in alveoli.'",
+      "q": "The term 'macrophage' literally means:",
+      "options": [
+        "Small cell",
+        "Large eater",
+        "Fast mover",
+        "Blood producer"
+      ],
+      "answer": 1,
+      "explain": "MACROPHAGE = MACRO (large) + PHAGE (eat). These cells engulf bacteria, debris, and particles through phagocytosis. Big cells that eat things.",
+      "wrongExplains": {
+        "0": "Macro means LARGE, not small. These are large phagocytic cells.",
+        "2": "Macrophages can move but the name refers to eating, not speed.",
+        "3": "Blood production happens in bone marrow. Macrophages clean up debris."
+      }
+    },
+    {
+      "id": "900.5.59.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Location,' Ms. Frizzle gestures around the alveolus. 'These macrophages live in the alveolar space - free-floating in the air sacs, ready to intercept anything that made it past the upper airway defenses.'",
+      "q": "Where are alveolar macrophages located?",
+      "options": [
+        "In the bloodstream",
+        "In the alveolar air spaces",
+        "In the trachea",
+        "In the pleural cavity"
+      ],
+      "answer": 1,
+      "explain": "Alveolar macrophages are in the ALVEOLAR SPACE - the air-filled portion of alveoli. They patrol the gas exchange surface, the last line of defense.",
+      "wrongExplains": {
+        "0": "Bloodstream has monocytes (which can become macrophages). Alveolar macrophages are in the air space.",
+        "2": "Trachea has mucociliary clearance. Alveolar macrophages are deep in the lungs.",
+        "3": "Pleural cavity is outside the lung. Alveolar macrophages are inside alveoli."
+      }
+    },
+    {
+      "id": "900.5.59.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Their job,' Ms. Frizzle watches one cell extend pseudopods around a dust particle. 'Phagocytosis - engulf foreign material, bacteria, dead cells, inhaled particles. Anything that shouldn't be in this air space.'",
+      "q": "The primary function of alveolar macrophages is:",
+      "options": [
+        "Produce surfactant",
+        "Exchange gases",
+        "Phagocytose particles and pathogens",
+        "Secrete mucus"
+      ],
+      "answer": 2,
+      "explain": "Alveolar macrophages PHAGOCYTOSE (eat) inhaled particles, bacteria, dead cells, and debris. First-line immune defense in the deep lung.",
+      "wrongExplains": {
+        "0": "Type II cells produce surfactant. Macrophages are immune cells, not secretory.",
+        "1": "Type I cells handle gas exchange. Macrophages are too thick and specialized for defense.",
+        "3": "Goblet cells secrete mucus in airways. Macrophages phagocytose, not secrete."
+      }
+    },
+    {
+      "id": "900.5.59.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'The nickname,' Ms. Frizzle smiles. 'DUST CELLS. Because they literally eat dust - carbon particles, smoke, pollution, anything inhaled. Look at a smoker's macrophages under a microscope - they're black with tar.'",
+      "q": "Alveolar macrophages are nicknamed 'dust cells' because they:",
+      "options": [
+        "Produce dust",
+        "Are covered in dust",
+        "Engulf inhaled dust and particles",
+        "Only appear when dust is present"
+      ],
+      "answer": 2,
+      "explain": "DUST CELLS = alveolar macrophages that ENGULF dust, carbon, and inhaled particles. The name reflects their cleaning function - they eat the dust.",
+      "wrongExplains": {
+        "0": "They don't produce dust - they clean it up by phagocytosis.",
+        "1": "They're not passively covered - they actively engulf particles into their cytoplasm.",
+        "3": "They're always present, constantly patrolling. More particles = more work, but they're always there."
+      }
+    },
+    {
+      "id": "900.5.59.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Origin story,' Ms. Frizzle explains. 'These cells start as monocytes in the blood. They migrate into alveolar tissue, differentiate into macrophages, and take up permanent residence patrolling the air spaces.'",
+      "q": "Alveolar macrophages originate from blood cells called:",
+      "options": [
+        "Lymphocytes",
+        "Monocytes",
+        "Neutrophils",
+        "Eosinophils"
+      ],
+      "answer": 1,
+      "explain": "Alveolar macrophages differentiate from blood MONOCYTES. Monocytes migrate into tissues and become tissue-resident macrophages (alveolar, Kupffer cells, microglia, etc.).",
+      "wrongExplains": {
+        "0": "Lymphocytes are B and T cells - adaptive immunity. Macrophages come from monocytes.",
+        "2": "Neutrophils are granulocytes - acute inflammation responders. Macrophages come from monocytes.",
+        "3": "Eosinophils fight parasites and allergic reactions. Macrophages derive from monocytes."
+      }
+    },
+    {
+      "id": "900.5.59.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'What they eat,' Ms. Frizzle lists on her fingers. 'Bacteria, viruses, fungi, carbon particles, silica dust, asbestos fibers, dead cells, surfactant debris. They're not picky - if it's foreign, they phagocytose it.'",
+      "q": "Alveolar macrophages can phagocytose all of the following EXCEPT:",
+      "options": [
+        "Bacteria",
+        "Carbon particles",
+        "Oxygen molecules",
+        "Dead cells"
+      ],
+      "answer": 2,
+      "explain": "Macrophages phagocytose PARTICLES and CELLS - things large enough to engulf. O2 molecules are too small and are gases - they diffuse across membranes, not phagocytosed.",
+      "wrongExplains": {
+        "0": "Bacteria are prime targets - macrophages engulf and destroy them.",
+        "1": "Carbon particles (dust, smoke, pollution) are classic macrophage targets.",
+        "3": "Dead cells and cellular debris are routinely cleared by macrophages."
+      }
+    },
+    {
+      "id": "900.5.59.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Anthracosis,' Ms. Frizzle shows an image of blackened lung tissue. 'Coal miners, smokers - their macrophages are overwhelmed with carbon. The cells turn black, die, deposit the carbon permanently. The lungs become tattooed.'",
+      "q": "Anthracosis (black lung) occurs when:",
+      "options": [
+        "Macrophages successfully clear all carbon",
+        "Macrophages become overwhelmed with carbon deposits",
+        "Lungs produce too much surfactant",
+        "Bacteria infect the alveoli"
+      ],
+      "answer": 1,
+      "explain": "ANTHRACOSIS = macrophages OVERWHELMED by carbon particles (coal dust, smoking). They can't clear it fast enough, become black with carbon, die, and deposit carbon in lung tissue permanently.",
+      "wrongExplains": {
+        "0": "If they successfully cleared it, there'd be no black lung. They're OVERWHELMED.",
+        "2": "Surfactant production is unrelated. This is about particle overload of macrophages.",
+        "3": "Bacterial infection is pneumonia. Anthracosis is particle accumulation."
+      }
+    },
+    {
+      "id": "900.5.59.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Tuberculosis has a trick,' Ms. Frizzle explains grimly. 'Mycobacterium tuberculosis SURVIVES inside macrophages. It prevents the phagosome from fusing with lysosomes. The macrophage becomes a hiding place instead of a death trap.'",
+      "q": "Mycobacterium tuberculosis (TB) can:",
+      "options": [
+        "Be immediately destroyed by macrophages",
+        "Survive and multiply inside alveolar macrophages",
+        "Only infect the trachea",
+        "Prevent macrophage formation"
+      ],
+      "answer": 1,
+      "explain": "TB bacteria SURVIVE INSIDE macrophages by preventing phagolysosome fusion. Macrophages become reservoirs for the bacteria, forming granulomas. Classic intracellular pathogen.",
+      "wrongExplains": {
+        "0": "TB is NOT immediately destroyed - it's evolved to survive intracellularly.",
+        "2": "TB infects the deep lung (alveoli), not just trachea. It's in the alveolar macrophages.",
+        "3": "TB doesn't prevent macrophage formation - it uses them as hiding places."
+      }
+    },
+    {
+      "id": "900.5.59.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Hemosiderin-laden macrophages,' Ms. Frizzle adds another example. 'In heart failure, blood backs up into lungs. RBCs leak into alveoli, macrophages eat them, accumulate iron. Called 'heart failure cells' - a diagnostic clue.'",
+      "q": "Heart failure cells are alveolar macrophages that contain:",
+      "options": [
+        "Bacteria",
+        "Hemosiderin (iron from red blood cells)",
+        "Surfactant",
+        "Carbon particles"
+      ],
+      "answer": 1,
+      "explain": "HEART FAILURE CELLS = macrophages laden with HEMOSIDERIN (iron) from phagocytosed RBCs. In left heart failure, blood backs up, RBCs leak into alveoli, macrophages eat them.",
+      "wrongExplains": {
+        "0": "Bacteria-filled macrophages occur in pneumonia, not specifically heart failure.",
+        "2": "Surfactant is produced by Type II cells, not phagocytosed by macrophages as a defining feature.",
+        "3": "Carbon particles are from smoking/pollution - different from the iron deposits of heart failure."
+      }
+    },
+    {
+      "id": "900.5.59.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Ms. Frizzle watches the macrophages patrol Mr. Edgar's alveoli. 'Dust cells - alveolar macrophages. The lung's immune sentinels, cleaning crew, and diagnostic markers all in one. So, class: what's the other name for alveolar macrophages?'",
+      "q": "Alveolar macrophages are also called:",
+      "options": [
+        "Goblet cells",
+        "Dust cells",
+        "Clara cells",
+        "Mast cells"
+      ],
+      "answer": 1,
+      "explain": "DUST CELLS = alveolar macrophages. They phagocytose inhaled particles and pathogens. Named for cleaning up 'dust.' Derive from blood monocytes.",
+      "wrongExplains": {
+        "0": "Goblet cells produce mucus in airways - they're secretory, not phagocytic.",
+        "2": "Clara cells (now called Club cells) are in bronchioles - they secrete protective proteins, not phagocytose.",
+        "3": "Mast cells release histamine in allergic reactions - they're not macrophages."
+      }
+    }
+  ]
+}

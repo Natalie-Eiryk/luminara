@@ -1,0 +1,69 @@
+{
+  "parentId": "600.3.02",
+  "parentQuestion": "In order for sound to reach the spiral organ (of Corti), the auditory ossicles must vibrate the oval window and set the endolymph in motion.",
+  "scaffolds": [
+    {
+      "q": "Sound travels as waves through air.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Yes! Sound is mechanical vibration that travels through air molecules."
+    },
+    {
+      "q": "The tympanic membrane (eardrum) vibrates when sound waves hit it.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Correct! The eardrum converts air pressure waves into mechanical vibration."
+    },
+    {
+      "q": "The three auditory ossicles are the smallest bones in the body.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Yes! Malleus, incus, and stapes — tiny bones that amplify sound vibrations."
+    },
+    {
+      "q": "The ossicles connect the tympanic membrane to the oval window.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Correct! Eardrum → malleus → incus → stapes → oval window. A chain of transmission."
+    },
+    {
+      "q": "The inner ear is filled with fluid, not air.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Yes! The cochlea contains perilymph and endolymph — fluid that carries sound waves."
+    },
+    {
+      "q": "The stapes footplate pushes on the oval window to create fluid waves.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Correct! The stapes rocks in the oval window, transmitting vibration to cochlear fluid."
+    },
+    {
+      "q": "The ossicles amplify sound because they concentrate force from a large area to a small area.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Yes! Large eardrum → small oval window = ~22x pressure amplification (impedance matching)."
+    },
+    {
+      "q": "Fluid waves in the cochlea move the basilar membrane where the organ of Corti sits.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Correct! Basilar membrane movement stimulates hair cells in the organ of Corti."
+    },
+    {
+      "q": "Sound reaches the organ of Corti via: Ossicles → oval window → cochlear fluid → basilar membrane.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "advanced",
+      "explain": "Yes! This chain converts airborne sound to fluid waves to mechanical stimulation of hair cells."
+    }
+  ]
+}

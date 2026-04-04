@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.70",
+  "parentQuestion": "Cystic fibrosis affects the respiratory system by causing:",
+  "narrative": {
+    "setting": "The Magic School Bus struggles through Mr. Edgar's bronchioles - the mucus here isn't flowing, it's cement. Thick, dehydrated, sticky secretions plug every airway. Ms. Frizzle checks the chloride channel. 'Defective CFTR,' she reports. 'No chloride secretion means no water follows. The mucus is like glue. Cilia can't move it. Bacteria thrive in it. This is cystic fibrosis.'",
+    "character": "Mr. Edgar",
+    "tension": "Median survival was 6 years in the 1960s, now over 40 with modern therapy. Daily chest percussion to clear mucus. Chronic Pseudomonas colonization. Pancreatic insufficiency. Double lung transplant as end-stage. Understanding CF isn't just genetics - it's understanding how one defective ion channel destroys multiple organs through dehydrated secretions."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.70.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'CFTR - Cystic Fibrosis Transmembrane Conductance Regulator,' Ms. Frizzle explains. 'A chloride channel. In epithelia, it secretes Cl- into mucus. Water follows chloride (osmosis). This keeps mucus hydrated and thin. In CF, CFTR is defective or absent.'",
+      "q": "CFTR is:",
+      "options": [
+        "A type of bacteria",
+        "A chloride channel protein",
+        "A blood cell",
+        "A vitamin"
+      ],
+      "answer": 1,
+      "explain": "CFTR = CHLORIDE CHANNEL protein in epithelial membranes. Secretes Cl- into mucus, water follows, keeps secretions thin. Defective in CF → thick, dehydrated mucus.",
+      "wrongExplains": {
+        "0": "CFTR is a human protein (ion channel), not bacteria. Bacteria colonize CF lungs secondarily.",
+        "2": "CFTR is in epithelial cells (not blood cells). It regulates chloride transport.",
+        "3": "CFTR is a protein, not a vitamin. It's genetically encoded, not dietary."
+      }
+    },
+    {
+      "id": "900.5.70.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'The basic defect,' Ms. Frizzle diagrams. 'No CFTR function → no Cl- secretion → no water follows into mucus → THICK, STICKY, DEHYDRATED mucus. In lungs: can't clear secretions. In pancreas: ducts plug. In sweat: high chloride (diagnostic clue).'",
+      "q": "In cystic fibrosis, defective CFTR leads to:",
+      "options": [
+        "Thin watery secretions",
+        "Thick, sticky, dehydrated mucus",
+        "No mucus production",
+        "Normal secretions"
+      ],
+      "answer": 1,
+      "explain": "Defective CFTR → no Cl-/water secretion → THICK, STICKY, DEHYDRATED MUCUS. In lungs: plugs airways, bacterial infections. In pancreas: blocks ducts, maldigestion. In sweat: high Cl (diagnostic).",
+      "wrongExplains": {
+        "0": "Thin watery mucus is NORMAL (working CFTR). CF causes THICK mucus.",
+        "2": "CF produces mucus, but it's pathologically THICK because it's dehydrated.",
+        "3": "CF secretions are ABNORMAL - thick and sticky from lack of water/chloride."
+      }
+    },
+    {
+      "id": "900.5.70.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Inheritance,' Ms. Frizzle explains. 'Autosomal recessive. Need TWO defective CFTR genes (one from each parent). Carriers (one gene) are healthy. ΔF508 is the most common mutation (70% of CF alleles). Over 2000 mutations identified.'",
+      "q": "Cystic fibrosis is inherited as:",
+      "options": [
+        "Dominant (one gene needed)",
+        "Autosomal recessive (two genes needed)",
+        "X-linked",
+        "Not genetic"
+      ],
+      "answer": 1,
+      "explain": "CF = AUTOSOMAL RECESSIVE. Need TWO defective CFTR genes (one from each parent). Carriers (one gene) are asymptomatic. ΔF508 is most common mutation. 1 in 25 Caucasians are carriers.",
+      "wrongExplains": {
+        "0": "CF is RECESSIVE - need two copies. Dominant would only need one.",
+        "2": "CF is autosomal (chromosome 7), not X-linked. Affects males and females equally.",
+        "3": "CF is purely GENETIC - CFTR mutations. Environmental factors don't cause it."
+      }
+    },
+    {
+      "id": "900.5.70.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Pulmonary manifestations,' Ms. Frizzle lists. 'Thick mucus plugs airways → impaired mucociliary clearance → chronic bacterial colonization (especially Pseudomonas) → bronchiectasis → progressive lung damage → respiratory failure. Vicious cycle.'",
+      "q": "In CF lungs, thick mucus leads to:",
+      "options": [
+        "Perfect clearance",
+        "Chronic infection and bronchiectasis",
+        "No problems",
+        "Immediate healing"
+      ],
+      "answer": 1,
+      "explain": "CF thick mucus → IMPAIRED CLEARANCE → chronic INFECTION (Pseudomonas, Staph, Burkholderia) → BRONCHIECTASIS → progressive lung destruction. Respiratory failure is main cause of death.",
+      "wrongExplains": {
+        "0": "Thick mucus IMPAIRS clearance. That's the fundamental CF lung problem.",
+        "2": "CF lungs have severe problems - chronic infection, bronchiectasis, respiratory failure.",
+        "3": "CF lung damage is progressive and irreversible without transplant."
+      }
+    },
+    {
+      "id": "900.5.70.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Pseudomonas aeruginosa,' Ms. Frizzle points at the bacteria. 'Classic CF pathogen. Thrives in thick mucus. Mucoid strains form biofilms - resistant to antibiotics and immune attack. Chronic colonization accelerates lung damage. Hallmark of CF.'",
+      "q": "The classic bacterial pathogen in CF lungs is:",
+      "options": [
+        "Streptococcus pneumoniae only",
+        "Pseudomonas aeruginosa",
+        "E. coli",
+        "No bacteria"
+      ],
+      "answer": 1,
+      "explain": "PSEUDOMONAS AERUGINOSA is the hallmark CF pathogen. Mucoid strains form biofilms in thick mucus. Chronic colonization. Also: Staph aureus (early), Burkholderia cepacia (poor prognosis).",
+      "wrongExplains": {
+        "0": "S. pneumoniae causes pneumonia but Pseudomonas is the classic CF bug.",
+        "2": "E. coli causes UTIs, not typical CF lung infections. Pseudomonas dominates.",
+        "3": "CF lungs are CHRONICALLY infected/colonized, especially with Pseudomonas."
+      }
+    },
+    {
+      "id": "900.5.70.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Sweat test - diagnostic gold standard,' Ms. Frizzle explains. 'Defective CFTR → Cl- isn't reabsorbed in sweat ducts → HIGH CHLORIDE in sweat (>60 mEq/L). Parents notice salty-tasting babies. Simple, reliable diagnostic test.'",
+      "q": "The sweat chloride test in CF shows:",
+      "options": [
+        "Low chloride",
+        "High chloride (>60 mEq/L)",
+        "Normal chloride always",
+        "No chloride"
+      ],
+      "answer": 1,
+      "explain": "CF sweat test: HIGH CHLORIDE (>60 mEq/L diagnostic). Defective CFTR → can't reabsorb Cl- in sweat ducts. 'Salty baby' is classic presentation. Gold standard diagnostic.",
+      "wrongExplains": {
+        "0": "CF has HIGH sweat chloride (>60). Normal is <30, borderline 30-60.",
+        "2": "CF sweat chloride is ABNORMALLY HIGH. Normal would suggest not CF.",
+        "3": "Some chloride is always present. CF has ELEVATED chloride (>60)."
+      }
+    },
+    {
+      "id": "900.5.70.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Multi-organ disease,' Ms. Frizzle emphasizes. 'Not just lungs. Pancreas - thick secretions plug ducts → exocrine insufficiency → malabsorption (fatty stools, vitamins A/D/E/K deficiency). Sinusitis. Infertility (males - absent vas deferens). Liver disease. CF affects all organs with CFTR.'",
+      "q": "Besides lungs, CF commonly affects the:",
+      "options": [
+        "Brain only",
+        "Pancreas, sinuses, reproductive tract",
+        "Only skin",
+        "Only bones"
+      ],
+      "answer": 1,
+      "explain": "CF affects multiple organs: PANCREAS (insufficiency, diabetes), SINUSES (chronic sinusitis), LIVER (cirrhosis), REPRODUCTIVE TRACT (male infertility). Anywhere with CFTR-expressing epithelia.",
+      "wrongExplains": {
+        "0": "Brain doesn't express CFTR. CF doesn't directly affect brain.",
+        "2": "Skin has CFTR (sweat test) but CF mainly affects lungs, pancreas, sinuses, gut.",
+        "3": "Bones aren't primary CF targets. Lungs, pancreas, sinuses are."
+      }
+    },
+    {
+      "id": "900.5.70.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Treatment advances,' Ms. Frizzle lists. 'Chest physiotherapy - loosen secretions. Bronchodilators. Inhaled DNase - thins mucus. Hypertonic saline - draws water into airways. Antibiotics - chronic/suppressive for Pseudomonas. CFTR modulators (ivacaftor, elexacaftor/tezacaftor) - fix defective protein!'",
+      "q": "CFTR modulator drugs (like ivacaftor) work by:",
+      "options": [
+        "Killing bacteria",
+        "Correcting/potentiating defective CFTR protein",
+        "Removing lungs",
+        "Ignoring the mutation"
+      ],
+      "answer": 1,
+      "explain": "CFTR MODULATORS (ivacaftor, elexacaftor/tezacaftor/ivacaftor) CORRECT or POTENTIATE defective CFTR protein. Game-changers - address root cause, not just symptoms. Improve lung function, reduce exacerbations.",
+      "wrongExplains": {
+        "0": "Antibiotics kill bacteria. CFTR modulators fix the underlying chloride channel defect.",
+        "2": "Lung transplant is end-stage. CFTR modulators improve native lung function.",
+        "3": "Modulators actively CORRECT the mutation's effects on protein function."
+      }
+    },
+    {
+      "id": "900.5.70.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Prognosis has improved dramatically,' Ms. Frizzle notes. 'Median survival was 6 years in 1960s. Now >40 years with aggressive therapy. CFTR modulators may push it higher. But lung transplant remains option for end-stage disease.'",
+      "q": "Modern CF treatment has:",
+      "options": [
+        "No effect on survival",
+        "Dramatically increased life expectancy (median >40 years)",
+        "Decreased life expectancy",
+        "Cured all patients"
+      ],
+      "answer": 1,
+      "explain": "Modern CF therapy (chest PT, antibiotics, CFTR modulators, lung transplant) has increased median survival from 6 years (1960s) to >40 years now. Still not cured, but dramatically improved.",
+      "wrongExplains": {
+        "0": "Treatment has MASSIVELY improved survival - from 6 years to >40 years median.",
+        "2": "Life expectancy has INCREASED, not decreased, with modern therapy.",
+        "3": "Not cured (still genetic), but CFTR modulators and aggressive therapy extend/improve life."
+      }
+    },
+    {
+      "id": "900.5.70.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Ms. Frizzle looks at the thick, sticky mucus cement plugging every airway. 'One defective chloride channel. Dehydrated secretions. Multi-organ disease. So, class: how does cystic fibrosis affect the respiratory system?'",
+      "q": "Cystic fibrosis affects the respiratory system by causing:",
+      "options": [
+        "Thin watery mucus",
+        "Thick sticky mucus blocking airways",
+        "Surfactant deficiency",
+        "Pleural scarring"
+      ],
+      "answer": 1,
+      "explain": "CF = THICK, STICKY MUCUS blocking airways. Defective CFTR → no Cl-/water secretion → dehydrated mucus. Leads to chronic Pseudomonas infection, bronchiectasis, respiratory failure. Treated with chest PT, antibiotics, CFTR modulators.",
+      "wrongExplains": {
+        "0": "Thin watery mucus would be the OPPOSITE of CF. CF mucus is pathologically THICK.",
+        "2": "Surfactant deficiency is NRDS (neonatal respiratory distress syndrome), not CF.",
+        "3": "Pleural scarring isn't the primary CF lung problem - it's the thick airway mucus."
+      }
+    }
+  ]
+}

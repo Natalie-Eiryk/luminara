@@ -1,0 +1,147 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://luminara.natalie-eiryk.com/schemas/question.json",
+  "title": "Ms. Luminara Quiz Question",
+  "description": "Schema for quiz questions following Teaching Philosophy standards",
+  "type": "object",
+  "required": ["id", "title", "category", "description", "questions"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^\\d{3}\\.\\d+$",
+      "description": "Question bank ID (e.g., 611.2, 612.81)"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Question bank title"
+    },
+    "category": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Category identifier (e.g., lab-exam-ii)"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Question bank description"
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/question"
+      }
+    }
+  },
+  "definitions": {
+    "question": {
+      "type": "object",
+      "required": ["id", "q", "options", "answer", "chapter", "explain", "optionExplains", "mechanism"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^\\d{3}\\.\\d+\\.\\d+$",
+          "description": "Question ID (e.g., 611.2.01)"
+        },
+        "q": {
+          "type": "string",
+          "minLength": 10,
+          "description": "Question text - should be clear and unambiguous"
+        },
+        "options": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 6,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "Answer options - all should be plausible"
+        },
+        "answer": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Index of correct answer (0-based)"
+        },
+        "chapter": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Chapter/topic reference"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Topic tags for categorization"
+        },
+        "explain": {
+          "type": "string",
+          "minLength": 10,
+          "not": {
+            "pattern": "^[A-Z][a-z ]+\\.$"
+          },
+          "description": "Explanation - should go beyond restating the answer"
+        },
+        "optionExplains": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/optionExplain"
+          },
+          "description": "Per-option feedback - must match options array length"
+        },
+        "mechanism": {
+          "$ref": "#/definitions/mechanism"
+        },
+        "scaffoldFile": {
+          "type": "string",
+          "description": "Path to scaffold JSON file (optional)"
+        }
+      }
+    },
+    "optionExplain": {
+      "type": "object",
+      "required": ["verdict", "text"],
+      "properties": {
+        "verdict": {
+          "type": "string",
+          "enum": ["correct", "incorrect"],
+          "description": "Whether this option is correct or incorrect"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 20,
+          "not": {
+            "pattern": "This would be .+, but the question asks for"
+          },
+          "description": "Feedback text - should diagnose misconception or explain significance"
+        }
+      }
+    },
+    "mechanism": {
+      "type": "object",
+      "required": ["title", "content", "metaphor"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 5,
+          "description": "Mechanism title"
+        },
+        "content": {
+          "type": "string",
+          "minLength": 50,
+          "description": "Mechanism explanation - should explain WHY, not just WHAT"
+        },
+        "metaphor": {
+          "type": "string",
+          "minLength": 20,
+          "not": {
+            "pattern": "Think of this as the key landmark that separates|Think of this as"
+          },
+          "description": "Concrete metaphor - should create structural isomorphism"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.92",
+  "parentQuestion": "Respiratory alkalosis is caused by:",
+  "narrative": {
+    "setting": "The Magic School Bus is caught in a whirlwind inside Mr. Edgar's lungs. He's hyperventilating - breath after panicked breath, too fast, too deep. The dashboard shows pH climbing dangerously high. Ms. Frizzle grips the controls: 'Class, he's breathing away too much CO2. His blood is becoming alkaline. We need to understand why this is just as dangerous as acidosis.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's blood pH is rising. Dizziness and tingling are just the beginning."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.92.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "Ms. Frizzle steadies the bus against another gust of exhaled air. 'Alkalosis,' she begins. 'The opposite of acidosis. But just as deadly if we don't act fast.'",
+      "q": "The term 'alkalosis' refers to blood pH that is:",
+      "options": [
+        "Too low (too acidic)",
+        "Too high (too alkaline/basic)",
+        "Normal (7.35-7.45)",
+        "Variable and unstable"
+      ],
+      "answer": 1,
+      "explain": "ALKALOSIS = ALKALI condition = pH TOO HIGH (above 7.45). The blood becomes more BASIC/ALKALINE. It's the opposite of acidosis. Think: alkali = base, like soap or baking soda.",
+      "wrongExplains": {
+        "0": "Too acidic is ACIDOSIS. Alkalosis is the opposite - too basic/alkaline.",
+        "2": "Normal pH is homeostasis. The '-osis' suffix means an abnormal condition.",
+        "3": "Variable pH would be instability, not alkalosis. Alkalosis specifically means elevated pH."
+      }
+    },
+    {
+      "id": "900.5.92.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "Another massive breath rushes past, nearly capsizing the bus. 'Hyper-ventilation,' Ms. Frizzle enunciates carefully. 'Two Greek roots that tell the whole story.'",
+      "q": "The prefix 'hyper-' means:",
+      "options": [
+        "Below normal, deficient",
+        "Above normal, excessive",
+        "Around, surrounding",
+        "Against, opposite"
+      ],
+      "answer": 1,
+      "explain": "'HYPER-' = EXCESSIVE, ABOVE, TOO MUCH. Think: hyperactive (too active), hypertension (high blood pressure). Hyperventilation = breathing TOO MUCH. The opposite is 'hypo-' (too little).",
+      "wrongExplains": {
+        "0": "That's 'HYPO-'. Hyper is the opposite - excessive. Hyperventilation is breathing TOO MUCH.",
+        "2": "That's 'circum-' or 'peri-'. Hyper means going OVER the normal limit.",
+        "3": "That's 'anti-' or 'contra-'. Hyper doesn't oppose - it exceeds."
+      }
+    },
+    {
+      "id": "900.5.92.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "Mr. Edgar gasps for air even though his oxygen is fine. 'Panic attack,' Ms. Frizzle diagnoses. 'His brain thinks he's suffocating, so he breathes faster. But fast breathing creates a different problem.'",
+      "q": "Hyperventilation means:",
+      "options": [
+        "Breathing too slowly",
+        "Breathing too quickly or deeply",
+        "Stopping breathing completely",
+        "Breathing normally"
+      ],
+      "answer": 1,
+      "explain": "HYPERVENTILATION = breathing rate or depth EXCEEDS metabolic needs. You blow off CO2 FASTER than you produce it. It can be rapid breathing OR deep breathing - either removes excess CO2.",
+      "wrongExplains": {
+        "0": "Too slow is HYPOventilation (hypo = under). Hyperventilation is TOO FAST/DEEP.",
+        "2": "Stopping breathing is apnea. Hyperventilation is the opposite - breathing too much.",
+        "3": "Normal breathing matches CO2 production. Hyperventilation exceeds it."
+      }
+    },
+    {
+      "id": "900.5.92.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus sensors show CO2 levels plummeting. 'Watch,' Ms. Frizzle says, pointing to blood chemistry displays. 'As CO2 leaves, something shifts.'",
+      "q": "When excess CO2 is exhaled, what happens to blood pH?",
+      "options": [
+        "pH decreases (more acidic)",
+        "pH increases (more alkaline)",
+        "pH stays the same",
+        "pH becomes unstable"
+      ],
+      "answer": 1,
+      "explain": "LESS CO2 = LESS CARBONIC ACID = HIGHER pH. It's the reverse of respiratory acidosis. CO2 forms acid, so removing CO2 removes acid, making blood more alkaline. The equation runs backward: H2CO3 → CO2 + H2O.",
+      "wrongExplains": {
+        "0": "That would happen with CO2 RETENTION. Removing CO2 removes acid, so pH RISES.",
+        "2": "pH is exquisitely sensitive to CO2 levels. Blowing off CO2 always increases pH.",
+        "3": "pH shifts in a predictable direction - up. It's unstable only if breathing keeps varying."
+      }
+    },
+    {
+      "id": "900.5.92.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "Ms. Frizzle points to Mr. Edgar's tingling hands. 'Alkalosis does strange things to nerves and blood vessels. The chemistry cascade has begun.'",
+      "q": "Why does alkalosis cause tingling and numbness?",
+      "options": [
+        "High pH increases free calcium, exciting nerves",
+        "High pH decreases free calcium, making nerves hyperexcitable",
+        "Alkalosis blocks oxygen delivery",
+        "Too much CO2 damages nerves"
+      ],
+      "answer": 1,
+      "explain": "High pH makes calcium BIND to proteins, reducing FREE calcium. Low free Ca2+ makes nerve membranes HYPEREXCITABLE - they fire spontaneously, causing tingling, numbness, even tetany (muscle spasms). It's a calcium problem, not oxygen.",
+      "wrongExplains": {
+        "0": "Opposite! High pH DECREASES free calcium by making it bind to proteins. That's what causes the symptoms.",
+        "2": "Alkalosis does shift the oxygen-hemoglobin curve, but tingling is from calcium and nerve excitability.",
+        "3": "Alkalosis involves TOO LITTLE CO2, not too much. And CO2 doesn't directly damage nerves."
+      }
+    },
+    {
+      "id": "900.5.92.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus watches blood vessels constrict in Mr. Edgar's brain. 'Cerebral vasoconstriction,' Ms. Frizzle warns. 'Less blood flow to the brain. That's why he's dizzy.'",
+      "q": "How does hyperventilation cause dizziness?",
+      "options": [
+        "Too much oxygen reaches the brain",
+        "Low CO2 causes brain blood vessels to constrict",
+        "High CO2 dilates brain vessels",
+        "Alkalosis increases brain oxygen"
+      ],
+      "answer": 1,
+      "explain": "LOW CO2 → brain blood vessels CONSTRICT → LESS blood flow → dizziness, lightheadedness. CO2 is a potent vasodilator in the brain. Remove it and vessels clamp down. Ironically, hyperventilation (trying to get more air) reduces brain perfusion.",
+      "wrongExplains": {
+        "0": "The brain gets LESS blood flow, not more oxygen. Vessel constriction is the problem.",
+        "2": "HIGH CO2 does dilate vessels, but hyperventilation creates LOW CO2, causing constriction.",
+        "3": "Alkalosis shifts the oxygen curve, making hemoglobin hold oxygen TIGHTER (less delivery, not more)."
+      }
+    },
+    {
+      "id": "900.5.92.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Two respiratory disorders,' Ms. Frizzle says, drawing a diagram. 'Acidosis and alkalosis. Mirror images. You need to know which is which to treat Mr. Edgar.'",
+      "q": "How does respiratory alkalosis differ from respiratory acidosis?",
+      "options": [
+        "Alkalosis is from CO2 retention; acidosis from CO2 loss",
+        "Alkalosis is from excessive CO2 loss; acidosis from CO2 retention",
+        "They are the same condition",
+        "Alkalosis affects kidneys; acidosis affects lungs"
+      ],
+      "answer": 1,
+      "explain": "ALKALOSIS = TOO LITTLE CO2 (hyperventilation blows it off). ACIDOSIS = TOO MUCH CO2 (hypoventilation traps it). Same gas, opposite directions, opposite pH effects. Breathing too much vs. too little.",
+      "wrongExplains": {
+        "0": "Backwards! Alkalosis loses CO2 (hyper-breathing), acidosis retains CO2 (hypo-breathing).",
+        "2": "They're opposites - one is high pH, one is low pH. Opposite breathing patterns, opposite effects.",
+        "3": "BOTH are RESPIRATORY disorders (breathing-related). Metabolic alkalosis/acidosis involve kidneys."
+      }
+    },
+    {
+      "id": "900.5.92.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "The bus passes through a kidney, observing compensation efforts. 'The kidneys respond to respiratory alkalosis,' Ms. Frizzle notes, 'but it's not instant.'",
+      "q": "How do kidneys compensate for respiratory alkalosis?",
+      "options": [
+        "By producing more CO2",
+        "By excreting bicarbonate and retaining H+ ions",
+        "By retaining bicarbonate",
+        "By increasing breathing rate"
+      ],
+      "answer": 1,
+      "explain": "Kidneys DUMP HCO3- (bicarbonate, a BASE) and KEEP H+ (acid). This lowers pH back toward normal. It takes 2-3 days. The kidneys can't control breathing, but they can adjust blood chemistry to compensate.",
+      "wrongExplains": {
+        "0": "Kidneys don't produce CO2 - that's cellular metabolism. Only lungs control CO2 elimination.",
+        "2": "Retaining bicarbonate would WORSEN alkalosis (bicarbonate is a base). Kidneys must excrete it.",
+        "3": "Kidneys can't change breathing rate - that's the brain's respiratory center. Kidneys adjust chemistry."
+      }
+    },
+    {
+      "id": "900.5.92.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Causes,' Ms. Frizzle announces as Mr. Edgar's panic escalates. 'What drives someone to hyperventilate? We need to know to break the cycle.'",
+      "q": "Which is the MOST common cause of acute respiratory alkalosis?",
+      "options": [
+        "COPD with CO2 retention",
+        "Anxiety or panic attack causing hyperventilation",
+        "Kidney failure",
+        "Diabetic ketoacidosis"
+      ],
+      "answer": 1,
+      "explain": "ANXIETY/PANIC → hyperventilation → blow off CO2 → alkalosis. It's a vicious cycle: anxiety makes you breathe fast, which makes you dizzy/tingly, which increases anxiety. Also: high altitude, fever, pain, or mechanical overventilation.",
+      "wrongExplains": {
+        "0": "COPD causes respiratory ACIDOSIS (CO2 retention), not alkalosis. Opposite problem.",
+        "2": "Kidney failure causes METABOLIC acidosis or alkalosis, not respiratory. Different system.",
+        "3": "Ketoacidosis causes METABOLIC acidosis, though the patient may hyperventilate to COMPENSATE. The primary problem isn't respiratory."
+      }
+    },
+    {
+      "id": "900.5.92.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Ms. Frizzle hands Mr. Edgar a paper bag. 'Breathe into this,' she instructs. The CO2 levels begin to rise, pH normalizes. 'You see? Rebreathing CO2 reverses the alkalosis. Now, the final question.'",
+      "q": "Respiratory alkalosis is caused by:",
+      "options": [
+        "Hypoventilation with CO2 retention",
+        "Hyperventilation with excessive CO2 loss",
+        "Kidney retention of bicarbonate",
+        "Metabolic production of acids"
+      ],
+      "answer": 1,
+      "explain": "RESPIRATORY ALKALOSIS = HYPERVENTILATION → excessive CO2 LOSS → less carbonic acid → pH RISES. Breathing too much eliminates too much CO2, removing acid from blood. Classic causes: anxiety, pain, high altitude, fever.",
+      "wrongExplains": {
+        "0": "Hypoventilation with CO2 retention causes respiratory ACIDOSIS (opposite). Alkalosis needs CO2 LOSS.",
+        "2": "Kidney retention of bicarbonate is METABOLIC alkalosis, not respiratory. Different system, different cause.",
+        "3": "Metabolic acid production causes METABOLIC acidosis. Respiratory alkalosis is about breathing off CO2."
+      }
+    }
+  ]
+}

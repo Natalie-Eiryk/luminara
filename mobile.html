@@ -1,0 +1,2064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Luminara Quiz">
+  <meta name="theme-color" content="#c9a55c">
+  <meta name="description" content="Gamified anatomy & physiology quiz with RPG mechanics - by Ms. Luminara">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Ms. Luminara's Quiz Lab - Mobile">
+  <meta property="og:description" content="Gamified anatomy & physiology quiz with RPG mechanics, scaffolded learning, and roguelike adventures">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://luminara.natalie-eiryk.com/mobile.html">
+  <meta property="og:image" content="https://luminara.natalie-eiryk.com/icons/og-image.png">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ms. Luminara's Quiz Lab">
+  <meta name="twitter:description" content="Gamified anatomy & physiology quiz with RPG mechanics">
+  <meta name="twitter:image" content="https://luminara.natalie-eiryk.com/icons/og-image.png">
+
+  <title>Ms. Luminara's Quiz Lab - Mobile</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- iOS Icons (SVG with PNG fallback for older iOS) -->
+  <link rel="apple-touch-icon" href="icons/icon-192.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-192.svg">
+
+  <!-- Dark Academic Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- KaTeX for beautiful math rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="820.31-core/820.31.0-styles.css">
+  <link rel="stylesheet" href="820.31-core/820.31.0-dev-panel.css">
+  <link rel="stylesheet" href="820.31-core/820.31.1-game-modes.css">
+  <link rel="stylesheet" href="820.31-core/820.31.2-utilities.css">
+
+  <!-- Mobile QOL Features CSS (auto-generated) -->
+  <style id="mobile-qol-css">
+    /* ==================== QOL FEATURE 1: OFFLINE INDICATOR ==================== */
+    .offline-banner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(90deg, #dc2626 0%, #ef4444 100%);
+      color: white;
+      text-align: center;
+      padding: 0.5rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      z-index: 9999;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    .offline-banner.visible { transform: translateY(0); }
+    .offline-banner .pulse { animation: pulse 1.5s infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+
+    /* ==================== QOL FEATURE 2: FLOATING ACTION BUTTON ==================== */
+    .fab-container {
+      position: fixed;
+      bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px));
+      right: 1rem;
+      z-index: 500;
+    }
+    .fab-main {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--glow-warm) 0%, #d4976a 100%);
+      border: none;
+      color: #1a1612;
+      font-size: 1.5rem;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .fab-main:active { transform: scale(0.92); }
+    .fab-main.open { transform: rotate(45deg); }
+    .fab-actions {
+      position: absolute;
+      bottom: 64px;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(10px);
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .fab-actions.visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+    .fab-action {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.75rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      color: var(--text-primary);
+      font-size: 0.8rem;
+      cursor: pointer;
+      white-space: nowrap;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    .fab-action:active { background: var(--bg-deep); }
+    .fab-action-icon { font-size: 1.1rem; }
+
+    /* ==================== QOL FEATURE 3: BOTTOM SHEET ==================== */
+    .bottom-sheet-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+    .bottom-sheet-overlay.visible { opacity: 1; pointer-events: auto; }
+    .bottom-sheet {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--bg-card);
+      border-radius: 16px 16px 0 0;
+      padding: 1rem;
+      padding-bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+      z-index: 1000;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+      max-height: 70vh;
+      overflow-y: auto;
+    }
+    .bottom-sheet.visible { transform: translateY(0); }
+    .bottom-sheet-handle {
+      width: 40px;
+      height: 4px;
+      background: var(--border);
+      border-radius: 2px;
+      margin: 0 auto 1rem;
+    }
+    .bottom-sheet-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .bottom-sheet-option {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .bottom-sheet-option:active { background: var(--bg-deep); }
+    .bottom-sheet-option-icon { font-size: 1.3rem; }
+    .bottom-sheet-option-text { flex: 1; }
+    .bottom-sheet-option-label { font-weight: 500; color: var(--text-primary); }
+    .bottom-sheet-option-desc { font-size: 0.75rem; color: var(--text-dim); margin-top: 0.1rem; }
+
+    /* ==================== QOL FEATURE 4: SWIPE INDICATORS ==================== */
+    .swipe-hint {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      color: var(--glow-warm);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s;
+      z-index: 200;
+    }
+    .swipe-hint.left { left: 1rem; }
+    .swipe-hint.right { right: 1rem; }
+    .swipe-hint.visible { opacity: 0.6; }
+
+    /* ==================== QOL FEATURE 5: PULL TO REFRESH ==================== */
+    .pull-indicator {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%) translateY(-100%);
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 0 0 12px 12px;
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      z-index: 150;
+      transition: transform 0.2s;
+    }
+    .pull-indicator.pulling { transform: translateX(-50%) translateY(0); }
+    .pull-indicator .spinner-small {
+      width: 16px;
+      height: 16px;
+      border: 2px solid var(--border);
+      border-top-color: var(--glow-warm);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ==================== QOL FEATURE 6: TOAST NOTIFICATIONS ==================== */
+    .toast-container {
+      position: fixed;
+      bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 800;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      pointer-events: none;
+    }
+    .toast {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      animation: toastIn 0.3s ease, toastOut 0.3s ease 2.7s forwards;
+      pointer-events: auto;
+    }
+    @keyframes toastIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes toastOut { from { opacity: 1; } to { opacity: 0; transform: translateY(-10px); } }
+    .toast-icon { font-size: 1.2rem; }
+    .toast-text { font-size: 0.85rem; color: var(--text-primary); }
+    .toast.success { border-color: var(--correct); }
+    .toast.error { border-color: var(--incorrect); }
+
+    /* ==================== QOL FEATURE 7: QUICK STUDY TIMER ==================== */
+    .study-timer {
+      position: fixed;
+      top: calc(env(safe-area-inset-top, 0px) + 0.5rem);
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 0.4rem 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      z-index: 95;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .study-timer.visible { opacity: 1; }
+    .study-timer-icon { font-size: 0.9rem; }
+    .study-timer-time { font-variant-numeric: tabular-nums; font-weight: 600; color: var(--glow-warm); }
+  </style>
+
+</head>
+<body>
+  <!-- Loading Overlay -->
+  <div id="loader" class="hidden">
+    <div class="loader-content">
+      <div class="spinner"></div>
+      <p>Loading questions...</p>
+    </div>
+  </div>
+
+  <!-- Error Message -->
+  <div id="errorMessage" class="hidden"></div>
+
+  <!-- Mode Navigation (Study + Stats only - Review/Test Prep accessed per-category) -->
+  <nav class="mode-nav" id="modeNav" aria-label="Quiz mode selection">
+    <button class="mode-tab active" data-mode="study" aria-label="Study mode - explore questions without penalty">
+      <span class="icon" aria-hidden="true">📖</span> Study
+    </button>
+    <button class="mode-tab" data-mode="stats" aria-label="Statistics - view your progress and achievements">
+      <span class="icon" aria-hidden="true">📊</span> Stats
+    </button>
+  </nav>
+
+  <!-- Study Module (Original landing + study view) -->
+  <div class="module-container active" id="module-study">
+    <!-- Landing Page -->
+    <div id="landing">
+      <div class="landing-content">
+        <div class="landing-header">
+          <h1>Ms. Luminara's Study Session</h1>
+        </div>
+        <div class="header-toolbar">
+          <span class="last-updated">Updated: Mar 30, 2026 v59</span>
+          <button class="gauntlet-btn leaderboard" onclick="quiz.renderer.showHighScores()" style="margin-left: auto;" aria-label="View leaderboard and high scores">
+            <span aria-hidden="true">🏆</span> Leaderboard
+          </button>
+        </div>
+        <p class="subtitle">Explore every answer. Learn the mechanism. No penalty for curiosity.</p>
+
+        <div class="luminara-welcome">
+          <div class="speaker">Ms. Luminara</div>
+          <p>"Ah, a fresh victim— I mean, <em>student</em>. Welcome to my domain. Here in Study Mode, I'll <em>graciously</em> let you poke around without consequence. Click any answer — I'll explain exactly why you're wrong. Consider it... reconnaissance before I crush you in the Gauntlet. 😈"</p>
+        </div>
+
+        <!-- Map Run Quick Start -->
+        <div class="map-run-launcher" style="margin: 1.5rem 0;">
+          <h3 style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-dim); margin-bottom: 1rem; text-align: center;">
+            ⚔️ Roguelike Adventure Mode ⚔️
+          </h3>
+          <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+            <button class="map-run-btn" onclick="quiz.startMapRun('quick')" style="padding: 0.75rem 1.5rem; background: var(--bg-card); border: 2px solid var(--border); border-radius: 10px; cursor: pointer; transition: all 0.2s; display: flex; flex-direction: column; align-items: center; min-width: 120px;">
+              <span style="font-size: 1.5rem;">🏃</span>
+              <span style="font-weight: 600; color: var(--text-primary);">Quick Run</span>
+              <span style="font-size: 0.7rem; color: var(--text-dim);">3 Acts</span>
+            </button>
+            <button class="map-run-btn" onclick="quiz.startMapRun('standard')" style="padding: 0.75rem 1.5rem; background: var(--bg-card); border: 2px solid var(--gold); border-radius: 10px; cursor: pointer; transition: all 0.2s; display: flex; flex-direction: column; align-items: center; min-width: 120px; box-shadow: 0 0 15px rgba(201, 165, 92, 0.15);">
+              <span style="font-size: 1.5rem;">🗡️</span>
+              <span style="font-weight: 600; color: var(--gold);">Standard</span>
+              <span style="font-size: 0.7rem; color: var(--text-dim);">5 Acts</span>
+            </button>
+            <button class="map-run-btn" onclick="quiz.startMapRun('epic')" style="padding: 0.75rem 1.5rem; background: var(--bg-card); border: 2px solid var(--border); border-radius: 10px; cursor: pointer; transition: all 0.2s; display: flex; flex-direction: column; align-items: center; min-width: 120px;">
+              <span style="font-size: 1.5rem;">👑</span>
+              <span style="font-weight: 600; color: var(--text-primary);">Epic Run</span>
+              <span style="font-size: 0.7rem; color: var(--text-dim);">7 Acts</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Subject Selection (Top Level) -->
+        <div id="subjectSelect" class="subject-select">
+          <h2 class="section-heading">
+            <span class="heading-flourish">❧</span>
+            Select Your Field of Study
+            <span class="heading-flourish">❧</span>
+          </h2>
+          <p class="section-subtitle">Choose a subject to explore</p>
+          <div id="subjectGrid" class="subject-grid">
+            <div class="loading-placeholder">Loading subjects...</div>
+          </div>
+        </div>
+
+        <!-- Course Selection (After subject selected) -->
+        <div id="courseSelect" class="course-select hidden">
+          <div class="breadcrumb" id="courseBreadcrumb">
+            <span class="breadcrumb-link" onclick="quiz.showSubjects()">Subjects</span>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current" id="currentSubject">Biology</span>
+          </div>
+          <h2 class="section-heading">
+            <span class="heading-flourish">❧</span>
+            <span id="courseTitle">Biology Courses</span>
+            <span class="heading-flourish">❧</span>
+          </h2>
+          <div id="courseGrid" class="course-grid"></div>
+        </div>
+
+        <!-- Topic Selection (After course selected) -->
+        <div id="topicSelect" class="topic-select hidden">
+          <div class="breadcrumb" id="topicBreadcrumb">
+            <span class="breadcrumb-link" onclick="quiz.showSubjects()">Subjects</span>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-link" onclick="quiz.showCourses()" id="topicSubject">Biology</span>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current" id="currentCourse">Anatomy & Physiology</span>
+          </div>
+          <h2 class="section-heading">
+            <span class="heading-flourish">❧</span>
+            Dewey Decimal Classification
+            <span class="heading-flourish">❧</span>
+          </h2>
+          <p class="section-subtitle">Select a topic to begin your studies</p>
+          <div id="quizSelect" class="quiz-select">
+            <div class="loading-placeholder">Loading categories...</div>
+          </div>
+        </div>
+
+        <div id="landingStats" class="landing-stats"></div>
+
+        <!-- Daily Challenges Panel -->
+        <div id="dailyChallengesPanel"></div>
+
+        <!-- Study Calendar -->
+        <div id="studyCalendarPanel"></div>
+
+        <div class="progress-controls">
+          <button class="progress-btn" onclick="exportProgress()" title="Download your progress as a file" aria-label="Export progress - download your progress as a JSON file">
+            <span aria-hidden="true">💾</span> Export Progress
+          </button>
+          <button class="progress-btn" onclick="document.getElementById('importFile').click()" title="Load progress from a file" aria-label="Import progress - load progress from a JSON file">
+            <span aria-hidden="true">📂</span> Import Progress
+          </button>
+          <input type="file" id="importFile" accept=".json" style="display:none" onchange="importProgress(this)" aria-label="Select progress file to import">
+          <button class="progress-btn danger" onclick="confirmResetProgress()" title="Start fresh" aria-label="Reset progress - start fresh with all progress cleared">
+            <span aria-hidden="true">🗑️</span> Reset Progress
+          </button>
+        </div>
+
+        <div class="reference-note">
+          <p><strong>Reference:</strong> Question banks organized using Dewey Decimal system</p>
+          <p>See <a href="https://github.com/Natalie-Eiryk/Ms-Luminara/blob/main/README.md" target="_blank" rel="noopener">documentation on GitHub</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Study View -->
+    <div id="studyView">
+      <div id="statsBar" class="stats-bar"></div>
+
+      <div class="progress-bar">
+        <div id="progressFill" class="progress-fill"></div>
+      </div>
+
+      <div class="nav-header">
+        <button class="nav-btn" onclick="goHome()">← Back to Topics</button>
+        <span id="progressInfo">Question 1 of 10</span>
+      </div>
+
+      <div id="questionArea"></div>
+
+      <div class="nav-footer">
+        <button id="prevBtn" class="nav-btn" onclick="prevQuestion()">← Previous</button>
+        <button id="nextBtn" class="nav-btn primary" onclick="nextQuestion()">Next →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Review Module (SRS) -->
+  <div class="module-container" id="module-review">
+    <div class="review-container">
+      <!-- D20 Stats Bar for Review Mode -->
+      <div id="reviewStatsBar" class="stats-bar"></div>
+      <div class="review-header">
+        <div class="review-due-info">
+          <div class="review-due-count" id="reviewDueCount">0</div>
+          <div class="review-due-label">questions to review</div>
+        </div>
+        <div class="review-badges" id="reviewBadges"></div>
+      </div>
+      <div id="reviewArea">
+        <div class="review-empty">
+          <div class="icon">✨</div>
+          <h3>All caught up!</h3>
+          <p>No reviews due right now. Come back later or study new topics.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Test Prep Module (7-Scaffold Gauntlet) -->
+  <div class="module-container" id="module-testprep">
+    <div class="testprep-container">
+      <!-- D20 Stats Bar for Test Prep -->
+      <div id="testprepStatsBar" class="stats-bar"></div>
+      <!-- Landing Page -->
+      <div class="testprep-landing" id="testprepLanding">
+        <div class="testprep-header">
+          <h1>🎯 Test Prep Gauntlet</h1>
+          <p class="testprep-subtitle">All 311 questions. 7 scaffolds each. One wrong answer ends the run.</p>
+        </div>
+
+        <div class="testprep-intro">
+          <div class="speaker">Ms. Luminara</div>
+          <p>"So, you think you're ready? <em>Adorable.</em> 311 questions stand between you and glory. One slip-up and it's GAME OVER. I've personally curated each question to maximize your suffering— er, <em>learning</em>. The current record? Let's just say the last challenger didn't make it past question 47. *shuffles papers menacingly* 📋"</p>
+        </div>
+
+        <!-- Mode Selection -->
+        <div class="mode-selection" id="modeSelection">
+          <h3 class="mode-selection-title">Choose Your Challenge</h3>
+          <div class="mode-cards">
+            <div class="mode-card gauntlet" id="modeCardGauntlet" onclick="quiz.selectMode('gauntlet')">
+              <div class="mode-icon">⚔️</div>
+              <div class="mode-name">GAUNTLET</div>
+              <div class="mode-desc">Pure skill. No power-ups. No mercy.</div>
+              <div class="mode-badge global">🌐 Global Leaderboard</div>
+              <div class="mode-features">
+                <span class="feature disabled">❌ No Power-ups</span>
+                <span class="feature disabled">❌ No Healing</span>
+                <span class="feature">✓ Fair Competition</span>
+              </div>
+            </div>
+            <div class="mode-card arcade selected" id="modeCardArcade" onclick="quiz.selectMode('arcade')">
+              <div class="mode-icon">🎮</div>
+              <div class="mode-name">ARCADE</div>
+              <div class="mode-desc">Power-ups. Progression. Glory.</div>
+              <div class="mode-badge global">🌐 Global Leaderboard</div>
+              <div class="mode-features">
+                <span class="feature enabled">✓ Power-ups Active</span>
+                <span class="feature enabled">✓ Healing Items</span>
+                <span class="feature">✓ Full RPG Experience</span>
+              </div>
+            </div>
+          </div>
+          <div class="mode-selected-indicator" id="modeIndicator">
+            <span class="mode-icon-small">🎮</span> ARCADE MODE
+          </div>
+        </div>
+
+        <div class="testprep-stats-box" id="testprepStatsBox">
+          <div class="tp-stat">
+            <span class="tp-value" id="tpBestPosition">0</span>
+            <span class="tp-label">Best Position</span>
+          </div>
+          <div class="tp-stat">
+            <span class="tp-value" id="tpAttempts">0</span>
+            <span class="tp-label">Attempts</span>
+          </div>
+          <div class="tp-stat">
+            <span class="tp-value" id="tpCompletions">0</span>
+            <span class="tp-label">Completions</span>
+          </div>
+          <button class="gauntlet-btn leaderboard" onclick="quiz.renderer.showHighScores()" style="margin-top: 1rem;">
+            🏆 Leaderboard
+          </button>
+        </div>
+
+        <div class="testprep-btn-row">
+          <button class="testprep-start-btn" onclick="quiz.startTestPrepGauntlet()">
+            <span class="btn-icon">🚀</span>
+            Start Full Gauntlet
+            <span class="btn-subtitle">All questions • Battle mode</span>
+          </button>
+          <button class="testprep-start-btn testprep-secondary" onclick="quiz.startTestPrepGauntlet('exam')">
+            <span class="btn-icon">📝</span>
+            Exam Topics Only
+            <span class="btn-subtitle">Brain • Nerves • ANS • Senses • Endocrine</span>
+          </button>
+          <button class="testprep-start-btn testprep-lab" onclick="quiz.startTestPrepGauntlet('800')">
+            <span class="btn-icon">🔬</span>
+            Lab Exam 1 Prep
+            <span class="btn-subtitle">Nervous Tissue • Brain • Spinal Cord • Eye • Ear</span>
+          </button>
+          <a href="./612-physiology/612.8-special-senses/luminara_612-8_ex19-27_exam.html" class="testprep-start-btn testprep-comprehensive" aria-label="Comprehensive Exam covering Exercises 19-27">
+            <span class="btn-icon" aria-hidden="true">📖</span>
+            Comprehensive Exam (Ex 19-27)
+            <span class="btn-subtitle">Dewey 612.8 - Nervous System - Endocrine - Essays</span>
+          </a>
+        </div>
+
+        <div class="topic-gauntlets" style="margin-top: 1.5rem;">
+          <h3>Standalone HTML Exams</h3>
+          <div class="topic-btn-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem;">
+            <a href="./612-physiology/612.82-brain/luminara_612.82-brain_exam.html" class="topic-gauntlet-btn" style="text-decoration: none;" aria-label="Brain anatomy and physiology exam">
+              <span class="topic-icon" aria-hidden="true">🧠</span>
+              <span class="topic-name">Brain Exam</span>
+            </a>
+            <a href="./612-physiology/612.81-nerves/luminara_612.8-nerves_exam.html" class="topic-gauntlet-btn" style="text-decoration: none;" aria-label="Nerves and neural tissue exam">
+              <span class="topic-icon" aria-hidden="true">⚡</span>
+              <span class="topic-name">Nerves Exam</span>
+            </a>
+            <a href="./611-anatomy/611.018-tissues/luminara_611-tissues_exam.html" class="topic-gauntlet-btn" style="text-decoration: none;" aria-label="Body tissues exam">
+              <span class="topic-icon" aria-hidden="true">🔬</span>
+              <span class="topic-name">Tissues Exam</span>
+            </a>
+            <a href="./612-physiology/612.89-ans/luminara_612.89-ans_exam.html" class="topic-gauntlet-btn" style="text-decoration: none;" aria-label="Autonomic nervous system exam">
+              <span class="topic-icon" aria-hidden="true">💓</span>
+              <span class="topic-name">ANS Exam</span>
+            </a>
+            <a href="./612-physiology/612.8-special-senses/luminara_612.8-special-senses_exam.html" class="topic-gauntlet-btn" style="text-decoration: none;" aria-label="Special senses exam - vision, hearing, taste, smell">
+              <span class="topic-icon" aria-hidden="true">👁️</span>
+              <span class="topic-name">Special Senses Exam</span>
+            </a>
+            <a href="./612-physiology/612.4-endocrine/luminara_612.4-endocrine_exam.html" class="topic-gauntlet-btn" style="text-decoration: none;" aria-label="Endocrine system exam">
+              <span class="topic-icon" aria-hidden="true">🧪</span>
+              <span class="topic-name">Endocrine Exam</span>
+            </a>
+            <a href="./612-physiology/612.8L-lab-exam-prep/luminara_612.8-lab-exam_exam.html" class="topic-gauntlet-btn" style="text-decoration: none;" aria-label="Laboratory exam preparation with scaffolding">
+              <span class="topic-icon" aria-hidden="true">🔬</span>
+              <span class="topic-name">Lab Exam Prep</span>
+              <span style="font-size: 0.7rem; color: var(--glow-warm);">Scaffolded</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="topic-gauntlets">
+          <h3>📚 Topic Focus</h3>
+          <div class="topic-btn-grid">
+            <button class="topic-gauntlet-btn" onclick="quiz.startTestPrepGauntlet('100')">
+              <span class="topic-icon">🧠</span>
+              <span class="topic-name">Brain</span>
+            </button>
+            <button class="topic-gauntlet-btn" onclick="quiz.startTestPrepGauntlet('200')">
+              <span class="topic-icon">⚡</span>
+              <span class="topic-name">Nerves</span>
+            </button>
+            <button class="topic-gauntlet-btn" onclick="quiz.startTestPrepGauntlet('500')">
+              <span class="topic-icon">💓</span>
+              <span class="topic-name">ANS</span>
+            </button>
+            <button class="topic-gauntlet-btn" onclick="quiz.startTestPrepGauntlet('600')">
+              <span class="topic-icon">👁️</span>
+              <span class="topic-name">Senses</span>
+            </button>
+            <button class="topic-gauntlet-btn" onclick="quiz.startTestPrepGauntlet('700')">
+              <span class="topic-icon">🧪</span>
+              <span class="topic-name">Endocrine</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Active Run UI -->
+      <div id="testprepActive" style="display:none;">
+        <!-- Progress Bar with Ghost Line -->
+        <div class="testprep-progress-container">
+          <div class="testprep-progress-bar" id="testprepProgressBar">
+            <div class="progress-ghost" id="testprepGhost"></div>
+            <div class="progress-fill" id="testprepFill"></div>
+          </div>
+          <div class="testprep-progress-labels">
+            <span id="testprepProgressText">Question 0/311</span>
+            <span id="testprepScaffoldText">Scaffold 0/7</span>
+          </div>
+        </div>
+
+        <!-- Question Type Indicator -->
+        <div class="testprep-question-type" id="testprepQuestionType">
+          <span class="type-badge scaffold">Scaffold 1/7</span>
+        </div>
+
+        <!-- Lifelines -->
+        <div class="lifelines-bar" id="lifelinesBar" role="toolbar" aria-label="Power-ups and lifelines">
+          <button class="lifeline-btn" id="lifeline5050" onclick="quiz.useFiftyFifty()" title="Eliminate 2 wrong answers" aria-label="50/50 - eliminate 2 wrong answers">
+            <span class="lifeline-icon" aria-hidden="true">🎯</span>
+            <span class="lifeline-name">50/50</span>
+            <span class="lifeline-count" id="count5050" aria-label="remaining uses">2</span>
+          </button>
+          <button class="lifeline-btn" id="lifelineHint" onclick="quiz.useHint()" title="Show a hint" aria-label="Hint - show a hint for the current question">
+            <span class="lifeline-icon" aria-hidden="true">💡</span>
+            <span class="lifeline-name">Hint</span>
+            <span class="lifeline-count" id="countHint" aria-label="remaining uses">2</span>
+          </button>
+          <button class="lifeline-btn" id="lifelineExtraLife" onclick="quiz.useExtraLife()" title="5 lives - saves from wrong answers" aria-label="Extra lives - saves from wrong answers">
+            <span class="lifeline-icon" aria-hidden="true">❤️</span>
+            <span class="lifeline-name">Lives</span>
+            <span class="lifeline-count" id="countExtraLife" aria-label="remaining lives">5</span>
+          </button>
+          <div class="streak-display" id="streakDisplay" style="display:none;">
+            <span class="streak-icon">🔥</span>
+            <span class="streak-count" id="streakCount">0</span>
+          </div>
+        </div>
+
+        <!-- Question Card -->
+        <div id="testprepQuestion" class="testprep-question-card"></div>
+      </div>
+
+      <!-- Game Over Overlay -->
+      <div id="testprepGameOver" class="testprep-gameover" style="display:none;">
+        <div class="gameover-content">
+          <h2 class="gameover-title" id="testprepGameOverTitle">GAME OVER</h2>
+          <div class="gameover-stats">
+            <div class="go-stat-main">
+              <span class="go-label">You reached</span>
+              <span class="go-value" id="goReached">0/311</span>
+              <span class="go-percent" id="goPercent">(0%)</span>
+            </div>
+            <div class="go-stat-best">
+              <span class="go-label">Personal Best</span>
+              <span class="go-value" id="goBest">0/311</span>
+              <span class="go-percent" id="goBestPercent">(0%)</span>
+            </div>
+          </div>
+          <div class="gameover-progress-bar">
+            <div class="progress-ghost" id="goGhost"></div>
+            <div class="progress-fill" id="goFill"></div>
+          </div>
+          <div class="gameover-details">
+            <p><span class="detail-label">Scaffolds completed:</span> <span id="goScaffolds">0</span></p>
+            <p><span class="detail-label">Time:</span> <span id="goTime">0:00</span></p>
+            <p><span class="detail-label">Retries needed:</span> <span id="goRetries">0</span></p>
+          </div>
+          <div class="gameover-actions">
+            <button class="go-btn primary" onclick="quiz.startTestPrepGauntlet()">Try Again</button>
+            <button class="go-btn secondary" onclick="quiz.exitTestPrep()">Back to Menu</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Boss Arena Module -->
+  <div class="module-container" id="bossArena">
+    <div class="boss-arena-container">
+      <div class="boss-display">
+        <div class="boss-sprite" id="bossSprite"></div>
+        <div class="boss-hp-bar">
+          <div class="boss-hp-fill" id="bossHPFill"></div>
+          <span class="boss-hp-text" id="bossHPText">200/200</span>
+        </div>
+        <div class="boss-name" id="bossName">The Forgetful One</div>
+        <div class="boss-subtitle" id="bossSubtitle">Destroyer of Short-Term Memory</div>
+      </div>
+
+      <div class="player-status">
+        <div class="player-lives" id="playerLives">❤️❤️❤️</div>
+        <div class="player-gear-score">Gear Score: <span id="playerGearScore">0</span></div>
+      </div>
+
+      <div class="boss-question-area" id="bossQuestionArea">
+        <!-- Question renders here -->
+      </div>
+
+      <div class="boss-progress">
+        <span>Question <span id="bossQNum">1</span>/<span id="bossQTotal">10</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats Module -->
+  <div class="module-container" id="module-stats">
+    <div class="stats-container">
+      <!-- Seasonal Event Banner -->
+      <div id="statsSeasonalBanner"></div>
+
+      <!-- Learning Analytics Dashboard Link -->
+      <div class="analytics-dashboard-link" style="margin-bottom: 1rem;">
+        <button class="analytics-btn" onclick="quiz && quiz.renderer ? quiz.renderer.showAnalyticsDashboard() : alert('Quiz not loaded')" style="width: 100%; padding: 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 0.75rem;">
+          <span style="font-size: 1.5rem;">📊</span>
+          <span style="color: var(--text-primary); font-weight: 600;">Learning Analytics Dashboard</span>
+          <span style="font-size: 0.75rem; color: var(--text-dim); background: rgba(52, 211, 153, 0.2); padding: 0.2rem 0.5rem; border-radius: 4px;">Research-Based</span>
+        </button>
+      </div>
+
+      <div class="stats-grid" id="statsGrid"></div>
+
+      <!-- Daily Challenges in Stats -->
+      <div id="statsDailyChallenges" style="margin-bottom: 1.5rem;"></div>
+
+      <!-- Study Calendar in Stats -->
+      <div id="statsStudyCalendar" style="margin-bottom: 1.5rem;"></div>
+
+      <!-- Milestones Progress -->
+      <div class="mastery-section" id="milestonesSection">
+        <div class="mastery-title">🏆 Milestones</div>
+        <div id="milestonesProgress"></div>
+      </div>
+
+      <div class="mastery-section" id="masterySection">
+        <div class="mastery-title">Category Mastery</div>
+        <div id="masteryBars"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Map Mode Container (Slay the Spire-style roguelike) -->
+  <div id="map-container"></div>
+
+  <!-- Dev Panel -->
+  <div id="devPanel" class="dev-panel hidden">
+    <div class="dev-panel-header">
+      <span>Dev Tools</span>
+      <button onclick="toggleDevPanel()" class="dev-close" aria-label="Close developer panel">&times;</button>
+    </div>
+    <div class="dev-panel-content">
+      <div class="dev-section">
+        <h4>Quick Actions</h4>
+        <button onclick="location.reload()" class="dev-btn">Refresh Page</button>
+        <button onclick="reloadStyles()" class="dev-btn">Reload CSS</button>
+        <button onclick="reloadQuestions()" class="dev-btn">Reload Questions</button>
+      </div>
+      <div class="dev-section">
+        <h4>Live CSS Tweaks</h4>
+        <label>Background: <input type="color" id="devBgColor" value="#1a1612" onchange="updateCSSVar('--bg-deep', this.value)"></label>
+        <label>Glow: <input type="color" id="devGlowColor" value="#c9a55c" onchange="updateCSSVar('--glow-warm', this.value)"></label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Core Scripts (defer for non-blocking load) -->
+  <script defer src="820.31-core/820.31.0-dev-tools.js"></script>
+  <script defer src="820.31-core/820.31.4-persistence.js"></script>
+  <script defer src="820.31-core/820.31.3-gamification.js"></script>
+  <script defer src="820.31-core/820.31.6-scaffolding.js"></script>
+  <script defer src="820.31-core/820.31.7-d20-system.js"></script>
+  <script defer src="820.31-core/820.31.8-loot-system.js"></script>
+  <script defer src="820.31-core/820.31.14-scaffold-remediation.js"></script>
+  <script defer src="820.31-core/820.31.15-boss-system.js"></script>
+  <script defer src="820.31-core/820.31.16-run-manager.js?v=8"></script>
+  <script defer src="820.31-core/820.31.17-powerups.js"></script>
+  <script defer src="820.31-core/820.31.18-high-scores.js"></script>
+  <script defer src="820.31-core/820.31.19-battle-scene.js"></script>
+  <script defer src="820.31-core/820.31.20-vocab-helper.js"></script>
+  <script defer src="820.31-core/820.31.25-card-system.js"></script>
+  <script defer src="820.31-core/820.31.26-card-battle-ui.js"></script>
+
+  <!-- Card Templates - must load before MapRenderer uses it for tile positions -->
+  <script defer src="820.31-core/820.31.85-card-templates.js"></script>
+
+  <!-- Map Roguelike System -->
+  <script defer src="820.31-core/820.31.28-map-system.js"></script>
+  <script defer src="820.31-core/820.31.29-map-renderer.js"></script>
+  <script defer src="820.31-core/820.31.30-potion-system.js"></script>
+  <script defer src="820.31-core/820.31.31-act-system.js?v=2"></script>
+
+  <!-- Statistics-Driven ZPD System -->
+  <script defer src="820.31-core/820.31.32-question-statistics.js"></script>
+
+  <!-- Insight Detection Engine for Adaptive Scaffolding (Phase 1 of 510.108) -->
+  <script defer src="820.31-core/820.31.33-insight-detection.js"></script>
+
+  <!-- Learning Analytics Engine (Opportunities 1, 2, 4, 7 of 510.108) -->
+  <script defer src="820.31-core/820.31.34-learning-analytics.js"></script>
+
+  <!-- Scaffold Quality Audit Tool (Opportunity 5 of 510.108) -->
+  <script defer src="820.31-core/820.31.35-scaffold-quality-audit.js"></script>
+
+  <!-- Multi-Representational Pilot (Opportunity 6 of 510.108) -->
+  <script defer src="820.31-core/820.31.36-representation-engine.js"></script>
+
+  <!-- Vesicle Transmitter - Sends analytics back to LUMI-OS nucleus (340.50 VTP) -->
+  <script defer src="820.31-core/820.31.37-vesicle-transmitter.js"></script>
+
+  <!-- Path Follower - Character animation following dotted paths between nodes -->
+  <script defer src="820.31-core/820.31.38-path-follower.js"></script>
+
+  <!-- ========== GAME PATH ENGINES (820.31.40-46) ========== -->
+  <!-- Misconception Dungeon - Confusion matrix as roguelike dungeon -->
+  <script defer src="820.31-core/820.31.40-misconception-dungeon.js"></script>
+  <!-- Knowledge Ecology - Creature ecosystem with predator-prey dynamics -->
+  <script defer src="820.31-core/820.31.41-knowledge-ecology.js"></script>
+  <!-- Temporal Heist - Time-travel knowledge acquisition -->
+  <script defer src="820.31-core/820.31.42-temporal-heist.js"></script>
+  <!-- Reputation Engine - Faction-based learning relationships -->
+  <script defer src="820.31-core/820.31.43-reputation-engine.js"></script>
+  <!-- Dream Laboratory - Memory palace with surrealist dreamscapes -->
+  <script defer src="820.31-core/820.31.44-dream-laboratory.js"></script>
+  <!-- Crafting System - Knowledge as craftable artifacts -->
+  <script defer src="820.31-core/820.31.45-crafting-system.js"></script>
+  <!-- Metamorphosis Engine - Body transformation visualization -->
+  <script defer src="820.31-core/820.31.46-metamorphosis-engine.js"></script>
+
+  <!-- ========== TEACHING INTEGRATION ENGINES (820.31.50-56) ========== -->
+  <!-- Phase-Locked Encounters - 5E model driving game encounters -->
+  <script defer src="820.31-core/820.31.50-phase-locked-encounters.js"></script>
+  <!-- Curiosity Economy - Intrinsic motivation currency system -->
+  <script defer src="820.31-core/820.31.51-curiosity-economy.js"></script>
+  <!-- Scaffold Deck Builder - Metacognitive strategy cards -->
+  <script defer src="820.31-core/820.31.52-scaffold-deck-builder.js"></script>
+  <!-- Emotional Weather - Adaptive response to learner affect -->
+  <script defer src="820.31-core/820.31.53-emotional-weather.js"></script>
+  <!-- Representation Rotation - Multi-modal mastery enforcement -->
+  <script defer src="820.31-core/820.31.54-representation-rotation.js"></script>
+  <!-- Prerequisite Web - Visible knowledge graph navigation -->
+  <script defer src="820.31-core/820.31.55-prerequisite-web.js"></script>
+  <!-- Growth Signal Feedback - Learner contribution visibility -->
+  <script defer src="820.31-core/820.31.56-growth-signal-feedback.js"></script>
+
+  <!-- Engine Orchestrator - Wires all game paths and teaching integrations -->
+  <script defer src="820.31-core/820.31.60-engine-orchestrator.js"></script>
+
+  <script defer src="820.31-core/820.31.21-adaptive-engine.js"></script>
+  <script defer src="820.31-core/820.31.22-confused-words.js"></script>
+  <script defer src="820.31-core/820.31.23-session-continuity.js"></script>
+  <script defer src="820.31-core/820.31.24-anatomy-diagrams.js"></script>
+
+  <!-- AAA Polish & Pedagogy Systems (820.31.80-84) -->
+  <script defer src="820.31-core/820.31.80-aaa-screen-effects.js"></script>
+  <script defer src="820.31-core/820.31.81-aaa-sound-system.js"></script>
+  <script defer src="820.31-core/820.31.82-metacognition-engine.js"></script>
+  <script defer src="820.31-core/820.31.83-dynamic-backgrounds.js"></script>
+  <script defer src="820.31-core/820.31.84-artistry-engine.js"></script>
+  <!-- 820.31.85-card-templates.js moved earlier (before map-renderer) -->
+
+  <!-- LUMI-OS Integration Modules -->
+  <script defer src="820.31-core/820.31.10-isotope-engine.js"></script>
+  <script defer src="820.31-core/820.31.11-zpd-system.js"></script>
+  <script defer src="820.31-core/820.31.13-lumi-bridge.js"></script>
+
+  <!-- Math Rendering (KaTeX) -->
+  <script defer src="820.31-core/820.31.70-math-renderer.js"></script>
+
+  <script defer src="820.31-core/820.31.2-renderer.js"></script>
+  <!-- Renderer Extension Modules -->
+  <script defer src="820.31-core/820.31.2.2-renderer-inventory.js"></script>
+  <script defer src="820.31-core/820.31.2.3-renderer-d20-ui.js"></script>
+  <script defer src="820.31-core/820.31.1-app.js?v=12"></script>
+  <!-- Game Mode Extensions -->
+  <script defer src="820.31-core/820.31.1.2-quiz-gauntlet.js"></script>
+  <script defer src="820.31-core/820.31.1.3-quiz-map.js"></script>
+  <script defer src="820.31-core/820.31.1.4-quiz-testprep.js"></script>
+
+  <!-- Mode Manager Script -->
+  <script>
+    /**
+     * QuizModes - Manages Blitz, Lightning, Jeopardy, and Review modes
+     * Integrates with the existing LuminaraQuiz system
+     */
+    const QuizModes = {
+      questions: [],
+      srsData: {},
+      currentMode: 'study',
+      mentorStyles: ['luminara', 'frizzle', 'feynman'],
+      wrongHistory: {},
+
+      // Blitz state
+      blitz: { active: false, timer: 60, score: 0, index: 0, interval: null },
+
+      // Lightning state
+      lightning: { active: false, index: 0, strikes: 3, results: [], maxQuestions: 10 },
+
+      // Jeopardy state
+      jeopardy: { index: 0, score: 0 },
+
+      // ==================== INIT ====================
+      async init() {
+        this.loadSrsData();
+        await this.loadAllQuestions();
+        this.setupModeNavigation();
+        this.updateDueBadge();
+      },
+
+      loadSrsData() {
+        const srs = localStorage.getItem('luminara_srs_data');
+        const wrong = localStorage.getItem('luminara_wrong_history');
+        if (srs) this.srsData = JSON.parse(srs);
+        if (wrong) this.wrongHistory = JSON.parse(wrong);
+      },
+
+      saveSrsData() {
+        localStorage.setItem('luminara_srs_data', JSON.stringify(this.srsData));
+        localStorage.setItem('luminara_wrong_history', JSON.stringify(this.wrongHistory));
+      },
+
+      async loadAllQuestions() {
+        try {
+          const registry = await fetch('820.31-core/820.31-question-registry.json').then(r => r.json());
+          for (const cat of registry.categories) {
+            for (const bank of cat.banks) {
+              try {
+                const data = await fetch(`${cat.folder}/${bank.file}`).then(r => r.json());
+                if (data.questions) {
+                  data.questions.forEach(q => {
+                    q._category = cat.name;
+                    q._bank = bank.title || bank.name;
+                    this.questions.push(q);
+                  });
+                }
+              } catch (e) {}
+            }
+          }
+          this.shuffleArray(this.questions);
+        } catch (e) {
+          console.error('Failed to load questions:', e);
+        }
+      },
+
+      shuffleArray(arr) {
+        for (let i = arr.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+      },
+
+      // ==================== MODE NAVIGATION ====================
+      setupModeNavigation() {
+        document.querySelectorAll('.mode-tab').forEach(tab => {
+          tab.addEventListener('click', () => {
+            const mode = tab.dataset.mode;
+            this.switchMode(mode);
+          });
+        });
+      },
+
+      switchMode(mode) {
+        this.currentMode = mode;
+
+        // Update tabs
+        document.querySelectorAll('.mode-tab').forEach(t => t.classList.remove('active'));
+        document.querySelector(`[data-mode="${mode}"]`)?.classList.add('active');
+
+        // Update containers
+        document.querySelectorAll('.module-container').forEach(c => c.classList.remove('active'));
+        document.getElementById(`module-${mode}`)?.classList.add('active');
+
+        // Special handling for Study mode - restore original landing/studyView visibility
+        if (mode === 'study') {
+          const landing = document.getElementById('landing');
+          const studyView = document.getElementById('studyView');
+          // If studyView is active (user was in a quiz), keep it visible
+          // Otherwise show landing
+          if (!studyView.classList.contains('active')) {
+            landing.classList.remove('hidden');
+          }
+        }
+
+        // Initialize mode
+        if (mode === 'review') this.initReview();
+        if (mode === 'jeopardy') this.initJeopardy();
+        if (mode === 'stats') this.renderStats();
+        if (mode === 'testprep') this.initTestPrep();
+      },
+
+      // ==================== TEST PREP MODE INIT ====================
+      initTestPrep() {
+        // Render D20 stats bar for Test Prep landing
+        if (quiz && quiz.renderer) {
+          quiz.renderer.renderStatsBar();
+          const testprepStatsBar = document.getElementById('testprepStatsBar');
+          const mainStatsBar = document.getElementById('statsBar');
+          if (testprepStatsBar && mainStatsBar) {
+            testprepStatsBar.innerHTML = mainStatsBar.innerHTML;
+          }
+        }
+      },
+
+      // ==================== DUE BADGE ====================
+      updateDueBadge() {
+        const due = this.getDueQuestions();
+        const badge = document.getElementById('dueBadge');
+        if (!badge) return; // Badge element may not exist in all views
+        if (due.length > 0) {
+          badge.style.display = 'inline';
+          badge.textContent = due.length;
+        } else {
+          badge.style.display = 'none';
+        }
+      },
+
+      getDueQuestions() {
+        const now = Date.now();
+        return this.questions.filter(q => {
+          const srs = this.srsData[q.id];
+          if (!srs) return true; // New
+          return srs.nextReview <= now;
+        });
+      },
+
+      // ==================== REVIEW MODE (SRS) ====================
+      initReview() {
+        // Render D20 stats bar for Review mode
+        if (quiz && quiz.renderer) {
+          quiz.renderer.renderStatsBar();
+          const reviewStatsBar = document.getElementById('reviewStatsBar');
+          const mainStatsBar = document.getElementById('statsBar');
+          if (reviewStatsBar && mainStatsBar) {
+            reviewStatsBar.innerHTML = mainStatsBar.innerHTML;
+          }
+        }
+
+        const due = this.getDueQuestions();
+        document.getElementById('reviewDueCount').textContent = due.length;
+
+        // Badges
+        const now = Date.now();
+        let overdue = 0, dueNow = 0, newCards = 0;
+        due.forEach(q => {
+          const srs = this.srsData[q.id];
+          if (!srs) { newCards++; }
+          else if (srs.nextReview < now - 86400000) { overdue++; }
+          else { dueNow++; }
+        });
+
+        const badges = document.getElementById('reviewBadges');
+        badges.innerHTML = '';
+        if (overdue) badges.innerHTML += `<span class="review-badge overdue">${overdue} overdue</span>`;
+        if (dueNow) badges.innerHTML += `<span class="review-badge due">${dueNow} due</span>`;
+        if (newCards) badges.innerHTML += `<span class="review-badge new">${newCards} new</span>`;
+
+        // Render questions
+        const area = document.getElementById('reviewArea');
+        if (!due.length) {
+          area.innerHTML = `
+            <div class="review-empty">
+              <div class="icon">✨</div>
+              <h3>All caught up!</h3>
+              <p>No reviews due right now. Come back later or study new topics.</p>
+            </div>
+          `;
+          return;
+        }
+
+        area.innerHTML = due.slice(0, 5).map(q => this.renderReviewCard(q)).join('');
+      },
+
+      renderReviewCard(q) {
+        const mentor = this.getMentorForQuestion(q.id);
+        const srs = this.srsData[q.id] || { interval: 0, easeFactor: 2.5 };
+        const isNew = !this.srsData[q.id];
+
+        return `
+          <div class="blitz-question-card" data-qid="${q.id}" data-mentor="${mentor}">
+            <div style="font-size:0.7rem;color:var(--text-muted);margin-bottom:0.5rem;">
+              ${q._category} ${isNew ? '<span style="color:var(--correct)">• NEW</span>' : ''}
+            </div>
+            <div class="blitz-question-text">${q.q}</div>
+            <div class="blitz-options">
+              ${q.options.map((opt, i) => `
+                <button class="blitz-option" onclick="QuizModes.answerReview('${q.id}', ${i})">${opt}</button>
+              `).join('')}
+            </div>
+            <div class="srs-buttons" id="srs-${q.id}" style="display:none;">
+              <button class="srs-btn again" onclick="QuizModes.rateSrs('${q.id}', 0)">
+                Again<span class="interval">&lt;1m</span>
+              </button>
+              <button class="srs-btn hard" onclick="QuizModes.rateSrs('${q.id}', 1)">
+                Hard<span class="interval">${this.formatInterval(Math.max(1, srs.interval * 1.2))}</span>
+              </button>
+              <button class="srs-btn good" onclick="QuizModes.rateSrs('${q.id}', 2)">
+                Good<span class="interval">${this.formatInterval(srs.interval < 1 ? 10 : srs.interval * srs.easeFactor)}</span>
+              </button>
+              <button class="srs-btn easy" onclick="QuizModes.rateSrs('${q.id}', 3)">
+                Easy<span class="interval">${this.formatInterval(srs.interval < 1 ? 4*24*60 : srs.interval * srs.easeFactor * 1.5)}</span>
+              </button>
+            </div>
+          </div>
+        `;
+      },
+
+      answerReview(qid, optIndex) {
+        const q = this.questions.find(q => q.id === qid);
+        if (!q) return;
+
+        const card = document.querySelector(`[data-qid="${qid}"]`);
+        const options = card.querySelectorAll('.blitz-option');
+        const isCorrect = optIndex === q.answer;
+
+        options.forEach((opt, i) => {
+          opt.classList.add('disabled');
+          opt.onclick = null;
+          if (i === q.answer) opt.classList.add('correct');
+          if (i === optIndex && !isCorrect) opt.classList.add('incorrect');
+        });
+
+        // Show SRS buttons
+        document.getElementById(`srs-${qid}`).style.display = 'flex';
+
+        // Award XP via gamification if available
+        if (typeof gamification !== 'undefined' && gamification && typeof persistence !== 'undefined') {
+          if (isCorrect) {
+            const result = gamification.processCorrectAnswer(qid, { completedWarmups: false, exploredWrongFirst: false });
+            if (quiz && quiz.renderer) {
+              quiz.renderer.renderStatsBar();
+              quiz.renderer.showXPPopup(result.xp, gamification.getStreakMessage(result.streak), false);
+            }
+          } else {
+            gamification.processWrongAnswer(qid);
+            if (!this.wrongHistory[qid]) this.wrongHistory[qid] = [];
+            const mentor = card.dataset.mentor;
+            if (!this.wrongHistory[qid].includes(mentor)) {
+              this.wrongHistory[qid].push(mentor);
+            }
+          }
+        }
+      },
+
+      rateSrs(qid, rating) {
+        const now = Date.now();
+        let srs = this.srsData[qid] || { interval: 1, easeFactor: 2.5, reviewCount: 0 };
+
+        if (rating === 0) {
+          srs.interval = 1;
+          srs.easeFactor = Math.max(1.3, srs.easeFactor - 0.2);
+        } else if (rating === 1) {
+          srs.interval = Math.max(1, srs.interval * 1.2);
+          srs.easeFactor = Math.max(1.3, srs.easeFactor - 0.15);
+        } else if (rating === 2) {
+          srs.interval = srs.interval < 1 ? 10 : srs.interval * srs.easeFactor;
+        } else {
+          srs.interval = srs.interval < 1 ? 4 * 24 * 60 : srs.interval * srs.easeFactor * 1.5;
+          srs.easeFactor += 0.1;
+        }
+
+        srs.nextReview = now + (srs.interval * 60 * 1000);
+        srs.reviewCount = (srs.reviewCount || 0) + 1;
+
+        this.srsData[qid] = srs;
+        this.saveSrsData();
+
+        // Replace buttons with confirmation
+        const btns = document.getElementById(`srs-${qid}`);
+        btns.innerHTML = `<div style="text-align:center;color:var(--correct);padding:0.5rem;width:100%;">
+          ✓ Scheduled for ${this.formatInterval(srs.interval)}
+        </div>`;
+
+        this.updateDueBadge();
+      },
+
+      formatInterval(minutes) {
+        if (!minutes || minutes < 1) return '<1m';
+        if (minutes < 60) return `${Math.round(minutes)}m`;
+        if (minutes < 24 * 60) return `${Math.round(minutes / 60)}h`;
+        return `${Math.round(minutes / (24 * 60))}d`;
+      },
+
+      getMentorForQuestion(qid) {
+        const used = this.wrongHistory[qid] || [];
+        if (used.length > 0) {
+          const available = this.mentorStyles.filter(s => !used.includes(s));
+          if (available.length > 0) {
+            return available[Math.floor(Math.random() * available.length)];
+          }
+        }
+        return this.mentorStyles[Math.floor(Math.random() * this.mentorStyles.length)];
+      },
+
+      // ==================== JEOPARDY MODE ====================
+      initJeopardy() {
+        this.jeopardy.index = 0;
+        this.shuffleArray(this.questions);
+        this.renderJeopardyQuestion();
+      },
+
+      renderJeopardyQuestion() {
+        const q = this.questions[this.jeopardy.index];
+        if (!q) return;
+
+        const clue = this.getJeopardyClue(q);
+        const shuffledOpts = [...q.options].sort(() => Math.random() - 0.5);
+        const value = (this.jeopardy.index + 1) * 100;
+
+        document.getElementById('jeopardyArea').innerHTML = `
+          <div class="jeopardy-clue-card">
+            <div class="jeopardy-category">${q._category || 'Anatomy'}</div>
+            <div class="jeopardy-value">$${value}</div>
+            <div class="jeopardy-clue-text">"${clue}"</div>
+          </div>
+          <div class="jeopardy-answer-grid">
+            ${shuffledOpts.map(opt => `
+              <button class="jeopardy-answer-btn" onclick="QuizModes.answerJeopardy('${q.id}', '${opt.replace(/'/g, "\\'")}')">${opt}</button>
+            `).join('')}
+          </div>
+          <div class="jeopardy-nav">
+            <span style="color:var(--text-muted);">Score: <strong style="color:var(--glow-warm);">$${this.jeopardy.score}</strong></span>
+          </div>
+        `;
+      },
+
+      getJeopardyClue(q) {
+        let clue = null;
+
+        // Priority 1: Use the mechanism metaphor (best for Jeopardy - descriptive)
+        if (q.mechanism?.metaphor) {
+          clue = q.mechanism.metaphor;
+        }
+        // Priority 2: Use mechanism content
+        else if (q.mechanism?.content) {
+          clue = q.mechanism.content;
+        }
+        // Priority 3: Use the correct answer's explanation
+        else if (q.optionExplains && q.optionExplains[q.answer]) {
+          const exp = q.optionExplains[q.answer];
+          clue = exp.text || (typeof exp === 'string' ? exp : null);
+        }
+        // Priority 4: General explanation
+        else {
+          clue = q.explain;
+        }
+
+        // Fallback to question itself
+        if (!clue) return q.q;
+
+        // Clean up clue text - remove verdict prefixes that don't work as clues
+        clue = clue
+          .replace(/^Correct!\s*/i, '')
+          .replace(/^Incorrect[.!]?\s*/i, '')
+          .replace(/^Yes[.!]?\s*/i, '')
+          .replace(/^No[.!]?\s*/i, '')
+          .replace(/^That's right[.!]?\s*/i, '')
+          .replace(/^Stay close\s*—?\s*/i, '')
+          .replace(/^Come with me\s*—?\s*/i, '')
+          .replace(/^Let me show you\s*—?\s*/i, '');
+
+        // Truncate very long clues for readability
+        if (clue.length > 300) {
+          clue = clue.substring(0, 297) + '...';
+        }
+
+        return clue;
+      },
+
+      answerJeopardy(qid, selectedOpt) {
+        const q = this.questions.find(q => q.id === qid);
+        if (!q) return;
+
+        const correct = q.options[q.answer];
+        const isCorrect = selectedOpt === correct;
+        const value = (this.jeopardy.index + 1) * 100;
+
+        document.querySelectorAll('.jeopardy-answer-btn').forEach(btn => {
+          btn.classList.add('disabled');
+          btn.onclick = null;
+          if (btn.textContent === correct) btn.classList.add('correct');
+          if (btn.textContent === selectedOpt && !isCorrect) btn.classList.add('incorrect');
+        });
+
+        if (isCorrect) {
+          this.jeopardy.score += value;
+        }
+
+        // Award XP
+        if (typeof gamification !== 'undefined' && gamification) {
+          if (isCorrect) {
+            gamification.processCorrectAnswer(qid, { completedWarmups: false, exploredWrongFirst: false });
+          } else {
+            gamification.processWrongAnswer(qid);
+          }
+          if (quiz && quiz.renderer) quiz.renderer.renderStatsBar();
+        }
+
+        setTimeout(() => {
+          this.jeopardy.index++;
+          if (this.jeopardy.index >= this.questions.length) {
+            this.jeopardy.index = 0;
+            this.shuffleArray(this.questions);
+          }
+          this.renderJeopardyQuestion();
+        }, 1500);
+      },
+
+      // ==================== BLITZ MODE ====================
+      startBlitz() {
+        this.blitz = { active: true, timer: 60, score: 0, index: 0, interval: null };
+        this.shuffleArray(this.questions);
+
+        document.getElementById('blitzStartBtn').style.display = 'none';
+        document.getElementById('blitzScore').textContent = '0';
+        document.getElementById('blitzTimer').className = 'blitz-timer';
+
+        this.renderBlitzQuestion();
+
+        this.blitz.interval = setInterval(() => {
+          this.blitz.timer--;
+          const el = document.getElementById('blitzTimer');
+          el.textContent = `0:${this.blitz.timer.toString().padStart(2, '0')}`;
+
+          if (this.blitz.timer <= 10) el.className = 'blitz-timer danger';
+          else if (this.blitz.timer <= 20) el.className = 'blitz-timer warning';
+
+          if (this.blitz.timer <= 0) this.endBlitz();
+        }, 1000);
+      },
+
+      renderBlitzQuestion() {
+        if (!this.blitz.active) return;
+        const q = this.questions[this.blitz.index % this.questions.length];
+
+        document.getElementById('blitzQuestion').innerHTML = `
+          <div class="blitz-question-card">
+            <div class="blitz-question-text">${q.q}</div>
+            <div class="blitz-options">
+              ${q.options.map((opt, i) => `
+                <button class="blitz-option" onclick="QuizModes.answerBlitz('${q.id}', ${i})">${opt}</button>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      },
+
+      answerBlitz(qid, optIndex) {
+        if (!this.blitz.active) return;
+        const q = this.questions.find(q => q.id === qid);
+        if (!q) return;
+
+        if (optIndex === q.answer) {
+          this.blitz.score++;
+          document.getElementById('blitzScore').textContent = this.blitz.score;
+        }
+
+        this.blitz.index++;
+        this.renderBlitzQuestion();
+      },
+
+      endBlitz() {
+        clearInterval(this.blitz.interval);
+        this.blitz.active = false;
+
+        const score = this.blitz.score;
+        const xp = score * 15;
+
+        // Award XP
+        if (typeof persistence !== 'undefined') {
+          persistence.addXP(xp);
+          if (quiz && quiz.renderer) quiz.renderer.renderStatsBar();
+        }
+
+        document.getElementById('blitzQuestion').innerHTML = `
+          <div class="blitz-result">
+            <div class="result-label">Time's Up!</div>
+            <div class="final-score">${score}</div>
+            <div class="result-label">questions correct</div>
+            <div class="xp-earned">+${xp} XP</div>
+          </div>
+        `;
+
+        document.getElementById('blitzStartBtn').style.display = 'block';
+        document.getElementById('blitzStartBtn').textContent = 'Play Again';
+        document.getElementById('blitzTimer').textContent = '1:00';
+        document.getElementById('blitzTimer').className = 'blitz-timer';
+      },
+
+      // ==================== LIGHTNING MODE ====================
+      startLightning() {
+        this.lightning = { active: true, index: 0, strikes: 3, results: [], maxQuestions: 10 };
+        this.shuffleArray(this.questions);
+
+        document.getElementById('lightningStartBtn').style.display = 'none';
+        this.renderLightningProgress();
+        this.renderLightningQuestion();
+      },
+
+      renderLightningProgress() {
+        const prog = document.getElementById('lightningProgress');
+        prog.innerHTML = Array(this.lightning.maxQuestions).fill(0).map((_, i) => {
+          let cls = 'lightning-dot';
+          if (i < this.lightning.results.length) {
+            cls += this.lightning.results[i] ? ' correct' : ' wrong';
+          } else if (i === this.lightning.index) {
+            cls += ' current';
+          }
+          return `<div class="${cls}"></div>`;
+        }).join('');
+
+        const strikes = document.getElementById('lightningStrikes');
+        strikes.innerHTML = [0, 1, 2].map(i =>
+          `<span class="strike ${i < this.lightning.strikes ? 'active' : ''}">${i < this.lightning.strikes ? '❌' : '💀'}</span>`
+        ).join('');
+      },
+
+      renderLightningQuestion() {
+        if (!this.lightning.active) return;
+
+        if (this.lightning.strikes <= 0 || this.lightning.index >= this.lightning.maxQuestions) {
+          this.endLightning();
+          return;
+        }
+
+        const q = this.questions[this.lightning.index % this.questions.length];
+
+        document.getElementById('lightningQuestion').innerHTML = `
+          <div class="blitz-question-card">
+            <div style="font-size:0.75rem;color:var(--text-muted);margin-bottom:0.5rem;">
+              Question ${this.lightning.index + 1} of ${this.lightning.maxQuestions}
+            </div>
+            <div class="blitz-question-text">${q.q}</div>
+            <div class="blitz-options">
+              ${q.options.map((opt, i) => `
+                <button class="blitz-option" onclick="QuizModes.answerLightning('${q.id}', ${i})">${opt}</button>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      },
+
+      answerLightning(qid, optIndex) {
+        if (!this.lightning.active) return;
+        const q = this.questions.find(q => q.id === qid);
+        if (!q) return;
+
+        const isCorrect = optIndex === q.answer;
+        this.lightning.results.push(isCorrect);
+
+        if (!isCorrect) {
+          this.lightning.strikes--;
+        }
+
+        // Show feedback
+        const options = document.querySelectorAll('#lightningQuestion .blitz-option');
+        options.forEach((opt, i) => {
+          opt.classList.add('disabled');
+          opt.onclick = null;
+          if (i === q.answer) opt.classList.add('correct');
+          if (i === optIndex && !isCorrect) opt.classList.add('incorrect');
+        });
+
+        this.renderLightningProgress();
+
+        setTimeout(() => {
+          this.lightning.index++;
+          this.renderLightningQuestion();
+        }, 800);
+      },
+
+      endLightning() {
+        this.lightning.active = false;
+        const correct = this.lightning.results.filter(r => r).length;
+        const total = this.lightning.results.length;
+        const xp = correct * 20;
+
+        // Award XP
+        if (typeof persistence !== 'undefined') {
+          persistence.addXP(xp);
+          if (quiz && quiz.renderer) quiz.renderer.renderStatsBar();
+        }
+
+        const won = this.lightning.strikes > 0 && correct === this.lightning.maxQuestions;
+
+        document.getElementById('lightningQuestion').innerHTML = `
+          <div class="blitz-result">
+            <div class="result-label">${won ? 'Perfect Round!' : this.lightning.strikes <= 0 ? 'Struck Out!' : 'Round Complete'}</div>
+            <div class="final-score">${correct}/${total}</div>
+            <div class="result-label">questions correct</div>
+            <div class="xp-earned">+${xp} XP</div>
+          </div>
+        `;
+
+        document.getElementById('lightningStartBtn').style.display = 'block';
+        document.getElementById('lightningStartBtn').textContent = 'Play Again';
+      },
+
+      // ==================== STATS ====================
+      renderStats() {
+        const stats = typeof gamification !== 'undefined' && gamification ?
+          gamification.getStats() : { level: 1, totalXP: 0, currentStreak: 0, bestStreak: 0, totalAnswered: 0, accuracy: 0, dayStreak: 0, totalStudyDays: 0 };
+
+        // Seasonal event banner
+        if (quiz && quiz.renderer && stats.seasonalEvent) {
+          quiz.renderer.renderSeasonalBanner(document.getElementById('statsSeasonalBanner'));
+        }
+
+        // Main stats grid with new gamification stats
+        document.getElementById('statsGrid').innerHTML = `
+          <div class="stat-card">
+            <div class="stat-value">${stats.level}</div>
+            <div class="stat-label">Level</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">${stats.totalXP.toLocaleString()}</div>
+            <div class="stat-label">Total XP</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">${stats.currentStreak}</div>
+            <div class="stat-label">Answer Streak</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">${stats.bestStreak}</div>
+            <div class="stat-label">Best Streak</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">${stats.dayStreak || 0}</div>
+            <div class="stat-label">🔥 Day Streak</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">${stats.totalStudyDays || 0}</div>
+            <div class="stat-label">Study Days</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">${stats.totalAnswered}</div>
+            <div class="stat-label">Answered</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">${stats.accuracy}%</div>
+            <div class="stat-label">Accuracy</div>
+          </div>
+        `;
+
+        // Daily challenges panel
+        if (quiz && quiz.renderer) {
+          quiz.renderer.renderDailyChallenges(document.getElementById('statsDailyChallenges'));
+        }
+
+        // Study calendar
+        if (quiz && quiz.renderer) {
+          quiz.renderer.renderStudyCalendar(document.getElementById('statsStudyCalendar'));
+        }
+
+        // Milestones progress
+        if (gamification) {
+          const milestones = gamification.getMilestoneDefinitions();
+          const unlocked = persistence?.data?.milestones || [];
+          const milestonesHTML = milestones.slice(0, 8).map(m => {
+            const isUnlocked = unlocked.includes(m.id);
+            return `
+              <div class="mastery-row" style="opacity: ${isUnlocked ? '1' : '0.5'}">
+                <span class="mastery-label">${m.icon} ${m.name}</span>
+                <span class="mastery-pct" style="color: ${isUnlocked ? 'var(--correct)' : 'var(--text-dim)'}">${isUnlocked ? '✓' : `+${m.reward} XP`}</span>
+              </div>
+            `;
+          }).join('');
+          document.getElementById('milestonesProgress').innerHTML = milestonesHTML || '<p style="color:var(--text-dim)">No milestones yet</p>';
+        }
+
+        // Category mastery with tier badges
+        const categories = {};
+        this.questions.forEach(q => {
+          if (!categories[q._category]) categories[q._category] = { total: 0, reviewed: 0 };
+          categories[q._category].total++;
+          if (this.srsData[q.id]) categories[q._category].reviewed++;
+        });
+
+        document.getElementById('masteryBars').innerHTML = Object.entries(categories).map(([cat, data]) => {
+          const pct = data.total > 0 ? Math.round((data.reviewed / data.total) * 100) : 0;
+          const tierBadge = quiz && quiz.renderer ? quiz.renderer.renderMasteryTierBadge(pct) : '';
+          return `
+            <div class="mastery-row">
+              <span class="mastery-label">${cat} ${tierBadge}</span>
+              <div class="mastery-bar"><div class="mastery-fill" style="width:${pct}%"></div></div>
+              <span class="mastery-pct">${pct}%</span>
+            </div>
+          `;
+        }).join('');
+      }
+    };
+
+    // Initialize after main quiz loads
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => QuizModes.init(), 500);
+
+      // Initialize LUMI-OS integration modules
+      setTimeout(() => {
+        // Gather all questions from loaded banks
+        const allQuestions = [];
+        if (window.quiz?.questionBanks) {
+          for (const bank of Object.values(window.quiz.questionBanks)) {
+            if (Array.isArray(bank)) allQuestions.push(...bank);
+          }
+        }
+
+        // Initialize Isotope Engine
+        if (window.IsotopeEngine && allQuestions.length > 0) {
+          IsotopeEngine.init(allQuestions);
+          console.log('[LUMI] IsotopeEngine initialized with', allQuestions.length, 'questions');
+
+          // Compute operator coordinates for all questions
+          for (const q of allQuestions) {
+            IsotopeEngine.computeOperatorCoordinate(q);
+          }
+          console.log('[LUMI] Operator coordinates computed');
+        }
+
+        // Initialize ZPD System
+        if (window.ZPDSystem && allQuestions.length > 0) {
+          const savedZPD = localStorage.getItem('lumi_zpd_state');
+          ZPDSystem.init(allQuestions, savedZPD ? JSON.parse(savedZPD) : null);
+          console.log('[LUMI] ZPDSystem initialized');
+
+          // Save ZPD state periodically
+          setInterval(() => {
+            try {
+              localStorage.setItem('lumi_zpd_state', JSON.stringify(ZPDSystem.saveState()));
+            } catch (e) { /* ignore */ }
+          }, 30000);
+        }
+
+        // Initialize LUMI Bridge (optional WebSocket connection)
+        if (window.LumiBridge) {
+          LumiBridge.init();
+          console.log('[LUMI] LumiBridge initialized');
+
+          // Try to connect to LUMI-OS (won't error if not available)
+          LumiBridge.connect().then(() => {
+            console.log('[LUMI] Connected to LUMI-OS');
+          }).catch(() => {
+            console.log('[LUMI] LUMI-OS not available (offline mode)');
+          });
+        }
+
+        console.log('[LUMI] Integration modules ready');
+      }, 1000);
+    });
+  </script>
+
+  <!-- Service Worker Registration for PWA -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then((registration) => {
+            console.log('[PWA] Service Worker registered:', registration.scope);
+          })
+          .catch((error) => {
+            console.warn('[PWA] Service Worker registration failed:', error);
+          });
+      });
+    }
+  </script>
+
+  <!-- Build Timestamp (replaced by CI/CD on deploy) -->
+  <div id="buildTimestamp" style="position: fixed; bottom: 5px; right: 10px; font-size: 10px; color: rgba(255,255,255,0.3); pointer-events: none; z-index: 9999;">Mobile 2026.03.30 | Auto-synced from index.html</div>
+
+  <!-- ==================== MOBILE QOL FEATURES (auto-generated) ==================== -->
+
+  <!-- QOL 1: OFFLINE INDICATOR -->
+  <div class="offline-banner" id="offlineBanner">
+    <span class="pulse">⚠️</span>
+    <span>You're offline - Progress saved locally</span>
+  </div>
+
+  <!-- QOL 2: FLOATING ACTION BUTTON -->
+  <div class="fab-container" id="fabContainer">
+    <div class="fab-actions" id="fabActions">
+      <button class="fab-action" onclick="MobileQOL.quickAction('random')">
+        <span class="fab-action-icon">🎲</span> Random Question
+      </button>
+      <button class="fab-action" onclick="MobileQOL.quickAction('bookmark')">
+        <span class="fab-action-icon">🔖</span> Bookmarks
+      </button>
+      <button class="fab-action" onclick="MobileQOL.quickAction('timer')">
+        <span class="fab-action-icon">⏱️</span> Study Timer
+      </button>
+      <button class="fab-action" onclick="MobileQOL.quickAction('settings')">
+        <span class="fab-action-icon">⚙️</span> Settings
+      </button>
+    </div>
+    <button class="fab-main" id="fabMain" onclick="MobileQOL.toggleFab()">✚</button>
+  </div>
+
+  <!-- QOL 3: BOTTOM SHEET -->
+  <div class="bottom-sheet-overlay" id="bottomSheetOverlay" onclick="MobileQOL.closeBottomSheet()"></div>
+  <div class="bottom-sheet" id="bottomSheet">
+    <div class="bottom-sheet-handle"></div>
+    <div class="bottom-sheet-title" id="bottomSheetTitle">Options</div>
+    <div class="bottom-sheet-content" id="bottomSheetContent"></div>
+  </div>
+
+  <!-- QOL 4: SWIPE INDICATORS -->
+  <div class="swipe-hint left" id="swipeLeft">‹</div>
+  <div class="swipe-hint right" id="swipeRight">›</div>
+
+  <!-- QOL 5: PULL TO REFRESH -->
+  <div class="pull-indicator" id="pullIndicator">
+    <div class="spinner-small"></div>
+    <span>Refreshing...</span>
+  </div>
+
+  <!-- QOL 6: TOAST CONTAINER -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- QOL 7: STUDY TIMER -->
+  <div class="study-timer" id="studyTimer">
+    <span class="study-timer-icon">⏱️</span>
+    <span class="study-timer-time" id="studyTimerTime">00:00</span>
+  </div>
+
+  <!-- Mobile QOL Controller Script -->
+  <script id="mobile-qol-script">
+    const MobileQOL = {
+      fabOpen: false,
+      bottomSheetOpen: false,
+      studyTimerActive: false,
+      studyTimerSeconds: 0,
+      studyTimerInterval: null,
+      touchStartX: 0,
+      touchStartY: 0,
+      pullStartY: 0,
+      isPulling: false,
+
+      init() {
+        this.setupOfflineDetection();
+        this.setupSwipeGestures();
+        this.setupPullToRefresh();
+        this.setupHaptics();
+        this.loadBookmarks();
+        console.log('[MobileQOL] 7 quality-of-life features initialized');
+      },
+
+      setupOfflineDetection() {
+        const banner = document.getElementById('offlineBanner');
+        const updateStatus = () => {
+          if (!navigator.onLine) {
+            banner.classList.add('visible');
+            this.showToast('📴 You are offline', 'warning');
+          } else {
+            banner.classList.remove('visible');
+          }
+        };
+        window.addEventListener('online', () => {
+          updateStatus();
+          this.showToast('✅ Back online!', 'success');
+        });
+        window.addEventListener('offline', updateStatus);
+        updateStatus();
+      },
+
+      toggleFab() {
+        this.fabOpen = !this.fabOpen;
+        document.getElementById('fabMain').classList.toggle('open', this.fabOpen);
+        document.getElementById('fabActions').classList.toggle('visible', this.fabOpen);
+        this.haptic('light');
+      },
+
+      quickAction(action) {
+        this.toggleFab();
+        this.haptic('medium');
+        switch(action) {
+          case 'random':
+            if (typeof quiz !== 'undefined' && quiz.questions?.length) {
+              const idx = Math.floor(Math.random() * quiz.questions.length);
+              quiz.goToQuestion(idx);
+              this.showToast('🎲 Random question loaded!', 'success');
+            } else {
+              this.showToast('📚 Start a study session first', 'info');
+            }
+            break;
+          case 'bookmark': this.showBookmarksSheet(); break;
+          case 'timer': this.toggleStudyTimer(); break;
+          case 'settings': this.showSettingsSheet(); break;
+        }
+      },
+
+      showBottomSheet(title, content) {
+        document.getElementById('bottomSheetTitle').textContent = title;
+        document.getElementById('bottomSheetContent').innerHTML = content;
+        document.getElementById('bottomSheetOverlay').classList.add('visible');
+        document.getElementById('bottomSheet').classList.add('visible');
+        this.bottomSheetOpen = true;
+        this.haptic('light');
+      },
+
+      closeBottomSheet() {
+        document.getElementById('bottomSheetOverlay').classList.remove('visible');
+        document.getElementById('bottomSheet').classList.remove('visible');
+        this.bottomSheetOpen = false;
+      },
+
+      showBookmarksSheet() {
+        const bookmarks = JSON.parse(localStorage.getItem('luminara_bookmarks') || '[]');
+        let content = bookmarks.length === 0
+          ? '<div style="text-align:center;padding:2rem;color:var(--text-dim);">No bookmarks yet.<br>Long-press a question to bookmark it!</div>'
+          : bookmarks.map((b, i) => `
+              <div class="bottom-sheet-option" onclick="MobileQOL.goToBookmark(${i})">
+                <span class="bottom-sheet-option-icon">🔖</span>
+                <div class="bottom-sheet-option-text">
+                  <div class="bottom-sheet-option-label">${b.q.substring(0, 50)}...</div>
+                  <div class="bottom-sheet-option-desc">${b.category || 'Question'}</div>
+                </div>
+              </div>
+            `).join('');
+        this.showBottomSheet('📚 Bookmarks', content);
+      },
+
+      showSettingsSheet() {
+        const hapticEnabled = localStorage.getItem('luminara_haptics') !== 'false';
+        const soundEnabled = localStorage.getItem('luminara_sounds') !== 'false';
+        const timerVisible = localStorage.getItem('luminara_timer_visible') === 'true';
+        const content = `
+          <div class="bottom-sheet-option" onclick="MobileQOL.toggleSetting('haptics')">
+            <span class="bottom-sheet-option-icon">📳</span>
+            <div class="bottom-sheet-option-text">
+              <div class="bottom-sheet-option-label">Haptic Feedback</div>
+              <div class="bottom-sheet-option-desc">Vibration on interactions</div>
+            </div>
+            <span style="color:${hapticEnabled ? 'var(--correct)' : 'var(--text-dim)'}">${hapticEnabled ? '✓ On' : 'Off'}</span>
+          </div>
+          <div class="bottom-sheet-option" onclick="MobileQOL.toggleSetting('sounds')">
+            <span class="bottom-sheet-option-icon">🔊</span>
+            <div class="bottom-sheet-option-text">
+              <div class="bottom-sheet-option-label">Sound Effects</div>
+              <div class="bottom-sheet-option-desc">Audio feedback</div>
+            </div>
+            <span style="color:${soundEnabled ? 'var(--correct)' : 'var(--text-dim)'}">${soundEnabled ? '✓ On' : 'Off'}</span>
+          </div>
+          <div class="bottom-sheet-option" onclick="MobileQOL.toggleSetting('timer')">
+            <span class="bottom-sheet-option-icon">⏱️</span>
+            <div class="bottom-sheet-option-text">
+              <div class="bottom-sheet-option-label">Always Show Timer</div>
+              <div class="bottom-sheet-option-desc">Display study timer</div>
+            </div>
+            <span style="color:${timerVisible ? 'var(--correct)' : 'var(--text-dim)'}">${timerVisible ? '✓ On' : 'Off'}</span>
+          </div>
+          <div class="bottom-sheet-option" onclick="MobileQOL.clearCache()">
+            <span class="bottom-sheet-option-icon">🗑️</span>
+            <div class="bottom-sheet-option-text">
+              <div class="bottom-sheet-option-label">Clear Cache</div>
+              <div class="bottom-sheet-option-desc">Force refresh all data</div>
+            </div>
+          </div>
+        `;
+        this.showBottomSheet('⚙️ Settings', content);
+      },
+
+      toggleSetting(setting) {
+        const key = `luminara_${setting === 'timer' ? 'timer_visible' : setting}`;
+        const current = localStorage.getItem(key);
+        localStorage.setItem(key, current === 'false' || current === null ? 'true' : 'false');
+        this.haptic('light');
+        this.showSettingsSheet();
+        if (setting === 'timer' && localStorage.getItem(key) === 'true') {
+          document.getElementById('studyTimer').classList.add('visible');
+        }
+      },
+
+      clearCache() {
+        if (navigator.serviceWorker?.controller) {
+          navigator.serviceWorker.controller.postMessage('clearCache');
+        }
+        this.showToast('🗑️ Cache cleared - reloading...', 'success');
+        setTimeout(() => location.reload(true), 1000);
+      },
+
+      goToBookmark(index) {
+        const bookmarks = JSON.parse(localStorage.getItem('luminara_bookmarks') || '[]');
+        if (bookmarks[index] && typeof quiz !== 'undefined' && quiz.questions) {
+          const idx = quiz.questions.findIndex(q => q.id === bookmarks[index].id);
+          if (idx >= 0) {
+            quiz.goToQuestion(idx);
+            this.closeBottomSheet();
+            this.showToast('🔖 Jumped to bookmark', 'success');
+            return;
+          }
+        }
+        this.showToast('❌ Bookmark not found in current set', 'error');
+      },
+
+      loadBookmarks() {
+        document.addEventListener('contextmenu', (e) => {
+          if (e.target.closest('.question-card') || e.target.closest('#questionArea')) {
+            e.preventDefault();
+            this.bookmarkCurrentQuestion();
+          }
+        });
+      },
+
+      bookmarkCurrentQuestion() {
+        if (typeof quiz === 'undefined' || !quiz.questions?.[quiz.currentQuestionIndex]) {
+          this.showToast('📚 No question to bookmark', 'info');
+          return;
+        }
+        const q = quiz.questions[quiz.currentQuestionIndex];
+        const bookmarks = JSON.parse(localStorage.getItem('luminara_bookmarks') || '[]');
+        const exists = bookmarks.findIndex(b => b.id === q.id);
+        if (exists >= 0) {
+          bookmarks.splice(exists, 1);
+          this.showToast('🔖 Bookmark removed', 'info');
+        } else {
+          bookmarks.push({ id: q.id, q: q.q, category: q._category || '' });
+          this.showToast('🔖 Question bookmarked!', 'success');
+        }
+        localStorage.setItem('luminara_bookmarks', JSON.stringify(bookmarks));
+        this.haptic('medium');
+      },
+
+      setupSwipeGestures() {
+        document.body.addEventListener('touchstart', (e) => {
+          this.touchStartX = e.touches[0].clientX;
+          this.touchStartY = e.touches[0].clientY;
+        }, { passive: true });
+
+        document.body.addEventListener('touchmove', (e) => {
+          if (!this.touchStartX) return;
+          const diffX = e.touches[0].clientX - this.touchStartX;
+          const diffY = Math.abs(e.touches[0].clientY - this.touchStartY);
+          if (Math.abs(diffX) > 30 && diffY < 50) {
+            document.getElementById('swipeLeft').classList.toggle('visible', diffX > 0);
+            document.getElementById('swipeRight').classList.toggle('visible', diffX < 0);
+          }
+        }, { passive: true });
+
+        document.body.addEventListener('touchend', (e) => {
+          const diffX = e.changedTouches[0].clientX - this.touchStartX;
+          const diffY = Math.abs(e.changedTouches[0].clientY - this.touchStartY);
+          document.getElementById('swipeLeft').classList.remove('visible');
+          document.getElementById('swipeRight').classList.remove('visible');
+          if (Math.abs(diffX) > 80 && diffY < 80 && typeof quiz !== 'undefined') {
+            if (diffX > 0 && typeof prevQuestion === 'function') { prevQuestion(); this.haptic('light'); }
+            else if (diffX < 0 && typeof nextQuestion === 'function') { nextQuestion(); this.haptic('light'); }
+          }
+          this.touchStartX = 0;
+          this.touchStartY = 0;
+        }, { passive: true });
+      },
+
+      setupPullToRefresh() {
+        const reviewArea = document.getElementById('reviewArea');
+        if (!reviewArea) return;
+        reviewArea.addEventListener('touchstart', (e) => {
+          if (reviewArea.scrollTop === 0) { this.pullStartY = e.touches[0].clientY; this.isPulling = true; }
+        }, { passive: true });
+        reviewArea.addEventListener('touchmove', (e) => {
+          if (!this.isPulling) return;
+          if (e.touches[0].clientY - this.pullStartY > 60) {
+            document.getElementById('pullIndicator').classList.add('pulling');
+          }
+        }, { passive: true });
+        reviewArea.addEventListener('touchend', (e) => {
+          if (!this.isPulling) return;
+          document.getElementById('pullIndicator').classList.remove('pulling');
+          if (e.changedTouches[0].clientY - this.pullStartY > 80) {
+            this.haptic('medium');
+            if (typeof QuizModes !== 'undefined') { QuizModes.initReview(); this.showToast('🔄 Reviews refreshed!', 'success'); }
+          }
+          this.isPulling = false;
+        }, { passive: true });
+      },
+
+      showToast(message, type = 'info') {
+        const container = document.getElementById('toastContainer');
+        const toast = document.createElement('div');
+        toast.className = `toast ${type}`;
+        const icons = { success: '✓', error: '✕', warning: '⚠️', info: 'ℹ️' };
+        toast.innerHTML = `<span class="toast-icon">${icons[type] || icons.info}</span><span class="toast-text">${message}</span>`;
+        container.appendChild(toast);
+        this.haptic('light');
+        setTimeout(() => toast.remove(), 3000);
+      },
+
+      toggleStudyTimer() {
+        if (this.studyTimerActive) { this.stopStudyTimer(); } else { this.startStudyTimer(); }
+      },
+
+      startStudyTimer() {
+        this.studyTimerActive = true;
+        this.studyTimerSeconds = 0;
+        document.getElementById('studyTimer').classList.add('visible');
+        this.updateTimerDisplay();
+        this.studyTimerInterval = setInterval(() => { this.studyTimerSeconds++; this.updateTimerDisplay(); }, 1000);
+        this.showToast('⏱️ Study timer started!', 'success');
+      },
+
+      stopStudyTimer() {
+        this.studyTimerActive = false;
+        clearInterval(this.studyTimerInterval);
+        const mins = Math.floor(this.studyTimerSeconds / 60);
+        const secs = this.studyTimerSeconds % 60;
+        this.showToast(`⏱️ Studied for ${mins}m ${secs}s`, 'success');
+        if (localStorage.getItem('luminara_timer_visible') !== 'true') {
+          document.getElementById('studyTimer').classList.remove('visible');
+        }
+      },
+
+      updateTimerDisplay() {
+        const mins = Math.floor(this.studyTimerSeconds / 60);
+        const secs = this.studyTimerSeconds % 60;
+        document.getElementById('studyTimerTime').textContent = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+      },
+
+      setupHaptics() {
+        document.addEventListener('click', (e) => {
+          if (e.target.closest('.option-btn') || e.target.closest('.blitz-option')) { this.haptic('medium'); }
+        });
+      },
+
+      haptic(style = 'light') {
+        if (localStorage.getItem('luminara_haptics') === 'false') return;
+        if ('vibrate' in navigator) {
+          const patterns = { light: [10], medium: [20], heavy: [30], success: [10, 50, 10], error: [50, 30, 50] };
+          navigator.vibrate(patterns[style] || patterns.light);
+        }
+      }
+    };
+
+    document.addEventListener('DOMContentLoaded', () => setTimeout(() => MobileQOL.init(), 800));
+  </script>
+
+  <!-- Build Timestamp (auto-generated) -->
+  <div id="buildTimestamp" style="position: fixed; bottom: 5px; right: 10px; font-size: 10px; color: rgba(255,255,255,0.3); pointer-events: none; z-index: 9999;">Mobile 2026.03.30 | Auto-synced from index.html</div>
+
+</body>
+</html>

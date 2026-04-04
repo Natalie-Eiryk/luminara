@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.18",
+  "parentQuestion": "The thin respiratory membrane where gas exchange occurs is composed of:",
+  "narrative": {
+    "setting": "The Magic School Bus has shrunk to molecular scale, hovering at the interface between alveolar air and capillary blood. The barrier between air and blood is impossibly thin - just two cell layers with their basement membranes fused together. 'The thinnest wall in the body,' Ms. Frizzle whispers. 'Less than a micron separates Mr. Edgar's breath from his bloodstream.'",
+    "character": "Mr. Edgar",
+    "tension": "Oxygen molecules are crossing this membrane right now - billions of them every second. But if this membrane thickens from disease, fluid, or scarring, diffusion slows. Cells begin to starve. Understanding this barrier is understanding the difference between life and suffocation."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.18.s01",
+      "arc": 1,
+      "arcTitle": "The Layers",
+      "narrative": "Ms. Frizzle lands the bus on the alveolar surface. 'These are Type I alveolar cells,' she points to the incredibly thin layer beneath them. 'Squamous epithelium - flat as paper.'",
+      "q": "What is Type I alveolar cells' main characteristic?",
+      "options": [
+        "They produce surfactant",
+        "They are extremely thin for gas diffusion",
+        "They are immune cells",
+        "They produce mucus"
+      ],
+      "answer": 1,
+      "explain": "Type I cells are EXTREMELY THIN - only about 0.1-0.5 micrometers thick. They're squamous (flat) epithelium, optimized for gas diffusion, not secretion.",
+      "wrongExplains": {
+        "0": "TYPE II cells produce surfactant. Type I are purely for gas exchange.",
+        "2": "ALVEOLAR MACROPHAGES handle immunity. Type I are structural/exchange cells.",
+        "3": "GOBLET cells in airways make mucus. Type I cells allow diffusion."
+      }
+    },
+    {
+      "id": "900.5.18.s02",
+      "arc": 1,
+      "arcTitle": "The Layers",
+      "narrative": "'Beneath the cells,' Ms. Frizzle drills down, 'are the basement membranes. Thin supportive layers that hold everything in place.' She shows how the alveolar and capillary basement membranes actually FUSE together.",
+      "q": "What is the function of the basement membrane?",
+      "options": [
+        "To produce gases",
+        "To support epithelial cells and filter substances",
+        "To contract like muscle",
+        "To produce surfactant"
+      ],
+      "answer": 1,
+      "explain": "BASEMENT MEMBRANES provide SUPPORT for cells above and act as a selective filter. At the respiratory membrane, the alveolar and capillary basement membranes FUSE, minimizing barrier thickness.",
+      "wrongExplains": {
+        "0": "No membrane produces gases. Basement membranes provide structural support.",
+        "2": "Basement membranes are NOT contractile. They're extracellular matrix scaffolding.",
+        "3": "TYPE II CELLS produce surfactant, not the basement membrane."
+      }
+    },
+    {
+      "id": "900.5.18.s03",
+      "arc": 1,
+      "arcTitle": "The Layers",
+      "narrative": "'And on the blood side?' Ms. Frizzle crosses the fused membranes and reaches the capillary. 'Endothelial cells - the thinnest possible tube.' One cell wraps nearly around the entire capillary lumen.",
+      "q": "Capillary walls are made of what type of cells?",
+      "options": [
+        "Muscle cells",
+        "Endothelial cells",
+        "Nerve cells",
+        "Fat cells"
+      ],
+      "answer": 1,
+      "explain": "Capillary walls are made of ENDOTHELIAL cells - a single thin layer of squamous epithelium that lines ALL blood vessels. The thinnest possible barrier for nutrient and gas exchange.",
+      "wrongExplains": {
+        "0": "LARGER vessels have smooth muscle. Capillaries have only endothelium - too small for muscle.",
+        "2": "Nerve cells transmit signals. ENDOTHELIUM forms vessel walls.",
+        "3": "Fat cells store energy in adipose tissue. Endothelium lines vessels."
+      }
+    },
+    {
+      "id": "900.5.18.s04",
+      "arc": 2,
+      "arcTitle": "The Mathematics of Thinness",
+      "narrative": "'Let me put the thickness in perspective,' Ms. Frizzle pulls out a ruler. 'The respiratory membrane is about 0.5 micrometers. A human hair is about 100 micrometers. This barrier is 200 times thinner than a hair.'",
+      "q": "How thick is the respiratory membrane approximately?",
+      "options": [
+        "About 1 millimeter",
+        "About 0.5 micrometers",
+        "About 1 centimeter",
+        "About 10 micrometers"
+      ],
+      "answer": 1,
+      "explain": "The respiratory membrane is only about 0.5 MICROMETERS (0.0005 mm). This extreme thinness allows oxygen and CO₂ to diffuse in a fraction of a second.",
+      "wrongExplains": {
+        "0": "1 millimeter is 2000x too thick! Gases couldn't diffuse fast enough.",
+        "2": "1 centimeter would be absurdly thick - 20,000x the actual measurement.",
+        "3": "10 micrometers is still 20x too thick. The membrane is 0.5 micrometers."
+      }
+    },
+    {
+      "id": "900.5.18.s05",
+      "arc": 2,
+      "arcTitle": "The Mathematics of Thinness",
+      "narrative": "'No energy required,' Ms. Frizzle watches oxygen molecules drifting across. 'Just physics. High concentration to low. Fick's Law in action.'",
+      "q": "Gas exchange across the respiratory membrane occurs by what process?",
+      "options": [
+        "Active transport requiring ATP",
+        "Simple diffusion down concentration gradients",
+        "Osmosis",
+        "Facilitated diffusion with carriers"
+      ],
+      "answer": 1,
+      "explain": "SIMPLE DIFFUSION - no energy, no carriers, no pumps. Oxygen moves from high partial pressure (alveolar air) to low (blood). CO₂ moves the opposite direction. Pure physics.",
+      "wrongExplains": {
+        "0": "Active transport is NOT needed - the gradients drive movement naturally.",
+        "2": "Osmosis is water movement, not gas exchange.",
+        "3": "O₂ and CO₂ are small and lipid-soluble - they pass through membranes directly, no carriers needed."
+      }
+    },
+    {
+      "id": "900.5.18.s06",
+      "arc": 2,
+      "arcTitle": "The Mathematics of Thinness",
+      "narrative": "'Watch the speed,' Ms. Frizzle times a passing oxygen molecule. 'Blood is only in the capillary for about 0.75 seconds. But equilibrium happens in...' She snaps her fingers.",
+      "q": "How quickly do gases cross the respiratory membrane?",
+      "options": [
+        "About 5 minutes",
+        "About 0.25 seconds",
+        "About 1 minute",
+        "About 30 seconds"
+      ],
+      "answer": 1,
+      "explain": "Gas exchange is NEARLY INSTANTANEOUS - about 0.25 seconds for complete equilibrium. Blood spends 0.75 seconds in the capillary, so there's plenty of time (3x more than needed!).",
+      "wrongExplains": {
+        "0": "5 minutes would be catastrophic. Blood passes in under a second!",
+        "2": "1 minute is far too slow. Exchange happens in a quarter-second.",
+        "3": "30 seconds is way too long. The thin membrane allows near-instant diffusion."
+      }
+    },
+    {
+      "id": "900.5.18.s07",
+      "arc": 3,
+      "arcTitle": "When the Membrane Fails",
+      "narrative": "'In diseases like pulmonary fibrosis,' Ms. Frizzle shows a simulation, 'scar tissue thickens this membrane. Double the thickness, halve the diffusion rate.' The oxygen molecules slow to a crawl.",
+      "q": "If the respiratory membrane thickens, what happens to gas exchange?",
+      "options": [
+        "It speeds up",
+        "It slows down (diffusion impaired)",
+        "Nothing changes",
+        "Only CO₂ is affected"
+      ],
+      "answer": 1,
+      "explain": "Fick's Law: diffusion rate is INVERSELY proportional to thickness. THICKER membrane = SLOWER diffusion = impaired gas exchange = hypoxemia. This is why fibrosis is so dangerous.",
+      "wrongExplains": {
+        "0": "Thicker barriers SLOW diffusion, they don't speed it up.",
+        "2": "Thickness absolutely matters - it's in Fick's Law directly.",
+        "3": "BOTH O₂ and CO₂ are affected by membrane thickness."
+      }
+    },
+    {
+      "id": "900.5.18.s08",
+      "arc": 3,
+      "arcTitle": "When the Membrane Fails",
+      "narrative": "'Pulmonary edema - fluid in the alveoli,' Ms. Frizzle shows another scenario. 'Now gases must diffuse through water too. More distance, slower exchange.' The membrane effectively thickens.",
+      "q": "Pulmonary edema impairs gas exchange because:",
+      "options": [
+        "It removes surfactant",
+        "Fluid increases the diffusion distance",
+        "It destroys red blood cells",
+        "It increases blood pressure"
+      ],
+      "answer": 1,
+      "explain": "EDEMA FLUID adds to the barrier - gases must diffuse through the extra fluid layer. More distance = slower diffusion = impaired oxygen uptake. Same principle as membrane thickening.",
+      "wrongExplains": {
+        "0": "Surfactant effects are separate. Edema increases diffusion DISTANCE.",
+        "2": "RBC destruction is hemolysis, different problem. Edema adds barrier thickness.",
+        "3": "Blood pressure is separate. Edema impairs diffusion by adding distance."
+      }
+    },
+    {
+      "id": "900.5.18.s09",
+      "arc": 3,
+      "arcTitle": "When the Membrane Fails",
+      "narrative": "'Three layers,' Ms. Frizzle counts on her fingers. 'Alveolar epithelium. Fused basement membranes. Capillary endothelium. Together, the respiratory membrane - thinner than you can imagine.'",
+      "q": "The three components of the respiratory membrane are:",
+      "options": [
+        "Surfactant, mucus, and cilia",
+        "Alveolar wall, fused basement membranes, capillary wall",
+        "Bronchiole, artery, and vein",
+        "Pleura, muscle, and cartilage"
+      ],
+      "answer": 1,
+      "explain": "THREE LAYERS: (1) Alveolar epithelium (Type I cells), (2) FUSED basement membranes, (3) Capillary endothelium. Total thickness: 0.5 micrometers. Minimal barrier for maximal gas exchange.",
+      "wrongExplains": {
+        "0": "Surfactant, mucus, and cilia are in airways, not the gas exchange membrane.",
+        "2": "Bronchiole/artery/vein are conducting structures. The membrane is cellular layers.",
+        "3": "Pleura, muscle, cartilage are structural - not at the gas exchange surface."
+      }
+    },
+    {
+      "id": "900.5.18.s10",
+      "arc": 3,
+      "arcTitle": "When the Membrane Fails",
+      "narrative": "The bus rises from the impossibly thin barrier. Oxygen flows across. CO₂ flows back. Life depends on this membrane staying thin. 'That barrier,' Ms. Frizzle asks. 'What's it made of?'",
+      "q": "The thin respiratory membrane where gas exchange occurs is composed of:",
+      "options": [
+        "Alveolar and capillary walls only",
+        "Alveolar wall, basement membranes, and capillary wall",
+        "Bronchiolar epithelium and smooth muscle",
+        "Pleural membranes fused together"
+      ],
+      "answer": 1,
+      "explain": "THREE LAYERS: Alveolar Type I epithelium + FUSED BASEMENT MEMBRANES + capillary endothelium. Total ~0.5 micrometers. The thinnest, most critical barrier in the body.",
+      "wrongExplains": {
+        "0": "Missing the basement membranes! They're thin but crucial structural support.",
+        "2": "Bronchioles are conducting airways - no gas exchange there.",
+        "3": "Pleura is the lung's outer covering, not the gas exchange surface."
+      }
+    }
+  ]
+}

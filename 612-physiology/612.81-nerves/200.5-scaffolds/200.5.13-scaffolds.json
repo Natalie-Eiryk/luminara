@@ -1,0 +1,159 @@
+{
+  "parentId": "200.5.13",
+  "parentQuestion": "The mnemonic 'Oh Oh Oh To Touch And Feel Very Good Velvet, AH!' helps remember ___.",
+  "scaffolds": [
+    {
+      "q": "What is a mnemonic?",
+      "options": [
+        "A type of nerve",
+        "A memory trick using patterns or sentences",
+        "A medical instrument",
+        "A brain region"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "A mnemonic is a MEMORY TRICK — it uses patterns, rhymes, or sentences to help you remember lists or facts that would otherwise be hard to memorize.",
+      "wrongExplains": {
+        "0": "A nerve is an anatomical structure. A mnemonic is a learning tool to help remember information about nerves (or anything else).",
+        "2": "Medical instruments are physical tools for examination. A mnemonic is a mental tool for memorization.",
+        "3": "Brain regions are anatomical structures. A mnemonic is a technique you use WITH your brain, not a part of it."
+      }
+    },
+    {
+      "q": "In this mnemonic, each word's first letter represents ___.",
+      "options": [
+        "A bone name",
+        "A cranial nerve name",
+        "A muscle name",
+        "A blood vessel"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Each word's first letter gives you a CRANIAL NERVE name: Oh=Olfactory, Oh=Optic, Oh=Oculomotor, To=Trochlear, Touch=Trigeminal, And=Abducens, etc.",
+      "wrongExplains": {
+        "0": "This particular mnemonic is specifically for cranial nerves, not bones. Different body systems use different mnemonics.",
+        "2": "Muscle mnemonics exist, but this one is for cranial nerves. The structure 'Oh Oh Oh To Touch...' maps to CN I through XII.",
+        "3": "Blood vessel mnemonics exist, but this one is for the 12 cranial nerves in order."
+      }
+    },
+    {
+      "q": "The mnemonic has 12 words/sounds because there are how many cranial nerves?",
+      "options": [
+        "6",
+        "10",
+        "12",
+        "24"
+      ],
+      "answer": 2,
+      "difficulty": "foundation",
+      "explain": "There are 12 PAIRS of cranial nerves (CN I through CN XII). The mnemonic has 12 parts to match: Oh, Oh, Oh, To, Touch, And, Feel, Very, Good, Velvet, A, H.",
+      "wrongExplains": {
+        "0": "Six would only cover half the cranial nerves. We need all 12.",
+        "1": "Ten is close but not correct. There are exactly 12 pairs of cranial nerves.",
+        "3": "24 would be counting both sides separately. We count 12 PAIRS."
+      }
+    },
+    {
+      "q": "The first three 'Oh Oh Oh' stand for which three nerves?",
+      "options": [
+        "Optic, Optic, Optic",
+        "Olfactory, Optic, Oculomotor",
+        "Oculomotor, Oculomotor, Oculomotor",
+        "None of these"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Oh Oh Oh = Olfactory (CN I), Optic (CN II), Oculomotor (CN III). Three different nerves, all starting with 'O'. The mnemonic keeps them in numerical order.",
+      "wrongExplains": {
+        "0": "Each 'Oh' represents a DIFFERENT nerve. The optic nerve is just CN II, not all three.",
+        "2": "Oculomotor is only CN III. The first two 'Oh's are Olfactory and Optic.",
+        "3": "The mnemonic does work! Oh Oh Oh = Olfactory, Optic, Oculomotor (CN I, II, III)."
+      }
+    },
+    {
+      "q": "'To Touch And Feel' represents which four nerves?",
+      "options": [
+        "Trigeminal, Trochlear, Abducens, Facial",
+        "Trochlear, Trigeminal, Abducens, Facial",
+        "Tongue, Touch, And, Feel",
+        "Temporal, Trapezius, Arm, Foot"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "To Touch And Feel = Trochlear (CN IV), Trigeminal (CN V), Abducens (CN VI), Facial (CN VII). Keep counting from CN IV onward!",
+      "wrongExplains": {
+        "0": "Close, but the order is wrong. Trochlear (T) comes before Trigeminal (T). CN IV, then CN V.",
+        "2": "These aren't nerve names — they're just English words. Each word's FIRST LETTER represents a nerve name.",
+        "3": "These aren't cranial nerves. Temporal and trapezius are muscles. The mnemonic is specifically for cranial nerves."
+      }
+    },
+    {
+      "q": "'Very Good Velvet' represents which three nerves?",
+      "options": [
+        "Vagus, Glossopharyngeal, Vestibulocochlear",
+        "Vestibulocochlear, Glossopharyngeal, Vagus",
+        "Vision, Gustation, Voice",
+        "Ventral, Ganglion, Vertebral"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "Very Good Velvet = Vestibulocochlear (CN VIII), Glossopharyngeal (CN IX), Vagus (CN X). Notice: V-G-V order, but nerves are VIII-IX-X order.",
+      "wrongExplains": {
+        "0": "The order is wrong. 'Very' comes first, so Vestibulocochlear (V) is CN VIII, then Glossopharyngeal (G) is CN IX, then Vagus (V) is CN X.",
+        "2": "These aren't nerve names. Vision, gustation, and voice are functions, not the names of the nerves.",
+        "3": "These aren't cranial nerve names. The mnemonic uses first letters to represent: Vestibulocochlear, Glossopharyngeal, Vagus."
+      }
+    },
+    {
+      "q": "The final 'AH!' stands for which two nerves?",
+      "options": [
+        "Abducens, Hypoglossal",
+        "Accessory, Hypoglossal",
+        "Auditory, Hearing",
+        "Arms, Hands"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "A-H = Accessory (CN XI), Hypoglossal (CN XII). These are the last two cranial nerves! Accessory controls head/shoulder movement, Hypoglossal controls the tongue.",
+      "wrongExplains": {
+        "0": "Abducens (CN VI) was already covered by 'And' earlier in the mnemonic. 'A' in AH is Accessory (CN XI).",
+        "2": "These aren't cranial nerve names. 'Auditory' relates to hearing but the nerve is called 'Vestibulocochlear' (CN VIII).",
+        "3": "These aren't nerve names at all. The mnemonic uses A=Accessory and H=Hypoglossal."
+      }
+    },
+    {
+      "q": "If you count through the mnemonic, 'Feel' is the 7th word. What number is the Facial nerve?",
+      "options": [
+        "CN V",
+        "CN VI",
+        "CN VII",
+        "CN VIII"
+      ],
+      "answer": 2,
+      "difficulty": "intermediate",
+      "explain": "Feel is the 7th word, so Facial = CN VII. The mnemonic keeps everything in order: Position in the sentence = Roman numeral of the nerve.",
+      "wrongExplains": {
+        "0": "CN V is Trigeminal (the 5th word, 'Touch'). Facial is the 7th nerve.",
+        "1": "CN VI is Abducens (the 6th word, 'And'). Facial is the 7th nerve.",
+        "3": "CN VIII is Vestibulocochlear (the 8th word, 'Very'). Facial is the 7th nerve."
+      }
+    },
+    {
+      "q": "Write out the mnemonic and match: Which nerve is CN IX?",
+      "options": [
+        "Vagus",
+        "Vestibulocochlear",
+        "Glossopharyngeal",
+        "Accessory"
+      ],
+      "answer": 2,
+      "difficulty": "intermediate",
+      "explain": "CN IX = Glossopharyngeal. Count: 1-Oh, 2-Oh, 3-Oh, 4-To, 5-Touch, 6-And, 7-Feel, 8-Very, 9-Good. Good = Glossopharyngeal!",
+      "wrongExplains": {
+        "0": "Vagus is CN X (Velvet, the 10th word). Glossopharyngeal (Good) is CN IX.",
+        "1": "Vestibulocochlear is CN VIII (Very, the 8th word). Glossopharyngeal (Good) is CN IX.",
+        "3": "Accessory is CN XI (A in AH, the 11th sound). Glossopharyngeal (Good) is CN IX."
+      }
+    }
+  ]
+}

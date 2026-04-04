@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.60",
+  "parentQuestion": "The mucociliary escalator moves debris toward the:",
+  "narrative": {
+    "setting": "The Magic School Bus shrinks to ride along a mucus layer in Mr. Edgar's trachea. Thousands of hair-like cilia beat in synchronized waves, propelling the sticky blanket upward. Ms. Frizzle holds on tight as they surf toward the throat. 'Like a conveyor belt,' she shouts over the rhythmic beating. 'But it only goes one direction - UP.'",
+    "character": "Mr. Edgar",
+    "tension": "Smokers' cilia become paralyzed - the escalator stops working. Cystic fibrosis produces mucus too thick for the cilia to move. Viral infections damage the ciliated cells. Understanding the mucociliary escalator isn't just anatomy - it's understanding why chronic smokers cough up thick sputum and why some infections become pneumonia when clearance fails."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.60.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Cilia,' Ms. Frizzle begins, pointing at the hair-like projections. 'From the Latin for eyelashes. About 200 cilia per cell, 6-7 micrometers long. They beat in coordinated waves - like a field of wheat in the wind.'",
+      "q": "Cilia are:",
+      "options": [
+        "Hair-like projections from cell surfaces",
+        "Blood cells",
+        "Muscle fibers",
+        "Nerve endings"
+      ],
+      "answer": 0,
+      "explain": "CILIA are hair-like cellular projections that beat in coordinated waves. In airways, they propel mucus upward. Each ciliated cell has about 200 cilia.",
+      "wrongExplains": {
+        "1": "Cilia are cellular structures, not separate blood cells.",
+        "2": "Cilia use microtubules (9+2 arrangement) for movement, not muscle contractile proteins.",
+        "3": "Cilia are mechanical projections, not sensory nerve endings (though some cilia can sense flow)."
+      }
+    },
+    {
+      "id": "900.5.60.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Mucus,' Ms. Frizzle gestures at the sticky layer they're riding on. 'Produced by goblet cells and submucosal glands. It's a trap - sticky enough to catch bacteria, particles, dust, pollen. The cilia move the whole mucus blanket.'",
+      "q": "What is the primary function of mucus in the airways?",
+      "options": [
+        "Gas exchange",
+        "Trap particles and pathogens",
+        "Produce antibodies",
+        "Contract muscles"
+      ],
+      "answer": 1,
+      "explain": "MUCUS TRAPS inhaled particles, bacteria, viruses, dust, and pollen. It's sticky and protective. Cilia then move this contaminated mucus upward for removal.",
+      "wrongExplains": {
+        "0": "Gas exchange happens in alveoli across thin membranes. Mucus is in conducting airways.",
+        "2": "Antibodies (IgA) are IN the mucus, but mucus itself is a physical trap, not an antibody producer.",
+        "3": "Smooth muscle in airway walls contracts. Mucus is secreted gel, not contractile."
+      }
+    },
+    {
+      "id": "900.5.60.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'The escalator metaphor is perfect,' Ms. Frizzle explains. 'It moves in ONE direction - UPWARD. From bronchioles to bronchi to trachea to pharynx. Always going up, never down.'",
+      "q": "The mucociliary escalator moves mucus in which direction?",
+      "options": [
+        "Downward toward alveoli",
+        "Upward toward pharynx (throat)",
+        "Sideways toward pleura",
+        "In circles"
+      ],
+      "answer": 1,
+      "explain": "The mucociliary escalator moves UPWARD - from deep lung toward the PHARYNX (throat). Then you swallow it or cough it out. 'Escalator' = going UP!",
+      "wrongExplains": {
+        "0": "Moving debris TOWARD alveoli would be disaster. The escalator clears particles AWAY from gas exchange areas.",
+        "2": "Pleura is outside the airway. Mucus moves up the airway lumen, not sideways.",
+        "3": "Cilia beat in coordinated waves in one direction - upward, not circular."
+      }
+    },
+    {
+      "id": "900.5.60.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'The beat cycle,' Ms. Frizzle shows a diagram. 'Each cilium does a power stroke - bending forward, pushing mucus upward. Then a recovery stroke - sweeping back close to the cell surface without engaging the mucus. 1000-1500 beats per minute.'",
+      "q": "During the power stroke, cilia:",
+      "options": [
+        "Rest motionless",
+        "Bend backward close to the cell surface",
+        "Extend and push mucus forward/upward",
+        "Retract into the cell"
+      ],
+      "answer": 2,
+      "explain": "POWER STROKE = cilium extends and bends FORWARD, engaging mucus and pushing it upward. Then recovery stroke brings it back without pushing. Like rowing oars.",
+      "wrongExplains": {
+        "0": "Cilia are constantly beating - 1000-1500 times per minute. No rest phase.",
+        "1": "Bending backward close to the surface is the RECOVERY stroke. Power stroke pushes upward.",
+        "3": "Cilia don't retract into cells - they bend in place in a two-phase cycle."
+      }
+    },
+    {
+      "id": "900.5.60.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Metachronal waves,' Ms. Frizzle points at the coordinated beating. 'Cilia don't all beat at once - that would be inefficient. They beat in synchronized waves, like fans doing the wave at a stadium. Creates steady directional flow.'",
+      "q": "Cilia in the respiratory tract beat:",
+      "options": [
+        "Randomly with no coordination",
+        "All simultaneously at once",
+        "In coordinated metachronal waves",
+        "Only when you cough"
+      ],
+      "answer": 2,
+      "explain": "Cilia beat in METACHRONAL WAVES - coordinated sequential beating that propagates like a wave. This creates efficient, continuous mucus movement upward.",
+      "wrongExplains": {
+        "0": "Random beating would be inefficient. Coordination is key to directional transport.",
+        "1": "Simultaneous beating wouldn't create flow. Waves of sequential beating are more effective.",
+        "3": "Cilia beat CONSTANTLY, 24/7. Coughing is a separate backup clearance mechanism."
+      }
+    },
+    {
+      "id": "900.5.60.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Two layers of mucus,' Ms. Frizzle shows a cross-section. 'The periciliary layer - watery, low viscosity, where cilia tips swim freely. The gel layer on top - sticky and thick, where particles are trapped. Cilia tips engage the gel layer during power stroke.'",
+      "q": "The mucus layer has two components:",
+      "options": [
+        "Blood and plasma",
+        "Periciliary (watery) and gel (sticky) layers",
+        "Surfactant and water",
+        "Air and liquid"
+      ],
+      "answer": 1,
+      "explain": "TWO-LAYER system: PERICILIARY layer (watery, cilia swim here) and GEL layer (sticky, traps particles). Cilia tips engage gel during power stroke to move it upward.",
+      "wrongExplains": {
+        "0": "Blood/plasma are in vessels, not the airway mucus layer.",
+        "2": "Surfactant is in alveoli. Airway mucus has periciliary and gel layers.",
+        "3": "Air is in the lumen. The two mucus layers are both liquid but different viscosities."
+      }
+    },
+    {
+      "id": "900.5.60.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Smoking paralyzes cilia,' Ms. Frizzle's tone darkens. 'Nicotine, tar, and toxic gases damage ciliated cells. Cilia slow down, beat irregularly, eventually die. The escalator stops. Mucus accumulates. That's the 'smoker's cough' - the only way to clear it now is coughing.'",
+      "q": "Chronic smoking damages the mucociliary escalator by:",
+      "options": [
+        "Making cilia beat faster",
+        "Paralyzing and destroying cilia",
+        "Increasing mucus fluidity",
+        "Eliminating all mucus production"
+      ],
+      "answer": 1,
+      "explain": "Smoking PARALYZES and DESTROYS cilia. Toxic chemicals damage ciliated cells, slow beating, cause dysfunction. The escalator fails, mucus accumulates, chronic cough develops.",
+      "wrongExplains": {
+        "0": "Smoking SLOWS and damages cilia, doesn't speed them up.",
+        "2": "Smoking often makes mucus THICKER and increases production - worse clearance.",
+        "3": "Smokers often have INCREASED mucus (chronic bronchitis). The problem is clearing it without cilia."
+      }
+    },
+    {
+      "id": "900.5.60.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Cystic fibrosis,' Ms. Frizzle explains. 'Defective CFTR chloride channel means mucus lacks water - it's pathologically THICK and STICKY. Cilia can't move it - they're overwhelmed. Mucus plugs airways, bacteria thrive, chronic infections.'",
+      "q": "In cystic fibrosis, the mucociliary escalator fails because:",
+      "options": [
+        "Cilia are absent",
+        "Mucus is too thick for cilia to move",
+        "There is no mucus produced",
+        "Cilia beat in the wrong direction"
+      ],
+      "answer": 1,
+      "explain": "CF mucus is pathologically THICK due to defective chloride/water transport. Cilia are present but can't move the dehydrated, viscous mucus. It accumulates and blocks airways.",
+      "wrongExplains": {
+        "0": "Cilia are present in CF - they're just overwhelmed by thick mucus.",
+        "2": "CF produces EXCESS thick mucus. The problem is clearance, not production.",
+        "3": "Cilia beat normally in CF - the problem is the mucus is too viscous to move."
+      }
+    },
+    {
+      "id": "900.5.60.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Primary ciliary dyskinesia,' Ms. Frizzle adds. 'A genetic defect in the cilia themselves - the dynein arms that power movement are missing or defective. Cilia are present but don't beat properly. Also called immotile cilia syndrome.'",
+      "q": "In primary ciliary dyskinesia (Kartagener syndrome), the problem is:",
+      "options": [
+        "Too much mucus",
+        "Defective cilia structure/function",
+        "No goblet cells",
+        "Bronchial constriction"
+      ],
+      "answer": 1,
+      "explain": "PRIMARY CILIARY DYSKINESIA = genetic defect in CILIA STRUCTURE (usually dynein arms). Cilia can't beat properly. Leads to chronic sinusitis, bronchiectasis, infertility (sperm can't swim).",
+      "wrongExplains": {
+        "0": "Mucus production may be normal. The problem is CILIA can't move it.",
+        "2": "Goblet cells are present - they make mucus. The cilia just can't clear it.",
+        "3": "Bronchial constriction is asthma. PCD is a ciliary motility disorder."
+      }
+    },
+    {
+      "id": "900.5.60.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Ms. Frizzle watches the cilia beat in perfect coordination, propelling mucus upward toward Mr. Edgar's throat. 'The mucociliary escalator - one direction, 24/7, our first-line defense against inhaled threats. So: where does this escalator take the debris?'",
+      "q": "The mucociliary escalator moves debris toward the:",
+      "options": [
+        "Alveoli",
+        "Pharynx",
+        "Bronchioles",
+        "Pleura"
+      ],
+      "answer": 1,
+      "explain": "The mucociliary escalator moves mucus (with trapped particles) UPWARD toward the PHARYNX (throat). Then swallowed or expectorated. 'Escalator' = going up to exit!",
+      "wrongExplains": {
+        "0": "Moving debris TOWARD alveoli would be disastrous - the escalator moves it AWAY from gas exchange areas.",
+        "2": "Bronchioles are deeper in the lung - the escalator moves debris OUT, not deeper in.",
+        "3": "Pleura is the lung membrane - debris doesn't go there. It goes up and out via the airway."
+      }
+    }
+  ]
+}

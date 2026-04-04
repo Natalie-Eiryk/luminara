@@ -1,0 +1,125 @@
+{
+  "parentId": "611.6.04",
+  "parentQuestion": "What three structures must you identify on penis histology?",
+  "scaffolds": [
+    {
+      "q": "What is gross anatomy?",
+      "options": [
+        "Study of body structures visible to the naked eye",
+        "Study of tissues under a microscope",
+        "Study of chemical processes in cells",
+        "Study of disease processes"
+      ],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "GROSS ANATOMY studies structures you can see without a microscope - organs, muscles, bones. It's what you encounter in a lab practical with models and dissections.",
+      "wrongExplains": {
+        "1": "That's HISTOLOGY - studying tissues under a microscope. Gross anatomy is visible to the naked eye.",
+        "2": "That's BIOCHEMISTRY. Gross anatomy focuses on visible structures.",
+        "3": "That's PATHOLOGY. Gross anatomy studies normal structure."
+      }
+    },
+    {
+      "q": "What is the difference between anatomy and physiology?",
+      "options": [
+        "Anatomy is structure; physiology is function",
+        "Anatomy is function; physiology is structure",
+        "They are the same thing",
+        "Anatomy studies disease; physiology studies health"
+      ],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "ANATOMY = STRUCTURE (what it IS). PHYSIOLOGY = FUNCTION (what it DOES). You need to know both - form and function are inseparable.",
+      "wrongExplains": {
+        "1": "It's the opposite. Anatomy is structure, physiology is function.",
+        "2": "They're related but distinct. Anatomy describes structure; physiology explains function.",
+        "3": "PATHOLOGY studies disease. ANATOMY studies normal structure."
+      }
+    },
+    {
+      "q": "Why do we use anatomical terminology instead of common words?",
+      "options": [
+        "For precision - common terms can be ambiguous",
+        "To make it harder for non-scientists",
+        "Because ancient Greek sounds impressive",
+        "Tradition with no practical benefit"
+      ],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Anatomical terms are PRECISE and UNIVERSAL. 'Arm' could mean shoulder to wrist or just upper arm. 'Brachium' specifically means upper arm. Everyone worldwide uses the same terms.",
+      "wrongExplains": {
+        "1": "No - it's about precision. Medical communication requires exactness to prevent errors.",
+        "2": "Greek/Latin terms are precise and internationally standardized, not just impressive sounding.",
+        "3": "It has huge practical benefit - precision prevents miscommunication in medicine."
+      }
+    },
+    {
+      "q": "What is an organ system?",
+      "options": [
+        "A group of organs working together for a common function",
+        "Any single organ in the body",
+        "A collection of similar cells",
+        "The electrical signals between organs"
+      ],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "An ORGAN SYSTEM is multiple organs working as a team. Digestive system = mouth, esophagus, stomach, intestines, liver, pancreas all working to process food.",
+      "wrongExplains": {
+        "1": "A single organ is just one component. A SYSTEM is the team of organs working together.",
+        "2": "Similar cells form TISSUES. Multiple tissues form ORGANS. Multiple organs form SYSTEMS.",
+        "3": "That describes nerve signals or communication, not an organ system itself."
+      }
+    },
+    {
+      "q": "In a lab practical, what's the first question you should ask yourself?",
+      "options": [
+        "What body system am I in?",
+        "What's the Latin name for this?",
+        "Is this question worth many points?",
+        "How long should I spend on this?"
+      ],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "START BIG, then narrow. What SYSTEM are you in? (Digestive? Respiratory?) This immediately limits possibilities. Then ask: gross anatomy or histology? Then: which specific structure?",
+      "wrongExplains": {
+        "1": "Latin names come AFTER identification. First, orient yourself - what system, what context.",
+        "2": "Strategic, but won't help you answer correctly. Start with system identification.",
+        "3": "Time management comes after you know your identification strategy."
+      }
+    },
+    {
+      "q": "What is a 'landmark' in anatomical identification?",
+      "options": [
+        "A distinctive feature that confirms your location or structure",
+        "A structure that's larger than surrounding structures",
+        "The most important organ in a system",
+        "A structure visible from the surface of the body"
+      ],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "A LANDMARK is your PROOF. Seeing villi confirms 'small intestine.' Seeing rugae confirms 'stomach.' Landmarks are diagnostic features that anchor your identification.",
+      "wrongExplains": {
+        "1": "Size doesn't matter. A tiny feature can be a landmark if it's diagnostic.",
+        "2": "Importance doesn't define a landmark. Distinctiveness does.",
+        "3": "Surface landmarks exist, but any distinctive feature that confirms ID is a landmark."
+      }
+    },
+    {
+      "q": "Why should you learn male and female anatomy in parallel?",
+      "options": [
+        "Many structures are homologous or functionally equivalent",
+        "Because they're tested together",
+        "Because they use the same terminology",
+        "Because they're in the same body region"
+      ],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "GONADS (testes/ovaries), DUCTS (vas deferens/uterine tubes), GAMETE PATHWAYS - parallel organization helps you remember both. Same developmental origin, parallel function.",
+      "wrongExplains": {
+        "1": "Testing isn't the educational reason. Homology and function create natural parallels.",
+        "2": "Terminology is related but not identical. Parallel structures are the key.",
+        "3": "Location varies (testes descend, ovaries remain in pelvis). Function parallels matter."
+      }
+    }
+  ]
+}

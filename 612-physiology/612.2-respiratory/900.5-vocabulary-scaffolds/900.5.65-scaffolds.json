@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.65",
+  "parentQuestion": "Pulmonary edema involves:",
+  "narrative": {
+    "setting": "The Magic School Bus floats in Mr. Edgar's alveolus - but instead of air, they're underwater. Pink, frothy fluid fills the space where oxygen should be diffusing. Ms. Frizzle checks the pressure gauges. 'Capillary pressure is sky-high,' she reports. 'Fluid is being forced out of the blood vessels and flooding the air spaces. The lungs are drowning from the inside.'",
+    "character": "Mr. Edgar",
+    "tension": "Heart failure patients wake up gasping, unable to breathe, pink frothy sputum pouring from their mouths. ARDS patients' lungs fill despite normal heart function. Drowning victims' lungs look identical on autopsy. Understanding pulmonary edema isn't just fluid balance - it's understanding how the barrier between blood and air fails catastrophically."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.65.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Edema means swelling from fluid,' Ms. Frizzle begins. 'PULMONARY edema = fluid in the LUNGS. Specifically in alveoli and interstitium. Where gas should be diffusing, there's liquid instead.'",
+      "q": "The term 'edema' means:",
+      "options": [
+        "Infection",
+        "Swelling from fluid accumulation",
+        "Cell death",
+        "Muscle contraction"
+      ],
+      "answer": 1,
+      "explain": "EDEMA = abnormal accumulation of FLUID in tissues causing SWELLING. Pulmonary edema = fluid in lung tissue/alveoli. Peripheral edema = fluid in ankles/legs.",
+      "wrongExplains": {
+        "0": "Infection involves pathogens. Edema is fluid accumulation (can occur without infection).",
+        "2": "Cell death is necrosis. Edema is extravascular fluid, not dead cells.",
+        "3": "Muscle contraction is separate. Edema is interstitial/alveolar fluid."
+      }
+    },
+    {
+      "id": "900.5.65.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'The barrier,' Ms. Frizzle shows the alveolar-capillary membrane. 'Normally, fluid stays IN the capillaries. Starling forces - hydrostatic pressure pushes out, oncotic pressure pulls in. Balanced. In pulmonary edema, this fails.'",
+      "q": "In healthy lungs, fluid is kept in capillaries by:",
+      "options": [
+        "Surfactant",
+        "Balance of hydrostatic and oncotic pressures (Starling forces)",
+        "Cilia",
+        "Mucus"
+      ],
+      "answer": 1,
+      "explain": "STARLING FORCES: hydrostatic pressure (pushes fluid out) vs oncotic/colloid osmotic pressure (pulls fluid in). Normally balanced. Edema = imbalance favoring fluid leak.",
+      "wrongExplains": {
+        "0": "Surfactant prevents alveolar collapse, doesn't control capillary fluid balance.",
+        "2": "Cilia move mucus in airways. Fluid balance is Starling forces.",
+        "3": "Mucus traps particles. Starling forces determine fluid movement across capillaries."
+      }
+    },
+    {
+      "id": "900.5.65.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Two main types,' Ms. Frizzle lists. 'CARDIOGENIC - from heart failure, high capillary pressure forces fluid out. NON-CARDIOGENIC - from ARDS, sepsis, capillary permeability increases, fluid leaks despite normal pressure.'",
+      "q": "Pulmonary edema can be caused by:",
+      "options": [
+        "Heart failure only",
+        "Heart failure OR increased capillary permeability",
+        "Smoking only",
+        "Exercise"
+      ],
+      "answer": 1,
+      "explain": "Pulmonary edema: CARDIOGENIC (heart failure → high pressure) OR NON-CARDIOGENIC (ARDS, sepsis, toxins → increased permeability). Different mechanisms, same result - fluid in alveoli.",
+      "wrongExplains": {
+        "0": "Heart failure is common but not the only cause. ARDS, sepsis, drowning also cause edema.",
+        "2": "Smoking causes COPD/cancer, not directly edema. Heart failure and ARDS cause edema.",
+        "3": "Exercise doesn't cause pulmonary edema (except rare high-altitude cases)."
+      }
+    },
+    {
+      "id": "900.5.65.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Cardiogenic mechanism,' Ms. Frizzle diagrams. 'Left heart fails → blood backs up into lungs → pulmonary capillary pressure rises (>18 mmHg) → hydrostatic pressure overwhelms oncotic → fluid leaks into alveoli. Classic in heart failure.'",
+      "q": "In cardiogenic pulmonary edema, fluid leaks because:",
+      "options": [
+        "Capillary walls are damaged",
+        "Elevated capillary hydrostatic pressure from heart failure",
+        "Low protein levels only",
+        "Infection"
+      ],
+      "answer": 1,
+      "explain": "CARDIOGENIC edema: LEFT HEART FAILURE → blood backs up → ELEVATED pulmonary capillary pressure → hydrostatic pressure exceeds oncotic → fluid forced into alveoli/interstitium.",
+      "wrongExplains": {
+        "0": "Damaged capillaries are NON-cardiogenic (ARDS). Cardiogenic is high pressure, intact membranes.",
+        "2": "Low protein (low oncotic pressure) contributes but cardiogenic is primarily high hydrostatic pressure.",
+        "3": "Infection can cause non-cardiogenic edema (sepsis/ARDS) but cardiogenic is heart failure."
+      }
+    },
+    {
+      "id": "900.5.65.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'ARDS - Acute Respiratory Distress Syndrome,' Ms. Frizzle explains. 'Sepsis, trauma, aspiration damage the alveolar-capillary barrier. Permeability increases. Fluid and protein leak into alveoli despite NORMAL capillary pressure. Non-cardiogenic edema.'",
+      "q": "In ARDS (non-cardiogenic pulmonary edema), the problem is:",
+      "options": [
+        "Heart failure",
+        "Increased capillary permeability",
+        "Low blood pressure only",
+        "Bronchospasm"
+      ],
+      "answer": 1,
+      "explain": "ARDS = INCREASED CAPILLARY PERMEABILITY from damage (sepsis, trauma, aspiration). Fluid leaks despite NORMAL pressure. Protein-rich edema. Contrast with cardiogenic (high pressure).",
+      "wrongExplains": {
+        "0": "Heart failure is CARDIOGENIC edema. ARDS is non-cardiogenic - capillary damage.",
+        "2": "Low BP can contribute but ARDS is primarily about damaged, leaky capillaries.",
+        "3": "Bronchospasm is asthma. ARDS is alveolar-capillary barrier damage."
+      }
+    },
+    {
+      "id": "900.5.65.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'The clinical presentation,' Ms. Frizzle describes. 'Severe dyspnea - gasping for air. Orthopnea - can't lie flat. Crackles on auscultation - fluid popping in alveoli. Pink, frothy sputum - blood-tinged edema fluid. Hypoxemia - gas exchange fails.'",
+      "q": "Pink frothy sputum in pulmonary edema indicates:",
+      "options": [
+        "Normal secretions",
+        "Blood-tinged edema fluid from alveoli",
+        "Bacterial infection",
+        "Mucus plug"
+      ],
+      "answer": 1,
+      "explain": "PINK FROTHY SPUTUM = blood-tinged EDEMA FLUID coughed up from flooded alveoli. Classic sign of pulmonary edema. Pink from RBCs, frothy from air mixing.",
+      "wrongExplains": {
+        "0": "Pink frothy sputum is NOT normal - it's pathognomonic for pulmonary edema.",
+        "2": "Bacterial infection produces purulent (yellow/green) sputum. Pink frothy = edema.",
+        "3": "Mucus plugs are thick. Pink frothy sputum is watery edema fluid with blood."
+      }
+    },
+    {
+      "id": "900.5.65.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Treating cardiogenic edema,' Ms. Frizzle lists. 'Diuretics - remove fluid. Nitrates - dilate veins, reduce preload. Oxygen - combat hypoxemia. Treat the underlying heart failure. Goal: reduce capillary pressure.'",
+      "q": "Treatment of cardiogenic pulmonary edema includes:",
+      "options": [
+        "Antibiotics only",
+        "Diuretics and nitrates to reduce fluid/pressure",
+        "Bronchodilators only",
+        "Surgery"
+      ],
+      "answer": 1,
+      "explain": "Cardiogenic edema treatment: DIURETICS (remove fluid), NITRATES (reduce preload), oxygen, treat heart failure. Goal: lower pulmonary capillary pressure.",
+      "wrongExplains": {
+        "0": "Antibiotics treat infection. Cardiogenic edema is heart failure, needs diuretics/nitrates.",
+        "2": "Bronchodilators help asthma. Pulmonary edema needs diuretics to remove fluid.",
+        "3": "Medical management first. Surgery might be for underlying heart problem."
+      }
+    },
+    {
+      "id": "900.5.65.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'BNP - B-type natriuretic peptide,' Ms. Frizzle adds. 'Blood test elevated in heart failure. Helps distinguish cardiogenic (high BNP) from non-cardiogenic edema (normal BNP). Useful diagnostic tool in dyspneic patients.'",
+      "q": "BNP (brain natriuretic peptide) is elevated in:",
+      "options": [
+        "All types of pulmonary edema equally",
+        "Cardiogenic (heart failure) edema",
+        "Non-cardiogenic edema only",
+        "Normal lungs"
+      ],
+      "answer": 1,
+      "explain": "BNP is elevated in HEART FAILURE (cardiogenic edema). Released by stretched ventricles. Helps distinguish cardiogenic (high BNP) from non-cardiogenic (normal BNP).",
+      "wrongExplains": {
+        "0": "BNP is specific for heart failure. Non-cardiogenic (ARDS) has normal BNP.",
+        "2": "BNP is LOW in non-cardiogenic edema. It's elevated in heart failure.",
+        "3": "Normal BNP is <100 pg/mL. Elevated BNP indicates heart failure/strain."
+      }
+    },
+    {
+      "id": "900.5.65.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Chest X-ray findings,' Ms. Frizzle shows the image. 'Bilateral infiltrates - white-out in both lungs. Kerley B lines - fluid in interstitial septa. Bat-wing or butterfly pattern - central perihilar edema. Cardiomegaly suggests heart failure.'",
+      "q": "Chest X-ray in pulmonary edema typically shows:",
+      "options": [
+        "Normal lung fields",
+        "Bilateral infiltrates and Kerley B lines",
+        "Hyperinflation",
+        "Pneumothorax"
+      ],
+      "answer": 1,
+      "explain": "Pulmonary edema X-ray: BILATERAL INFILTRATES (white), Kerley B lines (interstitial fluid), bat-wing pattern, possibly cardiomegaly. Classic findings.",
+      "wrongExplains": {
+        "0": "Edema creates white infiltrates. X-ray is NOT normal.",
+        "2": "Hyperinflation is emphysema (too black). Edema is infiltrates (too white).",
+        "3": "Pneumothorax is air in pleural space (black). Edema is fluid in alveoli (white)."
+      }
+    },
+    {
+      "id": "900.5.65.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Ms. Frizzle looks at the fluid-filled alveoli, where air should be. 'Drowning from within - that's pulmonary edema. Cardiogenic or non-cardiogenic, the result is the same: wet lungs that can't exchange gas. So, class: what does pulmonary edema involve?'",
+      "q": "Pulmonary edema involves:",
+      "options": [
+        "Air in pleural space",
+        "Fluid accumulation in alveoli",
+        "Collapsed airways",
+        "Lung cancer"
+      ],
+      "answer": 1,
+      "explain": "PULMONARY EDEMA = FLUID in alveoli/interstitium. Cardiogenic (heart failure, high pressure) or non-cardiogenic (ARDS, increased permeability). Impairs gas exchange. Treated with diuretics, oxygen.",
+      "wrongExplains": {
+        "0": "Air in pleural space is pneumothorax, not pulmonary edema.",
+        "2": "Collapsed airways might be bronchoconstriction or tumor compression - not edema.",
+        "3": "Lung cancer is malignancy - different pathology from fluid accumulation."
+      }
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "100-brain": [
+    "Basal_ganglia_circuits.svg",
+    "Brain_inferior_view.svg",
+    "Brain_lateral_lobes.svg",
+    "Brain_medial_lobes_en.svg",
+    "Brainstem_sagittal.svg",
+    "Circle_of_Willis_en.svg",
+    "Embryonic_brain.svg",
+    "Hypothalamus_pituitary.svg",
+    "Meninges_en.svg",
+    "Midbrain_inferior_colliculus.svg",
+    "Midbrain_superior_colliculus.svg",
+    "Skull_and_brain.svg",
+    "Thalamic_nuclei.svg",
+    "meninges.svg"
+  ],
+  "200-nerves": [
+    "All_or_none_law.svg",
+    "Brachial_plexus_color.svg",
+    "Brachial_plexus_schematic.svg",
+    "Gray769_spinal_cord.svg",
+    "Gray770_spinal_cord.svg",
+    "Neuron_complete_en.svg",
+    "Neuron_synapse.svg",
+    "Neuron_types_polarity.svg",
+    "Reflex_arc.svg",
+    "Spinal_cord_section_en.svg",
+    "Spinal_cord_tracts_en.svg",
+    "Spinal_nerve.svg",
+    "neuron.svg"
+  ],
+  "400-tissues": [
+    "CNS_myelin_formation.svg",
+    "Myelin_sheath.svg",
+    "Neuron.svg",
+    "Neuron_myelin_oligodendrocyte.svg"
+  ],
+  "500-ans": [
+    "Autonomic_nervous_system.svg",
+    "Nervous_system_diagram.svg"
+  ],
+  "600-senses": [
+    "Bony_labyrinth.svg",
+    "Cochlea.svg",
+    "Cochlea_crosssection.svg",
+    "Cone_color_sensitivity.svg",
+    "Eye_chambers.svg",
+    "Eye_diagram.svg",
+    "Eye_schematic_en.svg",
+    "Osseous_labyrinth.svg",
+    "Photoreceptor_distribution.svg",
+    "Retina_diagram.svg",
+    "Vestibular_push_pull.svg",
+    "eye-anatomy.svg"
+  ],
+  "700-endocrine": [
+    "ACTH_feedback.svg",
+    "Adrenal_steroid_pathways.svg",
+    "Endocrine_CNS.svg",
+    "Endocrine_system_en.svg",
+    "Thyroid_system.svg"
+  ],
+  "general": [
+    "2674b41dd8682789f2c17fb1d2e845d3acb793c5.svg",
+    "3607de0c21ec75e8c8d9126f2a2b7b60f6963731.svg",
+    "399dc6b6e91a780c89824ccc26b4453b289e4387.svg",
+    "6e5ab2664b422d53eb0c7df3b87e1360d75ad9af.svg",
+    "6fcfb0ad87ebe21c7f58efbd2466d5671055490e.svg",
+    "Medulla_inferior.svg",
+    "Medulla_middle.svg",
+    "Medulla_rostral.svg",
+    "Pons_inferior.svg",
+    "Pons_middle.svg"
+  ]
+}

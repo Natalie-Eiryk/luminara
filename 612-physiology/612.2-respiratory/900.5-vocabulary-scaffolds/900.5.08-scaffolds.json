@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.08",
+  "parentQuestion": "The volume of air moved in a normal, quiet breath is called:",
+  "narrative": {
+    "setting": "The Magic School Bus hovers in Mr. Edgar's trachea as he breathes quietly - reading, relaxed. You watch air flow in, pause, flow out. In, pause, out. Like waves on a beach. 'The rhythm of life,' Ms. Frizzle whispers. 'Let's measure it.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's breathing seems shallow. The bus's sensors are measuring every breath, comparing it to what should be normal. Is he getting enough air, or just barely surviving?"
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.08.s01",
+      "arc": 1,
+      "arcTitle": "The Rhythm of Breath",
+      "narrative": "Ms. Frizzle watches the air flow past - in, out, in, out. 'The scientists who named this used a beautiful metaphor,' she says. 'They thought of the ocean, of waves washing in and out.'",
+      "q": "The word 'tidal' relates to:",
+      "options": [
+        "Mountains and peaks",
+        "Ocean tides that ebb and flow",
+        "Temperature changes",
+        "Muscle contractions"
+      ],
+      "answer": 1,
+      "explain": "'Tidal' refers to OCEAN TIDES - the regular ebb and flow of water. Tidal volume is like the tide of air that flows in and out with each breath, a rhythmic, gentle exchange.",
+      "wrongExplains": {
+        "0": "Mountains are static and don't ebb/flow. The tidal metaphor is oceanic, not geographic.",
+        "2": "Temperature doesn't ebb and flow the way tides do. The metaphor is about rhythmic movement.",
+        "3": "Muscle contractions CAUSE breathing but aren't what 'tidal' references. Think ocean waves."
+      }
+    },
+    {
+      "id": "900.5.08.s02",
+      "arc": 1,
+      "arcTitle": "The Rhythm of Breath",
+      "narrative": "The bus's sensors measure the passing air. 'During quiet, relaxed breathing,' Ms. Frizzle notes the readout, 'the volume is remarkably consistent. About half a liter each time.'",
+      "q": "During quiet, relaxed breathing, approximately how much air moves with each breath?",
+      "options": [
+        "About 100 mL",
+        "About 500 mL",
+        "About 2000 mL",
+        "About 5000 mL"
+      ],
+      "answer": 1,
+      "explain": "TIDAL VOLUME is about 500 mL (half a liter) during quiet breathing - roughly the volume of a small water bottle. This gentle tide flows in and out 12-20 times per minute at rest.",
+      "wrongExplains": {
+        "0": "100 mL is too small - you'd be gasping. That's less than half a cup of air.",
+        "2": "2000 mL is a DEEP breath, not quiet breathing. That's four times tidal volume.",
+        "3": "5000 mL is close to TOTAL LUNG CAPACITY. You couldn't move that much with a quiet breath."
+      }
+    },
+    {
+      "id": "900.5.08.s03",
+      "arc": 1,
+      "arcTitle": "The Rhythm of Breath",
+      "narrative": "'Here's a sobering thought,' Ms. Frizzle says as air rushes past. 'Not all this air reaches the alveoli. Some just fills the pipes and never sees a capillary.'",
+      "q": "Not all tidal volume reaches the alveoli. What happens to the rest?",
+      "options": [
+        "It escapes through the nose",
+        "It fills the conducting airways (dead space)",
+        "It's absorbed into blood directly",
+        "It's converted to carbon dioxide"
+      ],
+      "answer": 1,
+      "explain": "About 150 mL fills ANATOMICAL DEAD SPACE - the trachea, bronchi, and bronchioles. These conducting airways don't exchange gas; they just move air. So of 500 mL inhaled, only 350 mL actually reaches alveoli.",
+      "wrongExplains": {
+        "0": "Air doesn't 'escape' during breathing. It fills the system, then exits the same way.",
+        "2": "Gas exchange ONLY occurs in alveoli. Blood doesn't absorb oxygen from the conducting airways.",
+        "3": "Air isn't 'converted.' Oxygen and CO2 exchange at alveoli; air composition shifts, but tidal volume stays air."
+      }
+    },
+    {
+      "id": "900.5.08.s04",
+      "arc": 2,
+      "arcTitle": "Volumes and Reserves",
+      "narrative": "'Let's think bigger,' Ms. Frizzle says. 'Tidal volume is just normal breathing. But what if you needed MORE air? What reserves do you have?'",
+      "q": "Inspiratory reserve volume is:",
+      "options": [
+        "Air that remains in the lungs always",
+        "Extra air you CAN inhale beyond a normal breath",
+        "The normal quiet breath volume",
+        "Air in the dead space"
+      ],
+      "answer": 1,
+      "explain": "INSPIRATORY RESERVE is the EXTRA air you CAN breathe in AFTER a normal inhalation - about 3100 mL more. It's your reserve tank for when you need to take a really deep breath.",
+      "wrongExplains": {
+        "0": "Air that always remains is RESIDUAL volume. Inspiratory reserve is extra capacity you CAN access.",
+        "2": "Normal quiet breath is TIDAL volume (~500 mL). Inspiratory reserve is above that.",
+        "3": "Dead space is fixed anatomical volume. Inspiratory reserve is breathing capacity."
+      }
+    },
+    {
+      "id": "900.5.08.s05",
+      "arc": 2,
+      "arcTitle": "Volumes and Reserves",
+      "narrative": "'And what about expiratory reserve?' Ms. Frizzle asks. 'After a normal exhale, there's still more you could push out.' She demonstrates, exhaling forcefully.",
+      "q": "Expiratory reserve volume is:",
+      "options": [
+        "Air you can't exhale no matter what",
+        "Extra air you CAN exhale beyond a normal breath",
+        "The normal quiet exhale volume",
+        "Air in the alveoli only"
+      ],
+      "answer": 1,
+      "explain": "EXPIRATORY RESERVE is the EXTRA air you CAN forcefully exhale AFTER a normal expiration - about 1200 mL. Useful for coughing, singing, blowing out candles.",
+      "wrongExplains": {
+        "0": "Air you CAN'T exhale is RESIDUAL volume. Expiratory reserve CAN be pushed out.",
+        "2": "Normal quiet exhale is part of tidal volume. Expiratory reserve is forced extra exhalation.",
+        "3": "Alveolar air is distributed. Expiratory reserve comes from the entire lung system."
+      }
+    },
+    {
+      "id": "900.5.08.s06",
+      "arc": 2,
+      "arcTitle": "Volumes and Reserves",
+      "narrative": "'Now - what about the air you CANNOT exhale?' Ms. Frizzle zooms to the deepest alveoli. 'Even after forcing out every possible molecule, some air stays trapped.'",
+      "q": "What is 'residual volume'?",
+      "options": [
+        "Air that moves in normal breathing",
+        "Air that remains after forced expiration",
+        "Extra air you can inhale",
+        "Air lost through talking"
+      ],
+      "answer": 1,
+      "explain": "RESIDUAL VOLUME is the air that REMAINS in the lungs even after maximum forced expiration - about 1200 mL. It's trapped by the structure of the lungs and prevents complete collapse.",
+      "wrongExplains": {
+        "0": "Normal breathing moves TIDAL volume. Residual is the trapped, non-movable air.",
+        "2": "Extra inhalable air is INSPIRATORY RESERVE. Residual is what you CAN'T move.",
+        "3": "Talking uses tidal volume and reserves. Residual stays put, always."
+      }
+    },
+    {
+      "id": "900.5.08.s07",
+      "arc": 3,
+      "arcTitle": "The Big Picture",
+      "narrative": "'Let's put it all together,' Ms. Frizzle draws a diagram. 'Tidal + inspiratory reserve + expiratory reserve = everything you CAN move. That's your vital capacity.'",
+      "q": "What is 'vital capacity'?",
+      "options": [
+        "Air moved in quiet breathing",
+        "Maximum air movable in one breath cycle",
+        "Air remaining after normal exhale",
+        "Dead space volume"
+      ],
+      "answer": 1,
+      "explain": "VITAL CAPACITY is the MAXIMUM air you can move in one breath - a complete deep inhale followed by a complete forceful exhale. It equals tidal + inspiratory reserve + expiratory reserve: about 4800 mL.",
+      "wrongExplains": {
+        "0": "Quiet breathing is TIDAL volume only. Vital capacity is maximum effort breathing.",
+        "2": "Air after normal exhale still includes expiratory reserve. Different concept.",
+        "3": "Dead space is anatomical airway volume (~150 mL), not breathing capacity."
+      }
+    },
+    {
+      "id": "900.5.08.s08",
+      "arc": 3,
+      "arcTitle": "The Big Picture",
+      "narrative": "'Total lung capacity,' Ms. Frizzle continues, 'is vital capacity PLUS residual volume. Everything your lungs can hold, movable and non-movable.'",
+      "q": "Total lung capacity equals:",
+      "options": [
+        "Tidal volume only",
+        "Vital capacity plus residual volume",
+        "Dead space plus tidal volume",
+        "Inspiratory reserve only"
+      ],
+      "answer": 1,
+      "explain": "TOTAL LUNG CAPACITY = VITAL CAPACITY + RESIDUAL VOLUME - about 6000 mL. It's EVERYTHING your lungs can contain: all the air you can move (vital capacity) plus the air you can't (residual).",
+      "wrongExplains": {
+        "0": "Tidal volume is just normal breathing (~500 mL). TLC is everything combined.",
+        "2": "Dead space + tidal doesn't account for reserves or residual. Too small.",
+        "3": "Inspiratory reserve is just one component. TLC includes all volumes."
+      }
+    },
+    {
+      "id": "900.5.08.s09",
+      "arc": 3,
+      "arcTitle": "The Big Picture",
+      "narrative": "'Clinically,' Ms. Frizzle notes, 'we often measure FEV1 - how much you can exhale in one second. It tells us about airway obstruction in conditions like asthma.'",
+      "q": "FEV1 measures:",
+      "options": [
+        "Total lung capacity",
+        "The volume exhaled in the first second of a forced breath",
+        "Residual volume",
+        "Tidal volume at rest"
+      ],
+      "answer": 1,
+      "explain": "FEV1 = Forced Expiratory Volume in 1 second. It measures how FAST you can exhale - normally about 80% of vital capacity in one second. Reduced FEV1 indicates airway obstruction.",
+      "wrongExplains": {
+        "0": "TLC is total capacity, not speed of exhalation. FEV1 is about rate.",
+        "2": "Residual can't be exhaled at all! FEV1 measures what CAN be exhaled.",
+        "3": "Tidal volume is quiet breathing. FEV1 is forced, rapid exhalation."
+      }
+    },
+    {
+      "id": "900.5.08.s10",
+      "arc": 3,
+      "arcTitle": "The Big Picture",
+      "narrative": "Mr. Edgar breathes quietly - 500 mL in, 500 mL out, like gentle waves. Not deep breaths, not forced - just the normal ebb and flow of life. 'That volume,' Ms. Frizzle asks, 'what's it called?'",
+      "q": "The volume of air moved in a normal, quiet breath is called:",
+      "options": [
+        "Residual volume",
+        "Vital capacity",
+        "Tidal volume",
+        "Inspiratory reserve"
+      ],
+      "answer": 2,
+      "explain": "TIDAL VOLUME - like ocean tides, air ebbs and flows with each quiet breath. About 500 mL at rest, rhythmic and gentle. It's the baseline of breathing, the rhythm of life.",
+      "wrongExplains": {
+        "0": "Residual volume is TRAPPED air that can't be exhaled. Tidal is the flowing breath.",
+        "1": "Vital capacity is MAXIMUM air movable. Tidal is just normal, quiet breathing.",
+        "3": "Inspiratory reserve is EXTRA you CAN inhale. Tidal is the normal amount you DO inhale."
+      }
+    }
+  ]
+}

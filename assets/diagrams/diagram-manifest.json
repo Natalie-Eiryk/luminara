@@ -1,0 +1,936 @@
+{
+  "version": "1.0.0",
+  "description": "Anatomy diagram manifest - maps questions to local SVG/WebP diagrams with annotation overlays",
+  "sources": {
+    "wikimedia": "https://commons.wikimedia.org",
+    "license": "CC-BY-SA or Public Domain"
+  },
+  "diagrams": {
+    "brain-sagittal": {
+      "id": "brain-sagittal",
+      "file": "100-brain/brain-sagittal.svg",
+      "source": "https://commons.wikimedia.org/wiki/File:Brain_human_sagittal_section.svg",
+      "title": "Human Brain - Sagittal Section",
+      "license": "CC-BY-SA 3.0",
+      "artist": "Patrick J. Lynch",
+      "regions": {
+        "cerebrum": {
+          "x": 120,
+          "y": 80,
+          "label": "Cerebrum"
+        },
+        "cerebellum": {
+          "x": 280,
+          "y": 200,
+          "label": "Cerebellum"
+        },
+        "brainstem": {
+          "x": 240,
+          "y": 260,
+          "label": "Brainstem"
+        },
+        "corpus-callosum": {
+          "x": 180,
+          "y": 120,
+          "label": "Corpus Callosum"
+        },
+        "thalamus": {
+          "x": 200,
+          "y": 160,
+          "label": "Thalamus"
+        },
+        "hypothalamus": {
+          "x": 190,
+          "y": 190,
+          "label": "Hypothalamus"
+        },
+        "pituitary": {
+          "x": 185,
+          "y": 220,
+          "label": "Pituitary"
+        },
+        "midbrain": {
+          "x": 230,
+          "y": 210,
+          "label": "Midbrain"
+        },
+        "pons": {
+          "x": 250,
+          "y": 250,
+          "label": "Pons"
+        },
+        "medulla": {
+          "x": 260,
+          "y": 290,
+          "label": "Medulla"
+        }
+      }
+    },
+    "brain-lobes": {
+      "id": "brain-lobes",
+      "file": "100-brain/brain-lobes.svg",
+      "source": "https://commons.wikimedia.org/wiki/File:Brain_lobes.svg",
+      "title": "Brain Lobes - Lateral View",
+      "license": "Public Domain",
+      "regions": {
+        "frontal-lobe": {
+          "x": 80,
+          "y": 100,
+          "label": "Frontal Lobe",
+          "color": "#ff6b6b"
+        },
+        "parietal-lobe": {
+          "x": 200,
+          "y": 80,
+          "label": "Parietal Lobe",
+          "color": "#4ecdc4"
+        },
+        "temporal-lobe": {
+          "x": 150,
+          "y": 200,
+          "label": "Temporal Lobe",
+          "color": "#45b7d1"
+        },
+        "occipital-lobe": {
+          "x": 300,
+          "y": 120,
+          "label": "Occipital Lobe",
+          "color": "#96ceb4"
+        },
+        "cerebellum": {
+          "x": 320,
+          "y": 220,
+          "label": "Cerebellum",
+          "color": "#dda0dd"
+        }
+      }
+    },
+    "neuron": {
+      "id": "neuron",
+      "file": "200-nerves/neuron.svg",
+      "source": "https://commons.wikimedia.org/wiki/File:Neuron.svg",
+      "title": "Neuron Structure",
+      "license": "Public Domain",
+      "regions": {
+        "cell-body": {
+          "x": 100,
+          "y": 150,
+          "label": "Cell Body (Soma)"
+        },
+        "dendrites": {
+          "x": 60,
+          "y": 100,
+          "label": "Dendrites"
+        },
+        "axon": {
+          "x": 250,
+          "y": 150,
+          "label": "Axon"
+        },
+        "myelin-sheath": {
+          "x": 300,
+          "y": 140,
+          "label": "Myelin Sheath"
+        },
+        "axon-terminal": {
+          "x": 450,
+          "y": 150,
+          "label": "Axon Terminal"
+        },
+        "nucleus": {
+          "x": 100,
+          "y": 150,
+          "label": "Nucleus"
+        },
+        "node-of-ranvier": {
+          "x": 350,
+          "y": 150,
+          "label": "Node of Ranvier"
+        }
+      }
+    },
+    "eye-anatomy": {
+      "id": "eye-anatomy",
+      "file": "600-senses/eye-anatomy.svg",
+      "source": "https://commons.wikimedia.org/wiki/File:Schematic_diagram_of_the_human_eye_en.svg",
+      "title": "Human Eye - Cross Section",
+      "license": "CC-BY-SA 3.0",
+      "regions": {
+        "cornea": {
+          "x": 50,
+          "y": 150,
+          "label": "Cornea"
+        },
+        "iris": {
+          "x": 80,
+          "y": 150,
+          "label": "Iris"
+        },
+        "pupil": {
+          "x": 90,
+          "y": 150,
+          "label": "Pupil"
+        },
+        "lens": {
+          "x": 120,
+          "y": 150,
+          "label": "Lens"
+        },
+        "retina": {
+          "x": 280,
+          "y": 150,
+          "label": "Retina"
+        },
+        "optic-nerve": {
+          "x": 320,
+          "y": 160,
+          "label": "Optic Nerve"
+        },
+        "vitreous": {
+          "x": 200,
+          "y": 150,
+          "label": "Vitreous Humor"
+        },
+        "sclera": {
+          "x": 300,
+          "y": 100,
+          "label": "Sclera"
+        },
+        "choroid": {
+          "x": 290,
+          "y": 120,
+          "label": "Choroid"
+        },
+        "fovea": {
+          "x": 300,
+          "y": 150,
+          "label": "Fovea"
+        },
+        "ciliary-body": {
+          "x": 100,
+          "y": 100,
+          "label": "Ciliary Body"
+        }
+      }
+    },
+    "ear-anatomy": {
+      "id": "ear-anatomy",
+      "file": "600-senses/ear-anatomy.svg",
+      "source": "https://commons.wikimedia.org/wiki/File:Anatomy_of_the_Human_Ear_en.svg",
+      "title": "Human Ear - Cross Section",
+      "license": "CC-BY-SA 3.0",
+      "regions": {
+        "pinna": {
+          "x": 30,
+          "y": 150,
+          "label": "Pinna (Auricle)"
+        },
+        "ear-canal": {
+          "x": 80,
+          "y": 150,
+          "label": "External Auditory Canal"
+        },
+        "tympanic-membrane": {
+          "x": 130,
+          "y": 150,
+          "label": "Tympanic Membrane"
+        },
+        "malleus": {
+          "x": 150,
+          "y": 140,
+          "label": "Malleus"
+        },
+        "incus": {
+          "x": 170,
+          "y": 130,
+          "label": "Incus"
+        },
+        "stapes": {
+          "x": 190,
+          "y": 140,
+          "label": "Stapes"
+        },
+        "cochlea": {
+          "x": 230,
+          "y": 170,
+          "label": "Cochlea"
+        },
+        "vestibule": {
+          "x": 210,
+          "y": 130,
+          "label": "Vestibule"
+        },
+        "semicircular-canals": {
+          "x": 230,
+          "y": 100,
+          "label": "Semicircular Canals"
+        },
+        "eustachian-tube": {
+          "x": 180,
+          "y": 200,
+          "label": "Eustachian Tube"
+        },
+        "vestibulocochlear-nerve": {
+          "x": 270,
+          "y": 150,
+          "label": "Vestibulocochlear Nerve"
+        }
+      }
+    },
+    "spinal-cord-cross": {
+      "id": "spinal-cord-cross",
+      "file": "200-nerves/spinal-cord-cross.svg",
+      "source": "https://commons.wikimedia.org/wiki/File:Spinal_cord_segment.svg",
+      "title": "Spinal Cord - Cross Section",
+      "license": "Public Domain",
+      "regions": {
+        "gray-matter": {
+          "x": 150,
+          "y": 150,
+          "label": "Gray Matter"
+        },
+        "white-matter": {
+          "x": 100,
+          "y": 100,
+          "label": "White Matter"
+        },
+        "dorsal-horn": {
+          "x": 150,
+          "y": 100,
+          "label": "Dorsal Horn"
+        },
+        "ventral-horn": {
+          "x": 150,
+          "y": 200,
+          "label": "Ventral Horn"
+        },
+        "central-canal": {
+          "x": 150,
+          "y": 150,
+          "label": "Central Canal"
+        },
+        "dorsal-root": {
+          "x": 200,
+          "y": 80,
+          "label": "Dorsal Root"
+        },
+        "ventral-root": {
+          "x": 200,
+          "y": 220,
+          "label": "Ventral Root"
+        },
+        "spinal-nerve": {
+          "x": 250,
+          "y": 150,
+          "label": "Spinal Nerve"
+        }
+      }
+    },
+    "ans-diagram": {
+      "id": "ans-diagram",
+      "file": "500-ans/autonomic-nervous-system.svg",
+      "source": "https://commons.wikimedia.org/wiki/File:Gray839.png",
+      "title": "Autonomic Nervous System",
+      "license": "Public Domain",
+      "regions": {
+        "sympathetic-chain": {
+          "x": 150,
+          "y": 200,
+          "label": "Sympathetic Chain"
+        },
+        "parasympathetic": {
+          "x": 100,
+          "y": 100,
+          "label": "Parasympathetic (Craniosacral)"
+        },
+        "heart": {
+          "x": 200,
+          "y": 150,
+          "label": "Heart"
+        },
+        "lungs": {
+          "x": 200,
+          "y": 120,
+          "label": "Lungs"
+        },
+        "stomach": {
+          "x": 200,
+          "y": 250,
+          "label": "Stomach"
+        },
+        "intestines": {
+          "x": 200,
+          "y": 300,
+          "label": "Intestines"
+        }
+      }
+    },
+    "endocrine-system": {
+      "id": "endocrine-system",
+      "file": "700-endocrine/endocrine-system.svg",
+      "source": "https://commons.wikimedia.org/wiki/File:Endocrine_English.svg",
+      "title": "Endocrine System Overview",
+      "license": "CC-BY-SA 3.0",
+      "regions": {
+        "hypothalamus": {
+          "x": 150,
+          "y": 50,
+          "label": "Hypothalamus"
+        },
+        "pituitary": {
+          "x": 150,
+          "y": 70,
+          "label": "Pituitary Gland"
+        },
+        "pineal": {
+          "x": 170,
+          "y": 45,
+          "label": "Pineal Gland"
+        },
+        "thyroid": {
+          "x": 150,
+          "y": 120,
+          "label": "Thyroid Gland"
+        },
+        "parathyroid": {
+          "x": 160,
+          "y": 125,
+          "label": "Parathyroid Glands"
+        },
+        "thymus": {
+          "x": 150,
+          "y": 160,
+          "label": "Thymus"
+        },
+        "adrenal": {
+          "x": 150,
+          "y": 220,
+          "label": "Adrenal Glands"
+        },
+        "pancreas": {
+          "x": 150,
+          "y": 260,
+          "label": "Pancreas"
+        },
+        "ovaries": {
+          "x": 150,
+          "y": 320,
+          "label": "Ovaries"
+        },
+        "testes": {
+          "x": 150,
+          "y": 380,
+          "label": "Testes"
+        }
+      }
+    },
+    "meninges": {
+      "id": "meninges",
+      "file": "100-brain/meninges.svg",
+      "source": "https://commons.wikimedia.org/wiki/File:Meninges-en.svg",
+      "title": "Meninges - Brain Coverings",
+      "license": "CC-BY-SA 3.0",
+      "regions": {
+        "dura-mater": {
+          "x": 100,
+          "y": 50,
+          "label": "Dura Mater"
+        },
+        "arachnoid": {
+          "x": 100,
+          "y": 80,
+          "label": "Arachnoid Mater"
+        },
+        "pia-mater": {
+          "x": 100,
+          "y": 110,
+          "label": "Pia Mater"
+        },
+        "subarachnoid-space": {
+          "x": 150,
+          "y": 95,
+          "label": "Subarachnoid Space"
+        },
+        "subdural-space": {
+          "x": 150,
+          "y": 65,
+          "label": "Subdural Space"
+        },
+        "epidural-space": {
+          "x": 150,
+          "y": 35,
+          "label": "Epidural Space"
+        }
+      }
+    },
+    "complete-neuron": {
+      "id": "complete-neuron",
+      "file": "200-nerves/Complete_neuron_cell_diagram_en.svg.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Complete Neuron Cell Diagram",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "brachial-plexus": {
+      "id": "brachial-plexus",
+      "file": "200-nerves/Brachial_plexus_2.svg.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Brachial Plexus",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "reflex-arc": {
+      "id": "reflex-arc",
+      "file": "200-nerves/Reflex_Arc.svg.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Reflex Arc Diagram",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "spinal-cord-tracts": {
+      "id": "spinal-cord-tracts",
+      "file": "200-nerves/Spinal_cord_tracts_-_English.svg.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Spinal Cord Tracts",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "retina-diagram": {
+      "id": "retina-diagram",
+      "file": "600-senses/Retina-diagram.svg.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Retina Layers Diagram",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "cochlea-diagram": {
+      "id": "cochlea-diagram",
+      "file": "600-senses/Cochlea.svg.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Cochlea Cross-Section",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "basal-ganglia": {
+      "id": "basal-ganglia",
+      "file": "100-brain/Basal_ganglia_circuits.svg.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Basal Ganglia Circuits",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "circle-of-willis": {
+      "id": "circle-of-willis",
+      "file": "100-brain/Circle_of_Willis_en.svg.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Circle of Willis",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "brain-lobes-lateral": {
+      "id": "brain-lobes-lateral",
+      "file": "100-brain/Gehirn,_lateral_-_Lobi__2B_Stammhirn__2B_Cerebellum_eng.svg.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Brain Lobes - Lateral View with Labels",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "thyroid-system": {
+      "id": "thyroid-system",
+      "file": "700-endocrine/Thyroid_system.svg.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Thyroid System Feedback",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "endocrine-overview": {
+      "id": "endocrine-overview",
+      "file": "700-endocrine/Endocrine_English.svg.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Endocrine System Overview",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "epithelial-types": {
+      "id": "epithelial-types",
+      "file": "400-tissues/423_Table_04_02_Summary_of_Epithelial_Tissue_CellsN.jpg",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Epithelial Tissue Types Summary",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "epithelial-overview": {
+      "id": "epithelial-overview",
+      "file": "400-tissues/Illu_epithelium.jpg",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Epithelial Tissue Overview",
+      "license": "Public Domain",
+      "regions": {}
+    },
+    "simple-squamous": {
+      "id": "simple-squamous",
+      "file": "400-tissues/Illu_squamous_epithelium.svg.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Simple Squamous Epithelium",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "stratified-squamous": {
+      "id": "stratified-squamous",
+      "file": "400-tissues/Stratified_suqamous_epithelium_animated.gif",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Stratified Squamous Epithelium (Animated)",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "transitional-epithelium": {
+      "id": "transitional-epithelium",
+      "file": "400-tissues/Transitional_epithelium_animated.gif",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Transitional Epithelium (Animated)",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "pseudostratified": {
+      "id": "pseudostratified",
+      "file": "400-tissues/Blausen_0750_PseudostratifiedCiliatedColumnar.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Pseudostratified Ciliated Columnar Epithelium",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "connective-types": {
+      "id": "connective-types",
+      "file": "400-tissues/Illu_connective_tissues_1.jpg",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Connective Tissue Types",
+      "license": "Public Domain",
+      "regions": {}
+    },
+    "adipose-tissue": {
+      "id": "adipose-tissue",
+      "file": "400-tissues/Blausen_0012_AdiposeTissue.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Adipose Tissue Structure",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "dense-connective": {
+      "id": "dense-connective",
+      "file": "400-tissues/Dense_connective_tissue-400x.jpg",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Dense Connective Tissue (400x)",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "cartilage-types": {
+      "id": "cartilage-types",
+      "file": "400-tissues/Cartilage_types.jpg",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Cartilage Types",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "bone-cells": {
+      "id": "bone-cells",
+      "file": "400-tissues/604_Bone_cells.jpg",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Bone Cells (Osteocytes)",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "blood-cells": {
+      "id": "blood-cells",
+      "file": "400-tissues/Red_White_Blood_cells.jpg",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Red and White Blood Cells",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "neural-tissue": {
+      "id": "neural-tissue",
+      "file": "400-tissues/Blausen_0672_NeuralTissue.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Neural Tissue Overview",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "multipolar-neuron-blausen": {
+      "id": "multipolar-neuron-blausen",
+      "file": "400-tissues/Blausen_0657_MultipolarNeuron.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Multipolar Neuron Structure",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "purkinje-cell": {
+      "id": "purkinje-cell",
+      "file": "400-tissues/PurkinjeCell.jpg",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Purkinje Cell (Microscopy)",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "glial-cell-types": {
+      "id": "glial-cell-types",
+      "file": "400-tissues/Glial_Cell_Types.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Types of Glial Cells",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "neuroglia-blausen": {
+      "id": "neuroglia-blausen",
+      "file": "400-tissues/Blausen_0870_TypesofNeuroglia.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Types of Neuroglia",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "myelin-sheath-diagram": {
+      "id": "myelin-sheath-diagram",
+      "file": "400-tissues/Myelin_sheath_(1).svg.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Myelin Sheath Structure",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "myelinated-neuron-histology": {
+      "id": "myelinated-neuron-histology",
+      "file": "400-tissues/Myelinated_neuron.jpg",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Myelinated Neuron (Histology)",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "oligodendrocyte-myelin": {
+      "id": "oligodendrocyte-myelin",
+      "file": "400-tissues/CNS_myelin_sheath_formation.svg.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "CNS Myelin Sheath Formation",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "pns-glial-cells": {
+      "id": "pns-glial-cells",
+      "file": "400-tissues/1210_Glial_Cells_of_the_PNS.jpg",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Glial Cells of the PNS",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "spinal-cord-blausen": {
+      "id": "spinal-cord-blausen",
+      "file": "400-tissues/Blausen_0822_SpinalCord.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Spinal Cord Overview",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "spinal-cord-section": {
+      "id": "spinal-cord-section",
+      "file": "400-tissues/Spinal_Cord_Sectional_Anatomy.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Spinal Cord Cross-Section",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "spinal-cord-histology": {
+      "id": "spinal-cord-histology",
+      "file": "400-tissues/Rabbitspinalcord100x1.jpg",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Spinal Cord Histology (100x)",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "gland-types": {
+      "id": "gland-types",
+      "file": "400-tissues/Endocrine_vs._Exocrine.svg.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Endocrine vs Exocrine Glands",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    },
+    "secretion-modes": {
+      "id": "secretion-modes",
+      "file": "400-tissues/405_Modes_of_Secretion_by_Glands_updated.svg.png",
+      "source": "wikipedia_en_all_maxi.zim",
+      "title": "Modes of Gland Secretion",
+      "license": "CC-BY-SA 3.0",
+      "regions": {}
+    }
+  },
+  "questionMappings": {
+    "100.1.01": {
+      "diagram": "brain-lobes",
+      "highlight": [
+        "frontal-lobe",
+        "parietal-lobe",
+        "temporal-lobe"
+      ]
+    },
+    "100.1.02": {
+      "diagram": "brain-sagittal",
+      "highlight": [
+        "cerebrum",
+        "corpus-callosum"
+      ]
+    },
+    "100.1.03": {
+      "diagram": "brain-sagittal",
+      "highlight": [
+        "brainstem",
+        "midbrain",
+        "pons",
+        "medulla"
+      ]
+    },
+    "100.2.01": {
+      "diagram": "meninges",
+      "highlight": [
+        "dura-mater",
+        "arachnoid",
+        "pia-mater"
+      ]
+    },
+    "100.3.01": {
+      "diagram": "brain-lobes",
+      "highlight": [
+        "frontal-lobe"
+      ]
+    },
+    "100.4.01": {
+      "diagram": "brain-sagittal",
+      "highlight": [
+        "brainstem"
+      ]
+    },
+    "_patterns": {
+      "100.1.*": "brain-sagittal",
+      "100.2.*": "meninges",
+      "100.3.*": "brain-lobes",
+      "100.4.*": "brain-sagittal",
+      "200.*": "neuron",
+      "400.1.*": "epithelial-types",
+      "400.2.*": "connective-types",
+      "400.3.*": "gland-types",
+      "500.*": "ans-diagram",
+      "600.1.*": "eye-anatomy",
+      "600.2.*": "ear-anatomy",
+      "700.*": "endocrine-system",
+      "800.1.*": "neural-tissue",
+      "800.2.*": "brain-sagittal",
+      "800.3.*": "spinal-cord-section",
+      "800.4.*": "eye-anatomy",
+      "800.5.*": "ear-anatomy"
+    }
+  },
+  "termMappings": {
+    "cerebrum": "brain-sagittal",
+    "cerebellum": "brain-sagittal",
+    "brainstem": "brain-sagittal",
+    "midbrain": "brain-sagittal",
+    "pons": "brain-sagittal",
+    "medulla": "brain-sagittal",
+    "thalamus": "brain-sagittal",
+    "hypothalamus": "brain-sagittal",
+    "corpus callosum": "brain-sagittal",
+    "frontal lobe": "brain-lobes",
+    "parietal lobe": "brain-lobes",
+    "temporal lobe": "brain-lobes",
+    "occipital lobe": "brain-lobes",
+    "meninges": "meninges",
+    "dura mater": "meninges",
+    "arachnoid": "meninges",
+    "pia mater": "meninges",
+    "neuron": "neuron",
+    "axon": "neuron",
+    "dendrite": "neuron",
+    "myelin": "neuron",
+    "synapse": "neuron",
+    "eye": "eye-anatomy",
+    "retina": "eye-anatomy",
+    "cornea": "eye-anatomy",
+    "lens": "eye-anatomy",
+    "optic nerve": "eye-anatomy",
+    "ear": "ear-anatomy",
+    "cochlea": "ear-anatomy",
+    "vestibular": "ear-anatomy",
+    "tympanic": "ear-anatomy",
+    "ossicles": "ear-anatomy",
+    "spinal cord": "spinal-cord-cross",
+    "sympathetic": "ans-diagram",
+    "parasympathetic": "ans-diagram",
+    "autonomic": "ans-diagram",
+    "pituitary": "endocrine-system",
+    "thyroid": "thyroid-system",
+    "adrenal": "endocrine-system",
+    "pancreas": "endocrine-system",
+    "brachial plexus": "brachial-plexus",
+    "reflex arc": "reflex-arc",
+    "reflex": "reflex-arc",
+    "basal ganglia": "basal-ganglia",
+    "substantia nigra": "basal-ganglia",
+    "circle of willis": "circle-of-willis",
+    "cerebral arteries": "circle-of-willis",
+    "fovea": "retina-diagram",
+    "rods": "retina-diagram",
+    "cones": "retina-diagram",
+    "photoreceptor": "retina-diagram",
+    "organ of corti": "cochlea-diagram",
+    "hair cells": "cochlea-diagram",
+    "basilar membrane": "cochlea-diagram",
+    "epithelial": "epithelial-types",
+    "epithelium": "epithelial-types",
+    "simple squamous": "simple-squamous",
+    "simple cuboidal": "epithelial-types",
+    "simple columnar": "epithelial-types",
+    "stratified squamous": "stratified-squamous",
+    "stratified epithelium": "stratified-squamous",
+    "transitional epithelium": "transitional-epithelium",
+    "urothelium": "transitional-epithelium",
+    "pseudostratified": "pseudostratified",
+    "ciliated columnar": "pseudostratified",
+    "mucociliary": "pseudostratified",
+    "connective tissue": "connective-types",
+    "extracellular matrix": "connective-types",
+    "areolar": "connective-types",
+    "adipose": "adipose-tissue",
+    "adipocyte": "adipose-tissue",
+    "fat tissue": "adipose-tissue",
+    "dense connective": "dense-connective",
+    "cartilage": "cartilage-types",
+    "chondrocyte": "cartilage-types",
+    "bone cells": "bone-cells",
+    "osteocyte": "bone-cells",
+    "blood cells": "blood-cells",
+    "erythrocyte": "blood-cells",
+    "leukocyte": "blood-cells",
+    "nervous tissue": "neural-tissue",
+    "neural tissue": "neural-tissue",
+    "multipolar neuron": "multipolar-neuron-blausen",
+    "multipolar": "multipolar-neuron-blausen",
+    "neuroglia": "glial-cell-types",
+    "glial cell": "glial-cell-types",
+    "glia": "glial-cell-types",
+    "astrocyte": "glial-cell-types",
+    "oligodendrocyte": "oligodendrocyte-myelin",
+    "schwann cell": "pns-glial-cells",
+    "myelin sheath": "myelin-sheath-diagram",
+    "myelinated": "myelinated-neuron-histology",
+    "node of ranvier": "myelin-sheath-diagram",
+    "spinal cord smear": "spinal-cord-histology",
+    "spinal cord cross": "spinal-cord-section",
+    "gray matter": "spinal-cord-section",
+    "white matter": "spinal-cord-section",
+    "dorsal horn": "spinal-cord-section",
+    "ventral horn": "spinal-cord-section",
+    "dorsal root ganglion": "spinal-cord-section",
+    "gland secretion": "secretion-modes",
+    "merocrine": "secretion-modes",
+    "apocrine": "secretion-modes",
+    "holocrine": "secretion-modes",
+    "exocrine": "gland-types",
+    "endocrine gland": "gland-types"
+  }
+}

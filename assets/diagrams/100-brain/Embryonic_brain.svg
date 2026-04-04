@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="720" width="960">
+  <g stroke-width="11" fill="none">
+    <g id="right">
+      <path d="m479.36306 33.673778c20.10479 0.9883 28.52854 10.94332 45.2324 10.94332 16.69916-7.815498 19.77593-30.641251 38.66638-33.559513 27.35568-2.3717282 41.91345 7.024928 59.09393 24.804857 11.19638 9.458538 15.66016 22.851794 24.0753 33.559513 2.98951 7.97986 6.42338 16.671823 9.48421 24.804856 1.85196 7.606209 4.61122 14.059489 5.10688 21.886639 0.83032 8.42934 1.26715 16.1796-2.18866 24.07531-1.92346 3.84692-3.93925 7.87849-5.83644 11.67287-4.34736 7.95884-9.67083 16.24232-16.05021 22.61619-16.45219 13.07414-38.06498 32.00741-61.28258 26.26397-3.1761-0.79403-7.65894-3.09992-10.21376-4.37733-5.98619-6.24899-13.93221-11.06998-19.69798-17.50931-6.45107-6.71432-15.67604-14.88045-23.34575-5.83644-2.20209 9.387-5.36111 25.13195-2.55344 34.28907" style="stroke:#fc1314"/>
+      <path d="m560.85332 303.75051c-4.42301-3.54314-7.95051-14.77743-12.01619-21.30188 6.12454-8.95336 18.2794-2.92353 27.08334-1.80556 2.5839 0.93091 4.96092 1.54033 7.7381 1.54762 3.28722 0.0578 5.93743-1.05191 8.25397-3.35317 16.22885-23.45197-5.76173-56.15782-34.5635-52.61905-5.94513 5.22402-11.49098 19.80776-20.89285 13.4127-8.38744-5.15258-14.18714-16.9811-15.99207-26.56746 0-1.03738-0.38485-5.03611-0.66696-6.16455" style="stroke:#fa7778"/>
+      <path d="m560.56006 303.52119c4.4711 3.16213 10.94822 10.20573 14.10337 14.46277 4.37642 5.59555 6.07913 11.06456 7.96339 17.85752 1.3226 6.70213 1.1864 13.36042 1.03175 20.11905-1.22512 5.2717-1.8962 10.69935-3.09524 15.99206-2.62119 5.08511-5.5086 10.00617-7.99603 15.21826-6.77098 12.96993-15.69204 23.85907-27.34127 34.82143-7.74796 9.48559-12.48289 17.27604-10.5754 29.14682 0 0.28378 0.19674 1.18042 0.25794 1.54762" style="stroke:#361692"/>
+      <path d="m534.90042 452.62052c0.74012 5.31387 4.66965 11.42854 6.4748 16.23259 3.55879 6.37858 8.08621 12.30139 12.40242 18.23886 4.29944 5.91074 7.49586 12.53011 10.94332 18.96842 3.72988 8.10381 7.44529 16.14368 9.48421 24.80486 1.809 10.29568 0.23649 19.78938-2.91822 29.54696-10.09419 18.45469-31.76674 23.93675-47.42105 36.47773-12.6133 9.82242-16.76685 18.21812-17.87409 33.55951-0.34637 1.38546-1.71012 4.74119-1.41351 5.92763" style="stroke:#1b9f46"/>
+      <path d="m 504.5783 636.1947 l -2,84" style="stroke:#f8a716"/>
+    </g>
+    <g id="left">
+      <path d="m 399.14668,303.74236 c 4.42301,-3.54314 7.95051,-14.77743 12.01619,-21.30188 C 399.16525,249.4773 319.85652,245.69915 323.05315,174.46967 328.3616,56.183063 430.06616,37.072819 480.63693,33.665627" style="stroke:#cc0000"/>
+      <path d="m 399.43995,303.51304 c -15.6484,88.74648 25.65149,104.86852 25.65149,149.16553" style="stroke:#361692"/>
+      <path d="m 425.09958,452.61237 c -6.78065,38.18838 -28.77454,54.89506 -26.52076,92.30416 3.04714,50.57755 31.79692,42.21031 47.78371,61.92895 5.71902,7.05403 6.89958,16.29929 8.05435,24.93966 0.43921,1.49593 1.11667,2.98722 1.00481,4.58379" style="stroke:#1b9f46"/>
+      <path d="m 455.42169,636.18655 l 2,84" style="stroke:#f8a716"/>
+    </g>
+  </g>
+  <g stroke="#777" stroke-width="1" stroke-dasharray="7.5, 4" fill="none">
+    <path d="m0 302 h960"/>
+    <path d="m0 453 h960"/>
+    <path d="m0 635 h960"/>
+    <path d="m480 0 v720" style="stroke:#000;stroke-width:3;stroke-dasharray:none"/>
+  </g>
+  <g font-size="36px" font-family="sans-serif" style="text-anchor:middle;text-align:center">
+    <switch allowReorder="yes">
+      <text systemLanguage="ar" id="trsvg286"><tspan y="66" x="160" id="trsvg1">المخ</tspan></text>
+      <text systemLanguage="fa" id="trsvg287"><tspan y="66" x="160" id="trsvg2">مخ</tspan></text>
+      <text systemLanguage="az" id="trsvg288"><tspan y="66" x="803" id="trsvg3">Uc beyin</tspan></text>
+      <text systemLanguage="bn" id="trsvg289"><tspan y="66" x="803" id="trsvg4">টেলেনসেফালন</tspan></text>
+      <text systemLanguage="bs" id="trsvg290"><tspan y="66" x="803" id="trsvg5">Međumozak</tspan></text>
+      <text systemLanguage="ca" id="trsvg291"><tspan y="66" x="803" id="trsvg6">Telencèfal</tspan></text>
+      <text systemLanguage="cs" id="trsvg292"><tspan y="46" x="803" id="trsvg7">Telencephalon</tspan><tspan y="86" x="803" id="trsvg8">(koncový mozek)</tspan></text>
+      <text systemLanguage="da" id="trsvg293"><tspan y="66" x="803" id="trsvg9">Storhjerne</tspan></text>
+      <text systemLanguage="de" id="trsvg294"><tspan y="46" x="803" id="trsvg10">Telencephalon</tspan><tspan y="86" x="803" id="trsvg11">(Endhirn)</tspan></text>
+      <text systemLanguage="es" id="trsvg295"><tspan y="66" x="803" id="trsvg12">Telencéfalo</tspan></text>
+      <text systemLanguage="eu" id="trsvg296"><tspan y="66" x="803" id="trsvg13">Telentzefaloa</tspan></text>
+      <text systemLanguage="fr" id="trsvg297"><tspan y="66" x="803" id="trsvg14">Télencéphale</tspan></text>
+      <text systemLanguage="he" id="trsvg298"><tspan y="46" x="803" id="trsvg15">Telencephalon</tspan><tspan y="86" x="803" id="trsvg16">(המוח הגדול)</tspan></text>
+      <text systemLanguage="hu" id="trsvg299"><tspan y="46" x="803" id="trsvg17">Telencephalon</tspan><tspan y="86" x="803" id="trsvg18">(Végagy)</tspan></text>
+      <text systemLanguage="hy" id="trsvg300"><tspan y="46" x="803" id="trsvg19">Մեծ</tspan><tspan y="86" x="803" id="trsvg20">կիսագնդեր</tspan></text>
+      <text systemLanguage="it" id="trsvg301"><tspan y="66" x="803" id="trsvg21">Telencefalo</tspan></text>
+      <text systemLanguage="an" id="trsvg302"><tspan y="66" x="803" id="trsvg22">Telencefalo</tspan></text>
+      <text systemLanguage="kk" id="trsvg303"><tspan y="66" x="803" id="trsvg23">Соңғы ми</tspan></text>
+      <text systemLanguage="nl" id="trsvg304"><tspan y="46" x="803" id="trsvg24">Telencephalon</tspan><tspan y="86" x="803" id="trsvg25">(Eindhersenen)</tspan></text>
+      <text systemLanguage="pl" id="trsvg305"><tspan y="66" x="803" id="trsvg26">Kresomózgowie</tspan></text>
+      <text systemLanguage="pt" id="trsvg306"><tspan y="66" x="803" id="trsvg27">Telencéfalo</tspan></text>
+      <text systemLanguage="gl" id="trsvg307"><tspan y="66" x="803" id="trsvg28">Telencéfalo</tspan></text>
+      <text systemLanguage="ro" id="trsvg308"><tspan y="66" x="803" id="trsvg29">Telencefal</tspan></text>
+      <text systemLanguage="ru" id="trsvg309"><tspan y="46" x="803" id="trsvg30">Конечный</tspan><tspan y="86" x="803" id="trsvg31">мозг</tspan></text>
+      <text systemLanguage="uk" id="trsvg310"><tspan y="46" x="803" id="trsvg32">Кінцевий</tspan><tspan y="86" x="803" id="trsvg33">мозок</tspan></text>
+      <text systemLanguage="sl" id="trsvg311"><tspan y="46" x="803" id="trsvg34">Veliki</tspan><tspan y="86" x="803" id="trsvg35">možgani</tspan></text>
+      <text systemLanguage="sr" id="trsvg312"><tspan y="66" x="803" id="trsvg36">Велики мозак</tspan></text>
+      <text systemLanguage="tr" id="trsvg313"><tspan y="66" x="803" id="trsvg37">Telensefalon</tspan></text>
+      <text id="trsvg314-ko" systemLanguage="ko"><tspan y="66" x="803" id="trsvg38-ko">끝뇌</tspan></text>
+      
+    <text id="trsvg314"><tspan y="66" x="803" id="trsvg38">Telencephalon</tspan></text></switch>
+    <switch allowReorder="yes">
+      <text systemLanguage="ar" id="trsvg315"><tspan y="257" x="160" id="trsvg39">الدماغ البيني</tspan></text>
+      <text systemLanguage="fa" id="trsvg316"><tspan y="257" x="160" id="trsvg40">مغز میانجی</tspan></text>
+      <text systemLanguage="az" id="trsvg317"><tspan y="257" x="803" id="trsvg41">Ara beyin</tspan></text>
+      <text systemLanguage="bn" id="trsvg318"><tspan y="257" x="803" id="trsvg42">ডায়েনসেফালন</tspan></text>
+      <text systemLanguage="bs" id="trsvg319"><tspan y="257" x="803" id="trsvg43">Srednji mozak</tspan></text>
+      <text systemLanguage="ca" id="trsvg320"><tspan y="257" x="803" id="trsvg44">Diencèfal</tspan></text>
+      <text systemLanguage="cs" id="trsvg321"><tspan y="237" x="803" id="trsvg45">Diencephalon</tspan><tspan y="277" x="803" id="trsvg46">(mezimozek)</tspan></text>
+      <text systemLanguage="da" id="trsvg322"><tspan y="257" x="803" id="trsvg47">Mellemhjerne</tspan></text>
+      <text systemLanguage="de" id="trsvg323"><tspan y="237" x="803" id="trsvg48">Diencephalon</tspan><tspan y="277" x="803" id="trsvg49">(Zwischenhirn)</tspan></text>
+      <text systemLanguage="es" id="trsvg324"><tspan y="257" x="803" id="trsvg50">Diencéfalo</tspan></text>
+      <text systemLanguage="eu" id="trsvg325"><tspan y="257" x="803" id="trsvg51">Dientzefaloa</tspan></text>
+      <text systemLanguage="fr" id="trsvg326"><tspan y="257" x="803" id="trsvg52">Diencéphale</tspan></text>
+      <text systemLanguage="he" id="trsvg327"><tspan y="237" x="803" id="trsvg53">Diencephalon</tspan><tspan y="277" x="803" id="trsvg54">(מוח הביניים)</tspan></text>
+      <text systemLanguage="hu" id="trsvg328"><tspan y="237" x="803" id="trsvg55">Diencephalon</tspan><tspan y="277" x="803" id="trsvg56">(Köztiagy)</tspan></text>
+      <text systemLanguage="hy" id="trsvg329"><tspan y="237" x="803" id="trsvg57">Միջանկյալ</tspan><tspan y="277" x="803" id="trsvg58">ուղեղ</tspan></text>
+      <text systemLanguage="it" id="trsvg330"><tspan y="257" x="803" id="trsvg59">Diencefalo</tspan></text>
+      <text systemLanguage="an" id="trsvg331"><tspan y="257" x="803" id="trsvg60">Diencefalo</tspan></text>
+      <text systemLanguage="kk" id="trsvg332"><tspan y="257" x="803" id="trsvg61">Аралық ми</tspan></text>
+      <text systemLanguage="nl" id="trsvg333"><tspan y="237" x="790" id="trsvg62">Diencephalon</tspan><tspan y="277" x="790" id="trsvg63">(Tussenhersenen)</tspan></text>
+      <text systemLanguage="pl" id="trsvg334"><tspan y="257" x="803" id="trsvg64">Międzymózgowie</tspan></text>
+      <text systemLanguage="pt" id="trsvg335"><tspan y="257" x="803" id="trsvg65">Diencéfalo</tspan></text>
+      <text systemLanguage="gl" id="trsvg336"><tspan y="257" x="803" id="trsvg66">Diencéfalo</tspan></text>
+      <text systemLanguage="ro" id="trsvg337"><tspan y="257" x="803" id="trsvg67">Diencefal</tspan></text>
+      <text systemLanguage="ru" id="trsvg338"><tspan y="237" x="803" id="trsvg68">Промежуточный</tspan><tspan y="277" x="803" id="trsvg69">мозг</tspan></text>
+      <text systemLanguage="uk" id="trsvg339"><tspan y="237" x="803" id="trsvg70">Проміжний</tspan><tspan y="277" x="803" id="trsvg71">мозок</tspan></text>
+      <text systemLanguage="sl" id="trsvg340"><tspan y="257" x="803" id="trsvg72">Diencefalon</tspan></text>
+      <text systemLanguage="sr" id="trsvg341"><tspan y="257" x="803" id="trsvg73">Међумозак</tspan></text>
+      <text systemLanguage="tr" id="trsvg342"><tspan y="257" x="803" id="trsvg74">Diensefalon</tspan></text>  
+      <text id="trsvg343-ko" systemLanguage="ko"><tspan y="257" x="803" id="trsvg75-ko">사이뇌</tspan></text>
+      
+    <text id="trsvg343"><tspan y="257" x="803" id="trsvg75">Diencephalon</tspan></text></switch>
+    <switch allowReorder="yes">
+      <text systemLanguage="ar" id="trsvg344"><tspan y="508" x="160" id="trsvg76">الدماغ التالي</tspan></text>
+      <text systemLanguage="fa" id="trsvg345"><tspan y="508" x="160" id="trsvg77">مغز پیشاپسین</tspan></text>
+      <text systemLanguage="bn" id="trsvg346"><tspan y="508" x="803" id="trsvg78">মেটেনসেফালন</tspan></text>
+      <text systemLanguage="az" id="trsvg347"><tspan y="508" x="803" id="trsvg79">Arxa beyin</tspan></text>
+      <text systemLanguage="ca" id="trsvg348"><tspan y="508" x="803" id="trsvg80">Metencèfal</tspan></text>
+      <text systemLanguage="cs" id="trsvg349"><tspan y="488" x="803" id="trsvg81">Metencephalon</tspan><tspan y="528" x="803" id="trsvg82">(most a mozeček)</tspan></text>
+      <text systemLanguage="da" id="trsvg350"><tspan y="508" x="803" id="trsvg83">Metencephalon</tspan></text>
+      <text systemLanguage="de" id="trsvg351"><tspan y="488" x="803" id="trsvg84">Metencephalon</tspan><tspan y="528" x="803" id="trsvg85">(Hinterhirn)</tspan></text>
+      <text systemLanguage="es" id="trsvg352"><tspan y="508" x="803" id="trsvg86">Metencéfalo</tspan></text>
+      <text systemLanguage="eu" id="trsvg353"><tspan y="508" x="803" id="trsvg87">Metentzefaloa</tspan></text>
+      <text systemLanguage="fr" id="trsvg354"><tspan y="508" x="803" id="trsvg88">Métencéphale</tspan></text>
+      <text systemLanguage="he" id="trsvg355"><tspan y="488" x="803" id="trsvg89">Metencephalon</tspan><tspan y="528" x="803" id="trsvg90">(?)</tspan></text>
+      <text systemLanguage="hu" id="trsvg356"><tspan y="508" x="803" id="trsvg91">Metencephalon</tspan></text>
+      <text systemLanguage="it" id="trsvg357"><tspan y="488" x="790" id="trsvg92">Metencefalo</tspan><tspan y="528" x="790" id="trsvg95">(ponte, cervelletto)</tspan></text>
+      <text systemLanguage="an" id="trsvg358"><tspan y="508" x="803" id="trsvg93">Metencefalo</tspan></text>
+      <text systemLanguage="nl" id="trsvg359"><tspan y="488" x="790" id="trsvg94">Metencephalon</tspan><tspan y="528" x="790" id="trsvg95">(Achterhersenen)</tspan></text>
+      <text systemLanguage="pt" id="trsvg360"><tspan y="508" x="803" id="trsvg96">Metencéfalo</tspan></text>
+      <text systemLanguage="gl" id="trsvg361"><tspan y="508" x="803" id="trsvg97">Metencéfalo</tspan></text>
+      <text systemLanguage="ro" id="trsvg362"><tspan y="508" x="803" id="trsvg98">Metencefal</tspan></text>
+      <text systemLanguage="ru" id="trsvg363"><tspan y="488" x="803" id="trsvg99">Задний</tspan><tspan y="528" x="803" id="trsvg100">мозг</tspan></text>
+      <text systemLanguage="uk" id="trsvg364"><tspan y="488" x="803" id="trsvg101">Задній</tspan><tspan y="528" x="803" id="trsvg102">мозок</tspan></text>
+      <text systemLanguage="sl" id="trsvg365"><tspan y="508" x="803" id="trsvg103">Metencefalon</tspan></text>
+      <text systemLanguage="tr" id="trsvg366"><tspan y="508" x="803" id="trsvg104">Metensefalon</tspan></text>
+      <text systemLanguage="ko" id="trsvg367-ko"><tspan y="488" x="803" id="trsvg105-ko">뒤뇌</tspan><tspan y="528" x="803" id="trsvg95">(다리뇌, 소뇌)</tspan></text>
+      
+    <text id="trsvg367"><tspan y="488" x="790" id="trsvg105">Metencephalon</tspan><tspan y="528" x="790" id="trsvg95">(pons, cerebellum)</tspan></text></switch>
+    <switch allowReorder="yes">
+      <text systemLanguage="ar" id="trsvg368"><tspan y="598" x="160" id="trsvg106">النخاع المستطيل</tspan></text>
+      <text systemLanguage="fa" id="trsvg369"><tspan y="598" x="160" id="trsvg107">بصل النخاع</tspan></text>
+      <text systemLanguage="az" id="trsvg370"><tspan y="598" x="790" id="trsvg108">	Əlavə beyin</tspan></text>
+      <text systemLanguage="bs" id="trsvg371"><tspan y="598" x="775" id="trsvg109">Produžena moždina</tspan></text>
+      <text systemLanguage="ca" id="trsvg372"><tspan y="598" x="803" id="trsvg110">Mielencèfal</tspan></text>
+      <text systemLanguage="cs" id="trsvg373"><tspan y="578" x="803" id="trsvg111">Myelencephalon</tspan><tspan y="618" x="803" id="trsvg112">(prodloužená mícha)</tspan></text>
+      <text id="trsvg374" systemLanguage="da"><tspan y="598" x="803" id="trsvg113">Medulla oblongata</tspan></text>
+      <text systemLanguage="de" id="trsvg375"><tspan y="578" x="803" id="trsvg114">Myelencephalon</tspan><tspan y="618" x="803" id="trsvg115">(Nachhirn)</tspan></text>
+      <text systemLanguage="es" id="trsvg376"><tspan y="598" x="803" id="trsvg116">Mielencéfalo</tspan></text>
+      <text systemLanguage="eu" id="trsvg377"><tspan y="598" x="803" id="trsvg117">Mielentzefaloa</tspan></text>
+      <text systemLanguage="fr" id="trsvg378"><tspan y="598" x="803" id="trsvg118">Myélencéphale</tspan></text>
+      <text systemLanguage="he" id="trsvg379"><tspan y="578" x="803" id="trsvg119">Myelencephalon</tspan><tspan y="618" x="803" id="trsvg120">(המוח המוארך)</tspan></text>
+      <text systemLanguage="hu" id="trsvg380"><tspan y="598" x="803" id="trsvg121">Myelencephalon</tspan></text>
+      <text systemLanguage="hy" id="trsvg381"><tspan y="578" x="803" id="trsvg122">Երկարավուն</tspan><tspan y="618" x="803" id="trsvg123">ուղեղ</tspan></text>
+      <text systemLanguage="it" id="trsvg382"><tspan y="598" x="803" id="trsvg124">Mielencefalo</tspan></text>
+      <text systemLanguage="an" id="trsvg383"><tspan y="598" x="803" id="trsvg125">Mielencefalo</tspan></text>
+      <text systemLanguage="kk" id="trsvg384"><tspan y="598" x="803" id="trsvg126">Сопақша ми</tspan></text>
+      <text systemLanguage="nl" id="trsvg385"><tspan y="578" x="790" id="trsvg127">Myelencephalon</tspan><tspan y="618" x="790" id="trsvg128">(Merghersenen)</tspan></text>
+      <text systemLanguage="pl" id="trsvg386"><tspan y="598" x="780" id="trsvg129">Rdzeń przedłużony</tspan></text>
+      <text systemLanguage="pt" id="trsvg387"><tspan y="598" x="803" id="trsvg130">Mielencéfalo</tspan></text>
+      <text systemLanguage="gl" id="trsvg388"><tspan y="598" x="803" id="trsvg131">Mielencéfalo</tspan></text>
+      <text systemLanguage="ro" id="trsvg389"><tspan y="598" x="803" id="trsvg132">Myelencefal</tspan></text>
+      <text systemLanguage="ru" id="trsvg390"><tspan y="578" x="803" id="trsvg133">Продолговатый</tspan><tspan y="618" x="803" id="trsvg134">мозг</tspan></text>
+      <text systemLanguage="uk" id="trsvg391"><tspan y="578" x="803" id="trsvg135">Довгастий</tspan><tspan y="618" x="803" id="trsvg136">мозок</tspan></text>
+      <text systemLanguage="sl" id="trsvg392"><tspan y="598" x="803" id="trsvg137">Mielencefalon</tspan></text>
+      <text systemLanguage="sr" id="trsvg393"><tspan y="578" x="803" id="trsvg138">продужена</tspan><tspan y="618" x="803" id="trsvg139">мождина</tspan></text>
+      <text systemLanguage="tr" id="trsvg394"><tspan y="598" x="803" id="trsvg140">Mielensefalon</tspan></text>
+      <text id="trsvg395-ko" systemLanguage="ko"><tspan y="598" x="803" id="trsvg141-ko">숨뇌</tspan></text>
+      
+    <text id="trsvg395"><tspan y="598" x="803" id="trsvg141">Myelencephalon</tspan></text></switch>
+    <switch allowReorder="yes">
+      <text systemLanguage="ar" id="trsvg396"><tspan y="690" x="160" id="trsvg142">النخاع الشوكي</tspan></text>
+      <text systemLanguage="fa" id="trsvg397"><tspan y="690" x="160" id="trsvg143">طناب نخاعی</tspan></text>
+      <text systemLanguage="az" id="trsvg398"><tspan y="690" x="790" id="trsvg144">Onurğa beyni</tspan></text>
+      <text systemLanguage="bn" id="trsvg399"><tspan y="690" x="803" id="trsvg145">সুষুম্নাকাণ্ড</tspan></text>
+      <text systemLanguage="bs" id="trsvg400"><tspan y="690" x="790" id="trsvg146">Kičmena moždina</tspan></text>
+      <text systemLanguage="ca" id="trsvg401"><tspan y="690" x="803" id="trsvg147">Medul·la espinal</tspan></text>
+      <text systemLanguage="cs" id="trsvg402"><tspan y="690" x="803" id="trsvg148">Hřbetní mícha</tspan></text>
+      <text systemLanguage="da" id="trsvg403"><tspan y="690" x="803" id="trsvg149">Rygmarv</tspan></text>
+      <text systemLanguage="de" id="trsvg404"><tspan y="690" x="803" id="trsvg150">Rückenmark</tspan></text>
+      <text systemLanguage="es" id="trsvg405"><tspan y="690" x="803" id="trsvg151">Médula espinal</tspan></text>
+      <text systemLanguage="eu" id="trsvg406"><tspan y="690" x="775" id="trsvg152">Bizkarrezur-muina</tspan></text>
+      <text systemLanguage="fr" id="trsvg407"><tspan y="690" x="803" id="trsvg153">Moelle spinale</tspan></text>
+      <text systemLanguage="he" id="trsvg408"><tspan y="690" x="803" id="trsvg154">חוט השדרה</tspan></text>
+      <text systemLanguage="hu" id="trsvg409"><tspan y="690" x="803" id="trsvg155">Gerincvelő</tspan></text>
+      <text systemLanguage="hy" id="trsvg410"><tspan y="690" x="803" id="trsvg156">Ողնուղեղ</tspan></text>
+      <text systemLanguage="it" id="trsvg411"><tspan y="690" x="795" id="trsvg157">Midollo spinale</tspan></text>
+      <text systemLanguage="an" id="trsvg412"><tspan y="690" x="795" id="trsvg158">Miollo espinal</tspan></text>
+      <text systemLanguage="kk" id="trsvg413"><tspan y="690" x="803" id="trsvg159">Жұлын</tspan></text>
+      <text systemLanguage="nl" id="trsvg414"><tspan y="690" x="790" id="trsvg160">Ruggenmerg</tspan></text>
+      <text systemLanguage="no" id="trsvg415"><tspan y="690" x="803" id="trsvg161">Ryggmargen</tspan></text>
+      <text systemLanguage="pl" id="trsvg416"><tspan y="690" x="803" id="trsvg162">Rdzeń kręgowy</tspan></text>
+      <text systemLanguage="pt" id="trsvg417"><tspan y="690" x="790" id="trsvg163">Medula espinhal</tspan></text>
+      <text systemLanguage="gl" id="trsvg418"><tspan y="690" x="790" id="trsvg164">Medula espiñal</tspan></text>
+      <text systemLanguage="ro" id="trsvg419"><tspan y="690" x="803" id="trsvg165">Măduva spinării</tspan></text>
+      <text systemLanguage="ru" id="trsvg420"><tspan y="690" x="803" id="trsvg166">Спинной мозг</tspan></text>
+      <text systemLanguage="uk" id="trsvg421"><tspan y="690" x="775" id="trsvg167">Спинний мозок</tspan></text>
+      <text systemLanguage="sl" id="trsvg422"><tspan y="690" x="803" id="trsvg168">Hrbtenjača</tspan></text>
+      <text systemLanguage="sr" id="trsvg423"><tspan y="690" x="775" id="trsvg169">Кичмена мождина</tspan></text>
+      <text systemLanguage="tr" id="trsvg424"><tspan y="690" x="803" id="trsvg170">Omurilik</tspan></text>
+      <text systemLanguage="ko" id="trsvg425-ko"><tspan y="690" x="803" id="trsvg171-ko">척수</tspan></text>
+      
+    <text id="trsvg425-nb" systemLanguage="nb"><tspan y="690" x="803" id="trsvg171-nb">Ryggmargen</tspan></text><text id="trsvg425"><tspan y="690" x="803" id="trsvg171">Spinal cord</tspan></text></switch>
+    <switch allowReorder="yes">
+      <text systemLanguage="ar" id="trsvg426"><tspan y="159" x="803" id="trsvg172">الدماغ الأمامي</tspan></text>
+      <text systemLanguage="fa" id="trsvg427"><tspan y="159" x="803" id="trsvg173">پیشامغز</tspan></text>
+      <text systemLanguage="az" id="trsvg428"><tspan y="159" x="160" id="trsvg174">Ön beyin</tspan></text>
+      <text systemLanguage="bn" id="trsvg429"><tspan y="159" x="160" id="trsvg175">অগ্র মস্তিষ্ক</tspan></text>
+      <text systemLanguage="bs" id="trsvg430"><tspan y="159" x="160" id="trsvg176">Prednji mozak</tspan></text>
+      <text systemLanguage="sl" id="trsvg431"><tspan y="139" x="170" id="trsvg177">Sprednji</tspan><tspan y="179" x="170" id="trsvg178">možgani</tspan></text>
+      <text systemLanguage="sr" id="trsvg432"><tspan y="159" x="160" id="trsvg179">Предњи мозак</tspan></text>
+      <text systemLanguage="ca" id="trsvg433"><tspan y="159" x="160" id="trsvg180">Prosencèfal</tspan></text>
+      <text systemLanguage="cs" id="trsvg434"><tspan y="139" x="160" id="trsvg181">Prosencephalon</tspan><tspan y="179" x="160" id="trsvg182">(přední mozek)</tspan></text>
+      <text id="trsvg435" systemLanguage="da"><tspan y="159" x="160" id="trsvg183">Forhjerne</tspan></text>
+      <text systemLanguage="de" id="trsvg436"><tspan y="139" x="160" id="trsvg184">Prosencephalon</tspan><tspan y="179" x="160" id="trsvg185">(Vorderhirn)</tspan></text>
+      <text systemLanguage="es" id="trsvg437"><tspan y="159" x="160" id="trsvg186">Prosencéfalo</tspan></text>
+      <text systemLanguage="eu" id="trsvg438"><tspan y="159" x="160" id="trsvg187">Prosentzefaloa</tspan></text>
+      <text systemLanguage="fr" id="trsvg439"><tspan y="159" x="160" id="trsvg188">Prosencéphale</tspan></text>
+      <text systemLanguage="he" id="trsvg440"><tspan y="139" x="160" id="trsvg189">Prosencephalon</tspan><tspan y="179" x="160" id="trsvg190">(המוח הקדמי)</tspan></text>
+      <text systemLanguage="hu" id="trsvg441"><tspan y="139" x="160" id="trsvg191">Prosencephalon</tspan><tspan y="179" x="160" id="trsvg192">(Előagy)</tspan></text>
+      <text systemLanguage="hy" id="trsvg442"><tspan y="139" x="160" id="trsvg193">Առաջային</tspan><tspan y="179" x="160" id="trsvg194">ուղեղ</tspan></text>
+      <text systemLanguage="it" id="trsvg443"><tspan y="159" x="160" id="trsvg195">Prosencefalo</tspan></text>
+      <text systemLanguage="an" id="trsvg444"><tspan y="159" x="160" id="trsvg196">Prosencefalo</tspan></text>
+      <text systemLanguage="kk" id="trsvg445"><tspan y="159" x="160" id="trsvg197">Алдыңғы ми</tspan></text>
+      <text systemLanguage="nl" id="trsvg446"><tspan y="139" x="160" id="trsvg198">Prosencephalon</tspan><tspan y="179" x="160" id="trsvg199">(Voorhersenen)</tspan></text>
+      <text systemLanguage="no" id="trsvg447"><tspan y="159" x="160" id="trsvg200">Forhjernen</tspan></text>
+      <text systemLanguage="pl" id="trsvg448"><tspan y="159" x="160" id="trsvg201">Przodomózgowie</tspan></text>
+      <text systemLanguage="pt" id="trsvg449"><tspan y="159" x="160" id="trsvg202">Prosencéfalo</tspan></text>
+      <text systemLanguage="gl" id="trsvg450"><tspan y="159" x="160" id="trsvg203">Prosencéfalo</tspan></text>
+      <text systemLanguage="ro" id="trsvg451"><tspan y="159" x="160" id="trsvg204">Prozencefal</tspan></text>
+      <text systemLanguage="ru" id="trsvg452"><tspan y="139" x="160" id="trsvg205">Передний</tspan><tspan y="179" x="160" id="trsvg206">мозг</tspan></text>
+      <text systemLanguage="uk" id="trsvg453"><tspan y="139" x="160" id="trsvg207">Передній</tspan><tspan y="179" x="160" id="trsvg208">мозок</tspan></text>
+      <text systemLanguage="tr" id="trsvg454"><tspan y="159" x="160" id="trsvg209">Prosensefalon</tspan></text>
+      <text id="trsvg455-ko" systemLanguage="ko"><tspan y="139" x="160" id="trsvg210-ko">앞뇌</tspan><tspan y="179" x="160" id="trsvg211-ko">(전뇌)</tspan></text>
+      
+    <text id="trsvg455-nb" systemLanguage="nb"><tspan y="139" x="160" id="trsvg210-nb">Prosencephalon</tspan><tspan y="179" x="160" id="trsvg211-nb">(forhjernen)</tspan></text><text id="trsvg455"><tspan y="139" x="160" id="trsvg210">Prosencephalon</tspan><tspan y="179" x="160" id="trsvg211">(forebrain)</tspan></text></switch>
+    <switch allowReorder="yes">
+      <text systemLanguage="ar" id="trsvg456"><tspan y="385" x="803" id="trsvg212">الدماغ المتوسط</tspan></text>
+      <text systemLanguage="fa" id="trsvg457"><tspan y="385" x="803" id="trsvg213">میان‌مغز</tspan></text>
+      <text systemLanguage="az" id="trsvg458"><tspan y="385" x="160" id="trsvg214">Orta beyin</tspan></text>
+      <text systemLanguage="bn" id="trsvg459"><tspan y="385" x="160" id="trsvg215">মধ্য মস্তিষ্ক</tspan></text>
+      <text systemLanguage="bs" id="trsvg460"><tspan y="385" x="160" id="trsvg216">Srednji mozak</tspan></text>
+      <text systemLanguage="sl" id="trsvg461"><tspan y="385" x="170" id="trsvg217">Srednji možgani</tspan></text>
+      <text systemLanguage="sr" id="trsvg462"><tspan y="385" x="160" id="trsvg218">Средњи мозак</tspan></text>
+      <text systemLanguage="ca" id="trsvg463"><tspan y="385" x="160" id="trsvg219">Mesencèfal</tspan></text>
+      <text systemLanguage="cs" id="trsvg464"><tspan y="365" x="160" id="trsvg220">Mesencephalon</tspan><tspan y="405" x="160" id="trsvg221">(střední mozek)</tspan></text>
+      <text systemLanguage="da" id="trsvg465"><tspan y="385" x="160" id="trsvg222">Midthjerne</tspan></text>
+      <text systemLanguage="de" id="trsvg466"><tspan y="365" x="160" id="trsvg223">Mesencephalon</tspan><tspan y="405" x="160" id="trsvg224">(Mittelhirn)</tspan></text>
+      <text systemLanguage="es" id="trsvg467"><tspan y="385" x="160" id="trsvg225">Mesencéfalo</tspan></text>
+      <text systemLanguage="eu" id="trsvg468"><tspan y="385" x="160" id="trsvg226">Mesentzefaloa</tspan></text>
+      <text systemLanguage="fr" id="trsvg469"><tspan y="385" x="160" id="trsvg227">Mésencéphale</tspan></text>
+      <text systemLanguage="he" id="trsvg470"><tspan y="365" x="160" id="trsvg228">Mesencephalon</tspan><tspan y="405" x="160" id="trsvg229">(המוח האמצעי)</tspan></text>
+      <text systemLanguage="hu" id="trsvg471"><tspan y="365" x="160" id="trsvg230">Mesencephalon</tspan><tspan y="405" x="160" id="trsvg231">(Középagy)</tspan></text>
+      <text systemLanguage="hy" id="trsvg472"><tspan y="385" x="160" id="trsvg232">Միջին ուղեղ</tspan></text>
+      <text systemLanguage="it" id="trsvg473"><tspan y="385" x="160" id="trsvg233">Mesencefalo</tspan></text>
+      <text systemLanguage="an" id="trsvg474"><tspan y="385" x="160" id="trsvg234">Mesencefalo</tspan></text>
+      <text systemLanguage="kk" id="trsvg475"><tspan y="385" x="160" id="trsvg235">Ортаңғы ми</tspan></text>
+      <text systemLanguage="nl" id="trsvg476"><tspan y="365" x="160" id="trsvg236">Mesencephalon</tspan><tspan y="405" x="160" id="trsvg237">(Middenhersenen)</tspan></text>
+      <text systemLanguage="no" id="trsvg477"><tspan y="385" x="160" id="trsvg238">Midthjernen</tspan></text>
+      <text systemLanguage="pl" id="trsvg478"><tspan y="385" x="160" id="trsvg239">Śródmózgowie</tspan></text>
+      <text systemLanguage="pt" id="trsvg479"><tspan y="385" x="160" id="trsvg240">Mesencéfalo</tspan></text>
+      <text systemLanguage="gl" id="trsvg480"><tspan y="385" x="160" id="trsvg241">Mesencéfalo</tspan></text>
+      <text systemLanguage="ro" id="trsvg481"><tspan y="385" x="160" id="trsvg242">Mezencefal</tspan></text>
+      <text systemLanguage="ru" id="trsvg482"><tspan y="365" x="160" id="trsvg243">Средний</tspan><tspan y="405" x="160" id="trsvg244">мозг</tspan></text>
+      <text systemLanguage="uk" id="trsvg483"><tspan y="365" x="160" id="trsvg245">Середній</tspan><tspan y="405" x="160" id="trsvg246">мозок</tspan></text>
+      <text systemLanguage="tr" id="trsvg484"><tspan y="385" x="160" id="trsvg247">Mesensefalon</tspan></text>
+      <text id="trsvg485-ko" systemLanguage="ko"><tspan y="365" x="160" id="trsvg248-ko">중간뇌</tspan><tspan y="405" x="160" id="trsvg249-ko">(중뇌)</tspan></text>
+      
+    <text id="trsvg485-nb" systemLanguage="nb"><tspan y="365" x="160" id="trsvg248-nb">Mesencephalon</tspan><tspan y="405" x="160" id="trsvg249-nb">(midthjernen)</tspan></text><text id="trsvg485"><tspan y="365" x="160" id="trsvg248">Mesencephalon</tspan><tspan y="405" x="160" id="trsvg249">(midbrain)</tspan></text></switch>
+    <switch allowReorder="yes">
+      <text systemLanguage="ar" id="trsvg486"><tspan y="552" x="803" id="trsvg250">الدماغ الخلفي</tspan></text>
+      <text systemLanguage="fa" id="trsvg487"><tspan y="552" x="803" id="trsvg251">پس‌مغز</tspan></text>
+      <text systemLanguage="az" id="trsvg488"><tspan y="532" x="160" id="trsvg252">Rombabənzər</tspan><tspan y="572" x="160" id="trsvg253">beyin</tspan></text>
+      <text systemLanguage="bn" id="trsvg489"><tspan y="552" x="160" id="trsvg254">পশ্চাৎ মস্তিষ্ক</tspan></text>
+      <text systemLanguage="bs" id="trsvg490"><tspan y="552" x="160" id="trsvg255">Zadnji mozak</tspan></text>
+      <text systemLanguage="sl" id="trsvg491"><tspan y="552" x="170" id="trsvg256">Rombasti možgani</tspan></text>
+      <text systemLanguage="sr" id="trsvg492"><tspan y="552" x="160" id="trsvg257">Задњи мозак</tspan></text>
+      <text systemLanguage="ca" id="trsvg493"><tspan y="552" x="160" id="trsvg258">Rombencèfal</tspan></text>
+      <text systemLanguage="cs" id="trsvg494"><tspan y="532" x="170" id="trsvg259">Rhombencephalon</tspan><tspan y="572" x="170" id="trsvg260">(zadní mozek)</tspan></text>
+      <text systemLanguage="da" id="trsvg495"><tspan y="552" x="160" id="trsvg261">Baghjerne</tspan></text>
+      <text systemLanguage="de" id="trsvg496"><tspan y="532" x="170" id="trsvg262">Rhombencephalon</tspan><tspan y="572" x="170" id="trsvg263">(Rautenhirn)</tspan></text>
+      <text systemLanguage="es" id="trsvg497"><tspan y="552" x="165" id="trsvg264">Rombencéfalo</tspan></text>
+      <text systemLanguage="eu" id="trsvg498"><tspan y="552" x="170" id="trsvg265">Erronbentzefaloa</tspan></text>
+      <text systemLanguage="fr" id="trsvg499"><tspan y="552" x="170" id="trsvg266">Rhombencéphale</tspan></text>
+      <text systemLanguage="he" id="trsvg500"><tspan y="532" x="170" id="trsvg267">Rhombencephalon</tspan><tspan y="572" x="170" id="trsvg268">(המוח)</tspan></text>
+      <text systemLanguage="hu" id="trsvg501"><tspan y="532" x="170" id="trsvg269">Rhombencephalon</tspan><tspan y="572" x="170" id="trsvg270">(Utóagy)</tspan></text>
+      <text systemLanguage="it" id="trsvg502"><tspan y="552" x="165" id="trsvg271">Rombencefalo</tspan></text>
+      <text systemLanguage="an" id="trsvg503"><tspan y="552" x="165" id="trsvg272">Rombencefalo</tspan></text>
+      <text systemLanguage="kk" id="trsvg504"><tspan y="552" x="160" id="trsvg273">Артқы ми</tspan></text>
+      <text systemLanguage="nl" id="trsvg505"><tspan y="532" x="170" id="trsvg274">Rhombencephalon</tspan><tspan y="572" x="170" id="trsvg275">(Ruithersenen)</tspan></text>
+      <text systemLanguage="no" id="trsvg506"><tspan y="552" x="160" id="trsvg276">Bakhjernen</tspan></text>
+      <text systemLanguage="pl" id="trsvg507"><tspan y="552" x="170" id="trsvg277">Tyłomózgowie</tspan></text>
+      <text systemLanguage="pt" id="trsvg508"><tspan y="552" x="165" id="trsvg278">Rombencéfalo</tspan></text>
+      <text systemLanguage="gl" id="trsvg509"><tspan y="552" x="165" id="trsvg279">Rombencéfalo</tspan></text>
+      <text systemLanguage="ro" id="trsvg510"><tspan y="552" x="160" id="trsvg280">Rombencefal</tspan></text>
+      <text systemLanguage="ru" id="trsvg511"><tspan y="532" x="160" id="trsvg281">Ромбовидный</tspan><tspan y="572" x="160" id="trsvg282">мозг</tspan></text>
+      <text systemLanguage="tr" id="trsvg512"><tspan y="552" x="170" id="trsvg283">Rombensefalon</tspan></text>
+      <text id="trsvg513-ko" systemLanguage="ko"><tspan y="532" x="180" id="trsvg284-ko">마름뇌</tspan><tspan y="572" x="170" id="trsvg285-ko"> (후뇌)</tspan></text>
+      
+    <text id="trsvg513-nb" systemLanguage="nb"><tspan y="532" x="180" id="trsvg284-nb">Rhombencephalon</tspan><tspan y="572" x="170" id="trsvg285-nb">(bakhjernen)</tspan></text><text id="trsvg513"><tspan y="532" x="180" id="trsvg284">Rhombencephalon</tspan><tspan y="572" x="170" id="trsvg285">(hindbrain)</tspan></text></switch>
+  </g>
+</svg>

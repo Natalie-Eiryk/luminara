@@ -1,0 +1,159 @@
+{
+  "parentId": "100.4.05",
+  "parentQuestion": "Degeneration of the dopamine-releasing neurons of the ___ is the ultimate cause of Parkinson's disease.",
+  "scaffolds": [
+    {
+      "q": "What is dopamine?",
+      "options": [
+        "A hormone only",
+        "A neurotransmitter involved in movement control, motivation, and reward",
+        "A type of blood cell",
+        "A bone"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "DOPAMINE is a NEUROTRANSMITTER crucial for coordinating smooth, voluntary MOVEMENT. It also affects MOTIVATION, REWARD, and mood.",
+      "wrongExplains": {
+        "0": "Dopamine is primarily a neurotransmitter in the brain.",
+        "2": "Dopamine is a chemical messenger, not a blood cell.",
+        "3": "Dopamine is a neurotransmitter, not a bone."
+      }
+    },
+    {
+      "q": "What are the cardinal symptoms of Parkinson's disease?",
+      "options": [
+        "Memory loss and confusion",
+        "Tremor, rigidity, bradykinesia (slow movement), and balance problems",
+        "Blindness and deafness",
+        "Fever and chills"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Parkinson's classic symptoms are RESTING TREMOR, muscle RIGIDITY, BRADYKINESIA (slow movement), and BALANCE problems — all movement issues.",
+      "wrongExplains": {
+        "0": "Memory loss is dementia; Parkinson's primarily affects movement.",
+        "2": "Sensory function is typically intact in Parkinson's.",
+        "3": "Parkinson's is neurological, not infectious."
+      }
+    },
+    {
+      "q": "What causes Parkinson's disease at the cellular level?",
+      "options": [
+        "Loss of serotonin neurons",
+        "Loss of dopamine-producing neurons",
+        "Loss of red blood cells",
+        "Loss of bone cells"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Parkinson's is caused by LOSS OF DOPAMINE-PRODUCING NEURONS. When dopamine levels drop in movement circuits, symptoms appear.",
+      "wrongExplains": {
+        "0": "Serotonin is involved in mood; dopamine loss causes Parkinson's.",
+        "2": "Parkinson's is neuronal, not related to blood cells.",
+        "3": "Parkinson's is neuronal, not related to bone cells."
+      }
+    },
+    {
+      "q": "Where is the midbrain located?",
+      "options": [
+        "Below the medulla",
+        "At the top of the brainstem, just below the diencephalon",
+        "In the spinal cord",
+        "In the cerebellum"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The MIDBRAIN is at the TOP of the brainstem, just below the diencephalon (thalamus/hypothalamus) and above the pons.",
+      "wrongExplains": {
+        "0": "The medulla is below the midbrain, not above it.",
+        "2": "The midbrain is in the brainstem, not spinal cord.",
+        "3": "The midbrain is brainstem; cerebellum is separate."
+      }
+    },
+    {
+      "q": "What is the substantia nigra?",
+      "options": [
+        "A muscle",
+        "A midbrain structure that produces dopamine for movement",
+        "A type of hormone",
+        "Part of the spinal cord"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "SUBSTANTIA NIGRA ('black substance' in Latin) is a MIDBRAIN structure that produces DOPAMINE. It's the brain's main dopamine factory for movement.",
+      "wrongExplains": {
+        "0": "The substantia nigra is a brain structure, not a muscle.",
+        "2": "The substantia nigra produces dopamine, which is a neurotransmitter, not hormone.",
+        "3": "The substantia nigra is in the midbrain, not spinal cord."
+      }
+    },
+    {
+      "q": "Where does the substantia nigra send dopamine?",
+      "options": [
+        "To the muscles directly",
+        "To the basal nuclei (striatum) for movement control",
+        "To the eyes",
+        "To the ears"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The NIGROSTRIATAL PATHWAY connects substantia nigra to STRIATUM (basal nuclei). This dopamine signal is essential for smooth movement initiation.",
+      "wrongExplains": {
+        "0": "Dopamine goes to basal nuclei; motor neurons go to muscles.",
+        "2": "The nigrostriatal pathway goes to striatum, not eyes.",
+        "3": "The nigrostriatal pathway goes to striatum, not ears."
+      }
+    },
+    {
+      "q": "When do Parkinson's symptoms appear?",
+      "options": [
+        "Immediately when any dopamine neuron dies",
+        "When about 70-80% of dopamine neurons are lost",
+        "Before any neuron loss",
+        "Only in children"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Symptoms emerge when about 70-80% of dopamine neurons are lost. The brain COMPENSATES silently until it can't anymore.",
+      "wrongExplains": {
+        "0": "The brain compensates for early loss; symptoms appear late.",
+        "2": "Symptoms require significant neuron loss, not before.",
+        "3": "Parkinson's typically appears later in life, not in children."
+      }
+    },
+    {
+      "q": "What is the nigrostriatal pathway?",
+      "options": [
+        "A blood vessel",
+        "The dopamine pathway from substantia nigra to striatum",
+        "A spinal cord tract",
+        "A cranial nerve"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "The NIGROSTRIATAL PATHWAY is the dopamine projection from SUBSTANTIA NIGRA to STRIATUM. Its degeneration causes Parkinson's movement symptoms.",
+      "wrongExplains": {
+        "0": "The nigrostriatal pathway is a neural pathway, not a blood vessel.",
+        "2": "This pathway is in the brain, not spinal cord.",
+        "3": "This is a dopamine pathway, not a cranial nerve."
+      }
+    },
+    {
+      "q": "Degeneration of dopamine neurons in the ___ causes Parkinson's disease?",
+      "options": [
+        "Reticular formation",
+        "Substantia nigra",
+        "Cerebellum",
+        "Hippocampus"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "The SUBSTANTIA NIGRA in the midbrain is where dopamine neurons degenerate in Parkinson's, causing tremor, rigidity, and bradykinesia.",
+      "wrongExplains": {
+        "0": "Reticular formation handles arousal, not dopamine for movement.",
+        "2": "Cerebellum coordinates movement but doesn't produce dopamine.",
+        "3": "Hippocampus handles memory, not dopamine for movement."
+      }
+    }
+  ]
+}

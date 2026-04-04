@@ -1,0 +1,134 @@
+{
+  "id": "611.5",
+  "title": "Endocrine System",
+  "category": "lab-exam-ii",
+  "description": "Lab practical questions for endocrine system anatomy",
+  "questions": [
+    {
+      "id": "611.5.01",
+      "q": "What histological feature distinguishes anterior from posterior pituitary?",
+      "options": [
+        "Anterior has glandular epithelium, posterior has axon terminals",
+        "Anterior has axon terminals, posterior has glandular epithelium",
+        "Both contain identical follicular cells",
+        "Both contain chromaffin cells"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Endocrine",
+      "tags": [
+        "pituitary",
+        "anterior-pituitary",
+        "posterior-pituitary"
+      ],
+      "explain": "The anterior pituitary (adenohypophysis) is true glandular tissue with secretory epithelial cells arranged in cords, while the posterior pituitary (neurohypophysis) consists of axon terminals from hypothalamic neurons.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Precisely. The anterior lobe is glandular epithelium synthesizing hormones (GH, ACTH, TSH, FSH, LH, prolactin), while the posterior lobe stores and releases hormones made in the hypothalamus (ADH, oxytocin). Now walk with me — let me show you why this embryological difference matters clinically."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite — you've reversed them. The anterior pituitary is the glandular part (making its own hormones), while the posterior pituitary is neural tissue (storing hypothalamic hormones). Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. Follicular cells are found in the thyroid gland, not the pituitary. The anterior pituitary has cords of secretory cells, and the posterior has axon terminals. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. Chromaffin cells are found in the adrenal medulla, not the pituitary. The anterior pituitary has glandular epithelium, and the posterior has neural tissue. Come closer — I'll show you the distinction that matters."
+        }
+      ],
+      "mechanism": {
+        "title": "Anterior vs Posterior Pituitary: Embryological Origins",
+        "content": "The anterior pituitary develops from oral ectoderm (Rathke's pouch) and is true endocrine gland tissue. The posterior pituitary develops from neural ectoderm (downward extension of hypothalamus) and remains neural tissue. This is why anterior pituitary tumors are adenomas (glandular overgrowth), while posterior pituitary dysfunction is usually hypothalamic in origin.",
+        "metaphor": "Think of the anterior lobe as a hormone factory, and the posterior lobe as a warehouse storing products made elsewhere."
+      },
+      "scaffoldFile": "611.5.01-scaffolds/611.5.01-scaffolds.json"
+    },
+    {
+      "id": "611.5.02",
+      "q": "What instantly identifies thyroid histology?",
+      "options": [
+        "Large follicles filled with colloid, surrounded by follicular cells",
+        "Follicular cells without colloid-filled spaces",
+        "Chromaffin cells arranged in cords",
+        "Pinealocytes with calcified concretions"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Endocrine",
+      "tags": [
+        "thyroid",
+        "follicular-cells",
+        "colloid"
+      ],
+      "explain": "The thyroid is the only endocrine gland organized into large follicles filled with pink-staining colloid (stored thyroglobulin). Follicular cells surround these spaces and actively secrete or reabsorb colloid depending on TSH stimulation.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Precisely. Those pink colloid-filled follicles are pathognomonic for thyroid. The follicular cells synthesize thyroglobulin, store it as colloid, then cleave off T3 and T4 when TSH arrives. Now walk with me — let me show you why this storage mechanism is unique."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. Follicular cells ARE present in the thyroid, but the defining feature is the colloid-filled follicles they surround. Without seeing those pink storage lakes, you can't definitively identify thyroid. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. Chromaffin cells arranged in cords describe the adrenal medulla, not the thyroid. Thyroid has follicular cells surrounding colloid-filled spaces. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. Pinealocytes with calcified concretions (brain sand) describe the pineal gland, not the thyroid. Thyroid has large follicles filled with colloid. Come closer — I'll show you the distinction that matters."
+        }
+      ],
+      "mechanism": {
+        "title": "Thyroid Follicle Architecture: Storage in Extracellular Colloid",
+        "content": "The thyroid is unique among endocrine glands in storing hormone precursor (thyroglobulin) extracellularly in colloid. When TSH binds follicular cell receptors, the cells extend pseudopods into the colloid, endocytose thyroglobulin, and cleave it to release T3 and T4. This storage system allows rapid hormone release without requiring continuous synthesis.",
+        "metaphor": "Think of colloid as a reservoir of pre-made hormone precursor, ready to be activated and released on demand."
+      },
+      "scaffoldFile": "611.5.02-scaffolds/611.5.02-scaffolds.json"
+    },
+    {
+      "id": "611.5.03",
+      "q": "What is the high-yield clue for adrenal gland histology?",
+      "options": [
+        "Cortex with three zones (glomerulosa, fasciculata, reticularis) surrounding medulla",
+        "Medulla with chromaffin cells only",
+        "Cortex with zona glomerulosa only",
+        "Follicles filled with colloid"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Endocrine",
+      "tags": [
+        "adrenal",
+        "adrenal-cortex",
+        "adrenal-medulla"
+      ],
+      "explain": "The adrenal gland has distinct concentric layers: outer capsule, then three cortical zones (glomerulosa making aldosterone, fasciculata making cortisol, reticularis making androgens), surrounding a central medulla (chromaffin cells making epinephrine/norepinephrine). Mnemonic: GFR = 'Go Find Rex the Medullary Cat' for salt, sugar, sex, stress.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Precisely. The three-layered cortex (GFR: glomerulosa, fasciculata, reticularis) making steroid hormones wraps around the neural-crest-derived medulla making catecholamines. This dual origin (mesodermal cortex + neural crest medulla) is unique among endocrine organs. Now walk with me — let me show you why this layered organization matters clinically."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. The medulla with chromaffin cells IS part of the adrenal, but the high-yield clue is the complete layered organization — cortex with three zones PLUS medulla. Seeing only medulla doesn't rule out other neural-crest-derived tissue. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. Zona glomerulosa is the outermost cortical zone making aldosterone, but the defining feature is all three cortical zones PLUS the medulla. Seeing only one zone doesn't prove it's adrenal. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. Follicles filled with colloid describe the thyroid gland, not the adrenal. The adrenal has layered cortex (three zones) surrounding medulla, with no follicular organization. Come closer — I'll show you the distinction that matters."
+        }
+      ],
+      "mechanism": {
+        "title": "Adrenal Cortex Zonation: Enzyme Expression Determines Hormone Output",
+        "content": "All three cortical zones start with cholesterol, but differential enzyme expression produces different end products. Zona glomerulosa has aldosterone synthase (no 17-hydroxylase) → mineralocorticoids. Zona fasciculata has 17-hydroxylase + 11-hydroxylase → glucocorticoids. Zona reticularis has 17-hydroxylase but weak 11-hydroxylase → androgens (DHEA). The medulla, being neural crest origin, uses tyrosine hydroxylase to make catecholamines instead of steroid hormones.",
+        "metaphor": "Think of each cortical zone as a factory with the same raw materials (cholesterol) but different assembly lines (enzymes), producing specialized products (salt, sugar, or sex hormones)."
+      },
+      "scaffoldFile": "611.5.03-scaffolds/611.5.03-scaffolds.json"
+    }
+  ]
+}

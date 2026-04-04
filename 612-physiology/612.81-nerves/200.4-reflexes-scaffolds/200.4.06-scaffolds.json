@@ -1,0 +1,159 @@
+{
+  "parentId": "200.4.06",
+  "parentQuestion": "A 60-year-old man falls and fractures his humerus. Two weeks later, he cannot extend his wrist or fingers, and has numbness over the dorsal (back) surface of his hand between the thumb and index finger. Which spinal nerve roots are most likely affected?",
+  "scaffolds": [
+    {
+      "q": "What is the relationship between humeral fractures and nerve injury?",
+      "options": [
+        "Fractures never affect nerves",
+        "Bone fragments can crush or cut nerves that run near the fracture",
+        "Nerves are protected by bones",
+        "Only muscles are affected"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Broken bone fragments are SHARP. They can CRUSH, STRETCH, or CUT nerves that run near the fracture site. The radial nerve is especially vulnerable in humeral fractures.",
+      "wrongExplains": {
+        "0": "Nerve injury is a common complication of fractures near nerves.",
+        "2": "Nerves running close to bones are actually vulnerable when bones break.",
+        "3": "Nerves, blood vessels, and muscles can all be damaged by fractures."
+      }
+    },
+    {
+      "q": "Which nerve wraps around the humerus?",
+      "options": [
+        "Median nerve",
+        "Radial nerve",
+        "Ulnar nerve",
+        "Sciatic nerve"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The RADIAL NERVE wraps around the back of the humerus in the SPIRAL GROOVE. This location makes it vulnerable to mid-shaft humeral fractures.",
+      "wrongExplains": {
+        "0": "The median nerve runs anterior to the humerus. The radial wraps around it.",
+        "2": "The ulnar nerve runs medially. The radial wraps around the posterior humerus.",
+        "3": "The sciatic nerve is in the leg. The radial nerve is in the arm."
+      }
+    },
+    {
+      "q": "What does the radial nerve control?",
+      "options": [
+        "Only finger flexion",
+        "Wrist and finger extension",
+        "Only facial expression",
+        "Only breathing"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The RADIAL NERVE controls all the EXTENSOR muscles — wrist extension, finger extension, and thumb extension. Damage causes wrist drop.",
+      "wrongExplains": {
+        "0": "Finger flexion is median and ulnar nerve. Radial controls extension.",
+        "2": "Facial expression is cranial nerve VII. Radial is for arm extension.",
+        "3": "Breathing uses the phrenic nerve. Radial controls arm extensors."
+      }
+    },
+    {
+      "q": "What is the sensory territory of the radial nerve?",
+      "options": [
+        "The palm of the hand",
+        "The dorsal (back) surface of the hand, especially between thumb and index finger",
+        "The little finger only",
+        "The face"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The radial nerve provides sensation to the DORSUM (back) of the hand, particularly the web space between the thumb and index finger. Numbness here indicates radial nerve damage.",
+      "wrongExplains": {
+        "0": "The palm is median and ulnar territory. Radial is dorsal hand.",
+        "2": "The little finger is ulnar nerve. Radial is thumb-side dorsum.",
+        "3": "The face uses trigeminal nerve. Radial is for the hand."
+      }
+    },
+    {
+      "q": "What combination of symptoms indicates radial nerve injury?",
+      "options": [
+        "Only leg weakness",
+        "Loss of wrist extension + dorsal hand numbness",
+        "Only hearing loss",
+        "Only vision changes"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "WRIST DROP (loss of extension) plus NUMBNESS on the dorsal hand = classic RADIAL NERVE INJURY. Both motor and sensory functions are affected.",
+      "wrongExplains": {
+        "0": "The radial nerve is in the arm. Leg weakness is from different nerves.",
+        "2": "Hearing involves cranial nerve VIII. Radial nerve is for the arm.",
+        "3": "Vision involves cranial nerve II. Radial nerve controls arm extension."
+      }
+    },
+    {
+      "q": "Which spinal nerve roots primarily contribute to the radial nerve?",
+      "options": [
+        "C1-C2",
+        "C6-C7",
+        "L4-L5",
+        "S1-S2"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The radial nerve arises from C5-T1, but C6-C7 are the PRIMARY contributors. These roots control wrist and finger extension.",
+      "wrongExplains": {
+        "0": "C1-C2 are for the neck. The radial nerve comes from lower cervical roots.",
+        "2": "L4-L5 are lumbar roots for the leg. The radial nerve is cervical.",
+        "3": "S1-S2 are sacral roots for the leg. The radial nerve comes from C6-C7."
+      }
+    },
+    {
+      "q": "Why does a humeral fracture affect the radial nerve specifically?",
+      "options": [
+        "The humerus is in the leg",
+        "The radial nerve runs in the spiral groove directly against the bone",
+        "The radial nerve doesn't exist",
+        "Only veins are near the humerus"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The radial nerve lies in the SPIRAL GROOVE, directly AGAINST THE BONE. When the humerus fractures at mid-shaft, the radial nerve is in the danger zone and easily damaged.",
+      "wrongExplains": {
+        "0": "The humerus is the upper arm bone. The femur is the leg bone.",
+        "2": "The radial nerve definitely exists and is clinically important.",
+        "3": "Nerves, arteries, and veins all run near the humerus. The radial nerve is most vulnerable."
+      }
+    },
+    {
+      "q": "After a humeral fracture, a patient cannot extend their wrist/fingers and has numbness on the back of their hand. What does this symptom pattern indicate?",
+      "options": [
+        "Leg injury",
+        "Radial nerve injury affecting C6-C7 distributions",
+        "Only skin damage",
+        "Normal findings"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "Loss of wrist/finger extension + dorsal hand numbness after humeral fracture = RADIAL NERVE INJURY. The radial nerve carries fibers mainly from C6-C7.",
+      "wrongExplains": {
+        "0": "The symptoms are in the arm/hand. This is an arm injury.",
+        "2": "Motor function (extension) is also lost, not just skin sensation.",
+        "3": "These findings are definitely abnormal and indicate nerve damage."
+      }
+    },
+    {
+      "q": "Which spinal nerve roots are most likely affected in this patient?",
+      "options": [
+        "C3-C4",
+        "C6-C7",
+        "L2-L4",
+        "S1-S2"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "C6-C7! The humeral fracture damaged the radial nerve in the spiral groove. The radial nerve carries fibers primarily from C6-C7, which control wrist extension and dorsal hand sensation.",
+      "wrongExplains": {
+        "0": "C3-C4 contribute to the phrenic nerve (breathing). Wrist extension is C6-C7.",
+        "2": "L2-L4 are lumbar roots for the thigh. Wrist extension uses cervical roots.",
+        "3": "S1-S2 are sacral roots for the ankle. The arm uses cervical roots."
+      }
+    }
+  ]
+}

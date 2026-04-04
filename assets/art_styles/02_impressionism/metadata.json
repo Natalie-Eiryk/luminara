@@ -1,0 +1,15 @@
+{
+  "style": "impressionism",
+  "period": "1870s-1890s",
+  "subject": "red fox resting in dappled sunlight beneath flowering trees",
+  "resolution": [1024, 1024],
+  "status": "MOCK_PLACEHOLDER",
+  "quality_scores": {
+    "teachers": {"score": 0.89, "threshold": 0.90, "approved": false},
+    "nvidia": {"score": 0.82, "threshold": 0.82, "approved": true, "note": "Intentional softness"},
+    "renaissance": {"score": 0.88, "threshold": 0.88, "approved": true},
+    "consensus": 0.86
+  },
+  "key_artists": ["Claude Monet", "Pierre-Auguste Renoir", "Camille Pissarro"],
+  "isotopes": ["impressionism", "broken.color", "optical.mixing", "en.plein.air"]
+}

@@ -1,0 +1,69 @@
+{
+  "parentId": "600.3.05",
+  "parentQuestion": "Hair cells receptive to changes in dynamic equilibrium are found in the crista ampullaris.",
+  "scaffolds": [
+    {
+      "q": "'Dynamic' equilibrium refers to sensing ROTATIONAL movement (turning, spinning).",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Yes! Dynamic = moving. Sensing when your head rotates in space."
+    },
+    {
+      "q": "The semicircular canals detect rotational head movements.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Correct! Three canals oriented perpendicular to each other sense rotation in all directions."
+    },
+    {
+      "q": "There are THREE semicircular canals, each detecting rotation in a different plane.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Yes! Horizontal (shaking 'no'), anterior (nodding 'yes'), posterior (ear-to-shoulder tilt)."
+    },
+    {
+      "q": "Each semicircular canal has a swelling called the ampulla at its base.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Correct! The ampulla contains the sensory apparatus for detecting rotation."
+    },
+    {
+      "q": "The crista ampullaris is a ridge of hair cells inside each ampulla.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Yes! The crista ('crest') has hair cells topped by the cupula."
+    },
+    {
+      "q": "The cupula is a gelatinous mass that bends when fluid (endolymph) moves.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Correct! Head rotation makes endolymph lag behind, pushing the cupula."
+    },
+    {
+      "q": "When you turn your head, endolymph movement bends the cupula and hair cells.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Yes! Fluid inertia deflects the cupula → hair cell bending → neural signal."
+    },
+    {
+      "q": "The crista ampullaris detects angular (rotational) acceleration of the head.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Correct! When you start or stop turning, the cristae sense the rotation."
+    },
+    {
+      "q": "Hair cells in the crista ampullaris (of semicircular canals) detect dynamic equilibrium.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "advanced",
+      "explain": "Yes! The cristae detect rotational head movement via endolymph flow deflecting the cupula."
+    }
+  ]
+}

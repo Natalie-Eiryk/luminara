@@ -1,0 +1,28 @@
+{
+  "clusterId": "510.33",
+  "clusterName": "Trigonometry",
+  "status": "pending",
+  "targetQuestions": 350,
+  "currentBatch": 0,
+  "totalBatches": 14,
+  "questionsGenerated": 0,
+  "scaffoldsGenerated": 0,
+  "lastUpdated": null,
+  "batches": [],
+  "isotopes": [
+    "510.33.right-triangle",
+    "510.33.unit-circle",
+    "510.33.trig-functions",
+    "510.33.identities.basic",
+    "510.33.identities.sum-diff",
+    "510.33.solving.equations",
+    "510.33.applications"
+  ],
+  "prerequisites": ["510.23.*", "510.31.*"],
+  "difficultyDistribution": {
+    "easy": 0,
+    "medium": 0,
+    "challenging": 0,
+    "hard": 0
+  }
+}

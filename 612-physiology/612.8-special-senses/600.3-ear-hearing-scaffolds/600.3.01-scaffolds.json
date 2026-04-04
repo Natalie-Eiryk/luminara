@@ -1,0 +1,69 @@
+{
+  "parentId": "600.3.01",
+  "parentQuestion": "Sour taste receptors are stimulated by hydrogen ions of acidic food substances.",
+  "scaffolds": [
+    {
+      "q": "Acids release hydrogen ions (H+) when dissolved in solution.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Yes! Acids by definition donate H+ ions. More acidic = more H+ ions = lower pH."
+    },
+    {
+      "q": "pH measures hydrogen ion concentration — lower pH means MORE H+ ions.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Correct! pH 2 (very acidic) has many more H+ ions than pH 7 (neutral)."
+    },
+    {
+      "q": "Taste receptor cells can respond to specific ions or molecules.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Yes! Different taste receptors detect different chemical signals."
+    },
+    {
+      "q": "When ions enter taste receptor cells, they can cause depolarization.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Correct! Ion entry changes the cell's electrical state, triggering taste signals."
+    },
+    {
+      "q": "Lemon juice and vinegar taste sour because they are acidic.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Yes! Their acidity releases H+ ions that stimulate sour receptors."
+    },
+    {
+      "q": "Sour taste intensity increases as pH decreases (more acidic).",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Correct! More H+ ions = stronger sour signal. The relationship is roughly logarithmic."
+    },
+    {
+      "q": "H+ ions can enter sour receptor cells through ion channels, causing depolarization.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Yes! H+ enters through PKD2L1 channels and other pathways, directly exciting the cell."
+    },
+    {
+      "q": "Sour taste may have evolved to detect spoiled food (bacterial acid production).",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Correct! Bacteria produce acids during fermentation — sour detection warns of spoilage."
+    },
+    {
+      "q": "Sour taste receptors are directly stimulated by hydrogen ions from acidic foods.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "advanced",
+      "explain": "Yes! H+ ions are the direct chemical stimulus for sour taste. Acid → H+ → receptor depolarization → sour perception."
+    }
+  ]
+}

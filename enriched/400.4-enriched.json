@@ -1,0 +1,783 @@
+{
+  "version": "1.0",
+  "source": "LUMI-OS Teaching Module",
+  "prefix": "400.4",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": "400.4.01",
+      "q": "A tissue with cells arranged in a single layer is classified as:",
+      "options": [
+        "Stratified",
+        "Simple",
+        "Pseudostratified",
+        "Transitional"
+      ],
+      "answer": 1,
+      "explain": "Simple epithelium has one layer of cells — all touching the basement membrane. It's thin, allowing diffusion and filtration.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "400.4.02",
+      "q": "Squamous cells are described as:",
+      "options": [
+        "Cube-shaped",
+        "Column-shaped",
+        "Flat and scale-like",
+        "Irregularly shaped"
+      ],
+      "answer": 2,
+      "explain": "Squamous means flat and scale-like — these cells are wider than they are tall, like floor tiles or fish scales.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.6
+      }
+    },
+    {
+      "id": "400.4.03",
+      "q": "The basement membrane is located:",
+      "options": [
+        "At the apical surface",
+        "Between epithelium and connective tissue",
+        "Inside the cell nucleus",
+        "Within muscle fibers"
+      ],
+      "answer": 1,
+      "explain": "The basement membrane anchors epithelium to underlying connective tissue. It's a thin layer of extracellular matrix at the basal surface.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "400.4.04",
+      "q": "Cilia are found on the apical surface of which tissue type?",
+      "options": [
+        "Simple squamous epithelium",
+        "Pseudostratified columnar epithelium",
+        "Stratified squamous epithelium",
+        "Adipose tissue"
+      ],
+      "answer": 1,
+      "explain": "Pseudostratified ciliated columnar epithelium lines respiratory passages. Cilia beat to move mucus and trapped particles upward.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "400.4.05",
+      "q": "Goblet cells produce:",
+      "options": [
+        "Keratin",
+        "Mucus",
+        "Collagen",
+        "Histamine"
+      ],
+      "answer": 1,
+      "explain": "Goblet cells are unicellular glands that secrete mucus — a protective, lubricating glycoprotein coating.",
+      "mechanism": null,
+      "isotopes": [
+        "endocrine.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.4.06",
+      "q": "The most abundant protein in the body is:",
+      "options": [
+        "Elastin",
+        "Keratin",
+        "Collagen",
+        "Actin"
+      ],
+      "answer": 2,
+      "explain": "Collagen makes up about 25-30% of total body protein. It forms the structural framework of connective tissues.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "400.4.07",
+      "q": "Fibroblasts are the primary cells of:",
+      "options": [
+        "Epithelial tissue",
+        "Connective tissue proper",
+        "Muscle tissue",
+        "Nervous tissue"
+      ],
+      "answer": 1,
+      "explain": "Fibroblasts produce and maintain the extracellular matrix of connective tissue — they secrete collagen, elastin, and ground substance.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.4.08",
+      "q": "Dense regular connective tissue is found in:",
+      "options": [
+        "Dermis of skin",
+        "Tendons and ligaments",
+        "Around organs",
+        "In bones"
+      ],
+      "answer": 1,
+      "explain": "Dense regular connective tissue has collagen fibers aligned in parallel — perfectly suited for tendons and ligaments that resist pull in one direction.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "400.4.09",
+      "q": "Adipose tissue functions primarily to:",
+      "options": [
+        "Transmit nerve impulses",
+        "Store energy and insulate",
+        "Produce red blood cells",
+        "Contract for movement"
+      ],
+      "answer": 1,
+      "explain": "Adipose tissue stores triglycerides for energy reserve and insulates the body against heat loss. It also cushions and protects organs.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "400.4.10",
+      "q": "Cartilage cells are called:",
+      "options": [
+        "Osteocytes",
+        "Chondrocytes",
+        "Adipocytes",
+        "Fibroblasts"
+      ],
+      "answer": 1,
+      "explain": "Chondrocytes are cartilage cells — they live in lacunae within the cartilage matrix they produced.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.5,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.4.11",
+      "q": "The type of cartilage found in intervertebral discs is:",
+      "options": [
+        "Hyaline cartilage",
+        "Elastic cartilage",
+        "Fibrocartilage",
+        "Bone"
+      ],
+      "answer": 2,
+      "explain": "Fibrocartilage contains thick collagen bundles making it tough and compressible — perfect for intervertebral discs, knee menisci, and pubic symphysis.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.5,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.4.12",
+      "q": "Endocrine glands release their secretions into:",
+      "options": [
+        "Ducts leading to body surface",
+        "The bloodstream",
+        "Body cavities only",
+        "Lymphatic vessels only"
+      ],
+      "answer": 1,
+      "explain": "Endocrine glands are ductless — they secrete hormones directly into the bloodstream for distribution throughout the body.",
+      "mechanism": null,
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.5,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.4.13",
+      "q": "Exocrine glands that release whole cells as their secretion are classified as:",
+      "options": [
+        "Merocrine",
+        "Apocrine",
+        "Holocrine",
+        "Endocrine"
+      ],
+      "answer": 2,
+      "explain": "Holocrine secretion involves the entire cell rupturing and releasing its contents. Sebaceous glands are holocrine.",
+      "mechanism": null,
+      "isotopes": [
+        "endocrine.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.4.14",
+      "q": "The ground substance of connective tissue is composed primarily of:",
+      "options": [
+        "Collagen fibers",
+        "Proteoglycans and glycosaminoglycans",
+        "Calcium salts",
+        "Keratin"
+      ],
+      "answer": 1,
+      "explain": "Ground substance is the gel-like material between cells and fibers — made of proteoglycans, glycosaminoglycans, and adhesive glycoproteins.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "400.4.15",
+      "q": "Elastic connective tissue is abundant in:",
+      "options": [
+        "Tendons",
+        "Walls of large arteries",
+        "Bone",
+        "Hyaline cartilage"
+      ],
+      "answer": 1,
+      "explain": "Elastic connective tissue — rich in elastin fibers — allows structures to stretch and recoil. Large arteries need this to handle blood pressure pulses.",
+      "mechanism": null,
+      "isotopes": [
+        "cardiology.structure"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "400.4.16",
+      "q": "Osteocytes communicate through cell processes in channels called:",
+      "options": [
+        "Haversian canals",
+        "Volkmann's canals",
+        "Canaliculi",
+        "Lacunae"
+      ],
+      "answer": 2,
+      "explain": "Canaliculi are tiny tunnels radiating from lacunae, containing osteocyte processes. They allow nutrient exchange and cell-to-cell communication.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.4.17",
+      "q": "The tissue that lines the urinary bladder and can stretch is:",
+      "options": [
+        "Simple squamous",
+        "Stratified squamous",
+        "Transitional epithelium",
+        "Simple columnar"
+      ],
+      "answer": 2,
+      "explain": "Transitional epithelium (urothelium) is specialized stratified tissue that stretches as the bladder fills. Cells change shape from dome to flat.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "400.4.18",
+      "q": "Mast cells release which substance during allergic reactions?",
+      "options": [
+        "Collagen",
+        "Histamine",
+        "Melanin",
+        "Mucus"
+      ],
+      "answer": 1,
+      "explain": "Mast cells contain granules packed with histamine. When triggered by allergens, they degranulate — releasing histamine that causes inflammation.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.4.19",
+      "q": "Reticular connective tissue forms the framework of:",
+      "options": [
+        "Tendons",
+        "Lymph nodes and spleen",
+        "Joint capsules",
+        "Skin dermis"
+      ],
+      "answer": 1,
+      "explain": "Reticular tissue — a network of thin reticular fibers — provides the structural scaffolding for lymphoid organs where immune cells reside.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.4.20",
+      "q": "The apical surface of epithelium faces:",
+      "options": [
+        "The basement membrane",
+        "The body exterior or cavity",
+        "Blood vessels",
+        "Underlying connective tissue"
+      ],
+      "answer": 1,
+      "explain": "Apical means top — the apical surface faces outward toward an external environment, body cavity, or lumen of a tube.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "400.4.21",
+      "q": "Keratinized stratified squamous epithelium is found in:",
+      "options": [
+        "Mouth and esophagus",
+        "Epidermis of skin",
+        "Blood vessels",
+        "Alveoli of lungs"
+      ],
+      "answer": 1,
+      "explain": "Skin epidermis is keratinized — surface cells fill with keratin protein and die, forming a tough, waterproof barrier.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "400.4.22",
+      "q": "Lacunae in cartilage and bone are:",
+      "options": [
+        "Channels for blood vessels",
+        "Spaces containing cells",
+        "Protein fibers",
+        "Mineral deposits"
+      ],
+      "answer": 1,
+      "explain": "Lacunae are small cavities in the matrix where chondrocytes (cartilage) or osteocytes (bone) reside.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.4.23",
+      "q": "Simple cuboidal epithelium is found in:",
+      "options": [
+        "Skin surface",
+        "Kidney tubules",
+        "Blood vessels",
+        "Respiratory bronchioles"
+      ],
+      "answer": 1,
+      "explain": "Simple cuboidal epithelium lines kidney tubules, where cells actively transport substances. The shape balances surface area with secretory capacity.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.4.24",
+      "q": "Blood is classified as which type of connective tissue?",
+      "options": [
+        "Dense connective tissue",
+        "Loose connective tissue",
+        "Fluid connective tissue",
+        "Supporting connective tissue"
+      ],
+      "answer": 2,
+      "explain": "Blood is fluid connective tissue — cells suspended in liquid matrix (plasma). It transports substances and provides immune defense.",
+      "mechanism": null,
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "400.4.25",
+      "q": "Tissue repair that replaces damaged tissue with scar tissue is called:",
+      "options": [
+        "Regeneration",
+        "Fibrosis",
+        "Hyperplasia",
+        "Metaplasia"
+      ],
+      "answer": 1,
+      "explain": "Fibrosis replaces functional tissue with fibrous scar tissue. It restores structural integrity but not original function.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    }
+  ]
+}

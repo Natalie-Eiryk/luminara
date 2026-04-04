@@ -1,0 +1,1716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dewey 612.8 Lab Exam Prep | Exercises 15-25 | Ms. Luminara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Source+Sans+Pro:wght@400;600&family=DM+Mono&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0e0e12;
+      --panel: #16161c;
+      --border: #2a2a35;
+      --cyan: #61e8e1;
+      --purple: #d4a5ff;
+      --teal: #47d7e2;
+      --green: #a0eec0;
+      --red: #ff6b6b;
+      --yellow: #ffe066;
+      --orange: #ffb347;
+      --text: #eeeff3;
+      --muted: #9090a0;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+    }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    .sidebar {
+      width: 260px;
+      background: var(--panel);
+      border-right: 1px solid var(--border);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0; left: 0;
+      height: 100vh;
+      overflow-y: auto;
+    }
+    .sidebar h2 { color: var(--cyan); font-size: 1.15rem; margin-bottom: 1rem; }
+    .nav-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.55rem 0.75rem;
+      border-radius: 8px;
+      margin-bottom: 0.35rem;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 0.92rem;
+    }
+    .nav-item:hover, .nav-item.active { background: #222230; }
+    .nav-item .progress-pill {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      background: #222230;
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
+    }
+    .sidebar-footer {
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .main {
+      flex: 1;
+      margin-left: 260px;
+      padding: 2.5rem 3rem 4rem;
+      max-width: 900px;
+    }
+    .exam-title { font-size: 2rem; margin-bottom: 0.25rem; }
+    .exam-meta { color: var(--muted); margin-bottom: 2rem; font-size: 0.95rem; }
+    .section-panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem 2rem 2rem;
+      margin-bottom: 2rem;
+    }
+    .section-panel h2 { font-size: 1.35rem; margin-bottom: 1.15rem; }
+    .question-type-divider {
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      color: var(--purple);
+      margin: 1.5rem 0 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .question-type-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+    .card {
+      background: #1c1c25;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+      margin-bottom: 1rem;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .card.correct { border-color: var(--green); box-shadow: 0 0 6px var(--green); }
+    .card.incorrect { border-color: var(--red); box-shadow: 0 0 6px var(--red); }
+    .card p.question { font-weight: 600; margin-bottom: 0.85rem; }
+    .note { font-size: 0.85rem; color: var(--muted); margin-top: 0.75rem; }
+    .note strong { color: var(--yellow); }
+    .options { display: flex; flex-direction: column; gap: 0.5rem; }
+    .option-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      background: #222230;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.6rem 0.9rem;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+      width: 100%;
+      text-align: left;
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+    .option-btn:hover:not(:disabled) { border-color: var(--cyan); }
+    .option-btn:disabled { cursor: not-allowed; opacity: 0.75; }
+    .option-btn.selected-correct { border-color: var(--green); background: rgba(160,238,192,0.12); }
+    .option-btn.selected-wrong { border-color: var(--red); background: rgba(255,107,107,0.12); }
+    .option-btn.reveal-correct { border-color: var(--green); }
+    .option-letter {
+      font-family: 'DM Mono', monospace;
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: var(--cyan);
+    }
+    .match-grid { display: flex; flex-direction: column; gap: 0.6rem; }
+    .match-row { display: flex; align-items: center; gap: 0.65rem; }
+    .match-term {
+      flex: 1;
+      background: #222230;
+      padding: 0.55rem 0.75rem;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    .match-select {
+      flex: 1;
+      padding: 0.55rem 0.75rem;
+      border-radius: 6px;
+      background: #222230;
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+    .match-select:focus { outline: none; border-color: var(--cyan); }
+    .match-row.correct .match-select { border-color: var(--green); }
+    .match-row.incorrect .match-select { border-color: var(--red); }
+    .essay-prompt { font-weight: 600; margin-bottom: 0.85rem; }
+    .essay-toggle {
+      background: linear-gradient(135deg, #6f5dcc, #47d7e2);
+      border: none;
+      border-radius: 6px;
+      padding: 0.55rem 1.1rem;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .essay-toggle:hover { opacity: 0.88; }
+    .essay-answer {
+      margin-top: 0.85rem;
+      padding: 1rem;
+      background: #222230;
+      border-radius: 8px;
+      display: none;
+      white-space: pre-wrap;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .essay-answer.show { display: block; }
+    .check-btn {
+      margin-top: 0.9rem;
+      background: linear-gradient(135deg, var(--purple), var(--cyan));
+      border: none;
+      border-radius: 6px;
+      padding: 0.55rem 1.1rem;
+      color: #000;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .check-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    .floating-score {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.85rem 1.35rem;
+      font-family: 'DM Mono', monospace;
+      z-index: 100;
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+    }
+    .floating-score .correct-count { color: var(--green); }
+    .floating-score .wrong-count { color: var(--red); }
+    .results-panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      display: none;
+      text-align: center;
+    }
+    .results-panel.show { display: block; }
+    .results-panel h2 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+    .results-percentage {
+      font-family: 'DM Mono', monospace;
+      font-size: 3.5rem;
+      color: var(--cyan);
+      margin: 1rem 0;
+    }
+    .results-breakdown {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 1.5rem 0;
+    }
+    .results-breakdown .stat { text-align: center; }
+    .results-breakdown .stat-num { font-size: 1.8rem; font-weight: 700; }
+    .results-breakdown .stat-label { font-size: 0.85rem; color: var(--muted); }
+    .restart-btn {
+      margin-top: 1rem;
+      background: linear-gradient(135deg, var(--purple), var(--cyan));
+      border: none;
+      border-radius: 8px;
+      padding: 0.75rem 2rem;
+      color: #000;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    /* ===== SCAFFOLDING STYLES ===== */
+    .scaffold-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 0.75rem;
+      padding: 0.4rem 0.8rem;
+      background: transparent;
+      border: 1px solid var(--orange);
+      border-radius: 6px;
+      color: var(--orange);
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .scaffold-toggle:hover {
+      background: rgba(255, 179, 71, 0.1);
+    }
+    .scaffold-toggle.active {
+      background: rgba(255, 179, 71, 0.15);
+    }
+    .scaffold-toggle .icon {
+      font-size: 1rem;
+    }
+
+    .scaffold-panel {
+      display: none;
+      margin-top: 1rem;
+      padding: 1rem;
+      background: linear-gradient(135deg, rgba(255, 179, 71, 0.05), rgba(212, 165, 255, 0.05));
+      border: 1px solid var(--orange);
+      border-radius: 10px;
+    }
+    .scaffold-panel.show {
+      display: block;
+    }
+
+    .scaffold-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid rgba(255, 179, 71, 0.3);
+    }
+    .scaffold-title {
+      color: var(--orange);
+      font-weight: 600;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .scaffold-progress {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+    .scaffold-dots {
+      display: flex;
+      gap: 0.35rem;
+    }
+    .scaffold-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--border);
+    }
+    .scaffold-dot.complete { background: var(--green); }
+    .scaffold-dot.current { background: var(--orange); box-shadow: 0 0 4px var(--orange); }
+
+    .scaffold-question {
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+      background: rgba(0,0,0,0.2);
+      border-radius: 8px;
+    }
+    .scaffold-question.answered {
+      opacity: 0.7;
+    }
+    .scaffold-q-text {
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+    .scaffold-hint {
+      font-size: 0.8rem;
+      color: var(--purple);
+      font-style: italic;
+      margin-bottom: 0.65rem;
+      padding-left: 0.5rem;
+      border-left: 2px solid var(--purple);
+    }
+    .scaffold-options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .scaffold-opt {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.75rem;
+      background: #222230;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .scaffold-opt:hover:not(:disabled) {
+      border-color: var(--orange);
+    }
+    .scaffold-opt:disabled {
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
+    .scaffold-opt.correct {
+      border-color: var(--green);
+      background: rgba(160, 238, 192, 0.1);
+    }
+    .scaffold-opt.incorrect {
+      border-color: var(--red);
+      background: rgba(255, 107, 107, 0.1);
+    }
+    .scaffold-opt .letter {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--orange);
+    }
+
+    .scaffold-feedback {
+      margin-top: 0.65rem;
+      padding: 0.65rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+    .scaffold-feedback.correct-fb {
+      background: rgba(160, 238, 192, 0.1);
+      border-left: 3px solid var(--green);
+    }
+    .scaffold-feedback.incorrect-fb {
+      background: rgba(255, 107, 107, 0.1);
+      border-left: 3px solid var(--red);
+    }
+    .scaffold-feedback strong {
+      color: var(--green);
+    }
+    .scaffold-feedback.incorrect-fb strong {
+      color: var(--red);
+    }
+
+    .scaffold-summary {
+      margin-top: 1rem;
+      padding: 0.85rem;
+      background: rgba(160, 238, 192, 0.08);
+      border: 1px solid var(--green);
+      border-radius: 8px;
+    }
+    .scaffold-summary h4 {
+      color: var(--green);
+      font-size: 0.85rem;
+      margin-bottom: 0.65rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .scaffold-summary ul {
+      list-style: none;
+      padding: 0;
+    }
+    .scaffold-summary li {
+      font-size: 0.85rem;
+      margin-bottom: 0.4rem;
+      padding-left: 1.2rem;
+      position: relative;
+    }
+    .scaffold-summary li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--green);
+    }
+
+    @media (max-width: 900px) {
+      .sidebar { display: none; }
+      .main { margin-left: 0; padding: 1.5rem; }
+    }
+
+    /* Section Images Styles */
+    .section-images {
+      margin: 1rem 0 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .section-images-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1rem;
+      background: rgba(97, 232, 225, 0.1);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .section-images-toggle:hover {
+      background: rgba(97, 232, 225, 0.15);
+    }
+    .toggle-icon { font-size: 1.1rem; }
+    .toggle-text { flex: 1; color: var(--cyan); font-weight: 600; }
+    .toggle-arrow { color: var(--muted); }
+    .section-images-content {
+      padding: 1rem;
+      background: rgba(0,0,0,0.2);
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 0.75rem;
+    }
+    .image-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0.5rem;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .image-item:hover {
+      border-color: var(--cyan);
+      transform: translateY(-2px);
+    }
+    .image-thumb {
+      width: 100%;
+      height: 80px;
+      object-fit: contain;
+      background: #ffffff;
+      border-radius: 4px;
+      padding: 4px;
+    }
+    .image-label {
+      margin-top: 0.4rem;
+      font-size: 0.7rem;
+      color: var(--muted);
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 100%;
+    }
+
+    /* Image Modal */
+    .image-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+    }
+    .modal-content {
+      position: relative;
+      background: var(--panel);
+      padding: 1.5rem;
+      border-radius: 12px;
+      max-width: 95vw;
+      max-height: 95vh;
+      overflow: auto;
+      text-align: center;
+    }
+    .modal-close {
+      position: absolute;
+      top: 0.5rem;
+      right: 1rem;
+      font-size: 2rem;
+      color: var(--muted);
+      cursor: pointer;
+    }
+    .modal-close:hover { color: var(--red); }
+    .modal-content h3 {
+      margin-bottom: 1rem;
+      color: var(--cyan);
+    }
+    .modal-content img {
+      background: #ffffff;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<aside class="sidebar">
+  <h2>Exam Sections</h2>
+  <nav id="sectionNav"></nav>
+  <div class="sidebar-footer">Ms. Luminara<br/>Dewey 612.8 Lab</div>
+</aside>
+
+<main class="main">
+  <h1 class="exam-title">Lab Exam Prep Comprehensive</h1>
+  <p class="exam-meta">Dewey 612.8 | Exercises 15-25 | 109 Questions | Scaffolding Available</p>
+
+  <div id="examContent"></div>
+
+  <div id="resultsPanel" class="results-panel">
+    <h2>Exam Complete!</h2>
+    <div class="results-percentage" id="finalPercent">0%</div>
+    <div class="results-breakdown">
+      <div class="stat"><div class="stat-num correct-count" id="finalCorrect">0</div><div class="stat-label">Correct</div></div>
+      <div class="stat"><div class="stat-num wrong-count" id="finalWrong">0</div><div class="stat-label">Incorrect</div></div>
+      <div class="stat"><div class="stat-num" id="finalTotal">0</div><div class="stat-label">Total</div></div>
+    </div>
+    <button class="restart-btn" onclick="location.reload()">Restart Exam</button>
+  </div>
+</main>
+
+<div class="floating-score">
+  <span>Score:</span>
+  <span class="correct-count" id="runningCorrect">0</span>/<span id="runningTotal">0</span>
+</div>
+
+<script>
+// Scaffolding data for each question - Ms. Luminara's guided learning
+const scaffoldData = {
+  // Section 1: Nervous Tissue
+  'nervous-tissue-1': {
+    scaffolds: [
+      { q: 'What are the two main categories of cells in nervous tissue?', hint: 'One type transmits signals, the other provides support...', opts: ['Neurons and neuroglia', 'Axons and dendrites', 'Myelin and nodes', 'Gray and white matter'], ans: 0, explain: 'Neurons conduct electrical signals; neuroglia (glial cells) support, protect, and nourish neurons. In tissue sections, neurons are larger with distinctive shapes.' },
+      { q: 'What is a "multipolar" neuron?', hint: 'Think about the number of processes extending from the cell body...', opts: ['A neuron with one process', 'A neuron with two processes', 'A neuron with many processes (multiple dendrites + one axon)', 'A neuron without processes'], ans: 2, explain: 'Multipolar neurons have multiple dendrites (receiving signals) and one axon (sending signals). This is the most common neuron type in the CNS.' },
+      { q: 'Which part of the neuron contains the nucleus?', hint: 'This is the "central command" of the cell...', opts: ['Axon', 'Dendrite', 'Cell body (soma)', 'Myelin sheath'], ans: 2, explain: 'The cell body (soma) contains the nucleus and organelles. Under a microscope, it appears as a large, rounded structure - the key feature for identifying neurons.' }
+    ],
+    summary: ['Nervous tissue = neurons (signal) + neuroglia (support)', 'Multipolar = multiple dendrites + one axon', 'Cell body (soma) is large with visible nucleus']
+  },
+  'nervous-tissue-2': {
+    scaffolds: [
+      { q: 'What is myelin primarily made of?', hint: 'Think about what makes something waterproof and insulating...', opts: ['Mostly protein', 'Mostly carbohydrate', 'Mostly lipid (70-80% fat)', 'Mostly water'], ans: 2, explain: 'Myelin is 70-80% lipid, making it an excellent electrical insulator with a white appearance.' },
+      { q: 'Osmium tetroxide stain binds strongly to:', hint: 'This is why fat appears dark in tissue preparations...', opts: ['Proteins', 'Nucleic acids', 'Lipids (fats)', 'Carbohydrates'], ans: 2, explain: 'Osmium binds to lipids and turns them dark/black. Since myelin is lipid-rich, it appears as dark rings.' },
+      { q: 'The axoplasm (cytoplasm inside the axon) would appear as:', hint: 'Think about what is NOT lipid-rich...', opts: ['Dark (like myelin)', 'Light/clear (surrounded by dark myelin)', 'Red', 'Blue'], ans: 1, explain: 'Axoplasm lacks the lipid content of myelin, appearing light in the center - creating the "donut" appearance.' }
+    ],
+    summary: ['Myelin is 70-80% lipid', 'Osmium stains lipids dark', 'Result: dark ring (myelin) around light center (axoplasm)']
+  },
+  'nervous-tissue-3': {
+    scaffolds: [
+      { q: 'In anatomical terminology, "posterior" and "dorsal" both mean:', hint: 'Think about the back of the body...', opts: ['Front side', 'Back side', 'Side', 'Top'], ans: 1, explain: 'Posterior = dorsal = toward the back. In the spinal cord, the dorsal side faces your back muscles.' },
+      { q: 'What is the difference between a "sulcus" and a "fissure"?', hint: 'Think shallow vs. deep...', opts: ['Sulcus is deeper', 'Fissure is deeper', 'They are the same', 'Sulcus is only in brain'], ans: 1, explain: 'A fissure is DEEP; a sulcus is SHALLOW. This helps orient the spinal cord.' },
+      { q: 'Which groove is deeper - dorsal or ventral side?', hint: 'Anterior median FISSURE vs posterior median SULCUS...', opts: ['Dorsal (posterior) is deeper', 'Ventral (anterior) is deeper', 'Both are equal', 'Neither has a groove'], ans: 1, explain: 'Ventral (anterior) median FISSURE is deep. Dorsal (posterior) median SULCUS is shallow.' }
+    ],
+    summary: ['Posterior = dorsal = back; Anterior = ventral = front', 'Fissure = deep; Sulcus = shallow', 'Anterior fissure is DEEP; Posterior sulcus is SHALLOW']
+  },
+  'nervous-tissue-4': {
+    scaffolds: [
+      { q: 'Sensory information enters the spinal cord through which root?', hint: 'Sensory neurons are in the dorsal root ganglion...', opts: ['Ventral root', 'Dorsal root', 'Lateral root', 'Central root'], ans: 1, explain: 'Sensory fibers enter through the DORSAL root. The dorsal root ganglion contains sensory neuron cell bodies.' },
+      { q: 'Motor commands exit the spinal cord through which root?', hint: 'Motor = movement = going OUT to muscles...', opts: ['Ventral root', 'Dorsal root', 'Lateral root', 'Central root'], ans: 0, explain: 'Motor fibers exit through the VENTRAL root. Bell-Magendie law: dorsal = sensory IN, ventral = motor OUT.' },
+      { q: 'Following dorsal=sensory and ventral=motor, where are motor neuron cell bodies?', hint: 'The horns follow the same pattern as the roots...', opts: ['Dorsal horn', 'Ventral horn', 'Central canal', 'White matter'], ans: 1, explain: 'Motor neuron cell bodies are in the VENTRAL horn (matching ventral root = motor OUT).' }
+    ],
+    summary: ['Bell-Magendie: Dorsal = sensory IN, Ventral = motor OUT', 'Dorsal root ganglion = sensory cell bodies', 'Ventral horn = motor neuron cell bodies']
+  },
+  'nervous-tissue-5': {
+    scaffolds: [
+      { q: 'Which cells produce myelin in the PNS?', hint: 'Named after a German physiologist...', opts: ['Oligodendrocytes', 'Schwann cells', 'Astrocytes', 'Microglia'], ans: 1, explain: 'Schwann cells myelinate axons in the PNS. Each wraps around one segment of ONE axon.' },
+      { q: 'Why does myelin appear white?', hint: 'Think about myelin composition...', opts: ['High protein content', 'High lipid (fat) content', 'High water content', 'Light reflection'], ans: 1, explain: 'Myelin is 70-80% lipid. Fat appears white, hence "white matter."' },
+      { q: 'The perineurium wraps around:', hint: 'Peri- means around, -neurium refers to nerve bundles...', opts: ['Individual axons', 'Bundles of nerve fibers (fascicles)', 'The entire nerve', 'Cell body only'], ans: 1, explain: 'Perineurium wraps fascicles (bundles), NOT individual axons - that\'s myelin.' }
+    ],
+    summary: ['Schwann cells = PNS myelin', 'Myelin is 70-80% lipid = white', 'Perineurium wraps fascicles, not axons']
+  },
+  'nervous-tissue-6': {
+    scaffolds: [
+      { q: 'What do the ventral horns contain?', hint: 'Ventral = motor...', opts: ['Sensory relay neurons', 'Motor neuron cell bodies', 'Interneurons only', 'Glial cells only'], ans: 1, explain: 'Ventral horns contain motor neuron cell bodies. More motor neurons = larger ventral horns.' },
+      { q: 'Which body parts require the most motor neurons?', hint: 'Think about fine movements like typing or walking...', opts: ['Trunk muscles', 'Arms and legs (limbs)', 'Head only', 'Internal organs'], ans: 1, explain: 'Arms and legs require precise motor control with many muscles = more motor neurons needed.' },
+      { q: 'At which spinal levels do arm nerves emerge?', hint: 'The brachial plexus comes from the neck region...', opts: ['Thoracic', 'Cervical (C4-T1)', 'Lumbar', 'Sacral'], ans: 1, explain: 'Cervical enlargement (C4-T1) supplies arms; lumbar enlargement (L1-S3) supplies legs.' }
+    ],
+    summary: ['Ventral horns = motor neuron cell bodies', 'Limbs need many motor neurons', 'Cervical = arms; Lumbar = legs']
+  },
+  'nervous-tissue-7': {
+    scaffolds: [
+      { q: 'Sensory information enters through which side?', hint: 'Remember: dorsal = sensory...', opts: ['Ventral (front)', 'Dorsal (back)', 'Lateral (side)', 'All equally'], ans: 1, explain: 'Sensory fibers enter through the dorsal side - Bell-Magendie law.' },
+      { q: 'A "ganglion" in the PNS is:', hint: 'Think of it as a cluster...', opts: ['A bundle of axons', 'A cluster of neuron cell bodies', 'A type of glial cell', 'White matter region'], ans: 1, explain: 'A ganglion is a cluster of neuron cell bodies in the PNS. (In CNS, it\'s called a "nucleus.")' },
+      { q: 'Based on its name, where is the "dorsal root ganglion"?', hint: 'Dorsal root + ganglion...', opts: ['Inside spinal cord', 'Along dorsal root, outside cord', 'In the brain', 'In ventral horn'], ans: 1, explain: 'The DRG is along the dorsal root, just outside the cord - contains sensory neuron cell bodies.' }
+    ],
+    summary: ['Sensory enters through dorsal roots', 'Ganglion = cluster of cell bodies (PNS)', 'DRG is outside cord, contains sensory cell bodies']
+  },
+  'nervous-tissue-8': {
+    scaffolds: [
+      { q: 'What fluid fills the brain ventricles?', hint: 'This protective fluid cushions the CNS...', opts: ['Blood', 'Cerebrospinal fluid (CSF)', 'Lymph', 'Plasma'], ans: 1, explain: 'CSF fills the ventricles, cushioning, nourishing, and removing waste from the CNS.' },
+      { q: 'The spinal cord continues from which brain structure?', hint: 'The lowest part of the brain...', opts: ['Cerebrum', 'Cerebellum', 'Brainstem (medulla)', 'Thalamus'], ans: 2, explain: 'The spinal cord is continuous with the brainstem (medulla). The central canal connects to the fourth ventricle.' },
+      { q: 'Cells lining the central canal are called:', hint: 'A type of glial cell with cilia...', opts: ['Astrocytes', 'Oligodendrocytes', 'Ependymal cells', 'Microglia'], ans: 2, explain: 'Ependymal cells line the central canal and ventricles, helping circulate CSF.' }
+    ],
+    summary: ['CSF fills ventricles and central canal', 'Central canal connects to fourth ventricle', 'Ependymal cells line the canal']
+  },
+
+  // Section 2: Brain Anatomy
+  'brain-anatomy-8': {
+    scaffolds: [
+      { q: '"Corpora quadrigemina" means "four bodies." How many colliculi are there?', hint: 'Quadri- means four...', opts: ['Two', 'Four', 'Six', 'Eight'], ans: 1, explain: 'Four colliculi: two superior and two inferior (left and right pairs).' },
+      { q: 'The brainstem consists of which three structures (top to bottom)?', hint: 'MMM in order...', opts: ['Medulla, Midbrain, Pons', 'Midbrain, Pons, Medulla', 'Pons, Midbrain, Medulla', 'Medulla, Pons, Midbrain'], ans: 1, explain: 'From top to bottom: Midbrain → Pons → Medulla.' },
+      { q: 'The dorsal surface of the midbrain is called the:', hint: 'Tectum means "roof"...', opts: ['Tegmentum', 'Tectum', 'Cerebral peduncles', 'Basis'], ans: 1, explain: 'Tectum ("roof") is the dorsal midbrain where the corpora quadrigemina are located.' }
+    ],
+    summary: ['4 colliculi (2 superior + 2 inferior)', 'Brainstem: Midbrain → Pons → Medulla', 'Tectum = dorsal midbrain (roof)']
+  },
+  'brain-anatomy-10': {
+    scaffolds: [
+      { q: 'How many extraocular muscles control eye movement?', hint: 'Four rectus plus two obliques...', opts: ['4', '5', '6', '8'], ans: 2, explain: '6 muscles: 4 rectus (superior, inferior, medial, lateral) + 2 obliques.' },
+      { q: 'The mnemonic "LR6 SO4" means:', hint: 'LR = lateral rectus, SO = superior oblique...', opts: ['All muscles = CN III', 'LR = CN VI, SO = CN IV', 'Only 6 and 4 muscles exist', 'Left and right use different nerves'], ans: 1, explain: 'LR6 SO4: Lateral Rectus = CN VI, Superior Oblique = CN IV. All others = CN III.' },
+      { q: 'CN III innervates how many extraocular muscles?', hint: '6 total minus the two exceptions...', opts: ['2', '3', '4', '6'], ans: 2, explain: '4 muscles: superior/inferior/medial rectus + inferior oblique. NOT lateral rectus or superior oblique.' }
+    ],
+    summary: ['6 extraocular muscles total', 'LR6 SO4 exceptions', 'CN III controls the other 4']
+  },
+  'brain-anatomy-11': {
+    scaffolds: [
+      { q: 'How many ventricles are in the brain?', hint: 'Two lateral, one third, one fourth...', opts: ['2', '3', '4', '5'], ans: 2, explain: '4 ventricles: two lateral, third (between thalami), fourth (brainstem/cerebellum).' },
+      { q: 'The third ventricle is between which structures?', hint: 'These relay sensory info to cortex...', opts: ['Lateral ventricles', 'Thalami', 'Cerebral hemispheres', 'Cerebellar hemispheres'], ans: 1, explain: 'The third ventricle is a narrow midline cavity between the two thalami.' },
+      { q: 'The fourth ventricle is behind which brainstem structures?', hint: 'Lower brainstem...', opts: ['Midbrain only', 'Pons and medulla', 'Thalamus', 'Cerebrum'], ans: 1, explain: 'Fourth ventricle lies between pons/medulla and cerebellum. Cerebral aqueduct connects 3rd to 4th through midbrain.' }
+    ],
+    summary: ['4 ventricles in brain', 'Third is between thalami', 'Cerebral aqueduct through midbrain connects 3rd → 4th']
+  },
+  'brain-anatomy-12': {
+    scaffolds: [
+      { q: 'The optic nerves converge at an X-shaped structure. Its shape comes from:', hint: 'Greek letter chi (X)...', opts: ['A circle', 'An X', 'A Y', 'A straight line'], ans: 1, explain: 'Optic chiasm is X-shaped. "Chiasm" comes from Greek chi (χ) = X.' },
+      { q: 'At the optic chiasm, which fibers cross?', hint: 'Which retinal part sees the OPPOSITE visual field...', opts: ['All fibers', 'No fibers', 'Nasal (medial) fibers', 'Temporal (lateral) fibers'], ans: 2, explain: 'Nasal retinal fibers cross at the chiasm. Temporal fibers stay ipsilateral.' },
+      { q: 'A pituitary tumor pressing on the chiasm affects which fibers first?', hint: 'Pituitary sits below, pressing the crossing fibers...', opts: ['Temporal fibers', 'Nasal (crossing) fibers', 'All equally', 'Neither'], ans: 1, explain: 'Crossing nasal fibers are damaged first → bitemporal hemianopia (classic pituitary tumor sign).' }
+    ],
+    summary: ['Chiasm = X-shaped (chi = X)', 'Nasal fibers cross; temporal stay ipsilateral', 'Pituitary tumors → bitemporal hemianopia']
+  },
+  'brain-anatomy-16': {
+    scaffolds: [
+      { q: 'Sensory information must be processed before reaching consciousness. This occurs in:', hint: 'Outer brain layer...', opts: ['Brainstem', 'Cerebral cortex', 'Spinal cord', 'Cerebellum'], ans: 1, explain: 'Conscious perception occurs in the cerebral cortex.' },
+      { q: 'Before reaching cortex, sensory signals are filtered and relayed through:', hint: 'Sits atop brainstem, part of diencephalon...', opts: ['Hypothalamus', 'Thalamus', 'Basal ganglia', 'Limbic system'], ans: 1, explain: 'Thalamus is the sensory relay station - the brain\'s "switchboard."' },
+      { q: 'Which sense does NOT relay through thalamus?', hint: 'Most "primitive" sense with shortest pathway...', opts: ['Vision', 'Hearing', 'Smell (olfaction)', 'Touch'], ans: 2, explain: 'Olfaction goes directly to cortex - why smells trigger strong immediate memories.' }
+    ],
+    summary: ['Cortex = conscious perception', 'Thalamus = sensory relay station', 'Exception: Olfaction bypasses thalamus']
+  },
+  'brain-anatomy-14': {
+    scaffolds: [
+      { q: 'The medulla is the most _____ part of the brainstem.', hint: 'Connects to spinal cord...', opts: ['Superior (highest)', 'Inferior (lowest)', 'Lateral', 'Anterior'], ans: 1, explain: 'Medulla is lowest brainstem, connecting to spinal cord. Order: Midbrain → Pons → Medulla.' },
+      { q: 'Which functions would STOP if medulla was severely damaged?', hint: 'What keeps you alive moment-to-moment...', opts: ['Memory and learning', 'Heartbeat and breathing', 'Vision and hearing', 'Movement coordination'], ans: 1, explain: 'Medulla contains vital centers for cardiovascular and respiratory control. Damage is often fatal.' },
+      { q: 'Why is medulla called the "vital center"?', hint: 'Vital = necessary for life...', opts: ['Controls vitamins', 'Controls life-sustaining functions', 'Largest structure', 'Connects to all organs'], ans: 1, explain: 'Controls breathing, heart rate, blood pressure - you cannot survive without these.' }
+    ],
+    summary: ['Medulla is lowest brainstem', 'Contains vital centers for heart, BP, breathing', 'Damage often fatal']
+  },
+
+  // Section 3: Spinal Cord
+  'spinal-cord-2': {
+    scaffolds: [
+      { q: 'The dorsal columns carry which sensory modalities?', hint: 'High-fidelity, precise sensations...', opts: ['Pain and temperature', 'Fine touch, vibration, proprioception', 'Crude touch only', 'Motor commands'], ans: 1, explain: 'Dorsal columns = discriminative touch, vibration, and proprioception (position sense).' },
+      { q: 'Pain and temperature are carried by which pathway?', hint: 'These fibers cross in the spinal cord...', opts: ['Dorsal columns', 'Spinothalamic tract', 'Corticospinal tract', 'Cerebellar tracts'], ans: 1, explain: 'Spinothalamic tract carries pain and temperature - crosses in the cord.' },
+      { q: 'Which pathway crosses (decussates) in the spinal cord?', hint: 'Pain/temp cross early; fine touch crosses late...', opts: ['Dorsal columns', 'Spinothalamic', 'Both cross in cord', 'Neither crosses'], ans: 1, explain: 'Spinothalamic crosses in cord (anterior commissure); dorsal columns cross in medulla.' }
+    ],
+    summary: ['Dorsal columns = fine touch, vibration, proprioception', 'Spinothalamic = pain, temperature', 'Spinothalamic crosses in cord; dorsal columns cross in medulla']
+  },
+  'spinal-cord-3': {
+    scaffolds: [
+      { q: 'Pain and temperature fibers synapse first in the:', hint: 'They enter through dorsal root and synapse nearby...', opts: ['Ventral horn', 'Dorsal horn', 'White matter', 'Brainstem'], ans: 1, explain: 'Spinothalamic fibers synapse in the dorsal horn upon entering the cord.' },
+      { q: 'After synapsing, these fibers cross the midline through:', hint: 'Located near the central canal...', opts: ['Posterior median sulcus', 'Anterior white commissure', 'Gray commissure', 'Ventral root'], ans: 1, explain: 'Second-order neurons cross through the anterior white commissure within 1-2 segments.' },
+      { q: 'After crossing, spinothalamic fibers ascend in:', hint: 'On the opposite side from entry...', opts: ['Dorsal columns', 'Lateral spinothalamic tract (contralateral)', 'Corticospinal tract', 'Posterior columns'], ans: 1, explain: 'They ascend contralaterally in the lateral (pain/temp) and anterior (crude touch) spinothalamic tracts.' }
+    ],
+    summary: ['Synapse in dorsal horn', 'Cross in anterior white commissure', 'Ascend contralaterally']
+  },
+  'spinal-cord-4': {
+    scaffolds: [
+      { q: 'The lateral horn contains preganglionic sympathetic neurons. What does "preganglionic" mean?', hint: 'Pre- means before, ganglionic refers to ganglia...', opts: ['After the ganglion', 'Before reaching the ganglion', 'Without ganglia', 'Two ganglia'], ans: 1, explain: 'Preganglionic = the neuron BEFORE the ganglion (first neuron in the autonomic chain).' },
+      { q: 'The sympathetic nervous system is also called "thoracolumbar" because:', hint: 'Where the lateral horn exists...', opts: ['It affects thorax and lumbar areas', 'Preganglionic neurons are at T1-L2', 'It only works in those regions', 'The ganglia are there'], ans: 1, explain: 'Sympathetic preganglionic cell bodies are only in the lateral horn at T1-L2 levels.' },
+      { q: 'At cervical and sacral levels, the lateral horn is:', hint: 'No sympathetics here...', opts: ['Larger than thoracolumbar', 'Absent (no lateral horn)', 'Contains parasympathetics', 'Contains motor neurons'], ans: 1, explain: 'Lateral horn only exists at T1-L2 and S2-S4 (parasympathetic). Cervical levels have no lateral horn.' }
+    ],
+    summary: ['Preganglionic = first neuron before ganglion', 'Sympathetic at T1-L2 only', 'Lateral horn absent at cervical levels']
+  },
+
+  // Section 4: Eye Anatomy
+  'eye-anatomy-2': {
+    scaffolds: [
+      { q: 'The eye is divided into segments by which structure?', hint: 'This focuses light...', opts: ['Cornea', 'Lens', 'Retina', 'Optic disc'], ans: 1, explain: 'The lens divides the eye into anterior segment (front) and posterior segment (behind).' },
+      { q: 'Aqueous humor is produced by the:', hint: 'Also contains the muscle for accommodation...', opts: ['Retina', 'Ciliary body', 'Lens', 'Cornea'], ans: 1, explain: 'Ciliary body produces aqueous humor, which fills the anterior segment (in front of lens).' },
+      { q: 'Vitreous humor fills which part?', hint: 'The large space behind the lens...', opts: ['Anterior chamber', 'Posterior chamber', 'Posterior segment (behind lens)', 'Cornea'], ans: 2, explain: 'Vitreous humor fills the posterior segment (behind the lens). It is NOT replaced.' }
+    ],
+    summary: ['Lens divides anterior from posterior segment', 'Aqueous = anterior segment (watery)', 'Vitreous = posterior segment (gel)']
+  },
+  'eye-anatomy-4': {
+    scaffolds: [
+      { q: 'The optic disc is where:', hint: 'Something exits the eye here...', opts: ['Photoreceptors are concentrated', 'The optic nerve exits', 'Light is focused', 'Blood vessels enter only'], ans: 1, explain: 'The optic disc is where retinal ganglion cell axons converge and exit as the optic nerve.' },
+      { q: 'Can the optic disc contain photoreceptors?', hint: 'No room where nerve fibers exit...', opts: ['Yes, it has the most', 'No, none there', 'Only rods', 'Only cones'], ans: 1, explain: 'No photoreceptors at optic disc (nerve fibers take up space) = BLIND SPOT.' },
+      { q: 'The area of highest visual acuity is the:', hint: 'Small pit with most cones...', opts: ['Optic disc', 'Fovea', 'Peripheral retina', 'Cornea'], ans: 1, explain: 'Fovea has highest cone density and 1:1 ganglion cell ratio = sharpest vision.' }
+    ],
+    summary: ['Optic disc = nerve exit = BLIND SPOT', 'Fovea = highest cone density = best acuity', 'They are opposite in function']
+  },
+  'eye-anatomy-12': {
+    scaffolds: [
+      { q: 'Accommodation is:', hint: 'Allows focus at different distances...', opts: ['Adjusting pupil size', 'Changing lens shape for different distances', 'Moving the eye', 'Producing tears'], ans: 1, explain: 'Accommodation = changing lens shape to focus at different distances.' },
+      { q: 'Zonular fibers connect the lens to:', hint: 'Ring-shaped structure with smooth muscle...', opts: ['Iris', 'Ciliary body', 'Sclera', 'Cornea'], ans: 1, explain: 'Zonular fibers connect lens to ciliary body. Taut zonules = flat lens; slack = rounded lens.' },
+      { q: 'When ciliary muscle contracts, the ciliary body ring becomes:', hint: 'Ring muscle contracts = ring gets...', opts: ['Larger', 'Smaller', 'Same size', 'Taller'], ans: 1, explain: 'Ciliary muscle contracts → ring smaller → zonules relax → lens rounds up for near focus.' }
+    ],
+    summary: ['Accommodation = lens shape change', 'Zonules connect lens to ciliary body', 'Ciliary contracts → zonules relax → lens rounds']
+  },
+
+  // Section 5: Ear Anatomy
+  'ear-anatomy-2': {
+    scaffolds: [
+      { q: 'How many ossicles are in the middle ear?', hint: 'Smallest bones in body...', opts: ['Two', 'Three', 'Four', 'Six'], ans: 1, explain: 'THREE ossicles: malleus, incus, stapes.' },
+      { q: 'The stapes connects to which structure?', hint: 'Footplate fits into an opening...', opts: ['Cochlea directly', 'Oval window', 'Semicircular canals', 'Auditory tube'], ans: 1, explain: 'Stapes footplate fits into the oval window, transmitting vibrations to inner ear fluid.' },
+      { q: 'The cochlea is:', hint: 'Named for Greek word for "snail"...', opts: ['A middle ear bone', 'The coiled hearing organ in inner ear', 'Part of outer ear', 'A muscle'], ans: 1, explain: 'Cochlea is the coiled hearing organ - NOT an ossicle!' }
+    ],
+    summary: ['THREE ossicles: malleus, incus, stapes', 'Stapes → oval window', 'Cochlea = hearing organ (not a bone)']
+  },
+  'ear-anatomy-5': {
+    scaffolds: [
+      { q: 'The ossicle chain order (eardrum to inner ear):', hint: 'Hammer hits anvil, pushes stirrup...', opts: ['Stapes → Incus → Malleus', 'Malleus → Incus → Stapes', 'Incus → Malleus → Stapes', 'Malleus → Stapes → Incus'], ans: 1, explain: 'Malleus (hammer) → Incus (anvil) → Stapes (stirrup). MIS from eardrum to inner ear.' },
+      { q: 'Which ossicle attaches to the eardrum?', hint: 'Handle (manubrium) is embedded in membrane...', opts: ['Malleus', 'Incus', 'Stapes', 'All of them'], ans: 0, explain: 'Malleus handle is embedded in the tympanic membrane.' },
+      { q: 'The stapes is shaped like:', hint: 'Latin: stapes = stirrup...', opts: ['A hammer', 'An anvil', 'A stirrup', 'A snail'], ans: 2, explain: 'Stirrup-shaped with two crura (legs) and a footplate that fits into oval window.' }
+    ],
+    summary: ['MIS order: Malleus → Incus → Stapes', 'Malleus attaches to eardrum', 'Stapes footplate → oval window']
+  },
+  'ear-anatomy-6': {
+    scaffolds: [
+      { q: '"Tonotopic" organization means:', hint: 'Tono = tone/pitch, topic = place...', opts: ['All frequencies processed equally', 'Different frequencies at different locations', 'Only one frequency processed', 'Volume is the only variable'], ans: 1, explain: 'Tonotopic = different frequencies stimulate different locations along cochlea.' },
+      { q: 'At the BASE of cochlea, the basilar membrane is:', hint: 'HIGH frequencies need what properties...', opts: ['Wide and floppy', 'Narrow and stiff', 'Same as apex', 'Absent'], ans: 1, explain: 'Base = narrow and stiff = HIGH frequencies. Like a short guitar string.' },
+      { q: 'At the APEX (tip), the basilar membrane is:', hint: 'LOW frequencies need what properties...', opts: ['Wide and flexible', 'Narrow and stiff', 'Made of bone', 'Absent'], ans: 0, explain: 'Apex = wide and flexible = LOW frequencies. Like a long guitar string.' }
+    ],
+    summary: ['Tonotopic = frequency mapped to location', 'Base = stiff/narrow = HIGH frequency', 'Apex = flexible/wide = LOW frequency']
+  },
+  'ear-anatomy-8': {
+    scaffolds: [
+      { q: 'Based on its name, stapedius muscle attaches to:', hint: 'Stapedius → stapes...', opts: ['Malleus', 'Incus', 'Stapes', 'All three'], ans: 2, explain: 'Stapedius attaches to the stapes (name gives it away!).' },
+      { q: 'Stapedius contracts in response to loud sounds. The effect is:', hint: 'Acoustic reflex - protective...', opts: ['Increases transmission', 'Decreases transmission (protects hearing)', 'Changes pitch', 'Opens auditory tube'], ans: 1, explain: 'Stapedius dampens ossicle movement, reducing transmission by up to 15 dB - protective.' },
+      { q: 'Stapedius is innervated by:', hint: 'Also controls facial muscles - Bell\'s palsy affects both...', opts: ['CN V (trigeminal)', 'CN VII (facial)', 'CN VIII (vestibulocochlear)', 'CN IX (glossopharyngeal)'], ans: 1, explain: 'CN VII (facial) innervates stapedius. Bell\'s palsy → hyperacusis (sounds too loud).' }
+    ],
+    summary: ['Stapedius attaches to stapes', 'Contracts to dampen sound (protective)', 'Innervated by CN VII']
+  },
+
+  // VOCABULARY SCAFFOLDS - Section 1
+  'vocab-neuroglia': {
+    scaffolds: [
+      { q: '"Neuro-" means nerve. "Glia" means:', hint: 'Think about what holds things together...', opts: ['Signal', 'Cell', 'Glue', 'Wire'], ans: 2, explain: 'Glia means GLUE. Neuroglia = nerve glue = support cells. They "glue" the nervous system together.' },
+      { q: 'Which neuroglia forms myelin in the CNS?', hint: 'Few processes but each wraps many axons...', opts: ['Schwann cells', 'Oligodendrocytes', 'Astrocytes', 'Microglia'], ans: 1, explain: 'Oligodendrocytes (oligo = few, dendro = branches) myelinate CNS axons. Each can wrap segments of multiple axons.' },
+      { q: 'Which neuroglia forms myelin in the PNS?', hint: 'Named after a German physiologist...', opts: ['Schwann cells', 'Oligodendrocytes', 'Astrocytes', 'Microglia'], ans: 0, explain: 'Schwann cells myelinate PNS axons. Each Schwann cell wraps ONE segment of ONE axon.' }
+    ],
+    summary: ['Neuroglia = nerve glue = support cells', 'CNS myelin = oligodendrocytes', 'PNS myelin = Schwann cells']
+  },
+  'vocab-efferent-afferent': {
+    scaffolds: [
+      { q: '"Afferent" comes from Latin "afferre" (to bring TO). Afferent neurons carry signals:', hint: 'Bringing information TO somewhere...', opts: ['Away from CNS', 'TO the CNS', 'Between neurons', 'Nowhere specific'], ans: 1, explain: 'Afferent = ARRIVING at CNS. Sensory neurons are afferent - they bring information TO the brain.' },
+      { q: '"Efferent" comes from Latin "efferre" (to carry OUT). Efferent neurons carry signals:', hint: 'Carrying information OUT to somewhere...', opts: ['To the CNS', 'Away FROM the CNS', 'Between neurons', 'Nowhere specific'], ans: 1, explain: 'Efferent = EXITING from CNS. Motor neurons are efferent - they carry commands OUT to muscles.' },
+      { q: 'Memory trick: "SAME" = Sensory-Afferent, Motor-Efferent. In a reflex, the order is:', hint: 'Sensation comes before movement...', opts: ['Efferent → Afferent', 'Afferent → Efferent', 'Only efferent', 'Only afferent'], ans: 1, explain: 'SAME: Sensory (afferent) → Interneuron → Motor (efferent). Input before output.' }
+    ],
+    summary: ['Afferent = arriving at CNS = sensory', 'Efferent = exiting from CNS = motor', 'SAME: Sensory-Afferent, Motor-Efferent']
+  },
+  'vocab-nodes-ranvier': {
+    scaffolds: [
+      { q: 'The gaps in myelin along an axon are called:', hint: 'Named after a French anatomist...', opts: ['Synapses', 'Nodes of Ranvier', 'Schwann gaps', 'Myelin holes'], ans: 1, explain: 'Nodes of Ranvier are gaps between myelinated segments where the axon is exposed.' },
+      { q: 'Why do these gaps exist?', hint: 'Something concentrates here for signal transmission...', opts: ['Manufacturing defect', 'Sodium channels cluster here for signal regeneration', 'To save myelin material', 'Random occurrence'], ans: 1, explain: 'Voltage-gated Na+ channels cluster at nodes, allowing action potentials to regenerate.' },
+      { q: 'Saltatory conduction means signals "jump" from:', hint: 'Saltare = to jump in Latin...', opts: ['Neuron to neuron', 'Node to node', 'Synapse to synapse', 'Dendrite to axon'], ans: 1, explain: 'Saltatory = jumping. Action potentials jump node-to-node, making conduction 100x faster than unmyelinated fibers.' }
+    ],
+    summary: ['Nodes of Ranvier = gaps in myelin', 'Na+ channels cluster at nodes', 'Saltatory conduction = jumping node to node']
+  },
+
+  // VOCABULARY SCAFFOLDS - Section 2
+  'vocab-meninges': {
+    scaffolds: [
+      { q: 'How many meningeal layers protect the brain and spinal cord?', hint: 'Mater means "mother" - there are three of them...', opts: ['One', 'Two', 'Three', 'Four'], ans: 2, explain: 'THREE meninges: dura mater, arachnoid mater, pia mater. They wrap around the CNS.' },
+      { q: '"Dura mater" means "tough mother." Where is it located?', hint: 'Tough = strong = outermost protection...', opts: ['Closest to brain', 'Middle layer', 'Outermost layer (against skull)', 'In the ventricles'], ans: 2, explain: 'Dura mater is the OUTERMOST meninx - tough, thick, and attached to the inner skull.' },
+      { q: '"Pia mater" means "tender mother." Where is it located?', hint: 'Tender = delicate = needs to be protected...', opts: ['Against the skull', 'Middle layer', 'Closest to brain surface', 'Outside the skull'], ans: 2, explain: 'Pia mater is the INNERMOST meninx - delicate, vascular, and adherent to brain/cord surface.' }
+    ],
+    summary: ['Three meninges: dura, arachnoid, pia', 'Dura = outermost (tough)', 'Pia = innermost (delicate)']
+  },
+  'vocab-gyri-sulci': {
+    scaffolds: [
+      { q: 'The ridges on the brain surface are called:', hint: 'These are the "bumps" you see...', opts: ['Sulci', 'Gyri', 'Fissures', 'Ventricles'], ans: 1, explain: 'Gyri (singular: gyrus) are the elevated ridges or folds on the cortical surface.' },
+      { q: 'The shallow grooves between ridges are called:', hint: 'These are shallower than fissures...', opts: ['Gyri', 'Sulci', 'Commissures', 'Lobes'], ans: 1, explain: 'Sulci (singular: sulcus) are shallow grooves separating gyri.' },
+      { q: 'What is the difference between a sulcus and a fissure?', hint: 'One is shallow, one is deep...', opts: ['Same thing', 'Sulcus = deep, Fissure = shallow', 'Sulcus = shallow, Fissure = deep', 'Only fissures exist'], ans: 2, explain: 'Sulci are SHALLOW grooves; fissures are DEEP grooves (like longitudinal fissure between hemispheres).' }
+    ],
+    summary: ['Gyri = ridges (bumps)', 'Sulci = shallow grooves', 'Fissures = deep grooves']
+  },
+  'vocab-lobes': {
+    scaffolds: [
+      { q: 'Which lobe contains the primary motor cortex?', hint: 'Think about where voluntary movement is initiated...', opts: ['Occipital', 'Temporal', 'Frontal', 'Parietal'], ans: 2, explain: 'Frontal lobe contains the precentral gyrus (primary motor cortex) and controls voluntary movement.' },
+      { q: 'Which lobe processes visual information?', hint: 'Located at the BACK of the head, where you can be "hit from behind"...', opts: ['Frontal', 'Occipital', 'Temporal', 'Parietal'], ans: 1, explain: 'Occipital lobe at the posterior brain contains the primary visual cortex (V1).' },
+      { q: 'Which lobe contains the primary somatosensory cortex?', hint: 'Soma = body, sensory = feeling. Behind the motor strip...', opts: ['Frontal', 'Temporal', 'Parietal', 'Occipital'], ans: 2, explain: 'Parietal lobe contains the postcentral gyrus (primary somatosensory cortex) for touch, pressure, temperature.' }
+    ],
+    summary: ['Frontal = motor + executive', 'Occipital = vision', 'Parietal = somatosensory']
+  },
+  'vocab-commissure': {
+    scaffolds: [
+      { q: 'A commissure is a bundle of fibers that:', hint: 'Think left-right communication...', opts: ['Carries signals up and down', 'Connects left and right sides', 'Only carries motor signals', 'Only exists in the spinal cord'], ans: 1, explain: 'Commissures connect LEFT and RIGHT structures. They cross the midline.' },
+      { q: 'The largest commissure in the brain is:', hint: 'Massive band of white matter you see in midsagittal section...', opts: ['Anterior commissure', 'Corpus callosum', 'Posterior commissure', 'Hippocampal commissure'], ans: 1, explain: 'Corpus callosum is the largest commissure with ~200 million axons connecting hemispheres.' },
+      { q: 'What would happen if the corpus callosum was cut (split-brain)?', hint: 'Left and right can\'t talk to each other...', opts: ['Instant death', 'Hemispheres cannot communicate directly', 'No effect', 'Blindness'], ans: 1, explain: 'Split-brain patients show that each hemisphere processes independently without corpus callosum.' }
+    ],
+    summary: ['Commissure = connects left and right', 'Corpus callosum = largest commissure', 'Split-brain = hemispheres can\'t communicate']
+  },
+
+  // VOCABULARY SCAFFOLDS - Section 3
+  'vocab-plexus': {
+    scaffolds: [
+      { q: '"Plexus" means:', hint: 'Think about networks and weaving...', opts: ['Single nerve', 'Network or braid', 'Spinal level', 'Ganglion'], ans: 1, explain: 'Plexus = NETWORK or BRAID. Nerve plexuses are networks where ventral rami intermingle.' },
+      { q: 'The brachial plexus supplies which region?', hint: 'Brachium = arm in Latin...', opts: ['Neck', 'Upper limb (arm)', 'Lower limb (leg)', 'Trunk'], ans: 1, explain: 'Brachial = arm. Brachial plexus (C5-T1) supplies the upper limb.' },
+      { q: 'The lumbosacral plexus supplies which region?', hint: 'Lumbar + sacral = lower spine...', opts: ['Arms', 'Neck', 'Lower limb and pelvis', 'Head'], ans: 2, explain: 'Lumbar plexus (L1-L4) and sacral plexus (L4-S3) together supply the lower limb and pelvis.' }
+    ],
+    summary: ['Plexus = network of nerves', 'Brachial plexus = arm', 'Lumbosacral = lower limb/pelvis']
+  },
+  'vocab-dermatome': {
+    scaffolds: [
+      { q: '"Dermatome" breaks down as derma- (skin) + -tome (segment). It is:', hint: 'Area of skin supplied by a specific nerve...', opts: ['A type of skin cell', 'An area of skin innervated by ONE spinal nerve', 'A skin disease', 'A cutting instrument'], ans: 1, explain: 'Dermatome = skin segment supplied by sensory fibers from ONE spinal nerve.' },
+      { q: 'Why are dermatome maps clinically useful?', hint: 'If you know where numbness is, you know where the problem is...', opts: ['To diagnose skin diseases', 'To localize spinal cord lesions', 'To measure skin thickness', 'To treat infections'], ans: 1, explain: 'Dermatome maps help localize spinal nerve or cord damage by identifying numb areas.' },
+      { q: 'The T4 dermatome is at approximately which level?', hint: 'Think about chest landmarks...', opts: ['Umbilicus (belly button)', 'Nipple line', 'Groin', 'Knee'], ans: 1, explain: 'T4 = nipple line. T10 = umbilicus. These are key clinical landmarks.' }
+    ],
+    summary: ['Dermatome = skin area from one spinal nerve', 'Used to localize spinal lesions', 'T4 = nipple, T10 = umbilicus']
+  },
+
+  // VOCABULARY SCAFFOLDS - Section 4
+  'vocab-tunics': {
+    scaffolds: [
+      { q: 'The eye has how many tunics (layers)?', hint: 'Like an onion with layers...', opts: ['One', 'Two', 'Three', 'Four'], ans: 2, explain: 'THREE tunics: fibrous (outer), vascular/uvea (middle), sensory/neural (inner).' },
+      { q: 'The fibrous tunic (outer layer) includes:', hint: 'One part is transparent, one is white...', opts: ['Retina and choroid', 'Sclera and cornea', 'Iris and lens', 'Ciliary body and pupil'], ans: 1, explain: 'Fibrous tunic = sclera (white) + cornea (transparent). Both are tough connective tissue.' },
+      { q: 'The vascular tunic (uvea) includes:', hint: 'Colored middle layer with blood supply...', opts: ['Sclera, cornea, retina', 'Choroid, ciliary body, iris', 'Lens and vitreous', 'Optic nerve and disc'], ans: 1, explain: 'Uvea = choroid (blood supply) + ciliary body (aqueous production) + iris (pupil control).' }
+    ],
+    summary: ['3 tunics: fibrous, vascular (uvea), sensory', 'Fibrous = sclera + cornea', 'Uvea = choroid + ciliary body + iris']
+  },
+  'vocab-photoreceptors': {
+    scaffolds: [
+      { q: 'The two types of photoreceptors are:', hint: 'Named for their shapes...', opts: ['Bipolar and ganglion', 'Rods and cones', 'Pupils and iris', 'Cornea and lens'], ans: 1, explain: 'RODS (rod-shaped) and CONES (cone-shaped) are the photoreceptors that detect light.' },
+      { q: 'Which photoreceptor is responsible for color vision?', hint: 'Color = bright light conditions...', opts: ['Rods', 'Cones', 'Both equally', 'Neither'], ans: 1, explain: 'Cones detect color. Three types (S, M, L) for blue, green, red. Need bright light.' },
+      { q: 'Which photoreceptor is responsible for dim light (night) vision?', hint: 'More sensitive but no color...', opts: ['Rods', 'Cones', 'Both equally', 'Neither'], ans: 0, explain: 'Rods detect dim light. Very sensitive but only see black/white. Concentrated in peripheral retina.' }
+    ],
+    summary: ['Rods = dim light, no color', 'Cones = bright light, color vision', 'Fovea has only cones']
+  },
+  'vocab-refraction': {
+    scaffolds: [
+      { q: 'Refraction means:', hint: 'What happens when light passes through different materials...', opts: ['Light bouncing back', 'Light bending as it passes through a medium', 'Light being absorbed', 'Light being blocked'], ans: 1, explain: 'Refraction = bending of light. The eye refracts light to focus it on the retina.' },
+      { q: 'Which structure provides MOST of the eye\'s refractive power?', hint: 'First surface light hits, has the biggest change in density...', opts: ['Lens', 'Cornea', 'Vitreous humor', 'Pupil'], ans: 1, explain: 'Cornea provides ~2/3 of refraction (air→cornea = big density change). Lens provides the rest.' },
+      { q: 'The lens can change shape for focusing. This is called:', hint: 'Accommodating different distances...', opts: ['Refraction', 'Accommodation', 'Convergence', 'Adaptation'], ans: 1, explain: 'Accommodation = lens shape change for near/far focus. Ciliary muscle controls this.' }
+    ],
+    summary: ['Refraction = light bending', 'Cornea provides most refraction', 'Accommodation = lens shape change']
+  },
+
+  // VOCABULARY SCAFFOLDS - Section 5
+  'vocab-ossicles': {
+    scaffolds: [
+      { q: 'How many ossicles are in the middle ear?', hint: 'Small bones...', opts: ['One', 'Two', 'Three', 'Four'], ans: 2, explain: 'THREE ossicles: malleus, incus, stapes. Smallest bones in the body.' },
+      { q: 'The ossicle names come from Latin words for:', hint: 'Hammer, anvil, stirrup...', opts: ['Animals', 'Tools', 'Numbers', 'Colors'], ans: 1, explain: 'Malleus = hammer, Incus = anvil, Stapes = stirrup. Named for their shapes.' },
+      { q: 'What do the ossicles do?', hint: 'Connect eardrum to inner ear...', opts: ['Produce sound', 'Transmit and amplify vibrations', 'Detect balance', 'Produce wax'], ans: 1, explain: 'Ossicles transmit vibrations from eardrum to oval window, amplifying sound ~22x.' }
+    ],
+    summary: ['3 ossicles: malleus, incus, stapes', 'Named for shapes (hammer, anvil, stirrup)', 'Transmit + amplify sound to inner ear']
+  },
+  'vocab-cochlea': {
+    scaffolds: [
+      { q: '"Cochlea" comes from Greek word for:', hint: 'Think about its coiled shape...', opts: ['Ear', 'Sound', 'Snail', 'Spiral'], ans: 2, explain: 'Cochlea = SNAIL in Greek. It\'s a snail-shaped, coiled structure (2.5 turns).' },
+      { q: 'The cochlea contains the receptor organ for:', hint: 'Located in the inner ear...', opts: ['Balance', 'Hearing', 'Pain', 'Pressure'], ans: 1, explain: 'Cochlea contains the organ of Corti - the receptor organ for HEARING.' },
+      { q: 'The organ of Corti contains specialized cells called:', hint: 'They have projections that bend...', opts: ['Rods and cones', 'Hair cells', 'Neurons', 'Goblet cells'], ans: 1, explain: 'Hair cells are mechanoreceptors - their stereocilia bend in response to sound waves.' }
+    ],
+    summary: ['Cochlea = snail-shaped hearing organ', 'Contains organ of Corti', 'Hair cells are the sound receptors']
+  },
+  'vocab-vestibular': {
+    scaffolds: [
+      { q: 'The vestibular apparatus is responsible for:', hint: 'Vestibule = entrance hall = detecting where you are in space...', opts: ['Hearing', 'Balance and equilibrium', 'Vision', 'Smell'], ans: 1, explain: 'Vestibular = BALANCE. Detects head position and movement in space.' },
+      { q: 'Which structures detect rotational (angular) movement?', hint: 'Three of them, oriented in different planes...', opts: ['Utricle and saccule', 'Semicircular canals', 'Cochlea', 'Ossicles'], ans: 1, explain: 'Three semicircular canals detect ROTATION in three planes (nodding, shaking, tilting).' },
+      { q: 'Which structures detect linear acceleration and head tilt (gravity)?', hint: 'Two chambers in the vestibule...', opts: ['Semicircular canals', 'Utricle and saccule', 'Cochlea', 'Middle ear'], ans: 1, explain: 'Utricle (horizontal) and saccule (vertical) detect LINEAR motion and gravity using otoliths.' }
+    ],
+    summary: ['Vestibular = balance system', 'Semicircular canals = rotation', 'Utricle/saccule = linear + gravity']
+  }
+};
+
+const examData = {
+  sections: [
+    {
+      id: 'nervous-tissue',
+      title: 'Section 1: Histology of Nervous Tissue (800.1)',
+      questions: [
+        {
+          type: 'match',
+          prompt: 'Match each nervous tissue structure to its description:',
+          items: ['Multipolar neuron', 'Neuroglia', 'Axon', 'Myelin sheath', 'Node of Ranvier', 'Dorsal root ganglion'],
+          opts: ['Large cell body with multiple processes', 'Smaller supporting cells', 'Central cable carrying signals', 'White fatty insulating layer', 'Gap in myelin for saltatory conduction', 'Contains sensory neuron cell bodies'],
+          ans: [0, 1, 2, 3, 4, 5],
+          note: 'Key landmarks: neurons have large stellate bodies; glia are smaller support cells; myelin appears as dark rings in cross-section.'
+        },
+        {type:'tf',q:'In a nerve cross-section, myelinated axons appear as circles with dark rings around light centers.',ans:true,note:'The dark ring is lipid-rich myelin (binds osmium); the light center is the axoplasm.',scaffoldId:'nervous-tissue-2'},
+        {type:'tf',q:'The posterior median sulcus is the deep cleft on the ventral side of the spinal cord.',ans:false,note:'The posterior median sulcus is SHALLOW and DORSAL; the anterior median fissure is DEEP and VENTRAL.',scaffoldId:'nervous-tissue-3'},
+        {type:'tf',q:'Gray matter forms the butterfly or H-shaped region in the center of spinal cord cross-sections.',ans:true,note:'Gray matter contains neuronal cell bodies; white matter (myelinated axons) surrounds it.',scaffoldId:'vocab-neuroglia'},
+        {type:'tf',q:'Motor neuron cell bodies are located in the dorsal horn of the spinal cord.',ans:false,note:'Motor neurons are in the VENTRAL horn; sensory processing occurs in the dorsal horn.',scaffoldId:'nervous-tissue-4'},
+        {type:'mc',q:'In a spinal cord smear, which cell type has a large cell body with multiple processes extending outward?',opts:['Neuroglia','Neuron','Schwann cell','Satellite cell'],ans:1,note:'Multipolar neurons have large soma with multiple dendrites and one axon extending outward.',scaffoldId:'nervous-tissue-1'},
+        {type:'mc',q:'In a teased nerve fiber, what is the white, fatty layer wrapping around the axon?',opts:['Axon membrane','Myelin sheath','Perineurium','Satellite cell'],ans:1,note:'Myelin is 70-80% lipid, formed by Schwann cells (PNS) or oligodendrocytes (CNS).',scaffoldId:'nervous-tissue-5'},
+        {type:'mc',q:'The cervical and lumbar enlargements have larger ventral horns because:',opts:['They process more sensory input','They contain more motor neurons for limbs','They have larger central canals','They are closer to the brain'],ans:1,note:'Cervical enlargement (C4-T1) supplies arms; lumbar enlargement (L1-S3) supplies legs.',scaffoldId:'nervous-tissue-6'},
+        {type:'mc',q:'What structure contains the cell bodies of sensory neurons entering the spinal cord?',opts:['Ventral horn','Lateral horn','Dorsal root ganglion','Sympathetic chain'],ans:2,note:'DRG contains pseudounipolar sensory neurons; their axons enter the cord via dorsal roots.',scaffoldId:'nervous-tissue-7'},
+        {type:'mc',q:'In a spinal cord cross-section, what is the small CSF-filled tube in the center?',opts:['Dorsal root','Gray commissure','Central canal','Posterior median sulcus'],ans:2,note:'Central canal is lined by ependyma, continuous with the fourth ventricle.',scaffoldId:'nervous-tissue-8'},
+        {type:'mc',q:'Looking at a spinal cord cross-section, you identify the region where sensory information is processed. This is the:',opts:['Ventral horn','Dorsal horn','Lateral column','Anterior median fissure'],ans:1,note:'Dorsal horn receives sensory input; different laminae process different modalities.',scaffoldId:'vocab-efferent-afferent'},
+        {type:'mc',q:'The ventral median fissure of the spinal cord contains:',opts:['The central canal','Branches of the anterior spinal artery','Motor neuron cell bodies','The dorsal columns'],ans:1,note:'The deep anterior fissure contains pia mater and anterior spinal artery branches.',scaffoldId:'vocab-nodes-ranvier'}
+      ]
+    },
+    {
+      id: 'brain-anatomy',
+      title: 'Section 2: Brain Models & Sheep Brain (800.2)',
+      questions: [
+        {
+          type: 'match',
+          prompt: 'Match each brain structure to its function:',
+          items: ['Dura mater', 'Arachnoid mater', 'Pia mater', 'Frontal lobe', 'Occipital lobe', 'Temporal lobe'],
+          opts: ['Tough outer meninx attached to skull', 'Web-like middle meninx', 'Delicate innermost meninx on brain surface', 'Motor cortex, executive function, personality', 'Visual processing center', 'Auditory cortex, memory (hippocampus)'],
+          ans: [0, 1, 2, 3, 4, 5],
+          note: 'Meninges protect the brain; each lobe has specialized functions based on location.'
+        },
+        {
+          type: 'match',
+          prompt: 'Match the cerebral landmark to its description:',
+          items: ['Gyri', 'Sulci', 'Longitudinal fissure', 'Central sulcus', 'Lateral sulcus', 'Corpus callosum'],
+          opts: ['Elevated ridges on cortex', 'Shallow grooves between gyri', 'Deep groove separating hemispheres', 'Separates frontal from parietal lobe', 'Separates temporal from frontal/parietal', 'Commissure connecting hemispheres'],
+          ans: [0, 1, 2, 3, 4, 5],
+          note: 'Gyrification increases cortical surface area; major sulci/fissures divide the lobes.'
+        },
+        {type:'tf',q:'The parietal lobe processes visual information from the occipital lobe.',ans:false,note:'Parietal lobe processes somatosensory information; occipital processes vision.',scaffoldId:'vocab-lobes'},
+        {type:'tf',q:'The cerebellum shows a branching white matter pattern called arbor vitae ("tree of life").',ans:true,note:'Arbor vitae is the branching white matter core of the cerebellum.',scaffoldId:'vocab-gyri-sulci'},
+        {type:'tf',q:'The corpus callosum connects the frontal lobe to the occipital lobe.',ans:false,note:'Corpus callosum connects LEFT and RIGHT hemispheres, not front to back.',scaffoldId:'vocab-commissure'},
+        {type:'tf',q:'The pineal gland secretes melatonin and helps regulate circadian rhythms.',ans:true,note:'Pineal gland receives light information via the SCN; melatonin increases in darkness.'},
+        {type:'tf',q:'The lateral ventricles are located in the brainstem.',ans:false,note:'Lateral ventricles are in the cerebral hemispheres; fourth ventricle is in brainstem.'},
+        {type:'mc',q:'The corpora quadrigemina (superior and inferior colliculi) are located on the dorsal:',opts:['Pons','Midbrain','Medulla','Cerebellum'],ans:1,note:'Tectum of midbrain; superior colliculi = visual reflexes, inferior = auditory relay.',scaffoldId:'brain-anatomy-8'},
+        {type:'mc',q:'Which cranial nerve carries visual information from the retina?',opts:['CN I','CN II','CN III','CN IV'],ans:1,note:'Optic nerve (CN II) is actually a brain tract wrapped in meninges.',scaffoldId:'vocab-meninges'},
+        {type:'mc',q:'The oculomotor nerve (CN III) controls all EXCEPT:',opts:['Superior rectus','Lateral rectus','Medial rectus','Inferior oblique'],ans:1,note:'LR6 SO4 - lateral rectus is CN VI (abducens), superior oblique is CN IV (trochlear).',scaffoldId:'brain-anatomy-10'},
+        {type:'mc',q:'The narrow channel connecting the third and fourth ventricles is the:',opts:['Foramen of Monro','Cerebral aqueduct','Central canal','Foramen of Magendie'],ans:1,note:'Cerebral aqueduct (of Sylvius) passes through the midbrain; common site of obstruction.',scaffoldId:'brain-anatomy-11'},
+        {type:'mc',q:'The X-shaped structure where optic nerve fibers partially cross is the:',opts:['Optic tract','Optic chiasm','Mammillary body','Infundibulum'],ans:1,note:'At the chiasm, nasal retinal fibers cross; pituitary tumors can compress it causing bitemporal hemianopia.',scaffoldId:'brain-anatomy-12'},
+        {type:'mc',q:'The hypothalamus controls all of the following EXCEPT:',opts:['Body temperature','Hunger and thirst','Voluntary movement','Circadian rhythms'],ans:2,note:'Hypothalamus controls homeostatic functions; voluntary movement is motor cortex/basal ganglia.'},
+        {type:'mc',q:'The medulla oblongata contains vital centers for:',opts:['Vision and hearing','Motor planning','Cardiovascular and respiratory control','Language production'],ans:2,note:'Medulla controls heart rate, blood pressure, breathing; damage often fatal.',scaffoldId:'brain-anatomy-14'},
+        {type:'mc',q:'The pyramids on the ventral medulla contain:',opts:['Sensory fibers','Corticospinal tract fibers','Cerebellar fibers','Autonomic fibers'],ans:1,note:'Corticospinal tracts cross at the pyramidal decussation, explaining contralateral motor control.'},
+        {type:'mc',q:'The thalamus serves primarily as:',opts:['Motor control center','Sensory relay station to cortex','Emotion processing center','Autonomic control center'],ans:1,note:'Almost all sensory info (except olfaction) passes through thalamus to reach cortex.',scaffoldId:'brain-anatomy-16'},
+        {type:'mc',q:'The fornix connects which two structures?',opts:['Thalamus to hypothalamus','Hippocampus to mammillary bodies','Frontal to occipital lobe','Cerebellum to brainstem'],ans:1,note:'Fornix carries hippocampal output to mammillary bodies; part of the Papez memory circuit.'},
+        {type:'mc',q:'In sheep brain dissection, the olfactory bulbs are relatively larger than in humans because:',opts:['Sheep have larger brains','Sheep rely heavily on smell for survival','Sheep have less developed vision','Sheep have smaller frontal lobes'],ans:1,note:'Sheep depend on olfaction for food, offspring recognition, and predator detection.'},
+        {type:'mc',q:'The pons ("bridge") connects the:',opts:['Cerebrum to spinal cord','Cerebrum to cerebellum','Thalamus to hypothalamus','Medulla to midbrain'],ans:1,note:'Pons contains corticopontocerebellar fibers; middle cerebellar peduncles project laterally.'}
+      ]
+    },
+    {
+      id: 'spinal-cord',
+      title: 'Section 3: Spinal Cord Model (800.3)',
+      questions: [
+        {
+          type: 'match',
+          prompt: 'Match each spinal cord structure to its description:',
+          items: ['Dorsal root', 'Ventral root', 'Spinal nerve', 'Dorsal ramus', 'Ventral ramus', 'Dorsal root ganglion'],
+          opts: ['Carries sensory fibers into cord', 'Carries motor fibers out of cord', 'Mixed nerve formed from root merger', 'Branch to back muscles/skin', 'Branch to limbs and anterior trunk', 'Contains sensory neuron cell bodies'],
+          ans: [0, 1, 2, 3, 4, 5],
+          note: 'Bell-Magendie law: dorsal = sensory, ventral = motor; spinal nerves are mixed.'
+        },
+        {
+          type: 'match',
+          prompt: 'Match the gray matter region to its contents:',
+          items: ['Dorsal horn', 'Ventral horn', 'Lateral horn', 'Gray commissure'],
+          opts: ['Sensory relay neurons', 'Motor neuron cell bodies', 'Preganglionic sympathetic neurons (T1-L2)', 'Connects gray matter around central canal'],
+          ans: [0, 1, 2, 3],
+          note: 'Organization: sensory = dorsal, motor = ventral, autonomic = lateral.'
+        },
+        {type:'tf',q:'The dorsal columns carry pain and temperature information to the brain.',ans:false,note:'Dorsal columns carry fine touch, vibration, and proprioception; pain/temp is spinothalamic.',scaffoldId:'spinal-cord-2'},
+        {type:'tf',q:'Pain and temperature fibers cross in the spinal cord (anterior white commissure) before ascending.',ans:true,note:'Spinothalamic fibers synapse in dorsal horn, then cross within 1-2 segments.',scaffoldId:'spinal-cord-3'},
+        {type:'tf',q:'The lateral horn is present throughout the entire length of the spinal cord.',ans:false,note:'Lateral horn only at T1-L2 (sympathetic) and S2-S4 (parasympathetic).',scaffoldId:'spinal-cord-4'},
+        {type:'tf',q:'Cerebrospinal fluid fills both the central canal and the subarachnoid space.',ans:true,note:'CSF circulates in ventricles, central canal, and subarachnoid space.'},
+        {type:'mc',q:'To orient a spinal cord cross-section, remember that the DEEP groove is on the:',opts:['Dorsal (posterior) side','Ventral (anterior) side','Lateral side','Either side'],ans:1,note:'Deep = ventral (anterior median fissure); shallow = dorsal (posterior median sulcus).'},
+        {type:'mc',q:'The dorsal columns contain all EXCEPT:',opts:['Fasciculus gracilis','Fasciculus cuneatus','Lateral corticospinal tract','Fine touch fibers'],ans:2,note:'Corticospinal tract is in the lateral column; dorsal columns = discriminative touch/proprioception.'},
+        {type:'mc',q:'White matter in the spinal cord is organized into:',opts:['Two columns','Three columns (funiculi)','Four columns','Five columns'],ans:1,note:'Dorsal, lateral, and ventral columns (funiculi) containing multiple tracts.',scaffoldId:'vocab-plexus'},
+        {type:'mc',q:'The fasciculus gracilis carries sensory information from:',opts:['Upper body (above T6)','Lower body (below T6)','The head only','Visceral organs'],ans:1,note:'Gracilis = lower body; cuneatus = upper body; both in dorsal columns.',scaffoldId:'vocab-dermatome'},
+        {type:'mc',q:'Rootlets converge to form:',opts:['Rami','Roots','Fascicles','Ganglia'],ans:1,note:'6-8 rootlets converge to form each dorsal or ventral root.'}
+      ]
+    },
+    {
+      id: 'eye-anatomy',
+      title: 'Section 4: The Eye (800.4)',
+      questions: [
+        {
+          type: 'match',
+          prompt: 'Match each eye structure to its function:',
+          items: ['Cornea', 'Iris', 'Lens', 'Ciliary body', 'Retina', 'Choroid'],
+          opts: ['Primary refractive surface (~43 diopters)', 'Controls pupil size', 'Adjustable focus element', 'Produces aqueous humor, contains ciliary muscle', 'Contains photoreceptors (rods and cones)', 'Vascular layer nourishing retina'],
+          ans: [0, 1, 2, 3, 4, 5],
+          note: 'Three tunics: fibrous (cornea/sclera), vascular (iris/ciliary/choroid), neural (retina).'
+        },
+        {
+          type: 'match',
+          prompt: 'Match the extraocular muscle to its innervation:',
+          items: ['Superior rectus', 'Lateral rectus', 'Superior oblique', 'Inferior oblique'],
+          opts: ['CN III (oculomotor)', 'CN VI (abducens)', 'CN IV (trochlear)', 'CN III (oculomotor)'],
+          ans: [0, 1, 2, 3],
+          note: 'LR6 SO4 - lateral rectus is CN VI, superior oblique is CN IV, all others are CN III.'
+        },
+        {type:'tf',q:'Aqueous humor fills the posterior segment of the eye behind the lens.',ans:false,note:'Aqueous humor is in the ANTERIOR segment; vitreous humor fills the posterior segment.',scaffoldId:'eye-anatomy-2'},
+        {type:'tf',q:'The fovea contains only cones and provides the highest visual acuity.',ans:true,note:'Fovea has no rods, blood vessels; 1:1:1 ratio of cones to bipolar to ganglion cells.',scaffoldId:'vocab-photoreceptors'},
+        {type:'tf',q:'The optic disc is the area of highest visual acuity on the retina.',ans:false,note:'Optic disc is the BLIND SPOT (no photoreceptors); fovea has highest acuity.',scaffoldId:'eye-anatomy-4'},
+        {type:'tf',q:'Pupil constriction is controlled by parasympathetic fibers via CN III.',ans:true,note:'Edinger-Westphal nucleus → ciliary ganglion → sphincter pupillae (constriction).'},
+        {type:'mc',q:'The sphincter pupillae muscle is composed of:',opts:['Radial fibers that dilate the pupil','Circular fibers that constrict the pupil','Skeletal muscle fibers','Ciliary muscle fibers'],ans:1,note:'Sphincter = circular = constricts; dilator = radial = dilates.'},
+        {type:'mc',q:'Zonular fibers (suspensory ligaments) connect the lens to the:',opts:['Iris','Cornea','Ciliary body','Vitreous body'],ans:2,note:'Zonules transmit ciliary muscle action to change lens shape for accommodation.',scaffoldId:'vocab-refraction'},
+        {type:'mc',q:'The choroid is located between the:',opts:['Cornea and lens','Retina and sclera','Iris and pupil','Vitreous and lens'],ans:1,note:'Choroid is the vascular middle tunic; supplies outer retina via choriocapillaris.',scaffoldId:'vocab-tunics'},
+        {type:'mc',q:'The macula lutea is:',opts:['The blind spot','The yellowish region containing the fovea','The optic nerve exit point','The anterior chamber'],ans:1,note:'Macula\'s yellow color is from xanthophyll pigments (lutein/zeaxanthin).'},
+        {type:'mc',q:'Vitreous humor is:',opts:['Constantly produced and drained','A gel formed during development that persists throughout life','Located in the anterior chamber','Produced by the ciliary body'],ans:1,note:'Vitreous is NOT replaced; it can liquefy with age causing floaters.'},
+        {type:'mc',q:'The optic nerve (CN II) carries visual information from the:',opts:['Cornea','Lens','Retinal ganglion cells','Ciliary body'],ans:2,note:'~1 million ganglion cell axons converge at optic disc to form CN II.'},
+        {type:'mc',q:'The trochlear nerve (CN IV) innervates only the:',opts:['Lateral rectus','Superior oblique','Inferior oblique','Medial rectus'],ans:1,note:'CN IV is the smallest cranial nerve; only exits dorsally; innervates only superior oblique.'},
+        {type:'mc',q:'During accommodation for near vision, the ciliary muscle:',opts:['Relaxes, increasing lens curvature','Contracts, allowing the lens to become more spherical','Contracts, flattening the lens','Relaxes, flattening the lens'],ans:1,note:'Ciliary muscle contraction → zonules relax → elastic lens bulges for near focus.',scaffoldId:'eye-anatomy-12'}
+      ]
+    },
+    {
+      id: 'ear-anatomy',
+      title: 'Section 5: The Ear (800.5)',
+      questions: [
+        {
+          type: 'match',
+          prompt: 'Match each ear structure to its function:',
+          items: ['Auricle (pinna)', 'Auditory canal', 'Tympanic membrane', 'Malleus', 'Stapes', 'Cochlea'],
+          opts: ['Collects and funnels sound waves', 'Channels sound to eardrum', 'Vibrates in response to sound', 'Ossicle attached to eardrum', 'Ossicle with footplate in oval window', 'Coiled hearing organ'],
+          ans: [0, 1, 2, 3, 4, 5],
+          note: 'Sound pathway: auricle → canal → tympanic membrane → ossicles → oval window → cochlea.'
+        },
+        {
+          type: 'match',
+          prompt: 'Match the inner ear structure to its function:',
+          items: ['Semicircular canals', 'Vestibule', 'Utricle', 'Saccule', 'Round window'],
+          opts: ['Detect rotational acceleration', 'Central chamber containing utricle/saccule', 'Detects horizontal linear acceleration', 'Detects vertical linear acceleration', 'Dissipates cochlear pressure waves'],
+          ans: [0, 1, 2, 3, 4],
+          note: 'Semicircular canals = rotation; utricle/saccule = linear acceleration and gravity.'
+        },
+        {type:'tf',q:'The three auditory ossicles are the malleus, incus, and cochlea.',ans:false,note:'The ossicles are malleus, INCUS, and STAPES; cochlea is the hearing organ.',scaffoldId:'ear-anatomy-2'},
+        {type:'tf',q:'The auditory (Eustachian) tube connects the middle ear to the nasopharynx.',ans:true,note:'Auditory tube equalizes pressure across the tympanic membrane; opens during swallowing.'},
+        {type:'tf',q:'The round window membrane bulges outward when the stapes pushes inward.',ans:true,note:'Reciprocal motion allows cochlear fluid displacement; without it, no hearing possible.'},
+        {type:'tf',q:'The vestibulocochlear nerve (CN VIII) carries both hearing and balance information.',ans:true,note:'Cochlear division = hearing; vestibular division = balance; travel together.',scaffoldId:'vocab-ossicles'},
+        {type:'mc',q:'The three semicircular canals are oriented:',opts:['Parallel to each other','At right angles to each other','At 45-degree angles','Randomly'],ans:1,note:'Perpendicular orientation allows detection of rotation in any plane.',scaffoldId:'vocab-vestibular'},
+        {type:'mc',q:'Which ossicle has a footplate that fits into the oval window?',opts:['Malleus','Incus','Stapes','Tensor tympani'],ans:2,note:'Stapes is the smallest bone in the body; its footplate transmits vibrations to cochlear fluid.',scaffoldId:'ear-anatomy-5'},
+        {type:'mc',q:'The cochlea performs frequency analysis because:',opts:['All parts vibrate equally','Different positions respond to different frequencies','It contains no fluid','It is connected to the brain'],ans:1,note:'Base = high frequencies (stiff membrane); apex = low frequencies (flexible membrane).',scaffoldId:'ear-anatomy-6'},
+        {type:'mc',q:'The petrous portion of the temporal bone:',opts:['Contains the middle ear only','Houses the inner ear structures','Is the thinnest part of the skull','Contains no nerves'],ans:1,note:'Petrous = "rocky"; one of the hardest bones, protects delicate inner ear.'},
+        {type:'mc',q:'The stapedius muscle:',opts:['Attaches to the malleus','Is the smallest skeletal muscle in the body','Is innervated by CN V','Increases sound transmission'],ans:1,note:'Stapedius (~6mm) attaches to stapes; innervated by CN VII; dampens sound.',scaffoldId:'ear-anatomy-8'},
+        {type:'mc',q:'The tensor tympani muscle is innervated by:',opts:['CN V (trigeminal)','CN VII (facial)','CN VIII (vestibulocochlear)','CN IX (glossopharyngeal)'],ans:0,note:'Tensor tympani = CN V; stapedius = CN VII. Both part of acoustic reflex.'},
+        {type:'mc',q:'The earlobe (lobule) differs from the rest of the auricle because it:',opts:['Contains more cartilage','Contains no cartilage','Is more rigid','Has fewer blood vessels'],ans:1,note:'Lobule is only fat and connective tissue; that\'s why it\'s soft and easy to pierce.'},
+        {type:'mc',q:'The organ of Corti is located in the:',opts:['Vestibule','Semicircular canals','Cochlea','Middle ear'],ans:2,note:'Organ of Corti sits on the basilar membrane within the cochlear duct.',scaffoldId:'vocab-cochlea'}
+      ]
+    }
+  ],
+  essays: [
+    {
+      id: 'essay1',
+      section: 'nervous-tissue',
+      prompt: 'Describe the structure and function of a multipolar neuron. How does myelination contribute to nerve impulse conduction, and what role do nodes of Ranvier play?',
+      answer: `Multipolar neurons are the most common neuron type, with a characteristic structure: one large cell body (soma) containing the nucleus and most organelles, multiple dendrites branching outward to receive signals from thousands of other neurons, and one axon that may extend great distances to transmit signals.
+
+MYELINATION AND CONDUCTION:
+The myelin sheath is formed by glial cells wrapping their plasma membranes around the axon in tight spirals:
+- In the CNS: oligodendrocytes myelinate multiple axon segments
+- In the PNS: Schwann cells myelinate one segment of one axon
+
+Myelin is 70-80% lipid and acts as an electrical insulator, increasing membrane resistance and decreasing capacitance. This prevents ion leakage and enables faster signal propagation.
+
+NODES OF RANVIER:
+Nodes of Ranvier are 1-2 μm gaps between myelin segments where the axon membrane is exposed. These gaps contain dense concentrations of voltage-gated Na+ channels (1000-2000 per μm² vs. ~25 in internodes).
+
+The result is saltatory conduction: action potentials "jump" from node to node rather than propagating continuously. This increases conduction velocity 50-100 times compared to unmyelinated fibers of the same diameter, allowing signals to travel at speeds up to 120 m/s.
+
+This system optimizes both speed and energy efficiency—regenerating the action potential only at nodes rather than along the entire axon length.`
+    },
+    {
+      id: 'essay2',
+      section: 'brain-anatomy',
+      prompt: 'Describe the ventricular system of the brain, including the pathway of cerebrospinal fluid (CSF) flow from production to absorption.',
+      answer: `THE VENTRICULAR SYSTEM:
+The brain contains four interconnected CSF-filled cavities:
+
+1. LATERAL VENTRICLES (paired): Largest ventricles, one in each cerebral hemisphere
+   - C-shaped, with frontal, temporal, and occipital horns
+   - Connected to third ventricle via interventricular foramina (of Monro)
+
+2. THIRD VENTRICLE: Midline cavity between the thalami
+   - Walls formed by thalamus; floor by hypothalamus
+   - Connected to fourth ventricle via cerebral aqueduct
+
+3. CEREBRAL AQUEDUCT: Narrow channel through the midbrain
+   - Common site of obstruction causing hydrocephalus
+
+4. FOURTH VENTRICLE: Between pons/medulla and cerebellum
+   - Has three openings to subarachnoid space:
+     * Median aperture (foramen of Magendie)
+     * Two lateral apertures (foramina of Luschka)
+
+CSF FLOW PATHWAY:
+1. PRODUCTION: Choroid plexus in all ventricles produces ~500 mL/day
+2. CIRCULATION: Lateral ventricles → interventricular foramina → third ventricle → cerebral aqueduct → fourth ventricle
+3. EXIT: Through apertures into subarachnoid space
+4. ABSORPTION: Arachnoid granulations (villi) project into dural venous sinuses, acting as one-way valves to return CSF to blood
+
+CSF FUNCTIONS:
+- Cushions the brain (reduces effective weight from 1400g to ~50g)
+- Maintains stable ionic environment
+- Removes metabolic waste
+- Distributes neuroactive substances
+
+Only ~150 mL exists at any time; it's completely replaced every 6-8 hours.`
+    },
+    {
+      id: 'essay3',
+      section: 'spinal-cord',
+      prompt: 'Compare and contrast the dorsal column-medial lemniscus pathway with the spinothalamic pathway. Include information about the sensory modalities carried, the location of crossing (decussation), and clinical implications of damage.',
+      answer: `Two major ascending sensory pathways carry different modalities and have different anatomical organizations:
+
+DORSAL COLUMN-MEDIAL LEMNISCUS PATHWAY:
+
+Modalities: Fine (discriminative) touch, vibration, proprioception (joint position sense)
+- These require high fidelity and precise spatial localization
+
+Pathway:
+1. Primary neurons: Large myelinated fibers enter cord, ascend IPSILATERALLY in dorsal columns
+   - Fasciculus gracilis: lower body (below T6)
+   - Fasciculus cuneatus: upper body (above T6)
+2. First synapse: Nucleus gracilis/cuneatus in medulla
+3. DECUSSATION: Internal arcuate fibers cross in medulla
+4. Medial lemniscus ascends to thalamus (VPL nucleus)
+5. Third-order neurons project to somatosensory cortex
+
+SPINOTHALAMIC PATHWAY:
+
+Modalities: Pain, temperature, crude touch
+- Protective sensations requiring awareness but less spatial precision
+
+Pathway:
+1. Primary neurons: Enter cord, synapse in dorsal horn (laminae I-II)
+2. DECUSSATION: Second-order neurons cross in anterior white commissure (within 1-2 segments)
+3. Ascend in lateral spinothalamic tract (pain/temp) or anterior tract (crude touch)
+4. Synapse in thalamus (VPL nucleus)
+5. Project to somatosensory cortex
+
+CLINICAL IMPLICATIONS:
+
+Brown-Séquard syndrome (hemisection of cord):
+- IPSILATERAL loss of proprioception/fine touch (dorsal columns haven't crossed yet)
+- CONTRALATERAL loss of pain/temperature (spinothalamic has already crossed)
+
+Syringomyelia (central canal expansion):
+- Bilateral loss of pain/temperature in "cape-like" distribution
+- Crossing fibers in anterior commissure are damaged first
+- Dorsal columns preserved (they don't cross in the cord)
+
+This anatomical knowledge allows precise localization of spinal cord lesions.`
+    },
+    {
+      id: 'essay4',
+      section: 'eye-anatomy',
+      prompt: 'Explain the mechanism of accommodation for near vision. Include the roles of the ciliary muscle, zonular fibers, and lens, and explain why this ability decreases with age (presbyopia).',
+      answer: `ACCOMMODATION is the process of adjusting the eye's focusing power for near vision.
+
+THE MECHANISM:
+
+At rest (viewing distant objects):
+- Ciliary muscle is RELAXED
+- Ciliary body ring is large (pulled outward by elastic choroid)
+- Zonular fibers are TAUT (under tension)
+- Lens is held relatively FLAT (low refractive power)
+
+For near vision:
+1. Parasympathetic stimulation (CN III, Edinger-Westphal nucleus → ciliary ganglion)
+2. Ciliary muscle CONTRACTS
+3. Ciliary body ring becomes smaller (moves toward lens)
+4. Zonular fibers become SLACK (tension released)
+5. Elastic lens BULGES (becomes more spherical)
+6. Refractive power increases by up to 15 diopters
+
+This seems paradoxical: muscle contraction leads to relaxation of the suspensory ligaments. The key is understanding that the ciliary muscle forms a ring—when it contracts, the ring gets smaller.
+
+THE NEAR TRIAD:
+Accommodation occurs with two other reflexes:
+1. Pupil constriction (increases depth of field)
+2. Convergence (both eyes turn inward)
+
+PRESBYOPIA (AGE-RELATED LOSS):
+
+The lens continues growing throughout life, adding new fibers at the surface while compressing older fibers centrally. This causes:
+- Increased lens density
+- Decreased elasticity
+- Reduced accommodative range
+
+Accommodative amplitude by age:
+- Age 10: ~14 diopters (can focus at 7 cm)
+- Age 25: ~10 diopters
+- Age 45: ~4 diopters
+- Age 60: ~1 diopter (can barely focus at 100 cm)
+
+By the mid-40s, most people need reading glasses because the lens can no longer bulge sufficiently for near focus, even though the ciliary muscle still contracts normally.
+
+This is why presbyopia is universal and inevitable—it's a mechanical problem with the aging lens, not a muscular weakness.`
+    },
+    {
+      id: 'essay5',
+      section: 'ear-anatomy',
+      prompt: 'Describe the pathway of sound from the external ear to the cochlea. Explain how the ossicles solve the impedance matching problem between air and fluid.',
+      answer: `THE SOUND PATHWAY:
+
+1. EXTERNAL EAR:
+- Auricle (pinna) collects and funnels sound waves
+- External auditory canal channels sound to the eardrum
+- Canal resonance amplifies frequencies around 3000 Hz (speech range)
+
+2. TYMPANIC MEMBRANE:
+- Thin membrane vibrates in response to air pressure waves
+- Converts airborne sound to mechanical vibration
+- Attached to malleus handle
+
+3. MIDDLE EAR OSSICLES:
+- Malleus (attached to eardrum)
+- Incus (connects malleus to stapes)
+- Stapes (footplate in oval window)
+- Transmit vibrations from air to cochlear fluid
+
+4. OVAL WINDOW → COCHLEA:
+- Stapes footplate pushes perilymph
+- Pressure wave travels through scala vestibuli
+- Basilar membrane vibrates (tonotopic organization)
+- Hair cells in organ of Corti transduce to neural signals
+
+THE IMPEDANCE MATCHING PROBLEM:
+
+Sound traveling from air to fluid would normally lose ~99.9% of its energy (30 dB) because of the impedance mismatch—fluid is much harder to move than air. The middle ear solves this through two mechanisms:
+
+1. AREA RATIO:
+- Tympanic membrane area: ~55 mm²
+- Stapes footplate area: ~3.2 mm²
+- Ratio: ~17:1
+- Force concentrated over smaller area increases pressure
+
+2. LEVER ACTION:
+- Malleus handle is longer than incus long process
+- Mechanical advantage: ~1.3:1
+- Additional force amplification
+
+COMBINED GAIN:
+- 17 × 1.3 ≈ 22× pressure amplification
+- This is ~25-27 dB—almost perfectly compensating for the impedance mismatch
+- Without this amplification, we would effectively be deaf
+
+PROTECTIVE MECHANISMS:
+The acoustic reflex (tensor tympani and stapedius muscles) can dampen the ossicular chain in response to loud sounds, reducing transmission by up to 15 dB. However, the reflex has a latency of 25-150 ms, so it cannot protect against sudden impulse sounds like gunshots.`
+    }
+  ]
+};
+
+/* ── Section Images ── */
+const sectionImages = {
+  'nervous-tissue': [
+    {file: '612-physiology/612.81-nerves/neuron.svg', title: 'Neuron Structure'},
+    {file: '612-physiology/612.81-nerves/Neuron_complete_en.svg', title: 'Complete Neuron'},
+    {file: '611-anatomy/611.018-tissues/Neuron_myelin_oligodendrocyte.svg', title: 'Myelin & Oligodendrocyte'},
+    {file: '611-anatomy/611.018-tissues/CNS_myelin_formation.svg', title: 'CNS Myelin Formation'},
+    {file: '612-physiology/612.81-nerves/Neuron_synapse.svg', title: 'Synapse'}
+  ],
+  'brain-anatomy': [
+    {file: '612-physiology/612.82-brain/meninges.svg', title: 'Meninges'},
+    {file: '612-physiology/612.82-brain/Brain_medial_lobes_en.svg', title: 'Brain Lobes (Medial)'},
+    {file: '612-physiology/612.82-brain/Brain_lateral_lobes.svg', title: 'Brain Lobes (Lateral)'},
+    {file: '612-physiology/612.82-brain/Circle_of_Willis_en.svg', title: 'Circle of Willis'},
+    {file: '612-physiology/612.82-brain/Brainstem_sagittal.svg', title: 'Brainstem Sagittal'}
+  ],
+  'spinal-cord': [
+    {file: '612-physiology/612.81-nerves/Gray770_spinal_cord.svg', title: 'Spinal Cord Cross-Section'},
+    {file: '612-physiology/612.81-nerves/Spinal_nerve.svg', title: 'Spinal Nerve'},
+    {file: '612-physiology/612.81-nerves/Gray769_spinal_cord.svg', title: 'Spinal Cord Structure'},
+    {file: '612-physiology/612.81-nerves/Reflex_arc.svg', title: 'Reflex Arc'}
+  ],
+  'cranial-nerves': [
+    {file: '612-physiology/612.82-brain/Brain_inferior_view.svg', title: 'Brain Inferior View'},
+    {file: '612-physiology/612.82-brain/Skull_and_brain.svg', title: 'Skull and Brain'},
+    {file: '600-senses/eye-anatomy.svg', title: 'Eye Anatomy'},
+    {file: 'smart-named/ent/larynx.svg', title: 'Larynx'}
+  ],
+  'eye-anatomy': [
+    {file: '600-senses/eye-anatomy.svg', title: 'Eye Anatomy'},
+    {file: '600-senses/Eye_chambers.svg', title: 'Eye Chambers'},
+    {file: '600-senses/Eye_schematic_en.svg', title: 'Eye Schematic'},
+    {file: '600-senses/Retina_diagram.svg', title: 'Retina Structure'},
+    {file: '600-senses/Photoreceptor_distribution.svg', title: 'Photoreceptor Distribution'}
+  ],
+  'eye-function': [
+    {file: '600-senses/Cone_color_sensitivity.svg', title: 'Cone Color Sensitivity'},
+    {file: 'smart-named/ophthalmology/eye_structure.svg', title: 'Eye Structure (SMART)'},
+    {file: 'smart-named/ophthalmology/eye_muscles.svg', title: 'Eye Muscles'},
+    {file: '600-senses/Photoreceptor_distribution.svg', title: 'Photoreceptor Distribution'}
+  ],
+  'ear-anatomy': [
+    {file: '612-physiology/612.82-brain/Skull_and_brainstem_inner_ear.svg.png', title: 'Inner Ear Location'},
+    {file: '600-senses/Cochlea_crosssection.svg', title: 'Cochlea Cross-Section'},
+    {file: '600-senses/Osseous_labyrinth.svg', title: 'Osseous Labyrinth'},
+    {file: '600-senses/Bony_labyrinth.svg', title: 'Bony Labyrinth'},
+    {file: 'smart-named/ent/conducting_zone.svg', title: 'Conducting Zone'}
+  ],
+  'ear-physiology': [
+    {file: '600-senses/Cochlea_crosssection.svg', title: 'Cochlea Structure'},
+    {file: '600-senses/Vestibular_pushpull.svg', title: 'Vestibular Function'},
+    {file: '600-senses/Osseous_labyrinth.svg', title: 'Labyrinth Structure'}
+  ],
+  'endocrine': [
+    {file: '612-physiology/612.82-brain/Hypothalamus_pituitary.svg', title: 'Hypothalamus-Pituitary'},
+    {file: '612-physiology/612.4-endocrine/Thyroid_system.svg', title: 'Thyroid System'},
+    {file: '612-physiology/612.4-endocrine/Endocrine_system_en.svg', title: 'Endocrine System'},
+    {file: '612-physiology/612.4-endocrine/Adrenal_steroid_pathways.svg', title: 'Adrenal Steroid Pathways'}
+  ]
+};
+
+function renderSectionImages(sectionId) {
+  const images = sectionImages[sectionId];
+  if (!images || images.length === 0) return '';
+
+  const basePath = '../assets/diagrams';
+
+  return `
+    <div class="section-images">
+      <div class="section-images-toggle" onclick="toggleSectionImages('${sectionId}')">
+        <span class="toggle-icon">📷</span>
+        <span class="toggle-text">Reference Images (${images.length})</span>
+        <span class="toggle-arrow" id="arrow-${sectionId}">▼</span>
+      </div>
+      <div class="section-images-content" id="images-${sectionId}" style="display: none;">
+        <div class="image-grid">
+          ${images.map(img => `
+            <div class="image-item" onclick="showImageModal('${img.file}', '${img.title}')">
+              <img src="${basePath}/${img.file}"
+                   alt="${img.title}"
+                   class="image-thumb"
+                   onerror="this.parentElement.style.display='none'"
+                   loading="lazy">
+              <span class="image-label">${img.title}</span>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    </div>`;
+}
+
+function toggleSectionImages(sectionId) {
+  const content = document.getElementById(`images-${sectionId}`);
+  const arrow = document.getElementById(`arrow-${sectionId}`);
+  if (content.style.display === 'none') {
+    content.style.display = 'block';
+    arrow.textContent = '▲';
+  } else {
+    content.style.display = 'none';
+    arrow.textContent = '▼';
+  }
+}
+
+function showImageModal(file, title) {
+  const modal = document.createElement('div');
+  modal.className = 'image-modal';
+  modal.innerHTML = `
+    <div class="modal-content">
+      <span class="modal-close" onclick="this.parentElement.parentElement.remove()">&times;</span>
+      <h3>${title}</h3>
+      <img src="../assets/diagrams/${file}" alt="${title}" style="max-width: 90vw; max-height: 80vh;">
+    </div>
+  `;
+  modal.onclick = (e) => { if (e.target === modal) modal.remove(); };
+  document.body.appendChild(modal);
+}
+
+/* ── rendering + scoring logic ── */
+let answered = 0, correct = 0;
+const sectionProgress = {};
+const scaffoldState = {}; // track scaffold progress per question
+
+function render() {
+  const nav = document.getElementById('sectionNav');
+  const content = document.getElementById('examContent');
+  nav.innerHTML = '';
+  content.innerHTML = '';
+
+  examData.sections.forEach((sec, si) => {
+    sectionProgress[sec.id] = { total: sec.questions.length, done: 0 };
+
+    const navItem = document.createElement('div');
+    navItem.className = 'nav-item';
+    navItem.innerHTML = `<span>${sec.title.split(':')[0]}</span><span class="progress-pill" id="prog-${sec.id}">0/${sec.questions.length}</span>`;
+    navItem.onclick = () => document.getElementById(`sec-${sec.id}`).scrollIntoView({ behavior: 'smooth' });
+    nav.appendChild(navItem);
+
+    const panel = document.createElement('section');
+    panel.className = 'section-panel';
+    panel.id = `sec-${sec.id}`;
+    let html = `<h2>${sec.title}</h2>`;
+
+    // Add section reference images
+    html += renderSectionImages(sec.id);
+
+    const grouped = { match: [], tf: [], mc: [] };
+    sec.questions.forEach((q, qi) => grouped[q.type].push({ ...q, idx: qi }));
+
+    if (grouped.match.length) {
+      html += `<div class="question-type-divider">Matching</div>`;
+      grouped.match.forEach(q => { html += renderMatch(sec.id, q); });
+    }
+    if (grouped.tf.length) {
+      html += `<div class="question-type-divider">True / False</div>`;
+      grouped.tf.forEach(q => { html += renderTF(sec.id, q); });
+    }
+    if (grouped.mc.length) {
+      html += `<div class="question-type-divider">Multiple Choice</div>`;
+      grouped.mc.forEach(q => { html += renderMC(sec.id, q); });
+    }
+
+    const sectionEssays = examData.essays.filter(e => e.section === sec.id);
+    if (sectionEssays.length) {
+      html += `<div class="question-type-divider">Essay</div>`;
+      sectionEssays.forEach(e => { html += renderEssay(e); });
+    }
+
+    panel.innerHTML = html;
+    content.appendChild(panel);
+  });
+  updateScore();
+}
+
+function renderMatch(secId, q) {
+  const id = `${secId}-${q.idx}`;
+  let optionsHtml = q.opts.map((o, i) => `<option value="${i}">${o}</option>`).join('');
+  let rows = q.items.map((item, i) => `
+    <div class="match-row" id="mr-${id}-${i}">
+      <span class="match-term">${item}</span>
+      <select class="match-select" data-idx="${i}"><option value="">Select...</option>${optionsHtml}</select>
+    </div>`).join('');
+  return `<div class="card" id="card-${id}">
+    <p class="question">${q.prompt}</p>
+    <div class="match-grid">${rows}</div>
+    <button class="check-btn" onclick="checkMatch('${secId}',${q.idx})">Check</button>
+    ${q.note ? `<p class="note" style="display:none;" id="note-${id}"><strong>Note:</strong> ${q.note}</p>` : ''}
+  </div>`;
+}
+
+function renderTF(secId, q) {
+  const id = `${secId}-${q.idx}`;
+  const hasScaffold = q.scaffoldId && scaffoldData[q.scaffoldId];
+  return `<div class="card" id="card-${id}">
+    <p class="question">${q.q}</p>
+    <div class="options">
+      <button class="option-btn" onclick="checkTF('${secId}',${q.idx},true,this)"><span class="option-letter">T</span> True</button>
+      <button class="option-btn" onclick="checkTF('${secId}',${q.idx},false,this)"><span class="option-letter">F</span> False</button>
+    </div>
+    ${hasScaffold ? renderScaffoldToggle(q.scaffoldId) : ''}
+    ${q.note ? `<p class="note" style="display:none;" id="note-${id}"><strong>Note:</strong> ${q.note}</p>` : ''}
+  </div>`;
+}
+
+function renderMC(secId, q) {
+  const id = `${secId}-${q.idx}`;
+  const letters = ['A','B','C','D'];
+  const hasScaffold = q.scaffoldId && scaffoldData[q.scaffoldId];
+  let btns = q.opts.map((o, i) => `<button class="option-btn" data-i="${i}" onclick="checkMC('${secId}',${q.idx},${i},this)"><span class="option-letter">${letters[i]}</span> ${o}</button>`).join('');
+  return `<div class="card" id="card-${id}">
+    <p class="question">${q.q}</p>
+    <div class="options">${btns}</div>
+    ${hasScaffold ? renderScaffoldToggle(q.scaffoldId) : ''}
+    ${q.note ? `<p class="note" style="display:none;" id="note-${id}"><strong>Note:</strong> ${q.note}</p>` : ''}
+  </div>`;
+}
+
+function renderScaffoldToggle(scaffoldId) {
+  const data = scaffoldData[scaffoldId];
+  if (!data) return '';
+
+  scaffoldState[scaffoldId] = { current: 0, completed: [] };
+
+  const dots = data.scaffolds.map((_, i) =>
+    `<div class="scaffold-dot ${i === 0 ? 'current' : ''}" id="dot-${scaffoldId}-${i}"></div>`
+  ).join('');
+
+  return `
+    <button class="scaffold-toggle" onclick="toggleScaffold('${scaffoldId}')">
+      <span class="icon">🪜</span> Need Help? Build Understanding
+    </button>
+    <div class="scaffold-panel" id="scaffold-panel-${scaffoldId}">
+      <div class="scaffold-header">
+        <span class="scaffold-title"><span class="icon">🪜</span> Ms. Luminara's Scaffolding</span>
+        <div class="scaffold-dots">${dots}</div>
+      </div>
+      <div id="scaffold-content-${scaffoldId}">
+        ${renderScaffoldQuestion(scaffoldId, 0)}
+      </div>
+    </div>
+  `;
+}
+
+function renderScaffoldQuestion(scaffoldId, index) {
+  const data = scaffoldData[scaffoldId];
+  const s = data.scaffolds[index];
+  const letters = ['A','B','C','D'];
+
+  return `
+    <div class="scaffold-question" id="scaffold-q-${scaffoldId}-${index}">
+      <div class="scaffold-q-text">${s.q}</div>
+      ${s.hint ? `<div class="scaffold-hint">${s.hint}</div>` : ''}
+      <div class="scaffold-options">
+        ${s.opts.map((o, i) => `
+          <button class="scaffold-opt" onclick="answerScaffold('${scaffoldId}', ${index}, ${i})">
+            <span class="letter">${letters[i]}</span> ${o}
+          </button>
+        `).join('')}
+      </div>
+    </div>
+  `;
+}
+
+function toggleScaffold(scaffoldId) {
+  const panel = document.getElementById(`scaffold-panel-${scaffoldId}`);
+  const toggle = panel.previousElementSibling;
+  panel.classList.toggle('show');
+  toggle.classList.toggle('active');
+}
+
+function answerScaffold(scaffoldId, index, answer) {
+  const data = scaffoldData[scaffoldId];
+  const s = data.scaffolds[index];
+  const isCorrect = answer === s.ans;
+  const state = scaffoldState[scaffoldId];
+
+  // Disable options
+  const container = document.getElementById(`scaffold-q-${scaffoldId}-${index}`);
+  container.classList.add('answered');
+  const buttons = container.querySelectorAll('.scaffold-opt');
+  buttons.forEach((btn, i) => {
+    btn.disabled = true;
+    if (i === s.ans) btn.classList.add('correct');
+    if (i === answer && !isCorrect) btn.classList.add('incorrect');
+  });
+
+  // Show feedback
+  const feedback = document.createElement('div');
+  feedback.className = `scaffold-feedback ${isCorrect ? 'correct-fb' : 'incorrect-fb'}`;
+  feedback.innerHTML = `<strong>${isCorrect ? '✓ Correct!' : '✗ Not quite.'}</strong> ${s.explain}`;
+  container.appendChild(feedback);
+
+  // Update dot
+  const dot = document.getElementById(`dot-${scaffoldId}-${index}`);
+  dot.classList.remove('current');
+  dot.classList.add('complete');
+
+  // Mark as completed
+  state.completed.push(index);
+
+  // Add next scaffold or summary
+  const contentEl = document.getElementById(`scaffold-content-${scaffoldId}`);
+
+  if (index < data.scaffolds.length - 1) {
+    // Show next scaffold question
+    setTimeout(() => {
+      const nextIndex = index + 1;
+      const nextDot = document.getElementById(`dot-${scaffoldId}-${nextIndex}`);
+      if (nextDot) nextDot.classList.add('current');
+
+      const newQ = document.createElement('div');
+      newQ.innerHTML = renderScaffoldQuestion(scaffoldId, nextIndex);
+      contentEl.appendChild(newQ.firstElementChild);
+      newQ.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 800);
+  } else {
+    // All scaffolds complete - show summary
+    setTimeout(() => {
+      const summary = document.createElement('div');
+      summary.className = 'scaffold-summary';
+      summary.innerHTML = `
+        <h4>✓ What You've Learned</h4>
+        <ul>${data.summary.map(s => `<li>${s}</li>`).join('')}</ul>
+      `;
+      contentEl.appendChild(summary);
+      summary.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 800);
+  }
+}
+
+function renderEssay(e) {
+  return `<div class="card" id="card-${e.id}">
+    <p class="essay-prompt">${e.prompt}</p>
+    <button class="essay-toggle" onclick="toggleEssay('${e.id}')">Show Model Answer</button>
+    <div class="essay-answer" id="ans-${e.id}">${e.answer}</div>
+  </div>`;
+}
+
+function toggleEssay(id) { document.getElementById('ans-' + id).classList.toggle('show'); }
+
+function checkMatch(secId, idx) {
+  const q = examData.sections.find(s => s.id === secId).questions[idx];
+  const id = `${secId}-${idx}`;
+  const card = document.getElementById('card-' + id);
+  let allCorrect = true;
+  q.items.forEach((_, i) => {
+    const row = document.getElementById(`mr-${id}-${i}`);
+    const sel = row.querySelector('select');
+    const chosen = parseInt(sel.value);
+    if (chosen === q.ans[i]) {
+      row.classList.add('correct');
+    } else {
+      row.classList.add('incorrect');
+      allCorrect = false;
+    }
+    sel.disabled = true;
+  });
+  card.classList.add(allCorrect ? 'correct' : 'incorrect');
+  card.querySelector('.check-btn').disabled = true;
+  const noteEl = document.getElementById('note-' + id);
+  if (noteEl) noteEl.style.display = 'block';
+  recordAnswer(secId, allCorrect);
+}
+
+function checkTF(secId, idx, ans, btn) {
+  const q = examData.sections.find(s => s.id === secId).questions[idx];
+  const id = `${secId}-${idx}`;
+  const card = document.getElementById('card-' + id);
+  const isCorrect = ans === q.ans;
+  card.querySelectorAll('.option-btn').forEach(b => b.disabled = true);
+  btn.classList.add(isCorrect ? 'selected-correct' : 'selected-wrong');
+  if (!isCorrect) {
+    card.querySelectorAll('.option-btn').forEach(b => {
+      if ((q.ans && b.textContent.includes('True')) || (!q.ans && b.textContent.includes('False'))) b.classList.add('reveal-correct');
+    });
+  }
+  card.classList.add(isCorrect ? 'correct' : 'incorrect');
+  const noteEl = document.getElementById('note-' + id);
+  if (noteEl) noteEl.style.display = 'block';
+  recordAnswer(secId, isCorrect);
+}
+
+function checkMC(secId, idx, ans, btn) {
+  const q = examData.sections.find(s => s.id === secId).questions[idx];
+  const id = `${secId}-${idx}`;
+  const card = document.getElementById('card-' + id);
+  const isCorrect = ans === q.ans;
+  card.querySelectorAll('.option-btn').forEach(b => b.disabled = true);
+  btn.classList.add(isCorrect ? 'selected-correct' : 'selected-wrong');
+  if (!isCorrect) {
+    card.querySelectorAll('.option-btn').forEach(b => {
+      if (parseInt(b.dataset.i) === q.ans) b.classList.add('reveal-correct');
+    });
+  }
+  card.classList.add(isCorrect ? 'correct' : 'incorrect');
+  const noteEl = document.getElementById('note-' + id);
+  if (noteEl) noteEl.style.display = 'block';
+  recordAnswer(secId, isCorrect);
+}
+
+function recordAnswer(secId, isCorrect) {
+  answered++;
+  if (isCorrect) correct++;
+  sectionProgress[secId].done++;
+  document.getElementById(`prog-${secId}`).textContent = `${sectionProgress[secId].done}/${sectionProgress[secId].total}`;
+  updateScore();
+  checkComplete();
+}
+
+function updateScore() {
+  document.getElementById('runningCorrect').textContent = correct;
+  document.getElementById('runningTotal').textContent = answered;
+}
+
+function checkComplete() {
+  const totalQs = examData.sections.reduce((a, s) => a + s.questions.length, 0);
+  if (answered >= totalQs) {
+    document.getElementById('finalCorrect').textContent = correct;
+    document.getElementById('finalWrong').textContent = answered - correct;
+    document.getElementById('finalTotal').textContent = answered;
+    document.getElementById('finalPercent').textContent = Math.round((correct / answered) * 100) + '%';
+    document.getElementById('resultsPanel').classList.add('show');
+  }
+}
+
+render();
+</script>
+</body>
+</html>

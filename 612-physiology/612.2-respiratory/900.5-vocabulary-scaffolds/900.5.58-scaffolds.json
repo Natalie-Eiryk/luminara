@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.58",
+  "parentQuestion": "Type II alveolar cells produce:",
+  "narrative": {
+    "setting": "The Magic School Bus drifts through Mr. Edgar's alveoli, watching microscopic cells at work. Ms. Frizzle points at cuboidal-shaped cells secreting a shimmering substance. 'These factories never stop,' she says. 'Type II cells - only 5% of the surface, but absolutely critical.'",
+    "character": "Mr. Edgar",
+    "tension": "Premature babies die without this substance. Smokers damage these cells. Pneumonia can overwhelm them. The thin film they produce is the difference between functional lungs and collapsed air sacs. Understanding Type II cells isn't academic - it's understanding why some babies need mechanical ventilation and why ARDS is so deadly."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.58.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'First, the alveolar lineup,' Ms. Frizzle begins. 'Two cell types cover alveoli. Type I - thin and flat, 95% of surface area, for gas exchange. Type II - cuboidal, only 5% of surface, but they MAKE something crucial.'",
+      "q": "What percentage of alveolar surface area is covered by Type II cells?",
+      "options": [
+        "95%",
+        "50%",
+        "5%",
+        "Less than 1%"
+      ],
+      "answer": 2,
+      "explain": "Type II cells cover only about 5% of alveolar surface area. They're cuboidal (cube-shaped), not flat like Type I cells. Small area, huge importance.",
+      "wrongExplains": {
+        "0": "95% is covered by TYPE I cells - thin, flat cells for gas exchange.",
+        "1": "Neither cell type covers 50%. Type I dominates at 95%, Type II is only 5%.",
+        "3": "5% is substantial - much more than 1%. Type II cells are critical despite small surface coverage."
+      }
+    },
+    {
+      "id": "900.5.58.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Type I cells are the gas exchangers,' Ms. Frizzle explains. 'Super thin - only 0.5 micrometers in places - to let O2 and CO2 pass easily. But Type II cells are thick and metabolically active. They're making something.'",
+      "q": "Which cell type is primarily responsible for gas exchange across the alveolar membrane?",
+      "options": [
+        "Type II alveolar cells",
+        "Type I alveolar cells",
+        "Goblet cells",
+        "Endothelial cells"
+      ],
+      "answer": 1,
+      "explain": "Type I alveolar cells are THIN and cover 95% of surface area - optimized for gas diffusion. Type II cells are thick and secretory.",
+      "wrongExplains": {
+        "0": "Type II cells are too thick for efficient gas exchange. They're secretory factories.",
+        "2": "Goblet cells make mucus in airways - they're not in alveoli at all.",
+        "3": "Endothelial cells line capillaries (part of the barrier) but the alveolar side is Type I cells."
+      }
+    },
+    {
+      "id": "900.5.58.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Surfactant,' Ms. Frizzle announces. 'From 'surface active agent.' A phospholipid mixture that reduces surface tension. Without it, alveoli would collapse like deflated balloons every time you exhale.'",
+      "q": "What is the primary function of surfactant?",
+      "options": [
+        "Transport oxygen",
+        "Reduce surface tension",
+        "Produce mucus",
+        "Fight infection"
+      ],
+      "answer": 1,
+      "explain": "SURFACTANT reduces SURFACE TENSION at the air-liquid interface in alveoli. Without it, surface tension would cause alveoli to collapse (atelectasis).",
+      "wrongExplains": {
+        "0": "Hemoglobin transports oxygen. Surfactant prevents collapse, not transport.",
+        "2": "Mucus is produced by goblet cells in airways. Surfactant is a phospholipid mixture, not mucus.",
+        "3": "Macrophages fight infection. Surfactant's job is mechanical - preventing collapse."
+      }
+    },
+    {
+      "id": "900.5.58.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'The physics,' Ms. Frizzle draws circles on her whiteboard. 'Small bubbles have higher pressure than large ones - Laplace's law. Without surfactant, small alveoli would empty into large ones. Surfactant equalizes pressure.'",
+      "q": "According to Laplace's law, smaller alveoli have:",
+      "options": [
+        "Lower pressure than larger alveoli",
+        "Higher pressure than larger alveoli",
+        "The same pressure as larger alveoli",
+        "No pressure"
+      ],
+      "answer": 1,
+      "explain": "LAPLACE'S LAW: Pressure = 2T/r (tension / radius). Smaller radius = HIGHER pressure. Without surfactant, small alveoli would collapse into large ones.",
+      "wrongExplains": {
+        "0": "Physics says smaller radius = higher pressure. That's the problem surfactant solves.",
+        "2": "Without surfactant they'd have different pressures. Surfactant makes them more equal.",
+        "3": "All gas-filled spaces have pressure. Small alveoli have HIGHER pressure."
+      }
+    },
+    {
+      "id": "900.5.58.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'The composition,' Ms. Frizzle continues. 'About 90% lipids - mostly dipalmitoylphosphatidylcholine (DPPC). Plus surfactant proteins SP-A, SP-B, SP-C, SP-D. Type II cells synthesize and secrete all of it.'",
+      "q": "Surfactant is primarily composed of:",
+      "options": [
+        "Proteins only",
+        "Carbohydrates",
+        "Phospholipids (about 90%)",
+        "Water"
+      ],
+      "answer": 2,
+      "explain": "Surfactant is about 90% PHOSPHOLIPIDS (mainly DPPC) and 10% proteins (SP-A, SP-B, SP-C, SP-D). Lipids reduce surface tension at the air-water interface.",
+      "wrongExplains": {
+        "0": "Proteins (SP-A through SP-D) are only about 10%. The bulk is phospholipids.",
+        "1": "Surfactant isn't carbohydrate-based. It's a lipid-protein mixture.",
+        "3": "Water is present but isn't the active component. Phospholipids are the key."
+      }
+    },
+    {
+      "id": "900.5.58.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Type II cells have lamellar bodies,' Ms. Frizzle zooms in on one. 'These are storage organelles filled with surfactant. When signaled, they fuse with the cell membrane and release surfactant into the alveolar space.'",
+      "q": "Surfactant is stored in Type II cells within:",
+      "options": [
+        "Mitochondria",
+        "Lamellar bodies",
+        "Lysosomes",
+        "Ribosomes"
+      ],
+      "answer": 1,
+      "explain": "LAMELLAR BODIES are specialized organelles in Type II cells that store surfactant. They appear as concentric whorls under electron microscopy. Exocytosed into alveoli.",
+      "wrongExplains": {
+        "0": "Mitochondria make ATP, not surfactant. Lamellar bodies are storage/secretion organelles.",
+        "2": "Lysosomes digest cellular waste. Lamellar bodies package and release surfactant.",
+        "3": "Ribosomes synthesize proteins. Lamellar bodies store and secrete the finished surfactant product."
+      }
+    },
+    {
+      "id": "900.5.58.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Neonatal respiratory distress syndrome,' Ms. Frizzle's tone turns serious. 'Premature babies haven't produced enough surfactant yet - it ramps up around week 35 of gestation. Without it, their alveoli collapse with every breath.'",
+      "q": "Neonatal respiratory distress syndrome (NRDS) is caused by:",
+      "options": [
+        "Too much surfactant",
+        "Surfactant deficiency in premature infants",
+        "Infection",
+        "Airway obstruction"
+      ],
+      "answer": 1,
+      "explain": "NRDS (also called hyaline membrane disease) = SURFACTANT DEFICIENCY in premature babies. Type II cells haven't matured enough to produce adequate surfactant. Treated with exogenous surfactant.",
+      "wrongExplains": {
+        "0": "Too much surfactant isn't a problem. The issue is too LITTLE in preemies.",
+        "2": "Infection causes pneumonia. NRDS is a developmental/maturity issue.",
+        "3": "Airway obstruction isn't the primary problem. It's alveolar collapse from lack of surfactant."
+      }
+    },
+    {
+      "id": "900.5.58.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'ARDS - Acute Respiratory Distress Syndrome,' Ms. Frizzle explains. 'Injury to Type II cells from sepsis, trauma, or pneumonia. They stop producing surfactant. Even adults get 'stiff lungs' and need mechanical ventilation.'",
+      "q": "In ARDS (Acute Respiratory Distress Syndrome), Type II cell damage leads to:",
+      "options": [
+        "Increased surfactant production",
+        "Decreased surfactant and impaired gas exchange",
+        "Overinflation of alveoli",
+        "Increased lung compliance"
+      ],
+      "answer": 1,
+      "explain": "ARDS damages Type II cells, REDUCING surfactant production. This causes alveolar collapse, stiff lungs (low compliance), and severe hypoxemia despite mechanical ventilation.",
+      "wrongExplains": {
+        "0": "ARDS DECREASES surfactant - damaged cells can't produce it.",
+        "2": "ARDS causes alveolar COLLAPSE, not overinflation. Loss of surfactant increases surface tension.",
+        "3": "ARDS DECREASES compliance (lungs become stiff). Loss of surfactant makes lungs harder to inflate."
+      }
+    },
+    {
+      "id": "900.5.58.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Type II cells have a superpower,' Ms. Frizzle adds. 'They can divide and differentiate into Type I cells. When Type I cells are damaged, Type II cells can replace them. Slow process, but it's how lungs heal.'",
+      "q": "Type II alveolar cells can:",
+      "options": [
+        "Only produce surfactant",
+        "Divide and differentiate into Type I cells",
+        "Transport oxygen directly",
+        "Only appear in disease states"
+      ],
+      "answer": 1,
+      "explain": "Type II cells are STEM-LIKE - they can DIVIDE and differentiate into Type I cells. This is crucial for lung repair after injury. Type I cells can't divide.",
+      "wrongExplains": {
+        "0": "Type II cells do MORE than produce surfactant - they're also progenitor cells for Type I.",
+        "2": "Type II cells are too thick for efficient gas exchange. Their role is surfactant and regeneration.",
+        "3": "Type II cells are always present (5% of alveolar surface). They're not just pathological."
+      }
+    },
+    {
+      "id": "900.5.58.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Ms. Frizzle looks at the cuboidal cells with respect. 'Type II cells - 5% of the surface, 100% essential. They make the substance that keeps alveoli open. So, class: Type II alveolar cells produce what?'",
+      "q": "Type II alveolar cells produce:",
+      "options": [
+        "Mucus",
+        "Surfactant",
+        "Hemoglobin",
+        "Carbonic anhydrase"
+      ],
+      "answer": 1,
+      "explain": "Type II cells = SURFACTANT factories. They're cuboidal, only 5% of surface area, but critical for preventing alveolar collapse. Also serve as progenitor cells for Type I cells.",
+      "wrongExplains": {
+        "0": "Mucus is produced by goblet cells in airways, not Type II alveolar cells.",
+        "1": "Hemoglobin is made by red blood cell precursors in bone marrow, not lung cells.",
+        "3": "Carbonic anhydrase is in RBCs (and some other tissues), not specifically Type II cells."
+      }
+    }
+  ]
+}

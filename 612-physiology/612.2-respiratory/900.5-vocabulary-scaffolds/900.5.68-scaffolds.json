@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.68",
+  "parentQuestion": "Tuberculosis primarily affects the:",
+  "narrative": {
+    "setting": "The Magic School Bus ascends to the apex of Mr. Edgar's right upper lobe. Here, oxygen tension is highest, blood flow lowest. Inside cavities, clusters of Mycobacterium tuberculosis thrive in oxygen-rich environment. Ms. Frizzle points at the characteristic granulomas forming. 'TB loves the apices,' she says. 'High O2, less immune surveillance. Look for upper lobe cavities on every chest X-ray.'",
+    "character": "Mr. Edgar",
+    "tension": "One-third of the world carries latent TB. Reactivation turns it active, contagious. HIV patients' T-cells can't contain it. Multi-drug resistant TB requires 2 years of toxic medications. Understanding TB isn't just infectious disease - it's understanding a pathogen that's evolved with humans for millennia, hiding in granulomas, waiting for immunosuppression."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.68.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Mycobacterium tuberculosis,' Ms. Frizzle introduces the bug. 'Acid-fast bacillus - special stain required. Slow-growing - weeks, not days. Aerobic - loves oxygen. Intracellular pathogen - hides in macrophages. Ancient disease, still kills millions.'",
+      "q": "Tuberculosis is caused by:",
+      "options": [
+        "Virus",
+        "Mycobacterium tuberculosis bacteria",
+        "Fungus",
+        "Parasite"
+      ],
+      "answer": 1,
+      "explain": "TB is caused by MYCOBACTERIUM TUBERCULOSIS - acid-fast bacillus, aerobic, slow-growing, intracellular. Spreads by airborne droplets. Can affect any organ but prefers lungs (especially apices).",
+      "wrongExplains": {
+        "0": "TB is bacterial, not viral. Mycobacterium tuberculosis is the causative bacterium.",
+        "2": "Fungal infections are different (Candida, Aspergillus). TB is bacterial.",
+        "3": "Parasites cause malaria, toxoplasmosis. TB is caused by bacteria."
+      }
+    },
+    {
+      "id": "900.5.68.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'The lung apices,' Ms. Frizzle explains. 'The TOP portions of the lungs - highest point. Higher oxygen tension (TB is aerobic). Lower blood flow (less immune surveillance). TB thrives here. Classic upper lobe cavitation on X-ray.'",
+      "q": "The apices of the lungs refer to the:",
+      "options": [
+        "Bottom portions",
+        "Top portions",
+        "Middle sections",
+        "Airways only"
+      ],
+      "answer": 1,
+      "explain": "APICES = TOP portions of lungs (singular: apex). TB prefers apices because high O2 tension, low blood flow. Classic upper lobe involvement.",
+      "wrongExplains": {
+        "0": "Bottom = bases. Apex = top. TB prefers apices (upper lobes).",
+        "2": "Middle sections are less characteristic for TB. Apices (tops) are classic.",
+        "3": "Apices refer to lung parenchyma tips, not just airways."
+      }
+    },
+    {
+      "id": "900.5.68.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Primary versus reactivation TB,' Ms. Frizzle distinguishes. 'PRIMARY - first infection, often asymptomatic or mild, forms Ghon complex (lower lobe lesion + hilar nodes). REACTIVATION - latent TB becomes active (usually apices), symptomatic, contagious. Most TB is reactivation.'",
+      "q": "Reactivation TB typically occurs in:",
+      "options": [
+        "Lower lobes",
+        "Lung apices (upper lobes)",
+        "Pleura only",
+        "Never in lungs"
+      ],
+      "answer": 1,
+      "explain": "REACTIVATION TB occurs in LUNG APICES (upper lobes). High O2 environment favors aerobic Mycobacterium. Creates cavitary lesions. Contrast with primary TB (often lower lobes, Ghon complex).",
+      "wrongExplains": {
+        "0": "Lower lobes are more common in PRIMARY TB (Ghon complex). Reactivation favors apices.",
+        "2": "Pleural TB exists but reactivation typically affects upper lobe parenchyma.",
+        "3": "Pulmonary TB is the most common form. It definitely affects lungs."
+      }
+    },
+    {
+      "id": "900.5.68.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Granuloma formation,' Ms. Frizzle shows the structure. 'Macrophages engulf TB but can't kill it. Macrophages fuse into giant cells, surround bacteria. T-cells organize. Central caseous necrosis - cheese-like dead tissue. The body walls off infection.'",
+      "q": "TB infection is characterized by formation of:",
+      "options": [
+        "Pus only",
+        "Granulomas with caseous necrosis",
+        "Mucus plugs",
+        "Air pockets"
+      ],
+      "answer": 1,
+      "explain": "TB creates GRANULOMAS (organized immune collections) with CASEOUS NECROSIS (cheese-like center of dead tissue). Macrophages can't kill TB, so they wall it off. Latent TB = contained granulomas.",
+      "wrongExplains": {
+        "0": "Pus is acute bacterial infection. TB forms organized granulomas with caseous necrosis.",
+        "2": "Mucus plugs are in asthma/chronic bronchitis. TB forms granulomas.",
+        "3": "Air pockets (cavities) form LATER from necrosis. The primary lesion is granuloma."
+      }
+    },
+    {
+      "id": "900.5.68.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Cavitation,' Ms. Frizzle points at the hole in lung tissue. 'Caseous necrosis liquefies, erodes into bronchus, expelled as sputum. Leaves behind AIR-FILLED CAVITY. High bacterial burden here. Highly contagious. Classic upper lobe finding.'",
+      "q": "Cavitary lesions in TB are:",
+      "options": [
+        "Solid masses only",
+        "Air-filled spaces from necrotic tissue",
+        "Blood vessels",
+        "Normal structures"
+      ],
+      "answer": 1,
+      "explain": "CAVITIES = air-filled spaces from liquefied caseous necrosis eroding into airways. High bacterial load. Highly contagious. Classic TB finding on upper lobe X-ray.",
+      "wrongExplains": {
+        "0": "Cavities are HOLLOW (air-filled), not solid. Necrosis liquefies and drains.",
+        "2": "Cavities are parenchymal lesions, not vessels. They communicate with bronchi.",
+        "3": "Cavities are pathologic - eroded lung tissue from TB. Not normal."
+      }
+    },
+    {
+      "id": "900.5.68.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Clinical presentation of active TB,' Ms. Frizzle lists. 'Chronic cough (>3 weeks), hemoptysis, night sweats, weight loss, fever. Insidious onset. Highly contagious through airborne droplets. PPD/IGRA positive. Sputum AFB positive.'",
+      "q": "Classic symptoms of active pulmonary TB include:",
+      "options": [
+        "Acute onset fever only",
+        "Chronic cough, night sweats, weight loss, hemoptysis",
+        "No symptoms ever",
+        "Rash only"
+      ],
+      "answer": 1,
+      "explain": "Active TB: CHRONIC COUGH (>3 weeks), NIGHT SWEATS, WEIGHT LOSS (consumption), hemoptysis. Insidious onset (weeks-months). Contrast with acute bacterial pneumonia (days).",
+      "wrongExplains": {
+        "0": "TB is CHRONIC/insidious, not acute. Symptoms develop over weeks-months.",
+        "2": "Active TB has prominent symptoms - cough, sweats, weight loss. Latent TB is asymptomatic.",
+        "3": "Rash isn't a TB symptom. Respiratory symptoms (cough, hemoptysis) dominate."
+      }
+    },
+    {
+      "id": "900.5.68.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'PPD (tuberculin skin test),' Ms. Frizzle explains. 'Inject TB protein. Measure induration (not redness) at 48-72 hours. Positive = TB exposure (latent or active). Doesn't distinguish. IGRA blood test (QuantiFERON) is alternative, not affected by BCG vaccine.'",
+      "q": "A positive PPD (tuberculin skin test) indicates:",
+      "options": [
+        "Active TB confirmed",
+        "TB exposure (latent or active)",
+        "No TB exposure",
+        "Lung cancer"
+      ],
+      "answer": 1,
+      "explain": "Positive PPD = TB EXPOSURE (infection) - could be latent or active. Need chest X-ray, sputum to distinguish. Positive doesn't mean active disease, just immune response to TB antigens.",
+      "wrongExplains": {
+        "0": "Positive PPD doesn't confirm ACTIVE TB. Need X-ray/sputum. Could be latent.",
+        "2": "Positive PPD means TB exposure/infection. Negative would suggest no exposure.",
+        "3": "PPD tests for TB exposure, not cancer. Different diseases entirely."
+      }
+    },
+    {
+      "id": "900.5.68.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Treatment - the RIPE regimen,' Ms. Frizzle lists. 'Rifampin, Isoniazid, Pyrazinamide, Ethambutol. Four drugs for 2 months (intensive), then Rifampin + Isoniazid for 4 more months. Total 6 months minimum. Multi-drug to prevent resistance.'",
+      "q": "Active TB is treated with:",
+      "options": [
+        "Single antibiotic for 1 week",
+        "Multiple antibiotics for 6+ months (RIPE regimen)",
+        "No treatment needed",
+        "Surgery only"
+      ],
+      "answer": 1,
+      "explain": "Active TB: MULTIPLE antibiotics (RIPE: Rifampin, Isoniazid, Pyrazinamide, Ethambutol) for 6 MONTHS minimum. Multi-drug prevents resistance. Long duration required.",
+      "wrongExplains": {
+        "0": "Single antibiotic creates resistance. TB needs multi-drug for months, not days.",
+        "2": "Untreated TB is fatal and spreads. Treatment is essential.",
+        "3": "Surgery rare (massive hemoptysis, destroyed lung). Medical therapy is primary."
+      }
+    },
+    {
+      "id": "900.5.68.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Latent TB treatment,' Ms. Frizzle adds. 'Asymptomatic, not contagious, but risk of reactivation (5-10% lifetime). Treated with Isoniazid for 9 months or Rifampin for 4 months. Prevents progression to active disease.'",
+      "q": "Latent TB infection:",
+      "options": [
+        "Is contagious",
+        "Is not contagious but can reactivate",
+        "Always progresses to active disease",
+        "Never needs treatment"
+      ],
+      "answer": 1,
+      "explain": "LATENT TB: NOT contagious, asymptomatic, contained by immune system. 5-10% lifetime risk of reactivation. Treated with Isoniazid (9 mo) or Rifampin (4 mo) to prevent activation.",
+      "wrongExplains": {
+        "0": "LATENT TB is NOT contagious (contained in granulomas). ACTIVE TB is contagious.",
+        "2": "Only 5-10% of latent TB reactivates. Most people's immune systems contain it indefinitely.",
+        "3": "Latent TB should be treated (especially high-risk groups) to prevent reactivation."
+      }
+    },
+    {
+      "id": "900.5.68.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Ms. Frizzle looks at the apical cavities, the granulomas, the slow-growing bacteria thriving in high oxygen. 'Upper lobes - that's where TB lives. So, class: where does tuberculosis primarily affect?'",
+      "q": "Tuberculosis primarily affects the:",
+      "options": [
+        "Bronchi only",
+        "Lung apices",
+        "Larynx only",
+        "Trachea only"
+      ],
+      "answer": 1,
+      "explain": "TB (reactivation) primarily affects LUNG APICES (upper lobes). High O2 tension, less blood flow, less immune surveillance. Look for upper lobe cavitary lesions on CXR. Mycobacterium tuberculosis is aerobic.",
+      "wrongExplains": {
+        "0": "Bronchi can be involved but TB classically affects lung parenchyma, especially apices.",
+        "2": "Laryngeal TB exists but is much less common than pulmonary TB.",
+        "3": "Tracheal TB is rare. The lung parenchyma (especially apices) is the classic location."
+      }
+    }
+  ]
+}

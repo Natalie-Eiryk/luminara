@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.56",
+  "parentQuestion": "The internal intercostal muscles:",
+  "narrative": {
+    "setting": "The Magic School Bus has descended deeper into Mr. Edgar's rib cage, past the external intercostals to the layer beneath. Ms. Frizzle points to the internal intercostal muscles - fibers running in the opposite direction: upward and backward. 'Class, these are the antagonists. Where external intercostals help you breathe IN, internal intercostals help you breathe OUT - specifically during FORCED exhalation like coughing or blowing out birthday candles. Watch as Mr. Edgar coughs...'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar has pneumonia and needs to cough to clear mucus from his lungs. But his internal intercostals are weak from disuse, and he can't generate enough force. The mucus is building up."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.56.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle highlights the muscle layer. 'Internal means INNER - deeper, beneath the external layer. If you peeled away the external intercostals, the internal intercostals would be the next layer you'd see. They're hidden beneath.'",
+      "q": "What does 'internal' mean in anatomical terminology?",
+      "options": [
+        "Closer to the surface",
+        "Deeper, further from the surface",
+        "Between two structures",
+        "On the back side"
+      ],
+      "answer": 1,
+      "explain": "'Internal' = INNER, DEEP, further from the surface. Internal intercostals are the MIDDLE layer of three intercostal muscle layers. They're beneath (deep to) the external intercostals. Internal is the opposite of external.",
+      "wrongExplains": {
+        "0": "That's 'external' or 'superficial.' Internal means deeper, not surface-level.",
+        "2": "That's 'inter-' (between). Internal means inner layer.",
+        "3": "That's 'posterior' or 'dorsal.' Internal means deep, not directionally back."
+      }
+    },
+    {
+      "id": "900.5.56.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "The bus traces the fiber direction with a laser. 'Look: upward and backward, perpendicular to the external intercostals. This is NOT random - the opposite fiber direction creates the opposite mechanical action. Anatomy is geometry.'",
+      "q": "In which direction do internal intercostal muscle fibers run?",
+      "options": [
+        "Downward and forward (like external intercostals)",
+        "Upward and backward (opposite to external intercostals)",
+        "Horizontally",
+        "Vertically"
+      ],
+      "answer": 1,
+      "explain": "Internal intercostals run UPWARD and BACKWARD - the OPPOSITE direction from external intercostals (downward/forward). This opposite angle creates opposite mechanical action: external intercostals LIFT ribs (inhalation), internal intercostals PULL DOWN ribs (exhalation). Fiber direction = function.",
+      "wrongExplains": {
+        "0": "That's external intercostals. Internal fibers run the opposite direction - perpendicular, like a cross-hatch pattern.",
+        "2": "Horizontal fibers wouldn't change rib angle effectively. The oblique angle is what creates the pulling action.",
+        "3": "Vertical orientation wouldn't assist with rib movement. The diagonal upward/backward angle is critical."
+      }
+    },
+    {
+      "id": "900.5.56.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle projects the word 'forced exhalation' in glowing letters. 'Normal, quiet exhalation is PASSIVE - the diaphragm and external intercostals just relax, and elastic recoil pushes air out. But FORCED exhalation - coughing, blowing, speaking - requires active muscle contraction.'",
+      "q": "What is 'forced exhalation'?",
+      "options": [
+        "Normal, passive breathing out",
+        "Active, muscular effort to push air out (coughing, speaking, exercise)",
+        "Inhaling deeply",
+        "Breathing underwater"
+      ],
+      "answer": 1,
+      "explain": "'Forced exhalation' = ACTIVE exhalation using MUSCLES, not just passive recoil. Examples: coughing, blowing out candles, singing, exercise. Internal intercostals and abdominal muscles contract to pull ribs down and compress the abdomen, forcefully pushing air out.",
+      "wrongExplains": {
+        "0": "Passive exhalation requires no muscle contraction - just relaxation. Forced exhalation is active work.",
+        "2": "Inhaling is inhalation, not exhalation. Forced exhalation is pushing air OUT with muscle effort.",
+        "3": "Breathing underwater involves holding breath or exhaling bubbles, but 'forced exhalation' is about muscular effort."
+      }
+    },
+    {
+      "id": "900.5.56.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Mr. Edgar coughs violently. The bus watches the internal intercostals CONTRACT - the muscle fibers shorten, pulling the ribs DOWNWARD and INWARD. 'There!' Ms. Frizzle points. 'Chest volume decreases, pressure spikes, air blasts out. That's forced exhalation.'",
+      "q": "What happens when the internal intercostal muscles contract?",
+      "options": [
+        "Ribs move upward and outward (increase chest volume)",
+        "Ribs move downward and inward (decrease chest volume - assist exhalation)",
+        "The diaphragm contracts",
+        "The lungs inflate"
+      ],
+      "answer": 1,
+      "explain": "Internal intercostal contraction → ribs pull DOWN and IN → chest cavity COMPRESSES → positive pressure → air is FORCED OUT. They assist EXHALATION, specifically FORCED exhalation (coughing, blowing, exercise). They're the opposite of external intercostals.",
+      "wrongExplains": {
+        "0": "That's external intercostals - they expand the chest for inhalation. Internal do the opposite - compress for exhalation.",
+        "2": "The diaphragm RELAXES during exhalation (moves upward). Internal intercostals actively pull ribs down.",
+        "3": "Pulling ribs down DEFLATES lungs, not inflates. Internal intercostals compress the chest."
+      }
+    },
+    {
+      "id": "900.5.56.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Ms. Frizzle contrasts two exhalations: 'Normal, quiet exhalation - just relax, elastic recoil does the work. Internal intercostals are quiet. Forced exhalation - internal intercostals contract hard, actively compressing the chest. It's the difference between a sigh and a cough.'",
+      "q": "When are internal intercostal muscles most active?",
+      "options": [
+        "During normal, quiet exhalation (they're always active)",
+        "During forced exhalation (coughing, speaking, exercise)",
+        "During inhalation",
+        "They are never active"
+      ],
+      "answer": 1,
+      "explain": "Internal intercostals are most active during FORCED EXHALATION - coughing, speaking loudly, singing, blowing, heavy exercise. During quiet breathing, they're mostly inactive - passive elastic recoil handles exhalation. But when you need to push air OUT forcefully, internal intercostals contract.",
+      "wrongExplains": {
+        "0": "They're NOT active during quiet exhalation - that's passive. They activate for FORCED exhalation only.",
+        "2": "Inhalation uses the diaphragm and external intercostals. Internal intercostals assist exhalation, not inhalation.",
+        "3": "They activate during forced exhalation. They're not constantly active, but they're definitely functional."
+      }
+    },
+    {
+      "id": "900.5.56.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "The bus displays the innervation map again. 'Same nerves as external intercostals: intercostal nerves T1-T11. Each rib space has one nerve supplying both muscle layers - external and internal. Same wiring, different functions based on fiber direction.'",
+      "q": "What nerves innervate the internal intercostal muscles?",
+      "options": [
+        "Phrenic nerve (C3-C5)",
+        "Intercostal nerves (T1-T11)",
+        "Vagus nerve",
+        "Spinal accessory nerve"
+      ],
+      "answer": 1,
+      "explain": "INTERCOSTAL NERVES (T1-T11) innervate BOTH external and internal intercostal muscles. The same nerve branches supply both layers in each intercostal space. The difference in function comes from fiber direction, not different nerves.",
+      "wrongExplains": {
+        "0": "Phrenic nerve controls the diaphragm only. Intercostal muscles have their own dedicated nerves.",
+        "2": "Vagus nerve is cranial (CN X) - it affects organs, not skeletal muscles of the chest wall.",
+        "3": "Spinal accessory (CN XI) controls neck muscles (sternocleidomastoid, trapezius), not intercostals."
+      }
+    },
+    {
+      "id": "900.5.56.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle shows Mr. Edgar's pneumonia X-ray - white patches in his lungs. 'Mucus is accumulating. He needs to cough it up. But weak internal intercostals mean weak coughs - the mucus stays put, worsening the infection. It's a vicious cycle.'",
+      "q": "Why is a strong cough important for clearing lung secretions?",
+      "options": [
+        "It increases oxygen absorption",
+        "It generates high airflow velocity to expel mucus (requires strong internal intercostals)",
+        "It inflates collapsed alveoli",
+        "It kills bacteria"
+      ],
+      "answer": 1,
+      "explain": "A strong cough requires FORCEFUL exhalation → high-velocity airflow → mucus is blown out of the airways. Internal intercostals (plus abdominals) compress the chest, creating the pressure needed for effective coughing. Weak muscles = weak cough = retained secretions = pneumonia.",
+      "wrongExplains": {
+        "0": "Coughing expels air, it doesn't improve O2 absorption. But clearing mucus indirectly helps by opening airways.",
+        "2": "Deep breathing inflates alveoli. Coughing is about expelling secretions, not inflation.",
+        "3": "Coughing doesn't kill bacteria - it physically expels them. Immune cells and antibiotics kill bacteria."
+      }
+    },
+    {
+      "id": "900.5.56.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle displays a summary table: 'External intercostals: inhalation, downward/forward fibers. Internal intercostals: forced exhalation, upward/backward fibers. Opposite directions, opposite functions. They're agonist-antagonist pairs.'",
+      "q": "How do external and internal intercostals work together?",
+      "options": [
+        "They both assist inhalation",
+        "They are antagonists: external for inhalation, internal for forced exhalation",
+        "They both assist exhalation",
+        "They work on different organs"
+      ],
+      "answer": 1,
+      "explain": "External and internal intercostals are ANTAGONISTS (opposites). EXTERNAL = inhalation (expand chest). INTERNAL = forced exhalation (compress chest). Their perpendicular fiber directions create opposite mechanical actions. They balance each other like biceps/triceps.",
+      "wrongExplains": {
+        "0": "Only external intercostals assist inhalation. Internal do the opposite - assist forced exhalation.",
+        "2": "Only internal intercostals assist exhalation. External do the opposite - assist inhalation.",
+        "3": "Both work on the ribcage, not different organs. They're in the same location with opposite fiber directions."
+      }
+    },
+    {
+      "id": "900.5.56.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle shows a spinal cord injury patient (T6 injury). 'His diaphragm works. Upper intercostals (T1-T5) work. But intercostals below T6 are paralyzed - including many internal intercostals. His cough is weak. He's at high risk for pneumonia.'",
+      "q": "What happens if internal intercostal muscles are weak or paralyzed?",
+      "options": [
+        "Inability to inhale",
+        "Weak cough and reduced ability to forcefully exhale",
+        "Heart failure",
+        "Increased lung compliance"
+      ],
+      "answer": 1,
+      "explain": "Weak internal intercostals = WEAK COUGH and reduced forced exhalation. You can still breathe passively (diaphragm handles that), but you can't cough effectively, speak loudly, or exercise intensely. Mucus retention and pneumonia risk increase dramatically.",
+      "wrongExplains": {
+        "0": "Inhalation uses the diaphragm and external intercostals. Internal intercostals affect exhalation, not inhalation.",
+        "2": "Heart function is separate. Internal intercostals are respiratory muscles, not cardiac.",
+        "3": "Compliance is a lung tissue property. Muscle weakness doesn't change tissue elasticity."
+      }
+    },
+    {
+      "id": "900.5.56.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "The bus exits the intercostal space. Mr. Edgar's antibiotics are working, and he's coughing more effectively now. 'The internal intercostals,' Ms. Frizzle says, 'are your expulsion muscles. Cough, laugh, sing - they make it happen. Now tell me: what do they do?'",
+      "q": "The internal intercostal muscles:",
+      "options": [
+        "Contract to lift ribs upward and assist inhalation",
+        "Contract to pull ribs downward and inward, assisting forced exhalation",
+        "Control heart rate",
+        "Produce surfactant"
+      ],
+      "answer": 1,
+      "explain": "INTERNAL INTERCOSTAL muscles are located between the ribs, BENEATH the external layer. Fibers run UPWARD and BACKWARD (opposite to external). When they CONTRACT, they pull ribs DOWNWARD and INWARD, COMPRESSING the chest and assisting FORCED EXHALATION (coughing, speaking, exercise). Innervated by intercostal nerves (T1-T11). They're antagonists to external intercostals.",
+      "wrongExplains": {
+        "0": "That's EXTERNAL intercostals - opposite fiber direction, opposite function (assist inhalation).",
+        "2": "Heart rate is controlled by cardiac conduction system and autonomic nerves, not intercostal muscles.",
+        "3": "Surfactant is produced by type II alveolar cells in the lungs, not by muscles."
+      }
+    }
+  ]
+}

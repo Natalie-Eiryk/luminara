@@ -1,0 +1,28 @@
+{
+  "clusterId": "510.23",
+  "clusterName": "Geometry Foundations",
+  "status": "pending",
+  "targetQuestions": 300,
+  "currentBatch": 0,
+  "totalBatches": 12,
+  "questionsGenerated": 0,
+  "scaffoldsGenerated": 0,
+  "lastUpdated": null,
+  "batches": [],
+  "isotopes": [
+    "510.23.shapes.2d",
+    "510.23.shapes.3d",
+    "510.23.angles",
+    "510.23.area",
+    "510.23.perimeter",
+    "510.23.volume",
+    "510.23.coordinate-plane"
+  ],
+  "prerequisites": ["510.12.*", "510.14.*"],
+  "difficultyDistribution": {
+    "easy": 0,
+    "medium": 0,
+    "challenging": 0,
+    "hard": 0
+  }
+}

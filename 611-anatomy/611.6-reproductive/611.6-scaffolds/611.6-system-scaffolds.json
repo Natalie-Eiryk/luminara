@@ -1,0 +1,20 @@
+{
+  "system": "Reproductive",
+  "master_prompts": [
+    "What am I looking at?",
+    "What body system am I in?",
+    "Is this gross anatomy, histology, a model, or fetal pig?",
+    "What landmark proves my location?",
+    "What exact structure is being pointed to?",
+    "What is it connected to or continuous with?",
+    "What does it do?",
+    "What is the easiest thing to confuse it with?",
+    "What single clue separates those two?"
+  ],
+  "system_prompts": [
+    "Male or female anatomy?",
+    "Is this a gonad, duct, gland, or external structure?",
+    "If gametes were here, where do they go next?",
+    "What histology clue anchors the ID?"
+  ]
+}

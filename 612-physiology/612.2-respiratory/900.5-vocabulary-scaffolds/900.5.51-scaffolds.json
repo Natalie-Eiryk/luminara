@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.51",
+  "parentQuestion": "Compliance in respiratory physiology refers to:",
+  "narrative": {
+    "setting": "The Magic School Bus is embedded in the wall of Mr. Edgar's alveolus, watching elastin and collagen fibers stretch with each breath. Ms. Frizzle presses on the alveolar wall - it gives way easily, then springs back. 'Class, this is compliance - how easily lungs expand when you apply pressure. Think of it as lung stretchiness. The mathematical definition: change in volume divided by change in pressure. In Mr. Edgar's case, we're watching to see if his lungs are too stiff or too floppy.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's compliance is abnormal. His pulmonary function test shows reduced lung expandability, making every breath require more muscular effort. His work of breathing is increasing."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.51.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle writes the word 'compliance' in bold letters. 'From Latin complere - to fill. In medicine, compliance means how easily something fills or expands. A compliant lung is an easy-to-fill lung.'",
+      "q": "What does 'compliance' mean in a general medical sense?",
+      "options": [
+        "Resistance to change",
+        "The ease with which something expands or stretches",
+        "The speed of a reaction",
+        "The temperature of tissue"
+      ],
+      "answer": 1,
+      "explain": "'Compliance' = EASE OF EXPANSION. High compliance = stretches easily. Low compliance = stiff, resists stretching. It's about how much effort it takes to inflate something. Think of a balloon: new balloon = low compliance (hard to inflate), old balloon = high compliance (easy).",
+      "wrongExplains": {
+        "0": "That's the opposite! Compliance is about yielding, not resisting. High compliance means it gives way easily.",
+        "2": "Speed is a kinetic measurement. Compliance is about mechanical properties - stretch vs. force.",
+        "3": "Temperature is thermal. Compliance is mechanical - about pressure and volume."
+      }
+    },
+    {
+      "id": "900.5.51.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "The bus projects a graph: volume on the Y-axis, pressure on the X-axis. 'The slope of this curve IS compliance,' Ms. Frizzle explains. 'Steeper slope = high compliance (big volume change for small pressure). Flatter slope = low compliance (need lots of pressure for small volume).'",
+      "q": "Compliance is mathematically defined as:",
+      "options": [
+        "Change in pressure divided by change in volume",
+        "Change in volume divided by change in pressure (ΔV/ΔP)",
+        "Volume times pressure",
+        "The sum of volume and pressure"
+      ],
+      "answer": 1,
+      "explain": "Compliance = ΔV/ΔP. How much volume change (ΔV) you get for a given pressure change (ΔP). Units: mL/cmH2O. High compliance = lots of volume for little pressure. Low compliance = little volume despite lots of pressure. It's stretchiness quantified.",
+      "wrongExplains": {
+        "0": "That's the reciprocal - called ELASTANCE (stiffness). Compliance is volume/pressure, not pressure/volume.",
+        "2": "Multiplying gives pressure-volume work, not compliance. Compliance is a ratio (division), not a product.",
+        "3": "Addition doesn't capture the relationship. Compliance is how one DEPENDS on the other (ratio)."
+      }
+    },
+    {
+      "id": "900.5.51.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle zooms in on the elastin fibers. 'These proteins give lungs their stretch. Elastin is like a rubber band. Collagen provides structure. Together they determine compliance - the balance between stretch and support.'",
+      "q": "What tissue components primarily determine lung compliance?",
+      "options": [
+        "Bone and cartilage",
+        "Elastin and collagen fibers, plus surfactant",
+        "Blood vessels only",
+        "Nerve tissue"
+      ],
+      "answer": 1,
+      "explain": "Lung compliance depends on ELASTIN (stretchy fibers), COLLAGEN (structural support), and SURFACTANT (reduces surface tension). Elastin lets alveoli expand, collagen prevents over-stretching, surfactant makes inflation easier. Together, they set the compliance.",
+      "wrongExplains": {
+        "0": "Bone and cartilage are in the airways and chest wall, not the alveoli. Lung tissue compliance is about elastic fibers.",
+        "2": "Blood vessels contribute a bit, but elastin/collagen fibers and surfactant are the main players.",
+        "3": "Nerves control breathing but don't determine tissue stretchiness. Compliance is about structural proteins."
+      }
+    },
+    {
+      "id": "900.5.51.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Mr. Edgar inhales. The bus's sensors read: 'Pressure increase: 5 cmH2O. Volume increase: 100 mL. Compliance = 100/5 = 20 mL/cmH2O.' Ms. Frizzle nods. 'That's low-normal. A healthy lung is typically 100-200 mL/cmH2O.'",
+      "q": "Normal lung compliance in an adult is approximately:",
+      "options": [
+        "1-2 mL/cmH2O",
+        "10-20 mL/cmH2O",
+        "100-200 mL/cmH2O",
+        "1000-2000 mL/cmH2O"
+      ],
+      "answer": 2,
+      "explain": "~100-200 mL/cmH2O is normal lung compliance. It means for every 1 cmH2O of pressure, you get 100-200 mL of volume expansion. Lower than this = stiff lungs. Higher = floppy lungs. It's the Goldilocks zone.",
+      "wrongExplains": {
+        "0": "1-2 mL/cmH2O is extremely stiff - almost no expansion. That's pathologically low.",
+        "1": "10-20 mL/cmH2O is reduced compliance - indicates restrictive disease. Normal is much higher.",
+        "3": "1000-2000 mL/cmH2O is impossibly high - lungs would be like wet tissue paper. Normal is 10x lower."
+      }
+    },
+    {
+      "id": "900.5.51.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Ms. Frizzle projects two scenarios. 'High compliance: lungs expand easily with little effort - sounds good, right? But they also collapse easily. Low compliance: lungs are stiff, hard to inflate, exhausting. Both extremes are bad.'",
+      "q": "What does HIGH lung compliance indicate?",
+      "options": [
+        "Lungs are stiff and hard to inflate",
+        "Lungs expand easily but may collapse easily (e.g., emphysema)",
+        "Normal healthy lungs",
+        "Lungs cannot expand at all"
+      ],
+      "answer": 1,
+      "explain": "HIGH compliance = FLOPPY lungs. They inflate easily (good!) but also collapse easily and lose elastic recoil (bad!). Seen in emphysema where elastin is destroyed. It's paradoxically easier to breathe IN but harder to breathe OUT because lungs don't spring back.",
+      "wrongExplains": {
+        "0": "That's LOW compliance (stiff lungs). High compliance is the opposite - too stretchy, too loose.",
+        "2": "Normal is moderate compliance (~100-200 mL/cmH2O). High compliance (>200) indicates pathology like emphysema.",
+        "3": "No expansion at all is zero compliance. High compliance means TOO MUCH expansion with too little pressure."
+      }
+    },
+    {
+      "id": "900.5.51.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "The bus watches surfactant molecules spreading across the alveolar surface. 'Without surfactant, surface tension makes alveoli want to collapse. Compliance would plummet. Surfactant INCREASES compliance by reducing that tension. It's a compliance booster.'",
+      "q": "How does surfactant affect lung compliance?",
+      "options": [
+        "Decreases compliance (makes lungs stiffer)",
+        "Increases compliance (makes lungs easier to inflate)",
+        "Has no effect on compliance",
+        "Only affects gas exchange, not compliance"
+      ],
+      "answer": 1,
+      "explain": "Surfactant INCREASES compliance by reducing surface tension at the air-liquid interface in alveoli. Without it, water molecules pull together, making inflation hard. Surfactant breaks that tension, making lungs easier to inflate. Premature babies lack surfactant → low compliance → respiratory distress.",
+      "wrongExplains": {
+        "0": "Surfactant does the opposite - it REDUCES stiffness by lowering surface tension. It makes inflation easier.",
+        "2": "Surfactant's primary job IS to affect compliance! It's critical - without it, compliance drops dramatically.",
+        "3": "Surfactant does both: improves compliance (mechanical) and prevents alveolar collapse (functional)."
+      }
+    },
+    {
+      "id": "900.5.51.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle overlays Mr. Edgar's pulmonary fibrosis scan. 'Scar tissue has replaced elastic tissue. His compliance is 50 mL/cmH2O - half of normal. Every breath is twice as hard. His work of breathing has doubled.'",
+      "q": "What happens to compliance in pulmonary fibrosis?",
+      "options": [
+        "Compliance increases",
+        "Compliance decreases (lungs become stiff)",
+        "Compliance stays normal",
+        "Compliance becomes negative"
+      ],
+      "answer": 1,
+      "explain": "Fibrosis DECREASES compliance. Scar tissue (collagen) replaces elastic tissue, making lungs STIFF. Compliance drops from ~150 to <100 mL/cmH2O or lower. Patients must work harder to inflate stiff lungs - it's exhausting and restrictive.",
+      "wrongExplains": {
+        "0": "Fibrosis makes lungs STIFFER, not looser. Compliance decreases as scar tissue accumulates.",
+        "2": "Fibrosis dramatically alters compliance - it's a defining feature. Stiffness increases, compliance falls.",
+        "3": "Compliance can't be negative. It decreases toward zero (maximally stiff) but stays positive."
+      }
+    },
+    {
+      "id": "900.5.51.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle shows an emphysema scan. 'Destroyed elastin fibers. His compliance is 300 mL/cmH2O - double normal. Lungs are TOO compliant, too floppy. They overinflate easily but can't recoil to push air out. He's trapped in hyperinflation.'",
+      "q": "What happens to compliance in emphysema?",
+      "options": [
+        "Compliance decreases",
+        "Compliance increases (lungs become too stretchy)",
+        "Compliance stays exactly normal",
+        "Compliance oscillates randomly"
+      ],
+      "answer": 1,
+      "explain": "Emphysema INCREASES compliance. Loss of elastin makes lungs floppy - they overinflate with little pressure. Compliance can reach 300+ mL/cmH2O. But high compliance is BAD here: lungs can't recoil, air gets trapped, exhalation becomes active work instead of passive recoil.",
+      "wrongExplains": {
+        "0": "Emphysema does the opposite - it INCREASES compliance by destroying elastic fibers. Lungs become loose.",
+        "2": "Emphysema dramatically increases compliance - it's a hallmark of the disease. Lungs lose their snap.",
+        "3": "Compliance changes are predictable, not random. Emphysema consistently increases it by destroying elastin."
+      }
+    },
+    {
+      "id": "900.5.51.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle displays the inverse relationship: 'Compliance = 1 / Elastance. Elastance is stiffness. High compliance = low elastance (stretchy). Low compliance = high elastance (stiff). Two sides of the same coin.'",
+      "q": "How does elastance relate to compliance?",
+      "options": [
+        "Elastance = Compliance",
+        "Elastance = 1 / Compliance (they are reciprocals)",
+        "Elastance + Compliance = 1",
+        "Elastance and Compliance are unrelated"
+      ],
+      "answer": 1,
+      "explain": "Elastance and compliance are RECIPROCALS. Elastance = ΔP/ΔV (stiffness). Compliance = ΔV/ΔP (stretchiness). One is the flip of the other. High compliance = low elastance (stretchy). Low compliance = high elastance (stiff). Same property, different perspective.",
+      "wrongExplains": {
+        "0": "They're inverses, not equal. If compliance goes up, elastance goes down. Opposite relationship.",
+        "2": "They don't add to 1. One is the reciprocal of the other: multiply them and you get 1.",
+        "3": "They're intimately related - inverse proportional. Measuring one tells you the other."
+      }
+    },
+    {
+      "id": "900.5.51.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "The bus exits the alveolus. Mr. Edgar's breathing is labored but steady. 'Compliance,' Ms. Frizzle says, 'is a measure of effort. How hard must your muscles work to inflate your lungs? Now tell me: what is compliance?'",
+      "q": "Compliance in respiratory physiology refers to:",
+      "options": [
+        "The resistance of airways to airflow",
+        "The ease with which lungs expand, measured as ΔV/ΔP",
+        "The rate of gas exchange",
+        "The oxygen content of blood"
+      ],
+      "answer": 1,
+      "explain": "COMPLIANCE = lung EXPANDABILITY, measured as change in volume / change in pressure (ΔV/ΔP). Normal: ~100-200 mL/cmH2O. HIGH compliance (emphysema) = floppy lungs, easy inflation but poor recoil. LOW compliance (fibrosis) = stiff lungs, hard to inflate. It's the mechanical stretchiness that determines work of breathing.",
+      "wrongExplains": {
+        "0": "That's airway RESISTANCE, different concept. Compliance is about lung tissue stretchiness, not airflow.",
+        "2": "Gas exchange rate is diffusion capacity. Compliance is mechanical - about pressure and volume.",
+        "3": "Oxygen content is determined by hemoglobin saturation and PaO2. Compliance is mechanical lung property."
+      }
+    }
+  ]
+}

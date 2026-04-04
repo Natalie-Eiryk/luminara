@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.26",
+  "parentQuestion": "The prefix 'pneumo-' in medical terminology means:",
+  "narrative": {
+    "setting": "The Magic School Bus has shrunk down and entered Mr. Edgar's respiratory system. He's been diagnosed with pneumonia, and Ms. Frizzle is determined to help the class understand what that word actually means. The bus floats through his trachea, heading toward his lungs, where something has gone wrong.",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's breathing is labored. Understanding medical terms quickly could help identify the problem."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.26.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "Ms. Frizzle projects an ancient Greek dictionary on the bus's windshield. 'Class, before we can understand pneumonia, we need to trace the word back to its roots. The Greeks had a word for the very breath of life.'",
+      "q": "In ancient Greek, 'pneuma' originally referred to:",
+      "options": [
+        "Blood",
+        "Breath or air",
+        "Heart",
+        "Bone"
+      ],
+      "answer": 1,
+      "explain": "'Pneuma' means BREATH or AIR in Greek. The ancient Greeks believed breath was the essence of life itself - the spirit, the soul. This root lives on in modern medical terms about lungs and air.",
+      "wrongExplains": {
+        "0": "That would be 'haima' in Greek. Blood is a different system - we're focusing on air and breathing here.",
+        "2": "The heart is 'kardia' in Greek. While connected to breathing, pneuma specifically means air or breath.",
+        "3": "Bones are 'osteo-' in Greek. Pneuma is all about the invisible, life-giving air."
+      }
+    },
+    {
+      "id": "900.5.26.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "The bus passes through the branching airways. 'Look around,' Ms. Frizzle says. 'Everything here involves air. And the Greek prefix for air shows up in so many medical terms. Once you know it, you'll spot it everywhere.'",
+      "q": "Which of these words uses the 'pneumo-' prefix correctly?",
+      "options": [
+        "Pneumonia (lung infection)",
+        "Hematology (blood study)",
+        "Cardiology (heart study)",
+        "Nephrology (kidney study)"
+      ],
+      "answer": 0,
+      "explain": "PNEUMONIA = 'pneumo-' (lung/air) + '-ia' (condition). It literally means 'condition of the lungs.' When you see 'pneumo-', think LUNGS and AIR. The other options use different root words entirely.",
+      "wrongExplains": {
+        "1": "Hematology uses 'hema-' or 'hemo-' for blood. No air involved - completely different root.",
+        "2": "Cardiology uses 'cardio-' for heart. While the heart and lungs work together, the roots are distinct.",
+        "3": "Nephrology uses 'nephro-' for kidney. The kidneys filter blood, not air - different organ system."
+      }
+    },
+    {
+      "id": "900.5.26.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "An alarm beeps. Mr. Edgar's right lung shows signs of collapse. 'Pneumothorax,' Ms. Frizzle announces. 'See how the prefix helps us understand? Pneumo means air, but where's the thorax?'",
+      "q": "If 'thorax' means chest, what would 'pneumothorax' literally describe?",
+      "options": [
+        "Water in the chest",
+        "Air in the chest cavity (where it shouldn't be)",
+        "Blood in the lungs",
+        "Infection of the chest wall"
+      ],
+      "answer": 1,
+      "explain": "PNEUMO (air) + THORAX (chest) = air in the chest cavity. Normally, your lungs are the only place with air. When air leaks into the space around the lungs, that's pneumothorax - a collapsed lung. The prefix tells you exactly what's wrong.",
+      "wrongExplains": {
+        "0": "Water would be 'hydro-' not 'pneumo-'. Pneumo specifically means air or gas, not liquid.",
+        "2": "Blood would use 'hemo-' or 'hemato-'. Pneumothorax is specifically about air in the wrong place.",
+        "3": "Infection might be '-itis', and this doesn't explain the 'pneumo-' prefix at all. The word literally means air in chest."
+      }
+    },
+    {
+      "id": "900.5.26.s04",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "The bus enters Mr. Edgar's left lung, which is inflamed and filled with fluid. 'This is pneumonia,' Ms. Frizzle explains. 'Let's break down exactly what that word is telling us about his condition.'",
+      "q": "The suffix '-ia' in medical terms typically means:",
+      "options": [
+        "Study of",
+        "Condition or disease",
+        "Surgical removal",
+        "Inflammation"
+      ],
+      "answer": 1,
+      "explain": "'-ia' = CONDITION or DISEASE. So pneumonia = lung condition. Other examples: anemia (blood condition), insomnia (sleep condition). It's a general term that something is wrong.",
+      "wrongExplains": {
+        "0": "That would be '-ology'. For example, pneumology is the STUDY of lungs, while pneumonia is a CONDITION of lungs.",
+        "2": "Surgical removal is '-ectomy'. Removing a lung would be pneumonectomy, not pneumonia.",
+        "3": "Inflammation is specifically '-itis'. Pneumonitis is lung inflammation, while pneumonia is a broader disease term."
+      }
+    },
+    {
+      "id": "900.5.26.s05",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "Through the bus window, you see bacteria multiplying in the alveoli. 'Pneumonia means lung condition,' Ms. Frizzle says, 'but there are other pneumo- words that tell us different things about the lungs.'",
+      "q": "A 'pneumonectomy' would be:",
+      "options": [
+        "Surgical removal of a lung",
+        "X-ray image of the lungs",
+        "Study of lung diseases",
+        "Inflammation of the lungs"
+      ],
+      "answer": 0,
+      "explain": "PNEUMON (lung) + -ECTOMY (surgical removal) = removing a lung. The '-ectomy' suffix always means cutting out. Appendectomy = remove appendix. Tonsillectomy = remove tonsils. Pneumonectomy = remove lung.",
+      "wrongExplains": {
+        "1": "An X-ray is a pneumogram or chest radiograph. '-ectomy' specifically means cutting out or removing.",
+        "2": "The study would be pneumology. '-ectomy' is surgery, not study. Big difference in the medical world!",
+        "3": "Inflammation is '-itis' (pneumonitis). '-ectomy' means the lung is being physically removed through surgery."
+      }
+    },
+    {
+      "id": "900.5.26.s06",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "'Time for a challenge,' Ms. Frizzle grins. 'If you understand pneumo-, you can decode words you've never seen before. That's the power of Greek roots.'",
+      "q": "Based on the 'pneumo-' root, what would 'pneumoconiosis' most likely refer to?",
+      "options": [
+        "A type of breathing exercise",
+        "Lung disease from inhaling dust",
+        "Surgical repair of lungs",
+        "Measurement of lung capacity"
+      ],
+      "answer": 1,
+      "explain": "PNEUMO (lung) + CONI (dust) + -OSIS (abnormal condition) = dust disease of the lungs. Miners get this from inhaling coal dust. The word literally describes dust accumulating in lung tissue. Know the roots, decode any word!",
+      "wrongExplains": {
+        "0": "Exercises don't have the suffix '-osis'. That suffix means disease or abnormal condition - this is pathology, not therapy.",
+        "2": "Surgical repair is '-plasty'. Rhinoplasty = nose surgery. This word ends in '-osis' which means disease.",
+        "3": "Measurement is '-metry'. Spirometry measures lung capacity. '-osis' signals disease, not measurement."
+      }
+    },
+    {
+      "id": "900.5.26.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "Mr. Edgar coughs violently, and the bus shakes. 'His doctor ordered a chest X-ray,' Ms. Frizzle says, pulling up the image. 'Understanding the terminology helps us interpret what we're seeing.'",
+      "q": "When a doctor orders a 'pneumogram,' they want:",
+      "options": [
+        "A blood test for oxygen levels",
+        "An image/X-ray of the lungs",
+        "A breathing treatment",
+        "A lung biopsy"
+      ],
+      "answer": 1,
+      "explain": "PNEUMO (lung) + -GRAM (written record/picture) = picture of the lungs. Just like cardiogram = heart tracing, mammogram = breast image. The suffix '-gram' always means some kind of recorded image or measurement.",
+      "wrongExplains": {
+        "0": "Blood tests use 'hemo-' not 'pneumo-'. A pneumogram is visual imaging, not chemical analysis.",
+        "2": "Treatment would be 'therapy' or '-plasty'. A '-gram' is just a picture - diagnostic, not therapeutic.",
+        "3": "A biopsy is taking a tissue sample. A '-gram' is non-invasive imaging - no cutting involved."
+      }
+    },
+    {
+      "id": "900.5.26.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "The bus's diagnostic panel lights up with a warning. 'Pneumococcus bacteria detected,' the computer announces. Ms. Frizzle nods grimly. 'That's the culprit causing Mr. Edgar's pneumonia.'",
+      "q": "Why is the bacteria called 'pneumococcus'?",
+      "options": [
+        "It was discovered by Dr. Pneumo",
+        "It primarily infects the lungs",
+        "It looks like lung tissue under a microscope",
+        "It helps lungs function properly"
+      ],
+      "answer": 1,
+      "explain": "PNEUMO (lung) + COCCUS (round bacteria) = lung bacteria. This organism specifically targets the lungs, causing pneumonia. Scientists name bacteria based on where they infect or what they look like. Location + shape = name.",
+      "wrongExplains": {
+        "0": "Medical terms use Greek/Latin roots, not people's names (usually). Pneumo- is the Greek root for lung, not someone's last name.",
+        "2": "Coccus refers to the bacteria's shape (round), not what it resembles. The 'pneumo-' part tells us WHERE it attacks.",
+        "3": "This bacteria harms lungs, doesn't help them! The 'pneumo-' prefix just indicates its target organ - the lungs."
+      }
+    },
+    {
+      "id": "900.5.26.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "'Here's where it gets tricky,' Ms. Frizzle warns. 'Some pneumo- words aren't about the lungs at all. Context matters.' She points to a textbook entry about ancient Greek philosophy.",
+      "q": "In philosophy, 'pneumatology' studies:",
+      "options": [
+        "Lung diseases",
+        "Spirits or spiritual beings",
+        "Air pressure",
+        "Breathing techniques"
+      ],
+      "answer": 1,
+      "explain": "PNEUMA (breath/spirit) + -OLOGY (study of) = study of spirits. The ancient Greeks believed breath = life = spirit. In medical contexts, pneumo- means lungs. In philosophical contexts, it can mean spiritual beings. Same root, different applications!",
+      "wrongExplains": {
+        "0": "That's pulmonology or respiratory medicine. Pneumatology in philosophy is about spiritual beings, not lungs.",
+        "2": "Air pressure is studied in physics (pneumatics). Pneumatology specifically refers to spirits or souls in philosophy.",
+        "3": "Breathing techniques are taught in respiratory therapy. Pneumatology is theological/philosophical, not medical."
+      }
+    },
+    {
+      "id": "900.5.26.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "Mr. Edgar's breathing eases as antibiotics begin to work. Ms. Frizzle turns to the class for the final assessment. 'Now you know the power of the pneumo- prefix. Let's see if you've mastered it.'",
+      "q": "The prefix 'pneumo-' in medical terminology means:",
+      "options": [
+        "Heart or blood vessels",
+        "Lung or air",
+        "Kidney or urinary system",
+        "Bone or skeletal system"
+      ],
+      "answer": 1,
+      "explain": "PNEUMO- = LUNG or AIR. From Greek 'pneuma' (breath). Pneumonia = lung disease. Pneumothorax = air in chest. Pneumonectomy = lung removal. Once you know this root, hundreds of medical terms become instantly clearer. The breath of understanding!",
+      "wrongExplains": {
+        "0": "Heart is 'cardio-' and blood vessels are 'vascular'. Completely different root - pneumo is about air and lungs.",
+        "2": "Kidney is 'nephro-' or 'reno-'. While both are vital organs, pneumo specifically refers to lungs and air.",
+        "3": "Bone is 'osteo-'. The skeletal system is solid; pneumo refers to the airy, breath-filled lungs."
+      }
+    }
+  ]
+}

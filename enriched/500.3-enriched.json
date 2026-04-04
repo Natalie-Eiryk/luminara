@@ -1,0 +1,783 @@
+{
+  "version": "1.0",
+  "source": "LUMI-OS Teaching Module",
+  "prefix": "500.3",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": "500.3.01",
+      "q": "The sympathetic nervous system is also known as the:",
+      "options": [
+        "Rest and digest system",
+        "Fight or flight system",
+        "Somatic system",
+        "Enteric system"
+      ],
+      "answer": 1,
+      "explain": "The sympathetic division prepares the body for stress — increasing heart rate, dilating airways, and diverting blood to muscles.",
+      "mechanism": null,
+      "isotopes": [
+        "ans.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "500.3.02",
+      "q": "Sympathetic preganglionic neurons originate in which region of the spinal cord?",
+      "options": [
+        "Cervical",
+        "Thoracolumbar (T1-L2)",
+        "Sacral",
+        "Entire length"
+      ],
+      "answer": 1,
+      "explain": "Sympathetic outflow is thoracolumbar — preganglionic cell bodies reside in the lateral horn from T1 to L2.",
+      "mechanism": null,
+      "isotopes": [
+        "ans.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "500.3.03",
+      "q": "The neurotransmitter released by all preganglionic autonomic neurons is:",
+      "options": [
+        "Norepinephrine",
+        "Epinephrine",
+        "Acetylcholine",
+        "Dopamine"
+      ],
+      "answer": 2,
+      "explain": "All preganglionic neurons — both sympathetic and parasympathetic — release acetylcholine onto nicotinic receptors in ganglia.",
+      "mechanism": null,
+      "isotopes": [
+        "ans.neurotransmitter"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "500.3.04",
+      "q": "Parasympathetic preganglionic fibers are described as:",
+      "options": [
+        "Short",
+        "Long",
+        "Unmyelinated",
+        "Absent"
+      ],
+      "answer": 1,
+      "explain": "Parasympathetic preganglionic fibers are LONG — they travel from brainstem or sacral cord to ganglia near or within target organs.",
+      "mechanism": null,
+      "isotopes": [
+        "ans.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.6
+      }
+    },
+    {
+      "id": "500.3.05",
+      "q": "The adrenal medulla releases primarily:",
+      "options": [
+        "Acetylcholine",
+        "Epinephrine and norepinephrine",
+        "Cortisol",
+        "Aldosterone"
+      ],
+      "answer": 1,
+      "explain": "The adrenal medulla is modified sympathetic tissue releasing catecholamines — about 80% epinephrine, 20% norepinephrine — directly into blood.",
+      "mechanism": null,
+      "isotopes": [
+        "ans.neurotransmitter"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "500.3.06",
+      "q": "Alpha-1 adrenergic receptors on blood vessels cause:",
+      "options": [
+        "Vasodilation",
+        "Vasoconstriction",
+        "Decreased heart rate",
+        "Bronchodilation"
+      ],
+      "answer": 1,
+      "explain": "Alpha-1 receptors in blood vessel smooth muscle cause vasoconstriction when stimulated by norepinephrine — increasing blood pressure.",
+      "mechanism": null,
+      "isotopes": [
+        "cardiology.neurotransmitter"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.8,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "500.3.07",
+      "q": "The craniosacral outflow refers to the:",
+      "options": [
+        "Sympathetic division",
+        "Parasympathetic division",
+        "Somatic motor system",
+        "Enteric nervous system"
+      ],
+      "answer": 1,
+      "explain": "Parasympathetic is craniosacral — preganglionic neurons exit from brainstem (cranial nerves) and sacral spinal cord (S2-S4).",
+      "mechanism": null,
+      "isotopes": [
+        "ans.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "500.3.08",
+      "q": "Beta-1 adrenergic receptors in the heart increase:",
+      "options": [
+        "Heart rate and contractility",
+        "Airway diameter",
+        "Digestive activity",
+        "Pupil constriction"
+      ],
+      "answer": 0,
+      "explain": "Beta-1 receptors in cardiac muscle increase heart rate (chronotropy) and contraction strength (inotropy) when stimulated by catecholamines.",
+      "mechanism": null,
+      "isotopes": [
+        "cardiology.receptor"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.8,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "500.3.09",
+      "q": "Nicotinic receptors are found in:",
+      "options": [
+        "Heart muscle only",
+        "Autonomic ganglia and neuromuscular junctions",
+        "Smooth muscle only",
+        "Sweat glands only"
+      ],
+      "answer": 1,
+      "explain": "Nicotinic cholinergic receptors are ion channels found at all autonomic ganglia and at the somatic neuromuscular junction.",
+      "mechanism": null,
+      "isotopes": [
+        "ans.receptor"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "500.3.10",
+      "q": "The vagus nerve provides parasympathetic innervation to:",
+      "options": [
+        "Lower limbs",
+        "Heart, lungs, and most digestive organs",
+        "Sweat glands",
+        "Adrenal medulla"
+      ],
+      "answer": 1,
+      "explain": "The vagus nerve (CN X) is the primary parasympathetic pathway to thoracic and abdominal viscera — heart, lungs, stomach, intestines.",
+      "mechanism": null,
+      "isotopes": [
+        "ans.pathway"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "500.3.11",
+      "q": "Muscarinic receptors are classified as:",
+      "options": [
+        "Ionotropic receptors",
+        "G protein-coupled receptors",
+        "Voltage-gated channels",
+        "Ligand-gated ion channels"
+      ],
+      "answer": 1,
+      "explain": "Muscarinic receptors are metabotropic — G protein-coupled receptors that trigger second messenger cascades when ACh binds.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "500.3.12",
+      "q": "Sympathetic stimulation causes pupils to:",
+      "options": [
+        "Constrict (miosis)",
+        "Dilate (mydriasis)",
+        "Remain unchanged",
+        "Oscillate"
+      ],
+      "answer": 1,
+      "explain": "Sympathetic activation dilates pupils (mydriasis) by contracting the dilator pupillae muscle. This lets more light in during danger.",
+      "mechanism": null,
+      "isotopes": [
+        "ans.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.5,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "500.3.13",
+      "q": "The sympathetic chain ganglia are also called:",
+      "options": [
+        "Terminal ganglia",
+        "Paravertebral ganglia",
+        "Prevertebral ganglia",
+        "Dorsal root ganglia"
+      ],
+      "answer": 1,
+      "explain": "Paravertebral ganglia form two chains alongside the vertebral column — connected sympathetic ganglia from cervical to sacral levels.",
+      "mechanism": null,
+      "isotopes": [
+        "ans.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "500.3.14",
+      "q": "Acetylcholine is broken down by the enzyme:",
+      "options": [
+        "Monoamine oxidase",
+        "Acetylcholinesterase",
+        "Catechol-O-methyltransferase",
+        "Tyrosine hydroxylase"
+      ],
+      "answer": 1,
+      "explain": "Acetylcholinesterase rapidly hydrolyzes ACh in the synaptic cleft, terminating its action within milliseconds.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "500.3.15",
+      "q": "Dual innervation means an organ receives input from:",
+      "options": [
+        "Two sympathetic pathways",
+        "Both sympathetic and parasympathetic divisions",
+        "Somatic and autonomic systems",
+        "Left and right nerves"
+      ],
+      "answer": 1,
+      "explain": "Most visceral organs have dual innervation — both sympathetic and parasympathetic fibers providing opposing or complementary control.",
+      "mechanism": null,
+      "isotopes": [
+        "ans.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "500.3.16",
+      "q": "Cholinergic fibers release:",
+      "options": [
+        "Norepinephrine",
+        "Acetylcholine",
+        "Epinephrine",
+        "Serotonin"
+      ],
+      "answer": 1,
+      "explain": "Cholinergic means acetylcholine-releasing. All preganglionic fibers and parasympathetic postganglionic fibers are cholinergic.",
+      "mechanism": null,
+      "isotopes": [
+        "ans.neurotransmitter"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "500.3.17",
+      "q": "The celiac ganglion provides sympathetic innervation to:",
+      "options": [
+        "Heart",
+        "Stomach and liver",
+        "Bladder",
+        "Lungs"
+      ],
+      "answer": 1,
+      "explain": "The celiac ganglion is a prevertebral ganglion supplying upper abdominal organs — stomach, liver, spleen, kidneys.",
+      "mechanism": null,
+      "isotopes": [
+        "ans.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "500.3.18",
+      "q": "Beta-2 adrenergic receptors in bronchial smooth muscle cause:",
+      "options": [
+        "Bronchoconstriction",
+        "Bronchodilation",
+        "Mucus secretion",
+        "Cough reflex"
+      ],
+      "answer": 1,
+      "explain": "Beta-2 receptors relax bronchial smooth muscle, dilating airways. This is why beta-2 agonists (albuterol) are used for asthma.",
+      "mechanism": null,
+      "isotopes": [
+        "muscle.receptor"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "500.3.19",
+      "q": "The sympathetic nervous system has:",
+      "options": [
+        "Long preganglionic and short postganglionic fibers",
+        "Short preganglionic and long postganglionic fibers",
+        "Equal length fibers",
+        "No postganglionic fibers"
+      ],
+      "answer": 1,
+      "explain": "Sympathetic preganglionics are short (synapse in nearby chain ganglia); postganglionics are long (travel to distant targets).",
+      "mechanism": null,
+      "isotopes": [
+        "ans.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "500.3.20",
+      "q": "Parasympathetic stimulation of the GI tract causes:",
+      "options": [
+        "Decreased motility and secretion",
+        "Increased motility and secretion",
+        "Sphincter contraction",
+        "Blood vessel constriction"
+      ],
+      "answer": 1,
+      "explain": "Parasympathetic activation promotes digestion — increasing gut motility, glandular secretion, and relaxing sphincters.",
+      "mechanism": null,
+      "isotopes": [
+        "ans.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "500.3.21",
+      "q": "Adrenergic fibers release:",
+      "options": [
+        "Acetylcholine",
+        "Norepinephrine",
+        "Dopamine only",
+        "GABA"
+      ],
+      "answer": 1,
+      "explain": "Adrenergic means norepinephrine-releasing. Most sympathetic postganglionic fibers are adrenergic.",
+      "mechanism": null,
+      "isotopes": [
+        "ans.neurotransmitter"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "500.3.22",
+      "q": "The enteric nervous system is located in:",
+      "options": [
+        "The spinal cord",
+        "The wall of the digestive tract",
+        "Sympathetic ganglia",
+        "The brainstem"
+      ],
+      "answer": 1,
+      "explain": "The enteric nervous system — 'the gut brain' — is embedded in the GI tract wall, containing millions of neurons that regulate digestion locally.",
+      "mechanism": null,
+      "isotopes": [
+        "neurology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "500.3.23",
+      "q": "Alpha-2 adrenergic receptors function mainly to:",
+      "options": [
+        "Increase heart rate",
+        "Inhibit norepinephrine release",
+        "Dilate bronchioles",
+        "Constrict pupils"
+      ],
+      "answer": 1,
+      "explain": "Alpha-2 receptors are primarily presynaptic autoreceptors — when activated by norepinephrine, they inhibit further NE release (negative feedback).",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.8,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "500.3.24",
+      "q": "Sweat glands are innervated by sympathetic fibers that release:",
+      "options": [
+        "Norepinephrine",
+        "Acetylcholine",
+        "Epinephrine",
+        "Dopamine"
+      ],
+      "answer": 1,
+      "explain": "Eccrine sweat glands are a sympathetic exception — innervated by sympathetic fibers that are cholinergic (release ACh), not adrenergic.",
+      "mechanism": null,
+      "isotopes": [
+        "ans.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "500.3.25",
+      "q": "The oculomotor nerve (CN III) carries parasympathetic fibers to:",
+      "options": [
+        "Salivary glands",
+        "Heart",
+        "Pupil constrictor and ciliary muscle",
+        "Lacrimal gland"
+      ],
+      "answer": 2,
+      "explain": "CN III carries parasympathetic fibers that constrict the pupil (sphincter pupillae) and focus the lens (ciliary muscle) for near vision.",
+      "mechanism": null,
+      "isotopes": [
+        "ans.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — ANS",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+[
+  {
+    "term": "Lung",
+    "definition": "Air sacs plus thin simple squamous lining = lung.",
+    "system": "Histology"
+  },
+  {
+    "term": "Trachea",
+    "definition": "Pseudostratified ciliated columnar epithelium plus cartilage = trachea.",
+    "system": "Histology"
+  },
+  {
+    "term": "Esophagus",
+    "definition": "Protective stratified squamous lining = esophagus.",
+    "system": "Histology"
+  },
+  {
+    "term": "Stomach",
+    "definition": "Gastric pits and rugae = stomach.",
+    "system": "Histology"
+  },
+  {
+    "term": "Small intestine",
+    "definition": "Villi plus crypts = small intestine.",
+    "system": "Histology"
+  },
+  {
+    "term": "Large intestine",
+    "definition": "Many goblet cells but no villi = large intestine.",
+    "system": "Histology"
+  },
+  {
+    "term": "Recto-anal junction",
+    "definition": "Transition from simple columnar to stratified squamous.",
+    "system": "Histology"
+  },
+  {
+    "term": "Kidney",
+    "definition": "Renal corpuscles plus tubules = kidney cortex.",
+    "system": "Histology"
+  },
+  {
+    "term": "Pituitary",
+    "definition": "Anterior vs posterior lobe distinction.",
+    "system": "Histology"
+  },
+  {
+    "term": "Thyroid",
+    "definition": "Follicles identify thyroid.",
+    "system": "Histology"
+  },
+  {
+    "term": "Adrenal",
+    "definition": "Layered cortex and medulla.",
+    "system": "Histology"
+  },
+  {
+    "term": "Testis",
+    "definition": "Seminiferous tubules identify testis.",
+    "system": "Histology"
+  },
+  {
+    "term": "Ovary",
+    "definition": "Follicles and corpus luteum identify ovary.",
+    "system": "Histology"
+  }
+]

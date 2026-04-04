@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.04",
+  "parentQuestion": "The windpipe that conducts air from the larynx to the bronchi is the:",
+  "narrative": {
+    "setting": "The Magic School Bus rockets upward through Mr. Edgar's airways. You leave the tiny bronchioles behind, passing through larger and larger tubes until you reach a wide highway - a tube reinforced with rings of cartilage. 'The main trunk,' Ms. Frizzle announces. 'The superhighway of breath.'",
+    "character": "Mr. Edgar",
+    "tension": "Something is making Mr. Edgar cough. The airway walls are irritated, inflamed. You need to understand this central highway to find out what's wrong."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.04.s01",
+      "arc": 1,
+      "arcTitle": "The Ancient Name",
+      "narrative": "Ms. Frizzle pulls up an ancient Greek text on the bus's screen. 'The early anatomists made a mistake,' she grins. 'They thought this tube carried blood, not air. They called it the rough artery.'",
+      "q": "The Greek word 'tracheia' (from which 'trachea' derives) means:",
+      "options": [
+        "Smooth tube",
+        "Rough artery",
+        "Air pipe",
+        "Voice box"
+      ],
+      "answer": 1,
+      "explain": "'Tracheia arteria' = ROUGH ARTERY. Ancient Greeks felt the bumpy cartilage rings and thought it was a blood vessel! The 'rough' texture distinguishes it from smooth blood vessels. The name stuck even after we learned it carries air.",
+      "wrongExplains": {
+        "0": "The opposite! The cartilage rings make it ROUGH to touch - that's exactly why Greeks named it this way.",
+        "2": "That's what it DOES, but the name comes from its texture, not its function.",
+        "3": "The voice box is the larynx, which sits ABOVE the trachea. Different structure entirely."
+      }
+    },
+    {
+      "id": "900.5.04.s02",
+      "arc": 1,
+      "arcTitle": "The Ancient Name",
+      "narrative": "The bus cruises past ring after ring of cartilage. 'Count them,' Ms. Frizzle challenges. The bus's counter clicks: 15, 16, 17... 'About 16 to 20 rings,' she confirms. 'But notice something odd about their shape.'",
+      "q": "The cartilage rings of the trachea are shaped like the letter:",
+      "options": [
+        "O (complete rings)",
+        "C (incomplete rings)",
+        "S (wavy)",
+        "X (crossed)"
+      ],
+      "answer": 1,
+      "explain": "The tracheal cartilages are C-SHAPED - open at the back! This allows the esophagus (behind the trachea) to bulge forward when you swallow food. A complete ring would crush against swallowed food.",
+      "wrongExplains": {
+        "0": "Complete O-rings would be too rigid. When you swallow, food in the esophagus needs room to pass - the C-shape provides it.",
+        "2": "Wavy cartilage would provide uneven support. The trachea needs consistent, firm structure.",
+        "3": "X-shaped would leave gaps. The C-shape provides support while allowing posterior flexibility."
+      }
+    },
+    {
+      "id": "900.5.04.s03",
+      "arc": 1,
+      "arcTitle": "The Ancient Name",
+      "narrative": "'Measure it,' Ms. Frizzle commands. The bus's sensors calculate: about 10-12 centimeters long, 2.5 centimeters in diameter. 'Not very long, but absolutely critical. Every breath you take passes through this tube.'",
+      "q": "The trachea is approximately how long in adults?",
+      "options": [
+        "2-3 cm",
+        "10-12 cm",
+        "30-40 cm",
+        "50-60 cm"
+      ],
+      "answer": 1,
+      "explain": "The trachea is about 10-12 CM (4-5 inches) long - from the larynx (at the level of C6 vertebra) to where it splits into the main bronchi (at T5). Short but critical - it's the only airway to both lungs.",
+      "wrongExplains": {
+        "0": "2-3 cm is far too short - that's barely the length of a finger joint. The trachea runs from throat to mid-chest.",
+        "2": "30-40 cm would reach into the abdomen! The trachea ends in the upper chest where it branches.",
+        "3": "50-60 cm is half a meter - that's longer than your entire torso. Way too long."
+      }
+    },
+    {
+      "id": "900.5.04.s04",
+      "arc": 2,
+      "arcTitle": "Structure and Function",
+      "narrative": "Through the bus window, you see the tracheal wall in cross-section: cartilage ring, smooth muscle, inner lining. 'Three layers,' Ms. Frizzle notes. 'Each with a job. But what's that moving on the inner surface?'",
+      "q": "The inner lining of the trachea is covered with:",
+      "options": [
+        "Scales like fish",
+        "Cilia and mucus-secreting cells",
+        "Smooth dry tissue",
+        "Gas exchange membrane"
+      ],
+      "answer": 1,
+      "explain": "CILIA and GOBLET CELLS line the trachea - the mucociliary escalator! Goblet cells make sticky mucus that traps particles. Cilia beat upward, sweeping debris toward the throat to be swallowed or coughed out. Your airway's cleaning crew.",
+      "wrongExplains": {
+        "0": "Scales would block airflow and couldn't trap particles. The respiratory tract uses mucus and cilia instead.",
+        "2": "Smooth and dry would be useless for filtering. The mucus lining is essential for trapping bacteria and dust.",
+        "3": "Gas exchange only happens in alveoli. The trachea is just a conducting tube - no exchange occurs here."
+      }
+    },
+    {
+      "id": "900.5.04.s05",
+      "arc": 2,
+      "arcTitle": "Structure and Function",
+      "narrative": "'The back wall,' Ms. Frizzle points to where the C-shaped cartilage doesn't reach. 'No cartilage here - just smooth muscle and connective tissue. Why would the body leave this part unprotected?'",
+      "q": "The posterior (back) wall of the trachea lacks cartilage because:",
+      "options": [
+        "Cartilage ran out during development",
+        "It allows the esophagus to expand during swallowing",
+        "Nerves need to pass through",
+        "The spine already provides support"
+      ],
+      "answer": 1,
+      "explain": "The flexible posterior wall lets the ESOPHAGUS bulge forward when you swallow! The esophagus runs directly behind the trachea. A rigid back wall would make swallowing painful or impossible. Form follows function.",
+      "wrongExplains": {
+        "0": "The body doesn't 'run out' of cartilage - the C-shape is deliberate design for swallowing accommodation.",
+        "2": "Nerves (recurrent laryngeal) run alongside the trachea, not through its wall. The gap is for the esophagus.",
+        "3": "The spine is further back and doesn't directly support the trachea. The gap is functional, not structural."
+      }
+    },
+    {
+      "id": "900.5.04.s06",
+      "arc": 2,
+      "arcTitle": "Structure and Function",
+      "narrative": "The bus hovers at the bottom of the trachea where it splits into two branches. 'The fork in the road,' Ms. Frizzle announces. 'One path to the right lung, one to the left. Notice anything different about them?'",
+      "q": "The right main bronchus differs from the left in that the right is:",
+      "options": [
+        "Narrower and more horizontal",
+        "Wider, shorter, and more vertical",
+        "Exactly the same",
+        "Longer and curved"
+      ],
+      "answer": 1,
+      "explain": "The right main bronchus is WIDER, SHORTER, and more VERTICAL - almost a straight shot down. This is why aspirated objects (inhaled food, teeth) usually go to the RIGHT lung. The left bronchus angles more because the heart takes up space.",
+      "wrongExplains": {
+        "0": "That describes the LEFT bronchus - narrower and more horizontal because the heart pushes it aside.",
+        "2": "They're asymmetrical! The heart on the left side forces the left bronchus to angle more sharply.",
+        "3": "The left bronchus is longer because it must curve around the heart. The right is short and direct."
+      }
+    },
+    {
+      "id": "900.5.04.s07",
+      "arc": 3,
+      "arcTitle": "The Central Highway",
+      "narrative": "'Emergency drill!' Ms. Frizzle announces. 'If the trachea becomes blocked, what happens?' She shows diagrams of choking, swelling, trauma. 'This is why the Heimlich maneuver exists.'",
+      "q": "If the trachea is completely obstructed, a person will:",
+      "options": [
+        "Breathe through their mouth instead",
+        "Be unable to breathe at all",
+        "Use backup airways in the neck",
+        "Absorb oxygen through the skin"
+      ],
+      "answer": 1,
+      "explain": "COMPLETE TRACHEAL OBSTRUCTION = NO BREATHING. The trachea is the ONLY airway to the lungs. Block it, and no air can enter or exit. This is why choking is an emergency - without the Heimlich or emergency tracheotomy, death follows in minutes.",
+      "wrongExplains": {
+        "0": "Mouth, nose, pharynx, larynx - they ALL lead to the trachea. Block the trachea, block everything.",
+        "2": "There are no backup airways! The trachea is a single critical pathway. That's why tracheotomy is a last-resort procedure.",
+        "3": "Humans cannot absorb meaningful oxygen through skin. We're not frogs. Lungs or nothing."
+      }
+    },
+    {
+      "id": "900.5.04.s08",
+      "arc": 3,
+      "arcTitle": "The Central Highway",
+      "narrative": "Ms. Frizzle shows a diagram: trachea, then the two structures that the trachea connects. Above: the voice box. Below: the branching airways into the lungs. 'It's the connector,' she says. 'The bridge between.'",
+      "q": "The trachea connects the larynx above to the:",
+      "options": [
+        "Alveoli",
+        "Bronchi",
+        "Pharynx",
+        "Diaphragm"
+      ],
+      "answer": 1,
+      "explain": "The trachea connects the LARYNX (voice box) above to the BRONCHI below. At the carina (T5 level), the trachea divides into right and left main bronchi, which then branch further into the lungs.",
+      "wrongExplains": {
+        "0": "Alveoli are the tiny air sacs deep in the lungs - the trachea never reaches them directly.",
+        "2": "The pharynx is ABOVE the larynx - it connects to the larynx, not the trachea directly.",
+        "3": "The diaphragm is a muscle far below - it's not connected to the trachea at all."
+      }
+    },
+    {
+      "id": "900.5.04.s09",
+      "arc": 3,
+      "arcTitle": "The Central Highway",
+      "narrative": "'Let's compare,' Ms. Frizzle says, showing the trachea next to its neighbor - the esophagus that carries food to the stomach. 'So close together, yet completely different functions. What separates them?'",
+      "q": "The trachea differs from the esophagus in that the trachea:",
+      "options": [
+        "Carries food to the stomach",
+        "Has cartilage rings and carries air",
+        "Is behind the spine",
+        "Is made of smooth muscle only"
+      ],
+      "answer": 1,
+      "explain": "The trachea has CARTILAGE RINGS and carries AIR. The esophagus (behind it) is a muscular tube that carries FOOD. Cartilage keeps the trachea open; the esophagus collapses when not swallowing.",
+      "wrongExplains": {
+        "0": "That's the ESOPHAGUS! The trachea carries air, not food. Mixing them up causes choking.",
+        "2": "The trachea is in FRONT of the esophagus, which is in front of the spine. Trachea is most anterior.",
+        "3": "The esophagus is mostly smooth muscle. The trachea has cartilage rings - that's what makes it 'rough.'"
+      }
+    },
+    {
+      "id": "900.5.04.s10",
+      "arc": 3,
+      "arcTitle": "The Central Highway",
+      "narrative": "Mr. Edgar clears his throat, and you feel the trachea vibrate around you. The airway that connects voice to lungs, protected by C-shaped cartilage, lined with cleaning cilia. 'The windpipe,' Ms. Frizzle says. 'What's it called?'",
+      "q": "The windpipe that conducts air from the larynx to the bronchi is the:",
+      "options": [
+        "Pharynx",
+        "Esophagus",
+        "Trachea",
+        "Bronchiole"
+      ],
+      "answer": 2,
+      "explain": "The TRACHEA - the windpipe. About 10-12 cm long, reinforced by 16-20 C-shaped cartilage rings, lined with cilia and mucus, connecting the larynx above to the bronchi below. Every breath you take travels this highway.",
+      "wrongExplains": {
+        "0": "The pharynx is the throat ABOVE the larynx - a shared space for food and air, not the dedicated windpipe.",
+        "1": "The esophagus is the FOOD pipe behind the trachea. It leads to the stomach, not the lungs.",
+        "3": "Bronchioles are TINY airways deep in the lungs - the trachea is the large central trunk."
+      }
+    }
+  ]
+}

@@ -1,0 +1,564 @@
+{
+  "id": "510.6",
+  "title": "Logic & Reasoning",
+  "category": "concepts",
+  "gradeLevel": "4-8",
+  "description": "Logical thinking, patterns, problem-solving strategies, and mathematical reasoning",
+  "questions": [
+    {
+      "id": "510.6.01",
+      "q": "What comes next in the pattern: 2, 6, 18, 54, ___?",
+      "options": [
+        "72",
+        "108",
+        "162",
+        "216"
+      ],
+      "answer": 2,
+      "chapter": "Logic - Number Patterns",
+      "explain": "Each number is multiplied by 3! 2 x 3 = 6, 6 x 3 = 18, 18 x 3 = 54, so 54 x 3 = 162. This is a geometric pattern with ratio 3.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "72 would be 54 + 18, thinking addition. But the pattern multiplies by 3 each time, not adds the previous term."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "108 is 54 x 2, using the wrong multiplier. Check: 2 to 6 is x3, not x2. Consistency matters in patterns!"
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! The pattern multiplies by 3 each step: 2 x 3 = 6, 6 x 3 = 18, 18 x 3 = 54, 54 x 3 = 162. This is called a GEOMETRIC sequence. The common ratio is 3."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "216 would be 54 x 4 or 162 x 1.33... Neither fits the x3 pattern. Always verify the rule with ALL given terms!"
+        }
+      ],
+      "mechanism": {
+        "title": "Recognizing Patterns: Arithmetic vs Geometric",
+        "content": "ARITHMETIC patterns ADD the same number each time (2, 5, 8, 11... adds 3). GEOMETRIC patterns MULTIPLY by the same number each time (2, 6, 18, 54... multiplies by 3). To identify: look at differences (constant = arithmetic) or ratios (constant = geometric).",
+        "metaphor": "Arithmetic is like walking up stairs - each step adds the same height. Geometric is like bacteria dividing - each generation MULTIPLIES the population. 2, 6, 18, 54: the 'bacteria' triple every 'generation'!"
+      },
+      "scaffoldFile": "510.6-logic-scaffolds/510.6.01-scaffolds.json"
+    },
+    {
+      "id": "510.6.02",
+      "q": "All squares are rectangles. All rectangles have four sides. What can we conclude?",
+      "options": [
+        "All four-sided shapes are squares",
+        "All squares have four sides",
+        "All rectangles are squares",
+        "Nothing can be concluded"
+      ],
+      "answer": 1,
+      "chapter": "Logic - Deductive Reasoning",
+      "explain": "This is a syllogism! If A (squares) are all B (rectangles), and all B have property C (four sides), then all A have property C. All squares have four sides.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "Not all four-sided shapes are squares - think of trapezoids, rhombuses, irregular quadrilaterals. The logic doesn't run backwards."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! Chain the logic: Squares are rectangles, rectangles have four sides, therefore squares have four sides. This is called DEDUCTIVE reasoning - the conclusion MUST be true if the premises are true. It's logically airtight!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not all rectangles are squares! A 3x5 rectangle is not a square. 'All A are B' doesn't mean 'All B are A.' Set theory matters!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "We CAN conclude something! The two premises chain together to give a definite conclusion about squares and sides."
+        }
+      ],
+      "mechanism": {
+        "title": "Deductive Reasoning: If-Then Chains",
+        "content": "Deductive reasoning draws CERTAIN conclusions from premises. If all A are B, and all B are C, then all A are C. The conclusion is GUARANTEED if the premises are true. This is different from INDUCTIVE reasoning (observing patterns to make guesses). Deduction is proof; induction is hypothesis.",
+        "metaphor": "Deductive reasoning is like dominoes. Set up the chain: 'Squares are rectangles' knocks into 'Rectangles have four sides' which knocks down 'Squares have four sides.' Once the dominoes are arranged, the conclusion MUST fall."
+      },
+      "scaffoldFile": "510.6-logic-scaffolds/510.6.02-scaffolds.json"
+    },
+    {
+      "id": "510.6.03",
+      "q": "If it is raining, then the ground is wet. The ground is wet. Can we conclude it is raining?",
+      "options": [
+        "Yes, definitely",
+        "No, there could be other causes",
+        "Only if there are no sprinklers",
+        "Yes, by logic rules"
+      ],
+      "answer": 1,
+      "chapter": "Logic - Logical Fallacies",
+      "explain": "No! This is the fallacy of 'affirming the consequent.' The ground could be wet from sprinklers, a hose, or dew. Rain causes wet ground, but wet ground doesn't prove rain.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "Definitely not! The ground being wet doesn't PROVE rain. Many things cause wet ground - sprinklers, hoses, dew, melted ice. Rain is only ONE possible cause."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! This is called 'affirming the consequent' - a logical fallacy. 'If P then Q' plus 'Q is true' does NOT prove P. The ground being wet is consistent with rain, but doesn't prove it. Other explanations exist!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Even without sprinklers, other causes remain: morning dew, a burst pipe, someone washing their car. The conclusion simply doesn't follow logically."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Logic rules actually say we CANNOT conclude this! 'If P then Q' plus 'Q' does not give 'P.' Only 'If P then Q' plus 'P' gives 'Q' (modus ponens)."
+        }
+      ],
+      "mechanism": {
+        "title": "Affirming the Consequent: A Common Fallacy",
+        "content": "Valid: If P then Q. P is true. Therefore Q. (Modus Ponens). INVALID: If P then Q. Q is true. Therefore P. (Affirming the Consequent). The second is a FALLACY because Q could be caused by many things besides P. 'If rain, then wet' doesn't mean 'if wet, then rain.'",
+        "metaphor": "It's like saying 'All dogs are animals' plus 'Fluffy is an animal' proves 'Fluffy is a dog.' But Fluffy could be a cat! Being wet doesn't prove rain any more than being an animal proves dog-ness."
+      },
+      "scaffoldFile": "510.6-logic-scaffolds/510.6.03-scaffolds.json"
+    },
+    {
+      "id": "510.6.04",
+      "q": "A farmer has chickens and cows. If there are 30 heads and 74 legs, how many chickens are there?",
+      "options": [
+        "7",
+        "12",
+        "18",
+        "23"
+      ],
+      "answer": 3,
+      "chapter": "Logic - Systems Thinking",
+      "explain": "Let c = chickens, w = cows. Heads: c + w = 30. Legs: 2c + 4w = 74. From first: w = 30 - c. Substitute: 2c + 4(30-c) = 74. Solve: 2c + 120 - 4c = 74, -2c = -46, c = 23.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "7 chickens would mean 23 cows. Legs: 7(2) + 23(4) = 14 + 92 = 106 legs. That's too many!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "12 chickens would mean 18 cows. Legs: 12(2) + 18(4) = 24 + 72 = 96 legs. Still too many!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "18 chickens would mean 12 cows. Legs: 18(2) + 12(4) = 36 + 48 = 84 legs. Closer but still wrong!"
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 23 chickens means 7 cows. Check: 23 + 7 = 30 heads. Legs: 23(2) + 7(4) = 46 + 28 = 74 legs. Both constraints satisfied! This classic problem uses systems of equations or clever reasoning."
+        }
+      ],
+      "mechanism": {
+        "title": "Systems of Equations: Multiple Constraints",
+        "content": "When you have TWO unknowns, you need TWO equations. Here: Heads give c + w = 30. Legs give 2c + 4w = 74. Solve by substitution or elimination. This pattern appears everywhere: budgets, mixtures, planning. Two constraints, two unknowns, one solution!",
+        "metaphor": "It's like solving a puzzle with two clues. 'Total heads' narrows possibilities. 'Total legs' narrows them further. Together, they pinpoint the exact answer. Each constraint eliminates options until only one combination remains: 23 chickens, 7 cows!"
+      },
+      "scaffoldFile": "510.6-logic-scaffolds/510.6.04-scaffolds.json"
+    },
+    {
+      "id": "510.6.05",
+      "q": "What is the contrapositive of 'If it is a square, then it has four equal sides'?",
+      "options": [
+        "If it has four equal sides, then it is a square",
+        "If it does not have four equal sides, then it is not a square",
+        "If it is not a square, then it does not have four equal sides",
+        "All squares have four equal sides"
+      ],
+      "answer": 1,
+      "chapter": "Logic - Contrapositive",
+      "explain": "The contrapositive of 'If P then Q' is 'If NOT Q then NOT P.' If it doesn't have four equal sides, then it's not a square. Contrapositives are always logically equivalent to the original!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "This is the CONVERSE, not contrapositive. 'If Q then P' is NOT logically equivalent to 'If P then Q.' A rhombus has four equal sides but isn't a square!"
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! Contrapositive: flip AND negate both parts. 'If P then Q' becomes 'If NOT Q then NOT P.' So: 'If it doesn't have four equal sides, then it's not a square.' This is LOGICALLY EQUIVALENT to the original statement!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "This is the INVERSE: 'If NOT P then NOT Q.' The inverse is NOT logically equivalent to the original. A rectangle isn't a square, but it might have... wait, actually rectangles don't have four EQUAL sides unless they're squares."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "This restates the original, not its contrapositive. The contrapositive negates and swaps: 'If NOT Q then NOT P.'"
+        }
+      ],
+      "mechanism": {
+        "title": "Contrapositives: Logically Equivalent Forms",
+        "content": "For 'If P then Q': CONVERSE is 'If Q then P' (NOT equivalent). INVERSE is 'If not P then not Q' (NOT equivalent). CONTRAPOSITIVE is 'If not Q then not P' (IS equivalent!). The contrapositive is always as true as the original. This is useful for proofs and reasoning!",
+        "metaphor": "The contrapositive is like a photograph and its negative - different looking, but containing the exact same information. 'If square then four equal sides' and 'If not four equal sides then not square' are the same truth viewed from opposite angles."
+      },
+      "scaffoldFile": "510.6-logic-scaffolds/510.6.05-scaffolds.json"
+    },
+    {
+      "id": "510.6.06",
+      "q": "In a row of 5 lockers, the blue locker is not on either end. The red locker is next to the blue. The green locker is between two other lockers. Where could the blue locker NOT be?",
+      "options": [
+        "Position 2",
+        "Position 3",
+        "Position 4",
+        "Position 1 or 5"
+      ],
+      "answer": 3,
+      "chapter": "Logic - Spatial Reasoning",
+      "explain": "The blue locker is 'not on either end,' which means NOT in position 1 or 5. That's exactly what the question asks - where it CANNOT be!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "Position 2 is NOT an end, so blue COULD be there. The constraint only excludes ends (positions 1 and 5)."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Position 3 (the middle) is definitely not an end. Blue could be there. In fact, it's the farthest from either end!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Position 4 is NOT an end, so blue COULD be there. Only positions 1 and 5 are the ends."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! The problem states 'blue locker is not on either end.' Ends are positions 1 and 5. So blue CANNOT be in position 1 or 5. The other constraints (red next to blue, green between others) give more info, but for this question, we just need the blue constraint."
+        }
+      ],
+      "mechanism": {
+        "title": "Spatial Logic: Constraints and Positions",
+        "content": "Spatial logic puzzles give constraints about positions. Translate each clue: 'not on either end' means not first or last. 'Next to' means adjacent positions. 'Between' means with something on each side. Work systematically: eliminate impossible positions, then check if remaining arrangements satisfy ALL constraints.",
+        "metaphor": "These puzzles are like seating charts. Each clue eliminates some seats. 'Not on the end' removes two options. 'Next to blue' limits red's position based on blue. Layer the constraints until only valid arrangements remain. It's logical musical chairs!"
+      },
+      "scaffoldFile": "510.6-logic-scaffolds/510.6.06-scaffolds.json"
+    },
+    {
+      "id": "510.6.07",
+      "q": "Three friends (Amy, Beth, Carl) each have a different pet (cat, dog, fish). Amy doesn't have the cat. Beth doesn't have the dog. Carl has the fish. Who has the dog?",
+      "options": [
+        "Amy",
+        "Beth",
+        "Carl",
+        "Cannot be determined"
+      ],
+      "answer": 0,
+      "chapter": "Logic - Logic Grids",
+      "explain": "Carl has fish (given). Beth doesn't have dog, and dog isn't with Carl (he has fish), so Amy has the dog. That leaves Beth with the cat.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Yes! Work through: Carl has fish (given). So fish is taken. Amy doesn't have cat. Beth doesn't have dog. Since Carl has fish, the dog must be Amy's or Beth's. Beth can't have dog, so AMY has the dog! Beth gets the remaining pet: cat."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Beth doesn't have the dog - that's explicitly stated in the problem!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Carl has the FISH, not the dog. Each person has exactly one pet."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "It CAN be determined! The clues fully constrain the answer. Use process of elimination."
+        }
+      ],
+      "mechanism": {
+        "title": "Logic Grids: Process of Elimination",
+        "content": "Logic grid puzzles assign items to categories (people to pets, etc.). Use a grid: rows = one category, columns = another. Mark X for impossible and O for definite. When you know one pairing, eliminate that item from other rows/columns. Continue until solved!",
+        "metaphor": "It's like Sudoku for categories. Each person gets exactly one pet, each pet goes to exactly one person. When Carl claims fish, that fish is 'off the board' for others. Keep claiming and eliminating until every match is clear!"
+      },
+      "scaffoldFile": "510.6-logic-scaffolds/510.6.07-scaffolds.json"
+    },
+    {
+      "id": "510.6.08",
+      "q": "The first five triangular numbers are 1, 3, 6, 10, 15. What is the 6th triangular number?",
+      "options": [
+        "18",
+        "20",
+        "21",
+        "25"
+      ],
+      "answer": 2,
+      "chapter": "Logic - Sequence Analysis",
+      "explain": "Triangular numbers: 1, 3 (+2), 6 (+3), 10 (+4), 15 (+5), 21 (+6). Each term adds the next counting number. Or: T_n = n(n+1)/2. T_6 = 6(7)/2 = 21.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "18 = 15 + 3, using the wrong increment. The increments themselves are increasing: +2, +3, +4, +5, so next is +6."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "20 = 15 + 5, repeating the previous increment. But each increment grows by 1: next increment is 6, giving 15 + 6 = 21."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! Triangular numbers add increasing amounts: 1, 1+2=3, 3+3=6, 6+4=10, 10+5=15, 15+6=21. Or use the formula: T_n = n(n+1)/2. T_6 = 6(7)/2 = 42/2 = 21. Triangular numbers count dots in triangle arrangements!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "25 would be 15 + 10, but 10 is way too big for the increment. The pattern adds 6 to get the 6th term."
+        }
+      ],
+      "mechanism": {
+        "title": "Special Number Sequences",
+        "content": "Triangular numbers: 1, 3, 6, 10, 15, 21... (add consecutive integers). Square numbers: 1, 4, 9, 16, 25... (n^2). Fibonacci: 1, 1, 2, 3, 5, 8... (add previous two). Recognizing these famous sequences helps spot patterns and predict future terms!",
+        "metaphor": "Triangular numbers are like bowling pin arrangements. 1 pin (row 1), 2 pins added (row 2) = 3 total, 3 pins added (row 3) = 6 total... Each row adds its row number. 6 rows of pins = 1+2+3+4+5+6 = 21 pins total!"
+      },
+      "scaffoldFile": "510.6-logic-scaffolds/510.6.08-scaffolds.json"
+    },
+    {
+      "id": "510.6.09",
+      "q": "In a group of 30 students, 18 play soccer, 15 play basketball, and 7 play both. How many play ONLY soccer?",
+      "options": [
+        "4",
+        "8",
+        "11",
+        "18"
+      ],
+      "answer": 2,
+      "chapter": "Logic - Venn Diagrams",
+      "explain": "Total soccer players = 18. But 7 of those ALSO play basketball. So ONLY soccer = 18 - 7 = 11.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "4 would be students playing neither (30 - 18 - 15 + 7 = 4 play neither). But we want ONLY soccer, not neither."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "8 is 15 - 7 = students playing ONLY basketball. We want ONLY soccer: 18 - 7 = 11."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! Of 18 soccer players, 7 also play basketball. Remove them: 18 - 7 = 11 play ONLY soccer. Venn diagram: Soccer circle has two regions - the overlap (7) and soccer-only (11). Total soccer = 11 + 7 = 18. Check!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "18 is ALL soccer players, including those who also play basketball. We want ONLY soccer, so subtract the overlap: 18 - 7 = 11."
+        }
+      ],
+      "mechanism": {
+        "title": "Venn Diagrams: Overlapping Sets",
+        "content": "When sets overlap, be careful about counting! 'Soccer players' includes those who play ONLY soccer AND those who play BOTH. To find ONLY one category: subtract the overlap. Formula for union: |A or B| = |A| + |B| - |Both|. This avoids double-counting!",
+        "metaphor": "Imagine two overlapping circles. Some people are in the soccer circle only, some in basketball only, some in BOTH (the overlap). If I count all of soccer (18) and want ONLY soccer, I subtract the people standing in the overlap (7). They're soccer players, but not ONLY soccer!"
+      },
+      "scaffoldFile": "510.6-logic-scaffolds/510.6.09-scaffolds.json"
+    },
+    {
+      "id": "510.6.10",
+      "q": "What is wrong with this proof? 'Let a = b. Then a^2 = ab. So a^2 - b^2 = ab - b^2. Thus (a+b)(a-b) = b(a-b). Dividing: a+b = b. Since a = b: 2b = b. Therefore 2 = 1.'",
+      "options": [
+        "a^2 does not equal ab",
+        "You cannot factor a^2 - b^2 that way",
+        "Division by zero (a - b = 0)",
+        "The algebra is actually correct"
+      ],
+      "answer": 2,
+      "chapter": "Logic - Proof Analysis",
+      "explain": "The error is dividing by (a - b). Since a = b, we have a - b = 0, and DIVISION BY ZERO IS UNDEFINED! This hidden zero causes the contradiction.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "a^2 DOES equal ab when a = b. If a = b, then ab = a(a) = a^2. This step is valid."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "(a+b)(a-b) = a^2 - b^2 is a valid factorization (difference of squares). The factoring is correct."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! The fatal flaw is dividing both sides by (a - b). But since a = b (the premise!), a - b = 0. Division by zero is undefined and can produce ANY result - including false ones like 2 = 1. Never divide by something that could be zero!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "The algebra is NOT correct - there's a hidden division by zero. This is a famous mathematical fallacy used to 'prove' absurdities!"
+        }
+      ],
+      "mechanism": {
+        "title": "Division by Zero: The Hidden Fallacy",
+        "content": "Division by zero is UNDEFINED - not just big, but meaningless. In proofs, watch for variables that might equal zero. If a = b, then a - b = 0, and dividing by (a - b) is illegal. This trick is used in many 'proofs' of absurdities. Always check: could the divisor be zero?",
+        "metaphor": "Division by zero is like dividing cookies among zero friends - it doesn't make sense. '12 / 0 = ?' There's no meaningful answer. When mathematicians sneak in division by zero, they can 'prove' anything, like a magician pulling rabbits from hats. The trick is spotting the hidden zero!"
+      },
+      "scaffoldFile": "510.6-logic-scaffolds/510.6.10-scaffolds.json"
+    },
+    {
+      "id": "510.6.11",
+      "q": "How many different ways can you arrange the letters A, B, C?",
+      "options": [
+        "3",
+        "6",
+        "9",
+        "27"
+      ],
+      "answer": 1,
+      "chapter": "Logic - Counting Principles",
+      "explain": "3 choices for first position, 2 remaining for second, 1 for third: 3 x 2 x 1 = 6. This is 3! (three factorial). The arrangements: ABC, ACB, BAC, BCA, CAB, CBA.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "3 is just the number of letters. But we're arranging them - the ORDER matters, creating more possibilities than just 3."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! This is a PERMUTATION. First position: 3 choices (A, B, or C). Second position: 2 choices (remaining letters). Third: 1 choice (last letter). Total: 3 x 2 x 1 = 6. We can list them: ABC, ACB, BAC, BCA, CAB, CBA. Six ways!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "9 = 3 x 3, using 3 twice. But once we use A in position 1, only 2 letters remain for position 2. The multipliers decrease."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "27 = 3^3, as if each position had 3 choices independently. But we can't repeat letters - once used, they're gone. Multiplication principle with DECREASING options."
+        }
+      ],
+      "mechanism": {
+        "title": "Permutations: Arrangements Where Order Matters",
+        "content": "A PERMUTATION is an arrangement where ORDER matters. For n distinct objects: n! = n x (n-1) x (n-2) x ... x 1 arrangements. For 3 letters: 3! = 3 x 2 x 1 = 6. For 5 letters: 5! = 120. Factorials grow FAST because each new position multiplies options.",
+        "metaphor": "Arranging letters is like assigning seats. The first person has all seats available. The second person has one less choice (one seat taken). By the last person, only one seat remains. Multiply the choices at each step: 3 x 2 x 1 = 6 seating arrangements!"
+      },
+      "scaffoldFile": "510.6-logic-scaffolds/510.6.11-scaffolds.json"
+    },
+    {
+      "id": "510.6.12",
+      "q": "If the pattern continues, what is the 100th term of: 5, 9, 13, 17, 21, ...?",
+      "options": [
+        "397",
+        "400",
+        "401",
+        "405"
+      ],
+      "answer": 2,
+      "chapter": "Logic - Arithmetic Sequences",
+      "explain": "Arithmetic sequence: first term 5, common difference 4. Formula: a_n = a_1 + (n-1)d = 5 + (100-1)(4) = 5 + 396 = 401.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "397 = 5 + 98(4) uses n-2 instead of n-1. The formula for the nth term uses (n-1) because the first term adds zero differences."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "400 = 4(100) ignores the starting value. We start at 5 and add 4 ninety-nine times: 5 + 99(4) = 5 + 396 = 401."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! This is an ARITHMETIC sequence with first term a_1 = 5 and common difference d = 4. The nth term formula: a_n = a_1 + (n-1)d. For n = 100: a_100 = 5 + 99(4) = 5 + 396 = 401. No need to list all 100 terms!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "405 = 5 + 100(4) uses n instead of n-1. Term 1 adds 0 differences, Term 2 adds 1, ... Term 100 adds 99 differences."
+        }
+      ],
+      "mechanism": {
+        "title": "Arithmetic Sequences: The nth Term Formula",
+        "content": "In arithmetic sequences, each term differs by the same amount (d = common difference). The nth term: a_n = a_1 + (n-1)d. Why (n-1)? Because the first term adds ZERO differences. The 2nd adds ONE difference, the 100th adds 99 differences. This formula finds ANY term without listing them all!",
+        "metaphor": "It's like climbing stairs. Starting on floor 5 (first term), each step up is 4 floors (common difference). To reach the 100th floor number, you climb 99 steps: 5 + 99(4) = 401. The formula is your elevator - skip directly to any floor!"
+      },
+      "scaffoldFile": "510.6-logic-scaffolds/510.6.12-scaffolds.json"
+    },
+    {
+      "id": "510.6.13",
+      "q": "A statement and its converse are both true. What type of statement is this?",
+      "options": [
+        "A contradiction",
+        "A biconditional (if and only if)",
+        "A tautology",
+        "An implication"
+      ],
+      "answer": 1,
+      "chapter": "Logic - Biconditionals",
+      "explain": "When both 'If P then Q' AND 'If Q then P' are true, we have a BICONDITIONAL: 'P if and only if Q.' Both directions work!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "A contradiction is a statement that's always FALSE (like 'This statement is false'). Having two true statements isn't a contradiction."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! A BICONDITIONAL combines a statement and its converse. 'P if and only if Q' (written P <=> Q) means 'If P then Q' AND 'If Q then P' are both true. Example: 'A shape is a square if and only if it's a rectangle with equal sides.'"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "A tautology is always TRUE regardless of the truth values (like 'P or not P'). A biconditional can be true or false depending on P and Q."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "An implication is just 'If P then Q' - one direction. When BOTH directions are true, we have something stronger: a biconditional."
+        }
+      ],
+      "mechanism": {
+        "title": "Biconditionals: If and Only If",
+        "content": "'P if and only if Q' (written P <=> Q or 'P iff Q') means P and Q are logically equivalent - they're true in exactly the same situations. This is stronger than just 'If P then Q.' Biconditionals are like two-way streets: you can go from P to Q AND from Q to P.",
+        "metaphor": "A biconditional is like a reversible chemical reaction. 'Water boils if and only if it reaches 100C' - reaching 100C guarantees boiling, AND boiling guarantees 100C (at standard pressure). Both directions are true. It's a perfect logical lock: P and Q are interchangeable!"
+      },
+      "scaffoldFile": "510.6-logic-scaffolds/510.6.13-scaffolds.json"
+    },
+    {
+      "id": "510.6.14",
+      "q": "A snail climbs 3 feet up during the day but slides back 2 feet at night. If the well is 10 feet deep, how many days to reach the top?",
+      "options": [
+        "5 days",
+        "8 days",
+        "9 days",
+        "10 days"
+      ],
+      "answer": 1,
+      "chapter": "Logic - Problem Solving",
+      "explain": "Net progress per day: 3 - 2 = 1 foot. But on the LAST day, once the snail reaches the top, it doesn't slide back! After 7 days: 7 feet. Day 8: climbs 3 more = 10 feet. Done!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "5 days would require 2 feet per day net, but the snail only nets 1 foot per day (3 up, 2 back). It takes longer."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! Key insight: on the FINAL day, the snail doesn't slide back (it's out!). Net 1 foot/day for 7 days = 7 feet. Day 8: starts at 7, climbs 3, reaches 10 - TOP! It escapes during day 8 before nightfall. Answer: 8 days."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "9 days overshoots. After 7 full day-night cycles, the snail is at 7 feet. Day 8's climb takes it to 10 feet - it's out before sliding back!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "10 days treats it as purely 10 / 1 = 10. But the final climb doesn't have a slide-back, so we reach the top mid-climb on day 8."
+        }
+      ],
+      "mechanism": {
+        "title": "Edge Cases in Problem Solving",
+        "content": "Always check BOUNDARY CONDITIONS. The snail problem has a trick: the final climb is different from intermediate climbs. Most nights the snail slides back, but once it reaches the top, it's free! This changes the calculation. Always ask: does the pattern change at the beginning or end?",
+        "metaphor": "It's like a marathon runner. Most miles are 'normal,' but the finish line changes everything. You don't need to complete another full lap after crossing - you're DONE. The snail's final 3-foot climb reaches freedom before the slide-back activates!"
+      },
+      "scaffoldFile": "510.6-logic-scaffolds/510.6.14-scaffolds.json"
+    },
+    {
+      "id": "510.6.15",
+      "q": "Three of these four statements are true. Which one is FALSE?\nA: 2 + 2 = 4\nB: All squares have 4 sides\nC: 5 is an even number\nD: The sun is a star",
+      "options": [
+        "Statement A",
+        "Statement B",
+        "Statement C",
+        "Statement D"
+      ],
+      "answer": 2,
+      "chapter": "Logic - Truth Evaluation",
+      "explain": "A is true (basic arithmetic). B is true (definition of square). C is FALSE (5 is odd). D is true (the sun is indeed a star). C is the false statement!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "2 + 2 = 4 is absolutely TRUE. This is foundational arithmetic - as true as truth gets!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "All squares have 4 sides is TRUE. By definition, a square is a four-sided polygon with equal sides and right angles."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 5 is an ODD number, not even. Even numbers are divisible by 2 (0, 2, 4, 6, 8...). 5 / 2 = 2.5, not a whole number. Statement C is FALSE!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "The sun is a star - TRUE! Our sun is a G-type main-sequence star (yellow dwarf). It just happens to be close enough to dominate our sky."
+        }
+      ],
+      "mechanism": {
+        "title": "Truth Evaluation: Checking Statements",
+        "content": "To evaluate truth, examine each statement against known facts. Mathematical truths (2+2=4) are definite. Definitional truths (squares have 4 sides) come from how we define terms. Scientific facts (sun is a star) are empirically established. Identify false statements by finding contradictions with these foundations.",
+        "metaphor": "Truth-checking is like fact-checking a news article. Each claim gets verified: Is 2+2=4? Check. Is the sun a star? Check. Is 5 even? Wait - 5/2 isn't whole! Caught the false one. Systematic verification exposes the lie hiding among truths."
+      },
+      "scaffoldFile": "510.6-logic-scaffolds/510.6.15-scaffolds.json"
+    }
+  ]
+}

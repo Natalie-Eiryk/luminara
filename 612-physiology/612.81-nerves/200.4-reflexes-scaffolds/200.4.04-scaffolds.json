@@ -1,0 +1,159 @@
+{
+  "parentId": "200.4.04",
+  "parentQuestion": "Reciprocal inhibition occurs when ___.",
+  "scaffolds": [
+    {
+      "q": "What is an agonist muscle?",
+      "options": [
+        "A muscle that opposes movement",
+        "The primary muscle producing a specific movement",
+        "A muscle that never contracts",
+        "A muscle only in the heart"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The AGONIST is the 'PRIME MOVER' — the main muscle producing a movement. When you flex your elbow, the biceps is the agonist. It's doing the primary work.",
+      "wrongExplains": {
+        "0": "Muscles that oppose are antagonists. The agonist is the prime mover.",
+        "2": "Agonists definitely contract — they're the muscles doing the main work.",
+        "3": "Any skeletal muscle can be an agonist for its particular movement."
+      }
+    },
+    {
+      "q": "What is an antagonist muscle?",
+      "options": [
+        "A muscle that helps the agonist",
+        "A muscle that has the opposite action of the agonist",
+        "The same as a synergist",
+        "A muscle that doesn't exist"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The ANTAGONIST has the OPPOSITE ACTION of the agonist. When biceps flexes the elbow, the triceps (antagonist) would extend it. They're opponents.",
+      "wrongExplains": {
+        "0": "Muscles that help are synergists. Antagonists oppose.",
+        "2": "Synergists cooperate. Antagonists have opposite actions.",
+        "3": "Antagonist muscles definitely exist. Every movement has opposing muscles."
+      }
+    },
+    {
+      "q": "What is the purpose of reciprocal inhibition?",
+      "options": [
+        "To make all muscles contract at once",
+        "To relax the antagonist so the agonist can move smoothly",
+        "To stop all movement",
+        "To increase pain"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Reciprocal inhibition RELAXES THE ANTAGONIST so the agonist can move smoothly without opposition. It prevents the limb from 'fighting itself.'",
+      "wrongExplains": {
+        "0": "Co-contraction locks joints. Reciprocal inhibition allows smooth movement.",
+        "2": "It enables smooth movement, not stopping it.",
+        "3": "It coordinates movement. Pain involves nociceptors, not reciprocal inhibition."
+      }
+    },
+    {
+      "q": "Where does reciprocal inhibition occur?",
+      "options": [
+        "Only in the brain",
+        "At the spinal cord level (without needing the brain)",
+        "Only in the muscles",
+        "Only in the blood"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Reciprocal inhibition is a SPINAL REFLEX — it occurs at the SPINAL CORD LEVEL without needing conscious brain involvement. It's automatic and fast.",
+      "wrongExplains": {
+        "0": "The brain can modulate it, but the basic circuit is in the spinal cord.",
+        "2": "The inhibition happens to motor neurons in the spinal cord, which then affects muscles.",
+        "3": "Blood carries nutrients. Neural reflexes occur in the nervous system."
+      }
+    },
+    {
+      "q": "What type of neuron mediates reciprocal inhibition?",
+      "options": [
+        "Sensory neurons only",
+        "Inhibitory interneurons in the spinal cord",
+        "Motor neurons only",
+        "Red blood cells"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "INHIBITORY INTERNEURONS in the spinal cord mediate reciprocal inhibition. They release inhibitory neurotransmitters (like glycine) that prevent antagonist motor neurons from firing.",
+      "wrongExplains": {
+        "0": "Sensory neurons bring information in. Interneurons create the inhibition.",
+        "2": "Motor neurons are the target of inhibition, not the mediators.",
+        "3": "Red blood cells carry oxygen. Neurons are part of the nervous system."
+      }
+    },
+    {
+      "q": "What happens to the antagonist motor neuron during reciprocal inhibition?",
+      "options": [
+        "It fires faster",
+        "It is prevented from firing by inhibitory signals",
+        "It becomes a sensory neuron",
+        "It moves to a different location"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The antagonist motor neuron is INHIBITED — prevented from firing — by inhibitory interneurons. This relaxes the antagonist muscle.",
+      "wrongExplains": {
+        "0": "The antagonist motor neuron is inhibited, not excited.",
+        "2": "Neurons don't change type. Motor neurons stay motor neurons.",
+        "3": "Neurons don't move locations. They receive inhibitory signals where they are."
+      }
+    },
+    {
+      "q": "Is reciprocal inhibition automatic or voluntary?",
+      "options": [
+        "Completely voluntary",
+        "Automatic (a spinal reflex)",
+        "Only during sleep",
+        "Only when you think about it"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Reciprocal inhibition is AUTOMATIC — a SPINAL REFLEX. You don't have to consciously relax your triceps when flexing your biceps. It happens automatically.",
+      "wrongExplains": {
+        "0": "It's automatic, not voluntary. You don't consciously control it.",
+        "2": "It works during all movement, awake or asleep.",
+        "3": "It happens without conscious thought — that's why it's a reflex."
+      }
+    },
+    {
+      "q": "What is the clinical importance of reciprocal inhibition?",
+      "options": [
+        "It has no importance",
+        "Loss of inhibition causes spasticity and jerky movements",
+        "It only matters for digestion",
+        "It only affects hearing"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "Loss of reciprocal inhibition (from upper motor neuron damage) causes SPASTICITY — both agonist and antagonist fire together, causing stiff, jerky movements.",
+      "wrongExplains": {
+        "0": "It's critically important for smooth movement.",
+        "2": "It affects skeletal muscle coordination, not digestion.",
+        "3": "It affects muscle movement, not hearing."
+      }
+    },
+    {
+      "q": "Reciprocal inhibition occurs when ___.",
+      "options": [
+        "Synergist muscles are activated together",
+        "Antagonistic muscles are prevented from contracting",
+        "All muscles contract simultaneously",
+        "Sensory neurons are blocked"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "ANTAGONISTIC MUSCLES ARE PREVENTED FROM CONTRACTING! This is the definition of reciprocal inhibition. When the agonist contracts, the antagonist is automatically relaxed.",
+      "wrongExplains": {
+        "0": "Synergists cooperate naturally. Reciprocal inhibition is about preventing antagonist contraction.",
+        "2": "Simultaneous contraction would lock the joint. Reciprocal inhibition prevents this.",
+        "3": "Sensory neurons aren't blocked. Motor neurons to the antagonist are inhibited."
+      }
+    }
+  ]
+}

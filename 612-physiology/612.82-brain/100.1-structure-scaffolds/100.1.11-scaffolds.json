@@ -1,0 +1,159 @@
+{
+  "parentId": "100.1.11",
+  "parentQuestion": "A 45-year-old patient presents with inability to feel pain or temperature on the left side of their body below the neck, but motor function remains intact and they can still sense light touch and proprioception. A lesion has most likely damaged which pathway?",
+  "scaffolds": [
+    {
+      "q": "What pathway carries pain and temperature sensations?",
+      "options": [
+        "Corticospinal tract",
+        "Spinothalamic tract",
+        "Dorsal columns",
+        "Reticulospinal tract"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The SPINOTHALAMIC TRACT (anterolateral system) is the dedicated pathway for PAIN and TEMPERATURE. It carries these sensations from the body to the thalamus and then cortex.",
+      "wrongExplains": {
+        "0": "The corticospinal tract carries motor commands DOWN, not sensory information up.",
+        "2": "The dorsal columns carry proprioception and fine touch, not pain/temperature.",
+        "3": "The reticulospinal tract is a motor pathway, not sensory."
+      }
+    },
+    {
+      "q": "What pathway carries proprioception and fine touch?",
+      "options": [
+        "Spinothalamic tract",
+        "Dorsal columns (posterior columns)",
+        "Corticospinal tract",
+        "Spinocerebellar tract"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The DORSAL COLUMNS carry PROPRIOCEPTION (body position sense) and fine discriminative touch. This is a different tract from pain/temperature — they can be damaged separately.",
+      "wrongExplains": {
+        "0": "The spinothalamic tract carries pain and temperature, not proprioception.",
+        "2": "The corticospinal tract is motor, not sensory.",
+        "3": "The spinocerebellar tract goes to the cerebellum for coordination, not conscious sensation."
+      }
+    },
+    {
+      "q": "Where does the spinothalamic tract cross over (decussate)?",
+      "options": [
+        "In the medulla",
+        "In the spinal cord",
+        "In the midbrain",
+        "It doesn't cross"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The SPINOTHALAMIC TRACT crosses in the SPINAL CORD. Pain/temperature fibers synapse in the dorsal horn and immediately cross to the opposite side, then ascend.",
+      "wrongExplains": {
+        "0": "The dorsal columns cross in the medulla. The spinothalamic crosses in the spinal cord.",
+        "2": "The spinothalamic crosses much lower — in the spinal cord, not midbrain.",
+        "3": "It definitely crosses — that's why damage on one side affects the opposite body side."
+      }
+    },
+    {
+      "q": "Where do the dorsal columns cross over (decussate)?",
+      "options": [
+        "In the spinal cord",
+        "In the medulla (much higher up)",
+        "In the cerebrum",
+        "They don't cross"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The DORSAL COLUMNS cross in the MEDULLA — much higher than the spinothalamic tract. Proprioception fibers ascend ipsilaterally all the way to the medulla before crossing.",
+      "wrongExplains": {
+        "0": "The spinothalamic crosses in the spinal cord. The dorsal columns cross higher, in the medulla.",
+        "2": "The crossing happens in the medulla, not the cerebrum.",
+        "3": "They definitely cross — at the medulla level."
+      }
+    },
+    {
+      "q": "Why do different crossing levels matter clinically?",
+      "options": [
+        "They don't matter",
+        "Damage at different levels creates different patterns of deficits",
+        "It only affects motor function",
+        "Only the spinothalamic tract matters"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Different CROSSING POINTS = different DEFICIT PATTERNS. Because tracts cross at different levels, lesions create predictable sensory dissociations that help localize damage.",
+      "wrongExplains": {
+        "0": "Crossing levels are clinically crucial for localizing lesions.",
+        "2": "It affects sensory patterns, not just motor function.",
+        "3": "Both tracts matter — their different crossing points create diagnostic patterns."
+      }
+    },
+    {
+      "q": "If the RIGHT spinothalamic tract is damaged, which side loses pain/temperature?",
+      "options": [
+        "The right side",
+        "The left side (because the tract has already crossed)",
+        "Both sides equally",
+        "Neither side"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The LEFT SIDE loses pain/temperature. The spinothalamic tract has already CROSSED at the spinal cord level, so the RIGHT tract carries pain/temperature from the LEFT body.",
+      "wrongExplains": {
+        "0": "Because the tract crosses in the spinal cord, right tract damage affects left body sensation.",
+        "2": "Only one side is affected — the side opposite to the damaged tract.",
+        "3": "There would be sensory loss — on the opposite side."
+      }
+    },
+    {
+      "q": "What does 'dissociated sensory loss' mean?",
+      "options": [
+        "All sensation is lost",
+        "Some sensory modalities are lost while others are preserved",
+        "Only motor function is affected",
+        "Sensation is enhanced"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "DISSOCIATED SENSORY LOSS means SOME sensory types are lost (pain/temperature) while OTHERS are preserved (proprioception, touch). This pattern indicates selective pathway damage.",
+      "wrongExplains": {
+        "0": "Dissociated means some modalities are lost, some are preserved — not all lost.",
+        "2": "This describes sensory loss, not motor problems.",
+        "3": "Sensation is lost in specific modalities, not enhanced."
+      }
+    },
+    {
+      "q": "A patient lost pain and temperature sensation on one side but retained motor function and proprioception. What does this pattern indicate?",
+      "options": [
+        "Complete spinal cord transection",
+        "Selective spinothalamic tract damage",
+        "Dorsal column damage",
+        "Motor cortex stroke"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "SELECTIVE SPINOTHALAMIC TRACT DAMAGE. Pain/temperature lost, but motor (corticospinal) and proprioception (dorsal columns) are intact. This dissociation pinpoints the spinothalamic tract.",
+      "wrongExplains": {
+        "0": "Complete transection would affect all modalities. Here proprioception and motor are preserved.",
+        "2": "Dorsal column damage would affect proprioception, which is intact here.",
+        "3": "Motor cortex stroke would cause weakness. Motor function is normal here."
+      }
+    },
+    {
+      "q": "Which pathway is most likely damaged in this patient?",
+      "options": [
+        "Left dorsal columns",
+        "Right spinothalamic tract",
+        "Left corticospinal tract",
+        "Right dorsal columns"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "RIGHT SPINOTHALAMIC TRACT. It carries pain/temperature from the LEFT body (after crossing in the spinal cord). Dorsal columns are intact (proprioception preserved). Corticospinal tracts are intact (motor preserved).",
+      "wrongExplains": {
+        "0": "Dorsal column damage would affect proprioception, which is preserved.",
+        "2": "Corticospinal damage would cause motor weakness, which is absent.",
+        "3": "Dorsal column damage would affect proprioception, not pain/temperature."
+      }
+    }
+  ]
+}

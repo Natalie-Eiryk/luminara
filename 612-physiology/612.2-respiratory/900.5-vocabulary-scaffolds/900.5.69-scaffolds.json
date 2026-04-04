@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.69",
+  "parentQuestion": "The term 'bronchiectasis' means:",
+  "narrative": {
+    "setting": "The Magic School Bus navigates Mr. Edgar's bronchi - but these aren't normal tubular airways. They're grotesquely dilated, baggy, filled with thick purulent secretions. The walls are destroyed, scarred, irreversibly widened. Ms. Frizzle measures the diameter. 'Three times normal width,' she reports. '-ectasis means dilation. Bronchi-ectasis - permanently dilated bronchi from chronic infection and inflammation.'",
+    "character": "Mr. Edgar",
+    "tension": "Cystic fibrosis patients cough up cups of sputum daily from bronchiectatic airways. Post-TB scarring leaves permanently damaged bronchi prone to infection. Immune deficiency patients can't clear bacteria. Understanding bronchiectasis isn't just anatomy - it's understanding irreversible structural damage that creates a vicious cycle of infection and inflammation."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.69.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'-ectasis means dilation or expansion,' Ms. Frizzle begins. 'Not temporary like asthma bronchospasm - PERMANENT structural change. Bronchi lose their normal elastic and muscular support, become baggy and widened.'",
+      "q": "The suffix '-ectasis' means:",
+      "options": [
+        "Constriction",
+        "Dilation/expansion",
+        "Inflammation",
+        "Infection"
+      ],
+      "answer": 1,
+      "explain": "'-ECTASIS' = DILATION/EXPANSION. Bronchi-ectasis = dilated bronchi. Atelectasis = collapsed/unexpanded alveoli (a- = without). Telangiectasia = dilated capillaries.",
+      "wrongExplains": {
+        "0": "Constriction = -stenosis or -spasm. -ectasis is the OPPOSITE (dilation).",
+        "2": "Inflammation = -itis. -ectasis is about structural dilation.",
+        "3": "Infection isn't implied by -ectasis. It's purely structural dilation."
+      }
+    },
+    {
+      "id": "900.5.69.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Irreversible is the key word,' Ms. Frizzle emphasizes. 'Asthma bronchoconstriction reverses. Bronchiectasis is PERMANENT damage. Once airways are destroyed and dilated, they stay that way. No cure, only management.'",
+      "q": "Bronchiectasis is:",
+      "options": [
+        "Temporary and reversible",
+        "Permanent and irreversible",
+        "Only lasts days",
+        "Cured by antibiotics"
+      ],
+      "answer": 1,
+      "explain": "Bronchiectasis is PERMANENT/IRREVERSIBLE bronchial dilation from chronic damage. Scarred airways don't recover. Treatment manages symptoms/infections but doesn't reverse structure.",
+      "wrongExplains": {
+        "0": "Bronchiectasis is IRREVERSIBLE structural damage. Not temporary.",
+        "2": "Bronchiectasis is a chronic, lifelong condition. Not acute/days.",
+        "3": "Antibiotics treat infections but don't reverse structural bronchial dilation."
+      }
+    },
+    {
+      "id": "900.5.69.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Common causes,' Ms. Frizzle lists. 'Cystic fibrosis (most common), post-TB scarring, chronic infections, immune deficiency, allergic bronchopulmonary aspergillosis. Anything causing repeated bronchial damage and infection creates a vicious cycle.'",
+      "q": "Common causes of bronchiectasis include:",
+      "options": [
+        "Single viral cold",
+        "Cystic fibrosis, chronic infections, immune deficiency",
+        "Exercise",
+        "Normal aging"
+      ],
+      "answer": 1,
+      "explain": "Bronchiectasis causes: CYSTIC FIBROSIS (most common), recurrent infections, TB, immune deficiency, ABPA. Chronic inflammation damages airways. Vicious cycle: dilation → mucus pooling → infection → more damage.",
+      "wrongExplains": {
+        "0": "Single viral infection doesn't cause permanent dilation. Chronic/severe infections do.",
+        "2": "Exercise doesn't cause bronchiectasis. Chronic infection/inflammation does.",
+        "3": "Normal aging doesn't cause bronchiectasis. It's pathologic from chronic damage."
+      }
+    },
+    {
+      "id": "900.5.69.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'The vicious cycle,' Ms. Frizzle diagrams. 'Chronic infection/inflammation → airway damage → dilation → mucus pools in dilated airways → bacteria thrive → more infection → more damage. Self-perpetuating. Airways can't clear secretions.'",
+      "q": "In bronchiectasis, dilated airways lead to:",
+      "options": [
+        "Perfect mucus clearance",
+        "Mucus pooling and chronic infection",
+        "No mucus production",
+        "Immediate healing"
+      ],
+      "answer": 1,
+      "explain": "Dilated, damaged airways can't clear mucus effectively. MUCUS POOLS → bacterial overgrowth → chronic/recurrent INFECTION → more damage. Vicious cycle perpetuates bronchiectasis.",
+      "wrongExplains": {
+        "0": "Dilated airways IMPAIR clearance. Mucus pools instead of being cleared.",
+        "2": "Bronchiectasis often has INCREASED mucus production. The problem is clearance.",
+        "3": "Bronchiectasis is irreversible. No healing - progressive damage without treatment."
+      }
+    },
+    {
+      "id": "900.5.69.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Clinical presentation,' Ms. Frizzle describes. 'Chronic PRODUCTIVE cough - lots of purulent sputum (cups per day). Hemoptysis (damaged vessels). Dyspnea. Recurrent pneumonias. Crackles/rhonchi on exam. Finger clubbing in severe cases.'",
+      "q": "The hallmark symptom of bronchiectasis is:",
+      "options": [
+        "Dry cough",
+        "Chronic productive cough with copious purulent sputum",
+        "No cough",
+        "Only wheezing"
+      ],
+      "answer": 1,
+      "explain": "Bronchiectasis = CHRONIC PRODUCTIVE COUGH with COPIOUS PURULENT SPUTUM (often cups/day). Dilated airways pool infected secretions. Hemoptysis, dyspnea, recurrent infections also common.",
+      "wrongExplains": {
+        "0": "Dry cough is NOT characteristic. Bronchiectasis produces abundant purulent sputum.",
+        "2": "Bronchiectasis has prominent cough with sputum. Not asymptomatic.",
+        "3": "Wheezing can occur but productive cough with sputum is the hallmark."
+      }
+    },
+    {
+      "id": "900.5.69.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'CT chest - the diagnostic gold standard,' Ms. Frizzle shows the image. 'Dilated bronchi - wider than adjacent vessels ('signet ring sign'). Lack of bronchial tapering. Bronchial wall thickening. 'Tram-track' appearance. Mucus plugging. High-resolution CT shows it all.'",
+      "q": "The 'signet ring sign' on CT in bronchiectasis refers to:",
+      "options": [
+        "Normal bronchi",
+        "Dilated bronchus wider than adjacent pulmonary artery",
+        "Collapsed lung",
+        "Tumor"
+      ],
+      "answer": 1,
+      "explain": "'SIGNET RING SIGN' = dilated BRONCHUS (ring) wider than adjacent PULMONARY ARTERY (gem/stone). Normally bronchi should be smaller. Classic CT finding in bronchiectasis.",
+      "wrongExplains": {
+        "0": "Normal bronchi are SMALLER than adjacent vessels. Signet ring indicates pathologic dilation.",
+        "2": "Collapsed lung is atelectasis. Signet ring is dilated bronchi in bronchiectasis.",
+        "3": "Tumors appear as masses. Signet ring is dilated airway morphology."
+      }
+    },
+    {
+      "id": "900.5.69.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Cystic fibrosis and bronchiectasis,' Ms. Frizzle connects them. 'CF is the MOST COMMON cause of bronchiectasis. Thick mucus plugs airways, chronic Pseudomonas infection, progressive bronchial destruction. CF patients live with severe bronchiectasis.'",
+      "q": "The most common cause of bronchiectasis is:",
+      "options": [
+        "Asthma",
+        "Cystic fibrosis",
+        "Common cold",
+        "Exercise"
+      ],
+      "answer": 1,
+      "explain": "CYSTIC FIBROSIS is the most common cause of bronchiectasis. Thick mucus, chronic infection (Pseudomonas), progressive airway destruction. Also: post-TB, immune deficiency, chronic infections.",
+      "wrongExplains": {
+        "0": "Asthma is reversible bronchoconstriction. CF causes irreversible bronchiectasis.",
+        "2": "Common cold doesn't cause structural bronchial damage. CF and chronic infections do.",
+        "3": "Exercise doesn't cause bronchiectasis. Chronic infection/inflammation does."
+      }
+    },
+    {
+      "id": "900.5.69.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Treatment goals,' Ms. Frizzle outlines. 'Can't reverse dilation. Goals: (1) Prevent infections - vaccines, prophylactic antibiotics. (2) Clear secretions - chest PT, bronchodilators. (3) Treat infections aggressively. (4) Surgery for localized disease/hemoptysis.'",
+      "q": "Treatment of bronchiectasis focuses on:",
+      "options": [
+        "Reversing the dilation",
+        "Preventing infections and clearing secretions",
+        "One-time antibiotic",
+        "Ignoring symptoms"
+      ],
+      "answer": 1,
+      "explain": "Bronchiectasis treatment (dilation is IRREVERSIBLE): PREVENT infections (vaccines, prophylactic antibiotics), CLEAR secretions (chest PT, bronchodilators), treat exacerbations aggressively. Surgery for severe localized disease.",
+      "wrongExplains": {
+        "0": "Dilation is IRREVERSIBLE. Treatment manages complications, not reverses structure.",
+        "2": "Chronic condition needs ongoing management, not single antibiotic course.",
+        "3": "Symptoms require active management to prevent progression and complications."
+      }
+    },
+    {
+      "id": "900.5.69.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Chronic infection patterns,' Ms. Frizzle notes. 'Pseudomonas aeruginosa, Haemophilus influenzae, Staphylococcus aureus - classic organisms in bronchiectatic airways. Culture sputum regularly. Prolonged antibiotic courses for exacerbations.'",
+      "q": "Common pathogens in bronchiectasis include:",
+      "options": [
+        "No bacteria ever",
+        "Pseudomonas, Haemophilus, Staph aureus",
+        "Only viruses",
+        "Only fungi"
+      ],
+      "answer": 1,
+      "explain": "Bronchiectasis harbors chronic bacteria: PSEUDOMONAS AERUGINOSA, HAEMOPHILUS INFLUENZAE, STAPH AUREUS. Pooled secretions in dilated airways create perfect bacterial environment. Regular cultures guide therapy.",
+      "wrongExplains": {
+        "0": "Bronchiectatic airways are colonized/infected with bacteria. That's the problem.",
+        "2": "Bacteria (not viruses) cause chronic infections in bronchiectasis.",
+        "3": "Fungi are less common. Bacteria dominate (Pseudomonas, Haemophilus, Staph)."
+      }
+    },
+    {
+      "id": "900.5.69.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Ms. Frizzle looks at the permanently dilated, scarred airways filled with purulent secretions. 'Bronchi-ectasis - the structure tells the story. Dilation, not constriction. Permanent, not temporary. So, class: what does bronchiectasis mean?'",
+      "q": "The term 'bronchiectasis' means:",
+      "options": [
+        "Bronchial constriction",
+        "Permanent bronchial dilation",
+        "Bronchial inflammation",
+        "Bronchial cancer"
+      ],
+      "answer": 1,
+      "explain": "BRONCHIECTASIS = PERMANENT BRONCHIAL DILATION from chronic damage. '-ectasis' = dilation. Causes: CF (most common), chronic infections, TB, immune deficiency. Vicious cycle: dilation → mucus pooling → infection.",
+      "wrongExplains": {
+        "0": "Bronchial constriction is bronchoconstriction (asthma). '-ectasis' means dilation, not constriction.",
+        "2": "Bronchial inflammation alone is bronchitis. Bronchiectasis is structural dilation from repeated damage.",
+        "3": "Bronchial cancer would be bronchogenic carcinoma - not '-ectasis.'"
+      }
+    }
+  ]
+}

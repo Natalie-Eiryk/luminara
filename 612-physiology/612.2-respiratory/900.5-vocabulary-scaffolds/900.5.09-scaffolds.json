@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.09",
+  "parentQuestion": "The point where the trachea divides into the two main bronchi is called the:",
+  "narrative": {
+    "setting": "The Magic School Bus descends through Mr. Edgar's trachea, passing ring after ring of cartilage. Ahead, the single tube ends - splitting into two branches like a tree trunk dividing. A sharp ridge marks the division. 'The fork in the road,' Ms. Frizzle announces. 'Left lung or right lung - choose your path.'",
+    "character": "Mr. Edgar",
+    "tension": "The bus needs to examine both lungs, but must understand this critical junction first. Something lodged here could block air to an entire lung."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.09.s01",
+      "arc": 1,
+      "arcTitle": "The Keel of the Airways",
+      "narrative": "Ms. Frizzle points to the sharp ridge where the airways split. 'The Romans named this after something from their ships,' she says. 'Feel how it looks like the central ridge at the bottom of a boat.'",
+      "q": "The Latin word 'carina' means:",
+      "options": [
+        "Circular opening",
+        "Keel (of a ship)",
+        "Branching point",
+        "Air passage"
+      ],
+      "answer": 1,
+      "explain": "'Carina' means KEEL - the central ridge running along the bottom of a ship's hull. The tracheal carina is a cartilaginous ridge shaped exactly like a ship's keel, dividing airflow left and right.",
+      "wrongExplains": {
+        "0": "A circular opening would have a different Latin name. The carina is specifically ridge-shaped, like a keel.",
+        "2": "'Branching point' is its FUNCTION, but the name comes from its SHAPE - the keel appearance.",
+        "3": "'Air passage' doesn't capture the keel imagery. The name describes the ridge's ship-like form."
+      }
+    },
+    {
+      "id": "900.5.09.s02",
+      "arc": 1,
+      "arcTitle": "The Keel of the Airways",
+      "narrative": "'Where exactly are we in Mr. Edgar's body?' Ms. Frizzle checks the bus's navigation. 'Let me show you the landmarks.' A vertebral column appears on screen, with levels marked.",
+      "q": "At approximately which vertebral level does the trachea bifurcate?",
+      "options": [
+        "C3-C4",
+        "T4-T5",
+        "L1-L2",
+        "S1-S2"
+      ],
+      "answer": 1,
+      "explain": "The carina is at approximately T4-T5 (thoracic vertebrae 4-5), roughly level with the sternal angle (where the manubrium meets the body of the sternum). It's in the mid-upper chest.",
+      "wrongExplains": {
+        "0": "C3-C4 is in the NECK - way too high. The trachea hasn't even started at that level.",
+        "2": "L1-L2 is in the LOWER BACK - the airway bifurcation is much higher in the chest.",
+        "3": "S1-S2 is in the SACRUM - the lowest part of the spine. The carina is in the thorax."
+      }
+    },
+    {
+      "id": "900.5.09.s03",
+      "arc": 1,
+      "arcTitle": "The Keel of the Airways",
+      "narrative": "'Don't touch that ridge!' Ms. Frizzle warns as the bus approaches. 'The carina is one of the most sensitive spots in the entire airway. Brush against it and...'",
+      "q": "The carina is highly sensitive. What happens if it's touched during bronchoscopy?",
+      "options": [
+        "Nothing - it's numb",
+        "Violent coughing",
+        "Sneezing",
+        "Hiccups"
+      ],
+      "answer": 1,
+      "explain": "The carina is EXTREMELY sensitive - touching it triggers VIOLENT, uncontrollable COUGHING. It's a protective reflex to clear the airway of foreign objects. Bronchoscopists must be very careful here.",
+      "wrongExplains": {
+        "0": "The OPPOSITE of numb! The carina has dense nerve endings - it's hypersensitive.",
+        "2": "Sneezing is triggered by NASAL irritation. The carina triggers the cough reflex.",
+        "3": "Hiccups involve DIAPHRAGM spasms. Carina irritation causes coughing."
+      }
+    },
+    {
+      "id": "900.5.09.s04",
+      "arc": 2,
+      "arcTitle": "Two Paths Diverge",
+      "narrative": "The bus hovers at the fork. 'Left or right?' Ms. Frizzle asks. 'Notice they're not identical. The right bronchus goes almost straight down, while the left has to curve around something.'",
+      "q": "Which main bronchus is more vertical - right or left?",
+      "options": [
+        "Left bronchus",
+        "Right bronchus",
+        "They are exactly the same angle",
+        "Neither has a definite angle"
+      ],
+      "answer": 1,
+      "explain": "The RIGHT bronchus is more VERTICAL - it descends at a steeper angle, almost in line with the trachea. The LEFT bronchus must angle MORE HORIZONTALLY to pass around the heart.",
+      "wrongExplains": {
+        "0": "The LEFT is more HORIZONTAL because the heart pushes it aside. The right is the steep one.",
+        "2": "They have VERY different angles! The asymmetry is clinically important.",
+        "3": "Both have definite, measurable angles - the difference is consistent and significant."
+      }
+    },
+    {
+      "id": "900.5.09.s05",
+      "arc": 2,
+      "arcTitle": "Two Paths Diverge",
+      "narrative": "'This asymmetry matters clinically,' Ms. Frizzle explains. 'If someone aspirates something - inhales food, a tooth, a small object - where does it usually end up?'",
+      "q": "Aspirated foreign objects most commonly enter the:",
+      "options": [
+        "Left lung",
+        "Right lung",
+        "Both equally",
+        "Neither - they stay in the trachea"
+      ],
+      "answer": 1,
+      "explain": "The RIGHT LUNG receives most aspirated objects! The right bronchus is wider, shorter, and more vertical - almost a straight shot from the trachea. Gravity pulls objects down the path of least resistance.",
+      "wrongExplains": {
+        "0": "The left bronchus's horizontal angle deflects objects. The right's vertical path catches them.",
+        "2": "Definitely NOT equal. The right lung's anatomy makes it the 'aspiration lung.'",
+        "3": "Objects rarely stay in the trachea - coughing or gravity moves them into a bronchus."
+      }
+    },
+    {
+      "id": "900.5.09.s06",
+      "arc": 2,
+      "arcTitle": "Two Paths Diverge",
+      "narrative": "'The trachea splits into how many branches?' Ms. Frizzle quizzes. 'We need to be clear about terminology. Main bronchi, not all the later divisions.'",
+      "q": "The trachea splits into how many main bronchi?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Five"
+      ],
+      "answer": 1,
+      "explain": "TWO main bronchi - one RIGHT, one LEFT. Each main bronchus then divides further into lobar bronchi (3 right, 2 left), then segmental bronchi, then smaller branches. But the initial split is just two.",
+      "wrongExplains": {
+        "0": "ONE bronchus couldn't supply both lungs. The trachea MUST split to reach both sides.",
+        "2": "THREE lobar bronchi exist in the RIGHT lung, but only TWO main bronchi total.",
+        "3": "FIVE is the total number of LOBES (3 right + 2 left), not the number of main bronchi."
+      }
+    },
+    {
+      "id": "900.5.09.s07",
+      "arc": 3,
+      "arcTitle": "Into the Lung",
+      "narrative": "The bus follows the right bronchus into the lung. At the lung's surface, you see where the bronchus, blood vessels, and nerves all enter together. 'The doorway,' Ms. Frizzle points. 'Everything important passes through here.'",
+      "q": "What is the 'hilum' of the lung?",
+      "options": [
+        "The tip at the top of the lung",
+        "The area where structures enter/exit the lung",
+        "The bottom surface on the diaphragm",
+        "The space between the lobes"
+      ],
+      "answer": 1,
+      "explain": "The HILUM is the indentation on the medial (inner) surface of each lung where the bronchus, pulmonary artery, pulmonary veins, lymphatics, and nerves ENTER and EXIT. It's the lung's root, its connection point.",
+      "wrongExplains": {
+        "0": "The tip at the top is the APEX. The hilum is on the medial side, not the top.",
+        "2": "The bottom surface is the BASE. The hilum is medially located, not inferior.",
+        "3": "Spaces between lobes are FISSURES. The hilum is where structures enter."
+      }
+    },
+    {
+      "id": "900.5.09.s08",
+      "arc": 3,
+      "arcTitle": "Into the Lung",
+      "narrative": "'Let's compare the carina to the hilum,' Ms. Frizzle says. 'Students often confuse them. One is where the airway splits, one is where things enter the lung.'",
+      "q": "The carina differs from the hilum because the carina is:",
+      "options": [
+        "Where structures enter the lung",
+        "Where the trachea divides",
+        "Inside the lung tissue",
+        "On the lateral surface"
+      ],
+      "answer": 1,
+      "explain": "The CARINA is WHERE THE TRACHEA DIVIDES into left and right bronchi - it's in the MEDIASTINUM, not in the lung. The HILUM is where structures ENTER the lung. Different locations, different functions.",
+      "wrongExplains": {
+        "0": "That's the HILUM! The carina is specifically the tracheal bifurcation ridge.",
+        "2": "The carina is in the AIRWAY, in the mediastinum - OUTSIDE actual lung tissue.",
+        "3": "Both carina and hilum are medial structures. Neither is on the lateral surface."
+      }
+    },
+    {
+      "id": "900.5.09.s09",
+      "arc": 3,
+      "arcTitle": "Into the Lung",
+      "narrative": "'The sternal angle,' Ms. Frizzle notes, 'is a surface landmark at the same level as the carina. Doctors use it to locate the bifurcation from outside the body.'",
+      "q": "The sternal angle is useful because it marks:",
+      "options": [
+        "The top of the trachea",
+        "The level of the tracheal bifurcation",
+        "The bottom of the lungs",
+        "The diaphragm position"
+      ],
+      "answer": 1,
+      "explain": "The STERNAL ANGLE (where the manubrium meets the sternum body) is at approximately the same level as the CARINA (T4-T5). It's a palpable surface landmark for locating the tracheal bifurcation.",
+      "wrongExplains": {
+        "0": "The top of the trachea is at C6, much higher. The sternal angle marks the bifurcation level.",
+        "2": "The bottom of the lungs is lower, around T10-T12. Different landmark.",
+        "3": "The diaphragm is much lower, around T10-L2 depending on breathing phase."
+      }
+    },
+    {
+      "id": "900.5.09.s10",
+      "arc": 3,
+      "arcTitle": "Into the Lung",
+      "narrative": "The bus hovers at the ridge where left and right diverge. The keel-shaped carina, sensitive and critical, guards the entrance to both lungs. 'This division point,' Ms. Frizzle asks, 'what's it called?'",
+      "q": "The point where the trachea divides into the two main bronchi is called the:",
+      "options": [
+        "Hilum",
+        "Carina",
+        "Sternal angle",
+        "Cricoid"
+      ],
+      "answer": 1,
+      "explain": "The CARINA - from Latin for 'keel.' This cartilaginous ridge at ~T5 marks where the single trachea becomes two bronchi. Extremely sensitive to touch, it guards the airway's most critical fork.",
+      "wrongExplains": {
+        "0": "The hilum is where structures ENTER the LUNG. The carina is where the TRACHEA splits.",
+        "2": "The sternal angle is a BONY landmark at the same LEVEL, not the split point itself.",
+        "3": "The cricoid is a LARYNGEAL cartilage, well ABOVE the tracheal bifurcation."
+      }
+    }
+  ]
+}

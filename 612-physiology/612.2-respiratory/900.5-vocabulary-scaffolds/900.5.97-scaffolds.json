@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.97",
+  "parentQuestion": "Hypoxic pulmonary vasoconstriction redirects blood flow to:",
+  "narrative": {
+    "setting": "The Magic School Bus is stationed near a poorly ventilated alveolus - thick mucus blocks the airway. Oxygen levels here are dangerously low. You watch as the small arteriole feeding this region begins to constrict, narrowing its diameter. Blood flow slows, then diverts to neighboring vessels. Ms. Frizzle nods approvingly: 'HPV - hypoxic pulmonary vasoconstriction. The lungs' automatic quality control. Mr. Edgar's body is smart enough to redirect blood away from problem areas.'",
+    "character": "Mr. Edgar",
+    "tension": "Widespread hypoxia is triggering global HPV. Understanding this mechanism could prevent pulmonary hypertension."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.97.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "Ms. Frizzle breaks down the term on a holographic display: 'Hyp-ox-ic. Three parts, each critical to understanding this protective reflex.'",
+      "q": "The prefix 'hyp-' (or 'hypo-') means:",
+      "options": [
+        "Above, excessive",
+        "Below, deficient",
+        "Around, surrounding",
+        "Normal, balanced"
+      ],
+      "answer": 1,
+      "explain": "'HYPO-' = BELOW, UNDER, DEFICIENT. Think: hypothermia (low temp), hypotension (low BP), hypoglycemia (low sugar). HYPOxia = LOW oxygen. Opposite of 'hyper-' (high).",
+      "wrongExplains": {
+        "0": "That's 'HYPER-'. Hypo is the opposite - deficient, below normal.",
+        "2": "That's 'circum-' or 'peri-'. Hypo means below/under, not around.",
+        "3": "Normal would be 'normo-' or 'eu-'. Hypo indicates deficiency."
+      }
+    },
+    {
+      "id": "900.5.97.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "The oxygen sensor on the bus flashes red. 'Hypoxic,' Ms. Frizzle reads. 'This alveolus isn't getting enough oxygen. That's the trigger for the whole response.'",
+      "q": "The term 'hypoxic' means:",
+      "options": [
+        "Too much oxygen",
+        "Low oxygen / oxygen-deficient",
+        "Normal oxygen levels",
+        "No carbon dioxide"
+      ],
+      "answer": 1,
+      "explain": "'HYPOXIC' = LOW OXYGEN condition. Hypo (low) + ox (oxygen) + ic (relating to). Can refer to tissue, blood, or in this case, alveolar air. The opposite is 'hyperoxic' (high oxygen).",
+      "wrongExplains": {
+        "0": "Too much oxygen is 'hyperOXic'. HYPOxic means LOW oxygen.",
+        "2": "Normal oxygen is 'normoxic'. The 'hypo-' prefix signals deficiency.",
+        "3": "That's about CO2, not O2. Hypoxic specifically refers to oxygen deficiency."
+      }
+    },
+    {
+      "id": "900.5.97.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "You watch the arteriole's smooth muscle cells contract. The vessel diameter shrinks. 'Vasoconstriction,' Ms. Frizzle announces. 'Vaso - vessel. Constriction - narrowing. The blood highway is closing lanes.'",
+      "q": "Vasoconstriction means:",
+      "options": [
+        "Blood vessel widening/dilation",
+        "Blood vessel narrowing/constriction",
+        "Blood vessel rupture",
+        "Blood clot formation"
+      ],
+      "answer": 1,
+      "explain": "VASOCONSTRICTION = blood vessel NARROWING. Vaso (vessel) + constriction (squeezing tight). Smooth muscle in vessel walls contracts → smaller diameter → reduced blood flow. Opposite is vasodilation (widening).",
+      "wrongExplains": {
+        "0": "That's VASODILATION (opposite). Constriction means narrowing, not widening.",
+        "2": "Rupture is vessel breaking/tearing. Constriction is controlled narrowing by muscle contraction.",
+        "3": "Clot formation is thrombosis. Vasoconstriction is smooth muscle action, not clotting."
+      }
+    },
+    {
+      "id": "900.5.97.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "Ms. Frizzle zooms in on the arteriole wall. Oxygen sensors in smooth muscle cells detect the low O2. 'The cells sense hypoxia directly,' she explains. 'No brain needed - this is local control.'",
+      "q": "What triggers hypoxic pulmonary vasoconstriction?",
+      "options": [
+        "High oxygen in alveolar air",
+        "Low oxygen in alveolar air/tissue",
+        "High carbon dioxide only",
+        "Nervous system signals from the brain"
+      ],
+      "answer": 1,
+      "explain": "LOW ALVEOLAR O2 is the trigger. Oxygen sensors in pulmonary artery smooth muscle detect hypoxia → vessels constrict. It's LOCAL (automatic in each region), not centrally controlled. The exact mechanism involves mitochondria, ROS, and calcium channels.",
+      "wrongExplains": {
+        "0": "HIGH oxygen would cause vasoDILATION, not constriction. HPV is triggered by LOW oxygen.",
+        "2": "High CO2 can affect pulmonary vessels, but HPV specifically responds to LOW O2.",
+        "3": "HPV is LOCAL, not neurally controlled. Each arteriole responds to its own regional oxygen level independently."
+      }
+    },
+    {
+      "id": "900.5.97.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "Blood diverts from the constricted vessel to a nearby well-oxygenated alveolus. 'Optimization in action,' Ms. Frizzle marvels. 'Why send blood where it can't get oxygen? Send it where oxygen is abundant.'",
+      "q": "The purpose of hypoxic pulmonary vasoconstriction is to:",
+      "options": [
+        "Increase blood flow to poorly ventilated areas",
+        "Redirect blood flow to well-ventilated areas",
+        "Stop all blood flow in the lungs",
+        "Increase dead space"
+      ],
+      "answer": 1,
+      "explain": "HPV REDIRECTS blood AWAY FROM poorly ventilated (hypoxic) regions TOWARD well-ventilated (oxygen-rich) regions. It's automatic V/Q matching - optimizing gas exchange efficiency. Don't waste blood on areas that can't oxygenate it.",
+      "wrongExplains": {
+        "0": "Opposite! HPV REDUCES flow to poorly ventilated areas. Sending blood there would waste perfusion.",
+        "2": "HPV doesn't stop ALL flow - it redistributes it. Blood shifts to better regions.",
+        "3": "HPV REDUCES dead space by matching perfusion to ventilation. It improves efficiency."
+      }
+    },
+    {
+      "id": "900.5.97.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus floats higher in Mr. Edgar's lungs - he's at high altitude. Every alveolus is hypoxic due to low atmospheric pressure. Every arteriole begins to constrict. 'Uh oh,' Ms. Frizzle warns. 'Global HPV is a problem.'",
+      "q": "What happens when hypoxic vasoconstriction occurs globally throughout the lungs?",
+      "options": [
+        "Oxygen levels improve dramatically",
+        "Pulmonary artery pressure increases (pulmonary hypertension)",
+        "Blood pressure in the aorta drops",
+        "The lungs expand"
+      ],
+      "answer": 1,
+      "explain": "Global HPV (all vessels constricting) → INCREASED PULMONARY VASCULAR RESISTANCE → PULMONARY HYPERTENSION → right heart strain. Adaptive when localized, pathological when global (high altitude, chronic hypoxia, COPD).",
+      "wrongExplains": {
+        "0": "Global HPV doesn't fix the underlying hypoxia - it just increases pulmonary artery pressure. You need more oxygen or better ventilation.",
+        "2": "HPV affects PULMONARY circulation (right heart), not systemic (left heart/aorta). Different circuits.",
+        "3": "HPV is vascular (blood vessel) response, not mechanical lung expansion. It constricts vessels, doesn't inflate lungs."
+      }
+    },
+    {
+      "id": "900.5.97.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Let's compare circulations,' Ms. Frizzle says, pulling up the systemic arteries. 'Systemic vessels do the OPPOSITE in response to hypoxia. Why?'",
+      "q": "How does pulmonary response to hypoxia differ from systemic response?",
+      "options": [
+        "Both constrict in response to low oxygen",
+        "Pulmonary vessels constrict; systemic vessels dilate in hypoxia",
+        "Pulmonary vessels dilate; systemic vessels constrict",
+        "Neither responds to oxygen levels"
+      ],
+      "answer": 1,
+      "explain": "PULMONARY: hypoxia → CONSTRICTION (redirect blood to better areas). SYSTEMIC: hypoxia → DILATION (bring more blood to oxygen-starved tissue). Opposite responses because opposite goals. Lungs optimize matching; tissues demand more perfusion.",
+      "wrongExplains": {
+        "0": "Opposite responses! Pulmonary constricts, systemic dilates. Different jobs, different reactions.",
+        "2": "Backwards! Pulmonary = constrict, systemic = dilate in response to hypoxia.",
+        "3": "Both are exquisitely sensitive to O2. The responses are opposite but both are active."
+      }
+    },
+    {
+      "id": "900.5.97.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "A fetus floats by on a monitor. 'In the womb,' Ms. Frizzle explains, 'the lungs are fluid-filled and hypoxic. HPV keeps most blood away, shunting it through the ductus arteriosus. At first breath, oxygen reverses everything.'",
+      "q": "What role does HPV play in fetal circulation?",
+      "options": [
+        "It increases blood flow to fluid-filled lungs",
+        "It maintains high pulmonary resistance, shunting blood away from lungs",
+        "It has no role in fetuses",
+        "It opens the ductus arteriosus"
+      ],
+      "answer": 1,
+      "explain": "Fetal lungs are HYPOXIC (fluid-filled, no air) → HPV constricts pulmonary vessels → HIGH resistance → blood bypasses lungs via foramen ovale and ductus arteriosus. At birth, oxygen reverses HPV → resistance drops → blood flows to lungs. Brilliant design.",
+      "wrongExplains": {
+        "0": "HPV REDUCES flow to fetal lungs (they're not needed yet). Blood is shunted to placenta instead.",
+        "2": "HPV is critical in fetal circulation - it's what maintains the high pulmonary resistance that makes shunts work.",
+        "3": "HPV keeps resistance HIGH, which maintains shunting. Oxygen at birth reverses HPV, allowing ductus to close."
+      }
+    },
+    {
+      "id": "900.5.97.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "COPD, chronic hypoxia, high altitude pulmonary edema (HAPE) - conditions flash across the screen. 'When HPV goes wrong,' Ms. Frizzle warns, 'or when it's overwhelmed, pathology follows.'",
+      "q": "Chronic global HPV (as in COPD or high altitude) can lead to:",
+      "options": [
+        "Improved oxygenation",
+        "Right ventricular hypertrophy and cor pulmonale",
+        "Left heart failure",
+        "Decreased pulmonary pressure"
+      ],
+      "answer": 1,
+      "explain": "Chronic global HPV → sustained PULMONARY HYPERTENSION → right ventricle pumps against high resistance → RIGHT VENTRICULAR HYPERTROPHY → eventual right heart failure (COR PULMONALE). It's adaptive acutely, destructive chronically.",
+      "wrongExplains": {
+        "0": "Global HPV RAISES pressure but doesn't fix the underlying hypoxia. Oxygenation may worsen due to reduced cardiac output.",
+        "2": "LEFT heart failure is from systemic hypertension or valve disease. HPV affects the RIGHT heart (pulmonary circuit).",
+        "3": "HPV INCREASES pulmonary pressure. That's the problem - chronic high pressure damages the right heart."
+      }
+    },
+    {
+      "id": "900.5.97.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "The mucus plug clears. Oxygen floods the previously hypoxic alveolus. The arteriole relaxes, dilates, blood flow returns. 'Normal again,' Ms. Frizzle smiles. 'HPV is reversible. Now show me you understand it.'",
+      "q": "Hypoxic pulmonary vasoconstriction redirects blood flow to:",
+      "options": [
+        "Poorly ventilated, hypoxic areas",
+        "Well-ventilated, oxygen-rich areas",
+        "The systemic circulation",
+        "The bronchial arteries"
+      ],
+      "answer": 1,
+      "explain": "HPV redirects blood AWAY FROM hypoxic (poorly ventilated) areas TOWARD well-ventilated (oxygen-rich) areas. It's automatic V/Q optimization - matching perfusion to ventilation for maximum gas exchange efficiency. Local, protective, reversible.",
+      "wrongExplains": {
+        "0": "Opposite! HPV diverts blood AWAY FROM hypoxic areas. Sending blood there wastes perfusion.",
+        "2": "HPV redistributes blood WITHIN the pulmonary circulation, not between pulmonary and systemic circuits.",
+        "3": "Bronchial arteries are systemic circulation (separate from pulmonary). HPV affects pulmonary arterioles."
+      }
+    }
+  ]
+}

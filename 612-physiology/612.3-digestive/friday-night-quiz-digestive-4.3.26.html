@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Content Security Policy - Allow embedded data, external fonts/scripts -->
+<meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  script-src 'self' 'unsafe-inline';
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+  font-src 'self' https://fonts.gstatic.com;
+  img-src 'self' data: https:;
+  connect-src 'self';
+  frame-ancestors 'none';
+  base-uri 'self';
+">
+
+<title>Friday Night Digestive Quiz Pt. 2 · 4.3.26 · Ms. Luminara</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Crimson+Pro:wght@300;400;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --void: #03060d;
+  --surface: #0a0f1a;
+  --panel: #0e1525;
+  --panel-hover: #131d30;
+  --border: rgba(56,189,248,0.12);
+  --primary: #38bdf8;
+  --warm: #f59e0b;
+  --lumi: #f472b6;
+  --purple: #a78bfa;
+  --correct: #4ade80;
+  --incorrect: #f87171;
+  --text: #e2ecf8;
+  --mid: #8ba5c2;
+  --dim: #3d5169;
+  --bright: #f0f7ff;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--void);
+  color: var(--text);
+  font-family: 'Crimson Pro', serif;
+  min-height: 100vh;
+  font-size: 17px;
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse 80% 60% at 50% 20%, rgba(56,189,248,0.05) 0%, transparent 55%),
+              radial-gradient(ellipse 60% 50% at 85% 75%, rgba(167,139,250,0.04) 0%, transparent 55%);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.dewey-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--warm);
+  opacity: 0.8;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--bright);
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-style: italic;
+  color: var(--mid);
+  font-size: 1.1rem;
+}
+
+.score-widget {
+  background: rgba(56,189,248,0.06);
+  border: 1px solid rgba(56,189,248,0.15);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.score-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--mid);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.score-main {
+  font-family: 'DM Mono', monospace;
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.score-denom {
+  font-size: 1.2rem;
+  color: var(--dim);
+  margin-left: 4px;
+}
+
+.q-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px 32px;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+}
+
+.q-card.answered-correct {
+  border-color: rgba(74,222,128,0.3);
+  background: rgba(74,222,128,0.02);
+}
+
+.q-card.answered-incorrect {
+  border-color: rgba(248,113,113,0.28);
+  background: rgba(248,113,113,0.02);
+}
+
+.q-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.q-num {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: var(--primary);
+  background: rgba(56,189,248,0.1);
+  padding: 6px 12px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.q-chapter {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  color: var(--mid);
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.q-text {
+  font-size: 1.1rem;
+  color: var(--bright);
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.option-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 20px;
+  color: var(--text);
+  font-family: 'Crimson Pro', serif;
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.option-btn:hover {
+  background: var(--panel-hover);
+  border-color: var(--primary);
+}
+
+.option-btn.selected {
+  background: rgba(56,189,248,0.1);
+  border-color: var(--primary);
+}
+
+.option-btn.correct {
+  background: rgba(74,222,128,0.1);
+  border-color: var(--correct);
+  color: var(--correct);
+}
+
+.option-btn.incorrect {
+  background: rgba(248,113,113,0.1);
+  border-color: var(--incorrect);
+  color: var(--incorrect);
+}
+
+.option-btn.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.option-letter {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.option-btn.correct .option-letter {
+  background: var(--correct);
+  color: var(--void);
+}
+
+.option-btn.incorrect .option-letter {
+  background: var(--incorrect);
+  color: var(--void);
+}
+
+.explanation {
+  background: rgba(167,139,250,0.05);
+  border: 1px solid rgba(167,139,250,0.15);
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-top: 20px;
+  display: none;
+}
+
+.explanation.show {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.explanation-title {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--purple);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.explanation-text {
+  color: var(--mid);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.mechanism {
+  background: rgba(244,114,182,0.05);
+  border: 1px solid rgba(244,114,182,0.15);
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-top: 16px;
+}
+
+.mechanism-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--lumi);
+  margin-bottom: 10px;
+}
+
+.mechanism-content {
+  color: var(--mid);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.mechanism-metaphor {
+  font-style: italic;
+  color: var(--dim);
+  font-size: 0.9rem;
+  padding-top: 12px;
+  border-top: 1px solid rgba(244,114,182,0.1);
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, var(--primary), var(--purple));
+  border: none;
+  border-radius: 10px;
+  padding: 12px 28px;
+  color: white;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  display: none;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(56,189,248,0.3);
+}
+
+.submit-btn.show {
+  display: inline-block;
+}
+
+.short-answer-input {
+  width: 100%;
+  min-height: 150px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  color: var(--text);
+  font-family: 'Crimson Pro', serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+.short-answer-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  background: var(--panel);
+}
+
+.model-answer {
+  background: rgba(74,222,128,0.05);
+  border: 1px solid rgba(74,222,128,0.15);
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-top: 16px;
+}
+
+.model-answer-title {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--correct);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.model-answer-text {
+  color: var(--mid);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.results-panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 32px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.results-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--bright);
+  margin-bottom: 24px;
+}
+
+.final-score {
+  font-family: 'DM Mono', monospace;
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+.percentage {
+  font-size: 1.2rem;
+  color: var(--mid);
+  margin-bottom: 24px;
+}
+
+.retry-btn {
+  background: linear-gradient(135deg, var(--lumi), var(--purple));
+  border: none;
+  border-radius: 10px;
+  padding: 14px 32px;
+  color: white;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-transform: uppercase;
+}
+
+.retry-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(244,114,182,0.3);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  .q-card {
+    padding: 20px 24px;
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="dewey-tag">612.3 · DIGESTIVE SYSTEM</div>
+    <h1 class="title">Friday Night Quiz Pt. 2</h1>
+    <div class="subtitle">April 3, 2026 · Comprehensive Digestive System Review</div>
+  </div>
+
+  <div class="score-widget">
+    <div class="score-label">Current Score</div>
+    <div class="score-main">
+      <span id="score">0</span><span class="score-denom"> / 26</span>
+    </div>
+  </div>
+
+  <div id="questions-container"></div>
+
+  <div id="results" class="results-panel" style="display: none;">
+    <h2 class="results-title">Quiz Complete!</h2>
+    <div class="final-score" id="final-score">0 / 26</div>
+    <div class="percentage" id="percentage">0%</div>
+    <button class="retry-btn" onclick="location.reload()">Retry Quiz</button>
+  </div>
+</div>
+
+<script>
+// Quiz data embedded directly to avoid CORS issues with local files
+const quizData = {
+  "id": "612.3-digestive-quiz",
+  "title": "Digestive System - Friday Night Quiz Pt. 2",
+  "category": "digestive",
+  "description": "Comprehensive digestive system quiz covering GI hormones, stomach secretions, liver function, and digestive processes",
+  "date_created": "2026-04-03",
+  "question_bank": [
+    {
+      "id": 1,
+      "type": "true_false",
+      "q": "Food often contains bacteria, but the HCl of the stomach is effective in killing most ingested microbes.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "chapter": "Stomach Defenses",
+      "explain": "Gastric acid (HCl, pH 1.5-2.5) is a powerful antimicrobial barrier. Most bacteria cannot survive this acidic environment, providing critical protection against foodborne pathogens. This is why reduced stomach acid increases infection risk.",
+      "optionExplains": [
+        {
+          "text": "Absolutely correct! Stomach HCl creates a hostile pH 1.5-2.5 environment that denatures bacterial proteins and disrupts cell membranes. This chemical barrier kills most ingested microbes - Salmonella, E. coli, and many others cannot survive. It's your first-line defense against foodborne illness. People on proton pump inhibitors (acid reducers) have higher infection rates for this reason.",
+          "verdict": "correct"
+        },
+        {
+          "text": "Not quite. HCl is indeed a powerful antimicrobial weapon. Think about why we cook food and worry about contamination - because our stomach acid is the main sterilizing step. Without it, every meal would be a potential infection. This is why acid-reducing medications increase gastroenteritis risk.",
+          "verdict": "incorrect"
+        }
+      ],
+      "mechanism": {
+        "title": "The Acid Moat",
+        "content": "Gastric HCl (secreted by parietal cells) creates an extremely acidic lumen (pH 1.5-2.5) that serves as chemical sterilization. Low pH denatures bacterial proteins, disrupts lipid membranes, and inactivates most enzymes. This kills >99% of ingested bacteria including common pathogens (Salmonella, Campylobacter, E. coli). Pepsin (activated at low pH) also digests bacterial proteins. Notable exceptions: Helicobacter pylori has urease enzyme (neutralizes local pH) and survives in the mucus layer. Clinical relevance: proton pump inhibitors (omeprazole) reduce acid → increased risk of C. difficile, Salmonella, and Campylobacter infections.",
+        "metaphor": "Like a castle moat filled with acid - invaders (bacteria) can breach the outer walls (mouth, esophagus), but most die crossing the moat (stomach acid) before reaching the inner sanctum (intestines)."
+      }
+    },
+    {
+      "id": 2,
+      "type": "true_false",
+      "q": "Stellate macrophages are found in the liver and are responsible for removing bacteria and worn-out cells.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "chapter": "Liver Function",
+      "explain": "Stellate macrophages (Kupffer cells) are specialized liver macrophages lining hepatic sinusoids. They phagocytose bacteria, old RBCs, and debris from portal blood - a critical immune surveillance function.",
+      "optionExplains": [
+        {
+          "text": "Precisely! Kupffer cells (stellate macrophages) are fixed macrophages lining the liver sinusoids - they intercept portal blood coming from the GI tract and filter out bacteria, worn-out RBCs, cellular debris, and endotoxins. They're the liver's immune checkpoint, preventing gut bacteria from reaching systemic circulation. About 80-90% of the body's total macrophage population resides in the liver as Kupffer cells.",
+          "verdict": "correct"
+        },
+        {
+          "text": "Actually, this is true. Kupffer cells (the 'stellate' shape refers to their branching appearance) are hepatic macrophages that phagocytose bacteria escaping the gut, senescent RBCs (producing bilirubin), and other debris. They're strategically positioned in sinusoids to filter portal blood. Without them, sepsis from gut bacteria would be common.",
+          "verdict": "incorrect"
+        }
+      ],
+      "mechanism": {
+        "title": "The Liver's Border Guards",
+        "content": "Kupffer cells (hepatic stellate macrophages) account for ~80% of total body macrophages and line the sinusoidal spaces where portal blood flows. As blood from the GI tract enters the liver via the portal vein, Kupffer cells phagocytose: (1) bacteria translocating from the gut, (2) senescent RBCs (breaking down hemoglobin → bilirubin), (3) cellular debris, and (4) endotoxins (LPS from gram-negative bacteria). They release cytokines during infection and present antigens to lymphocytes. Liver cirrhosis impairs Kupffer cell function → increased bacterial translocation → spontaneous bacterial peritonitis.",
+        "metaphor": "Like TSA agents at a major airport hub - all traffic from the digestive tract (international flights) must pass through liver security (Kupffer cells) before entering the bloodstream (domestic flights). They catch contraband (bacteria) and expired cargo (old RBCs) before they can spread systemically."
+      }
+    },
+    {
+      "id": 3,
+      "type": "true_false",
+      "q": "Pepsinogen is the precursor to the gastric enzyme for protein digestion and is secreted by the parietal cells.",
+      "options": ["True", "False"],
+      "answer": 1,
+      "chapter": "Stomach Secretions",
+      "explain": "Pepsinogen is secreted by CHIEF cells (not parietal cells), which line the gastric glands. Parietal cells secrete HCl and intrinsic factor. HCl activates pepsinogen → pepsin.",
+      "optionExplains": [
+        {
+          "text": "Close, but incorrect. Pepsinogen is indeed the inactive precursor to pepsin (the main gastric protease), BUT it's secreted by CHIEF cells, not parietal cells. Parietal cells make HCl and intrinsic factor. The HCl from parietal cells activates the pepsinogen from chief cells → active pepsin. Two different cell types working together.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Correct! This statement is FALSE because pepsinogen comes from CHIEF cells (also called peptic cells or zymogenic cells), not parietal cells. Parietal cells secrete HCl and intrinsic factor. Chief cells secrete pepsinogen (inactive zymogen) which is activated to pepsin by HCl. It's a beautiful collaboration: parietal acid activates chief enzyme.",
+          "verdict": "correct"
+        }
+      ],
+      "mechanism": {
+        "title": "Division of Labor",
+        "content": "Gastric glands contain specialized cell types with distinct functions: PARIETAL CELLS (oxyntic cells) - secrete HCl via H+/K+-ATPase pump and intrinsic factor (B12 absorption). Located in gland body. CHIEF CELLS (peptic/zymogenic cells) - secrete pepsinogen (inactive protease precursor). Located in gland base. Mechanism: (1) Chief cells release pepsinogen into lumen, (2) Parietal cell HCl (pH <2) cleaves pepsinogen → active pepsin, (3) Pepsin autocatalyzes more pepsinogen activation, (4) Pepsin cleaves dietary proteins into peptides. Why inactive secretion? Prevents autodigestion - pepsinogen can't digest chief cells, but pepsin would destroy them. Activation only occurs in lumen.",
+        "metaphor": "Like a two-key nuclear launch system - chief cells provide the warhead (pepsinogen), parietal cells provide the activation code (HCl). Neither alone can initiate protein digestion, but together they unleash the destructive enzyme (pepsin). Safety through separation."
+      }
+    },
+    {
+      "id": 4,
+      "type": "true_false",
+      "q": "The submucosal nerve plexus provides the major nerve supply to the GI tract wall and controls GI motility.",
+      "options": ["True", "False"],
+      "answer": 1,
+      "chapter": "GI Nervous Control",
+      "explain": "The MYENTERIC (Auerbach's) plexus controls motility. The submucosal (Meissner's) plexus regulates secretion and local blood flow. Different functions, different plexuses.",
+      "optionExplains": [
+        {
+          "text": "Not quite. The statement is FALSE because the MYENTERIC plexus (Auerbach's plexus, between circular and longitudinal muscle layers) is the primary motility controller. The SUBMUCOSAL plexus (Meissner's plexus) regulates secretions, blood flow, and local absorption. Both are part of the enteric nervous system, but motility is myenteric territory.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Correct! This is FALSE. The submucosal (Meissner's) plexus controls SECRETION and blood flow, not primarily motility. The MYENTERIC (Auerbach's) plexus, located between the circular and longitudinal muscle layers, is the major motility controller - regulating peristalsis, segmentation, and sphincter tone. Think: 'myo' = muscle → motility; 'submucosa' = under mucosa → secretion.",
+          "verdict": "correct"
+        }
+      ],
+      "mechanism": {
+        "title": "The Enteric Brain",
+        "content": "The enteric nervous system (ENS) has two major plexuses: MYENTERIC PLEXUS (Auerbach's) - located between circular and longitudinal muscle layers. Controls GI motility: peristalsis frequency/strength, segmentation, sphincter tone, migrating motor complex. Neurons: motor (to smooth muscle), interneurons. SUBMUCOSAL PLEXUS (Meissner's) - located in submucosa. Controls secretions (enzymes, mucus, acid), blood flow, epithelial transport, villus contraction. Neurons: sensory (mechanoreceptors, chemoreceptors), secretomotor. The ENS contains ~500 million neurons (more than spinal cord!) and can function independently of CNS - gut has its own 'brain.' Vagal/sympathetic input modulates but doesn't control basic function.",
+        "metaphor": "Like building management - myenteric plexus is the HVAC system controlling airflow and movement throughout (motility), while submucosal plexus is utilities controlling water, heating, and local services (secretion, blood flow). Both essential, different jobs."
+      }
+    },
+    {
+      "id": 5,
+      "type": "true_false",
+      "q": "The major stimulus for production of intestinal fluid is distention or irritation of the intestinal mucosa by hypertonic or acidic chyme.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "chapter": "Intestinal Secretion",
+      "explain": "Intestinal secretion (from crypts of Lieberkühn) is triggered by mechanical distention, chemical irritation (acidity, hypertonicity), and parasympathetic stimulation. This protective fluid dilutes and buffers harmful chyme.",
+      "optionExplains": [
+        {
+          "text": "Exactly right! Distention (stretch) and chemical irritation (acidic pH from stomach, hypertonic chyme from dehydration or high osmolality) trigger massive intestinal fluid secretion. This is protective - dilutes toxins, buffers acid, and provides medium for enzyme action. Cholera toxin hijacks this system, causing uncontrolled secretion → life-threatening diarrhea.",
+          "verdict": "correct"
+        },
+        {
+          "text": "Actually, this is true. When acidic gastric chyme enters the duodenum (pH 2-3 hitting duodenal mucosa), stretch receptors and chemoreceptors trigger secretion of bicarbonate-rich fluid (from Brunner's glands and crypts). Hypertonic chyme also stimulates secretion to dilute and isotonify the contents. This reflex protects the mucosa and optimizes digestion conditions.",
+          "verdict": "incorrect"
+        }
+      ],
+      "mechanism": {
+        "title": "Protective Flooding",
+        "content": "Intestinal fluid secretion (~2 L/day) from crypts of Lieberkühn (intestinal glands) serves protective and digestive functions. Stimuli: (1) MECHANICAL - distention activates mechanoreceptors → enteric reflexes → Cl- secretion (CFTR channels) → water follows, (2) CHEMICAL - acidic chyme (pH <4.5) triggers secretin release → HCO3- secretion (Brunner's glands in duodenum), hypertonic chyme → osmotic gradient pulls water into lumen, (3) NEURAL - vagal stimulation → acetylcholine → increased secretion, (4) HORMONAL - VIP (vasoactive intestinal peptide) stimulates secretion. Pathology: cholera toxin locks CFTR open → uncontrolled secretion (up to 20 L/day) → dehydration/shock. Normal secretion is reabsorbed downstream (small/large intestine).",
+        "metaphor": "Like a fire sprinkler system - when sensors detect danger (acid, toxins, stretch), the system floods the area with protective fluid. Normally controlled and reabsorbed, but in cholera, it's like all sprinklers stuck ON, flooding the building until nothing's left."
+      }
+    },
+    {
+      "id": 6,
+      "type": "true_false",
+      "q": "Severe diarrhea can diminish potassium ion absorption.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "chapter": "Electrolyte Absorption",
+      "explain": "Diarrhea reduces intestinal transit time and overwhelms absorptive capacity. Potassium (normally absorbed in colon) is lost in large amounts, causing hypokalemia - a dangerous complication.",
+      "optionExplains": [
+        {
+          "text": "Absolutely correct. Severe diarrhea causes massive potassium loss through two mechanisms: (1) reduced transit time → less K+ absorption in the colon (where most occurs), and (2) volume depletion → aldosterone secretion → K+ excretion by kidneys trying to retain Na+. Hypokalemia (low serum K+) causes muscle weakness, cardiac arrhythmias, and can be life-threatening. This is why oral rehydration solutions contain potassium.",
+          "verdict": "correct"
+        },
+        {
+          "text": "This is actually true. Normally, the colon absorbs K+ from chyme, but in diarrhea, rapid transit prevents absorption and K+ is lost in stool. Additionally, intestinal secretions are K+-rich (~10-30 mEq/L), so secretory diarrhea directly depletes body K+ stores. Cholera can cause severe hypokalemia, contributing to muscle weakness and cardiac complications.",
+          "verdict": "incorrect"
+        }
+      ],
+      "mechanism": {
+        "title": "The Potassium Crisis",
+        "content": "Normal K+ balance: dietary intake ~100 mEq/day, small intestine absorbs most, colon fine-tunes absorption/secretion, kidneys excrete excess. Colonic K+ handling: absorbs K+ via H+/K+-ATPase, secretes K+ via apical K+ channels (aldosterone-stimulated). Diarrhea disrupts this: (1) RAPID TRANSIT - colon has insufficient time to absorb K+, (2) VOLUME LOSS - dehydration → aldosterone release → renal K+ wasting (kidneys sacrifice K+ to retain Na+), (3) SECRETORY DIARRHEA - excessive secretions are K+-rich (crypts secrete K+), (4) METABOLIC ALKALOSIS - from HCO3- loss → intracellular K+ shift. Result: severe hypokalemia (serum K+ <2.5 mEq/L) → muscle weakness, ileus, cardiac arrhythmias (flattened T waves, U waves, VTach). Treatment: IV/oral KCl replacement.",
+        "metaphor": "Like a factory conveyor belt running too fast - normally workers (colonocytes) have time to carefully pick out valuable minerals (K+) before waste reaches the end. In diarrhea, the belt is sprinting, and most minerals zoom past unrecovered, dumped as waste."
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "q": "Which of the following is the best illustration of the difference between metabolism and digestion?",
+      "options": [
+        "Digestion has a wide variety of chemical reactions while metabolism is restricted to only a few reaction types.",
+        "Metabolism comprises all of the chemical reactions performed within the body while digestion is only the breakdown of food within the GI tract.",
+        "Digestions must happen first for metabolism to follow it.",
+        "Digestion requires enzymes for it to take place while metabolism does not necessarily need or use them."
+      ],
+      "answer": 1,
+      "chapter": "Digestion vs Metabolism",
+      "explain": "Digestion is the mechanical/chemical breakdown of food into absorbable nutrients (limited to GI tract). Metabolism encompasses ALL biochemical reactions in the body (anabolism + catabolism). Digestion is a subset that feeds metabolism.",
+      "optionExplains": [
+        {
+          "text": "Backwards. Digestion is fairly straightforward - hydrolysis reactions breaking polymers into monomers (proteins → amino acids, carbs → glucose, fats → fatty acids/glycerol). Metabolism is the VAST network - glycolysis, citric acid cycle, electron transport, gluconeogenesis, lipogenesis, proteolysis, and thousands more. Metabolism is far more diverse chemically.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Perfect! Digestion is the LIMITED process of breaking food into absorbable units - occurs ONLY in the GI tract lumen and epithelium. Metabolism is the TOTALITY of biochemical reactions everywhere in the body - every cell, every tissue, every second. Digestion provides raw materials; metabolism uses them. Scope: digestion (GI only) vs metabolism (whole body).",
+          "verdict": "correct"
+        },
+        {
+          "text": "Not necessarily. While digestion typically precedes metabolism of nutrients, the body can metabolize stored energy (glycogen, fat, protein) without new digestion. You metabolize 24/7 (even while fasting), but only digest when eating. They're linked but not sequential dependencies.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Incorrect. BOTH require enzymes extensively. Digestion uses hydrolases (pepsin, amylase, lipase). Metabolism uses hundreds of enzymes (kinases, dehydrogenases, synthases, etc.). If anything, metabolism is MORE enzyme-dependent - nearly every reaction is enzyme-catalyzed.",
+          "verdict": "incorrect"
+        }
+      ],
+      "mechanism": {
+        "title": "Scope and Scale",
+        "content": "DIGESTION: Limited to GI tract, breaks food macromolecules into absorbable units. Mechanical (chewing, churning, segmentation) + chemical (enzymatic hydrolysis). Carbohydrates → monosaccharides (glucose, fructose), Proteins → amino acids/dipeptides, Fats → fatty acids + monoglycerides. Location: mouth (amylase), stomach (pepsin), small intestine (pancreatic enzymes, brush border enzymes). Endpoint: absorption across intestinal epithelium. METABOLISM: Occurs in EVERY CELL, all biochemical reactions sustaining life. Catabolism (breakdown for energy): glycolysis, beta-oxidation, proteolysis. Anabolism (synthesis): gluconeogenesis, protein synthesis, lipogenesis. Locations: cytoplasm (glycolysis), mitochondria (citric acid cycle, ETC), ER (lipid/protein synthesis). Endpoint: ATP production, biosynthesis, waste removal. Relationship: digestion supplies nutrients → absorbed → metabolized for energy/building blocks.",
+        "metaphor": "Digestion is the loading dock where delivery trucks (food) are unpacked into individual boxes (nutrients). Metabolism is the ENTIRE FACTORY - every machine, every process, every worker transforming those boxes into products (ATP, proteins, structures) or burning them for power. Loading dock vs whole factory."
+      }
+    },
+    {
+      "id": 8,
+      "type": "multiple_choice",
+      "q": "A doctor consulting a patient that recently has had their gall bladder removed would likely advise ________.",
+      "options": [
+        "eating a low to no carb diet",
+        "increasing unsaturated fats while eliminating trans fats in their diets",
+        "eating fewer, but larger meals",
+        "eating foods that are low in fat"
+      ],
+      "answer": 3,
+      "chapter": "Gallbladder Function",
+      "explain": "Without a gallbladder, bile is not stored or concentrated - it drips continuously from the liver into the duodenum. Large fatty meals overwhelm this limited bile supply, causing poor fat digestion and steatorrhea (fatty diarrhea).",
+      "optionExplains": [
+        {
+          "text": "Carbohydrates have nothing to do with gallbladder function. Bile is needed for FAT digestion/absorption, not carbs (which are handled by amylase and brush border enzymes). After cholecystectomy, carb handling is unchanged.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "While unsaturated fats are healthier than trans fats generally, this doesn't address the post-cholecystectomy issue. The problem isn't fat TYPE, it's fat QUANTITY. Without a gallbladder, you can't release a concentrated bile bolus for large fatty meals - ANY large fat load will be poorly digested.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Opposite advice! Fewer, larger meals would WORSEN fat malabsorption. Without a gallbladder to store/concentrate bile and release it on demand, you need SMALLER, MORE FREQUENT meals to match the continuous low-volume bile drip. Large meals → insufficient bile → steatorrhea.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Correct! Post-cholecystectomy, bile drips continuously from the liver (not stored/concentrated anymore), so there's no large bile bolus available for fatty meals. Small, frequent, LOW-FAT meals match the steady trickle of bile. High-fat meals → insufficient bile → fat malabsorption → steatorrhea (greasy, floating stools), diarrhea, cramping. Gradual adaptation occurs over months as bile ducts dilate slightly.",
+          "verdict": "correct"
+        }
+      ],
+      "mechanism": {
+        "title": "Life Without the Reservoir",
+        "content": "Normal gallbladder function: liver produces ~500-1000 mL bile/day → stored/concentrated 5-20x in gallbladder (removes water) → CCK (released by duodenal fat) triggers gallbladder contraction → concentrated bile bolus (30-60 mL) released into duodenum → emulsifies fat. Post-cholecystectomy: bile produced at same rate but drips DIRECTLY into duodenum without concentration or storage. Consequences: (1) No concentrated bile bolus for large fatty meals → inadequate emulsification → fat malabsorption (steatorrhea, fat-soluble vitamin deficiency), (2) Continuous bile in duodenum → potential bile reflux gastritis/esophagitis, (3) Altered enterohepatic circulation. Adaptation: bile ducts dilate over 6-12 months, partially compensating. Dietary management: small, frequent, low-fat meals (<20g fat/meal) match the steady bile supply. Medium-chain triglycerides (MCTs) don't require bile - absorbed directly.",
+        "metaphor": "Like a water tower (gallbladder) vs a garden hose (direct bile duct). The tower stores water and releases a powerful burst on demand (big meal). Without it, you only have the steady dribble from the hose - fine for watering plants slowly (small meals), but can't fill a swimming pool (big fatty meal)."
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "q": "Select the best explanation for why protease enzymes are secreted in inactive forms.",
+      "options": [
+        "Inactive enzymes will simply be expelled with the feces if no protein is present in the digesting food; this will help to conserve energy.",
+        "The cells producing inactive enzymes are themselves protected from the enzymes until they are safely within the lumen of the GI tract.",
+        "The enzymes would digest each other if they were not properly regulated.",
+        "The immunoglobulins protecting the digestive tract would be digested without proper regulation of protein digesting enzymes."
+      ],
+      "answer": 1,
+      "chapter": "Enzyme Protection",
+      "explain": "Proteases (pepsin, trypsin, chymotrypsin) would digest the cells that produce them if secreted in active form. Zymogens (pepsinogen, trypsinogen, chymotrypsinogen) are inactive precursors activated only in the lumen - protecting secretory cells from autodigestion.",
+      "optionExplains": [
+        {
+          "text": "This isn't the primary reason. While unused enzymes are lost in feces, the body doesn't 'conserve energy' by secreting inactive forms - activation still occurs in the lumen regardless of food presence. The key driver is PROTECTION, not efficiency.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Exactly! Proteases like pepsin and trypsin would DIGEST THE CELLS MAKING THEM if secreted active. Pepsinogen (chief cells), trypsinogen (pancreatic acinar cells), and other zymogens are inactive until they reach the lumen, where they're activated by acid (pepsinogen → pepsin) or enteropeptidase (trypsinogen → trypsin). This prevents catastrophic autodigestion. Pancreatitis occurs when trypsinogen activates INSIDE the pancreas - the gland digests itself.",
+          "verdict": "correct"
+        },
+        {
+          "text": "While proteases might theoretically digest each other, this isn't the main concern. The PRIMARY danger is autodigestion of the secretory tissue (chief cells, pancreatic acinar cells). Once safely in the lumen, some mutual degradation is acceptable - the target is dietary protein, not self-preservation of enzymes.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "IgA in the GI tract is somewhat protected from digestion (secretory component shields it), but this isn't why proteases are secreted as zymogens. The main threat is to the CELLS PRODUCING THE ENZYMES. If pepsinogen were activated inside chief cells, they'd be destroyed. Mucosal immunity is secondary to tissue survival.",
+          "verdict": "incorrect"
+        }
+      ],
+      "mechanism": {
+        "title": "The Zymogen Strategy",
+        "content": "Proteases are secreted as inactive zymogens to prevent autodigestion of secretory tissues. STOMACH: Chief cells secrete pepsinogen (inactive) → HCl in lumen activates it to pepsin → pepsin cleaves proteins AND autocatalyzes more pepsinogen. If pepsinogen activated inside chief cells → cell death. PANCREAS: Acinar cells secrete trypsinogen, chymotrypsinogen, proelastase, procarboxypeptidase (all inactive) → in duodenal lumen, brush border enzyme enteropeptidase (enterokinase) cleaves trypsinogen → trypsin → trypsin activates all other zymogens. If activation occurs INSIDE pancreas → acute pancreatitis (gland digests itself, hemorrhagic necrosis, shock). Protection mechanisms: (1) zymogens remain inactive intracellularly, (2) trypsin inhibitor (SPINK1) in pancreas binds any prematurely activated trypsin, (3) activation only occurs in lumen. Mutations in trypsin inhibitor → hereditary pancreatitis.",
+        "metaphor": "Like shipping grenades with pins IN - safe during manufacturing and transport (intracellular), only armed when deployed to the battlefield (lumen). If a grenade went off in the factory (premature activation), it would destroy the production line (pancreatitis)."
+      }
+    },
+    {
+      "id": 10,
+      "type": "multiple_choice",
+      "q": "Some antacid drugs block histamine receptors, resulting in reduction of the production and excretion of stomach acid. These drugs have the biggest effect on which of the following?",
+      "options": [
+        "surface epithelial cells",
+        "chief cells",
+        "mucous neck cells",
+        "parietal cells"
+      ],
+      "answer": 3,
+      "chapter": "Stomach Acid Control",
+      "explain": "Parietal cells secrete HCl via the H+/K+-ATPase pump. Histamine (from ECL cells) stimulates parietal cells via H2 receptors. H2 blockers (ranitidine, famotidine) block this stimulation, reducing acid secretion.",
+      "optionExplains": [
+        {
+          "text": "Surface epithelial cells secrete mucus and bicarbonate for protection - they don't produce HCl. H2 blockers wouldn't target them. Their job is defense, not acid production.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Chief cells secrete pepsinogen (the protease precursor), not HCl. While pepsinogen activation depends on acid (so indirectly affected), chief cells don't have H2 receptors and aren't the direct target of H2 blockers.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Mucous neck cells (in gastric glands) secrete mucus - protective, not acid-related. H2 blockers don't affect mucus secretion significantly. Wrong target.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Correct! PARIETAL CELLS (oxyntic cells) secrete HCl and have H2 histamine receptors on their basolateral surface. Histamine (from enterochromaffin-like/ECL cells) binds H2 receptors → cAMP pathway → activates H+/K+-ATPase (proton pump) → HCl secretion. H2 blockers (ranitidine, famotidine) competitively block H2 receptors → reduced acid output. Parietal cells also respond to gastrin and acetylcholine (vagal), but histamine is the most potent pathway.",
+          "verdict": "correct"
+        }
+      ],
+      "mechanism": {
+        "title": "The Acid Pump Controllers",
+        "content": "Parietal cells (in gastric glands) secrete HCl via the H+/K+-ATPase proton pump in the apical (luminal) membrane. Three stimulatory pathways: (1) HISTAMINE - from ECL cells (enterochromaffin-like), binds H2 receptors → Gs → cAMP → PKA → activates H+/K+-ATPase. MOST POTENT pathway. (2) GASTRIN - from G cells (antrum), binds CCK-B receptors → Gq → Ca2+ → activates pump AND stimulates ECL cells to release histamine (indirect amplification). (3) ACETYLCHOLINE - from vagal neurons, binds M3 receptors → Gq → Ca2+ → activates pump. H2 blockers (ranitidine, famotidine) competitively inhibit H2 receptors, cutting off the dominant pathway. Proton pump inhibitors (omeprazole) directly block the H+/K+-ATPase itself (more effective, ~90% acid suppression vs ~70% with H2 blockers). Parietal cells also secrete intrinsic factor (B12 absorption) - unaffected by acid blockers.",
+        "metaphor": "Like a car with three accelerators (histamine, gastrin, ACh) all feeding into one engine (H+/K+-ATPase). H2 blockers disconnect the biggest accelerator (histamine), slowing the engine significantly but not stopping it (gastrin/ACh still work). PPIs cut the fuel line to the engine itself."
+      }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "q": "The mechanical and chemical receptors that control digestive activity are located ________.",
+      "options": [
+        "in the walls of the tract organs",
+        "in the glandular tissue that surround the organ lumen",
+        "in the pons and medulla",
+        "in the oral cavity"
+      ],
+      "answer": 0,
+      "chapter": "GI Receptors",
+      "explain": "Mechanoreceptors (stretch) and chemoreceptors (pH, nutrients, osmolarity) are embedded in the GI tract walls - in the mucosa, submucosa, and muscle layers. They feed the enteric nervous system and trigger local reflexes.",
+      "optionExplains": [
+        {
+          "text": "Exactly! Sensory receptors are IN THE GI WALL itself: mechanoreceptors (detect stretch/distention), chemoreceptors (detect pH, glucose, amino acids, lipids, osmolarity), thermoreceptors. Located in mucosa/submucosa, they synapse with the enteric nervous system (submucosal and myenteric plexuses) to control motility, secretion, and blood flow locally. This is why the gut can function even with spinal cord transection - local 'gut brain.'",
+          "verdict": "correct"
+        },
+        {
+          "text": "Glandular tissue (salivary, gastric, pancreatic glands) is EFFECTOR tissue - it responds to signals, not where sensors are located. Receptors are in the GI WALL, detecting luminal conditions and triggering gland secretion via reflexes.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "The pons and medulla contain CENTRAL control centers (vomiting center, swallowing center, vagal nuclei) that MODULATE GI function, but the primary sensory receptors are LOCAL in the gut wall. The brainstem receives afferent signals from gut receptors but isn't where the sensors are.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "The oral cavity has taste receptors and mechanoreceptors (important for chewing/swallowing initiation), but this is only the START of the GI tract. The question asks about controlling DIGESTIVE ACTIVITY broadly - receptors are distributed throughout the ENTIRE tract (esophagus, stomach, intestines), not just the mouth.",
+          "verdict": "incorrect"
+        }
+      ],
+      "mechanism": {
+        "title": "Built-In Sensors",
+        "content": "GI tract walls contain diverse sensory receptors embedded in mucosa/submucosa/muscle layers: MECHANORECEPTORS - detect stretch (distention, volume), tension (muscle contraction), pressure. Trigger: peristalsis (stretch → motility), receptive relaxation (stomach distention → fundus relaxation), gastrocolic reflex (gastric stretch → colonic motility). CHEMORECEPTORS - detect pH (acid in duodenum → secretin release), nutrients (glucose → GIP, amino acids/fats → CCK), osmolarity (hypertonic → fluid secretion). THERMORECEPTORS - detect temperature (less important in humans). These receptors synapse with enteric neurons (submucosal/myenteric plexuses) → local reflexes (short loops, no CNS needed) OR send afferents to CNS via vagus/splanchnic nerves → long reflexes (vago-vagal, integration in medulla). The 'gut brain' (ENS) has 500 million neurons processing this sensory input locally - more neurons than the spinal cord!",
+        "metaphor": "Like smart home sensors embedded in every room (GI segment) - temperature, motion, light sensors detect local conditions and trigger automated responses (lights, HVAC) without needing the central computer (brain). The computer can override, but local control is primary."
+      }
+    },
+    {
+      "id": 12,
+      "type": "multiple_choice",
+      "q": "The function of the hepatic portal circulation is to ________.",
+      "options": [
+        "carry toxins to the kidney for disposal through the urinary tract",
+        "return glucose to the general circulation when blood sugar is low",
+        "distribute hormones throughout the body",
+        "collect absorbed nutrients for metabolic processing in the liver"
+      ],
+      "answer": 3,
+      "chapter": "Portal Circulation",
+      "explain": "The hepatic portal vein carries nutrient-rich blood from the GI tract, spleen, and pancreas directly to the liver for 'first-pass' processing - detoxification, glucose regulation, protein synthesis - before entering systemic circulation.",
+      "optionExplains": [
+        {
+          "text": "Backwards flow. The portal system goes FROM gut TO liver, not toward kidneys. Toxins are indeed processed (by liver), but then detoxified products go to systemic circulation → kidneys for excretion. The portal system doesn't directly connect to kidneys.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Opposite direction. During hypoglycemia, the liver RELEASES glucose into hepatic veins (which drain to inferior vena cava → systemic circulation). The portal vein brings glucose TO the liver (from intestinal absorption), not away from it. Portal flow is gut → liver, not liver → body.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Hormones are distributed via systemic arterial circulation, not the portal system. While GI hormones (gastrin, CCK, secretin, GIP) are secreted into portal blood and DO reach the liver, this isn't the PRIMARY function. The portal system's main job is nutrient delivery, not endocrine distribution.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Perfect! The hepatic portal vein collects blood from the stomach, intestines, spleen, and pancreas → delivers it to liver sinusoids for 'first-pass metabolism.' Liver processes: absorbed nutrients (glucose → glycogen storage, amino acids → protein synthesis, lipids → lipoprotein packaging), detoxifies drugs/toxins, removes bacteria (Kupffer cells), stores vitamins. After processing, hepatic veins drain to IVC → systemic circulation. This ensures absorbed nutrients/toxins pass through the liver checkpoint BEFORE reaching the rest of the body.",
+          "verdict": "correct"
+        }
+      ],
+      "mechanism": {
+        "title": "The First-Pass Filter",
+        "content": "Hepatic portal system anatomy: Superior mesenteric vein (small intestine, right colon) + Inferior mesenteric vein (left colon, rectum) + Splenic vein (spleen, pancreas, stomach) → merge to form HEPATIC PORTAL VEIN → enters liver, branches into sinusoids → hepatic veins → inferior vena cava → heart. Function: (1) NUTRIENT PROCESSING - glucose (stored as glycogen or released as needed), amino acids (deaminated, converted, synthesized into proteins/lipoproteins), lipids (packaged as VLDLs), vitamins (stored A, D, E, K, B12). (2) DETOXIFICATION - drugs (phase I/II metabolism), ammonia → urea (via urea cycle), alcohol, bilirubin conjugation. (3) IMMUNE SURVEILLANCE - Kupffer cells phagocytose bacteria translocating from gut. (4) PROTEIN SYNTHESIS - albumin, clotting factors, complement. Why portal system? Ensures absorbed material (including toxins) undergoes hepatic processing BEFORE reaching systemic organs (brain, heart). Portal hypertension (cirrhosis) → varices, ascites, hepatic encephalopathy.",
+        "metaphor": "Like airport customs - all international flights (nutrients from gut) must pass through customs (liver) for inspection and processing before passengers (nutrients) enter the country (systemic circulation). Direct entry would allow contraband (toxins, pathogens) to spread unchecked."
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "q": "Which of the following is NOT a factor that helps create the stomach mucosal barrier?",
+      "options": [
+        "thick coating of bicarbonate-rich mucus",
+        "secretion of pepsinogen",
+        "tight junctions of epithelial mucosa cells",
+        "replacing of damaged epithelial mucosa cells"
+      ],
+      "answer": 1,
+      "chapter": "Mucosal Protection",
+      "explain": "Pepsinogen is for protein DIGESTION, not protection. The mucosal barrier relies on mucus (bicarbonate buffer + physical barrier), tight junctions (prevent acid penetration), and rapid epithelial turnover (replace damaged cells).",
+      "optionExplains": [
+        {
+          "text": "Mucus (secreted by surface mucous cells and mucous neck cells) is ESSENTIAL to the barrier. It's alkaline (bicarbonate-rich, pH 6-7) creating a buffer zone against luminal acid (pH 1.5-2), plus physical barrier trapping water and slowing diffusion. This is protective.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Correct! Pepsinogen is the INACTIVE precursor to pepsin, the main gastric protease. Its function is DIGESTION (cleaving proteins), NOT protection. If anything, activated pepsin (in the lumen) is a THREAT to mucosa, which is why the barrier is needed. Pepsinogen secretion is offensive, not defensive.",
+          "verdict": "correct"
+        },
+        {
+          "text": "Tight junctions (between epithelial cells) are CRITICAL for barrier function - they prevent acid and pepsin from diffusing between cells into the lamina propria (which would cause ulceration). Loss of tight junction integrity → gastritis/ulcers. This is protective.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Rapid epithelial turnover (surface cells replaced every 3-5 days) is ESSENTIAL - continuous damage from acid/pepsin requires constant renewal. Cells damaged by H. pylori, NSAIDs, or acid are quickly shed and replaced. This is protective.",
+          "verdict": "incorrect"
+        }
+      ],
+      "mechanism": {
+        "title": "The Triple Defense",
+        "content": "Gastric mucosal barrier protects against self-digestion (HCl pH 1.5, pepsin) via multiple mechanisms: (1) MUCUS LAYER - thick (0.5-1 mm), viscous, adherent gel secreted by surface mucous cells. Contains bicarbonate (secreted into mucus, pH 6-7 at epithelial surface vs pH 2 in lumen) creating pH gradient. Physical barrier slows acid/pepsin diffusion. (2) TIGHT JUNCTIONS - seal spaces between epithelial cells, preventing paracellular acid penetration. (3) EPITHELIAL RENEWAL - surface cells turn over every 3-5 days, constantly replacing damaged cells. Stem cells in gland neck proliferate and migrate. (4) PROSTAGLANDINS - stimulate mucus/bicarbonate secretion, increase blood flow (delivers oxygen/bicarbonate, removes acid). (5) BLOOD FLOW - rich submucosal plexus buffers diffused H+ with HCO3-. BREAKDOWN: H. pylori (damages mucus, reduces bicarbonate), NSAIDs (inhibit prostaglandins → reduced mucus/blood flow), alcohol (direct epithelial damage) → gastritis/ulcers. Pepsinogen/pepsin is the THREAT, not the defense.",
+        "metaphor": "Like a castle under siege - the thick walls (mucus layer), sealed gates (tight junctions), and rapid repair crews (epithelial renewal) defend against the attacking army (acid + pepsin). Pepsinogen is the enemy's weapon, not part of the castle defense."
+      }
+    },
+    {
+      "id": 14,
+      "type": "multiple_choice",
+      "q": "Choose the incorrect statement regarding bile.",
+      "options": [
+        "Bile functions to carry bilirubin formed from breakdown of worn-out RBCs.",
+        "Bile functions to emulsify fats.",
+        "Bile contains enzymes for digestion.",
+        "Bile is both an excretory product and a digestive secretion."
+      ],
+      "answer": 2,
+      "chapter": "Bile Function",
+      "explain": "Bile contains NO digestive enzymes. It emulsifies fats (detergent action of bile salts) to increase surface area for PANCREATIC lipase. Bile is also an excretory route (bilirubin, cholesterol, drugs).",
+      "optionExplains": [
+        {
+          "text": "This is TRUE. Bilirubin (from heme breakdown: RBCs → spleen/liver → heme → bilirubin) is conjugated in hepatocytes (bilirubin + glucuronic acid → water-soluble) and secreted into bile for excretion. Bile is the ONLY elimination route for bilirubin. Obstruction → jaundice.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "This is TRUE. Bile salts (derived from cholesterol: cholic acid, chenodeoxycholic acid, conjugated with glycine/taurine) are amphipathic detergents that emulsify fat - breaking large lipid droplets into smaller micelles, increasing surface area 1000-fold for pancreatic lipase action. No emulsification → fat malabsorption.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "INCORRECT - this is the FALSE statement! Bile contains NO digestive enzymes. Fat digestion requires PANCREATIC lipase, colipase, and phospholipase (from pancreas, not bile). Bile's role is purely MECHANICAL (emulsification) and EXCRETORY (bilirubin, cholesterol, drugs). It's a detergent, not an enzyme source.",
+          "verdict": "correct"
+        },
+        {
+          "text": "This is TRUE. Bile is dual-purpose: (1) EXCRETORY - eliminates bilirubin (from RBC breakdown), cholesterol, drugs, toxins (no other route), (2) DIGESTIVE - bile salts emulsify fats, enabling pancreatic lipase action. This makes it unique - both waste disposal and digestive aid.",
+          "verdict": "incorrect"
+        }
+      ],
+      "mechanism": {
+        "title": "Detergent, Not Enzyme",
+        "content": "Bile composition: (1) BILE SALTS (~50%, primary: cholic/chenodeoxycholic acid conjugated with glycine/taurine, secondary: deoxycholic/lithocholic from bacterial dehydroxylation in colon) - amphipathic molecules that emulsify fats. (2) PHOSPHOLIPIDS (~40%, mainly phosphatidylcholine/lecithin) - aid emulsification. (3) CHOLESTEROL (~4%) - excess excreted this way. (4) BILIRUBIN (~2%, conjugated) - heme breakdown product. (5) ELECTROLYTES, water, drugs, toxins. Function: MECHANICAL (bile salts form micelles, emulsifying fat → ↑ surface area 1000x for lipase), EXCRETORY (only route for bilirubin, cholesterol, certain drugs). NO ENZYMES - fat digestion requires pancreatic lipase, colipase, phospholipase A2, cholesterol esterase (all from pancreas). Bile prepares substrate; pancreas provides enzymes. Enterohepatic circulation: 95% bile salts reabsorbed (terminal ileum) → portal blood → liver → re-secreted (recycled 6-8 times/day). Disruption (ileal resection, bile acid sequestrants) → fat malabsorption, steatorrhea.",
+        "metaphor": "Like dish soap vs the scrubbing sponge - bile (soap) breaks up grease into small droplets (emulsification), but the actual scrubbing/breaking of chemical bonds (digestion) is done by the sponge (pancreatic lipase). Soap prepares; sponge digests."
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "q": "Which of the following is NOT found in saliva?",
+      "options": [
+        "lysozyme",
+        "protease",
+        "electrolytes",
+        "urea and uric acid"
+      ],
+      "answer": 1,
+      "chapter": "Saliva Composition",
+      "explain": "Saliva contains salivary amylase (carbohydrate digestion), lysozyme (antibacterial), electrolytes (Na+, K+, Cl-, HCO3-), mucus, and waste products (urea, uric acid). It does NOT contain protease - protein digestion begins in the stomach (pepsin).",
+      "optionExplains": [
+        {
+          "text": "Lysozyme IS in saliva. It's a bactericidal enzyme that cleaves peptidoglycan in bacterial cell walls, providing antimicrobial protection. Part of innate immunity in oral cavity.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Correct! Saliva does NOT contain proteases. Protein digestion begins in the STOMACH with pepsin. Saliva contains salivary AMYLASE (starch → maltose), but no protein-digesting enzymes. The mouth focuses on carb digestion and lubrication, not protein breakdown.",
+          "verdict": "correct"
+        },
+        {
+          "text": "Electrolytes ARE in saliva - Na+, K+, Cl-, HCO3-, Ca2+, PO4^3-. The composition varies (hypotonic relative to plasma, bicarbonate-rich for buffering). Electrolyte secretion is regulated by autonomic nervous system.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Urea and uric acid ARE found in saliva (waste products secreted by salivary glands, excreted in small amounts). Elevated urea in saliva gives 'uremic breath' in kidney failure. These are present, though not major components.",
+          "verdict": "incorrect"
+        }
+      ],
+      "mechanism": {
+        "title": "The Starter Fluid",
+        "content": "Saliva composition (~1-1.5 L/day from parotid, submandibular, sublingual glands): (1) WATER (~99.5%) - solvent, lubrication. (2) ELECTROLYTES - Na+ (low, 5-40 mEq/L vs 140 in plasma), K+ (high, 20 mEq/L vs 4), Cl-, HCO3- (25 mEq/L, buffering), Ca2+, PO4^3-. Hypotonic (duct cells reabsorb Na+/Cl-, secrete K+/HCO3-). (3) ENZYMES - salivary amylase/ptyalin (starch → maltose, active at pH 6.8, inactivated by gastric acid), lingual lipase (minor, fat digestion begins), lysozyme (antibacterial). NO PROTEASES. (4) MUCUS (mucins MUC5B, MUC7) - lubrication, bolus formation, barrier. (5) IMMUNOGLOBULINS - secretory IgA (immune defense). (6) ANTIMICROBIALS - lysozyme, lactoferrin (binds iron), histatins (antifungal). (7) WASTE PRODUCTS - urea (~20 mg/dL), uric acid, creatinine (minor excretion). Functions: lubrication (swallowing), solvent (taste), buffer (neutralize acid), digestion (amylase starts carb breakdown), antimicrobial (lysozyme, IgA), remineralization (Ca2+/PO4^3- strengthen enamel). Protein digestion waits until stomach.",
+        "metaphor": "Like a garage workshop's starter kit - has basic tools (amylase for carbs, lysozyme for bacteria, mucus for lubrication), but missing the heavy machinery (proteases) that's kept in the main factory (stomach). Preliminary work only."
+      }
+    },
+    {
+      "id": 16,
+      "type": "multiple_choice",
+      "q": "Which vitamin requires intrinsic factor in order to be absorbed?",
+      "options": [
+        "A",
+        "K",
+        "C",
+        "B12"
+      ],
+      "answer": 3,
+      "chapter": "Vitamin Absorption",
+      "explain": "Intrinsic factor (IF), secreted by gastric parietal cells, binds vitamin B12 and protects it from degradation. The IF-B12 complex is absorbed in the terminal ileum via receptor-mediated endocytosis. No IF = pernicious anemia.",
+      "optionExplains": [
+        {
+          "text": "Vitamin A (retinol, fat-soluble) is absorbed in the small intestine along with other lipids, incorporated into chylomicrons. It requires bile salts for emulsification, NOT intrinsic factor. Stored in liver stellate cells.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Vitamin K (fat-soluble) is absorbed passively in the small intestine along with dietary fats. Gut bacteria also synthesize K2 (menaquinone) in the colon. Requires bile salts, NOT intrinsic factor. Important for clotting factor synthesis (II, VII, IX, X).",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Vitamin C (ascorbic acid, water-soluble) is absorbed by active transport (Na+-coupled) in the small intestine. No intrinsic factor needed. Deficiency → scurvy (collagen synthesis impairment).",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Correct! Vitamin B12 (cobalamin) requires intrinsic factor (IF) for absorption. Mechanism: dietary B12 binds salivary haptocorrin (R-protein) → in duodenum, pancreatic proteases degrade haptocorrin → B12 binds IF (from parietal cells) → IF-B12 complex travels to terminal ileum → binds cubilin receptors on enterocytes → endocytosis → B12 released, binds transcobalamin II → portal circulation → liver storage. No IF → pernicious anemia (megaloblastic, neurological symptoms). Gastrectomy, atrophic gastritis, or parietal cell antibodies → IF deficiency → B12 malabsorption.",
+          "verdict": "correct"
+        }
+      ],
+      "mechanism": {
+        "title": "The VIP Escort",
+        "content": "Vitamin B12 absorption is complex, requiring multiple binding proteins: (1) MOUTH - dietary B12 (from meat, dairy) binds salivary haptocorrin/R-protein (protects from acid). (2) STOMACH - gastric acid/pepsin release B12 from food proteins. Parietal cells secrete INTRINSIC FACTOR (IF, glycoprotein). B12 remains bound to haptocorrin (has higher affinity at low pH). (3) DUODENUM - pancreatic proteases degrade haptocorrin → B12 released → binds IF (has higher affinity at neutral pH). (4) ILEUM - IF-B12 complex travels to terminal ileum → binds cubilin receptors on enterocytes → receptor-mediated endocytosis. (5) ENTEROCYTE - IF degraded, B12 binds transcobalamin II (TC-II) → released into portal blood. (6) TISSUES - TC-II-B12 binds receptors, B12 taken up. Liver stores 2-5 mg (3-5 year supply). Deficiency causes: (1) PERNICIOUS ANEMIA - autoimmune destruction of parietal cells → no IF (also no acid), megaloblastic anemia (impaired DNA synthesis), (2) NEUROLOGICAL - demyelination (posterior columns, peripheral nerves) → ataxia, paresthesias, dementia. (3) GASTRECTOMY - removes IF source. (4) ILEAL DISEASE (Crohn's) - removes absorption site. Treatment: IM B12 (bypasses need for IF) or high-dose oral (1% absorbed passively without IF).",
+        "metaphor": "Like a VIP needing a bodyguard through a dangerous city - B12 (VIP) needs haptocorrin escort through the stomach (acid zone), then switches to intrinsic factor (new bodyguard) for the journey to the terminal ileum (destination). Without the bodyguard (IF), the VIP gets mugged (degraded) and never arrives."
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "q": "Gastric pits, as opposed to gastric glands, are completely lined with ________.",
+      "options": [
+        "enteroendocrine cells",
+        "parietal cells",
+        "mucous cells",
+        "chief cells"
+      ],
+      "answer": 2,
+      "chapter": "Gastric Anatomy",
+      "explain": "Gastric pits are the surface depressions opening to the lumen. They're lined by surface mucous cells (secrete protective mucus/bicarbonate). Gastric glands (deeper structures) contain parietal, chief, mucous neck, and enteroendocrine cells.",
+      "optionExplains": [
+        {
+          "text": "Enteroendocrine cells (G cells secreting gastrin, ECL cells secreting histamine, D cells secreting somatostatin) are scattered in gastric GLANDS, not lining the pits. They're deep in glands, secreting hormones into blood, not the lumen.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Parietal cells (acid + intrinsic factor) are in the GLAND BODY, not the pit. They're deeper structures, not surface lining. Pits are superficial openings; glands are the secretory tubes below.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Exactly! Gastric PITS (foveolae) are the shallow surface depressions lined entirely by SURFACE MUCOUS CELLS - columnar epithelium secreting alkaline mucus (with bicarbonate) for protection. Multiple gastric GLANDS (2-7) open into each pit. The glands (deeper) contain the secretory cells (parietal, chief, mucous neck, enteroendocrine). Pit = protective surface (mucous cells); Gland = secretory factory (parietal, chief, etc.).",
+          "verdict": "correct"
+        },
+        {
+          "text": "Chief cells (pepsinogen secretion) are located in the GLAND BASE, the deepest part - nowhere near the pits. Pits are surface structures lined by mucous cells; chief cells are buried deep in glands.",
+          "verdict": "incorrect"
+        }
+      ],
+      "mechanism": {
+        "title": "Surface vs Depth",
+        "content": "Gastric mucosa architecture: GASTRIC PITS (foveolae) - shallow surface depressions (1/4 of mucosal thickness) lined completely by SURFACE MUCOUS CELLS (simple columnar epithelium). Function: secrete thick, alkaline mucus + bicarbonate → protective barrier against acid/pepsin. Cells replaced every 3-5 days (high turnover due to harsh conditions). GASTRIC GLANDS - tubular structures (2-7 per pit) extending deep into lamina propria. Three regions: (1) ISTHMUS (neck) - mucous neck cells (secrete different mucus than surface), stem cells (progenitors). (2) BODY - parietal cells (HCl, intrinsic factor), some chief cells. (3) BASE - chief cells (pepsinogen), enteroendocrine cells (G cells in antrum/gastrin, ECL cells/histamine, D cells/somatostatin). Spatial organization: protective mucus cells guard surface (pits), secretory cells work deep (glands). Helicobacter pylori colonizes pits, disrupting mucus → gastritis → ulcers.",
+        "metaphor": "Like a mine shaft - the pit (entrance) is lined with safety guards (mucous cells) to protect the entrance, while the mine shaft (gland) goes deep underground where the actual mining work happens (parietal/chief cells extracting resources). Surface protection, deep production."
+      }
+    },
+    {
+      "id": 18,
+      "type": "multiple_choice",
+      "q": "The dental formula for an adult is 2-1-2-3. What does the 1 stand for?",
+      "options": [
+        "premolar tooth",
+        "canine tooth",
+        "incisor tooth",
+        "molar tooth"
+      ],
+      "answer": 1,
+      "chapter": "Dental Anatomy",
+      "explain": "The dental formula lists tooth types per quadrant: Incisors-Canines-Premolars-Molars. Adult: 2-1-2-3 = 2 incisors, 1 canine, 2 premolars, 3 molars per quadrant (x4 quadrants = 32 total teeth).",
+      "optionExplains": [
+        {
+          "text": "Premolars are the THIRD number (the '2' in 2-1-2-3). Adults have 2 premolars per quadrant (total 8). They're bicuspids used for grinding. The '1' refers to canines.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Correct! The dental formula 2-1-2-3 reads: 2 INCISORS (cutting), 1 CANINE (tearing), 2 PREMOLARS (grinding), 3 MOLARS (grinding) per quadrant. The '1' is the canine (cuspid) - the pointed tooth for tearing meat. Adults: 32 teeth (8 per quadrant), children: 2-1-0-2 = 20 deciduous teeth (no premolars).",
+          "verdict": "correct"
+        },
+        {
+          "text": "Incisors are the FIRST number (the '2' in 2-1-2-3). Adults have 2 incisors per quadrant (central + lateral, total 8). They're flat, blade-like teeth for cutting. The '1' refers to canines.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Molars are the FOURTH number (the '3' in 2-1-2-3). Adults have 3 molars per quadrant (total 12), including third molars/wisdom teeth. They're for grinding. The '1' refers to canines.",
+          "verdict": "incorrect"
+        }
+      ],
+      "mechanism": {
+        "title": "Dental Blueprint",
+        "content": "Dental formula notation: I-C-P-M (Incisors-Canines-Premolars-Molars) per QUADRANT (upper/lower, left/right). ADULT PERMANENT: 2-1-2-3 x 4 quadrants = 32 teeth. (2 incisors - central + lateral, cutting; 1 canine - cuspid, tearing; 2 premolars - bicuspids, grinding; 3 molars - 1st, 2nd, 3rd/wisdom, grinding). CHILD DECIDUOUS: 2-1-0-2 x 4 = 20 teeth (no premolars). Tooth structure: ENAMEL (hardest substance, 96% hydroxyapatite, acellular - can't regenerate), DENTIN (70% mineral, living tissue with odontoblasts), PULP (nerves, blood vessels), CEMENTUM (covers root, anchors periodontal ligament). Eruption: deciduous 6-24 months, permanent 6-21 years. Third molars (wisdom teeth) often impacted (jaw too small) → extraction. Clinical: dental caries (Streptococcus mutans produces acid from sugar → enamel demineralization), periodontal disease (gingivitis → periodontitis → bone loss → tooth loss).",
+        "metaphor": "Like a Swiss Army knife with different blades - incisors (scissors blade, cutting), canines (pointed blade, piercing), premolars/molars (serrated edge, grinding). Each tooth type optimized for a mechanical task in food processing."
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "q": "The function of goblet cells is to ________.",
+      "options": [
+        "secrete buffers in order to keep the pH of the digestive tract close to neutral",
+        "absorb nutrients from digested food and store them for future use",
+        "provide protection against invading bacteria and other disease-causing organisms that enter the digestive tract in food",
+        "produce mucus that protects parts of the digestive organs from the effects of powerful enzymes needed for food digestion"
+      ],
+      "answer": 3,
+      "chapter": "Intestinal Epithelium",
+      "explain": "Goblet cells (unicellular mucous glands) secrete mucus (mucins) throughout the GI tract. Mucus lubricates, protects epithelium from mechanical/chemical damage, and forms a barrier against enzymes, acid, and bacteria.",
+      "optionExplains": [
+        {
+          "text": "While mucus DOES contain bicarbonate (contributing to buffering), this isn't the PRIMARY function of goblet cells. Dedicated bicarbonate secretion comes from pancreatic duct cells and duodenal Brunner's glands. Goblet cells mainly produce MUCUS (glycoproteins), not bicarbonate buffers.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Goblet cells don't absorb nutrients - that's the job of enterocytes (columnar absorptive cells with microvilli). Goblet cells are SECRETORY (mucus production), not absorptive. They have no nutrient storage function.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "While mucus DOES have some antimicrobial properties (traps bacteria, contains IgA, antimicrobial peptides), this is a secondary benefit. The PRIMARY function is PHYSICAL/CHEMICAL PROTECTION against mechanical abrasion and enzymatic digestion. Immune cells (Paneth cells, M cells, MALT) handle active immune defense.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Exactly! Goblet cells secrete MUCUS (glycoproteins/mucins) that forms a protective gel layer over the epithelium. Functions: (1) PHYSICAL BARRIER - prevents mechanical damage from food bolus, (2) CHEMICAL BARRIER - protects epithelium from digestive enzymes (pepsin, trypsin, lipase) and acid, (3) LUBRICATION - eases passage of chyme. Goblet cell density increases distally (few in stomach, abundant in colon where mechanical protection is critical). Loss of mucus → ulceration.",
+          "verdict": "correct"
+        }
+      ],
+      "mechanism": {
+        "title": "The Mucus Factory",
+        "content": "Goblet cells are unicellular mucous glands scattered among absorptive enterocytes throughout the GI tract (except esophagus/parietal cell region of stomach). Structure: columnar epithelium with expanded apical cytoplasm (filled with mucin granules) giving 'goblet' shape. Secretion: MUC2 (major intestinal mucin, gel-forming glycoprotein) released via exocytosis → hydrates → expands 1000x → forms viscous gel layer (100-800 μm thick). Functions: (1) LUBRICATION - reduces friction, eases peristalsis/defecation, (2) PROTECTION - physical barrier against enzymes/acid/mechanical trauma, (3) HYDRATION - traps water, prevents desiccation, (4) IMMUNE - traps bacteria (prevents mucosal contact), binds secretory IgA (immune exclusion). Distribution: sparse in duodenum/jejunum, increases in ileum, most abundant in colon (where lubrication for solid stool is critical). Regulation: stimulated by irritation (ACh, VIP), prostaglandins, bacterial products. Pathology: ulcerative colitis (goblet cell depletion → mucus loss → inflammation), cystic fibrosis (CFTR mutation → thick, dehydrated mucus → obstruction).",
+        "metaphor": "Like spray-on coating on a non-stick pan - goblet cells continuously spray a protective layer (mucus) over the intestinal surface, preventing corrosive enzymes (digestive juices) from damaging the pan (epithelium). Without it, the lining would be digested away."
+      }
+    },
+    {
+      "id": 20,
+      "type": "multiple_choice",
+      "q": "Which of the following is an essential role played by large intestine bacteria?",
+      "options": [
+        "absorb bilirubin",
+        "synthesis of vitamin K",
+        "produce gas",
+        "synthesize vitamins C and D"
+      ],
+      "answer": 1,
+      "chapter": "Gut Microbiota",
+      "explain": "Colonic bacteria (Bacteroides, E. coli, others) synthesize vitamin K (menaquinone/K2), which is absorbed and used for clotting factor synthesis. Newborns lack gut flora → vitamin K deficiency → hemorrhagic disease → prophylactic vitamin K injection at birth.",
+      "optionExplains": [
+        {
+          "text": "Bacteria don't absorb bilirubin - they CONVERT it. Conjugated bilirubin (in bile) → bacterial enzymes deconjugate it → urobilinogen (some reabsorbed, rest excreted as stercobilin/brown color in feces). Absorption happens in enterocytes, not bacteria.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Absolutely correct! Gut bacteria (mainly Bacteroides, E. coli) synthesize vitamin K2 (menaquinone) in the colon. Humans absorb this K2 → liver uses it to carboxylate clotting factors II, VII, IX, X (via gamma-carboxylase). Newborns have sterile guts (no bacteria) → K deficiency → hemorrhagic disease of the newborn → prophylactic IM vitamin K at birth. Broad-spectrum antibiotics deplete gut flora → potential K deficiency (rare, dietary K1 usually sufficient).",
+          "verdict": "correct"
+        },
+        {
+          "text": "Bacteria DO produce gas (CO2, H2, CH4 from fermentation of undigested carbs/fiber), but this is NOT an essential ROLE - it's a byproduct. Beneficial roles include vitamin synthesis, immune modulation, pathogen exclusion. Gas production is incidental, not essential.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Bacteria do NOT synthesize vitamin C (ascorbic acid, humans lack L-gulonolactone oxidase and must obtain from diet) or vitamin D (requires UV light on skin 7-dehydrocholesterol → D3, or dietary intake). Bacteria synthesize B vitamins (biotin, folate, B12) and vitamin K, not C or D.",
+          "verdict": "incorrect"
+        }
+      ],
+      "mechanism": {
+        "title": "The Microbial Pharmacy",
+        "content": "Gut microbiota (~100 trillion bacteria, 1000+ species, mainly anaerobes) perform essential functions: (1) VITAMIN SYNTHESIS - Vitamin K2/menaquinone (by Bacteroides, E. coli, Enterococcus) → absorbed in colon → clotting factor activation (II, VII, IX, X, protein C/S). Also biotin, folate, B12 (though human B12 absorption is mainly ileum, bacterial B12 from colon less bioavailable). (2) FERMENTATION - undigested carbs/fiber → short-chain fatty acids (butyrate, propionate, acetate) → energy for colonocytes, anti-inflammatory effects. (3) BILE ACID METABOLISM - deconjugation, dehydroxylation (primary → secondary bile acids: cholic → deoxycholic). (4) PATHOGEN EXCLUSION - competitive inhibition (colonization resistance), bacteriocin production. (5) IMMUNE MODULATION - stimulate GALT (gut-associated lymphoid tissue), tolerogenic T-regs. Disruption: antibiotics (deplete flora → C. difficile overgrowth, vitamin K deficiency), dysbiosis (IBD, obesity, allergies). Newborns: sterile at birth → colonized during passage/feeding → vitamin K deficiency risk (hemorrhagic disease) → prophylactic K injection standard.",
+        "metaphor": "Like an in-house pharmaceutical factory - the colon hosts trillions of microbial workers who manufacture vitamins (K, biotin, folate), produce useful chemicals (short-chain fatty acids), and guard against invaders (pathogen exclusion). Antibiotics are like firing all the workers - factory shuts down, invaders move in."
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "q": "Nervous control of gastric secretion is provided by ________.",
+      "options": [
+        "the reticulospinal and vestibulospinal tracts",
+        "somatic neurons in the spinal cord",
+        "the rubrospinal tracts",
+        "the vagus nerve and enteric plexus"
+      ],
+      "answer": 3,
+      "chapter": "Gastric Control",
+      "explain": "Gastric secretion is controlled by parasympathetic vagal input (cephalic and gastric phases) and local enteric nervous system reflexes (myenteric and submucosal plexuses). Vagal ACh stimulates parietal/chief cells and G cells.",
+      "optionExplains": [
+        {
+          "text": "Reticulospinal and vestibulospinal tracts control posture and balance (motor systems), not GI function. These are descending motor pathways from brainstem to spinal cord controlling extensor tone and equilibrium - nothing to do with gastric secretion.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Somatic neurons innervate skeletal muscle (voluntary control) - like chewing muscles, external anal sphincter. Gastric secretion is AUTONOMIC (involuntary), controlled by parasympathetic (vagus) and enteric systems, not somatic spinal neurons.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "The rubrospinal tract (from red nucleus) controls limb flexor tone and fine motor movements - part of the motor system for voluntary movement. It has zero role in GI secretion. Wrong system entirely.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Exactly! Gastric secretion is controlled by: (1) VAGUS NERVE (CN X, parasympathetic) - releases acetylcholine → stimulates parietal cells (acid), chief cells (pepsinogen), G cells (gastrin release). Active during cephalic phase (sight/smell/taste of food) and gastric phase (distention). (2) ENTERIC NERVOUS SYSTEM - intrinsic plexuses (myenteric/submucosal) contain local reflex circuits → respond to distention, pH, nutrients → modulate secretion/motility. The 'gut brain' can function independently but is modulated by vagal input. Vagotomy (cutting vagus) reduces gastric acid ~50%.",
+          "verdict": "correct"
+        }
+      ],
+      "mechanism": {
+        "title": "Vagal Command and Local Control",
+        "content": "Gastric secretion control: THREE PHASES - (1) CEPHALIC (30% of secretion, before food arrives) - sight/smell/taste/thought of food → vagal nuclei (medulla) → vagus nerve → ACh release → stimulates parietal (acid), chief (pepsinogen), G cells (gastrin). (2) GASTRIC (60%, food in stomach) - distention (mechanoreceptors) + peptides (chemoreceptors) → vagal reflexes + local enteric reflexes + G cell gastrin release → sustained secretion. (3) INTESTINAL (10%, food in duodenum) - nutrients trigger hormones (GIP, secretin, CCK) that INHIBIT gastric secretion (negative feedback). Vagal pathway: dorsal motor nucleus (DMV) → preganglionic fibers → synapse in myenteric/submucosal plexuses → postganglionic (ACh) → effectors. Enteric system: mechanoreceptors/chemoreceptors → sensory neurons → interneurons → motor neurons → secretomotor output. Independent but vagally modulated. Pathology: vagotomy (for ulcers, historical) → reduced acid but incomplete (enteric + hormonal pathways intact). Anticholinergics (atropine) reduce secretion by blocking vagal ACh.",
+        "metaphor": "Like a factory with central management (vagus nerve from brain HQ) giving broad strategic direction, plus local floor managers (enteric plexuses) handling day-to-day operations. HQ can boost production when orders are coming (cephalic phase), but floor managers keep things running based on immediate conditions (distention, pH)."
+      }
+    },
+    {
+      "id": 22,
+      "type": "multiple_choice",
+      "q": "What stomach secretion is necessary for normal hemoglobin production in RBCs?",
+      "options": [
+        "gastric lipase",
+        "intrinsic factor",
+        "pepsinogen",
+        "HCl"
+      ],
+      "answer": 1,
+      "chapter": "Vitamin B12 and RBCs",
+      "explain": "Intrinsic factor (IF) is required for vitamin B12 absorption. B12 is essential for DNA synthesis during RBC maturation. No IF → no B12 absorption → megaloblastic anemia (large, immature RBCs) and low hemoglobin.",
+      "optionExplains": [
+        {
+          "text": "Gastric lipase contributes minimally to fat digestion (~10%, mainly pancreatic lipase). It has no role in RBC production. Hemoglobin synthesis requires iron, B12, folate, B6 - not lipase.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Correct! Intrinsic factor (IF, from parietal cells) binds vitamin B12 → absorption in terminal ileum → B12 used as cofactor for methionine synthase (folate metabolism) and methylmalonyl-CoA mutase (fatty acid metabolism). Most critically, B12 is needed for DNA synthesis (via thymidine production). Deficiency → impaired DNA replication → erythroblasts (RBC precursors) undergo fewer divisions, remain larger → megaloblastic anemia (large, immature RBCs, low Hb). Also neurological damage (demyelination). No IF (pernicious anemia, gastrectomy) → B12 malabsorption → anemia.",
+          "verdict": "correct"
+        },
+        {
+          "text": "Pepsinogen (converted to pepsin) digests dietary proteins, including those containing iron (heme proteins). While iron IS needed for hemoglobin (heme synthesis), pepsinogen itself isn't directly necessary - iron can be absorbed from non-protein sources. Intrinsic factor is MORE directly essential (B12 absorption).",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "HCl does help release iron from food (reduces Fe3+ to Fe2+, more absorbable) and liberates B12 from proteins, but it's not DIRECTLY necessary for hemoglobin production the way intrinsic factor is. IF is SPECIFICALLY required for B12 absorption, and B12 deficiency DIRECTLY causes megaloblastic anemia. HCl aids but isn't the rate-limiting factor.",
+          "verdict": "incorrect"
+        }
+      ],
+      "mechanism": {
+        "title": "The B12-Hemoglobin Link",
+        "content": "Intrinsic factor → B12 absorption → RBC maturation pathway: (1) PARIETAL CELLS secrete intrinsic factor (IF, glycoprotein). (2) IF binds dietary B12 (cobalamin) in duodenum → IF-B12 complex. (3) Terminal ileum: cubilin receptors endocytose IF-B12 → B12 released → binds transcobalamin II → portal circulation → tissues. (4) B12 FUNCTIONS: (a) Cofactor for methionine synthase (homocysteine + methyl-THF → methionine + THF). This regenerates THF (tetrahydrofolate) needed for thymidine synthesis. (b) Cofactor for methylmalonyl-CoA mutase (odd-chain fatty acid metabolism). (5) IMPACT ON RBCs: Without B12 → methyl-THF trap (folate stuck in methyl form) → reduced THF → impaired thymidine synthesis → defective DNA replication → erythroblasts undergo fewer cell divisions, remain megaloblastic (large, immature) → megaloblastic anemia (high MCV, low reticulocyte count, hypersegmented neutrophils). Also: neurological damage (demyelination of posterior columns, peripheral nerves) from methylmalonyl-CoA accumulation. Treatment: IM B12 (bypasses IF deficiency).",
+        "metaphor": "Like a factory assembly line needing a specific part (B12) delivered by a dedicated truck (intrinsic factor). Without the truck, the part never arrives, and the assembly line (RBC maturation) stalls out, producing defective oversized products (megaloblasts) instead of normal finished goods (mature RBCs)."
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "q": "The ingestion of a meal high in fat content would cause which of the following to occur?",
+      "options": [
+        "The acid secretions from the stomach would be sufficient to digest this food but may cause heartburn.",
+        "Bile would be released from the gallbladder to emulsify the fat in the duodenum.",
+        "Increased production of trypsinogen.",
+        "This type of food would cause secretion of gastrin to cease, resulting in faster gastric emptying."
+      ],
+      "answer": 1,
+      "chapter": "Fat Digestion",
+      "explain": "Fat entering the duodenum triggers CCK (cholecystokinin) release from I cells. CCK causes gallbladder contraction → bile release (emulsifies fat) and pancreatic enzyme secretion (lipase). It also SLOWS gastric emptying (to allow time for fat digestion).",
+      "optionExplains": [
+        {
+          "text": "Gastric acid (HCl) does NOT digest fat - it denatures proteins and activates pepsinogen. Fat digestion requires LIPASE (pancreatic, some gastric/lingual) and BILE (emulsification). Acid has no lipolytic activity. Also, fatty meals SLOW gastric emptying (don't rush into duodenum unprepared), reducing reflux risk, not increasing it.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Exactly! Fat in duodenum → I cells (duodenal mucosa) detect fat (lipid chemoreceptors) → secrete CCK (cholecystokinin) → (1) Gallbladder contraction (CCK-A receptors on smooth muscle) → bile release into duodenum → bile salts emulsify fat (↑ surface area 1000x), (2) Pancreatic enzyme secretion (lipase, colipase, phospholipase), (3) SLOWS gastric emptying (allows time for fat digestion). This is the classic 'fat brake' - duodenal fat slows everything down to ensure adequate digestion/absorption.",
+          "verdict": "correct"
+        },
+        {
+          "text": "Trypsinogen production is constitutive (always happening), not acutely increased by meals. What DOES increase is trypsinogen SECRETION (from pancreatic acinar cells), triggered by CCK and secretin. But the question says 'production' (synthesis), which is chronic, not meal-responsive. Also, trypsinogen is for PROTEIN digestion (not fat specifically).",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Opposite effect! Fat in the duodenum triggers CCK and GIP (gastric inhibitory peptide) which INHIBIT gastric secretion and motility, SLOWING gastric emptying. This 'ileal brake' and 'duodenal brake' prevent overwhelming the small intestine with fat before it can be processed. Fat delays emptying (increases satiety), not accelerates it.",
+          "verdict": "incorrect"
+        }
+      ],
+      "mechanism": {
+        "title": "The Fat Response",
+        "content": "Fat ingestion → duodenal fat sensing → coordinated response: (1) FAT DETECTION - duodenal I cells (enteroendocrine) have lipid receptors (GPR120, CD36) → detect fatty acids/monoglycerides → secrete CCK (cholecystokinin). (2) CCK EFFECTS - (a) Gallbladder: CCK-A receptors → smooth muscle contraction → bile expulsion (30-60 mL concentrated bile) → bile salts emulsify fat (large droplets → micelles, ↑ surface area), (b) Pancreas: acinar cells → secrete lipase, colipase, phospholipase A2, cholesterol esterase (fat-digesting enzymes), (c) Stomach: CCK → SLOWS gastric emptying (pyloric sphincter contraction, reduced antral contractions) - the 'duodenal brake' prevents overwhelming duodenum with fat, (d) Satiety: CCK → vagal afferents → hypothalamus → satiety signal (why fatty meals are filling). (3) SECRETIN (from S cells, triggered by duodenal acid) - stimulates pancreatic bicarbonate (neutralizes acid, optimizes lipase pH ~7). (4) GIP (glucose-dependent insulinotropic peptide, from K cells) - inhibits gastric acid, stimulates insulin (prepares for nutrient absorption). Result: coordinated bile release + enzyme secretion + slowed gastric emptying = optimal fat digestion/absorption over 3-5 hours.",
+        "metaphor": "Like a loading dock alarm - when a fat-laden truck (fatty meal) arrives at the warehouse (duodenum), sensors trigger multiple coordinated responses: call in the forklift crew (bile + lipase), slow down incoming trucks (gastric emptying), and sound the satiety alarm upstairs (hypothalamus). Everything calibrated for safe, efficient unloading."
+      }
+    },
+    {
+      "id": 24,
+      "type": "multiple_choice",
+      "q": "Hormones or paracrines that inhibit gastric secretion include ________.",
+      "options": [
+        "histamine",
+        "secretin",
+        "ACh",
+        "gastrin"
+      ],
+      "answer": 1,
+      "chapter": "GI Hormones",
+      "explain": "Secretin (from duodenal S cells in response to acid) inhibits gastric acid secretion and promotes pancreatic bicarbonate release. It's part of negative feedback - duodenal acid shuts down further gastric acid production.",
+      "optionExplains": [
+        {
+          "text": "Histamine STIMULATES gastric secretion, not inhibits. ECL cells (enterochromaffin-like) release histamine → binds H2 receptors on parietal cells → cAMP → activates H+/K+-ATPase → HCl secretion. Histamine is the MOST POTENT stimulator of acid. H2 blockers (ranitidine) reduce acid by blocking this pathway.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Correct! Secretin (from duodenal S cells) is released when acidic chyme (pH <4.5) enters the duodenum. Effects: (1) INHIBITS gastric acid secretion (negative feedback - duodenum says 'stop sending more acid'), (2) STIMULATES pancreatic bicarbonate secretion (neutralizes the acid already there). This is protective - prevents duodenal ulceration from excessive acid. Secretin is the classic inhibitory GI hormone for gastric function.",
+          "verdict": "correct"
+        },
+        {
+          "text": "Acetylcholine (ACh) STIMULATES gastric secretion. Vagal parasympathetic neurons release ACh → binds M3 receptors on parietal cells → acid secretion. ACh also stimulates chief cells (pepsinogen) and G cells (gastrin). It's excitatory (part of cephalic/gastric phases), not inhibitory.",
+          "verdict": "incorrect"
+        },
+        {
+          "text": "Gastrin STIMULATES gastric secretion, not inhibits. G cells (in gastric antrum) release gastrin in response to peptides, distention, vagal stimulation → gastrin binds parietal cells → HCl secretion + mucosal growth. Gastrin is the major hormonal STIMULATOR of acid. Low pH inhibits gastrin release (negative feedback), but gastrin itself is stimulatory.",
+          "verdict": "incorrect"
+        }
+      ],
+      "mechanism": {
+        "title": "The Acid Brake",
+        "content": "GI hormones regulating gastric secretion: STIMULATORY - (1) Gastrin (from G cells, antrum) - stimulates parietal cells (acid), ECL cells (histamine), mucosal growth. Released by peptides, distention, vagal input. (2) Histamine (from ECL cells) - most potent acid stimulator via H2 receptors. (3) Acetylcholine (vagal, enteric) - stimulates parietal/chief/G cells. INHIBITORY - (1) SECRETIN (from S cells, duodenum) - released by acid (pH <4.5) → INHIBITS gastric acid, STIMULATES pancreatic HCO3-. Negative feedback: acid in duodenum shuts down gastric acid source. (2) CCK (from I cells, duodenum) - released by fats/proteins → inhibits gastric emptying, weak acid inhibition. (3) GIP (gastric inhibitory peptide, from K cells) - released by glucose/fats → inhibits gastric acid, stimulates insulin. (4) Somatostatin (from D cells, stomach/duodenum) - paracrine inhibitor → blocks gastrin/histamine/acid secretion. LOW pH also directly inhibits G cells (shuts down gastrin). The system is self-regulating: stimulation during cephalic/gastric phases, inhibition during intestinal phase (negative feedback prevents duodenal acid overload).",
+        "metaphor": "Like cruise control with a brake - gastrin/histamine/ACh are the accelerators (speed up acid production), secretin is the brake pedal (duodenum detects too much acid and pumps the brakes). The system self-regulates: stomach produces, duodenum says 'whoa, slow down' when overwhelmed."
+      }
+    },
+    {
+      "id": 25,
+      "type": "short_answer",
+      "q": "What are chylomicrons and what is their function?",
+      "chapter": "Lipid Transport",
+      "explain": "Chylomicrons are large lipoprotein particles assembled in intestinal enterocytes. They package dietary fats (triglycerides, cholesterol, fat-soluble vitamins) for transport via lymphatics → bloodstream, delivering lipids to tissues.",
+      "model_answer": "CHYLOMICRONS: Large lipoprotein particles (75-1200 nm diameter) synthesized by intestinal enterocytes (absorptive epithelial cells) in the small intestine.\n\nCOMPOSITION:\n- Core: Triglycerides (85-95%, dietary fats), cholesterol esters, fat-soluble vitamins (A, D, E, K)\n- Surface: Phospholipids, free cholesterol, apolipoproteins (apoB-48 structural, apoC-II activates lipoprotein lipase, apoE for hepatic uptake)\n\nFUNCTION: Transport dietary lipids from intestine to peripheral tissues and liver.\n\nMECHANISM:\n1. ASSEMBLY (enterocyte): After fat absorption (monoglycerides + fatty acids absorbed → re-esterified to triglycerides in ER), triglycerides + cholesterol + fat-soluble vitamins are packaged with apoB-48 → chylomicron formation in ER/Golgi.\n\n2. SECRETION: Chylomicrons are too large for blood capillaries → secreted into lacteals (lymphatic capillaries in intestinal villi) → thoracic duct → left subclavian vein → bloodstream. This is why lymph looks milky after a fatty meal (chylomicronemia).\n\n3. LIPID DELIVERY: In capillaries (muscle, adipose), lipoprotein lipase (LPL, activated by apoC-II) hydrolyzes chylomicron triglycerides → releases fatty acids (taken up by tissues for energy or storage) → chylomicron shrinks to chylomicron remnant.\n\n4. REMNANT CLEARANCE: Liver hepatocytes recognize apoE on remnants → receptor-mediated endocytosis → uptake and processing.\n\nCLINICAL: Abetalipoproteinemia (absent apoB-48) → cannot make chylomicrons → fat malabsorption, steatorrhea, deficiency of fat-soluble vitamins.",
+      "mechanism": {
+        "title": "The Lipid Ferry",
+        "content": "Chylomicron lifecycle: (1) FORMATION (intestinal enterocyte) - absorbed monoglycerides + fatty acids → smooth ER → re-esterification to triglycerides → ER/Golgi → TGs + cholesterol esters + fat-soluble vitamins + apoB-48 → chylomicron assembly (requires microsomal triglyceride transfer protein/MTP). (2) SECRETION - exocytosis → basolateral membrane → interstitial space → LACTEALS (lymph capillaries, chylomicrons too large for blood capillaries) → thoracic duct → left subclavian vein → systemic circulation. (3) MATURATION - in bloodstream, acquires apoC-II (activates lipoprotein lipase) and apoE (hepatic uptake signal) from HDL. (4) LIPID DELIVERY - capillary endothelium (muscle, adipose, heart) has lipoprotein lipase (LPL) → hydrolyzes chylomicron TGs → fatty acids released → tissue uptake (oxidation for energy or storage as fat). Chylomicron shrinks as TGs depleted. (5) REMNANT UPTAKE - liver hepatocytes have LDL receptor-related protein (LRP) that recognizes apoE → endocytosis → remnant degradation, cholesterol/vitamin processing. Pathology: familial chylomicronemia (LPL deficiency) → chylomicrons accumulate → milky plasma, eruptive xanthomas, pancreatitis risk.",
+        "metaphor": "Like cargo ships (chylomicrons) built at port (intestine), loaded with freight (dietary fats), sailing through canals (lymphatics) to the ocean (bloodstream), docking at harbors (capillaries) to unload cargo (fatty acids to tissues via LPL), then returning as smaller vessels (remnants) to the home port (liver) for decommissioning."
+      }
+    }
+  ]
+};
+
+let userAnswers = {};
+let score = 0;
+
+function renderQuiz() {
+  const container = document.getElementById('questions-container');
+
+  quizData.question_bank.forEach((q, index) => {
+    const qCard = document.createElement('div');
+    qCard.className = 'q-card';
+    qCard.id = `question-${q.id}`;
+
+    let optionsHTML = '';
+
+    if (q.type === 'true_false' || q.type === 'multiple_choice') {
+      optionsHTML = '<div class="options">';
+      q.options.forEach((option, optIdx) => {
+        const letter = String.fromCharCode(65 + optIdx); // A, B, C, D
+        optionsHTML += `
+          <button class="option-btn" data-q-id="${q.id}" data-option="${optIdx}">
+            <span class="option-letter">${letter}</span>
+            <span>${option}</span>
+          </button>
+        `;
+      });
+      optionsHTML += '</div>';
+    } else if (q.type === 'short_answer') {
+      optionsHTML = `
+        <textarea
+          class="short-answer-input"
+          id="answer-${q.id}"
+          placeholder="Type your answer here..."></textarea>
+        <button class="submit-btn show" onclick="showShortAnswerExplanation(${q.id})">
+          Show Model Answer
+        </button>
+      `;
+    }
+
+    qCard.innerHTML = `
+      <div class="q-header">
+        <div class="q-num">Q${index + 1}</div>
+        <div class="q-chapter">${q.chapter}</div>
+      </div>
+      <div class="q-text">${q.q || q.question}</div>
+      ${optionsHTML}
+      <div id="explanation-${q.id}" class="explanation"></div>
+    `;
+
+    container.appendChild(qCard);
+  });
+
+  // Attach event listeners to option buttons
+  document.querySelectorAll('.option-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const qId = parseInt(this.dataset.qId);
+      const optIdx = parseInt(this.dataset.option);
+      handleAnswer(qId, optIdx);
+    });
+  });
+}
+
+function handleAnswer(qId, selectedOption) {
+  const question = quizData.question_bank.find(q => q.id === qId);
+  if (!question || userAnswers[qId] !== undefined) return; // Already answered
+
+  userAnswers[qId] = selectedOption;
+  const isCorrect = selectedOption === question.answer;
+
+  if (isCorrect) {
+    score++;
+    document.getElementById('score').textContent = score;
+  }
+
+  // Update UI
+  const qCard = document.getElementById(`question-${qId}`);
+  qCard.classList.add(isCorrect ? 'answered-correct' : 'answered-incorrect');
+
+  // Disable all options and highlight correct/incorrect
+  const buttons = qCard.querySelectorAll('.option-btn');
+  buttons.forEach((btn, idx) => {
+    btn.classList.add('disabled');
+    btn.style.pointerEvents = 'none';
+
+    if (idx === question.answer) {
+      btn.classList.add('correct');
+    } else if (idx === selectedOption) {
+      btn.classList.add('incorrect');
+    }
+  });
+
+  // Show explanation
+  showExplanation(qId, selectedOption);
+
+  // Check if all questions answered
+  checkCompletion();
+}
+
+function showExplanation(qId, selectedOption) {
+  const question = quizData.question_bank.find(q => q.id === qId);
+  const explanationDiv = document.getElementById(`explanation-${qId}`);
+
+  let explanationHTML = '<div class="explanation-title">Ms. Luminara explains:</div>';
+
+  if (question.optionExplains && question.optionExplains[selectedOption]) {
+    explanationHTML += `<div class="explanation-text">${question.optionExplains[selectedOption].text}</div>`;
+  } else if (question.explain) {
+    explanationHTML += `<div class="explanation-text">${question.explain}</div>`;
+  }
+
+  if (question.mechanism) {
+    explanationHTML += `
+      <div class="mechanism">
+        <div class="mechanism-title">${question.mechanism.title}</div>
+        <div class="mechanism-content">${question.mechanism.content}</div>
+        ${question.mechanism.metaphor ?
+          `<div class="mechanism-metaphor">💡 ${question.mechanism.metaphor}</div>` : ''}
+      </div>
+    `;
+  }
+
+  explanationDiv.innerHTML = explanationHTML;
+  explanationDiv.classList.add('show');
+}
+
+function showShortAnswerExplanation(qId) {
+  const question = quizData.question_bank.find(q => q.id === qId);
+  const explanationDiv = document.getElementById(`explanation-${qId}`);
+
+  let explanationHTML = '';
+
+  if (question.model_answer) {
+    explanationHTML += `
+      <div class="model-answer">
+        <div class="model-answer-title">Model Answer:</div>
+        <div class="model-answer-text">${question.model_answer}</div>
+      </div>
+    `;
+  }
+
+  if (question.mechanism) {
+    explanationHTML += `
+      <div class="mechanism">
+        <div class="mechanism-title">${question.mechanism.title}</div>
+        <div class="mechanism-content">${question.mechanism.content}</div>
+        ${question.mechanism.metaphor ?
+          `<div class="mechanism-metaphor">💡 ${question.mechanism.metaphor}</div>` : ''}
+      </div>
+    `;
+  }
+
+  explanationDiv.innerHTML = explanationHTML;
+  explanationDiv.classList.add('show');
+
+  // Mark as "answered" (for short answer, we don't score it)
+  userAnswers[qId] = true;
+  checkCompletion();
+}
+
+function checkCompletion() {
+  const mcQuestions = quizData.question_bank.filter(q =>
+    q.type === 'true_false' || q.type === 'multiple_choice'
+  );
+
+  const answeredCount = Object.keys(userAnswers).length;
+  const totalCount = quizData.question_bank.length;
+
+  if (answeredCount === totalCount) {
+    showResults();
+  }
+}
+
+function showResults() {
+  const mcQuestions = quizData.question_bank.filter(q =>
+    q.type === 'true_false' || q.type === 'multiple_choice'
+  );
+
+  const totalMC = mcQuestions.length;
+  const percentage = Math.round((score / totalMC) * 100);
+
+  document.getElementById('final-score').textContent = `${score} / ${totalMC}`;
+  document.getElementById('percentage').textContent = `${percentage}%`;
+  document.getElementById('results').style.display = 'block';
+
+  // Scroll to results
+  document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+}
+
+// Initialize quiz when page loads
+document.addEventListener('DOMContentLoaded', function() {
+  renderQuiz();
+});
+</script>
+</body>
+</html>

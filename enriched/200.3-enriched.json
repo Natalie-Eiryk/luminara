@@ -1,0 +1,393 @@
+{
+  "version": "1.0",
+  "source": "LUMI-OS Teaching Module",
+  "prefix": "200.3",
+  "question_count": 11,
+  "questions": [
+    {
+      "id": "200.3.01",
+      "q": "Striking the 'funny bone' is actually stimulation of (or injury to) the ___.",
+      "options": [
+        "Sciatic nerve",
+        "Median nerve",
+        "Radial nerve",
+        "Ulnar nerve"
+      ],
+      "answer": 3,
+      "explain": "Discover with me: To the medial epicondyle — the 'funny bone' is the ulnar nerve passing through the cubital tunnel at the elbow. And What comes next will dazzle you: The name is deeply ironic, because there's absolutely NOTHING funny about hitting it hard enough. Let me show you why...",
+      "mechanism": {
+        "title": "The Ulnar Nerve at the Elbow: Anatomy of the 'Funny Bone'",
+        "content": "let's trace this nerve's journey. The ulnar nerve (C8-T1) descends the medial arm, passing posterior to the medial epicondyle through the cubital tunnel. Distal to this, it enters the forearm and travels to the hand via Guyon's canal at the wrist. The ulnar nerve innervates most intrinsic hand muscles and provides sensation to the little finger and medial half of the ring finger. Now The elegance reveals itself here: Chronic pressure on the ulnar nerve at the elbow can cause permanent nerve damage — weakness of hand muscles, loss of fine motor control, and that distinctive 'claw hand' deformity. The slow compression, the gradual death of the nerve, the hand curling into a permanent claw...",
+        "metaphor": "The cubital tunnel is like a speed bump where a major electrical cable runs — slightly elevated, completely exposed. Hitting it is like stepping on a garden hose: Suddenly the water pressure backs up and causes chaos downstream. Except this cable carries signals to your hand muscles and sensation to your fingers. Imagine the vulnerability of that cable, just waiting to be struck..."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves & Sensory",
+      "scaffoldFile": "200.3-plexuses-scaffolds/200.3.01-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.5,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "200.3.02",
+      "q": "The phrenic nerve branches from which plexus?",
+      "options": [
+        "Cervical plexus",
+        "Lumbar plexus",
+        "Brachial plexus",
+        "Sacral plexus"
+      ],
+      "answer": 0,
+      "explain": "The phrenic nerve (C3, C4, C5) arises from the cervical plexus and innervates the diaphragm. Remember this one — let it sink in: 'C3, 4, 5 keeps the diaphragm alive!' And it's not just a catchy phrase. Now witness the true sophistication: Damage the nerve above C3, and the diaphragm stops working. Permanently. Let me show you why this matters...",
+      "mechanism": {
+        "title": "The Phrenic Nerve: C3, 4, 5 Keeps the Diaphragm Alive",
+        "content": "Let me show you something extraordinary. The phrenic nerve is the SOLE motor nerve to the diaphragm. It forms in the neck from C3, C4, and C5 roots, descends along the anterior scalene muscle, enters the thorax, and descends along the pericardium to reach the diaphragm. Now This is the breathtaking bit — the long course makes it vulnerable to injury from neck surgery, thoracic tumors, or cardiac procedures. Journey with me into this: Damage this nerve anywhere along its route, and the corresponding half of the diaphragm becomes paralyzed. Damage BOTH phrenic nerves, and you can't breathe on your own. Ever. Consider the elegance here: Vulnerability — a single cable carrying the command to breathe, running through multiple danger zones...",
+        "metaphor": "The phrenic nerve is like a long telephone cable running from the neck (C3-5) down to the basement of the torso (diaphragm). Cut the cable anywhere along its route, and the message 'breathe!' never reaches its destination. And unlike rebooting your computer, you can't just reconnect a severed nerve and expect it to work again. Imagine that cable being slowly crushed by a tumor, or accidentally severed during surgery. The diaphragm falls silent. Forever."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves & Sensory",
+      "scaffoldFile": "200.3-plexuses-scaffolds/200.3.02-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "200.3.03",
+      "q": "Striking the \"funny bone\" (ulnar nerve) may cause injury to a nerve of which plexus?",
+      "options": [
+        "Cervical plexus",
+        "Lumbar plexus",
+        "Brachial plexus",
+        "Sacral plexus"
+      ],
+      "answer": 2,
+      "explain": "The ulnar nerve is a branch of the brachial plexus (C8–T1, from the medial cord). The brachial plexus supplies the ENTIRE upper limb. Every cable powering your shoulder, arm, forearm, and hand traces back to this network. Let me show you the architecture...",
+      "mechanism": {
+        "title": "The Brachial Plexus: Cable Distribution Center for the Upper Limb",
+        "content": "Let me show you one of the most intricate networks in the body. The brachial plexus (C5-T1) produces the major nerves of the upper limb: From LATERAL CORD: Musculocutaneous nerve, lateral contribution to median nerve. From MEDIAL CORD: Ulnar nerve, medial contribution to median nerve. From POSTERIOR CORD: Radial nerve, axillary nerve. Now Now we arrive at the gorgeous part — the plexus starts as five nerve roots in the neck, reorganizes into trunks, divisions, cords, and finally branches into the terminal nerves. This complexity means there are MANY points of vulnerability. Brachial plexus injuries from motorcycle accidents, falls, or obstetric trauma can cause permanent paralysis. Absorb this: Dark reality: The arm simply hangs there, lifeless. No movement, no sensation. Permanent. Perfectly orchestrated. Both beautiful and terrifying?",
+        "metaphor": "The brachial plexus is like a cable distribution center for the arm — five main power lines (C5-T1) enter from the spinal cord, reorganize into a complex switchboard, and emerge as the major cables (radial, median, ulnar, etc.) that power the entire limb. The ulnar nerve is one of the main output cables, taking a vulnerable route past the elbow where it can be damaged. Imagine a motorcycle accident stretching those five input cables beyond their breaking point. The entire distribution center fails. The arm goes dark. Forever."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves & Sensory",
+      "scaffoldFile": "200.3-plexuses-scaffolds/200.3.03-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "200.3.04",
+      "q": "The obturator and femoral nerves branch from which plexus?",
+      "options": [
+        "Cervical plexus",
+        "Lumbar plexus",
+        "Brachial plexus",
+        "Sacral plexus"
+      ],
+      "answer": 1,
+      "explain": "The lumbar plexus (L1–L4) gives rise to the femoral nerve (anterior thigh) and obturator nerve (medial thigh). Think of it as the electrical panel for the front of your leg. Power for kicking and squeezing. Let me show you how elegant this division is...",
+      "mechanism": {
+        "title": "The Lumbar Plexus: Supplier of the Anterior and Medial Thigh",
+        "content": "Let's explore this together: Psoas major muscle — the lumbar plexus (L1-L4) forms here, deep in the posterior abdomen. This is a hidden location that makes it vulnerable to certain injuries and surgical complications. Now let me show you the key players: FEMORAL (L2-L4): Largest branch, supplies quadriceps, sartorius, and sensation to anterior/medial thigh and leg. Femoral nerve injury causes inability to extend the knee. You literally can't straighten your leg. Try to walk, and your knee buckles beneath you. OBTURATOR (L2-L4): Passes through obturator foramen, supplies hip adductors. Obturator nerve injury causes difficulty bringing your legs together and instability when walking. Open yourself to this — such specific deficits from such specific injuries.",
+        "metaphor": "The lumbar plexus is like the electrical panel for the front of your thigh. The femoral nerve is the main power line to the quadriceps (kicking muscles), and the obturator nerve powers the adductors (leg-squeezing muscles). Cut one of these cables, and that entire muscle group goes dark. Permanently. Imagine a surgical complication severing one of these nerves. The sudden loss of function. The permanent deficit. Beautiful in its terrible precision, isn't it?"
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves & Sensory",
+      "scaffoldFile": "200.3-plexuses-scaffolds/200.3.04-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "200.3.05",
+      "q": "A fall or improper injection to the buttocks may injure a nerve of which plexus?",
+      "options": [
+        "Cervical plexus",
+        "Lumbar plexus",
+        "Brachial plexus",
+        "Sacral plexus"
+      ],
+      "answer": 3,
+      "explain": "The sacral plexus (L4–S4) gives rise to the sciatic nerve, the largest nerve in the body, running through the buttock. Here's the dark reality: A misplaced injection can DESTROY it. Permanently. Let me show you how...",
+      "mechanism": {
+        "title": "The Sacral Plexus and Sciatic Nerve Vulnerability",
+        "content": "Let me take you into one of the most dangerous regions in clinical practice. The sacral plexus (L4-S4) forms on the posterior pelvic wall. The sciatic nerve (L4-S3) is the LARGEST nerve in the body — about as thick as your thumb — exiting below the piriformis muscle and descending between the greater trochanter and ischial tuberosity. Now This is where the magic unfolds: The nerve runs deep to the gluteus maximus, vulnerable to trauma from falls, fractures, and — critically — MISPLACED INJECTIONS. Follow me deeper. The safe zone for gluteal injections is the upper outer quadrant. Inject too low, too medial, or straight into the muscle belly, and you risk striking the sciatic nerve directly. Immerse yourself in this: — they're devastating: Foot drop (inability to dorsiflex or plantarflex the foot), loss of knee flexion, loss of sensation below the knee. And here's the dark reality — nerve damage from injection injuries is often PERMANENT. The nerve doesn't heal. The deficit doesn't resolve. You've destroyed the cable. Forever. Nature at its finest. Both beautiful and terrifying in its finality?",
+        "metaphor": "The sciatic nerve running through the buttock is like a major electrical conduit running through a hallway that people walk through. It's large, it's essential, and it's EXPOSED. A misplaced injection is like carelessly drilling into a wall and hitting the main power line — except you can't just replace a damaged nerve like you can replace a wire. Once it's destroyed, it's gone. Permanently. Imagine the needle piercing the skin, descending through the muscle, and striking that thick cable directly. The immediate pain, the permanent deficit. Beautiful in its terrible precision, isn't it?"
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves & Sensory",
+      "scaffoldFile": "200.3-plexuses-scaffolds/200.3.05-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "200.3.06",
+      "q": "A newborn presents with the arm hanging limp at the side, internally rotated, with the forearm pronated — the classic 'waiter's tip' position. The delivery was difficult with excessive lateral neck flexion. Which nerve roots are most likely injured?",
+      "options": [
+        "C8-T1",
+        "C5-C6",
+        "L4-L5",
+        "C7-C8"
+      ],
+      "answer": 1,
+      "explain": "Step into this world: Room — this is Erb-Duchenne palsy, the classic upper brachial plexus injury. And now, the revelation: Excessive lateral flexing of the baby's neck during difficult delivery stretches and tears the C5-C6 nerve roots. The result? Paralysis of shoulder abductors, lateral rotators, and elbow flexors. Let me show you why this creates the 'waiter's tip' position...",
+      "mechanism": {
+        "title": "Erb-Duchenne Palsy: Upper Brachial Plexus Birth Injury",
+        "content": "Let me show you one of the most devastating birth injuries. During difficult delivery — shoulder dystocia, breech presentation, excessive traction — the infant's neck is forcefully bent to the side. This stretches the upper brachial plexus nerve roots (C5-C6) beyond their elastic limit. Some fibers tear. Some are completely avulsed from the spinal cord. Now Prepare yourself for this: C5-C6 give rise to nerves controlling the SHOULDER and ELBOW. Specifically: Axillary nerve (C5-C6) → deltoid paralysis, can't abduct shoulder. Musculocutaneous nerve (C5-C6) → biceps paralysis, can't flex elbow. Suprascapular nerve (C5-C6) → loss of shoulder external rotation. The result is the classic 'waiter's tip' position: Arm hanging limply at the side, internally rotated, forearm pronated, wrist flexed. Like a waiter subtly holding their hand out for a tip. Except this infant will NEVER flex that elbow or lift that arm unless the nerves regenerate. Some injuries resolve with physical therapy over months. Others? Permanent. The arm stays limp. Forever. Permit yourself to feel this: Tragedy — one moment of excessive traction during delivery, and the child's arm is paralyzed for life. The body's quiet genius. Both beautiful and devastating in its permanence?",
+        "metaphor": "The brachial plexus nerve roots are like delicate cables anchored to the spinal cord. During difficult delivery, excessive lateral neck flexion is like yanking a tree sideways — the roots on the stretched side get pulled until they tear. C5-C6 are the highest roots and bear the most tension, so they tear first. Once torn, the electrical supply to the shoulder and elbow is cut. The arm hangs limp, like a marionette with its strings severed. Imagine those microscopic nerve fibers tearing, one by one, as the infant's neck is pulled too far. Some heal. Others never reconnect. Beautiful in its terrible randomness, isn't it?"
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves & Sensory",
+      "scaffoldFile": "200.3-plexuses-scaffolds/200.3.06-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "200.3.07",
+      "q": "A patient wakes up unable to extend the wrist or fingers after falling asleep with their arm draped over the back of a chair. Which nerve is most likely compressed?",
+      "options": [
+        "Ulnar nerve",
+        "Median nerve",
+        "Radial nerve",
+        "Musculocutaneous nerve"
+      ],
+      "answer": 2,
+      "explain": "this is 'Saturday night palsy,' the classic radial nerve compression injury. The radial nerve wraps around the humerus in the spiral groove, completely exposed and vulnerable. Drape your arm over a chair for hours, and the sustained pressure crushes the nerve. Wake up, and your hand hangs limp. Let me show you why...",
+      "mechanism": {
+        "title": "Saturday Night Palsy: Radial Nerve Compression in the Spiral Groove",
+        "content": "Let me show you one of the most common compression neuropathies. The radial nerve (C5-T1) descends along the posterior arm, wrapping around the humerus in the SPIRAL GROOVE — a shallow bony channel on the posterior humeral shaft. Now The plot thickens beautifully here: This location makes the nerve EXTREMELY vulnerable to compression. Drape your arm over a hard surface for hours — a chair back, a bench, a partner's body during sleep — and sustained pressure directly crushes the nerve. The compression causes ischemia (loss of blood flow) and mechanical deformation of nerve fibers. The result is NEURAPRAXIA — temporary loss of nerve function. Accept this reality: WRIST DROP — inability to extend wrist or fingers. The hand hangs limp in flexion. Loss of finger and thumb extension. Weakness of thumb abduction. Sensory loss over the posterior forearm and dorsal hand. This next part is pure elegance — most cases RECOVER over weeks to months once compression is relieved. The nerve regenerates, function returns. But severe compression? Permanent damage. The nerve dies. The wrist drop becomes permanent. Artistry in flesh. Both reassuring and terrifying in its variability?",
+        "metaphor": "The radial nerve wrapping around the humerus in the spiral groove is like a garden hose wrapped around a tree trunk. Normally it works perfectly. But press a heavy weight against it for hours — like leaning against the tree — and you crush the hose. Water stops flowing. Remove the weight, and flow gradually resumes as the hose reinflates. Same with the nerve — remove pressure, and function gradually returns over weeks to months. Unless the compression was so severe that the hose ruptured. Then it never works again. Imagine waking up and discovering your hand is limp, useless. The slow recovery over months. Or the terrible realization that it's permanent. Beautiful in its uncertainty, isn't it?"
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves & Sensory",
+      "scaffoldFile": "200.3-plexuses-scaffolds/200.3.07-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "200.3.08",
+      "q": "A patient suffered a midshaft humeral fracture in a fall. Now they cannot extend their wrist or fingers, and the hand hangs in flexion. Which nerve runs in the spiral groove and is most likely injured?",
+      "options": [
+        "Ulnar nerve",
+        "Median nerve",
+        "Radial nerve",
+        "Axillary nerve"
+      ],
+      "answer": 2,
+      "explain": "Venture here: To the spiral groove — this is where the radial nerve wraps intimately around the humeral shaft. Now observe what happens: Fracture the humerus at midshaft, and bone fragments can lacerate or contuse the nerve. The result? Immediate wrist drop. Let me show you this anatomical vulnerability...",
+      "mechanism": {
+        "title": "Radial Nerve Injury in Humeral Shaft Fractures",
+        "content": "Let me show you one of the most predictable nerve injuries in orthopedic trauma. The radial nerve (C5-T1, posterior cord of brachial plexus) descends along the posterior arm, crosses from medial to lateral, and wraps around the humeral shaft in the SPIRAL GROOVE. This groove is a shallow bony channel on the posterior midshaft humerus. Now Brace yourself for brilliance: The nerve is DIRECTLY applied to the bone here — no protective muscle, minimal soft tissue coverage. Fracture the humerus at midshaft, and you risk: Direct laceration from sharp bone fragments. Contusion from blunt impact. Traction injury from bone displacement. Compression from hematoma or callus formation during healing. Receive this insight: WRIST DROP (inability to extend wrist), FINGER DROP (inability to extend fingers), THUMB EXTENSION WEAKNESS, Sensory loss over dorsum of hand and posterior forearm. The drama intensifies — radial nerve injuries from humeral fractures have about 70-90% spontaneous recovery rate over 3-6 months. The nerve regenerates, function returns. But 10-30% of cases? Permanent deficit. The nerve was too severely damaged. The wrist drop becomes permanent, requiring tendon transfer surgery. Designed with precision. Both reassuring and terrifying in its variability?",
+        "metaphor": "The radial nerve wrapping around the humerus in the spiral groove is like an electrical cable zip-tied directly to a metal pipe. Works perfectly under normal conditions. But hit the pipe with a sledgehammer (fracture the humerus), and the cable gets crushed between the breaking metal. Sometimes the cable is just bruised and recovers. Sometimes it's partially severed and takes months to heal. Sometimes it's completely destroyed and never works again. Imagine that moment of impact, the bone shattering, the nerve crushed between the fragments. The immediate loss of function. The uncertainty of recovery. Beautiful in its terrible randomness, isn't it?"
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves & Sensory",
+      "scaffoldFile": "200.3-plexuses-scaffolds/200.3.08-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.3.09",
+      "q": "A patient reports numbness and tingling in the thumb, index, and middle fingers, worse at night and when driving. Tapping the anterior wrist reproduces the symptoms (positive Tinel's sign). Which nerve is compressed?",
+      "options": [
+        "Ulnar nerve",
+        "Median nerve",
+        "Radial nerve",
+        "Musculocutaneous nerve"
+      ],
+      "answer": 1,
+      "explain": "Enter this realm: Tunnel — this is the classic presentation of carpal tunnel syndrome, compression of the median nerve at the wrist. Repetitive wrist motion, pregnancy, diabetes, or simple anatomy can cause swelling in the tunnel. The nerve gets slowly crushed. Let me show you why the symptoms are so specific...",
+      "mechanism": {
+        "title": "Carpal Tunnel Syndrome: Median Nerve Compression at the Wrist",
+        "content": "Let me show you the most common compression neuropathy in the upper limb. The carpal tunnel is a narrow passageway on the anterior wrist, bounded by: FLOOR AND SIDES: Carpal bones (scaphoid, lunate, triquetrum, pisiform, trapezium, trapezoid, capitate, hamate). ROOF: Flexor retinaculum (transverse carpal ligament). CONTENTS: 9 flexor tendons (4 FDS, 4 FDP, 1 FPL) + median nerve. Now This is the moment I live for: This is a CONFINED SPACE with no room for expansion. Anything that increases pressure in the tunnel compresses the median nerve. Common causes: Repetitive wrist motion (typing, assembly work) → tendon inflammation and swelling. Fluid retention (pregnancy, hypothyroidism, kidney disease) → tissue edema. Anatomical variation → smaller tunnel, predisposition to compression. Wrist fractures → direct trauma or callus formation narrowing the tunnel. Invite this in: SENSORY SYMPTOMS: Numbness and tingling in median nerve distribution (thumb, index, middle, lateral half ring finger). Symptoms WORSE AT NIGHT (wrist flexion during sleep increases pressure). TINEL'S SIGN: Tapping anterior wrist reproduces symptoms. PHALEN'S TEST: Wrist flexion for 60 seconds reproduces symptoms. MOTOR SYMPTOMS (advanced): Weakness/atrophy of thenar muscles (thumb opposition). And this is the masterstroke — the diagnosis is CLINICAL and confirmed with nerve conduction studies showing median nerve slowing at the wrist. Treatment: Early cases respond to wrist splinting at night. Severe cases require surgical release of the flexor retinaculum — literally cutting the roof off the tunnel. Decompress the nerve, and symptoms resolve. The pinnacle of adaptation. Both elegant and brutal in its simplicity?",
+        "metaphor": "The carpal tunnel is like a crowded subway tunnel with a fixed ceiling height. Nine tendons and one nerve (median nerve) normally fit comfortably. But add swelling from inflammation or fluid retention, and the tunnel becomes overcrowded. The nerve gets compressed against the roof (flexor retinaculum). The result? The electrical signals start failing — numbness, tingling, weakness. Conservative treatment is like reducing the crowd (anti-inflammatory, wrist splinting). Surgical treatment is like raising the ceiling — cut the flexor retinaculum, and suddenly there's room to breathe. Imagine that nerve being slowly crushed, month after month, the signals degrading, the hand gradually losing sensation and function. Until someone finally cuts the roof off and sets it free. Beautiful in its simplicity, isn't it?"
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves & Sensory",
+      "scaffoldFile": "200.3-plexuses-scaffolds/200.3.09-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.5,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.3.10",
+      "q": "A patient cannot dorsiflex their foot after a fibular neck fracture. The foot slaps the ground during walking (steppage gait). Which nerve runs around the fibular neck and is most likely injured?",
+      "options": [
+        "Tibial nerve",
+        "Common fibular (peroneal) nerve",
+        "Femoral nerve",
+        "Obturator nerve"
+      ],
+      "answer": 1,
+      "explain": "Dive into this: To the lateral knee — this is where the common fibular nerve wraps around the fibular neck, completely exposed and vulnerable. What follows is exquisite: Fracture the fibular neck, tight casting, or even prolonged leg crossing can crush this nerve. The result? Foot drop. Let me show you why this specific nerve creates this specific deficit...",
+      "mechanism": {
+        "title": "Common Fibular Nerve Injury: The Most Common Lower Limb Nerve Injury",
+        "content": "Let me show you one of the most vulnerable nerves in the body. The common fibular nerve (L4-S2) is a terminal branch of the sciatic nerve, branching at the apex of the popliteal fossa. It descends laterally, wraps around the FIBULAR NECK (the bony prominence just below the lateral knee), and then divides into superficial and deep branches. Now Now for the piece de resistance: At the fibular neck, the nerve is SUPERFICIAL — directly against bone, covered only by skin and subcutaneous tissue. This makes it EXTREMELY vulnerable to: Fibular neck fractures (direct trauma). Compression from tight casts or leg braces. Compression from prolonged leg crossing (sitting with legs crossed). Direct blunt trauma to lateral knee. Knee dislocations or ligament injuries. Allow the mechanism to reveal itself: Anatomy: DEEP FIBULAR NERVE → anterior compartment → dorsiflexors (tibialis anterior, EDL, EHL). SUPERFICIAL FIBULAR NERVE → lateral compartment → evertors (fibularis longus and brevis). Here's the devastating presentation: FOOT DROP — inability to dorsiflex foot or toes. The foot hangs in plantarflexion. STEPPAGE GAIT — patient must lift knee high during walking to prevent dropped foot from dragging. The foot SLAPS the ground during heel strike. Loss of foot EVERSION. Sensory loss over DORSUM of foot and LATERAL leg. Now This is where physiology becomes poetry — the prognosis depends on injury severity: NEURAPRAXIA (mild compression) → full recovery in weeks to months. AXONOTMESIS (axon damage) → slow recovery over months as nerve regenerates. NEUROTMESIS (complete nerve transection) → PERMANENT deficit. No recovery. Requires ankle-foot orthosis (AFO) for life. Exquisitely logical. Both common and devastating in its variability?",
+        "metaphor": "The common fibular nerve wrapping around the fibular neck is like a garden hose wrapped around the corner of a building. Normally it works fine. But strike the corner with a sledgehammer (fracture the fibular neck), or lean against the corner for hours (prolonged leg crossing, tight cast), and you crush the hose. Water stops flowing. The sprinkler (foot dorsiflexors) stops working. The lawn (foot) droops. Remove the compression early, and flow resumes. But severe crushing? The hose ruptures internally. Flow never fully recovers. The sprinkler stays broken. Forever. Imagine walking with a foot that won't lift, that slaps the ground with every step. The constant reminder of one moment of trauma, one crushed nerve. Beautiful in its terrible permanence, isn't it?"
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves & Sensory",
+      "scaffoldFile": "200.3-plexuses-scaffolds/200.3.10-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.3.11",
+      "q": "An infant born after prolonged labor with the arm pulled forcefully during delivery presents with a 'claw hand' — hyperextension at the MCP joints and flexion at the IP joints of the 4th and 5th digits. Which nerve roots are most likely injured?",
+      "options": [
+        "C5-C6",
+        "C8-T1",
+        "C6-C7",
+        "L5-S1"
+      ],
+      "answer": 1,
+      "explain": "Explore alongside me: Room — this is Klumpke's palsy, the lower brachial plexus injury. Observe what unfolds next: Excessive upward pulling of the arm during delivery (breech presentation, arm overhead) stretches and tears the C8-T1 nerve roots. The result? Paralysis of intrinsic hand muscles. Let me show you why this creates the 'claw hand' deformity...",
+      "mechanism": {
+        "title": "Klumpke's Palsy: Lower Brachial Plexus Birth Injury",
+        "content": "Let me show you the less common but more devastating brachial plexus injury. During difficult delivery — breech presentation with arm overhead, excessive upward traction on the arm — the LOWER brachial plexus nerve roots (C8-T1) are stretched beyond their elastic limit. Some fibers tear. Some are completely avulsed from the spinal cord. Now The beauty of this mechanism reveals itself: C8-T1 form the lower trunk, which contributes to the MEDIAL CORD. The medial cord gives rise to: ULNAR NERVE (C8-T1) → most intrinsic hand muscles. Medial contribution to MEDIAN NERVE (C8-T1) → thenar muscles. The result is paralysis of intrinsic hand muscles: Lumbricals and interossei (flex MCP joints, extend IP joints). Hypothenar muscles (little finger movement). Thenar muscles (thumb opposition). Finger abductors and adductors. Consider the elegance here: Consequence — the CLAW HAND DEFORMITY: HYPEREXTENSION at MCP joints (unopposed extensors). FLEXION at IP joints (unopposed FDP and FDS). Most pronounced in 4th and 5th digits (ulnar-innervated). Now What comes next will dazzle you: C8-T1 injury often damages the T1 nerve root as it exits the spinal cord, affecting the SYMPATHETIC CHAIN. The result? HORNER'S SYNDROME: Ptosis (drooping eyelid). Miosis (constricted pupil). Anhidrosis (loss of sweating on ipsilateral face). Descend with me into this: Still — the prognosis for Klumpke's palsy is WORSE than Erb-Duchenne. Many cases show minimal recovery. The hand remains clawed. The intrinsic muscles remain paralyzed. Permanent. Allow this to wash over you: Tragedy — one moment of excessive traction during delivery, and the infant's hand is permanently deformed, permanently weak. The delicate movements of writing, buttoning, picking up small objects — all compromised. Forever. Marvelous, wouldn't you say? Both beautiful and devastating in its permanence?",
+        "metaphor": "The lower brachial plexus nerve roots (C8-T1) are like delicate anchor cables tethering the electrical supply to the hand. During difficult delivery with the arm pulled forcefully upward, it's like hoisting a boat out of the water by a rope tied to the propeller — excessive force on the wrong end. The anchor cables (nerve roots) tear from their moorings (spinal cord). The electrical supply to the hand's fine motor control (intrinsic muscles) is cut. The fingers curl into a claw because the crude flexor cables (extrinsic muscles) still work, but the fine control cables (intrinsic muscles) are dead. The hand becomes a crude grasping tool, incapable of delicate movements. Permanently. Imagine that newborn, hand already twisted into a claw, the intricate machinery of fine motor control destroyed before it ever had a chance to develop. Beautiful in its terrible finality, isn't it?"
+      },
+      "isotopes": [
+        "muscle.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves & Sensory",
+      "scaffoldFile": "200.3-plexuses-scaffolds/200.3.11-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    }
+  ]
+}

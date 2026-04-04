@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.95",
+  "parentQuestion": "Pulmonary veins carry oxygenated blood to the:",
+  "narrative": {
+    "setting": "The Magic School Bus has just witnessed the miraculous transformation at the alveolar capillaries. The blood around you is now bright cherry red, oxygen-saturated. You're flowing into a vessel heading AWAY from the lungs. 'Pulmonary VEIN,' Ms. Frizzle announces. 'The other half of the circulation paradox. Mr. Edgar's left heart depends on these vessels to deliver freshly oxygenated blood.'",
+    "character": "Mr. Edgar",
+    "tension": "A pulmonary vein is stenotic, restricting blood return. Understanding this pathway is critical."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.95.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "Ms. Frizzle points to the vessel walls around you. 'Remember: VEIN means toward the heart. Not necessarily deoxygenated. Just like arteries, there's an exception.'",
+      "q": "By definition, a vein is a vessel that:",
+      "options": [
+        "Always carries deoxygenated blood",
+        "Carries blood toward the heart",
+        "Always carries oxygenated blood",
+        "Carries blood away from the heart"
+      ],
+      "answer": 1,
+      "explain": "VEIN = blood vessel carrying blood TOWARD the heart (regardless of oxygenation). Pulmonary veins are the exception to 'veins carry deoxygenated blood' - they carry oxygenated blood FROM lungs TO heart. Definition is direction, not oxygen.",
+      "wrongExplains": {
+        "0": "MOST veins carry deoxygenated blood, but pulmonary veins are the exception - they carry oxygenated blood toward the heart.",
+        "2": "Only pulmonary veins carry oxygenated blood. Systemic veins carry deoxygenated. The definition is about direction.",
+        "3": "That's an ARTERY. Arteries carry blood AWAY from heart. Veins go toward."
+      }
+    },
+    {
+      "id": "900.5.95.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "The bright red blood around you sparkles with oxygen. 'This is the payoff,' Ms. Frizzle says. 'The lungs have done their job. Now this oxygenated blood needs to return home.'",
+      "q": "After gas exchange at the lungs, oxygenated blood flows into:",
+      "options": [
+        "Pulmonary arteries",
+        "Pulmonary veins",
+        "The aorta directly",
+        "The right atrium"
+      ],
+      "answer": 1,
+      "explain": "After oxygenation: alveolar capillaries → PULMONARY VEINS → left atrium. Pulmonary veins are the return pathway from lungs to heart. They're veins (toward heart) carrying oxygenated blood (the exception).",
+      "wrongExplains": {
+        "0": "Pulmonary ARTERIES bring DEoxygenated blood TO the lungs. After gas exchange, blood leaves via pulmonary VEINS.",
+        "2": "Blood goes lungs → pulmonary veins → left atrium → left ventricle → THEN aorta. Can't skip the heart.",
+        "3": "Right atrium receives DEoxygenated blood from the body (via vena cava). Oxygenated blood from lungs goes to LEFT atrium."
+      }
+    },
+    {
+      "id": "900.5.95.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "You approach a chamber with thin walls - the left atrium. Four vessels drain into it, two from each lung. 'Four pulmonary veins,' Ms. Frizzle counts. 'Two from the right lung, two from the left.'",
+      "q": "How many pulmonary veins typically drain into the left atrium?",
+      "options": [
+        "One",
+        "Two",
+        "Four (two per lung)",
+        "Eight"
+      ],
+      "answer": 2,
+      "explain": "Typically FOUR pulmonary veins (2 from each lung): right superior, right inferior, left superior, left inferior. They all drain into the LEFT atrium. (Anatomical variation exists - sometimes they merge before entering.)",
+      "wrongExplains": {
+        "0": "There's more than one pulmonary vein. Each lung has at least two (superior and inferior).",
+        "2": "Two per lung = four total. This is the standard anatomy (though variation exists).",
+        "3": "Too many. Standard anatomy is four (two from each lung), though sometimes they merge to fewer."
+      }
+    },
+    {
+      "id": "900.5.95.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "Ms. Frizzle runs a spectral analysis. 'Oxygen saturation: 98%. Bright red. This blood has been transformed. It entered the lungs dark and desperate, leaves bright and life-giving.'",
+      "q": "The blood in pulmonary veins is:",
+      "options": [
+        "Oxygen-poor, returning to lungs",
+        "Oxygen-rich, returning from lungs to heart",
+        "Mixed oxygen levels",
+        "Pure CO2"
+      ],
+      "answer": 1,
+      "explain": "Pulmonary veins carry OXYGENATED blood (oxygen-rich, ~98% saturation, bright red) FROM lungs TO left atrium. It's the freshly oxygenated blood ready to be pumped to the body. The only veins in the body carrying oxygenated blood.",
+      "wrongExplains": {
+        "0": "Oxygen-POOR blood goes TO lungs via pulmonary arteries. Pulmonary veins carry oxygen-RICH blood FROM lungs.",
+        "2": "Blood is uniformly oxygenated after passing through functioning alveoli. It's consistently oxygen-rich.",
+        "3": "Blood never contains PURE CO2. Pulmonary vein blood is oxygen-RICH and CO2-POOR (CO2 was exhaled)."
+      }
+    },
+    {
+      "id": "900.5.95.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus enters the left atrium, a receiving chamber for the freshly oxygenated blood. 'From here,' Ms. Frizzle traces the path, 'blood flows to the left ventricle, then out to the body.'",
+      "q": "Pulmonary veins deliver oxygenated blood to which chamber?",
+      "options": [
+        "Right atrium",
+        "Left atrium",
+        "Right ventricle",
+        "Left ventricle"
+      ],
+      "answer": 1,
+      "explain": "Pulmonary veins → LEFT ATRIUM. Path: lungs (oxygenated) → pulmonary veins → LEFT atrium → LEFT ventricle → aorta → body. The left side of the heart is the 'systemic pump' handling oxygenated blood.",
+      "wrongExplains": {
+        "0": "Right atrium receives DEoxygenated blood from the body (superior/inferior vena cava). Oxygenated blood goes to LEFT atrium.",
+        "2": "Right ventricle receives deoxygenated blood from right atrium, pumps to lungs. Pulmonary veins deliver to LEFT atrium.",
+        "3": "Left ventricle receives blood FROM the left atrium. Veins don't connect directly to ventricles - they go to atria first."
+      }
+    },
+    {
+      "id": "900.5.95.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The left atrium contracts, pushing blood through the mitral valve into the powerful left ventricle. 'The final pump,' Ms. Frizzle says. 'This oxygenated blood is about to begin its journey through Mr. Edgar's entire body.'",
+      "q": "After reaching the left atrium, oxygenated blood next flows to:",
+      "options": [
+        "The aorta",
+        "The left ventricle",
+        "The lungs",
+        "The right atrium"
+      ],
+      "answer": 1,
+      "explain": "Path: left atrium → (through mitral valve) → LEFT VENTRICLE → (through aortic valve) → aorta → body. The left ventricle is the powerful pump that sends oxygenated blood to systemic circulation.",
+      "wrongExplains": {
+        "0": "Close, but blood must pass through the left VENTRICLE first before reaching the aorta. Atrium → ventricle → aorta.",
+        "2": "The lungs are BEHIND this blood - it just came from there. Next stop is systemic circulation.",
+        "3": "Right atrium is on the deoxygenated side. Blood flows: left atrium → left ventricle, not to right side."
+      }
+    },
+    {
+      "id": "900.5.95.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'The pulmonary vein paradox!' Ms. Frizzle exclaims. 'It breaks the rule that students memorize: veins carry deoxygenated blood. Here, veins carry the most oxygenated blood in the entire body!'",
+      "q": "How do pulmonary veins differ from systemic veins?",
+      "options": [
+        "They are identical",
+        "Pulmonary carry oxygenated blood; systemic carry deoxygenated",
+        "Pulmonary carry deoxygenated; systemic carry oxygenated",
+        "Pulmonary veins are actually arteries"
+      ],
+      "answer": 1,
+      "explain": "PULMONARY veins = oxygenated (FROM lungs TO heart). SYSTEMIC veins = deoxygenated (FROM body TO heart). Same structure (thinner walls than arteries), opposite oxygen content. Pulmonary veins are the exception.",
+      "wrongExplains": {
+        "0": "Completely different oxygen content! Pulmonary = oxygenated, systemic = deoxygenated. Opposite.",
+        "2": "Backwards! Pulmonary veins carry OXYGENATED (just came from lungs), systemic veins carry deoxygenated.",
+        "3": "They're true veins by definition (toward heart) and structure (thin walls, no pulse). Oxygen content doesn't change classification."
+      }
+    },
+    {
+      "id": "900.5.95.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "The bus encounters narrowing in a pulmonary vein - stenosis. 'Rare but dangerous,' Ms. Frizzle warns. 'If blood can't drain from the lungs, pressure backs up into the pulmonary capillaries.'",
+      "q": "Pulmonary vein stenosis causes:",
+      "options": [
+        "Low blood pressure in lungs",
+        "Pulmonary congestion and edema (fluid backup)",
+        "Decreased oxygen in aorta",
+        "Right heart failure immediately"
+      ],
+      "answer": 1,
+      "explain": "Blocked pulmonary veins → blood backs up in lungs → PULMONARY CONGESTION → fluid leaks into alveoli (pulmonary edema). It's like a clogged drain - pressure builds behind the blockage. Can occur with mitral stenosis too.",
+      "wrongExplains": {
+        "0": "Opposite - stenosis causes HIGH pressure in pulmonary veins/capillaries. Blood can't drain, so pressure builds.",
+        "2": "Eventually yes, but the immediate problem is in the LUNGS (congestion/edema), not the aorta.",
+        "3": "Pulmonary vein issues cause LEFT heart problems (backs up into left atrium). Right heart failure comes from pulmonary artery issues."
+      }
+    },
+    {
+      "id": "900.5.95.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "During a cardiac ablation procedure on the screen, Ms. Frizzle points out the pulmonary vein ostia - the openings into the left atrium. 'Atrial fibrillation often starts here,' she notes. 'These veins have special electrical properties.'",
+      "q": "Why are pulmonary veins important in atrial fibrillation?",
+      "options": [
+        "They have no relationship to heart rhythm",
+        "Abnormal electrical impulses often originate in pulmonary veins",
+        "They pump blood during arrhythmias",
+        "They convert oxygen to electricity"
+      ],
+      "answer": 1,
+      "explain": "Pulmonary veins (especially their connection to left atrium) often generate ECTOPIC electrical impulses that trigger atrial fibrillation. Cardiac ablation targets these 'pulmonary vein ostia' to isolate the errant signals.",
+      "wrongExplains": {
+        "0": "They're critically important! Many AFib cases originate from electrical activity in/around pulmonary veins.",
+        "2": "Veins don't pump - they're passive conduits. Their role in AFib is electrical, not mechanical.",
+        "3": "They don't convert oxygen to electricity. They carry oxygenated blood, and their cardiac muscle cells can generate abnormal electrical signals."
+      }
+    },
+    {
+      "id": "900.5.95.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "The blood flows smoothly into the left atrium. Mr. Edgar's circulation is complete. 'The circle of life,' Ms. Frizzle says. 'One last question to prove you understand this elegant system.'",
+      "q": "Pulmonary veins carry oxygenated blood to the:",
+      "options": [
+        "Right atrium",
+        "Left atrium",
+        "Lungs",
+        "Aorta"
+      ],
+      "answer": 1,
+      "explain": "Pulmonary veins carry OXYGENATED blood FROM the lungs TO the LEFT ATRIUM. Pathway: oxygenated at alveoli → pulmonary veins → left atrium → left ventricle → aorta → body. The left side handles oxygenated blood.",
+      "wrongExplains": {
+        "0": "Right atrium receives DEoxygenated blood from the BODY (vena cava). Oxygenated blood from LUNGS goes to LEFT atrium.",
+        "2": "Blood is leaving the lungs, not going to them. Pulmonary veins carry blood AWAY FROM lungs (toward heart).",
+        "3": "Blood must pass through the left atrium and left ventricle before reaching the aorta. Can't skip the heart chambers."
+      }
+    }
+  ]
+}

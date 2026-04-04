@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.41",
+  "parentQuestion": "The partial pressure of oxygen in alveolar air is approximately:",
+  "narrative": {
+    "setting": "The Magic School Bus floats inside one of Mr. Edgar's 300 million alveoli - a tiny pink bubble the size of a grain of sand. The walls are impossibly thin, just one cell thick, with red blood cells squeezing past in single file. Ms. Frizzle's pressure gauge shows atmospheric PO2 outside the body: 160 mmHg. But here, inside the alveolus, the reading is different. 'This is where the rubber meets the road,' she says. 'This is the PO2 that ACTUALLY drives oxygen into blood. And it's not what you'd expect.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's alveolar PO2 is dropping below normal. His gas exchange is failing. Understanding this number is critical to diagnosis."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.41.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "Ms. Frizzle points to the alveolar air around you, glowing with data overlays. 'We're not breathing pure atmospheric air here. This is a mixture - fresh air PLUS carbon dioxide from the blood PLUS water vapor from the airways.'",
+      "q": "Alveolar air differs from atmospheric air because it contains:",
+      "options": [
+        "Pure oxygen only",
+        "More CO2 and water vapor",
+        "No nitrogen",
+        "More argon and trace gases"
+      ],
+      "answer": 1,
+      "explain": "Alveolar air = atmospheric air + CO2 (from blood) + H2O vapor (from moist airways). Fresh air comes in, but it mixes with CO2 being exhaled from blood (~5.6% vs 0.04% in atmosphere) and water vapor. This mixture has DIFFERENT partial pressures than outside air.",
+      "wrongExplains": {
+        "0": "Alveoli contain a MIX of gases - O2, N2, CO2, water vapor. Not pure oxygen (that would require a special breathing apparatus).",
+        "2": "Nitrogen is still there (~78%) - it's inert and doesn't exchange, just comes in and goes out. The key difference is added CO2 and H2O.",
+        "3": "Argon/trace gases stay roughly the same tiny percentages. The BIG changes are CO2 (way up) and water vapor (added)."
+      }
+    },
+    {
+      "id": "900.5.41.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "A stream of CO2 molecules bubbles out of a nearby capillary into the alveolar air. The CO2 gauge reads 40 mmHg. 'That's metabolic waste,' Ms. Frizzle explains. 'Your cells made it. Your blood carried it here. Now it's taking up space where oxygen used to be.'",
+      "q": "In alveolar air, the PCO2 is approximately:",
+      "options": [
+        "0.3 mmHg (same as atmosphere)",
+        "40 mmHg",
+        "160 mmHg",
+        "760 mmHg"
+      ],
+      "answer": 1,
+      "explain": "Alveolar PCO2 ≈ 40 mmHg (about 5.6% of total pressure). Compare to atmospheric CO2: 0.3 mmHg (0.04%). The alveoli have 100+ times more CO2 because blood is constantly dumping metabolic waste there. This CO2 'dilutes' the oxygen percentage.",
+      "wrongExplains": {
+        "0": "That's atmospheric CO2 - almost none! Alveolar CO2 is way higher (40 mmHg) because blood delivers metabolic waste there.",
+        "2": "That's oxygen's partial pressure range. CO2 is lower - about 40 mmHg in alveoli, rising from blood.",
+        "3": "That's TOTAL pressure. CO2 is only one component - about 40 mmHg of the 760 mmHg total."
+      }
+    },
+    {
+      "id": "900.5.41.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "Ms. Frizzle writes on the windshield: 'Atmospheric PO2 = 160 mmHg. Alveolar PO2 = 104 mmHg. Difference = 56 mmHg lost to dilution by CO2 and water vapor.' She circles the 104. 'This is the number that matters.'",
+      "q": "Alveolar PO2 is lower than atmospheric PO2 because:",
+      "options": [
+        "Oxygen is absorbed by the alveolar walls",
+        "CO2 and water vapor dilute the oxygen percentage",
+        "Oxygen is converted to carbon dioxide",
+        "The lungs consume oxygen for metabolism"
+      ],
+      "answer": 1,
+      "explain": "It's a DILUTION effect. Start with atmospheric air (21% O2). Add CO2 from blood (now ~5.6% of the mix) and water vapor (variable, ~6.2% at body temp). The O2 PERCENTAGE drops to ~14%, and with it, the PO2 drops to ~104 mmHg. Same total pressure, different composition.",
+      "wrongExplains": {
+        "0": "Alveolar walls are designed for exchange, not absorption. The PO2 drop is from mixing with added CO2 and H2O, not wall absorption.",
+        "2": "O2 doesn't chemically convert to CO2 in alveoli. Conversion happens in CELLS during metabolism. CO2 arrives via blood.",
+        "3": "Lung tissue has its own blood supply for metabolism. The alveolar PO2 drop is purely from gas mixing, not consumption."
+      }
+    },
+    {
+      "id": "900.5.41.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "You watch the oxygen cascade in real-time: Atmospheric (160 mmHg) → Alveolar (104 mmHg) → Arterial blood (95 mmHg). 'Each step DOWN creates a pressure gradient,' Ms. Frizzle explains. 'And gradients drive diffusion.'",
+      "q": "The approximate alveolar PO2 of 104 mmHg is important because it:",
+      "options": [
+        "Equals the atmospheric PO2",
+        "Creates the driving force for oxygen to diffuse into blood",
+        "Prevents oxygen from entering the blood",
+        "Is too low to support life"
+      ],
+      "answer": 1,
+      "explain": "Blood entering alveolar capillaries has PO2 ≈ 40 mmHg (deoxygenated). Alveolar PO2 = 104 mmHg. Difference = 64 mmHg gradient! This drives O2 from air → blood by diffusion. The 104 mmHg is the 'supply pressure' for the whole body.",
+      "wrongExplains": {
+        "0": "Atmospheric PO2 is ~160 mmHg. Alveolar PO2 is lower at 104 mmHg due to CO2/water vapor mixing.",
+        "2": "104 mmHg is plenty high to drive O2 into blood (which has only 40 mmHg when it arrives). The gradient ensures loading.",
+        "3": "104 mmHg is perfectly adequate for life! It maintains a strong gradient vs venous blood (40 mmHg). Problems start below ~60 mmHg."
+      }
+    },
+    {
+      "id": "900.5.41.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus rides along with a red blood cell through the alveolar capillary. It enters with PO2 = 40 mmHg (dark purple). As it passes the thin membrane, oxygen rushes in. Exit PO2 = 95 mmHg (bright red). 'Watch the equilibration,' Ms. Frizzle says.",
+      "q": "Why doesn't arterial PO2 equal alveolar PO2 (104 mmHg)?",
+      "options": [
+        "There's not enough time for complete equilibration",
+        "Some blood bypasses the alveoli (shunt) without being oxygenated",
+        "Oxygen is consumed during passage through the capillary",
+        "The membrane is too thick for diffusion"
+      ],
+      "answer": 1,
+      "explain": "Arterial PO2 (95 mmHg) is slightly less than alveolar (104 mmHg) mainly due to SHUNT - some blood bypasses gas exchange (bronchial veins, coronary veins). Also, diffusion limitation in diseased lungs and V/Q mismatch contribute. The ~9 mmHg 'A-a gradient' is normal.",
+      "wrongExplains": {
+        "0": "Healthy capillaries provide ~0.75 seconds transit time - plenty for equilibration. Time isn't the main issue in normal lungs.",
+        "2": "Blood doesn't consume O2 WHILE in the capillary - it just loads it. Consumption happens later in the tissues.",
+        "3": "The alveolar-capillary membrane is extremely thin (0.5 micrometers). Thickness isn't the issue in healthy lungs."
+      }
+    },
+    {
+      "id": "900.5.41.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "An alarm sounds. Mr. Edgar's alveolar PO2 has dropped to 60 mmHg. 'Hypoxemia territory,' Ms. Frizzle warns. 'Could be pneumonia, pulmonary edema, or COPD. When alveolar PO2 drops, arterial PO2 crashes.'",
+      "q": "If alveolar PO2 drops to 60 mmHg due to lung disease, arterial PO2 will:",
+      "options": [
+        "Stay at 95 mmHg (unchanged)",
+        "Also decrease, potentially causing hypoxemia",
+        "Increase to compensate",
+        "Equal 104 mmHg"
+      ],
+      "answer": 1,
+      "explain": "If the source pressure (alveolar PO2) drops, the output pressure (arterial PO2) MUST drop too. You can't load blood to 95 mmHg if alveolar air only has 60 mmHg! Blood will equilibrate to something less than 60 mmHg → hypoxemia → tissue hypoxia.",
+      "wrongExplains": {
+        "0": "Arterial PO2 depends on alveolar PO2! If the source drops, the blood oxygen level drops too. No magic compensation.",
+        "2": "Arterial PO2 can't exceed alveolar PO2 - diffusion goes from high to low. If alveolar drops, arterial must drop.",
+        "3": "104 mmHg is NORMAL alveolar PO2. This scenario says it's dropped to 60 mmHg - a pathological state."
+      }
+    },
+    {
+      "id": "900.5.41.s07",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "'How do we fix low alveolar PO2?' Keesha asks. Ms. Frizzle brings up a treatment screen showing supplemental oxygen at 40% instead of 21%. 'We increase the oxygen percentage to restore alveolar PO2.'",
+      "q": "Giving supplemental oxygen (e.g., 40% instead of 21%) increases alveolar PO2 by:",
+      "options": [
+        "Removing CO2 from the alveoli",
+        "Increasing the fraction of oxygen in inspired air",
+        "Reducing water vapor pressure",
+        "Changing total atmospheric pressure"
+      ],
+      "answer": 1,
+      "explain": "Higher O2% in inspired air → higher O2% in alveolar mixture → higher alveolar PO2! Even if CO2 and H2O remain the same, more O2 percentage means more O2 partial pressure. This compensates for lung disease by boosting the driving force for diffusion.",
+      "wrongExplains": {
+        "0": "Supplemental O2 doesn't remove CO2 - you still exhale the same amount. It works by ADDING more oxygen to the mix.",
+        "2": "Water vapor stays the same (depends on body temp/humidity). O2 therapy works by increasing O2 fraction, not reducing H2O.",
+        "3": "Total pressure stays ~760 mmHg at sea level. Supplemental O2 changes the COMPOSITION (more O2%), not total pressure."
+      }
+    },
+    {
+      "id": "900.5.41.s08",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "The bus travels to a COPD patient's lungs. Dead space is huge - airways not participating in gas exchange. 'Alveolar PO2 is normal in healthy alveoli,' Ms. Frizzle says, 'but many alveoli are destroyed. Less total gas exchange.'",
+      "q": "In COPD with destroyed alveoli, the remaining healthy alveoli typically have:",
+      "options": [
+        "Normal alveolar PO2 (~104 mmHg) but reduced total surface area",
+        "Zero oxygen",
+        "Higher PO2 than normal",
+        "No CO2"
+      ],
+      "answer": 0,
+      "explain": "Each surviving alveolus works normally (PO2 ≈ 104 mmHg), but there are FEWER of them. Total oxygen transfer drops because surface area is reduced. It's like having fewer workers - each does their job, but total output falls. This is why COPD patients need supplemental O2.",
+      "wrongExplains": {
+        "1": "Healthy alveoli still have oxygen! The problem is there aren't ENOUGH healthy alveoli left to meet the body's needs.",
+        "2": "Individual alveolar PO2 stays normal. The pathology is destruction of alveoli (less surface area), not higher PO2 per alveolus.",
+        "3": "CO2 is still present and exhaled. COPD often causes CO2 RETENTION (too much CO2), not elimination of it."
+      }
+    },
+    {
+      "id": "900.5.41.s09",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "Ms. Frizzle projects a comparison: 'Sea level alveolar PO2 = 104 mmHg. Everest summit alveolar PO2 = 35 mmHg. Same lungs, same person, different altitude. Why?'",
+      "q": "At high altitude, alveolar PO2 decreases because:",
+      "options": [
+        "The alveoli stop functioning",
+        "Atmospheric PO2 is lower, so alveolar PO2 must also be lower",
+        "More CO2 is produced at altitude",
+        "Oxygen is converted to nitrogen"
+      ],
+      "answer": 1,
+      "explain": "Alveolar PO2 depends on atmospheric PO2! At Everest (atmospheric PO2 ≈ 53 mmHg), even after mixing and dilution, alveolar PO2 can only be ~35 mmHg. You can't load higher pressure in the alveoli than you have in the inspired air. Altitude drops the whole oxygen cascade.",
+      "wrongExplains": {
+        "0": "Alveoli function normally at altitude. The problem is the SOURCE (atmospheric PO2) is too low to maintain normal alveolar PO2.",
+        "2": "CO2 production is the same (from metabolism). At altitude, you actually HYPERventilate, blowing off MORE CO2, not less.",
+        "3": "O2 doesn't convert to N2. Both gases maintain their percentages (~21% O2, 78% N2), but lower total pressure means lower partial pressures."
+      }
+    },
+    {
+      "id": "900.5.41.s10",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "Mr. Edgar's lungs stabilize on supplemental oxygen. The monitors show: Atmospheric PO2 (enriched) = 304 mmHg, Alveolar PO2 = 200 mmHg, Arterial PO2 = 180 mmHg. 'The cascade is restored,' Ms. Frizzle smiles. 'All thanks to understanding this one number.'",
+      "q": "The partial pressure of oxygen in alveolar air is approximately:",
+      "options": [
+        "40 mmHg",
+        "95 mmHg",
+        "104 mmHg",
+        "160 mmHg"
+      ],
+      "answer": 2,
+      "explain": "~104 mmHg at sea level breathing room air. This is the critical number - lower than atmospheric (160) due to CO2/water vapor dilution, but high enough to maintain a gradient vs venous blood (40 mmHg). Alveolar PO2 is the 'source pressure' for all oxygen delivery!",
+      "wrongExplains": {
+        "0": "That's venous/tissue PO2 - the END of the oxygen cascade. Alveolar PO2 is the START - much higher at 104 mmHg.",
+        "1": "That's arterial PO2 (in blood leaving lungs). Alveolar PO2 is slightly higher at 104 mmHg due to the A-a gradient.",
+        "3": "That's atmospheric PO2 (before entering airways). Alveolar PO2 is lower (104 mmHg) after mixing with CO2 and water vapor."
+      }
+    }
+  ]
+}

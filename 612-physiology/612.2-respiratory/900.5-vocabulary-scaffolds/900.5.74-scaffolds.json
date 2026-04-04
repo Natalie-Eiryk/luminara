@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.74",
+  "parentQuestion": "Peripheral chemoreceptors are located in the:",
+  "narrative": {
+    "setting": "The Magic School Bus travels through Mr. Edgar's carotid artery and stops at the bifurcation - where the common carotid splits into internal and external branches. Here, a small cluster of specialized cells sits in the arterial wall, bathed in pulsatile blood. Ms. Frizzle points at the glomus cells. 'Carotid body,' she announces. 'Peripheral chemoreceptor. Unlike central chemoreceptors in CSF, these cells directly sample ARTERIAL blood. They're the oxygen sensors.'",
+    "character": "Mr. Edgar",
+    "tension": "Climbers at altitude rely entirely on hypoxic drive from carotid bodies. Carbon monoxide poisoning doesn't trigger them - hemoglobin is saturated but with CO, not O2. Carotid body tumors (paragangliomas) can cause hypertension. Understanding peripheral chemoreceptors isn't just anatomy - it's understanding the arterial oxygen surveillance system that prevents hypoxia."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.74.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Peripheral means outside the CNS,' Ms. Frizzle clarifies. 'CENTRAL chemoreceptors - in brainstem. PERIPHERAL chemoreceptors - in blood vessels, outside the brain. Different anatomical locations for different functions.'",
+      "q": "'Peripheral' in medical terms means:",
+      "options": [
+        "In the brain",
+        "Outside the central nervous system",
+        "In the heart only",
+        "In bones"
+      ],
+      "answer": 1,
+      "explain": "PERIPHERAL = OUTSIDE the central nervous system (brain/spinal cord). Peripheral chemoreceptors are in blood vessels. Peripheral nerves extend from CNS. Contrast with 'central' (in CNS).",
+      "wrongExplains": {
+        "0": "Brain is CENTRAL nervous system. Peripheral is OUTSIDE the CNS.",
+        "2": "Peripheral includes many locations (nerves, vessels, organs) - not just heart.",
+        "3": "Bones aren't the defining feature of 'peripheral.' It means outside CNS."
+      }
+    },
+    {
+      "id": "900.5.74.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Two main locations,' Ms. Frizzle lists. 'CAROTID BODIES - at bifurcation of common carotid arteries (neck). AORTIC BODIES - along aortic arch near heart. Tiny clusters of glomus cells. Highest blood flow per gram of any tissue.'",
+      "q": "Peripheral chemoreceptors are located in the:",
+      "options": [
+        "Lungs",
+        "Carotid and aortic bodies",
+        "Brain",
+        "Muscles"
+      ],
+      "answer": 1,
+      "explain": "Peripheral chemoreceptors are in CAROTID BODIES (carotid bifurcation) and AORTIC BODIES (aortic arch). Directly sample arterial blood. Highest perfusion of any tissue.",
+      "wrongExplains": {
+        "0": "Lungs have stretch receptors and irritant receptors. Peripheral chemoreceptors are in major arteries.",
+        "2": "Brain has CENTRAL chemoreceptors (medulla). PERIPHERAL are in arteries.",
+        "3": "Muscles have proprioceptors and stretch receptors. Chemoreceptors are in carotid/aortic bodies."
+      }
+    },
+    {
+      "id": "900.5.74.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Innervation,' Ms. Frizzle traces the nerves. 'Carotid bodies signal via glossopharyngeal nerve (CN IX). Aortic bodies via vagus nerve (CN X). Both converge on medullary respiratory centers. Fast transmission - milliseconds.'",
+      "q": "Signals from carotid bodies travel via which nerve?",
+      "options": [
+        "Vagus nerve (CN X)",
+        "Glossopharyngeal nerve (CN IX)",
+        "Phrenic nerve",
+        "Optic nerve"
+      ],
+      "answer": 1,
+      "explain": "CAROTID bodies → GLOSSOPHARYNGEAL nerve (CN IX) → medulla. AORTIC bodies → VAGUS nerve (CN X). Both are afferent (sensory) pathways for chemoreception.",
+      "wrongExplains": {
+        "0": "Vagus (CN X) carries signals from AORTIC bodies. Carotid bodies use CN IX.",
+        "2": "Phrenic nerve carries MOTOR signals TO diaphragm. Chemoreceptor signals are CN IX/X.",
+        "3": "Optic nerve is for vision (CN II). Chemoreceptors use CN IX (carotid) and X (aortic)."
+      }
+    },
+    {
+      "id": "900.5.74.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'What they detect,' Ms. Frizzle lists. 'Primarily LOW ARTERIAL PO2 (hypoxemia). Also respond to high CO2, low pH, but less sensitive than central chemoreceptors. They're the OXYGEN sensors. Central chemoreceptors don't detect O2.'",
+      "q": "Peripheral chemoreceptors are primarily sensitive to:",
+      "options": [
+        "High oxygen levels only",
+        "Low arterial oxygen (PO2)",
+        "Lung stretch",
+        "Blood pressure only"
+      ],
+      "answer": 1,
+      "explain": "Peripheral chemoreceptors are OXYGEN SENSORS - detect LOW arterial PO2 (hypoxemia). Also sense high CO2/low pH but are primary O2 detectors. Central don't detect O2.",
+      "wrongExplains": {
+        "0": "They detect LOW O2 (hypoxemia), not high. High O2 doesn't stimulate them.",
+        "2": "Lung stretch is sensed by pulmonary stretch receptors (Hering-Breuer). Peripheral detect O2.",
+        "3": "Blood pressure is sensed by baroreceptors. Peripheral chemoreceptors detect O2/CO2/pH."
+      }
+    },
+    {
+      "id": "900.5.74.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'The hypoxic response threshold,' Ms. Frizzle notes. 'Peripheral chemoreceptors fire weakly until PO2 drops below ~60 mmHg. Then firing rate INCREASES dramatically. Hyperbolic response curve. This is the HYPOXIC DRIVE backup system.'",
+      "q": "Peripheral chemoreceptors respond most strongly when arterial PO2 is:",
+      "options": [
+        "Very high (>100 mmHg)",
+        "Normal (80-100 mmHg)",
+        "Below 60 mmHg (hypoxemia)",
+        "They don't respond to O2"
+      ],
+      "answer": 2,
+      "explain": "Peripheral chemoreceptors respond dramatically when PO2 <60 mmHg (HYPOXEMIA). Weak firing at normal O2. Hyperbolic curve - steep rise below 60. Backup system when O2 dangerously low.",
+      "wrongExplains": {
+        "0": "High O2 doesn't stimulate them. They detect LOW O2 (hypoxemia).",
+        "1": "Normal O2 (80-100) causes minimal firing. Strong response when <60.",
+        "3": "They absolutely respond to O2 - it's their PRIMARY stimulus. Central don't detect O2."
+      }
+    },
+    {
+      "id": "900.5.74.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Glomus cells - the sensor mechanism,' Ms. Frizzle shows the ultrastructure. 'Type I glomus cells have O2-sensitive K+ channels. Low O2 → channels close → depolarization → Ca2+ influx → neurotransmitter release → afferent nerve firing. Direct O2 sensing.'",
+      "q": "Glomus cells in carotid bodies detect low O2 through:",
+      "options": [
+        "No mechanism",
+        "O2-sensitive potassium channels",
+        "Mechanical stretch",
+        "Light detection"
+      ],
+      "answer": 1,
+      "explain": "Glomus cells have O2-SENSITIVE K+ CHANNELS. Low O2 → channels close → depolarization → transmitter release → nerve firing. Direct molecular O2 detection. Extremely fast response (<1 sec).",
+      "wrongExplains": {
+        "0": "There's a specific mechanism - O2-sensitive K+ channels in glomus cells.",
+        "2": "Mechanical stretch is for baroreceptors. Glomus cells use O2-sensitive ion channels.",
+        "3": "Light is for photoreceptors (retina). Glomus cells detect O2 chemically."
+      }
+    },
+    {
+      "id": "900.5.74.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Distinguishing central from peripheral,' Ms. Frizzle summarizes. 'CENTRAL: medulla, detect CO2/pH in CSF, primary drive. PERIPHERAL: carotid/aortic bodies, detect O2 in arterial blood, backup/hypoxic drive. Different locations, different gases, synergistic.'",
+      "q": "The key difference between central and peripheral chemoreceptors is:",
+      "options": [
+        "Central detect O2, peripheral detect CO2",
+        "Central detect CO2/pH, peripheral primarily detect O2",
+        "They're identical",
+        "Neither detects gases"
+      ],
+      "answer": 1,
+      "explain": "CENTRAL (medulla): CO2/pH in CSF, primary drive. PERIPHERAL (carotid/aortic): O2/CO2/pH in arterial blood, primarily O2 sensors, hypoxic drive. Complementary systems.",
+      "wrongExplains": {
+        "0": "OPPOSITE! Central detect CO2/pH (not O2). Peripheral detect O2 (primarily).",
+        "2": "Different locations (medulla vs vessels), different primary stimuli (CO2 vs O2).",
+        "3": "Both detect gases/pH - that's what chemoreceptors do."
+      }
+    },
+    {
+      "id": "900.5.74.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Altitude adaptation,' Ms. Frizzle explains. 'At high altitude, low atmospheric PO2 → peripheral chemoreceptors fire constantly → hyperventilation → blow off CO2 → respiratory alkalosis. Over days-weeks, central chemoreceptors reset. Peripheral drive essential for acclimatization.'",
+      "q": "At high altitude, breathing is primarily driven by:",
+      "options": [
+        "Central CO2 drive only",
+        "Peripheral hypoxic drive (low PO2)",
+        "No drive",
+        "Lung stretch"
+      ],
+      "answer": 1,
+      "explain": "High altitude → low PO2 → PERIPHERAL chemoreceptors (carotid/aortic bodies) drive HYPERVENTILATION. This is hypoxic drive. Central drive is blunted by low CO2 from hyperventilation.",
+      "wrongExplains": {
+        "0": "Central CO2 drive is actually BLUNTED at altitude (low CO2 from hyperventilation). Peripheral O2 drive dominates.",
+        "2": "Strong drive from hypoxemia (peripheral chemoreceptors). Breathing increases markedly.",
+        "3": "Lung stretch is Hering-Breuer. At altitude, hypoxic drive (peripheral O2 detection) dominates."
+      }
+    },
+    {
+      "id": "900.5.74.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Carotid body tumors (paragangliomas),' Ms. Frizzle adds clinical note. 'Rare neoplasms of glomus cells. Present as neck mass, sometimes hypertension (catecholamine secretion). Surgical resection can damage CN IX → loss of carotid body function.'",
+      "q": "Carotid body tumors arise from:",
+      "options": [
+        "Muscle cells",
+        "Glomus cells (chemoreceptor cells)",
+        "Brain tissue",
+        "Bone"
+      ],
+      "answer": 1,
+      "explain": "Carotid body tumors (paragangliomas) arise from GLOMUS CELLS (chemoreceptor cells). Rare. Can secrete catecholamines. Surgical removal can impair carotid body function (loss of hypoxic drive on that side).",
+      "wrongExplains": {
+        "0": "Muscle tumors are myomas/rhabdomyomas. Carotid body tumors are from glomus cells.",
+        "2": "Brain tissue tumors are gliomas. Carotid body is peripheral, not CNS.",
+        "3": "Bone tumors are osteomas/osteosarcomas. Paragangliomas are from chemoreceptor cells."
+      }
+    },
+    {
+      "id": "900.5.74.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Ms. Frizzle looks at the glomus cells bathed in arterial blood at the carotid bifurcation, constantly sampling oxygen. 'The oxygen sentinels. In arteries, not brain. So, class: where are peripheral chemoreceptors located?'",
+      "q": "Peripheral chemoreceptors are located in the:",
+      "options": [
+        "Lungs",
+        "Carotid and aortic bodies",
+        "Brain",
+        "Heart"
+      ],
+      "answer": 1,
+      "explain": "Peripheral chemoreceptors are in CAROTID BODIES (carotid bifurcation) and AORTIC BODIES (aortic arch). Detect arterial O2, CO2, pH. Primarily O2 sensors. Signal via CN IX (carotid) and X (aortic).",
+      "wrongExplains": {
+        "0": "Lungs have stretch receptors and irritant receptors, but chemoreceptors for breathing control are in major arteries.",
+        "2": "Brain has CENTRAL chemoreceptors (medulla). PERIPHERAL chemoreceptors are outside CNS in vessels.",
+        "3": "Heart has stretch receptors but not the classical chemoreceptors for respiratory control."
+      }
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.07",
+  "parentQuestion": "The substance that reduces surface tension in the alveoli is called:",
+  "narrative": {
+    "setting": "The Magic School Bus has returned to the alveoli - but now Ms. Frizzle zooms in even closer, to the molecular level. The air-liquid interface shimmers before you. Without something to break the surface tension, these tiny bubbles would collapse like soap bubbles in the rain.",
+    "character": "Mr. Edgar",
+    "tension": "Some of Mr. Edgar's alveoli are collapsing, struggling to stay open. The bus sensors detect something wrong with the coating on these walls. Understanding what's missing could explain his breathing troubles."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.07.s01",
+      "arc": 1,
+      "arcTitle": "The Name Tells All",
+      "narrative": "'Surfactant,' Ms. Frizzle writes on the bus's whiteboard. 'A made-up word from the 20th century, but the name tells you exactly what it does.'",
+      "q": "The word 'surfactant' is a blend of which words?",
+      "options": [
+        "Surface + detergent",
+        "Surface active agent",
+        "Super + factor",
+        "Surf + acting"
+      ],
+      "answer": 1,
+      "explain": "SURFACTANT = SURFACE ACTIVE AGENT. It's a substance that's ACTIVE at SURFACEs - specifically the air-liquid interface in alveoli. The name is a scientific portmanteau describing its function perfectly.",
+      "wrongExplains": {
+        "0": "Close! 'Detergent' has similar properties, but the etymology is 'surface active agent.'",
+        "2": "'Super + factor' sounds impressive but doesn't describe what surfactant actually does.",
+        "3": "'Surf + acting' misses the 'active agent' concept. It's about surface activity."
+      }
+    },
+    {
+      "id": "900.5.07.s02",
+      "arc": 1,
+      "arcTitle": "The Name Tells All",
+      "narrative": "Ms. Frizzle holds up a water droplet. 'See how it beads up? That's surface tension - water molecules pulling on each other, minimizing the surface. Same force that lets insects walk on water.'",
+      "q": "What is surface tension?",
+      "options": [
+        "The tendency of muscles to contract",
+        "The tendency of liquid surfaces to minimize their area",
+        "The strength of cell membranes",
+        "The pressure inside blood vessels"
+      ],
+      "answer": 1,
+      "explain": "SURFACE TENSION: liquid molecules attract each other more than they attract air. This makes surfaces contract to the smallest possible area - why droplets form spheres, why bubbles are round. It's pure physics.",
+      "wrongExplains": {
+        "0": "Muscle contraction is active cellular work. Surface tension is passive molecular physics.",
+        "2": "Membrane strength involves proteins and lipids. Surface tension is a liquid-air interface phenomenon.",
+        "3": "Blood pressure is hydrostatic pressure. Surface tension is molecular cohesion at interfaces."
+      }
+    },
+    {
+      "id": "900.5.07.s03",
+      "arc": 1,
+      "arcTitle": "The Name Tells All",
+      "narrative": "'Now imagine an alveolus as a tiny bubble,' Ms. Frizzle says. 'Surface tension tries to collapse it. Smaller bubbles have higher collapse pressure - that's LaPlace's Law. Without something to break that tension...'",
+      "q": "Why would high surface tension be a problem in alveoli?",
+      "options": [
+        "It would make breathing too easy",
+        "It would cause alveoli to collapse",
+        "It would increase oxygen absorption",
+        "It would cool the lungs"
+      ],
+      "answer": 1,
+      "explain": "High surface tension would COLLAPSE small alveoli! LaPlace's Law: pressure needed to keep a bubble open = (2 x surface tension) / radius. Smaller alveoli need MORE pressure. Without surfactant, small alveoli would empty into large ones.",
+      "wrongExplains": {
+        "0": "High tension makes breathing HARDER, not easier. You'd need more force to inflate stiff alveoli.",
+        "2": "Collapsed alveoli can't exchange ANY gas. Surface tension threatens function, doesn't enhance it.",
+        "3": "Surface tension affects mechanics, not temperature. It's about physical structure, not heat."
+      }
+    },
+    {
+      "id": "900.5.07.s04",
+      "arc": 2,
+      "arcTitle": "Makers and Molecules",
+      "narrative": "Ms. Frizzle zooms in on the alveolar wall. Among the thin Type I cells that handle gas exchange, you see cuboidal cells packed with granules. 'The surfactant factories,' she announces. 'Type II alveolar cells.'",
+      "q": "Which cells produce surfactant in the alveoli?",
+      "options": [
+        "Type I alveolar cells",
+        "Type II alveolar cells",
+        "Red blood cells",
+        "Goblet cells"
+      ],
+      "answer": 1,
+      "explain": "TYPE II alveolar cells produce surfactant. They're the cuboidal cells with lamellar bodies (storage granules). Type I cells are flat for gas exchange; Type II are the factory workers, making the essential coating.",
+      "wrongExplains": {
+        "0": "Type I cells are extremely thin for gas diffusion. They don't produce surfactant - that's Type II's job.",
+        "2": "Red blood cells carry oxygen - they're in the capillaries, not making alveolar coatings.",
+        "3": "Goblet cells make MUCUS in the airways. Surfactant is a completely different substance."
+      }
+    },
+    {
+      "id": "900.5.07.s05",
+      "arc": 2,
+      "arcTitle": "Makers and Molecules",
+      "narrative": "'The key ingredient,' Ms. Frizzle pulls up a molecular diagram. 'DPPC - dipalmitoylphosphatidylcholine. A phospholipid with a water-loving head and fat-loving tails. It spreads at the air-water interface like molecular soap.'",
+      "q": "What is the main component of pulmonary surfactant?",
+      "options": [
+        "Cholesterol",
+        "Phospholipids (DPPC)",
+        "Proteins only",
+        "Water"
+      ],
+      "answer": 1,
+      "explain": "PHOSPHOLIPIDS, especially DPPC (dipalmitoylphosphatidylcholine), make up about 80% of surfactant. These molecules spread at the air-liquid interface, disrupting the molecular forces that cause surface tension.",
+      "wrongExplains": {
+        "0": "Cholesterol is present (~10%) but isn't the main active component. Phospholipids do the heavy lifting.",
+        "2": "Surfactant proteins (SP-A, B, C, D) are important but make up only ~10%. Phospholipids dominate.",
+        "3": "Water is the medium, not the surfactant itself. Surfactant acts ON the water surface."
+      }
+    },
+    {
+      "id": "900.5.07.s06",
+      "arc": 2,
+      "arcTitle": "Makers and Molecules",
+      "narrative": "'Surfactant production begins around week 24 of gestation,' Ms. Frizzle explains. 'But it's not really adequate until week 35. This is why premature babies struggle.'",
+      "q": "Surfactant production in fetal lungs begins around week:",
+      "options": [
+        "Week 8",
+        "Week 24",
+        "Week 40",
+        "After birth only"
+      ],
+      "answer": 1,
+      "explain": "Surfactant production begins around WEEK 24, but adequate levels aren't reached until weeks 35-36. Babies born before week 35 often lack sufficient surfactant, leading to respiratory distress syndrome.",
+      "wrongExplains": {
+        "0": "Week 8 is far too early - basic lung structures are just forming then.",
+        "2": "Week 40 is full-term. Surfactant production starts much earlier, even if it's not adequate until later.",
+        "3": "Surfactant production MUST begin before birth. Otherwise the first breath would be impossible."
+      }
+    },
+    {
+      "id": "900.5.07.s07",
+      "arc": 3,
+      "arcTitle": "When Surfactant Fails",
+      "narrative": "'Watch this,' Ms. Frizzle shows a premature baby's lung scan. Alveoli collapsed, lungs stiff as cardboard. 'Without surfactant, each breath is like the first - exhausting work against collapsed air sacs.'",
+      "q": "What condition affects premature babies who lack sufficient surfactant?",
+      "options": [
+        "Asthma",
+        "Respiratory distress syndrome",
+        "Pneumonia",
+        "Bronchitis"
+      ],
+      "answer": 1,
+      "explain": "RESPIRATORY DISTRESS SYNDROME (RDS) - formerly called hyaline membrane disease. Without surfactant, premature babies' alveoli collapse (atelectasis) and lungs become stiff. Treatment: artificial surfactant through the airway.",
+      "wrongExplains": {
+        "0": "Asthma is airway constriction and inflammation - not a surfactant problem.",
+        "2": "Pneumonia is infection filling alveoli. RDS is structural collapse from surfactant deficiency.",
+        "3": "Bronchitis is airway inflammation. RDS affects the alveoli themselves."
+      }
+    },
+    {
+      "id": "900.5.07.s08",
+      "arc": 3,
+      "arcTitle": "When Surfactant Fails",
+      "narrative": "'Adults can have surfactant problems too,' Ms. Frizzle says gravely. 'Drowning, smoke inhalation, certain infections - anything that damages Type II cells or washes away surfactant.'",
+      "q": "In adults, acute respiratory distress syndrome (ARDS) involves:",
+      "options": [
+        "Too much surfactant production",
+        "Surfactant dysfunction or deficiency",
+        "Overactive Type II cells",
+        "Excess mucus only"
+      ],
+      "answer": 1,
+      "explain": "ARDS involves surfactant DYSFUNCTION or DEFICIENCY. Damage from infection, trauma, or inhaled irritants destroys Type II cells or inactivates surfactant. Alveoli collapse, compliance drops, and gas exchange fails.",
+      "wrongExplains": {
+        "0": "TOO MUCH surfactant isn't a clinical problem. The issue is always too little or damaged surfactant.",
+        "2": "Type II cells are DAMAGED in ARDS, not overactive. They can't make enough functioning surfactant.",
+        "3": "Mucus is an airway issue. ARDS is specifically about alveolar surfactant and collapse."
+      }
+    },
+    {
+      "id": "900.5.07.s09",
+      "arc": 3,
+      "arcTitle": "When Surfactant Fails",
+      "narrative": "'Thank goodness for modern medicine,' Ms. Frizzle smiles. 'We can now give synthetic or animal-derived surfactant directly into premature babies' lungs. It's saved millions of lives.'",
+      "q": "Exogenous surfactant therapy involves:",
+      "options": [
+        "Stimulating the body to make more surfactant",
+        "Administering surfactant directly into the airways",
+        "Transplanting Type II cells",
+        "Removing excess fluid from lungs"
+      ],
+      "answer": 1,
+      "explain": "Exogenous surfactant is ADMINISTERED DIRECTLY into the airways through an endotracheal tube. It coats the alveoli immediately, reducing surface tension. Both synthetic and animal-derived preparations are used.",
+      "wrongExplains": {
+        "0": "Stimulating production takes too long. Premature babies need surfactant NOW, not later.",
+        "2": "Cell transplantation isn't practical for surfactant deficiency. Direct administration works immediately.",
+        "3": "Removing fluid is different. Surfactant therapy adds something missing, doesn't remove something excess."
+      }
+    },
+    {
+      "id": "900.5.07.s10",
+      "arc": 3,
+      "arcTitle": "When Surfactant Fails",
+      "narrative": "Mr. Edgar's breathing eases as his surfactant levels normalize. The alveoli stay open, gas exchange resumes. 'The molecular soap that keeps you breathing,' Ms. Frizzle says. 'What's it called?'",
+      "q": "The substance that reduces surface tension in the alveoli is called:",
+      "options": [
+        "Mucus",
+        "Surfactant",
+        "Serous fluid",
+        "Plasma"
+      ],
+      "answer": 1,
+      "explain": "SURFACTANT - the surface active agent. Made by Type II alveolar cells, composed mainly of phospholipids (DPPC), it reduces surface tension and prevents alveolar collapse. Without it, breathing is impossible.",
+      "wrongExplains": {
+        "0": "Mucus traps particles in the AIRWAYS. It doesn't affect alveolar surface tension.",
+        "2": "Serous fluid lubricates the PLEURAL surfaces. It's outside the alveoli entirely.",
+        "3": "Plasma is blood's liquid component. It has nothing to do with alveolar surface tension."
+      }
+    }
+  ]
+}

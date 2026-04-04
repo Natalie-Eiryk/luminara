@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.98",
+  "parentQuestion": "Atelectasis refers to:",
+  "narrative": {
+    "setting": "The Magic School Bus approaches a section of Mr. Edgar's lung that looks deflated, collapsed like a forgotten balloon. Where there should be hundreds of tiny alveoli, there's just compressed tissue. No air flows here. Ms. Frizzle's voice is somber: 'Atelectasis - collapsed lung tissue. Mr. Edgar had surgery yesterday and hasn't been breathing deeply. Without those periodic deep breaths, alveoli collapse. If we don't reverse this soon, pneumonia could follow.'",
+    "character": "Mr. Edgar",
+    "tension": "Atelectasis is expanding. Oxygen saturation is dropping. Understanding this condition could guide treatment."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.98.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "Ms. Frizzle projects ancient Greek text. 'Atelectasis. A word built from Greek roots that literally describes what's happening before your eyes.'",
+      "q": "The prefix 'a-' or 'an-' in medical terminology means:",
+      "options": [
+        "Many, multiple",
+        "Without, absence of",
+        "Together, joined",
+        "Against, opposite"
+      ],
+      "answer": 1,
+      "explain": "'A-' or 'AN-' = WITHOUT, LACKING, ABSENCE OF. Think: anemia (without blood), apnea (without breath), asymptomatic (without symptoms). Atelectasis = WITHOUT complete expansion.",
+      "wrongExplains": {
+        "0": "That's 'poly-' or 'multi-'. 'A-' means the opposite - absence, lacking.",
+        "2": "That's 'syn-' or 'sym-'. 'A-' doesn't mean joining - it means lacking.",
+        "3": "That's 'anti-' or 'contra-'. 'A-' means absence, not opposition."
+      }
+    },
+    {
+      "id": "900.5.98.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "You float through the collapsed tissue. 'Telos,' Ms. Frizzle whispers, 'Greek for end or completion. Ektasis - expansion. Put it together: incomplete expansion.'",
+      "q": "The term 'atelectasis' literally means:",
+      "options": [
+        "Excessive inflation",
+        "Incomplete expansion / collapse",
+        "Rapid breathing",
+        "Infection of lung tissue"
+      ],
+      "answer": 1,
+      "explain": "ATELECTASIS = A (without) + TEL (complete) + ECTASIS (expansion) = INCOMPLETE EXPANSION or COLLAPSE. The alveoli haven't fully inflated (or have deflated). The Greek roots tell the story: not fully stretched out.",
+      "wrongExplains": {
+        "0": "Excessive inflation would be hyperinflation. Atelectasis is the opposite - collapse/underinflation.",
+        "2": "Rapid breathing is tachypnea. Atelectasis is a structural collapse, not a breathing rate.",
+        "3": "Infection is pneumonia. Atelectasis is mechanical collapse, though infection can follow."
+      }
+    },
+    {
+      "id": "900.5.98.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "The collapsed alveoli look like deflated balloons stuck together. 'Three states,' Ms. Frizzle explains. 'Never inflated, or once inflated but now collapsed. Both are atelectasis.'",
+      "q": "Atelectasis can refer to lung tissue that is:",
+      "options": [
+        "Only tissue that never expanded (congenital)",
+        "Only tissue that was inflated but collapsed",
+        "Both never-expanded and collapsed tissue",
+        "Only overinflated tissue"
+      ],
+      "answer": 2,
+      "explain": "Atelectasis includes BOTH: (1) tissue that never inflated (newborn with RDS), and (2) previously inflated tissue that collapsed. The common thread is lack of air in alveoli, regardless of how it got that way.",
+      "wrongExplains": {
+        "0": "Congenital atelectasis exists, but acquired (post-surgical, obstructive) is more common. It's both.",
+        "1": "Acquired atelectasis is common, but congenital (never-expanded) is also atelectasis. The definition includes both.",
+        "3": "Overinflation is hyperinflation or emphysema. Atelectasis is UNDERinflation/collapse."
+      }
+    },
+    {
+      "id": "900.5.98.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "Ms. Frizzle shows three pathways to collapse. 'Obstruction, compression, or loss of surfactant. Three roads to the same destination - airless alveoli.'",
+      "q": "Which is a common cause of atelectasis?",
+      "options": [
+        "Hyperventilation",
+        "Mucus plug blocking an airway (obstruction)",
+        "Too much surfactant",
+        "Excessive coughing"
+      ],
+      "answer": 1,
+      "explain": "MUCUS PLUG (or tumor, foreign body) blocks airway → air distal to blockage gets absorbed → alveoli collapse. This is OBSTRUCTIVE atelectasis. Other causes: compression (pleural effusion, pneumothorax), loss of surfactant (ARDS), shallow breathing (post-op).",
+      "wrongExplains": {
+        "0": "Hyperventilation overinflates lungs. Atelectasis is collapse, not overinflation.",
+        "2": "TOO LITTLE surfactant causes atelectasis (alveoli collapse). Too much isn't a physiological problem.",
+        "3": "Coughing PREVENTS atelectasis by clearing airways. Lack of coughing (post-op, pain) contributes to atelectasis."
+      }
+    },
+    {
+      "id": "900.5.98.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "You watch air being absorbed from the alveoli distal to a blockage. Oxygen and nitrogen diffuse into blood, but no new air can enter. The alveoli shrink like deflating balloons.",
+      "q": "In obstructive atelectasis, why do alveoli collapse distal to a blockage?",
+      "options": [
+        "The blockage crushes the alveoli",
+        "Air is absorbed into blood but cannot be replaced",
+        "Blood flow stops in that region",
+        "Surfactant is destroyed by the blockage"
+      ],
+      "answer": 1,
+      "explain": "Blockage prevents NEW air from entering → existing air is ABSORBED into blood (O2, CO2, even N2 slowly) → no replacement → alveoli collapse. It's like a sealed balloon slowly losing air. This is called ABSORPTION or RESORPTION atelectasis.",
+      "wrongExplains": {
+        "0": "The blockage is in the AIRWAY (bronchus), not crushing alveoli. Collapse is from air absorption, not mechanical crushing.",
+        "2": "Blood flow continues (that's WHY air is absorbed). The blockage is in airways, not blood vessels.",
+        "3": "The blockage doesn't destroy surfactant. Though loss of surfactant is a separate cause of atelectasis (ARDS, RDS)."
+      }
+    },
+    {
+      "id": "900.5.98.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "A large pleural effusion (fluid around the lung) compresses lung tissue from outside. Even though airways are open, alveoli can't expand. 'Compression atelectasis,' Ms. Frizzle announces.",
+      "q": "Compression atelectasis occurs when:",
+      "options": [
+        "Airways are blocked by mucus",
+        "External pressure prevents lung expansion",
+        "Surfactant is completely absent",
+        "Too much air enters the lungs"
+      ],
+      "answer": 1,
+      "explain": "COMPRESSION atelectasis = external force prevents expansion. Causes: pleural effusion (fluid), pneumothorax (air in pleural space), tumor, cardiomegaly. Airways are OPEN but lung can't inflate against the external pressure.",
+      "wrongExplains": {
+        "0": "Mucus blockage is OBSTRUCTIVE atelectasis. Compression is from external forces, not airway obstruction.",
+        "2": "Surfactant loss is a different mechanism (seen in RDS, ARDS). Compression is mechanical pressure.",
+        "3": "Too much air would be hyperinflation. Compression prevents air from entering in the first place."
+      }
+    },
+    {
+      "id": "900.5.98.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Atelectasis versus pneumothorax,' Ms. Frizzle quizzes. 'Both involve collapsed lung, but the mechanisms are completely different. Know the difference or misdiagnose the patient.'",
+      "q": "How does atelectasis differ from pneumothorax?",
+      "options": [
+        "They are the same condition",
+        "Atelectasis is alveolar collapse; pneumothorax is air in pleural space collapsing lung",
+        "Atelectasis is air in pleura; pneumothorax is alveolar collapse",
+        "Both involve air in the pleural space"
+      ],
+      "answer": 1,
+      "explain": "ATELECTASIS = alveoli collapse (from obstruction, compression, or surfactant loss). PNEUMOTHORAX = air in PLEURAL SPACE → lung collapse. Different locations, different causes, different treatments. Pneumothorax needs chest tube; atelectasis needs deep breathing/bronchoscopy.",
+      "wrongExplains": {
+        "0": "Very different! Atelectasis is alveolar-level. Pneumothorax is air in pleural cavity.",
+        "2": "Backwards! Atelectasis is alveolar collapse. Pneumothorax is air in the pleural space.",
+        "3": "Only pneumothorax has air in pleural space. Atelectasis is alveolar collapse without pleural air."
+      }
+    },
+    {
+      "id": "900.5.98.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Post-operative patients flash across the screen - shallow breathing, splinting from pain, lying flat. 'The perfect storm for atelectasis,' Ms. Frizzle warns. 'This is preventable with the right interventions.'",
+      "q": "Why are post-operative patients at high risk for atelectasis?",
+      "options": [
+        "Surgery increases surfactant production",
+        "Pain and anesthesia lead to shallow breathing and poor cough",
+        "Surgery removes lung tissue",
+        "Atelectasis is unrelated to surgery"
+      ],
+      "answer": 1,
+      "explain": "Post-op atelectasis: PAIN → shallow breathing (splinting), ANESTHESIA → depressed cough/sigh reflex, SUPINE position → reduced FRC. No deep breaths → alveoli collapse. Prevention: incentive spirometry, early mobilization, pain control, deep breathing exercises.",
+      "wrongExplains": {
+        "0": "Surgery doesn't increase surfactant. It impairs breathing mechanics, leading to collapse.",
+        "2": "Unless it's lung surgery, tissue isn't removed. Atelectasis is from hypoventilation, not tissue loss.",
+        "3": "Post-op atelectasis is extremely common (up to 90% after abdominal surgery). It's strongly related."
+      }
+    },
+    {
+      "id": "900.5.98.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "A premature infant's chest X-ray appears - white-out lungs, collapsed alveoli. 'Infant RDS,' Ms. Frizzle says gravely. 'Surfactant deficiency atelectasis. Without surfactant, alveoli can't stay open.'",
+      "q": "In infant respiratory distress syndrome (RDS), atelectasis results from:",
+      "options": [
+        "Mucus obstruction",
+        "Surfactant deficiency causing alveolar collapse",
+        "Pneumonia infection",
+        "Excessive surfactant"
+      ],
+      "answer": 1,
+      "explain": "Infant RDS: premature lungs lack SURFACTANT → surface tension collapses alveoli → atelectasis → hypoxemia. Treatment: exogenous surfactant, CPAP/mechanical ventilation. Surfactant reduces surface tension, keeping alveoli open.",
+      "wrongExplains": {
+        "0": "RDS is surfactant-related, not obstruction-related (though secretions can complicate it).",
+        "2": "Pneumonia is infection. RDS is surfactant deficiency causing collapse. Different pathology.",
+        "3": "RDS is from TOO LITTLE surfactant. Too much surfactant isn't a clinical problem."
+      }
+    },
+    {
+      "id": "900.5.98.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "The collapsed segment begins to reinflate as Mr. Edgar takes deep breaths with the incentive spirometer. 'Recovery,' Ms. Frizzle smiles. 'Atelectasis is often reversible. Now show me you understand it.'",
+      "q": "Atelectasis refers to:",
+      "options": [
+        "Overinflation of alveoli",
+        "Collapse or incomplete expansion of lung tissue",
+        "Infection of the lungs",
+        "Air in the pleural space"
+      ],
+      "answer": 1,
+      "explain": "ATELECTASIS = COLLAPSE or INCOMPLETE EXPANSION of lung tissue/alveoli. Causes: obstruction (mucus), compression (effusion), surfactant loss (RDS), hypoventilation (post-op). Reversible with deep breathing, treatment of underlying cause. NOT the same as pneumothorax or infection.",
+      "wrongExplains": {
+        "0": "Overinflation is hyperinflation or air trapping. Atelectasis is UNDERinflation/collapse.",
+        "2": "Infection is pneumonia. Atelectasis is mechanical collapse, though infection can be a complication.",
+        "3": "Air in pleural space is PNEUMOTHORAX. Atelectasis is alveolar collapse within the lung."
+      }
+    }
+  ]
+}

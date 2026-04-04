@@ -1,0 +1,319 @@
+/**
+ * 820.31.99-mode-switcher.css - Mode Switcher Styles
+ * @codon 820.31.99
+ * @version 2026-04-03
+ * @description Study Mode vs Adventure Mode styling
+ * @lifecycle PROMOTED
+ * @session-created 68
+ *
+ * Study Mode: Deep learning, serif fonts, calm colors, expanded content
+ * Adventure Mode: Gamified, compact, vibrant colors, on-demand content
+ */
+
+/* ═══════════════════════════════════════════════════════════════
+   STUDY MODE THEME
+   Calm blues/purples, serif fonts, spacious padding, focus on reading
+   ═══════════════════════════════════════════════════════════════ */
+
+.question-card.study-mode {
+  font-family: 'Crimson Pro', 'Playfair Display', serif;
+  padding: 2rem;
+  line-height: 1.8;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.03) 0%, rgba(118, 75, 162, 0.03) 100%);
+  border: 1px solid rgba(102, 126, 234, 0.15);
+}
+
+.question-card.study-mode .q-text {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.question-card.study-mode .option-text {
+  font-family: 'Crimson Pro', serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.question-card.study-mode .layer-explain {
+  display: block !important; /* Auto-expand in Study Mode */
+  margin-top: 1.5rem;
+}
+
+.question-card.study-mode .option-breakdown {
+  display: block !important; /* Show all option explanations by default */
+}
+
+.question-card.study-mode .mechanism {
+  display: block !important; /* Auto-expand mechanism section */
+}
+
+.question-card.study-mode .expand-trigger {
+  display: none; /* Hide expand button since content is always shown */
+}
+
+/* Hide gamification elements in Study Mode */
+.study-mode-active .xp-popup,
+.study-mode-active .streak-display,
+.study-mode-active .badge-notification {
+  display: none !important;
+}
+
+/* Remove timer in Study Mode */
+.study-mode-active .timer-bar,
+.study-mode-active .timer-display {
+  display: none !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ADVENTURE MODE THEME
+   Vibrant colors, sans-serif, compact, game-style elements
+   ═══════════════════════════════════════════════════════════════ */
+
+.question-card.adventure-mode {
+  font-family: 'Inter', 'Source Sans 3', sans-serif;
+  padding: 1rem 1.25rem;
+  line-height: 1.5;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+}
+
+.question-card.adventure-mode .q-text {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.question-card.adventure-mode .option-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.question-card.adventure-mode .layer-explain {
+  display: none; /* Collapsed by default in Adventure Mode */
+}
+
+.question-card.adventure-mode .layer-explain.show {
+  display: block; /* Show when manually expanded */
+}
+
+.question-card.adventure-mode .option-breakdown {
+  display: none; /* Hidden by default, show on "Explain Deeper" */
+}
+
+.question-card.adventure-mode .option-breakdown.show {
+  display: block;
+}
+
+.question-card.adventure-mode .mechanism {
+  display: none; /* Collapsed by default */
+}
+
+.question-card.adventure-mode .mechanism.show {
+  display: block;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   MODE SELECTOR UI (Landing Page)
+   ═══════════════════════════════════════════════════════════════ */
+
+.mode-selector-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 22, 18, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.mode-selector-overlay.hidden {
+  display: none;
+}
+
+.mode-selector-title {
+  font-family: 'Crimson Pro', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.mode-selector-subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.mode-selector-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 800px;
+  width: 100%;
+}
+
+.mode-selector-card {
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.mode-selector-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--gold);
+  box-shadow: 0 12px 32px rgba(201, 165, 92, 0.2);
+}
+
+.mode-selector-card.study-mode-card:hover {
+  border-color: #667eea;
+  box-shadow: 0 12px 32px rgba(102, 126, 234, 0.2);
+}
+
+.mode-selector-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.mode-selector-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.mode-selector-card.study-mode-card .mode-selector-name {
+  color: #667eea;
+}
+
+.mode-selector-card.adventure-mode-card .mode-selector-name {
+  color: var(--gold);
+}
+
+.mode-selector-description {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.mode-selector-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.mode-selector-feature {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  background: var(--bg-elevated);
+  border-radius: 6px;
+  color: var(--text-dim);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   IN-SESSION MODE TOGGLE BUTTON (Header)
+   ═══════════════════════════════════════════════════════════════ */
+
+.mode-toggle-btn {
+  padding: 0.5rem 1rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-gold);
+  border-radius: 8px;
+  color: var(--gold);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mode-toggle-btn:hover {
+  background: var(--gold-soft);
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.mode-toggle-icon {
+  font-size: 1rem;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   "EXPLAIN DEEPER" BUTTON (Adventure Mode)
+   Expands optionExplains and mechanism inline
+   ═══════════════════════════════════════════════════════════════ */
+
+.explain-deeper-btn {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background: linear-gradient(135deg, var(--gold-soft), var(--explore-soft));
+  border: 1px solid var(--gold);
+  border-radius: 8px;
+  color: var(--gold);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.explain-deeper-btn:hover {
+  background: linear-gradient(135deg, var(--gold-glow), var(--explore-soft));
+  transform: scale(1.02);
+}
+
+.explain-deeper-btn.expanded {
+  background: var(--bg-elevated);
+  color: var(--text-secondary);
+  border-color: var(--border);
+}
+
+.explain-deeper-icon {
+  font-size: 1.1rem;
+  transition: transform 0.3s;
+}
+
+.explain-deeper-btn.expanded .explain-deeper-icon {
+  transform: rotate(180deg);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE ADJUSTMENTS
+   ═══════════════════════════════════════════════════════════════ */
+
+@media (max-width: 640px) {
+  .mode-selector-title {
+    font-size: 1.8rem;
+  }
+
+  .mode-selector-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .question-card.study-mode {
+    padding: 1.5rem;
+  }
+
+  .mode-toggle-btn {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

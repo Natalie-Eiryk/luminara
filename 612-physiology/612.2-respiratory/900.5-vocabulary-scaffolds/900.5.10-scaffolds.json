@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.10",
+  "parentQuestion": "Difficult or labored breathing is medically termed:",
+  "narrative": {
+    "setting": "The Magic School Bus monitors Mr. Edgar's vital signs. His breathing has become labored - you can see him working hard, using extra muscles, looking distressed. 'He's struggling,' Ms. Frizzle says quietly. 'His body is telling us something is wrong. Let's learn the language doctors use to describe this.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's oxygen saturation is dropping. He's breathing fast and hard but still not getting enough air. Understanding the terminology of breathing difficulties could help diagnose what's happening."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.10.s01",
+      "arc": 1,
+      "arcTitle": "The Language of Breath",
+      "narrative": "Ms. Frizzle writes Greek prefixes on the bus's whiteboard. 'Medical terminology is a code,' she says. 'Learn the prefixes, and you can decode any breathing term.'",
+      "q": "The Greek prefix 'dys-' means:",
+      "options": [
+        "Good, normal",
+        "Bad, difficult, abnormal",
+        "Without, lacking",
+        "Excessive, too much"
+      ],
+      "answer": 1,
+      "explain": "'Dys-' means BAD, DIFFICULT, or ABNORMAL. You see it everywhere: dyspnea (difficult breathing), dysfunction (bad function), dyslexia (difficulty reading), dystopia (bad place).",
+      "wrongExplains": {
+        "0": "'Good/normal' would be 'eu-' (like EUpnea = normal breathing, EUphoria = good feeling).",
+        "2": "'Without/lacking' would be 'a-' or 'an-' (like Apnea = no breathing, Anemia = no blood).",
+        "3": "'Excessive' would be 'hyper-' (like HYPERpnea = excessive breathing, HYPERtension = high pressure)."
+      }
+    },
+    {
+      "id": "900.5.10.s02",
+      "arc": 1,
+      "arcTitle": "The Language of Breath",
+      "narrative": "'Now the root,' Ms. Frizzle continues. 'If you know what -pnea means, you can understand a whole family of breathing terms.'",
+      "q": "The Greek root '-pnea' relates to:",
+      "options": [
+        "Eating",
+        "Breathing",
+        "Walking",
+        "Sleeping"
+      ],
+      "answer": 1,
+      "explain": "'-Pnea' means BREATHING. It comes from the Greek 'pnein' (to breathe). Every -pnea term describes a type of breathing: apnea, dyspnea, eupnea, tachypnea, orthopnea...",
+      "wrongExplains": {
+        "0": "Eating would be '-phagia' (dysPHAGIA = difficulty swallowing, polyphagia = excessive eating).",
+        "2": "Walking relates to 'ambul-' or '-kinesis' (ambulatory, dyskinesia).",
+        "3": "Sleeping would be '-somnia' (inSOMNIA = no sleep, hyperSOMNIA = too much sleep)."
+      }
+    },
+    {
+      "id": "900.5.10.s03",
+      "arc": 1,
+      "arcTitle": "The Language of Breath",
+      "narrative": "'Let's build some words,' Ms. Frizzle says. 'What if someone has NO breathing at all? What prefix would you use?'",
+      "q": "What does 'apnea' mean?",
+      "options": [
+        "Fast breathing",
+        "Absence of breathing",
+        "Deep breathing",
+        "Painful breathing"
+      ],
+      "answer": 1,
+      "explain": "APNEA = 'a-' (without) + '-pnea' (breathing) = ABSENCE OF BREATHING. Sleep apnea means periods of not breathing during sleep. Central apnea is when the brain stops signaling to breathe.",
+      "wrongExplains": {
+        "0": "Fast breathing is 'TACHYPNEA' (tachy- = fast, like tachycardia = fast heart).",
+        "2": "Deep breathing is 'HYPERPNEA' (hyper- = excessive/increased).",
+        "3": "Painful breathing might use '-algia' or '-dynia' (like pleuroDYNIA = painful pleura)."
+      }
+    },
+    {
+      "id": "900.5.10.s04",
+      "arc": 2,
+      "arcTitle": "The Spectrum of Breathing",
+      "narrative": "'Now for the healthy version,' Ms. Frizzle smiles. 'When everything is working perfectly, when breathing is easy and effortless - what's that called?'",
+      "q": "What does 'eupnea' mean?",
+      "options": [
+        "Difficult breathing",
+        "Normal, easy breathing",
+        "Fast breathing",
+        "No breathing"
+      ],
+      "answer": 1,
+      "explain": "EUPNEA = 'eu-' (good/normal) + '-pnea' (breathing) = NORMAL, EASY BREATHING. It's the relaxed, effortless breathing of a healthy person at rest. The opposite of dyspnea.",
+      "wrongExplains": {
+        "0": "Difficult breathing is 'DYSPNEA' (dys- = bad/difficult).",
+        "2": "Fast breathing is 'TACHYPNEA' (tachy- = fast).",
+        "3": "No breathing is 'APNEA' (a- = without)."
+      }
+    },
+    {
+      "id": "900.5.10.s05",
+      "arc": 2,
+      "arcTitle": "The Spectrum of Breathing",
+      "narrative": "'What about when you exercise?' Ms. Frizzle asks. 'You breathe harder and faster, but it doesn't feel bad. It's increased breathing without distress.'",
+      "q": "What does 'hyperpnea' mean?",
+      "options": [
+        "No breathing",
+        "Increased depth and rate of breathing",
+        "Slow breathing",
+        "Difficult breathing"
+      ],
+      "answer": 1,
+      "explain": "HYPERPNEA = 'hyper-' (excessive/increased) + '-pnea' (breathing) = INCREASED breathing depth and rate. It happens during exercise - deeper, faster breaths but NOT necessarily uncomfortable.",
+      "wrongExplains": {
+        "0": "No breathing is 'APNEA.' Hyperpnea is INCREASED breathing.",
+        "2": "Slow breathing would be 'BRADYPNEA' (brady- = slow, like bradycardia).",
+        "3": "Difficult breathing is 'DYSPNEA.' Hyperpnea CAN be comfortable - like during exercise."
+      }
+    },
+    {
+      "id": "900.5.10.s06",
+      "arc": 2,
+      "arcTitle": "The Spectrum of Breathing",
+      "narrative": "'Here's an important distinction,' Ms. Frizzle emphasizes. 'Hyperpnea is increased breathing. Dyspnea is the FEELING of not being able to breathe. One is objective, one is subjective.'",
+      "q": "Dyspnea is a symptom, meaning:",
+      "options": [
+        "It's a disease that can be cured",
+        "It's a subjective feeling the patient experiences",
+        "It only occurs during exercise",
+        "It requires no treatment"
+      ],
+      "answer": 1,
+      "explain": "Dyspnea is SUBJECTIVE - it's the patient's SENSATION of breathing discomfort, 'air hunger,' or 'can't catch my breath.' Different patients describe it differently. You can't measure someone's dyspnea - only they know how it feels.",
+      "wrongExplains": {
+        "0": "Dyspnea is a SYMPTOM of many conditions, not a disease itself. You treat the cause, not dyspnea directly.",
+        "2": "Dyspnea can occur at REST in severe conditions. It's not limited to exercise.",
+        "3": "The UNDERLYING CAUSE needs treatment, even if dyspnea itself isn't directly treatable."
+      }
+    },
+    {
+      "id": "900.5.10.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Context",
+      "narrative": "'Some patients can only breathe when sitting up,' Ms. Frizzle notes. 'Lying down makes it worse. There's a term for that too.'",
+      "q": "Orthopnea is:",
+      "options": [
+        "Breathing difficulty when standing",
+        "Breathing difficulty when lying flat, relieved by sitting",
+        "Fast breathing during exercise",
+        "Normal breathing at rest"
+      ],
+      "answer": 1,
+      "explain": "ORTHOPNEA = 'ortho-' (straight/upright) + '-pnea' (breathing). It's dyspnea that occurs when LYING FLAT and is RELIEVED by sitting up. Classic in heart failure - fluid redistributes to the lungs when supine.",
+      "wrongExplains": {
+        "0": "Difficulty when STANDING would have a different name. Orthopnea is relieved by being upright.",
+        "2": "Fast breathing during exercise is normal hyperpnea, not orthopnea.",
+        "3": "Normal breathing at rest is eupnea. Orthopnea is abnormal position-dependent dyspnea."
+      }
+    },
+    {
+      "id": "900.5.10.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Context",
+      "narrative": "'And what about breathing rate?' Ms. Frizzle asks. 'Fast breathing and slow breathing have their own terms.'",
+      "q": "Tachypnea means:",
+      "options": [
+        "No breathing",
+        "Rapid breathing rate",
+        "Deep breathing",
+        "Difficult breathing"
+      ],
+      "answer": 1,
+      "explain": "TACHYPNEA = 'tachy-' (fast) + '-pnea' (breathing) = RAPID breathing rate (>20 breaths/minute in adults). It's an objective measurement - you count it. Compare with dyspnea, which is subjective.",
+      "wrongExplains": {
+        "0": "No breathing is APNEA. Tachypnea is fast breathing.",
+        "2": "Deep breathing (increased depth) is hyperpnea. Tachypnea specifically means fast RATE.",
+        "3": "Difficult breathing is dyspnea (subjective). Tachypnea is fast breathing (objective)."
+      }
+    },
+    {
+      "id": "900.5.10.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Context",
+      "narrative": "'And slow breathing?' Ms. Frizzle continues. 'Sometimes the opposite problem occurs - the breathing center isn't driving enough breaths.'",
+      "q": "Bradypnea means:",
+      "options": [
+        "Rapid breathing",
+        "Abnormally slow breathing rate",
+        "Deep breathing",
+        "Absent breathing"
+      ],
+      "answer": 1,
+      "explain": "BRADYPNEA = 'brady-' (slow) + '-pnea' (breathing) = ABNORMALLY SLOW breathing rate (<12 breaths/minute in adults). Can be caused by opioids, brain injury, or severe metabolic alkalosis.",
+      "wrongExplains": {
+        "0": "Rapid breathing is TACHYPNEA (tachy- = fast). Brady- means slow.",
+        "2": "Deep breathing is HYPERPNEA. Bradypnea refers to RATE, not depth.",
+        "3": "Absent breathing is APNEA (a- = without). Bradypnea is slow but present."
+      }
+    },
+    {
+      "id": "900.5.10.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Context",
+      "narrative": "Mr. Edgar is struggling - you can see his distress, the work of breathing, the air hunger in his eyes. 'Difficult breathing,' Ms. Frizzle says sympathetically. 'What's the medical term?'",
+      "q": "Difficult or labored breathing is medically termed:",
+      "options": [
+        "Apnea",
+        "Dyspnea",
+        "Eupnea",
+        "Hyperpnea"
+      ],
+      "answer": 1,
+      "explain": "DYSPNEA = 'dys-' (difficult/bad) + '-pnea' (breathing). It's the subjective sensation of breathing discomfort - the feeling of not getting enough air. Patients describe it as 'air hunger,' 'suffocating,' or 'can't catch my breath.'",
+      "wrongExplains": {
+        "0": "Apnea is NO breathing (a- = without). Dyspnea is DIFFICULT breathing.",
+        "2": "Eupnea is NORMAL, easy breathing (eu- = good). The opposite of dyspnea.",
+        "3": "Hyperpnea is INCREASED breathing (hyper- = excessive). It may or may not be uncomfortable."
+      }
+    }
+  ]
+}

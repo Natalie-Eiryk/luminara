@@ -1,0 +1,568 @@
+{
+  "version": "1.0",
+  "source": "LUMI-OS Teaching Module",
+  "prefix": "800.5",
+  "question_count": 16,
+  "questions": [
+    {
+      "id": "800.5.01",
+      "q": "What is the visible, cartilaginous external portion of the ear also called the pinna?",
+      "options": [
+        "Tympanic membrane",
+        "Auditory canal",
+        "Auricle",
+        "Mastoid process"
+      ],
+      "answer": 2,
+      "explain": "The auricle (pinna) is the visible external ear structure made of elastic cartilage covered by skin that collects sound waves.",
+      "mechanism": {
+        "title": "Auricle: The Sound Collector",
+        "content": "The auricle's complex shape isn't just decorative — it modifies incoming sound in ways that help localize sound sources. The convolutions (helix, antihelix, concha, tragus) create tiny delays and frequency-dependent reflections that the brain uses to determine if a sound is above, below, in front, or behind you. The auricle also amplifies sound frequencies in the speech range (2000-3000 Hz) by about 10 dB. In many animals, auricles can move to track sounds; in humans, the auricular muscles are vestigial.",
+        "metaphor": "The auricle is like a satellite dish for your ears: its curved shape captures sound waves and funnels them into the narrow canal, while its complex ridges encode subtle directional information that helps your brain figure out where sounds are coming from."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Ear",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.5.02",
+      "q": "What is the tube that leads from the auricle to the tympanic membrane?",
+      "options": [
+        "Auditory (pharyngotympanic) tube",
+        "Auditory canal (external acoustic meatus)",
+        "Cochlea",
+        "Semicircular canal"
+      ],
+      "answer": 1,
+      "explain": "The auditory canal (external acoustic meatus) is the tube extending from the auricle to the tympanic membrane, about 2.5 cm long.",
+      "mechanism": {
+        "title": "Auditory Canal: The Sound Tunnel",
+        "content": "The auditory canal serves multiple functions: it channels sound to the tympanic membrane; its resonant properties amplify frequencies around 3000 Hz (important for speech); it protects the delicate eardrum from physical damage; and ceruminous and sebaceous glands produce cerumen (earwax) that traps dust and microorganisms. The canal's temperature and humidity also help maintain optimal conditions for the eardrum. Otoscopic examination reveals the canal and the cone of light reflection from the tympanic membrane.",
+        "metaphor": "The auditory canal is like a tuned pipe leading to a drum: it channels and slightly amplifies sound, while its waxy coating keeps the drum protected from dust and insects — nature's ear protection system."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Ear",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.5.03",
+      "q": "What thin membrane vibrates in response to sound waves, separating the outer ear from the middle ear?",
+      "options": [
+        "Round window",
+        "Oval window",
+        "Tympanic membrane (eardrum)",
+        "Vestibular membrane"
+      ],
+      "answer": 2,
+      "explain": "The tympanic membrane (eardrum) is a thin, semi-transparent membrane that vibrates in response to sound waves.",
+      "mechanism": {
+        "title": "Tympanic Membrane: The Sound Converter",
+        "content": "The tympanic membrane converts airborne sound waves into mechanical vibrations. Its conical shape (umbo at the center where the malleus attaches) optimizes vibration characteristics. The membrane has two regions: the tense pars tensa (most of the membrane) that vibrates with sound, and the flaccid pars flaccida (superior portion) that allows pressure equalization. The 'cone of light' seen during otoscopic examination is a reflection from the healthy, slightly transparent membrane. A perforated eardrum causes hearing loss proportional to the hole size.",
+        "metaphor": "The tympanic membrane is like the head of a snare drum: when sound waves hit it, it vibrates in precise patterns that capture the frequency and amplitude of the sound — converting waves traveling through air into physical movements that can be passed to the bones of the middle ear."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Ear",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "800.5.04",
+      "q": "What are the three tiny bones in the middle ear that transmit vibrations from the eardrum to the inner ear?",
+      "options": [
+        "Incus, stapes, cochlea",
+        "Malleus, incus, stapes",
+        "Helix, antihelix, tragus",
+        "Utricle, saccule, cochlea"
+      ],
+      "answer": 1,
+      "explain": "The auditory ossicles — malleus (hammer), incus (anvil), and stapes (stirrup) — are the three middle ear bones that transmit and amplify sound.",
+      "mechanism": {
+        "title": "Auditory Ossicles: The Amplifier Chain",
+        "content": "The ossicles solve an impedance matching problem: sound in air would mostly reflect off fluid (98% loss) without amplification. The ossicles provide ~20x gain through two mechanisms: (1) the area ratio between the tympanic membrane (~55 mm²) and stapes footplate (~3.2 mm²) concentrates force; (2) the lever action of the malleus-incus system provides additional mechanical advantage. Two muscles (tensor tympani on malleus, stapedius on stapes) can dampen the chain to protect against loud sounds (acoustic reflex).",
+        "metaphor": "The ossicles are like a gear train between two different systems: they take the large, low-pressure vibrations from the eardrum and convert them to small, high-pressure vibrations at the oval window — like a transformer converting voltage, but for sound energy."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Ear",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.8,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "800.5.05",
+      "q": "Which ossicle attaches directly to the tympanic membrane?",
+      "options": [
+        "Stapes",
+        "Incus",
+        "Malleus",
+        "Cochlea"
+      ],
+      "answer": 2,
+      "explain": "The malleus (hammer) has a handle (manubrium) that attaches to the inner surface of the tympanic membrane.",
+      "mechanism": {
+        "title": "Malleus: First Link in the Chain",
+        "content": "The malleus weighs about 25 mg and has several parts: the head (articulates with incus), neck, lateral process (creates a landmark on the eardrum), anterior process (attached to a ligament), and manubrium (handle, embedded in the tympanic membrane). The tensor tympani muscle attaches to the manubrium and can pull the malleus inward, tensing the eardrum to reduce sound transmission — part of the acoustic reflex that protects against loud sounds.",
+        "metaphor": "The malleus is like the first domino in a chain: when the eardrum moves, it tilts the malleus, which pushes the incus, which pushes the stapes — each step transmitting and transforming the vibration toward the inner ear."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Ear",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.5.06",
+      "q": "Which ossicle has a footplate that fits into the oval window of the cochlea?",
+      "options": [
+        "Malleus",
+        "Incus",
+        "Stapes",
+        "Tensor tympani"
+      ],
+      "answer": 2,
+      "explain": "The stapes (stirrup) is the smallest bone in the body; its footplate fits into the oval window and transmits vibrations to the cochlear fluid.",
+      "mechanism": {
+        "title": "Stapes: The Piston to the Inner Ear",
+        "content": "The stapes acts as a piston, pushing into the oval window to create pressure waves in the cochlear fluid (perilymph). Its small footplate area concentrates the force collected from the larger tympanic membrane, providing crucial impedance matching between air and fluid. The stapes doesn't move like a piston in a cylinder — it rocks on the oval window, creating a complex motion. Otosclerosis (abnormal bone growth fixing the stapes) causes conductive hearing loss treatable by stapedectomy.",
+        "metaphor": "The stapes is like a tiny piston pumping into a fluid-filled chamber: its rocking motion at the oval window creates waves in the cochlear fluid, converting mechanical bone vibration into fluid waves that can stimulate the hair cells of hearing."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Ear",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.5.07",
+      "q": "What membrane-covered opening dissipates pressure waves after they pass through the cochlea?",
+      "options": [
+        "Oval window",
+        "Round window",
+        "Tympanic membrane",
+        "Vestibular membrane"
+      ],
+      "answer": 1,
+      "explain": "The round window is a membrane-covered opening at the base of the cochlea that bulges outward when the stapes pushes inward, allowing fluid movement.",
+      "mechanism": {
+        "title": "Round Window: The Pressure Release Valve",
+        "content": "The round window membrane (about 2 mm²) is crucial for hearing: cochlear fluid is essentially incompressible, so if the oval window pushes in, something must give. The round window membrane moves out of phase with the oval window — when one goes in, the other bulges out. This reciprocal motion allows fluid displacement and basilar membrane vibration. The round window faces the middle ear cavity and is protected by a bony niche. Damage to this membrane causes severe sensorineural hearing loss.",
+        "metaphor": "The round window is like the pressure release valve on a hydraulic system: when the stapes pushes fluid in through the oval window, the round window bulges out to accommodate the pressure. Without this 'give,' the fluid couldn't move and you couldn't hear."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Ear",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "800.5.08",
+      "q": "What is the snail-shaped, coiled structure of the inner ear that contains the organ of hearing?",
+      "options": [
+        "Vestibule",
+        "Semicircular canals",
+        "Cochlea",
+        "Auditory tube"
+      ],
+      "answer": 2,
+      "explain": "The cochlea (Greek: 'snail') is a coiled, fluid-filled structure containing the organ of Corti where sound is converted to neural signals.",
+      "mechanism": {
+        "title": "Cochlea: The Sound Analyzer",
+        "content": "The cochlea performs remarkable frequency analysis: different positions along its 35mm length (uncoiled) respond to different frequencies. The base (near the oval window) has a stiff, narrow basilar membrane that vibrates to high frequencies; the apex has a flexible, wide membrane that vibrates to low frequencies. This tonotopic organization is maintained all the way to the auditory cortex. The organ of Corti, sitting on the basilar membrane, contains inner and outer hair cells that transduce mechanical vibration into electrical signals.",
+        "metaphor": "The cochlea is like a piano unrolled into a spiral: high notes are detected at one end (base), low notes at the other (apex), with every frequency having its own specific location. Sound waves create ripples that peak at different spots depending on the pitch."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Ear",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.5,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.5.09",
+      "q": "What is the central chamber of the bony labyrinth that contains the utricle and saccule?",
+      "options": [
+        "Cochlea",
+        "Semicircular canals",
+        "Vestibule",
+        "Auditory tube"
+      ],
+      "answer": 2,
+      "explain": "The vestibule is the central egg-shaped cavity of the bony labyrinth, containing the utricle and saccule (organs of static equilibrium).",
+      "mechanism": {
+        "title": "Vestibule: The Balance Central",
+        "content": "The vestibule houses the organs of static equilibrium and linear acceleration detection. The oval window opens into the vestibule (scala vestibuli of cochlea connects here). The utricle's macula is oriented horizontally, making it sensitive to forward/backward and side-to-side movements; the saccule's macula is oriented vertically, sensitive to up/down movements. The otoliths (calcium carbonate crystals) on the otolithic membrane add mass, making the hair cells sensitive to gravity and linear acceleration. BPPV occurs when otoliths become displaced into the semicircular canals.",
+        "metaphor": "The vestibule is like a central atrium connecting different balance-sensing rooms: the utricle and saccule are like motion sensors detecting which way is down and whether you're accelerating in a straight line — using weighted crystals that move with gravity and inertia."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Ear",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.5,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.5.10",
+      "q": "What are the three loop-shaped structures in the inner ear that detect rotational (angular) acceleration?",
+      "options": [
+        "Cochlear ducts",
+        "Semicircular canals",
+        "Vestibular membranes",
+        "Ossicles"
+      ],
+      "answer": 1,
+      "explain": "The three semicircular canals (anterior, posterior, lateral) are oriented perpendicular to each other and detect rotational movement of the head.",
+      "mechanism": {
+        "title": "Semicircular Canals: The Rotation Detectors",
+        "content": "The semicircular canals work on inertia: when you turn your head, the bony canals move with your skull, but the endolymph fluid inside lags behind momentarily, deflecting the cupula and bending the hair cells. The three perpendicular orientations ensure that any rotation can be detected by at least one canal. The canals work in push-pull pairs (left and right corresponding canals). The vestibulo-ocular reflex (VOR) uses canal input to stabilize your gaze during head movements — your eyes move opposite to your head rotation to keep your visual world stable.",
+        "metaphor": "The semicircular canals are like three spirit levels oriented in different planes: when you rotate your head in any direction, fluid sloshes in at least one of them, telling your brain exactly how you're turning. It's like having a 3D gyroscope in each ear."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Ear",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.5.11",
+      "q": "What tube connects the middle ear to the nasopharynx for pressure equalization?",
+      "options": [
+        "External acoustic meatus",
+        "Auditory (pharyngotympanic or Eustachian) tube",
+        "Cochlear duct",
+        "Internal acoustic meatus"
+      ],
+      "answer": 1,
+      "explain": "The auditory (pharyngotympanic/Eustachian) tube connects the middle ear to the nasopharynx, allowing pressure equalization and mucus drainage.",
+      "mechanism": {
+        "title": "Auditory Tube: The Pressure Equalizer",
+        "content": "The auditory tube has a bony portion (near the middle ear) and a cartilaginous portion (near the pharynx) that is normally collapsed. Muscles (tensor veli palatini, levator veli palatini) open the tube during swallowing. Pressure changes (altitude changes, diving) create an imbalance that impairs eardrum movement and hearing. Children's tubes are shorter, more horizontal, and more easily blocked — explaining their high rate of otitis media. Chronic dysfunction can lead to middle ear fluid accumulation and hearing loss.",
+        "metaphor": "The auditory tube is like a pressure relief valve between your ear and throat: when you change altitude, you need to 'pop' your ears by opening this tube to let air in or out. It's also a drainage path, but unfortunately, it can also be a highway for infections traveling up from your throat."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Ear",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.5.12",
+      "q": "What nerves carry hearing and balance information from the inner ear to the brain?",
+      "options": [
+        "Trigeminal and facial nerves",
+        "Vestibular and cochlear nerves (vestibulocochlear, CN VIII)",
+        "Oculomotor and trochlear nerves",
+        "Optic and olfactory nerves"
+      ],
+      "answer": 1,
+      "explain": "The vestibular and cochlear nerves (together forming the vestibulocochlear nerve, CN VIII) carry balance and hearing signals respectively.",
+      "mechanism": {
+        "title": "Vestibulocochlear Nerve: Sound and Balance Highway",
+        "content": "CN VIII is purely sensory, carrying two types of special sensory information. The cochlear division has cell bodies in the spiral ganglion; fibers project to the ventral and dorsal cochlear nuclei. The vestibular division has cell bodies in the vestibular (Scarpa's) ganglion; fibers project to the vestibular nuclei. Both divisions travel through the internal acoustic meatus alongside the facial nerve (CN VII) and the labyrinthine artery. Acoustic neuromas (vestibular schwannomas) commonly arise from CN VIII and cause unilateral hearing loss and imbalance.",
+        "metaphor": "CN VIII is like a bundled cable carrying two different types of signals: one set of wires (cochlear nerve) transmits the audio signal, while another set (vestibular nerve) transmits the balance/gyroscope data — both traveling the same route to the brain's processing centers."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Ear",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.5.13",
+      "q": "What bony region of the temporal bone houses the inner ear structures?",
+      "options": [
+        "Mastoid process",
+        "Petrous portion of temporal bone",
+        "Zygomatic process",
+        "Squamous portion"
+      ],
+      "answer": 1,
+      "explain": "The petrous (rocky) portion of the temporal bone is an extremely dense bone that houses and protects the delicate inner ear structures.",
+      "mechanism": {
+        "title": "Petrous Temporal Bone: The Inner Ear's Fortress",
+        "content": "The petrous portion is pyramid-shaped, projecting medially into the skull base between the sphenoid and occipital bones. Within it, the bony labyrinth (cochlea, vestibule, semicircular canals) is surrounded by the otic capsule — bone that develops uniquely and doesn't remodel like other bones. The internal acoustic meatus (canal) opens on the posterior surface, while the carotid canal passes through the petrous portion. Fractures of the petrous bone (from severe head trauma) can cause hearing loss, facial paralysis (CN VII damage), and CSF leaks.",
+        "metaphor": "The petrous portion is like a secure vault carved out of the densest bone in your body: it houses the incredibly delicate hearing and balance organs, protecting them from all but the most severe trauma. It's nature's way of armoring your most sensitive sensors."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Ear",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.5.14",
+      "q": "What middle ear muscle attaches to the malleus and can dampen sound transmission?",
+      "options": [
+        "Stapedius muscle",
+        "Tensor tympani muscle",
+        "Auricularis muscles",
+        "Temporalis muscle"
+      ],
+      "answer": 1,
+      "explain": "The tensor tympani muscle attaches to the malleus and can pull it inward, tensing the eardrum and reducing sound transmission.",
+      "mechanism": {
+        "title": "Tensor Tympani: The Malleus Controller",
+        "content": "The tensor tympani and stapedius muscles together form the acoustic reflex arc. The tensor tympani's CN V innervation suggests an evolutionary relationship to chewing (both tensor tympani and mastication muscles are from the first pharyngeal arch). The acoustic reflex has a latency of about 25-150 ms, so it can't protect against sudden loud sounds like gunshots. It may be more important for reducing self-generated sounds during vocalization and chewing, preventing 'internal' sounds from masking external ones.",
+        "metaphor": "The tensor tympani is like a volume control knob connected to the malleus: when you anticipate loud sounds or start talking, it tenses the eardrum to turn down the volume on the input signal — like a noise-canceling feature that protects your hearing and reduces the 'noise' of your own voice."
+      },
+      "isotopes": [
+        "muscle.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Ear",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.5.15",
+      "q": "Which middle ear muscle is the smallest skeletal muscle in the body and attaches to the stapes?",
+      "options": [
+        "Tensor tympani",
+        "Stapedius",
+        "Levator veli palatini",
+        "Superior oblique"
+      ],
+      "answer": 1,
+      "explain": "The stapedius muscle is the smallest skeletal muscle in the body (about 1mm), attaching to the neck of the stapes.",
+      "mechanism": {
+        "title": "Stapedius: The Tiny Guardian",
+        "content": "The stapedius muscle provides the motor limb of the acoustic reflex when mediated by CN VII. Its contraction (~70-90 dB threshold) can reduce sound transmission by up to 15 dB, primarily at frequencies below 2 kHz. The reflex is bilateral — loud sound in one ear causes both stapedii to contract. Stapedius testing (acoustic reflex testing) is used clinically to assess middle ear function and to help localize facial nerve lesions. Hyperacusis in Bell's palsy (facial nerve paralysis) results from stapedius weakness.",
+        "metaphor": "The stapedius is like a tiny bodyguard for your cochlea: when dangerous sound levels approach, this muscle — smaller than a grain of rice — leaps into action to dampen the stapes' movement, protecting your inner ear from damage."
+      },
+      "isotopes": [
+        "muscle.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Ear",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.5.16",
+      "q": "What part of the outer ear is commonly pierced and contains no cartilage, only fat and connective tissue?",
+      "options": [
+        "Helix",
+        "Tragus",
+        "Lobule (earlobe)",
+        "Concha"
+      ],
+      "answer": 2,
+      "explain": "The lobule (earlobe) is the fleshy inferior portion of the auricle that contains fat and connective tissue but no cartilage.",
+      "mechanism": {
+        "title": "Lobule: The Cartilage-Free Zone",
+        "content": "The auricle is primarily elastic cartilage (giving it flexibility and spring-back), but the lobule is composed only of areolar connective tissue, fat, and skin. This makes it the softest, most pliable part of the ear. The lobule has a rich blood supply for its size, which is why it bleeds considerably when cut. Its lack of cartilage also means it doesn't bounce back like the rest of the ear — which is why heavy earrings can stretch earlobes over time. The lobule tends to enlarge with age due to the combined effects of gravity and loss of skin elasticity.",
+        "metaphor": "The earlobe is like the empty border of a picture frame: while the rest of the auricle has cartilage 'reinforcement,' the earlobe is just soft tissue — which is why it's the traditional (and least painful) place to pierce, and why it droops a bit more as we age."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Ear",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.5,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    }
+  ]
+}

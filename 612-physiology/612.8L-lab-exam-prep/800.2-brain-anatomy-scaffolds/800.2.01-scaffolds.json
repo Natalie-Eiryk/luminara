@@ -1,0 +1,91 @@
+{
+  "parentId": "800.2.01",
+  "parentQuestion": "What is the tough, outermost layer of the meninges attached to the skull?",
+  "scaffolds": [
+    {
+      "q": "What are the meninges?",
+      "options": [
+        "Bones of the skull",
+        "Protective membrane layers covering the brain and spinal cord",
+        "Brain lobes",
+        "Blood vessels of the brain"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The MENINGES are THREE PROTECTIVE MEMBRANE LAYERS that cover and protect the brain and spinal cord. From outside to inside: dura mater, arachnoid mater, pia mater.",
+      "wrongExplains": {
+        "0": "The skull is bone — the meninges are the membrane layers beneath the skull.",
+        "2": "Brain lobes are regions of the cerebrum. The meninges are the coverings wrapping around the brain.",
+        "3": "Blood vessels supply the brain but aren't the meninges themselves (though the dura contains venous sinuses)."
+      }
+    },
+    {
+      "q": "How many meningeal layers are there?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "answer": 2,
+      "difficulty": "foundation",
+      "explain": "There are THREE meningeal layers: DURA MATER (outer, tough), ARACHNOID MATER (middle, web-like), and PIA MATER (inner, delicate). Remember 'DAP' from outside to inside.",
+      "wrongExplains": {
+        "0": "There are three distinct layers, not one.",
+        "1": "There are three layers — dura, arachnoid, and pia mater.",
+        "3": "Three layers, not four. The dura has two parts (periosteal and meningeal) but is one layer."
+      }
+    },
+    {
+      "q": "What does 'dura mater' mean in Latin?",
+      "options": [
+        "Soft mother",
+        "Spider mother",
+        "Tough mother",
+        "Thin mother"
+      ],
+      "answer": 2,
+      "difficulty": "foundation",
+      "explain": "'DURA MATER' = 'TOUGH MOTHER' in Latin. The name describes its property: it's the thick, tough, protective outer layer.",
+      "wrongExplains": {
+        "0": "'Soft mother' would describe the pia mater ('tender mother'). Dura means tough.",
+        "1": "'Spider' relates to arachnoid mater (arachnoid = spider-like, for its web-like appearance).",
+        "3": "The dura is the thickest layer, not thin. 'Pia mater' (tender mother) is the thin, delicate one."
+      }
+    },
+    {
+      "q": "Which meningeal layer attaches directly to the skull?",
+      "options": [
+        "Pia mater",
+        "Arachnoid mater",
+        "Dura mater",
+        "Subarachnoid space"
+      ],
+      "answer": 2,
+      "difficulty": "foundation",
+      "explain": "The DURA MATER attaches to the skull's inner surface. In the cranium, its outer (periosteal) layer is essentially the skull's periosteum. It's the physical attachment point.",
+      "wrongExplains": {
+        "0": "Pia mater is the innermost layer — it attaches to the brain surface, not the skull.",
+        "1": "Arachnoid mater is the middle layer — it bridges under the dura without attaching to bone.",
+        "3": "The subarachnoid space is a fluid-filled cavity — not a layer that attaches to anything."
+      }
+    },
+    {
+      "q": "The dura mater is composed primarily of what type of tissue?",
+      "options": [
+        "Nervous tissue",
+        "Dense irregular connective tissue",
+        "Smooth muscle",
+        "Adipose tissue"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "The dura is made of DENSE IRREGULAR CONNECTIVE TISSUE — primarily collagen fibers arranged in various directions for strength. This makes it tough and protective.",
+      "wrongExplains": {
+        "0": "Nervous tissue makes up the brain itself. The meninges are connective tissue coverings.",
+        "2": "Smooth muscle contracts; the dura provides passive structural protection, not movement.",
+        "3": "Adipose (fat) tissue stores energy. The dura's toughness comes from collagen, not fat."
+      }
+    }
+  ]
+}

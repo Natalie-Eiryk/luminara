@@ -1,0 +1,19 @@
+{
+  "system": "Fetal Pig",
+  "master_prompts": [
+    "What am I looking at?",
+    "What body system am I in?",
+    "Is this gross anatomy, histology, a model, or fetal pig?",
+    "What landmark proves my location?",
+    "What exact structure is being pointed to?",
+    "What is it connected to or continuous with?",
+    "What does it do?",
+    "What is the easiest thing to confuse it with?",
+    "What single clue separates those two?"
+  ],
+  "system_prompts": [
+    "What human system does this pig structure map onto?",
+    "Where would material flow next?",
+    "What is the easiest nearby look-alike structure?"
+  ]
+}

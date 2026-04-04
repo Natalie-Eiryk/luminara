@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.52",
+  "parentQuestion": "Emphysema affects lung compliance by:",
+  "narrative": {
+    "setting": "The Magic School Bus surveys the devastation inside Mr. Edgar's emphysematous lungs. What should be millions of tiny alveoli has become a landscape of giant, floppy air sacs - alveolar walls destroyed, elastin fibers snapped like broken rubber bands. Ms. Frizzle's voice is somber: 'Class, this is emphysema. Years of smoking have destroyed the walls between alveoli. The lungs are overinflated, like a balloon stretched too many times. They've become TOO compliant - too easy to inflate, but impossible to deflate properly.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar can inhale easily, but he can't exhale. Air is trapped in his floppy, overinflated lungs. He's drowning in his own residual volume."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.52.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle projects the word 'emphysema' in glowing letters. 'From Greek emphysan - to inflate, to puff up. That's exactly what happens: alveoli become overinflated, permanently puffed up like a balloon that's lost its ability to contract.'",
+      "q": "What does 'emphysema' literally mean?",
+      "options": [
+        "To collapse or deflate",
+        "To inflate or puff up",
+        "To scar or harden",
+        "To infect or inflame"
+      ],
+      "answer": 1,
+      "explain": "'Emphysema' comes from Greek 'emphysan' = TO INFLATE, to blow up. The name describes the pathology: alveoli become abnormally inflated, overexpanded. They're trapped in inflation, like balloons that can't deflate.",
+      "wrongExplains": {
+        "0": "That's the opposite! Emphysema is about overinflation, not collapse. The lungs are too expanded.",
+        "2": "That's fibrosis - scarring and stiffening. Emphysema is about destruction and overinflation.",
+        "3": "Infection is different (pneumonia). Emphysema is structural destruction, not microbial."
+      }
+    },
+    {
+      "id": "900.5.52.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "The bus flies through a giant air sac where hundreds of alveoli used to be. 'Alveolar walls have been destroyed,' Ms. Frizzle explains. 'Inflammation from smoking releases enzymes - elastase and proteases - that digest elastin and collagen. It's self-destruction.'",
+      "q": "What is the primary structural change in emphysema?",
+      "options": [
+        "Thickening of alveolar walls",
+        "Destruction of alveolar walls and loss of elastin",
+        "Buildup of fluid in alveoli",
+        "Formation of scar tissue"
+      ],
+      "answer": 1,
+      "explain": "Emphysema = DESTRUCTION of alveolar walls. Elastin fibers (the stretchy component) are broken down by enzymes. Walls between adjacent alveoli dissolve, creating large, floppy air sacs instead of millions of tiny ones. Loss of elastic recoil is the key pathology.",
+      "wrongExplains": {
+        "0": "Thickening is fibrosis. Emphysema does the opposite - it destroys walls, making them thinner or absent.",
+        "2": "Fluid in alveoli is pulmonary edema. Emphysema is about structural destruction, not fluid accumulation.",
+        "3": "Scar tissue is fibrosis - stiff, restrictive. Emphysema creates floppy, overstretched tissue with no scarring."
+      }
+    },
+    {
+      "id": "900.5.52.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle holds up a broken elastin fiber. 'This is the smoking gun - literally. Elastin gives lungs their springiness, their recoil. When it's destroyed, lungs can inflate but can't snap back. Like a rubber band that's been overstretched and lost its tension.'",
+      "q": "What protein, when destroyed in emphysema, causes loss of lung recoil?",
+      "options": [
+        "Hemoglobin",
+        "Elastin",
+        "Keratin",
+        "Myosin"
+      ],
+      "answer": 1,
+      "explain": "ELASTIN is the critical protein. It's the rubber band of the lungs - provides elastic recoil. In emphysema, elastase (an enzyme) breaks down elastin. Without elastin, lungs lose their springiness. They can inflate easily but can't passively deflate. Exhalation becomes active work.",
+      "wrongExplains": {
+        "0": "Hemoglobin is in red blood cells, carries oxygen. It's not a structural protein in lung tissue.",
+        "2": "Keratin is in skin, hair, nails - protective barriers. Lungs don't rely on keratin for elasticity.",
+        "3": "Myosin is a muscle protein for contraction. Lung recoil is elastic, not muscular."
+      }
+    },
+    {
+      "id": "900.5.52.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Mr. Edgar inhales. The bus watches the floppy alveoli expand effortlessly - too effortlessly. 'Look,' Ms. Frizzle points. 'Compliance is 350 mL/cmH2O - almost triple normal. His lungs are TOO stretchy. Compliance has INCREASED.'",
+      "q": "How does emphysema affect lung compliance?",
+      "options": [
+        "Decreases compliance (lungs become stiff)",
+        "Increases compliance (lungs become too stretchy)",
+        "Compliance stays normal",
+        "Compliance becomes zero"
+      ],
+      "answer": 1,
+      "explain": "Emphysema INCREASES compliance. Loss of elastin makes lungs floppy, overly compliant. They expand easily with little pressure - sounds good, but it's pathologic. High compliance in emphysema means lungs overinflate and can't recoil. Compliance goes from ~150 to 300+ mL/cmH2O.",
+      "wrongExplains": {
+        "0": "That's fibrosis - stiff lungs, LOW compliance. Emphysema does the opposite - destroys structure, HIGH compliance.",
+        "2": "Compliance dramatically increases in emphysema. It's a defining feature - too much stretch, not enough snap.",
+        "3": "Zero compliance would mean lungs can't inflate at all. Emphysema makes them TOO inflatable."
+      }
+    },
+    {
+      "id": "900.5.52.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Now Mr. Edgar tries to exhale. The bus watches the floppy air sacs barely contract. 'There's no elastic recoil,' Ms. Frizzle narrates. 'Exhalation should be passive - lungs spring back like a rubber band. But his lungs just... sag. He has to use abdominal muscles to force air out.'",
+      "q": "Why is exhalation difficult in emphysema?",
+      "options": [
+        "Airways are blocked by mucus",
+        "Loss of elastic recoil means lungs can't passively deflate",
+        "Muscles of inhalation are paralyzed",
+        "Too much surfactant"
+      ],
+      "answer": 1,
+      "explain": "Loss of ELASTIC RECOIL is the problem. Healthy lungs deflate passively when you relax - elastin pulls them back. Emphysema destroys elastin, so there's no spring to push air out. Exhalation becomes ACTIVE, requiring muscle work. It's exhausting.",
+      "wrongExplains": {
+        "0": "Mucus blockage is chronic bronchitis. Emphysema's problem is structural - no elastic recoil, not obstruction.",
+        "2": "Inhalation muscles work fine - TOO well, actually. Overinflation is easy. Deflation is the problem.",
+        "3": "Emphysema patients may lack surfactant in damaged areas, but the main issue is lost elastin, not surfactant."
+      }
+    },
+    {
+      "id": "900.5.52.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Ms. Frizzle displays Mr. Edgar's lung volumes. 'FRC: 4500 mL - almost double normal. RV: 3000 mL - triple normal. TLC: 8500 mL - way above normal. Everything is inflated, trapped. This is hyperinflation.'",
+      "q": "What happens to residual volume (RV) in emphysema?",
+      "options": [
+        "RV decreases significantly",
+        "RV increases (air trapping)",
+        "RV stays exactly normal",
+        "RV drops to zero"
+      ],
+      "answer": 1,
+      "explain": "RV INCREASES dramatically in emphysema. Air gets TRAPPED because lungs can't recoil to push it out. RV can go from normal (~1200 mL) to 3000+ mL. This trapped air is useless for gas exchange - it's just dead space that inflates the chest like a barrel.",
+      "wrongExplains": {
+        "0": "RV decreases in restrictive diseases. Emphysema is obstructive - it TRAPS air, increasing RV.",
+        "2": "RV increases massively in emphysema. Air trapping is a hallmark - sometimes RV triples.",
+        "3": "Zero RV would mean complete deflation. Emphysema does the opposite - it OVERINFLATES, increasing RV."
+      }
+    },
+    {
+      "id": "900.5.52.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle shows Mr. Edgar's chest X-ray. 'Barrel chest,' she notes. 'The ribcage is stuck in the inhalation position. Flattened diaphragm. Increased AP diameter. These are the visible signs of hyperinflation from emphysema.'",
+      "q": "What is 'barrel chest' in emphysema?",
+      "options": [
+        "A muscular, athletic chest",
+        "Chest permanently expanded in the inhalation position due to hyperinflation",
+        "Chest collapse from weakness",
+        "Normal chest shape"
+      ],
+      "answer": 1,
+      "explain": "BARREL CHEST = chest stuck in the EXPANDED, inhaled position. Hyperinflation from air trapping increases anteroposterior (AP) diameter, making the chest round like a barrel. The ribs are held out, diaphragm is flattened. It's a physical manifestation of trapped air.",
+      "wrongExplains": {
+        "0": "Barrel chest is pathologic, not athletic. It's from overinflation, not muscle development.",
+        "2": "Emphysema causes overexpansion, not collapse. The chest is too inflated, not too deflated.",
+        "3": "Barrel chest is abnormal. Normal chests have a larger side-to-side than front-to-back diameter."
+      }
+    },
+    {
+      "id": "900.5.52.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle overlays a contrast: 'Emphysema: increased compliance, increased TLC, increased RV, barrel chest. Fibrosis: decreased compliance, decreased TLC, decreased FRC, restricted expansion. Opposite diseases, opposite mechanics.'",
+      "q": "How does emphysema differ from pulmonary fibrosis in terms of compliance?",
+      "options": [
+        "Both decrease compliance",
+        "Emphysema increases compliance; fibrosis decreases it",
+        "Both increase compliance",
+        "Emphysema decreases compliance; fibrosis increases it"
+      ],
+      "answer": 1,
+      "explain": "EMPHYSEMA = HIGH compliance (floppy, overstretched). FIBROSIS = LOW compliance (stiff, scarred). Opposite pathologies: emphysema destroys structure (too loose), fibrosis builds scar tissue (too tight). One is obstructive, one is restrictive.",
+      "wrongExplains": {
+        "0": "Only fibrosis decreases compliance. Emphysema INCREASES it - lungs are too stretchy.",
+        "2": "Only emphysema increases compliance. Fibrosis creates stiff lungs with LOW compliance.",
+        "3": "Backwards! Emphysema makes lungs stretchy (high compliance), fibrosis makes them stiff (low compliance)."
+      }
+    },
+    {
+      "id": "900.5.52.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle shows the mechanism: 'Cigarette smoke → inflammation → release of elastase → breakdown of elastin → loss of recoil → increased compliance → air trapping → hyperinflation. It's a cascade. And once elastin is destroyed, it doesn't regenerate.'",
+      "q": "What is the primary cause of emphysema?",
+      "options": [
+        "Bacterial infection",
+        "Cigarette smoking (chronic exposure to toxins)",
+        "Drinking alcohol",
+        "Genetic immunity"
+      ],
+      "answer": 1,
+      "explain": "CIGARETTE SMOKING is the primary cause (~90% of cases). Smoke triggers chronic inflammation, which releases elastase that destroys elastin. Alpha-1 antitrypsin deficiency (genetic) is a less common cause. The damage is irreversible - you can stop progression, but you can't rebuild elastin.",
+      "wrongExplains": {
+        "0": "Infections cause acute illnesses like pneumonia. Emphysema is chronic structural destruction from toxic exposure.",
+        "2": "Alcohol affects the liver, not the lungs' elastic tissue. Emphysema is from inhaled toxins, mainly smoke.",
+        "3": "Emphysema isn't about immunity - it's about chronic toxic damage to lung structure from smoking."
+      }
+    },
+    {
+      "id": "900.5.52.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "The bus exits the devastated alveolar landscape. Mr. Edgar is using pursed-lip breathing to help exhale. 'Emphysema,' Ms. Frizzle says softly, 'is a lesson in prevention. Once elastin is gone, it's gone forever. Now tell me: how does emphysema affect compliance?'",
+      "q": "Emphysema affects lung compliance by:",
+      "options": [
+        "Decreasing it (making lungs stiff)",
+        "Increasing it (making lungs too compliant/floppy)",
+        "Having no effect",
+        "Making compliance oscillate"
+      ],
+      "answer": 1,
+      "explain": "Emphysema INCREASES compliance. Destruction of elastin makes lungs TOO stretchy, too compliant. They overinflate easily but can't recoil. Compliance rises from ~150 to 300+ mL/cmH2O. This sounds good but it's pathologic: air gets trapped, RV increases, exhalation becomes active work. High compliance + low recoil = hyperinflation and air trapping.",
+      "wrongExplains": {
+        "0": "Stiff lungs (low compliance) are fibrosis. Emphysema does the opposite - destroys structure, making lungs floppy.",
+        "2": "Emphysema dramatically increases compliance - it's a defining feature. The lungs become overly stretchy.",
+        "3": "Compliance consistently increases in emphysema as elastin is destroyed. It's a progressive, predictable change."
+      }
+    }
+  ]
+}

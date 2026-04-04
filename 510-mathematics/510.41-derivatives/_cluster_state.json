@@ -1,0 +1,28 @@
+{
+  "clusterId": "510.41",
+  "clusterName": "Derivatives",
+  "status": "pending",
+  "targetQuestions": 250,
+  "currentBatch": 0,
+  "totalBatches": 10,
+  "questionsGenerated": 0,
+  "scaffoldsGenerated": 0,
+  "lastUpdated": null,
+  "batches": [],
+  "isotopes": [
+    "510.41.derivative.definition",
+    "510.41.derivative.power-rule",
+    "510.41.derivative.product",
+    "510.41.derivative.quotient",
+    "510.41.derivative.chain",
+    "510.41.applications.velocity",
+    "510.41.applications.optimization"
+  ],
+  "prerequisites": ["510.40.*"],
+  "difficultyDistribution": {
+    "easy": 0,
+    "medium": 0,
+    "challenging": 0,
+    "hard": 0
+  }
+}

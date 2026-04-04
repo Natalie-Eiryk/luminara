@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.47",
+  "parentQuestion": "Carbonic anhydrase is:",
+  "narrative": {
+    "setting": "The Magic School Bus floats inside a red blood cell in Mr. Edgar's capillary, where CO2 has just entered from surrounding tissue. Ms. Frizzle points to a molecular machine - a zinc-containing enzyme spinning at incredible speed. 'Class, this is carbonic anhydrase, one of the fastest enzymes in biology. Without it, CO2 + H2O → H2CO3 would take minutes. With it? Microseconds. Mr. Edgar's life runs on enzymatic speed.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's carbonic anhydrase is being inhibited by a medication. If this enzyme can't work fast enough, CO2 will accumulate and his blood will acidify dangerously."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.47.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle projects the word on the holographic display: 'Carbon-ic anhydr-ase. Three parts. Let's decode each one - this name tells you exactly what the enzyme does.'",
+      "q": "The root 'carbon-' in 'carbonic' refers to:",
+      "options": [
+        "Carbohydrates",
+        "Carbon dioxide",
+        "Carbon monoxide",
+        "Carbonate rocks"
+      ],
+      "answer": 1,
+      "explain": "'Carbonic' comes from CARBON DIOXIDE. Carbonic acid (H2CO3) is what forms when CO2 dissolves in water. The enzyme is named for what it acts on: carbonic acid formation from CO2. 'Carbonic' = CO2-related.",
+      "wrongExplains": {
+        "0": "Carbohydrates are sugars (glucose, starch). This enzyme works with CO2 gas, not dietary carbs.",
+        "2": "CO (carbon monoxide) is a different molecule - toxic! This enzyme handles CO2, the metabolic waste product.",
+        "3": "Carbonate rocks contain CO3-2. Related chemistry, but carbonic anhydrase works with CO2 and H2CO3."
+      }
+    },
+    {
+      "id": "900.5.47.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "The bus zooms in on a water molecule approaching CO2. 'Anhydrous means WITHOUT water,' Ms. Frizzle explains. 'Anhydrase means the enzyme REMOVES water - it reverses hydration. But it also does the forward reaction too. Bidirectional.'",
+      "q": "What does the suffix '-ase' indicate in biochemistry?",
+      "options": [
+        "It's a type of sugar",
+        "It's an enzyme (biological catalyst)",
+        "It's a hormone",
+        "It's a vitamin"
+      ],
+      "answer": 1,
+      "explain": "'-ase' = ENZYME. All enzyme names end in '-ase': protease (breaks proteins), lipase (breaks lipids), carbonic anhydrase (handles carbonic acid). The suffix is a badge: this molecule speeds up chemical reactions.",
+      "wrongExplains": {
+        "0": "Sugars end in '-ose' (glucose, fructose, sucrose). '-ase' is for enzymes. Similar sounds, very different roles.",
+        "2": "Hormones have varied names (insulin, estrogen, testosterone). '-ase' specifically means enzyme.",
+        "3": "Vitamins are lettered (A, B, C) or named (thiamine, niacin). '-ase' is the enzyme signature."
+      }
+    },
+    {
+      "id": "900.5.47.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle highlights a gleaming zinc ion at the enzyme's core. 'Carbonic anhydrase needs zinc to function. The zinc grabs the water molecule, activates it, and speeds up the reaction by a factor of 10 MILLION.'",
+      "q": "What is an enzyme's function in a chemical reaction?",
+      "options": [
+        "To be consumed in the reaction",
+        "To speed up the reaction without being consumed (catalyst)",
+        "To slow down the reaction",
+        "To provide energy for the reaction"
+      ],
+      "answer": 1,
+      "explain": "Enzymes are CATALYSTS - they speed up reactions WITHOUT being used up. Carbonic anhydrase accelerates CO2 + H2O ↔ H2CO3 but emerges unchanged, ready to do it again. One enzyme molecule can catalyze millions of reactions per second.",
+      "wrongExplains": {
+        "0": "If enzymes were consumed, you'd need constant replacement. Catalysts work over and over without being destroyed.",
+        "2": "Enzymes accelerate, not decelerate. Slowing reactions is what inhibitors do.",
+        "3": "Enzymes lower activation energy but don't provide energy themselves. They make existing energy go further."
+      }
+    },
+    {
+      "id": "900.5.47.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "CO2 and H2O collide near the enzyme. Without carbonic anhydrase, they bounce off each other. With the enzyme, they're drawn into the active site. The zinc ion pulls the water apart, and within microseconds: H2CO3 forms.",
+      "q": "What reaction does carbonic anhydrase catalyze?",
+      "options": [
+        "O2 + hemoglobin ↔ oxyhemoglobin",
+        "CO2 + H2O ↔ H2CO3 (carbonic acid)",
+        "Glucose + O2 → CO2 + H2O",
+        "HCO3- + Cl- exchange"
+      ],
+      "answer": 1,
+      "explain": "Carbonic anhydrase catalyzes: CO2 + H2O ↔ H2CO3. It's REVERSIBLE - forward reaction (CO2 + water → carbonic acid) at tissues, reverse (carbonic acid → CO2 + water) at lungs. The enzyme speeds BOTH directions.",
+      "wrongExplains": {
+        "0": "That's oxygen binding to hemoglobin - spontaneous, no enzyme needed. Wrong molecule entirely.",
+        "2": "That's cellular respiration - metabolic breakdown of glucose. Carbonic anhydrase only handles the CO2 + water step.",
+        "3": "That's the chloride shift - an ion exchanger protein, not carbonic anhydrase. Different process."
+      }
+    },
+    {
+      "id": "900.5.47.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "The carbonic acid (H2CO3) immediately splits: H2CO3 → H+ + HCO3-. Ms. Frizzle marks the sequence: 'CO2 → H2CO3 → H+ + HCO3-. The enzyme handles the first step. The second step is spontaneous and instant.'",
+      "q": "What happens to carbonic acid (H2CO3) after it forms?",
+      "options": [
+        "It remains stable in the blood",
+        "It quickly dissociates into H+ and HCO3-",
+        "It binds to hemoglobin",
+        "It converts back to oxygen"
+      ],
+      "answer": 1,
+      "explain": "H2CO3 is UNSTABLE - it immediately splits into H+ (hydrogen ion) and HCO3- (bicarbonate). The overall result: CO2 → HCO3- (the transport form). Carbonic anhydrase catalyzes the rate-limiting step; dissociation happens on its own.",
+      "wrongExplains": {
+        "0": "Carbonic acid exists for only a fraction of a second before dissociating. It's an intermediate, not a stable form.",
+        "2": "Hemoglobin binds oxygen and CO2 directly (as carbamino). Carbonic acid dissociates into ions, it doesn't bind.",
+        "3": "CO2 and oxygen are completely different molecules. There's no conversion between them."
+      }
+    },
+    {
+      "id": "900.5.47.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Ms. Frizzle displays a reaction rate graph. 'Without enzyme: minutes. With carbonic anhydrase: 10 microseconds. That's 10 MILLION times faster. At rest, your RBCs produce 200,000 molecules of HCO3- per second. Each.'",
+      "q": "How much does carbonic anhydrase speed up the CO2 + H2O reaction?",
+      "options": [
+        "About 2 times faster",
+        "About 100 times faster",
+        "About 10 million times faster",
+        "It slows the reaction down"
+      ],
+      "answer": 2,
+      "explain": "Carbonic anhydrase is one of the FASTEST enzymes known - it accelerates the reaction by ~10 MILLION-fold. Without it, CO2 hydration is painfully slow. With it, CO2 is converted to transportable HCO3- almost instantly. Speed is life.",
+      "wrongExplains": {
+        "0": "2x faster is barely noticeable. This enzyme is a molecular rocket - millions of times faster.",
+        "1": "100x is still too slow for life. You'd suffocate waiting for CO2 to convert. The enzyme is far more powerful.",
+        "3": "Enzymes accelerate reactions, they never slow them. Carbonic anhydrase is among the fastest catalysts in biology."
+      }
+    },
+    {
+      "id": "900.5.47.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "The bus travels to the lungs, where the reaction reverses. 'At tissues: CO2 → HCO3-. At lungs: HCO3- → CO2,' Ms. Frizzle narrates. 'Same enzyme, same speed, opposite direction. Equilibrium favors whichever product is being removed.'",
+      "q": "Where in the body is carbonic anhydrase found?",
+      "options": [
+        "Only in the lungs",
+        "Primarily in red blood cells (and some other tissues)",
+        "Only in the liver",
+        "Only in the kidneys"
+      ],
+      "answer": 1,
+      "explain": "Carbonic anhydrase is ABUNDANT in RED BLOOD CELLS, where it's essential for CO2 transport. It's also in kidneys (acid-base balance), stomach (HCl production), and eyes (aqueous humor formation). But RBCs are the main site for gas transport.",
+      "wrongExplains": {
+        "0": "Lung tissue has some, but the enzyme is mainly in the RBCs flowing through lung capillaries. Location: blood, not tissue.",
+        "2": "The liver has many enzymes, but carbonic anhydrase's main job is CO2 transport in blood.",
+        "3": "Kidneys do have carbonic anhydrase for pH regulation, but it's not exclusive to kidneys."
+      }
+    },
+    {
+      "id": "900.5.47.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Mr. Edgar's chart flashes on screen. 'He's taking acetazolamide - a carbonic anhydrase inhibitor,' Ms. Frizzle notes. 'It's a diuretic. Slowing the enzyme in the kidneys changes urine composition. But it also affects CO2 transport in blood.'",
+      "q": "What would happen if carbonic anhydrase were completely inhibited in red blood cells?",
+      "options": [
+        "Oxygen transport would stop",
+        "CO2 transport as bicarbonate would be severely impaired",
+        "Blood would turn blue",
+        "Hemoglobin would be destroyed"
+      ],
+      "answer": 1,
+      "explain": "Without carbonic anhydrase, CO2 → HCO3- conversion would be 10 million times SLOWER. CO2 couldn't be transported efficiently, it would accumulate in tissues, and blood pH would plummet (respiratory acidosis). The enzyme is essential for life.",
+      "wrongExplains": {
+        "0": "Oxygen transport is separate - it binds hemoglobin directly without needing carbonic anhydrase. CO2 transport is what fails.",
+        "2": "Blood color comes from hemoglobin oxygenation state. Carbonic anhydrase doesn't affect that.",
+        "3": "The enzyme doesn't protect hemoglobin from destruction - it catalyzes a separate CO2 reaction."
+      }
+    },
+    {
+      "id": "900.5.47.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle projects a comparison: 'Dissolved CO2: 7%. Carbaminohemoglobin: 23%. Bicarbonate: 70%. That 70% exists BECAUSE of carbonic anhydrase. It's the enzyme that makes the dominant pathway possible.'",
+      "q": "Why is carbonic anhydrase critical for the bicarbonate buffer system?",
+      "options": [
+        "It destroys bicarbonate",
+        "It rapidly converts CO2 to H2CO3, which dissociates to HCO3-",
+        "It transports bicarbonate across membranes",
+        "It has no role in the bicarbonate system"
+      ],
+      "answer": 1,
+      "explain": "Carbonic anhydrase is the GATEWAY to the bicarbonate system. It catalyzes CO2 + H2O → H2CO3 → H+ + HCO3-. Without it, bicarbonate formation would be too slow, and 70% of CO2 transport capacity would vanish. The enzyme is the bottleneck.",
+      "wrongExplains": {
+        "0": "The enzyme creates bicarbonate (forward reaction) and re-forms CO2 (reverse). It doesn't destroy anything.",
+        "2": "That's the chloride shift exchanger (Band 3 protein). Carbonic anhydrase catalyzes the chemical conversion.",
+        "3": "Carbonic anhydrase is THE key player - it's what generates HCO3- from CO2 in the first place."
+      }
+    },
+    {
+      "id": "900.5.47.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "The bus exits the red blood cell. Mr. Edgar's monitors show normal CO2 levels now that his medication has been adjusted. 'Carbonic anhydrase,' Ms. Frizzle says, 'is a molecular marvel - fast, reversible, essential. Now tell me: what is it?'",
+      "q": "Carbonic anhydrase is:",
+      "options": [
+        "A hormone that regulates breathing",
+        "An enzyme that catalyzes CO2 + H2O ↔ H2CO3 in red blood cells",
+        "A protein that carries oxygen",
+        "A type of white blood cell"
+      ],
+      "answer": 1,
+      "explain": "CARBONIC ANHYDRASE = zinc-containing ENZYME in red blood cells that catalyzes CO2 + H2O ↔ H2CO3 (carbonic acid). It speeds this reaction by ~10 million-fold. H2CO3 then dissociates to H+ + HCO3-, creating the bicarbonate (70% of CO2 transport). Reversible: tissues favor HCO3- formation, lungs favor CO2 release.",
+      "wrongExplains": {
+        "0": "Breathing is controlled by chemoreceptors and the medulla. Carbonic anhydrase is an enzyme, not a hormone.",
+        "2": "Oxygen is carried by hemoglobin. Carbonic anhydrase handles CO2 hydration, not oxygen binding.",
+        "3": "It's not a cell - it's an enzyme inside red blood cells. White blood cells are part of the immune system."
+      }
+    }
+  ]
+}

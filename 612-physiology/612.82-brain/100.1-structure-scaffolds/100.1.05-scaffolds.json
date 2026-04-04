@@ -1,0 +1,159 @@
+{
+  "parentId": "100.1.05",
+  "parentQuestion": "An elevated ridge of the cortex is called a ___.",
+  "scaffolds": [
+    {
+      "q": "Why does the brain's surface appear wrinkled and folded?",
+      "options": [
+        "It's a birth defect",
+        "Folding increases surface area without increasing skull size",
+        "The brain is damaged",
+        "It serves no purpose"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Brain FOLDING is a design feature, not a defect. It INCREASES SURFACE AREA to pack more neurons into the same skull space — more surface area = more processing power.",
+      "wrongExplains": {
+        "0": "Folding is normal anatomy, not a defect. It's essential for brain function.",
+        "2": "The wrinkled appearance is healthy. A smooth brain (lissencephaly) would be abnormal.",
+        "3": "Folding serves a critical purpose — maximizing cortical surface area for more neurons."
+      }
+    },
+    {
+      "q": "What is a sulcus?",
+      "options": [
+        "An elevated ridge on the brain",
+        "A groove or valley on the brain surface",
+        "A bone in the skull",
+        "A type of neuron"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "A SULCUS (plural: Sulci) is a GROOVE or VALLEY on the brain surface. A DEEP groove is called a FISSURE. These are the low points in the brain's landscape.",
+      "wrongExplains": {
+        "0": "An elevated ridge is a gyrus, not a sulcus. Sulcus means groove.",
+        "2": "A sulcus is brain tissue topography, not skull bone.",
+        "3": "A sulcus is a surface feature, not a cell type."
+      }
+    },
+    {
+      "q": "What is a fissure?",
+      "options": [
+        "A shallow groove",
+        "A very deep groove on the brain surface",
+        "An elevated ridge",
+        "A muscle"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "A FISSURE is a VERY DEEP groove on the brain. The LONGITUDINAL FISSURE separates left and right hemispheres. The LATERAL FISSURE separates frontal from temporal lobes.",
+      "wrongExplains": {
+        "0": "A shallow groove is a sulcus. Fissures are deep canyons.",
+        "2": "An elevated ridge is a gyrus. A fissure is a deep groove.",
+        "3": "Fissures are brain surface features, not muscles."
+      }
+    },
+    {
+      "q": "What is a gyrus?",
+      "options": [
+        "A groove on the brain surface",
+        "An elevated ridge on the brain surface",
+        "A deep fissure",
+        "A blood vessel"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "A GYRUS (plural: Gyri) is an ELEVATED RIDGE on the brain surface. The PRECENTRAL GYRUS contains the motor cortex. The POSTCENTRAL GYRUS contains the somatosensory cortex.",
+      "wrongExplains": {
+        "0": "A groove is a sulcus. A gyrus is the opposite — an elevated ridge.",
+        "2": "A fissure is a deep groove. A gyrus is a raised ridge.",
+        "3": "A gyrus is a surface ridge of neural tissue, not a blood vessel."
+      }
+    },
+    {
+      "q": "How do gyrus and sulcus relate to each other?",
+      "options": [
+        "They are the same thing",
+        "Gyrus = ridge (elevated), Sulcus = groove (depressed)",
+        "Gyrus = groove, Sulcus = ridge",
+        "They are bones"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "GYRUS = RIDGE (elevated, the peaks). SULCUS = GROOVE (depressed, the valleys). Together they create the brain's folded topography.",
+      "wrongExplains": {
+        "0": "They are opposites — one is elevated (gyrus), one is depressed (sulcus).",
+        "2": "That's reversed. Gyrus is the ridge, sulcus is the groove.",
+        "3": "Both are soft tissue surface features, not bones."
+      }
+    },
+    {
+      "q": "What does the precentral gyrus contain?",
+      "options": [
+        "The auditory cortex",
+        "The motor cortex",
+        "The visual cortex",
+        "The olfactory cortex"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The PRECENTRAL GYRUS (ridge in front of the central sulcus) contains the PRIMARY MOTOR CORTEX. This is where voluntary movement commands originate.",
+      "wrongExplains": {
+        "0": "Auditory cortex is in the temporal lobe. The precentral gyrus has motor cortex.",
+        "2": "Visual cortex is in the occipital lobe. The precentral gyrus has motor cortex.",
+        "3": "Olfactory cortex is near the temporal lobe. The precentral gyrus has motor cortex."
+      }
+    },
+    {
+      "q": "What does the postcentral gyrus contain?",
+      "options": [
+        "The motor cortex",
+        "The somatosensory cortex",
+        "The visual cortex",
+        "The brainstem"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The POSTCENTRAL GYRUS (ridge behind the central sulcus) contains the PRIMARY SOMATOSENSORY CORTEX. This is where touch, pain, and temperature sensations are processed.",
+      "wrongExplains": {
+        "0": "Motor cortex is in the precentral gyrus (in front). Postcentral has somatosensory.",
+        "2": "Visual cortex is in the occipital lobe. Postcentral gyrus has somatosensory cortex.",
+        "3": "The brainstem is below the cerebrum. The postcentral gyrus is a cortical ridge."
+      }
+    },
+    {
+      "q": "What is the correct anatomical term for an elevated ridge of cortex?",
+      "options": [
+        "Sulcus",
+        "Gyrus",
+        "Fissure",
+        "Furrow"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "GYRUS is the correct term for an elevated ridge. Not sulcus (that's a groove), not fissure (that's a deep groove), not furrow (that's farming language).",
+      "wrongExplains": {
+        "0": "Sulcus means groove, the opposite of a ridge.",
+        "2": "Fissure means deep groove, not a ridge.",
+        "3": "Furrow is too vague for anatomy. The precise term is gyrus."
+      }
+    },
+    {
+      "q": "An elevated ridge of the cortex is called a ___.",
+      "options": [
+        "Sulcus",
+        "Gyrus",
+        "Fissure",
+        "Ventricle"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "The answer is GYRUS. Gyri are the elevated ridges between the grooves (sulci). This is essential brain anatomy vocabulary — gyrus = peak, sulcus = valley.",
+      "wrongExplains": {
+        "0": "A sulcus is a groove or valley, not an elevated ridge.",
+        "2": "A fissure is a deep groove, not a ridge.",
+        "3": "A ventricle is a fluid-filled cavity inside the brain, not a surface ridge."
+      }
+    }
+  ]
+}

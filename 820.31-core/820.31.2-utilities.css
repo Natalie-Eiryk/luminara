@@ -1,0 +1,155 @@
+/**
+ * Ms. Luminara Quiz - Utility Classes CSS
+ * Replaces inline style="" attributes with reusable classes
+ * @version 2026-03-29
+ */
+
+/* ==================== FLEXBOX UTILITIES ==================== */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.gap-sm { gap: 0.5rem; }
+.gap-md { gap: 0.75rem; }
+.gap-lg { gap: 1rem; }
+
+/* ==================== MARGIN UTILITIES ==================== */
+.m-0 { margin: 0; }
+.mt-sm { margin-top: 0.5rem; }
+.mt-md { margin-top: 1rem; }
+.mt-lg { margin-top: 1.5rem; }
+.mb-sm { margin-bottom: 0.5rem; }
+.mb-md { margin-bottom: 1rem; }
+.mb-lg { margin-bottom: 1.5rem; }
+.ml-auto { margin-left: auto; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.my-md { margin-top: 1rem; margin-bottom: 1rem; }
+.my-lg { margin-top: 1.5rem; margin-bottom: 1.5rem; }
+
+/* ==================== PADDING UTILITIES ==================== */
+.p-sm { padding: 0.5rem; }
+.p-md { padding: 1rem; }
+.p-lg { padding: 1.5rem; }
+.px-sm { padding-left: 0.5rem; padding-right: 0.5rem; }
+.px-md { padding-left: 1rem; padding-right: 1rem; }
+.px-lg { padding-left: 1.5rem; padding-right: 1.5rem; }
+.py-sm { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.py-md { padding-top: 1rem; padding-bottom: 1rem; }
+
+/* ==================== TEXT UTILITIES ==================== */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-xs { font-size: 0.7rem; }
+.text-sm { font-size: 0.8rem; }
+.text-md { font-size: 1rem; }
+.text-lg { font-size: 1.2rem; }
+.text-xl { font-size: 1.5rem; }
+.text-2xl { font-size: 2rem; }
+.font-bold { font-weight: 700; }
+.font-semibold { font-weight: 600; }
+.uppercase { text-transform: uppercase; }
+.tracking-wide { letter-spacing: 2px; }
+
+/* ==================== COLOR UTILITIES ==================== */
+.text-gold { color: var(--gold); }
+.text-primary { color: var(--text-primary); }
+.text-muted { color: var(--text-muted); }
+.text-dim { color: var(--text-dim); }
+.text-correct { color: var(--correct); }
+.text-incorrect { color: var(--incorrect); }
+
+/* ==================== BACKGROUND UTILITIES ==================== */
+.bg-card { background: var(--bg-card); }
+.bg-deep { background: var(--bg-deep); }
+
+/* ==================== BORDER UTILITIES ==================== */
+.border { border: 1px solid var(--border); }
+.border-2 { border: 2px solid var(--border); }
+.border-gold { border-color: var(--gold); }
+.rounded { border-radius: 8px; }
+.rounded-lg { border-radius: 10px; }
+.rounded-xl { border-radius: 12px; }
+
+/* ==================== WIDTH/SIZE UTILITIES ==================== */
+.w-full { width: 100%; }
+.min-w-120 { min-width: 120px; }
+
+/* ==================== MAP RUN LAUNCHER ==================== */
+.map-run-launcher {
+  margin: 1.5rem 0;
+}
+
+.map-run-launcher h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-dim);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.map-run-buttons {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.map-run-btn {
+  padding: 0.75rem 1.5rem;
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 120px;
+}
+
+.map-run-btn:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.map-run-btn.featured {
+  border-color: var(--gold);
+  box-shadow: 0 0 15px rgba(201, 165, 92, 0.15);
+}
+
+.map-run-btn .run-icon {
+  font-size: 1.5rem;
+}
+
+.map-run-btn .run-name {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.map-run-btn.featured .run-name {
+  color: var(--gold);
+}
+
+.map-run-btn .run-desc {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+}
+
+/* ==================== DISPLAY UTILITIES ==================== */
+.hidden { display: none !important; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+
+/* ==================== CURSOR UTILITIES ==================== */
+.cursor-pointer { cursor: pointer; }
+
+/* ==================== TRANSITION UTILITIES ==================== */
+.transition { transition: all 0.2s; }
+.transition-fast { transition: all 0.1s; }
+
+/* ==================== SHADOW UTILITIES ==================== */
+.shadow-gold { box-shadow: 0 0 15px rgba(201, 165, 92, 0.15); }
+.shadow-glow { box-shadow: 0 0 20px rgba(201, 165, 92, 0.15); }

@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.19",
+  "parentQuestion": "The process of breathing air into the lungs is called:",
+  "narrative": {
+    "setting": "The Magic School Bus hovers outside Mr. Edgar's chest as his diaphragm suddenly flattens. The chest cavity expands like a bellows opening, and a hurricane of air rushes past them, drawn into the airways. 'Hold on!' Ms. Frizzle shouts as they're swept into the trachea on a river of incoming atmosphere.",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar is climbing stairs and breathing hard. Each breath must draw enough fresh air to supply oxygen to his working muscles. If this process fails - if air stops flowing in - cells begin dying within minutes. The simple act of breathing in is the first link in the chain of survival."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.19.s01",
+      "arc": 1,
+      "arcTitle": "The Word's Origin",
+      "narrative": "'The Romans called this inspirare,' Ms. Frizzle shouts over the rushing air. 'In- means into. Spirare means to breathe. To inspire is literally to breathe into.' The word hangs in the turbulent air.",
+      "q": "The Latin word 'inspirare' means:",
+      "options": [
+        "To breathe out",
+        "To breathe into",
+        "To stop breathing",
+        "To hold breath"
+      ],
+      "answer": 1,
+      "explain": "'Inspirare' means TO BREATHE INTO. 'In-' (into) + 'spirare' (breathe). Every inspiration draws air inward, filling the lungs with fresh atmosphere.",
+      "wrongExplains": {
+        "0": "Breathing out would be 'expirare' (ex- = out). Inspiration is inward.",
+        "2": "Stopping breath would be 'apnea' (a- = without + pnea = breath).",
+        "3": "Holding breath isn't captured by 'inspirare' - it specifically means breathing IN."
+      }
+    },
+    {
+      "id": "900.5.19.s02",
+      "arc": 1,
+      "arcTitle": "The Word's Origin",
+      "narrative": "'Interesting fact,' Ms. Frizzle adds. 'When we say someone inspires us, we're using the same word. They breathe life INTO us, metaphorically. Inspiration fills the lungs just as inspiration fills the spirit.'",
+      "q": "The English word 'inspire' (to motivate) shares its root with:",
+      "options": [
+        "Perspiration",
+        "Respiration/breathing in",
+        "Aspirin",
+        "Spiral"
+      ],
+      "answer": 1,
+      "explain": "'Inspire' (motivate) and 'inspiration' (breathing in) share the same Latin root: 'inspirare' - to breathe into. An inspiring idea 'breathes' new life into us.",
+      "wrongExplains": {
+        "0": "Perspiration is 'per-' (through) + 'spirare.' Different prefix, different meaning.",
+        "2": "Aspirin comes from a different root entirely (acetylspiraeic acid).",
+        "3": "Spiral has Latin 'spira' (coil), not 'spirare' (breathe)."
+      }
+    },
+    {
+      "id": "900.5.19.s03",
+      "arc": 1,
+      "arcTitle": "The Word's Origin",
+      "narrative": "'Expiration is the opposite,' Ms. Frizzle notes. 'Ex- means out. When Mr. Edgar expires his breath, he breathes OUT.' She pauses. 'And yes, when someone expires, they literally breathe out their last breath.'",
+      "q": "If inspiration means breathing in, what is expiration?",
+      "options": [
+        "Breathing in more deeply",
+        "Breathing out",
+        "Holding breath",
+        "Coughing"
+      ],
+      "answer": 1,
+      "explain": "EXPIRATION = breathing OUT. 'Ex-' (out) + 'spirare' (breathe). The complementary process to inspiration - air leaves the lungs.",
+      "wrongExplains": {
+        "0": "Deeper breathing in is still inspiration. Expiration is outward.",
+        "2": "Holding breath is breath-holding or apnea. Expiration is active outflow.",
+        "3": "Coughing is forced expiration but with protective purpose. Regular expiration is passive."
+      }
+    },
+    {
+      "id": "900.5.19.s04",
+      "arc": 2,
+      "arcTitle": "The Mechanics",
+      "narrative": "Ms. Frizzle points to the diaphragm below them - a dome of muscle now flattening as it contracts. 'This is ACTIVE work,' she emphasizes. 'The diaphragm contracts, the intercostals pull the ribs up and out. The chest expands.'",
+      "q": "Is inspiration at rest an active or passive process?",
+      "options": [
+        "Passive - no muscles involved",
+        "Active - requires muscle contraction",
+        "Neither - it's automatic",
+        "It varies randomly"
+      ],
+      "answer": 1,
+      "explain": "Inspiration is ACTIVE - the diaphragm and external intercostals CONTRACT to expand the chest cavity. Muscles do work to create the vacuum that draws air in.",
+      "wrongExplains": {
+        "0": "Muscles absolutely contract during inspiration. It requires energy expenditure.",
+        "2": "'Automatic' (involuntary control) doesn't mean no muscles. The diaphragm actively contracts.",
+        "3": "It's consistently active. Every breath requires muscular contraction."
+      }
+    },
+    {
+      "id": "900.5.19.s05",
+      "arc": 2,
+      "arcTitle": "The Mechanics",
+      "narrative": "The chest cavity continues expanding. 'Boyle's Law,' Ms. Frizzle announces. 'When volume increases, what happens to pressure?' She gestures at the air rushing past them. 'Pressure drops. And air flows from high pressure to low.'",
+      "q": "What happens to thoracic volume during inspiration?",
+      "options": [
+        "It decreases",
+        "It increases",
+        "It stays the same",
+        "It fluctuates randomly"
+      ],
+      "answer": 1,
+      "explain": "Thoracic volume INCREASES during inspiration. Diaphragm descends (flattens), ribs elevate and spread - the chest cavity expands in all dimensions.",
+      "wrongExplains": {
+        "0": "Decreasing volume would INCREASE pressure and push air OUT (expiration).",
+        "2": "Volume must change to create the pressure gradient. Expansion draws air in.",
+        "3": "Volume consistently increases during each inspiration."
+      }
+    },
+    {
+      "id": "900.5.19.s06",
+      "arc": 2,
+      "arcTitle": "The Mechanics",
+      "narrative": "'The key insight,' Ms. Frizzle shows a pressure gauge. 'Atmospheric pressure outside: 760 mmHg. Lung pressure right now?' The gauge reads 758 mmHg. 'Two millimeters lower. That tiny difference moves 500 milliliters of air.'",
+      "q": "What happens to air pressure in the lungs when thoracic volume increases?",
+      "options": [
+        "Pressure increases",
+        "Pressure decreases",
+        "Pressure stays the same",
+        "Pressure becomes negative then positive"
+      ],
+      "answer": 1,
+      "explain": "Boyle's Law: when volume INCREASES, pressure DECREASES. Lung pressure drops below atmospheric, creating a gradient that draws air inward.",
+      "wrongExplains": {
+        "0": "Increased volume DECREASES pressure (inverse relationship per Boyle's Law).",
+        "2": "Pressure must change to create airflow. No gradient = no flow.",
+        "3": "Pressure goes below atmospheric (sub-atmospheric/negative relative to outside) during inspiration."
+      }
+    },
+    {
+      "id": "900.5.19.s07",
+      "arc": 3,
+      "arcTitle": "The Breathing Cycle",
+      "narrative": "Now Mr. Edgar exhales. The diaphragm relaxes, doming upward. The ribs lower. 'Watch this,' Ms. Frizzle says. 'At rest, expiration is PASSIVE. The lungs simply recoil like stretched rubber bands. No muscle work needed.'",
+      "q": "During quiet expiration, what happens to the diaphragm?",
+      "options": [
+        "It contracts forcefully",
+        "It relaxes and returns to dome shape",
+        "It stays flat",
+        "It moves sideways"
+      ],
+      "answer": 1,
+      "explain": "During expiration, the diaphragm RELAXES and returns to its resting dome shape. Combined with elastic recoil of lungs and chest wall, air is pushed out passively.",
+      "wrongExplains": {
+        "0": "Forceful contraction would flatten the diaphragm and draw air IN (inspiration).",
+        "2": "Flat is the contracted (inspiratory) position. Relaxed diaphragm = dome shaped.",
+        "3": "The diaphragm moves up and down, not sideways. It's a horizontal muscle."
+      }
+    },
+    {
+      "id": "900.5.19.s08",
+      "arc": 3,
+      "arcTitle": "The Breathing Cycle",
+      "narrative": "'So inspiration is active, expiration is passive,' Arnold summarizes. 'Like pulling a door open takes effort, but letting go and letting it swing shut is free.' Ms. Frizzle beams. 'Exactly! Unless you need forced expiration...'",
+      "q": "At rest, which phase of breathing requires muscular effort?",
+      "options": [
+        "Expiration only",
+        "Inspiration only",
+        "Both equally",
+        "Neither"
+      ],
+      "answer": 1,
+      "explain": "At rest, INSPIRATION is active (diaphragm + intercostals contract), while EXPIRATION is passive (elastic recoil). Energy is spent breathing IN, not out.",
+      "wrongExplains": {
+        "0": "Quiet expiration is passive - elastic recoil does the work.",
+        "2": "They're not equal. Inspiration requires active contraction; expiration is passive recoil.",
+        "3": "Inspiration definitely requires muscle work. Breathing isn't free."
+      }
+    },
+    {
+      "id": "900.5.19.s09",
+      "arc": 3,
+      "arcTitle": "The Breathing Cycle",
+      "narrative": "'When Mr. Edgar exercises hard,' Ms. Frizzle notes, 'he'll recruit accessory muscles - sternocleidomastoid, scalenes for inspiration; abdominal muscles for forceful expiration. But at rest, the diaphragm does most of the work.'",
+      "q": "The diaphragm is responsible for what percentage of quiet breathing?",
+      "options": [
+        "About 10%",
+        "About 75%",
+        "About 25%",
+        "100%"
+      ],
+      "answer": 1,
+      "explain": "The DIAPHRAGM accounts for about 75% of quiet breathing. It's the primary muscle of respiration, doing most of the work during normal, restful breathing.",
+      "wrongExplains": {
+        "0": "10% is far too low. The diaphragm is the primary respiratory muscle.",
+        "2": "25% underestimates its role. Diaphragm is dominant at rest.",
+        "3": "Not quite 100% - external intercostals also contribute, especially to rib elevation."
+      }
+    },
+    {
+      "id": "900.5.19.s10",
+      "arc": 3,
+      "arcTitle": "The Breathing Cycle",
+      "narrative": "Air rushes past them one more time. Muscles contract, volume increases, pressure drops, air flows in. 'From atmosphere to alveoli,' Ms. Frizzle says. 'This active process of drawing air into the lungs - what's it called?'",
+      "q": "The process of breathing air into the lungs is called:",
+      "options": [
+        "Expiration",
+        "Inspiration",
+        "Respiration",
+        "Ventilation"
+      ],
+      "answer": 1,
+      "explain": "INSPIRATION = breathing IN. From Latin 'inspirare' (to breathe into). Active muscle contraction increases thoracic volume, creating negative pressure that draws air into the lungs.",
+      "wrongExplains": {
+        "0": "Expiration is breathing OUT - the opposite process.",
+        "2": "Respiration includes gas exchange at cellular level. Inspiration is just the mechanical in-breath.",
+        "3": "Ventilation is the complete breathing cycle (inspiration AND expiration together)."
+      }
+    }
+  ]
+}

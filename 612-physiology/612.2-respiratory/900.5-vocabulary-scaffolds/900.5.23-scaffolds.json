@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.23",
+  "parentQuestion": "The volume of air remaining in the lungs after a forced expiration is called:",
+  "narrative": {
+    "setting": "The Magic School Bus watches Mr. Edgar exhale as hard as he can - blowing into a spirometer with maximum effort. His chest compresses, his abdominals contract, air rushes out. But when the flow stops, when he physically cannot exhale any more, the bus looks around. Air remains. Always. 'You can never empty the tank completely,' Ms. Frizzle observes.",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar is being tested for COPD - a disease that traps air. Understanding lung volumes isn't academic; it's diagnostic. The air that remains after maximum exhalation tells clinicians whether his airways are obstructed, whether his lungs are losing their elastic recoil. The residual air is a clinical marker."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.23.s01",
+      "arc": 1,
+      "arcTitle": "The Word's Meaning",
+      "narrative": "'Residual,' Ms. Frizzle says the word slowly. 'From Latin residuus - remaining, left over. After everything that can be exhaled is exhaled, what remains is the residue.'",
+      "q": "The word 'residual' means:",
+      "options": [
+        "Extra or additional",
+        "Remaining or left over",
+        "Moving or flowing",
+        "Maximum or peak"
+      ],
+      "answer": 1,
+      "explain": "'Residual' means REMAINING or LEFT OVER. Residual volume is what REMAINS in the lungs after you've exhaled as hard as possible - it cannot be voluntarily expelled.",
+      "wrongExplains": {
+        "0": "'Extra' would be 'reserve' (as in expiratory reserve volume). Residual is what's LEFT.",
+        "2": "'Moving' relates to tidal volume. Residual is static - it stays behind.",
+        "3": "'Maximum' relates to vital capacity. Residual is the minimum that remains."
+      }
+    },
+    {
+      "id": "900.5.23.s02",
+      "arc": 1,
+      "arcTitle": "The Word's Meaning",
+      "narrative": "'Can you ever reach zero?' Arnold asks. 'Can you push out every last molecule of air?' Ms. Frizzle shakes her head. 'Not in a living person. The lungs never fully collapse.'",
+      "q": "Can you ever exhale ALL the air from your lungs?",
+      "options": [
+        "Yes, with maximum effort",
+        "No, some air always remains",
+        "Only underwater",
+        "Only at high altitude"
+      ],
+      "answer": 1,
+      "explain": "NO - about 1200 mL of air ALWAYS REMAINS (residual volume). The lungs never fully collapse in a living person. Airways stay open; alveoli stay partially inflated.",
+      "wrongExplains": {
+        "0": "Even maximum effort leaves ~1200 mL. Complete emptying is impossible.",
+        "2": "Water pressure doesn't help exhale residual volume. Physics prevents complete collapse.",
+        "3": "Altitude affects oxygen pressure but doesn't change the structural residual volume."
+      }
+    },
+    {
+      "id": "900.5.23.s03",
+      "arc": 1,
+      "arcTitle": "The Word's Meaning",
+      "narrative": "'Approximately 1200 milliliters,' Ms. Frizzle estimates. 'Just over a liter of air that never leaves. It's not a design flaw - it's a feature.'",
+      "q": "Approximately how much is residual volume in adults?",
+      "options": [
+        "About 100 mL",
+        "About 1200 mL",
+        "About 3000 mL",
+        "About 5000 mL"
+      ],
+      "answer": 1,
+      "explain": "Residual volume is about 1200 mL (1.2 liters). This air cannot be voluntarily exhaled - it remains even after maximum expiratory effort.",
+      "wrongExplains": {
+        "0": "100 mL is far too small. Residual volume is about 1200 mL.",
+        "2": "3000 mL is close to inspiratory reserve volume, not residual.",
+        "3": "5000-6000 mL is about total lung capacity - all volumes combined."
+      }
+    },
+    {
+      "id": "900.5.23.s04",
+      "arc": 2,
+      "arcTitle": "Why It Matters",
+      "narrative": "'Why keep air in?' Ms. Frizzle poses the question. 'Think about it. If alveoli collapsed completely with each exhale, you'd have to pry them open every breath. Like unsticking wet tissue paper.'",
+      "q": "Why is residual volume important?",
+      "options": [
+        "It makes breathing harder",
+        "It keeps alveoli partially inflated and maintains continuous gas exchange",
+        "It stores extra oxygen",
+        "It produces mucus"
+      ],
+      "answer": 1,
+      "explain": "Residual volume KEEPS ALVEOLI PARTIALLY INFLATED, preventing collapse. This maintains continuous gas exchange (blood always has oxygen available) and reduces the work of breathing.",
+      "wrongExplains": {
+        "0": "Residual volume actually makes breathing EASIER by keeping alveoli open.",
+        "2": "It's not primarily oxygen storage. It's about preventing alveolar collapse.",
+        "3": "Goblet cells produce mucus. Residual volume is about keeping airways and alveoli open."
+      }
+    },
+    {
+      "id": "900.5.23.s05",
+      "arc": 2,
+      "arcTitle": "Why It Matters",
+      "narrative": "'In COPD,' Ms. Frizzle notes, 'residual volume INCREASES. Airways trap air - patients can't exhale fully. They feel short of breath because their lungs are already full of old air.'",
+      "q": "In COPD (emphysema), residual volume typically:",
+      "options": [
+        "Decreases",
+        "Increases (air trapping)",
+        "Stays exactly the same",
+        "Becomes zero"
+      ],
+      "answer": 1,
+      "explain": "In COPD/emphysema, residual volume INCREASES due to air trapping. Damaged airways collapse during exhalation, trapping air. Patients feel 'can't exhale' or 'chest too full.'",
+      "wrongExplains": {
+        "0": "COPD causes air TRAPPING, which increases residual volume.",
+        "2": "RV definitely changes in disease - it's a diagnostic marker.",
+        "3": "RV never becomes zero in living patients. In COPD it increases."
+      }
+    },
+    {
+      "id": "900.5.23.s06",
+      "arc": 2,
+      "arcTitle": "Why It Matters",
+      "narrative": "'You can't measure residual volume with a spirometer,' Ms. Frizzle explains. 'Spirometers only measure air that moves. Residual volume requires special techniques - helium dilution or body plethysmography.'",
+      "q": "Why can't a simple spirometer measure residual volume?",
+      "options": [
+        "Spirometers are too expensive",
+        "Residual air never moves, so it can't be measured by flow",
+        "Spirometers only work for oxygen",
+        "Residual volume is too small to detect"
+      ],
+      "answer": 1,
+      "explain": "Spirometers measure AIR FLOW - air moving in and out. Residual volume NEVER MOVES, so it requires indirect methods: helium dilution, nitrogen washout, or body plethysmography.",
+      "wrongExplains": {
+        "0": "Cost isn't the issue. The physical principle is that spirometers measure flow.",
+        "2": "Spirometers measure all gases. The issue is that RV doesn't flow.",
+        "3": "1200 mL isn't small. The issue is that it doesn't move."
+      }
+    },
+    {
+      "id": "900.5.23.s07",
+      "arc": 3,
+      "arcTitle": "Related Lung Volumes",
+      "narrative": "'Let's put residual volume in context,' Ms. Frizzle draws a diagram. 'Tidal volume - normal breathing, about 500 mL. Inspiratory reserve - extra you CAN inhale. Expiratory reserve - extra you CAN exhale. Residual - what you CANNOT exhale.'",
+      "q": "What is 'expiratory reserve volume'?",
+      "options": [
+        "Air that can't be exhaled",
+        "Extra air you CAN forcefully exhale beyond a normal breath",
+        "Air moved in normal breathing",
+        "Maximum lung capacity"
+      ],
+      "answer": 1,
+      "explain": "EXPIRATORY RESERVE is the EXTRA air you CAN forcefully exhale after a normal, relaxed exhalation - about 1200 mL. Different from residual, which you CANNOT exhale.",
+      "wrongExplains": {
+        "0": "Air that can't be exhaled is RESIDUAL volume. ERV is what you CAN force out.",
+        "2": "Normal breathing volume is TIDAL volume (about 500 mL).",
+        "3": "Maximum capacity is TOTAL LUNG CAPACITY - all volumes combined."
+      }
+    },
+    {
+      "id": "900.5.23.s08",
+      "arc": 3,
+      "arcTitle": "Related Lung Volumes",
+      "narrative": "'Vital capacity,' Ms. Frizzle highlights the term. 'All the air you CAN move - maximum inhale to maximum exhale. Vital because it's the working volume, the capacity for life.'",
+      "q": "Vital capacity is:",
+      "options": [
+        "The same as residual volume",
+        "The maximum air you can move between full inhale and full exhale",
+        "Only the air in normal breathing",
+        "The air that remains after exhalation"
+      ],
+      "answer": 1,
+      "explain": "VITAL CAPACITY is the maximum air you can move - from fullest inspiration to fullest expiration. It's tidal + inspiratory reserve + expiratory reserve. Vital = essential for life.",
+      "wrongExplains": {
+        "0": "Residual is air you CAN'T move. Vital capacity is all the air you CAN move.",
+        "2": "Normal breathing is tidal volume. Vital capacity includes all movable volumes.",
+        "3": "Air remaining after exhalation includes residual. VC is the movable portion."
+      }
+    },
+    {
+      "id": "900.5.23.s09",
+      "arc": 3,
+      "arcTitle": "Related Lung Volumes",
+      "narrative": "'Total lung capacity,' Ms. Frizzle completes the picture. 'Everything - all the air your lungs can hold at maximum inflation. That's vital capacity PLUS residual volume.'",
+      "q": "Total lung capacity equals:",
+      "options": [
+        "Residual volume only",
+        "Vital capacity plus residual volume",
+        "Only tidal volume",
+        "Only dead space"
+      ],
+      "answer": 1,
+      "explain": "TOTAL LUNG CAPACITY = Vital Capacity + Residual Volume. TLC includes everything - movable air (VC) plus non-movable air (RV). About 6 liters in adults.",
+      "wrongExplains": {
+        "0": "TLC is more than residual alone. It includes vital capacity too.",
+        "2": "Tidal is just ~500 mL. TLC is about 6000 mL in adults.",
+        "3": "Dead space is part of tidal volume. TLC = VC + RV."
+      }
+    },
+    {
+      "id": "900.5.23.s10",
+      "arc": 3,
+      "arcTitle": "Related Lung Volumes",
+      "narrative": "Mr. Edgar exhales forcefully, pushing out every possible molecule. The spirometer records his expiratory flow. But even now, even after maximum effort, air remains. 'That remaining air,' Ms. Frizzle asks. 'What is it called?'",
+      "q": "The volume of air remaining in the lungs after a forced expiration is called:",
+      "options": [
+        "Tidal volume",
+        "Expiratory reserve volume",
+        "Residual volume",
+        "Vital capacity"
+      ],
+      "answer": 2,
+      "explain": "RESIDUAL VOLUME (~1200 mL) is the air that REMAINS after maximal exhalation. 'Residual' = left over. It cannot be exhaled - it keeps alveoli from collapsing completely.",
+      "wrongExplains": {
+        "0": "Tidal volume is normal quiet breathing (~500 mL). It moves freely.",
+        "1": "Expiratory reserve is extra you CAN exhale. Residual CANNOT be exhaled.",
+        "3": "Vital capacity is all MOVABLE air. Residual is the NON-movable remainder."
+      }
+    }
+  ]
+}

@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dewey 612.89 Comprehensive Exam | ANS (Ex 14) | Ms. Luminara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Source+Sans+Pro:wght@400;600&family=DM+Mono&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0e0e12;
+      --panel: #16161c;
+      --border: #2a2a35;
+      --cyan: #61e8e1;
+      --purple: #d4a5ff;
+      --teal: #47d7e2;
+      --green: #a0eec0;
+      --red: #ff6b6b;
+      --yellow: #ffe066;
+      --text: #eeeff3;
+      --muted: #9090a0;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+    }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    /* Sidebar */
+    .sidebar {
+      width: 260px;
+      background: var(--panel);
+      border-right: 1px solid var(--border);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0; left: 0;
+      height: 100vh;
+      overflow-y: auto;
+    }
+    .sidebar h2 { color: var(--cyan); font-size: 1.15rem; margin-bottom: 1rem; }
+    .nav-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.55rem 0.75rem;
+      border-radius: 8px;
+      margin-bottom: 0.35rem;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 0.92rem;
+    }
+    .nav-item:hover, .nav-item.active { background: #222230; }
+    .nav-item .progress-pill {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      background: #222230;
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
+    }
+    .sidebar-footer {
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    /* Main */
+    .main {
+      flex: 1;
+      margin-left: 260px;
+      padding: 2.5rem 3rem 4rem;
+      max-width: 900px;
+    }
+    .exam-title { font-size: 2rem; margin-bottom: 0.25rem; }
+    .exam-meta { color: var(--muted); margin-bottom: 2rem; font-size: 0.95rem; }
+    /* Section */
+    .section-panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem 2rem 2rem;
+      margin-bottom: 2rem;
+    }
+    .section-panel h2 { font-size: 1.35rem; margin-bottom: 1.15rem; }
+    .question-type-divider {
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      color: var(--purple);
+      margin: 1.5rem 0 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .question-type-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+    /* Card */
+    .card {
+      background: #1c1c25;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+      margin-bottom: 1rem;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .card.correct { border-color: var(--green); box-shadow: 0 0 6px var(--green); }
+    .card.incorrect { border-color: var(--red); box-shadow: 0 0 6px var(--red); }
+    .card p.question { font-weight: 600; margin-bottom: 0.85rem; }
+    .note { font-size: 0.85rem; color: var(--muted); margin-top: 0.75rem; }
+    .note strong { color: var(--yellow); }
+    /* Options */
+    .options { display: flex; flex-direction: column; gap: 0.5rem; }
+    .option-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      background: #222230;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.6rem 0.9rem;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+      width: 100%;
+      text-align: left;
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+    .option-btn:hover:not(:disabled) { border-color: var(--cyan); }
+    .option-btn:disabled { cursor: not-allowed; opacity: 0.75; }
+    .option-btn.selected-correct { border-color: var(--green); background: rgba(160,238,192,0.12); }
+    .option-btn.selected-wrong { border-color: var(--red); background: rgba(255,107,107,0.12); }
+    .option-btn.reveal-correct { border-color: var(--green); }
+    .option-letter {
+      font-family: 'DM Mono', monospace;
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: var(--cyan);
+    }
+    /* Matching */
+    .match-grid { display: flex; flex-direction: column; gap: 0.6rem; }
+    .match-row { display: flex; align-items: center; gap: 0.65rem; }
+    .match-term {
+      flex: 1;
+      background: #222230;
+      padding: 0.55rem 0.75rem;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    .match-select {
+      flex: 1;
+      padding: 0.55rem 0.75rem;
+      border-radius: 6px;
+      background: #222230;
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+    .match-select:focus { outline: none; border-color: var(--cyan); }
+    .match-row.correct .match-select { border-color: var(--green); }
+    .match-row.incorrect .match-select { border-color: var(--red); }
+    /* Essay */
+    .essay-prompt { font-weight: 600; margin-bottom: 0.85rem; }
+    .essay-toggle {
+      background: linear-gradient(135deg, #6f5dcc, #47d7e2);
+      border: none;
+      border-radius: 6px;
+      padding: 0.55rem 1.1rem;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .essay-toggle:hover { opacity: 0.88; }
+    .essay-answer {
+      margin-top: 0.85rem;
+      padding: 1rem;
+      background: #222230;
+      border-radius: 8px;
+      display: none;
+      white-space: pre-wrap;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .essay-answer.show { display: block; }
+    /* Check Answer */
+    .check-btn {
+      margin-top: 0.9rem;
+      background: linear-gradient(135deg, var(--purple), var(--cyan));
+      border: none;
+      border-radius: 6px;
+      padding: 0.55rem 1.1rem;
+      color: #000;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .check-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    /* Floating Score */
+    .floating-score {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.85rem 1.35rem;
+      font-family: 'DM Mono', monospace;
+      z-index: 100;
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+    }
+    .floating-score .correct-count { color: var(--green); }
+    .floating-score .wrong-count { color: var(--red); }
+    /* Results */
+    .results-panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      display: none;
+      text-align: center;
+    }
+    .results-panel.show { display: block; }
+    .results-panel h2 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+    .results-percentage {
+      font-family: 'DM Mono', monospace;
+      font-size: 3.5rem;
+      color: var(--cyan);
+      margin: 1rem 0;
+    }
+    .results-breakdown {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 1.5rem 0;
+    }
+    .results-breakdown .stat { text-align: center; }
+    .results-breakdown .stat-num { font-size: 1.8rem; font-weight: 700; }
+    .results-breakdown .stat-label { font-size: 0.85rem; color: var(--muted); }
+    .restart-btn {
+      margin-top: 1rem;
+      background: linear-gradient(135deg, var(--purple), var(--cyan));
+      border: none;
+      border-radius: 8px;
+      padding: 0.75rem 2rem;
+      color: #000;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    /* Responsive */
+    @media (max-width: 900px) {
+      .sidebar { display: none; }
+      .main { margin-left: 0; padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<aside class="sidebar">
+  <h2>Exam Sections</h2>
+  <nav id="sectionNav"></nav>
+  <div class="sidebar-footer">Ms. Luminara<br/>Dewey 612.89</div>
+</aside>
+
+<main class="main">
+  <h1 class="exam-title">Autonomic Nervous System Comprehensive Exam</h1>
+  <p class="exam-meta">Dewey 612.89 | Chapter 14 | 44 Questions</p>
+
+  <div id="examContent"></div>
+
+  <div id="resultsPanel" class="results-panel">
+    <h2>Exam Complete!</h2>
+    <div class="results-percentage" id="finalPercent">0%</div>
+    <div class="results-breakdown">
+      <div class="stat"><div class="stat-num correct-count" id="finalCorrect">0</div><div class="stat-label">Correct</div></div>
+      <div class="stat"><div class="stat-num wrong-count" id="finalWrong">0</div><div class="stat-label">Incorrect</div></div>
+      <div class="stat"><div class="stat-num" id="finalTotal">0</div><div class="stat-label">Total</div></div>
+    </div>
+    <button class="restart-btn" onclick="location.reload()">Restart Exam</button>
+  </div>
+</main>
+
+<div class="floating-score">
+  <span>Score:</span>
+  <span class="correct-count" id="runningCorrect">0</span>/<span id="runningTotal">0</span>
+</div>
+
+<script>
+const examData = {
+  sections: [
+    {
+      id: 'divisions',
+      title: 'Section 1: ANS Divisions (500.1)',
+      questions: [
+        {
+          type: 'match',
+          prompt: 'Match each ANS characteristic to the correct division:',
+          items: ['Short preganglionic, long postganglionic fibers', 'Long preganglionic, short postganglionic fibers', 'Fight or flight responses', 'Rest and digest responses', 'Thoracolumbar outflow (T1-L2)', 'Craniosacral outflow (CN III, VII, IX, X; S2-S4)'],
+          opts: ['Sympathetic', 'Parasympathetic'],
+          ans: [0, 1, 0, 1, 0, 1],
+          note: 'Fiber length anatomy determines divergence: sympathetic short preganglionics synapse in nearby chain ganglia with massive divergence (1 pre → 20+ post); parasympathetic long preganglionics reach ganglia near targets with minimal divergence for precise control.'
+        },
+        {
+          type: 'tf',
+          q: 'The sympathetic division has short preganglionic fibers and long postganglionic fibers.',
+          ans: true,
+          note: 'Sympathetic "short-long" architecture enables rapid, widespread activation. Preganglionics synapse in paravertebral ganglia close to the spine; postganglionics travel to distant targets.'
+        },
+        {
+          type: 'tf',
+          q: 'The parasympathetic division is known to be active during "rest and digest" responses.',
+          ans: true,
+          note: 'Parasympathetic dominance: Slowing heart rate, stimulating digestion, promoting nutrient absorption, conserving energy. The body\'s maintenance mode.'
+        },
+        {
+          type: 'tf',
+          q: 'The sympathetic division is active during "fight or flight" responses.',
+          ans: true,
+          note: 'Heart rate soars, bronchi dilate, blood vessels redirect flow to muscles, liver dumps glucose, pupils dilate. Adrenal medulla amplifies with epinephrine.'
+        },
+        {
+          type: 'tf',
+          q: 'The parasympathetic division decreases heart rate.',
+          ans: true,
+          note: 'Vagus nerve releases ACh onto M2 receptors → K+ channels open → hyperpolarization → slower SA node firing. Your resting rate of ~70 bpm reflects parasympathetic "braking."'
+        },
+        {
+          type: 'tf',
+          q: 'The parasympathetic division stimulates ciliary muscles for near vision (accommodation).',
+          ans: true,
+          note: 'CN III parasympathetics contract ciliary muscle → suspensory ligaments relax → lens bulges for near focus. Simultaneously, pupil constricts (miosis) for better depth of field.'
+        },
+        {
+          type: 'tf',
+          q: 'Sympathetic collateral ganglia (prevertebral ganglia) are located anterior to the vertebral column.',
+          ans: true,
+          note: 'Celiac, superior mesenteric, inferior mesenteric ganglia cluster around abdominal aorta. Splanchnic nerves carry preganglionics through the chain without synapsing.'
+        },
+        {
+          type: 'tf',
+          q: 'The parasympathetic division innervates MORE organs than the sympathetic division.',
+          ans: false,
+          note: 'Sympathetic reaches MORE structures: all blood vessels, sweat glands, arrector pili, adipose tissue + all viscera. Parasympathetic skips blood vessels, sweat glands, and adipose.'
+        },
+        {
+          type: 'tf',
+          q: 'ALL visceral organs receive dual innervation from both ANS divisions.',
+          ans: false,
+          note: 'NOT all: Blood vessels (most), sweat glands, adrenal medulla, arrector pili receive ONLY sympathetic. Dual innervation is common but not universal.'
+        },
+        {
+          type: 'tf',
+          q: 'Blood vessels of the skin are innervated by both sympathetic and parasympathetic divisions.',
+          ans: false,
+          note: 'Skin blood vessels receive ONLY sympathetic innervation. Vasodilation occurs by DECREASING sympathetic tone, not activating parasympathetic. Exception: Erectile tissue.'
+        }
+      ]
+    },
+    {
+      id: 'neurotransmitters',
+      title: 'Section 2: Neurotransmitters & Receptors (500.2)',
+      questions: [
+        {
+          type: 'match',
+          prompt: 'Match each receptor to its location or function:',
+          items: ['All autonomic ganglia', 'Parasympathetic target organs', 'Heart rate increase', 'Bronchodilation', 'Vasoconstriction', 'Presynaptic NE inhibition'],
+          opts: ['Nicotinic', 'Muscarinic', 'Beta-1', 'Beta-2', 'Alpha-1', 'Alpha-2'],
+          ans: [0, 1, 2, 3, 4, 5],
+          note: 'Nicotinic = ionotropic (fast), found at ganglia + NMJ. Muscarinic = metabotropic (G-protein coupled), found at effectors. Adrenergic subtypes: β1=heart, β2=lungs/vessels, α1=vasoconstriction, α2=presynaptic feedback.'
+        },
+        {
+          type: 'tf',
+          q: 'Preganglionic fibers of BOTH sympathetic and parasympathetic divisions secrete acetylcholine (ACh).',
+          ans: true,
+          note: 'ALL preganglionics release ACh onto nicotinic receptors. The division occurs at postganglionic level: parasympathetic continues ACh (muscarinic), sympathetic switches to NE (adrenergic).'
+        },
+        {
+          type: 'tf',
+          q: 'Most postganglionic sympathetic fibers secrete norepinephrine (NE).',
+          ans: true,
+          note: 'Major exception: Sweat glands receive sympathetic cholinergic innervation (ACh on muscarinic receptors). Adrenal medulla receives preganglionics directly.'
+        },
+        {
+          type: 'tf',
+          q: 'Postganglionic sympathetic fibers to sweat glands secrete acetylcholine, not norepinephrine.',
+          ans: true,
+          note: 'Clinically crucial: Atropine (muscarinic blocker) inhibits sweating despite blocking "parasympathetic" receptors. Sweating IS sympathetic but uses ACh/muscarinic.'
+        },
+        {
+          type: 'mc',
+          q: 'Where would you NOT find a cholinergic nicotinic receptor?',
+          opts: ['Parasympathetic target organs', 'All postganglionic neuron cell bodies', 'Adrenal medulla hormone-producing cells', 'Neuromuscular junctions'],
+          ans: 0,
+          note: 'Parasympathetic TARGET organs have MUSCARINIC receptors, not nicotinic. Nicotinic = ganglia + NMJ + adrenal medulla. Nicotine activates ganglia; muscarine activates effectors.'
+        },
+        {
+          type: 'tf',
+          q: 'Beta-1 adrenergic receptors play the major role in heart activity.',
+          ans: true,
+          note: 'β1 coupled to Gs → cAMP → increased heart rate, contractility, conduction. Beta blockers (metoprolol, atenolol) target these for antihypertensive/anti-arrhythmic effects.'
+        },
+        {
+          type: 'tf',
+          q: 'The effect of beta-blocker drugs is to increase blood pressure.',
+          ans: false,
+          note: 'Beta blockers DECREASE blood pressure by reducing cardiac output (β1 blockade → lower HR + contractility). They are antihypertensive agents.'
+        },
+        {
+          type: 'tf',
+          q: 'The ANS stimulates smooth muscles, skeletal muscles, and glands.',
+          ans: false,
+          note: 'ANS does NOT innervate skeletal muscle. ANS targets: Smooth muscle + cardiac muscle + glands. Skeletal muscle = somatic nervous system (voluntary).'
+        },
+        {
+          type: 'mc',
+          q: 'Control of temperature, endocrine activity, and thirst are functions associated with the:',
+          opts: ['Hypothalamus', 'Medulla', 'Cerebellum', 'Thalamus'],
+          ans: 0,
+          note: 'Hypothalamus = homeostatic command center. Temperature (preoptic area), thirst (osmoreceptors), endocrine control via pituitary. Medulla = cardiovascular/respiratory reflexes.'
+        },
+        {
+          type: 'mc',
+          q: 'The mushroom poison muscarine can bind to receptors on:',
+          opts: ['Cell bodies of parasympathetic postganglionic neurons', 'Adrenal medulla hormone-producing cells', 'Cell bodies of sympathetic postganglionic neurons', 'All effector cells stimulated by postganglionic cholinergic fibers'],
+          ans: 3,
+          note: 'Muscarine binds MUSCARINIC receptors at all cholinergic effectors (parasympathetic targets + sweat glands). Causes SLUDGE: Salivation, Lacrimation, Urination, Defecation, GI distress, Emesis. Treat with atropine.'
+        }
+      ]
+    },
+    {
+      id: 'vocabulary',
+      title: 'Section 3: ANS Vocabulary (500.3)',
+      questions: [
+        {
+          type: 'match',
+          prompt: 'Match each term to its definition:',
+          items: ['Fight or flight system', 'Rest and digest system', 'Thoracolumbar outflow', 'Craniosacral outflow', 'Releases epinephrine into blood', 'Contains myenteric and submucosal plexuses'],
+          opts: ['Sympathetic', 'Parasympathetic', 'Sympathetic origin', 'Parasympathetic origin', 'Adrenal medulla', 'Enteric NS'],
+          ans: [0, 1, 2, 3, 4, 5],
+          note: 'Sympathetic = thoracolumbar (T1-L2). Parasympathetic = craniosacral (CN III, VII, IX, X + S2-S4). Enteric = "gut brain" in GI wall.'
+        },
+        {
+          type: 'match',
+          prompt: 'Match each receptor type to its primary effect:',
+          items: ['Beta-1 in heart', 'Beta-2 in bronchi', 'Alpha-1 in blood vessels', 'Alpha-2 presynaptic', 'Muscarinic M2 in heart', 'Nicotinic in ganglia'],
+          opts: ['Increase HR/contractility', 'Bronchodilation', 'Vasoconstriction', 'Inhibit NE release', 'Decrease HR', 'Fast excitation'],
+          ans: [0, 1, 2, 3, 4, 5],
+          note: 'β1=heart accelerator, β2=airway opener, α1=vessel constrictor, α2=negative feedback, M2=cardiac brake, nicotinic=rapid ganglionic relay.'
+        },
+        {
+          type: 'mc',
+          q: 'The sympathetic nervous system is also known as the:',
+          opts: ['Rest and digest system', 'Fight or flight system', 'Somatic system', 'Enteric system'],
+          ans: 1,
+          note: 'Sympathetic prepares body for stress: increased heart rate, dilated airways, blood diverted to muscles.'
+        },
+        {
+          type: 'mc',
+          q: 'Sympathetic preganglionic neurons originate in which region of the spinal cord?',
+          opts: ['Cervical', 'Thoracolumbar (T1-L2)', 'Sacral', 'Entire length'],
+          ans: 1,
+          note: 'Thoracolumbar outflow — T1 to L2 lateral horns. Short preganglionics synapse in chain ganglia.'
+        },
+        {
+          type: 'mc',
+          q: 'The neurotransmitter released by ALL preganglionic autonomic neurons is:',
+          opts: ['Norepinephrine', 'Epinephrine', 'Acetylcholine', 'Dopamine'],
+          ans: 2,
+          note: 'All preganglionics (both divisions) release ACh onto nicotinic receptors. Postganglionics differ.'
+        },
+        {
+          type: 'mc',
+          q: 'Parasympathetic preganglionic fibers are described as:',
+          opts: ['Short', 'Long', 'Unmyelinated', 'Absent'],
+          ans: 1,
+          note: 'Long preganglionics travel from brainstem/sacral cord to ganglia near or within target organs. Vagus nerve is a long preganglionic highway.'
+        },
+        {
+          type: 'mc',
+          q: 'The adrenal medulla releases primarily:',
+          opts: ['Acetylcholine', 'Epinephrine and norepinephrine', 'Cortisol', 'Aldosterone'],
+          ans: 1,
+          note: 'Adrenal medulla = modified sympathetic tissue. Chromaffin cells release ~80% epinephrine, 20% norepinephrine into bloodstream.'
+        },
+        {
+          type: 'mc',
+          q: 'Alpha-1 adrenergic receptors on blood vessels cause:',
+          opts: ['Vasodilation', 'Vasoconstriction', 'Decreased heart rate', 'Bronchodilation'],
+          ans: 1,
+          note: 'α1 activation contracts vascular smooth muscle. Shunts blood from skin/gut to muscles during stress.'
+        },
+        {
+          type: 'mc',
+          q: 'The craniosacral outflow refers to the:',
+          opts: ['Sympathetic division', 'Parasympathetic division', 'Somatic motor system', 'Enteric nervous system'],
+          ans: 1,
+          note: 'Craniosacral = parasympathetic. CN III, VII, IX, X (cranial) + S2-S4 (sacral) carry parasympathetic fibers.'
+        },
+        {
+          type: 'mc',
+          q: 'Beta-1 adrenergic receptors in the heart increase:',
+          opts: ['Heart rate and contractility', 'Airway diameter', 'Digestive activity', 'Pupil constriction'],
+          ans: 0,
+          note: 'β1 = heart: chronotropy (rate) + inotropy (strength). Beta blockers target these.'
+        },
+        {
+          type: 'mc',
+          q: 'Nicotinic receptors are found in:',
+          opts: ['Heart muscle only', 'Autonomic ganglia and neuromuscular junctions', 'Smooth muscle only', 'Sweat glands only'],
+          ans: 1,
+          note: 'Nicotinic = ionotropic receptors at all autonomic ganglia + NMJ. Fast, direct ion channel opening.'
+        },
+        {
+          type: 'mc',
+          q: 'The vagus nerve provides parasympathetic innervation to:',
+          opts: ['Lower limbs', 'Heart, lungs, and most digestive organs', 'Sweat glands', 'Adrenal medulla'],
+          ans: 1,
+          note: 'Vagus (CN X) "wanders" from brainstem through neck, thorax, abdomen. Slows heart, constricts airways, stimulates digestion.'
+        },
+        {
+          type: 'mc',
+          q: 'Muscarinic receptors are classified as:',
+          opts: ['Ionotropic receptors', 'G protein-coupled receptors', 'Voltage-gated channels', 'Ligand-gated ion channels'],
+          ans: 1,
+          note: 'Muscarinic = metabotropic (GPCRs). Slower but sustained effects via second messenger cascades. M1/M3/M5=Gq, M2/M4=Gi.'
+        },
+        {
+          type: 'mc',
+          q: 'Sympathetic stimulation causes pupils to:',
+          opts: ['Constrict (miosis)', 'Dilate (mydriasis)', 'Remain unchanged', 'Oscillate'],
+          ans: 1,
+          note: 'Mydriasis — radial dilator muscle contracts under α1 stimulation. Wide pupils improve peripheral vision during threats.'
+        },
+        {
+          type: 'mc',
+          q: 'The sympathetic chain ganglia are also called:',
+          opts: ['Terminal ganglia', 'Paravertebral ganglia', 'Prevertebral ganglia', 'Dorsal root ganglia'],
+          ans: 1,
+          note: 'Paravertebral = alongside vertebral column. Prevertebral = anterior (celiac, mesenteric). Terminal = near organs (parasympathetic).'
+        },
+        {
+          type: 'mc',
+          q: 'Acetylcholine is broken down by the enzyme:',
+          opts: ['Monoamine oxidase', 'Acetylcholinesterase', 'Catechol-O-methyltransferase', 'Tyrosine hydroxylase'],
+          ans: 1,
+          note: 'AChE rapidly hydrolyzes ACh → acetate + choline (recycled). Nerve agents inhibit AChE → ACh accumulation.'
+        },
+        {
+          type: 'mc',
+          q: 'Dual innervation means an organ receives input from:',
+          opts: ['Two sympathetic pathways', 'Both sympathetic and parasympathetic divisions', 'Somatic and autonomic systems', 'Left and right nerves'],
+          ans: 1,
+          note: 'Most viscera have dual innervation for rapid, dramatic shifts. Exceptions: blood vessels, sweat glands receive sympathetic only.'
+        },
+        {
+          type: 'mc',
+          q: 'Cholinergic fibers release:',
+          opts: ['Norepinephrine', 'Acetylcholine', 'Epinephrine', 'Serotonin'],
+          ans: 1,
+          note: 'Cholinergic = ACh-releasing. All preganglionics + all parasympathetic postganglionics + sympathetic to sweat glands.'
+        },
+        {
+          type: 'mc',
+          q: 'The celiac ganglion provides sympathetic innervation to:',
+          opts: ['Heart', 'Stomach and liver', 'Bladder', 'Lungs'],
+          ans: 1,
+          note: 'Celiac ganglion = prevertebral ganglion around celiac trunk. Supplies upper abdominal organs: stomach, liver, spleen, kidneys.'
+        },
+        {
+          type: 'mc',
+          q: 'Beta-2 adrenergic receptors in bronchial smooth muscle cause:',
+          opts: ['Bronchoconstriction', 'Bronchodilation', 'Mucus secretion', 'Cough reflex'],
+          ans: 1,
+          note: 'β2 relaxes airway smooth muscle. Albuterol (β2 agonist) = asthma rescue inhaler.'
+        },
+        {
+          type: 'mc',
+          q: 'The sympathetic nervous system has:',
+          opts: ['Long preganglionic and short postganglionic fibers', 'Short preganglionic and long postganglionic fibers', 'Equal length fibers', 'No postganglionic fibers'],
+          ans: 1,
+          note: 'Short pre → chain ganglia nearby. Long post → distant targets. Enables widespread, rapid activation.'
+        },
+        {
+          type: 'mc',
+          q: 'Parasympathetic stimulation of the GI tract causes:',
+          opts: ['Decreased motility and secretion', 'Increased motility and secretion', 'Sphincter contraction', 'Blood vessel constriction'],
+          ans: 1,
+          note: '"Rest and digest" — vagus stimulates stomach acid, pancreatic enzymes, intestinal churning. Sphincters relax.'
+        },
+        {
+          type: 'mc',
+          q: 'Adrenergic fibers release:',
+          opts: ['Acetylcholine', 'Norepinephrine', 'Dopamine only', 'GABA'],
+          ans: 1,
+          note: 'Adrenergic = NE-releasing. Most sympathetic postganglionics are adrenergic (exception: sweat glands).'
+        },
+        {
+          type: 'mc',
+          q: 'The enteric nervous system is located in:',
+          opts: ['The spinal cord', 'The wall of the digestive tract', 'Sympathetic ganglia', 'The brainstem'],
+          ans: 1,
+          note: 'Enteric NS = "gut brain" in GI wall. Myenteric + submucosal plexuses regulate digestion semi-independently.'
+        },
+        {
+          type: 'mc',
+          q: 'Alpha-2 adrenergic receptors function mainly to:',
+          opts: ['Increase heart rate', 'Inhibit norepinephrine release', 'Dilate bronchioles', 'Constrict pupils'],
+          ans: 1,
+          note: 'α2 = presynaptic autoreceptors. NE binding inhibits further NE release (negative feedback). Clonidine (α2 agonist) lowers BP.'
+        },
+        {
+          type: 'mc',
+          q: 'Sweat glands are innervated by sympathetic fibers that release:',
+          opts: ['Norepinephrine', 'Acetylcholine', 'Epinephrine', 'Dopamine'],
+          ans: 1,
+          note: 'Sympathetic but CHOLINERGIC. ACh on muscarinic receptors. Classic exam exception to "sympathetic = adrenergic."'
+        },
+        {
+          type: 'mc',
+          q: 'The oculomotor nerve (CN III) carries parasympathetic fibers to:',
+          opts: ['Salivary glands', 'Heart', 'Pupil constrictor and ciliary muscle', 'Lacrimal gland'],
+          ans: 2,
+          note: 'Edinger-Westphal nucleus → CN III → ciliary ganglion → sphincter pupillae (miosis) + ciliary muscle (accommodation).'
+        }
+      ]
+    }
+  ],
+  essays: [
+    {
+      id: 'essay1',
+      section: 'divisions',
+      prompt: 'Explain why the sympathetic division is described as having a "short preganglionic, long postganglionic" architecture, and how this relates to its functional role in mass activation.',
+      answer: `Fiber length determines divergence in the ANS.
+
+SYMPATHETIC ARCHITECTURE:
+- Preganglionic neurons live in thoracolumbar spinal cord (T1-L2)
+- SHORT preganglionic fibers travel to paravertebral ganglia clustered near the spine
+- One preganglionic can activate 20+ postganglionic neurons (massive divergence)
+- LONG postganglionic fibers then travel to distant targets: heart, lungs, blood vessels, sweat glands
+
+FUNCTIONAL SIGNIFICANCE:
+- This "short-long" design enables RAPID, WIDESPREAD activation
+- One signal spreads to heart, blood vessels, airways, and sweat glands simultaneously
+- Perfect for fight-or-flight when everything must mobilize at once
+- The adrenal medulla amplifies this with circulating epinephrine
+
+PARASYMPATHETIC CONTRAST:
+- Long preganglionics travel to ganglia NEAR or WITHIN target organs
+- Short postganglionics allow MINIMAL divergence
+- Precise, localized control: Heart can slow without affecting digestion
+- Different architectures for different purposes: mass mobilization vs. surgical precision
+
+METAPHOR: The sympathetic system is like a fire alarm — one switch activates sprinklers throughout the entire building. The parasympathetic is like individual light switches — you control each room separately.`
+    },
+    {
+      id: 'essay2',
+      section: 'neurotransmitters',
+      prompt: 'Compare and contrast nicotinic and muscarinic receptors: their locations, mechanism of action, and pharmacological significance.',
+      answer: `Both receptor types respond to acetylcholine, but differ fundamentally in structure and function:
+
+NICOTINIC RECEPTORS (Ionotropic/Fast):
+- Structure: Ligand-gated ion channels (Na+/K+)
+- Mechanism: ACh binding directly opens channel → rapid depolarization (milliseconds)
+- Locations:
+  • All autonomic ganglia (sympathetic AND parasympathetic)
+  • Adrenal medulla (chromaffin cells)
+  • Neuromuscular junctions (skeletal muscle)
+- Pharmacology: Nicotine activates; curare blocks (NMJ); hexamethonium blocks (ganglia)
+
+MUSCARINIC RECEPTORS (Metabotropic/Slower):
+- Structure: G-protein coupled receptors (GPCRs)
+- Mechanism: ACh binding → G-protein activation → second messenger cascades → sustained effects
+- Subtypes:
+  • M1, M3, M5: Gq-coupled (excitatory) — glands, smooth muscle
+  • M2, M4: Gi-coupled (inhibitory) — heart (M2 slows rate)
+- Locations:
+  • All parasympathetic target organs (heart, GI, bladder, airways, glands)
+  • Sympathetic exception: sweat glands (M3)
+- Pharmacology: Muscarine activates; atropine blocks
+
+CLINICAL SIGNIFICANCE:
+- Muscarinic blockers (atropine): Treat bradycardia, reduce secretions, cause mydriasis
+- Beta-blockers: NOT affected by muscarinic drugs (different receptor class entirely)
+- Nerve agent poisoning: AChE inhibition → ACh accumulation → treat with atropine
+- Understanding receptor distribution explains why drugs have specific effects
+
+METAPHOR: Nicotinic receptors are instant coffee (add ACh, immediately active). Muscarinic receptors are brewing espresso (add ACh, wait for cascade processing, then output arrives).`
+    },
+    {
+      id: 'essay3',
+      section: 'vocabulary',
+      prompt: 'Describe the role of the hypothalamus as the "homeostatic command center" and how it integrates autonomic, endocrine, and behavioral responses.',
+      answer: `The hypothalamus maintains internal stability by bridging neural and hormonal control systems:
+
+TEMPERATURE REGULATION:
+- Preoptic area contains thermosensitive neurons
+- Cold detected → Posterior hypothalamus activates:
+  • Sympathetic vasoconstriction (conserve heat)
+  • Shivering (generate heat)
+  • Piloerection (minimal in humans)
+- Heat detected → Anterior hypothalamus activates:
+  • Sweating (sympathetic but cholinergic)
+  • Vasodilation (reduce sympathetic tone)
+  • Behavioral cooling (seek shade, remove clothing)
+
+THIRST & FLUID BALANCE:
+- Osmoreceptors in OVLT detect plasma osmolarity
+- High osmolarity → Thirst drive + ADH release → water retention
+- Low osmolarity → Suppress thirst + reduce ADH → diuresis
+
+ENDOCRINE CONTROL:
+- Parvocellular neurons release releasing/inhibiting hormones into hypophyseal portal system
+  → Control anterior pituitary hormone secretion
+- Magnocellular neurons project to posterior pituitary
+  → Release ADH and oxytocin directly into blood
+- Converts neural signals into hormonal outputs
+
+INTEGRATION:
+- Receives input from limbic system (emotional state)
+- Receives visceral sensory input (gut feelings, literally)
+- Outputs through ANS (neural) AND pituitary (hormonal)
+- Coordinates behavioral drives: hunger, thirst, sleep, sexual behavior
+
+METAPHOR: The hypothalamus is like a building's smart thermostat combined with water management and an intercom to facilities (pituitary). It senses conditions, integrates data, and issues commands through both neural and hormonal channels. Disruption causes dramatic failures: temperature dysregulation, diabetes insipidus, appetite disorders.`
+    }
+  ]
+};
+
+let state = { correct: 0, answered: 0, sectionProgress: {} };
+examData.sections.forEach(s => { state.sectionProgress[s.id] = { answered: 0, total: s.questions.length }; });
+
+function render() {
+  const nav = document.getElementById('sectionNav');
+  const content = document.getElementById('examContent');
+  nav.innerHTML = '';
+  content.innerHTML = '';
+
+  examData.sections.forEach((sec, si) => {
+    // Nav
+    const navItem = document.createElement('div');
+    navItem.className = 'nav-item';
+    navItem.innerHTML = `<span>${sec.title.split(':')[0]}</span><span class="progress-pill">${state.sectionProgress[sec.id].answered}/${state.sectionProgress[sec.id].total}</span>`;
+    navItem.onclick = () => document.getElementById('sec-' + sec.id).scrollIntoView({ behavior: 'smooth' });
+    nav.appendChild(navItem);
+
+    // Section Panel
+    const panel = document.createElement('div');
+    panel.className = 'section-panel';
+    panel.id = 'sec-' + sec.id;
+    panel.innerHTML = `<h2>${sec.title}</h2>`;
+
+    let currentType = '';
+    sec.questions.forEach((q, qi) => {
+      if (q.type !== currentType) {
+        currentType = q.type;
+        const divider = document.createElement('div');
+        divider.className = 'question-type-divider';
+        divider.textContent = { match: 'Matching', tf: 'True / False', mc: 'Multiple Choice', essay: 'Essay' }[q.type] || q.type;
+        panel.appendChild(divider);
+      }
+      panel.appendChild(createQuestionCard(q, si, qi));
+    });
+
+    // Essays for section
+    const sectionEssays = examData.essays.filter(e => e.section === sec.id);
+    if (sectionEssays.length) {
+      const essayDivider = document.createElement('div');
+      essayDivider.className = 'question-type-divider';
+      essayDivider.textContent = 'Essay';
+      panel.appendChild(essayDivider);
+      sectionEssays.forEach(e => panel.appendChild(createEssayCard(e)));
+    }
+
+    content.appendChild(panel);
+  });
+}
+
+function createQuestionCard(q, si, qi) {
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.id = `q-${si}-${qi}`;
+
+  if (q.type === 'match') {
+    card.innerHTML = `<p class="question">${q.prompt}</p><div class="match-grid" id="match-${si}-${qi}"></div><button class="check-btn" id="checkbtn-${si}-${qi}">Check Answers</button>${q.note ? `<p class="note" style="display:none;" id="note-${si}-${qi}"><strong>Note:</strong> ${q.note}</p>` : ''}`;
+    setTimeout(() => {
+      const grid = document.getElementById(`match-${si}-${qi}`);
+      q.items.forEach((item, idx) => {
+        const row = document.createElement('div');
+        row.className = 'match-row';
+        row.innerHTML = `<div class="match-term">${item}</div><select class="match-select" data-idx="${idx}"><option value="">-- Select --</option>${q.opts.map((o, oi) => `<option value="${oi}">${o}</option>`).join('')}</select>`;
+        grid.appendChild(row);
+      });
+      document.getElementById(`checkbtn-${si}-${qi}`).onclick = () => checkMatch(si, qi, q);
+    }, 0);
+  } else if (q.type === 'tf') {
+    card.innerHTML = `<p class="question">${q.q}</p><div class="options"><button class="option-btn" data-val="true"><span class="option-letter">T</span> True</button><button class="option-btn" data-val="false"><span class="option-letter">F</span> False</button></div>${q.note ? `<p class="note" style="display:none;" id="note-${si}-${qi}"><strong>Note:</strong> ${q.note}</p>` : ''}`;
+    setTimeout(() => {
+      card.querySelectorAll('.option-btn').forEach(btn => {
+        btn.onclick = () => checkTF(si, qi, btn.dataset.val === 'true', q.ans, card, q.note);
+      });
+    }, 0);
+  } else if (q.type === 'mc') {
+    card.innerHTML = `<p class="question">${q.q}</p><div class="options">${q.opts.map((o, i) => `<button class="option-btn" data-idx="${i}"><span class="option-letter">${String.fromCharCode(65 + i)}</span> ${o}</button>`).join('')}</div>${q.note ? `<p class="note" style="display:none;" id="note-${si}-${qi}"><strong>Note:</strong> ${q.note}</p>` : ''}`;
+    setTimeout(() => {
+      card.querySelectorAll('.option-btn').forEach(btn => {
+        btn.onclick = () => checkMC(si, qi, parseInt(btn.dataset.idx), q.ans, card, q.note);
+      });
+    }, 0);
+  }
+  return card;
+}
+
+function createEssayCard(e) {
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.innerHTML = `<p class="essay-prompt">${e.prompt}</p><button class="essay-toggle" id="toggle-${e.id}">Show Model Answer</button><div class="essay-answer" id="answer-${e.id}">${e.answer}</div>`;
+  setTimeout(() => {
+    document.getElementById(`toggle-${e.id}`).onclick = () => {
+      const ans = document.getElementById(`answer-${e.id}`);
+      ans.classList.toggle('show');
+      document.getElementById(`toggle-${e.id}`).textContent = ans.classList.contains('show') ? 'Hide Model Answer' : 'Show Model Answer';
+    };
+  }, 0);
+  return card;
+}
+
+function checkMatch(si, qi, q) {
+  const grid = document.getElementById(`match-${si}-${qi}`);
+  const rows = grid.querySelectorAll('.match-row');
+  let allCorrect = true;
+  let anySelected = false;
+  rows.forEach((row, idx) => {
+    const sel = row.querySelector('.match-select');
+    if (sel.value === '') return;
+    anySelected = true;
+    sel.disabled = true;
+    if (parseInt(sel.value) === q.ans[idx]) {
+      row.classList.add('correct');
+    } else {
+      row.classList.add('incorrect');
+      allCorrect = false;
+    }
+  });
+  if (!anySelected) return;
+  const card = document.getElementById(`q-${si}-${qi}`);
+  const section = examData.sections[si];
+  if (!card.dataset.answered) {
+    card.dataset.answered = '1';
+    state.answered++;
+    state.sectionProgress[section.id].answered++;
+    if (allCorrect) {
+      state.correct++;
+      card.classList.add('correct');
+    } else {
+      card.classList.add('incorrect');
+    }
+    updateScore();
+    const note = document.getElementById(`note-${si}-${qi}`);
+    if (note) note.style.display = 'block';
+  }
+  document.getElementById(`checkbtn-${si}-${qi}`).disabled = true;
+}
+
+function checkTF(si, qi, selected, correct, card, note) {
+  if (card.dataset.answered) return;
+  card.dataset.answered = '1';
+  const section = examData.sections[si];
+  state.answered++;
+  state.sectionProgress[section.id].answered++;
+  card.querySelectorAll('.option-btn').forEach(btn => {
+    btn.disabled = true;
+    const btnVal = btn.dataset.val === 'true';
+    if (btnVal === correct) btn.classList.add('reveal-correct');
+    if (btnVal === selected) btn.classList.add(selected === correct ? 'selected-correct' : 'selected-wrong');
+  });
+  if (selected === correct) {
+    state.correct++;
+    card.classList.add('correct');
+  } else {
+    card.classList.add('incorrect');
+  }
+  updateScore();
+  const noteEl = document.getElementById(`note-${si}-${qi}`);
+  if (noteEl) noteEl.style.display = 'block';
+}
+
+function checkMC(si, qi, selected, correct, card, note) {
+  if (card.dataset.answered) return;
+  card.dataset.answered = '1';
+  const section = examData.sections[si];
+  state.answered++;
+  state.sectionProgress[section.id].answered++;
+  card.querySelectorAll('.option-btn').forEach(btn => {
+    btn.disabled = true;
+    const idx = parseInt(btn.dataset.idx);
+    if (idx === correct) btn.classList.add('reveal-correct');
+    if (idx === selected) btn.classList.add(selected === correct ? 'selected-correct' : 'selected-wrong');
+  });
+  if (selected === correct) {
+    state.correct++;
+    card.classList.add('correct');
+  } else {
+    card.classList.add('incorrect');
+  }
+  updateScore();
+  const noteEl = document.getElementById(`note-${si}-${qi}`);
+  if (noteEl) noteEl.style.display = 'block';
+}
+
+function updateScore() {
+  document.getElementById('runningCorrect').textContent = state.correct;
+  document.getElementById('runningTotal').textContent = state.answered;
+  // Update nav pills
+  document.querySelectorAll('.nav-item').forEach((item, i) => {
+    const sec = examData.sections[i];
+    item.querySelector('.progress-pill').textContent = `${state.sectionProgress[sec.id].answered}/${state.sectionProgress[sec.id].total}`;
+  });
+  // Check if complete
+  const total = examData.sections.reduce((a, s) => a + s.questions.length, 0);
+  if (state.answered >= total) showResults();
+}
+
+function showResults() {
+  const total = examData.sections.reduce((a, s) => a + s.questions.length, 0);
+  document.getElementById('finalPercent').textContent = Math.round((state.correct / total) * 100) + '%';
+  document.getElementById('finalCorrect').textContent = state.correct;
+  document.getElementById('finalWrong').textContent = total - state.correct;
+  document.getElementById('finalTotal').textContent = total;
+  document.getElementById('resultsPanel').classList.add('show');
+}
+
+render();
+</script>
+</body>
+</html>

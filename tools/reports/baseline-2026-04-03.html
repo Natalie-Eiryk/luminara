@@ -1,0 +1,2624 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Question Quality Report - 4/3/2026, 11:19:36 AM</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f8f9fa;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .container { max-width: 1400px; margin: 0 auto; }
+    header {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1 { font-size: 28px; color: #212529; margin-bottom: 10px; }
+    .timestamp { color: #6c757d; font-size: 14px; }
+    .status {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-weight: bold;
+      margin-top: 15px;
+      font-size: 16px;
+    }
+    .status.FAILING { background: #dc3545; color: white; }
+    .status.WARNING { background: #ffc107; color: #212529; }
+    .status.PASSING { background: #28a745; color: white; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    .stat-card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .stat-number { font-size: 32px; font-weight: bold; color: #212529; }
+    .stat-label { color: #6c757d; font-size: 14px; text-transform: uppercase; }
+    .stat-card.critical .stat-number { color: #dc3545; }
+    .stat-card.high .stat-number { color: #fd7e14; }
+    .stat-card.medium .stat-number { color: #ffc107; }
+    .stat-card.low .stat-number { color: #17a2b8; }
+
+    .issues {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .issues h2 {
+      padding: 20px;
+      background: #343a40;
+      color: white;
+      font-size: 20px;
+    }
+    .issue {
+      padding: 20px;
+      border-bottom: 1px solid #dee2e6;
+    }
+    .issue:last-child { border-bottom: none; }
+    .issue-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .severity-badge {
+      padding: 4px 12px;
+      border-radius: 4px;
+      color: white;
+      font-weight: bold;
+      font-size: 12px;
+      margin-right: 10px;
+    }
+    .issue-id {
+      background: #e9ecef;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 12px;
+      margin-right: 10px;
+    }
+    .issue-category {
+      color: #6c757d;
+      font-size: 14px;
+    }
+    .issue-message {
+      color: #212529;
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+    .issue-recommendation {
+      background: #f8f9fa;
+      padding: 12px;
+      border-left: 3px solid #17a2b8;
+      border-radius: 4px;
+      font-size: 14px;
+      color: #495057;
+    }
+    .recommendation-label {
+      font-weight: bold;
+      color: #17a2b8;
+      margin-bottom: 5px;
+    }
+    .no-issues {
+      padding: 40px;
+      text-align: center;
+      color: #28a745;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Ms. Luminara Quiz Question Quality Report</h1>
+      <div class="timestamp">Generated: 4/3/2026, 11:19:36 AM</div>
+      <div class="status FAILING">FAILING</div>
+    </header>
+
+    <div class="stats">
+      <div class="stat-card">
+        <div class="stat-number">67</div>
+        <div class="stat-label">Question Banks</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">652</div>
+        <div class="stat-label">Questions Scanned</div>
+      </div>
+      <div class="stat-card critical">
+        <div class="stat-number">13</div>
+        <div class="stat-label">Critical Issues</div>
+      </div>
+      <div class="stat-card high">
+        <div class="stat-number">129</div>
+        <div class="stat-label">High Priority</div>
+      </div>
+      <div class="stat-card medium">
+        <div class="stat-number">15</div>
+        <div class="stat-label">Medium Priority</div>
+      </div>
+      <div class="stat-card low">
+        <div class="stat-number">7</div>
+        <div class="stat-label">Low Priority</div>
+      </div>
+    </div>
+
+    <div class="issues">
+      <h2>Issues Detected (164)</h2>
+      
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.01</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.01</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.01</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.01</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #dc3545">CRITICAL</span>
+              <span class="issue-id">611.2.01</span>
+              <span class="issue-category">Irrelevant Distractors</span>
+            </div>
+            <div class="issue-message">All 3 wrong answers appear unrelated to question topic (gross)</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace distractors with plausible misconceptions from the same domain
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.02</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.02</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.02</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.02</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.03</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.03</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.03</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.03</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.03</span>
+              <span class="issue-category">Format Mismatch</span>
+            </div>
+            <div class="issue-message">Correct answer is 99 chars but wrong answers average 6 chars</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Make all options comparable format (all single terms OR all sentences)
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.04</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.04</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.04</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.04</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.04</span>
+              <span class="issue-category">Format Mismatch</span>
+            </div>
+            <div class="issue-message">Correct answer is 115 chars but wrong answers average 10 chars</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Make all options comparable format (all single terms OR all sentences)
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #ffc107">MEDIUM</span>
+              <span class="issue-id">611.2.04</span>
+              <span class="issue-category">Shallow Explanation</span>
+            </div>
+            <div class="issue-message">Explanation just restates the answer without additional teaching</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Expand explanation to address WHY, clinical significance, or common confusions
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.05</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.05</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.05</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.05</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #ffc107">MEDIUM</span>
+              <span class="issue-id">611.2.05</span>
+              <span class="issue-category">Shallow Explanation</span>
+            </div>
+            <div class="issue-message">Explanation just restates the answer without additional teaching</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Expand explanation to address WHY, clinical significance, or common confusions
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #dc3545">CRITICAL</span>
+              <span class="issue-id">611.2.05</span>
+              <span class="issue-category">Irrelevant Distractors</span>
+            </div>
+            <div class="issue-message">All 3 wrong answers appear unrelated to question topic (sinus)</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace distractors with plausible misconceptions from the same domain
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #17a2b8">LOW</span>
+              <span class="issue-id">611.2.05</span>
+              <span class="issue-category">Shallow Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism is only 15 characters - likely insufficient depth</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Expand mechanism to 3-5 sentences explaining WHY, functional context, clinical significance
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.06</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.06</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.06</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.2.06</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.01</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.01</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.01</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.01</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.01</span>
+              <span class="issue-category">Format Mismatch</span>
+            </div>
+            <div class="issue-message">Correct answer is 92 chars but wrong answers average 13 chars</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Make all options comparable format (all single terms OR all sentences)
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #ffc107">MEDIUM</span>
+              <span class="issue-id">611.3.01</span>
+              <span class="issue-category">Shallow Explanation</span>
+            </div>
+            <div class="issue-message">Explanation just restates the answer without additional teaching</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Expand explanation to address WHY, clinical significance, or common confusions
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.02</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.02</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.02</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.02</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.03</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.03</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.03</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.03</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.03</span>
+              <span class="issue-category">Format Mismatch</span>
+            </div>
+            <div class="issue-message">Correct answer is 121 chars but wrong answers average 18 chars</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Make all options comparable format (all single terms OR all sentences)
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #ffc107">MEDIUM</span>
+              <span class="issue-id">611.3.03</span>
+              <span class="issue-category">Shallow Explanation</span>
+            </div>
+            <div class="issue-message">Explanation just restates the answer without additional teaching</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Expand explanation to address WHY, clinical significance, or common confusions
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.04</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.04</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.04</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.04</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.05</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.05</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.05</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.05</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.05</span>
+              <span class="issue-category">Format Mismatch</span>
+            </div>
+            <div class="issue-message">Correct answer is 78 chars but wrong answers average 20 chars</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Make all options comparable format (all single terms OR all sentences)
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #ffc107">MEDIUM</span>
+              <span class="issue-id">611.3.05</span>
+              <span class="issue-category">Shallow Explanation</span>
+            </div>
+            <div class="issue-message">Explanation just restates the answer without additional teaching</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Expand explanation to address WHY, clinical significance, or common confusions
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #dc3545">CRITICAL</span>
+              <span class="issue-id">611.3.05</span>
+              <span class="issue-category">Irrelevant Distractors</span>
+            </div>
+            <div class="issue-message">All 3 wrong answers appear unrelated to question topic (histology)</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace distractors with plausible misconceptions from the same domain
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.06</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.06</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.06</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.3.06</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #dc3545">CRITICAL</span>
+              <span class="issue-id">611.3.06</span>
+              <span class="issue-category">Irrelevant Distractors</span>
+            </div>
+            <div class="issue-message">All 3 wrong answers appear unrelated to question topic (layers)</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace distractors with plausible misconceptions from the same domain
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.4.01</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.4.01</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.4.01</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.4.01</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.4.01</span>
+              <span class="issue-category">Format Mismatch</span>
+            </div>
+            <div class="issue-message">Correct answer is 65 chars but wrong answers average 9 chars</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Make all options comparable format (all single terms OR all sentences)
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #ffc107">MEDIUM</span>
+              <span class="issue-id">611.4.01</span>
+              <span class="issue-category">Shallow Explanation</span>
+            </div>
+            <div class="issue-message">Explanation just restates the answer without additional teaching</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Expand explanation to address WHY, clinical significance, or common confusions
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.4.02</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.4.02</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.4.02</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.4.02</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.4.03</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.4.03</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.4.03</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.4.03</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.4.04</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.4.04</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.4.04</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.4.04</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.4.04</span>
+              <span class="issue-category">Format Mismatch</span>
+            </div>
+            <div class="issue-message">Correct answer is 166 chars but wrong answers average 22 chars</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Make all options comparable format (all single terms OR all sentences)
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #ffc107">MEDIUM</span>
+              <span class="issue-id">611.4.04</span>
+              <span class="issue-category">Shallow Explanation</span>
+            </div>
+            <div class="issue-message">Explanation just restates the answer without additional teaching</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Expand explanation to address WHY, clinical significance, or common confusions
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #dc3545">CRITICAL</span>
+              <span class="issue-id">611.4.04</span>
+              <span class="issue-category">Irrelevant Distractors</span>
+            </div>
+            <div class="issue-message">All 3 wrong answers appear unrelated to question topic (nephron)</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace distractors with plausible misconceptions from the same domain
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.5.01</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.5.01</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.5.01</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.5.01</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.5.01</span>
+              <span class="issue-category">Format Mismatch</span>
+            </div>
+            <div class="issue-message">Correct answer is 65 chars but wrong answers average 13 chars</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Make all options comparable format (all single terms OR all sentences)
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #ffc107">MEDIUM</span>
+              <span class="issue-id">611.5.01</span>
+              <span class="issue-category">Shallow Explanation</span>
+            </div>
+            <div class="issue-message">Explanation just restates the answer without additional teaching</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Expand explanation to address WHY, clinical significance, or common confusions
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.5.02</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.5.02</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.5.02</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.5.02</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #ffc107">MEDIUM</span>
+              <span class="issue-id">611.5.02</span>
+              <span class="issue-category">Shallow Explanation</span>
+            </div>
+            <div class="issue-message">Explanation just restates the answer without additional teaching</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Expand explanation to address WHY, clinical significance, or common confusions
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #dc3545">CRITICAL</span>
+              <span class="issue-id">611.5.02</span>
+              <span class="issue-category">Irrelevant Distractors</span>
+            </div>
+            <div class="issue-message">All 3 wrong answers appear unrelated to question topic (thyroid)</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace distractors with plausible misconceptions from the same domain
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #17a2b8">LOW</span>
+              <span class="issue-id">611.5.02</span>
+              <span class="issue-category">Shallow Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism is only 47 characters - likely insufficient depth</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Expand mechanism to 3-5 sentences explaining WHY, functional context, clinical significance
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.5.03</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.5.03</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.5.03</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.5.03</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #ffc107">MEDIUM</span>
+              <span class="issue-id">611.5.03</span>
+              <span class="issue-category">Shallow Explanation</span>
+            </div>
+            <div class="issue-message">Explanation just restates the answer without additional teaching</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Expand explanation to address WHY, clinical significance, or common confusions
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #dc3545">CRITICAL</span>
+              <span class="issue-id">611.5.03</span>
+              <span class="issue-category">Irrelevant Distractors</span>
+            </div>
+            <div class="issue-message">All 3 wrong answers appear unrelated to question topic (adrenal)</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace distractors with plausible misconceptions from the same domain
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #17a2b8">LOW</span>
+              <span class="issue-id">611.5.03</span>
+              <span class="issue-category">Shallow Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism is only 46 characters - likely insufficient depth</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Expand mechanism to 3-5 sentences explaining WHY, functional context, clinical significance
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.6.01</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.6.01</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.6.01</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.6.01</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.6.01</span>
+              <span class="issue-category">Format Mismatch</span>
+            </div>
+            <div class="issue-message">Correct answer is 66 chars but wrong answers average 10 chars</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Make all options comparable format (all single terms OR all sentences)
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #ffc107">MEDIUM</span>
+              <span class="issue-id">611.6.01</span>
+              <span class="issue-category">Shallow Explanation</span>
+            </div>
+            <div class="issue-message">Explanation just restates the answer without additional teaching</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Expand explanation to address WHY, clinical significance, or common confusions
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #dc3545">CRITICAL</span>
+              <span class="issue-id">611.6.01</span>
+              <span class="issue-category">Irrelevant Distractors</span>
+            </div>
+            <div class="issue-message">All 3 wrong answers appear unrelated to question topic (male pathway)</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace distractors with plausible misconceptions from the same domain
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.6.02</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.6.02</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.6.02</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.6.02</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #ffc107">MEDIUM</span>
+              <span class="issue-id">611.6.02</span>
+              <span class="issue-category">Shallow Explanation</span>
+            </div>
+            <div class="issue-message">Explanation just restates the answer without additional teaching</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Expand explanation to address WHY, clinical significance, or common confusions
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #dc3545">CRITICAL</span>
+              <span class="issue-id">611.6.02</span>
+              <span class="issue-category">Irrelevant Distractors</span>
+            </div>
+            <div class="issue-message">All 3 wrong answers appear unrelated to question topic (male histology)</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace distractors with plausible misconceptions from the same domain
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #17a2b8">LOW</span>
+              <span class="issue-id">611.6.02</span>
+              <span class="issue-category">Shallow Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism is only 44 characters - likely insufficient depth</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Expand mechanism to 3-5 sentences explaining WHY, functional context, clinical significance
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.6.03</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.6.03</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.6.03</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.6.03</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #dc3545">CRITICAL</span>
+              <span class="issue-id">611.6.03</span>
+              <span class="issue-category">Irrelevant Distractors</span>
+            </div>
+            <div class="issue-message">All 3 wrong answers appear unrelated to question topic (ovary histology)</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace distractors with plausible misconceptions from the same domain
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.6.04</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.6.04</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.6.04</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.6.04</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #ffc107">MEDIUM</span>
+              <span class="issue-id">611.6.04</span>
+              <span class="issue-category">Shallow Explanation</span>
+            </div>
+            <div class="issue-message">Explanation just restates the answer without additional teaching</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Expand explanation to address WHY, clinical significance, or common confusions
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #dc3545">CRITICAL</span>
+              <span class="issue-id">611.6.04</span>
+              <span class="issue-category">Irrelevant Distractors</span>
+            </div>
+            <div class="issue-message">All 3 wrong answers appear unrelated to question topic (penis histology)</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace distractors with plausible misconceptions from the same domain
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.6.05</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.6.05</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.6.05</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.6.05</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.6.05</span>
+              <span class="issue-category">Format Mismatch</span>
+            </div>
+            <div class="issue-message">Correct answer is 199 chars but wrong answers average 7 chars</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Make all options comparable format (all single terms OR all sentences)
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #ffc107">MEDIUM</span>
+              <span class="issue-id">611.6.05</span>
+              <span class="issue-category">Shallow Explanation</span>
+            </div>
+            <div class="issue-message">Explanation just restates the answer without additional teaching</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Expand explanation to address WHY, clinical significance, or common confusions
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.7.01</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.7.01</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.7.01</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.7.01</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.7.02</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.7.02</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.7.02</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.7.02</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.7.03</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.7.03</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.7.03</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.7.03</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.7.03</span>
+              <span class="issue-category">Format Mismatch</span>
+            </div>
+            <div class="issue-message">Correct answer is 117 chars but wrong answers average 10 chars</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Make all options comparable format (all single terms OR all sentences)
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #ffc107">MEDIUM</span>
+              <span class="issue-id">611.7.03</span>
+              <span class="issue-category">Shallow Explanation</span>
+            </div>
+            <div class="issue-message">Explanation just restates the answer without additional teaching</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Expand explanation to address WHY, clinical significance, or common confusions
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #dc3545">CRITICAL</span>
+              <span class="issue-id">611.7.03</span>
+              <span class="issue-category">Irrelevant Distractors</span>
+            </div>
+            <div class="issue-message">All 3 wrong answers appear unrelated to question topic (pig colon)</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace distractors with plausible misconceptions from the same domain
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.9.01</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.9.01</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.9.01</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.9.01</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #dc3545">CRITICAL</span>
+              <span class="issue-id">611.9.01</span>
+              <span class="issue-category">Irrelevant Distractors</span>
+            </div>
+            <div class="issue-message">All 3 wrong answers appear unrelated to question topic (slide drill)</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace distractors with plausible misconceptions from the same domain
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.9.02</span>
+              <span class="issue-category">Generic Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism uses generic placeholder template instead of real metaphor</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Replace with concrete metaphor creating structural isomorphism (e.g., "like a factory assembly line", "like a water balloon expanding")
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.9.02</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 1 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.9.02</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 2 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.9.02</span>
+              <span class="issue-category">Templated Feedback</span>
+            </div>
+            <div class="issue-message">Option 3 uses generic template feedback instead of teaching explanation</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Rewrite to diagnose the specific misconception and provide path to understanding
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">611.9.02</span>
+              <span class="issue-category">Format Mismatch</span>
+            </div>
+            <div class="issue-message">Correct answer is 71 chars but wrong answers average 7 chars</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Make all options comparable format (all single terms OR all sentences)
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #fd7e14">HIGH</span>
+              <span class="issue-id">200.5.04</span>
+              <span class="issue-category">Format Mismatch</span>
+            </div>
+            <div class="issue-message">Correct answer is 67 chars but wrong answers average 26 chars</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Make all options comparable format (all single terms OR all sentences)
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #17a2b8">LOW</span>
+              <span class="issue-id">510.10.06.22</span>
+              <span class="issue-category">Shallow Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism is only 46 characters - likely insufficient depth</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Expand mechanism to 3-5 sentences explaining WHY, functional context, clinical significance
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #17a2b8">LOW</span>
+              <span class="issue-id">510.10.08.08</span>
+              <span class="issue-category">Shallow Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism is only 42 characters - likely insufficient depth</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Expand mechanism to 3-5 sentences explaining WHY, functional context, clinical significance
+              </div>
+            
+          </div>
+        
+          <div class="issue">
+            <div class="issue-header">
+              <span class="severity-badge" style="background: #17a2b8">LOW</span>
+              <span class="issue-id">510.10.08.13</span>
+              <span class="issue-category">Shallow Mechanism</span>
+            </div>
+            <div class="issue-message">Mechanism is only 44 characters - likely insufficient depth</div>
+            
+              <div class="issue-recommendation">
+                <div class="recommendation-label">Recommendation:</div>
+                Expand mechanism to 3-5 sentences explaining WHY, functional context, clinical significance
+              </div>
+            
+          </div>
+        
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,191 @@
+{
+  "parentId": "900.5.79",
+  "parentQuestion": "What lung sound indicates fluid in the airways?",
+  "narrative": {
+    "setting": "Mr. Edgar's clinic, examining a patient with pneumonia",
+    "character": "Mr. Edgar",
+    "tension": "Through the stethoscope, Mr. Edgar hears strange popping sounds in the patient's lungs. What does this mean?"
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.79.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Sound",
+      "narrative": "Ms. Frizzle shrinks the bus and flies into the patient's chest. 'Class, put on your sound-detecting helmets! We're going to HEAR what Mr. Edgar hears through his stethoscope - crackles!'",
+      "q": "What do crackles sound like?",
+      "options": [
+        "A continuous musical whistle",
+        "Brief popping or clicking sounds",
+        "A loud high-pitched squeak",
+        "Silence"
+      ],
+      "answer": 1,
+      "explain": "Crackles sound like BRIEF POPPING or CLICKING sounds - like rubbing hair between your fingers near your ear, or opening Velcro, or stepping on bubble wrap. They're DISCONTINUOUS sounds (start and stop), not continuous like wheezing.",
+      "wrongExplains": {
+        "0": "A continuous musical whistle is WHEEZING, caused by narrowed airways. Crackles are the opposite - short, discrete pops, not continuous.",
+        "2": "A loud high-pitched squeak is STRIDOR, from upper airway obstruction. Crackles are softer, lower-pitched popping sounds from deep in the lungs.",
+        "3": "Crackles are AUDIBLE sounds. Silence would be normal breathing (vesicular breath sounds). Crackles indicate pathology."
+      }
+    },
+    {
+      "id": "900.5.79.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Sound",
+      "narrative": "'Listen to the TIMING!' Ms. Frizzle points to the breathing cycle. 'The pops happen when air moves - mostly during INSPIRATION when the airways are opening up. Pop pop pop pop... then quiet during exhale.'",
+      "q": "When in the breathing cycle do crackles typically occur?",
+      "options": [
+        "Only during expiration (breathing out)",
+        "Primarily during inspiration (breathing in)",
+        "Between breaths when not breathing",
+        "Continuously throughout all breathing"
+      ],
+      "answer": 1,
+      "explain": "Crackles occur primarily during INSPIRATION (breathing IN). As the airways expand with incoming air, they pop open (if they've been stuck together by fluid/inflammation), creating the crackling sound. Some crackles occur in early expiration, but most are inspiratory.",
+      "wrongExplains": {
+        "0": "Expiratory sounds suggest airway collapse or narrowing during exhalation (seen in COPD). Classic crackles from fluid/pneumonia are inspiratory.",
+        "2": "Crackles require AIR MOVEMENT to occur. Between breaths (apnea), there's no airflow and therefore no sound.",
+        "3": "Continuous sounds are called WHEEZES or RHONCHI. Crackles are DISCONTINUOUS - they come and go with each small airway opening."
+      }
+    },
+    {
+      "id": "900.5.79.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Sound",
+      "narrative": "'There are two types of crackles!' Ms. Frizzle explains. 'FINE crackles are soft, high-pitched, late in inspiration - like hair rubbing. COARSE crackles are louder, lower-pitched, early in inspiration - like Velcro!'",
+      "q": "What is the difference between fine and coarse crackles?",
+      "options": [
+        "Fine = high-pitched, late inspiration; Coarse = low-pitched, early inspiration",
+        "Fine = loud; Coarse = quiet",
+        "Fine = in upper lungs; Coarse = in lower lungs",
+        "There is no difference - same sound"
+      ],
+      "answer": 0,
+      "explain": "FINE crackles = HIGH-PITCHED, LATE inspiration (end of breath). Sound like hair rubbing. Indicate small airway/alveolar problems (pulmonary fibrosis, pneumonia). COARSE crackles = LOW-PITCHED, EARLY inspiration. Louder, like Velcro. Indicate larger airway problems (fluid, secretions).",
+      "wrongExplains": {
+        "1": "You have it backwards - COARSE crackles are LOUDER. Fine crackles are softer and higher-pitched. The names describe pitch and timing, not just volume.",
+        "2": "Location in upper vs. lower lungs depends on the disease, not whether crackles are fine or coarse. The distinction is about pitch and timing, not anatomical location.",
+        "3": "They are DIFFERENT sounds with different causes! Distinguishing fine from coarse helps diagnose whether the problem is in small airways (fine) or large airways (coarse)."
+      }
+    },
+    {
+      "id": "900.5.79.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus flies into a small airway. 'Look at all this FLUID!' Ms. Frizzle points to the liquid coating the airway walls. 'During inspiration, air rushes through the fluid, creating BUBBLES that pop! That's the crackling sound!'",
+      "q": "What causes the crackling sound?",
+      "options": [
+        "Air whistling through narrowed airways",
+        "Airway walls rubbing together",
+        "Small airways popping open through fluid or suddenly re-expanding",
+        "The diaphragm contracting"
+      ],
+      "answer": 2,
+      "explain": "Crackles are caused by SMALL AIRWAYS POPPING OPEN through fluid or suddenly RE-EXPANDING after being collapsed. Imagine blowing bubbles through a straw in soapy water - that popping sound. Or unsticking two wet surfaces. Each pop is one small airway opening.",
+      "wrongExplains": {
+        "0": "Air whistling through narrowed airways creates WHEEZING (continuous musical sound). Crackles are discrete pops from airways opening, not continuous whistling.",
+        "1": "Pleural surfaces (lung lining) rubbing together create a FRICTION RUB (different sound). Crackles come from inside the airways/alveoli, not the pleural surfaces.",
+        "3": "Diaphragm contraction is silent (it's a muscle). The sound comes from AIR interacting with FLUID in the airways, not from the breathing muscles themselves."
+      }
+    },
+    {
+      "id": "900.5.79.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'See these collapsed alveoli?' Ms. Frizzle points to deflated air sacs. 'They're stuck together from fluid. When a deep breath comes - POP! - they snap open all at once. Thousands of tiny pops = crackles!'",
+      "q": "What happens in the lungs to produce crackles?",
+      "options": [
+        "Airways remain wide open at all times",
+        "Collapsed or fluid-filled small airways suddenly open during inspiration",
+        "Large airways close completely",
+        "The vocal cords vibrate"
+      ],
+      "answer": 1,
+      "explain": "Crackles occur when COLLAPSED or FLUID-FILLED SMALL AIRWAYS suddenly OPEN during inspiration. The airways/alveoli are stuck shut (from fluid, inflammation, fibrosis), then incoming air forces them open - POP! Multiple airways opening create the characteristic crackling sound.",
+      "wrongExplains": {
+        "0": "If airways stayed wide open, there would be no popping sound. Crackles specifically require airways that are CLOSED or STICKY, then forced open by airflow.",
+        "2": "Large airway closure would cause severe respiratory distress or no airflow at all. Crackles come from SMALL airways in the lung periphery.",
+        "3": "Vocal cords produce voice sounds and stridor (if narrowed). Crackles come from deep in the lungs, far below the vocal cords."
+      }
+    },
+    {
+      "id": "900.5.79.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'What kinds of fluid can cause crackles?' Keesha asks. 'Great question!' Ms. Frizzle shows different scenarios: 'Inflammatory fluid from pneumonia, blood from pulmonary edema, pus from infection, even water from near-drowning!'",
+      "q": "Which condition would NOT typically cause crackles?",
+      "options": [
+        "Pneumonia (lung infection)",
+        "Pulmonary edema (fluid in lungs from heart failure)",
+        "Asthma (airway constriction)",
+        "Pulmonary fibrosis (lung scarring)"
+      ],
+      "answer": 2,
+      "explain": "ASTHMA does NOT typically cause crackles. Asthma causes WHEEZING (continuous musical sounds) from narrowed airways. Crackles indicate FLUID or STIFFNESS in small airways/alveoli. Pneumonia, pulmonary edema, and fibrosis all cause crackles.",
+      "wrongExplains": {
+        "0": "Pneumonia CAUSES crackles! The infection fills alveoli with inflammatory fluid and pus, creating the perfect environment for crackles as airways pop open through the fluid.",
+        "1": "Pulmonary edema CAUSES crackles! Heart failure causes fluid to leak into alveoli. These fluid-filled spaces pop open during inspiration, creating crackles.",
+        "3": "Pulmonary fibrosis CAUSES crackles (fine, late inspiratory)! Scarred, stiff lung tissue creates small airways that snap open during inspiration."
+      }
+    },
+    {
+      "id": "900.5.79.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "Back in the clinic, Mr. Edgar moves his stethoscope across the patient's back. 'Crackles at the bases bilaterally,' he notes. 'With fever and productive cough, this is pneumonia. Time for antibiotics and a chest X-ray.'",
+      "q": "If you hear crackles in both lung bases (bottom of lungs) with fever, the most likely diagnosis is:",
+      "options": [
+        "Asthma",
+        "Pneumonia",
+        "Broken rib",
+        "Anxiety attack"
+      ],
+      "answer": 1,
+      "explain": "Crackles + fever = PNEUMONIA until proven otherwise. The infection fills alveoli with fluid/pus, causing crackles. Bilateral bases = common location for pneumonia (fluid settles with gravity). Chest X-ray would show infiltrates (white areas in lungs).",
+      "wrongExplains": {
+        "0": "Asthma causes WHEEZING, not crackles, and doesn't usually cause fever. It's bronchospasm (muscle constriction), not fluid/infection.",
+        "2": "Broken rib causes pain with breathing and possibly decreased breath sounds from splinting (not breathing deeply due to pain). Fever and crackles suggest infection, not trauma.",
+        "3": "Anxiety causes hyperventilation (rapid breathing) with normal lung sounds. No fever, no crackles - lungs are clear."
+      }
+    },
+    {
+      "id": "900.5.79.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "'Crackles are also called RALES,' Mr. Edgar explains, 'from the French word 'râle' meaning rattle. Either term is correct, though many clinicians prefer 'crackles' for clarity.'",
+      "q": "The term 'rales' is synonymous with:",
+      "options": [
+        "Wheezing",
+        "Crackles",
+        "Stridor",
+        "Normal breath sounds"
+      ],
+      "answer": 1,
+      "explain": "RALES = CRACKLES (same sound, different terms). Older literature uses 'rales,' modern terminology prefers 'crackles' because it's more descriptive. Both refer to the discontinuous popping sounds from fluid/collapsed airways opening.",
+      "wrongExplains": {
+        "0": "Wheezing is a CONTINUOUS musical sound from narrowed airways. Rales/crackles are DISCONTINUOUS popping sounds. Completely different.",
+        "2": "Stridor is a high-pitched inspiratory sound from UPPER airway obstruction (croup, foreign body). Rales/crackles come from LOWER airways (bronchioles, alveoli).",
+        "3": "Rales/crackles are ABNORMAL sounds indicating pathology (fluid, fibrosis, etc.). Normal breath sounds are called vesicular sounds - quiet, gentle rustling."
+      }
+    },
+    {
+      "id": "900.5.79.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "'One more test!' Ms. Frizzle says. 'Ask the patient to COUGH, then listen again. Sometimes crackles from mucus will CLEAR after coughing. Crackles from pneumonia or fibrosis WON'T change - the fluid or scarring stays put!'",
+      "q": "What does it mean if crackles disappear after the patient coughs?",
+      "options": [
+        "The patient has pneumonia",
+        "The crackles were likely from secretions in larger airways (less concerning)",
+        "The patient has pulmonary fibrosis",
+        "The patient needs immediate intubation"
+      ],
+      "answer": 1,
+      "explain": "Crackles that CLEAR with coughing suggest SECRETIONS in larger airways - less concerning. Coughing clears the mucus, eliminating the sound. Crackles from pneumonia, edema, or fibrosis DON'T clear because the fluid/scarring is in the alveoli/small airways where coughing can't reach.",
+      "wrongExplains": {
+        "0": "Pneumonia crackles DON'T clear with coughing - the fluid is deep in alveoli, beyond where cough can reach. Persistent crackles suggest pneumonia.",
+        "2": "Fibrosis crackles NEVER clear with coughing - the lung is scarred (permanent structural change). If crackles disappear, it's NOT fibrosis.",
+        "3": "Disappearing crackles are a REASSURING sign (just mucus, not serious pathology). Immediate intubation is for severe respiratory failure, not simple secretions."
+      }
+    }
+  ]
+}

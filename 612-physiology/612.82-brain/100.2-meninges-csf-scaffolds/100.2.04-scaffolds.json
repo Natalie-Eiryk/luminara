@@ -1,0 +1,159 @@
+{
+  "parentId": "100.2.04",
+  "parentQuestion": "Which of the following would you NOT find in normal cerebrospinal fluid?",
+  "scaffolds": [
+    {
+      "q": "What does normal CSF look like?",
+      "options": [
+        "Red like blood",
+        "Clear and colorless (like water)",
+        "Yellow and cloudy",
+        "Green"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Normal CSF is CRYSTAL CLEAR — 'gin-clear.' Any color (red, yellow, cloudy) indicates something wrong, like bleeding or infection.",
+      "wrongExplains": {
+        "0": "Red CSF indicates bleeding (subarachnoid hemorrhage). Normal is clear.",
+        "2": "Yellow/cloudy CSF suggests old bleeding or infection. Normal is clear.",
+        "3": "Green CSF is not normal. Healthy CSF is clear and colorless."
+      }
+    },
+    {
+      "q": "Does normal CSF contain glucose?",
+      "options": [
+        "No, CSF never has glucose",
+        "Yes, because neurons need glucose for energy",
+        "Only in disease states",
+        "Only in infants"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "YES, CSF contains GLUCOSE (normally 60-80% of blood glucose levels). NEURONS are glucose-dependent — they can't use fatty acids for energy.",
+      "wrongExplains": {
+        "0": "CSF normally contains glucose to supply neurons.",
+        "2": "Glucose in CSF is normal, not a disease finding.",
+        "3": "CSF glucose is present throughout life, not just in infants."
+      }
+    },
+    {
+      "q": "Does normal CSF contain protein?",
+      "options": [
+        "No protein at all",
+        "Yes, but much less than blood (the BBB restricts most proteins)",
+        "More protein than blood",
+        "Only antibodies"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "CSF contains SOME PROTEIN (normally 15-45 mg/dL), but MUCH LESS than blood. The blood-brain barrier restricts most proteins from entering CSF.",
+      "wrongExplains": {
+        "0": "CSF has some protein, just at low concentrations.",
+        "2": "CSF protein is much lower than blood, not higher.",
+        "3": "Various proteins are present at low levels, not just antibodies."
+      }
+    },
+    {
+      "q": "Does normal CSF contain electrolytes?",
+      "options": [
+        "No electrolytes",
+        "Yes, including potassium and sodium",
+        "Only in heart disease",
+        "Electrolytes are toxic to the brain"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "YES, CSF contains ELECTROLYTES like potassium and sodium. Neurons need precisely controlled ion concentrations, which the choroid plexus carefully regulates.",
+      "wrongExplains": {
+        "0": "Electrolytes are essential in CSF for neuron function.",
+        "2": "CSF electrolytes are normal and essential, not disease-related.",
+        "3": "Electrolytes are essential for neurons, not toxic."
+      }
+    },
+    {
+      "q": "Should red blood cells be in normal CSF?",
+      "options": [
+        "Yes, many RBCs are normal",
+        "No, RBCs should NEVER be in normal CSF",
+        "Only a few hundred",
+        "Only in athletes"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "RED BLOOD CELLS should NEVER be in normal CSF. Their presence indicates BLEEDING (subarachnoid hemorrhage) or that a blood vessel was hit during the spinal tap.",
+      "wrongExplains": {
+        "0": "Any RBCs in CSF are abnormal and indicate bleeding.",
+        "2": "Even a few RBCs indicate bleeding. Normal CSF has zero.",
+        "3": "Athletic status doesn't affect this. RBCs in CSF are always abnormal."
+      }
+    },
+    {
+      "q": "What does blood in CSF indicate?",
+      "options": [
+        "Normal finding",
+        "Hemorrhage or vessel puncture during the procedure",
+        "Healthy brain",
+        "Good nutrition"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Blood in CSF indicates the barrier has been breached — either HEMORRHAGE (subarachnoid hemorrhage, ruptured aneurysm) or a TRAUMATIC TAP (hitting a blood vessel during the procedure).",
+      "wrongExplains": {
+        "0": "Blood in CSF is always abnormal, never normal.",
+        "2": "Blood in CSF indicates pathology, not health.",
+        "3": "Blood in CSF has nothing to do with nutrition."
+      }
+    },
+    {
+      "q": "Which substances are NORMAL components of CSF?",
+      "options": [
+        "Only water",
+        "Glucose, protein, and electrolytes",
+        "Red blood cells and bacteria",
+        "Only sodium"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Normal CSF contains GLUCOSE, PROTEIN, and ELECTROLYTES at regulated levels. These are expected. Red blood cells are NOT expected — they indicate pathology.",
+      "wrongExplains": {
+        "0": "CSF has water plus glucose, protein, and electrolytes.",
+        "2": "RBCs and bacteria are ABNORMAL. Normal CSF has glucose, protein, and electrolytes.",
+        "3": "Multiple substances are present, not just sodium."
+      }
+    },
+    {
+      "q": "What finding in CSF always indicates pathology?",
+      "options": [
+        "Glucose",
+        "Red blood cells",
+        "Sodium",
+        "Protein"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "RED BLOOD CELLS in CSF always indicate pathology — bleeding or procedural trauma. CSF should have zero RBCs. Glucose, sodium, and protein are normal components.",
+      "wrongExplains": {
+        "0": "Glucose is normal in CSF. Its absence is abnormal.",
+        "2": "Sodium is a normal CSF electrolyte.",
+        "3": "Some protein is normal in CSF."
+      }
+    },
+    {
+      "q": "Which of the following would you NOT find in normal CSF?",
+      "options": [
+        "Glucose",
+        "Protein",
+        "Red blood cells",
+        "Potassium"
+      ],
+      "answer": 2,
+      "difficulty": "intermediate",
+      "explain": "RED BLOOD CELLS should NOT be in normal CSF. Glucose (normal), protein (normal), potassium (normal) — all expected. RBCs indicate bleeding.",
+      "wrongExplains": {
+        "0": "Glucose is normally present in CSF for neuron energy needs.",
+        "1": "Protein is present at low levels in normal CSF.",
+        "3": "Potassium is a normal CSF electrolyte."
+      }
+    }
+  ]
+}

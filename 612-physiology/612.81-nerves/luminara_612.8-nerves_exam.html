@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║  Ms. Luminara Quiz Suite — Classification 612.8              ║
+  ║  Dewey: 612.8 (Peripheral Nervous System · Nerves)           ║
+  ║  Module: luminara_612.8-nerves_exam.html                     ║
+  ║  Covers: Spinal Cord, Receptors, Plexuses, Reflexes,         ║
+  ║          Cranial Nerves, Nerves Vocabulary                   ║
+  ║  Council-reviewed: Frizzle · Feynman · Luminara              ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>612.8 · Nerves Comprehensive · Ms. Luminara</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --void: #03060d;
+  --surface: #0a0f1a;
+  --panel: #0e1525;
+  --panel-hover: #131d30;
+  --border: rgba(56,189,248,0.12);
+  --border-active: rgba(56,189,248,0.35);
+  --primary: #38bdf8;
+  --warm: #f59e0b;
+  --lumi: #f472b6;
+  --purple: #a78bfa;
+  --teal: #2dd4bf;
+  --correct: #4ade80;
+  --incorrect: #f87171;
+  --text: #e2ecf8;
+  --mid: #8ba5c2;
+  --dim: #3d5169;
+  --bright: #f0f7ff;
+  --s1: #38bdf8; --s2: #a78bfa; --s3: #2dd4bf;
+  --s4: #fb923c; --s5: #f472b6; --s6: #facc15;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--void);
+  color: var(--text);
+  font-family: 'Crimson Pro', serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+body::before {
+  content: '';
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 80% 60% at 15% 20%, rgba(56,189,248,0.05) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 50% at 85% 75%, rgba(167,139,250,0.04) 0%, transparent 55%),
+    radial-gradient(ellipse 40% 70% at 50% 40%, rgba(244,114,182,0.025) 0%, transparent 50%);
+}
+
+.shell { display: flex; min-height: 100vh; position: relative; z-index: 1; }
+
+.sidebar {
+  width: 230px; flex-shrink: 0;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  position: sticky; top: 0; height: 100vh;
+  overflow-y: auto; overflow-x: hidden;
+  display: flex; flex-direction: column;
+  padding-bottom: 24px;
+}
+.sidebar::-webkit-scrollbar { width: 4px; }
+.sidebar::-webkit-scrollbar-track { background: transparent; }
+.sidebar::-webkit-scrollbar-thumb { background: var(--dim); border-radius: 2px; }
+
+.sidebar-header {
+  padding: 20px 18px 14px;
+  border-bottom: 1px solid var(--border);
+}
+.dewey-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px; letter-spacing: 0.2em;
+  color: var(--warm); opacity: 0.8;
+  text-transform: uppercase; margin-bottom: 8px;
+}
+.sidebar-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem; font-weight: 700;
+  color: var(--bright); line-height: 1.2;
+}
+
+.score-widget {
+  margin: 14px 18px;
+  background: rgba(56,189,248,0.06);
+  border: 1px solid rgba(56,189,248,0.15);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.score-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; color: var(--mid); text-transform: uppercase; margin-bottom: 6px; }
+.score-main { font-family: 'DM Mono', monospace; font-size: 1.6rem; color: var(--primary); line-height: 1; }
+.score-denom { font-size: 0.8rem; color: var(--dim); margin-left: 3px; }
+.score-bar-wrap { margin-top: 8px; background: rgba(255,255,255,0.05); border-radius: 99px; height: 3px; overflow: hidden; }
+.score-bar-fill { height: 100%; background: linear-gradient(90deg, var(--primary), var(--teal)); border-radius: 99px; transition: width 0.5s ease; width: 0%; }
+
+.nav-sections { flex: 1; padding: 10px 0; }
+.nav-section-btn {
+  display: flex; align-items: center; gap: 10px;
+  width: 100%; padding: 9px 18px;
+  background: none; border: none;
+  cursor: pointer; transition: background 0.15s;
+  text-align: left;
+}
+.nav-section-btn:hover { background: rgba(255,255,255,0.04); }
+.nav-section-btn.active { background: rgba(56,189,248,0.07); }
+.nav-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  flex-shrink: 0; transition: transform 0.2s;
+}
+.nav-section-btn.active .nav-dot { transform: scale(1.4); }
+.nav-section-btn.done .nav-dot { opacity: 0.5; }
+.nav-text { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.05em; color: var(--mid); line-height: 1.3; }
+.nav-section-btn.active .nav-text { color: var(--primary); }
+.nav-progress { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--dim); margin-left: auto; flex-shrink: 0; }
+
+.sidebar-footer {
+  padding: 14px 18px 0;
+  border-top: 1px solid var(--border);
+}
+.results-btn {
+  width: 100%; padding: 10px;
+  background: rgba(244,114,182,0.1);
+  border: 1px solid rgba(244,114,182,0.25);
+  border-radius: 8px;
+  color: var(--lumi);
+  font-family: 'DM Mono', monospace; font-size: 10px;
+  letter-spacing: 0.1em; cursor: pointer;
+  transition: all 0.2s;
+}
+.results-btn:hover { background: rgba(244,114,182,0.18); }
+
+.main { flex: 1; min-width: 0; padding: 36px 40px 80px; }
+
+.section-panel { display: none; }
+.section-panel.active { display: block; animation: fadeUp 0.3s ease; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+.section-head {
+  display: flex; align-items: flex-start; gap: 18px;
+  margin-bottom: 32px; padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.section-num-badge {
+  font-family: 'DM Mono', monospace; font-size: 10px;
+  letter-spacing: 0.25em; text-transform: uppercase;
+  padding: 4px 12px; border-radius: 99px;
+  white-space: nowrap; flex-shrink: 0; margin-top: 6px;
+}
+.section-meta { flex: 1; }
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem; font-weight: 900;
+  color: var(--bright); line-height: 1.1;
+  margin-bottom: 6px;
+}
+.section-sub { font-style: italic; color: var(--mid); font-size: 0.95rem; }
+.section-stats {
+  display: flex; gap: 16px; margin-top: 10px;
+}
+.stat-pill {
+  font-family: 'DM Mono', monospace; font-size: 9px;
+  letter-spacing: 0.15em; color: var(--mid);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.07);
+  padding: 3px 10px; border-radius: 99px;
+}
+
+.qtype-divider {
+  display: flex; align-items: center; gap: 14px;
+  margin: 28px 0 16px;
+}
+.qtype-divider .line { flex: 1; height: 1px; background: var(--border); }
+.qtype-label {
+  font-family: 'DM Mono', monospace; font-size: 9px;
+  letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--dim); white-space: nowrap;
+}
+
+.q-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px 28px;
+  margin-bottom: 14px;
+  transition: border-color 0.3s;
+}
+.q-card.answered-correct { border-color: rgba(74,222,128,0.3); }
+.q-card.answered-incorrect { border-color: rgba(248,113,113,0.28); }
+@keyframes gp { 0%{box-shadow:0 0 0 0 rgba(74,222,128,0.3);}60%{box-shadow:0 0 20px 3px rgba(74,222,128,0.1);}100%{box-shadow:0 0 0 0 rgba(74,222,128,0);} }
+.pulse-ok { animation: gp 0.6s ease; }
+
+.q-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.q-id { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; color: var(--dim); text-transform: uppercase; }
+.q-status { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; }
+.q-status.correct { color: var(--correct); }
+.q-status.incorrect { color: var(--incorrect); }
+
+.q-prompt { font-size: 1.1rem; color: var(--bright); margin-bottom: 18px; line-height: 1.5; }
+
+.tf-options, .mc-options { display: flex; flex-direction: column; gap: 8px; }
+.tf-btn, .mc-btn {
+  display: flex; align-items: center; gap: 14px;
+  width: 100%; padding: 12px 18px;
+  background: rgba(255,255,255,0.025);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  cursor: pointer; transition: all 0.15s;
+  text-align: left; color: var(--text); font-size: 1rem;
+}
+.tf-btn:hover:not(.chosen), .mc-btn:hover:not(.chosen) {
+  background: rgba(56,189,248,0.06); border-color: rgba(56,189,248,0.18);
+}
+.tf-btn.chosen, .mc-btn.chosen {
+  pointer-events: none;
+}
+.tf-btn.chosen.right, .mc-btn.chosen.right {
+  background: rgba(74,222,128,0.08); border-color: rgba(74,222,128,0.35);
+}
+.tf-btn.chosen.wrong, .mc-btn.chosen.wrong {
+  background: rgba(248,113,113,0.08); border-color: rgba(248,113,113,0.35);
+}
+.tf-btn.reveal-correct, .mc-btn.reveal-correct {
+  border-color: rgba(74,222,128,0.6); box-shadow: inset 0 0 0 1px rgba(74,222,128,0.25);
+}
+.opt-marker {
+  width: 26px; height: 26px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'DM Mono', monospace; font-size: 11px;
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
+  flex-shrink: 0; transition: all 0.2s;
+}
+.tf-btn.chosen.right .opt-marker, .mc-btn.chosen.right .opt-marker { background: var(--correct); border-color: var(--correct); color: var(--void); }
+.tf-btn.chosen.wrong .opt-marker, .mc-btn.chosen.wrong .opt-marker { background: var(--incorrect); border-color: var(--incorrect); color: var(--void); }
+
+.match-grid {
+  display: grid; gap: 10px;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+.match-item {
+  background: rgba(56,189,248,0.06);
+  border: 1px solid rgba(56,189,248,0.18);
+  padding: 10px 14px; border-radius: 8px;
+  font-size: 0.95rem;
+}
+.match-arrow { color: var(--dim); font-size: 0.85rem; }
+.match-select {
+  background: var(--panel); border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 8px; padding: 10px 12px;
+  color: var(--text); font-size: 0.95rem;
+  cursor: pointer; min-width: 200px;
+}
+.match-select:disabled { opacity: 0.6; cursor: default; }
+.match-select.correct-sel { border-color: var(--correct); background: rgba(74,222,128,0.08); }
+.match-select.wrong-sel { border-color: var(--incorrect); background: rgba(248,113,113,0.08); }
+
+.essay-textarea {
+  width: 100%; min-height: 120px; padding: 14px;
+  background: rgba(255,255,255,0.025);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px; color: var(--text);
+  font-family: 'Crimson Pro', serif; font-size: 1rem;
+  resize: vertical;
+}
+.essay-textarea:focus { outline: none; border-color: var(--primary); }
+.essay-reveal-btn {
+  margin-top: 12px; padding: 10px 22px;
+  background: rgba(167,139,250,0.12);
+  border: 1px solid rgba(167,139,250,0.28);
+  border-radius: 8px; color: var(--purple);
+  font-family: 'DM Mono', monospace; font-size: 10px;
+  letter-spacing: 0.12em; cursor: pointer;
+  transition: all 0.2s;
+}
+.essay-reveal-btn:hover { background: rgba(167,139,250,0.2); }
+.essay-model {
+  margin-top: 16px; padding: 18px;
+  background: rgba(167,139,250,0.06);
+  border-left: 3px solid var(--purple);
+  border-radius: 0 10px 10px 0;
+  display: none;
+}
+.essay-model.show { display: block; animation: fadeUp 0.3s ease; }
+.essay-model-title {
+  font-family: 'DM Mono', monospace; font-size: 9px;
+  letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--purple); margin-bottom: 10px;
+}
+.essay-model-text { color: var(--mid); font-style: italic; line-height: 1.7; }
+
+.note-block {
+  margin-top: 14px; padding: 14px 16px;
+  background: rgba(45,212,191,0.05);
+  border-left: 3px solid var(--teal);
+  border-radius: 0 8px 8px 0;
+  display: none;
+}
+.note-block.show { display: block; animation: fadeUp 0.25s ease; }
+.note-label {
+  font-family: 'DM Mono', monospace; font-size: 9px;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--teal); margin-bottom: 6px;
+}
+.note-text { color: var(--mid); font-size: 0.95rem; }
+
+.results-panel { display: none; }
+.results-panel.active { display: block; animation: fadeUp 0.3s ease; }
+.results-header { text-align: center; margin-bottom: 40px; }
+.results-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem; font-weight: 900;
+  color: var(--bright); margin-bottom: 8px;
+}
+.results-sub { font-style: italic; color: var(--mid); font-size: 1.1rem; }
+.results-score-big {
+  font-family: 'DM Mono', monospace; font-size: 4rem;
+  color: var(--primary); margin: 30px 0 10px;
+}
+.results-pct { font-family: 'DM Mono', monospace; font-size: 1.2rem; color: var(--mid); }
+.results-section-breakdown {
+  display: grid; gap: 16px;
+  max-width: 500px; margin: 40px auto 0;
+}
+.res-sec-row {
+  display: flex; align-items: center; gap: 14px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 14px 18px; border-radius: 10px;
+}
+.res-sec-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.res-sec-name { flex: 1; font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.08em; color: var(--text); }
+.res-sec-score { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--mid); }
+
+.restart-btn {
+  display: block; margin: 50px auto 0;
+  padding: 14px 36px;
+  background: linear-gradient(135deg, var(--primary), var(--teal));
+  border: none; border-radius: 10px;
+  color: var(--void); font-family: 'DM Mono', monospace;
+  font-size: 11px; letter-spacing: 0.15em;
+  cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;
+}
+.restart-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(56,189,248,0.25); }
+
+@media (max-width: 800px) {
+  .sidebar { display: none; }
+  .main { padding: 24px 18px 60px; }
+  .section-head { flex-direction: column; gap: 10px; }
+  .q-card { padding: 18px; }
+}
+</style>
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="dewey-tag">612.8 · Nerves</div>
+      <div class="sidebar-title">Peripheral Nervous System Comprehensive</div>
+    </div>
+    <div class="score-widget">
+      <div class="score-label">Running Score</div>
+      <div class="score-main"><span id="score-num">0</span><span class="score-denom" id="score-denom">/0</span></div>
+      <div class="score-bar-wrap"><div class="score-bar-fill" id="score-bar"></div></div>
+    </div>
+    <nav class="nav-sections" id="nav-sections"></nav>
+    <div class="sidebar-footer">
+      <button class="results-btn" id="show-results-btn">View Results</button>
+    </div>
+  </aside>
+  <main class="main" id="main-content"></main>
+</div>
+
+<script>
+const SECTIONS = [
+  {
+    id: 's1', num: '200.1', title: 'Spinal Cord & Roots', sub: 'Roots, rami, plexuses, and clinical syndromes', color: 'var(--s1)',
+    questions: [
+      {type:'tf', id:'200.1.01', q:'Dorsal and ventral rami are similar in that they both contain sensory and motor fibers.', ans:true, note:'Both dorsal and ventral RAMI are mixed (sensory + motor). Dorsal ROOTS are purely sensory, ventral ROOTS are purely motor. The terminology shifts after the roots merge into the spinal nerve and then divide into rami.'},
+      {type:'mc', id:'200.1.02', q:'A patient has an injury of the spine and is now suffering from a loss of motor function in his right arm. However, he still has normal sensory function in the arm. Based on this, the nervous tissue damage is likely located at:', opts:['The dorsal rootlets at one of the thoracic vertebra','The ventral root at one or more of the cervical vertebra','Spinal nerves of the cervical vertebra','The dorsal root at one or more of the cervical vertebra'], ans:1, note:'Ventral roots carry motor fibers OUT. Damage here = motor loss with sensory preservation. Bell-Magendie law: dorsal=sensory, ventral=motor.'},
+      {type:'mc', id:'200.1.03', q:'Starting at the spinal cord, the subdivisions of the brachial plexus are (in order):', opts:['Trunks, divisions, cords, and roots','Divisions, roots, trunks, and cords','Roots, divisions, cords, and trunks','Roots, trunks, divisions, and cords'], ans:3, note:'Robert Taylor Drinks Cold Beer: Roots → Trunks → Divisions → Cords → Branches. C5-T1 reorganizes into the arm\'s nerve supply.'},
+      {type:'mc', id:'200.1.04', q:'Select the statement that is most correct:', opts:['The dorsal root ganglion is a motor-only structure','The cell bodies of afferent ganglia are located in the spinal cord','Ganglia associated with afferent nerve fibers contain cell bodies of sensory neurons','Ganglia are collections of neuron cell bodies in the spinal cord'], ans:2, note:'Ganglia = neuron cell bodies OUTSIDE the CNS. Nuclei = cell bodies INSIDE the CNS. Dorsal root ganglia contain sensory neuron cell bodies.'},
+      {type:'mc', id:'200.1.05', q:'The correct simple spinal reflex arc is:', opts:['Receptor, afferent neuron, integration center, efferent neuron, effector','Receptor, efferent neuron, integration center, afferent neuron, effector','Effector, efferent neuron, integration center, afferent neuron, receptor','Effector, afferent neuron, integration center, efferent neuron, receptor'], ans:0, note:'Stimulus → Receptor → Afferent → Integration (spinal cord) → Efferent → Effector. The monosynaptic stretch reflex: ~50ms from tap to kick.'},
+      {type:'tf', id:'200.1.06', q:'In Brown-Séquard syndrome (spinal cord hemisection), pain/temperature loss is on the OPPOSITE side of the lesion while motor/proprioception loss is on the SAME side.', ans:true, note:'Different crossing levels: Spinothalamic (pain/temp) crosses immediately → contralateral loss. Dorsal columns (proprioception) and corticospinal (motor) cross in medulla → ipsilateral loss.'},
+      {type:'mc', id:'200.1.07', q:'A patient presents with bilateral loss of pain and temperature sensation in the hands/upper arms (cape distribution), but proprioception and motor function are intact. This suggests:', opts:['Bilateral dorsal root damage','Damage to the central spinal cord (syringomyelia)','Complete spinal cord transection','Bilateral dorsal column damage'], ans:1, note:'Syringomyelia: central cavity destroys crossing pain/temperature fibers in anterior commissure while sparing posterior dorsal columns. Classic cape distribution.'},
+      {type:'tf', id:'200.1.08', q:'After spinal cord injury, initial flaccid paralysis transitioning to spastic paralysis over weeks indicates spinal shock resolving with loss of descending inhibition.', ans:true, note:'Spinal shock = temporary suppression of spinal reflexes. Resolution = reflexes return but become hyperactive because descending inhibitory pathways are permanently lost.'},
+      {type:'match', id:'200.1.m1', prompt:'Match the spinal cord syndrome with its characteristic deficit:', items:['Brown-Séquard','Syringomyelia','Anterior spinal artery syndrome','Dorsal column syndrome'], opts:['Ipsilateral motor + contralateral pain loss','Cape-like pain/temp loss, motor preserved','Motor + pain loss, proprioception preserved','Proprioception/vibration loss, pain preserved'], ans:[0,1,2,3]},
+      {type:'essay', id:'200.1.e1', q:'Explain why anterior spinal artery occlusion causes motor paralysis and loss of pain/temperature but spares proprioception.', ans:'The anterior spinal artery supplies the anterior 2/3 of the spinal cord including: corticospinal tracts (motor), spinothalamic tracts (pain/temperature), and anterior horn motor neurons. The posterior 1/3 (dorsal columns carrying proprioception/vibration) is supplied by the paired posterior spinal arteries, which remain intact. Thus the patient loses motor function and pain/temperature sensation but retains position sense.'}
+    ]
+  },
+  {
+    id: 's2', num: '200.2', title: 'Sensory Receptors', sub: 'Transduction, receptor types, and clinical correlations', color: 'var(--s2)',
+    questions: [
+      {type:'mc', id:'200.2.01', q:'If someone spills very hot coffee (200°F) on their skin, they will perceive pain. Which receptor type causes this sensation?', opts:['Nociceptors','Chemoreceptors','Thermoreceptors','Mechanoreceptors'], ans:0, note:'At 200°F (93°C), this is tissue-damaging heat activating nociceptors (TRPV1 channels), not normal thermoreceptors. Thermoreceptors report comfort; nociceptors report catastrophe.'},
+      {type:'mc', id:'200.2.02', q:'Touching your finger to your nose with eyes closed requires sensing joint position and muscle stretch. These receptors are:', opts:['Proprioceptors','Exteroceptors','Interoceptors','Nociceptors'], ans:0, note:'Proprioceptors (muscle spindles, Golgi tendon organs, joint receptors) provide position sense. You don\'t notice them until they\'re gone—then you can\'t walk without watching your feet.'},
+      {type:'mc', id:'200.2.03', q:'A deep-tissue massage that causes discomfort activates which receptors?', opts:['Tendon organ','Bulbous corpuscle','Free nerve ending','Lamellar corpuscle'], ans:2, note:'Free nerve endings (nociceptors) respond to intense pressure. The "hurts so good" sensation is your pain system activating therapeutically.'},
+      {type:'mc', id:'200.2.04', q:'A gentle caress on your arm involves all EXCEPT:', opts:['Meissner\'s corpuscles','Tactile discs','Hair follicle receptors','Lamellar corpuscles'], ans:3, note:'Pacinian (lamellar) corpuscles are DEEP receptors for vibration/pressure. A gentle caress activates superficial receptors only: Meissner\'s, Merkel discs, hair follicles.'},
+      {type:'mc', id:'200.2.05', q:'Transduction refers to conversion of:', opts:['Stimulus energy into energy of a graded potential','Afferent impulses to efferent impulses','Presynaptic to postsynaptic nerve impulses','Receptor energy to stimulus energy'], ans:0, note:'Transduction: converting stimulus energy (mechanical, thermal, chemical, light) into electrical energy (receptor potential). The universal translator between physics and neurology.'},
+      {type:'tf', id:'200.2.06', q:'A diabetic patient who steps on a tack without noticing but can still feel light touch has lost nociceptor (pain receptor) function while retaining light touch receptors.', ans:true, note:'Diabetic neuropathy selectively damages small unmyelinated C fibers (pain) before large myelinated Aβ fibers (touch). She feels the cotton swab but not the nail.'},
+      {type:'tf', id:'200.2.07', q:'A patient with MS who must watch their feet while walking (positive Romberg) has lost proprioceptor connections to the CNS.', ans:true, note:'MS demyelinates large Ia/Ib proprioceptive fibers. Muscles work but the brain doesn\'t know limb position. Vision compensates for lost proprioception.'},
+      {type:'mc', id:'200.2.08', q:'Numbness in hands and feet with sparing of proximal limbs (glove-and-stocking distribution) suggests:', opts:['Central brain lesion','Spinal cord compression','Length-dependent peripheral neuropathy','Nerve root damage at multiple levels'], ans:2, note:'Longest axons die first in metabolic/toxic neuropathies (diabetes, alcohol, chemo). Distal-to-proximal pattern = length-dependent dying-back neuropathy.'},
+      {type:'match', id:'200.2.m1', prompt:'Match the receptor type with its primary stimulus:', items:['Nociceptors','Proprioceptors','Thermoreceptors','Meissner\'s corpuscles'], opts:['Tissue-damaging stimuli','Body position/movement','Temperature changes','Light touch/texture'], ans:[0,1,2,3]},
+      {type:'essay', id:'200.2.e1', q:'A chef repeatedly burns fingertips while cooking but can distinguish warm vs cold food. Explain the dissociation between thermoreception and pain detection.', ans:'Thermoreceptors (TRPM8 for cold, TRPV3/4 for warmth) detect non-damaging temperature changes in the 10-45°C range. Nociceptors (TRPV1) detect tissue-damaging heat above 43°C. Different receptors, different fiber types. The chef has damaged small C fiber nociceptors but preserved larger thermoreceptor fibers—can sense "warm" but not "burning." The alarm system failed while the thermometer works.'}
+    ]
+  },
+  {
+    id: 's3', num: '200.3', title: 'Nerve Plexuses', sub: 'Cervical, brachial, lumbar, sacral plexuses and injuries', color: 'var(--s3)',
+    questions: [
+      {type:'mc', id:'200.3.01', q:'Striking the "funny bone" stimulates the:', opts:['Sciatic nerve','Median nerve','Radial nerve','Ulnar nerve'], ans:3, note:'Ulnar nerve passes through the cubital tunnel at the medial epicondyle—superficial and unprotected. Tingling shoots to ring and little fingers.'},
+      {type:'mc', id:'200.3.02', q:'The phrenic nerve branches from which plexus?', opts:['Cervical plexus','Lumbar plexus','Brachial plexus','Sacral plexus'], ans:0, note:'Phrenic nerve: C3-C4-C5 from cervical plexus. "C3, 4, 5 keeps the diaphragm alive!" Damage above C3 = ventilator dependence.'},
+      {type:'mc', id:'200.3.03', q:'The femoral and obturator nerves branch from which plexus?', opts:['Cervical plexus','Lumbar plexus','Brachial plexus','Sacral plexus'], ans:1, note:'Lumbar plexus (L1-L4): Femoral (anterior thigh/quadriceps) and Obturator (medial thigh/adductors).'},
+      {type:'mc', id:'200.3.04', q:'A fall or improper buttock injection may injure a nerve of which plexus?', opts:['Cervical plexus','Lumbar plexus','Brachial plexus','Sacral plexus'], ans:3, note:'Sacral plexus (L4-S4) gives rise to the sciatic nerve running through the buttock. Upper outer quadrant only—misplaced injection = permanent damage.'},
+      {type:'mc', id:'200.3.05', q:'A newborn with arm hanging limp, internally rotated, forearm pronated ("waiter\'s tip") after difficult delivery has injury to:', opts:['C8-T1','C5-C6','L4-L5','C7-C8'], ans:1, note:'Erb-Duchenne palsy: Upper brachial plexus (C5-C6). Excessive lateral neck flexion tears axillary and musculocutaneous nerve roots. Can\'t abduct shoulder or flex elbow.'},
+      {type:'mc', id:'200.3.06', q:'A patient wakes unable to extend wrist after sleeping with arm over chair ("Saturday night palsy"). Which nerve?', opts:['Ulnar nerve','Median nerve','Radial nerve','Musculocutaneous nerve'], ans:2, note:'Radial nerve compressed in spiral groove of humerus. Wrist drop = can\'t extend wrist/fingers. Usually recovers over weeks-months.'},
+      {type:'mc', id:'200.3.07', q:'Numbness/tingling in thumb, index, middle fingers, worse at night, positive Tinel\'s at wrist indicates compression of:', opts:['Ulnar nerve','Median nerve','Radial nerve','Musculocutaneous nerve'], ans:1, note:'Carpal tunnel syndrome: Median nerve compressed under flexor retinaculum. Night symptoms (wrist flexion during sleep increases pressure).'},
+      {type:'mc', id:'200.3.08', q:'Foot drop with steppage gait after fibular neck fracture indicates injury to:', opts:['Tibial nerve','Common fibular (peroneal) nerve','Femoral nerve','Obturator nerve'], ans:1, note:'Common fibular nerve wraps around fibular neck—most commonly injured lower limb nerve. Foot drop = can\'t dorsiflex; must lift knee high to clear dropped foot.'},
+      {type:'tf', id:'200.3.09', q:'Klumpke\'s palsy (C8-T1 injury) causes "claw hand" due to loss of intrinsic hand muscles and may include Horner\'s syndrome.', ans:true, note:'Lower brachial plexus injury loses ulnar nerve (intrinsics). Unopposed extrinsic flexors curl fingers into claw. T1 damage may affect sympathetic chain = Horner\'s (ptosis, miosis, anhidrosis).'},
+      {type:'match', id:'200.3.m1', prompt:'Match the nerve injury with its clinical presentation:', items:['Radial nerve','Median nerve (carpal tunnel)','Ulnar nerve','Common fibular nerve'], opts:['Wrist drop','Thumb/index/middle numbness','Ring/little finger weakness','Foot drop'], ans:[0,1,2,3]},
+      {type:'essay', id:'200.3.e1', q:'A midshaft humeral fracture commonly injures which nerve? Describe the anatomical basis and expected deficits.', ans:'The RADIAL nerve wraps around the posterior humerus in the spiral groove, directly applied to bone. Midshaft fracture crushes or lacerates the nerve. Deficits: WRIST DROP (can\'t extend wrist), FINGER DROP (can\'t extend fingers at MCP), loss of thumb extension, sensory loss over dorsal hand (thumb-index web space). The hand becomes nearly useless for gripping because you can\'t stabilize the wrist to generate force. Most cases recover over 3-6 months; severe injuries are permanent.'}
+    ]
+  },
+  {
+    id: 's4', num: '200.4', title: 'Reflexes & Pathways', sub: 'Reciprocal inhibition, reflex arcs, and lesion localization', color: 'var(--s4)',
+    questions: [
+      {type:'tf', id:'200.4.01', q:'Reciprocal inhibition involves sensory neurons and synergistic muscles being inhibited.', ans:false, note:'FALSE. Reciprocal inhibition involves MOTOR neurons and ANTAGONISTIC muscles. When biceps contracts, triceps (antagonist) relaxes via inhibitory interneurons.'},
+      {type:'mc', id:'200.4.02', q:'An EMT shines light into a trauma patient\'s eye and the pupil constricts. This confirms function of:', opts:['The patient has brain damage','The oculomotor nerve (III)','The trochlear nerve (IV)','The optic nerve (II) is lost'], ans:1, note:'Pupillary light reflex: CN II (afferent/sensory) + CN III (efferent/motor for constriction). Reactive pupil = CN III parasympathetics functioning.'},
+      {type:'tf', id:'200.4.03', q:'Wrist drop can result from damage to a nerve of the brachial plexus.', ans:true, note:'Radial nerve (C5-T1, posterior cord of brachial plexus) controls all wrist/finger extensors. Damage = wrist drop.'},
+      {type:'mc', id:'200.4.04', q:'Reciprocal inhibition occurs when:', opts:['Receptor potential is too small for action potential','Antagonistic muscles are prevented from contracting','Brain centers block peripheral nerve response','None of the above'], ans:1, note:'Reciprocal inhibition prevents antagonistic muscles from contracting while the agonist contracts. Spinal cord interneurons coordinate this automatically.'},
+      {type:'mc', id:'200.4.05', q:'Hyperactive knee/ankle reflexes with ABSENT abdominal reflexes suggests lesion at:', opts:['Cervical spinal cord','Thoracic spinal cord (T8-T12)','Lumbar spinal cord (L2-L4)','Sacral spinal cord'], ans:1, note:'Absent reflex AT the lesion (T8-T12 destroyed), hyperactive BELOW (loss of descending inhibition). The pattern maps the lesion level.'},
+      {type:'mc', id:'200.4.06', q:'Humeral fracture causing wrist drop and dorsal hand numbness affects which nerve roots primarily?', opts:['C5-C6','C6-C7','C7-C8-T1','C5-C6-C7'], ans:1, note:'Radial nerve (predominantly C6-C7) in spiral groove. Wrist/finger extensors + dorsal hand sensation (thumb-index web space).'},
+      {type:'mc', id:'200.4.07', q:'Positive Babinski sign in a 35-year-old adult indicates damage to:', opts:['Peripheral nerves','Cerebellum','Upper motor neurons (corticospinal tract)','Lower motor neurons'], ans:2, note:'Babinski (big toe up, toes fan) = corticospinal tract damage. Descending inhibition normally suppresses this primitive reflex; damage releases it.'},
+      {type:'mc', id:'200.4.08', q:'Absent knee jerk with normal ankle jerk after spinal injury indicates damage at:', opts:['L1-L2','L2-L4','L5-S1','S2-S4'], ans:1, note:'Patellar reflex tests L2-L4. Absent there, normal at S1-S2 (ankle) = lesion at L2-L4 destroying that reflex arc.'},
+      {type:'tf', id:'200.4.09', q:'Absent ankle jerks with hyperactive knee jerks suggests BOTH peripheral neuropathy AND upper motor neuron disease.', ans:true, note:'Mixed pattern: Absent distal (peripheral nerve damage at S1-S2) + hyperactive proximal (UMN damage above L2-L4). Classic for B12 deficiency, combined pathology.'},
+      {type:'tf', id:'200.4.10', q:'A positive Babinski sign in a 3-month-old infant indicates brain damage.', ans:false, note:'FALSE. Babinski is NORMAL in infants <2 years. Immature corticospinal tracts haven\'t yet developed to suppress this primitive reflex.'},
+      {type:'match', id:'200.4.m1', prompt:'Match the reflex finding with its significance:', items:['Absent reflexes at one level, hyperactive below','Positive Babinski in adult','All reflexes diminished/absent','Babinski in infant'], opts:['Spinal cord lesion at that level','Upper motor neuron damage','Lower motor neuron or peripheral nerve damage','Normal finding'], ans:[0,1,2,3]},
+      {type:'essay', id:'200.4.e1', q:'Explain why the pupillary light reflex is tested in trauma and what a fixed, dilated pupil indicates.', ans:'The pupillary light reflex tests brainstem integrity: CN II (afferent from retina to pretectal nucleus) and CN III (efferent from Edinger-Westphal nucleus to sphincter pupillae). A fixed, dilated ("blown") pupil indicates CN III compression, often from uncal herniation—the temporal lobe herniating through the tentorial notch compresses CN III against the tentorium. Parasympathetic fibers run on the OUTSIDE of CN III and are compressed first. This is a neurological emergency indicating imminent brainstem death.'}
+    ]
+  },
+  {
+    id: 's5', num: '200.5', title: 'Cranial Nerves', sub: 'The 12 cranial nerves: functions, testing, and lesions', color: 'var(--s5)',
+    questions: [
+      {type:'mc', id:'200.5.01', q:'How many pairs of cranial nerves do humans have?', opts:['8 pairs','10 pairs','12 pairs','14 pairs'], ans:2, note:'12 pairs: Olfactory, Optic, Oculomotor, Trochlear, Trigeminal, Abducens, Facial, Vestibulocochlear, Glossopharyngeal, Vagus, Accessory, Hypoglossal.'},
+      {type:'mc', id:'200.5.02', q:'Which cranial nerves are PURELY SENSORY?', opts:['CN I, II, and VIII','CN III, IV, and VI','CN V, VII, and IX','CN XI and XII'], ans:0, note:'CN I (smell), II (vision), VIII (hearing/balance) = purely sensory. "Some Say..." in the mnemonic = Sensory nerves at positions 1, 2, 8.'},
+      {type:'mc', id:'200.5.03', q:'The THREE branches of the trigeminal nerve (CN V) are:', opts:['Temporal, Zygomatic, Buccal','Ophthalmic, Maxillary, Mandibular','Superior, Middle, Inferior','Frontal, Parietal, Occipital'], ans:1, note:'V1 (ophthalmic) = forehead/eye. V2 (maxillary) = cheek/upper teeth. V3 (mandibular) = lower face + MOTOR to chewing muscles.'},
+      {type:'mc', id:'200.5.04', q:'Which THREE cranial nerves control eye movements?', opts:['CN I, II, III','CN III, IV, VI','CN V, VII, VIII','CN II, V, VII'], ans:1, note:'LR6 SO4 all the rest 3: Lateral Rectus = CN VI, Superior Oblique = CN IV, other 4 muscles = CN III. CN II carries vision, not movement.'},
+      {type:'mc', id:'200.5.05', q:'The cranial nerve controlling muscles of facial EXPRESSION is:', opts:['Trigeminal (V)','Facial (VII)','Glossopharyngeal (IX)','Hypoglossal (XII)'], ans:1, note:'CN VII = facial expression (smile, frown, eye closure). CN V = facial SENSATION and chewing. Common confusion: V feels face, VII moves face.'},
+      {type:'mc', id:'200.5.06', q:'Damage to the optic nerve (CN II) causes:', opts:['Loss of smell','Blindness in the affected eye','Inability to move the eye','Loss of hearing'], ans:1, note:'CN II carries all visual information from one eye. Complete damage = total blindness in that eye. Also lose direct pupillary reflex.'},
+      {type:'mc', id:'200.5.07', q:'Testing lateral eye movement evaluates which cranial nerve?', opts:['Oculomotor (III)','Trochlear (IV)','Abducens (VI)','Optic (II)'], ans:2, note:'CN VI (ABducens) = ABducts the eye via lateral rectus. "LR6" = Lateral Rectus, CN 6. Palsy causes eye deviation toward nose.'},
+      {type:'mc', id:'200.5.08', q:'A patient can\'t smile, raise eyebrows, or close eye on one side. Which nerve is damaged?', opts:['Trigeminal (V)','Facial (VII)','Glossopharyngeal (IX)','Vagus (X)'], ans:1, note:'Bell\'s palsy = CN VII paralysis. Entire facial half droops. Key: in peripheral lesion, FOREHEAD is affected; in stroke, forehead is spared.'},
+      {type:'mc', id:'200.5.09', q:'The vestibulocochlear nerve (CN VIII) is responsible for:', opts:['Balance and hearing','Smell and taste','Vision and eye movement','Facial sensation and chewing'], ans:0, note:'CN VIII: Vestibular (balance from semicircular canals) + Cochlear (hearing from cochlea). Acoustic neuroma compresses it.'},
+      {type:'mc', id:'200.5.10', q:'Taste from the posterior 1/3 of the tongue travels via:', opts:['Facial (VII)','Glossopharyngeal (IX)','Vagus (X)','Hypoglossal (XII)'], ans:1, note:'CN IX = posterior 1/3 taste. CN VII (chorda tympani) = anterior 2/3 taste. Different nerves, different tongue territories.'},
+      {type:'mc', id:'200.5.11', q:'The vagus nerve (CN X) is unique because it:', opts:['Controls only eye movements','Wanders into thorax and abdomen','Is purely sensory','Controls facial expressions'], ans:1, note:'Vagus = "wandering." Extends to heart (slows rate), lungs, GI tract (increases motility). Main parasympathetic nerve of the body.'},
+      {type:'mc', id:'200.5.12', q:'A patient can\'t turn head to left or shrug left shoulder. Which nerve is damaged?', opts:['Vagus (X)','Accessory (XI)','Hypoglossal (XII)','Facial (VII)'], ans:1, note:'CN XI: Sternocleidomastoid (turns head to OPPOSITE side) + Trapezius (shrugs shoulder). Test by resisting head turn and shoulder shrug.'},
+      {type:'mc', id:'200.5.13', q:'When tongue deviates to the right when protruded, which nerve is damaged?', opts:['Left hypoglossal (XII)','Right hypoglossal (XII)','Left glossopharyngeal (IX)','Right vagus (X)'], ans:1, note:'"Tongue licks its wound." Damaged RIGHT CN XII = weak right genioglossus. Intact LEFT side pushes harder, deviating tongue RIGHT toward the lesion.'},
+      {type:'mc', id:'200.5.14', q:'Hoarse voice and difficulty swallowing suggests damage to:', opts:['Trigeminal (V)','Facial (VII)','Vagus (X)','Hypoglossal (XII)'], ans:2, note:'CN X controls larynx (voice via recurrent laryngeal) and pharynx (swallowing). Bilateral damage = airway emergency.'},
+      {type:'mc', id:'200.5.15', q:'To test CN V motor function, have the patient:', opts:['Smile widely','Clench their jaw','Stick out their tongue','Shrug their shoulders'], ans:1, note:'Jaw clench tests V3 (mandibular) motor to masseter/temporalis. Palpate muscles while patient clenches. Weakness = jaw deviates toward weak side when opened.'},
+      {type:'match', id:'200.5.m1', prompt:'Match the cranial nerve with its function:', items:['CN I (Olfactory)','CN VII (Facial)','CN X (Vagus)','CN XII (Hypoglossal)'], opts:['Smell','Facial expression + taste','Heart/lung/GI parasympathetic','Tongue movement'], ans:[0,1,2,3]},
+      {type:'match', id:'200.5.m2', prompt:'Match the cranial nerve injury with its deficit:', items:['CN III palsy','CN VI palsy','CN VII palsy','CN XI palsy'], opts:['Ptosis, dilated pupil, eye "down and out"','Eye can\'t look laterally (turns toward nose)','Facial droop, can\'t close eye','Can\'t shrug shoulder or turn head'], ans:[0,1,2,3]},
+      {type:'essay', id:'200.5.e1', q:'Explain why CN III palsy causes ptosis, dilated pupil, and "down and out" eye position.', ans:'CN III (oculomotor) controls: (1) Levator palpebrae → ptosis when lost. (2) Sphincter pupillae (parasympathetic) → dilated pupil when lost. (3) Four extraocular muscles: superior rectus, inferior rectus, medial rectus, inferior oblique. Loss leaves only lateral rectus (CN VI) and superior oblique (CN IV) functioning. Lateral rectus pulls eye OUT (abduction), superior oblique pulls eye DOWN. Result: "down and out" position. In trauma, a blown pupil suggests uncal herniation compressing CN III—neurosurgical emergency.'}
+    ]
+  },
+  {
+    id: 's6', num: '200.6', title: 'Nerves Vocabulary', sub: 'Essential terminology for spinal cord, nerves, and reflexes', color: 'var(--s6)',
+    questions: [
+      {type:'mc', id:'200.6.01', q:'The spinal cord extends from the medulla to approximately which vertebral level?', opts:['T12','L1-L2','L5','S1'], ans:1, note:'Conus medullaris ends at L1-L2 in adults. Below this, only nerve roots (cauda equina). Lumbar punctures below L2 are safe.'},
+      {type:'mc', id:'200.6.02', q:'The collection of nerve roots below the conus medullaris is called the:', opts:['Spinal ganglion','Cauda equina','Dorsal root','Filum terminale'], ans:1, note:'Cauda equina = "horse\'s tail." Lumbar/sacral nerve roots streaming down from where the cord ends.'},
+      {type:'mc', id:'200.6.03', q:'Afferent neurons carry impulses:', opts:['From CNS to muscles','From sensory receptors to CNS','Between neurons in the CNS','Only within the brain'], ans:1, note:'Afferent = "arriving" = sensory IN to CNS. Efferent = "exiting" = motor OUT from CNS.'},
+      {type:'mc', id:'200.6.04', q:'The cervical plexus innervates structures of the:', opts:['Upper limb','Neck and posterior head','Lower limb','Thoracic wall'], ans:1, note:'Cervical plexus (C1-C4) supplies neck/head + phrenic nerve to diaphragm. Brachial plexus (C5-T1) supplies arm.'},
+      {type:'mc', id:'200.6.05', q:'The largest nerve in the body is the:', opts:['Femoral nerve','Sciatic nerve','Vagus nerve','Tibial nerve'], ans:1, note:'Sciatic nerve (L4-S3) is thumb-thick. Main nerve trunk of the leg, splits into tibial and common fibular behind the knee.'},
+      {type:'mc', id:'200.6.06', q:'The dorsal root ganglion contains cell bodies of:', opts:['Motor neurons','Sensory neurons','Interneurons','Autonomic neurons'], ans:1, note:'DRG = sensory neuron cell bodies (pseudounipolar). Motor neuron cell bodies are in the ventral horn.'},
+      {type:'mc', id:'200.6.07', q:'A reflex arc requires at minimum:', opts:['One neuron','Two neurons','Three neurons','Five neurons'], ans:1, note:'Monosynaptic reflex (knee-jerk): sensory neuron → motor neuron. Two neurons, one synapse. Polysynaptic adds interneurons.'},
+      {type:'mc', id:'200.6.08', q:'The brachial plexus is formed by ventral rami of:', opts:['C1-C4','C5-T1','T1-T12','L1-L4'], ans:1, note:'C5-T1 form brachial plexus. Reorganizes into musculocutaneous, median, ulnar, radial, axillary nerves.'},
+      {type:'mc', id:'200.6.09', q:'Which receptor type detects body position?', opts:['Mechanoreceptors','Thermoreceptors','Proprioceptors','Photoreceptors'], ans:2, note:'Proprioceptors (muscle spindles, Golgi tendons) provide position sense. You know where your hand is without looking.'},
+      {type:'mc', id:'200.6.10', q:'Gray matter of the spinal cord is shaped like a:', opts:['Circle','Butterfly or H','Square','Triangle'], ans:1, note:'Butterfly/H-shape: Dorsal horns (sensory), ventral horns (motor), lateral horns (autonomic in thoracic/lumbar).'},
+      {type:'mc', id:'200.6.11', q:'The neuron transmitting impulses from CNS to effector organs is:', opts:['Afferent neuron','Efferent neuron','Interneuron','Sensory neuron'], ans:1, note:'Efferent = motor neurons carrying commands OUT to muscles and glands.'},
+      {type:'mc', id:'200.6.12', q:'Myelin in the PNS is formed by:', opts:['Oligodendrocytes','Schwann cells','Astrocytes','Microglia'], ans:1, note:'Schwann cells myelinate PNS axons (one cell per segment). Oligodendrocytes myelinate CNS axons.'},
+      {type:'mc', id:'200.6.13', q:'The cranial nerve with most extensive body distribution is:', opts:['Trigeminal (V)','Facial (VII)','Glossopharyngeal (IX)','Vagus (X)'], ans:3, note:'Vagus wanders from brainstem to abdomen. Heart, lungs, GI tract. Main parasympathetic trunk.'},
+      {type:'mc', id:'200.6.14', q:'A dermatome is an area of skin supplied by:', opts:['One cranial nerve','One spinal nerve','Multiple nerve plexuses','The sympathetic trunk'], ans:1, note:'Each dermatome = one spinal nerve. C5=shoulder, T4=nipple, T10=umbilicus, L1=inguinal. Maps help localize lesions.'},
+      {type:'mc', id:'200.6.15', q:'Gaps in myelin where action potentials regenerate are:', opts:['Synapses','Nodes of Ranvier','Motor end plates','Neuromuscular junctions'], ans:1, note:'Nodes of Ranvier = gaps with clustered Na+ channels. Action potentials jump node-to-node (saltatory conduction), speeding transmission 100-fold.'},
+      {type:'mc', id:'200.6.16', q:'The median nerve passes through which wrist structure?', opts:['Cubital tunnel','Guyon\'s canal','Carpal tunnel','Tarsal tunnel'], ans:2, note:'Carpal tunnel: carpal bones + flexor retinaculum. Median nerve + 9 flexor tendons. Compression = carpal tunnel syndrome.'},
+      {type:'mc', id:'200.6.17', q:'Tonic receptors adapt slowly and provide:', opts:['Momentary signals','Continuous information','Pain only','Temperature only'], ans:1, note:'Tonic = slow adaptation, continuous firing. Proprioceptors are tonic—brain always needs to know limb position.'},
+      {type:'mc', id:'200.6.18', q:'The radial nerve provides motor innervation primarily to:', opts:['Forearm flexors','Forearm extensors','Hand intrinsics','Shoulder abductors'], ans:1, note:'Radial = "extensor nerve." Triceps, wrist extensors, finger extensors. Damage = wrist drop.'},
+      {type:'mc', id:'200.6.19', q:'The lumbar plexus gives rise to which major nerve?', opts:['Sciatic nerve','Femoral nerve','Tibial nerve','Common fibular nerve'], ans:1, note:'Femoral nerve (L2-L4) from lumbar plexus supplies quadriceps. Sciatic comes from sacral plexus.'},
+      {type:'mc', id:'200.6.20', q:'The withdrawal reflex is an example of a:', opts:['Monosynaptic reflex','Polysynaptic reflex','Stretch reflex','Crossed extensor only'], ans:1, note:'Polysynaptic: multiple interneurons coordinate flexor activation across joints. More complex than monosynaptic stretch reflex.'},
+      {type:'mc', id:'200.6.21', q:'Meissner\'s corpuscles are sensitive to:', opts:['Deep pressure','Light touch and texture','Vibration only','Temperature'], ans:1, note:'Meissner\'s = superficial, rapidly adapting, light touch/texture. Dense in fingertips for fine discrimination.'},
+      {type:'mc', id:'200.6.22', q:'The phrenic nerve originates from:', opts:['C1-C2','C3-C5','T1-T2','L1-L2'], ans:1, note:'"C3-4-5 keeps the diaphragm alive!" Phrenic nerve = sole motor supply to diaphragm.'},
+      {type:'mc', id:'200.6.23', q:'The tract carrying pain and temperature sensations is:', opts:['Dorsal columns','Spinothalamic tract','Corticospinal tract','Spinocerebellar tract'], ans:1, note:'Spinothalamic tract: pain/temperature crosses in spinal cord, ascends contralaterally. Dorsal columns = proprioception/vibration.'},
+      {type:'mc', id:'200.6.24', q:'Motor neuron cell bodies innervating skeletal muscle are located in:', opts:['Dorsal horn','Ventral horn','Lateral horn','Dorsal root ganglion'], ans:1, note:'Ventral horn = somatic motor neurons. Axons exit via ventral roots to skeletal muscles.'},
+      {type:'match', id:'200.6.m1', prompt:'Match the structure with its contents:', items:['Dorsal root ganglion','Ventral horn','Dorsal columns','Spinothalamic tract'], opts:['Sensory neuron cell bodies','Motor neuron cell bodies','Proprioception/vibration pathway','Pain/temperature pathway'], ans:[0,1,2,3]},
+      {type:'essay', id:'200.6.e1', q:'Explain why the knee-jerk reflex is monosynaptic and what clinical information it provides.', ans:'The patellar (knee-jerk) reflex uses only TWO neurons: A sensory Ia afferent from muscle spindles synapses DIRECTLY on an alpha motor neuron to the quadriceps—no interneurons. This makes it the fastest reflex (~50ms). Clinically, it tests L2-L4 spinal segments. ABSENT reflex suggests lower motor neuron damage at L2-L4 (arc destroyed). HYPERACTIVE reflex suggests upper motor neuron damage ABOVE L2-L4 (lost descending inhibition). The reflex pattern localizes the lesion level.'}
+    ]
+  }
+];
+
+let state = { current: 0, answered: {}, sectionProgress: {} };
+SECTIONS.forEach((s, i) => { state.sectionProgress[i] = { done: 0, total: s.questions.length }; });
+
+function render() {
+  renderNav();
+  renderMain();
+  updateScore();
+}
+
+function renderNav() {
+  const nav = document.getElementById('nav-sections');
+  nav.innerHTML = SECTIONS.map((s, i) => {
+    const prog = state.sectionProgress[i];
+    const pct = prog.total ? Math.round((prog.done / prog.total) * 100) : 0;
+    const isDone = prog.done === prog.total && prog.total > 0;
+    return `<button class="nav-section-btn${state.current === i ? ' active' : ''}${isDone ? ' done' : ''}" data-idx="${i}">
+      <span class="nav-dot" style="background:${s.color}"></span>
+      <span class="nav-text">${s.num}<br>${s.title}</span>
+      <span class="nav-progress">${pct}%</span>
+    </button>`;
+  }).join('');
+  nav.querySelectorAll('.nav-section-btn').forEach(btn => {
+    btn.onclick = () => { state.current = +btn.dataset.idx; render(); };
+  });
+  document.getElementById('show-results-btn').onclick = showResults;
+}
+
+function renderMain() {
+  const main = document.getElementById('main-content');
+  main.innerHTML = SECTIONS.map((s, i) => renderSection(s, i)).join('') + renderResultsPanel();
+  document.querySelectorAll('.section-panel').forEach((p, i) => p.classList.toggle('active', i === state.current));
+  attachHandlers();
+}
+
+function renderSection(s, idx) {
+  const byType = { tf: [], mc: [], match: [], essay: [] };
+  s.questions.forEach(q => byType[q.type]?.push(q));
+  let html = `<div class="section-panel" data-section="${idx}">
+    <div class="section-head">
+      <span class="section-num-badge" style="background:${s.color}22;color:${s.color};border:1px solid ${s.color}44">Section ${idx + 1}</span>
+      <div class="section-meta">
+        <h2 class="section-title">${s.title}</h2>
+        <p class="section-sub">${s.sub}</p>
+        <div class="section-stats">
+          <span class="stat-pill">${s.questions.length} Questions</span>
+          <span class="stat-pill">${s.num}</span>
+        </div>
+      </div>
+    </div>`;
+  if (byType.match.length) {
+    html += `<div class="qtype-divider"><span class="line"></span><span class="qtype-label">Matching</span><span class="line"></span></div>`;
+    byType.match.forEach(q => { html += renderMatch(q); });
+  }
+  if (byType.tf.length) {
+    html += `<div class="qtype-divider"><span class="line"></span><span class="qtype-label">True / False</span><span class="line"></span></div>`;
+    byType.tf.forEach(q => { html += renderTF(q); });
+  }
+  if (byType.mc.length) {
+    html += `<div class="qtype-divider"><span class="line"></span><span class="qtype-label">Multiple Choice</span><span class="line"></span></div>`;
+    byType.mc.forEach(q => { html += renderMC(q); });
+  }
+  if (byType.essay.length) {
+    html += `<div class="qtype-divider"><span class="line"></span><span class="qtype-label">Essay</span><span class="line"></span></div>`;
+    byType.essay.forEach(q => { html += renderEssay(q); });
+  }
+  html += `</div>`;
+  return html;
+}
+
+function renderTF(q) {
+  const ans = state.answered[q.id];
+  const done = ans !== undefined;
+  const correct = done && ans === q.ans;
+  return `<div class="q-card${done ? (correct ? ' answered-correct' : ' answered-incorrect') : ''}" data-qid="${q.id}">
+    <div class="q-meta"><span class="q-id">${q.id}</span>${done ? `<span class="q-status ${correct ? 'correct' : 'incorrect'}">${correct ? 'Correct' : 'Incorrect'}</span>` : ''}</div>
+    <p class="q-prompt">${q.q}</p>
+    <div class="tf-options">
+      ${[true, false].map(v => {
+        let cls = 'tf-btn';
+        if (done) {
+          cls += ' chosen';
+          if (ans === v) cls += (v === q.ans ? ' right' : ' wrong');
+          if (v === q.ans && ans !== v) cls += ' reveal-correct';
+        }
+        return `<button class="${cls}" data-val="${v}"><span class="opt-marker">${v ? 'T' : 'F'}</span><span>${v ? 'True' : 'False'}</span></button>`;
+      }).join('')}
+    </div>
+    ${q.note ? `<div class="note-block${done ? ' show' : ''}"><div class="note-label">Note</div><div class="note-text">${q.note}</div></div>` : ''}
+  </div>`;
+}
+
+function renderMC(q) {
+  const ans = state.answered[q.id];
+  const done = ans !== undefined;
+  const correct = done && ans === q.ans;
+  const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
+  return `<div class="q-card${done ? (correct ? ' answered-correct' : ' answered-incorrect') : ''}" data-qid="${q.id}">
+    <div class="q-meta"><span class="q-id">${q.id}</span>${done ? `<span class="q-status ${correct ? 'correct' : 'incorrect'}">${correct ? 'Correct' : 'Incorrect'}</span>` : ''}</div>
+    <p class="q-prompt">${q.q}</p>
+    <div class="mc-options">
+      ${q.opts.map((o, i) => {
+        let cls = 'mc-btn';
+        if (done) {
+          cls += ' chosen';
+          if (ans === i) cls += (i === q.ans ? ' right' : ' wrong');
+          if (i === q.ans && ans !== i) cls += ' reveal-correct';
+        }
+        return `<button class="${cls}" data-idx="${i}"><span class="opt-marker">${letters[i]}</span><span>${o}</span></button>`;
+      }).join('')}
+    </div>
+    ${q.note ? `<div class="note-block${done ? ' show' : ''}"><div class="note-label">Note</div><div class="note-text">${q.note}</div></div>` : ''}
+  </div>`;
+}
+
+function renderMatch(q) {
+  const ans = state.answered[q.id];
+  const done = ans !== undefined;
+  const allCorrect = done && ans.every((a, i) => a === q.ans[i]);
+  return `<div class="q-card${done ? (allCorrect ? ' answered-correct' : ' answered-incorrect') : ''}" data-qid="${q.id}">
+    <div class="q-meta"><span class="q-id">${q.id}</span>${done ? `<span class="q-status ${allCorrect ? 'correct' : 'incorrect'}">${allCorrect ? 'All Correct' : 'Some Incorrect'}</span>` : ''}</div>
+    <p class="q-prompt">${q.prompt}</p>
+    <div class="match-grid">
+      ${q.items.map((item, i) => {
+        const userAns = done ? ans[i] : null;
+        const isCorrect = done && userAns === q.ans[i];
+        return `<div class="match-item">${item}</div>
+          <span class="match-arrow">→</span>
+          <select class="match-select${done ? (isCorrect ? ' correct-sel' : ' wrong-sel') : ''}" data-row="${i}" ${done ? 'disabled' : ''}>
+            <option value="">Select...</option>
+            ${q.opts.map((opt, j) => `<option value="${j}" ${userAns === j ? 'selected' : ''}>${opt}</option>`).join('')}
+          </select>`;
+      }).join('')}
+    </div>
+    ${q.note ? `<div class="note-block${done ? ' show' : ''}"><div class="note-label">Note</div><div class="note-text">${q.note}</div></div>` : ''}
+  </div>`;
+}
+
+function renderEssay(q) {
+  const done = state.answered[q.id];
+  return `<div class="q-card" data-qid="${q.id}">
+    <div class="q-meta"><span class="q-id">${q.id}</span></div>
+    <p class="q-prompt">${q.q}</p>
+    <textarea class="essay-textarea" placeholder="Write your answer here..."></textarea>
+    <button class="essay-reveal-btn">Reveal Model Answer</button>
+    <div class="essay-model${done ? ' show' : ''}">
+      <div class="essay-model-title">Model Answer</div>
+      <div class="essay-model-text">${q.ans}</div>
+    </div>
+  </div>`;
+}
+
+function renderResultsPanel() {
+  return `<div class="results-panel" id="results-panel">
+    <div class="results-header">
+      <h2 class="results-title">Exam Complete</h2>
+      <p class="results-sub">Your performance across all sections</p>
+    </div>
+    <div class="results-score-big" id="results-score-big">0/0</div>
+    <div class="results-pct" id="results-pct">0%</div>
+    <div class="results-section-breakdown" id="results-breakdown"></div>
+    <button class="restart-btn" id="restart-btn">Restart Exam</button>
+  </div>`;
+}
+
+function attachHandlers() {
+  document.querySelectorAll('.tf-btn').forEach(btn => {
+    btn.onclick = () => {
+      const card = btn.closest('.q-card');
+      const qid = card.dataset.qid;
+      if (state.answered[qid] !== undefined) return;
+      const val = btn.dataset.val === 'true';
+      handleAnswer(qid, val);
+    };
+  });
+  document.querySelectorAll('.mc-btn').forEach(btn => {
+    btn.onclick = () => {
+      const card = btn.closest('.q-card');
+      const qid = card.dataset.qid;
+      if (state.answered[qid] !== undefined) return;
+      const idx = +btn.dataset.idx;
+      handleAnswer(qid, idx);
+    };
+  });
+  document.querySelectorAll('.match-select').forEach(sel => {
+    sel.onchange = () => {
+      const card = sel.closest('.q-card');
+      const qid = card.dataset.qid;
+      if (state.answered[qid] !== undefined) return;
+      const selects = card.querySelectorAll('.match-select');
+      const vals = Array.from(selects).map(s => s.value === '' ? null : +s.value);
+      if (vals.every(v => v !== null)) {
+        handleAnswer(qid, vals);
+      }
+    };
+  });
+  document.querySelectorAll('.essay-reveal-btn').forEach(btn => {
+    btn.onclick = () => {
+      const card = btn.closest('.q-card');
+      const qid = card.dataset.qid;
+      state.answered[qid] = true;
+      updateSectionProgress();
+      card.querySelector('.essay-model').classList.add('show');
+    };
+  });
+  document.getElementById('restart-btn').onclick = () => {
+    state = { current: 0, answered: {}, sectionProgress: {} };
+    SECTIONS.forEach((s, i) => { state.sectionProgress[i] = { done: 0, total: s.questions.length }; });
+    render();
+  };
+}
+
+function handleAnswer(qid, val) {
+  state.answered[qid] = val;
+  updateSectionProgress();
+  render();
+  const card = document.querySelector(`[data-qid="${qid}"]`);
+  if (card && card.classList.contains('answered-correct')) {
+    card.classList.add('pulse-ok');
+  }
+}
+
+function updateSectionProgress() {
+  SECTIONS.forEach((s, i) => {
+    let done = 0;
+    s.questions.forEach(q => {
+      if (state.answered[q.id] !== undefined) done++;
+    });
+    state.sectionProgress[i].done = done;
+  });
+}
+
+function updateScore() {
+  let correct = 0, total = 0;
+  SECTIONS.forEach(s => {
+    s.questions.forEach(q => {
+      if (q.type === 'essay') return;
+      if (state.answered[q.id] !== undefined) {
+        total++;
+        if (q.type === 'match') {
+          if (state.answered[q.id].every((a, i) => a === q.ans[i])) correct++;
+        } else if (state.answered[q.id] === q.ans) {
+          correct++;
+        }
+      }
+    });
+  });
+  document.getElementById('score-num').textContent = correct;
+  document.getElementById('score-denom').textContent = '/' + total;
+  const pct = total ? Math.round((correct / total) * 100) : 0;
+  document.getElementById('score-bar').style.width = pct + '%';
+}
+
+function showResults() {
+  let correct = 0, total = 0;
+  const breakdown = [];
+  SECTIONS.forEach((s, i) => {
+    let sc = 0, st = 0;
+    s.questions.forEach(q => {
+      if (q.type === 'essay') return;
+      st++;
+      if (state.answered[q.id] !== undefined) {
+        if (q.type === 'match') {
+          if (state.answered[q.id].every((a, j) => a === q.ans[j])) sc++;
+        } else if (state.answered[q.id] === q.ans) {
+          sc++;
+        }
+      }
+    });
+    correct += sc; total += st;
+    breakdown.push({ name: s.title, color: s.color, sc, st });
+  });
+  document.querySelectorAll('.section-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('results-panel').classList.add('active');
+  document.getElementById('results-score-big').textContent = correct + '/' + total;
+  document.getElementById('results-pct').textContent = (total ? Math.round((correct / total) * 100) : 0) + '%';
+  document.getElementById('results-breakdown').innerHTML = breakdown.map(b => `
+    <div class="res-sec-row">
+      <span class="res-sec-dot" style="background:${b.color}"></span>
+      <span class="res-sec-name">${b.name}</span>
+      <span class="res-sec-score">${b.sc}/${b.st}</span>
+    </div>
+  `).join('');
+  state.current = -1;
+  renderNav();
+}
+
+render();
+</script>
+</body>
+</html>

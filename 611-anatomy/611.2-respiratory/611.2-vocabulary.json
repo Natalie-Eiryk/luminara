@@ -1,0 +1,127 @@
+[
+  {
+    "term": "Epiglottis",
+    "definition": "Flap that covers the airway during swallowing.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Larynx",
+    "definition": "Voice box region between pharynx and trachea.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Trachea",
+    "definition": "Windpipe carrying air from larynx to bronchi.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Primary bronchus",
+    "definition": "First airway branch after the trachea.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Secondary bronchus",
+    "definition": "Branch supplying a lung lobe.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Tertiary bronchus",
+    "definition": "Branch deeper than the secondary bronchus.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Diaphragm",
+    "definition": "Main muscle of breathing separating thoracic and abdominal cavities.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Nasal cavity",
+    "definition": "Upper respiratory passage inside the nose.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Pharynx",
+    "definition": "Shared throat passage behind nasal and oral cavities.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Nasopharynx",
+    "definition": "Pharynx region behind the nasal cavity.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Oropharynx",
+    "definition": "Pharynx region behind the mouth.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Laryngopharynx",
+    "definition": "Lowest pharynx region near the larynx.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Frontal sinus",
+    "definition": "Paranasal sinus in the frontal bone.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Maxillary sinus",
+    "definition": "Paranasal sinus in the cheek / maxilla region.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Ethmoid sinus",
+    "definition": "Paranasal sinus between the eyes.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Sphenoid sinus",
+    "definition": "Deep posterior paranasal sinus.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Hyoid bone",
+    "definition": "Bone superior to the larynx that anchors muscles.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Thyroid cartilage",
+    "definition": "Large anterior laryngeal cartilage.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Laryngeal prominence",
+    "definition": "Visible bulge of the thyroid cartilage.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Cricoid cartilage",
+    "definition": "Ring-like cartilage inferior to the thyroid cartilage.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Glottis",
+    "definition": "Opening of the larynx; not the flap.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Arytenoid cartilage",
+    "definition": "Small paired posterior laryngeal cartilages.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Corniculate cartilage",
+    "definition": "Tiny cartilages above the arytenoids.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Lobes of the lung",
+    "definition": "Major subdivisions of the lungs.",
+    "system": "Respiratory"
+  },
+  {
+    "term": "Alveoli",
+    "definition": "Tiny air sacs where gas exchange occurs.",
+    "system": "Respiratory"
+  }
+]

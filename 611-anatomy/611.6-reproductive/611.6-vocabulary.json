@@ -1,0 +1,127 @@
+[
+  {
+    "term": "Seminal vesicles",
+    "definition": "Paired male glands adding fluid to semen.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Ejaculatory duct",
+    "definition": "Duct carrying semen toward the urethra.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Prostate gland",
+    "definition": "Gland inferior to bladder, around urethra.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Bulbourethral glands",
+    "definition": "Small paired male glands also called Cowper’s glands.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Urethra",
+    "definition": "Tube leaving the bladder; also reproductive in males.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Testes",
+    "definition": "Male gonads.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Epididymis",
+    "definition": "Coiled structure where sperm mature.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Vas deferens",
+    "definition": "Duct carrying sperm away from the epididymis.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Penis",
+    "definition": "External male organ containing erectile tissue and urethra.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Uterus",
+    "definition": "Central female reproductive organ.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Cervix",
+    "definition": "Lower narrow part of the uterus.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Myometrium",
+    "definition": "Muscular wall of the uterus.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Vagina",
+    "definition": "Canal below the cervix.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Ovary",
+    "definition": "Female gonad containing follicles.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Uterine tubes",
+    "definition": "Tubes carrying the oocyte toward the uterus.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Seminiferous tubules",
+    "definition": "Sperm-producing tubules in the testis.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Interstitial cells",
+    "definition": "Cells between seminiferous tubules.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Corpora cavernosa",
+    "definition": "Paired erectile bodies in the penis.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Corpus spongiosum",
+    "definition": "Erectile tissue surrounding the urethra.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Ovarian cortex",
+    "definition": "Outer region of the ovary where follicles are found.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Primordial follicles",
+    "definition": "Earliest tiny ovarian follicles.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Primary follicle with oocyte",
+    "definition": "Slightly more developed follicle containing an oocyte.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Mature Graafian follicle with oocyte",
+    "definition": "Large mature follicle with a big fluid space called an antrum.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Antrum",
+    "definition": "Large fluid-filled cavity of a mature follicle.",
+    "system": "Reproductive"
+  },
+  {
+    "term": "Corpus luteum",
+    "definition": "Post-ovulation ovarian structure.",
+    "system": "Reproductive"
+  }
+]

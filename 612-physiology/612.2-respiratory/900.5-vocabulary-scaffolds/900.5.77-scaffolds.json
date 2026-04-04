@@ -1,0 +1,191 @@
+{
+  "parentId": "900.5.77",
+  "parentQuestion": "What breathing pattern is characterized by deep, rapid breathing in metabolic acidosis?",
+  "narrative": {
+    "setting": "Mr. Edgar's emergency room, treating a diabetic patient in ketoacidosis",
+    "character": "Mr. Edgar",
+    "tension": "The patient's breathing is abnormally deep and fast - but the lungs are clear. What's driving this?"
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.77.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Sound",
+      "narrative": "Ms. Frizzle's bus shrinks and enters the ER. 'Class, listen to that breathing! Deep... fast... deep... fast... like a marathon runner, but this patient is lying in bed! This is KUSSMAUL breathing.'",
+      "q": "Kussmaul breathing is characterized by:",
+      "options": [
+        "Shallow, rapid breaths",
+        "Deep, rapid, labored breaths",
+        "Slow, irregular breaths",
+        "Normal breathing with pauses"
+      ],
+      "answer": 1,
+      "explain": "Kussmaul = DEEP, RAPID, LABORED breathing. Each breath uses the full lung capacity (deep), comes quickly (rapid), and requires obvious effort (labored). It looks and sounds like someone gasping for air after intense exercise - but without the exercise.",
+      "wrongExplains": {
+        "0": "Shallow rapid breathing (tachypnea) is seen in pneumonia or anxiety. Kussmaul is the OPPOSITE - each breath is very DEEP, using maximum lung capacity.",
+        "2": "Slow irregular breathing describes other patterns like Biot's or agonal breathing. Kussmaul is distinctly RAPID and regular.",
+        "3": "Normal breathing with pauses might describe Cheyne-Stokes. Kussmaul has NO pauses - it's continuous deep, fast breathing."
+      }
+    },
+    {
+      "id": "900.5.77.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Sound",
+      "narrative": "'Count with me!' Ms. Frizzle taps her foot. '30 breaths per minute, and each one fills his lungs completely. That's MASSIVE ventilation - his body is working overtime to breathe!'",
+      "q": "What would you observe about the patient's chest movement during Kussmaul breathing?",
+      "options": [
+        "Barely visible movement",
+        "Very deep, full chest expansion with each breath",
+        "One side moving more than the other",
+        "Paradoxical inward movement"
+      ],
+      "answer": 1,
+      "explain": "VERY DEEP, FULL CHEST EXPANSION with each Kussmaul breath. The rib cage and abdomen move dramatically as the patient uses maximum tidal volume. It's visually obvious breathing - you can see it from across the room.",
+      "wrongExplains": {
+        "0": "Barely visible movement would be shallow breathing. Kussmaul is the opposite - the chest excursions are so large they're unmistakable.",
+        "2": "Unequal chest movement (asymmetry) suggests pneumothorax or pleural effusion - a problem with the lungs themselves. Kussmaul breathing is symmetric.",
+        "3": "Paradoxical inward movement indicates flail chest or diaphragm paralysis. Kussmaul breathing shows normal OUTWARD expansion, just much deeper than usual."
+      }
+    },
+    {
+      "id": "900.5.77.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Sound",
+      "narrative": "'Ralphie, what do you notice about the SOUND?' Ms. Frizzle asks. 'It's loud and kind of sighing!' Ralphie says. 'Exactly! Deep breaths moving lots of air create that distinctive sound.'",
+      "q": "The sound quality of Kussmaul breathing is often described as:",
+      "options": [
+        "Wheezing or musical",
+        "Silent or quiet",
+        "Loud, deep, sighing respirations",
+        "Crackling or popping"
+      ],
+      "answer": 2,
+      "explain": "Kussmaul breathing sounds LOUD, DEEP, and SIGHING. The massive airflow through the airways creates audible breathing you can hear without a stethoscope. It's sometimes called 'air hunger' because it looks and sounds like gasping.",
+      "wrongExplains": {
+        "0": "Wheezing is a musical sound from narrowed airways (asthma, COPD). Kussmaul breathing has OPEN airways - the lungs are fine, so no wheezing.",
+        "1": "Silent breathing would be normal quiet respiration. Kussmaul breathing is LOUD because so much air moves with each breath.",
+        "3": "Crackling/popping (crackles/rales) means fluid in airways. Kussmaul breathing occurs with CLEAR lungs - it's a breathing drive problem, not a lung disease."
+      }
+    },
+    {
+      "id": "900.5.77.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus dives into the bloodstream. 'Look at the pH monitor!' Ms. Frizzle points. 'pH 7.15 - that's ACIDIC! Normal blood pH is 7.35-7.45. This patient's blood is way too acidic!'",
+      "q": "Kussmaul breathing is the body's response to:",
+      "options": [
+        "Too much oxygen in the blood",
+        "Metabolic acidosis (blood too acidic)",
+        "High altitude",
+        "Lung infection"
+      ],
+      "answer": 1,
+      "explain": "Kussmaul breathing is the body's response to METABOLIC ACIDOSIS (blood pH too low/too acidic). The brain detects the low pH and drives hyperventilation to blow off CO2, which helps raise pH back toward normal. It's respiratory COMPENSATION for metabolic problems.",
+      "wrongExplains": {
+        "0": "Too much oxygen (hyperoxia) would actually SUPPRESS breathing drive in some patients. Kussmaul breathing is driven by LOW pH (acidosis), not oxygen levels.",
+        "2": "High altitude causes hypoxia (low oxygen), triggering increased breathing - but that's a different mechanism. Kussmaul is specifically the response to ACIDOSIS.",
+        "3": "Lung infection (pneumonia) causes rapid shallow breathing (tachypnea) from poor oxygenation. Kussmaul breathing occurs when lungs are HEALTHY but blood chemistry is abnormal."
+      }
+    },
+    {
+      "id": "900.5.77.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'We're flying to the medulla!' Ms. Frizzle steers toward the brainstem. 'See those chemoreceptors? They're screaming at the respiratory center: pH TOO LOW! BREATHE MORE! BLOW OFF CO2!'",
+      "q": "How does hyperventilation (Kussmaul breathing) help correct metabolic acidosis?",
+      "options": [
+        "It brings in more oxygen to buffer the acid",
+        "It blows off CO2, which raises blood pH",
+        "It stimulates the kidneys directly",
+        "It doesn't help - it makes acidosis worse"
+      ],
+      "answer": 1,
+      "explain": "Hyperventilation BLOWS OFF CO2, which RAISES blood pH. Less CO2 in blood = less carbonic acid = higher (less acidic) pH. It's not a cure, but it's an emergency compensation while the underlying problem (diabetic ketoacidosis, renal failure, etc.) is treated.",
+      "wrongExplains": {
+        "0": "Oxygen doesn't directly buffer acid. The key is removing CO2. While more O2 enters with deep breathing, the therapeutic benefit is CO2 removal.",
+        "2": "The kidneys compensate for acidosis by excreting acid and retaining bicarbonate, but that takes hours to days. Kussmaul breathing provides immediate respiratory compensation.",
+        "3": "Kussmaul breathing HELPS by raising pH through CO2 removal. If the patient couldn't hyperventilate, the acidosis would be even worse (lower pH)."
+      }
+    },
+    {
+      "id": "900.5.77.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Look at this equation!' Ms. Frizzle writes: 'CO2 + H2O ↔ H2CO3 ↔ H+ + HCO3-. When you blow off CO2, the equation shifts LEFT, consuming H+ ions. Less H+ = higher pH!'",
+      "q": "The chemical equation CO2 + H2O ↔ H2CO3 ↔ H+ + HCO3- shows that removing CO2:",
+      "options": [
+        "Increases H+ concentration (lowers pH)",
+        "Has no effect on pH",
+        "Decreases H+ concentration (raises pH)",
+        "Only affects bicarbonate, not pH"
+      ],
+      "answer": 2,
+      "explain": "Removing CO2 DECREASES H+ concentration (RAISES pH). By Le Chatelier's principle, removing CO2 shifts the equation left, consuming H+ ions. Fewer H+ ions = less acidic = higher pH. This is why hyperventilation compensates for acidosis.",
+      "wrongExplains": {
+        "0": "This would be ADDING CO2, not removing it. More CO2 → more H2CO3 → more H+ → lower pH. Kussmaul breathing does the OPPOSITE.",
+        "1": "CO2 is directly linked to pH through this equation. Changing CO2 MUST affect pH - it's basic chemistry.",
+        "3": "The equation shows CO2 is in equilibrium with H+ (acid). Removing CO2 shifts the equilibrium and MUST affect both bicarbonate AND pH."
+      }
+    },
+    {
+      "id": "900.5.77.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "Back in the ER, Ms. Frizzle asks Mr. Edgar: 'What causes metabolic acidosis?' 'In this patient, diabetic ketoacidosis - her blood sugar is 450 and she has ketones. Also seen in renal failure and severe diarrhea.'",
+      "q": "Kussmaul breathing is classically associated with which condition?",
+      "options": [
+        "Asthma attack",
+        "Diabetic ketoacidosis (DKA)",
+        "Pulmonary embolism",
+        "Heart failure"
+      ],
+      "answer": 1,
+      "explain": "Kussmaul breathing is CLASSICALLY associated with DIABETIC KETOACIDOSIS (DKA). Without insulin, the body burns fat, producing acidic ketones. The resulting metabolic acidosis triggers the characteristic deep, rapid breathing. It's so classic that Kussmaul breathing in a diabetic patient = DKA until proven otherwise.",
+      "wrongExplains": {
+        "0": "Asthma causes wheezing and difficulty exhaling due to bronchoconstriction, not Kussmaul breathing. Asthma doesn't cause metabolic acidosis.",
+        "2": "Pulmonary embolism causes sudden shortness of breath and rapid shallow breathing (tachypnea), not the deep regular pattern of Kussmaul breathing.",
+        "3": "Heart failure can cause various breathing patterns (tachypnea, orthopnea, Cheyne-Stokes), but not Kussmaul breathing unless severe acidosis develops."
+      }
+    },
+    {
+      "id": "900.5.77.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "'The good news,' Mr. Edgar explains, 'is that Kussmaul breathing tells me her respiratory system is WORKING to compensate. If we treat the DKA with insulin and fluids, this breathing pattern will resolve.'",
+      "q": "What does the presence of Kussmaul breathing indicate about the patient's respiratory system?",
+      "options": [
+        "The lungs are diseased and failing",
+        "The respiratory muscles are paralyzed",
+        "The respiratory system is intact and compensating for metabolic acidosis",
+        "The patient is having a panic attack"
+      ],
+      "answer": 2,
+      "explain": "Kussmaul breathing shows the respiratory system is INTACT and WORKING HARD to compensate for metabolic acidosis. The lungs themselves are healthy - this is a central drive problem, not a lung disease. The patient CAN hyperventilate because lungs and muscles function normally.",
+      "wrongExplains": {
+        "0": "The lungs are HEALTHY in Kussmaul breathing - that's why the patient can achieve such deep, rapid ventilation. Diseased lungs couldn't maintain this breathing pattern.",
+        "1": "Paralyzed muscles couldn't produce the deep, forceful breaths of Kussmaul breathing. This pattern requires strong, coordinated respiratory muscle function.",
+        "3": "Panic attacks cause hyperventilation due to anxiety (respiratory alkalosis). Kussmaul breathing is a physiological response to metabolic acidosis detected by chemoreceptors, not psychological."
+      }
+    },
+    {
+      "id": "900.5.77.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "'Class, remember Adolf Kussmaul - the German physician who described this in 1874 while studying diabetic coma patients,' Ms. Frizzle says. 'His name lives on every time we recognize this life-saving breathing pattern!'",
+      "q": "If Kussmaul breathing suddenly STOPS in a patient with DKA, this likely indicates:",
+      "options": [
+        "The patient has recovered completely",
+        "Treatment is working well",
+        "Respiratory fatigue or worsening condition (ominous sign)",
+        "The patient is sleeping peacefully"
+      ],
+      "answer": 2,
+      "explain": "Sudden cessation of Kussmaul breathing is an OMINOUS SIGN - it likely means respiratory muscle FATIGUE or deteriorating consciousness. The patient can no longer maintain the compensatory hyperventilation, so pH will plummet. This requires immediate intervention (possible intubation). Don't confuse stopping with improvement!",
+      "wrongExplains": {
+        "0": "Recovery from DKA is gradual - Kussmaul breathing should slow down progressively as pH normalizes. SUDDEN stopping suggests exhaustion or worsening, not recovery.",
+        "1": "When treatment works, Kussmaul breathing gradually decreases as acidosis corrects. Abrupt cessation suggests the patient can't MAINTAIN the effort, which is dangerous.",
+        "3": "A patient with severe DKA can't 'sleep peacefully' - the acidosis creates intense air hunger. If they stop breathing deeply, they're likely losing consciousness (bad sign)."
+      }
+    }
+  ]
+}

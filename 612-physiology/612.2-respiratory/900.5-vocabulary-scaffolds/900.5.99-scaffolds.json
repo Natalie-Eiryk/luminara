@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.99",
+  "parentQuestion": "Infant respiratory distress syndrome (RDS) is caused by:",
+  "narrative": {
+    "setting": "The Magic School Bus has shrunk to enter the lungs of a premature infant - little Maya, born at 28 weeks. Her alveoli look like they're fighting to stay open, collapsing with each breath. The surface tension is enormous. Ms. Frizzle's voice is urgent: 'Maya's lungs haven't developed enough surfactant yet. Every breath is a battle against surface tension. If we don't understand this deficiency, we can't save her.'",
+    "character": "Baby Maya (premature infant)",
+    "tension": "Maya's oxygen saturation is dropping. Each breath becomes harder. Understanding RDS could guide life-saving treatment."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.99.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "Ms. Frizzle projects a calendar showing Maya's gestational age. 'RDS - Respiratory Distress Syndrome. Three words that tell the story of premature lungs.'",
+      "q": "The term 'respiratory distress' indicates:",
+      "options": [
+        "Normal, easy breathing",
+        "Difficulty breathing / labored respiration",
+        "Breath-holding",
+        "Excessive oxygen"
+      ],
+      "answer": 1,
+      "explain": "'DISTRESS' = difficulty, struggle, suffering. Respiratory distress = LABORED BREATHING. Signs: rapid breathing, grunting, nasal flaring, retractions (pulling in between ribs), cyanosis. The infant is working hard to breathe.",
+      "wrongExplains": {
+        "0": "Distress means difficulty, not ease. Normal breathing is unlabored, quiet, effortless.",
+        "2": "Breath-holding is apnea. Distress means struggling TO breathe, not stopping breathing.",
+        "3": "Distress isn't about oxygen levels (though they drop). It's about difficulty/effort of breathing."
+      }
+    },
+    {
+      "id": "900.5.99.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "You watch Maya take a breath. Her tiny chest wall retracts, pulling inward between the ribs. Her nostrils flare. She grunts with each exhale. 'Classic signs,' Ms. Frizzle notes.",
+      "q": "Which is a classic sign of respiratory distress in infants?",
+      "options": [
+        "Slow, deep breathing",
+        "Intercostal retractions and grunting",
+        "Pink skin color",
+        "Sleeping peacefully"
+      ],
+      "answer": 1,
+      "explain": "RETRACTIONS (chest wall sucking in), GRUNTING (exhaling against partially closed glottis to maintain pressure), nasal flaring, tachypnea (rapid breathing), cyanosis. The infant is using accessory muscles and physiological tricks to try to maintain oxygenation.",
+      "wrongExplains": {
+        "0": "Distressed infants breathe FAST and shallow (tachypnea), not slow and deep.",
+        "2": "Pink skin means good oxygenation. Distressed infants often have cyanosis (blue/purple tint).",
+        "3": "Distressed infants are agitated, struggling. They can't sleep peacefully when they can't breathe."
+      }
+    },
+    {
+      "id": "900.5.99.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "Ms. Frizzle pulls up a timeline of lung development. 'Surfactant production begins around 24 weeks but isn't sufficient until 34-36 weeks. Maya at 28 weeks is right in the danger zone.'",
+      "q": "Infant RDS primarily affects:",
+      "options": [
+        "Full-term infants (40 weeks)",
+        "Premature infants (especially < 34 weeks)",
+        "Only infants born after 42 weeks",
+        "Infants with heart defects"
+      ],
+      "answer": 1,
+      "explain": "RDS primarily affects PREMATURE infants, especially < 34 weeks gestation. Why? Surfactant-producing type II pneumocytes mature late. The earlier the birth, the higher the risk. Full-term infants rarely develop RDS (unless diabetic mother).",
+      "wrongExplains": {
+        "0": "Full-term infants have adequate surfactant. RDS is a disease of PREMATURITY.",
+        "2": "Post-term infants (> 42 weeks) have mature lungs with plenty of surfactant. RDS is from immaturity.",
+        "3": "Heart defects cause different problems. RDS is specifically a surfactant deficiency issue."
+      }
+    },
+    {
+      "id": "900.5.99.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "Ms. Frizzle zooms into an alveolus. The inner surface should be coated with surfactant, but Maya's alveoli are bare. 'No phospholipid layer,' she warns. 'Surface tension is unopposed.'",
+      "q": "Surfactant is produced by which cells in the alveoli?",
+      "options": [
+        "Type I pneumocytes (gas exchange cells)",
+        "Type II pneumocytes",
+        "Macrophages",
+        "Capillary endothelial cells"
+      ],
+      "answer": 1,
+      "explain": "TYPE II PNEUMOCYTES produce and secrete SURFACTANT. These cuboidal cells line ~5% of alveolar surface but are critical. Type I cells do gas exchange (95% of surface). Type II mature late in gestation - hence RDS in premature infants.",
+      "wrongExplains": {
+        "0": "Type I pneumocytes are thin, flat cells for GAS EXCHANGE. Type II make surfactant.",
+        "2": "Alveolar macrophages eat debris/bacteria. They don't produce surfactant.",
+        "3": "Capillary cells are for blood, not air. Surfactant comes from type II pneumocytes in alveoli."
+      }
+    },
+    {
+      "id": "900.5.99.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "You watch an alveolus without surfactant collapse completely during expiration. 'Surface tension,' Ms. Frizzle explains, pointing to water molecules pulling together on the alveolar surface. 'Without surfactant to reduce it, alveoli collapse.'",
+      "q": "What is the primary function of surfactant?",
+      "options": [
+        "Produce oxygen",
+        "Reduce surface tension to prevent alveolar collapse",
+        "Kill bacteria",
+        "Transport CO2"
+      ],
+      "answer": 1,
+      "explain": "Surfactant (phospholipid + protein) REDUCES SURFACE TENSION at the air-liquid interface in alveoli. Lower surface tension = easier to inflate, prevents collapse during expiration. Without it, alveoli collapse like wet balloons sticking together.",
+      "wrongExplains": {
+        "0": "Surfactant doesn't produce oxygen - that comes from inhaled air. Surfactant keeps alveoli open so gas exchange can happen.",
+        "2": "While surfactant has some antimicrobial properties, its PRIMARY role is reducing surface tension.",
+        "3": "CO2 diffuses passively. Surfactant's job is mechanical - keeping alveoli open."
+      }
+    },
+    {
+      "id": "900.5.99.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "Maya's chest X-ray appears - ground glass opacification, air bronchograms, low lung volumes. 'Atelectasis everywhere,' Ms. Frizzle diagnoses. 'Without surfactant, alveoli can't stay open.'",
+      "q": "In RDS, the lack of surfactant causes:",
+      "options": [
+        "Alveolar hyperinflation",
+        "Widespread atelectasis (alveolar collapse)",
+        "Bronchospasm",
+        "Excessive mucus production"
+      ],
+      "answer": 1,
+      "explain": "No surfactant → HIGH surface tension → alveoli COLLAPSE (ATELECTASIS) → reduced lung compliance → hypoxemia and hypercapnia. It's a vicious cycle: collapse makes breathing harder, which worsens collapse. X-ray shows 'ground glass' appearance.",
+      "wrongExplains": {
+        "0": "RDS causes COLLAPSE (atelectasis), not hyperinflation. The lungs are stiff and underinflated.",
+        "2": "Bronchospasm (airway constriction) is asthma. RDS is alveolar collapse from surface tension.",
+        "3": "RDS isn't primarily a mucus problem. It's a surfactant deficiency causing mechanical collapse."
+      }
+    },
+    {
+      "id": "900.5.99.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Prevention and treatment,' Ms. Frizzle announces. 'We can prevent RDS with maternal steroids before delivery, and treat it with exogenous surfactant after birth. Medicine catching up with biology.'",
+      "q": "How can RDS be prevented if preterm delivery is anticipated?",
+      "options": [
+        "Give antibiotics to the mother",
+        "Give corticosteroids to mother to accelerate fetal lung maturity",
+        "Deliver the baby earlier",
+        "Give oxygen to the mother"
+      ],
+      "answer": 1,
+      "explain": "Maternal CORTICOSTEROIDS (betamethasone, dexamethasone) given 24-48hrs before delivery ACCELERATE fetal lung maturation, including surfactant production. Reduces RDS incidence by ~50%. Standard care for anticipated preterm delivery < 34 weeks.",
+      "wrongExplains": {
+        "0": "Antibiotics treat infection, not lung immaturity. Steroids accelerate surfactant production.",
+        "2": "Delivering EARLIER would worsen RDS risk (less mature lungs). Goal is to delay delivery if possible.",
+        "3": "Maternal oxygen doesn't accelerate lung maturity. Steroids are needed to promote surfactant synthesis."
+      }
+    },
+    {
+      "id": "900.5.99.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "A dose of exogenous surfactant is administered down Maya's endotracheal tube. Within minutes, her oxygen saturation improves. The bus watches collapsed alveoli reinflate. 'Like magic,' Keesha whispers. 'Science,' Ms. Frizzle corrects.",
+      "q": "How is RDS treated after birth?",
+      "options": [
+        "Only observation",
+        "Exogenous surfactant administration and respiratory support",
+        "Antibiotics only",
+        "Bronchodilators"
+      ],
+      "answer": 1,
+      "explain": "RDS treatment: (1) EXOGENOUS SURFACTANT (beractant, poractant) via endotracheal tube, (2) respiratory support (CPAP or mechanical ventilation), (3) oxygen, (4) supportive care. Surfactant replacement is revolutionary - dramatically improves outcomes.",
+      "wrongExplains": {
+        "0": "RDS is life-threatening without treatment. Observation alone is insufficient.",
+        "2": "Antibiotics treat infection (pneumonia). RDS is surfactant deficiency, not infection (though infection can complicate it).",
+        "3": "Bronchodilators treat airway constriction (asthma). RDS is alveolar collapse from surface tension."
+      }
+    },
+    {
+      "id": "900.5.99.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Don't confuse RDS with other causes of neonatal respiratory distress,' Ms. Frizzle warns. 'Transient tachypnea, meconium aspiration, pneumonia - they look similar but need different treatments.'",
+      "q": "How does RDS differ from transient tachypnea of the newborn (TTN)?",
+      "options": [
+        "They are the same condition",
+        "RDS is surfactant deficiency; TTN is retained fetal lung fluid",
+        "RDS is retained fluid; TTN is surfactant deficiency",
+        "Both require surfactant replacement"
+      ],
+      "answer": 1,
+      "explain": "RDS = SURFACTANT DEFICIENCY (premature). TTN = RETAINED FETAL LUNG FLUID (delayed absorption, often after C-section). RDS worsens over 48hrs, needs surfactant. TTN improves in 24-72hrs, self-resolving. Different mechanisms, different courses.",
+      "wrongExplains": {
+        "0": "Different causes! RDS = no surfactant, TTN = excess fluid. Different treatments and timecourses.",
+        "2": "Backwards! RDS is surfactant problem, TTN is fluid clearance problem.",
+        "3": "Only RDS needs surfactant. TTN is self-limited, resolves as fluid is absorbed."
+      }
+    },
+    {
+      "id": "900.5.99.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Maya's lungs are improving. The surfactant is working. Her breathing is less labored. 'She'll need monitoring,' Ms. Frizzle says, 'but the crisis is passing. Now show me you understand what caused this.'",
+      "q": "Infant respiratory distress syndrome (RDS) is caused by:",
+      "options": [
+        "Bacterial infection of the lungs",
+        "Surfactant deficiency in premature lungs",
+        "Congenital heart defects",
+        "Meconium aspiration"
+      ],
+      "answer": 1,
+      "explain": "Infant RDS is caused by SURFACTANT DEFICIENCY in PREMATURE infants. Immature type II pneumocytes can't produce enough surfactant → high surface tension → alveolar collapse (atelectasis) → respiratory distress. Treatment: exogenous surfactant + respiratory support. Prevention: maternal steroids.",
+      "wrongExplains": {
+        "0": "Infection is pneumonia/sepsis. RDS is surfactant deficiency from prematurity, not infection.",
+        "2": "Heart defects cause different problems (cyanosis, heart failure). RDS is a LUNG maturity issue.",
+        "3": "Meconium aspiration is a different neonatal respiratory condition (obstruction + inflammation). RDS is surfactant deficiency."
+      }
+    }
+  ]
+}

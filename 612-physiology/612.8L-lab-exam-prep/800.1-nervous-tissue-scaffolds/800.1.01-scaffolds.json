@@ -1,0 +1,91 @@
+{
+  "parentId": "800.1.01",
+  "parentQuestion": "In a spinal cord smear (multipolar neuron smear), which cell type has a large cell body with multiple processes extending outward?",
+  "scaffolds": [
+    {
+      "q": "What are the two main cell types in nervous tissue?",
+      "options": [
+        "Red cells and white cells",
+        "Neurons and neuroglia (glial cells)",
+        "Epithelial cells and connective tissue",
+        "Muscle cells and nerve fibers"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Nervous tissue has two cell populations: NEURONS (signal transmitters) and NEUROGLIA (support cells). Neurons are the stars of the nervous system; glia are the supporting cast that outnumbers them 10:1.",
+      "wrongExplains": {
+        "0": "Red and white cells are blood cells. Nervous tissue contains neurons and glia.",
+        "2": "Epithelial and connective tissues are different tissue types entirely. Nervous tissue has neurons and glia.",
+        "3": "Muscle cells are in muscular tissue. The nerve fibers you see ARE parts of neurons."
+      }
+    },
+    {
+      "q": "What does 'multipolar' mean when describing a neuron?",
+      "options": [
+        "The neuron has one process",
+        "The neuron has two processes",
+        "The neuron has many processes (multiple dendrites and one axon)",
+        "The neuron has no processes"
+      ],
+      "answer": 2,
+      "difficulty": "foundation",
+      "explain": "MULTIPOLAR = MANY POLES. These neurons have multiple dendrites (receiving branches) plus one axon (sending branch). Most neurons in the brain and spinal cord are multipolar.",
+      "wrongExplains": {
+        "0": "One process would be 'unipolar' — though true unipolar neurons are rare. Multipolar means many.",
+        "1": "Two processes describes 'bipolar' neurons (found in retina and olfactory epithelium). Multipolar means more than two.",
+        "3": "A neuron without processes couldn't communicate. All neurons have at least one process."
+      }
+    },
+    {
+      "q": "What is the large central portion of a neuron called?",
+      "options": [
+        "Axon",
+        "Dendrite",
+        "Cell body (soma)",
+        "Myelin sheath"
+      ],
+      "answer": 2,
+      "difficulty": "foundation",
+      "explain": "The CELL BODY (SOMA) is the neuron's 'headquarters' — containing the nucleus and most organelles. It's the large central portion you see in a neuron smear.",
+      "wrongExplains": {
+        "0": "The axon is a long process extending FROM the cell body — it's not the central portion.",
+        "1": "Dendrites are branching processes that receive signals — they extend from the cell body.",
+        "3": "The myelin sheath wraps around axons — it's not the central cell body."
+      }
+    },
+    {
+      "q": "What are the branching processes that receive signals and bring them toward the cell body?",
+      "options": [
+        "Axons",
+        "Dendrites",
+        "Myelin sheaths",
+        "Synaptic terminals"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "DENDRITES are the 'antenna' branches that RECEIVE signals and conduct them TOWARD the cell body. In multipolar neurons, there are typically many dendrites.",
+      "wrongExplains": {
+        "0": "Axons conduct signals AWAY from the cell body. Dendrites bring signals IN.",
+        "2": "Myelin sheaths are insulation around axons — they don't receive signals.",
+        "3": "Synaptic terminals are at the END of axons where signals are transmitted to the next cell."
+      }
+    },
+    {
+      "q": "In a spinal cord smear, larger cells with multiple radiating processes are most likely:",
+      "options": [
+        "Neuroglia (small supporting cells)",
+        "Multipolar neurons",
+        "Blood vessels",
+        "Connective tissue fibers"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "The LARGER cells with MULTIPLE RADIATING PROCESSES are MULTIPOLAR NEURONS. The smaller cells scattered around them are neuroglia. Size and shape are your key identifiers.",
+      "wrongExplains": {
+        "0": "Neuroglia are smaller supporting cells — the large cells with radiating processes are neurons.",
+        "2": "Blood vessels would appear as tube-like structures with lumens — not star-shaped cells.",
+        "3": "Connective tissue fibers would appear as strands, not star-shaped cells with processes."
+      }
+    }
+  ]
+}

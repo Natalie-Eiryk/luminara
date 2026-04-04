@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.73",
+  "parentQuestion": "Central chemoreceptors respond primarily to:",
+  "narrative": {
+    "setting": "The Magic School Bus crosses the blood-brain barrier into the cerebrospinal fluid surrounding Mr. Edgar's medulla. Ms. Frizzle points at specialized neurons embedded in the ventral surface. 'Central chemoreceptors,' she announces. 'They bathe in CSF, not blood. And they're exquisitely sensitive to ONE thing: hydrogen ions. CO2 from blood crosses the barrier, becomes H+, and these neurons fire like crazy. This is the PRIMARY respiratory drive.'",
+    "character": "Mr. Edgar",
+    "tension": "COPD patients lose CO2 sensitivity and rely on hypoxic drive - give them too much oxygen and they stop breathing. Opioid overdoses suppress these chemoreceptors causing respiratory arrest. Central hyperventilation from brainstem lesions. Understanding central chemoreceptors isn't just neuroanatomy - it's understanding the chemical thermostat that controls every breath we take."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.73.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Chemoreceptors detect chemical changes,' Ms. Frizzle begins. 'Chemo- = chemical. Unlike mechanoreceptors (stretch) or thermoreceptors (temperature), these sense CHEMISTRY - specifically gas levels and pH.'",
+      "q": "Chemoreceptors detect:",
+      "options": [
+        "Mechanical stretch",
+        "Chemical changes (gases, pH)",
+        "Temperature only",
+        "Light"
+      ],
+      "answer": 1,
+      "explain": "CHEMORECEPTORS detect CHEMICAL changes - specifically O2, CO2, and pH. Respiratory chemoreceptors regulate breathing based on blood gas chemistry. Distinct from mechanoreceptors.",
+      "wrongExplains": {
+        "0": "Mechanical stretch is sensed by MECHANORECEPTORS. Chemoreceptors sense chemistry.",
+        "2": "Temperature is sensed by THERMORECEPTORS. Chemoreceptors sense gases/pH.",
+        "3": "Light is sensed by PHOTORECEPTORS (retina). Chemoreceptors sense chemistry."
+      }
+    },
+    {
+      "id": "900.5.73.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Central versus peripheral,' Ms. Frizzle distinguishes. 'CENTRAL chemoreceptors - in brainstem (medulla), surrounded by CSF. PERIPHERAL chemoreceptors - in blood vessels (carotid/aortic bodies), exposed to arterial blood. Different locations, different access to gases.'",
+      "q": "Central chemoreceptors are located in the:",
+      "options": [
+        "Carotid arteries",
+        "Medulla oblongata (brainstem)",
+        "Lungs",
+        "Heart"
+      ],
+      "answer": 1,
+      "explain": "CENTRAL chemoreceptors are in MEDULLA OBLONGATA (brainstem), specifically ventral surface. Bathed in CSF. Contrast with peripheral (carotid/aortic bodies in blood vessels).",
+      "wrongExplains": {
+        "0": "Carotid bodies have PERIPHERAL chemoreceptors. Central are in brainstem.",
+        "2": "Lungs have stretch receptors and irritant receptors. Central chemoreceptors are in medulla.",
+        "3": "Heart has stretch receptors but not the classical central chemoreceptors (in brain)."
+      }
+    },
+    {
+      "id": "900.5.73.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'The blood-brain barrier,' Ms. Frizzle explains. 'It's selectively permeable. CO2 crosses FREELY (lipid soluble). H+ and HCO3- cross SLOWLY (charged). O2 crosses freely but central chemoreceptors don't respond to it. Only peripheral detect O2.'",
+      "q": "Which gas crosses the blood-brain barrier most easily?",
+      "options": [
+        "Oxygen only",
+        "CO2 (carbon dioxide)",
+        "Nitrogen",
+        "Hydrogen ions (H+)"
+      ],
+      "answer": 1,
+      "explain": "CO2 crosses blood-brain barrier FREELY (lipid soluble, non-polar). H+ and HCO3- cross slowly (charged). This is why central chemoreceptors detect CO2/pH, not direct H+ in blood.",
+      "wrongExplains": {
+        "0": "O2 crosses freely but central chemoreceptors don't respond to O2 (peripheral do).",
+        "2": "Nitrogen is inert, doesn't play a role in chemoreception.",
+        "3": "H+ (charged) crosses SLOWLY. CO2 crosses freely and becomes H+ in CSF."
+      }
+    },
+    {
+      "id": "900.5.73.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'The CO2/pH detection mechanism,' Ms. Frizzle diagrams. 'Blood CO2 crosses into CSF → CO2 + H2O → H2CO3 → H+ + HCO3- (via carbonic anhydrase). Central chemoreceptors sense the H+ (pH drop) in CSF. This reflects blood CO2.'",
+      "q": "Central chemoreceptors detect blood CO2 by sensing:",
+      "options": [
+        "CO2 molecules directly in blood",
+        "H+ (pH changes) in cerebrospinal fluid",
+        "Oxygen levels",
+        "Glucose levels"
+      ],
+      "answer": 1,
+      "explain": "Central chemoreceptors detect H+ (pH) in CSF, which reflects blood CO2. CO2 crosses barrier → becomes H+ in CSF → chemoreceptors sense pH drop → stimulate breathing.",
+      "wrongExplains": {
+        "0": "They sense H+ in CSF, not CO2 directly in blood. CO2 is the signal but H+ is what's detected.",
+        "2": "Oxygen is detected by PERIPHERAL chemoreceptors only. Central don't respond to O2.",
+        "3": "Glucose isn't sensed by respiratory chemoreceptors. They detect CO2/pH."
+      }
+    },
+    {
+      "id": "900.5.73.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'CSF has less buffering than blood,' Ms. Frizzle notes. 'Blood has hemoglobin, proteins buffering pH. CSF has minimal buffer. So pH changes in CSF are LARGER for same CO2 change. Central chemoreceptors are very sensitive.'",
+      "q": "Why are central chemoreceptors so sensitive to CO2 changes?",
+      "options": [
+        "CSF has strong buffering",
+        "CSF has minimal buffering, so pH changes are larger",
+        "CSF has no CO2",
+        "CSF is identical to blood"
+      ],
+      "answer": 1,
+      "explain": "CSF has MINIMAL BUFFERING (no hemoglobin/proteins). Same CO2 change → LARGER pH change in CSF than blood. This makes central chemoreceptors exquisitely CO2-sensitive.",
+      "wrongExplains": {
+        "0": "CSF has WEAK buffering. Strong buffering would blunt pH changes.",
+        "2": "CO2 freely crosses into CSF. It's the signal for central chemoreceptors.",
+        "3": "CSF is different - less protein, less buffer, more pH change for same CO2."
+      }
+    },
+    {
+      "id": "900.5.73.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'The response,' Ms. Frizzle shows the pathway. 'Increased CSF H+ (from elevated CO2) → central chemoreceptors fire → medullary respiratory centers activated → INCREASED VENTILATION → blow off CO2 → pH normalizes. Negative feedback.'",
+      "q": "When central chemoreceptors detect high CO2/low pH, the response is:",
+      "options": [
+        "Decreased ventilation",
+        "Increased ventilation to blow off CO2",
+        "Stopped breathing",
+        "Unchanged breathing"
+      ],
+      "answer": 1,
+      "explain": "High CO2 → low pH in CSF → central chemoreceptors fire → INCREASED VENTILATION (deeper/faster breathing) → CO2 eliminated → pH normalized. Primary respiratory drive.",
+      "wrongExplains": {
+        "0": "DECREASED ventilation would worsen CO2/pH. Response is to INCREASE ventilation.",
+        "2": "Breathing doesn't stop - it INCREASES to correct the CO2/pH imbalance.",
+        "3": "High CO2 is potent stimulus. Breathing INCREASES significantly."
+      }
+    },
+    {
+      "id": "900.5.73.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Primary versus peripheral drive,' Ms. Frizzle emphasizes. 'Central chemoreceptors (CO2/pH) are the PRIMARY, minute-to-minute respiratory controller in healthy people. Peripheral (O2) only kicks in when O2 is VERY LOW (<60 mmHg).'",
+      "q": "In healthy people at rest, the primary stimulus for breathing is:",
+      "options": [
+        "Low oxygen",
+        "High CO2 / low pH",
+        "Lung stretch",
+        "Voluntary control"
+      ],
+      "answer": 1,
+      "explain": "PRIMARY breathing stimulus = HIGH CO2 / LOW pH detected by CENTRAL chemoreceptors. This is minute-to-minute control. Low O2 only becomes major stimulus when severely low (<60 mmHg).",
+      "wrongExplains": {
+        "0": "Low O2 DOES stimulate (peripheral) but only when very low. CO2 is primary, moment-to-moment.",
+        "2": "Lung stretch (Hering-Breuer) inhibits overinflation but CO2 is the main drive.",
+        "3": "Voluntary control can override but normal autonomic drive is from CO2."
+      }
+    },
+    {
+      "id": "900.5.73.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'COPD and the hypoxic drive,' Ms. Frizzle warns. 'Chronic CO2 retention → central chemoreceptors adapt (blunted response). These patients rely on LOW O2 (peripheral drive) instead. Give high O2 → remove hypoxic drive → hypoventilation → respiratory failure.'",
+      "q": "In chronic COPD with CO2 retention, patients may rely on:",
+      "options": [
+        "Central CO2 drive (normal)",
+        "Hypoxic drive (low O2) from peripheral chemoreceptors",
+        "No drive at all",
+        "Only voluntary breathing"
+      ],
+      "answer": 1,
+      "explain": "Chronic hypercapnia → central chemoreceptors adapt (blunted). COPD patients rely on HYPOXIC DRIVE (peripheral). High O2 can suppress breathing (remove hypoxic stimulus). Controlled O2 needed.",
+      "wrongExplains": {
+        "0": "Central CO2 drive is BLUNTED in chronic CO2 retention. They switch to hypoxic drive.",
+        "2": "They have drive, just from HYPOXIA (peripheral) instead of CO2 (central).",
+        "3": "Breathing is still involuntary, just driven by O2 (peripheral) not CO2 (central)."
+      }
+    },
+    {
+      "id": "900.5.73.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Central chemoreceptor location specificity,' Ms. Frizzle adds. 'Ventral surface of medulla, near exit of CN IX and X. Bilateral. Lesions here (stroke, tumor) can cause central hypoventilation or hyperventilation depending on damage pattern.'",
+      "q": "Damage to central chemoreceptors in the medulla can cause:",
+      "options": [
+        "Perfect breathing",
+        "Abnormal respiratory drive (hypo- or hyperventilation)",
+        "Only affects vision",
+        "Only affects heart rate"
+      ],
+      "answer": 1,
+      "explain": "Medullary chemoreceptor damage → ABNORMAL RESPIRATORY DRIVE. Hypoventilation (blunted response to CO2) or central hyperventilation (irritative lesion). Can be life-threatening.",
+      "wrongExplains": {
+        "0": "Damage disrupts normal CO2 sensing. Breathing becomes abnormal.",
+        "2": "Vision is CN II (optic nerve). Central chemoreceptors control breathing.",
+        "3": "Heart rate is separate (though both in medulla). Chemoreceptors regulate breathing."
+      }
+    },
+    {
+      "id": "900.5.73.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Ms. Frizzle watches the chemoreceptor neurons bathed in CSF, firing in response to H+ from CO2. 'The minute-to-minute controller. CO2 and pH in cerebrospinal fluid. So, class: what do central chemoreceptors primarily respond to?'",
+      "q": "Central chemoreceptors respond primarily to:",
+      "options": [
+        "Oxygen levels",
+        "CO2/pH changes in cerebrospinal fluid",
+        "Blood pressure",
+        "Lung stretch"
+      ],
+      "answer": 1,
+      "explain": "Central chemoreceptors respond to CO2/pH in CSF. Located in medulla. CO2 crosses blood-brain barrier → becomes H+ in CSF → chemoreceptors detect pH. PRIMARY respiratory drive. Peripheral detect O2.",
+      "wrongExplains": {
+        "0": "Oxygen levels are detected by PERIPHERAL chemoreceptors (carotid/aortic bodies).",
+        "2": "Blood pressure is sensed by baroreceptors in carotid sinus/aortic arch - different system.",
+        "3": "Lung stretch is sensed by pulmonary stretch receptors (Hering-Breuer) - not chemoreceptors."
+      }
+    }
+  ]
+}

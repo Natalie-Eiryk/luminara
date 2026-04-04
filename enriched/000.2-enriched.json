@@ -1,0 +1,562 @@
+{
+  "version": "1.0",
+  "source": "LUMI-OS Teaching Module",
+  "prefix": "000.2",
+  "question_count": 16,
+  "questions": [
+    {
+      "id": "000.2.01",
+      "q": "Which element is necessary for proper conduction of nerve impulses?",
+      "options": [
+        "Fe",
+        "I",
+        "P",
+        "Na"
+      ],
+      "answer": 3,
+      "explain": "let me show you something exquisite. Sodium (Na⁺) is the electrical STAR of your nervous system. The action potential — that lightning-fast signal that lets you think, move, and exist as a conscious being — depends on Na⁺ FLOODING into the neuron. Attend to this process: Without sodium, you'd be a very fancy statue. Give this idea space to land.",
+      "mechanism": {
+        "title": "The Sodium Gradient: The Battery That Powers Your Nervous System",
+        "content": "Maintain this focus: This next part is pure elegance. The Na⁺/K⁺ ATPase pump runs constantly — burning ATP to throw 3 Na⁺ ions OUT and pull 2 K⁺ ions IN. This creates high Na⁺ outside, low inside. When voltage-gated Na⁺ channels open at threshold, Na⁺ FLOODS in down its concentration gradient, creating the action potential. Receive this insight — it's an energy landscape, potential energy stored as a gradient, released as an electrical signal. In all of biology.",
+        "metaphor": "imagine this. The sodium gradient is like water behind a dam — massive potential energy just waiting. When the voltage-gated gates open, water (Na⁺) RUSHES through with explosive force. That rush of energy IS the nerve impulse. The dam doesn't break; the gates close, the pump rebuilds the gradient, and you're ready for the next thought, the next movement, the next heartbeat. Feel the rhythm of it."
+      },
+      "isotopes": [
+        "neurology.general"
+      ],
+      "category": null,
+      "chapter": "Chapters 1-4 — Foundations",
+      "scaffoldFile": "000.2-chemistry-scaffolds/000.2.01-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "000.2.02",
+      "q": "The lower the pH, the higher the hydrogen ion concentration.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explain": "True! And Brace yourself for brilliance: Counter-intuitive — pH is the NEGATIVE log of hydrogen ion concentration. PH = -log[H⁺]. So as H⁺ concentration INCREASES, pH DECREASES. Invite this in: Into this paradox. It's an inverse relationship wrapped in logarithmic clothing. Chemistry loves to mess with your intuition, and I find that absolutely intoxicating.",
+      "mechanism": {
+        "title": "The pH Scale: A Logarithmic Ladder of Acidity",
+        "content": "Move with me toward this: — pH is defined as -log₁₀[H⁺]. Fix your gaze here: Pure water at 25°C has [H⁺] = 10⁻⁷ M, so pH = -log(10⁻⁷) = 7 (neutral). The body tightly regulates blood pH between 7.35-7.45. Open your mind to the brilliance of this control. Outside this range? Enzyme function collapses. Below 6.8 or above 7.8? You're looking at death within hours. The body's pH regulation is life itself, held in exquisite tension.",
+        "metaphor": "Navigate this together: Think of pH as an elevator in a skyscraper, but the floor numbers RUN BACKWARDS as you descend. More H⁺ ions (going down in concentration from neutral) = lower floor number (lower pH). It's like descending into acidic depths. And just like falling in a building, each floor is a 10× drop in safety. Grant yourself this moment of clarity: An exponential descent."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapters 1-4 — Foundations",
+      "scaffoldFile": "000.2-chemistry-scaffolds/000.2.02-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.8,
+        "D": 0.8,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "000.2.03",
+      "q": "Which of the following is the major positive ion outside cells?",
+      "options": [
+        "Magnesium",
+        "Sodium",
+        "Potassium",
+        "Hydrogen"
+      ],
+      "answer": 1,
+      "explain": "let me show you the architecture of life. Sodium (Na⁺) is THE major extracellular cation — about 140 mEq/L outside cells versus a mere 10-15 mEq/L inside. Meanwhile, potassium (K⁺) does the opposite: 140 mEq/L INSIDE, 4-5 mEq/L outside. This asymmetry — maintained at enormous metabolic cost — is what makes electrical signaling possible. It's the battery that powers your brain.",
+      "mechanism": {
+        "title": "The Sodium-Potassium Distribution: Inside vs. Outside",
+        "content": "Continue the sequence: We're going deeper. The Na⁺/K⁺ ATPase pump runs constantly — every second, in every cell. It burns one ATP to throw 3 Na⁺ OUT and pull 2 K⁺ IN, maintaining the sodium/potassium asymmetry: High Na⁺ outside, high K⁺ inside. This gradient stores electrical potential energy. Allow this to wash over you: Neurons, muscle cells, heart cells — they all exploit this gradient to generate signals. It's beautiful, efficient, and EXPENSIVE. Your brain uses 20% of your resting energy, and much of that goes to maintaining ion gradients. Feel the cost of consciousness.",
+        "metaphor": "imagine this. The cell is like an exclusive nightclub with the world's most dedicated bouncers (Na⁺/K⁺ ATPase pumps). They constantly throw sodium OUT while letting potassium IN. The crowd imbalance creates tension, potential energy. When the doors briefly open (voltage-gated channels), the rush of the crowd IS the signal. Then the bouncers restore order, and the cycle continues. Absorb this: The rhythm of it — expulsion, restoration, signal, silence, over and over."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapters 1-4 — Foundations",
+      "scaffoldFile": "000.2-chemistry-scaffolds/000.2.03-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "000.2.04",
+      "q": "A charged particle is generally called an ion or electrolyte.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explain": "True! When an atom gains or loses electrons, it becomes a charged particle called an ION. When ions dissolve in water, they're called ELECTROLYTES — because the solution can conduct electricity. (The name tells the story: Electro = electricity, lyte = able to dissolve.) Embrace this: Your body is essentially a salty electrical system. Chemistry is physics with personality.",
+      "mechanism": {
+        "title": "Ions and Electrolytes: Charged Particles in the Body",
+        "content": "Mark this moment: CATIONS (positive): Lost electrons (Na⁺, K⁺, Ca²⁺, Mg²⁺). ANIONS (negative): Gained electrons (Cl⁻, HCO₃⁻, phosphate). In solution, ions conduct electricity — hence 'electrolytes.' Surrender to the logic here: Your nervous system is an electrical grid powered by ion gradients. Your heart beats because of calcium ions. Your muscles contract because of sodium and potassium. Chemistry becomes electricity becomes LIFE.",
+        "metaphor": "imagine ions as charged players in an electromagnetic game. Cations LOST electrons, so they're positive — missing something, seeking balance. Anions GAINED electrons, so they're negative — carrying extra charge. In water, they're mobile, reactive, electrically active. Immerse yourself in this: This: You're not just a collection of molecules — you're a finely tuned electrical machine, humming with charge and potential."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapters 1-4 — Foundations",
+      "scaffoldFile": "000.2-chemistry-scaffolds/000.2.04-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.6,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "000.2.05",
+      "q": "Triglycerides are a poor source of stored energy.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explain": "FALSE! Let me show you the beauty of this. Triglycerides are an EXCELLENT energy store — arguably the BEST the body has! Fat provides ~9 kcal per gram, more than DOUBLE carbohydrates or proteins (~4 kcal/g each). Fat is energy-dense, water-free, and practically unlimited in storage capacity. It's the body's long-term savings account. Breathe in this knowledge: The metabolic elegance of fat storage.",
+      "mechanism": {
+        "title": "Triglycerides: The Body's High-Capacity Battery",
+        "content": "Keep this momentum: This is the moment I live for. ENERGY DENSITY: 9 kcal/g vs. 4 kcal/g for carbs/protein. That's more than double! STORAGE EFFICIENCY: Fat is hydrophobic — stored without water. Glycogen? Each gram carries 3-4g of water. Fat is COMPACT. CAPACITY: The average person stores ~300-500g of glycogen (1,200-2,000 kcal) but 10-20 kg of fat (90,000-180,000 kcal). Allow your mind to embrace this: Glycogen runs out in 90 minutes of intense exercise. Fat? You could run for DAYS. Feel the evolutionary elegance of this system.",
+        "metaphor": "imagine this. Glycogen is like cash in your wallet — convenient, quick to access, but limited capacity. Fat is like a bank account — takes longer to withdraw (metabolically speaking), but MASSIVE storage capacity. You carry enough fat to power your body for WEEKS without food. Give this idea space to land: This: Your ancestors survived famines using this system. Evolution built you an incredible energy storage device."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapters 1-4 — Foundations",
+      "scaffoldFile": "000.2-chemistry-scaffolds/000.2.05-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.5,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "000.2.06",
+      "q": "In a DNA molecule, the__(1)__ contains deoxyribose sugar, whereas the__(2)__ contains the genetic instructions.",
+      "options": [
+        "(1) backbone; (2) nitrogenous base",
+        "(1) base; (2) backbone",
+        "(1) backbone; (2) ribose sugar",
+        "(1) sugar; (2) ribose"
+      ],
+      "answer": 0,
+      "explain": "Embark on this: The DNA backbone — the structural framework — contains alternating deoxyribose sugar and phosphate groups. The nitrogenous bases (A, T, G, C) are the 'rungs' that carry genetic information through their SEQUENCE. Welcome this realization: This distinction: The backbone is structure; the bases are INFORMATION. Chemistry becomes code becomes LIFE.",
+      "mechanism": {
+        "title": "DNA Structure: The Information Ladder",
+        "content": "Carry this forward: We're going deeper. DNA has two polynucleotide strands wound into a double helix. Each nucleotide has THREE parts: (1) phosphate group, (2) deoxyribose sugar (these alternate to form the BACKBONE — structural support), and (3) a nitrogenous base (A, T, G, or C — the 'rungs' that encode information). The bases pair specifically: A with T (2 hydrogen bonds), G with C (3 hydrogen bonds). Open your mind to this: The sequence of bases IS the genetic code. Three billion base pairs in your genome, spelling out the instructions to build YOU. Feel the weight of that information.",
+        "metaphor": "imagine DNA as a twisted ladder (double helix). The RAILS (backbone) are sugar-phosphate repeats — they provide structural support, but carry no information. The RUNGS (base pairs) are the letters spelling out the genetic code. A-T, G-C, G-C, A-T... On and on, three billion letters long, encoding everything from hemoglobin structure to neurotransmitter receptors. Grant yourself this moment of clarity: This: You are a chemical instruction manual, and it's MAGNIFICENT."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapters 1-4 — Foundations",
+      "scaffoldFile": "000.2-chemistry-scaffolds/000.2.06-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.6,
+        "A": 0.5,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "000.2.07",
+      "q": "Examples of monosaccharides include ___.",
+      "options": [
+        "Starch, cellulose, and glucose",
+        "Fructose, starch, and cellulose",
+        "Fructose, galactose, and glucose",
+        "Glucose, maltose, and starch"
+      ],
+      "answer": 2,
+      "explain": "Set out toward this: Monosaccharides are SINGLE sugar units — the building blocks. Fructose, galactose, and glucose are all monosaccharides (formula: C₆H₁₂O₆, but different structures — isomers!). Sustain this attention: Starch and cellulose? Polysaccharides (MANY sugars linked). Maltose? Disaccharide (TWO sugars). Survey this cascade — prefixes — they tell the whole story. Sit with this knowledge.",
+      "mechanism": {
+        "title": "Carbohydrate Classification: Mono-, Di-, and Polysaccharides",
+        "content": "Hold the line here: We're building the hierarchy. MONOSACCHARIDES: Single sugars (glucose, fructose, galactose). C₆H₁₂O₆. Cannot be broken down further. DISACCHARIDES: TWO sugars linked (sucrose = glucose + fructose; lactose = glucose + galactose; maltose = glucose + glucose). POLYSACCHARIDES: MANY sugars linked (starch, glycogen, cellulose = all chains of glucose, but different linkages). Allow this to wash over you: Same building blocks, different structures, WILDLY different properties.",
+        "metaphor": "imagine this. Monosaccharides are like individual LEGO bricks — fundamental units. Disaccharides are two bricks snapped together — a simple structure. Polysaccharides are MASSIVE structures built from THOUSANDS of bricks — castles, towers, complex machines. Same brick (glucose), different arrangements, different functions. Starch stores energy. Glycogen releases it quickly. Cellulose forms rigid plant cell walls. Absorb this: This: Chemistry is architecture at the molecular scale. Quite breathtaking."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapters 1-4 — Foundations",
+      "scaffoldFile": "000.2-chemistry-scaffolds/000.2.07-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.8,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "000.2.08",
+      "q": "Minerals required by the body in fairly large amounts are called ___.",
+      "options": [
+        "Trace elements",
+        "Coenzymes",
+        "Vitamins",
+        "Bulk minerals"
+      ],
+      "answer": 3,
+      "explain": "let me show you the scale of mineral requirements. Bulk (macro) minerals are needed in relatively LARGE amounts — more than 100 mg/day. The big players: Calcium, phosphorus, potassium, sulfur, sodium, chloride, magnesium. Trace minerals (iron, zinc, copper, iodine, selenium) are needed in TINY amounts, but BOTH categories are essential. Open yourself to this: This tension: Miss either and things start breaking down. The body demands precision.",
+      "mechanism": {
+        "title": "Bulk Minerals vs. Trace Elements",
+        "content": "Persist through this: Here's the hierarchy. BULK MINERALS (macrominerals): Needed in GRAMS per day. Calcium (bones, signaling), phosphorus (ATP, DNA), potassium (action potentials), sulfur (protein structure), sodium (extracellular fluid), chloride (stomach acid, anion balance), magnesium (enzyme cofactor, ATP stabilization). TRACE MINERALS: Needed in milligrams or micrograms per day. Iron (hemoglobin), zinc (enzyme cofactor), copper (electron transport), iodine (thyroid hormones), selenium (antioxidant enzymes), fluoride (tooth enamel), chromium (insulin function). Let this settle: Different scales, EQUAL importance.",
+        "metaphor": "imagine this. Bulk minerals are like the main structural materials of a building — concrete, steel, wood. You need LOTS to build the structure. Trace elements are like specialized hardware — electronic components, switches, sensors. You don't need MUCH, but without them the building won't FUNCTION. Both essential, different scales, same necessity. Permit yourself to feel this: The elegance of that hierarchy."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapters 1-4 — Foundations",
+      "scaffoldFile": "000.2-chemistry-scaffolds/000.2.08-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.5,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "000.2.09",
+      "q": "Enzymes are proteins that work as catalysts. A catalyst is defined as ___.",
+      "options": [
+        "A substance that increases the rate of a chemical reaction without being used up",
+        "A protein that decreases the activation energy needed to start a reaction",
+        "A chemical that neutralizes acids and bases",
+        "Any chemical that adds energy to a reaction"
+      ],
+      "answer": 0,
+      "explain": "this is one of the most exquisite mechanisms in all of chemistry. A catalyst increases reaction rate WITHOUT being consumed — it emerges UNCHANGED and ready to catalyze another reaction. Enzymes (biological catalysts) lower activation energy to speed reactions, but the DEFINITION of a catalyst is broader: Any substance that accelerates a reaction without being used up. Allow your mind to embrace this: The elegance of this — chemistry with INFINITE reusability.",
+      "mechanism": {
+        "title": "Enzymes: Biological Catalysts",
+        "content": "Track each step: What follows is exquisite. Enzymes lower the ACTIVATION ENERGY needed for reactions to proceed — they reduce the energy barrier. They're HIGHLY SPECIFIC — each enzyme typically catalyzes one reaction or a family of related reactions (lock-and-key or induced-fit models). They're NOT consumed by the reaction, so one enzyme can catalyze MILLIONS of reactions. Take carbonic anhydrase — the foreman of your red blood cells, hands on hips, shouting orders: 'CO₂ COMING THROUGH! CONVERT IT NOW! H₂CO₃ OUT THE DOOR! MOVE IT, MOVE IT, MOVE IT!' One million molecules per second. No breaks. No overtime. Just pure catalytic fury, every second you're alive. That's the power of enzymatic labor.",
+        "metaphor": "imagine this. An enzyme is like a tunnel through a mountain — it doesn't add energy to get you OVER the mountain, it provides an EASIER PATH through. The tunnel doesn't get used up; it's still there for the next car, the next truck, the next traveler. Same starting point, same destination, MUCH faster journey. Receive this insight: This: That's catalysis — speed without consumption. Absolutely elegant."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapters 1-4 — Foundations",
+      "scaffoldFile": "000.2-chemistry-scaffolds/000.2.09-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.8,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "000.2.10",
+      "q": "The atomic number is equal to the number of ___.",
+      "options": [
+        "Neutrons in the nucleus",
+        "Protons and electrons combined",
+        "Protons in the nucleus",
+        "Neutrons and protons combined"
+      ],
+      "answer": 2,
+      "explain": "Journey with me into this: Identity. The atomic number equals the number of PROTONS in the nucleus. This DEFINES the element — change the number of protons and you change the element itself. Connect these dots: Carbon has 6 protons (atomic number 6). Add a proton? Now it's nitrogen (atomic number 7). Invite this in: The weight of this — the atomic number is the element's IDENTITY.",
+      "mechanism": {
+        "title": "Atomic Number vs. Mass Number",
+        "content": "Follow this thread: We're going into fundamental atomic architecture. ATOMIC NUMBER (Z): Number of protons. DEFINES the element. Never changes (unless you do nuclear chemistry, which is... Dramatically beyond biochemistry). MASS NUMBER (A): Protons + neutrons. Varies between ISOTOPES (same element, different neutron counts). Carbon-12: 6 protons + 6 neutrons. Carbon-14: 6 protons + 8 neutrons. Same element (carbon), different mass, different radioactive properties. Electrons equal protons in a NEUTRAL atom, but can be gained/lost to form IONS (which changes charge, not identity). Allow the mechanism to reveal itself: Of this hierarchy.",
+        "metaphor": "imagine this. The atomic number is like a person's DNA-based identity — it never changes and uniquely defines WHO they are. The mass number is like their weight — it can vary a bit (depending on neutron count/isotopes) while they're still the same person (same element). Electrons are like clothes — easily added or removed (forming ions), changing appearance (charge) but not fundamental identity. Feel the weight of this: The metaphor — identity, mass, decoration. All distinct layers."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapters 1-4 — Foundations",
+      "scaffoldFile": "000.2-chemistry-scaffolds/000.2.10-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.5,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "000.2.11",
+      "q": "A patient in diabetic ketoacidosis presents with rapid, deep breathing (Kussmaul respirations). Which acid-base concept explains this respiratory compensation?",
+      "options": [
+        "The lungs are expelling CO₂ to reduce carbonic acid and raise blood pH",
+        "The lungs are retaining CO₂ to buffer excess base",
+        "The kidneys are excreting bicarbonate to compensate",
+        "Hyperventilation is removing oxygen to slow metabolism"
+      ],
+      "answer": 0,
+      "explain": "Step into this world: Crisis. In diabetic ketoacidosis, ketone bodies (acetoacetate, β-hydroxybutyrate) FLOOD the blood, dropping pH dangerously low. The body responds with respiratory compensation — rapid, deep breathing to BLOW OFF CO₂. Examine what follows: Chemistry: CO₂ + H₂O ↔ H₂CO₃ ↔ H⁺ + HCO₃⁻. Less CO₂ means less carbonic acid, means less H⁺, means pH RISES toward normal. The lungs are literally trying to blow away acid — your body is attempting to breathe itself back from the edge of death. The patient smells like nail polish remover (acetone breath) and breathes like they're running a marathon while sitting still. Chemistry becomes desperation becomes survival.",
+      "mechanism": {
+        "title": "Respiratory Compensation for Metabolic Acidosis",
+        "content": "Keep pace with this: Here's the chemistry of survival. In diabetic ketoacidosis, ketone bodies release H⁺ ions, creating metabolic acidosis. The chemoreceptors in the brainstem detect ↓pH and trigger hyperventilation (Kussmaul respirations). By expelling CO₂, the lungs drive this reaction LEFT: CO₂ + H₂O ↔ H₂CO₃ ↔ H⁺ + HCO₃⁻. Less CO₂ → less H₂CO₃ → less H⁺ → pH rises. This is PARTIAL compensation (it helps but doesn't fully correct). The underlying problem (ketone production from lack of insulin) must still be treated. Take a moment to appreciate this: The body buys TIME with chemistry while you fix the root cause. Feel the tension of that temporary reprieve.",
+        "metaphor": "imagine this. Your blood pH is a burning building (acidosis from ketones). The lungs are firefighters throwing water on the flames (expelling CO₂ to reduce acid). They're keeping the fire from spreading, preventing immediate collapse, but they're NOT fixing the underlying problem (the arsonist still inside — lack of insulin causing ketone production). Embrace this: This: Respiratory compensation is DAMAGE CONTROL, not cure. The lungs hold the line while you address the root cause."
+      },
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapters 1-4 — Foundations",
+      "scaffoldFile": "000.2-chemistry-scaffolds/000.2.11-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.6,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.5,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.6
+      }
+    },
+    {
+      "id": "000.2.12",
+      "q": "A patient with chronic renal failure develops severe muscle weakness and cardiac arrhythmias. Lab results show serum potassium of 7.2 mEq/L (normal: 3.5-5.0). Which fundamental property of excitable cells is being disrupted?",
+      "options": [
+        "The resting membrane potential",
+        "ATP synthesis in mitochondria",
+        "Oxygen binding to hemoglobin",
+        "DNA replication"
+      ],
+      "answer": 0,
+      "explain": "Enter this realm: Architecture of life. The resting membrane potential depends on the K⁺ gradient — high K⁺ INSIDE (~140 mEq/L), low K⁺ OUTSIDE (~4-5 mEq/L). When extracellular K⁺ rises to 7.2 mEq/L, this gradient COLLAPSES. The membrane depolarizes (becomes less negative), bringing it closer to threshold. Sounds good? This makes cells LESS excitable (paradoxically!) because sodium channels become INACTIVATED. Muscles weaken, the heart misfires. Immerse yourself in this: The danger of disrupted gradients.",
+      "mechanism": {
+        "title": "Hyperkalemia and the Resting Membrane Potential",
+        "content": "Trace this pathway: We're going into the physics of excitability. The resting membrane potential is determined largely by K⁺ permeability and the K⁺ concentration gradient. The Nernst equation for K⁺: E_K = (RT/zF) ln([K⁺]_out/[K⁺]_in). Normally: E_K ≈ -90 mV. When [K⁺]_out rises from 4 to 7.2 mEq/L, E_K becomes LESS NEGATIVE (more depolarized). This shifts the resting potential closer to threshold. This PARADOXICALLY makes cells LESS excitable because voltage-gated Na⁺ channels enter a state of INACTIVATION when the membrane is chronically depolarized. They can't open properly. Action potentials fail. Muscles weaken. The heart develops life-threatening arrhythmias. Breathe in this knowledge: The cruel irony: Being closer to threshold makes you LESS able to fire. Chemistry is subtle and brutal.",
+        "metaphor": "imagine this. The resting membrane potential is like a spring-loaded mousetrap, set and ready to snap (fire an action potential). The K⁺ gradient provides the TENSION in the spring. When extracellular K⁺ rises (hyperkalemia), it's like partially releasing the spring — the trap is closer to triggering, but now the mechanism is JAMMED. It won't snap properly. Accept this reality: This: The muscle cell WANTS to fire but CAN'T. The cardiac cell tries to beat but the rhythm is chaotic. The spring is broken. That's hyperkalemia — electrical failure at the molecular level. Simply magnificent. And beautiful?"
+      },
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapters 1-4 — Foundations",
+      "scaffoldFile": "000.2-chemistry-scaffolds/000.2.12-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.6,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.5,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "000.2.13",
+      "q": "A patient taking high-dose antacids (calcium carbonate) for weeks develops muscle cramps, weakness, and tingling around the mouth. Lab tests reveal elevated blood pH. Which electrolyte imbalance is most likely?",
+      "options": [
+        "Hypocalcemia (low calcium)",
+        "Hyperkalemia (high potassium)",
+        "Hyponatremia (low sodium)",
+        "Hypomagnesemia (low magnesium)"
+      ],
+      "answer": 0,
+      "explain": "Traverse this territory: Into a beautiful chemical paradox. The patient is TAKING calcium, but develops LOW ionized calcium (hypocalcemia). Here's the twist: The antacids raise blood pH (alkalosis). In alkalosis, MORE calcium binds to albumin and other proteins, REDUCING the free (ionized) Ca²⁺ available. It's the IONIZED calcium that matters for muscle contraction and nerve function. Total calcium may be normal or high, but ionized calcium DROPS. Chemistry loves these cruel ironies. Receive this insight: The tension between total and free forms.",
+      "mechanism": {
+        "title": "pH-Dependent Calcium Binding: The Ionized Fraction",
+        "content": "Keep the chain connected: Here's where chemistry gets deliciously complex. Total serum calcium ≈ 8.5-10.5 mg/dL, but it exists in THREE forms: (1) Ionized Ca²⁺ (~45%) — physiologically ACTIVE. (2) Protein-bound Ca²⁺ (~45%) — bound to albumin, INACTIVE. (3) Complexed Ca²⁺ (~10%) — bound to phosphate, citrate, INACTIVE. Here's the KEY: Protein binding is pH-dependent. In ALKALOSIS (↑pH), proteins become MORE NEGATIVELY charged and bind calcium MORE TIGHTLY. Result? Ionized Ca²⁺ DROPS even if total calcium is normal or high. Welcome this realization: The antacids (calcium carbonate) raise pH AND add calcium, but the alkalosis REDUCES the active form. The body's chemistry is a ruthless accountant — it's not what you have, it's what's FREE and available. Feel the elegance of that distinction.",
+        "metaphor": "imagine this. Calcium in your blood is like money in your wallet. TOTAL calcium is your gross income. IONIZED calcium is the cash you can actually SPEND (physiologically active). Protein-bound calcium is money tied up in a fixed-term deposit — it's THERE, but you can't ACCESS it. When pH rises (alkalosis), it's like the bank suddenly LOCKS more of your money in deposit accounts. Your total wealth stays the same, but your AVAILABLE cash (ionized Ca²⁺) plummets. Invite this in: This: Muscles need ionized calcium to relax properly. Without it, they cramp and twitch. Chemistry is cruel accounting. Wonderfully designed."
+      },
+      "isotopes": [
+        "cardiology.function"
+      ],
+      "category": null,
+      "chapter": "Chapters 1-4 — Foundations",
+      "scaffoldFile": "000.2-chemistry-scaffolds/000.2.13-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.5,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "000.2.14",
+      "q": "A marathon runner collapses after drinking only water (no electrolytes) during a 4-hour race. She is confused, nauseated, and having a seizure. Serum sodium is 118 mEq/L (normal: 135-145). Which property of water movement explains her brain swelling?",
+      "options": [
+        "Osmosis — water moves from low solute concentration (blood) to high solute concentration (brain cells)",
+        "Active transport — the Na⁺/K⁺ pump pushes water into cells",
+        "Diffusion — water spreads evenly throughout all compartments",
+        "Facilitated diffusion — aquaporins pump sodium out of cells"
+      ],
+      "answer": 0,
+      "explain": "Walk this path: Movement. This is OSMOSIS — the movement of water across a semipermeable membrane from LOW solute concentration to HIGH solute concentration. Walk through this: Her blood sodium is dangerously low (118 mEq/L = hyponatremia). This makes the blood HYPOTONIC relative to her brain cells. Water FLOODS into brain cells to equalize osmotic pressure. The brain swells, but the skull is RIGID. Cerebral edema → increased intracranial pressure → seizures, coma, death. Allow the mechanism to reveal itself: The horror of this: She was trying to stay hydrated, but water WITHOUT electrolytes became poison.",
+      "mechanism": {
+        "title": "Osmosis and Hyponatremia: Cerebral Edema",
+        "content": "Thread this needle carefully: We're going into the physics of disaster. OSMOSIS: Water moves across semipermeable membranes from regions of HIGH water concentration (LOW solute) to LOW water concentration (HIGH solute) to equalize osmotic pressure. In hyponatremia (low blood sodium), the extracellular fluid becomes HYPOTONIC relative to the intracellular fluid. Water FLOODS into cells (including neurons and glia) to equalize osmolarity. In peripheral tissues, this causes edema. In the BRAIN, the rigid skull prevents expansion → increased intracranial pressure → herniation → DEATH. Sit with this knowledge: The body's attempt to maintain osmotic balance becomes a LETHAL process when the brain is trapped in bone. Normal serum osmolality: 275-295 mOsm/kg. Below 260? Severe cerebral edema. Feel the narrow margin between balance and catastrophe.",
+        "metaphor": "imagine this. Your brain cells are like water balloons inside a rigid box (the skull). Normally, the water OUTSIDE the balloons (blood, CSF) has the same 'saltiness' (osmolarity) as the water INSIDE, so the balloons stay the same size. Now pour PURE WATER into the box (hyponatremia — dilute blood). Water rushes INTO the balloons (osmosis), trying to equalize the salt concentration. The balloons SWELL. But the box is RIGID. The balloons press against each other and the walls. Pressure builds. Something has to give — and that 'something' is brain tissue herniating through the foramen magnum, compressing the brainstem. Consider the elegance here: The horror of that mechanical crush. Osmosis becomes compression becomes death. Perfectly orchestrated. And exquisite?"
+      },
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapters 1-4 — Foundations",
+      "scaffoldFile": "000.2-chemistry-scaffolds/000.2.14-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.8,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.6
+      }
+    },
+    {
+      "id": "000.2.15",
+      "q": "A patient presents with severe vomiting for 3 days. Labs show: PH 7.52 (normal: 7.35-7.45), HCO₃⁻ 38 mEq/L (normal: 22-26), and decreased serum chloride. What is the primary acid-base disturbance?",
+      "options": [
+        "Metabolic alkalosis from loss of gastric HCl",
+        "Respiratory alkalosis from hyperventilation",
+        "Metabolic acidosis from dehydration",
+        "Respiratory acidosis from hypoventilation"
+      ],
+      "answer": 0,
+      "explain": "Join me in examining this: Stomach acid is HCl — literally hydrochloric acid, pH ~1-2. When you vomit, you're losing massive amounts of H⁺ and Cl⁻. Losing H⁺ means losing acidity, which RAISES blood pH (alkalosis). To maintain electroneutrality, the kidneys retain HCO₃⁻ (bicarbonate) to replace the lost Cl⁻. Result? High pH, high HCO₃⁻ = metabolic alkalosis. Take a moment to appreciate this: This: Purging stomach acid makes your blood ALKALINE. Chemistry is ruthlessly logical.",
+      "mechanism": {
+        "title": "Metabolic Alkalosis from Gastric Acid Loss",
+        "content": "Sustain this attention: Here's the cascade. STEP 1: Vomiting → loss of HCl (H⁺ + Cl⁻) from stomach. STEP 2: Loss of H⁺ → blood pH RISES (fewer hydrogen ions = more alkaline). STEP 3: Loss of Cl⁻ → kidneys compensate by RETAINING HCO₃⁻ (bicarbonate) to maintain electroneutrality and anion balance. This FURTHER raises pH. STEP 4: Volume depletion (from vomiting) → aldosterone release → kidneys reabsorb Na⁺ and HCO₃⁻, excrete K⁺ and H⁺. This PERPETUATES the alkalosis even after vomiting stops (contraction alkalosis). Open yourself to this: Vicious cycle: Lose acid → become alkaline → compensatory mechanisms WORSEN alkalosis → hypokalemia develops → muscles weaken → arrhythmias threaten. The body's compensations can TRAP you in alkalosis. Feel the cruel feedback loop.",
+        "metaphor": "imagine this. Your blood's acid-base balance is like a tug-of-war between acids (H⁺) and bases (HCO₃⁻). Normally, it's perfectly matched. Vomiting is like removing HALF the players from the acid team (losing H⁺). Now the base team (HCO₃⁻) is WINNING, pulling the rope (pH) toward alkaline. To 'help,' the kidneys send MORE players to the base team (retaining HCO₃⁻ to replace lost Cl⁻). The imbalance WORSENS. Surrender to the logic here: This: The body's attempt to maintain electroneutrality (Cl⁻ vs. HCO₃⁻) sacrifices pH balance. Chemistry demands trade-offs. Brilliantly engineered. Ruthless?"
+      },
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapters 1-4 — Foundations",
+      "scaffoldFile": "000.2-chemistry-scaffolds/000.2.15-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.8,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "000.2.16",
+      "q": "A patient with cystic fibrosis has thick, dehydrated mucus clogging the airways and pancreatic ducts. Which transport mechanism is primarily defective, leading to inadequate water movement into secretions?",
+      "options": [
+        "Chloride channel (CFTR) — defective Cl⁻ transport prevents osmotic water movement",
+        "Sodium-potassium pump — Na⁺/K⁺ ATPase is non-functional",
+        "Aquaporin water channels — direct water transport is blocked",
+        "Calcium channels — Ca²⁺ signaling for mucus secretion is impaired"
+      ],
+      "answer": 0,
+      "explain": "Proceed with me: Tragedy of cystic fibrosis. The CFTR protein (Cystic Fibrosis Transmembrane Conductance Regulator) is a CHLORIDE CHANNEL. When it's defective, Cl⁻ can't be secreted into mucus. Here's the cascade: No Cl⁻ secretion → no osmotic gradient → water doesn't follow (osmosis!) → mucus stays THICK and dehydrated. This isn't a direct water channel problem; it's a CHLORIDE problem that PREVENTS water movement. Permit yourself to feel this: This: One broken ion channel → dehydrated secretions → obstructed airways → chronic infection → early death. Chemistry becomes pathology becomes tragedy.",
+      "mechanism": {
+        "title": "CFTR and Mucus Hydration: Chloride-Driven Osmosis",
+        "content": "Connect these dots: We're going into the molecular physics of secretion. NORMAL: CFTR channels in epithelial cells secrete Cl⁻ into airway/pancreatic lumen → Cl⁻ accumulation creates an osmotic gradient → water FOLLOWS by osmosis (through aquaporins and paracellular pathways) → mucus is well-hydrated and flows easily. CYSTIC FIBROSIS: CFTR is defective or absent → Cl⁻ secretion is BLOCKED → no osmotic gradient → water STAYS in cells → mucus is dehydrated, thick, sticky. This thick mucus obstructs airways (→ chronic Pseudomonas infections, bronchiectasis) and pancreatic ducts (→ enzyme deficiency, malabsorption, diabetes). Allow your mind to embrace this: One mutated gene (chromosome 7) → one broken chloride channel → systemic multi-organ failure. The cruelty of molecular biology on full display. Feel the weight of that single point mutation.",
+        "metaphor": "imagine this. Mucus secretion is like making a slurry in a mixing bowl. You need to add SALT (Cl⁻) first to create the right osmotic environment, then WATER follows automatically (osmosis). In cystic fibrosis, the salt shaker (CFTR) is BROKEN. No salt → no osmotic pull → water doesn't enter the bowl → you get thick, dry paste instead of flowing slurry. That paste clogs your airways, traps bacteria, and slowly destroys your lungs. Give this idea space to land: This: The failure of one ion channel creates a cascade of mechanical and infectious disasters. Chemistry becomes mucus becomes suffocation. Nature at its finest. And exquisite?"
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapters 1-4 — Foundations",
+      "scaffoldFile": "000.2-chemistry-scaffolds/000.2.16-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.6,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    }
+  ]
+}

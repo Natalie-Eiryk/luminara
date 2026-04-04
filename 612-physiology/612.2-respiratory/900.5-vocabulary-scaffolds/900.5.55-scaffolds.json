@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.55",
+  "parentQuestion": "The external intercostal muscles:",
+  "narrative": {
+    "setting": "The Magic School Bus is positioned between Mr. Edgar's ribs, watching the external intercostal muscles - layers of diagonal muscle fibers connecting rib to rib. Ms. Frizzle points to the fiber direction: downward and forward. 'Class, these are the external intercostals. When they contract, they pull the ribs upward and outward, expanding the chest cavity. They're your auxiliary breathing muscles - not essential like the diaphragm, but they help with deeper breaths. Watch as Mr. Edgar takes a deep breath...'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar has broken ribs from a fall. The external intercostals can't contract properly due to pain and instability. Each breath is shallow and agonizing."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.55.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle traces the muscle fibers with a laser pointer. 'External means OUTER - the superficial layer. There are three layers of intercostal muscles. External is the outermost, closest to the skin. It's the first layer you'd encounter if you went inward from the ribs.'",
+      "q": "What does 'external' mean in anatomical terminology?",
+      "options": [
+        "Inside, deep within the body",
+        "Outside, closer to the surface",
+        "Between two structures",
+        "Behind another structure"
+      ],
+      "answer": 1,
+      "explain": "'External' = OUTER, superficial, closer to the surface. External intercostals are the OUTERMOST layer of the three intercostal muscle layers. They're called external because they're closer to the skin than the internal intercostals beneath them.",
+      "wrongExplains": {
+        "0": "That's 'internal' or 'deep.' External means the opposite - toward the outside.",
+        "2": "That's 'inter-' (between). External means outer, not between.",
+        "3": "That's 'posterior' (behind) or 'dorsal.' External means outer layer."
+      }
+    },
+    {
+      "id": "900.5.55.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "The bus zooms in on the muscle fibers. 'Intercostal - break it down: INTER = between. COSTAL = ribs. Intercostal muscles are literally the muscles BETWEEN the ribs. They fill the spaces, connecting each rib to the next.'",
+      "q": "What does 'intercostal' mean?",
+      "options": [
+        "Around the heart",
+        "Between the ribs",
+        "Inside the lungs",
+        "Near the spine"
+      ],
+      "answer": 1,
+      "explain": "'Inter-' = BETWEEN. 'Costal' = RIBS (from Latin costa = rib). Intercostal = between the ribs. These muscles occupy the intercostal spaces, connecting adjacent ribs. There are 11 pairs on each side (ribs 1-12 have 11 spaces between them).",
+      "wrongExplains": {
+        "0": "That's 'pericardial' (around heart). Intercostal is about ribs, not the heart.",
+        "2": "Lungs don't have muscles inside them. Intercostal muscles are in the rib cage wall.",
+        "3": "Near the spine is 'paravertebral.' Intercostal muscles span between ribs, from sternum toward spine."
+      }
+    },
+    {
+      "id": "900.5.55.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle highlights the fiber direction with colored arrows. 'Look at the angle: downward and forward, like hands in pockets. This direction is critical - when these fibers contract, they lift the ribs UP and OUT. The angle determines the action.'",
+      "q": "In which direction do external intercostal muscle fibers run?",
+      "options": [
+        "Horizontally (straight across)",
+        "Downward and forward (like hands in pockets)",
+        "Upward and backward",
+        "Vertically (straight up and down)"
+      ],
+      "answer": 1,
+      "explain": "External intercostals run DOWNWARD and FORWARD - obliquely, like putting your hands in your pockets. This angle matters: when they contract, the vector of force lifts ribs upward and outward, expanding the chest. The fiber direction determines the mechanical action.",
+      "wrongExplains": {
+        "0": "Horizontal fibers wouldn't change rib angle. The oblique direction is what creates the lifting action.",
+        "2": "That's the INTERNAL intercostals - opposite fiber direction, opposite function (exhalation assist).",
+        "3": "Vertical fibers would just squeeze ribs together. The diagonal angle is what generates the lifting motion."
+      }
+    },
+    {
+      "id": "900.5.55.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Mr. Edgar begins a deep inhalation. The bus watches the external intercostals contract - the muscle fibers shorten, pulling the ribs upward and outward. 'See?' Ms. Frizzle points. 'Bucket handle motion. The ribcage expands like an opening umbrella.'",
+      "q": "What happens when the external intercostal muscles contract?",
+      "options": [
+        "Ribs move downward and inward (decrease chest volume)",
+        "Ribs move upward and outward (increase chest volume - assist inhalation)",
+        "The diaphragm relaxes",
+        "The lungs collapse"
+      ],
+      "answer": 1,
+      "explain": "External intercostal contraction → ribs lift UP and OUT → chest cavity EXPANDS → negative pressure → air flows IN. They ASSIST INHALATION. Think of opening an umbrella - ribs swing up and out. The diaphragm does most of the work, but external intercostals help, especially during exercise.",
+      "wrongExplains": {
+        "0": "Downward and inward is EXHALATION (internal intercostals do this). External intercostals do the opposite - expand.",
+        "2": "The diaphragm and external intercostals work TOGETHER for inhalation. Both contract, not opposite actions.",
+        "3": "Expanding the chest makes lungs inflate, not collapse. Negative pressure pulls them open."
+      }
+    },
+    {
+      "id": "900.5.55.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Ms. Frizzle compares two breathing modes: 'At rest, the diaphragm does 70% of the work - external intercostals contribute maybe 30%. During exercise, both work hard - external intercostals can contribute up to 50%. They're the backup generators.'",
+      "q": "When are external intercostal muscles most active?",
+      "options": [
+        "During sleep (they're always the primary breathing muscle)",
+        "During deep or forced inhalation (exercise, heavy breathing)",
+        "Only during exhalation",
+        "They are never active"
+      ],
+      "answer": 1,
+      "explain": "External intercostals are most active during DEEP or FORCED inhalation - exercise, running, heavy breathing. At rest, the diaphragm does most of the work. But when you need MORE air, the external intercostals kick in, expanding the ribcage to maximize chest volume.",
+      "wrongExplains": {
+        "0": "The diaphragm is the primary muscle, always. External intercostals are ACCESSORY - they assist when needed.",
+        "2": "External intercostals assist INHALATION, not exhalation. Internal intercostals help with forced exhalation.",
+        "3": "They're active with every breath, just more so during deep breathing. They're not inactive."
+      }
+    },
+    {
+      "id": "900.5.55.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "The bus displays the innervation map. 'Intercostal nerves T1 through T11,' Ms. Frizzle reads. 'Each intercostal space has its own nerve, branching from the thoracic spinal cord. Lose those nerves, and the intercostals can't contract.'",
+      "q": "What nerves innervate the external intercostal muscles?",
+      "options": [
+        "Phrenic nerve (C3-C5)",
+        "Intercostal nerves (T1-T11)",
+        "Vagus nerve (CN X)",
+        "Sciatic nerve"
+      ],
+      "answer": 1,
+      "explain": "INTERCOSTAL NERVES (T1-T11) innervate the intercostal muscles. Each thoracic spinal nerve sends a branch that runs between the ribs, supplying motor and sensory innervation to the muscles and skin of that level. Spinal cord injuries below T1 preserve intercostal function.",
+      "wrongExplains": {
+        "0": "Phrenic nerve controls the DIAPHRAGM. Intercostals have their own nerves from the thoracic spine.",
+        "2": "Vagus nerve is cranial - it affects heart, lungs, and GI tract, but not skeletal muscles like intercostals.",
+        "3": "Sciatic nerve is in the leg. Intercostal nerves are thoracic, matching the rib levels."
+      }
+    },
+    {
+      "id": "900.5.55.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle shows Mr. Edgar's rib fractures on X-ray - ribs 5 and 6 on the left. 'Each breath causes pain because the external intercostals are trying to lift broken bones. He's splinting - breathing shallowly to avoid pain. But shallow breathing leads to atelectasis.'",
+      "q": "Why do rib fractures make breathing painful?",
+      "options": [
+        "The diaphragm is torn",
+        "External intercostal contraction moves the broken ribs, causing pain",
+        "Lungs are punctured",
+        "Blood flow to the brain is reduced"
+      ],
+      "answer": 1,
+      "explain": "With every breath, external intercostals CONTRACT, trying to lift the ribs. If ribs are BROKEN, this movement causes excruciating pain. Patients 'splint' - breathe shallowly to minimize rib movement. But shallow breathing risks pneumonia and atelectasis (lung collapse).",
+      "wrongExplains": {
+        "0": "The diaphragm is separate from the ribs. Rib fractures don't directly tear the diaphragm.",
+        "2": "Punctured lungs (pneumothorax) can occur but aren't the cause of pain with every breath - rib movement is.",
+        "3": "Rib fractures don't affect brain blood flow. The pain is localized to the chest wall."
+      }
+    },
+    {
+      "id": "900.5.55.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle displays a comparison: 'External intercostals: inhalation. Internal intercostals: exhalation. Opposite fiber directions, opposite functions. External lifts ribs (expand). Internal pulls ribs down (compress). They're antagonists.'",
+      "q": "How do external and internal intercostals differ functionally?",
+      "options": [
+        "Both assist exhalation",
+        "External assist inhalation; internal assist exhalation",
+        "Both assist inhalation",
+        "External control heart rate; internal control breathing"
+      ],
+      "answer": 1,
+      "explain": "EXTERNAL intercostals = INHALATION (lift ribs up and out). INTERNAL intercostals = EXHALATION (pull ribs down and in). Their fiber directions are perpendicular. They're functional opposites: one expands the chest, the other compresses it.",
+      "wrongExplains": {
+        "0": "Only INTERNAL intercostals assist exhalation. External do the opposite - they assist inhalation.",
+        "2": "Only EXTERNAL intercostals assist inhalation. Internal do the opposite - forced exhalation.",
+        "3": "Neither controls heart rate. Both are respiratory muscles - external for inhalation, internal for exhalation."
+      }
+    },
+    {
+      "id": "900.5.55.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle shows a patient with a high thoracic spinal cord injury (T4). 'His diaphragm works (phrenic nerve is C3-C5, intact). But his intercostal muscles below T4 are paralyzed. He can breathe, but he can't take deep breaths. His vital capacity is reduced.'",
+      "q": "What would happen if intercostal nerves were damaged?",
+      "options": [
+        "Complete inability to breathe",
+        "Reduced ability to take deep breaths, but diaphragm still works",
+        "Heart stops beating",
+        "Only exhalation is affected"
+      ],
+      "answer": 1,
+      "explain": "Intercostal damage REDUCES breathing capacity but doesn't stop it entirely. The DIAPHRAGM (phrenic nerve) still works, providing ~70% of resting ventilation. But deep breathing, coughing, and exercise capacity are impaired. Vital capacity drops because ribcage expansion is limited.",
+      "wrongExplains": {
+        "0": "The diaphragm can sustain resting breathing alone. Intercostals are ACCESSORY - important but not absolutely essential.",
+        "2": "Heart function is separate from intercostal muscles. Intercostal nerves control breathing muscles, not the heart.",
+        "3": "Both inhalation (external intercostals) and forced exhalation (internal intercostals) are affected."
+      }
+    },
+    {
+      "id": "900.5.55.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "The bus exits the rib cage. Mr. Edgar's pain is controlled now, and he's breathing more deeply. 'The external intercostals,' Ms. Frizzle says, 'are unsung heroes. Not essential alone, but critical for maximizing lung function. Now tell me: what do they do?'",
+      "q": "The external intercostal muscles:",
+      "options": [
+        "Contract to pull ribs downward and assist exhalation",
+        "Contract to lift ribs upward and outward, assisting inhalation",
+        "Control the diaphragm",
+        "Are located inside the lungs"
+      ],
+      "answer": 1,
+      "explain": "EXTERNAL INTERCOSTAL muscles are located BETWEEN THE RIBS, with fibers running DOWNWARD and FORWARD. When they CONTRACT, they lift ribs UPWARD and OUTWARD, expanding the chest cavity and assisting INHALATION. They're innervated by intercostal nerves (T1-T11). Most active during deep or forced breathing (exercise). They're ACCESSORY muscles - the diaphragm is primary.",
+      "wrongExplains": {
+        "0": "That's INTERNAL intercostals - opposite fiber direction, opposite function (assist forced exhalation).",
+        "2": "The phrenic nerve controls the diaphragm. Intercostals are separate muscles with separate innervation.",
+        "3": "Intercostals are in the CHEST WALL between ribs, not inside the lungs themselves."
+      }
+    }
+  ]
+}

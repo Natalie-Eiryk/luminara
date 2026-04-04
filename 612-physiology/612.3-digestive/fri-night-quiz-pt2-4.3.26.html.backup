@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Content Security Policy - Allow embedded data, inline styles -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline';
+    style-src 'self' 'unsafe-inline';
+    img-src 'self' data: https:;
+    connect-src 'self';
+    frame-ancestors 'none';
+    base-uri 'self';
+  ">
+
+  <title>Friday Night Quiz Pt. 2 - Digestive System · 4.3.26 · Ms. Luminara</title>
+  <style>
+    :root{--bg:#0f1220;--panel:#171b2e;--panel2:#1f2540;--text:#eef2ff;--muted:#b7c0e5;--accent:#8fb8ff;--border:#30385f;--warn:#ffd58f}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:linear-gradient(180deg,#0d1020 0%,#12172b 100%);color:var(--text)}
+    .wrap{max-width:900px;margin:0 auto;padding:24px}
+    .hero,.panel{background:var(--panel);border:1px solid var(--border);border-radius:18px;padding:20px}
+    .hero{margin-bottom:18px;background:linear-gradient(135deg,rgba(143,184,255,.18),rgba(183,156,255,.10))}
+    .panel{margin-bottom:18px}
+    h1,h2{margin:0 0 10px}
+    p{color:var(--muted)}
+    .controls{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
+    .controls button{background:#262d4d;color:var(--text);border:1px solid var(--border);padding:10px 12px;border-radius:10px;cursor:pointer}
+    .chip{display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid var(--border);color:var(--accent);margin-bottom:10px}
+    .question{font-size:1.08rem;font-weight:700;margin:8px 0 14px}
+    .option{display:block;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:12px;border-radius:12px;margin:10px 0;cursor:pointer}
+    .option input{margin-right:10px}
+    .answerBox{display:none;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:12px;border-radius:12px;margin-top:12px;color:var(--muted)}
+    .answerBox.show{display:block}
+    .status{color:var(--warn);font-size:.92rem;margin-top:12px}
+    textarea{width:100%;min-height:110px;background:#101426;color:var(--text);border:1px solid var(--border);border-radius:12px;padding:12px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>Friday Night Quiz Pt. 2 - Digestive System</h1>
+      <p>GI hormones, stomach secretions, liver function, and digestive processes. Navigate through questions, reveal answers, and master the digestive tract! 🌙</p>
+    </section>
+    <section class="panel">
+      <div class="controls">
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+        <button id="randomBtn">Random</button>
+        <button id="revealBtn">Reveal Answer</button>
+      </div>
+      <div class="chip" id="qid">Question</div>
+      <div class="question" id="prompt">Loading…</div>
+      <div id="options"></div>
+      <div id="shortWrap" style="display:none;">
+        <textarea placeholder="Type your answer here before revealing..."></textarea>
+      </div>
+      <div class="answerBox" id="answerBox"></div>
+      <div class="status" id="status"></div>
+    </section>
+  </div>
+<script>
+// Embedded quiz data
+const bank = [{"id":"match_01","type":"match","prompt":"Match the GI hormones to their functions.","pairs":[{"left":"Increases HCl secretion and stimulates contraction of intestinal muscle.","right":"Gastrin"},{"left":"Increases output of enzymatic-rich pancreatic juice.","right":"Cholecystokinin"},{"left":"Increases output of pancreatic juice rich in bicarbonate ions.","right":"Secretin"},{"left":"Stimulates insulin release and mildly inhibits HCl production.","right":"Gastric inhibitory peptide"}]},{"id":"q3","type":"mcq","prompt":"Food often contains bacteria, but the HCl of the stomach is effective in killing most ingested microbes.","options":["True","False"],"answer":"True","explanation":"Stomach acid is an important chemical barrier against many ingested microorganisms."},{"id":"q4","type":"mcq","prompt":"Stellate macrophages are found in the liver and are responsible for removing bacteria and worn-out cells.","options":["True","False"],"answer":"True","explanation":"These are Kupffer-type macrophages in the liver."},{"id":"q5","type":"mcq","prompt":"Pepsinogen is the precursor to the gastric enzyme for protein digestion and is secreted by the parietal cells.","options":["True","False"],"answer":"False","explanation":"Pepsinogen is secreted by chief cells, not parietal cells."},{"id":"q6","type":"mcq","prompt":"The submucosal nerve plexus provides the major nerve supply to the GI tract wall and controls GI motility.","options":["True","False"],"answer":"False","explanation":"The myenteric plexus is the major motility plexus."},{"id":"q7","type":"mcq","prompt":"The major stimulus for production of intestinal fluid is distention or irritation of the intestinal mucosa by hypertonic or acidic chyme.","options":["True","False"],"answer":"True","explanation":"That irritation/distention stimulates secretion."},{"id":"q8","type":"mcq","prompt":"Severe diarrhea can diminish potassium ion absorption.","options":["True","False"],"answer":"True","explanation":"Diarrhea reduces time for absorption and increases potassium loss."},{"id":"q9","type":"mcq","prompt":"Which of the following is the best illustration of the difference between metabolism and digestion?","options":["Digestion has a wide variety of chemical reactions while metabolism is restricted to only a few reaction types.","Metabolism comprises all of the chemical reactions performed within the body while digestion is only the breakdown of food within the GI tract.","Digestions must happen first for metabolism to follow it.","Digestion requires enzymes for it to take place while metabolism does not necessarily need or use them."],"answer":"Metabolism comprises all of the chemical reactions performed within the body while digestion is only the breakdown of food within the GI tract.","explanation":"Digestion is one subset of chemistry; metabolism is the broader set of all body chemical reactions."},{"id":"q10","type":"mcq","prompt":"A doctor consulting a patient that recently has had their gall bladder removed would likely advise ________.","options":["eating a low to no carb diet","increasing unsaturated fats while eliminating trans fats in their diets","eating fewer, but larger meals","eating foods that are low in fat"],"answer":"eating foods that are low in fat","explanation":"Without a gallbladder, bile is not stored/concentrated the same way, so large fatty meals are harder to handle."},{"id":"q11","type":"mcq","prompt":"Select the best explanation for why protease enzymes are secreted in inactive forms.","options":["Inactive enzymes will simply be expelled with the feces if no protein is present in the digesting food; this will help to conserve energy.","The cells producing inactive enzymes are themselves protected from the enzymes until they are safely within the lumen of the GI tract.","The enzymes would digest each other if they were not properly regulated.","The immunoglobulins protecting the digestive tract would be digested without proper regulation of protein digesting enzymes."],"answer":"The cells producing inactive enzymes are themselves protected from the enzymes until they are safely within the lumen of the GI tract.","explanation":"Inactive zymogens prevent autodigestion of the secreting tissues."},{"id":"q12","type":"mcq","prompt":"Some antacid drugs block histamine receptors, resulting in reduction of the production and excretion of stomach acid. These drugs have the biggest effect on which of the following?","options":["surface epithelial cells","chief cells","mucous neck cells","parietal cells"],"answer":"parietal cells","explanation":"Histamine stimulates parietal cells to secrete acid."},{"id":"q13","type":"mcq","prompt":"The mechanical and chemical receptors that control digestive activity are located ________.","options":["in the walls of the tract organs","in the glandular tissue that surround the organ lumen","in the pons and medulla","in the oral cavity"],"answer":"in the walls of the tract organs","explanation":"Stretch and chemical receptors are embedded in GI tract walls."},{"id":"q14","type":"mcq","prompt":"The function of the hepatic portal circulation is to ________.","options":["carry toxins to the kidney for disposal through the urinary tract","return glucose to the general circulation when blood sugar is low","distribute hormones throughout the body","collect absorbed nutrients for metabolic processing in the liver"],"answer":"collect absorbed nutrients for metabolic processing in the liver","explanation":"Portal blood brings nutrient-rich blood from the GI tract to the liver first."},{"id":"q15","type":"mcq","prompt":"Which of the following is NOT a factor that helps create the stomach mucosal barrier?","options":["thick coating of bicarbonate-rich mucus","secretion of pepsinogen","tight junctions of epithelial mucosa cells","replacing of damaged epithelial mucosa cells"],"answer":"secretion of pepsinogen","explanation":"Pepsinogen is for protein digestion, not mucosal protection."},{"id":"q16","type":"mcq","prompt":"Choose the incorrect statement regarding bile.","options":["Bile functions to carry bilirubin formed from breakdown of worn-out RBCs.","Bile functions to emulsify fats.","Bile contains enzymes for digestion.","Bile is both an excretory product and a digestive secretion."],"answer":"Bile contains enzymes for digestion.","explanation":"Bile emulsifies fats but does not contain digestive enzymes."},{"id":"q17","type":"mcq","prompt":"Which of the following is NOT found in saliva?","options":["lysozyme","protease","electrolytes","urea and uric acid"],"answer":"protease","explanation":"Saliva contains amylase, electrolytes, lysozyme, and waste traces, but not protease as a standard component."},{"id":"q18","type":"mcq","prompt":"Which vitamin requires intrinsic factor in order to be absorbed?","options":["A","K","C","B12"],"answer":"B12","explanation":"Intrinsic factor from parietal cells is required for vitamin B12 absorption."},{"id":"q19","type":"mcq","prompt":"Gastric pits, as opposed to gastric glands, are completely lined with ________.","options":["enteroendocrine cells","parietal cells","mucous cells","chief cells"],"answer":"mucous cells","explanation":"Surface mucous cells line the gastric pits."},{"id":"q20","type":"mcq","prompt":"The dental formula for an adult is 2-1-2-3. What does the 1 stand for?","options":["premolar tooth","canine tooth","incisor tooth","molar tooth"],"answer":"canine tooth","explanation":"The adult dental formula counts incisors-canines-premolars-molars."},{"id":"q21","type":"mcq","prompt":"The function of goblet cells is to ________.","options":["secrete buffers in order to keep the pH of the digestive tract close to neutral","absorb nutrients from digested food and store them for future use","provide protection against invading bacteria and other disease-causing organisms that enter the digestive tract in food","produce mucus that protects parts of the digestive organs from the effects of powerful enzymes needed for food digestion"],"answer":"produce mucus that protects parts of the digestive organs from the effects of powerful enzymes needed for food digestion","explanation":"Goblet cells primarily secrete mucus."},{"id":"q22","type":"mcq","prompt":"Which of the following is an essential role played by large intestine bacteria?","options":["absorb bilirubin","synthesis of vitamin K","produce gas","synthesize vitamins C and D"],"answer":"synthesis of vitamin K","explanation":"Normal gut flora contribute vitamin K."},{"id":"q23","type":"mcq","prompt":"Nervous control of gastric secretion is provided by ________.","options":["the reticulospinal and vestibulospinal tracts","somatic neurons in the spinal cord","the rubrospinal tracts","the vagus nerve and enteric plexus"],"answer":"the vagus nerve and enteric plexus","explanation":"Parasympathetic vagal input and enteric circuits regulate gastric secretion."},{"id":"q24","type":"mcq","prompt":"What stomach secretion is necessary for normal hemoglobin production in RBCs?","options":["gastric lipase","intrinsic factor","pepsinogen","HCl"],"answer":"intrinsic factor","explanation":"Intrinsic factor is required for B12 absorption, which is necessary for normal RBC production."},{"id":"q25","type":"mcq","prompt":"The ingestion of a meal high in fat content would cause which of the following to occur?","options":["The acid secretions from the stomach would be sufficient to digest this food but may cause heartburn.","Bile would be released from the gallbladder to emulsify the fat in the duodenum.","Increased production of trypsinogen.","This type of food would cause secretion of gastrin to cease, resulting in faster gastric emptying."],"answer":"Bile would be released from the gallbladder to emulsify the fat in the duodenum.","explanation":"Fat in the duodenum stimulates CCK release, causing gallbladder contraction and bile release."},{"id":"q26","type":"mcq","prompt":"Hormones or paracrines that inhibit gastric secretion include ________.","options":["histamine","secretin","ACh","gastrin"],"answer":"secretin","explanation":"Secretin inhibits gastric activity and promotes bicarbonate-rich pancreatic secretion."},{"id":"q27","type":"short","prompt":"What are chylomicrons and what is their function?","answer":"Chylomicrons are lipoprotein particles formed in intestinal epithelial cells. Their function is to package absorbed dietary fats, especially triglycerides, and transport them through the lacteals/lymph and then into the bloodstream."}];
+
+let idx = 0;
+function renderQuestion(){
+  const q = bank[idx];
+  document.getElementById('qid').textContent = q.id.toUpperCase();
+  document.getElementById('prompt').textContent = q.prompt;
+  const options = document.getElementById('options');
+  const shortWrap = document.getElementById('shortWrap');
+  const answerBox = document.getElementById('answerBox');
+  answerBox.classList.remove('show');
+  answerBox.innerHTML = '';
+  if(q.type === 'mcq'){
+    shortWrap.style.display='none';
+    options.innerHTML = q.options.map(opt => `<label class="option"><input type="radio" name="qopt"> ${opt}</label>`).join('');
+  } else if(q.type === 'match'){
+    shortWrap.style.display='none';
+    options.innerHTML = q.pairs.map(pair => `<div class="option"><strong>${pair.left}</strong><br><span style="color:#b7c0e5">→ ${pair.right}</span></div>`).join('');
+  } else {
+    options.innerHTML='';
+    shortWrap.style.display='block';
+  }
+  document.getElementById('status').textContent = `Question ${idx+1} of ${bank.length}`;
+}
+function revealAnswer(){
+  const q = bank[idx];
+  const answerBox = document.getElementById('answerBox');
+  if(q.type === 'mcq'){
+    answerBox.innerHTML = `<strong>Correct answer:</strong> ${q.answer}<br><br><strong>Why:</strong> ${q.explanation||''}`;
+  } else if(q.type === 'match'){
+    answerBox.innerHTML = `<strong>Matches shown above.</strong>`;
+  } else {
+    answerBox.innerHTML = `<strong>Suggested answer:</strong><br>${q.answer}`;
+  }
+  answerBox.classList.add('show');
+}
+document.getElementById('prevBtn').addEventListener('click',()=>{idx=(idx-1+bank.length)%bank.length;renderQuestion();});
+document.getElementById('nextBtn').addEventListener('click',()=>{idx=(idx+1)%bank.length;renderQuestion();});
+document.getElementById('randomBtn').addEventListener('click',()=>{idx=Math.floor(Math.random()*bank.length);renderQuestion();});
+document.getElementById('revealBtn').addEventListener('click',revealAnswer);
+
+// Initialize on load
+document.addEventListener('DOMContentLoaded', function() {
+  renderQuestion();
+});
+</script>
+</body>
+</html>

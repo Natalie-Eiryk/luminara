@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.02",
+  "parentQuestion": "The tiny air sacs where gas exchange occurs in the lungs are called:",
+  "narrative": {
+    "setting": "The bus has navigated past the bronchi and bronchioles, following the airways as they branch and narrow like an ever-dividing tree. Now you emerge into something breathtaking - a cavern made of countless grape-like clusters, each one thinner than a soap bubble. 'We're at the end of the line,' Ms. Frizzle whispers. 'The final destination of every breath.'",
+    "character": "Mr. Edgar",
+    "tension": "Some of these delicate structures are damaged - collapsed or filled with debris. Understanding what they are is the first step to understanding what's wrong."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.02.s01",
+      "arc": 1,
+      "arcTitle": "The Shape of Breath",
+      "narrative": "Ms. Frizzle projects an image of a bunch of grapes. 'The ancient anatomists saw these structures and thought of fruit clusters. The Latin word they chose reflects this.'",
+      "q": "The word 'alveolus' comes from Latin meaning:",
+      "options": [
+        "Tiny tube",
+        "Small hollow or cavity",
+        "Air pocket",
+        "Grape cluster"
+      ],
+      "answer": 1,
+      "explain": "'Alveolus' means a small hollow space or cavity - think of the little compartments in a honeycomb. Each alveolus is a tiny hollow chamber, perfectly shaped for holding air while presenting maximum surface to blood.",
+      "wrongExplains": {
+        "0": "Tubes carry air TO the alveoli - that's bronchioles. Alveoli are endpoints, not tubes.",
+        "2": "That's a description of function, not the Latin meaning. 'Alveolus' specifically means a small hollow.",
+        "3": "They LOOK like grape clusters, but the word itself means 'small cavity.' The grape comparison is just visual."
+      }
+    },
+    {
+      "id": "900.5.02.s02",
+      "arc": 1,
+      "arcTitle": "The Shape of Breath",
+      "narrative": "The bus magnifies its view. What seemed like smooth walls reveal incredibly thin membranes - so thin light passes through them. 'Thinner than a hair,' Ms. Frizzle notes. 'Thinner than paper. About half a micrometer - five hundred times thinner than this bus.'",
+      "q": "Why are alveolar walls so extraordinarily thin?",
+      "options": [
+        "To save weight in the chest cavity",
+        "To allow rapid diffusion of gases",
+        "To prevent infection",
+        "To store more air"
+      ],
+      "answer": 1,
+      "explain": "Diffusion speed depends on distance - SHORTER IS FASTER. Gases must cross from air to blood in a fraction of a second. Make that wall any thicker, and the exchange slows. It's like trying to hear through a wall vs. through a window screen.",
+      "wrongExplains": {
+        "0": "The lungs aren't heavy - they float in water! Thinness is about function, not weight.",
+        "2": "Thin walls actually make infection EASIER (less barrier). Thickness would help against infection.",
+        "3": "Wall thickness doesn't affect air capacity. The chambers would hold the same air either way."
+      }
+    },
+    {
+      "id": "900.5.02.s03",
+      "arc": 1,
+      "arcTitle": "The Shape of Breath",
+      "narrative": "'Count them,' Ms. Frizzle challenges. The bus's computer whirs. Numbers scroll past - 300 million. 300 MILLION tiny air sacs in each lung. 'That's more alveoli than there are people in the United States.'",
+      "q": "The lungs contain approximately 300 million alveoli primarily to:",
+      "options": [
+        "Store oxygen for emergencies",
+        "Maximize surface area for gas exchange",
+        "Filter dust from the air",
+        "Warm incoming air"
+      ],
+      "answer": 1,
+      "explain": "SURFACE AREA IS EVERYTHING. 300 million tiny sacs create about 70 square meters of surface - the size of a tennis court, folded inside your chest! More surface = more simultaneous exchange = faster oxygenation. It's why sponges absorb better than smooth surfaces.",
+      "wrongExplains": {
+        "0": "Alveoli don't store oxygen - gas flows through continuously. Your blood stores (carries) oxygen.",
+        "2": "Filtering happens in the upper airways with mucus and cilia. Alveoli are too fragile for filtering.",
+        "3": "Warming happens in the nose and upper airways. By the time air reaches alveoli, it's already body temperature."
+      }
+    },
+    {
+      "id": "900.5.02.s04",
+      "arc": 2,
+      "arcTitle": "The Journey's End",
+      "narrative": "The bus traces the path of a single oxygen molecule. It enters Mr. Edgar's nose, travels down the trachea, through bronchi, into smaller and smaller bronchioles, and finally... 'This is it,' Ms. Frizzle says. 'The last stop. Beyond here, there's no more air tube - just blood.'",
+      "q": "The alveoli are located at the:",
+      "options": [
+        "Beginning of the respiratory tree",
+        "End of the respiratory tree",
+        "Middle of the bronchi",
+        "Inside the trachea"
+      ],
+      "answer": 1,
+      "explain": "The respiratory tract is like an upside-down tree: trachea is the trunk, bronchi are main branches, bronchioles are twigs, and ALVEOLI are the leaves at the tips. They're the endpoint, the destination, the cul-de-sac where air goes to meet blood.",
+      "wrongExplains": {
+        "0": "The beginning is the nose/mouth. Alveoli are as far from the entrance as possible.",
+        "2": "Bronchi are conducting airways - they branch into bronchioles before reaching alveoli.",
+        "3": "The trachea is the main trunk - a single tube. Alveoli are millions of tiny endpoints."
+      }
+    },
+    {
+      "id": "900.5.02.s05",
+      "arc": 2,
+      "arcTitle": "The Journey's End",
+      "narrative": "You watch the alveolus swell gently with each of Mr. Edgar's breaths, then shrink. But it never completely deflates. 'Notice that,' Ms. Frizzle points out. 'It stays open, even at the end of exhalation. Why doesn't it just collapse like an empty balloon?'",
+      "q": "What prevents alveoli from collapsing completely during exhalation?",
+      "options": [
+        "Thick muscular walls",
+        "Surfactant reduces surface tension",
+        "Cartilage rings",
+        "Constant air pressure"
+      ],
+      "answer": 1,
+      "explain": "SURFACTANT is the secret! This soapy substance coats the alveolar lining and reduces surface tension - the same force that makes water bead up. Without surfactant, alveoli would collapse like wet plastic wrap sticking to itself. Premature babies lack surfactant and struggle to breathe.",
+      "wrongExplains": {
+        "0": "Alveoli have NO muscle - they're passive, expanding only when the chest expands. Muscles would be too thick for gas exchange.",
+        "2": "Cartilage is in the trachea and bronchi for support. Alveoli are too tiny and delicate for cartilage.",
+        "3": "Pressure changes constantly with breathing. It's the surfactant that provides structural stability."
+      }
+    },
+    {
+      "id": "900.5.02.s06",
+      "arc": 2,
+      "arcTitle": "The Journey's End",
+      "narrative": "The bus hovers next to the alveolar wall. Outside: air. Inside: a capillary packed with red blood cells. Between them: almost nothing. 'This membrane,' Ms. Frizzle says, 'is where life meets death. Cross it, and oxygen becomes energy. Fail to cross, and tissues starve.'",
+      "q": "The respiratory membrane separating alveolar air from blood consists of:",
+      "options": [
+        "Thick muscle tissue",
+        "Alveolar wall, basement membranes, and capillary wall",
+        "Multiple layers of protective cartilage",
+        "A sealed barrier that opens during breathing"
+      ],
+      "answer": 1,
+      "explain": "Three paper-thin layers fused together: Type I alveolar cell, shared basement membrane, capillary endothelial cell. Total thickness: about 0.5 micrometers. It's like two pieces of wet tissue paper pressed together - distinct layers, but functionally one barrier.",
+      "wrongExplains": {
+        "0": "Muscle here would be a disaster - too thick for diffusion. The membrane must be as thin as possible.",
+        "2": "Cartilage would block gas exchange completely. This is a PERMEABLE barrier, not a protective one.",
+        "3": "It doesn't open and close - gases diffuse through it continuously. It's always 'open' to molecular traffic."
+      }
+    },
+    {
+      "id": "900.5.02.s07",
+      "arc": 3,
+      "arcTitle": "Know the Difference",
+      "narrative": "'Terminology checkpoint!' Ms. Frizzle announces. 'Mr. Edgar's chart uses specific words. Bronchioles, bronchi, alveoli - mix them up and you're lost in the respiratory tree.'",
+      "q": "How do alveoli differ from bronchioles?",
+      "options": [
+        "Alveoli conduct air; bronchioles exchange gases",
+        "Alveoli exchange gases; bronchioles conduct air",
+        "They are the same structure with different names",
+        "Bronchioles are larger than alveoli"
+      ],
+      "answer": 1,
+      "explain": "Different jobs! BRONCHIOLES = the highways (conducting tubes that move air). ALVEOLI = the destinations (exchange chambers where the work happens). Bronchioles are lined with muscle and can constrict; alveoli are thin-walled and can't. One delivers, one exchanges.",
+      "wrongExplains": {
+        "0": "You've got it reversed! Bronchioles deliver air to the alveoli where exchange occurs.",
+        "2": "Very different structures! Bronchioles have walls with smooth muscle; alveoli are delicate gas-exchange sacs.",
+        "3": "Size isn't the key difference - function is. Though bronchioles are tubes and alveoli are sacs, their ROLES distinguish them."
+      }
+    },
+    {
+      "id": "900.5.02.s08",
+      "arc": 3,
+      "arcTitle": "Know the Difference",
+      "narrative": "The bus backs up and you see the whole structure - bronchi branching to bronchioles branching to terminal bronchioles and finally... 'Alveolar ducts lined with alveoli,' Ms. Frizzle traces. 'The bronchi are like highways, these are like driveways with garages.'",
+      "q": "The bronchi differ from alveoli because bronchi:",
+      "options": [
+        "Have thin walls for gas exchange",
+        "Are conducting airways with cartilage support",
+        "Are the smallest structures in the lungs",
+        "Produce surfactant"
+      ],
+      "answer": 1,
+      "explain": "BRONCHI are the major branches off the trachea - big tubes with cartilage plates to keep them open. They're CONDUCTORS, not exchangers. Alveoli have no cartilage - they're tiny, thin-walled, and specialized for one job: gas exchange.",
+      "wrongExplains": {
+        "0": "That's alveoli! Bronchi have thick walls with cartilage and muscle - no exchange happens there.",
+        "2": "Alveoli are much smaller! Bronchi are the large airways you can see on a chest X-ray.",
+        "3": "Surfactant comes from Type II alveolar cells, not from bronchi. Different cells, different products."
+      }
+    },
+    {
+      "id": "900.5.02.s09",
+      "arc": 3,
+      "arcTitle": "Know the Difference",
+      "narrative": "'One more structure people confuse,' Ms. Frizzle pulls up an image of the chest cavity. The lungs float inside glistening membranes. 'The pleura wraps the lungs - but it's NOT where gas exchange happens.'",
+      "q": "The pleura differs from alveoli in that the pleura:",
+      "options": [
+        "Is where gas exchange occurs",
+        "Is a protective membrane surrounding the lungs",
+        "Contains millions of air sacs",
+        "Connects to the bronchi"
+      ],
+      "answer": 1,
+      "explain": "PLEURA = the wrapping (two layers of membrane with fluid between, allowing lungs to slide during breathing). ALVEOLI = the contents (the air sacs inside the lung where gas exchange occurs). One protects and lubricates; the other exchanges gases.",
+      "wrongExplains": {
+        "0": "No gas exchange at the pleura - it's a protective and lubricating layer outside the lung tissue.",
+        "2": "Alveoli contain the air sacs. Pleura is a continuous membrane, not divided into sacs.",
+        "3": "Bronchi connect to alveoli through the bronchiolar tree. Pleura wraps around the OUTSIDE."
+      }
+    },
+    {
+      "id": "900.5.02.s10",
+      "arc": 3,
+      "arcTitle": "Know the Difference",
+      "narrative": "Mr. Edgar takes a deep breath. You watch 300 million alveoli expand in unison, like a vast underwater garden of sea anemones opening. 'Beautiful,' Ms. Frizzle whispers. 'Now - what are these structures called?'",
+      "q": "The tiny air sacs where gas exchange occurs in the lungs are called:",
+      "options": [
+        "Bronchioles",
+        "Bronchi",
+        "Alveoli",
+        "Pleura"
+      ],
+      "answer": 2,
+      "explain": "ALVEOLI - 300 million grape-like clusters where the miracle of gas exchange happens. Thin-walled, surfactant-coated, wrapped in capillaries - these tiny sacs provide 70 square meters of surface area for oxygen and carbon dioxide to swap places. They are the reason you can breathe.",
+      "wrongExplains": {
+        "0": "Bronchioles are the smallest airways LEADING TO alveoli. They're conducting tubes, not exchange sacs.",
+        "1": "Bronchi are larger conducting airways - the main branches from the trachea. Too big, too thick for gas exchange.",
+        "3": "Pleura is the membrane AROUND the lungs. Alveoli are the tiny sacs INSIDE where exchange occurs."
+      }
+    }
+  ]
+}

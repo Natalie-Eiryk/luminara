@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.100",
+  "parentQuestion": "Hemoptysis is:",
+  "narrative": {
+    "setting": "The Magic School Bus is in Mr. Edgar's bronchus when suddenly a surge of blood floods the airway. Red blood cells swirl around you in the normally air-filled tube. Mr. Edgar is coughing violently, expelling bright red blood. Ms. Frizzle's face is serious: 'Hemoptysis - coughing up blood. This isn't a nosebleed that dripped down. This blood is coming FROM the lungs. We need to find the source fast.'",
+    "character": "Mr. Edgar",
+    "tension": "Blood is filling the airways. Mr. Edgar could aspirate or bleed to death. Finding the source is critical."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.100.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "Ms. Frizzle writes the word on the dashboard: 'hemo-ptysis'. 'Two Greek roots. Decode them and you'll know exactly what this symptom means.'",
+      "q": "The prefix 'hemo-' (or 'hema-', 'hemat-') means:",
+      "options": [
+        "Air or breathing",
+        "Blood",
+        "Mucus",
+        "Tissue"
+      ],
+      "answer": 1,
+      "explain": "'HEMO-' = BLOOD. Think: hemoglobin (blood protein), hematology (study of blood), hemorrhage (bleeding), hemophilia (blood clotting disorder). Any 'hemo-' term involves blood.",
+      "wrongExplains": {
+        "0": "Air/breathing uses 'pneumo-' or 'aero-'. Hemo- specifically means blood.",
+        "2": "Mucus terms use 'muco-'. Hemo- is blood, not mucus.",
+        "3": "General tissue is 'histo-'. Hemo- is specifically about blood."
+      }
+    },
+    {
+      "id": "900.5.100.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "Mr. Edgar coughs again, more blood splattering into the basin beside his bed. 'Ptysis,' Ms. Frizzle continues. 'From the Greek - to spit.'",
+      "q": "The suffix '-ptysis' means:",
+      "options": [
+        "To breathe",
+        "To spit or cough up",
+        "To swallow",
+        "To vomit"
+      ],
+      "answer": 1,
+      "explain": "'-PTYSIS' = TO SPIT, TO COUGH UP. From Greek 'ptyein' = to spit. Hemoptysis = coughing up blood. It implies the substance is coming FROM THE RESPIRATORY TRACT, not the GI tract.",
+      "wrongExplains": {
+        "0": "Breathing is '-pnea'. Ptysis specifically means spitting/coughing up material.",
+        "2": "Swallowing is 'phagia'. Ptysis is the opposite - expelling from the mouth.",
+        "3": "Vomiting is 'emesis'. Ptysis is coughing/spitting from respiratory tract, not stomach."
+      }
+    },
+    {
+      "id": "900.5.100.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "The blood around you is bright red, frothy with air bubbles. 'Fresh blood,' Ms. Frizzle observes. 'Mixed with air from the lungs. Not dark blood from the stomach.'",
+      "q": "Hemoptysis refers to blood that originates from:",
+      "options": [
+        "The stomach or esophagus",
+        "The respiratory tract (lungs, bronchi)",
+        "The nose only",
+        "The mouth or gums"
+      ],
+      "answer": 1,
+      "explain": "HEMOPTYSIS = blood from the RESPIRATORY TRACT (lungs, bronchi, trachea), coughed up. Typically bright red, frothy (air-mixed). Different from hematemesis (vomiting blood from GI tract - dark, coffee-ground) or epistaxis (nosebleed).",
+      "wrongExplains": {
+        "0": "Blood from stomach/esophagus is HEMATEMESIS (vomiting blood), not hemoptysis. Different color, different source.",
+        "2": "Nosebleeds (epistaxis) can drip back and be coughed, but true hemoptysis originates from lower respiratory tract.",
+        "3": "Oral bleeding looks different (mixed with saliva). Hemoptysis is from the lungs, coughed with force."
+      }
+    },
+    {
+      "id": "900.5.100.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus traces the blood backward to its source - an eroded bronchial artery in the wall of an infected bronchus. 'Chronic bronchiectasis,' Ms. Frizzle diagnoses. 'The inflammation has eaten through the vessel wall.'",
+      "q": "Which is a common cause of hemoptysis?",
+      "options": [
+        "Asthma",
+        "Bronchitis, tuberculosis, or bronchiectasis",
+        "Hiccups",
+        "Sneezing"
+      ],
+      "answer": 1,
+      "explain": "Common causes: (1) INFECTION (bronchitis, TB, pneumonia), (2) BRONCHIECTASIS (dilated, damaged airways), (3) lung cancer, (4) pulmonary embolism, (5) CHF (pulmonary edema). Inflammation/infection damages vessels → bleeding.",
+      "wrongExplains": {
+        "0": "Asthma causes wheezing/airway constriction, rarely hemoptysis (unless very severe).",
+        "2": "Hiccups are diaphragm spasms. They don't cause lung bleeding.",
+        "3": "Sneezing is a reflex. It doesn't damage lung vessels to cause hemoptysis."
+      }
+    },
+    {
+      "id": "900.5.100.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "You watch as the coughing reflex violently expels blood from the airways. 'The body's trying to clear it,' Ms. Frizzle explains. 'But too much blood can obstruct airways - a deadly cycle.'",
+      "q": "Why is massive hemoptysis (>600ml/24hr) life-threatening?",
+      "options": [
+        "Blood loss causes shock",
+        "Blood can flood and obstruct airways, causing asphyxiation",
+        "It's not dangerous",
+        "It always indicates cancer"
+      ],
+      "answer": 1,
+      "explain": "MASSIVE hemoptysis kills by ASPHYXIATION more than blood loss. Blood FLOODS AIRWAYS → can't ventilate → hypoxia → death. Even 200ml in airways can be fatal. Treatment: protect airway (intubate bleeding side if possible), find/stop source (bronchoscopy, embolization).",
+      "wrongExplains": {
+        "0": "While blood loss matters, the IMMEDIATE threat is airway obstruction. You can drown in your own blood.",
+        "2": "Massive hemoptysis has 50-80% mortality if untreated. It's extremely dangerous.",
+        "3": "Many causes exist (infection, bronchiectasis, AVM). Not always cancer, though cancer is one cause."
+      }
+    },
+    {
+      "id": "900.5.100.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus observes a pulmonary embolism breaking apart. 'Infarction,' Ms. Frizzle points out. 'Lung tissue dying from blocked blood flow can cause hemoptysis. Different mechanism, same symptom.'",
+      "q": "Hemoptysis in pulmonary embolism occurs because:",
+      "options": [
+        "The clot is coughed up",
+        "Lung infarction and inflammation cause bleeding",
+        "Embolism increases blood production",
+        "The heart bleeds into lungs"
+      ],
+      "answer": 1,
+      "explain": "Pulmonary embolism → INFARCTION (tissue death) + INFLAMMATION → damage to capillaries/alveoli → blood leaks into airways → hemoptysis. Often accompanied by pleuritic chest pain. The infarction disrupts vessel integrity.",
+      "wrongExplains": {
+        "0": "The clot stays in the pulmonary artery - it's not coughed up. Hemoptysis is from tissue damage, not the clot itself.",
+        "2": "Embolism doesn't increase blood production. It damages tissue, causing bleeding into airways.",
+        "3": "The heart doesn't bleed into lungs. Hemoptysis in PE is from lung tissue infarction."
+      }
+    },
+    {
+      "id": "900.5.100.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Hemoptysis versus hematemesis,' Ms. Frizzle quizzes. 'Both involve blood coming from the mouth, but the source is completely different. Knowing which can save a life.'",
+      "q": "How can you distinguish hemoptysis from hematemesis?",
+      "options": [
+        "They are identical",
+        "Hemoptysis is bright/frothy, coughed; hematemesis is dark, vomited",
+        "Hemoptysis is vomited; hematemesis is coughed",
+        "Both are always bright red"
+      ],
+      "answer": 1,
+      "explain": "HEMOPTYSIS: bright red, frothy (air-mixed), COUGHED from lungs, alkaline pH. HEMATEMESIS: dark red/brown ('coffee grounds'), VOMITED from stomach, acidic pH, may have food. Different sources, different appearances, different workups.",
+      "wrongExplains": {
+        "0": "Critically different! One is respiratory, one is GI. Different sources, treatments, urgencies.",
+        "2": "Backwards! Hemoptysis is COUGHED (respiratory). Hematemesis is VOMITED (GI).",
+        "3": "Hematemesis is often dark (coffee-ground) from gastric acid contact. Hemoptysis is typically bright."
+      }
+    },
+    {
+      "id": "900.5.100.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "A tuberculosis granuloma appears on the scan. 'TB,' Ms. Frizzle says gravely. 'A classic cause of hemoptysis, especially in endemic areas. The infection erodes into blood vessels.'",
+      "q": "Why is tuberculosis a common cause of hemoptysis worldwide?",
+      "options": [
+        "TB doesn't cause hemoptysis",
+        "TB causes cavitation and granulomas that erode vessels",
+        "TB only affects the throat",
+        "TB increases blood production"
+      ],
+      "answer": 1,
+      "explain": "TB forms CAVITIES and GRANULOMAS in lung tissue. Inflammation ERODES into bronchial arteries and pulmonary vessels → bleeding. Rasmussen aneurysm (dilated vessel in TB cavity) can cause MASSIVE hemoptysis. TB is still a leading cause globally.",
+      "wrongExplains": {
+        "0": "TB commonly causes hemoptysis - it's a classic presentation, especially in active or reactivated disease.",
+        "2": "TB primarily affects LUNGS, not just throat. Pulmonary TB is the main form.",
+        "3": "TB doesn't increase blood production. It destroys tissue and erodes vessels, causing bleeding."
+      }
+    },
+    {
+      "id": "900.5.100.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "A bronchoscope slides down Mr. Edgar's airway on the monitor. 'Direct visualization,' Ms. Frizzle explains. 'We can see the bleeding source and potentially treat it - cauterize, inject epinephrine, or plan surgery.'",
+      "q": "The initial diagnostic procedure for evaluating hemoptysis is often:",
+      "options": [
+        "Brain MRI",
+        "Chest X-ray and possibly bronchoscopy",
+        "Colonoscopy",
+        "Blood transfusion only"
+      ],
+      "answer": 1,
+      "explain": "Workup: (1) CHEST X-RAY (look for mass, infiltrate, cavity), (2) CT chest (better detail), (3) BRONCHOSCOPY (visualize source, localize, potentially treat), (4) consider CT angiography if massive (for embolization). CBC, coags, sputum culture/cytology also important.",
+      "wrongExplains": {
+        "0": "Brain MRI is for neurologic issues. Hemoptysis needs LUNG imaging (chest X-ray/CT).",
+        "2": "Colonoscopy is for GI bleeding (lower tract). Hemoptysis is RESPIRATORY - needs bronchoscopy.",
+        "3": "Transfusion may be needed, but DIAGNOSIS comes first (find the source). Can't treat what you can't find."
+      }
+    },
+    {
+      "id": "900.5.100.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "The bleeding slows as the bronchial artery is embolized. Mr. Edgar's airways are clearing. 'Crisis averted,' Ms. Frizzle says. 'But he'll need treatment for the underlying bronchiectasis. Now, final question.'",
+      "q": "Hemoptysis is:",
+      "options": [
+        "Vomiting blood from the stomach",
+        "Coughing up blood from the respiratory tract",
+        "Nosebleed",
+        "Blood in urine"
+      ],
+      "answer": 1,
+      "explain": "HEMOPTYSIS = COUGHING UP BLOOD from the RESPIRATORY TRACT (lungs, bronchi, trachea). Bright red, often frothy. Causes: infection (TB, pneumonia), bronchiectasis, cancer, PE, CHF. Distinguished from hematemesis (GI bleeding) and epistaxis (nosebleed). Massive hemoptysis is life-threatening emergency.",
+      "wrongExplains": {
+        "0": "That's HEMATEMESIS (vomiting blood from GI tract). Different source, different appearance (dark, coffee-ground).",
+        "2": "Nosebleed is EPISTAXIS. While blood can drip back and be coughed, true hemoptysis originates from lungs.",
+        "3": "Blood in urine is HEMATURIA. Different system entirely (genitourinary, not respiratory)."
+      }
+    }
+  ]
+}

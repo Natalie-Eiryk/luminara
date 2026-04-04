@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.27",
+  "parentQuestion": "The prefix 'broncho-' refers to:",
+  "narrative": {
+    "setting": "The Magic School Bus is navigating through Mr. Edgar's airways. He's been wheezing and coughing all morning, and his doctor suspects bronchitis. The bus travels down the trachea, approaching the branching network of bronchi - the airways that look like an upside-down tree.",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's airways are constricted. Understanding the bronchi quickly could help explain his breathing problems."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.27.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "Ms. Frizzle points ahead to where the trachea splits into two large tubes. 'Class, look at this branching structure. The ancient Greeks called these the bronchoi - the word itself sounds like wind rushing through a tunnel.'",
+      "q": "The Greek word 'bronchos' originally meant:",
+      "options": [
+        "Lung tissue",
+        "Windpipe or airway",
+        "Rib cage",
+        "Breathing muscle"
+      ],
+      "answer": 1,
+      "explain": "BRONCHOS = WINDPIPE or AIRWAY in Greek. The word mimicked the sound of air rushing through tubes. These are the tunnels that carry air from your throat down into your lungs - the bronchial tree.",
+      "wrongExplains": {
+        "0": "Lung tissue is the spongy alveoli where gas exchange happens. The bronchi are the hollow tubes leading TO the tissue, not the tissue itself.",
+        "2": "Rib cage is 'thorax' or 'costal'. The bronchi are inside the chest, not the bony structure protecting them.",
+        "3": "The breathing muscle is the diaphragm. Bronchi are passive tubes - muscles elsewhere do the work of breathing."
+      }
+    },
+    {
+      "id": "900.5.27.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "The bus shrinks further and enters the right main bronchus. The walls are pink and lined with cilia waving like grass in the wind. 'This is bronchial tissue,' Ms. Frizzle explains. 'And when doctors talk about broncho- anything, this is what they mean.'",
+      "q": "Which word correctly uses the 'broncho-' prefix?",
+      "options": [
+        "Bronchitis (airway inflammation)",
+        "Pneumonia (lung infection)",
+        "Pleurisy (lung lining inflammation)",
+        "Emphysema (alveoli damage)"
+      ],
+      "answer": 0,
+      "explain": "BRONCHITIS = BRONCHO (airways) + -ITIS (inflammation). Inflammation of the bronchi. The other conditions affect different parts: pneumonia = lungs, pleurisy = pleural lining, emphysema = alveoli. Location matters!",
+      "wrongExplains": {
+        "1": "Pneumonia uses 'pneumo-' for lung tissue, not 'broncho-' for airways. Different prefix, different location.",
+        "2": "Pleurisy is inflammation of the pleura (lung lining). The prefix would be 'pleuro-', not 'broncho-'.",
+        "3": "Emphysema affects alveoli (air sacs), not bronchi (airways). No 'broncho-' prefix because wrong location."
+      }
+    },
+    {
+      "id": "900.5.27.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "Up ahead, the bronchus branches into smaller bronchioles. 'The suffix changes,' Ms. Frizzle points out, 'but the root stays the same. Bronchus, bronchi, bronchioles - all part of the same airway family.'",
+      "q": "What's the relationship between 'bronchus' and 'bronchiole'?",
+      "options": [
+        "They're in different organs",
+        "Bronchioles are smaller branches of bronchi",
+        "Bronchus carries blood, bronchiole carries air",
+        "They're the same thing with different names"
+      ],
+      "answer": 1,
+      "explain": "BRONCHIOLES are tiny branches of the BRONCHI. Think of a tree: bronchi = major branches, bronchioles = twigs. The suffix '-ole' means 'small' - bronchiole = little bronchus. Same structure, different scale.",
+      "wrongExplains": {
+        "0": "Both are in the lungs, part of the same airway system. They're connected, not separate organs.",
+        "2": "Both carry AIR, not blood. Blood vessels run alongside them but these are air tubes, not blood tubes.",
+        "3": "They're different sizes! Bronchus → major airway. Bronchiole → tiny branch. The names reflect their scale."
+      }
+    },
+    {
+      "id": "900.5.27.s04",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "The bus passes through inflamed bronchial walls. The tissue is red and swollen, producing excess mucus. 'Bronchitis,' Ms. Frizzle announces. 'Let's decode what's happening using the word itself.'",
+      "q": "The suffix '-itis' in medical terminology means:",
+      "options": [
+        "Narrowing or constriction",
+        "Inflammation",
+        "Surgical removal",
+        "Difficulty or pain"
+      ],
+      "answer": 1,
+      "explain": "'-ITIS' always means INFLAMMATION. Bronchitis = airway inflammation. Tonsillitis = tonsil inflammation. Appendicitis = appendix inflammation. Redness, swelling, heat, pain - that's inflammation, and '-itis' is the suffix.",
+      "wrongExplains": {
+        "0": "Narrowing is 'stenosis'. Bronchitis involves inflammation which may CAUSE narrowing, but '-itis' specifically means inflammation.",
+        "2": "Surgical removal is '-ectomy'. Nobody's removing anything here - this is disease, not surgery.",
+        "3": "Difficulty is 'dys-' and pain is '-algia'. Inflammation (heat, swelling, redness) is different from just pain."
+      }
+    },
+    {
+      "id": "900.5.27.s05",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "Suddenly, the bronchus constricts violently. The bus is squeezed as the smooth muscle contracts. 'Bronchospasm!' Ms. Frizzle shouts. 'Quick - what does that word tell us?'",
+      "q": "A 'bronchospasm' is:",
+      "options": [
+        "Infection of the airways",
+        "Sudden contraction/tightening of airways",
+        "Surgical opening of airways",
+        "Imaging test of airways"
+      ],
+      "answer": 1,
+      "explain": "BRONCHO (airway) + SPASM (sudden contraction) = airways suddenly squeezing shut. This happens in asthma attacks. The muscles around bronchi tighten, making it hard to breathe. Spasm = sudden, involuntary muscle contraction.",
+      "wrongExplains": {
+        "0": "Infection would be bronchitis (inflammation) or add '-ia' for disease. Spasm specifically means muscle contraction.",
+        "2": "Surgical opening is '-ostomy' or '-otomy'. A spasm is the problem, not the treatment!",
+        "3": "Imaging is '-gram' or '-scopy'. Spasm is a physical event - sudden muscle tightening, not a test."
+      }
+    },
+    {
+      "id": "900.5.27.s06",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "As the spasm eases, Ms. Frizzle pulls up medical equipment on screen. 'When airways are sick, we need to look inside them. That requires a special tool with a special name.'",
+      "q": "A 'bronchoscope' would be used to:",
+      "options": [
+        "Listen to breathing sounds",
+        "Visually examine inside the airways",
+        "Measure oxygen levels",
+        "Take a chest X-ray"
+      ],
+      "answer": 1,
+      "explain": "BRONCHO (airway) + -SCOPE (instrument for viewing) = tool for looking inside airways. A flexible tube with a camera goes down the throat to examine the bronchi directly. Colonoscope = view colon, bronchoscope = view bronchi.",
+      "wrongExplains": {
+        "0": "Listening uses a stethoscope (generic). A bronchoscope is specifically for VISUAL examination with a camera, not sound.",
+        "2": "Oxygen measurement is pulse oximetry or blood gas analysis. A scope is for seeing, not measuring chemistry.",
+        "3": "X-rays use radiography. A bronchoscope is inserted INTO the body for direct viewing, not external imaging."
+      }
+    },
+    {
+      "id": "900.5.27.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "Mr. Edgar's doctor prescribes a medication. Ms. Frizzle reads the label: 'Bronchodilator.' 'Let's decode this,' she says with a smile. 'If you understand the word, you understand what the drug does.'",
+      "q": "A 'bronchodilator' medication would:",
+      "options": [
+        "Widen/open the airways",
+        "Reduce inflammation",
+        "Kill bacteria",
+        "Suppress coughing"
+      ],
+      "answer": 0,
+      "explain": "BRONCHO (airway) + DILATOR (widener) = something that widens airways. 'Dilate' means expand or open up. Opposite of constrict. These drugs relax the muscles around bronchi, making breathing easier. The word tells you exactly what it does!",
+      "wrongExplains": {
+        "1": "That's a corticosteroid or anti-inflammatory. Bronchodilators specifically OPEN airways, different mechanism.",
+        "2": "Antibiotics kill bacteria. 'Dilator' means widener, nothing about killing microbes.",
+        "3": "Cough suppressants are antitussives. Bronchodilators open airways - a mechanical effect, not suppressing reflexes."
+      }
+    },
+    {
+      "id": "900.5.27.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "The bus approaches an area where the bronchi are permanently damaged and widened. 'Bronchiectasis,' Ms. Frizzle says grimly. 'This is chronic damage. Let's break down what that word reveals.'",
+      "q": "Based on word parts, 'bronchiectasis' likely describes:",
+      "options": [
+        "Temporary airway narrowing",
+        "Permanent abnormal widening of airways",
+        "Inflammation of small airways",
+        "Surgical repair of airways"
+      ],
+      "answer": 1,
+      "explain": "BRONCHI (airways) + ECTASIS (abnormal expansion/dilation) = airways that have stretched out abnormally and permanently. Not the good kind of widening - damaged airways that can't return to normal. '-ectasis' always means abnormal expansion.",
+      "wrongExplains": {
+        "0": "Temporary narrowing is bronchospasm. '-ectasis' means permanent stretching/expansion, opposite of narrowing.",
+        "2": "Inflammation is '-itis' (bronchitis or bronchiolitis). '-ectasis' refers to structural stretching, not inflammation.",
+        "3": "Surgical repair is '-plasty'. This is a disease (abnormal widening), not a treatment."
+      }
+    },
+    {
+      "id": "900.5.27.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "'Sometimes,' Ms. Frizzle explains, 'we combine broncho- with other roots to specify exactly where in the airways we're talking about. Medical language is precise - it has to be.'",
+      "q": "If 'alveoli' are the tiny air sacs where gas exchange occurs, what would 'bronchoalveolar' refer to?",
+      "options": [
+        "Only the large bronchi",
+        "Only the alveoli",
+        "Both the airways and air sacs together",
+        "The space between the lungs"
+      ],
+      "answer": 2,
+      "explain": "BRONCHO (airways) + ALVEOLAR (air sacs) = both structures together. 'Bronchoalveolar lavage' washes out both airways and alveoli. When you combine roots, you include both regions. It's an AND statement, not an OR.",
+      "wrongExplains": {
+        "0": "Adding 'alveolar' includes the alveoli too. You've ignored half the word - both parts matter.",
+        "1": "The 'broncho-' prefix is still there! You can't ignore it. Both airways AND alveoli are included.",
+        "3": "That's the mediastinum or pleural space. This term specifically refers to airway tissue and alveolar tissue."
+      }
+    },
+    {
+      "id": "900.5.27.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "Mr. Edgar's breathing improves as the bronchodilator works. Ms. Frizzle gathers the class for the final question. 'You've learned to decode broncho- words. Now show me you've mastered the root.'",
+      "q": "The prefix 'broncho-' refers to:",
+      "options": [
+        "The lungs or lung tissue",
+        "The airways or bronchi",
+        "The diaphragm or breathing muscles",
+        "The trachea or throat"
+      ],
+      "answer": 1,
+      "explain": "BRONCHO- = AIRWAYS or BRONCHI. The branching tubes that carry air into the lungs. Not the alveoli (gas exchange), not the trachea (single windpipe above), but the bronchial tree specifically. Know this root, decode dozens of medical terms!",
+      "wrongExplains": {
+        "0": "Lungs are 'pneumo-' or 'pulmo-'. Bronchi are the airways WITHIN lungs, not the lung tissue itself.",
+        "2": "Diaphragm is 'phren-' and muscles are 'myo-'. Bronchi are tubes, not muscles.",
+        "3": "Trachea is 'tracheo-'. Bronchi begin WHERE the trachea splits - they're the next structure down the respiratory tree."
+      }
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map Coordinate Picker - Ms. Luminara</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #1a1a2e;
+      color: #fff;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffd700;
+      margin-bottom: 20px;
+    }
+
+    .controls {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    select, button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    select {
+      background: #2a2a4a;
+      color: #fff;
+    }
+
+    button {
+      background: #4a7c23;
+      color: #fff;
+    }
+
+    button:hover {
+      background: #5a9c33;
+    }
+
+    button.danger {
+      background: #c0392b;
+    }
+
+    button.danger:hover {
+      background: #e74c3c;
+    }
+
+    .map-container {
+      position: relative;
+      max-width: 900px;
+      margin: 0 auto;
+      border: 3px solid #ffd700;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .map-container img {
+      display: block;
+      width: 100%;
+      height: auto;
+      cursor: crosshair;
+    }
+
+    .marker {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(255, 215, 0, 0.8);
+      border: 3px solid #fff;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: bold;
+      color: #1a1a2e;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+      cursor: pointer;
+    }
+
+    .marker:hover {
+      background: rgba(255, 100, 100, 0.9);
+    }
+
+    .marker.floor-marker {
+      background: rgba(0, 255, 255, 0.8);
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+    }
+
+    .instructions {
+      background: #2a2a4a;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .instructions h3 {
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+
+    .instructions ol {
+      margin-left: 20px;
+    }
+
+    .instructions li {
+      margin-bottom: 5px;
+    }
+
+    .floor-indicator {
+      text-align: center;
+      font-size: 24px;
+      color: #00ffff;
+      margin-bottom: 10px;
+    }
+
+    .output-container {
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    .output-container h3 {
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 300px;
+      background: #0a0a1a;
+      color: #00ff00;
+      border: 2px solid #4a4a6a;
+      border-radius: 8px;
+      padding: 15px;
+      font-family: 'Consolas', monospace;
+      font-size: 14px;
+      resize: vertical;
+    }
+
+    .stats {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 10px;
+      color: #aaa;
+    }
+
+    .copy-btn {
+      margin-top: 10px;
+      background: #3498db;
+    }
+
+    .copy-btn:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <h1>🗺️ Map Coordinate Picker</h1>
+
+  <div class="instructions">
+    <h3>Instructions:</h3>
+    <ol>
+      <li>Select a map from the dropdown</li>
+      <li>Click "Start Floor 0" to begin marking nodes</li>
+      <li>Click on each tile/stepping stone for Floor 0 (bottom of map, start positions)</li>
+      <li>Click "Next Floor" when done with that floor</li>
+      <li>Continue until you reach the boss at the top</li>
+      <li>Click "Finish & Export" to get the code</li>
+      <li>Right-click a marker to remove it</li>
+    </ol>
+  </div>
+
+  <div class="controls">
+    <select id="mapSelect">
+      <option value="verdant-wilds">Act 1: Verdant Wilds</option>
+      <option value="infernal-peaks">Act 2: Infernal Peaks</option>
+      <option value="frozen-fortress">Act 3: Frozen Fortress</option>
+      <option value="desert-sands">Act 4: Desert Sands</option>
+      <option value="swamp-jungle">Act 5: Swamp Jungle</option>
+      <option value="floating-islands">Act 6: Floating Islands</option>
+      <option value="crystal-caverns">Act 7: Crystal Caverns</option>
+      <option value="cosmic-journey">Boss: Cosmic Journey</option>
+    </select>
+    <button id="startBtn">Start Floor 0</button>
+    <button id="nextFloorBtn" disabled>Next Floor</button>
+    <button id="finishBtn" disabled>Finish & Export</button>
+    <button id="undoBtn" class="danger">Undo Last</button>
+    <button id="clearBtn" class="danger">Clear All</button>
+  </div>
+
+  <div class="floor-indicator" id="floorIndicator">Select a map and click "Start Floor 0"</div>
+
+  <div class="map-container" id="mapContainer">
+    <img id="mapImage" src="./820.31-assets/map-verdant-wilds.png" alt="Map">
+  </div>
+
+  <div class="stats">
+    <span>Floor: <strong id="currentFloor">-</strong></span>
+    <span>Nodes this floor: <strong id="nodesThisFloor">0</strong></span>
+    <span>Total nodes: <strong id="totalNodes">0</strong></span>
+  </div>
+
+  <div class="output-container">
+    <h3>📋 Output Code (paste into CardTemplates.maps):</h3>
+    <textarea id="output" readonly placeholder="Click on the map to add node positions..."></textarea>
+    <button id="copyBtn" class="copy-btn">📋 Copy to Clipboard</button>
+  </div>
+
+  <script>
+    const mapSelect = document.getElementById('mapSelect');
+    const mapImage = document.getElementById('mapImage');
+    const mapContainer = document.getElementById('mapContainer');
+    const startBtn = document.getElementById('startBtn');
+    const nextFloorBtn = document.getElementById('nextFloorBtn');
+    const finishBtn = document.getElementById('finishBtn');
+    const undoBtn = document.getElementById('undoBtn');
+    const clearBtn = document.getElementById('clearBtn');
+    const floorIndicator = document.getElementById('floorIndicator');
+    const output = document.getElementById('output');
+    const copyBtn = document.getElementById('copyBtn');
+    const currentFloorSpan = document.getElementById('currentFloor');
+    const nodesThisFloorSpan = document.getElementById('nodesThisFloor');
+    const totalNodesSpan = document.getElementById('totalNodes');
+
+    // State
+    let isRecording = false;
+    let currentFloor = 0;
+    let floors = []; // Array of arrays: floors[floorNum] = [{x, y}, ...]
+    let markers = []; // DOM elements
+
+    // Map paths
+    const mapPaths = {
+      'verdant-wilds': './820.31-assets/map-verdant-wilds.png',
+      'infernal-peaks': './820.31-assets/map-infernal-peaks.png',
+      'frozen-fortress': './820.31-assets/map-frozen-fortress.png',
+      'desert-sands': './820.31-assets/map-desert-sands.png',
+      'swamp-jungle': './820.31-assets/map-swamp-jungle.png',
+      'floating-islands': './820.31-assets/map-floating-islands.png',
+      'crystal-caverns': './820.31-assets/map-crystal-caverns.png',
+      'cosmic-journey': './820.31-assets/map-cosmic-journey.png'
+    };
+
+    // Change map
+    mapSelect.addEventListener('change', () => {
+      mapImage.src = mapPaths[mapSelect.value];
+      clearAll();
+    });
+
+    // Start recording
+    startBtn.addEventListener('click', () => {
+      isRecording = true;
+      currentFloor = 0;
+      floors = [[]];
+      clearMarkers();
+      updateUI();
+      startBtn.disabled = true;
+      nextFloorBtn.disabled = false;
+      finishBtn.disabled = false;
+      floorIndicator.textContent = `🎯 Click on Floor 0 tiles (START - bottom of map)`;
+    });
+
+    // Next floor
+    nextFloorBtn.addEventListener('click', () => {
+      if (floors[currentFloor].length === 0) {
+        alert('Add at least one node to this floor first!');
+        return;
+      }
+      currentFloor++;
+      floors[currentFloor] = [];
+      updateUI();
+      floorIndicator.textContent = `🎯 Click on Floor ${currentFloor} tiles`;
+    });
+
+    // Finish
+    finishBtn.addEventListener('click', () => {
+      isRecording = false;
+      startBtn.disabled = false;
+      nextFloorBtn.disabled = true;
+      finishBtn.disabled = true;
+      generateOutput();
+      floorIndicator.textContent = `✅ Done! ${getTotalNodes()} nodes across ${floors.length} floors`;
+    });
+
+    // Undo last
+    undoBtn.addEventListener('click', () => {
+      if (floors[currentFloor] && floors[currentFloor].length > 0) {
+        floors[currentFloor].pop();
+        if (markers.length > 0) {
+          const marker = markers.pop();
+          marker.remove();
+        }
+        updateUI();
+        generateOutput();
+      }
+    });
+
+    // Clear all
+    clearBtn.addEventListener('click', () => {
+      if (confirm('Clear all markers?')) {
+        clearAll();
+      }
+    });
+
+    function clearAll() {
+      isRecording = false;
+      currentFloor = 0;
+      floors = [];
+      clearMarkers();
+      startBtn.disabled = false;
+      nextFloorBtn.disabled = true;
+      finishBtn.disabled = true;
+      floorIndicator.textContent = 'Select a map and click "Start Floor 0"';
+      output.value = '';
+      updateUI();
+    }
+
+    function clearMarkers() {
+      markers.forEach(m => m.remove());
+      markers = [];
+    }
+
+    // Click on map
+    mapContainer.addEventListener('click', (e) => {
+      if (!isRecording) return;
+      if (e.target.classList.contains('marker')) return;
+
+      const rect = mapImage.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+      // Round to 1 decimal place
+      const roundedX = Math.round(x * 10) / 10;
+      const roundedY = Math.round(y * 10) / 10;
+
+      // Add to current floor
+      floors[currentFloor].push({ x: roundedX, y: roundedY });
+
+      // Create marker
+      const marker = document.createElement('div');
+      marker.className = 'marker' + (currentFloor === 0 ? ' floor-marker' : '');
+      marker.style.left = x + '%';
+      marker.style.top = y + '%';
+      marker.textContent = `${currentFloor}.${floors[currentFloor].length - 1}`;
+      marker.title = `Floor ${currentFloor}, Node ${floors[currentFloor].length - 1}\n(${roundedX}%, ${roundedY}%)\nRight-click to remove`;
+
+      // Right-click to remove
+      marker.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+        removeMarker(marker, currentFloor, floors[currentFloor].length - 1);
+      });
+
+      mapContainer.appendChild(marker);
+      markers.push(marker);
+
+      updateUI();
+      generateOutput();
+    });
+
+    function removeMarker(marker, floor, index) {
+      // This is simplified - in production you'd need to track which marker belongs to which node
+      marker.remove();
+      const idx = markers.indexOf(marker);
+      if (idx > -1) markers.splice(idx, 1);
+      // Note: This doesn't update floors array properly, would need more complex tracking
+    }
+
+    function updateUI() {
+      currentFloorSpan.textContent = isRecording ? currentFloor : '-';
+      nodesThisFloorSpan.textContent = floors[currentFloor]?.length || 0;
+      totalNodesSpan.textContent = getTotalNodes();
+    }
+
+    function getTotalNodes() {
+      return floors.reduce((sum, floor) => sum + (floor?.length || 0), 0);
+    }
+
+    function generateOutput() {
+      const mapName = mapSelect.value;
+      let code = `// Node positions for '${mapName}'\nnodes: [\n`;
+
+      floors.forEach((floor, i) => {
+        const isLast = i === floors.length - 1;
+        const floorComment = i === 0 ? ' // Floor 0 (start)' :
+                            isLast ? ` // Floor ${i} (boss)` :
+                            ` // Floor ${i}`;
+
+        const nodeStrs = floor.map(n => `{ x: ${n.x}, y: ${n.y} }`);
+        code += `  [${nodeStrs.join(', ')}],${floorComment}\n`;
+      });
+
+      code += `],\nbossPosition: { x: ${floors[floors.length - 1]?.[0]?.x || 50}, y: ${floors[floors.length - 1]?.[0]?.y || 15} }`;
+
+      output.value = code;
+    }
+
+    // Copy to clipboard
+    copyBtn.addEventListener('click', () => {
+      output.select();
+      document.execCommand('copy');
+      copyBtn.textContent = '✅ Copied!';
+      setTimeout(() => {
+        copyBtn.textContent = '📋 Copy to Clipboard';
+      }, 2000);
+    });
+  </script>
+</body>
+</html>

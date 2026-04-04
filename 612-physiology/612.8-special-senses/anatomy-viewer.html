@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+  Ms. Luminara Quiz Suite - Interactive Anatomy Viewer
+  Uses Servier SMART Medical Art (CC BY 4.0)
+  https://smart.servier.com/
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anatomy Viewer - Ms. Luminara</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Crimson+Pro:wght@300;400;600&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --void: #03060d;
+  --surface: #0a0f1a;
+  --panel: #0e1525;
+  --border: rgba(56,189,248,0.12);
+  --primary: #38bdf8;
+  --warm: #f59e0b;
+  --lumi: #f472b6;
+  --correct: #4ade80;
+  --text: #e2ecf8;
+  --mid: #8ba5c2;
+  --dim: #3d5169;
+  --bright: #f0f7ff;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--void);
+  color: var(--text);
+  font-family: 'Crimson Pro', serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Layout */
+.shell { display: flex; min-height: 100vh; }
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sidebar-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  color: var(--bright);
+}
+
+.sidebar-sub {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--dim);
+  margin-top: 4px;
+}
+
+/* Category List */
+.category-list { padding: 12px 0; }
+
+.category-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  color: var(--mid);
+  transition: all 0.15s;
+}
+
+.category-btn:hover { background: rgba(255,255,255,0.04); }
+.category-btn.active {
+  background: rgba(56,189,248,0.08);
+  color: var(--primary);
+}
+
+.category-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.6;
+}
+
+.category-btn.active .category-dot { opacity: 1; }
+
+.category-name {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  flex: 1;
+}
+
+.category-count {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--dim);
+}
+
+/* Main Content */
+.main {
+  flex: 1;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.viewer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.viewer-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: var(--bright);
+}
+
+.viewer-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.ctrl-btn {
+  padding: 8px 14px;
+  background: rgba(56,189,248,0.08);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--mid);
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.ctrl-btn:hover {
+  background: rgba(56,189,248,0.15);
+  color: var(--primary);
+}
+
+.ctrl-btn.active {
+  background: var(--primary);
+  color: var(--void);
+}
+
+/* Image Grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  flex: 1;
+}
+
+.image-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.image-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.image-preview {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.3);
+  padding: 12px;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.image-info {
+  padding: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.image-title {
+  font-family: 'Crimson Pro', serif;
+  font-size: 14px;
+  color: var(--bright);
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.image-meta {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--dim);
+  display: flex;
+  gap: 8px;
+}
+
+/* Full Viewer */
+.full-viewer {
+  position: fixed;
+  inset: 0;
+  background: rgba(3,6,13,0.95);
+  z-index: 1000;
+  display: none;
+  flex-direction: column;
+}
+
+.full-viewer.active { display: flex; }
+
+.viewer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.viewer-info h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  color: var(--bright);
+}
+
+.viewer-info p {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--dim);
+  margin-top: 4px;
+}
+
+.close-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  color: var(--mid);
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.close-btn:hover {
+  background: rgba(248,113,113,0.2);
+  border-color: #f87171;
+  color: #f87171;
+}
+
+.viewer-canvas {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.canvas-container {
+  position: relative;
+  max-width: 90vw;
+  max-height: 80vh;
+}
+
+.canvas-container img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+/* Annotation Layer */
+.annotation-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.annotation-layer.editable { pointer-events: auto; }
+
+.annotation-pin {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: var(--primary);
+  border: 2px solid var(--bright);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-weight: bold;
+  color: var(--void);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  transition: all 0.15s;
+}
+
+.annotation-pin:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.annotation-pin.active {
+  background: var(--warm);
+}
+
+.annotation-tooltip {
+  position: absolute;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  min-width: 150px;
+  max-width: 250px;
+  pointer-events: auto;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: all 0.2s;
+  z-index: 10;
+}
+
+.annotation-pin:hover + .annotation-tooltip,
+.annotation-tooltip:hover {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tooltip-title {
+  font-family: 'Crimson Pro', serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--bright);
+  margin-bottom: 4px;
+}
+
+.tooltip-desc {
+  font-size: 12px;
+  color: var(--mid);
+  line-height: 1.4;
+}
+
+/* Toolbar */
+.viewer-toolbar {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.tool-btn {
+  padding: 10px 20px;
+  background: rgba(56,189,248,0.08);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--mid);
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tool-btn:hover {
+  background: rgba(56,189,248,0.15);
+  color: var(--primary);
+}
+
+.tool-btn.active {
+  background: var(--primary);
+  color: var(--void);
+  border-color: var(--primary);
+}
+
+/* Attribution */
+.attribution {
+  padding: 16px 20px;
+  border-top: 1px solid var(--border);
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--dim);
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.attribution a:hover { text-decoration: underline; }
+
+/* Empty State */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  color: var(--dim);
+  text-align: center;
+}
+
+.empty-icon { font-size: 48px; opacity: 0.3; margin-bottom: 16px; }
+.empty-text { font-family: 'DM Mono', monospace; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="shell">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h1 class="sidebar-title">Anatomy Viewer</h1>
+      <p class="sidebar-sub">SMART Medical Art Collection</p>
+    </div>
+
+    <div class="category-list" id="categoryList">
+      <!-- Categories populated by JS -->
+    </div>
+
+    <div class="attribution">
+      Images from <a href="https://smart.servier.com/" target="_blank">Servier Medical Art</a><br>
+      Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="viewer-header">
+      <h2 class="viewer-title" id="currentCategory">Select a Category</h2>
+      <div class="viewer-controls">
+        <button class="ctrl-btn" onclick="setViewMode('grid')">Grid</button>
+        <button class="ctrl-btn" onclick="setViewMode('list')">List</button>
+      </div>
+    </div>
+
+    <div class="image-grid" id="imageGrid">
+      <div class="empty-state">
+        <div class="empty-icon">🔬</div>
+        <p class="empty-text">Select a category to view anatomy images</p>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- Full Viewer Modal -->
+<div class="full-viewer" id="fullViewer">
+  <div class="viewer-top">
+    <div class="viewer-info">
+      <h2 id="viewerTitle">Image Title</h2>
+      <p id="viewerMeta">Category - Format</p>
+    </div>
+    <button class="close-btn" onclick="closeViewer()">&times;</button>
+  </div>
+
+  <div class="viewer-canvas">
+    <div class="canvas-container" id="canvasContainer">
+      <img id="viewerImage" src="" alt="">
+      <div class="annotation-layer" id="annotationLayer"></div>
+    </div>
+  </div>
+
+  <div class="viewer-toolbar">
+    <button class="tool-btn" onclick="toggleAnnotations()">
+      <span>📍</span> Toggle Labels
+    </button>
+    <button class="tool-btn" id="addPinBtn" onclick="toggleAddPin()">
+      <span>+</span> Add Label
+    </button>
+    <button class="tool-btn" onclick="zoomIn()">
+      <span>🔍</span> Zoom In
+    </button>
+    <button class="tool-btn" onclick="zoomOut()">
+      <span>🔍</span> Zoom Out
+    </button>
+    <button class="tool-btn" onclick="resetView()">
+      <span>↺</span> Reset
+    </button>
+  </div>
+</div>
+
+<script>
+// SMART Medical Art Index
+const smartIndex = {
+  "ophthalmology": {
+    name: "Eye (Ophthalmology)",
+    color: "#38bdf8",
+    images: [
+      {file: "eye_structure_1.svg", title: "Eye Structure", format: "svg"},
+      {file: "eye_structure_1.png", title: "Eye Structure", format: "png"},
+      {file: "eye_muscles_1.svg", title: "Eye Muscles", format: "svg"},
+      {file: "eye_muscles_1.png", title: "Eye Muscles", format: "png"}
+    ]
+  },
+  "ent": {
+    name: "Ear, Nose, Throat",
+    color: "#a78bfa",
+    images: [
+      {file: "larynx_1.svg", title: "Larynx", format: "svg"},
+      {file: "larynx_1.png", title: "Larynx", format: "png"},
+      {file: "swallowing_system_1.svg", title: "Swallowing System", format: "svg"},
+      {file: "swallowing_system_1.png", title: "Swallowing System", format: "png"},
+      {file: "conducting_zone_1.svg", title: "Conducting Zone", format: "svg"},
+      {file: "conducting_zone_1.png", title: "Conducting Zone", format: "png"}
+    ]
+  },
+  "nervous-system": {
+    name: "Nervous System",
+    color: "#2dd4bf",
+    images: [
+      {file: "sympathetic_nervous_system_1.png", title: "Sympathetic Nervous System", format: "png"}
+    ]
+  },
+  "neural-cells": {
+    name: "Neural Cells",
+    color: "#fb923c",
+    images: [
+      {file: "nervous_tissue_cell_organisation_3.emf", title: "Nervous Tissue Cell Organisation", format: "emf"}
+    ]
+  },
+  "digestive-system": {
+    name: "Digestive System",
+    color: "#f472b6",
+    images: [
+      {file: "pancreas_anatomy_&_physiology_2.svg", title: "Pancreas Anatomy", format: "svg"},
+      {file: "pancreas_anatomy_&_physiology_3.svg", title: "Pancreas Physiology", format: "svg"},
+      {file: "pancreas_separated_structures_4.svg", title: "Pancreas Structures", format: "svg"}
+    ]
+  },
+  "respiratory-system": {
+    name: "Respiratory System",
+    color: "#34d399",
+    images: [
+      {file: "conducting_zone_1.svg", title: "Conducting Zone", format: "svg"},
+      {file: "crrt_and_ecmo_1.svg", title: "CRRT and ECMO", format: "svg"}
+    ]
+  },
+  "bones": {
+    name: "Skeletal System",
+    color: "#fbbf24",
+    images: [
+      {file: "skeleton_(2)_1.svg", title: "Full Skeleton", format: "svg"},
+      {file: "skeleton_(2)_1.png", title: "Full Skeleton", format: "png"}
+    ]
+  },
+  "heart-pathophysiology": {
+    name: "Heart Pathophysiology",
+    color: "#f87171",
+    images: [
+      {file: "myocardial_infarctions_(1).emf", title: "Myocardial Infarctions", format: "emf"},
+      {file: "coronary_artery_bypass_grafting_(1).emf", title: "Coronary Artery Bypass Grafting", format: "emf"}
+    ]
+  },
+  "emergency-equipment": {
+    name: "Emergency Equipment",
+    color: "#60a5fa",
+    images: [
+      {file: "ambulance.svg", title: "Ambulance", format: "svg"},
+      {file: "helicopter.svg", title: "Helicopter", format: "svg"},
+      {file: "stretcher.svg", title: "Stretcher", format: "svg"},
+      {file: "emergency_kit_bag.svg", title: "Emergency Kit", format: "svg"}
+    ]
+  }
+};
+
+const basePath = '../assets/diagrams/smart-named';
+let currentCategory = null;
+let currentImage = null;
+let annotations = {};
+let addPinMode = false;
+let zoomLevel = 1;
+
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+  renderCategories();
+});
+
+function renderCategories() {
+  const list = document.getElementById('categoryList');
+  list.innerHTML = Object.entries(smartIndex).map(([key, cat]) => `
+    <button class="category-btn" data-category="${key}" onclick="selectCategory('${key}')" style="--cat-color: ${cat.color}">
+      <span class="category-dot" style="background: ${cat.color}"></span>
+      <span class="category-name">${cat.name}</span>
+      <span class="category-count">${cat.images.length}</span>
+    </button>
+  `).join('');
+}
+
+function selectCategory(key) {
+  currentCategory = key;
+  const cat = smartIndex[key];
+
+  // Update active state
+  document.querySelectorAll('.category-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.category === key);
+  });
+
+  // Update title
+  document.getElementById('currentCategory').textContent = cat.name;
+
+  // Render images
+  const grid = document.getElementById('imageGrid');
+
+  if (cat.images.length === 0) {
+    grid.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-icon">📁</div>
+        <p class="empty-text">No images available in this category</p>
+      </div>
+    `;
+    return;
+  }
+
+  grid.innerHTML = cat.images.map((img, idx) => `
+    <div class="image-card" onclick="openViewer('${key}', ${idx})">
+      <div class="image-preview">
+        <img src="${basePath}/${key}/${img.file}"
+             alt="${img.title}"
+             onerror="this.parentElement.innerHTML='<div style=\\'color:var(--dim);font-size:11px;\\'>Preview unavailable</div>'">
+      </div>
+      <div class="image-info">
+        <div class="image-title">${img.title}</div>
+        <div class="image-meta">
+          <span>${img.format.toUpperCase()}</span>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function openViewer(categoryKey, imageIdx) {
+  const cat = smartIndex[categoryKey];
+  const img = cat.images[imageIdx];
+  currentImage = { category: categoryKey, index: imageIdx, ...img };
+
+  document.getElementById('viewerTitle').textContent = img.title;
+  document.getElementById('viewerMeta').textContent = `${cat.name} - ${img.format.toUpperCase()}`;
+  document.getElementById('viewerImage').src = `${basePath}/${categoryKey}/${img.file}`;
+
+  // Load annotations if any
+  const annotationKey = `${categoryKey}/${img.file}`;
+  renderAnnotations(annotations[annotationKey] || []);
+
+  document.getElementById('fullViewer').classList.add('active');
+  zoomLevel = 1;
+  updateZoom();
+}
+
+function closeViewer() {
+  document.getElementById('fullViewer').classList.remove('active');
+  currentImage = null;
+  addPinMode = false;
+  document.getElementById('addPinBtn').classList.remove('active');
+}
+
+function renderAnnotations(pins) {
+  const layer = document.getElementById('annotationLayer');
+  layer.innerHTML = pins.map((pin, idx) => `
+    <div class="annotation-pin" style="left: ${pin.x}%; top: ${pin.y}%">${idx + 1}</div>
+    <div class="annotation-tooltip" style="left: ${pin.x}%; top: calc(${pin.y}% + 20px)">
+      <div class="tooltip-title">${pin.title}</div>
+      ${pin.desc ? `<div class="tooltip-desc">${pin.desc}</div>` : ''}
+    </div>
+  `).join('');
+}
+
+function toggleAnnotations() {
+  const layer = document.getElementById('annotationLayer');
+  layer.style.display = layer.style.display === 'none' ? '' : 'none';
+}
+
+function toggleAddPin() {
+  addPinMode = !addPinMode;
+  document.getElementById('addPinBtn').classList.toggle('active', addPinMode);
+  document.getElementById('annotationLayer').classList.toggle('editable', addPinMode);
+
+  if (addPinMode) {
+    document.getElementById('canvasContainer').onclick = handleAddPin;
+  } else {
+    document.getElementById('canvasContainer').onclick = null;
+  }
+}
+
+function handleAddPin(e) {
+  if (!addPinMode || !currentImage) return;
+
+  const container = document.getElementById('canvasContainer');
+  const rect = container.getBoundingClientRect();
+  const x = ((e.clientX - rect.left) / rect.width * 100).toFixed(1);
+  const y = ((e.clientY - rect.top) / rect.height * 100).toFixed(1);
+
+  const title = prompt('Label name:');
+  if (!title) return;
+
+  const desc = prompt('Description (optional):');
+
+  const annotationKey = `${currentImage.category}/${currentImage.file}`;
+  if (!annotations[annotationKey]) annotations[annotationKey] = [];
+  annotations[annotationKey].push({ x, y, title, desc });
+
+  renderAnnotations(annotations[annotationKey]);
+}
+
+function zoomIn() {
+  zoomLevel = Math.min(zoomLevel * 1.25, 4);
+  updateZoom();
+}
+
+function zoomOut() {
+  zoomLevel = Math.max(zoomLevel / 1.25, 0.5);
+  updateZoom();
+}
+
+function resetView() {
+  zoomLevel = 1;
+  updateZoom();
+}
+
+function updateZoom() {
+  const img = document.getElementById('viewerImage');
+  img.style.transform = `scale(${zoomLevel})`;
+}
+
+function setViewMode(mode) {
+  const grid = document.getElementById('imageGrid');
+  if (mode === 'list') {
+    grid.style.gridTemplateColumns = '1fr';
+  } else {
+    grid.style.gridTemplateColumns = 'repeat(auto-fill, minmax(200px, 1fr))';
+  }
+}
+
+// Keyboard shortcuts
+document.addEventListener('keydown', (e) => {
+  if (!document.getElementById('fullViewer').classList.contains('active')) return;
+
+  if (e.key === 'Escape') closeViewer();
+  if (e.key === '+' || e.key === '=') zoomIn();
+  if (e.key === '-') zoomOut();
+  if (e.key === '0') resetView();
+});
+</script>
+</body>
+</html>

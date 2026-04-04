@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.72",
+  "parentQuestion": "The Hering-Breuer reflex prevents:",
+  "narrative": {
+    "setting": "The Magic School Bus rides along a stretch receptor embedded in Mr. Edgar's bronchial wall. As the lung inflates, the receptor stretches like a rubber band being pulled. At maximum inflation, it fires rapidly, sending signals via the vagus nerve to the medulla. Ms. Frizzle watches the respiratory center respond. 'STOP!' the signal says. 'Lungs are full. No more inhalation.' The diaphragm relaxes. Exhalation begins. 'That's Hering-Breuer,' she explains. 'The lungs tell the brain when to stop.'",
+    "character": "Mr. Edgar",
+    "tension": "Without this reflex, lungs would overinflate until alveoli rupture. Premature infants have stronger Hering-Breuer responses - that's why they have paradoxical breathing patterns. Vagotomy (cutting vagus nerve) eliminates the reflex and breathing becomes deeper. Understanding Hering-Breuer isn't just neurophysiology - it's understanding the mechanical feedback that protects lungs from barotrauma."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.72.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Reflexes are automatic responses,' Ms. Frizzle begins. 'Stimulus → sensor → signal → response. No conscious thought. Hering-Breuer is a RESPIRATORY REFLEX. It regulates breathing based on lung stretch. Named after physiologists Hering and Breuer (1868).'",
+      "q": "A reflex is:",
+      "options": [
+        "Conscious voluntary action",
+        "Automatic involuntary response to stimulus",
+        "Learned behavior",
+        "Random action"
+      ],
+      "answer": 1,
+      "explain": "REFLEX = AUTOMATIC, INVOLUNTARY response to stimulus. Mediated by nervous system. Examples: knee-jerk, pupillary, cough, Hering-Breuer. No conscious control required.",
+      "wrongExplains": {
+        "0": "Reflexes are INVOLUNTARY/automatic. Consciousness not required.",
+        "2": "Reflexes are INNATE (hardwired), not learned behaviors.",
+        "3": "Reflexes are SPECIFIC responses to specific stimuli, not random."
+      }
+    },
+    {
+      "id": "900.5.72.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Pulmonary stretch receptors,' Ms. Frizzle shows the sensors. 'Located in smooth muscle of bronchi and bronchioles. MECHANORECEPTORS - they sense mechanical stretch. When lungs inflate, these receptors are stretched and activated.'",
+      "q": "Pulmonary stretch receptors are located in:",
+      "options": [
+        "Brain",
+        "Bronchi and bronchioles",
+        "Blood vessels",
+        "Skeletal muscle"
+      ],
+      "answer": 1,
+      "explain": "Pulmonary stretch receptors are in smooth muscle of BRONCHI and BRONCHIOLES. They sense lung inflation (mechanical stretch). Signal via vagus nerve (CN X) to medulla.",
+      "wrongExplains": {
+        "0": "Brain has central chemoreceptors (CO2/pH). Stretch receptors are IN the lungs.",
+        "2": "Blood vessels have baroreceptors. Lung stretch receptors are in airways.",
+        "3": "Skeletal muscle has muscle spindles. Pulmonary receptors are in airway smooth muscle."
+      }
+    },
+    {
+      "id": "900.5.72.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'The reflex arc,' Ms. Frizzle traces. 'Lung inflates → stretch receptors activated → signals via VAGUS NERVE (CN X) → dorsal respiratory group in MEDULLA → INHIBITS further inspiration → exhalation begins. Negative feedback loop.'",
+      "q": "Signals from pulmonary stretch receptors travel via which nerve?",
+      "options": [
+        "Phrenic nerve",
+        "Vagus nerve (CN X)",
+        "Sciatic nerve",
+        "Optic nerve"
+      ],
+      "answer": 1,
+      "explain": "Stretch receptor signals travel via VAGUS NERVE (CN X) to medulla. Vagotomy (cutting vagus) eliminates Hering-Breuer reflex. Phrenic nerve carries MOTOR signals TO diaphragm.",
+      "wrongExplains": {
+        "0": "Phrenic nerve (C3-C5) carries MOTOR signals TO diaphragm. Sensory from lungs is vagus.",
+        "2": "Sciatic nerve is in legs. Lung stretch signals via vagus (cranial nerve X).",
+        "3": "Optic nerve (CN II) is for vision. Vagus (CN X) carries lung stretch signals."
+      }
+    },
+    {
+      "id": "900.5.72.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'The reflex INHIBITS inspiration,' Ms. Frizzle emphasizes. 'When lungs are full and stretched, the signal says STOP INHALING. This prevents over-inflation. It's a brake, not an accelerator. Protects lungs from excessive stretch.'",
+      "q": "The Hering-Breuer reflex, when activated:",
+      "options": [
+        "Stimulates deeper inhalation",
+        "Inhibits further inspiration",
+        "Stops all breathing permanently",
+        "Only affects heart rate"
+      ],
+      "answer": 1,
+      "explain": "Hering-Breuer reflex INHIBITS INSPIRATION when lungs are inflated. It's a 'stop signal' preventing over-inflation. Exhalation then begins passively. Protective mechanism.",
+      "wrongExplains": {
+        "0": "The reflex INHIBITS inspiration (stops it), doesn't stimulate deeper breathing.",
+        "2": "It inhibits INSPIRATION, allowing exhalation. Breathing continues cyclically.",
+        "3": "The reflex affects BREATHING (respiratory centers), not heart rate directly."
+      }
+    },
+    {
+      "id": "900.5.72.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'The function: prevent overinflation,' Ms. Frizzle explains. 'Lungs are elastic but can rupture if overstretched (pneumothorax, barotrauma). Hering-Breuer limits tidal volume. More important in infants than adults.'",
+      "q": "The primary function of the Hering-Breuer reflex is to:",
+      "options": [
+        "Increase lung volume maximally",
+        "Prevent lung overinflation",
+        "Stop exhalation",
+        "Produce mucus"
+      ],
+      "answer": 1,
+      "explain": "Hering-Breuer reflex PREVENTS LUNG OVERINFLATION. Stretch receptors sense full lungs, inhibit inspiration. Protective against barotrauma. Stronger in infants, weaker in adults (except extreme volumes).",
+      "wrongExplains": {
+        "0": "The reflex LIMITS volume (prevents overinflation), doesn't maximize it.",
+        "2": "It inhibits INSPIRATION (inhalation), not exhalation. Allows passive exhalation.",
+        "3": "Mucus production is by goblet cells. Hering-Breuer is volume control reflex."
+      }
+    },
+    {
+      "id": "900.5.72.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Age differences,' Ms. Frizzle notes. 'In INFANTS, Hering-Breuer is strong - activates at normal tidal volumes. In ADULTS, it's weak - only activates at very large volumes (>1 L). Adults rely more on chemical control (CO2).'",
+      "q": "The Hering-Breuer reflex is:",
+      "options": [
+        "Stronger in adults than infants",
+        "Stronger in infants than adults",
+        "Absent in all humans",
+        "Only present in disease"
+      ],
+      "answer": 1,
+      "explain": "Hering-Breuer is STRONGER in INFANTS (activates at normal Vt). Weaker in ADULTS (only activates at large volumes >1 L). Infants rely more on volume feedback, adults on chemical (CO2).",
+      "wrongExplains": {
+        "0": "OPPOSITE - stronger in infants, weaker in adults. Infant breathing more mechanically regulated.",
+        "2": "The reflex is present in all humans, just stronger in infants.",
+        "3": "Hering-Breuer is a NORMAL protective reflex, not pathologic."
+      }
+    },
+    {
+      "id": "900.5.72.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Vagotomy experiments,' Ms. Frizzle describes historical research. 'Cut the vagus nerves → Hering-Breuer reflex disappears → breathing becomes SLOWER and DEEPER (larger tidal volumes). Proves vagus carries the inhibitory signal.'",
+      "q": "After vagotomy (cutting vagus nerve), breathing becomes:",
+      "options": [
+        "Faster and shallower",
+        "Slower and deeper",
+        "Completely stops",
+        "Unchanged"
+      ],
+      "answer": 1,
+      "explain": "Vagotomy eliminates Hering-Breuer → breathing becomes SLOWER (lower rate) and DEEPER (larger Vt). Without stretch reflex inhibition, inspiration continues longer. Proves vagus role.",
+      "wrongExplains": {
+        "0": "Without inhibitory reflex, breaths are DEEPER (not shallower) and SLOWER.",
+        "2": "Breathing doesn't stop - chemoreceptors (CO2) still drive it. Just loses volume feedback.",
+        "3": "Breathing CHANGES significantly - slower, deeper without Hering-Breuer."
+      }
+    },
+    {
+      "id": "900.5.72.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Clinical relevance in mechanical ventilation,' Ms. Frizzle adds. 'Ventilators can trigger Hering-Breuer if tidal volumes are too large. Patient 'fights' the ventilator. Understanding this reflex helps set appropriate Vt.'",
+      "q": "In mechanical ventilation, large tidal volumes can trigger:",
+      "options": [
+        "No response",
+        "Hering-Breuer reflex inhibiting inspiration",
+        "Increased inspiration",
+        "Cardiac arrest"
+      ],
+      "answer": 1,
+      "explain": "Large Vt in mechanical ventilation can trigger HERING-BREUER reflex → patient tries to exhale while ventilator delivers breath → 'fighting the vent.' Appropriate Vt avoids this.",
+      "wrongExplains": {
+        "0": "Large volumes DO trigger stretch receptors. Response is reflex inhibition.",
+        "2": "Hering-Breuer INHIBITS inspiration (tries to exhale), doesn't increase it.",
+        "3": "It affects breathing pattern, not directly causing cardiac arrest."
+      }
+    },
+    {
+      "id": "900.5.72.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Distinguishing from chemoreceptors,' Ms. Frizzle clarifies. 'Hering-Breuer senses MECHANICAL STRETCH (volume). Chemoreceptors sense CHEMICAL changes (CO2, O2, pH). Different sensors, different functions. Both contribute to breathing control.'",
+      "q": "Unlike chemoreceptors, pulmonary stretch receptors sense:",
+      "options": [
+        "CO2 levels",
+        "Mechanical lung stretch/volume",
+        "O2 levels",
+        "Blood pH"
+      ],
+      "answer": 1,
+      "explain": "Stretch receptors sense MECHANICAL STRETCH (lung volume). Chemoreceptors sense CHEMICAL (CO2, O2, pH). Different modalities. Both feed into respiratory control centers.",
+      "wrongExplains": {
+        "0": "CO2 is sensed by CHEMORECEPTORS (central/peripheral). Stretch receptors sense volume.",
+        "2": "O2 is sensed by peripheral CHEMORECEPTORS (carotid bodies). Stretch = volume.",
+        "3": "pH is sensed by CHEMORECEPTORS (central in CSF). Stretch receptors sense mechanics."
+      }
+    },
+    {
+      "id": "900.5.72.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Ms. Frizzle watches the stretch receptor fire, sending its 'stop' signal via the vagus nerve. 'Lungs are full - halt inspiration. Protects against overinflation. So, class: what does the Hering-Breuer reflex prevent?'",
+      "q": "The Hering-Breuer reflex prevents:",
+      "options": [
+        "Lung collapse",
+        "Overinflation of lungs",
+        "Coughing",
+        "Sneezing"
+      ],
+      "answer": 1,
+      "explain": "Hering-Breuer reflex PREVENTS LUNG OVERINFLATION. Pulmonary stretch receptors (in bronchi) sense inflation → signal via vagus nerve → medulla inhibits inspiration. Stronger in infants. Protective against barotrauma.",
+      "wrongExplains": {
+        "0": "Lung collapse prevention involves surfactant and negative pleural pressure - not Hering-Breuer.",
+        "2": "Coughing is a separate reflex triggered by airway irritants.",
+        "3": "Sneezing is triggered by nasal irritation - different reflex entirely."
+      }
+    }
+  ]
+}

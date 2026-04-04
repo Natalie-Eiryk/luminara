@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dewey 612.8 Comprehensive Exam | Special Senses (Ch 15) | Ms. Luminara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Source+Sans+Pro:wght@400;600&family=DM+Mono&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0e0e12;
+      --panel: #16161c;
+      --border: #2a2a35;
+      --cyan: #61e8e1;
+      --purple: #d4a5ff;
+      --teal: #47d7e2;
+      --green: #a0eec0;
+      --red: #ff6b6b;
+      --yellow: #ffe066;
+      --text: #eeeff3;
+      --muted: #9090a0;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+    }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    .sidebar {
+      width: 260px;
+      background: var(--panel);
+      border-right: 1px solid var(--border);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0; left: 0;
+      height: 100vh;
+      overflow-y: auto;
+    }
+    .sidebar h2 { color: var(--cyan); font-size: 1.15rem; margin-bottom: 1rem; }
+    .nav-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.55rem 0.75rem;
+      border-radius: 8px;
+      margin-bottom: 0.35rem;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 0.92rem;
+    }
+    .nav-item:hover, .nav-item.active { background: #222230; }
+    .nav-item .progress-pill {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      background: #222230;
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
+    }
+    .sidebar-footer {
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .main {
+      flex: 1;
+      margin-left: 260px;
+      padding: 2.5rem 3rem 4rem;
+      max-width: 900px;
+    }
+    .exam-title { font-size: 2rem; margin-bottom: 0.25rem; }
+    .exam-meta { color: var(--muted); margin-bottom: 2rem; font-size: 0.95rem; }
+    .section-panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem 2rem 2rem;
+      margin-bottom: 2rem;
+    }
+    .section-panel h2 { font-size: 1.35rem; margin-bottom: 1.15rem; }
+    .question-type-divider {
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      color: var(--purple);
+      margin: 1.5rem 0 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .question-type-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+    .card {
+      background: #1c1c25;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+      margin-bottom: 1rem;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .card.correct { border-color: var(--green); box-shadow: 0 0 6px var(--green); }
+    .card.incorrect { border-color: var(--red); box-shadow: 0 0 6px var(--red); }
+    .card p.question { font-weight: 600; margin-bottom: 0.85rem; }
+    .note { font-size: 0.85rem; color: var(--muted); margin-top: 0.75rem; }
+    .note strong { color: var(--yellow); }
+    .options { display: flex; flex-direction: column; gap: 0.5rem; }
+    .option-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      background: #222230;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.6rem 0.9rem;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+      width: 100%;
+      text-align: left;
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+    .option-btn:hover:not(:disabled) { border-color: var(--cyan); }
+    .option-btn:disabled { cursor: not-allowed; opacity: 0.75; }
+    .option-btn.selected-correct { border-color: var(--green); background: rgba(160,238,192,0.12); }
+    .option-btn.selected-wrong { border-color: var(--red); background: rgba(255,107,107,0.12); }
+    .option-btn.reveal-correct { border-color: var(--green); }
+    .option-letter {
+      font-family: 'DM Mono', monospace;
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: var(--cyan);
+    }
+    .match-grid { display: flex; flex-direction: column; gap: 0.6rem; }
+    .match-row { display: flex; align-items: center; gap: 0.65rem; }
+    .match-term {
+      flex: 1;
+      background: #222230;
+      padding: 0.55rem 0.75rem;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    .match-select {
+      flex: 1;
+      padding: 0.55rem 0.75rem;
+      border-radius: 6px;
+      background: #222230;
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+    .match-select:focus { outline: none; border-color: var(--cyan); }
+    .match-row.correct .match-select { border-color: var(--green); }
+    .match-row.incorrect .match-select { border-color: var(--red); }
+    .essay-prompt { font-weight: 600; margin-bottom: 0.85rem; }
+    .essay-toggle {
+      background: linear-gradient(135deg, #6f5dcc, #47d7e2);
+      border: none;
+      border-radius: 6px;
+      padding: 0.55rem 1.1rem;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .essay-toggle:hover { opacity: 0.88; }
+    .essay-answer {
+      margin-top: 0.85rem;
+      padding: 1rem;
+      background: #222230;
+      border-radius: 8px;
+      display: none;
+      white-space: pre-wrap;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .essay-answer.show { display: block; }
+    .check-btn {
+      margin-top: 0.9rem;
+      background: linear-gradient(135deg, var(--purple), var(--cyan));
+      border: none;
+      border-radius: 6px;
+      padding: 0.55rem 1.1rem;
+      color: #000;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .check-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    .floating-score {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.85rem 1.35rem;
+      font-family: 'DM Mono', monospace;
+      z-index: 100;
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+    }
+    .floating-score .correct-count { color: var(--green); }
+    .floating-score .wrong-count { color: var(--red); }
+    .results-panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      display: none;
+      text-align: center;
+    }
+    .results-panel.show { display: block; }
+    .results-panel h2 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+    .results-percentage {
+      font-family: 'DM Mono', monospace;
+      font-size: 3.5rem;
+      color: var(--cyan);
+      margin: 1rem 0;
+    }
+    .results-breakdown {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 1.5rem 0;
+    }
+    .results-breakdown .stat { text-align: center; }
+    .results-breakdown .stat-num { font-size: 1.8rem; font-weight: 700; }
+    .results-breakdown .stat-label { font-size: 0.85rem; color: var(--muted); }
+    .restart-btn {
+      margin-top: 1rem;
+      background: linear-gradient(135deg, var(--purple), var(--cyan));
+      border: none;
+      border-radius: 8px;
+      padding: 0.75rem 2rem;
+      color: #000;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    @media (max-width: 900px) {
+      .sidebar { display: none; }
+      .main { margin-left: 0; padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<aside class="sidebar">
+  <h2>Exam Sections</h2>
+  <nav id="sectionNav"></nav>
+  <div class="sidebar-footer">Ms. Luminara<br/>Dewey 612.8</div>
+</aside>
+
+<main class="main">
+  <h1 class="exam-title">Special Senses Comprehensive Exam</h1>
+  <p class="exam-meta">Dewey 612.8 | Chapter 15 | 53 Questions</p>
+
+  <div id="examContent"></div>
+
+  <div id="resultsPanel" class="results-panel">
+    <h2>Exam Complete!</h2>
+    <div class="results-percentage" id="finalPercent">0%</div>
+    <div class="results-breakdown">
+      <div class="stat"><div class="stat-num correct-count" id="finalCorrect">0</div><div class="stat-label">Correct</div></div>
+      <div class="stat"><div class="stat-num wrong-count" id="finalWrong">0</div><div class="stat-label">Incorrect</div></div>
+      <div class="stat"><div class="stat-num" id="finalTotal">0</div><div class="stat-label">Total</div></div>
+    </div>
+    <button class="restart-btn" onclick="location.reload()">Restart Exam</button>
+  </div>
+</main>
+
+<div class="floating-score">
+  <span>Score:</span>
+  <span class="correct-count" id="runningCorrect">0</span>/<span id="runningTotal">0</span>
+</div>
+
+<script>
+const examData = {
+  sections: [
+    {
+      id: 'eye-structure',
+      title: 'Section 1: Eye Structure & Photoreceptors (600.1)',
+      questions: [
+        {
+          type: 'match',
+          prompt: 'Match each eye structure to its function:',
+          items: ['Cornea', 'Iris', 'Lens', 'Retina', 'Fovea', 'Optic disc'],
+          opts: ['Most refractive power (~43D)', 'Controls pupil size', 'Adjustable focus', 'Contains photoreceptors', 'Highest cone density', 'Blind spot'],
+          ans: [0, 1, 2, 3, 4, 5],
+          note: 'Light path: Cornea (fixed refraction) → anterior chamber → pupil (aperture) → lens (focus) → vitreous → retina. Fovea = sharpest vision; optic disc = no photoreceptors.'
+        },
+        {
+          type: 'tf',
+          q: 'The optic disc forms a blind spot where the optic nerve leaves the eyeball.',
+          ans: true,
+          note: 'The optic disc is where ~1.2 million retinal ganglion cell axons exit as the optic nerve. No room for photoreceptors — true blind spot ~7.5° × 5.5°.'
+        },
+        {
+          type: 'tf',
+          q: 'Cones come in three types, each sensitive to different wavelengths of light.',
+          ans: true,
+          note: 'S-cones (~420nm, blue), M-cones (~530nm, green), L-cones (~560nm, red). Trichromatic color vision from comparing activation ratios.'
+        },
+        {
+          type: 'mc',
+          q: 'In a person who is color-blind, which would you most expect to see?',
+          opts: ['Inability to regenerate 11-cis-retinal', 'Absence of green or red cones in foveae', 'Loss of peripheral vision', 'Loss of rod function'],
+          ans: 1,
+          note: 'Red-green color blindness = missing/dysfunctional M or L cones. Genes on X chromosome → males more affected. Protanopia = no L-cones; Deuteranopia = no M-cones.'
+        },
+        {
+          type: 'tf',
+          q: 'Color perception is achieved by activation of various combinations between the three cone types.',
+          ans: true,
+          note: 'Trichromatic theory: Color is encoded in the PATTERN of S:M:L activation. Yellow = M+L roughly equal. Three sensors, infinite combinations.'
+        },
+        {
+          type: 'tf',
+          q: 'A single cone often connects to a single bipolar and ganglion cell, while ~100 rods converge to one ganglion cell.',
+          ans: true,
+          note: 'Convergence explains resolution-sensitivity tradeoff. Foveal cones: 1:1:1 = max acuity. Peripheral rods: ~100:1 = high sensitivity, low resolution.'
+        },
+        {
+          type: 'tf',
+          q: 'Rods absorb light throughout the visual spectrum but confer only gray tone vision.',
+          ans: true,
+          note: 'Rods have ONE photopigment (rhodopsin). No wavelength discrimination possible with single channel. Scotopic vision = achromatic.'
+        },
+        {
+          type: 'tf',
+          q: 'Aqueous humor flows from the ciliary process to drain in the scleral venous sinus.',
+          ans: true,
+          note: 'Ciliary body secretes → posterior chamber → pupil → anterior chamber → trabecular meshwork → canal of Schlemm → episcleral veins. Blocked = glaucoma.'
+        },
+        {
+          type: 'mc',
+          q: 'Corneas can be transplanted without rejection because the cornea:',
+          opts: ['Has no nerve supply', 'Is not living tissue', 'Contains no connective tissue', 'Has no blood supply'],
+          ans: 3,
+          note: 'Corneal immune privilege: No blood vessels = no immune cell trafficking. Also expresses FasL and TGF-β. Corneas DO have nerves (very dense!), ARE living, DO contain stroma.'
+        },
+        {
+          type: 'mc',
+          q: 'Light passes through structures in which order?',
+          opts: ['Cornea, lens, pupil, anterior chamber, posterior segment', 'Cornea, pupil, anterior chamber, lens, posterior segment', 'Cornea, anterior chamber, pupil, lens, posterior segment', 'Cornea, pupil, lens, anterior chamber, posterior segment'],
+          ans: 2,
+          note: 'Cornea → anterior chamber (aqueous) → pupil (aperture in iris) → lens → posterior segment (vitreous) → retina.'
+        },
+        {
+          type: 'tf',
+          q: 'Moving from darkness to bright light loses sensitivity but gains acuity.',
+          ans: true,
+          note: 'Light adaptation: Rhodopsin bleaches (rods less sensitive), cones activate (high acuity, color). Sensitivity-acuity tradeoff.'
+        },
+        {
+          type: 'mc',
+          q: 'The eye muscle that elevates and abducts is the:',
+          opts: ['Superior oblique', 'Inferior oblique', 'Medial rectus', 'Lateral rectus'],
+          ans: 1,
+          note: 'Inferior oblique: Primary = elevation; secondary = abduction + extorsion. Only extraocular muscle that elevates AND abducts. Innervated by CN III.'
+        },
+        {
+          type: 'mc',
+          q: 'Conscious perception of vision occurs in the:',
+          opts: ['Superior colliculus', 'Thalamus', 'Chiasma', 'Occipital lobe of cortex'],
+          ans: 3,
+          note: 'Visual cortex (V1) in occipital lobe is essential for conscious seeing. V1 damage = cortical blindness. Colliculus = reflexes; LGN = relay.'
+        }
+      ]
+    },
+    {
+      id: 'vision-pathways',
+      title: 'Section 2: Vision Pathways & Adaptation (600.2)',
+      questions: [
+        {
+          type: 'match',
+          prompt: 'Match each visual pathway structure to its function:',
+          items: ['Optic chiasma', 'Lateral geniculate nucleus', 'Primary visual cortex (V1)', 'Superior colliculus'],
+          opts: ['Nasal fibers cross here', 'Thalamic relay station', 'Conscious visual perception', 'Visual reflexes'],
+          ans: [0, 1, 2, 3],
+          note: 'Retina → optic nerve → chiasma (partial crossing) → optic tract → LGN → optic radiations → V1. Colliculus = orienting reflexes, below awareness.'
+        },
+        {
+          type: 'tf',
+          q: 'Nerve fibers from the medial (nasal) aspect of each eye cross at the chiasma.',
+          ans: true,
+          note: 'Nasal retina sees temporal visual field. After crossing, each optic tract contains BOTH eyes representing ONE visual hemifield. Enables binocular integration.'
+        },
+        {
+          type: 'tf',
+          q: 'Dark adaptation involves accumulation of rhodopsin.',
+          ans: true,
+          note: 'Dark = rhodopsin regeneration. RPE converts all-trans-retinal → 11-cis-retinal → recombines with opsin. Takes 20-40 min for full rod adaptation.'
+        },
+        {
+          type: 'mc',
+          q: 'Which statement about vitamin A deficiency night blindness is most accurate?',
+          opts: ['Visual pigment is reduced more in cones than rods', 'Most common cause is vitamin D deficiency', 'Vitamin supplements can reverse degenerative changes', 'Impaired vision is caused by reduced cone function'],
+          ans: 2,
+          note: 'Vitamin A = precursor for 11-cis-retinal. Early deficiency = reversible night blindness with supplementation. Prolonged deficiency causes irreversible xerophthalmia.'
+        },
+        {
+          type: 'tf',
+          q: 'Sound is perceived in the occipital lobe.',
+          ans: false,
+          note: 'Sound = TEMPORAL lobe (primary auditory cortex). Occipital = VISION. Parietal = somatosensory. Frontal = motor.'
+        },
+        {
+          type: 'mc',
+          q: 'Visible light fits between:',
+          opts: ['Microwaves and radio waves', 'X-rays and UV waves', 'UV and infrared waves', 'Infrared and microwaves'],
+          ans: 2,
+          note: 'EM spectrum (short→long): Gamma → X-rays → UV → VISIBLE (380-700nm) → infrared → microwaves → radio. Visible = atmospheric transparency window.'
+        },
+        {
+          type: 'mc',
+          q: 'A patient with jaw trauma reports difficulty tasting at the tongue tip. Which nerve was damaged?',
+          opts: ['Trigeminal (V)', 'Facial (VII)', 'Hypoglossal (XII)', 'Glossopharyngeal (IX)'],
+          ans: 1,
+          note: 'Anterior 2/3 tongue taste = CN VII (chorda tympani). Posterior 1/3 = CN IX. Tip is anterior territory. Chorda tympani courses near mandible.'
+        }
+      ]
+    },
+    {
+      id: 'ear-hearing',
+      title: 'Section 3: Ear Anatomy & Hearing (600.3)',
+      questions: [
+        {
+          type: 'match',
+          prompt: 'Match each ear structure to its function:',
+          items: ['Ossicles', 'Cochlea', 'Semicircular canals', 'Utricle and saccule', 'Organ of Corti', 'Eustachian tube'],
+          opts: ['Amplify sound (~22×)', 'Convert sound to neural signals', 'Detect rotational acceleration', 'Detect linear acceleration/gravity', 'Hair cells on basilar membrane', 'Equalize middle ear pressure'],
+          ans: [0, 1, 2, 3, 4, 5],
+          note: 'Middle ear: Ossicles + Eustachian tube. Inner ear: Cochlea (hearing) + vestibular apparatus (balance: semicircular canals + otolith organs).'
+        },
+        {
+          type: 'tf',
+          q: 'Sour taste receptors are stimulated by hydrogen ions of acidic foods.',
+          ans: true,
+          note: 'Sour = pH sensor. H+ ions enter through channels or block K+ channels → depolarization. Most direct taste transduction mechanism.'
+        },
+        {
+          type: 'tf',
+          q: 'Auditory ossicles must vibrate the oval window for sound to reach the organ of Corti.',
+          ans: true,
+          note: 'Sound waves → tympanic membrane → malleus → incus → stapes → oval window → perilymph → basilar membrane → hair cells. Ossicles amplify ~22× for impedance matching.'
+        },
+        {
+          type: 'tf',
+          q: 'A person without a middle ear could hear via bone conduction with a hearing aid.',
+          ans: true,
+          note: 'Bone conduction bypasses outer/middle ear. Skull vibrations directly stimulate cochlear fluids. BAHAs help patients with ossicular problems if inner ear is intact.'
+        },
+        {
+          type: 'tf',
+          q: 'The receptor for static equilibrium is the macula.',
+          ans: true,
+          note: 'Maculae (utricle + saccule) detect linear acceleration and head position via otoliths weighing down on hair cells. Semicircular canals = dynamic (rotational).'
+        },
+        {
+          type: 'tf',
+          q: 'Hair cells for dynamic equilibrium are in the crista ampullaris.',
+          ans: true,
+          note: 'Cristae ampullares in semicircular canals detect rotational acceleration. Cupula deflects when endolymph lags behind head rotation.'
+        },
+        {
+          type: 'tf',
+          q: 'As sound levels increase, outer hair cells stiffen the basilar membrane.',
+          ans: true,
+          note: 'OHCs are electromotile (prestin protein). At high levels, they dampen excessive motion. At low levels, they amplify (~100-fold). "Cochlear amplifier."'
+        },
+        {
+          type: 'tf',
+          q: 'Motion sickness results from mismatch between visual and vestibular inputs.',
+          ans: true,
+          note: 'Sensory conflict theory: Reading in car = vestibular says "moving," visual says "stationary." Brain interprets as possible poisoning → nausea.'
+        },
+        {
+          type: 'mc',
+          q: 'Tinnitus, vertigo, and gradual hearing loss typify:',
+          opts: ['Conjunctivitis', 'Motion sickness', 'Strabismus', 'Ménière\'s syndrome'],
+          ans: 3,
+          note: 'Ménière\'s disease = episodic vertigo + tinnitus + fluctuating sensorineural hearing loss + aural fullness. Caused by endolymphatic hydrops.'
+        },
+        {
+          type: 'mc',
+          q: 'Which ion movement produces EPSPs in cochlear hair cells?',
+          opts: ['Efflux of Ca²⁺', 'Efflux of K⁺', 'Influx of K⁺ and Ca²⁺', 'Influx of Na⁺'],
+          ans: 2,
+          note: 'Unique: Endolymph has high K⁺ AND +80mV potential. Total driving force ~+150mV pushes K⁺ INTO hair cells (opposite of most cells). Ca²⁺ also enters.'
+        }
+      ]
+    },
+    {
+      id: 'vocabulary',
+      title: 'Section 4: Special Senses Vocabulary (600.4)',
+      questions: [
+        {
+          type: 'match',
+          prompt: 'Match each structure to its description:',
+          items: ['Cones', 'Rods', 'Fovea', 'Choroid', 'Sclera', 'Vitreous humor'],
+          opts: ['Color vision photoreceptors', 'Dim light photoreceptors', 'Highest visual acuity region', 'Vascular layer nourishing retina', 'White outer coat', 'Gel filling posterior chamber'],
+          ans: [0, 1, 2, 3, 4, 5],
+          note: 'Three tunics: Fibrous (cornea/sclera), Vascular (choroid/ciliary/iris), Neural (retina). Fovea = cone-only pit for sharpest central vision.'
+        },
+        {
+          type: 'match',
+          prompt: 'Match each hearing structure to its description:',
+          items: ['Ossicles', 'Basilar membrane', 'Tectorial membrane', 'Semicircular canals', 'Otoliths', 'Auricle'],
+          opts: ['Malleus, incus, stapes', 'Supports organ of Corti', 'Hair cells touch this', 'Detect rotation', 'Calcium carbonate crystals', 'External ear flap'],
+          ans: [0, 1, 2, 3, 4, 5],
+          note: 'Outer ear (auricle → canal). Middle ear (ossicles). Inner ear (cochlea: basilar/tectorial membranes; vestibular: canals + otolith organs).'
+        },
+        {
+          type: 'mc',
+          q: 'The iris regulates light by changing the size of the:',
+          opts: ['Lens', 'Pupil', 'Cornea', 'Retina'],
+          ans: 1,
+          note: 'Pupil = hole in iris. Sphincter pupillae constricts (parasympathetic); dilator pupillae dilates (sympathetic).'
+        },
+        {
+          type: 'mc',
+          q: 'The structure that changes shape to focus light is the:',
+          opts: ['Cornea', 'Iris', 'Lens', 'Vitreous humor'],
+          ans: 2,
+          note: 'Lens accommodation: Ciliary muscle contracts → zonules relax → lens becomes rounder → increased refractive power for near vision.'
+        },
+        {
+          type: 'mc',
+          q: 'The cochlea is responsible for:',
+          opts: ['Balance', 'Hearing', 'Taste', 'Smell'],
+          ans: 1,
+          note: 'Cochlea = spiral tube containing organ of Corti. Hair cells convert fluid waves to neural signals. Vestibular apparatus handles balance.'
+        },
+        {
+          type: 'mc',
+          q: 'The semicircular canals detect:',
+          opts: ['Linear acceleration', 'Rotational acceleration', 'Sound frequency', 'Light intensity'],
+          ans: 1,
+          note: 'Three canals perpendicular to each other detect rotation in all planes. Otolith organs (utricle/saccule) detect linear/gravity.'
+        },
+        {
+          type: 'mc',
+          q: 'The retina is part of which tunic?',
+          opts: ['Fibrous tunic', 'Vascular tunic (uvea)', 'Sensory tunic (neural)', 'Conjunctival layer'],
+          ans: 2,
+          note: 'Three tunics: Fibrous (cornea, sclera), Vascular (choroid, ciliary body, iris), Neural (retina with photoreceptors).'
+        },
+        {
+          type: 'mc',
+          q: 'The organ of Corti sits on the:',
+          opts: ['Vestibular membrane', 'Basilar membrane', 'Tectorial membrane', 'Oval window'],
+          ans: 1,
+          note: 'Organ of Corti rests on basilar membrane. Hair cell stereocilia project into/touch tectorial membrane above. Basilar membrane vibration → shearing → transduction.'
+        },
+        {
+          type: 'mc',
+          q: 'Aqueous humor is produced by the:',
+          opts: ['Lens', 'Ciliary body', 'Cornea', 'Retina'],
+          ans: 1,
+          note: 'Ciliary processes secrete aqueous humor → posterior chamber → pupil → anterior chamber → canal of Schlemm drainage.'
+        },
+        {
+          type: 'mc',
+          q: 'The eustachian tube connects the middle ear to the:',
+          opts: ['Outer ear', 'Inner ear', 'Nasopharynx', 'Sinuses'],
+          ans: 2,
+          note: 'Eustachian (auditory) tube opens when swallowing/yawning to equalize middle ear pressure with atmospheric pressure.'
+        },
+        {
+          type: 'mc',
+          q: 'Rhodopsin is found in:',
+          opts: ['Cones', 'Rods', 'Bipolar cells', 'Ganglion cells'],
+          ans: 1,
+          note: 'Rhodopsin = rod photopigment (opsin + 11-cis-retinal). Cones have color-specific photopsins. Bipolar/ganglion are relay neurons.'
+        },
+        {
+          type: 'mc',
+          q: 'The optic disc is also called the:',
+          opts: ['Fovea', 'Blind spot', 'Macula', 'Ora serrata'],
+          ans: 1,
+          note: 'Optic disc = where ganglion cell axons exit → optic nerve. No photoreceptors = blind spot. Brain fills in perceptually.'
+        },
+        {
+          type: 'mc',
+          q: 'The utricle and saccule detect:',
+          opts: ['Sound waves', 'Rotational movement', 'Linear acceleration and head position', 'Light intensity'],
+          ans: 2,
+          note: 'Otolith organs: Otoliths pull on hair cells with gravity/acceleration. Utricle = horizontal plane; Saccule = vertical plane.'
+        },
+        {
+          type: 'mc',
+          q: 'Olfactory receptors are located in the:',
+          opts: ['Tongue', 'Nasal cavity roof', 'Pharynx', 'Larynx'],
+          ans: 1,
+          note: 'Olfactory epithelium on superior nasal concha and septum. Bipolar olfactory neurons with cilia for odor detection.'
+        },
+        {
+          type: 'mc',
+          q: 'The tympanic membrane is also called the:',
+          opts: ['Oval window', 'Eardrum', 'Round window', 'Vestibule'],
+          ans: 1,
+          note: 'Eardrum (tympanic membrane) vibrates with sound waves, moving the malleus attached to its inner surface.'
+        },
+        {
+          type: 'mc',
+          q: 'The five primary taste sensations are sweet, sour, salty, bitter, and:',
+          opts: ['Spicy', 'Umami', 'Metallic', 'Astringent'],
+          ans: 1,
+          note: 'Umami = savory taste from glutamate. MSG activates umami receptors. Spicy = pain/heat (TRPV1), not taste.'
+        },
+        {
+          type: 'mc',
+          q: 'The choroid layer of the eye:',
+          opts: ['Is transparent', 'Contains blood vessels that nourish the retina', 'Refracts light', 'Produces aqueous humor'],
+          ans: 1,
+          note: 'Choroid = vascular middle tunic. Rich blood supply nourishes outer retina (photoreceptors). Pigment absorbs stray light.'
+        },
+        {
+          type: 'mc',
+          q: 'Olfactory sensory neurons are:',
+          opts: ['Multipolar neurons', 'Bipolar neurons', 'Unipolar neurons', 'Interneurons'],
+          ans: 1,
+          note: 'Olfactory neurons are bipolar: One process with cilia for odor detection; axon passes through cribriform plate to olfactory bulb.'
+        },
+        {
+          type: 'mc',
+          q: 'Hair cells in the ear are:',
+          opts: ['Neurons', 'Mechanoreceptors', 'Photoreceptors', 'Chemoreceptors'],
+          ans: 1,
+          note: 'Hair cells are mechanoreceptors (not neurons). Stereocilia bending opens ion channels → depolarization → neurotransmitter release → afferent activation.'
+        },
+        {
+          type: 'mc',
+          q: 'The vitreous humor fills the:',
+          opts: ['Anterior chamber', 'Posterior chamber', 'Vitreous chamber', 'Middle ear'],
+          ans: 2,
+          note: 'Vitreous chamber = large space behind lens. Vitreous humor = gel-like, maintains eye shape, presses retina against choroid.'
+        },
+        {
+          type: 'mc',
+          q: 'Taste buds are located on projections called:',
+          opts: ['Villi', 'Papillae', 'Cilia', 'Microvilli'],
+          ans: 1,
+          note: 'Papillae = tongue bumps. Circumvallate, fungiform, foliate contain taste buds. Filiform = touch only, no taste.'
+        },
+        {
+          type: 'mc',
+          q: 'The nerve carrying visual information to the brain is the:',
+          opts: ['Oculomotor nerve', 'Trigeminal nerve', 'Optic nerve', 'Facial nerve'],
+          ans: 2,
+          note: 'Optic nerve (CN II) = ~1 million retinal ganglion cell axons. Technically a brain tract developmentally.'
+        },
+        {
+          type: 'mc',
+          q: 'The part of the ear that collects sound waves is the:',
+          opts: ['Cochlea', 'Auricle (pinna)', 'Stapes', 'Vestibule'],
+          ans: 1,
+          note: 'Auricle (pinna) = external ear flap. Funnels sound into external auditory canal. Shape aids sound localization.'
+        }
+      ]
+    }
+  ],
+  essays: [
+    {
+      id: 'essay1',
+      section: 'eye-structure',
+      prompt: 'Explain trichromatic color vision: How do three cone types enable perception of millions of colors?',
+      answer: `TRICHROMATIC THEORY:
+Three cone types with different spectral sensitivities enable color discrimination:
+- S-cones (short wavelength, ~420nm peak, "blue") — ~7% of cones
+- M-cones (medium wavelength, ~530nm peak, "green") — ~35% of cones
+- L-cones (long wavelength, ~560nm peak, "red") — ~58% of cones
+
+HOW IT WORKS:
+Each cone type contains a different opsin protein that determines its absorption spectrum. The curves overlap significantly, so most wavelengths activate multiple cone types to different degrees.
+
+Color is encoded in the RATIO of activation, not in single detectors:
+- Yellow light activates M and L cones roughly equally
+- Orange activates L > M
+- Purple activates S and L with minimal M
+- White activates all three equally
+
+COLOR OPPONENT PROCESSING:
+The brain computes differences between cone outputs:
+- Red-Green channel: L minus M
+- Blue-Yellow channel: S minus (L+M average)
+- Luminance channel: L plus M
+
+These opponent signals create our subjective color experience.
+
+CLINICAL RELEVANCE:
+Color blindness typically results from missing or altered cone types:
+- Protanopia: No L-cones → can't distinguish red from green
+- Deuteranopia: No M-cones → can't distinguish red from green
+- Tritanopia: No S-cones → can't distinguish blue from yellow (rare)
+
+METAPHOR: Three cone types are like three microphones tuned to different frequency ranges. Any sound (color) activates all three to varying degrees. The brain's mixing board compares the three channels to perceive specific timbre (hue).`
+    },
+    {
+      id: 'essay2',
+      section: 'ear-hearing',
+      prompt: 'Describe how the middle ear ossicles solve the impedance matching problem for sound transmission.',
+      answer: `THE PROBLEM:
+Air has low acoustic impedance (molecules move easily). Cochlear fluid has high acoustic impedance (molecules resist movement). Without amplification, ~99.9% of sound energy would reflect at the air-fluid boundary — you'd barely hear anything.
+
+THE SOLUTION — TWO MECHANISMS:
+
+1. AREA RATIO (Primary amplification):
+- Tympanic membrane area: ~55 mm²
+- Oval window area: ~3.2 mm²
+- Ratio: ~17:1
+- Sound energy collected over the large eardrum is concentrated onto the smaller oval window
+- Force concentrated on smaller area = higher pressure
+
+2. LEVER ACTION (Secondary amplification):
+- Malleus handle is longer than incus long process
+- This creates mechanical advantage of ~1.3:1
+- Additional pressure amplification
+
+COMBINED EFFECT:
+17 × 1.3 = ~22-fold pressure amplification at the oval window
+
+This nearly perfectly matches air impedance to cochlear fluid impedance, maximizing power transfer.
+
+THE PATHWAY:
+Sound waves → tympanic membrane vibrates → malleus moves → incus moves → stapes footplate rocks in oval window → pressure wave in scala vestibuli perilymph → traveling wave along basilar membrane → frequency-specific location of maximum amplitude → hair cell stimulation
+
+PROTECTIVE MECHANISMS:
+- Stapedius muscle (CN VII) and tensor tympani muscle (CN V) can contract to stiffen the ossicular chain
+- Dampens transmission of loud sounds (acoustic reflex)
+- Takes ~25-150 ms, so can't protect from sudden loud noises
+
+METAPHOR: The middle ear is like an electrical transformer matching impedances between source and load to maximize power transfer. High-amplitude, low-pressure air vibrations are transformed into low-amplitude, high-pressure fluid vibrations.`
+    },
+    {
+      id: 'essay3',
+      section: 'vocabulary',
+      prompt: 'Compare and contrast the static and dynamic equilibrium systems of the inner ear.',
+      answer: `STATIC EQUILIBRIUM — THE MACULAE
+
+Location: Utricle and saccule
+Detects: Linear acceleration and head position relative to gravity
+
+Structure:
+- Hair cells embedded in gelatinous otolithic membrane
+- Otoliths (otoconia) = calcium carbonate crystals on membrane surface
+- Utricle macula oriented horizontally
+- Saccule macula oriented vertically
+
+Mechanism:
+- Gravity/acceleration shifts otolith-laden membrane
+- Weight pulls differently depending on head position
+- Hair cell stereocilia bend toward or away from kinocilium
+- Toward kinocilium = depolarization (increased firing)
+- Away from kinocilium = hyperpolarization (decreased firing)
+
+Function:
+- Utricle: Detects horizontal acceleration (car starting/stopping), forward/backward head tilt
+- Saccule: Detects vertical acceleration (elevator), lateral head tilt
+- Constantly reports "which way is down"
+
+DYNAMIC EQUILIBRIUM — THE CRISTAE AMPULLARES
+
+Location: Ampullae of three semicircular canals
+Detects: Rotational (angular) acceleration
+
+Structure:
+- Hair cells in crista (ridge) with stereocilia in cupula
+- Cupula = gelatinous partition spanning ampulla
+- No otoliths (not gravity-sensitive)
+- Three canals perpendicular to each other:
+  - Horizontal canal: Detects horizontal rotation ("no" head shake)
+  - Anterior canal: Detects sagittal rotation ("yes" nod)
+  - Posterior canal: Detects coronal rotation (ear to shoulder)
+
+Mechanism:
+- Head rotation causes canal walls to move
+- Endolymph (fluid) lags behind due to inertia
+- Relative flow deflects cupula
+- Hair cells bend, generating neural signals
+
+Function:
+- Detects rotation in all three spatial planes
+- Push-pull pairing with contralateral canals doubles sensitivity
+- Critical for vestibulo-ocular reflex (VOR) — stabilizes gaze during head movement
+
+INTEGRATION:
+Vestibular nuclei combine information from all vestibular organs to compute overall head motion and orientation. This feeds into:
+- VOR: Stabilizes gaze
+- VSR (vestibulospinal reflex): Maintains posture
+- Conscious perception of spatial orientation
+
+METAPHOR:
+Maculae = carpenter's level with weighted crystals (tells which way is up)
+Semicircular canals = snow globe liquid (tells when you're spinning)`
+    }
+  ]
+};
+
+let state = { correct: 0, answered: 0, sectionProgress: {} };
+examData.sections.forEach(s => { state.sectionProgress[s.id] = { answered: 0, total: s.questions.length }; });
+
+function render() {
+  const nav = document.getElementById('sectionNav');
+  const content = document.getElementById('examContent');
+  nav.innerHTML = '';
+  content.innerHTML = '';
+
+  examData.sections.forEach((sec, si) => {
+    const navItem = document.createElement('div');
+    navItem.className = 'nav-item';
+    navItem.innerHTML = `<span>${sec.title.split(':')[0]}</span><span class="progress-pill">${state.sectionProgress[sec.id].answered}/${state.sectionProgress[sec.id].total}</span>`;
+    navItem.onclick = () => document.getElementById('sec-' + sec.id).scrollIntoView({ behavior: 'smooth' });
+    nav.appendChild(navItem);
+
+    const panel = document.createElement('div');
+    panel.className = 'section-panel';
+    panel.id = 'sec-' + sec.id;
+    panel.innerHTML = `<h2>${sec.title}</h2>`;
+
+    let currentType = '';
+    sec.questions.forEach((q, qi) => {
+      if (q.type !== currentType) {
+        currentType = q.type;
+        const divider = document.createElement('div');
+        divider.className = 'question-type-divider';
+        divider.textContent = { match: 'Matching', tf: 'True / False', mc: 'Multiple Choice', essay: 'Essay' }[q.type] || q.type;
+        panel.appendChild(divider);
+      }
+      panel.appendChild(createQuestionCard(q, si, qi));
+    });
+
+    const sectionEssays = examData.essays.filter(e => e.section === sec.id);
+    if (sectionEssays.length) {
+      const essayDivider = document.createElement('div');
+      essayDivider.className = 'question-type-divider';
+      essayDivider.textContent = 'Essay';
+      panel.appendChild(essayDivider);
+      sectionEssays.forEach(e => panel.appendChild(createEssayCard(e)));
+    }
+
+    content.appendChild(panel);
+  });
+}
+
+function createQuestionCard(q, si, qi) {
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.id = `q-${si}-${qi}`;
+
+  if (q.type === 'match') {
+    card.innerHTML = `<p class="question">${q.prompt}</p><div class="match-grid" id="match-${si}-${qi}"></div><button class="check-btn" id="checkbtn-${si}-${qi}">Check Answers</button>${q.note ? `<p class="note" style="display:none;" id="note-${si}-${qi}"><strong>Note:</strong> ${q.note}</p>` : ''}`;
+    setTimeout(() => {
+      const grid = document.getElementById(`match-${si}-${qi}`);
+      q.items.forEach((item, idx) => {
+        const row = document.createElement('div');
+        row.className = 'match-row';
+        row.innerHTML = `<div class="match-term">${item}</div><select class="match-select" data-idx="${idx}"><option value="">-- Select --</option>${q.opts.map((o, oi) => `<option value="${oi}">${o}</option>`).join('')}</select>`;
+        grid.appendChild(row);
+      });
+      document.getElementById(`checkbtn-${si}-${qi}`).onclick = () => checkMatch(si, qi, q);
+    }, 0);
+  } else if (q.type === 'tf') {
+    card.innerHTML = `<p class="question">${q.q}</p><div class="options"><button class="option-btn" data-val="true"><span class="option-letter">T</span> True</button><button class="option-btn" data-val="false"><span class="option-letter">F</span> False</button></div>${q.note ? `<p class="note" style="display:none;" id="note-${si}-${qi}"><strong>Note:</strong> ${q.note}</p>` : ''}`;
+    setTimeout(() => {
+      card.querySelectorAll('.option-btn').forEach(btn => {
+        btn.onclick = () => checkTF(si, qi, btn.dataset.val === 'true', q.ans, card, q.note);
+      });
+    }, 0);
+  } else if (q.type === 'mc') {
+    card.innerHTML = `<p class="question">${q.q}</p><div class="options">${q.opts.map((o, i) => `<button class="option-btn" data-idx="${i}"><span class="option-letter">${String.fromCharCode(65 + i)}</span> ${o}</button>`).join('')}</div>${q.note ? `<p class="note" style="display:none;" id="note-${si}-${qi}"><strong>Note:</strong> ${q.note}</p>` : ''}`;
+    setTimeout(() => {
+      card.querySelectorAll('.option-btn').forEach(btn => {
+        btn.onclick = () => checkMC(si, qi, parseInt(btn.dataset.idx), q.ans, card, q.note);
+      });
+    }, 0);
+  }
+  return card;
+}
+
+function createEssayCard(e) {
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.innerHTML = `<p class="essay-prompt">${e.prompt}</p><button class="essay-toggle" id="toggle-${e.id}">Show Model Answer</button><div class="essay-answer" id="answer-${e.id}">${e.answer}</div>`;
+  setTimeout(() => {
+    document.getElementById(`toggle-${e.id}`).onclick = () => {
+      const ans = document.getElementById(`answer-${e.id}`);
+      ans.classList.toggle('show');
+      document.getElementById(`toggle-${e.id}`).textContent = ans.classList.contains('show') ? 'Hide Model Answer' : 'Show Model Answer';
+    };
+  }, 0);
+  return card;
+}
+
+function checkMatch(si, qi, q) {
+  const grid = document.getElementById(`match-${si}-${qi}`);
+  const rows = grid.querySelectorAll('.match-row');
+  let allCorrect = true;
+  let anySelected = false;
+  rows.forEach((row, idx) => {
+    const sel = row.querySelector('.match-select');
+    if (sel.value === '') return;
+    anySelected = true;
+    sel.disabled = true;
+    if (parseInt(sel.value) === q.ans[idx]) {
+      row.classList.add('correct');
+    } else {
+      row.classList.add('incorrect');
+      allCorrect = false;
+    }
+  });
+  if (!anySelected) return;
+  const card = document.getElementById(`q-${si}-${qi}`);
+  const section = examData.sections[si];
+  if (!card.dataset.answered) {
+    card.dataset.answered = '1';
+    state.answered++;
+    state.sectionProgress[section.id].answered++;
+    if (allCorrect) {
+      state.correct++;
+      card.classList.add('correct');
+    } else {
+      card.classList.add('incorrect');
+    }
+    updateScore();
+    const note = document.getElementById(`note-${si}-${qi}`);
+    if (note) note.style.display = 'block';
+  }
+  document.getElementById(`checkbtn-${si}-${qi}`).disabled = true;
+}
+
+function checkTF(si, qi, selected, correct, card, note) {
+  if (card.dataset.answered) return;
+  card.dataset.answered = '1';
+  const section = examData.sections[si];
+  state.answered++;
+  state.sectionProgress[section.id].answered++;
+  card.querySelectorAll('.option-btn').forEach(btn => {
+    btn.disabled = true;
+    const btnVal = btn.dataset.val === 'true';
+    if (btnVal === correct) btn.classList.add('reveal-correct');
+    if (btnVal === selected) btn.classList.add(selected === correct ? 'selected-correct' : 'selected-wrong');
+  });
+  if (selected === correct) {
+    state.correct++;
+    card.classList.add('correct');
+  } else {
+    card.classList.add('incorrect');
+  }
+  updateScore();
+  const noteEl = document.getElementById(`note-${si}-${qi}`);
+  if (noteEl) noteEl.style.display = 'block';
+}
+
+function checkMC(si, qi, selected, correct, card, note) {
+  if (card.dataset.answered) return;
+  card.dataset.answered = '1';
+  const section = examData.sections[si];
+  state.answered++;
+  state.sectionProgress[section.id].answered++;
+  card.querySelectorAll('.option-btn').forEach(btn => {
+    btn.disabled = true;
+    const idx = parseInt(btn.dataset.idx);
+    if (idx === correct) btn.classList.add('reveal-correct');
+    if (idx === selected) btn.classList.add(selected === correct ? 'selected-correct' : 'selected-wrong');
+  });
+  if (selected === correct) {
+    state.correct++;
+    card.classList.add('correct');
+  } else {
+    card.classList.add('incorrect');
+  }
+  updateScore();
+  const noteEl = document.getElementById(`note-${si}-${qi}`);
+  if (noteEl) noteEl.style.display = 'block';
+}
+
+function updateScore() {
+  document.getElementById('runningCorrect').textContent = state.correct;
+  document.getElementById('runningTotal').textContent = state.answered;
+  document.querySelectorAll('.nav-item').forEach((item, i) => {
+    const sec = examData.sections[i];
+    item.querySelector('.progress-pill').textContent = `${state.sectionProgress[sec.id].answered}/${state.sectionProgress[sec.id].total}`;
+  });
+  const total = examData.sections.reduce((a, s) => a + s.questions.length, 0);
+  if (state.answered >= total) showResults();
+}
+
+function showResults() {
+  const total = examData.sections.reduce((a, s) => a + s.questions.length, 0);
+  document.getElementById('finalPercent').textContent = Math.round((state.correct / total) * 100) + '%';
+  document.getElementById('finalCorrect').textContent = state.correct;
+  document.getElementById('finalWrong').textContent = total - state.correct;
+  document.getElementById('finalTotal').textContent = total;
+  document.getElementById('resultsPanel').classList.add('show');
+}
+
+render();
+</script>
+</body>
+</html>

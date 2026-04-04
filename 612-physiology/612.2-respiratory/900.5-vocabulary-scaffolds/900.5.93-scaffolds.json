@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.93",
+  "parentQuestion": "The bronchial arteries supply:",
+  "narrative": {
+    "setting": "The Magic School Bus navigates through Mr. Edgar's pulmonary circulation. You've been following red blood through the pulmonary arteries when suddenly you spot a different set of vessels - smaller, branching along the bronchi. 'Wait,' Carlos calls out, 'I thought all lung blood came from the pulmonary arteries!' Ms. Frizzle smiles mysteriously. 'Not quite, Carlos. The lungs have a secret second blood supply. Mr. Edgar's life depends on both.'",
+    "character": "Mr. Edgar",
+    "tension": "A bronchial artery is damaged from infection. Understanding this circulation could save lung tissue."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.93.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "Ms. Frizzle zooms in on the branching airways. 'Bronchial,' she begins. 'From the Greek bronchos - windpipe. These arteries follow the bronchi like vines on a tree.'",
+      "q": "The term 'bronchial' refers to:",
+      "options": [
+        "The alveoli (air sacs)",
+        "The airways/breathing tubes",
+        "The diaphragm",
+        "The pleural membranes"
+      ],
+      "answer": 1,
+      "explain": "'BRONCHIAL' = related to BRONCHI, the breathing tubes that branch through the lungs. Bronchus (singular) → bronchi (plural) → bronchial (adjective). Think: bronchitis = inflammation of bronchi, bronchodilator = widens bronchi.",
+      "wrongExplains": {
+        "0": "Alveoli are the tiny air sacs. That would be 'alveolar'. Bronchi are the larger conducting tubes.",
+        "2": "The diaphragm is the breathing muscle. That's 'diaphragmatic'. Bronchi are the airways inside the lungs.",
+        "3": "Pleural membranes wrap the lungs. That's 'pleural'. Bronchi are the internal branching tubes."
+      }
+    },
+    {
+      "id": "900.5.93.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "You float alongside a bronchial artery, watching it branch repeatedly. 'Arteries,' Ms. Frizzle says. 'From the heart. But WHICH part of the heart feeds these vessels?'",
+      "q": "Bronchial arteries typically arise from the:",
+      "options": [
+        "Right atrium",
+        "Aorta (systemic circulation)",
+        "Pulmonary trunk",
+        "Left ventricle directly"
+      ],
+      "answer": 1,
+      "explain": "Bronchial arteries branch from the AORTA (or intercostal arteries). They're part of SYSTEMIC circulation, carrying OXYGENATED blood. This is different from pulmonary arteries (deoxygenated). The lungs get blood from TWO sources.",
+      "wrongExplains": {
+        "0": "The right atrium receives deoxygenated blood from the body. Arteries arise from ventricles or aorta, not atria.",
+        "2": "The pulmonary trunk carries deoxygenated blood TO the lungs for gas exchange - that's different from bronchial arteries.",
+        "3": "While the left ventricle feeds the aorta, bronchial arteries typically branch from the aorta itself, not directly from the ventricle."
+      }
+    },
+    {
+      "id": "900.5.93.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "The bus stops at a bronchial artery-bronchus junction. 'Two blood supplies to the lungs,' Ms. Frizzle muses. 'One for gas exchange, one for tissue nutrition. Can you guess which is which?'",
+      "q": "The term 'nutritive supply' means blood that:",
+      "options": [
+        "Carries food to the digestive system",
+        "Provides oxygen and nutrients to tissue cells",
+        "Removes carbon dioxide only",
+        "Transports vitamins"
+      ],
+      "answer": 1,
+      "explain": "NUTRITIVE = nourishing the TISSUE ITSELF. Like coronary arteries feed heart muscle, bronchial arteries feed lung tissue (bronchi walls, nerves, lymph nodes). It's SYSTEMIC blood for tissue metabolism, not pulmonary blood for gas exchange.",
+      "wrongExplains": {
+        "0": "Nutritive applies to any tissue getting fed, not just the digestive system. It means cellular nourishment.",
+        "2": "Nutritive supply brings oxygen AND nutrients (glucose, etc.). It's comprehensive cellular support.",
+        "3": "Vitamins are part of nutrition, but 'nutritive' includes oxygen, glucose, amino acids - everything cells need."
+      }
+    },
+    {
+      "id": "900.5.93.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "Ms. Frizzle splits the screen, showing both circulations side by side. 'Two parallel systems in the same organ. Watch what each one carries.'",
+      "q": "What type of blood do bronchial arteries carry?",
+      "options": [
+        "Deoxygenated blood from the right ventricle",
+        "Oxygenated blood from the aorta",
+        "Mixed blood from both ventricles",
+        "Carbon dioxide-rich blood"
+      ],
+      "answer": 1,
+      "explain": "Bronchial arteries carry OXYGENATED, nutrient-rich blood from SYSTEMIC circulation (aorta). They feed the lung tissue like any systemic artery. This is opposite of pulmonary arteries, which carry deoxygenated blood.",
+      "wrongExplains": {
+        "0": "Deoxygenated blood from right ventricle goes to PULMONARY arteries. Bronchial arteries are SYSTEMIC (oxygenated).",
+        "2": "Blood doesn't mix between ventricles in healthy hearts. Bronchial arteries get pure oxygenated blood from the left side/aorta.",
+        "3": "CO2-rich blood describes deoxygenated blood in pulmonary arteries. Bronchial arteries carry oxygen-rich blood."
+      }
+    },
+    {
+      "id": "900.5.93.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "You follow a bronchial artery into the wall of a bronchus. Smooth muscle cells, nerves, mucus glands - all receiving blood. 'See?' Ms. Frizzle says. 'The airways themselves are living tissue. They need food and oxygen too.'",
+      "q": "What structures do bronchial arteries primarily supply?",
+      "options": [
+        "Alveoli for gas exchange",
+        "Bronchial walls, nerves, and lung connective tissue",
+        "The diaphragm muscle",
+        "Red blood cells in pulmonary capillaries"
+      ],
+      "answer": 1,
+      "explain": "Bronchial arteries feed the LUNG TISSUE STRUCTURE: bronchial walls, nerves, lymph nodes, visceral pleura, connective tissue. NOT the alveoli (those get oxygen from air). It's like the difference between plumbing that feeds a factory vs. the product the factory makes.",
+      "wrongExplains": {
+        "0": "Alveoli get oxygen directly from INHALED AIR, not from bronchial arteries. Bronchial arteries feed structural tissue.",
+        "2": "The diaphragm is outside the lungs, fed by phrenic arteries. Bronchial arteries stay within lung tissue.",
+        "3": "RBCs in pulmonary capillaries pick up oxygen from alveoli. Bronchial arteries don't supply those capillaries."
+      }
+    },
+    {
+      "id": "900.5.93.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus observes blood draining from the bronchial circulation. 'Some goes back to the heart,' Ms. Frizzle notes, 'but some takes a shortcut into the pulmonary veins. This creates a tiny anatomical shunt.'",
+      "q": "Where does most bronchial venous blood drain?",
+      "options": [
+        "Into the pulmonary veins (creating a small shunt)",
+        "Directly back to the aorta",
+        "Into the right atrium via azygos veins",
+        "Into the coronary sinus"
+      ],
+      "answer": 0,
+      "explain": "Most bronchial venous blood drains into PULMONARY VEINS or directly into the left atrium. This creates a physiological shunt - a tiny bit of deoxygenated blood mixing with oxygenated blood. Some drains via azygos/hemiazygos to the right atrium.",
+      "wrongExplains": {
+        "1": "Veins don't drain into arteries (aorta). Blood flows heart → arteries → capillaries → veins → heart.",
+        "2": "This is partially true (some bronchial veins do drain to azygos → right atrium), but MOST drain into pulmonary veins.",
+        "3": "The coronary sinus drains HEART veins, not lung veins. Different organ."
+      }
+    },
+    {
+      "id": "900.5.93.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'The great lung blood supply quiz!' Ms. Frizzle announces. 'Two circulations, two purposes. Mix them up and you'll misunderstand lung physiology completely.'",
+      "q": "How do bronchial arteries differ from pulmonary arteries?",
+      "options": [
+        "They are the same vessels",
+        "Bronchial carry oxygenated blood for tissue; pulmonary carry deoxygenated blood for gas exchange",
+        "Bronchial carry deoxygenated; pulmonary carry oxygenated",
+        "Both carry the same type of blood"
+      ],
+      "answer": 1,
+      "explain": "BRONCHIAL arteries = SYSTEMIC circulation (oxygenated), feed lung TISSUE. PULMONARY arteries = pulmonary circulation (deoxygenated), carry blood TO alveoli for gas exchange. Different sources, different purposes, opposite oxygenation states.",
+      "wrongExplains": {
+        "0": "They're completely separate systems from different sources. Bronchial from aorta, pulmonary from right ventricle.",
+        "2": "Backwards! Bronchial = oxygenated (systemic), pulmonary = deoxygenated (going to lungs for oxygen).",
+        "3": "Opposite blood types: bronchial = oxygenated, pulmonary = deoxygenated. This difference is critical."
+      }
+    },
+    {
+      "id": "900.5.93.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "An infection is spreading in Mr. Edgar's bronchial wall. 'Watch,' Ms. Frizzle says. 'Inflammatory cells arrive via the bronchial circulation. THAT'S the systemic immune response.'",
+      "q": "Why is bronchial circulation important in lung infections?",
+      "options": [
+        "It provides gas exchange during infection",
+        "It delivers immune cells and antibiotics to lung tissue",
+        "It removes excess air from lungs",
+        "It cools down inflamed tissue"
+      ],
+      "answer": 1,
+      "explain": "Bronchial arteries deliver SYSTEMIC blood → white blood cells, antibiotics, nutrients reach lung TISSUE. Pulmonary circulation does gas exchange but bronchial circulation does tissue defense and healing. That's why pneumonia affects both circulations.",
+      "wrongExplains": {
+        "0": "Gas exchange happens at alveoli via pulmonary circulation. Bronchial circulation feeds tissue, not air exchange.",
+        "2": "Bronchial circulation delivers blood, not removes air. Air removal is via exhalation/ventilation.",
+        "3": "While blood flow can affect temperature, the main role is nutrition and immune defense, not cooling."
+      }
+    },
+    {
+      "id": "900.5.93.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "The bus spots enlarged, dilated bronchial arteries. 'Bronchiectasis,' Ms. Frizzle diagnoses. 'Chronic infection has remodeled these vessels. They can even bleed - hemoptysis.'",
+      "q": "In chronic lung disease, bronchial arteries can:",
+      "options": [
+        "Disappear completely",
+        "Enlarge and potentially bleed (hemoptysis source)",
+        "Transform into pulmonary arteries",
+        "Stop carrying oxygen"
+      ],
+      "answer": 1,
+      "explain": "Chronic inflammation → bronchial arteries ENLARGE/PROLIFERATE. They can become fragile and RUPTURE → coughing up blood (hemoptysis). This is a major source of massive hemoptysis in bronchiectasis, TB, or lung cancer.",
+      "wrongExplains": {
+        "0": "They don't disappear - they actually increase in chronic disease. Angiogenesis brings more blood to inflamed tissue.",
+        "2": "Arteries don't transform into other arteries. They remain distinct systems with different sources.",
+        "3": "They continue carrying oxygenated blood. The problem is they become enlarged and fragile, not non-functional."
+      }
+    },
+    {
+      "id": "900.5.93.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "The infection is under control. Mr. Edgar's bronchial circulation is healing. 'One last question,' Ms. Frizzle says. 'Tell me what you've learned about these hidden vessels.'",
+      "q": "The bronchial arteries supply:",
+      "options": [
+        "Deoxygenated blood to alveoli for gas exchange",
+        "Oxygenated blood to lung tissue for nutrition",
+        "Carbon dioxide to bronchi",
+        "Air to pulmonary capillaries"
+      ],
+      "answer": 1,
+      "explain": "Bronchial arteries supply OXYGENATED, nutrient-rich blood from the AORTA to feed LUNG TISSUE (bronchi, nerves, connective tissue). They're systemic circulation feeding the lungs' own cells, separate from pulmonary circulation which does gas exchange.",
+      "wrongExplains": {
+        "0": "That describes PULMONARY arteries (deoxygenated blood for gas exchange). Bronchial arteries are SYSTEMIC (oxygenated for nutrition).",
+        "2": "Arteries carry blood, not gas alone. And bronchial arteries carry oxygen TO tissue, not carbon dioxide.",
+        "3": "Arteries carry blood, not air. Air arrives via airways (trachea → bronchi → alveoli)."
+      }
+    }
+  ]
+}

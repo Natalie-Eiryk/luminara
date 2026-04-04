@@ -1,0 +1,159 @@
+{
+  "parentId": "100.4.02",
+  "parentQuestion": "Nuclei of cranial nerves V (trigeminal), VI (abducens), and VII (facial) are found in the ___.",
+  "scaffolds": [
+    {
+      "q": "What are cranial nerves?",
+      "options": [
+        "Nerves that emerge from the spinal cord",
+        "Nerves that emerge directly from the brain and brainstem",
+        "Nerves that only control the heart",
+        "Nerves found only in the legs"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "CRANIAL NERVES (12 pairs) emerge directly from the BRAIN and BRAINSTEM, serving the head and neck. Spinal nerves emerge from the spinal cord.",
+      "wrongExplains": {
+        "0": "Those are spinal nerves; cranial nerves emerge from the brain.",
+        "2": "Cranial nerves serve many functions beyond the heart.",
+        "3": "Cranial nerves serve the head/neck region, not legs."
+      }
+    },
+    {
+      "q": "What are the three parts of the brainstem?",
+      "options": [
+        "Cerebrum, cerebellum, spinal cord",
+        "Midbrain, pons, medulla",
+        "Frontal, temporal, parietal lobes",
+        "Thalamus, hypothalamus, epithalamus"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The brainstem consists of three parts: MIDBRAIN (most superior) → PONS (middle) → MEDULLA (most inferior, connects to spinal cord).",
+      "wrongExplains": {
+        "0": "These are major brain divisions, not brainstem parts.",
+        "2": "These are cerebral lobes, not brainstem structures.",
+        "3": "These are diencephalon structures, not brainstem."
+      }
+    },
+    {
+      "q": "What does 'pons' mean in Latin?",
+      "options": [
+        "Head",
+        "Bridge",
+        "Nerve",
+        "Center"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "PONS means 'BRIDGE' in Latin. It bridges the midbrain above and medulla below, and connects the cerebrum to the cerebellum.",
+      "wrongExplains": {
+        "0": "'Pons' means bridge, not head.",
+        "2": "'Pons' means bridge, not nerve.",
+        "3": "'Pons' means bridge, not center."
+      }
+    },
+    {
+      "q": "How are cranial nerve nuclei organized in the brainstem?",
+      "options": [
+        "All cranial nerves are at the same level",
+        "Different cranial nerves live at different brainstem heights",
+        "Cranial nerves are only in the cerebrum",
+        "Cranial nerves don't have nuclei"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Cranial nerve nuclei are organized by level: CN III-IV in midbrain, CN V-VIII in pons, CN IX-XII in medulla. Like floors in a building.",
+      "wrongExplains": {
+        "0": "Different cranial nerves are at different brainstem levels.",
+        "2": "Cranial nerve nuclei are in the brainstem, not cerebrum.",
+        "3": "Each cranial nerve has nuclei where its cell bodies reside."
+      }
+    },
+    {
+      "q": "What does CN V (trigeminal) control?",
+      "options": [
+        "Hearing",
+        "Facial sensation and chewing muscles",
+        "Eye movement",
+        "Smell"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The TRIGEMINAL NERVE (CN V) is the main SENSORY nerve for the FACE and controls the MUSCLES OF MASTICATION (chewing).",
+      "wrongExplains": {
+        "0": "Hearing is CN VIII (vestibulocochlear).",
+        "2": "Eye movement is CN III, IV, VI.",
+        "3": "Smell is CN I (olfactory)."
+      }
+    },
+    {
+      "q": "What does CN VII (facial) control?",
+      "options": [
+        "Tongue movement",
+        "Muscles of facial expression",
+        "Vision",
+        "Balance"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The FACIAL NERVE (CN VII) controls the MUSCLES OF FACIAL EXPRESSION — smile, frown, blink, raise eyebrows. Damage causes facial paralysis.",
+      "wrongExplains": {
+        "0": "Tongue movement is CN XII (hypoglossal).",
+        "2": "Vision is CN II (optic).",
+        "3": "Balance is CN VIII (vestibulocochlear)."
+      }
+    },
+    {
+      "q": "Where do CN V, VI, and VII all have their nuclei?",
+      "options": [
+        "Midbrain",
+        "Pons",
+        "Medulla",
+        "Cerebral cortex"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "CN V, VI, and VII are NEIGHBORS — they all have nuclei in the PONS. Same 'floor' of the brainstem building.",
+      "wrongExplains": {
+        "0": "Midbrain houses CN III-IV, not V-VII.",
+        "2": "Medulla houses CN IX-XII, not V-VII.",
+        "3": "Cranial nerve nuclei are in the brainstem, not cortex."
+      }
+    },
+    {
+      "q": "What functions are controlled by pontine cranial nerves (V, VI, VII)?",
+      "options": [
+        "Only breathing",
+        "Face sensation, lateral eye movement, facial expression",
+        "Only hearing",
+        "Only swallowing"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "Pontine nerves: CN V (face SENSATION + chewing), CN VI (LATERAL eye movement), CN VII (FACIAL EXPRESSION + taste anterior tongue).",
+      "wrongExplains": {
+        "0": "Breathing is medulla; pontine nerves handle face-related functions.",
+        "2": "Hearing is CN VIII, which is also pontine but not V-VII.",
+        "3": "Swallowing involves medullary nerves CN IX-X."
+      }
+    },
+    {
+      "q": "The nuclei for CN V, VI, and VII are found in the ___?",
+      "options": [
+        "Midbrain",
+        "Pons",
+        "Medulla",
+        "Cerebrum"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "The PONS houses CN V (trigeminal), CN VI (abducens — lateral eye), and CN VII (facial). Not midbrain (III-IV) or medulla (IX-XII).",
+      "wrongExplains": {
+        "0": "Midbrain houses CN III-IV; pons houses V-VIII.",
+        "2": "Medulla houses CN IX-XII; pons houses V-VIII.",
+        "3": "Cranial nerve nuclei are in brainstem, not cerebrum."
+      }
+    }
+  ]
+}

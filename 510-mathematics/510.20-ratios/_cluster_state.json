@@ -1,0 +1,26 @@
+{
+  "clusterId": "510.20",
+  "clusterName": "Ratios & Proportions",
+  "status": "pending",
+  "targetQuestions": 300,
+  "currentBatch": 0,
+  "totalBatches": 12,
+  "questionsGenerated": 0,
+  "scaffoldsGenerated": 0,
+  "lastUpdated": null,
+  "batches": [],
+  "isotopes": [
+    "510.20.ratios.writing",
+    "510.20.ratios.equivalent",
+    "510.20.rates.unit",
+    "510.20.proportions.solving",
+    "510.20.percent"
+  ],
+  "prerequisites": ["510.13.*"],
+  "difficultyDistribution": {
+    "easy": 0,
+    "medium": 0,
+    "challenging": 0,
+    "hard": 0
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "system": "Endocrine",
+  "master_prompts": [
+    "What am I looking at?",
+    "What body system am I in?",
+    "Is this gross anatomy, histology, a model, or fetal pig?",
+    "What landmark proves my location?",
+    "What exact structure is being pointed to?",
+    "What is it connected to or continuous with?",
+    "What does it do?",
+    "What is the easiest thing to confuse it with?",
+    "What single clue separates those two?"
+  ],
+  "system_prompts": [
+    "Where is the gland located in the body?",
+    "What secretory architecture stands out?",
+    "Is this a lobe, follicle-based gland, or layered gland?"
+  ]
+}

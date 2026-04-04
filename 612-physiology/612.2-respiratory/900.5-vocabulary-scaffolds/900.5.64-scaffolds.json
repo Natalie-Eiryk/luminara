@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.64",
+  "parentQuestion": "Chronic bronchitis is defined by:",
+  "narrative": {
+    "setting": "The Magic School Bus navigates Mr. Edgar's bronchi - the walls are inflamed, red, and swollen. Thick mucus fills the airways like sludge. Goblet cells are hyperplastic, pumping out secretions relentlessly. Ms. Frizzle checks her calendar. 'Three months of this, every year, for two years straight,' she notes. 'That's the clinical definition. Not one bad winter - chronic, persistent inflammation.'",
+    "character": "Mr. Edgar",
+    "tension": "The 'blue bloater' phenotype - overweight, cyanotic, constantly coughing up sputum. Morning cigarette triggers productive cough that lasts an hour. Winters bring exacerbations. Understanding chronic bronchitis isn't memorizing a definition - it's understanding a relentless, progressive disease defined purely by its clinical persistence."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.64.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Bronchitis means inflammation of bronchi,' Ms. Frizzle begins. 'ACUTE bronchitis - viral infection, lasts days to weeks, resolves. CHRONIC bronchitis - persistent, progressive, doesn't go away. Different diseases entirely.'",
+      "q": "The term 'bronchitis' refers to inflammation of the:",
+      "options": [
+        "Alveoli",
+        "Bronchi (airways)",
+        "Pleura",
+        "Diaphragm"
+      ],
+      "answer": 1,
+      "explain": "BRONCHITIS = inflammation of BRONCHI (the airways). Acute bronchitis = short-term viral infection. Chronic bronchitis = persistent inflammation, part of COPD.",
+      "wrongExplains": {
+        "0": "Alveolar inflammation is pneumonitis or pneumonia. Bronchitis affects airways.",
+        "2": "Pleural inflammation is pleuritis/pleurisy. Bronchitis is airway inflammation.",
+        "3": "Diaphragm inflammation isn't bronchitis. Bronchitis is specifically bronchial airways."
+      }
+    },
+    {
+      "id": "900.5.64.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Productive cough,' Ms. Frizzle emphasizes. 'PRODUCTIVE means coughing up sputum - phlegm, mucus. Not dry cough. The airways are making excess mucus and you're expectorating it. That's the hallmark of chronic bronchitis.'",
+      "q": "A productive cough means:",
+      "options": [
+        "Dry cough with no sputum",
+        "Coughing up mucus/sputum",
+        "Coughing only at night",
+        "Coughing that causes pain"
+      ],
+      "answer": 1,
+      "explain": "PRODUCTIVE COUGH = coughing up SPUTUM (mucus, phlegm). Indicates airway mucus hypersecretion. Contrast with dry/non-productive cough. Key feature of chronic bronchitis.",
+      "wrongExplains": {
+        "0": "Dry cough is NON-productive. Productive means sputum production.",
+        "2": "Timing doesn't define productive. It's about whether sputum is expectorated.",
+        "3": "Pain is unrelated. Productive = produces sputum, regardless of pain."
+      }
+    },
+    {
+      "id": "900.5.64.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'The clinical definition,' Ms. Frizzle writes it out. 'Productive cough for at least 3 MONTHS per year, for at least 2 CONSECUTIVE YEARS. The 3-2 rule. It's a duration-based clinical diagnosis - not based on X-ray or spirometry.'",
+      "q": "Chronic bronchitis is clinically defined as productive cough for:",
+      "options": [
+        "1 week per year for 1 year",
+        "3 months per year for 2 consecutive years",
+        "6 months total",
+        "Any cough with smoking history"
+      ],
+      "answer": 1,
+      "explain": "CHRONIC BRONCHITIS definition: productive cough ≥3 MONTHS/year for ≥2 CONSECUTIVE YEARS. This duration criterion distinguishes chronic from acute/occasional bronchitis.",
+      "wrongExplains": {
+        "0": "One week is acute bronchitis. Chronic requires 3 months × 2 years.",
+        "2": "6 months total isn't enough - must be 3 months PER YEAR for 2 YEARS (chronic pattern).",
+        "3": "Smoking increases risk but the diagnosis requires the 3-2 duration criterion."
+      }
+    },
+    {
+      "id": "900.5.64.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Goblet cell hyperplasia,' Ms. Frizzle points at the swollen cells. 'Chronic irritation - usually from smoking - causes goblet cells to multiply and enlarge. MORE mucus-producing cells = MORE mucus. The airways are flooded.'",
+      "q": "In chronic bronchitis, mucus hypersecretion is due to:",
+      "options": [
+        "Destroyed alveoli",
+        "Goblet cell hyperplasia",
+        "Surfactant excess",
+        "Pleural thickening"
+      ],
+      "answer": 1,
+      "explain": "GOBLET CELL HYPERPLASIA = increased number and size of mucus-producing cells. Chronic irritation (smoking) causes this. Result: excessive mucus production, productive cough.",
+      "wrongExplains": {
+        "0": "Destroyed alveoli are emphysema. Chronic bronchitis is airway mucus hypersecretion.",
+        "2": "Surfactant is in alveoli, prevents collapse. Chronic bronchitis is airway mucus.",
+        "3": "Pleural thickening is different pathology. Mucus comes from goblet cells."
+      }
+    },
+    {
+      "id": "900.5.64.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'The inflammation,' Ms. Frizzle shows the infiltrate. 'Neutrophils, lymphocytes, macrophages in the airway walls. Chronic inflammation causes fibrosis - airways thicken, narrow, become permanently damaged. That's why it's part of COPD.'",
+      "q": "Chronic bronchitis involves inflammation with:",
+      "options": [
+        "No immune cells",
+        "Neutrophils and lymphocytes",
+        "Only red blood cells",
+        "Surfactant cells"
+      ],
+      "answer": 1,
+      "explain": "Chronic bronchitis = chronic INFLAMMATION with NEUTROPHILS, lymphocytes, macrophages. They infiltrate airway walls, cause damage, stimulate mucus. Perpetual inflammatory state.",
+      "wrongExplains": {
+        "0": "Inflammation BY DEFINITION involves immune cells. Chronic bronchitis has heavy infiltrate.",
+        "2": "RBCs carry oxygen. Inflammatory cells are neutrophils, lymphocytes, macrophages.",
+        "3": "Surfactant cells (Type II) are in alveoli. Chronic bronchitis is airway inflammation."
+      }
+    },
+    {
+      "id": "900.5.64.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'The blue bloater phenotype,' Ms. Frizzle describes. 'CHRONIC BRONCHITIS dominant. Overweight, cyanotic (blue from hypoxemia), peripheral edema (bloated), chronic productive cough. Contrast with pink puffer (emphysema - thin, pursed lips, pink).'",
+      "q": "The 'blue bloater' phenotype is associated with:",
+      "options": [
+        "Emphysema",
+        "Chronic bronchitis",
+        "Asthma",
+        "Pneumonia"
+      ],
+      "answer": 1,
+      "explain": "'BLUE BLOATER' = CHRONIC BRONCHITIS dominant COPD. Overweight, cyanotic (blue), edema (bloater), chronic cough/sputum. Contrast with 'pink puffer' (emphysema).",
+      "wrongExplains": {
+        "0": "'Pink puffer' is emphysema - thin, barrel chest, pink. Blue bloater is chronic bronchitis.",
+        "2": "Asthma is reversible obstruction, not COPD. Blue bloater is chronic bronchitis.",
+        "3": "Pneumonia is acute infection. Blue bloater is chronic presentation of bronchitis."
+      }
+    },
+    {
+      "id": "900.5.64.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Smoking is the main cause,' Ms. Frizzle states flatly. 'Chronic exposure to cigarette smoke irritates airways, causes goblet cell hyperplasia, chronic inflammation. The 3-2 rule separates smokers with chronic bronchitis from those with just occasional cough.'",
+      "q": "The primary risk factor for chronic bronchitis is:",
+      "options": [
+        "Genetics only",
+        "Cigarette smoking",
+        "Diet",
+        "Exercise"
+      ],
+      "answer": 1,
+      "explain": "CIGARETTE SMOKING is the primary cause of chronic bronchitis. Chronic airway irritation leads to mucus hypersecretion and inflammation. Occupational dusts/fumes are secondary causes.",
+      "wrongExplains": {
+        "0": "Genetics play a role but smoking is the dominant risk factor for chronic bronchitis.",
+        "2": "Diet doesn't cause chronic bronchitis. Smoking does.",
+        "3": "Exercise is protective. Chronic bronchitis is from smoking-induced airway damage."
+      }
+    },
+    {
+      "id": "900.5.64.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Distinguishing from asthma,' Ms. Frizzle explains. 'Asthma = reversible, episodic, responds to bronchodilators. Chronic bronchitis = persistent, daily productive cough, minimal bronchodilator response. Both can coexist but are different diseases.'",
+      "q": "Unlike asthma, chronic bronchitis is:",
+      "options": [
+        "Reversible",
+        "Characterized by persistent productive cough",
+        "Triggered by allergens only",
+        "Completely responsive to bronchodilators"
+      ],
+      "answer": 1,
+      "explain": "Chronic bronchitis = PERSISTENT, daily PRODUCTIVE COUGH (3 months/year × 2 years). Asthma is episodic/reversible. Chronic bronchitis is part of irreversible COPD.",
+      "wrongExplains": {
+        "0": "Chronic bronchitis is largely IRREVERSIBLE (COPD). Asthma is reversible.",
+        "2": "Chronic bronchitis is from smoking, not allergens. Asthma has allergic triggers.",
+        "3": "Minimal bronchodilator response in chronic bronchitis. Asthma responds well."
+      }
+    },
+    {
+      "id": "900.5.64.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Spirometry may be normal early,' Ms. Frizzle warns. 'Chronic bronchitis is a CLINICAL diagnosis - based on symptoms (3-2 rule), not spirometry. Later, obstruction develops (FEV1/FVC <0.7), but diagnosis doesn't require it.'",
+      "q": "Chronic bronchitis diagnosis is primarily based on:",
+      "options": [
+        "Chest X-ray findings",
+        "Clinical history (3 months/2 years productive cough)",
+        "Spirometry only",
+        "Blood tests"
+      ],
+      "answer": 1,
+      "explain": "Chronic bronchitis = CLINICAL DIAGNOSIS. Based on symptom duration: productive cough ≥3 months/year for ≥2 years. Spirometry/X-ray may be normal early.",
+      "wrongExplains": {
+        "0": "X-ray may be normal or show increased markings. Diagnosis is clinical (3-2 rule).",
+        "2": "Spirometry shows obstruction later but diagnosis is clinical, not spirometric.",
+        "3": "No blood test for chronic bronchitis. It's diagnosed by clinical criteria (cough duration)."
+      }
+    },
+    {
+      "id": "900.5.64.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Ms. Frizzle watches the inflamed airways, the endless mucus production, the chronic cough. 'Not one bad infection - persistent, year after year. That's chronic bronchitis. So, class: how is it defined?'",
+      "q": "Chronic bronchitis is defined by:",
+      "options": [
+        "Acute infection",
+        "Productive cough for 3 months in 2 consecutive years",
+        "Collapsed lung",
+        "Pulmonary embolism"
+      ],
+      "answer": 1,
+      "explain": "CHRONIC BRONCHITIS: productive cough ≥3 MONTHS/YEAR for ≥2 CONSECUTIVE YEARS. Clinical definition. Part of COPD. Usually from smoking. Distinguished from acute by duration.",
+      "wrongExplains": {
+        "0": "ACUTE infection is acute bronchitis - different from CHRONIC bronchitis which is defined by duration.",
+        "2": "Collapsed lung (pneumothorax/atelectasis) is unrelated to chronic bronchitis.",
+        "3": "Pulmonary embolism is a blood clot in lung vessels - different pathology entirely."
+      }
+    }
+  ]
+}

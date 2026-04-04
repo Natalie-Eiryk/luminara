@@ -1,0 +1,564 @@
+{
+  "id": "510.2",
+  "title": "Fractions & Decimals",
+  "category": "concepts",
+  "gradeLevel": "4-6",
+  "description": "Understanding fractions, decimals, and their relationships",
+  "questions": [
+    {
+      "id": "510.2.01",
+      "q": "Which fraction is equivalent to 2/4?",
+      "options": [
+        "1/4",
+        "1/2",
+        "2/3",
+        "3/4"
+      ],
+      "answer": 1,
+      "chapter": "Fractions - Equivalent Fractions",
+      "explain": "Equivalent fractions represent the SAME amount! 2/4 simplifies to 1/2 because both numerator and denominator can be divided by 2. Half is half, no matter how you slice it!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "1/4 is smaller than 2/4. You'd need to multiply both parts of 1/4 by 2 to get 2/4, not the other way around."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 2/4 = 1/2. Divide both top and bottom by 2: 2/2 = 1, 4/2 = 2. So 2/4 becomes 1/2. Think of pizza: 2 slices out of 4 equals 1 slice out of 2 (half the pizza). Same amount, different slice sizes!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "2/3 is a different amount entirely. 2/4 = 0.5, but 2/3 = 0.666... Not equivalent!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "3/4 is larger than 2/4. You can see this directly: 3 fourths vs 2 fourths. More slices!"
+        }
+      ],
+      "mechanism": {
+        "title": "Equivalent Fractions: Same Value, Different Names",
+        "content": "Equivalent fractions are different names for the SAME number. To find them, multiply or divide BOTH the numerator and denominator by the same number. 2/4 = (2/2)/(4/2) = 1/2. This works because you're really multiplying by 1 (like 2/2 = 1).",
+        "metaphor": "It's like currency exchange. $2 in quarters (2/4 of a dollar) is the same as $2 in half-dollars (1/2 of a dollar times 4). Different coins, same amount. The fraction is just a different 'currency' for the same value!"
+      },
+      "scaffoldFile": "510.2-fractions-scaffolds/510.2.01-scaffolds.json"
+    },
+    {
+      "id": "510.2.02",
+      "q": "What is 3/8 + 2/8?",
+      "options": [
+        "5/8",
+        "5/16",
+        "6/8",
+        "1/8"
+      ],
+      "answer": 0,
+      "chapter": "Fractions - Adding Fractions",
+      "explain": "When denominators are the SAME, just add the numerators! 3/8 + 2/8 = 5/8. The denominator stays 8 because the slice size doesn't change - you're just counting more slices.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Perfect! Same denominators make this simple: 3 eighths + 2 eighths = 5 eighths. The denominator STAYS the same because you're adding slices of the same size. Think: 3 apples + 2 apples = 5 apples, not 5 'two-apples'!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "5/16 would happen if you added the denominators too. But denominators tell you the SIZE of pieces - when sizes are the same, you don't add them. Only numerators (the count) get added."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "6/8 would be 3+3 or 2+4 in the numerator. We have 3+2=5, not 6."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "1/8 would result from subtracting, not adding. 3-2=1, but we're adding: 3+2=5."
+        }
+      ],
+      "mechanism": {
+        "title": "Adding Fractions with Like Denominators",
+        "content": "When denominators match, addition is straightforward: add the numerators, keep the denominator. Why? The denominator names the SIZE of pieces (eighths, fourths, etc.). The numerator counts HOW MANY. Same size pieces means you just count them together!",
+        "metaphor": "It's like counting the same type of item. 3 pencils + 2 pencils = 5 pencils, not '5 double-pencils.' The unit (pencils or eighths) stays the same - you're just combining your count."
+      },
+      "scaffoldFile": "510.2-fractions-scaffolds/510.2.02-scaffolds.json"
+    },
+    {
+      "id": "510.2.03",
+      "q": "Convert 0.75 to a fraction in simplest form.",
+      "options": [
+        "75/10",
+        "3/4",
+        "7/5",
+        "15/20"
+      ],
+      "answer": 1,
+      "chapter": "Fractions - Decimal to Fraction",
+      "explain": "0.75 = 75/100 (75 hundredths). Simplify by dividing both by 25: 75/25 = 3, 100/25 = 4. So 0.75 = 3/4. Three quarters!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "75/10 = 7.5, which is way more than 0.75. The decimal 0.75 has two decimal places, so think hundredths (75/100), not tenths (75/10)."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 0.75 = 75/100 = 3/4. The 75 is in the hundredths place, so start with 75/100. Then simplify: GCF of 75 and 100 is 25. Divide both: 75/25=3, 100/25=4. Result: 3/4!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "7/5 = 1.4, which is greater than 1. But 0.75 is less than 1 (it's three-quarters of 1)."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "15/20 IS equivalent to 3/4 (simplifies to it), but the question asks for SIMPLEST form. 15/20 can still be reduced by dividing both by 5."
+        }
+      ],
+      "mechanism": {
+        "title": "Converting Decimals to Fractions",
+        "content": "Read the decimal as a fraction: 0.75 is 'seventy-five hundredths' = 75/100. Then simplify by finding the Greatest Common Factor (GCF) and dividing both parts. The number of decimal places tells you the denominator: 1 place = tenths, 2 places = hundredths, 3 places = thousandths.",
+        "metaphor": "Decimals and fractions are two languages for the same idea. 0.75 is decimal-speak, 3/4 is fraction-speak. Converting is like translation - the meaning (the amount) stays the same, just expressed differently."
+      },
+      "scaffoldFile": "510.2-fractions-scaffolds/510.2.03-scaffolds.json"
+    },
+    {
+      "id": "510.2.04",
+      "q": "What is 2/3 of 18?",
+      "options": [
+        "6",
+        "12",
+        "27",
+        "36"
+      ],
+      "answer": 1,
+      "chapter": "Fractions - Fraction of a Number",
+      "explain": "'Of' means multiply! 2/3 of 18 = (2/3) x 18 = 36/3 = 12. Or think: 1/3 of 18 = 6, so 2/3 of 18 = 12.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "6 is 1/3 of 18, not 2/3. You found one-third - now you need TWO of those thirds!"
+        },
+        {
+          "verdict": "correct",
+          "text": "Excellent! 2/3 x 18 = 12. Strategy 1: (2 x 18)/3 = 36/3 = 12. Strategy 2: First find 1/3 of 18 (that's 6), then double it for 2/3 (that's 12). Both paths lead to 12!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "27 is 3/2 of 18 (or 1.5 times 18). You might have flipped the fraction or added instead of multiplying."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "36 is 2 times 18, not 2/3 of 18. The fraction 2/3 is less than 1, so the result should be LESS than 18, not more."
+        }
+      ],
+      "mechanism": {
+        "title": "Finding a Fraction of a Number",
+        "content": "The word 'of' in math usually means MULTIPLY. To find 2/3 of 18, multiply: (2/3) x 18 = (2 x 18)/3 = 36/3 = 12. Alternatively, find 1/3 first (divide by 3), then multiply by the numerator (times 2).",
+        "metaphor": "Finding a fraction of something is like sharing pizza among friends. 2/3 of 18 slices means: divide into 3 equal groups (6 each), then take 2 of those groups. 6 + 6 = 12 slices!"
+      },
+      "scaffoldFile": "510.2-fractions-scaffolds/510.2.04-scaffolds.json"
+    },
+    {
+      "id": "510.2.05",
+      "q": "Which decimal is equal to 1/5?",
+      "options": [
+        "0.15",
+        "0.2",
+        "0.5",
+        "1.5"
+      ],
+      "answer": 1,
+      "chapter": "Fractions - Fraction to Decimal",
+      "explain": "To convert 1/5 to decimal, divide: 1 / 5 = 0.2. Or recognize that 1/5 = 2/10 (multiply both by 2), and 2/10 = 0.2!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "0.15 is 15/100 = 3/20, not 1/5. The decimal is close but not quite right."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 1/5 = 0.2. Quick method: 1/5 = 2/10 = 0.2 (multiply top and bottom by 2 to get tenths). Or divide: 1 / 5 = 0.2. Five of these (0.2 x 5) equals 1.0 - it checks out!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "0.5 is 1/2, not 1/5. The denominators look similar but represent very different fractions. 1/2 = 0.5, 1/5 = 0.2."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "1.5 is greater than 1, but 1/5 is a proper fraction (less than 1). 1.5 = 3/2 or 1 and 1/2."
+        }
+      ],
+      "mechanism": {
+        "title": "Converting Fractions to Decimals",
+        "content": "Method 1: Divide numerator by denominator (1 / 5 = 0.2). Method 2: Convert to an equivalent fraction with 10, 100, or 1000 as denominator (1/5 = 2/10 = 0.2). Knowing common conversions helps: 1/2 = 0.5, 1/4 = 0.25, 1/5 = 0.2, 1/8 = 0.125.",
+        "metaphor": "Converting a fraction to decimal is like translating to the 'universal language' of base 10. Everyone can compare 0.2 easily - it fits right on the number line. Fractions need a common denominator to compare; decimals already have one (powers of 10)!"
+      },
+      "scaffoldFile": "510.2-fractions-scaffolds/510.2.05-scaffolds.json"
+    },
+    {
+      "id": "510.2.06",
+      "q": "What is 5/6 - 1/6?",
+      "options": [
+        "4/6",
+        "4/12",
+        "6/6",
+        "5/6"
+      ],
+      "answer": 0,
+      "chapter": "Fractions - Subtracting Fractions",
+      "explain": "Same denominators? Subtract the numerators! 5/6 - 1/6 = 4/6. (This can simplify to 2/3, but 4/6 is also correct.)",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Yes! 5/6 - 1/6 = 4/6. Same-size pieces (sixths) means we just subtract the count: 5 sixths minus 1 sixth equals 4 sixths. Note: 4/6 simplifies to 2/3, but 4/6 is a correct answer too!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "4/12 would result if you subtracted denominators too. But denominators indicate piece SIZE - they stay the same when pieces are the same size. Only subtract numerators!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "6/6 = 1 whole. Subtracting should give LESS than we started with (5/6), not more!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "5/6 is what we STARTED with. Subtracting 1/6 should decrease the amount!"
+        }
+      ],
+      "mechanism": {
+        "title": "Subtracting Fractions with Like Denominators",
+        "content": "Just like addition with same denominators, subtraction only involves the numerators. 5/6 - 1/6 means '5 sixths take away 1 sixth = 4 sixths.' The denominator (sixth) is the unit size - it doesn't change during the operation.",
+        "metaphor": "You have 5 slices of pizza (each is 1/6 of the pie). You eat 1 slice. Now you have 4 slices. Still sixths-of-a-pie, just fewer of them. 5/6 - 1/6 = 4/6."
+      },
+      "scaffoldFile": "510.2-fractions-scaffolds/510.2.06-scaffolds.json"
+    },
+    {
+      "id": "510.2.07",
+      "q": "Which is greater: 0.6 or 3/5?",
+      "options": [
+        "0.6 is greater",
+        "3/5 is greater",
+        "They are equal",
+        "Cannot be determined"
+      ],
+      "answer": 2,
+      "chapter": "Fractions - Comparing Fractions and Decimals",
+      "explain": "Convert to the same form! 3/5 = 0.6 (divide 3 by 5). So 0.6 = 0.6. They're EQUAL!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "They're actually equal! 0.6 is NOT greater than 3/5; they represent the exact same amount."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "3/5 is NOT greater than 0.6; they're equal. Convert to compare: 3/5 = 3 divided by 5 = 0.6."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 3/5 = 0.6. Convert the fraction: 3 / 5 = 0.6. Or convert to equivalent fraction: 3/5 = 6/10 = 0.6. Same value, different representations. They're perfectly equal!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "It CAN be determined! Convert to the same form (both decimals or both fractions) and compare. 3/5 = 0.6, so they're equal."
+        }
+      ],
+      "mechanism": {
+        "title": "Comparing Fractions and Decimals",
+        "content": "To compare fractions and decimals, convert to the same form. Either convert the decimal to a fraction, or convert the fraction to a decimal. Then comparison is straightforward. Common equivalents: 1/2 = 0.5, 1/4 = 0.25, 1/5 = 0.2, 3/5 = 0.6, 3/4 = 0.75.",
+        "metaphor": "Comparing fractions to decimals is like comparing distances in miles vs kilometers. Convert to the same unit first! 3/5 of a mile in 'decimal units' is 0.6 miles. Now you can compare apples to apples."
+      },
+      "scaffoldFile": "510.2-fractions-scaffolds/510.2.07-scaffolds.json"
+    },
+    {
+      "id": "510.2.08",
+      "q": "What is 1/4 + 1/2?",
+      "options": [
+        "2/6",
+        "1/6",
+        "3/4",
+        "2/4"
+      ],
+      "answer": 2,
+      "chapter": "Fractions - Adding Unlike Fractions",
+      "explain": "Different denominators! Find a common denominator first. 1/2 = 2/4. Now add: 1/4 + 2/4 = 3/4.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "2/6 = 1/3, which is less than either 1/4 or 1/2. Adding two positive fractions should give MORE than each one alone!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "1/6 would be smaller than 1/4. When you ADD fractions, the result gets BIGGER, not smaller."
+        },
+        {
+          "verdict": "correct",
+          "text": "Perfect! First, find a common denominator. LCD of 4 and 2 is 4. Convert: 1/2 = 2/4. Now add: 1/4 + 2/4 = 3/4. One quarter plus two quarters equals three quarters!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "2/4 = 1/2. But we're ADDING 1/4 to 1/2, so the result should be bigger than 1/2, not equal to it."
+        }
+      ],
+      "mechanism": {
+        "title": "Adding Fractions with Unlike Denominators",
+        "content": "Step 1: Find a common denominator (LCD - Least Common Denominator). Step 2: Convert each fraction to equivalent fractions with that denominator. Step 3: Add the numerators, keep the common denominator. For 1/4 + 1/2: LCD is 4, so 1/2 = 2/4. Then 1/4 + 2/4 = 3/4.",
+        "metaphor": "Adding fractions with different denominators is like adding money from different countries. You can't add 1 euro + 1 dollar directly. First convert to the same currency (common denominator), THEN add. 1/4 and 1/2 become 1/4 and 2/4, now they 'speak the same language'!"
+      },
+      "scaffoldFile": "510.2-fractions-scaffolds/510.2.08-scaffolds.json"
+    },
+    {
+      "id": "510.2.09",
+      "q": "What is 0.3 + 0.45?",
+      "options": [
+        "0.48",
+        "0.75",
+        "0.345",
+        "0.08"
+      ],
+      "answer": 1,
+      "chapter": "Fractions - Adding Decimals",
+      "explain": "Line up the decimal points! 0.30 + 0.45 = 0.75. Think of it as 30 hundredths + 45 hundredths = 75 hundredths.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "0.48 comes from adding incorrectly. Make sure to line up the decimal points: 0.30 + 0.45 = 0.75."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! Write 0.3 as 0.30 to match decimal places. Then: 0.30 + 0.45 = 0.75. Column by column: 0+5=5 (hundredths), 3+4=7 (tenths). Result: 0.75!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "0.345 treats this like concatenation (joining), not addition. We're ADDING the values, not stringing digits together."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "0.08 is way too small. Adding two positive numbers should give something BIGGER than both original numbers."
+        }
+      ],
+      "mechanism": {
+        "title": "Adding Decimals: Align the Decimal Points",
+        "content": "The key to decimal addition is alignment. Line up the decimal points so that tenths are under tenths, hundredths under hundredths, etc. You can add trailing zeros to help (0.3 = 0.30). Then add column by column, carrying when needed, just like whole number addition.",
+        "metaphor": "Adding decimals is like stacking money. You wouldn't stack a dollar bill where the dimes go! Line up dollars with dollars, dimes with dimes, pennies with pennies. Decimal alignment is the same - keep the place values matched."
+      },
+      "scaffoldFile": "510.2-fractions-scaffolds/510.2.09-scaffolds.json"
+    },
+    {
+      "id": "510.2.10",
+      "q": "What is 3/4 x 2/5?",
+      "options": [
+        "6/20",
+        "5/9",
+        "6/9",
+        "5/20"
+      ],
+      "answer": 0,
+      "chapter": "Fractions - Multiplying Fractions",
+      "explain": "Multiply straight across! Numerators: 3 x 2 = 6. Denominators: 4 x 5 = 20. Result: 6/20 (which simplifies to 3/10).",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Yes! Multiply numerator x numerator and denominator x denominator. 3 x 2 = 6, 4 x 5 = 20. Answer: 6/20. This simplifies to 3/10, but 6/20 is also correct. Fraction multiplication is beautifully straightforward!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "5/9 comes from adding across instead of multiplying. For fraction multiplication, multiply tops together and bottoms together."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "6/9 mixes operations - 6 in the numerator is right, but 9 would come from adding denominators (4+5), not multiplying (4x5=20)."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "5/20 has the right denominator but wrong numerator. Numerators: 3 x 2 = 6, not 5."
+        }
+      ],
+      "mechanism": {
+        "title": "Multiplying Fractions: Straight Across",
+        "content": "Fraction multiplication is simpler than addition! Multiply the numerators together, multiply the denominators together. (a/b) x (c/d) = (ac)/(bd). You can also simplify BEFORE multiplying by canceling common factors - it keeps numbers smaller.",
+        "metaphor": "Multiplying fractions is like taking a fraction OF a fraction. 3/4 of 2/5 means: divide something into 5 parts (take 2), then divide THAT into 4 parts (take 3). The pieces get smaller, which is why the product is less than both original fractions."
+      },
+      "scaffoldFile": "510.2-fractions-scaffolds/510.2.10-scaffolds.json"
+    },
+    {
+      "id": "510.2.11",
+      "q": "What is 2.4 x 0.5?",
+      "options": [
+        "0.12",
+        "1.2",
+        "12",
+        "2.9"
+      ],
+      "answer": 1,
+      "chapter": "Fractions - Multiplying Decimals",
+      "explain": "2.4 x 0.5 = 1.2. Multiplying by 0.5 is the same as finding half! Half of 2.4 is 1.2.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "0.12 has too many decimal places shifted. Count: 2.4 has 1 decimal place, 0.5 has 1 decimal place. Total: 2 decimal places. But in the product, 120 becomes 1.20 = 1.2."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 2.4 x 0.5 = 1.2. Shortcut: multiplying by 0.5 is the same as dividing by 2 (finding half). Half of 2.4 is 1.2. Or: 24 x 5 = 120, then place the decimal (2 total decimal places) to get 1.20 = 1.2."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "12 forgot the decimal point entirely. 24 x 5 = 120, but we need to account for the decimal places: move the decimal 2 places left to get 1.2."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "2.9 would come from ADDING (2.4 + 0.5 = 2.9). But we're MULTIPLYING, which gives a different result."
+        }
+      ],
+      "mechanism": {
+        "title": "Multiplying Decimals: Count the Decimal Places",
+        "content": "Step 1: Ignore decimals and multiply as whole numbers (24 x 5 = 120). Step 2: Count total decimal places in both factors (1 + 1 = 2). Step 3: Place the decimal point that many places from the right (120 becomes 1.20 = 1.2). The total decimal places in the product equals the sum of decimal places in the factors.",
+        "metaphor": "Decimal multiplication is like photography zoom. If you zoom out 10x (multiply by 0.1), things look 10x smaller. 2.4 x 0.5 means 'half of 2.4' - the 0.5 shrinks the original number. That's why the product (1.2) is smaller than 2.4!"
+      },
+      "scaffoldFile": "510.2-fractions-scaffolds/510.2.11-scaffolds.json"
+    },
+    {
+      "id": "510.2.12",
+      "q": "Which fraction is in simplest form?",
+      "options": [
+        "4/8",
+        "6/9",
+        "5/12",
+        "10/15"
+      ],
+      "answer": 2,
+      "chapter": "Fractions - Simplifying",
+      "explain": "A fraction is in simplest form when numerator and denominator have no common factors except 1. 5 and 12 share no common factors - 5/12 is already simplified!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "4/8 can be simplified. Both 4 and 8 are divisible by 4: 4/8 = 1/2."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "6/9 can be simplified. Both 6 and 9 are divisible by 3: 6/9 = 2/3."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 5/12 is in simplest form. Check: What are the factors of 5? Just 1 and 5. What are the factors of 12? 1, 2, 3, 4, 6, 12. The only common factor is 1, so it's already as simple as it gets!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "10/15 can be simplified. Both 10 and 15 are divisible by 5: 10/15 = 2/3."
+        }
+      ],
+      "mechanism": {
+        "title": "Simplest Form: No Common Factors",
+        "content": "A fraction is in simplest form (or lowest terms) when the GCF of numerator and denominator is 1. To simplify: find the GCF, divide both numerator and denominator by it. Keep going until nothing else divides evenly. Prime numbers in the numerator often signal simplest form (like 5, 7, 11...).",
+        "metaphor": "Simplifying fractions is like reducing a recipe to its core ingredients. 4/8 has 'extra' - both parts can be halved to get 1/2. 5/12 is already 'essential' - you can't reduce it further without destroying the recipe (the fraction's value)."
+      },
+      "scaffoldFile": "510.2-fractions-scaffolds/510.2.12-scaffolds.json"
+    },
+    {
+      "id": "510.2.13",
+      "q": "What is 3.6 / 0.4?",
+      "options": [
+        "0.9",
+        "9",
+        "36",
+        "90"
+      ],
+      "answer": 1,
+      "chapter": "Fractions - Dividing Decimals",
+      "explain": "To divide by a decimal, make the divisor a whole number first. Multiply both by 10: 36 / 4 = 9. So 3.6 / 0.4 = 9!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "0.9 is too small. When dividing by a number less than 1 (like 0.4), the result is BIGGER than the dividend (3.6). Think: 'How many 0.4s fit in 3.6?' - more than 3.6 of them!"
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 3.6 / 0.4 = 9. Make the divisor whole: multiply both by 10 to get 36 / 4 = 9. Or think: How many 0.4s fit in 3.6? Well, 0.4 x 9 = 3.6. Nine of them fit perfectly!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "36 comes from moving the decimal too far. We multiply both numbers by 10 (one decimal place), not 100."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "90 is way too big. 0.4 x 90 = 36, not 3.6. Off by a factor of 10."
+        }
+      ],
+      "mechanism": {
+        "title": "Dividing Decimals: Make the Divisor Whole",
+        "content": "Dividing by a decimal is tricky, so we transform the problem. Multiply BOTH dividend and divisor by 10 (or 100, or 1000) until the divisor is a whole number. 3.6 / 0.4 becomes 36 / 4 = 9. The quotient stays the same because we're multiplying both parts by the same factor.",
+        "metaphor": "It's like scaling a map. If you enlarge both distances by the same factor, the RATIO between them stays the same. 3.6 / 0.4 scaled up by 10 gives 36 / 4 - easier to compute, same answer!"
+      },
+      "scaffoldFile": "510.2-fractions-scaffolds/510.2.13-scaffolds.json"
+    },
+    {
+      "id": "510.2.14",
+      "q": "What is 2 1/3 as an improper fraction?",
+      "options": [
+        "5/3",
+        "6/3",
+        "7/3",
+        "3/7"
+      ],
+      "answer": 2,
+      "chapter": "Fractions - Mixed to Improper",
+      "explain": "To convert: multiply whole number by denominator, add numerator. 2 x 3 = 6, plus 1 = 7. So 2 1/3 = 7/3!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "5/3 would be 1 2/3 as a mixed number, not 2 1/3. We need a bigger numerator."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "6/3 = 2, which is the whole number part only. We're missing the 1/3!"
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 2 1/3 = 7/3. Formula: (whole x denominator) + numerator = new numerator. (2 x 3) + 1 = 7. Keep the same denominator (3). Result: 7/3. Two wholes is 6/3, plus 1/3 more = 7/3!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "3/7 flipped the numbers around. The denominator stays 3 (the original size of pieces), and the numerator becomes 7 (total count of thirds)."
+        }
+      ],
+      "mechanism": {
+        "title": "Mixed Numbers to Improper Fractions",
+        "content": "A mixed number (2 1/3) has a whole part and a fraction part. To convert to improper fraction: Multiply whole by denominator, add numerator, keep denominator. 2 1/3 = (2x3 + 1)/3 = 7/3. The denominator stays the same because the piece SIZE doesn't change - we're just counting ALL the pieces.",
+        "metaphor": "Think of pizza again. 2 1/3 pizzas means 2 whole pizzas plus 1/3 of another. Each pizza has 3 thirds. So: 2 pizzas = 6 thirds, plus 1 more third = 7 thirds total. That's 7/3!"
+      },
+      "scaffoldFile": "510.2-fractions-scaffolds/510.2.14-scaffolds.json"
+    },
+    {
+      "id": "510.2.15",
+      "q": "What is 11/4 as a mixed number?",
+      "options": [
+        "2 1/4",
+        "2 3/4",
+        "3 1/4",
+        "1 3/4"
+      ],
+      "answer": 1,
+      "chapter": "Fractions - Improper to Mixed",
+      "explain": "Divide numerator by denominator! 11 / 4 = 2 remainder 3. So 11/4 = 2 3/4. Two wholes and three-fourths left over!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "2 1/4 = 9/4. We have 11/4, which is 2 more fourths than that. 9 + 2 = 11."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 11 / 4 = 2 with remainder 3. The quotient (2) is the whole number. The remainder (3) goes over the original denominator (4). Result: 2 3/4. Check: 2 3/4 = (2x4+3)/4 = 11/4. Perfect!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "3 1/4 = 13/4, which is more than 11/4. We don't have that many fourths."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "1 3/4 = 7/4, which is less than 11/4. We have more fourths than that."
+        }
+      ],
+      "mechanism": {
+        "title": "Improper Fractions to Mixed Numbers",
+        "content": "Divide the numerator by the denominator. The quotient is the whole number, the remainder is the new numerator, and the denominator stays the same. 11/4: 11 / 4 = 2 R3. So 11/4 = 2 3/4. The division tells you how many 'wholes' fit and how much is left over.",
+        "metaphor": "11 quarters (11/4 dollars) = how many whole dollars? 4 quarters make a dollar, so 11 quarters = 2 whole dollars with 3 quarters left over. $2.75 = 2 3/4 dollars. Same math, different context!"
+      },
+      "scaffoldFile": "510.2-fractions-scaffolds/510.2.15-scaffolds.json"
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "parentId": "400.2.07",
+  "parentQuestion": "A 45-year-old sailor presents with bleeding gums, poor wound healing, and bruising. Blood work shows normal clotting factors. Which connective tissue component requires the vitamin he's deficient in for proper synthesis?",
+  "scaffolds": [
+    {
+      "q": "What disease affected sailors on long voyages without fresh fruits?",
+      "options": [
+        "Rickets",
+        "Scurvy (vitamin C deficiency)",
+        "Beriberi",
+        "Pellagra"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "SCURVY affected sailors without fresh fruits. It's caused by VITAMIN C DEFICIENCY, which was devastating before the cause was discovered.",
+      "wrongExplains": {
+        "0": "Rickets is vitamin D deficiency affecting bones.",
+        "2": "Beriberi is vitamin B1 (thiamine) deficiency.",
+        "3": "Pellagra is vitamin B3 (niacin) deficiency."
+      }
+    },
+    {
+      "q": "What foods contain vitamin C?",
+      "options": [
+        "Meat and eggs",
+        "Fresh fruits and vegetables (especially citrus)",
+        "Dairy products",
+        "Grains and cereals"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "FRESH FRUITS AND VEGETABLES (especially citrus) contain vitamin C. This is why British sailors were given limes (earning the nickname 'limeys').",
+      "wrongExplains": {
+        "0": "Meat and eggs contain B vitamins and protein, not vitamin C.",
+        "2": "Dairy provides calcium and vitamin D, not vitamin C.",
+        "3": "Grains provide B vitamins, not vitamin C."
+      }
+    },
+    {
+      "q": "What is collagen?",
+      "options": [
+        "A type of enzyme",
+        "The most abundant structural protein in the body",
+        "A storage molecule",
+        "A type of carbohydrate"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "COLLAGEN is the MOST ABUNDANT STRUCTURAL PROTEIN in the body. It provides strength to skin, blood vessels, tendons, ligaments, and bones.",
+      "wrongExplains": {
+        "0": "Enzymes catalyze reactions; collagen provides structure.",
+        "2": "Glycogen and fat are storage molecules.",
+        "3": "Collagen is a protein, not a carbohydrate."
+      }
+    },
+    {
+      "q": "Why does collagen synthesis require vitamin C?",
+      "options": [
+        "Vitamin C provides energy",
+        "Vitamin C is needed to hydroxylate amino acids that stabilize collagen",
+        "Vitamin C provides the amino acids",
+        "Vitamin C prevents collagen breakdown"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Vitamin C is needed to HYDROXYLATE amino acids (proline and lysine) that STABILIZE collagen's triple helix structure. Without it, collagen falls apart.",
+      "wrongExplains": {
+        "0": "ATP provides energy, not vitamin C.",
+        "2": "Diet provides amino acids; vitamin C modifies them.",
+        "3": "Vitamin C is needed for synthesis, not preventing breakdown."
+      }
+    },
+    {
+      "q": "What happens to collagen without adequate vitamin C?",
+      "options": [
+        "It becomes stronger",
+        "It becomes weak and unstable",
+        "It's unaffected",
+        "It becomes more flexible"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Without vitamin C, collagen is WEAK and UNSTABLE. The triple helix structure depends on hydroxylated amino acids that vitamin C helps create.",
+      "wrongExplains": {
+        "0": "Vitamin C deficiency weakens collagen.",
+        "2": "Collagen is significantly affected by vitamin C deficiency.",
+        "3": "Collagen becomes dysfunctional, not more flexible."
+      }
+    },
+    {
+      "q": "Why do scurvy patients have bleeding gums and bruising?",
+      "options": [
+        "Their blood can't clot",
+        "Weak collagen causes fragile blood vessel walls that leak",
+        "They have too many red blood cells",
+        "Their immune system attacks blood vessels"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "WEAK COLLAGEN causes FRAGILE BLOOD VESSEL WALLS that LEAK. Blood vessels contain collagen; without it, vessels become leaky, causing bleeding and bruising.",
+      "wrongExplains": {
+        "0": "Clotting factors are normal; the vessel walls are the problem.",
+        "2": "RBC count isn't affected by vitamin C deficiency.",
+        "3": "It's a structural problem, not an immune attack."
+      }
+    },
+    {
+      "q": "Why does scurvy cause poor wound healing?",
+      "options": [
+        "The immune system is weakened",
+        "New collagen can't be properly synthesized for scar tissue",
+        "Skin cells can't divide",
+        "Blood can't clot at the wound"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Wounds require new COLLAGEN for scar tissue formation. Without vitamin C, this COLLAGEN CAN'T BE PROPERLY SYNTHESIZED, so wounds don't heal.",
+      "wrongExplains": {
+        "0": "The structural component (collagen) is the primary problem.",
+        "2": "Cells can divide, but they can't make functional collagen.",
+        "3": "Clotting factors are normal in scurvy."
+      }
+    },
+    {
+      "q": "What makes this sailor's case point to scurvy rather than a clotting disorder?",
+      "options": [
+        "His age",
+        "Normal clotting factors but bleeding symptoms",
+        "His profession",
+        "The type of bruising"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "NORMAL CLOTTING FACTORS but BLEEDING SYMPTOMS indicates the problem is with blood vessel walls (collagen), not the clotting process itself.",
+      "wrongExplains": {
+        "0": "Age isn't the distinguishing factor.",
+        "2": "His profession (sailor) is a clue, but the lab values are diagnostic.",
+        "3": "Bruise type helps but isn't as specific as normal clotting factors."
+      }
+    },
+    {
+      "q": "Which connective tissue component requires vitamin C for proper synthesis?",
+      "options": [
+        "Elastin",
+        "Collagen",
+        "Keratin",
+        "Fibronectin"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "COLLAGEN requires VITAMIN C for proper synthesis. Vitamin C is essential for hydroxylation of proline and lysine, which stabilizes collagen's structure.",
+      "wrongExplains": {
+        "0": "Elastin synthesis doesn't specifically require vitamin C.",
+        "2": "Keratin synthesis doesn't require vitamin C.",
+        "3": "Fibronectin synthesis doesn't specifically require vitamin C."
+      }
+    }
+  ]
+}

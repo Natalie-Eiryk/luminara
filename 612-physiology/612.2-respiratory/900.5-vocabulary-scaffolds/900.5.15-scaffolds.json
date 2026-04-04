@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.15",
+  "parentQuestion": "The exchange of gases between blood and tissue cells is called:",
+  "narrative": {
+    "setting": "The Magic School Bus exits the lung capillaries with a payload of oxygen and rides the bloodstream toward Mr. Edgar's working muscles. They arrive at a systemic capillary - thin-walled, narrow, surrounded by hungry cells. 'Delivery time,' Ms. Frizzle announces. 'We've completed external respiration at the lungs. Now for the second half of the journey.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's muscle cells are burning through ATP, demanding oxygen, producing carbon dioxide waste. If this exchange fails - if oxygen doesn't reach cells and CO₂ doesn't get removed - cells begin to die within minutes."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.15.s01",
+      "arc": 1,
+      "arcTitle": "Two Kinds of Respiration",
+      "narrative": "'Remember external respiration?' Ms. Frizzle asks. 'That was at the lungs - external to the body's tissues. Now we're INSIDE, at the tissue level.' She emphasizes the word.",
+      "q": "If 'external' means involving the outside environment, what does 'internal' mean?",
+      "options": [
+        "Outside the body",
+        "Inside the body/within tissues",
+        "In the lungs only",
+        "In the atmosphere"
+      ],
+      "answer": 1,
+      "explain": "'Internal' means INSIDE the body, WITHIN tissues. External respiration happens at the lungs (interface with outside air). Internal respiration happens deep inside - at the tissue level.",
+      "wrongExplains": {
+        "0": "'Outside' would be EXTERNAL. Internal is the opposite - within.",
+        "2": "LUNGS are where EXTERNAL respiration occurs. Internal is at TISSUES.",
+        "3": "Atmosphere is definitely external. Internal is within the body itself."
+      }
+    },
+    {
+      "id": "900.5.15.s02",
+      "arc": 1,
+      "arcTitle": "Two Kinds of Respiration",
+      "narrative": "'External respiration: lungs, where blood picks up oxygen from air,' Ms. Frizzle recaps. 'Internal respiration: tissues, where blood delivers oxygen to cells.' She draws the complete circuit.",
+      "q": "External respiration occurs at the lungs. Where does internal respiration occur?",
+      "options": [
+        "In the lungs",
+        "At the systemic capillaries and body tissues",
+        "In the atmosphere",
+        "In the stomach"
+      ],
+      "answer": 1,
+      "explain": "INTERNAL respiration occurs at SYSTEMIC CAPILLARIES - everywhere blood supplies tissues. O₂ leaves blood for cells; CO₂ enters blood from cells. It's the tissue-level exchange.",
+      "wrongExplains": {
+        "0": "Lungs are for EXTERNAL respiration. Internal is at body tissues.",
+        "2": "Atmosphere is outside the body entirely. Internal respiration is inside, at tissues.",
+        "3": "Stomach is for digestion. Gas exchange happens at capillary beds throughout the body."
+      }
+    },
+    {
+      "id": "900.5.15.s03",
+      "arc": 1,
+      "arcTitle": "Two Kinds of Respiration",
+      "narrative": "'The two types are mirror images,' Ms. Frizzle shows a diagram. 'At lungs: O₂ IN, CO₂ OUT. At tissues: O₂ OUT, CO₂ IN. Same process, opposite directions.'",
+      "q": "How do external and internal respiration relate to each other?",
+      "options": [
+        "They're the same process",
+        "They're complementary - one loads O₂, one unloads it",
+        "Only one is necessary",
+        "They happen at the same location"
+      ],
+      "answer": 1,
+      "explain": "They're COMPLEMENTARY: External loads O₂ into blood (and unloads CO₂). Internal unloads O₂ to tissues (and loads CO₂). One feeds the other in a continuous cycle.",
+      "wrongExplains": {
+        "0": "They're different processes at different locations with opposite gas directions.",
+        "2": "BOTH are necessary - without internal respiration, tissues would never get oxygen.",
+        "3": "Different locations: external at LUNGS, internal at TISSUES throughout the body."
+      }
+    },
+    {
+      "id": "900.5.15.s04",
+      "arc": 2,
+      "arcTitle": "The Exchange",
+      "narrative": "The bus hovers at the capillary wall. Oxygen molecules are leaving the blood, passing through the thin walls, diffusing into muscle cells. 'Watch the direction,' Ms. Frizzle notes. 'From blood to cell.'",
+      "q": "In internal respiration, which direction does oxygen move?",
+      "options": [
+        "From tissues into blood",
+        "From blood into tissue cells",
+        "From lungs into blood",
+        "It doesn't move"
+      ],
+      "answer": 1,
+      "explain": "In internal respiration, O₂ moves FROM BLOOD INTO TISSUE CELLS. The blood delivers oxygen that cells need for making ATP (energy). It's the unloading phase of the oxygen journey.",
+      "wrongExplains": {
+        "0": "Tissues CONSUME oxygen; they don't return it to blood. O₂ goes INTO cells.",
+        "2": "That's EXTERNAL respiration at the lungs. Internal is at tissues.",
+        "3": "Oxygen definitely moves during internal respiration - diffusing into cells."
+      }
+    },
+    {
+      "id": "900.5.15.s05",
+      "arc": 2,
+      "arcTitle": "The Exchange",
+      "narrative": "'And what about the waste?' Ms. Frizzle points to CO₂ molecules drifting out of the cells into the bloodstream. 'Cells make CO₂ as they burn fuel. It has to go somewhere.'",
+      "q": "In internal respiration, which direction does carbon dioxide move?",
+      "options": [
+        "From blood into tissue cells",
+        "From tissue cells into blood",
+        "From lungs into blood",
+        "It stays in tissues"
+      ],
+      "answer": 1,
+      "explain": "CO₂ (metabolic waste) moves FROM TISSUE CELLS INTO BLOOD. Cells produce CO₂ during cellular respiration; blood carries it away to the lungs for exhalation.",
+      "wrongExplains": {
+        "0": "Cells PRODUCE CO₂ as waste; they don't receive it from blood.",
+        "2": "At LUNGS, CO₂ leaves blood. At tissues, CO₂ ENTERS blood from cells.",
+        "3": "CO₂ can't stay - it must be removed or pH drops dangerously."
+      }
+    },
+    {
+      "id": "900.5.15.s06",
+      "arc": 2,
+      "arcTitle": "The Exchange",
+      "narrative": "'What drives this exchange?' Ms. Frizzle shows a pressure diagram. 'No pumps needed. The gases move themselves - down their concentration gradients.'",
+      "q": "What drives the diffusion of gases during internal respiration?",
+      "options": [
+        "Electrical charges",
+        "Pressure gradients (partial pressure differences)",
+        "Muscle contractions",
+        "Hormones"
+      ],
+      "answer": 1,
+      "explain": "PARTIAL PRESSURE GRADIENTS drive diffusion. O₂ pressure is HIGHER in blood than tissues (so O₂ diffuses into cells). CO₂ pressure is HIGHER in tissues than blood (so CO₂ diffuses into blood).",
+      "wrongExplains": {
+        "0": "O₂ and CO₂ are neutral molecules, not charged. Pressure gradients drive movement.",
+        "2": "Muscles don't push individual gas molecules. Diffusion is passive, driven by pressure gradients.",
+        "3": "Hormones regulate metabolism but don't directly drive gas diffusion."
+      }
+    },
+    {
+      "id": "900.5.15.s07",
+      "arc": 3,
+      "arcTitle": "Why It Matters",
+      "narrative": "'Internal respiration is literally feeding your cells,' Ms. Frizzle says. 'Every cell in your body needs oxygen to make ATP. This exchange is the delivery service.'",
+      "q": "Why is internal respiration necessary?",
+      "options": [
+        "To warm the air we breathe",
+        "To deliver oxygen for cellular metabolism and remove CO₂ waste",
+        "To produce red blood cells",
+        "To filter particles from air"
+      ],
+      "answer": 1,
+      "explain": "Internal respiration DELIVERS O₂ for cellular ATP production (cellular respiration) and REMOVES CO₂ waste. Without it, cells would suffocate - even if the lungs were working perfectly.",
+      "wrongExplains": {
+        "0": "Air warming happens in upper airways, not at tissue capillaries.",
+        "2": "RBC production is in bone marrow. Internal respiration is gas exchange.",
+        "3": "Particle filtering happens in airways. Internal respiration is tissue-level gas exchange."
+      }
+    },
+    {
+      "id": "900.5.15.s08",
+      "arc": 3,
+      "arcTitle": "Why It Matters",
+      "narrative": "'Don't confuse internal respiration with CELLULAR respiration,' Ms. Frizzle warns. 'Internal respiration is gas EXCHANGE at tissues. Cellular respiration is what happens INSIDE cells - the metabolic reactions that make ATP.'",
+      "q": "Internal respiration differs from cellular respiration how?",
+      "options": [
+        "They're the same thing",
+        "Internal = gas exchange at tissues; cellular = ATP production inside cells",
+        "Internal is more important",
+        "Cellular happens at lungs"
+      ],
+      "answer": 1,
+      "explain": "INTERNAL respiration = gas EXCHANGE between blood and tissues. CELLULAR respiration = METABOLIC pathways inside cells that USE the delivered O₂ to make ATP. Different processes, same overall goal.",
+      "wrongExplains": {
+        "0": "They're related but distinct: exchange vs. metabolism.",
+        "2": "BOTH are essential. You need internal respiration to supply cellular respiration.",
+        "3": "Cellular respiration happens inside CELLS throughout the body, not at lungs."
+      }
+    },
+    {
+      "id": "900.5.15.s09",
+      "arc": 3,
+      "arcTitle": "Why It Matters",
+      "narrative": "'The complete oxygen journey,' Ms. Frizzle summarizes. 'Air to lungs, lungs to blood (external). Blood to tissues, tissues receive O₂ (internal). Then cellular respiration uses it to make ATP.'",
+      "q": "The complete gas exchange circuit includes:",
+      "options": [
+        "Only external respiration",
+        "External respiration (lungs) and internal respiration (tissues)",
+        "Only internal respiration",
+        "Neither type of respiration"
+      ],
+      "answer": 1,
+      "explain": "The complete circuit: EXTERNAL (lungs - loading O₂) + INTERNAL (tissues - unloading O₂). Blood is the shuttle, constantly cycling between both sites. Neither works without the other.",
+      "wrongExplains": {
+        "0": "External alone would load O₂ but never deliver it. You need both.",
+        "2": "Internal alone couldn't happen - blood must load O₂ at lungs first.",
+        "3": "BOTH types are absolutely required for gas delivery and waste removal."
+      }
+    },
+    {
+      "id": "900.5.15.s10",
+      "arc": 3,
+      "arcTitle": "Why It Matters",
+      "narrative": "The muscle cells glow with fresh oxygen. CO₂ drifts into the blood, heading back to the lungs. The cycle continues, endlessly. 'This tissue-level exchange,' Ms. Frizzle asks. 'What's it called?'",
+      "q": "The exchange of gases between blood and tissue cells is called:",
+      "options": [
+        "External respiration",
+        "Internal respiration",
+        "Pulmonary ventilation",
+        "Cellular respiration"
+      ],
+      "answer": 1,
+      "explain": "INTERNAL RESPIRATION - the exchange at the TISSUE level. O₂ leaves blood for cells; CO₂ enters blood from cells. The 'internal' half of the respiratory circuit, complementing 'external' at the lungs.",
+      "wrongExplains": {
+        "0": "External respiration is at the LUNGS, not tissue level.",
+        "2": "Pulmonary ventilation is breathing mechanics (moving air). Internal respiration is gas exchange at tissues.",
+        "3": "Cellular respiration is ATP production INSIDE cells, not the gas exchange between blood and cells."
+      }
+    }
+  ]
+}

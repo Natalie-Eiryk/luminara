@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║  Ms. Luminara Quiz Suite — Classification 612.82             ║
+  ║  Dewey: 612.82 (Brain · Central Nervous System)              ║
+  ║  Module: luminara_612-physiology/612.82-brain_exam.html                     ║
+  ║  Covers: Brain Structure, Meninges, CSF, Cortex, Brainstem   ║
+  ║  Council-reviewed: Frizzle · Feynman · Luminara              ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>612.82 · Brain Comprehensive · Ms. Luminara</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --void: #03060d;
+  --surface: #0a0f1a;
+  --panel: #0e1525;
+  --panel-hover: #131d30;
+  --border: rgba(56,189,248,0.12);
+  --border-active: rgba(56,189,248,0.35);
+  --primary: #38bdf8;
+  --warm: #f59e0b;
+  --lumi: #f472b6;
+  --purple: #a78bfa;
+  --teal: #2dd4bf;
+  --correct: #4ade80;
+  --incorrect: #f87171;
+  --text: #e2ecf8;
+  --mid: #8ba5c2;
+  --dim: #3d5169;
+  --bright: #f0f7ff;
+  --s1: #38bdf8; --s2: #a78bfa; --s3: #2dd4bf;
+  --s4: #fb923c; --s5: #f472b6;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--void);
+  color: var(--text);
+  font-family: 'Crimson Pro', serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+body::before {
+  content: '';
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 80% 60% at 15% 20%, rgba(56,189,248,0.05) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 50% at 85% 75%, rgba(167,139,250,0.04) 0%, transparent 55%),
+    radial-gradient(ellipse 40% 70% at 50% 40%, rgba(244,114,182,0.025) 0%, transparent 50%);
+}
+
+.shell { display: flex; min-height: 100vh; position: relative; z-index: 1; }
+
+.sidebar {
+  width: 230px; flex-shrink: 0;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  position: sticky; top: 0; height: 100vh;
+  overflow-y: auto; overflow-x: hidden;
+  display: flex; flex-direction: column;
+  padding-bottom: 24px;
+}
+.sidebar::-webkit-scrollbar { width: 4px; }
+.sidebar::-webkit-scrollbar-track { background: transparent; }
+.sidebar::-webkit-scrollbar-thumb { background: var(--dim); border-radius: 2px; }
+
+.sidebar-header {
+  padding: 20px 18px 14px;
+  border-bottom: 1px solid var(--border);
+}
+.dewey-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px; letter-spacing: 0.2em;
+  color: var(--warm); opacity: 0.8;
+  text-transform: uppercase; margin-bottom: 8px;
+}
+.sidebar-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem; font-weight: 700;
+  color: var(--bright); line-height: 1.2;
+}
+
+.score-widget {
+  margin: 14px 18px;
+  background: rgba(56,189,248,0.06);
+  border: 1px solid rgba(56,189,248,0.15);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.score-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; color: var(--mid); text-transform: uppercase; margin-bottom: 6px; }
+.score-main { font-family: 'DM Mono', monospace; font-size: 1.6rem; color: var(--primary); line-height: 1; }
+.score-denom { font-size: 0.8rem; color: var(--dim); margin-left: 3px; }
+.score-bar-wrap { margin-top: 8px; background: rgba(255,255,255,0.05); border-radius: 99px; height: 3px; overflow: hidden; }
+.score-bar-fill { height: 100%; background: linear-gradient(90deg, var(--primary), var(--teal)); border-radius: 99px; transition: width 0.5s ease; width: 0%; }
+
+.nav-sections { flex: 1; padding: 10px 0; }
+.nav-section-btn {
+  display: flex; align-items: center; gap: 10px;
+  width: 100%; padding: 9px 18px;
+  background: none; border: none;
+  cursor: pointer; transition: background 0.15s;
+  text-align: left;
+}
+.nav-section-btn:hover { background: rgba(255,255,255,0.04); }
+.nav-section-btn.active { background: rgba(56,189,248,0.07); }
+.nav-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  flex-shrink: 0; transition: transform 0.2s;
+}
+.nav-section-btn.active .nav-dot { transform: scale(1.4); }
+.nav-section-btn.done .nav-dot { opacity: 0.5; }
+.nav-text { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.05em; color: var(--mid); line-height: 1.3; }
+.nav-section-btn.active .nav-text { color: var(--primary); }
+.nav-progress { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--dim); margin-left: auto; flex-shrink: 0; }
+
+.sidebar-footer {
+  padding: 14px 18px 0;
+  border-top: 1px solid var(--border);
+}
+.results-btn {
+  width: 100%; padding: 10px;
+  background: rgba(244,114,182,0.1);
+  border: 1px solid rgba(244,114,182,0.25);
+  border-radius: 8px;
+  color: var(--lumi);
+  font-family: 'DM Mono', monospace; font-size: 10px;
+  letter-spacing: 0.1em; cursor: pointer;
+  transition: all 0.2s;
+}
+.results-btn:hover { background: rgba(244,114,182,0.18); }
+
+.main { flex: 1; min-width: 0; padding: 36px 40px 80px; }
+
+.section-panel { display: none; }
+.section-panel.active { display: block; animation: fadeUp 0.3s ease; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+.section-head {
+  display: flex; align-items: flex-start; gap: 18px;
+  margin-bottom: 32px; padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.section-num-badge {
+  font-family: 'DM Mono', monospace; font-size: 10px;
+  letter-spacing: 0.25em; text-transform: uppercase;
+  padding: 4px 12px; border-radius: 99px;
+  white-space: nowrap; flex-shrink: 0; margin-top: 6px;
+}
+.section-meta { flex: 1; }
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem; font-weight: 900;
+  color: var(--bright); line-height: 1.1;
+  margin-bottom: 6px;
+}
+.section-sub { font-style: italic; color: var(--mid); font-size: 0.95rem; }
+.section-stats {
+  display: flex; gap: 16px; margin-top: 10px;
+}
+.stat-pill {
+  font-family: 'DM Mono', monospace; font-size: 9px;
+  letter-spacing: 0.15em; color: var(--mid);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.07);
+  padding: 3px 10px; border-radius: 99px;
+}
+
+.qtype-divider {
+  display: flex; align-items: center; gap: 14px;
+  margin: 28px 0 16px;
+}
+.qtype-divider .line { flex: 1; height: 1px; background: var(--border); }
+.qtype-label {
+  font-family: 'DM Mono', monospace; font-size: 9px;
+  letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--dim); white-space: nowrap;
+}
+
+.q-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px 28px;
+  margin-bottom: 14px;
+  transition: border-color 0.3s;
+}
+.q-card.answered-correct { border-color: rgba(74,222,128,0.3); }
+.q-card.answered-incorrect { border-color: rgba(248,113,113,0.28); }
+@keyframes gp { 0%{box-shadow:0 0 0 0 rgba(74,222,128,0.3);}60%{box-shadow:0 0 20px 3px rgba(74,222,128,0.1);}100%{box-shadow:0 0 0 0 rgba(74,222,128,0);} }
+.pulse-ok { animation: gp 0.6s ease; }
+
+.q-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.q-num { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; color: var(--primary); opacity: 0.7; text-transform: uppercase; }
+.q-pts { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--warm); background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.2); padding: 2px 9px; border-radius: 99px; letter-spacing: 0.08em; }
+.q-text { font-size: 1rem; line-height: 1.7; color: var(--bright); margin-bottom: 18px; }
+.q-text strong { color: var(--warm); font-weight: 600; }
+.q-text em { color: var(--primary); font-style: italic; }
+
+.tf-row { display: flex; gap: 10px; }
+.tf-btn {
+  flex: 1; padding: 11px; border-radius: 9px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.03);
+  color: var(--mid); font-family: 'Crimson Pro', serif;
+  font-size: 0.95rem; cursor: pointer; transition: all 0.18s;
+}
+.tf-btn:hover:not(:disabled) { border-color: var(--primary); color: var(--bright); background: rgba(56,189,248,0.07); }
+.tf-btn.sc { border-color: var(--correct); background: rgba(74,222,128,0.12); color: var(--correct); }
+.tf-btn.si { border-color: var(--incorrect); background: rgba(248,113,113,0.12); color: var(--incorrect); }
+.tf-btn.rv { border-color: var(--correct); background: rgba(74,222,128,0.06); color: var(--correct); }
+
+.mc-group { display: flex; flex-direction: column; gap: 8px; }
+.mc-opt {
+  display: flex; align-items: flex-start; gap: 11px;
+  padding: 11px 14px; border-radius: 9px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.03);
+  color: var(--mid); font-family: 'Crimson Pro', serif;
+  font-size: 0.95rem; cursor: pointer; transition: all 0.18s; text-align: left;
+}
+.mc-opt:hover:not(:disabled) { border-color: var(--primary); color: var(--bright); background: rgba(56,189,248,0.07); }
+.mc-lbl { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--primary); opacity: 0.7; min-width: 14px; margin-top: 4px; flex-shrink: 0; }
+.mc-opt.sc { border-color: var(--correct); background: rgba(74,222,128,0.12); color: var(--correct); }
+.mc-opt.si { border-color: var(--incorrect); background: rgba(248,113,113,0.12); color: var(--incorrect); }
+.mc-opt.rv { border-color: var(--correct); background: rgba(74,222,128,0.06); color: var(--correct); }
+
+.match-table { width: 100%; border-collapse: separate; border-spacing: 0 6px; }
+.match-item { font-size: 0.92rem; color: var(--mid); padding-right: 14px; vertical-align: middle; line-height: 1.4; }
+.match-sel {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 7px; color: var(--text);
+  font-family: 'DM Mono', monospace; font-size: 10px;
+  padding: 7px 11px; cursor: pointer; min-width: 200px;
+  transition: border-color 0.18s;
+}
+.match-sel:focus { outline: none; border-color: var(--primary); }
+.match-sel.mc2 { border-color: var(--correct); color: var(--correct); }
+.match-sel.mi2 { border-color: var(--incorrect); color: var(--incorrect); }
+.check-btn {
+  margin-top: 16px; padding: 9px 22px;
+  background: rgba(56,189,248,0.08); border: 1px solid rgba(56,189,248,0.22);
+  border-radius: 7px; color: var(--primary);
+  font-family: 'DM Mono', monospace; font-size: 10px;
+  letter-spacing: 0.1em; cursor: pointer; transition: all 0.18s;
+}
+.check-btn:hover { background: rgba(56,189,248,0.15); }
+.check-btn:disabled { opacity: 0.3; cursor: default; }
+
+.feedback {
+  margin-top: 12px; font-size: 0.87rem;
+  font-family: 'DM Mono', monospace; display: none;
+  padding: 8px 13px; border-radius: 7px; letter-spacing: 0.02em; line-height: 1.5;
+}
+.feedback.correct { display: block; color: var(--correct); background: rgba(74,222,128,0.07); border-left: 3px solid var(--correct); }
+.feedback.incorrect { display: block; color: var(--incorrect); background: rgba(248,113,113,0.07); border-left: 3px solid var(--incorrect); }
+.feedback.warn { display: block; color: var(--warm); background: rgba(245,158,11,0.07); border-left: 3px solid var(--warm); }
+
+.essay-card {
+  background: linear-gradient(135deg, rgba(244,114,182,0.07), rgba(56,189,248,0.05));
+  border: 1px solid rgba(244,114,182,0.2);
+  border-radius: 14px; padding: 24px 28px; margin-bottom: 14px;
+}
+.essay-q { font-size: 1rem; color: var(--bright); margin-bottom: 18px; line-height: 1.7; }
+.essay-q strong { color: var(--warm); }
+.lumi-label {
+  font-family: 'DM Mono', monospace; font-size: 9px;
+  letter-spacing: 0.25em; color: var(--lumi); text-transform: uppercase;
+  margin-bottom: 14px; display: flex; align-items: center; gap: 8px;
+}
+.lumi-label::before { content: '✦'; color: var(--warm); font-size: 11px; }
+.lumi-body { font-size: 0.96rem; line-height: 1.85; color: var(--text); }
+.lumi-body p+p { margin-top: 12px; }
+.lumi-body em { color: var(--teal); font-style: italic; }
+.lumi-body strong { color: var(--warm); font-weight: 600; }
+
+.section-nav {
+  display: flex; justify-content: space-between;
+  margin-top: 36px; padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+.snav-btn {
+  padding: 10px 24px; border-radius: 9px;
+  font-family: 'DM Mono', monospace; font-size: 10px;
+  letter-spacing: 0.1em; cursor: pointer; transition: all 0.18s;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.03); color: var(--mid);
+}
+.snav-btn:hover { border-color: var(--primary); color: var(--primary); }
+.snav-btn.primary { background: rgba(56,189,248,0.1); border-color: rgba(56,189,248,0.3); color: var(--primary); }
+.snav-btn:disabled { opacity: 0.25; cursor: default; }
+
+#results-screen {
+  display: none; animation: fadeUp 0.5s ease;
+  max-width: 700px; margin: 0 auto; text-align: center;
+  padding: 48px 0;
+}
+.results-grade { font-family: 'DM Mono', monospace; font-size: 5rem; color: var(--primary); line-height: 1; }
+.results-fraction { font-family: 'DM Mono', monospace; font-size: 1.2rem; color: var(--mid); margin-bottom: 8px; }
+.results-pct { font-family: 'DM Mono', monospace; font-size: 0.85rem; letter-spacing: 0.2em; color: var(--dim); }
+.results-title { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--bright); margin-bottom: 20px; }
+.section-breakdown {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 10px; margin: 28px 0;
+}
+.breakdown-cell {
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: 10px; padding: 14px 10px;
+  font-family: 'DM Mono', monospace;
+}
+.breakdown-cell .bc-score { font-size: 1.4rem; color: var(--primary); margin-bottom: 4px; }
+.breakdown-cell .bc-label { font-size: 9px; letter-spacing: 0.1em; color: var(--dim); text-transform: uppercase; }
+.results-msg { font-style: italic; color: var(--mid); font-size: 1rem; line-height: 1.8; margin-bottom: 32px; max-width: 520px; margin-left: auto; margin-right: auto; }
+.restart-btn {
+  padding: 12px 36px; border-radius: 10px;
+  background: rgba(244,114,182,0.1); border: 1px solid rgba(244,114,182,0.28);
+  color: var(--lumi); font-family: 'DM Mono', monospace; font-size: 11px;
+  letter-spacing: 0.15em; cursor: pointer; transition: all 0.2s;
+}
+.restart-btn:hover { background: rgba(244,114,182,0.2); }
+
+.audit-note {
+  font-family: 'DM Mono', monospace; font-size: 10px;
+  background: rgba(245,158,11,0.08); border-left: 2px solid var(--warm);
+  color: #d4a017; padding: 6px 11px; border-radius: 0 6px 6px 0;
+  margin-bottom: 10px; display: inline-block;
+}
+
+@media(max-width: 760px) {
+  .sidebar { width: 56px; }
+  .nav-text, .dewey-tag, .sidebar-title, .score-widget, .sidebar-footer { display: none; }
+  .main { padding: 24px 20px 60px; }
+  .section-breakdown { grid-template-columns: repeat(2,1fr); }
+}
+</style>
+</head>
+<body>
+<div class="shell">
+
+<nav class="sidebar">
+  <div class="sidebar-header">
+    <div class="dewey-tag">Dewey 612.82 · Brain</div>
+    <div class="sidebar-title">Ms. Luminara<br>Brain Comprehensive</div>
+  </div>
+
+  <div class="score-widget">
+    <div class="score-label">Running Score</div>
+    <div><span class="score-main" id="sb-score">0</span><span class="score-denom" id="sb-denom"> / 0 pts</span></div>
+    <div class="score-bar-wrap"><div class="score-bar-fill" id="sb-fill"></div></div>
+  </div>
+
+  <div class="nav-sections" id="nav-sections"></div>
+
+  <div class="sidebar-footer">
+    <button class="results-btn" onclick="showResults()">VIEW RESULTS ✦</button>
+  </div>
+</nav>
+
+<main class="main" id="main-area">
+  <div id="results-screen">
+    <div class="results-title">Exam Complete</div>
+    <div class="results-grade" id="res-grade">—</div>
+    <div class="results-fraction" id="res-frac">— / —</div>
+    <div class="results-pct" id="res-pct">—%</div>
+    <div class="section-breakdown" id="breakdown-grid"></div>
+    <p class="results-msg" id="res-msg"></p>
+    <button class="restart-btn" onclick="restart()">↺ RETAKE EXAM</button>
+  </div>
+</main>
+</div>
+
+<script>
+const SECTIONS = [
+
+/* ─── SECTION 1: Brain Structure & Regions ─── */
+{
+  id:'s1', label:'100.1', title:'Brain Structure & Regions', dewey:'612.82',
+  color:'var(--s1)', sub:'Cerebrum · Brainstem · Gray & White Matter · Commissures',
+  questions:[
+    {id:'1t1', type:'tf', pts:1, q:'Specific motor and sensory functions are localized in specific areas called domains, whereas memory and language have overlapping domains.', ans:true,
+     note:'Motor/sensory = precise cortical maps (homunculus). Memory/language = distributed networks requiring orchestration across regions.'},
+    {id:'1t2', type:'tf', pts:1, q:'The three basic regions of the cerebrum are the cerebral cortical gray matter, internal white matter, and the superior and inferior colliculi.', ans:false,
+     note:'Colliculi are MIDBRAIN structures. Cerebrum\'s three regions: cortical gray matter, internal white matter, and basal nuclei.'},
+    {id:'1t3', type:'tf', pts:1, q:'White matter is found in the cerebral cortex.', ans:false,
+     note:'Cerebral cortex is GRAY matter (cell bodies, dendrites). White matter (myelinated axons) lies deep to the cortex.'},
+    {id:'1c1', type:'mc', pts:1, q:'The brainstem consists of the:',
+     opts:['Cerebrum, pons, midbrain, and medulla','Midbrain, medulla, and pons','Pons, medulla, cerebellum, and midbrain','Midbrain only'], ans:1},
+    {id:'1c2', type:'mc', pts:1, q:'Which of the following best describes the cerebrum?',
+     opts:['Motor command center','Decussation center','Executive suite','Visceral command center'], ans:2},
+    {id:'1c3', type:'mc', pts:1, q:'An elevated ridge of the cortex is called a:',
+     opts:['Furrow','Fissure','Gyrus','Sulcus'], ans:2},
+    {id:'1c4', type:'mc', pts:1, q:'Which of these would you NOT find in the cerebral cortex?',
+     opts:['Fiber tracts','Interneurons','Dendrites','Cell bodies'], ans:0},
+    {id:'1c5', type:'mc', pts:1, q:'Which of the following is NOT a role of the basal nuclei?',
+     opts:['Initiating protective reflex actions','Playing a role in cognition and emotion','Controlling starting and stopping movements','Inhibiting unnecessary or antagonistic movements'], ans:0},
+    {id:'1c6', type:'mc', pts:1, q:'The large commissure that connects the right and left sides of the brain is called the:',
+     opts:['Corpus callosum','Corona radiata','Internal capsule','Longitudinal fissure'], ans:0},
+    {id:'1c7', type:'mc', pts:1, q:'The corpora quadrigemina are found in the:',
+     opts:['Cerebellum','Pons','Midbrain','Diencephalon'], ans:2},
+    {id:'1e1', type:'essay', pts:5, q:'A 45-year-old patient presents with inability to feel pain or temperature on the left side of their body below the neck, but motor function remains intact and they can still sense light touch and proprioception. Explain which pathway is damaged and why the sensory modalities are dissociated.',
+     ans:'The RIGHT spinothalamic tract is damaged. The spinothalamic tract carries pain and temperature, and it decussates (crosses) at the spinal level where it enters. Damage to the RIGHT spinothalamic tract causes loss of pain/temperature on the LEFT body. The dorsal columns (carrying proprioception and fine touch) remain intact because they ascend ipsilaterally and don\'t cross until the medulla. Motor function is preserved because the corticospinal tract is untouched. This dissociated sensory loss — losing some modalities while preserving others — occurs because different sensory pathways decussate at different levels. Pain/temperature crosses immediately at the spinal cord level, while fine touch/proprioception stays ipsilateral until the brainstem.'}
+  ]
+},
+
+/* ─── SECTION 2: Meninges & CSF ─── */
+{
+  id:'s2', label:'100.2', title:'Meninges & CSF', dewey:'612.824',
+  color:'var(--s2)', sub:'Blood-Brain Barrier · Ventricles · Hemorrhage · Protection',
+  questions:[
+    {id:'2t1', type:'tf', pts:1, q:'The blood-brain barrier is the protective mechanism that helps maintain the brain\'s stable environment.', ans:true},
+    {id:'2t2', type:'tf', pts:1, q:'Nondeclarative memories preserve the circumstances in which they are learned.', ans:false,
+     note:'DECLARATIVE memories preserve context (episodic). Nondeclarative (procedural) memories are stripped of context — you know HOW to ride a bike but can\'t recall learning.'},
+    {id:'2t3', type:'tf', pts:1, q:'The limbic system acts as our emotional, or affective (feelings), brain.', ans:true},
+    {id:'2c1', type:'mc', pts:1, q:'What type of cells line the ventricles of the brain?',
+     opts:['Astrocytes','Epithelial cells','Ependymal cells','Neurons'], ans:2},
+    {id:'2c2', type:'mc', pts:1, q:'The subarachnoid space lies between what two layers of meninges?',
+     opts:['Arachnoid and pia','Arachnoid and epidura','Arachnoid and dura','Dura and epidura'], ans:0},
+    {id:'2c3', type:'mc', pts:1, q:'Which of the following would you NOT find in normal cerebrospinal fluid?',
+     opts:['Glucose','Protein','Red blood cells','Potassium'], ans:2},
+    {id:'2m1', type:'match', pts:1,
+     q:'Match each type of intracranial hemorrhage to its characteristics.',
+     items:['Epidural hematoma','Subdural hematoma','Subarachnoid hemorrhage'],
+     opts:['Arterial (middle meningeal), lens-shaped, rapid deterioration','Venous (bridging veins), crescent-shaped, gradual onset','Aneurysm rupture, thunderclap headache, blood in basal cisterns'],
+     ans:[0,1,2]},
+    {id:'2e1', type:'essay', pts:5, q:'A newborn develops progressive head enlargement, bulging fontanelles, and downward deviation of the eyes ("setting sun sign"). What structure is obstructed and what is the pathophysiology?',
+     ans:'This is obstructive hydrocephalus from cerebral aqueduct stenosis. The cerebral aqueduct is a narrow channel (~2mm diameter) connecting the third ventricle to the fourth ventricle. When blocked, CSF (produced continuously at ~500mL/day by the choroid plexus) accumulates upstream in the lateral and third ventricles. Pressure builds. In infants, skull sutures haven\'t fused, so the head expands — progressive enlargement with bulging fontanelles. Rising intracranial pressure compresses the midbrain tectum, causing paralysis of upward gaze — eyes deviate downward (setting sun sign). Without surgical shunting (ventriculoperitoneal), the child develops developmental delay, seizures, and brain damage from compression.'}
+  ]
+},
+
+/* ─── SECTION 3: Cerebral Cortex & Functions ─── */
+{
+  id:'s3', label:'100.3', title:'Cerebral Cortex & Functions', dewey:'612.825',
+  color:'var(--s3)', sub:'Visual Processing · Executive Function · Aphasias · Sleep',
+  questions:[
+    {id:'3t1', type:'tf', pts:1, q:'The visual cortex processes information in a strictly linear, sequential manner from V1 to higher areas.', ans:false,
+     note:'Visual processing uses PARALLEL streams: ventral ("what") and dorsal ("where/how"). Information flows simultaneously through multiple pathways.'},
+    {id:'3t2', type:'tf', pts:1, q:'The prefrontal cortex fully matures around age 12.', ans:false,
+     note:'Prefrontal cortex doesn\'t fully mature until mid-20s — last region to complete myelination. Explains adolescent risk-taking behavior.'},
+    {id:'3t3', type:'tf', pts:1, q:'Alpha waves on EEG indicate deep sleep.', ans:false,
+     note:'Alpha waves (8-13 Hz) indicate relaxed wakefulness with eyes closed. Deep sleep shows delta waves (0.5-4 Hz).'},
+    {id:'3c1', type:'mc', pts:1, q:'Which visual cortex area is specialized for face recognition?',
+     opts:['V1 (primary visual cortex)','V4 (color processing)','Fusiform face area','V5/MT (motion processing)'], ans:2},
+    {id:'3c2', type:'mc', pts:1, q:'A patient can see objects but cannot recognize faces, even of close family members. This condition is:',
+     opts:['Visual agnosia','Prosopagnosia','Hemispatial neglect','Akinetopsia'], ans:1},
+    {id:'3c3', type:'mc', pts:1, q:'Broca\'s aphasia is characterized by:',
+     opts:['Fluent but meaningless speech with poor comprehension','Non-fluent, effortful speech with intact comprehension','Complete inability to produce or understand any language','Normal speech with writing difficulties only'], ans:1},
+    {id:'3c4', type:'mc', pts:1, q:'The reticular activating system (RAS) is primarily responsible for:',
+     opts:['Memory consolidation','Arousal and consciousness','Motor coordination','Visual processing'], ans:1},
+    {id:'3c5', type:'mc', pts:1, q:'A patient with right parietal lobe damage ignores the left side of space, doesn\'t eat food on the left side of their plate, and doesn\'t acknowledge their left arm. This is:',
+     opts:['Left homonymous hemianopia','Prosopagnosia','Hemispatial neglect','Broca\'s aphasia'], ans:2},
+    {id:'3e1', type:'essay', pts:5, q:'Compare and contrast Broca\'s aphasia with Wernicke\'s aphasia. Include the lesion location, speech characteristics, and comprehension ability for each.',
+     ans:'Broca\'s aphasia: Lesion in left inferior frontal gyrus (Broca\'s area). Speech is non-fluent, effortful, and telegraphic — content words preserved but grammar and function words stripped ("Wife... home... tomorrow" instead of "My wife is coming home tomorrow"). Comprehension is INTACT — patients understand everything but struggle to produce language. They\'re often frustrated because they know what they want to say but can\'t coordinate motor output. Wernicke\'s aphasia: Lesion in left posterior superior temporal gyrus (Wernicke\'s area). Speech is FLUENT but meaningless — normal rhythm and prosody but filled with paraphasias, neologisms, and word salad. Comprehension is IMPAIRED — patients don\'t understand spoken or written language and are often unaware of their deficit. They produce plenty of words that convey no meaning.'}
+  ]
+},
+
+/* ─── SECTION 4: Brainstem & Pathology ─── */
+{
+  id:'s4', label:'100.4', title:'Brainstem & Pathology', dewey:'612.826',
+  color:'var(--s4)', sub:'Vital Centers · Cranial Nerves · Parkinson\'s · Stroke Syndromes',
+  questions:[
+    {id:'4t1', type:'tf', pts:1, q:'The medulla oblongata contains the cardiovascular and respiratory centers.', ans:true},
+    {id:'4t2', type:'tf', pts:1, q:'The substantia nigra produces acetylcholine.', ans:false,
+     note:'Substantia nigra produces DOPAMINE. Its degeneration causes Parkinson\'s disease. The basal forebrain (nucleus basalis) produces acetylcholine.'},
+    {id:'4t3', type:'tf', pts:1, q:'Cranial nerve nuclei are located exclusively in the cerebral cortex.', ans:false,
+     note:'Cranial nerve nuclei are located in the BRAINSTEM (midbrain, pons, medulla) — NOT the cortex. The cortex contains motor areas that PROJECT to these nuclei.'},
+    {id:'4c1', type:'mc', pts:1, q:'Which brainstem structure is the primary site of dopamine production for the basal ganglia motor circuit?',
+     opts:['Red nucleus','Substantia nigra','Inferior olivary nucleus','Reticular formation'], ans:1},
+    {id:'4c2', type:'mc', pts:1, q:'Parkinson\'s disease results from degeneration of:',
+     opts:['Cerebellar Purkinje cells','Substantia nigra dopaminergic neurons','Motor cortex pyramidal cells','Spinal motor neurons'], ans:1},
+    {id:'4c3', type:'mc', pts:1, q:'A patient presents with difficulty swallowing (dysphagia), hoarse voice, and absent gag reflex. Which cranial nerves are affected?',
+     opts:['V and VII','III and IV','IX and X','XI and XII'], ans:2},
+    {id:'4c4', type:'mc', pts:1, q:'Wallenberg syndrome (lateral medullary syndrome) typically results from occlusion of:',
+     opts:['Anterior spinal artery','Posterior inferior cerebellar artery (PICA)','Middle cerebral artery','Basilar artery'], ans:1},
+    {id:'4m1', type:'match', pts:1,
+     q:'Match each brainstem structure to its primary function.',
+     items:['Medulla oblongata','Pons','Midbrain (tectum)','Reticular formation'],
+     opts:['Cardiovascular and respiratory control centers','Relay between cerebrum and cerebellum; modulates respiration','Visual and auditory reflexes (superior/inferior colliculi)','Arousal, consciousness, sleep-wake transitions'],
+     ans:[0,1,2,3]},
+    {id:'4e1', type:'essay', pts:5, q:'Explain the pathophysiology of Parkinson\'s disease, including which neurotransmitter system is affected and why patients develop the characteristic motor symptoms (tremor, rigidity, bradykinesia).',
+     ans:'Parkinson\'s disease results from progressive loss of dopaminergic neurons in the substantia nigra pars compacta. These neurons normally project to the striatum (caudate and putamen) and release dopamine, which modulates the balance between the direct pathway (facilitates movement) and indirect pathway (suppresses movement). In the healthy state, dopamine excites D1 receptors on direct pathway neurons (promoting movement) while inhibiting D2 receptors on indirect pathway neurons (reducing suppression). When dopamine is lost: the direct pathway becomes underactive (movement initiation impaired → bradykinesia), the indirect pathway becomes overactive (excessive movement suppression → rigidity). Resting tremor results from abnormal oscillatory activity in the basal ganglia-thalamo-cortical circuit when the normal dopaminergic "damping" is lost. Cardinal features: TRAP — Tremor (resting, pill-rolling), Rigidity (cogwheel), Akinesia/bradykinesia (slow initiation), Postural instability.'}
+  ]
+},
+
+/* ─── SECTION 5: Brain Vocabulary ─── */
+{
+  id:'s5', label:'100.5', title:'Brain Vocabulary', dewey:'612.82',
+  color:'var(--s5)', sub:'Essential Terminology · Structures · Locations · Functions',
+  questions:[
+    {id:'5m1', type:'match', pts:1,
+     q:'Match each brain structure to its primary function.',
+     items:['Corpus callosum','Thalamus','Hippocampus','Cerebellum','Hypothalamus','Amygdala'],
+     opts:['Connects left and right cerebral hemispheres','Sensory relay station (all senses except smell)','Memory formation and consolidation','Movement coordination and balance','Homeostasis, hunger, thirst, temperature','Fear and emotional processing'],
+     ans:[0,1,2,3,4,5]},
+    {id:'5m2', type:'match', pts:1,
+     q:'Match each cortical gyrus to its function.',
+     items:['Precentral gyrus','Postcentral gyrus','Superior temporal gyrus','Cingulate gyrus'],
+     opts:['Primary motor cortex','Primary somatosensory cortex','Primary auditory cortex','Limbic system — emotion and attention'],
+     ans:[0,1,2,3]},
+    {id:'5t1', type:'tf', pts:1, q:'The cerebrum is divided into left and right halves called lobes.', ans:false,
+     note:'Hemispheres, not lobes. Lobes are subdivisions WITHIN each hemisphere (frontal, parietal, temporal, occipital).'},
+    {id:'5t2', type:'tf', pts:1, q:'The dura mater is the innermost meningeal layer.', ans:false,
+     note:'Dura mater is the OUTERMOST layer ("tough mother"). Order from outside in: dura → arachnoid → pia.'},
+    {id:'5t3', type:'tf', pts:1, q:'The hypothalamus regulates voluntary movement.', ans:false,
+     note:'Hypothalamus controls HOMEOSTASIS (temperature, hunger, thirst, circadian rhythms). Voluntary movement is motor cortex + basal ganglia.'},
+    {id:'5t4', type:'tf', pts:1, q:'Cerebrospinal fluid is produced by the choroid plexuses.', ans:true},
+    {id:'5t5', type:'tf', pts:1, q:'The blood-brain barrier is formed primarily by astrocytes and capillary endothelium.', ans:true},
+    {id:'5c1', type:'mc', pts:1, q:'Which lobe of the cerebrum is primarily responsible for vision?',
+     opts:['Frontal lobe','Parietal lobe','Temporal lobe','Occipital lobe'], ans:3},
+    {id:'5c2', type:'mc', pts:1, q:'The brainstem consists of the midbrain, pons, and:',
+     opts:['Thalamus','Hypothalamus','Medulla oblongata','Cerebellum'], ans:2},
+    {id:'5c3', type:'mc', pts:1, q:'Which ventricle is located within the diencephalon?',
+     opts:['Lateral ventricles','Third ventricle','Fourth ventricle','Central canal'], ans:1},
+    {id:'5c4', type:'mc', pts:1, q:'The structure that coordinates voluntary muscle movements and maintains balance is the:',
+     opts:['Cerebrum','Hypothalamus','Cerebellum','Medulla'], ans:2},
+    {id:'5c5', type:'mc', pts:1, q:'Broca\'s area is located in which lobe?',
+     opts:['Parietal lobe','Frontal lobe','Temporal lobe','Occipital lobe'], ans:1},
+    {id:'5c6', type:'mc', pts:1, q:'Wernicke\'s area is located in which lobe?',
+     opts:['Frontal lobe','Parietal lobe','Temporal lobe','Occipital lobe'], ans:2},
+    {id:'5c7', type:'mc', pts:1, q:'The primary somatosensory cortex is located in the:',
+     opts:['Precentral gyrus','Postcentral gyrus','Superior temporal gyrus','Inferior frontal gyrus'], ans:1},
+    {id:'5c8', type:'mc', pts:1, q:'Which structure controls the body\'s circadian rhythms?',
+     opts:['Thalamus','Pineal gland','Amygdala','Hippocampus'], ans:1},
+    {id:'5c9', type:'mc', pts:1, q:'The basal nuclei are primarily involved in:',
+     opts:['Sensory processing','Regulating voluntary movement','Memory formation','Language comprehension'], ans:1},
+    {id:'5c10', type:'mc', pts:1, q:'Which cranial fossa contains the cerebellum?',
+     opts:['Anterior cranial fossa','Middle cranial fossa','Posterior cranial fossa','Superior cranial fossa'], ans:2},
+    {id:'5c11', type:'mc', pts:1, q:'The reticular formation is located in the:',
+     opts:['Cerebral cortex','Brainstem','Cerebellum','Thalamus'], ans:1},
+    {id:'5c12', type:'mc', pts:1, q:'The structure connecting the third and fourth ventricles is the:',
+     opts:['Interventricular foramen','Cerebral aqueduct','Central canal','Lateral aperture'], ans:1},
+    {id:'5e1', type:'essay', pts:5, q:'A patient awakens from surgery unable to form new memories. They can recall childhood events perfectly and hold conversations, but 5 minutes later, they don\'t remember the conversation occurred. Procedural learning (motor skills) remains intact. Which structure was damaged and why is memory selectively affected?',
+     ans:'The HIPPOCAMPUS was damaged (bilaterally). The hippocampus in the medial temporal lobe is critical for encoding new declarative (explicit) memories — facts and events. It receives processed information from the entorhinal cortex, binds together the "what, where, when" components of an experience, and projects back to cortex for long-term storage. Bilateral hippocampal damage produces anterograde amnesia: inability to form new explicit memories. OLD memories (already consolidated to cortex before surgery) remain accessible because they no longer depend on the hippocampus. Working memory (holding conversations) is intact because it\'s prefrontal cortex function. PROCEDURAL memory (motor skills, habits) is preserved because it\'s mediated by the cerebellum and basal ganglia — completely separate neural systems. This dissociation proves memory is not unitary: different memory systems have different anatomical substrates.'}
+  ]
+}
+];
+
+let answered = {};
+let totalEarned = 0;
+let totalPossible = 0;
+let currentSection = 's1';
+
+function init() {
+  buildNav();
+  buildSections();
+  activateSection('s1');
+  updateScore();
+}
+
+function buildNav() {
+  const container = document.getElementById('nav-sections');
+  SECTIONS.forEach(s => {
+    const qs = s.questions.filter(q => q.type !== 'essay');
+    const btn = document.createElement('button');
+    btn.className = 'nav-section-btn';
+    btn.id = 'nav-' + s.id;
+    btn.onclick = () => activateSection(s.id);
+    btn.innerHTML = `
+      <div class="nav-dot" style="background:${s.color}"></div>
+      <div class="nav-text">${s.label}<br>${s.title.split('·')[0].trim()}</div>
+      <div class="nav-progress" id="navp-${s.id}">0/${qs.length}</div>`;
+    container.appendChild(btn);
+  });
+}
+
+function buildSections() {
+  const main = document.getElementById('main-area');
+  SECTIONS.forEach(s => {
+    const panel = document.createElement('div');
+    panel.className = 'section-panel';
+    panel.id = 'panel-' + s.id;
+    const qs = s.questions.filter(q=>q.type!=='essay');
+    const essays = s.questions.filter(q=>q.type==='essay');
+    const pts = s.questions.reduce((a,q)=>a+q.pts,0);
+
+    let html = `
+      <div class="section-head">
+        <div class="section-num-badge" style="color:${s.color};background:${s.color}18;border:1px solid ${s.color}30">
+          Dewey ${s.dewey}
+        </div>
+        <div class="section-meta">
+          <div class="section-title">${s.title}</div>
+          <div class="section-sub">${s.sub}</div>
+          <div class="section-stats">
+            <span class="stat-pill">${qs.length} scored questions</span>
+            <span class="stat-pill">${essays.length} essay panels</span>
+            <span class="stat-pill">${pts} pts total</span>
+          </div>
+        </div>
+      </div>`;
+
+    const groups = [
+      {key:'match', label:'Matching'},
+      {key:'tf', label:'True / False'},
+      {key:'mc', label:'Multiple Choice'},
+      {key:'essay', label:'Short Answer — Ms. Luminara'}
+    ];
+
+    groups.forEach(g => {
+      const gqs = s.questions.filter(q=>q.type===g.key);
+      if (!gqs.length) return;
+      html += `<div class="qtype-divider"><div class="line"></div><div class="qtype-label">${g.label}</div><div class="line"></div></div>`;
+      gqs.forEach(q => { html += buildQuestion(q, s.color); });
+    });
+
+    const sIdx = SECTIONS.findIndex(x=>x.id===s.id);
+    const prev = sIdx > 0 ? SECTIONS[sIdx-1] : null;
+    const next = sIdx < SECTIONS.length-1 ? SECTIONS[sIdx+1] : null;
+    html += `<div class="section-nav">
+      <button class="snav-btn${prev?' primary':''}" ${prev?`onclick="activateSection('${prev.id}')"`:' disabled'}>
+        ${prev?'← '+prev.label:'← Start'}
+      </button>
+      <button class="snav-btn primary" onclick="showResults()">VIEW RESULTS ✦</button>
+      <button class="snav-btn${next?' primary':''}" ${next?`onclick="activateSection('${next.id}')"`:' disabled'}>
+        ${next?next.label+' →':'Complete ✓'}
+      </button>
+    </div>`;
+
+    panel.innerHTML = html;
+    main.appendChild(panel);
+  });
+}
+
+function buildQuestion(q, color) {
+  if (q.type === 'tf') return buildTF(q, color);
+  if (q.type === 'mc') return buildMC(q, color);
+  if (q.type === 'match') return buildMatch(q, color);
+  if (q.type === 'essay') return buildEssay(q);
+  return '';
+}
+
+function buildTF(q, color) {
+  const note = q.note ? `<div class="audit-note">📝 ${q.note}</div>` : '';
+  return `<div class="q-card" id="card-${q.id}">
+    <div class="q-meta"><div class="q-num">Question ${q.id}</div><div class="q-pts">${q.pts} PT</div></div>
+    ${note}
+    <div class="q-text">${q.q}</div>
+    <div class="tf-row">
+      <button class="tf-btn" onclick="answerTF('${q.id}',true)">True</button>
+      <button class="tf-btn" onclick="answerTF('${q.id}',false)">False</button>
+    </div>
+    <div class="feedback" id="fb-${q.id}"></div>
+  </div>`;
+}
+
+function buildMC(q, color) {
+  let opts = q.opts.map((o,i) => `<button class="mc-opt" onclick="answerMC('${q.id}',${i})"><span class="mc-lbl">${'ABCD'[i]}</span>${o}</button>`).join('');
+  return `<div class="q-card" id="card-${q.id}">
+    <div class="q-meta"><div class="q-num">Question ${q.id}</div><div class="q-pts">${q.pts} PT</div></div>
+    <div class="q-text">${q.q}</div>
+    <div class="mc-group">${opts}</div>
+    <div class="feedback" id="fb-${q.id}"></div>
+  </div>`;
+}
+
+function buildMatch(q, color) {
+  let rows = q.items.map((item,i) => {
+    let options = q.opts.map((o,j)=>`<option value="${j}">${o}</option>`).join('');
+    return `<tr><td class="match-item">${item}</td><td><select class="match-sel" data-ans="${q.ans[i]}" data-qid="${q.id}" data-idx="${i}"><option value="">— select —</option>${options}</select></td></tr>`;
+  }).join('');
+  return `<div class="q-card" id="card-${q.id}">
+    <div class="q-meta"><div class="q-num">Question ${q.id}</div><div class="q-pts">${q.pts} PT</div></div>
+    <div class="q-text">${q.q}</div>
+    <table class="match-table">${rows}</table>
+    <button class="check-btn" id="chk-${q.id}" onclick="checkMatch('${q.id}')">CHECK ANSWERS</button>
+    <div class="feedback" id="fb-${q.id}"></div>
+  </div>`;
+}
+
+function buildEssay(q) {
+  return `<div class="essay-card" id="card-${q.id}">
+    <div class="q-meta"><div class="q-num">Essay — ${q.id}</div><div class="q-pts">${q.pts} PT</div></div>
+    <div class="essay-q">${q.q}</div>
+    <div class="lumi-label">Ms. Luminara — Model Answer</div>
+    <div class="lumi-body">${formatAnswer(q.ans)}</div>
+  </div>`;
+}
+
+function formatAnswer(text) {
+  return text.split('. ').reduce((acc, sent, i, arr) => {
+    if (sent.length > 0) acc += (i && acc.length > 300 ? '</p><p>' : '') + sent + (i < arr.length-1 ? '. ' : '');
+    return acc;
+  }, '<p>') + '</p>';
+}
+
+function answerTF(qid, chosen) {
+  if (answered[qid] !== undefined) return;
+  const q = findQ(qid);
+  const correct = q.ans;
+  const win = chosen === correct;
+  const card = document.getElementById('card-'+qid);
+  const btns = card.querySelectorAll('.tf-btn');
+  btns.forEach(b => b.disabled = true);
+  btns[chosen ? 0 : 1].classList.add(win ? 'sc' : 'si');
+  if (!win) btns[correct ? 0 : 1].classList.add('rv');
+  card.classList.add(win ? 'answered-correct' : 'answered-incorrect');
+  if (win) { card.classList.add('pulse-ok'); totalEarned += q.pts; }
+  totalPossible += q.pts;
+  answered[qid] = win;
+  updateScore(); updateNavProgress(qid);
+  const fb = document.getElementById('fb-'+qid);
+  fb.className = 'feedback ' + (win ? 'correct' : 'incorrect');
+  fb.textContent = win ? '✓ Correct.' : '✗ Incorrect — answer is ' + (correct ? 'True' : 'False') + '.';
+}
+
+function answerMC(qid, chosen) {
+  if (answered[qid] !== undefined) return;
+  const q = findQ(qid);
+  const correct = q.ans;
+  const win = chosen === correct;
+  const card = document.getElementById('card-'+qid);
+  const btns = card.querySelectorAll('.mc-opt');
+  btns.forEach(b => b.disabled = true);
+  btns[chosen].classList.add(win ? 'sc' : 'si');
+  if (!win) btns[correct].classList.add('rv');
+  card.classList.add(win ? 'answered-correct' : 'answered-incorrect');
+  if (win) { card.classList.add('pulse-ok'); totalEarned += q.pts; }
+  totalPossible += q.pts;
+  answered[qid] = win;
+  updateScore(); updateNavProgress(qid);
+  const fb = document.getElementById('fb-'+qid);
+  fb.className = 'feedback ' + (win ? 'correct' : 'incorrect');
+  fb.textContent = win ? '✓ Correct.' : '✗ Incorrect — correct answer is ' + 'ABCD'[correct] + '.';
+}
+
+function checkMatch(qid) {
+  if (answered[qid] !== undefined) return;
+  const card = document.getElementById('card-'+qid);
+  const sels = card.querySelectorAll('.match-sel');
+  let filled = true;
+  sels.forEach(s => { if (!s.value) filled = false; });
+  if (!filled) {
+    const fb = document.getElementById('fb-'+qid); fb.className = 'feedback warn'; fb.textContent = '⚠ Please answer all items first.'; return;
+  }
+  let correct = 0;
+  sels.forEach(s => {
+    s.disabled = true;
+    if (parseInt(s.value) === parseInt(s.dataset.ans)) { s.classList.add('mc2'); correct++; }
+    else s.classList.add('mi2');
+  });
+  document.getElementById('chk-'+qid).disabled = true;
+  const win = correct === sels.length;
+  const q = findQ(qid);
+  card.classList.add(win ? 'answered-correct' : 'answered-incorrect');
+  if (win) { card.classList.add('pulse-ok'); totalEarned += q.pts; }
+  totalPossible += q.pts;
+  answered[qid] = win;
+  updateScore(); updateNavProgress(qid);
+  const fb = document.getElementById('fb-'+qid);
+  fb.className = 'feedback ' + (win ? 'correct' : 'incorrect');
+  fb.textContent = win ? '✓ All ' + sels.length + ' correct!' : '✗ ' + correct + '/' + sels.length + ' correct. Incorrect items highlighted.';
+}
+
+function activateSection(id) {
+  document.querySelectorAll('.section-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-section-btn').forEach(b => b.classList.remove('active'));
+  const panel = document.getElementById('panel-'+id);
+  if (panel) { panel.classList.add('active'); }
+  const nav = document.getElementById('nav-'+id);
+  if (nav) nav.classList.add('active');
+  document.getElementById('results-screen').style.display = 'none';
+  currentSection = id;
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+function updateNavProgress(qid) {
+  for (const s of SECTIONS) {
+    const found = s.questions.find(q => q.id === qid && q.type !== 'essay');
+    if (found) {
+      const total = s.questions.filter(q=>q.type!=='essay').length;
+      const done = s.questions.filter(q=>q.type!=='essay' && answered[q.id] !== undefined).length;
+      const el = document.getElementById('navp-'+s.id);
+      if (el) el.textContent = done+'/'+total;
+      if (done === total) {
+        const navBtn = document.getElementById('nav-'+s.id);
+        if (navBtn) navBtn.classList.add('done');
+      }
+      break;
+    }
+  }
+}
+
+function updateScore() {
+  document.getElementById('sb-score').textContent = totalEarned;
+  document.getElementById('sb-denom').textContent = ' / ' + totalPossible + ' pts';
+  const pct = totalPossible > 0 ? (totalEarned/totalPossible)*100 : 0;
+  document.getElementById('sb-fill').style.width = pct + '%';
+}
+
+function findQ(id) {
+  for (const s of SECTIONS) { const q = s.questions.find(q=>q.id===id); if (q) return q; }
+  return null;
+}
+
+function showResults() {
+  document.querySelectorAll('.section-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-section-btn').forEach(b => b.classList.remove('active'));
+  const rs = document.getElementById('results-screen');
+  rs.style.display = 'block';
+  const pct = totalPossible > 0 ? Math.round(totalEarned/totalPossible*100) : 0;
+  document.getElementById('res-grade').textContent = pct + '%';
+  document.getElementById('res-frac').textContent = totalEarned + ' / ' + totalPossible;
+  document.getElementById('res-pct').textContent = 'Scored questions only · Essay panels shown for review';
+  const grid = document.getElementById('breakdown-grid');
+  grid.innerHTML = '';
+  SECTIONS.forEach(s => {
+    const qs = s.questions.filter(q=>q.type!=='essay');
+    const earned = qs.reduce((a,q)=>a+(answered[q.id]?q.pts:0), 0);
+    const total = qs.reduce((a,q)=>a+q.pts, 0);
+    const cell = document.createElement('div');
+    cell.className = 'breakdown-cell';
+    cell.innerHTML = `<div class="bc-score" style="color:${s.color}">${earned}/${total}</div><div class="bc-label">${s.label}</div>`;
+    grid.appendChild(cell);
+  });
+  const msgs = [
+    [90,'The neural architecture is yours. Every gyrus, every tract, every pathway. The brain has revealed its secrets.'],
+    [75,'Solid foundation. A few structures need one more ride through — pick the sections in amber and revisit.'],
+    [60,'The big picture is there. Let\'s trace those pathways one more time. That\'s where the material lives.'],
+    [0,'The brain is a map with addresses. Gray matter computes, white matter transmits. Seatbelts — we\'re going back in.']
+  ];
+  document.getElementById('res-msg').textContent = msgs.find(([t])=>pct>=t)[1];
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function restart() {
+  totalEarned = 0; totalPossible = 0; answered = {};
+  document.getElementById('results-screen').style.display = 'none';
+  document.querySelectorAll('.q-card').forEach(card => {
+    card.className = 'q-card';
+    card.querySelectorAll('.tf-btn, .mc-opt').forEach(b => { b.disabled=false; b.classList.remove('sc','si','rv'); });
+    card.querySelectorAll('.match-sel').forEach(s => { s.disabled=false; s.value=''; s.classList.remove('mc2','mi2'); });
+    card.querySelectorAll('.check-btn').forEach(b => b.disabled=false);
+    card.querySelectorAll('.feedback').forEach(f => { f.className='feedback'; f.textContent=''; });
+  });
+  SECTIONS.forEach(s => {
+    const el = document.getElementById('navp-'+s.id);
+    const total = s.questions.filter(q=>q.type!=='essay').length;
+    if (el) el.textContent = '0/'+total;
+    const nb = document.getElementById('nav-'+s.id);
+    if (nb) nb.classList.remove('done');
+  });
+  updateScore();
+  activateSection('s1');
+}
+
+init();
+</script>
+</body>
+</html>

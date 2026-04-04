@@ -1,0 +1,27 @@
+{
+  "clusterId": "510.22",
+  "clusterName": "Expressions & Equations",
+  "status": "pending",
+  "targetQuestions": 350,
+  "currentBatch": 0,
+  "totalBatches": 14,
+  "questionsGenerated": 0,
+  "scaffoldsGenerated": 0,
+  "lastUpdated": null,
+  "batches": [],
+  "isotopes": [
+    "510.22.variables",
+    "510.22.expressions.evaluating",
+    "510.22.expressions.simplifying",
+    "510.22.equations.one-step",
+    "510.22.equations.two-step",
+    "510.22.inequalities"
+  ],
+  "prerequisites": ["510.12.*", "510.21.*"],
+  "difficultyDistribution": {
+    "easy": 0,
+    "medium": 0,
+    "challenging": 0,
+    "hard": 0
+  }
+}

@@ -1,0 +1,132 @@
+[
+  {
+    "term": "Parotid salivary gland",
+    "definition": "Large salivary gland near the ear.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Submandibular salivary gland",
+    "definition": "Salivary gland beneath the mandible.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Hard palate",
+    "definition": "Bony anterior roof of the mouth.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Soft palate",
+    "definition": "Muscular posterior roof of the mouth.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Esophagus",
+    "definition": "Tube carrying food from pharynx to stomach.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Stomach",
+    "definition": "Organ that stores and mechanically/chemically processes food.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Greater curvature",
+    "definition": "Large outer curve of the stomach.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Greater omentum",
+    "definition": "Apron-like peritoneal fold hanging from the stomach.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Lesser curvature",
+    "definition": "Small inner curve of the stomach.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Pyloric sphincter",
+    "definition": "Sphincter at the stomach exit into the duodenum.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Rugae",
+    "definition": "Folds of the stomach lining.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Small intestine",
+    "definition": "Main absorptive tube after the stomach.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Ileocecal valve",
+    "definition": "Valve between ileum and cecum.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Cecum",
+    "definition": "Pouch at the start of the large intestine.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Appendix",
+    "definition": "Narrow projection off the cecum.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Ascending colon",
+    "definition": "Large intestine segment ascending on the right.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Transverse colon",
+    "definition": "Large intestine segment crossing the abdomen.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Descending colon",
+    "definition": "Large intestine segment descending on the left.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Sigmoid colon",
+    "definition": "S-shaped distal part of the large intestine.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Liver",
+    "definition": "Large accessory organ that makes bile.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Common hepatic duct",
+    "definition": "Duct draining bile from the liver.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Common bile duct",
+    "definition": "Duct carrying bile toward the intestine.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Gall bladder",
+    "definition": "Sac that stores bile under the liver.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Cystic duct",
+    "definition": "Duct leaving the gallbladder.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Pancreas",
+    "definition": "Mixed digestive and endocrine organ.",
+    "system": "Digestive"
+  },
+  {
+    "term": "Spleen",
+    "definition": "Lymphatic/blood-related organ near the stomach.",
+    "system": "Digestive"
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "id": "800",
+  "name": "Lab Exam Prep 1",
+  "description": "Laboratory Practical I — Nervous System, Senses, and Respiratory System (Spring 2026)",
+  "folder": "800-lab-exam-prep-1",
+  "banks": [
+    {
+      "id": "800.1",
+      "file": "800.1-nervous-tissue.json",
+      "title": "Histology of Nervous Tissue (Exercise 15)",
+      "questionCount": 15
+    },
+    {
+      "id": "800.2",
+      "file": "800.2-brain-anatomy.json",
+      "title": "Brain Models & Sheep Brain (Exercise 17)",
+      "questionCount": 40
+    },
+    {
+      "id": "800.3",
+      "file": "800.3-spinal-cord.json",
+      "title": "Spinal Cord Model (Exercise 19)",
+      "questionCount": 18
+    },
+    {
+      "id": "800.4",
+      "file": "800.4-eye-anatomy.json",
+      "title": "The Eye (Exercises 23-25)",
+      "questionCount": 20
+    },
+    {
+      "id": "800.5",
+      "file": "800.5-ear-anatomy.json",
+      "title": "The Ear (Exercises 23-25)",
+      "questionCount": 16
+    }
+  ]
+}

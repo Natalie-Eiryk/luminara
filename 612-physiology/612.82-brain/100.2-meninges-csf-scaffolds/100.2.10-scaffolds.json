@@ -1,0 +1,159 @@
+{
+  "parentId": "100.2.10",
+  "parentQuestion": "A 45-year-old presents with 'the worst headache of my life,' sudden onset during weightlifting, with nausea and photophobia. CT shows blood in the basal cisterns. Which structure has most likely ruptured?",
+  "scaffolds": [
+    {
+      "q": "What is a cerebral aneurysm?",
+      "options": [
+        "A blood clot",
+        "A balloon-like dilation at an arterial weak point",
+        "A brain tumor",
+        "A venous malformation"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "A CEREBRAL ANEURYSM is a BALLOON-LIKE DILATION at a weak point in an arterial wall, typically at branch points. They're usually asymptomatic until they rupture.",
+      "wrongExplains": {
+        "0": "A blood clot is a thrombus. An aneurysm is a vessel bulge.",
+        "2": "Tumors are cell growths. Aneurysms are vessel wall dilations.",
+        "3": "Aneurysms are arterial, not venous."
+      }
+    },
+    {
+      "q": "Where do most cerebral aneurysms form?",
+      "options": [
+        "In the veins",
+        "At branch points of the Circle of Willis",
+        "In the ventricles",
+        "On the skull"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Most cerebral aneurysms form at BRANCH POINTS of the CIRCLE OF WILLIS — the arterial anastomosis at the brain base. These junctions have structural weakness.",
+      "wrongExplains": {
+        "0": "Cerebral aneurysms are arterial, not venous.",
+        "2": "The ventricles contain CSF, not arteries.",
+        "3": "The skull is bone; aneurysms form in blood vessels."
+      }
+    },
+    {
+      "q": "What is a 'thunderclap headache'?",
+      "options": [
+        "A mild, dull headache",
+        "Sudden onset, maximal intensity within seconds",
+        "A headache lasting weeks",
+        "A headache only during storms"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "THUNDERCLAP HEADACHE is SUDDEN onset, reaching MAXIMAL INTENSITY within seconds — 'like being hit with a baseball bat.' It's a red flag for subarachnoid hemorrhage.",
+      "wrongExplains": {
+        "0": "Thunderclap headache is severe and sudden, not mild or dull.",
+        "2": "It's about sudden onset, not duration.",
+        "3": "It refers to the explosive nature, not weather."
+      }
+    },
+    {
+      "q": "What triggers aneurysm rupture?",
+      "options": [
+        "Sleeping",
+        "Activities causing sudden blood pressure spikes (straining, lifting)",
+        "Relaxation",
+        "Eating"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "STRAINING activities (weightlifting, bowel movements, sex) cause SUDDEN BP SPIKES that can exceed the aneurysm wall's strength. The timing (during weightlifting) is classic.",
+      "wrongExplains": {
+        "0": "Sleeping involves low blood pressure — unlikely trigger.",
+        "2": "Relaxation lowers BP, not raises it.",
+        "3": "Eating doesn't typically cause BP spikes sufficient to rupture aneurysms."
+      }
+    },
+    {
+      "q": "What are the basal cisterns?",
+      "options": [
+        "Brain lobes",
+        "CSF-filled spaces at the base of the brain where major arteries run",
+        "Bone structures",
+        "Ventricular chambers"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The BASAL CISTERNS are CSF-filled spaces at the BRAIN BASE where the CIRCLE OF WILLIS runs. Ruptured aneurysms bleed directly into these cisterns.",
+      "wrongExplains": {
+        "0": "Cisterns are CSF spaces, not brain tissue.",
+        "2": "Cisterns are fluid-filled spaces, not bone.",
+        "3": "Cisterns are in the subarachnoid space, not inside ventricles."
+      }
+    },
+    {
+      "q": "What type of hemorrhage does aneurysm rupture cause?",
+      "options": [
+        "Epidural hemorrhage",
+        "Subarachnoid hemorrhage",
+        "Subdural hemorrhage",
+        "Intracerebral hemorrhage"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Aneurysm rupture causes SUBARACHNOID HEMORRHAGE — arterial blood floods into the CSF-filled subarachnoid space. This is catastrophic (~50% mortality).",
+      "wrongExplains": {
+        "0": "Epidural hemorrhage is from middle meningeal artery, typically with trauma.",
+        "2": "Subdural hemorrhage is from bridging veins, not aneurysms.",
+        "3": "Intracerebral hemorrhage is bleeding into brain tissue, not CSF space."
+      }
+    },
+    {
+      "q": "Why does blood in CSF cause photophobia and neck stiffness?",
+      "options": [
+        "Blood blocks vision",
+        "Blood breakdown products irritate the meninges",
+        "Blood increases temperature",
+        "Blood compresses the eyes"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "BLOOD BREAKDOWN PRODUCTS irritate the MENINGES, causing meningeal signs similar to meningitis — stiff neck, photophobia, nausea. It's chemical meningitis.",
+      "wrongExplains": {
+        "0": "Blood in CSF doesn't block vision.",
+        "2": "Temperature changes aren't the cause of these symptoms.",
+        "3": "Blood in CSF doesn't compress the eyes."
+      }
+    },
+    {
+      "q": "What is the mortality rate for ruptured cerebral aneurysm?",
+      "options": [
+        "Very low (<5%)",
+        "High (~50% die, many survivors have deficits)",
+        "Zero with treatment",
+        "100%"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "RUPTURED ANEURYSM has ~50% MORTALITY. Many survivors have permanent neurological deficits. This is why thunderclap headache demands immediate evaluation.",
+      "wrongExplains": {
+        "0": "Mortality is unfortunately high, not low.",
+        "2": "Even with treatment, mortality remains significant.",
+        "3": "Survival is possible but often with complications."
+      }
+    },
+    {
+      "q": "Which structure has ruptured in this patient?",
+      "options": [
+        "Middle meningeal artery",
+        "Cerebral aneurysm",
+        "Bridging veins",
+        "Choroid plexus"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "CEREBRAL ANEURYSM rupture. The classic triad: Thunderclap headache + straining trigger + blood in basal cisterns = subarachnoid hemorrhage from ruptured aneurysm.",
+      "wrongExplains": {
+        "0": "Middle meningeal artery causes epidural hematoma with trauma.",
+        "2": "Bridging veins cause subdural hematoma with slow progressive symptoms.",
+        "3": "Choroid plexus doesn't rupture to cause subarachnoid hemorrhage."
+      }
+    }
+  ]
+}

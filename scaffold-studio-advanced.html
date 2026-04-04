@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+  Scaffold Studio Advanced - Question & Image Pairing Tool
+  Ms. Luminara Quiz Suite
+
+  Features:
+  - Multi-strategy image matching with confidence scores
+  - Human verification workflow
+  - Learning from feedback and corrections
+  - Accuracy reporting and validation
+  - Export/Import of curated data
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scaffold Studio Advanced - Ms. Luminara</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Crimson+Pro:wght@300;400;600&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --void: #03060d;
+  --surface: #0a0f1a;
+  --panel: #0e1525;
+  --border: rgba(56,189,248,0.12);
+  --primary: #38bdf8;
+  --warm: #f59e0b;
+  --lumi: #f472b6;
+  --correct: #4ade80;
+  --incorrect: #f87171;
+  --text: #e2ecf8;
+  --mid: #8ba5c2;
+  --dim: #3d5169;
+  --bright: #f0f7ff;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--void);
+  color: var(--text);
+  font-family: 'Crimson Pro', serif;
+  min-height: 100vh;
+}
+
+.app { display: flex; min-height: 100vh; }
+
+/* Sidebar */
+.sidebar {
+  width: 320px;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sidebar-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  color: var(--bright);
+}
+
+.sidebar-sub {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--dim);
+  margin-top: 4px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: var(--mid);
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.tab:hover { background: rgba(255,255,255,0.03); }
+.tab.active {
+  background: rgba(56,189,248,0.08);
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+}
+
+/* File Loader */
+.loader-section {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.load-btn {
+  width: 100%;
+  padding: 8px 14px;
+  background: rgba(56,189,248,0.1);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--primary);
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  cursor: pointer;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+.load-btn:hover { background: rgba(56,189,248,0.2); }
+.load-btn.active { background: var(--primary); color: var(--void); }
+
+/* Question List */
+.question-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px 0;
+}
+
+.question-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+  transition: all 0.15s;
+}
+
+.question-item:hover { background: rgba(255,255,255,0.03); }
+.question-item.active {
+  background: rgba(56,189,248,0.08);
+  border-left-color: var(--primary);
+}
+
+.q-confidence {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.q-confidence.verified { background: var(--primary); }
+.q-confidence.high { background: var(--correct); }
+.q-confidence.medium { background: var(--warm); }
+.q-confidence.low { background: var(--incorrect); }
+.q-confidence.none { background: var(--dim); }
+
+.q-id {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--dim);
+  width: 45px;
+  flex-shrink: 0;
+}
+
+.q-preview {
+  flex: 1;
+  font-size: 12px;
+  color: var(--mid);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.question-item.active .q-preview { color: var(--text); }
+
+.q-badge {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  padding: 2px 6px;
+  border-radius: 99px;
+  flex-shrink: 0;
+}
+
+.q-badge.verified { background: rgba(56,189,248,0.2); color: var(--primary); }
+
+/* Stats Bar */
+.stats-bar {
+  padding: 12px 20px;
+  border-top: 1px solid var(--border);
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--dim);
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.stat-row span { color: var(--primary); }
+
+/* Main Content */
+.main {
+  flex: 1;
+  padding: 30px 40px;
+  overflow-y: auto;
+}
+
+/* Question Detail */
+.question-detail { max-width: 1000px; }
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.detail-meta {
+  flex: 1;
+}
+
+.detail-id {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--warm);
+  margin-bottom: 8px;
+}
+
+.detail-question {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  color: var(--bright);
+  line-height: 1.4;
+}
+
+.detail-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  padding: 8px 14px;
+  background: rgba(56,189,248,0.08);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--mid);
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.action-btn:hover { background: rgba(56,189,248,0.15); color: var(--primary); }
+.action-btn.success { background: rgba(74,222,128,0.15); color: var(--correct); border-color: var(--correct); }
+.action-btn.danger { background: rgba(248,113,113,0.15); color: var(--incorrect); border-color: var(--incorrect); }
+
+/* Confidence Panel */
+.confidence-panel {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.confidence-score {
+  text-align: center;
+  padding-right: 16px;
+  border-right: 1px solid var(--border);
+}
+
+.confidence-value {
+  font-family: 'DM Mono', monospace;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.confidence-value.verified { color: var(--primary); }
+.confidence-value.high { color: var(--correct); }
+.confidence-value.medium { color: var(--warm); }
+.confidence-value.low { color: var(--incorrect); }
+
+.confidence-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--dim);
+  margin-top: 4px;
+}
+
+.confidence-details { flex: 1; }
+
+.confidence-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+}
+
+.confidence-row .label { color: var(--mid); }
+.confidence-row .value { color: var(--text); }
+
+.strategy-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.strategy-tag {
+  padding: 3px 8px;
+  background: rgba(56,189,248,0.1);
+  border-radius: 99px;
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--primary);
+}
+
+/* Image Grid */
+.images-section { margin: 24px 0; }
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: var(--bright);
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.image-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.image-card:hover { border-color: var(--primary); }
+.image-card.verified { border-color: var(--primary); box-shadow: 0 0 0 2px rgba(56,189,248,0.2); }
+.image-card.selected { border-color: var(--correct); box-shadow: 0 0 0 2px rgba(74,222,128,0.2); }
+
+.image-badges {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.image-badge {
+  padding: 3px 8px;
+  border-radius: 99px;
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  backdrop-filter: blur(4px);
+}
+
+.image-badge.confidence {
+  background: rgba(0,0,0,0.7);
+  color: var(--text);
+}
+
+.image-badge.verified-badge {
+  background: rgba(56,189,248,0.9);
+  color: var(--void);
+}
+
+.image-preview {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.3);
+  padding: 12px;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.image-info { padding: 12px; }
+
+.image-title {
+  font-size: 12px;
+  color: var(--bright);
+  line-height: 1.3;
+  margin-bottom: 6px;
+}
+
+.image-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.image-format {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--dim);
+}
+
+.image-quality {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--warm);
+}
+
+.image-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.img-action-btn {
+  flex: 1;
+  padding: 6px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--mid);
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.img-action-btn:hover { background: rgba(56,189,248,0.15); color: var(--primary); }
+.img-action-btn.verify:hover { background: rgba(56,189,248,0.2); border-color: var(--primary); }
+.img-action-btn.helpful:hover { background: rgba(74,222,128,0.2); color: var(--correct); }
+.img-action-btn.not-helpful:hover { background: rgba(248,113,113,0.2); color: var(--incorrect); }
+
+/* Report Panel */
+.report-panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 24px 0;
+}
+
+.report-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: var(--bright);
+  margin-bottom: 16px;
+}
+
+.report-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.report-stat {
+  text-align: center;
+  padding: 16px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 8px;
+}
+
+.report-stat-value {
+  font-family: 'DM Mono', monospace;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.report-stat-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--dim);
+  margin-top: 4px;
+}
+
+.report-section {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.report-section-title {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--warm);
+  margin-bottom: 12px;
+}
+
+.low-confidence-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.low-confidence-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: rgba(248,113,113,0.05);
+  border: 1px solid rgba(248,113,113,0.2);
+  border-radius: 6px;
+  margin-bottom: 6px;
+  font-size: 11px;
+}
+
+.low-confidence-item .q-text {
+  flex: 1;
+  color: var(--mid);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 12px;
+}
+
+.low-confidence-item .conf {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--incorrect);
+}
+
+/* Toast Notifications */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--text);
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s;
+}
+
+.toast.visible { opacity: 1; transform: translateY(0); }
+.toast.success { border-color: var(--correct); }
+.toast.error { border-color: var(--incorrect); }
+
+/* Empty State */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  color: var(--dim);
+}
+
+.empty-icon { font-size: 48px; opacity: 0.3; margin-bottom: 16px; }
+.empty-text { font-family: 'DM Mono', monospace; font-size: 11px; text-align: center; }
+
+/* Export Panel */
+.export-panel {
+  position: fixed;
+  bottom: 20px;
+  left: 340px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+  z-index: 100;
+}
+
+.export-btn {
+  padding: 10px 16px;
+  background: var(--primary);
+  border: none;
+  border-radius: 6px;
+  color: var(--void);
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.export-btn:hover { opacity: 0.9; }
+.export-btn.secondary {
+  background: rgba(56,189,248,0.1);
+  color: var(--primary);
+  border: 1px solid var(--border);
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h1 class="sidebar-title">Scaffold Studio</h1>
+      <p class="sidebar-sub">Advanced Question-Image Pairing</p>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="questions" onclick="switchTab('questions')">Questions</button>
+      <button class="tab" data-tab="report" onclick="switchTab('report')">Report</button>
+      <button class="tab" data-tab="settings" onclick="switchTab('settings')">Settings</button>
+    </div>
+
+    <div class="loader-section">
+      <button class="load-btn" onclick="loadFile('612-physiology/612.8-special-senses/600.1-eye-structure.json')">
+        Eye Structure (600.1)
+      </button>
+      <button class="load-btn" onclick="loadFile('612-physiology/612.8-special-senses/600.2-vision-pathways.json')">
+        Vision Pathways (600.2)
+      </button>
+      <button class="load-btn" onclick="loadFile('612-physiology/612.8-special-senses/600.3-ear-hearing.json')">
+        Ear & Hearing (600.3)
+      </button>
+    </div>
+
+    <div class="question-list" id="questionList">
+      <div class="empty-state" style="height:200px;">
+        <div class="empty-icon">📚</div>
+        <p class="empty-text">Load a question file</p>
+      </div>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat-row">
+        <span class="label">Questions:</span>
+        <span id="statQuestions">0</span>
+      </div>
+      <div class="stat-row">
+        <span class="label">Verified:</span>
+        <span id="statVerified">0</span>
+      </div>
+      <div class="stat-row">
+        <span class="label">Avg Confidence:</span>
+        <span id="statConfidence">—</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main" id="mainContent">
+    <div class="empty-state">
+      <div class="empty-icon">🔬</div>
+      <p class="empty-text">Select a question to view<br>matched images with confidence scores</p>
+    </div>
+  </main>
+</div>
+
+<!-- Export Panel -->
+<div class="export-panel" id="exportPanel" style="display:none;">
+  <button class="export-btn" onclick="exportVerified()">Export Verified</button>
+  <button class="export-btn secondary" onclick="exportAll()">Export All Data</button>
+  <button class="export-btn secondary" onclick="importData()">Import</button>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script src="820.31-core/820.31.21-scaffold-module-advanced.js"></script>
+<script>
+// Initialize advanced module
+const scaffold = new ScaffoldModuleAdvanced({
+  basePath: '.',
+  imagePath: 'assets/diagrams'
+});
+
+let currentQuestion = null;
+let currentTab = 'questions';
+
+// Initialize
+document.addEventListener('DOMContentLoaded', async () => {
+  await scaffold.init();
+
+  // Load from localStorage if available
+  const savedVerified = localStorage.getItem('ms-luminara-verified-pairings');
+  if (savedVerified) {
+    try {
+      const data = JSON.parse(savedVerified);
+      for (const [id, pairings] of Object.entries(data)) {
+        scaffold.verifiedPairings.set(id, pairings);
+      }
+    } catch (e) {}
+  }
+
+  const savedLearning = localStorage.getItem('ms-luminara-learning-data');
+  if (savedLearning) {
+    try {
+      const data = JSON.parse(savedLearning);
+      if (data.feedback) {
+        for (const [path, stats] of Object.entries(data.feedback)) {
+          scaffold.pairingFeedback.set(path, stats);
+        }
+      }
+      if (data.keywordWeights) {
+        for (const [kw, weight] of Object.entries(data.keywordWeights)) {
+          scaffold.keywordWeights.set(kw, weight);
+        }
+      }
+    } catch (e) {}
+  }
+
+  updateStats();
+});
+
+async function loadFile(path) {
+  document.querySelectorAll('.load-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.onclick.toString().includes(path));
+  });
+
+  const data = await scaffold.loadQuestions(path);
+  if (!data) {
+    showToast('Failed to load file', 'error');
+    return;
+  }
+
+  renderQuestionList(data.questions);
+  updateStats();
+  document.getElementById('exportPanel').style.display = 'flex';
+  showToast(`Loaded ${data.questions.length} questions`);
+}
+
+function renderQuestionList(questions) {
+  const list = document.getElementById('questionList');
+
+  list.innerHTML = questions.map(q => {
+    const images = scaffold.findImagesForQuestion(q);
+    const topConf = images[0]?.confidence || 0;
+    const level = scaffold.getConfidenceLevel(topConf);
+    const isVerified = images.some(i => i.strategies?.includes('verified'));
+
+    return `
+      <div class="question-item" data-id="${q.id}" onclick="selectQuestion('${q.id}')">
+        <span class="q-confidence ${level.toLowerCase()}"></span>
+        <span class="q-id">${q.id}</span>
+        <span class="q-preview">${q.q}</span>
+        ${isVerified ? '<span class="q-badge verified">VERIFIED</span>' : ''}
+      </div>
+    `;
+  }).join('');
+}
+
+async function selectQuestion(id) {
+  document.querySelectorAll('.question-item').forEach(item => {
+    item.classList.toggle('active', item.dataset.id === id);
+  });
+
+  currentQuestion = scaffold.questions.get(id);
+  if (!currentQuestion) return;
+
+  const images = scaffold.findImagesForQuestion(currentQuestion);
+  renderQuestionDetail(currentQuestion, images);
+}
+
+function renderQuestionDetail(question, images) {
+  const topImage = images[0];
+  const confLevel = topImage ? scaffold.getConfidenceLevel(topImage.confidence) : 'NONE';
+
+  document.getElementById('mainContent').innerHTML = `
+    <div class="question-detail">
+      <div class="detail-header">
+        <div class="detail-meta">
+          <div class="detail-id">${question.id} — ${question.chapter || ''}</div>
+          <div class="detail-question">${question.q}</div>
+        </div>
+        <div class="detail-actions">
+          <button class="action-btn" onclick="refreshMatches()">Refresh</button>
+          <button class="action-btn success" onclick="verifyAll()">Verify All</button>
+        </div>
+      </div>
+
+      ${topImage ? `
+        <div class="confidence-panel">
+          <div class="confidence-score">
+            <div class="confidence-value ${confLevel.toLowerCase()}">${(topImage.confidence * 100).toFixed(0)}%</div>
+            <div class="confidence-label">${confLevel} CONFIDENCE</div>
+          </div>
+          <div class="confidence-details">
+            <div class="confidence-row">
+              <span class="label">Quality Score:</span>
+              <span class="value">${topImage.qualityScore}/100</span>
+            </div>
+            <div class="confidence-row">
+              <span class="label">Format:</span>
+              <span class="value">${topImage.format?.toUpperCase() || 'Unknown'}</span>
+            </div>
+            <div class="confidence-row">
+              <span class="label">Matched via:</span>
+            </div>
+            <div class="strategy-tags">
+              ${(topImage.strategies || []).map(s => `<span class="strategy-tag">${s}</span>`).join('')}
+            </div>
+          </div>
+        </div>
+      ` : ''}
+
+      <div class="images-section">
+        <div class="section-header">
+          <h3 class="section-title">Matched Images (${images.length})</h3>
+        </div>
+        <div class="image-grid">
+          ${images.map(img => {
+            const isVerified = img.strategies?.includes('verified');
+            return `
+              <div class="image-card ${isVerified ? 'verified' : ''}" data-path="${img.file}">
+                <div class="image-badges">
+                  <span class="image-badge confidence">${(img.confidence * 100).toFixed(0)}%</span>
+                  ${isVerified ? '<span class="image-badge verified-badge">VERIFIED</span>' : ''}
+                </div>
+                <div class="image-preview">
+                  <img src="assets/diagrams/${img.file}"
+                       alt="${img.title}"
+                       onerror="this.parentElement.innerHTML='<span style=\\'color:var(--dim);\\'>Unable to load</span>'">
+                </div>
+                <div class="image-info">
+                  <div class="image-title">${img.title}</div>
+                  <div class="image-meta">
+                    <span class="image-format">${img.format?.toUpperCase() || ''}</span>
+                    <span class="image-quality">Q: ${img.qualityScore}</span>
+                  </div>
+                  <div class="image-actions">
+                    <button class="img-action-btn verify" onclick="verifyImage('${question.id}', '${img.file}')">
+                      ${isVerified ? '✓ Verified' : 'Verify'}
+                    </button>
+                    <button class="img-action-btn helpful" onclick="recordFeedback('${img.file}', true)">👍</button>
+                    <button class="img-action-btn not-helpful" onclick="recordFeedback('${img.file}', false)">👎</button>
+                  </div>
+                </div>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      </div>
+
+      <div style="margin-top:40px;padding-top:20px;border-top:1px solid var(--border);font-family:'DM Mono',monospace;font-size:9px;color:var(--dim);text-align:center;">
+        Images from <a href="https://smart.servier.com/" style="color:var(--primary);">Servier Medical Art</a> (CC BY 4.0)
+      </div>
+    </div>
+  `;
+}
+
+function verifyImage(questionId, imagePath) {
+  scaffold.addVerifiedPairing(questionId, imagePath, 'user');
+  showToast('Image verified!', 'success');
+
+  // Refresh display
+  if (currentQuestion && currentQuestion.id === questionId) {
+    selectQuestion(questionId);
+  }
+
+  // Update question list to show verified badge
+  const item = document.querySelector(`.question-item[data-id="${questionId}"]`);
+  if (item && !item.querySelector('.q-badge')) {
+    const badge = document.createElement('span');
+    badge.className = 'q-badge verified';
+    badge.textContent = 'VERIFIED';
+    item.appendChild(badge);
+  }
+
+  updateStats();
+}
+
+function verifyAll() {
+  if (!currentQuestion) return;
+
+  const images = scaffold.findImagesForQuestion(currentQuestion);
+  for (const img of images.slice(0, 3)) { // Verify top 3
+    scaffold.addVerifiedPairing(currentQuestion.id, img.file, 'user-batch');
+  }
+
+  showToast(`Verified ${Math.min(3, images.length)} images`, 'success');
+  selectQuestion(currentQuestion.id);
+  updateStats();
+}
+
+function recordFeedback(imagePath, helpful) {
+  scaffold.recordFeedback(imagePath, helpful);
+  showToast(helpful ? 'Marked as helpful' : 'Marked as not helpful');
+}
+
+function refreshMatches() {
+  if (currentQuestion) {
+    selectQuestion(currentQuestion.id);
+  }
+}
+
+function switchTab(tab) {
+  currentTab = tab;
+  document.querySelectorAll('.tab').forEach(t => {
+    t.classList.toggle('active', t.dataset.tab === tab);
+  });
+
+  if (tab === 'report') {
+    renderReport();
+  } else if (tab === 'settings') {
+    renderSettings();
+  }
+}
+
+function renderReport() {
+  const report = scaffold.generateAccuracyReport();
+
+  document.getElementById('mainContent').innerHTML = `
+    <div class="report-panel">
+      <h2 class="report-title">Accuracy Report</h2>
+
+      <div class="report-grid">
+        <div class="report-stat">
+          <div class="report-stat-value">${report.totalQuestions}</div>
+          <div class="report-stat-label">Total Questions</div>
+        </div>
+        <div class="report-stat">
+          <div class="report-stat-value" style="color:var(--primary);">${report.questionsWithVerified}</div>
+          <div class="report-stat-label">Verified</div>
+        </div>
+        <div class="report-stat">
+          <div class="report-stat-value" style="color:var(--correct);">${report.questionsWithHighConfidence}</div>
+          <div class="report-stat-label">High Confidence</div>
+        </div>
+        <div class="report-stat">
+          <div class="report-stat-value" style="color:var(--warm);">${report.questionsWithMediumConfidence}</div>
+          <div class="report-stat-label">Medium Confidence</div>
+        </div>
+        <div class="report-stat">
+          <div class="report-stat-value" style="color:var(--incorrect);">${report.questionsWithLowConfidence}</div>
+          <div class="report-stat-label">Low Confidence</div>
+        </div>
+        <div class="report-stat">
+          <div class="report-stat-value">${report.averageConfidence}</div>
+          <div class="report-stat-label">Avg Confidence</div>
+        </div>
+      </div>
+
+      <div class="report-section">
+        <div class="report-section-title">STRATEGY USAGE</div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;">
+          ${Object.entries(report.strategyUsage).map(([strategy, count]) => `
+            <span class="strategy-tag">${strategy}: ${count}</span>
+          `).join('')}
+        </div>
+      </div>
+
+      ${report.lowConfidenceQuestions.length > 0 ? `
+        <div class="report-section">
+          <div class="report-section-title">LOW CONFIDENCE QUESTIONS (Need Review)</div>
+          <div class="low-confidence-list">
+            ${report.lowConfidenceQuestions.map(q => `
+              <div class="low-confidence-item" onclick="selectQuestion('${q.id}');switchTab('questions');" style="cursor:pointer;">
+                <span class="q-text"><strong>${q.id}</strong> — ${q.q}</span>
+                <span class="conf">${q.confidence ? (q.confidence * 100).toFixed(0) + '%' : q.reason}</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      ` : ''}
+    </div>
+  `;
+}
+
+function renderSettings() {
+  document.getElementById('mainContent').innerHTML = `
+    <div class="report-panel">
+      <h2 class="report-title">Settings & Data Management</h2>
+
+      <div class="report-section">
+        <div class="report-section-title">LEARNED KEYWORD WEIGHTS (${scaffold.keywordWeights.size})</div>
+        <div style="max-height:200px;overflow-y:auto;font-family:'DM Mono',monospace;font-size:10px;color:var(--mid);">
+          ${[...scaffold.keywordWeights.entries()].sort((a,b) => b[1] - a[1]).slice(0, 20).map(([kw, weight]) => `
+            <div style="display:flex;justify-content:space-between;padding:4px 0;">
+              <span>${kw}</span>
+              <span style="color:${weight > 1 ? 'var(--correct)' : weight < 1 ? 'var(--incorrect)' : 'var(--mid)'}">${weight.toFixed(2)}</span>
+            </div>
+          `).join('') || '<div style="color:var(--dim);">No learned weights yet</div>'}
+        </div>
+      </div>
+
+      <div class="report-section">
+        <div class="report-section-title">FEEDBACK STATISTICS</div>
+        <p style="font-family:'DM Mono',monospace;font-size:10px;color:var(--mid);">
+          Images with feedback: ${scaffold.pairingFeedback.size}<br>
+          Corrections recorded: ${scaffold.correctionHistory.length}
+        </p>
+      </div>
+
+      <div class="report-section">
+        <div class="report-section-title">DATA ACTIONS</div>
+        <div style="display:flex;gap:12px;margin-top:12px;">
+          <button class="action-btn" onclick="clearLearningData()">Clear Learning Data</button>
+          <button class="action-btn danger" onclick="clearAllData()">Clear All Data</button>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function updateStats() {
+  document.getElementById('statQuestions').textContent = scaffold.questions.size;
+  document.getElementById('statVerified').textContent = scaffold.verifiedPairings.size;
+
+  if (scaffold.questions.size > 0) {
+    const report = scaffold.generateAccuracyReport();
+    document.getElementById('statConfidence').textContent = report.averageConfidence;
+  }
+}
+
+function exportVerified() {
+  const data = {};
+  for (const [id, pairings] of scaffold.verifiedPairings) {
+    data[id] = pairings;
+  }
+
+  downloadJSON(data, 'verified-pairings.json');
+  showToast('Exported verified pairings');
+}
+
+function exportAll() {
+  const data = scaffold.exportAllData();
+  downloadJSON(data, 'scaffold-data-export.json');
+  showToast('Exported all data');
+}
+
+function importData() {
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = '.json';
+  input.onchange = async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    try {
+      const text = await file.text();
+      const data = JSON.parse(text);
+      scaffold.importData(data);
+      showToast('Data imported successfully', 'success');
+      updateStats();
+
+      if (currentQuestion) {
+        selectQuestion(currentQuestion.id);
+      }
+    } catch (err) {
+      showToast('Failed to import: ' + err.message, 'error');
+    }
+  };
+  input.click();
+}
+
+function clearLearningData() {
+  if (!confirm('Clear all learning data (feedback, weights, corrections)?')) return;
+
+  scaffold.pairingFeedback.clear();
+  scaffold.keywordWeights.clear();
+  scaffold.correctionHistory = [];
+  localStorage.removeItem('ms-luminara-learning-data');
+  showToast('Learning data cleared');
+  renderSettings();
+}
+
+function clearAllData() {
+  if (!confirm('Clear ALL data including verified pairings?')) return;
+
+  scaffold.verifiedPairings.clear();
+  scaffold.pairingFeedback.clear();
+  scaffold.keywordWeights.clear();
+  scaffold.correctionHistory = [];
+  localStorage.removeItem('ms-luminara-verified-pairings');
+  localStorage.removeItem('ms-luminara-learning-data');
+  showToast('All data cleared');
+  updateStats();
+  renderSettings();
+}
+
+function downloadJSON(data, filename) {
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function showToast(message, type = '') {
+  const toast = document.getElementById('toast');
+  toast.textContent = message;
+  toast.className = 'toast visible ' + type;
+
+  setTimeout(() => {
+    toast.classList.remove('visible');
+  }, 3000);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "clusterId": "510.40",
+  "clusterName": "Limits & Continuity",
+  "status": "pending",
+  "targetQuestions": 200,
+  "currentBatch": 0,
+  "totalBatches": 8,
+  "questionsGenerated": 0,
+  "scaffoldsGenerated": 0,
+  "lastUpdated": null,
+  "batches": [],
+  "isotopes": [
+    "510.40.limits.definition",
+    "510.40.limits.laws",
+    "510.40.limits.infinity",
+    "510.40.continuity.definition",
+    "510.40.continuity.types"
+  ],
+  "prerequisites": ["510.34.*"],
+  "difficultyDistribution": {
+    "easy": 0,
+    "medium": 0,
+    "challenging": 0,
+    "hard": 0
+  }
+}

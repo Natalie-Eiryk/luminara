@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║  Ms. Luminara Quiz Suite — Classification 611                ║
+  ║  Dewey: 611 (Human Anatomy · Histology · Tissues)            ║
+  ║  Module: luminara_611-tissues_exam.html                      ║
+  ║  Covers: Epithelial Tissues, Connective Tissues, Glands,     ║
+  ║          Tissue Repair, Tissues Vocabulary                   ║
+  ║  Council-reviewed: Frizzle · Feynman · Luminara              ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>611 · Tissues Comprehensive · Ms. Luminara</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --void: #03060d;
+  --surface: #0a0f1a;
+  --panel: #0e1525;
+  --panel-hover: #131d30;
+  --border: rgba(56,189,248,0.12);
+  --border-active: rgba(56,189,248,0.35);
+  --primary: #38bdf8;
+  --warm: #f59e0b;
+  --lumi: #f472b6;
+  --purple: #a78bfa;
+  --teal: #2dd4bf;
+  --correct: #4ade80;
+  --incorrect: #f87171;
+  --text: #e2ecf8;
+  --mid: #8ba5c2;
+  --dim: #3d5169;
+  --bright: #f0f7ff;
+  --s1: #38bdf8; --s2: #a78bfa; --s3: #2dd4bf; --s4: #fb923c;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--void);
+  color: var(--text);
+  font-family: 'Crimson Pro', serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+body::before {
+  content: '';
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 80% 60% at 15% 20%, rgba(56,189,248,0.05) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 50% at 85% 75%, rgba(167,139,250,0.04) 0%, transparent 55%),
+    radial-gradient(ellipse 40% 70% at 50% 40%, rgba(244,114,182,0.025) 0%, transparent 50%);
+}
+
+.shell { display: flex; min-height: 100vh; position: relative; z-index: 1; }
+
+.sidebar {
+  width: 230px; flex-shrink: 0;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  position: sticky; top: 0; height: 100vh;
+  overflow-y: auto; overflow-x: hidden;
+  display: flex; flex-direction: column;
+  padding-bottom: 24px;
+}
+.sidebar::-webkit-scrollbar { width: 4px; }
+.sidebar::-webkit-scrollbar-track { background: transparent; }
+.sidebar::-webkit-scrollbar-thumb { background: var(--dim); border-radius: 2px; }
+
+.sidebar-header {
+  padding: 20px 18px 14px;
+  border-bottom: 1px solid var(--border);
+}
+.dewey-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px; letter-spacing: 0.2em;
+  color: var(--warm); opacity: 0.8;
+  text-transform: uppercase; margin-bottom: 8px;
+}
+.sidebar-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem; font-weight: 700;
+  color: var(--bright); line-height: 1.2;
+}
+
+.score-widget {
+  margin: 14px 18px;
+  background: rgba(56,189,248,0.06);
+  border: 1px solid rgba(56,189,248,0.15);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.score-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; color: var(--mid); text-transform: uppercase; margin-bottom: 6px; }
+.score-main { font-family: 'DM Mono', monospace; font-size: 1.6rem; color: var(--primary); line-height: 1; }
+.score-denom { font-size: 0.8rem; color: var(--dim); margin-left: 3px; }
+.score-bar-wrap { margin-top: 8px; background: rgba(255,255,255,0.05); border-radius: 99px; height: 3px; overflow: hidden; }
+.score-bar-fill { height: 100%; background: linear-gradient(90deg, var(--primary), var(--teal)); border-radius: 99px; transition: width 0.5s ease; width: 0%; }
+
+.nav-sections { flex: 1; padding: 10px 0; }
+.nav-section-btn {
+  display: flex; align-items: center; gap: 10px;
+  width: 100%; padding: 9px 18px;
+  background: none; border: none;
+  cursor: pointer; transition: background 0.15s;
+  text-align: left;
+}
+.nav-section-btn:hover { background: rgba(255,255,255,0.04); }
+.nav-section-btn.active { background: rgba(56,189,248,0.07); }
+.nav-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  flex-shrink: 0; transition: transform 0.2s;
+}
+.nav-section-btn.active .nav-dot { transform: scale(1.4); }
+.nav-section-btn.done .nav-dot { opacity: 0.5; }
+.nav-text { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.05em; color: var(--mid); line-height: 1.3; }
+.nav-section-btn.active .nav-text { color: var(--primary); }
+.nav-progress { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--dim); margin-left: auto; flex-shrink: 0; }
+
+.sidebar-footer {
+  padding: 14px 18px 0;
+  border-top: 1px solid var(--border);
+}
+.results-btn {
+  width: 100%; padding: 10px;
+  background: rgba(244,114,182,0.1);
+  border: 1px solid rgba(244,114,182,0.25);
+  border-radius: 8px;
+  color: var(--lumi);
+  font-family: 'DM Mono', monospace; font-size: 10px;
+  letter-spacing: 0.1em; cursor: pointer;
+  transition: all 0.2s;
+}
+.results-btn:hover { background: rgba(244,114,182,0.18); }
+
+.main { flex: 1; min-width: 0; padding: 36px 40px 80px; }
+
+.section-panel { display: none; }
+.section-panel.active { display: block; animation: fadeUp 0.3s ease; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+.section-head {
+  display: flex; align-items: flex-start; gap: 18px;
+  margin-bottom: 32px; padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.section-num-badge {
+  font-family: 'DM Mono', monospace; font-size: 10px;
+  letter-spacing: 0.25em; text-transform: uppercase;
+  padding: 4px 12px; border-radius: 99px;
+  white-space: nowrap; flex-shrink: 0; margin-top: 6px;
+}
+.section-meta { flex: 1; }
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem; font-weight: 900;
+  color: var(--bright); line-height: 1.1;
+  margin-bottom: 6px;
+}
+.section-sub { font-style: italic; color: var(--mid); font-size: 0.95rem; }
+.section-stats { display: flex; gap: 16px; margin-top: 10px; }
+.stat-pill {
+  font-family: 'DM Mono', monospace; font-size: 9px;
+  letter-spacing: 0.15em; color: var(--mid);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.07);
+  padding: 3px 10px; border-radius: 99px;
+}
+
+.qtype-divider { display: flex; align-items: center; gap: 14px; margin: 28px 0 16px; }
+.qtype-divider .line { flex: 1; height: 1px; background: var(--border); }
+.qtype-label {
+  font-family: 'DM Mono', monospace; font-size: 9px;
+  letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--dim); white-space: nowrap;
+}
+
+.q-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px 28px;
+  margin-bottom: 14px;
+  transition: border-color 0.3s;
+}
+.q-card.answered-correct { border-color: rgba(74,222,128,0.3); }
+.q-card.answered-incorrect { border-color: rgba(248,113,113,0.28); }
+@keyframes gp { 0%{box-shadow:0 0 0 0 rgba(74,222,128,0.3);}60%{box-shadow:0 0 20px 3px rgba(74,222,128,0.1);}100%{box-shadow:0 0 0 0 rgba(74,222,128,0);} }
+.pulse-ok { animation: gp 0.6s ease; }
+
+.q-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.q-id { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; color: var(--dim); text-transform: uppercase; }
+.q-status { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; }
+.q-status.correct { color: var(--correct); }
+.q-status.incorrect { color: var(--incorrect); }
+
+.q-prompt { font-size: 1.1rem; color: var(--bright); margin-bottom: 18px; line-height: 1.5; }
+
+.tf-options, .mc-options { display: flex; flex-direction: column; gap: 8px; }
+.tf-btn, .mc-btn {
+  display: flex; align-items: center; gap: 14px;
+  width: 100%; padding: 12px 18px;
+  background: rgba(255,255,255,0.025);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  cursor: pointer; transition: all 0.15s;
+  text-align: left; color: var(--text); font-size: 1rem;
+}
+.tf-btn:hover:not(.chosen), .mc-btn:hover:not(.chosen) {
+  background: rgba(56,189,248,0.06); border-color: rgba(56,189,248,0.18);
+}
+.tf-btn.chosen, .mc-btn.chosen { pointer-events: none; }
+.tf-btn.chosen.right, .mc-btn.chosen.right {
+  background: rgba(74,222,128,0.08); border-color: rgba(74,222,128,0.35);
+}
+.tf-btn.chosen.wrong, .mc-btn.chosen.wrong {
+  background: rgba(248,113,113,0.08); border-color: rgba(248,113,113,0.35);
+}
+.tf-btn.reveal-correct, .mc-btn.reveal-correct {
+  border-color: rgba(74,222,128,0.6); box-shadow: inset 0 0 0 1px rgba(74,222,128,0.25);
+}
+.opt-marker {
+  width: 26px; height: 26px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'DM Mono', monospace; font-size: 11px;
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
+  flex-shrink: 0; transition: all 0.2s;
+}
+.tf-btn.chosen.right .opt-marker, .mc-btn.chosen.right .opt-marker { background: var(--correct); border-color: var(--correct); color: var(--void); }
+.tf-btn.chosen.wrong .opt-marker, .mc-btn.chosen.wrong .opt-marker { background: var(--incorrect); border-color: var(--incorrect); color: var(--void); }
+
+.match-grid { display: grid; gap: 10px; grid-template-columns: 1fr auto 1fr; align-items: center; }
+.match-item {
+  background: rgba(56,189,248,0.06);
+  border: 1px solid rgba(56,189,248,0.18);
+  padding: 10px 14px; border-radius: 8px;
+  font-size: 0.95rem;
+}
+.match-arrow { color: var(--dim); font-size: 0.85rem; }
+.match-select {
+  background: var(--panel); border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 8px; padding: 10px 12px;
+  color: var(--text); font-size: 0.95rem;
+  cursor: pointer; min-width: 200px;
+}
+.match-select:disabled { opacity: 0.6; cursor: default; }
+.match-select.correct-sel { border-color: var(--correct); background: rgba(74,222,128,0.08); }
+.match-select.wrong-sel { border-color: var(--incorrect); background: rgba(248,113,113,0.08); }
+
+.essay-textarea {
+  width: 100%; min-height: 120px; padding: 14px;
+  background: rgba(255,255,255,0.025);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px; color: var(--text);
+  font-family: 'Crimson Pro', serif; font-size: 1rem;
+  resize: vertical;
+}
+.essay-textarea:focus { outline: none; border-color: var(--primary); }
+.essay-reveal-btn {
+  margin-top: 12px; padding: 10px 22px;
+  background: rgba(167,139,250,0.12);
+  border: 1px solid rgba(167,139,250,0.28);
+  border-radius: 8px; color: var(--purple);
+  font-family: 'DM Mono', monospace; font-size: 10px;
+  letter-spacing: 0.12em; cursor: pointer;
+  transition: all 0.2s;
+}
+.essay-reveal-btn:hover { background: rgba(167,139,250,0.2); }
+.essay-model {
+  margin-top: 16px; padding: 18px;
+  background: rgba(167,139,250,0.06);
+  border-left: 3px solid var(--purple);
+  border-radius: 0 10px 10px 0;
+  display: none;
+}
+.essay-model.show { display: block; animation: fadeUp 0.3s ease; }
+.essay-model-title {
+  font-family: 'DM Mono', monospace; font-size: 9px;
+  letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--purple); margin-bottom: 10px;
+}
+.essay-model-text { color: var(--mid); font-style: italic; line-height: 1.7; }
+
+.note-block {
+  margin-top: 14px; padding: 14px 16px;
+  background: rgba(45,212,191,0.05);
+  border-left: 3px solid var(--teal);
+  border-radius: 0 8px 8px 0;
+  display: none;
+}
+.note-block.show { display: block; animation: fadeUp 0.25s ease; }
+.note-label {
+  font-family: 'DM Mono', monospace; font-size: 9px;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--teal); margin-bottom: 6px;
+}
+.note-text { color: var(--mid); font-size: 0.95rem; }
+
+.results-panel { display: none; }
+.results-panel.active { display: block; animation: fadeUp 0.3s ease; }
+.results-header { text-align: center; margin-bottom: 40px; }
+.results-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem; font-weight: 900;
+  color: var(--bright); margin-bottom: 8px;
+}
+.results-sub { font-style: italic; color: var(--mid); font-size: 1.1rem; }
+.results-score-big {
+  font-family: 'DM Mono', monospace; font-size: 4rem;
+  color: var(--primary); margin: 30px 0 10px;
+}
+.results-pct { font-family: 'DM Mono', monospace; font-size: 1.2rem; color: var(--mid); }
+.results-section-breakdown {
+  display: grid; gap: 16px;
+  max-width: 500px; margin: 40px auto 0;
+}
+.res-sec-row {
+  display: flex; align-items: center; gap: 14px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 14px 18px; border-radius: 10px;
+}
+.res-sec-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.res-sec-name { flex: 1; font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.08em; color: var(--text); }
+.res-sec-score { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--mid); }
+
+.restart-btn {
+  display: block; margin: 50px auto 0;
+  padding: 14px 36px;
+  background: linear-gradient(135deg, var(--primary), var(--teal));
+  border: none; border-radius: 10px;
+  color: var(--void); font-family: 'DM Mono', monospace;
+  font-size: 11px; letter-spacing: 0.15em;
+  cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;
+}
+.restart-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(56,189,248,0.25); }
+
+@media (max-width: 800px) {
+  .sidebar { display: none; }
+  .main { padding: 24px 18px 60px; }
+  .section-head { flex-direction: column; gap: 10px; }
+  .q-card { padding: 18px; }
+}
+</style>
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="dewey-tag">611 · Histology</div>
+      <div class="sidebar-title">Tissues Comprehensive</div>
+    </div>
+    <div class="score-widget">
+      <div class="score-label">Running Score</div>
+      <div class="score-main"><span id="score-num">0</span><span class="score-denom" id="score-denom">/0</span></div>
+      <div class="score-bar-wrap"><div class="score-bar-fill" id="score-bar"></div></div>
+    </div>
+    <nav class="nav-sections" id="nav-sections"></nav>
+    <div class="sidebar-footer">
+      <button class="results-btn" id="show-results-btn">View Results</button>
+    </div>
+  </aside>
+  <main class="main" id="main-content"></main>
+</div>
+
+<script>
+const SECTIONS = [
+  {
+    id: 's1', num: '400.1', title: 'Epithelial Tissues', sub: 'Classification, types, functions, and clinical correlations', color: 'var(--s1)',
+    questions: [
+      {type:'mc', id:'400.1.01', q:'Epithelial tissues have all of the following characteristics EXCEPT:', opts:['Apical and basal surfaces','Avascular (lack blood vessels)','Densely packed cells with little ECM','Contain abundant extracellular matrix'], ans:3, note:'Epithelia have MINIMAL extracellular matrix. Cells are packed together like sardines. Abundant ECM is connective tissue territory.'},
+      {type:'mc', id:'400.1.02', q:'Which tissue lines the digestive tract?', opts:['Ciliated columnar epithelium','Pseudostratified columnar epithelium','Simple columnar epithelium','Simple squamous epithelium'], ans:2, note:'Simple columnar epithelium lines the stomach and intestines. Tall cells optimized for secretion and absorption. Many have microvilli (brush border).'},
+      {type:'mc', id:'400.1.03', q:'Transitional epithelium is found in the:', opts:['Bladder','Trachea','Stomach','Esophagus'], ans:0, note:'Transitional epithelium is UNIQUE to the urinary tract (bladder, ureters, urethra). Specialized to STRETCH as organs fill with urine.'},
+      {type:'mc', id:'400.1.04', q:'Select the correct statement regarding epithelia:', opts:['Simple epithelia form impermeable barriers','Stratified epithelia protect against abrasion','Pseudostratified epithelia have multiple cell layers','Stratified epithelia are tall, narrow cells'], ans:1, note:'Stratified = multiple layers = protection against abrasion. Found in skin, mouth, esophagus, vagina. Outer layers sacrificed while basal cells divide.'},
+      {type:'mc', id:'400.1.05', q:'Which tissue lines fallopian tubes and moves the egg?', opts:['Simple cuboidal epithelium','Stratified squamous epithelium','Smooth muscle','Ciliated simple columnar epithelium'], ans:3, note:'Cilia beat in coordinated metachronal waves, propelling the ovum toward uterus. Biological conveyor belt powered by thousands of synchronized cellular bristles.'},
+      {type:'mc', id:'400.1.06', q:'Which is NOT a function of epithelial tissue?', opts:['Absorption','Secretion','Filtration','Support'], ans:3, note:'Support is CONNECTIVE tissue function. Epithelial tissue covers surfaces and forms barriers for absorption, secretion, filtration, protection, and sensation.'},
+      {type:'mc', id:'400.1.07', q:'Keratinized stratified squamous epithelium is found in:', opts:['Epidermis of skin','Esophagus','Oral cavity','Vagina'], ans:0, note:'Epidermis has DEAD surface cells filled with keratin forming waterproof barrier. Other locations (esophagus, mouth, vagina) stay NON-keratinized and moist.'},
+      {type:'mc', id:'400.1.08', q:'Which epithelium lines the alveoli?', opts:['Simple squamous','Simple columnar','Stratified squamous','Transitional'], ans:0, note:'Simple squamous = thinnest possible barrier (0.5 micrometers). Optimizes gas exchange. Any thicker and you\'d suffocate.'},
+      {type:'mc', id:'400.1.09', q:'Barrett\'s esophagus (squamous to columnar transformation due to acid reflux) is called:', opts:['Metaplasia','Dysplasia','Hyperplasia','Atrophy'], ans:0, note:'Metaplasia = reversible replacement of one cell type with another. Adaptation under stress that may become precancerous.'},
+      {type:'mc', id:'400.1.10', q:'Fanconi syndrome (kidney tubules can\'t reabsorb nutrients) involves failure of:', opts:['Tight junctions','Transport proteins in cell membranes','Cilia','Keratin'], ans:1, note:'Kidney tubule epithelium is PACKED with membrane transport proteins. When transporters fail, glucose and amino acids spill into urine.'},
+      {type:'tf', id:'400.1.11', q:'Smoker\'s metaplasia (ciliated columnar to stratified squamous) causes loss of the mucociliary escalator.', ans:true, note:'Stratified squamous has NO cilia. No more upward sweeping of mucus and debris. Respiratory tract becomes stagnant pool for bacteria.'},
+      {type:'mc', id:'400.1.12', q:'In primary ciliary dyskinesia, which manifestation would NOT occur?', opts:['Chronic respiratory infections','Male infertility','Situs inversus','Inability to absorb intestinal nutrients'], ans:3, note:'Intestinal absorption depends on MICROVILLI (actin core, non-motile), not CILIA (microtubule core, motile). Different structures, different functions.'},
+      {type:'tf', id:'400.1.13', q:'Transitional epithelium appears thinner when the bladder is full because cells flatten and spread.', ans:true, note:'Same cells, different configuration. Relaxed = 6-7 layers thick with dome-shaped cells. Stretched = 2-3 layers with flat cells. Biological accordion.'},
+      {type:'match', id:'400.1.m1', prompt:'Match the epithelium type with its location:', items:['Simple squamous','Simple columnar','Transitional','Keratinized stratified squamous'], opts:['Alveoli (gas exchange)','GI tract (absorption)','Bladder (stretching)','Epidermis (protection)'], ans:[0,1,2,3]},
+      {type:'essay', id:'400.1.e1', q:'Explain why simple squamous epithelium is found in alveoli while stratified squamous is found in the esophagus.', ans:'SIMPLE SQUAMOUS in alveoli: Gas exchange requires the THINNEST possible barrier. The respiratory membrane is only 0.5 micrometers thick, allowing rapid O2 and CO2 diffusion. Any thicker would impair gas exchange. STRATIFIED SQUAMOUS in esophagus: This location experiences mechanical abrasion from swallowing food. Multiple layers provide protection - outer layers can be damaged and sloughed off while basal cells continue dividing for replacement. Form follows function perfectly: thin where diffusion matters, thick where protection matters.'}
+    ]
+  },
+  {
+    id: 's2', num: '400.2', title: 'Connective Tissues', sub: 'Types, matrix, cells, and clinical pathology', color: 'var(--s2)',
+    questions: [
+      {type:'mc', id:'400.2.01', q:'The shock-absorbing pads between vertebrae are made of:', opts:['Hyaline cartilage','Elastic connective tissue','Fibrocartilage','Reticular connective tissue'], ans:2, note:'Fibrocartilage has thick collagen bundles resisting BOTH tension and compression. Found in intervertebral discs, knee menisci, pubic symphysis.'},
+      {type:'mc', id:'400.2.02', q:'The connective tissue that stores fat is:', opts:['Adipose tissue','Dense regular connective tissue','Areolar connective tissue','Reticular connective tissue'], ans:0, note:'Adipose tissue stores triglycerides in adipocytes. Also functions as endocrine organ secreting leptin (satiety) and adiponectin (insulin sensitivity).'},
+      {type:'mc', id:'400.2.03', q:'Which connective tissue provides the framework for lymphoid organs?', opts:['Dense regular','Dense irregular','Reticular','Areolar'], ans:2, note:'Reticular tissue = delicate 3D mesh of reticular fibers (type III collagen). Supports free cells in lymph nodes, spleen, and bone marrow.'},
+      {type:'tf', id:'400.2.04', q:'All connective tissues are highly vascular.', ans:false, note:'FALSE. Cartilage is AVASCULAR and relies on diffusion. Dense regular connective tissue (tendons, ligaments) has poor blood supply. Both heal slowly.'},
+      {type:'mc', id:'400.2.05', q:'The cartilage in the external ear is:', opts:['Hyaline cartilage','Elastic cartilage','Fibrocartilage','Reticular cartilage'], ans:1, note:'Elastic cartilage contains elastic fibers for flexibility with shape retention. Bend your ear - it springs right back. Also in epiglottis.'},
+      {type:'mc', id:'400.2.06', q:'The primary cell of mature bone tissue is:', opts:['Osteoblast','Osteoclast','Osteocyte','Chondrocyte'], ans:2, note:'Osteocytes = trapped osteoblasts living in lacunae. They maintain bone matrix and detect mechanical stress via canaliculi connections.'},
+      {type:'mc', id:'400.2.07', q:'Scurvy (bleeding gums, poor wound healing) results from deficient synthesis of:', opts:['Elastin fibers','Collagen','Reticular fibers','Hyaluronic acid'], ans:1, note:'Vitamin C is required for hydroxylation of proline and lysine in collagen. Without it, collagen is unstable and tissue integrity fails.'},
+      {type:'mc', id:'400.2.08', q:'Ehlers-Danlos syndrome (hyperextensible joints, thin skin, poor scarring) involves defects in:', opts:['Elastin','Keratin','Collagen','Fibronectin'], ans:2, note:'EDS = genetic collagen disorders. Collagen is EVERYWHERE (joints, skin, vessels), so defects cause systemic connective tissue fragility.'},
+      {type:'mc', id:'400.2.09', q:'Osteoarthritis involves failure of which cells?', opts:['Fibroblasts','Osteoblasts','Chondrocytes','Adipocytes'], ans:2, note:'Chondrocytes maintain cartilage matrix. In osteoarthritis, degradation outpaces synthesis. Cartilage is AVASCULAR so repair is slow.'},
+      {type:'mc', id:'400.2.10', q:'Fracture healing failure with low vitamin D affects which cells?', opts:['Osteoclasts','Chondrocytes','Osteoblasts','Fibroblasts'], ans:2, note:'Vitamin D promotes osteoblast function and calcium absorption for mineralization. Without it, osteoid is deposited but doesn\'t harden.'},
+      {type:'mc', id:'400.2.11', q:'In renal osteodystrophy, excess PTH overstimulates:', opts:['Osteoblasts','Osteocytes','Osteoclasts','Chondrocytes'], ans:2, note:'Chronic kidney disease causes secondary hyperparathyroidism. PTH stimulates osteoclasts to dissolve bone, releasing calcium. Skeleton is cannibalized.'},
+      {type:'tf', id:'400.2.12', q:'Meniscal tears heal slowly because fibrocartilage is avascular.', ans:true, note:'No blood supply = no rapid delivery of inflammatory cells, growth factors, or nutrients. Inner meniscus tears may never heal without surgery.'},
+      {type:'match', id:'400.2.m1', prompt:'Match the cell type with its function:', items:['Osteoblast','Osteocyte','Osteoclast','Chondrocyte'], opts:['Builds bone matrix','Maintains bone, senses stress','Destroys/resorbs bone','Maintains cartilage matrix'], ans:[0,1,2,3]},
+      {type:'essay', id:'400.2.e1', q:'Explain why scurvy causes bleeding gums and poor wound healing at the molecular level.', ans:'Collagen synthesis requires post-translational hydroxylation of proline and lysine residues. The enzymes prolyl hydroxylase and lysyl hydroxylase REQUIRE vitamin C (ascorbic acid) as a cofactor. These hydroxyl groups form hydrogen bonds that stabilize the collagen triple helix. Without vitamin C: collagen is under-hydroxylated, the triple helix is unstable, and collagen fibers degrade. Blood vessels (which depend on collagen for integrity) become fragile and leak - hence bleeding gums and bruising. Wound healing requires new collagen synthesis by fibroblasts, which also fails. The body\'s structural scaffolding literally falls apart.'}
+    ]
+  },
+  {
+    id: 's3', num: '400.3', title: 'Glands & Repair', sub: 'Secretion modes, gland types, and tissue healing', color: 'var(--s3)',
+    questions: [
+      {type:'mc', id:'400.3.01', q:'Glands whose secretions involve cell rupture and death are:', opts:['Merocrine glands','Holocrine glands','Exocrine glands','Apocrine glands'], ans:1, note:'Holocrine = entire cell becomes the secretion. Sebaceous glands swell with oil, then BURST to release sebum. Cellular martyrdom.'},
+      {type:'mc', id:'400.3.02', q:'Which is NOT a step in tissue repair?', opts:['Inflammation','Granulation tissue formation','Osteoporosis','Regeneration or fibrosis'], ans:2, note:'Osteoporosis = bone disease, not repair step. Actual sequence: Inflammation → Granulation tissue → Regeneration or Fibrosis.'},
+      {type:'mc', id:'400.3.03', q:'Inflammation includes:', opts:['Reduction of blood flow','Formation of granulation tissue','Regeneration of original tissue','Dilation of blood vessels and increased permeability'], ans:3, note:'Inflammation = vasodilation (redness, heat) + increased permeability (swelling). Opens floodgates for immune cells.'},
+      {type:'mc', id:'400.3.04', q:'Endocrine glands are characterized by:', opts:['Secreting hormones into bloodstream','Having ducts to carry secretions','Being derived from mesenchyme','Secreting mucus'], ans:0, note:'Endocrine = ductless. Hormones dump directly into blood for systemic broadcast delivery. Pituitary, thyroid, adrenal.'},
+      {type:'mc', id:'400.3.05', q:'Acne from overfilled, rupturing sebaceous glands involves which secretion mode?', opts:['Merocrine secretion','Apocrine secretion','Holocrine secretion','Endocrine secretion'], ans:2, note:'Sebaceous cells fill completely with lipid, then EXPLODE to release sebum. In acne, blocked ducts trap this explosion.'},
+      {type:'mc', id:'400.3.06', q:'A pituitary tumor secreting excess growth hormone originated in which gland type?', opts:['Exocrine gland','Holocrine gland','Endocrine gland','Apocrine gland'], ans:2, note:'Growth hormone in blood = endocrine secretion. Pituitary is a classic endocrine gland. Tumor retains function but loses regulation.'},
+      {type:'mc', id:'400.3.07', q:'A chronic wound with abundant granulation tissue failing to heal is stuck in which phase?', opts:['Inflammatory phase','Proliferative phase','Remodeling phase','Necrotic phase'], ans:1, note:'Granulation tissue = hallmark of PROLIFERATIVE phase. Wound stuck here makes scaffold but never transitions to remodeling/closure.'},
+      {type:'mc', id:'400.3.08', q:'Superficial burns regenerate but deep burns leave scars because:', opts:['Patient age','Type of tissue and severity of damage','Presence of granulation tissue','Whether inflammation occurred'], ans:1, note:'Superficial burns leave basement membrane intact - epithelial stem cells can regenerate. Deep burns destroy the template - only fibrosis possible.'},
+      {type:'mc', id:'400.3.09', q:'Marathon runner losing sodium through sweat is losing via which gland type?', opts:['Holocrine exocrine glands','Merocrine exocrine glands','Endocrine glands','Apocrine exocrine glands'], ans:1, note:'Eccrine (merocrine) sweat glands secrete by exocytosis. Cell stays intact, keeps pumping. Can lose 1-2 L/hour during exercise.'},
+      {type:'mc', id:'400.3.10', q:'Diabetic wound stuck in chronic inflammation can\'t transition to which phase?', opts:['Inflammatory to proliferative','Proliferative to remodeling','Remodeling phase itself','Granulation tissue formation'], ans:0, note:'Diabetic wounds get STUCK in inflammation. Poor perfusion, high glucose, impaired immune function prevent transition to proliferation.'},
+      {type:'match', id:'400.3.m1', prompt:'Match the secretion mode with its mechanism:', items:['Merocrine','Apocrine','Holocrine','Endocrine'], opts:['Exocytosis, cell intact','Cell apex pinches off','Entire cell ruptures','Secretes into bloodstream'], ans:[0,1,2,3]},
+      {type:'essay', id:'400.3.e1', q:'Explain the three phases of tissue repair and what determines whether repair results in regeneration versus fibrosis.', ans:'THREE PHASES: (1) INFLAMMATORY (0-3 days): Vasodilation, increased permeability, immune cell infiltration, debris cleanup. (2) PROLIFERATIVE (3 days-3 weeks): Granulation tissue forms (fibroblasts + new capillaries), epithelialization, wound contraction. (3) REMODELING (3 weeks-years): Collagen reorganized, scar matures or regeneration completes. REGENERATION vs FIBROSIS depends on: (1) Tissue type - epithelia, bone, liver CAN regenerate; heart, CNS cannot. (2) Basement membrane - intact = regeneration template exists; destroyed = fibrosis default. (3) Damage severity - superficial = regeneration; deep = fibrosis. When regeneration isn\'t possible, fibroblasts deposit collagen scar tissue - functional but not identical to original tissue.'}
+    ]
+  },
+  {
+    id: 's4', num: '400.4', title: 'Tissues Vocabulary', sub: 'Essential terminology for all tissue types', color: 'var(--s4)',
+    questions: [
+      {type:'mc', id:'400.4.01', q:'A single-layer tissue is classified as:', opts:['Stratified','Simple','Pseudostratified','Transitional'], ans:1, note:'Simple = one layer where every cell contacts basement membrane. Found where absorption or filtration occurs.'},
+      {type:'mc', id:'400.4.02', q:'Squamous cells are:', opts:['Cube-shaped','Column-shaped','Flat and scale-like','Irregularly shaped'], ans:2, note:'Squamous = flat like scales (Latin "squama"). They line surfaces where thinness matters: air sacs, blood vessels.'},
+      {type:'mc', id:'400.4.03', q:'The basement membrane is located:', opts:['At the apical surface','Between epithelium and connective tissue','Inside the cell nucleus','Within muscle fibers'], ans:1, note:'Basement membrane anchors epithelium to underlying connective tissue. It\'s at the BASAL surface.'},
+      {type:'mc', id:'400.4.04', q:'Cilia are found on:', opts:['Simple squamous epithelium','Pseudostratified columnar epithelium','Stratified squamous epithelium','Adipose tissue'], ans:1, note:'Pseudostratified ciliated columnar epithelium lines respiratory passages. Cilia beat to move mucus upward.'},
+      {type:'mc', id:'400.4.05', q:'Goblet cells produce:', opts:['Keratin','Mucus','Collagen','Histamine'], ans:1, note:'Goblet cells are unicellular glands shaped like wine goblets, secreting protective mucus in respiratory and digestive linings.'},
+      {type:'mc', id:'400.4.06', q:'The most abundant protein in the body is:', opts:['Elastin','Keratin','Collagen','Actin'], ans:2, note:'Collagen = 25-30% of body protein. Forms tendons, ligaments, bone matrix, dermis. Triple helix structure for tensile strength.'},
+      {type:'mc', id:'400.4.07', q:'Fibroblasts are the primary cells of:', opts:['Epithelial tissue','Connective tissue proper','Muscle tissue','Nervous tissue'], ans:1, note:'Fibroblasts produce ECM - they secrete collagen, elastin, and ground substance. Master builders of connective tissue.'},
+      {type:'mc', id:'400.4.08', q:'Dense regular connective tissue is found in:', opts:['Dermis of skin','Tendons and ligaments','Around organs','In bones'], ans:1, note:'Dense regular = parallel collagen fibers. Perfect for tendons (muscle to bone) and ligaments (bone to bone) that resist pull in one direction.'},
+      {type:'mc', id:'400.4.09', q:'Adipose tissue functions primarily to:', opts:['Transmit nerve impulses','Store energy and insulate','Produce red blood cells','Contract for movement'], ans:1, note:'Adipose stores triglycerides for energy reserve, insulates against heat loss, cushions organs. Also secretes hormones (leptin).'},
+      {type:'mc', id:'400.4.10', q:'Cartilage cells are called:', opts:['Osteocytes','Chondrocytes','Adipocytes','Fibroblasts'], ans:1, note:'Chondrocytes live in lacunae within cartilage matrix they produced. "Chondro" = cartilage.'},
+      {type:'mc', id:'400.4.11', q:'The cartilage in intervertebral discs is:', opts:['Hyaline cartilage','Elastic cartilage','Fibrocartilage','Bone'], ans:2, note:'Fibrocartilage = thick collagen bundles for compression AND tension resistance. Shock absorbers.'},
+      {type:'mc', id:'400.4.12', q:'Endocrine glands release secretions into:', opts:['Ducts to body surface','The bloodstream','Body cavities only','Lymphatic vessels only'], ans:1, note:'Endocrine = ductless, hormones into bloodstream. Exocrine = ducts to surfaces.'},
+      {type:'mc', id:'400.4.13', q:'Holocrine glands release secretions by:', opts:['Exocytosis','Pinching off cell apex','Entire cell rupturing','Secreting into blood'], ans:2, note:'Holocrine = cell BECOMES the secretion and dies. Sebaceous glands fill with oil then burst.'},
+      {type:'mc', id:'400.4.14', q:'Ground substance is composed primarily of:', opts:['Collagen fibers','Proteoglycans and glycosaminoglycans','Calcium salts','Keratin'], ans:1, note:'Ground substance = gel-like matrix between cells. Proteoglycans and GAGs (like hyaluronic acid) trap water.'},
+      {type:'mc', id:'400.4.15', q:'Elastic connective tissue is abundant in:', opts:['Tendons','Walls of large arteries','Bone','Hyaline cartilage'], ans:1, note:'Large arteries need elastin to expand with systole and recoil in diastole. Maintains blood pressure between heartbeats.'},
+      {type:'mc', id:'400.4.16', q:'Osteocytes communicate through channels called:', opts:['Haversian canals','Volkmann\'s canals','Canaliculi','Lacunae'], ans:2, note:'Canaliculi = tiny tunnels containing osteocyte processes. Allow nutrient exchange and cell-to-cell communication via gap junctions.'},
+      {type:'mc', id:'400.4.17', q:'The stretchable epithelium of the bladder is:', opts:['Simple squamous','Stratified squamous','Transitional epithelium','Simple columnar'], ans:2, note:'Transitional epithelium = uniquely stretchable. Cells change from dome-shaped to flat as bladder fills.'},
+      {type:'mc', id:'400.4.18', q:'Mast cells release:', opts:['Collagen','Histamine','Melanin','Mucus'], ans:1, note:'Mast cells contain histamine granules. Allergens trigger degranulation causing vasodilation, increased permeability, itching.'},
+      {type:'mc', id:'400.4.19', q:'Reticular connective tissue forms the framework of:', opts:['Tendons','Lymph nodes and spleen','Joint capsules','Skin dermis'], ans:1, note:'Reticular fiber networks support and filter immune cells in lymphoid organs. Delicate 3D meshwork.'},
+      {type:'mc', id:'400.4.20', q:'The apical surface of epithelium faces:', opts:['The basement membrane','The body exterior or cavity','Blood vessels','Underlying connective tissue'], ans:1, note:'Apical = top, faces outward toward exterior or lumen. Basal = bottom, faces basement membrane.'},
+      {type:'mc', id:'400.4.21', q:'Keratinized stratified squamous epithelium is found in:', opts:['Mouth and esophagus','Epidermis of skin','Blood vessels','Alveoli of lungs'], ans:1, note:'Epidermis = keratinized (dead surface cells filled with keratin). Mouth/esophagus = non-keratinized (moist).'},
+      {type:'mc', id:'400.4.22', q:'Lacunae in cartilage and bone are:', opts:['Channels for blood vessels','Spaces containing cells','Protein fibers','Mineral deposits'], ans:1, note:'Lacunae = "little lakes" housing chondrocytes or osteocytes. Cells trapped in their own product.'},
+      {type:'mc', id:'400.4.23', q:'Simple cuboidal epithelium is found in:', opts:['Skin surface','Kidney tubules','Blood vessels','Respiratory bronchioles'], ans:1, note:'Kidney tubules = simple cuboidal cells for active transport (reabsorption). Also in small gland ducts.'},
+      {type:'mc', id:'400.4.24', q:'Blood is classified as:', opts:['Dense connective tissue','Loose connective tissue','Fluid connective tissue','Supporting connective tissue'], ans:2, note:'Blood = fluid connective tissue. Cells suspended in liquid matrix (plasma). Still meets CT criteria.'},
+      {type:'mc', id:'400.4.25', q:'Tissue repair with scar tissue is called:', opts:['Regeneration','Fibrosis','Hyperplasia','Metaplasia'], ans:1, note:'Fibrosis = replacement with fibrous scar tissue when regeneration isn\'t possible. Functional but not identical.'},
+      {type:'match', id:'400.4.m1', prompt:'Match the term with its definition:', items:['Simple epithelium','Stratified epithelium','Squamous cells','Columnar cells'], opts:['Single cell layer','Multiple cell layers','Flat, scale-like cells','Tall, column-shaped cells'], ans:[0,1,2,3]}
+    ]
+  }
+];
+
+let state = { current: 0, answered: {}, sectionProgress: {} };
+SECTIONS.forEach((s, i) => { state.sectionProgress[i] = { done: 0, total: s.questions.length }; });
+
+function render() {
+  renderNav();
+  renderMain();
+  updateScore();
+}
+
+function renderNav() {
+  const nav = document.getElementById('nav-sections');
+  nav.innerHTML = SECTIONS.map((s, i) => {
+    const prog = state.sectionProgress[i];
+    const pct = prog.total ? Math.round((prog.done / prog.total) * 100) : 0;
+    const isDone = prog.done === prog.total && prog.total > 0;
+    return `<button class="nav-section-btn${state.current === i ? ' active' : ''}${isDone ? ' done' : ''}" data-idx="${i}">
+      <span class="nav-dot" style="background:${s.color}"></span>
+      <span class="nav-text">${s.num}<br>${s.title}</span>
+      <span class="nav-progress">${pct}%</span>
+    </button>`;
+  }).join('');
+  nav.querySelectorAll('.nav-section-btn').forEach(btn => {
+    btn.onclick = () => { state.current = +btn.dataset.idx; render(); };
+  });
+  document.getElementById('show-results-btn').onclick = showResults;
+}
+
+function renderMain() {
+  const main = document.getElementById('main-content');
+  main.innerHTML = SECTIONS.map((s, i) => renderSection(s, i)).join('') + renderResultsPanel();
+  document.querySelectorAll('.section-panel').forEach((p, i) => p.classList.toggle('active', i === state.current));
+  attachHandlers();
+}
+
+function renderSection(s, idx) {
+  const byType = { tf: [], mc: [], match: [], essay: [] };
+  s.questions.forEach(q => byType[q.type]?.push(q));
+  let html = `<div class="section-panel" data-section="${idx}">
+    <div class="section-head">
+      <span class="section-num-badge" style="background:${s.color}22;color:${s.color};border:1px solid ${s.color}44">Section ${idx + 1}</span>
+      <div class="section-meta">
+        <h2 class="section-title">${s.title}</h2>
+        <p class="section-sub">${s.sub}</p>
+        <div class="section-stats">
+          <span class="stat-pill">${s.questions.length} Questions</span>
+          <span class="stat-pill">${s.num}</span>
+        </div>
+      </div>
+    </div>`;
+  if (byType.match.length) {
+    html += `<div class="qtype-divider"><span class="line"></span><span class="qtype-label">Matching</span><span class="line"></span></div>`;
+    byType.match.forEach(q => { html += renderMatch(q); });
+  }
+  if (byType.tf.length) {
+    html += `<div class="qtype-divider"><span class="line"></span><span class="qtype-label">True / False</span><span class="line"></span></div>`;
+    byType.tf.forEach(q => { html += renderTF(q); });
+  }
+  if (byType.mc.length) {
+    html += `<div class="qtype-divider"><span class="line"></span><span class="qtype-label">Multiple Choice</span><span class="line"></span></div>`;
+    byType.mc.forEach(q => { html += renderMC(q); });
+  }
+  if (byType.essay.length) {
+    html += `<div class="qtype-divider"><span class="line"></span><span class="qtype-label">Essay</span><span class="line"></span></div>`;
+    byType.essay.forEach(q => { html += renderEssay(q); });
+  }
+  html += `</div>`;
+  return html;
+}
+
+function renderTF(q) {
+  const ans = state.answered[q.id];
+  const done = ans !== undefined;
+  const correct = done && ans === q.ans;
+  return `<div class="q-card${done ? (correct ? ' answered-correct' : ' answered-incorrect') : ''}" data-qid="${q.id}">
+    <div class="q-meta"><span class="q-id">${q.id}</span>${done ? `<span class="q-status ${correct ? 'correct' : 'incorrect'}">${correct ? 'Correct' : 'Incorrect'}</span>` : ''}</div>
+    <p class="q-prompt">${q.q}</p>
+    <div class="tf-options">
+      ${[true, false].map(v => {
+        let cls = 'tf-btn';
+        if (done) {
+          cls += ' chosen';
+          if (ans === v) cls += (v === q.ans ? ' right' : ' wrong');
+          if (v === q.ans && ans !== v) cls += ' reveal-correct';
+        }
+        return `<button class="${cls}" data-val="${v}"><span class="opt-marker">${v ? 'T' : 'F'}</span><span>${v ? 'True' : 'False'}</span></button>`;
+      }).join('')}
+    </div>
+    ${q.note ? `<div class="note-block${done ? ' show' : ''}"><div class="note-label">Note</div><div class="note-text">${q.note}</div></div>` : ''}
+  </div>`;
+}
+
+function renderMC(q) {
+  const ans = state.answered[q.id];
+  const done = ans !== undefined;
+  const correct = done && ans === q.ans;
+  const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
+  return `<div class="q-card${done ? (correct ? ' answered-correct' : ' answered-incorrect') : ''}" data-qid="${q.id}">
+    <div class="q-meta"><span class="q-id">${q.id}</span>${done ? `<span class="q-status ${correct ? 'correct' : 'incorrect'}">${correct ? 'Correct' : 'Incorrect'}</span>` : ''}</div>
+    <p class="q-prompt">${q.q}</p>
+    <div class="mc-options">
+      ${q.opts.map((o, i) => {
+        let cls = 'mc-btn';
+        if (done) {
+          cls += ' chosen';
+          if (ans === i) cls += (i === q.ans ? ' right' : ' wrong');
+          if (i === q.ans && ans !== i) cls += ' reveal-correct';
+        }
+        return `<button class="${cls}" data-idx="${i}"><span class="opt-marker">${letters[i]}</span><span>${o}</span></button>`;
+      }).join('')}
+    </div>
+    ${q.note ? `<div class="note-block${done ? ' show' : ''}"><div class="note-label">Note</div><div class="note-text">${q.note}</div></div>` : ''}
+  </div>`;
+}
+
+function renderMatch(q) {
+  const ans = state.answered[q.id];
+  const done = ans !== undefined;
+  const allCorrect = done && ans.every((a, i) => a === q.ans[i]);
+  return `<div class="q-card${done ? (allCorrect ? ' answered-correct' : ' answered-incorrect') : ''}" data-qid="${q.id}">
+    <div class="q-meta"><span class="q-id">${q.id}</span>${done ? `<span class="q-status ${allCorrect ? 'correct' : 'incorrect'}">${allCorrect ? 'All Correct' : 'Some Incorrect'}</span>` : ''}</div>
+    <p class="q-prompt">${q.prompt}</p>
+    <div class="match-grid">
+      ${q.items.map((item, i) => {
+        const userAns = done ? ans[i] : null;
+        const isCorrect = done && userAns === q.ans[i];
+        return `<div class="match-item">${item}</div>
+          <span class="match-arrow">→</span>
+          <select class="match-select${done ? (isCorrect ? ' correct-sel' : ' wrong-sel') : ''}" data-row="${i}" ${done ? 'disabled' : ''}>
+            <option value="">Select...</option>
+            ${q.opts.map((opt, j) => `<option value="${j}" ${userAns === j ? 'selected' : ''}>${opt}</option>`).join('')}
+          </select>`;
+      }).join('')}
+    </div>
+    ${q.note ? `<div class="note-block${done ? ' show' : ''}"><div class="note-label">Note</div><div class="note-text">${q.note}</div></div>` : ''}
+  </div>`;
+}
+
+function renderEssay(q) {
+  const done = state.answered[q.id];
+  return `<div class="q-card" data-qid="${q.id}">
+    <div class="q-meta"><span class="q-id">${q.id}</span></div>
+    <p class="q-prompt">${q.q}</p>
+    <textarea class="essay-textarea" placeholder="Write your answer here..."></textarea>
+    <button class="essay-reveal-btn">Reveal Model Answer</button>
+    <div class="essay-model${done ? ' show' : ''}">
+      <div class="essay-model-title">Model Answer</div>
+      <div class="essay-model-text">${q.ans}</div>
+    </div>
+  </div>`;
+}
+
+function renderResultsPanel() {
+  return `<div class="results-panel" id="results-panel">
+    <div class="results-header">
+      <h2 class="results-title">Exam Complete</h2>
+      <p class="results-sub">Your performance across all sections</p>
+    </div>
+    <div class="results-score-big" id="results-score-big">0/0</div>
+    <div class="results-pct" id="results-pct">0%</div>
+    <div class="results-section-breakdown" id="results-breakdown"></div>
+    <button class="restart-btn" id="restart-btn">Restart Exam</button>
+  </div>`;
+}
+
+function attachHandlers() {
+  document.querySelectorAll('.tf-btn').forEach(btn => {
+    btn.onclick = () => {
+      const card = btn.closest('.q-card');
+      const qid = card.dataset.qid;
+      if (state.answered[qid] !== undefined) return;
+      const val = btn.dataset.val === 'true';
+      handleAnswer(qid, val);
+    };
+  });
+  document.querySelectorAll('.mc-btn').forEach(btn => {
+    btn.onclick = () => {
+      const card = btn.closest('.q-card');
+      const qid = card.dataset.qid;
+      if (state.answered[qid] !== undefined) return;
+      const idx = +btn.dataset.idx;
+      handleAnswer(qid, idx);
+    };
+  });
+  document.querySelectorAll('.match-select').forEach(sel => {
+    sel.onchange = () => {
+      const card = sel.closest('.q-card');
+      const qid = card.dataset.qid;
+      if (state.answered[qid] !== undefined) return;
+      const selects = card.querySelectorAll('.match-select');
+      const vals = Array.from(selects).map(s => s.value === '' ? null : +s.value);
+      if (vals.every(v => v !== null)) {
+        handleAnswer(qid, vals);
+      }
+    };
+  });
+  document.querySelectorAll('.essay-reveal-btn').forEach(btn => {
+    btn.onclick = () => {
+      const card = btn.closest('.q-card');
+      const qid = card.dataset.qid;
+      state.answered[qid] = true;
+      updateSectionProgress();
+      card.querySelector('.essay-model').classList.add('show');
+    };
+  });
+  document.getElementById('restart-btn').onclick = () => {
+    state = { current: 0, answered: {}, sectionProgress: {} };
+    SECTIONS.forEach((s, i) => { state.sectionProgress[i] = { done: 0, total: s.questions.length }; });
+    render();
+  };
+}
+
+function handleAnswer(qid, val) {
+  state.answered[qid] = val;
+  updateSectionProgress();
+  render();
+  const card = document.querySelector(`[data-qid="${qid}"]`);
+  if (card && card.classList.contains('answered-correct')) {
+    card.classList.add('pulse-ok');
+  }
+}
+
+function updateSectionProgress() {
+  SECTIONS.forEach((s, i) => {
+    let done = 0;
+    s.questions.forEach(q => {
+      if (state.answered[q.id] !== undefined) done++;
+    });
+    state.sectionProgress[i].done = done;
+  });
+}
+
+function updateScore() {
+  let correct = 0, total = 0;
+  SECTIONS.forEach(s => {
+    s.questions.forEach(q => {
+      if (q.type === 'essay') return;
+      if (state.answered[q.id] !== undefined) {
+        total++;
+        if (q.type === 'match') {
+          if (state.answered[q.id].every((a, i) => a === q.ans[i])) correct++;
+        } else if (state.answered[q.id] === q.ans) {
+          correct++;
+        }
+      }
+    });
+  });
+  document.getElementById('score-num').textContent = correct;
+  document.getElementById('score-denom').textContent = '/' + total;
+  const pct = total ? Math.round((correct / total) * 100) : 0;
+  document.getElementById('score-bar').style.width = pct + '%';
+}
+
+function showResults() {
+  let correct = 0, total = 0;
+  const breakdown = [];
+  SECTIONS.forEach((s, i) => {
+    let sc = 0, st = 0;
+    s.questions.forEach(q => {
+      if (q.type === 'essay') return;
+      st++;
+      if (state.answered[q.id] !== undefined) {
+        if (q.type === 'match') {
+          if (state.answered[q.id].every((a, j) => a === q.ans[j])) sc++;
+        } else if (state.answered[q.id] === q.ans) {
+          sc++;
+        }
+      }
+    });
+    correct += sc; total += st;
+    breakdown.push({ name: s.title, color: s.color, sc, st });
+  });
+  document.querySelectorAll('.section-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('results-panel').classList.add('active');
+  document.getElementById('results-score-big').textContent = correct + '/' + total;
+  document.getElementById('results-pct').textContent = (total ? Math.round((correct / total) * 100) : 0) + '%';
+  document.getElementById('results-breakdown').innerHTML = breakdown.map(b => `
+    <div class="res-sec-row">
+      <span class="res-sec-dot" style="background:${b.color}"></span>
+      <span class="res-sec-name">${b.name}</span>
+      <span class="res-sec-score">${b.sc}/${b.st}</span>
+    </div>
+  `).join('');
+  state.current = -1;
+  renderNav();
+}
+
+render();
+</script>
+</body>
+</html>

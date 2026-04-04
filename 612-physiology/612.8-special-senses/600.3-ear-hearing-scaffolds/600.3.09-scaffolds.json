@@ -1,0 +1,69 @@
+{
+  "parentId": "600.3.09",
+  "parentQuestion": "Which movement of ions produces EPSPs in cochlea hair cells?",
+  "scaffolds": [
+    {
+      "q": "EPSPs (excitatory postsynaptic potentials) are depolarizations that excite neurons.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Yes! EPSPs make neurons more likely to fire — they're excitatory signals."
+    },
+    {
+      "q": "Depolarization typically occurs when POSITIVE ions flow INTO a cell.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Correct! Adding positive charges makes the inside less negative (depolarization)."
+    },
+    {
+      "q": "In most neurons, Na+ influx or K+ efflux changes membrane potential.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Yes! Na+ entry depolarizes; K+ exit hyperpolarizes in typical neurons."
+    },
+    {
+      "q": "Hair cells in the cochlea are bathed in endolymph at their top (apical) surface.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Correct! The scala media contains endolymph surrounding hair cell stereocilia."
+    },
+    {
+      "q": "Endolymph is unusual: HIGH in K+ (~150mM) AND positively charged (+80mV).",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Yes! The endocochlear potential is +80mV — very unusual for extracellular fluid."
+    },
+    {
+      "q": "Hair cell interior is about -70mV — normal for cells.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Correct! So the gradient from endolymph (+80mV) to cell interior (-70mV) = 150mV driving force!"
+    },
+    {
+      "q": "Because of this huge electrical gradient, K+ flows INTO cochlear hair cells (unusual!).",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Yes! Normally K+ exits cells. Here the +80mV endolymph drives K+ inward."
+    },
+    {
+      "q": "Ca²⁺ also enters through mechanotransduction channels, triggering neurotransmitter release.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Correct! Ca²⁺ influx is essential for synaptic vesicle fusion."
+    },
+    {
+      "q": "K⁺ and Ca²⁺ INFLUX depolarizes cochlear hair cells — the answer is C.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "advanced",
+      "explain": "Yes! Due to the unique +80mV endocochlear potential, K⁺ enters (not exits) along with Ca²⁺."
+    }
+  ]
+}

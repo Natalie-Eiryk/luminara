@@ -1,0 +1,171 @@
+{
+  "parentId": "900.5.88",
+  "parentQuestion": "What does peak expiratory flow rate (PEFR) measure?",
+  "narrative": {
+    "setting": "Mr. Edgar's clinic, teaching asthma self-monitoring",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar hands the patient a small portable device. 'Blow into this as hard and fast as you can each morning. This peak flow meter tracks your asthma control at home.'"
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.88.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Test",
+      "narrative": "Ms. Frizzle holds up a peak flow meter. 'Class, this is simpler than full spirometry! It measures one thing: how FAST can you blow air out? Maximum flow rate during forced exhalation. That's PEFR - Peak Expiratory Flow Rate!'",
+      "q": "What does PEFR stand for?",
+      "options": [
+        "Pulmonary Effort Flow Reading",
+        "Peak Expiratory Flow Rate (maximum speed of exhalation)",
+        "Partial Emission of Forced Respiration",
+        "Predicted Exhalation Frequency Range"
+      ],
+      "answer": 1,
+      "explain": "PEFR = PEAK EXPIRATORY FLOW RATE. It measures the MAXIMUM SPEED (rate) of air exiting the lungs during forced exhalation. Units: liters/minute (L/min). 'Peak' = highest flow, 'Expiratory' = breathing out, 'Flow' = speed of air movement, 'Rate' = velocity measurement.",
+      "wrongExplains": {
+        "0": "PEFR is a standard medical term: Peak Expiratory Flow Rate, not 'effort reading.'",
+        "2": "PEFR is Peak Expiratory Flow Rate, not 'partial emission.' It measures the PEAK (maximum) flow speed during exhalation.",
+        "3": "PEFR isn't about frequency (breaths per minute) - it's about FLOW RATE (how fast air moves) during one forced exhalation."
+      }
+    },
+    {
+      "id": "900.5.88.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Test",
+      "narrative": "'Watch the technique!' Mr. Edgar demonstrates. 'Stand up, take maximum breath in, seal lips around mouthpiece, blast air out as HARD and FAST as possible - like blowing out birthday candles HARD! The meter shows peak flow.'",
+      "q": "How do you perform a peak flow measurement?",
+      "options": [
+        "Breathe normally and gently for one minute",
+        "Take maximum breath in, then exhale as hard and fast as possible into the meter",
+        "Hold your breath as long as possible",
+        "Breathe slowly and deeply"
+      ],
+      "answer": 1,
+      "explain": "Peak flow technique: (1) Stand up, (2) Take MAXIMUM breath in, (3) Seal lips around mouthpiece, (4) Blast air out as HARD and FAST as possible. The meter needle jumps to show peak flow rate. Repeat 3 times, record the best. Requires maximal effort!",
+      "wrongExplains": {
+        "0": "Normal gentle breathing won't show peak flow! You need MAXIMUM FORCEFUL exhalation to test airway function. Peak flow measures your best effort.",
+        "2": "Breath-holding measures different things (diffusion capacity). Peak flow measures how FAST you can empty your lungs.",
+        "3": "Slow deep breathing is for relaxation, not testing peak flow! PEFR specifically needs FORCEFUL RAPID exhalation to detect obstruction."
+      }
+    },
+    {
+      "id": "900.5.88.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Test",
+      "narrative": "'What's a normal peak flow?' Keesha asks. 'It varies by age, height, and sex,' Mr. Edgar explains. 'Adults typically 400-650 L/min. Women generally 380-550, men 450-700. We calculate your personal best!'",
+      "q": "What are typical peak flow values for healthy adults?",
+      "options": [
+        "50-100 L/min",
+        "400-650 L/min (varies with age, height, sex)",
+        "1000-2000 L/min",
+        "Peak flow is the same for everyone"
+      ],
+      "answer": 1,
+      "explain": "Typical adult peak flow = 400-650 L/MIN (varies with age, height, sex). Taller/younger people have higher values. Men generally higher than women. Each person has a 'personal best' when healthy - you track your value relative to YOUR baseline, not just normal ranges.",
+      "wrongExplains": {
+        "0": "50-100 L/min would be severe obstruction - like end-stage COPD. Normal healthy adults can blow 400-650 L/min peak flow.",
+        "2": "1000-2000 L/min would be superhuman! Even elite athletes rarely exceed 700-800 L/min. Normal is 400-650 L/min.",
+        "3": "Peak flow varies significantly with body size, age, and sex! That's why asthmatics track their 'personal best' for comparison."
+      }
+    },
+    {
+      "id": "900.5.88.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus enters healthy wide-open airways. 'Look at the airflow!' Ms. Frizzle shows rushing air. 'Wide airways = high peak flow (500+ L/min). Air blasts out fast and unobstructed!'",
+      "q": "What allows high peak expiratory flow rate in healthy lungs?",
+      "options": [
+        "Narrowed obstructed airways",
+        "Wide open airways allowing rapid airflow",
+        "Weak breathing muscles",
+        "Small lung volumes"
+      ],
+      "answer": 1,
+      "explain": "WIDE OPEN AIRWAYS allow HIGH peak flow. No obstruction means air can exit at maximum velocity during forced exhalation. Good muscle strength + large lung volume + open airways = high PEFR (500-650 L/min in healthy adults).",
+      "wrongExplains": {
+        "0": "Narrowed airways REDUCE peak flow - air can't exit fast through a narrow passage. Obstruction = low PEFR.",
+        "2": "Weak muscles reduce peak flow somewhat, but the main factor is AIRWAY DIAMETER. Strong muscles can't overcome severe airway narrowing.",
+        "3": "Small volumes reduce total air but don't necessarily reduce FLOW RATE through open airways. PEFR measures SPEED, not volume."
+      }
+    },
+    {
+      "id": "900.5.88.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "Now the bus enters asthmatic airways during an attack. 'The bronchioles are SQUEEZED!' Carlos shouts. 'Air can barely get through! Peak flow drops from 500 to 200 L/min - severe obstruction!'",
+      "q": "What happens to peak flow during an asthma exacerbation?",
+      "options": [
+        "Peak flow increases above baseline",
+        "Peak flow decreases (airways narrowed, airflow reduced)",
+        "Peak flow stays exactly the same",
+        "Peak flow becomes unmeasurable"
+      ],
+      "answer": 1,
+      "explain": "Peak flow DECREASES during asthma attacks. Bronchospasm + inflammation + mucus = narrowed airways = reduced airflow = LOW PEFR. Example: personal best 500 L/min, during attack drops to 250 L/min (50% of best). The bigger the drop, the worse the attack.",
+      "wrongExplains": {
+        "0": "Asthma NARROWS airways - it can't increase airflow! Obstruction reduces peak flow below baseline.",
+        "2": "If peak flow stayed the same, there would be no obstruction! The DROP in peak flow is what alerts you to worsening asthma.",
+        "3": "Even severe asthma has measurable peak flow (though very low, like 100-150 L/min). Completely unmeasurable would mean no airflow at all (fatal)."
+      }
+    },
+    {
+      "id": "900.5.88.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'After using albuterol inhaler, watch the airways OPEN!' Ms. Frizzle shows the bronchodilation. 'Peak flow shoots up from 200 to 450 L/min! That recovery proves the obstruction was reversible - classic asthma!'",
+      "q": "Why is peak flow monitoring useful for asthma management?",
+      "options": [
+        "It's not useful - just for decoration",
+        "It detects early worsening before severe symptoms, allowing treatment adjustment",
+        "It cures asthma",
+        "It only works in hospitals"
+      ],
+      "answer": 1,
+      "explain": "Peak flow monitoring DETECTS EARLY WORSENING before severe symptoms develop. Drop in morning peak flow (before symptoms) = early warning = adjust medications BEFORE crisis. Patients use traffic light zones: Green (80-100% best)=good, Yellow (50-80%)=caution, Red (<50%)=danger!",
+      "wrongExplains": {
+        "0": "Peak flow is extremely useful! It's the standard home monitoring tool for asthma, helping prevent severe attacks by catching worsening early.",
+        "2": "Peak flow MONITORS asthma control but doesn't cure it. It's a measurement tool that guides treatment, not a treatment itself.",
+        "3": "Peak flow meters are PORTABLE and CHEAP - designed for HOME use! That's the whole point - patients can track their asthma daily at home."
+      }
+    },
+    {
+      "id": "900.5.88.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "Mr. Edgar sets up the traffic light system. 'Green zone is 80-100% of your personal best - you're doing well. Yellow 50-80% - increase treatment. Red below 50% - call me or go to ER immediately!'",
+      "q": "In the peak flow 'traffic light' system, what does the red zone mean?",
+      "options": [
+        "Perfect asthma control",
+        "Severe exacerbation, medical attention needed (PEFR <50% personal best)",
+        "Mild cold, no concern",
+        "Time to exercise"
+      ],
+      "answer": 1,
+      "explain": "RED ZONE = SEVERE EXACERBATION requiring MEDICAL ATTENTION! PEFR <50% of personal best = dangerous obstruction. Take rescue medications immediately and seek medical care. Don't wait - airways are significantly narrowed. This is an emergency situation.",
+      "wrongExplains": {
+        "0": "Perfect control would be GREEN zone (80-100% of best). Red zone is the DANGER zone - severe obstruction requiring immediate treatment.",
+        "2": "Red zone is NOT mild! <50% of best peak flow = severe airway narrowing = potential life-threatening attack. This requires urgent intervention.",
+        "3": "Red zone means DANGER - don't exercise! Severe obstruction needs treatment and rest, not physical exertion which could worsen symptoms."
+      }
+    },
+    {
+      "id": "900.5.88.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "'Check your peak flow every MORNING,' Mr. Edgar instructs, 'and anytime you feel symptoms. Keep a diary. Patterns help us adjust your controller medications to prevent attacks before they happen!'",
+      "q": "When should asthma patients check their peak flow?",
+      "options": [
+        "Never - it's not necessary",
+        "Every morning and when symptoms worsen",
+        "Only during hospitalization",
+        "Once per year"
+      ],
+      "answer": 1,
+      "explain": "Check peak flow EVERY MORNING (before medications) and WHEN SYMPTOMS WORSEN. Morning values track baseline control. Symptom-triggered checks help decide if treatment is needed. Regular monitoring detects trends (gradual decline = worsening control). Keep a diary for doctor review.",
+      "wrongExplains": {
+        "0": "Peak flow monitoring is ESSENTIAL for good asthma management! It's the early warning system that prevents severe attacks.",
+        "2": "Peak flow is for HOME monitoring! That's the whole point - catch problems early at home, avoiding hospitalization.",
+        "3": "Once a year is far too infrequent! Asthma changes day-to-day. Daily morning monitoring (plus as-needed checks) guides management."
+      }
+    }
+  ]
+}

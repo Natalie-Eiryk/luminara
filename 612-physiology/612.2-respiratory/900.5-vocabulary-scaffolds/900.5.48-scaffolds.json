@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.48",
+  "parentQuestion": "Anatomical dead space is:",
+  "narrative": {
+    "setting": "The Magic School Bus is flying through Mr. Edgar's airways - trachea, bronchi, bronchioles. Ms. Frizzle looks around at the empty tubes. 'Class, notice something strange? There's fresh air here, but no gas exchange is happening. These conducting airways don't have alveoli. Every breath you take, about 150 milliliters just... sits here. This is anatomical dead space - the air that ventilates but never participates in respiration.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar has emphysema, which is increasing his dead space. Every breath becomes less efficient, and he's working harder to breathe just to compensate for air that never reaches functioning alveoli."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.48.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle projects an anatomical diagram, tracing the airways from nose to alveoli. 'Anatomy is STRUCTURE - the physical parts of the body. Anatomical dead space is defined by structure, not function. It's a fixed volume based on airway size.'",
+      "q": "What does 'anatomical' mean in medical terminology?",
+      "options": [
+        "Related to disease processes",
+        "Related to body structure and physical form",
+        "Related to function and physiology",
+        "Related to psychology"
+      ],
+      "answer": 1,
+      "explain": "'Anatomical' = STRUCTURE, the physical architecture of the body. Anatomical dead space is based on the STRUCTURE of airways (trachea, bronchi) - the tubes that conduct air but don't have alveoli. It's about what's built, not what it does.",
+      "wrongExplains": {
+        "0": "Disease is pathology. Anatomy is normal structure. Anatomical dead space is a normal feature, not a disease.",
+        "2": "That's physiology - how things work. Anatomy is what parts exist. The two are related but distinct.",
+        "3": "Psychology is mental processes. Anatomy is physical structure. Wrong field entirely."
+      }
+    },
+    {
+      "id": "900.5.48.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "The bus enters a bronchus - smooth, muscular, lined with cartilage. 'No alveoli here,' Ms. Frizzle notes. 'This is a CONDUCTING airway. It moves air but doesn't exchange gases. Beautiful plumbing, but dead space nonetheless.'",
+      "q": "What does 'dead space' mean in respiratory physiology?",
+      "options": [
+        "Airways that have been damaged and destroyed",
+        "Air volume that is ventilated but not involved in gas exchange",
+        "Space where oxygen has been completely consumed",
+        "Regions with no blood flow"
+      ],
+      "answer": 1,
+      "explain": "'Dead space' = air that moves in and out (ventilation) but DOESN'T exchange gases. Not dead tissue - dead AIR. It's wasted ventilation - the breath that never meets blood. The airways still work, but they're just hallways, not functional rooms.",
+      "wrongExplains": {
+        "0": "Dead space is normal anatomy, not damaged tissue. It's about function (no gas exchange), not structure failure.",
+        "2": "Oxygen consumption happens at tissues. Dead space is about airways where oxygen hasn't even reached blood yet.",
+        "3": "Dead space airways have plenty of blood flow. The issue is they lack alveoli for gas exchange."
+      }
+    },
+    {
+      "id": "900.5.48.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle highlights the conducting zone on a diagram: 'Trachea, bronchi, bronchioles down to about generation 16. Everything BEFORE the respiratory bronchioles. That's anatomical dead space - the highway before the destination.'",
+      "q": "Which airways make up anatomical dead space?",
+      "options": [
+        "Alveoli and alveolar ducts",
+        "Conducting airways (trachea, bronchi, bronchioles)",
+        "Only the nose and mouth",
+        "Only the alveolar sacs"
+      ],
+      "answer": 1,
+      "explain": "Anatomical dead space = CONDUCTING AIRWAYS. From the nose/mouth through trachea, bronchi, and bronchioles down to (but not including) the respiratory zone. These tubes have NO alveoli, so no gas exchange. They're the delivery system, not the factory floor.",
+      "wrongExplains": {
+        "0": "Alveoli and alveolar ducts are where gas exchange happens - that's the respiratory zone, NOT dead space.",
+        "2": "The nose and mouth are part of dead space, but so are the trachea, bronchi, and bronchioles. It's much more than just the entrance.",
+        "3": "Alveolar sacs are functional exchange units. Dead space is everything BEFORE the respiratory zone."
+      }
+    },
+    {
+      "id": "900.5.48.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Mr. Edgar inhales 500 mL of air. The bus rides the wave: 150 mL stops in the conducting airways. 350 mL makes it to the alveoli. 'Watch,' Ms. Frizzle says. 'Only 350 mL of that breath participates in gas exchange. The other 150? Wasted.'",
+      "q": "What is the typical volume of anatomical dead space in an adult?",
+      "options": [
+        "About 15 mL",
+        "About 150 mL",
+        "About 1500 mL",
+        "About 5000 mL"
+      ],
+      "answer": 1,
+      "explain": "~150 mL is the typical anatomical dead space volume in adults. Rule of thumb: about 1 mL per pound of body weight (or 2.2 mL/kg). For a 150-lb person, that's 150 mL of wasted ventilation per breath.",
+      "wrongExplains": {
+        "0": "15 mL is way too small - that's less than a tablespoon! The conducting airways hold much more.",
+        "2": "1500 mL is the tidal volume at heavy exercise. Dead space is much smaller - just the conducting tubes.",
+        "3": "5000 mL is near total lung capacity. Dead space is only the volume of the conducting airways, ~150 mL."
+      }
+    },
+    {
+      "id": "900.5.48.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Ms. Frizzle overlays two measurements on screen: 'Tidal volume: 500 mL. Anatomical dead space: 150 mL. Alveolar ventilation: 350 mL. Only 70% of each breath is useful. Dead space is the tax you pay for having long conducting airways.'",
+      "q": "If tidal volume is 500 mL and dead space is 150 mL, what is alveolar ventilation per breath?",
+      "options": [
+        "500 mL",
+        "150 mL",
+        "350 mL",
+        "650 mL"
+      ],
+      "answer": 2,
+      "explain": "Alveolar ventilation = Tidal volume - Dead space. 500 mL - 150 mL = 350 mL. This is the USEFUL ventilation - the portion that reaches alveoli and participates in gas exchange. Dead space is subtracted because it's wasted.",
+      "wrongExplains": {
+        "0": "500 mL is total tidal volume, but not all of it reaches alveoli. You must subtract dead space.",
+        "1": "150 mL is the dead space itself - the wasted portion. Alveolar ventilation is what's LEFT OVER.",
+        "3": "650 mL would require adding dead space to tidal volume. That's not how it works - you subtract."
+      }
+    },
+    {
+      "id": "900.5.48.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "The bus watches Mr. Edgar exhale. The 150 mL of dead space air - which never exchanged gases - is the FIRST to exit. 'That's why the first part of exhalation looks like fresh air,' Ms. Frizzle notes. 'It's the dead space emptying.'",
+      "q": "What happens to dead space air during exhalation?",
+      "options": [
+        "It exchanges gases before exiting",
+        "It's exhaled first, unchanged from inhaled air",
+        "It converts to carbon dioxide",
+        "It remains in the lungs permanently"
+      ],
+      "answer": 1,
+      "explain": "Dead space air is exhaled FIRST, and it's virtually UNCHANGED from room air. It never reached alveoli, so no gas exchange occurred. Measuring the first part of exhalation shows high O2, low CO2 - proof that it's dead space air.",
+      "wrongExplains": {
+        "0": "Dead space air, by definition, doesn't exchange gases. If it did, it wouldn't be dead space!",
+        "2": "Air doesn't convert to CO2. Dead space air stays as it was inhaled - mostly N2 and O2.",
+        "3": "Dead space empties with each breath. If it stayed, you'd have no room for new air!"
+      }
+    },
+    {
+      "id": "900.5.48.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Mr. Edgar's doctor adds a spirometry mask with a long tube. Ms. Frizzle sounds alarmed: 'That tube INCREASES dead space! Now he's re-breathing his own CO2 from the tube. Longer conducting path = more wasted ventilation.'",
+      "q": "What happens if anatomical dead space increases?",
+      "options": [
+        "Alveolar ventilation increases",
+        "Alveolar ventilation decreases, impairing gas exchange",
+        "Oxygen production increases",
+        "Blood flow to lungs increases"
+      ],
+      "answer": 1,
+      "explain": "Increasing dead space means MORE wasted ventilation, so LESS air reaches alveoli. If dead space goes from 150 to 250 mL, alveolar ventilation drops from 350 to 250 mL per breath. Gas exchange worsens - you breathe harder but achieve less.",
+      "wrongExplains": {
+        "0": "More dead space means LESS alveolar ventilation. They're inversely related: dead space up, useful ventilation down.",
+        "2": "Lungs don't produce oxygen - they extract it from air. Dead space reduces O2 delivery, not production.",
+        "3": "Blood flow is separate from dead space. You can have great blood flow but poor ventilation if dead space is high."
+      }
+    },
+    {
+      "id": "900.5.48.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle shows Mr. Edgar's emphysema x-ray. 'Destroyed alveoli,' she says grimly. 'This creates PHYSIOLOGIC dead space - alveoli that are ventilated but not perfused. Anatomical dead space is fixed structure. Physiologic includes disease.'",
+      "q": "How does anatomical dead space differ from physiologic dead space?",
+      "options": [
+        "They are exactly the same",
+        "Anatomical = conducting airways only; Physiologic = anatomical + non-functional alveoli",
+        "Anatomical includes diseased alveoli; Physiologic does not",
+        "Physiologic dead space is always smaller"
+      ],
+      "answer": 1,
+      "explain": "ANATOMICAL dead space = conducting airways (trachea, bronchi, etc.) - NORMAL structure. PHYSIOLOGIC dead space = anatomical PLUS any ventilated but non-perfused alveoli (disease). In healthy lungs, they're equal (~150 mL). In disease, physiologic is larger.",
+      "wrongExplains": {
+        "0": "In health, they're equal. In disease (emphysema, pulmonary embolism), physiologic dead space increases beyond anatomical.",
+        "2": "Backwards! Anatomical is just airways. Physiologic INCLUDES diseased alveoli that don't function.",
+        "3": "Physiologic is always equal to or GREATER than anatomical. It includes anatomical plus any pathologic additions."
+      }
+    },
+    {
+      "id": "900.5.48.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle displays a breathing strategy: 'Slow, deep breaths vs. rapid, shallow breaths - same total volume per minute. But deep breaths deliver MORE to alveoli because dead space is constant per breath, not per minute.'",
+      "q": "Why is rapid, shallow breathing less efficient than slow, deep breathing?",
+      "options": [
+        "Shallow breathing increases oxygen production",
+        "Each shallow breath wastes a higher proportion in dead space",
+        "Shallow breathing improves gas exchange",
+        "Dead space decreases with shallow breathing"
+      ],
+      "answer": 1,
+      "explain": "Dead space (~150 mL) is CONSTANT per breath. Shallow breaths (e.g., 250 mL) waste 60% in dead space. Deep breaths (e.g., 500 mL) waste only 30%. Same minute ventilation, but deep breathing delivers MORE to alveoli. Efficiency matters.",
+      "wrongExplains": {
+        "0": "Lungs don't produce oxygen. And shallow breathing is LESS efficient, not more.",
+        "2": "Shallow breathing worsens gas exchange because proportionally more air is wasted in dead space.",
+        "3": "Dead space is fixed by anatomy. Breathing pattern doesn't change airway volume."
+      }
+    },
+    {
+      "id": "900.5.48.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "The bus exits the airways. Mr. Edgar adjusts his breathing - fewer, deeper breaths. His oxygen saturation improves. 'Understanding dead space,' Ms. Frizzle smiles, 'is understanding efficiency. Now, tell me: what is anatomical dead space?'",
+      "q": "Anatomical dead space is:",
+      "options": [
+        "The volume of air in alveoli that don't exchange gases",
+        "The volume of conducting airways where no gas exchange occurs (~150 mL)",
+        "The total lung capacity minus residual volume",
+        "Dead tissue in the lungs from disease"
+      ],
+      "answer": 1,
+      "explain": "ANATOMICAL DEAD SPACE = volume of CONDUCTING AIRWAYS (trachea, bronchi, bronchioles) where NO gas exchange occurs. ~150 mL in adults. It's ventilated but wasted - the air highway that doesn't participate in respiration. Alveolar ventilation = tidal volume - dead space.",
+      "wrongExplains": {
+        "0": "That's physiologic dead space - includes non-functioning alveoli. Anatomical is ONLY the conducting airways.",
+        "2": "TLC - RV = vital capacity (VC). Dead space is much smaller - just the volume of conducting tubes.",
+        "3": "Dead space isn't dead tissue - it's normal airways doing their job (conducting) but not exchanging gases."
+      }
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.71",
+  "parentQuestion": "Sleep apnea involves:",
+  "narrative": {
+    "setting": "The Magic School Bus floats in Mr. Edgar's pharynx at night. As he sleeps, the muscles relax - and the airway collapses completely. No airflow. O2 saturation plummets. Heart rate spikes. Brain partially wakes to gasp for air. Airway opens, breathing resumes. Then it happens again. And again. Ms. Frizzle counts. 'Thirty episodes per hour,' she reports grimly. 'Severe obstructive sleep apnea.'",
+    "character": "Mr. Edgar",
+    "tension": "Truck drivers fall asleep at the wheel. Hypertension worsens from repeated hypoxic stress. Spouses move to separate bedrooms from the snoring. Heart failure patients decompensate. Understanding sleep apnea isn't just sleep medicine - it's understanding how repeated nocturnal hypoxemia stresses every organ system and increases cardiovascular mortality."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.71.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Apnea means without breathing,' Ms. Frizzle begins. 'A- = without, -pnea = breathing. SLEEP apnea = recurrent episodes of breathing CESSATION during sleep. Not just pauses - complete or near-complete airflow stoppage for ≥10 seconds.'",
+      "q": "The term 'apnea' means:",
+      "options": [
+        "Fast breathing",
+        "Without breathing/breathing cessation",
+        "Difficult breathing",
+        "Normal breathing"
+      ],
+      "answer": 1,
+      "explain": "APNEA = WITHOUT BREATHING (A- = without, -pnea = breathing). Breathing cessation ≥10 seconds. Sleep apnea = recurrent apneas during sleep. Contrast with bradypnea (slow) or tachypnea (fast).",
+      "wrongExplains": {
+        "0": "Fast breathing is TACHYPNEA. Apnea is ABSENCE of breathing.",
+        "2": "Difficult breathing is DYSPNEA. Apnea is breathing STOPS.",
+        "3": "Normal breathing is eupnea. Apnea is pathologic cessation."
+      }
+    },
+    {
+      "id": "900.5.71.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Two main types,' Ms. Frizzle lists. 'OBSTRUCTIVE (OSA) - airway physically collapses, effort continues but no airflow. CENTRAL (CSA) - brain stops sending respiratory signals, no effort. OSA is much more common (90% of cases).'",
+      "q": "The two main types of sleep apnea are:",
+      "options": [
+        "Only obstructive exists",
+        "Obstructive (OSA) and Central (CSA)",
+        "Only bacterial",
+        "Only genetic"
+      ],
+      "answer": 1,
+      "explain": "Sleep apnea types: OBSTRUCTIVE (OSA) - airway collapse, effort present but no flow. CENTRAL (CSA) - brain doesn't signal to breathe, no effort. OSA ~90%, CSA ~10%, mixed exists.",
+      "wrongExplains": {
+        "0": "Both obstructive AND central types exist. OSA is more common but CSA occurs.",
+        "2": "Sleep apnea isn't bacterial infection. It's mechanical (OSA) or neurologic (CSA).",
+        "3": "Genetics play a role but apnea is defined by mechanism (obstructive vs central)."
+      }
+    },
+    {
+      "id": "900.5.71.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'AHI - Apnea-Hypopnea Index,' Ms. Frizzle explains. 'Number of apneas + hypopneas per hour of sleep. Mild: 5-15, Moderate: 15-30, Severe: >30. AHI quantifies sleep apnea severity and guides treatment decisions.'",
+      "q": "Severe sleep apnea is defined as AHI:",
+      "options": [
+        "<5 events/hour",
+        "5-15 events/hour",
+        "15-30 events/hour",
+        ">30 events/hour"
+      ],
+      "answer": 3,
+      "explain": "AHI (Apnea-Hypopnea Index) severity: MILD 5-15, MODERATE 15-30, SEVERE >30 events/hour. AHI is measured by polysomnography (sleep study).",
+      "wrongExplains": {
+        "0": "<5 is NORMAL (everyone has occasional apneas). Not sleep apnea syndrome.",
+        "1": "5-15 is MILD sleep apnea. Severe is >30 events/hour.",
+        "2": "15-30 is MODERATE. Severe is >30 events/hour."
+      }
+    },
+    {
+      "id": "900.5.71.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'OSA mechanism,' Ms. Frizzle demonstrates. 'During sleep, pharyngeal muscles relax. In susceptible people (obesity, narrow airway, recessed chin), this causes airway COLLAPSE. Breathing effort continues but no air moves. O2 drops, CO2 rises, arousal occurs.'",
+      "q": "In obstructive sleep apnea, breathing cessation is caused by:",
+      "options": [
+        "Brain stops signaling",
+        "Physical airway collapse",
+        "Lung disease",
+        "Heart failure"
+      ],
+      "answer": 1,
+      "explain": "OSA = PHYSICAL AIRWAY COLLAPSE (usually pharyngeal) during sleep. Muscles relax, airway closes. Breathing EFFORT continues but no airflow. Contrast with central (no effort).",
+      "wrongExplains": {
+        "0": "Brain stops signaling is CENTRAL sleep apnea. OSA has effort but blocked airway.",
+        "2": "Lung disease causes respiratory issues but OSA is upper airway collapse.",
+        "3": "Heart failure can cause central apnea (Cheyne-Stokes). OSA is airway obstruction."
+      }
+    },
+    {
+      "id": "900.5.71.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'The cycle repeats,' Ms. Frizzle traces it. 'Airway collapses → apnea → O2 drops, CO2 rises → partial arousal → airway opens → breathing resumes → fall back asleep → muscles relax → airway collapses again. Dozens to hundreds of times per night. Sleep fragmentation.'",
+      "q": "During OSA episodes, oxygen saturation:",
+      "options": [
+        "Increases",
+        "Stays normal",
+        "Decreases (hypoxemia)",
+        "Disappears completely"
+      ],
+      "answer": 2,
+      "explain": "OSA episodes cause HYPOXEMIA (O2 saturation drops) and hypercapnia (CO2 rises). Repeated hypoxic stress → cardiovascular strain, hypertension, arrhythmias. Arousal restores ventilation.",
+      "wrongExplains": {
+        "0": "O2 DROPS during apnea (no breathing). Arousal restores it.",
+        "1": "O2 stays normal BETWEEN apneas. DURING apnea it drops significantly.",
+        "3": "O2 drops but doesn't reach zero - arousal prevents complete desaturation."
+      }
+    },
+    {
+      "id": "900.5.71.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Clinical presentation,' Ms. Frizzle describes. 'Loud SNORING (hallmark), witnessed apneas, gasping/choking during sleep. Daytime: excessive sleepiness, morning headaches, poor concentration, irritability. Bed partner reports are key - patient often unaware.'",
+      "q": "Classic symptoms of obstructive sleep apnea include:",
+      "options": [
+        "Perfect sleep",
+        "Loud snoring, witnessed apneas, daytime sleepiness",
+        "Only insomnia",
+        "Only nightmares"
+      ],
+      "answer": 1,
+      "explain": "OSA: LOUD SNORING, witnessed APNEAS (breathing pauses), gasping/choking, daytime SLEEPINESS, morning headaches. Bed partner reports critical. Epworth Sleepiness Scale screens.",
+      "wrongExplains": {
+        "0": "OSA causes FRAGMENTED sleep (arousals), not perfect sleep.",
+        "2": "OSA is hypersomnia (too much sleep pressure), not insomnia (can't sleep).",
+        "3": "Nightmares are REM parasomnias. OSA is breathing cessation."
+      }
+    },
+    {
+      "id": "900.5.71.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Risk factors for OSA,' Ms. Frizzle lists. 'OBESITY (biggest risk), male gender, age, neck circumference >17 inches (men) or >16 inches (women), narrow airway, retrognathia (recessed jaw), nasal obstruction, alcohol use.'",
+      "q": "The biggest risk factor for obstructive sleep apnea is:",
+      "options": [
+        "Being thin",
+        "Obesity",
+        "Young age",
+        "Female gender"
+      ],
+      "answer": 1,
+      "explain": "OBESITY is the #1 risk factor for OSA. Fat deposits narrow airway. Weight loss improves OSA. Other risks: male, age, large neck, narrow airway, alcohol, supine position.",
+      "wrongExplains": {
+        "0": "Being thin REDUCES OSA risk. Obesity (BMI >30) is the strongest risk factor.",
+        "2": "OSA increases with AGE (muscle tone decreases). Young age is protective.",
+        "3": "Males have HIGHER OSA risk (2-3x). Postmenopausal women's risk increases."
+      }
+    },
+    {
+      "id": "900.5.71.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Polysomnography - the sleep study,' Ms. Frizzle explains. 'Gold standard diagnostic test. Overnight monitoring: EEG (sleep stages), EOG (eye movements), EMG (muscle), airflow, O2 saturation, ECG, respiratory effort. Calculates AHI, identifies type (obstructive vs central).'",
+      "q": "The diagnostic gold standard for sleep apnea is:",
+      "options": [
+        "Blood test",
+        "Polysomnography (sleep study)",
+        "Chest X-ray",
+        "Simple questionnaire"
+      ],
+      "answer": 1,
+      "explain": "POLYSOMNOGRAPHY (overnight sleep study) is gold standard. Measures sleep stages, airflow, O2, respiratory effort, ECG. Calculates AHI, distinguishes obstructive from central apnea.",
+      "wrongExplains": {
+        "0": "No blood test diagnoses apnea. Polysomnography directly measures breathing during sleep.",
+        "2": "Chest X-ray shows lungs, not upper airway or sleep breathing. Need sleep study.",
+        "3": "Questionnaires (Epworth, STOP-BANG) screen but diagnosis requires polysomnography."
+      }
+    },
+    {
+      "id": "900.5.71.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'CPAP - Continuous Positive Airway Pressure,' Ms. Frizzle shows the mask. 'Gold standard treatment for OSA. Pressurized air splints airway open during sleep. Prevents collapse. Eliminates apneas. Improves symptoms, reduces cardiovascular risk. Compliance is key.'",
+      "q": "The first-line treatment for obstructive sleep apnea is:",
+      "options": [
+        "Antibiotics",
+        "CPAP (Continuous Positive Airway Pressure)",
+        "Chemotherapy",
+        "Ignoring it"
+      ],
+      "answer": 1,
+      "explain": "CPAP is first-line for OSA. Pressurized air pneumatically splints airway open, prevents collapse. Eliminates apneas, improves sleepiness, reduces CV risk. Alternatives: oral appliances, surgery, weight loss.",
+      "wrongExplains": {
+        "0": "Antibiotics treat infection. OSA is mechanical airway collapse - needs CPAP or surgery.",
+        "2": "Chemotherapy is for cancer. OSA needs CPAP to keep airway open.",
+        "3": "Untreated OSA increases hypertension, MI, stroke, arrhythmia risk. Treatment essential."
+      }
+    },
+    {
+      "id": "900.5.71.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Ms. Frizzle watches the airway collapse again, the oxygen plummet, the desperate arousal. 'Thirty times an hour, every night. Repeated breathing pauses. That's sleep apnea. So, class: what does sleep apnea involve?'",
+      "q": "Sleep apnea involves:",
+      "options": [
+        "Continuous breathing",
+        "Repeated breathing pauses during sleep",
+        "Increased breathing rate",
+        "Coughing at night"
+      ],
+      "answer": 1,
+      "explain": "SLEEP APNEA = REPEATED BREATHING PAUSES (≥10 sec cessation) during sleep. Obstructive (airway collapse, 90%) or Central (brain signal failure). Causes hypoxemia, CV strain, daytime sleepiness. Diagnosed by polysomnography, treated with CPAP.",
+      "wrongExplains": {
+        "0": "Continuous breathing is normal. Apnea = pauses/stops in breathing.",
+        "2": "Increased breathing rate would be tachypnea. Apnea is breathing STOPS.",
+        "3": "Coughing at night might be asthma, GERD, or postnasal drip - not specifically sleep apnea."
+      }
+    }
+  ]
+}

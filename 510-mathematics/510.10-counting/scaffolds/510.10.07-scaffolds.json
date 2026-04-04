@@ -1,0 +1,157 @@
+{
+  "version": "1.0.0",
+  "batchId": "510.10.07",
+  "questionsScaffolded": 25,
+  "scaffolds": [
+    {
+      "parentId": "510.10.07.01",
+      "scaffolds": [
+        {"id": "510.10.07.01.s1", "type": "prerequisite", "q": "Does 13 contain the digit 3?", "options": ["Yes", "No", "Maybe", "Cannot tell"], "answer": 0, "explain": "13 has digits 1 and 3, so yes it contains 3.", "isotope": "510.10.counting.written", "difficulty": 0.08, "zpdMoment": "digit_contains"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.02",
+      "scaffolds": [
+        {"id": "510.10.07.02.s1", "type": "prerequisite", "q": "What is 1 + 2 + 3?", "options": ["6", "123", "5", "9"], "answer": 0, "explain": "1 + 2 + 3 = 6.", "isotope": "510.10.cardinality", "difficulty": 0.08, "zpdMoment": "triple_sum"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.03",
+      "scaffolds": [
+        {"id": "510.10.07.03.s1", "type": "prerequisite", "q": "What is (10 + 20) ÷ 2?", "options": ["5", "15", "30", "10"], "answer": 1, "explain": "(10 + 20) ÷ 2 = 30 ÷ 2 = 15.", "isotope": "510.10.ordering", "difficulty": 0.15, "zpdMoment": "average_simple"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.04",
+      "scaffolds": [
+        {"id": "510.10.07.04.s1", "type": "prerequisite", "q": "How many digits does 15 have?", "options": ["1", "2", "15", "5"], "answer": 1, "explain": "15 has two digits: 1 and 5.", "isotope": "510.10.counting.written", "difficulty": 0.05, "zpdMoment": "digit_count_teen"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.05",
+      "scaffolds": [
+        {"id": "510.10.07.05.s1", "type": "prerequisite", "q": "What is 10 + 5?", "options": ["15", "105", "50", "6"], "answer": 0, "explain": "10 + 5 = 15.", "isotope": "510.10.place-value.intro", "difficulty": 0.05, "zpdMoment": "ten_plus_ones"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.06",
+      "scaffolds": [
+        {"id": "510.10.07.06.s1", "type": "prerequisite", "q": "Is 34 even?", "options": ["Yes", "No", "Sometimes", "Cannot tell"], "answer": 0, "explain": "34 ends in 4, so it's even.", "isotope": "510.10.ordering", "difficulty": 0.1, "zpdMoment": "even_thirties"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.07",
+      "scaffolds": [
+        {"id": "510.10.07.07.s1", "type": "prerequisite", "q": "6 × 10 = ?", "options": ["16", "60", "610", "6"], "answer": 1, "explain": "6 × 10 = 60.", "isotope": "510.10.place-value.intro", "difficulty": 0.1, "zpdMoment": "times_ten"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.08",
+      "scaffolds": [
+        {"id": "510.10.07.08.s1", "type": "prerequisite", "q": "What is 2 + 3?", "options": ["5", "23", "6", "1"], "answer": 0, "explain": "2 + 3 = 5.", "isotope": "510.10.cardinality", "difficulty": 0.03, "zpdMoment": "add_single"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.09",
+      "scaffolds": [
+        {"id": "510.10.07.09.s1", "type": "prerequisite", "q": "Is 40 > 30?", "options": ["Yes", "No", "Equal", "Cannot tell"], "answer": 0, "explain": "40 > 30 (4 tens > 3 tens).", "isotope": "510.10.comparison", "difficulty": 0.05, "zpdMoment": "tens_greater"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.10",
+      "scaffolds": [
+        {"id": "510.10.07.10.s1", "type": "prerequisite", "q": "What comes before 100?", "options": ["101", "99", "90", "10"], "answer": 1, "explain": "99 comes before 100.", "isotope": "510.10.counting.oral", "difficulty": 0.08, "zpdMoment": "predecessor_hundred"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.11",
+      "scaffolds": [
+        {"id": "510.10.07.11.s1", "type": "prerequisite", "q": "How many numbers from 1 to 10?", "options": ["9", "10", "11", "1"], "answer": 1, "explain": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10 = 10 numbers.", "isotope": "510.10.cardinality", "difficulty": 0.08, "zpdMoment": "count_range_simple"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.12",
+      "scaffolds": [
+        {"id": "510.10.07.12.s1", "type": "prerequisite", "q": "What is the tens digit of 48?", "options": ["4", "8", "48", "12"], "answer": 0, "explain": "4 is in the tens place.", "isotope": "510.10.place-value.intro", "difficulty": 0.08, "zpdMoment": "tens_digit_forties"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.13",
+      "scaffolds": [
+        {"id": "510.10.07.13.s1", "type": "prerequisite", "q": "Which is greater: 59 or 95?", "options": ["59", "95", "Same", "Cannot tell"], "answer": 1, "explain": "95 > 59 (9 tens > 5 tens).", "isotope": "510.10.comparison", "difficulty": 0.1, "zpdMoment": "reversal_greater"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.14",
+      "scaffolds": [
+        {"id": "510.10.07.14.s1", "type": "prerequisite", "q": "What is 18 + 2?", "options": ["20", "16", "182", "28"], "answer": 0, "explain": "18 + 2 = 20.", "isotope": "510.10.cardinality", "difficulty": 0.08, "zpdMoment": "make_twenty"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.15",
+      "scaffolds": [
+        {"id": "510.10.07.15.s1", "type": "prerequisite", "q": "What is 7 × 7?", "options": ["14", "49", "77", "7"], "answer": 1, "explain": "7 × 7 = 49.", "isotope": "510.10.cardinality", "difficulty": 0.15, "zpdMoment": "square_seven"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.16",
+      "scaffolds": [
+        {"id": "510.10.07.16.s1", "type": "prerequisite", "q": "Which is smallest: 66, 67, 76?", "options": ["66", "67", "76", "All same"], "answer": 0, "explain": "66 < 67 < 76.", "isotope": "510.10.comparison", "difficulty": 0.1, "zpdMoment": "min_sixties"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.17",
+      "scaffolds": [
+        {"id": "510.10.07.17.s1", "type": "prerequisite", "q": "What is 89 + 1?", "options": ["88", "90", "891", "99"], "answer": 1, "explain": "89 + 1 = 90.", "isotope": "510.10.counting.oral", "difficulty": 0.08, "zpdMoment": "next_decade"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.18",
+      "scaffolds": [
+        {"id": "510.10.07.18.s1", "type": "prerequisite", "q": "Does 14 contain the digit 1?", "options": ["Yes", "No", "Maybe", "Cannot tell"], "answer": 0, "explain": "14 has digits 1 and 4.", "isotope": "510.10.counting.written", "difficulty": 0.05, "zpdMoment": "digit_one_check"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.19",
+      "scaffolds": [
+        {"id": "510.10.07.19.s1", "type": "prerequisite", "q": "What is 44 + 11?", "options": ["55", "33", "441", "45"], "answer": 0, "explain": "44 + 11 = 55.", "isotope": "510.10.cardinality", "difficulty": 0.12, "zpdMoment": "add_same_digits"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.20",
+      "scaffolds": [
+        {"id": "510.10.07.20.s1", "type": "prerequisite", "q": "Does 30 have a 0 in it?", "options": ["Yes", "No", "Maybe", "Cannot tell"], "answer": 0, "explain": "30 has digits 3 and 0.", "isotope": "510.10.counting.written", "difficulty": 0.05, "zpdMoment": "zero_check"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.21",
+      "scaffolds": [
+        {"id": "510.10.07.21.s1", "type": "prerequisite", "q": "What is 59 + 1?", "options": ["58", "60", "591", "69"], "answer": 1, "explain": "59 + 1 = 60.", "isotope": "510.10.counting.oral", "difficulty": 0.08, "zpdMoment": "decade_cross"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.22",
+      "scaffolds": [
+        {"id": "510.10.07.22.s1", "type": "prerequisite", "q": "What is 4 + 8?", "options": ["12", "48", "32", "84"], "answer": 0, "explain": "4 + 8 = 12.", "isotope": "510.10.cardinality", "difficulty": 0.08, "zpdMoment": "sum_twelve"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.23",
+      "scaffolds": [
+        {"id": "510.10.07.23.s1", "type": "prerequisite", "q": "What is the first number in the 20s?", "options": ["19", "20", "21", "29"], "answer": 1, "explain": "The 20s start at 20.", "isotope": "510.10.ordering", "difficulty": 0.08, "zpdMoment": "decade_start"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.24",
+      "scaffolds": [
+        {"id": "510.10.07.24.s1", "type": "prerequisite", "q": "What is the largest 1-digit number?", "options": ["10", "9", "99", "0"], "answer": 1, "explain": "9 is the largest single digit.", "isotope": "510.10.comparison", "difficulty": 0.08, "zpdMoment": "max_single"}
+      ]
+    },
+    {
+      "parentId": "510.10.07.25",
+      "scaffolds": [
+        {"id": "510.10.07.25.s1", "type": "prerequisite", "q": "What is 3 + 4?", "options": ["7", "34", "12", "1"], "answer": 0, "explain": "3 + 4 = 7.", "isotope": "510.10.cardinality", "difficulty": 0.03, "zpdMoment": "basic_add"}
+      ]
+    }
+  ]
+}

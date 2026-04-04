@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.105",
+  "parentQuestion": "Bronchoscopy is:",
+  "narrative": {
+    "setting": "The Magic School Bus is navigating through Mr. Edgar's bronchial tree when suddenly a bright light floods the airway. A long, flexible tube with a camera at its tip snakes down from above, illuminating everything. Ms. Frizzle gasps with delight: 'A bronchoscope! The doctor is performing bronchoscopy - looking directly into Mr. Edgar's airways. From up in the ICU, they can see everything we're seeing down here. This technology is diagnostic and therapeutic magic.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar has a suspicious lesion in his bronchus. Bronchoscopy will diagnose it and potentially treat it."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.105.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "Ms. Frizzle points to the prefix on the bronchoscope. 'Broncho- or bronchi-,' she explains. 'From the Greek bronchos - windpipe, though we now use it for the smaller airways.'",
+      "q": "The prefix 'broncho-' refers to the:",
+      "options": [
+        "Nose",
+        "Bronchi / airways",
+        "Voice box",
+        "Lungs"
+      ],
+      "answer": 1,
+      "explain": "'BRONCHO-' or 'BRONCHI-' = BRONCHI, the branching airways in the lungs. The bronchi are the tubes that branch from the trachea into the lungs. Think: bronchitis (airway inflammation), bronchodilator (airway widener).",
+      "wrongExplains": {
+        "0": "Nose is 'rhino-'. Broncho- refers to the airways deeper in the respiratory tree.",
+        "2": "Voice box is 'laryngo-'. Broncho- refers to the airways below the larynx.",
+        "3": "Lungs overall are 'pulmo-' or 'pneumo-'. Broncho- specifically refers to the AIRWAYS within the lungs."
+      }
+    },
+    {
+      "id": "900.5.105.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "The camera on the bronchoscope swivels, capturing images of the bronchial wall. 'The suffix -scopy,' Ms. Frizzle says. 'One of medicine's most useful suffixes. It means to look, to examine.'",
+      "q": "The suffix '-scopy' means:",
+      "options": [
+        "Surgical removal",
+        "Visual examination / looking",
+        "Inflammation",
+        "Creating an opening"
+      ],
+      "answer": 1,
+      "explain": "'-SCOPY' = VISUAL EXAMINATION, LOOKING. From Greek 'skopein' = to look at. Bronchoscopy = looking into bronchi. Colonoscopy = looking into colon. Endoscopy = looking inside. Diagnostic technique.",
+      "wrongExplains": {
+        "0": "Removal is '-ectomy'. '-scopy' is examination/visualization, not surgery (though procedures can be done during scopy).",
+        "2": "Inflammation is '-itis'. '-scopy' is a diagnostic examination technique.",
+        "3": "Creating opening is '-ostomy'. '-scopy' is visual examination using a scope."
+      }
+    },
+    {
+      "id": "900.5.105.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "The bronchoscope has multiple channels - one for the camera, one for light, one for instruments, one for suction. 'Multifunctional,' Ms. Frizzle marvels. 'Diagnostic AND therapeutic.'",
+      "q": "Bronchoscopy involves examining the airways using:",
+      "options": [
+        "X-rays only",
+        "A flexible or rigid scope with camera and light",
+        "Blood tests",
+        "Stethoscope"
+      ],
+      "answer": 1,
+      "explain": "BRONCHOSCOPY uses a BRONCHOSCOPE - flexible (most common) or rigid tube with: (1) CAMERA/light for visualization, (2) working channel for instruments (biopsy forceps, brush, lavage), (3) suction. Inserted through mouth/nose or tracheostomy.",
+      "wrongExplains": {
+        "0": "X-rays show lungs but don't allow direct visualization. Bronchoscopy uses a CAMERA inside the airways.",
+        "2": "Blood tests detect infection/markers. Bronchoscopy is DIRECT VISUALIZATION with a scope.",
+        "3": "Stethoscope listens to breath sounds externally. Bronchoscopy LOOKS INSIDE the airways directly."
+      }
+    },
+    {
+      "id": "900.5.105.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bronchoscope navigates a branching point, choosing the left main bronchus. 'The doctor is steering,' Ms. Frizzle explains. 'Looking for the lesion we spotted on CT scan.'",
+      "q": "What can bronchoscopy visualize?",
+      "options": [
+        "Only the trachea",
+        "The trachea, bronchi, and smaller airways",
+        "The heart",
+        "The stomach"
+      ],
+      "answer": 1,
+      "explain": "Bronchoscopy can visualize: TRACHEA → main bronchi → lobar bronchi → segmental bronchi → subsegmental (depending on scope size). Can see: airway anatomy, tumors, inflammation, foreign bodies, secretions, bleeding sources.",
+      "wrongExplains": {
+        "0": "Bronchoscopy goes BEYOND the trachea into the branching bronchi - that's why it's called BRONCHOscopy.",
+        "2": "The heart is outside the airways. Bronchoscopy examines the AIRWAY TREE, not the heart.",
+        "3": "Stomach is examined by GASTROSCOPY/endoscopy. Bronchoscopy is for AIRWAYS."
+      }
+    },
+    {
+      "id": "900.5.105.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "A mass appears on the bronchial wall - irregular, bleeding slightly. Biopsy forceps extend from the bronchoscope, taking a small tissue sample. 'Diagnostic AND therapeutic,' Ms. Frizzle reminds.",
+      "q": "What procedures can be performed during bronchoscopy?",
+      "options": [
+        "Only looking, no interventions",
+        "Biopsy, lavage, foreign body removal, stent placement",
+        "Open heart surgery",
+        "Brain surgery"
+      ],
+      "answer": 1,
+      "explain": "Bronchoscopy procedures: (1) BIOPSY (tissue samples), (2) LAVAGE (washing for cell/pathogen samples), (3) FOREIGN BODY REMOVAL, (4) stent placement, (5) tumor debulking, (6) hemostasis (stop bleeding). Both diagnostic AND therapeutic.",
+      "wrongExplains": {
+        "0": "Bronchoscopy is interventional! Biopsies, lavage, foreign body removal, and treatments can all be performed.",
+        "2": "Heart surgery requires opening the chest. Bronchoscopy is minimally invasive, airway-focused.",
+        "3": "Brain surgery is neurosurgery. Bronchoscopy examines and treats AIRWAYS."
+      }
+    },
+    {
+      "id": "900.5.105.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "Saline is instilled through the bronchoscope, then suctioned back - bronchoalveolar lavage. 'BAL,' Ms. Frizzle says. 'Washing the airways to collect cells and microbes for analysis.'",
+      "q": "Bronchoalveolar lavage (BAL) during bronchoscopy involves:",
+      "options": [
+        "Removing the entire lung",
+        "Washing airways with saline to collect cells/pathogens",
+        "Inflating the lungs with air",
+        "Cutting the bronchi"
+      ],
+      "answer": 1,
+      "explain": "BAL = instilling SALINE into airways, then suctioning it back to collect: (1) cells (cancer, inflammatory), (2) pathogens (bacteria, fungi, viruses), (3) other material (hemosiderin, proteins). Analyzed in pathology/microbiology labs.",
+      "wrongExplains": {
+        "0": "Lung removal is pneumonectomy (major surgery). BAL is minimally invasive washing technique.",
+        "2": "Lungs already have air. BAL uses SALINE (liquid) to wash and collect material.",
+        "3": "BAL doesn't cut anything. It's a washing/sampling technique, not surgery."
+      }
+    },
+    {
+      "id": "900.5.105.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Flexible versus rigid bronchoscopy,' Ms. Frizzle teaches. 'Flexible is more common, better tolerated. Rigid is for massive bleeding, large foreign bodies, or airway interventions.'",
+      "q": "How does flexible bronchoscopy differ from rigid bronchoscopy?",
+      "options": [
+        "They are identical",
+        "Flexible uses a thin, maneuverable scope; rigid uses a straight metal tube",
+        "Flexible requires general anesthesia; rigid doesn't",
+        "Flexible can't do biopsies"
+      ],
+      "answer": 1,
+      "explain": "FLEXIBLE: thin fiberoptic/video scope, maneuverable, reaches subsegmental bronchi, moderate sedation, most common. RIGID: straight metal tube, better for massive bleeding/foreign bodies/stents, general anesthesia, better suctioning capacity.",
+      "wrongExplains": {
+        "0": "Very different! Flexible is thin/maneuverable/reaches farther. Rigid is straight/metal/larger working channel.",
+        "2": "Opposite! FLEXIBLE uses moderate sedation. RIGID requires general anesthesia (more invasive).",
+        "3": "Flexible CAN do biopsies (smaller samples). Rigid can take larger biopsies and handle more bleeding."
+      }
+    },
+    {
+      "id": "900.5.105.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "The pathology report returns: lung cancer, adenocarcinoma. 'Early detection,' Ms. Frizzle says gravely. 'Bronchoscopy found it when it was still treatable. That's the power of direct visualization.'",
+      "q": "Which condition is commonly diagnosed via bronchoscopy?",
+      "options": [
+        "Diabetes",
+        "Lung cancer, pneumonia, or interstitial lung disease",
+        "Broken bones",
+        "Kidney stones"
+      ],
+      "answer": 1,
+      "explain": "Bronchoscopy diagnoses: (1) LUNG CANCER (biopsy), (2) INFECTIONS (BAL for pathogens), (3) INTERSTITIAL LUNG DISEASE (transbronchial biopsy), (4) hemoptysis source, (5) airway obstruction, (6) unexplained infiltrates.",
+      "wrongExplains": {
+        "0": "Diabetes is metabolic (blood sugar). Bronchoscopy examines AIRWAYS, not metabolism.",
+        "2": "Broken bones need X-rays/CT. Bronchoscopy is for AIRWAY pathology.",
+        "3": "Kidney stones are urologic. Bronchoscopy examines RESPIRATORY system."
+      }
+    },
+    {
+      "id": "900.5.105.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "A child's bronchoscopy shows a peanut lodged in the right main bronchus. Grasping forceps retrieve it safely. 'Foreign body removal,' Ms. Frizzle says. 'Common in kids. Life-saving procedure.'",
+      "q": "Bronchoscopy can be used to remove:",
+      "options": [
+        "Brain tumors",
+        "Foreign bodies (like inhaled food) from airways",
+        "Kidney stones",
+        "Gallstones"
+      ],
+      "answer": 1,
+      "explain": "Bronchoscopy can remove FOREIGN BODIES from airways: peanuts, coins, teeth, anything inhaled. Common in children. Can also remove mucus plugs, blood clots. Grasping forceps, baskets, or suction used.",
+      "wrongExplains": {
+        "0": "Brain tumors need neurosurgery. Bronchoscopy works in AIRWAYS, not brain.",
+        "2": "Kidney stones are removed urologically (lithotripsy, ureteroscopy). Bronchoscopy is for AIRWAYS.",
+        "3": "Gallstones are removed via ERCP or cholecystectomy. Bronchoscopy is for RESPIRATORY foreign bodies."
+      }
+    },
+    {
+      "id": "900.5.105.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "The bronchoscope withdraws. The procedure is complete. Diagnosis made, treatment planned. 'Modern medicine,' Ms. Frizzle reflects. 'Direct visualization changed everything. Final question!'",
+      "q": "Bronchoscopy is:",
+      "options": [
+        "Surgical removal of bronchi",
+        "Visual examination of airways using a scope",
+        "Inflammation of the bronchi",
+        "X-ray of the lungs"
+      ],
+      "answer": 1,
+      "explain": "BRONCHOSCOPY = VISUAL EXAMINATION of the AIRWAYS (trachea, bronchi) using a BRONCHOSCOPE (flexible or rigid scope with camera). Uses: diagnosis (cancer, infection), therapeutic procedures (biopsy, lavage, foreign body removal, stenting). Both diagnostic and interventional.",
+      "wrongExplains": {
+        "0": "Removal is bronchectomy. Bronchoscopy is EXAMINATION/visualization, not surgical removal.",
+        "2": "Inflammation is bronchitis. Bronchoscopy is a diagnostic/therapeutic PROCEDURE, not an inflammatory condition.",
+        "3": "X-ray is radiography (chest X-ray). Bronchoscopy is DIRECT VISUALIZATION with a camera/scope inside the airways."
+      }
+    }
+  ]
+}

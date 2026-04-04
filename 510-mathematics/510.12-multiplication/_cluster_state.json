@@ -1,0 +1,28 @@
+{
+  "clusterId": "510.12",
+  "clusterName": "Multiplication & Division",
+  "status": "pending",
+  "targetQuestions": 350,
+  "currentBatch": 0,
+  "totalBatches": 14,
+  "questionsGenerated": 0,
+  "scaffoldsGenerated": 0,
+  "lastUpdated": null,
+  "batches": [],
+  "isotopes": [
+    "510.12.multiplication.facts",
+    "510.12.multiplication.multi-digit",
+    "510.12.division.facts",
+    "510.12.division.long",
+    "510.12.inverse",
+    "510.12.factors",
+    "510.12.multiples"
+  ],
+  "prerequisites": ["510.11.*"],
+  "difficultyDistribution": {
+    "easy": 0,
+    "medium": 0,
+    "challenging": 0,
+    "hard": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "clusterId": "510.31",
+  "clusterName": "Quadratic Functions",
+  "status": "pending",
+  "targetQuestions": 350,
+  "currentBatch": 0,
+  "totalBatches": 14,
+  "questionsGenerated": 0,
+  "scaffoldsGenerated": 0,
+  "lastUpdated": null,
+  "batches": [],
+  "isotopes": [
+    "510.31.parabola",
+    "510.31.vertex",
+    "510.31.factoring.basic",
+    "510.31.factoring.advanced",
+    "510.31.quadratic-formula",
+    "510.31.completing-square",
+    "510.31.discriminant"
+  ],
+  "prerequisites": ["510.30.*"],
+  "difficultyDistribution": {
+    "easy": 0,
+    "medium": 0,
+    "challenging": 0,
+    "hard": 0
+  }
+}

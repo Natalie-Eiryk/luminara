@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.96",
+  "parentQuestion": "V/Q matching refers to the balance between:",
+  "narrative": {
+    "setting": "The Magic School Bus hovers at a junction between an alveolus and its surrounding capillary. Air flows through the alveolus while blood streams past in the capillary. But something's wrong - in one area, you see ventilated alveoli with no blood flow. In another, blood flows past collapsed alveoli. Ms. Frizzle's face is grave: 'V/Q mismatch. Mr. Edgar's gas exchange efficiency is plummeting. We need to understand how ventilation and perfusion must dance together.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's oxygen levels are dropping despite normal breathing. V/Q mismatch is stealing his efficiency."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.96.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "Ms. Frizzle writes two letters on the board: V and Q. 'Two variables that must be balanced. First, let's decode what each letter represents.'",
+      "q": "In V/Q matching, the 'V' stands for:",
+      "options": [
+        "Volume of blood",
+        "Ventilation (air flow to alveoli)",
+        "Velocity of breathing",
+        "Vessels in the lungs"
+      ],
+      "answer": 1,
+      "explain": "'V' = VENTILATION = air flow to alveoli (liters of air per minute). It represents the AIR side of gas exchange. Think: vent = opening for air, ventilator = breathing machine.",
+      "wrongExplains": {
+        "0": "Blood volume is part of 'Q' (perfusion), not 'V'. V is about AIR delivery.",
+        "2": "Velocity is related but V specifically means ventilation rate (air volume per time), not just speed.",
+        "3": "Vessels relate to 'Q' (perfusion/blood flow). V is the AIR component."
+      }
+    },
+    {
+      "id": "900.5.96.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "Blood streams past the alveolar wall. 'And Q,' Ms. Frizzle continues, 'comes from an unusual source - the Latin for blood flow.'",
+      "q": "In V/Q matching, the 'Q' stands for:",
+      "options": [
+        "Quality of breathing",
+        "Perfusion (blood flow to alveoli)",
+        "Quiet breathing",
+        "Quantity of alveoli"
+      ],
+      "answer": 1,
+      "explain": "'Q' = PERFUSION = blood flow to alveolar capillaries (liters of blood per minute). From Latin 'perfusio' = pour through. It represents the BLOOD side of gas exchange. Q is used because 'P' was taken (pressure).",
+      "wrongExplains": {
+        "0": "Quality is subjective. Q specifically means quantitative blood flow (perfusion).",
+        "2": "Q has nothing to do with quiet. It's a symbol for perfusion/blood flow.",
+        "3": "Quantity of alveoli is anatomical. Q is about dynamic BLOOD FLOW to those alveoli."
+      }
+    },
+    {
+      "id": "900.5.96.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "Ms. Frizzle draws a ratio: V/Q. 'This isn't addition or subtraction. It's a RATIO - a balance. When this ratio is right, gas exchange is perfect. When it's off, oxygen can't reach the blood efficiently.'",
+      "q": "The V/Q ratio compares:",
+      "options": [
+        "Oxygen to carbon dioxide levels",
+        "Air flow to blood flow at alveoli",
+        "Inhalation to exhalation times",
+        "Right lung to left lung function"
+      ],
+      "answer": 1,
+      "explain": "V/Q ratio = VENTILATION (air flow) / PERFUSION (blood flow). Ideally ~0.8-1.0. It's asking: 'Is there enough air for the blood, and enough blood for the air?' Perfect matching means optimal gas exchange.",
+      "wrongExplains": {
+        "0": "That's the A-a gradient or blood gas analysis. V/Q is about the FLOW of air vs. blood, not the gas concentrations.",
+        "2": "Inhalation/exhalation is I:E ratio, used in ventilator settings. V/Q is about air-blood balance.",
+        "3": "That's comparing two organs. V/Q compares two flows (air and blood) at the SAME location."
+      }
+    },
+    {
+      "id": "900.5.96.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "You approach an alveolus with perfect V/Q matching. Air flows in with each breath, blood flows past at the perfect rate. 'This is the ideal,' Ms. Frizzle whispers. 'Watch how efficient gas exchange becomes.'",
+      "q": "When V/Q ratio is optimal (~1.0), this means:",
+      "options": [
+        "No air reaches alveoli",
+        "Ventilation and perfusion are balanced for efficient gas exchange",
+        "Blood flow is ten times air flow",
+        "Gas exchange is impossible"
+      ],
+      "answer": 1,
+      "explain": "Optimal V/Q (~0.8-1.0) = balanced air and blood flow. Every bit of air that arrives has blood to exchange with, and every bit of blood has air to pull from. Maximum efficiency. It's like a perfect dance partnership.",
+      "wrongExplains": {
+        "0": "V/Q of 1.0 means BALANCED, not zero. If no air reached alveoli, V=0 and V/Q=0 (shunt).",
+        "2": "That would be V/Q = 0.1 (perfusion 10x ventilation). Optimal is ~1.0 (roughly equal).",
+        "3": "Optimal V/Q creates the BEST gas exchange. Mismatch impairs it, match optimizes it."
+      }
+    },
+    {
+      "id": "900.5.96.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "You encounter a collapsed alveolus - no air entering. But blood still flows past it in the capillary. 'V/Q = zero,' Ms. Frizzle announces grimly. 'All perfusion, no ventilation. A shunt.'",
+      "q": "When an alveolus is not ventilated but still perfused (V/Q = 0), this is called:",
+      "options": [
+        "Dead space",
+        "Shunt",
+        "Optimal matching",
+        "Diffusion block"
+      ],
+      "answer": 1,
+      "explain": "V/Q = 0 = SHUNT. Blood flows past but can't pick up oxygen (no air). The blood is 'shunted' past without being oxygenated. Causes: atelectasis, pneumonia filling alveoli, pulmonary edema. Shunt LOWERS blood oxygen.",
+      "wrongExplains": {
+        "0": "Dead space is the opposite (V/Q = infinity) - ventilation without perfusion. This is perfusion without ventilation.",
+        "2": "Optimal is V/Q ~ 1.0. V/Q = 0 is the worst possible mismatch.",
+        "3": "Diffusion block is thickened alveolar-capillary membrane. Shunt is complete absence of ventilation."
+      }
+    },
+    {
+      "id": "900.5.96.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "Next, you find a well-ventilated alveolus, air flowing perfectly. But the adjacent capillary is blocked - no blood flow. 'V/Q = infinity,' Ms. Frizzle sighs. 'All ventilation, no perfusion. Dead space.'",
+      "q": "When an alveolus is ventilated but not perfused (V/Q = infinity), this is called:",
+      "options": [
+        "Shunt",
+        "Dead space",
+        "Optimal exchange",
+        "Hypoxia"
+      ],
+      "answer": 1,
+      "explain": "V/Q = ∞ (infinity) = DEAD SPACE. Air goes in and out but no blood to exchange with. The ventilation is 'wasted' - dead. Causes: pulmonary embolism, destroyed capillaries. Dead space doesn't lower O2 (no shunt) but wastes ventilation effort.",
+      "wrongExplains": {
+        "0": "Shunt is V/Q = 0 (perfusion without ventilation). This is the opposite - ventilation without perfusion.",
+        "2": "Optimal is V/Q ~ 1.0. V/Q = infinity means zero perfusion - complete mismatch.",
+        "3": "Hypoxia (low oxygen) results from SHUNT (V/Q=0). Dead space wastes ventilation but doesn't directly cause hypoxia."
+      }
+    },
+    {
+      "id": "900.5.96.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Regional differences!' Ms. Frizzle exclaims, pointing to the top and bottom of Mr. Edgar's lungs. 'Even in healthy lungs, V/Q isn't perfectly uniform. Gravity plays a role.'",
+      "q": "In upright lungs, the V/Q ratio is:",
+      "options": [
+        "Uniform throughout",
+        "Higher at the apex (top), lower at the base (bottom)",
+        "Lower at apex, higher at base",
+        "Zero at all regions"
+      ],
+      "answer": 1,
+      "explain": "APEX (top): V/Q ~3 (more ventilation than perfusion - gravity reduces blood flow). BASE (bottom): V/Q ~0.6 (more perfusion than ventilation - gravity pulls blood down). Middle zones ~1.0. It's normal variation due to gravity.",
+      "wrongExplains": {
+        "0": "Gravity creates regional differences. Blood pools at the base, while ventilation is more uniform.",
+        "2": "Backwards! Apex has HIGHER V/Q (less blood, gravity effect). Base has LOWER V/Q (more blood).",
+        "3": "Zero V/Q would be complete shunt everywhere - that's not normal or compatible with life."
+      }
+    },
+    {
+      "id": "900.5.96.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "The bus observes the body's response to poor V/Q matching. 'The lungs fight back,' Ms. Frizzle notes. 'Hypoxic vasoconstriction redirects blood away from poorly ventilated areas.'",
+      "q": "How do lungs compensate for V/Q mismatch?",
+      "options": [
+        "They stop breathing in mismatched areas",
+        "Hypoxic vasoconstriction diverts blood from poorly ventilated areas",
+        "They increase dead space",
+        "They shut down all gas exchange"
+      ],
+      "answer": 1,
+      "explain": "Low O2 in alveoli → nearby arterioles CONSTRICT → blood diverted to better-ventilated areas. It's automatic V/Q optimization. If an alveolus isn't getting air, don't waste blood flow there - send it where air IS available.",
+      "wrongExplains": {
+        "0": "Can't selectively stop breathing in regions. The compensation is on the BLOOD flow side (vasoconstriction).",
+        "2": "Increasing dead space would worsen the problem. The goal is to REDUCE mismatch, not increase it.",
+        "3": "Shutting down exchange would be fatal. The compensation IMPROVES matching by redistributing blood flow."
+      }
+    },
+    {
+      "id": "900.5.96.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "COPD, pulmonary embolism, ARDS - all flash across the screen with their V/Q patterns. 'Every lung disease has a V/Q signature,' Ms. Frizzle teaches. 'Understanding the pattern guides treatment.'",
+      "q": "Which condition primarily causes V/Q mismatch from increased dead space?",
+      "options": [
+        "Pneumonia (alveoli filled with fluid)",
+        "Pulmonary embolism (blocked blood flow)",
+        "Atelectasis (collapsed alveoli)",
+        "Pulmonary edema"
+      ],
+      "answer": 1,
+      "explain": "PULMONARY EMBOLISM blocks BLOOD FLOW (perfusion) while ventilation continues → HIGH V/Q (dead space). The embolus creates regions where air goes in/out but no blood flows. PE = dead space pattern.",
+      "wrongExplains": {
+        "0": "Pneumonia FILLS alveoli with fluid → LOW V/Q (shunt). No ventilation but blood still flows.",
+        "2": "Atelectasis is collapsed alveoli → no ventilation → LOW V/Q (shunt), not dead space.",
+        "3": "Pulmonary edema floods alveoli → impairs ventilation → LOW V/Q (shunt-like), not dead space."
+      }
+    },
+    {
+      "id": "900.5.96.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "The V/Q scan on the screen shows perfectly matched green zones throughout Mr. Edgar's lungs. 'Treatment worked,' Ms. Frizzle smiles. 'Now tell me what you've learned.'",
+      "q": "V/Q matching refers to the balance between:",
+      "options": [
+        "Oxygen and carbon dioxide in blood",
+        "Ventilation (air flow) and perfusion (blood flow)",
+        "Inhalation and exhalation",
+        "Right and left lungs"
+      ],
+      "answer": 1,
+      "explain": "V/Q matching = balancing VENTILATION (V, air flow to alveoli) with PERFUSION (Q, blood flow to capillaries). Optimal ratio ~0.8-1.0 ensures efficient gas exchange. Mismatch (shunt or dead space) impairs oxygenation or wastes ventilation.",
+      "wrongExplains": {
+        "0": "That's blood gas analysis (PaO2, PaCO2). V/Q is about matching AIR FLOW to BLOOD FLOW.",
+        "2": "That's respiratory cycle mechanics (I:E ratio). V/Q is about air-blood balance at the alveolar level.",
+        "3": "That's comparing two organs. V/Q compares two flows (air and blood) at each alveolar unit."
+      }
+    }
+  ]
+}

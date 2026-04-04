@@ -1,0 +1,91 @@
+{
+  "parentId": "800.4.01",
+  "parentQuestion": "What is the transparent anterior portion of the fibrous tunic that refracts light entering the eye?",
+  "scaffolds": [
+    {
+      "q": "What are the three tunics (layers) of the eye from outside to inside?",
+      "options": [
+        "Cornea, lens, retina",
+        "Fibrous tunic, vascular tunic (uvea), neural tunic (retina)",
+        "Aqueous humor, vitreous humor, pupil",
+        "Sclera, choroid, optic nerve"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The eye has THREE TUNICS: FIBROUS (outer: sclera + cornea), VASCULAR/UVEA (middle: choroid + ciliary body + iris), and NEURAL (inner: retina).",
+      "wrongExplains": {
+        "0": "Cornea, lens, and retina are structures but not the three tunic layers.",
+        "2": "These are fluids and an opening — not tissue layers.",
+        "3": "Sclera and choroid are parts of two tunics; the optic nerve exits the eye, it's not a tunic."
+      }
+    },
+    {
+      "q": "What does 'refract' mean regarding light?",
+      "options": [
+        "To absorb light completely",
+        "To bend light as it passes from one medium to another",
+        "To reflect light back",
+        "To block light entirely"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "REFRACTION is the BENDING of light when it passes between materials with different optical densities (like air to cornea). This bending focuses light on the retina.",
+      "wrongExplains": {
+        "0": "Absorption removes light; refraction bends it without removing it.",
+        "2": "Reflection bounces light back; refraction bends it through the material.",
+        "3": "Blocking is what opaque materials do; the cornea is transparent and bends light through."
+      }
+    },
+    {
+      "q": "The fibrous tunic has two parts. The opaque white portion is the sclera. What is the transparent anterior portion?",
+      "options": [
+        "Iris",
+        "Pupil",
+        "Cornea",
+        "Lens"
+      ],
+      "answer": 2,
+      "difficulty": "foundation",
+      "explain": "The CORNEA is the transparent anterior part of the fibrous tunic. The sclera (white of the eye) is the opaque posterior part. Together they form the eye's outer wall.",
+      "wrongExplains": {
+        "0": "The iris is part of the VASCULAR tunic (uvea), not the fibrous tunic.",
+        "1": "The pupil is an opening (hole), not a tissue structure.",
+        "3": "The lens is internal, behind the iris — not part of the outer fibrous tunic."
+      }
+    },
+    {
+      "q": "Why is the cornea transparent while the sclera is opaque?",
+      "options": [
+        "The cornea has more blood vessels",
+        "The sclera has no collagen",
+        "The cornea has precisely arranged collagen fibers and is avascular",
+        "The cornea is made of different tissue than the sclera"
+      ],
+      "answer": 2,
+      "difficulty": "intermediate",
+      "explain": "The cornea is transparent because its collagen fibers are PRECISELY ARRANGED and it's AVASCULAR (no blood vessels). The sclera's irregularly arranged fibers scatter light, making it opaque.",
+      "wrongExplains": {
+        "0": "The opposite is true — the cornea has NO blood vessels (avascular), which helps it stay clear.",
+        "1": "Both have collagen; it's the ARRANGEMENT that differs.",
+        "3": "Both are made of collagen-rich connective tissue. The structural arrangement differs, not the tissue type."
+      }
+    },
+    {
+      "q": "Which provides more refractive power — the cornea or the lens?",
+      "options": [
+        "The lens provides more",
+        "They provide equal amounts",
+        "The cornea provides more (about 2/3 of total)",
+        "Neither refracts light"
+      ],
+      "answer": 2,
+      "difficulty": "intermediate",
+      "explain": "The CORNEA provides about 2/3 (~43 diopters) of the eye's refractive power! The lens adds variable focus (~15-20 diopters). Light bends most at the air-cornea interface.",
+      "wrongExplains": {
+        "0": "The lens is adjustable but provides less total refractive power than the fixed cornea.",
+        "1": "The cornea provides roughly double the lens's refractive power.",
+        "3": "Both definitely refract light — that's how we focus images on the retina."
+      }
+    }
+  ]
+}

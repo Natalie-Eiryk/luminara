@@ -1,0 +1,159 @@
+{
+  "parentId": "100.2.06",
+  "parentQuestion": "The limbic system acts as our emotional, or affective (feelings), brain.",
+  "scaffolds": [
+    {
+      "q": "What is the limbic system?",
+      "options": [
+        "The part of the brain that controls movement",
+        "A group of structures that process emotions and memory",
+        "The outer layer of the cerebrum",
+        "The brainstem"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The LIMBIC SYSTEM is a group of interconnected structures that process EMOTIONS and MEMORY — including the amygdala, hippocampus, cingulate gyrus, and hypothalamus.",
+      "wrongExplains": {
+        "0": "Movement is controlled by motor cortex, basal nuclei, and cerebellum.",
+        "2": "The outer layer is the cerebral cortex. The limbic system is deeper.",
+        "3": "The brainstem controls vital functions, not emotions."
+      }
+    },
+    {
+      "q": "What does 'affective' mean in neuroscience?",
+      "options": [
+        "Related to cognition",
+        "Related to emotions and feelings",
+        "Related to movement",
+        "Related to sensation"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "'AFFECTIVE' means related to EMOTIONS and FEELINGS. 'Affect' in psychology/medicine refers to emotional expression. The limbic system is the affective brain.",
+      "wrongExplains": {
+        "0": "Cognition relates to thinking, not affect.",
+        "2": "Movement is motor function, not affective.",
+        "3": "Sensation is sensory function, distinct from emotion."
+      }
+    },
+    {
+      "q": "What does the amygdala process?",
+      "options": [
+        "Language",
+        "Fear and threat detection",
+        "Motor coordination",
+        "Visual processing"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The AMYGDALA is the brain's ALARM SYSTEM. It processes FEAR and THREAT DETECTION — triggering responses before you even consciously identify the danger.",
+      "wrongExplains": {
+        "0": "Language is processed by Broca's and Wernicke's areas.",
+        "2": "Motor coordination is the cerebellum's role.",
+        "3": "Visual processing occurs in the occipital lobe."
+      }
+    },
+    {
+      "q": "What does the hypothalamus do in the limbic system?",
+      "options": [
+        "Stores long-term memories",
+        "Links emotions to physical body responses",
+        "Processes visual information",
+        "Controls voluntary movement"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The HYPOTHALAMUS links EMOTIONS to PHYSICAL RESPONSES. Fear (amygdala) triggers sympathetic activation (hypothalamus) — racing heart, sweaty palms, dilated pupils.",
+      "wrongExplains": {
+        "0": "Memory storage involves the hippocampus and cortex, not hypothalamus.",
+        "2": "Visual processing is in the occipital lobe.",
+        "3": "Voluntary movement is controlled by motor cortex."
+      }
+    },
+    {
+      "q": "Why are emotional events remembered more vividly?",
+      "options": [
+        "They happen more often",
+        "The amygdala enhances hippocampal memory formation",
+        "They involve more sensory input",
+        "The cerebellum stores them"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The AMYGDALA enhances HIPPOCAMPAL memory formation for emotional events. Strong emotions signal importance, so the memory system prioritizes these experiences.",
+      "wrongExplains": {
+        "0": "Frequency doesn't explain why single emotional events are well-remembered.",
+        "2": "Sensory input alone doesn't explain the emotional memory enhancement.",
+        "3": "The cerebellum handles motor memory, not emotional memory."
+      }
+    },
+    {
+      "q": "Is the limbic system evolutionarily ancient?",
+      "options": [
+        "No, it's a recent human development",
+        "Yes, these structures evolved before higher cortex",
+        "Only the amygdala is ancient",
+        "It evolved after language"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "YES, the limbic system is EVOLUTIONARILY ANCIENT. Fear, attachment, motivation — these basic emotional circuits evolved early and are shared across all mammals.",
+      "wrongExplains": {
+        "0": "The limbic system predates higher cortical development.",
+        "2": "All limbic structures are evolutionarily old, not just the amygdala.",
+        "3": "The limbic system evolved millions of years before language."
+      }
+    },
+    {
+      "q": "Which structure is NOT part of the limbic system?",
+      "options": [
+        "Amygdala",
+        "Primary visual cortex",
+        "Hippocampus",
+        "Cingulate gyrus"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The PRIMARY VISUAL CORTEX is in the occipital lobe and processes vision. It's NOT part of the limbic system. The limbic system includes amygdala, hippocampus, and cingulate gyrus.",
+      "wrongExplains": {
+        "0": "The amygdala is a core limbic structure (fear processing).",
+        "2": "The hippocampus is a core limbic structure (memory formation).",
+        "3": "The cingulate gyrus is part of the limbic system (emotional awareness)."
+      }
+    },
+    {
+      "q": "What happens if the amygdala is damaged?",
+      "options": [
+        "Paralysis",
+        "Inability to recognize fear and threats",
+        "Blindness",
+        "Loss of hearing"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "AMYGDALA DAMAGE causes inability to recognize FEAR and THREATS. Patients can't detect fearful facial expressions or sense danger — emotionally 'fearless.'",
+      "wrongExplains": {
+        "0": "Paralysis results from motor pathway damage, not amygdala.",
+        "2": "Blindness results from visual pathway damage, not amygdala.",
+        "3": "Hearing loss results from auditory pathway damage, not amygdala."
+      }
+    },
+    {
+      "q": "Is the statement TRUE: 'The limbic system acts as our emotional brain'?",
+      "options": [
+        "False — emotions are processed everywhere",
+        "True — the limbic system is the brain's emotional center",
+        "False — the cerebellum controls emotions",
+        "Partially true — only fear is processed there"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "TRUE! The LIMBIC SYSTEM is the EMOTIONAL (AFFECTIVE) BRAIN. Amygdala (fear), hypothalamus (motivation/autonomic), hippocampus (emotional memory), cingulate (emotional awareness) — the emotional circuit.",
+      "wrongExplains": {
+        "0": "While other areas contribute, the limbic system is the emotional center.",
+        "2": "The cerebellum coordinates movement, not emotions.",
+        "3": "The limbic system processes all emotions, not just fear."
+      }
+    }
+  ]
+}

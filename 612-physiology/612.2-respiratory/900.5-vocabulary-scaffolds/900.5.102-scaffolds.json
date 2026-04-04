@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.102",
+  "parentQuestion": "Pharyngitis is inflammation of the:",
+  "narrative": {
+    "setting": "The Magic School Bus descends from Mr. Edgar's nasal cavity into a larger chamber - the pharynx, the throat. The walls are red, swollen, covered in white patches. Mr. Edgar winces with every swallow. Ms. Frizzle's voice is sympathetic but urgent: 'Pharyngitis - throat inflammation. It could be viral, bacterial, or even fungal. We need to understand this anatomy and what 'pharyngo-' means to diagnose the cause.'",
+    "character": "Mr. Edgar",
+    "tension": "Is this strep throat requiring antibiotics, or viral pharyngitis that will resolve on its own? Wrong treatment could lead to rheumatic fever or antibiotic resistance."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.102.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "Ms. Frizzle projects the word on the dashboard: 'Pharynx'. 'From the Greek pharynx - throat. The passageway for both air and food. A crossroads of the body.'",
+      "q": "The term 'pharynx' refers to the:",
+      "options": [
+        "Voice box",
+        "Throat",
+        "Windpipe",
+        "Nose"
+      ],
+      "answer": 1,
+      "explain": "'PHARYNX' = THROAT. The muscular tube connecting the nasal cavity and mouth to the larynx (voice box) and esophagus. It's the crossroads where air and food paths intersect before separating.",
+      "wrongExplains": {
+        "0": "Voice box is the LARYNX. The pharynx is the throat, located ABOVE the larynx.",
+        "2": "Windpipe is the TRACHEA. The pharynx is the throat, located ABOVE the trachea.",
+        "3": "Nose is the nasal cavity (rhino-). The pharynx is the throat, located BELOW the nose."
+      }
+    },
+    {
+      "id": "900.5.102.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "The bus floats through the swollen tissue. 'Three parts to the pharynx,' Ms. Frizzle lectures. 'Nasopharynx behind the nose, oropharynx behind the mouth, laryngopharynx near the larynx. All are inflamed.'",
+      "q": "The pharynx is divided into how many main regions?",
+      "options": [
+        "One",
+        "Two",
+        "Three (naso-, oro-, laryngopharynx)",
+        "Five"
+      ],
+      "answer": 2,
+      "explain": "Three regions: (1) NASOPHARYNX (behind nose, above soft palate), (2) OROPHARYNX (behind mouth/oral cavity), (3) LARYNGOPHARYNX (behind larynx, lowest part). Each has different functions and pathologies.",
+      "wrongExplains": {
+        "0": "The pharynx has distinct regions. Three divisions based on anatomy and what structures they're behind.",
+        "1": "More than two. The standard division is three: naso-, oro-, and laryngopharynx.",
+        "3": "Not five. The classic anatomical division is three regions."
+      }
+    },
+    {
+      "id": "900.5.102.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "The walls pulse with inflammation. 'The suffix -itis,' Ms. Frizzle reminds. 'Always means inflammation. Pharyngitis is inflammation of the pharynx. Simple grammar, important diagnosis.'",
+      "q": "The suffix '-itis' means:",
+      "options": [
+        "Surgical removal",
+        "Inflammation",
+        "Study of",
+        "Tumor or growth"
+      ],
+      "answer": 1,
+      "explain": "'-ITIS' = INFLAMMATION. Universal medical suffix. Pharyngitis = throat inflammation. Appendicitis = appendix inflammation. Arthritis = joint inflammation. When you see '-itis', think swelling, redness, pain, heat.",
+      "wrongExplains": {
+        "0": "Surgical removal is '-ectomy'. '-itis' means inflammation, a disease state.",
+        "2": "Study of is '-ology'. '-itis' is a pathological condition (inflammation).",
+        "3": "Tumor is '-oma'. '-itis' is inflammation, usually from infection or irritation."
+      }
+    },
+    {
+      "id": "900.5.102.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "White blood cells swarm the pharyngeal tissue, attacking invading bacteria. 'Streptococcus pyogenes,' Ms. Frizzle identifies. 'Group A strep. This is bacterial pharyngitis - strep throat.'",
+      "q": "Pharyngitis can be caused by:",
+      "options": [
+        "Only viruses",
+        "Viruses, bacteria, fungi, or irritants",
+        "Only bacteria",
+        "Only allergies"
+      ],
+      "answer": 1,
+      "explain": "Pharyngitis has MANY causes: VIRAL (most common - adenovirus, EBV, rhinovirus), BACTERIAL (Strep pyogenes, less common), FUNGAL (Candida in immunocompromised), IRRITANTS (smoke, GERD). Cause affects treatment.",
+      "wrongExplains": {
+        "0": "Viruses are MOST common, but bacteria (strep!) and other causes exist. Can't assume viral.",
+        "2": "Bacteria (especially strep) cause some cases, but viruses are actually more common (70-80%).",
+        "3": "Allergies cause post-nasal drip and irritation but aren't a primary cause of acute pharyngitis."
+      }
+    },
+    {
+      "id": "900.5.102.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "Pus dots the tonsils like white islands. Lymph nodes in the neck are swollen. Fever spikes on the thermometer. 'The Centor criteria,' Ms. Frizzle calculates. 'Trying to distinguish strep from viral.'",
+      "q": "Why is it important to distinguish bacterial from viral pharyngitis?",
+      "options": [
+        "They look completely different",
+        "Bacterial pharyngitis needs antibiotics; viral does not",
+        "Viral pharyngitis needs antibiotics; bacterial does not",
+        "There is no difference in treatment"
+      ],
+      "answer": 1,
+      "explain": "BACTERIAL (strep) pharyngitis needs ANTIBIOTICS (prevents rheumatic fever, complications). VIRAL pharyngitis is self-limited - antibiotics WON'T HELP and risk resistance. Distinguishing them guides appropriate treatment.",
+      "wrongExplains": {
+        "0": "They can look similar! That's why rapid strep test and throat culture exist. Clinical exam isn't perfectly reliable.",
+        "2": "Backwards! VIRAL infections don't respond to antibiotics. BACTERIAL infections (like strep) do.",
+        "3": "Very different treatments! Overusing antibiotics for viral pharyngitis causes resistance."
+      }
+    },
+    {
+      "id": "900.5.102.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus watches a rapid strep test being performed. A swab sample is mixed with reagents. Positive - two lines appear. 'Streptococcus pyogenes confirmed,' Ms. Frizzle announces. 'Antibiotics it is.'",
+      "q": "The rapid strep test detects:",
+      "options": [
+        "All throat viruses",
+        "Group A Streptococcus antigens",
+        "White blood cells",
+        "Throat cancer"
+      ],
+      "answer": 1,
+      "explain": "Rapid strep test detects GROUP A STREPTOCOCCUS (Strep pyogenes) antigens. Results in minutes. High specificity but moderate sensitivity (can miss some cases - throat culture is gold standard if negative but high suspicion).",
+      "wrongExplains": {
+        "0": "The test is specific for STREP bacteria, not viruses. It won't detect viral pharyngitis.",
+        "2": "The test detects bacterial ANTIGENS (proteins), not WBCs. It's a specific immunoassay.",
+        "3": "Cancer requires biopsy/imaging. Rapid strep is for acute bacterial infection only."
+      }
+    },
+    {
+      "id": "900.5.102.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Pharyngitis, laryngitis, tonsillitis,' Ms. Frizzle lists. 'Three -itises, three different locations. Mix them up and you'll mislocate the infection.'",
+      "q": "How does pharyngitis differ from laryngitis?",
+      "options": [
+        "They are the same condition",
+        "Pharyngitis is throat inflammation; laryngitis is voice box inflammation",
+        "Pharyngitis is voice box; laryngitis is throat",
+        "Both only affect the nose"
+      ],
+      "answer": 1,
+      "explain": "PHARYNGITIS = PHARYNX (throat) inflammation - sore throat, pain swallowing. LARYNGITIS = LARYNX (voice box) inflammation - hoarseness, voice loss. Different locations, different primary symptoms.",
+      "wrongExplains": {
+        "0": "Different locations! Pharynx = throat (above), larynx = voice box (below). Different anatomy.",
+        "2": "Backwards! Pharyngitis = pharynx (throat), laryngitis = larynx (voice box).",
+        "3": "Neither affects the nose primarily. Pharyngitis = throat, laryngitis = voice box."
+      }
+    },
+    {
+      "id": "900.5.102.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Swollen tonsils obstruct the airway. 'Tonsillitis,' Ms. Frizzle diagnoses. 'Often accompanies pharyngitis - the tonsils are part of the oropharynx. But tonsillitis specifically refers to tonsillar inflammation.'",
+      "q": "Tonsillitis is inflammation of:",
+      "options": [
+        "The entire throat",
+        "The tonsils specifically",
+        "The voice box",
+        "The sinuses"
+      ],
+      "answer": 1,
+      "explain": "TONSILLITIS = inflammation of the TONSILS (palatine tonsils in the oropharynx). Can occur alone or with pharyngitis. Symptoms: sore throat, swollen tonsils with exudate, difficulty swallowing, bad breath.",
+      "wrongExplains": {
+        "0": "Entire throat inflammation is pharyngitis. Tonsillitis specifically involves the tonsils (though they're part of the throat).",
+        "2": "Voice box is laryngitis. Tonsillitis is in the oropharynx, not the larynx.",
+        "3": "Sinuses are sinusitis. Tonsils are in the throat (oropharynx), not the sinuses."
+      }
+    },
+    {
+      "id": "900.5.102.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "A complication flashes on the monitor: rheumatic fever. 'Untreated strep pharyngitis,' Ms. Frizzle warns, 'can trigger this autoimmune disaster. Heart valves, joints, brain - all at risk. That's WHY we treat strep.'",
+      "q": "A potential complication of untreated streptococcal pharyngitis is:",
+      "options": [
+        "Diabetes",
+        "Rheumatic fever",
+        "Alzheimer's disease",
+        "Lung cancer"
+      ],
+      "answer": 1,
+      "explain": "Untreated GROUP A STREP can cause RHEUMATIC FEVER (autoimmune response → heart valve damage, arthritis, chorea). Also: post-strep glomerulonephritis (kidney), peritonsillar abscess. That's why we treat strep with antibiotics!",
+      "wrongExplains": {
+        "0": "Diabetes is metabolic, not from strep infection. Rheumatic fever is the classic strep complication.",
+        "2": "Alzheimer's is neurodegenerative, not infectious. Strep complications are rheumatic fever and glomerulonephritis.",
+        "3": "Lung cancer is from smoking/carcinogens. Strep throat doesn't cause cancer."
+      }
+    },
+    {
+      "id": "900.5.102.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Antibiotics are working. The inflammation is receding. Mr. Edgar's throat pain is easing. 'Pharyngitis,' Ms. Frizzle concludes, 'is common but not trivial. Now show me you understand the anatomy.'",
+      "q": "Pharyngitis is inflammation of the:",
+      "options": [
+        "Voice box (larynx)",
+        "Throat (pharynx)",
+        "Windpipe (trachea)",
+        "Nose (nasal cavity)"
+      ],
+      "answer": 1,
+      "explain": "PHARYNGITIS = inflammation of the PHARYNX (throat). Causes: viral (most common), bacterial (Strep pyogenes), irritants. Symptoms: sore throat, pain with swallowing, fever. Treatment depends on cause - bacterial needs antibiotics.",
+      "wrongExplains": {
+        "0": "Voice box is LARYNX → laryngitis (hoarseness). Pharyngitis is the throat, above the larynx.",
+        "2": "Windpipe is TRACHEA → tracheitis. Pharyngitis is the throat, above the trachea.",
+        "3": "Nose is nasal cavity → rhinitis. Pharyngitis is the throat, below the nose."
+      }
+    }
+  ]
+}

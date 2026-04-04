@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.12",
+  "parentQuestion": "The protein in red blood cells that carries oxygen is:",
+  "narrative": {
+    "setting": "The Magic School Bus shrinks impossibly small - smaller than a cell, smaller than an organelle - and slips inside a red blood cell. The interior glows crimson with millions of protein molecules, each shaped like a four-leafed clover. 'We're inside the oxygen delivery system,' Ms. Frizzle whispers. 'Each of these molecules is a taxi cab for oxygen.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's tissues are crying out for oxygen. Billions of these protein taxis must load oxygen at the lungs, travel through miles of blood vessels, and unload at hungry cells. If they fail, cells die within minutes."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.12.s01",
+      "arc": 1,
+      "arcTitle": "The Molecule's Name",
+      "narrative": "Ms. Frizzle points to the glowing iron atom at the heart of each protein unit. 'The name tells you exactly what it is,' she says. 'Heme - that's the iron-containing part.'",
+      "q": "The word 'heme' refers to:",
+      "options": [
+        "Blood or iron-containing",
+        "Protein structure",
+        "Red color",
+        "Oxygen molecule"
+      ],
+      "answer": 0,
+      "explain": "'Heme' refers to the IRON-CONTAINING group - a ring structure with an iron atom at its center. The iron is what actually grabs and holds oxygen molecules.",
+      "wrongExplains": {
+        "1": "The protein part is 'GLOBIN'. Heme specifically refers to the iron-containing porphyrin ring.",
+        "2": "The red color COMES FROM the heme/iron, but 'heme' means the iron-containing group itself.",
+        "3": "Oxygen BINDS TO heme, but 'heme' refers to the iron group that does the binding."
+      }
+    },
+    {
+      "id": "900.5.12.s02",
+      "arc": 1,
+      "arcTitle": "The Molecule's Name",
+      "narrative": "'And globin?' Ms. Frizzle traces the protein chains wrapping around the heme groups. 'Globe-shaped proteins that cradle the iron.'",
+      "q": "The word 'globin' refers to:",
+      "options": [
+        "The iron atom",
+        "The protein portion",
+        "The oxygen molecule",
+        "The red blood cell"
+      ],
+      "answer": 1,
+      "explain": "'Globin' is the PROTEIN portion - 'globular' proteins (round-shaped) that hold the heme groups in the right position. Hemoglobin = heme + globin.",
+      "wrongExplains": {
+        "0": "Iron is in the HEME group. Globin is the protein scaffold.",
+        "2": "Oxygen binds to the heme-globin complex. Globin is the protein carrier.",
+        "3": "The red blood cell CONTAINS hemoglobin. Globin is part of the hemoglobin molecule."
+      }
+    },
+    {
+      "id": "900.5.12.s03",
+      "arc": 1,
+      "arcTitle": "The Molecule's Name",
+      "narrative": "'So hemoglobin is...' Arnold counts on his fingers. 'Iron-containing protein?' Ms. Frizzle nods. 'The name IS the definition. Hemo-globin. Iron-protein.'",
+      "q": "Put together, 'hemoglobin' literally means:",
+      "options": [
+        "Red cell protein",
+        "Iron-containing globular protein",
+        "Oxygen carrier",
+        "Blood cell"
+      ],
+      "answer": 1,
+      "explain": "HEMO-GLOBIN = heme (iron-containing) + globin (globular protein). The name describes exactly what it is: an iron-containing globular protein.",
+      "wrongExplains": {
+        "0": "It's IN red cells, but the name refers to its chemical structure, not its location.",
+        "2": "It DOES carry oxygen, but the name describes its composition, not its function.",
+        "3": "Hemoglobin is inside blood cells. The word describes the molecule, not the cell."
+      }
+    },
+    {
+      "id": "900.5.12.s04",
+      "arc": 2,
+      "arcTitle": "Structure and Capacity",
+      "narrative": "Ms. Frizzle zooms out slightly. The hemoglobin molecule comes into full view - four distinct subunits locked together like puzzle pieces. 'Count them,' she says. 'This is crucial.'",
+      "q": "How many subunits does adult hemoglobin have?",
+      "options": [
+        "One",
+        "Two",
+        "Four",
+        "Eight"
+      ],
+      "answer": 2,
+      "explain": "Adult hemoglobin (HbA) has FOUR subunits - two alpha chains and two beta chains (α2β2). Each subunit has one heme group with one iron atom.",
+      "wrongExplains": {
+        "0": "ONE subunit describes MYOGLOBIN (muscle oxygen storage). Hemoglobin has four.",
+        "1": "TWO would be a dimer. Hemoglobin is a TETRAMER (four subunits).",
+        "3": "EIGHT is too many. Four subunits, four heme groups, four iron atoms."
+      }
+    },
+    {
+      "id": "900.5.12.s05",
+      "arc": 2,
+      "arcTitle": "Structure and Capacity",
+      "narrative": "'Four subunits,' Ms. Frizzle continues, 'each with one iron atom. And each iron can grab one oxygen molecule. So maximum capacity is...'",
+      "q": "How many oxygen molecules can one hemoglobin molecule carry?",
+      "options": [
+        "One",
+        "Two",
+        "Four",
+        "Eight"
+      ],
+      "answer": 2,
+      "explain": "One hemoglobin carries up to FOUR oxygen molecules - one per heme group. Four subunits × one O₂ each = four O₂ maximum. This is called 'full saturation.'",
+      "wrongExplains": {
+        "0": "ONE O₂ is myoglobin's capacity. Hemoglobin carries four times that.",
+        "1": "TWO would use only half capacity. Each of the four heme groups binds one O₂.",
+        "3": "EIGHT would require eight iron atoms. There are only four heme groups."
+      }
+    },
+    {
+      "id": "900.5.12.s06",
+      "arc": 2,
+      "arcTitle": "Structure and Capacity",
+      "narrative": "The red glow pulses around them. 'That beautiful crimson,' Ms. Frizzle gestures. 'It's not random. It comes from a specific element.' She points to the glowing iron atoms.",
+      "q": "What gives blood its red color?",
+      "options": [
+        "White blood cells",
+        "The iron in hemoglobin",
+        "Plasma proteins",
+        "Platelets"
+      ],
+      "answer": 1,
+      "explain": "IRON in hemoglobin gives blood its red color. Oxygenated hemoglobin (oxyhemoglobin) is BRIGHT red; deoxygenated hemoglobin is darker, bluish-red.",
+      "wrongExplains": {
+        "0": "White blood cells are colorless. The red color comes from hemoglobin in RED cells.",
+        "2": "Plasma is yellowish. Hemoglobin's iron makes blood red.",
+        "3": "Platelets are small and colorless. Iron-containing hemoglobin is responsible for the red."
+      }
+    },
+    {
+      "id": "900.5.12.s07",
+      "arc": 3,
+      "arcTitle": "Hemoglobin's Relatives",
+      "narrative": "'Hemoglobin has a cousin,' Ms. Frizzle says. 'In the muscles. Similar job, simpler structure.' She shows a molecule with only one subunit.",
+      "q": "Myoglobin differs from hemoglobin in that myoglobin:",
+      "options": [
+        "Has four subunits",
+        "Has only one subunit (one heme group)",
+        "Carries carbon dioxide",
+        "Is found in blood plasma"
+      ],
+      "answer": 1,
+      "explain": "MYOGLOBIN has only ONE subunit with one heme - it STORES oxygen in MUSCLE tissue. Think: MYO = muscle. Hemoglobin has four subunits for TRANSPORT in blood.",
+      "wrongExplains": {
+        "0": "HEMOGLOBIN has four subunits. Myoglobin has only one.",
+        "2": "Both primarily handle oxygen. The difference is structure and location.",
+        "3": "Myoglobin is in MUSCLE CELLS. Hemoglobin is in RED BLOOD CELLS."
+      }
+    },
+    {
+      "id": "900.5.12.s08",
+      "arc": 3,
+      "arcTitle": "Hemoglobin's Relatives",
+      "narrative": "'Why does hemoglobin need four subunits while myoglobin only needs one?' Ms. Frizzle asks. 'Think about their jobs - transport vs. storage.'",
+      "q": "Hemoglobin's four-subunit structure allows for:",
+      "options": [
+        "A brighter red color",
+        "Cooperative oxygen binding (loading and unloading)",
+        "Faster production",
+        "Less iron usage"
+      ],
+      "answer": 1,
+      "explain": "COOPERATIVE BINDING: when one subunit binds O₂, it changes shape and helps the others bind more easily. This allows hemoglobin to LOAD quickly at lungs and UNLOAD efficiently at tissues.",
+      "wrongExplains": {
+        "0": "Color comes from iron, not subunit count.",
+        "2": "More subunits actually require more assembly, not faster production.",
+        "3": "Four subunits means four iron atoms - more iron, not less."
+      }
+    },
+    {
+      "id": "900.5.12.s09",
+      "arc": 3,
+      "arcTitle": "Hemoglobin's Relatives",
+      "narrative": "'There are other proteins in blood too,' Ms. Frizzle warns. 'Don't confuse them with hemoglobin.' She lists: albumin (osmotic pressure), fibrinogen (clotting), antibodies (immunity).",
+      "q": "Unlike hemoglobin, plasma proteins like albumin:",
+      "options": [
+        "Carry oxygen",
+        "Float in plasma and serve other functions",
+        "Are found inside red blood cells",
+        "Contain iron"
+      ],
+      "answer": 1,
+      "explain": "Plasma proteins (albumin, fibrinogen, antibodies) float freely in PLASMA - they don't carry oxygen. Albumin maintains osmotic pressure; fibrinogen clots blood; antibodies fight infection.",
+      "wrongExplains": {
+        "0": "Oxygen transport is hemoglobin's job. Plasma proteins have other roles.",
+        "2": "Plasma proteins are OUTSIDE cells, in the plasma. Hemoglobin is INSIDE red blood cells.",
+        "3": "Hemoglobin's heme contains iron. Most plasma proteins don't."
+      }
+    },
+    {
+      "id": "900.5.12.s10",
+      "arc": 3,
+      "arcTitle": "Hemoglobin's Relatives",
+      "narrative": "The bus rises from the red blood cell, leaving billions of hemoglobin molecules behind, each loaded with oxygen, heading to hungry tissues. 'The oxygen taxi,' Ms. Frizzle says. 'What's it called?'",
+      "q": "The protein in red blood cells that carries oxygen is:",
+      "options": [
+        "Myoglobin",
+        "Hemoglobin",
+        "Albumin",
+        "Fibrinogen"
+      ],
+      "answer": 1,
+      "explain": "HEMOGLOBIN - 'heme' (iron-containing) + 'globin' (protein). Four subunits, four heme groups, four O₂ maximum. Found INSIDE red blood cells. The oxygen delivery system.",
+      "wrongExplains": {
+        "0": "Myoglobin stores O₂ in MUSCLE, not blood cells. One subunit, one O₂.",
+        "2": "Albumin maintains plasma osmotic pressure. It doesn't carry oxygen.",
+        "3": "Fibrinogen is for blood CLOTTING, not oxygen transport."
+      }
+    }
+  ]
+}

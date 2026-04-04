@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.30",
+  "parentQuestion": "Hypercapnia refers to:",
+  "narrative": {
+    "setting": "The Magic School Bus is floating in Mr. Edgar's bloodstream, monitoring gas levels. The CO2 sensors are flashing red warnings - carbon dioxide is building up to dangerous levels in his blood. He's becoming confused and drowsy, and the class needs to understand why too much CO2 is just as dangerous as too little oxygen.",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's CO2 levels are rising. Without intervention, he could lose consciousness."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.30.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "Ms. Frizzle projects the word's components on the windshield. 'We just learned hypo- means below. Now meet its opposite: hyper-. These two prefixes are everywhere in medicine, always opposing each other.'",
+      "q": "The prefix 'hyper-' means:",
+      "options": [
+        "Below or deficient",
+        "Above or excessive",
+        "Without or absent",
+        "Difficult or painful"
+      ],
+      "answer": 1,
+      "explain": "'HYPER-' = ABOVE or EXCESSIVE. Over, beyond, too much. Hypertension = high blood pressure. Hyperglycemia = high blood sugar. The opposite of 'hypo-' (below). Think hyper-active - too much activity!",
+      "wrongExplains": {
+        "0": "That's 'hypo-', the opposite! Hyper- means ABOVE, hypo- means BELOW. Mirror images.",
+        "2": "That's 'a-' or 'an-'. Hyper- means TOO MUCH, not absent.",
+        "3": "That's 'dys-'. Hyper- is about QUANTITY (excessive), not quality (difficult)."
+      }
+    },
+    {
+      "id": "900.5.30.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "'Now the tricky part,' Ms. Frizzle says. 'Capnia. Not oxia - we're talking about a different gas now. The waste product your cells produce with every breath.'",
+      "q": "The root 'capn-' or '-capnia' refers to:",
+      "options": [
+        "Oxygen",
+        "Carbon dioxide",
+        "Nitrogen",
+        "Carbon monoxide"
+      ],
+      "answer": 1,
+      "explain": "'-CAPNIA' comes from Greek 'kapnos' (smoke, vapor) and refers to CARBON DIOXIDE (CO2). The waste gas from cellular respiration. Hypercapnia, hypocapnia - always about CO2 levels, never O2.",
+      "wrongExplains": {
+        "0": "Oxygen is '-oxia'. Completely different gas! Capnia = CO2, oxia = O2. Learn both roots.",
+        "2": "Nitrogen is inert in your body. Medical terms focus on O2 and CO2 - the gases you actually use and produce.",
+        "3": "Carbon monoxide is a poison, not the same as carbon dioxide. Capnia specifically means CO2, the waste product of metabolism."
+      }
+    },
+    {
+      "id": "900.5.30.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "The CO2 meter climbs higher. 'Put the word together,' Ms. Frizzle urges. 'Hyper plus capnia. What's happening in Mr. Edgar's blood?'",
+      "q": "Breaking down the word parts, 'hypercapnia' literally means:",
+      "options": [
+        "Low carbon dioxide",
+        "High carbon dioxide",
+        "Absent carbon dioxide",
+        "Normal carbon dioxide"
+      ],
+      "answer": 1,
+      "explain": "HYPER (excessive) + CAPNIA (CO2) = HIGH CARBON DIOXIDE. Too much CO2 in the blood. The opposite of hypocapnia (low CO2). CO2 is building up faster than it's being exhaled.",
+      "wrongExplains": {
+        "0": "That's hypocapnia (hypo- = below). Hyper- means the opposite - excessive, high, too much.",
+        "2": "That would need 'a-' (without). Hyper- means there's TOO MUCH, not absent.",
+        "3": "Normal is 'normo-' or 'eu-'. Hyper- always indicates above normal - excessive."
+      }
+    },
+    {
+      "id": "900.5.30.s04",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "Through the bus window, you see CO2 molecules accumulating in the blood plasma. 'Carbon dioxide isn't just waste,' Ms. Frizzle explains. 'In high concentrations, it's a poison that affects brain function.'",
+      "q": "Where does the CO2 in blood primarily come from?",
+      "options": [
+        "Breathing in polluted air",
+        "Cellular respiration (metabolism)",
+        "Breakdown of hemoglobin",
+        "Lung tissue production"
+      ],
+      "answer": 1,
+      "explain": "CO2 is the WASTE PRODUCT of cellular respiration. Cells burn glucose with oxygen to make ATP, producing CO2 as exhaust. Every cell in your body makes CO2 constantly. Blood carries it to lungs where you breathe it out.",
+      "wrongExplains": {
+        "0": "You breathe OUT CO2, not in! Air has only 0.04% CO2. The high levels in blood come from inside your body, from metabolism.",
+        "2": "Hemoglobin carries O2 and CO2 but doesn't break down to produce CO2. CO2 comes from cells burning fuel.",
+        "3": "Lungs REMOVE CO2, they don't make it! Every cell in your body produces CO2 through metabolism."
+      }
+    },
+    {
+      "id": "900.5.30.s05",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "'Hypercapnia and hypoxia often occur together,' Ms. Frizzle notes, 'but they're different problems. Let's make sure you understand the distinction.'",
+      "q": "How do hypercapnia and hypoxia differ?",
+      "options": [
+        "They're the same condition",
+        "Hypercapnia = high CO2; hypoxia = low O2",
+        "Hypercapnia = low O2; hypoxia = high CO2",
+        "Both refer to low oxygen"
+      ],
+      "answer": 1,
+      "explain": "HYPERCAPNIA = HIGH CO2 (hyper- capnia). HYPOXIA = LOW O2 (hypo- oxia). Different gases! Both are bad: one is too much waste gas, the other is too little oxygen. Often occur together in respiratory failure.",
+      "wrongExplains": {
+        "0": "Different conditions! Different gases (O2 vs CO2), different problems (deficiency vs excess).",
+        "2": "Backwards! Hyper-CAPNIA (high CO2), hypo-OXIA (low O2). The prefixes and roots tell you which gas and which direction.",
+        "3": "Hypercapnia is about CO2 (carbon dioxide), not O2 (oxygen). Two separate gas measurements, both critical."
+      }
+    },
+    {
+      "id": "900.5.30.s06",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "Mr. Edgar's breathing is shallow and slow - only 6 breaths per minute. 'There's the cause,' Ms. Frizzle points. 'He's not breathing enough to blow off the CO2 his cells are producing. It's accumulating.'",
+      "q": "What's the most common cause of hypercapnia?",
+      "options": [
+        "Breathing too fast",
+        "Inadequate ventilation (not breathing enough)",
+        "Excessive oxygen intake",
+        "Drinking carbonated beverages"
+      ],
+      "answer": 1,
+      "explain": "INADEQUATE VENTILATION = not breathing enough to remove CO2. This is HYPOVENTILATION (hypo- = below normal). Causes: lung disease, drug overdose, muscle weakness. You produce CO2 constantly - if you don't breathe it out, it builds up.",
+      "wrongExplains": {
+        "0": "Breathing too fast (hyperventilation) LOWERS CO2 (causes hypocapnia). You blow off too much CO2, opposite problem.",
+        "2": "Oxygen doesn't affect CO2 removal directly. The issue is ventilation - physically breathing out the CO2 your body makes.",
+        "3": "Carbonated drinks add trivial CO2 to stomach, not blood. Hypercapnia comes from your cells' metabolism, not diet."
+      }
+    },
+    {
+      "id": "900.5.30.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "'Watch what high CO2 does to the blood's pH,' Ms. Frizzle says, pointing to a chemistry readout. 'CO2 dissolves in blood to form carbonic acid. Too much CO2 makes blood acidic.'",
+      "q": "Hypercapnia leads to:",
+      "options": [
+        "Respiratory acidosis (blood becomes too acidic)",
+        "Respiratory alkalosis (blood becomes too basic)",
+        "No change in blood pH",
+        "Increased blood oxygen"
+      ],
+      "answer": 0,
+      "explain": "RESPIRATORY ACIDOSIS. CO2 + H2O → H2CO3 (carbonic acid). More CO2 = more acid = lower pH. This is dangerous - enzymes don't work right in acidic conditions. Acidosis can stop the heart!",
+      "wrongExplains": {
+        "1": "Alkalosis (too basic) comes from LOW CO2 (hypocapnia/hyperventilation). High CO2 causes the opposite - acidosis.",
+        "2": "CO2 dramatically affects pH! It's the body's main pH control system. High CO2 = acidic blood.",
+        "3": "Hypercapnia is about CO2, not O2. Often O2 is also low, but that's hypoxia - different measurement."
+      }
+    },
+    {
+      "id": "900.5.30.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "Mr. Edgar is becoming drowsy and confused. 'CO2 narcosis,' Ms. Frizzle warns. 'High CO2 acts like an anesthetic on the brain. He could slip into a coma if we don't fix this.'",
+      "q": "Severe hypercapnia affects the brain by causing:",
+      "options": [
+        "Increased alertness",
+        "Headache, confusion, drowsiness (CO2 narcosis)",
+        "Seizures only",
+        "No brain effects"
+      ],
+      "answer": 1,
+      "explain": "CO2 NARCOSIS (narcosis = drugged state). High CO2 depresses brain function like an anesthetic. Symptoms progress: headache → confusion → drowsiness → coma. The brain is very sensitive to pH changes from excess CO2.",
+      "wrongExplains": {
+        "0": "Opposite! CO2 depresses the central nervous system. High CO2 makes you sleepy and confused, not alert.",
+        "2": "While possible, the classic progression is drowsiness and confusion first, not seizures. It's a depressant effect.",
+        "3": "The brain is extremely sensitive to CO2! It's why high CO2 is so dangerous - it alters consciousness directly."
+      }
+    },
+    {
+      "id": "900.5.30.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "'The opposite can happen too,' Ms. Frizzle says, showing a patient breathing rapidly into a paper bag. 'Hyperventilation causes hypocapnia - too LITTLE CO2. The prefix changes everything.'",
+      "q": "How would 'hypocapnia' differ from 'hypercapnia'?",
+      "options": [
+        "They're the same thing",
+        "Hypocapnia = low CO2; hypercapnia = high CO2",
+        "Hypocapnia = high CO2; hypercapnia = low CO2",
+        "Both mean high CO2"
+      ],
+      "answer": 1,
+      "explain": "HYPOCAPNIA (hypo- = below) = LOW CO2. HYPERCAPNIA (hyper- = above) = HIGH CO2. Opposite problems! Hypoventilation → hypercapnia. Hyperventilation → hypocapnia. The prefix tells you which direction.",
+      "wrongExplains": {
+        "0": "Opposite conditions! Hypo- and hyper- are mirror images. One is too little, one is too much.",
+        "2": "Backwards! Hypo-capnia = LOW CO2. Hyper-capnia = HIGH CO2. The prefixes define the direction.",
+        "3": "Hypocapnia means LOW CO2. The 'hypo-' prefix means below normal, not high."
+      }
+    },
+    {
+      "id": "900.5.30.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "The medical team adjusts Mr. Edgar's ventilator, and his CO2 levels begin to normalize. He becomes more alert as the CO2 narcosis lifts. 'Crisis averted,' Ms. Frizzle smiles. 'Final question!'",
+      "q": "Hypercapnia refers to:",
+      "options": [
+        "Low oxygen in blood",
+        "High carbon dioxide levels in blood",
+        "Rapid breathing",
+        "Lung infection"
+      ],
+      "answer": 1,
+      "explain": "HYPERCAPNIA = HIGH CARBON DIOXIDE LEVELS IN BLOOD. Hyper- (excessive) + capnia (CO2). Caused by inadequate ventilation. Leads to respiratory acidosis and can depress brain function. Opposite of hypocapnia (low CO2).",
+      "wrongExplains": {
+        "0": "Low oxygen is hypoxia (hypo- + -oxia). Different gas! Hypercapnia is about CO2, not O2.",
+        "2": "Rapid breathing is tachypnea or hyperventilation. That would LOWER CO2, opposite of hypercapnia.",
+        "3": "Lung infection is pneumonia or bronchitis. Hypercapnia is a blood gas abnormality, not an infection."
+      }
+    }
+  ]
+}

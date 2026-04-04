@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.11",
+  "parentQuestion": "The flap of cartilage that covers the larynx during swallowing is the:",
+  "narrative": {
+    "setting": "The Magic School Bus hovers at a dangerous intersection - where the airway and the food passage cross. Above, the throat. Below, two tubes: one leads to the lungs, one to the stomach. 'The most dangerous crossroads in the body,' Ms. Frizzle announces. 'Every time Mr. Edgar swallows, he plays traffic cop with his life.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar is eating lunch. Every bite must travel past his airway without entering it. One slip, one moment of poor coordination, and food enters the lungs. The guardian of this crossing must work perfectly, every single time."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.11.s01",
+      "arc": 1,
+      "arcTitle": "The Guardian's Name",
+      "narrative": "Ms. Frizzle points to the leaf-shaped structure standing guard at the larynx entrance. 'The ancient Greeks named it precisely,' she says. 'Epi- means UPON or ABOVE.'",
+      "q": "The prefix 'epi-' in Greek means:",
+      "options": [
+        "Below, under",
+        "Above, upon",
+        "Inside, within",
+        "Around, surrounding"
+      ],
+      "answer": 1,
+      "explain": "'Epi-' means ABOVE or UPON. Think of EPI-dermis (upon the skin), EPI-center (upon the center). The epiglottis sits UPON/ABOVE the glottis.",
+      "wrongExplains": {
+        "0": "'Below' would be 'HYPO-' (like HYPOthermia = below normal temperature). Epi- means above.",
+        "2": "'Inside' would be 'ENDO-' (like ENDOscopy = looking inside). Epi- means upon.",
+        "3": "'Around' would be 'PERI-' (like PERImeter = around the edge). Epi- means above."
+      }
+    },
+    {
+      "id": "900.5.11.s02",
+      "arc": 1,
+      "arcTitle": "The Guardian's Name",
+      "narrative": "'And what is this glottis that the epiglottis guards?' Ms. Frizzle zooms in on the vocal folds below. A slit-like opening appears between them. 'The doorway to the lungs.'",
+      "q": "What is the 'glottis'?",
+      "options": [
+        "The entire larynx",
+        "The opening between the vocal folds",
+        "The thyroid cartilage",
+        "The trachea"
+      ],
+      "answer": 1,
+      "explain": "The GLOTTIS is the OPENING between the vocal folds - the actual airway entrance. The epiglottis ('upon the glottis') covers this opening during swallowing to protect it.",
+      "wrongExplains": {
+        "0": "The larynx is the whole voice box structure. Glottis is specifically the opening.",
+        "2": "Thyroid cartilage is the Adam's apple - structural support, not an opening.",
+        "3": "The trachea is BELOW the glottis. The glottis is the entrance to the airway at the vocal fold level."
+      }
+    },
+    {
+      "id": "900.5.11.s03",
+      "arc": 1,
+      "arcTitle": "The Guardian's Name",
+      "narrative": "'So the epiglottis is... above the glottis,' Arnold realizes. Ms. Frizzle smiles. 'The name tells you exactly where it lives and what it guards. That's the beauty of Greek anatomy.'",
+      "q": "Put together, 'epiglottis' literally means:",
+      "options": [
+        "Below the voice",
+        "Upon/above the glottis",
+        "Around the throat",
+        "Inside the windpipe"
+      ],
+      "answer": 1,
+      "explain": "EPI-GLOTTIS = 'upon/above' + 'the glottis opening.' It's named for its position - a flap sitting above and protecting the vocal fold opening.",
+      "wrongExplains": {
+        "0": "'Below' would be HYPO-glottis. The epiglottis is ABOVE, not below.",
+        "2": "'Around' would use PERI-. The epiglottis is specifically above the glottis.",
+        "3": "'Inside' would use ENDO-. The epiglottis is external to the airway, not inside it."
+      }
+    },
+    {
+      "id": "900.5.11.s04",
+      "arc": 2,
+      "arcTitle": "Structure of the Guardian",
+      "narrative": "The bus lands on the epiglottis surface. It flexes and bounces beneath them. 'Feel that spring?' Ms. Frizzle notes. 'This isn't ordinary cartilage. It's elastic - designed to bend and snap back.'",
+      "q": "What type of cartilage is the epiglottis made of?",
+      "options": [
+        "Hyaline cartilage",
+        "Elastic cartilage",
+        "Fibrocartilage",
+        "Bone"
+      ],
+      "answer": 1,
+      "explain": "The epiglottis is ELASTIC cartilage - flexible, springy, able to bend down during swallowing and snap back up afterward. Same material as your ear lobes.",
+      "wrongExplains": {
+        "0": "Hyaline cartilage (like in the trachea) is stiffer. The epiglottis needs flexibility.",
+        "2": "Fibrocartilage is tough for weight-bearing (like spinal discs). Epiglottis needs spring.",
+        "3": "Bone is rigid. The epiglottis must flex with every swallow - thousands of times daily."
+      }
+    },
+    {
+      "id": "900.5.11.s05",
+      "arc": 2,
+      "arcTitle": "Structure of the Guardian",
+      "narrative": "Ms. Frizzle projects the epiglottis shape onto the bus screen. 'Notice the shape - flat, broad, with a stem. Like a leaf on a tree.'",
+      "q": "What shape is the epiglottis?",
+      "options": [
+        "Circular ring",
+        "Leaf-shaped flap",
+        "Flat plate",
+        "Tubular"
+      ],
+      "answer": 1,
+      "explain": "The epiglottis is LEAF-SHAPED - broad and flat like a flip-top lid. The 'stem' attaches to the thyroid cartilage; the 'leaf' tips backward to cover the glottis.",
+      "wrongExplains": {
+        "0": "Circular ring describes the CRICOID cartilage below. The epiglottis is a flap.",
+        "2": "It IS flat, but 'leaf-shaped flap' better describes its mobile, covering function.",
+        "3": "Tubular structures (like the trachea) conduct air. The epiglottis is a lid, not a tube."
+      }
+    },
+    {
+      "id": "900.5.11.s06",
+      "arc": 2,
+      "arcTitle": "Structure of the Guardian",
+      "narrative": "Mr. Edgar swallows. The bus lurches as the entire larynx rises and the epiglottis tips backward like a trap door slamming shut. 'THAT,' Ms. Frizzle shouts over the rumbling, 'is swallowing!'",
+      "q": "What happens to the epiglottis during swallowing?",
+      "options": [
+        "It moves forward",
+        "It tips backward to cover the larynx",
+        "It stays in the same position",
+        "It opens wider"
+      ],
+      "answer": 1,
+      "explain": "During swallowing, the larynx rises and the epiglottis tips BACKWARD like a hinged trap door, covering the glottis. Food slides over it into the esophagus behind.",
+      "wrongExplains": {
+        "0": "Forward movement would push food INTO the airway. It tips backward, away from the airway.",
+        "2": "It ACTIVELY moves during every swallow - that's its entire job.",
+        "3": "It doesn't open - it CLOSES over the airway opening to protect it."
+      }
+    },
+    {
+      "id": "900.5.11.s07",
+      "arc": 3,
+      "arcTitle": "When Protection Fails",
+      "narrative": "Mr. Edgar tries to talk and swallow at the same time. The epiglottis, caught between positions, fails to fully close. A crumb slips past. Violent coughing erupts. 'Aspiration!' Ms. Frizzle announces. 'The backup system activates!'",
+      "q": "What happens if food 'goes down the wrong pipe'?",
+      "options": [
+        "It enters the stomach directly",
+        "It enters the larynx/trachea (aspiration)",
+        "It goes into the nose",
+        "It dissolves immediately"
+      ],
+      "answer": 1,
+      "explain": "ASPIRATION means food/liquid enters the airway. The cough reflex kicks in violently to expel it. 'Wrong pipe' = trachea instead of esophagus. The epiglottis failed to protect.",
+      "wrongExplains": {
+        "0": "Stomach via esophagus is the CORRECT path. 'Wrong pipe' means the AIRWAY.",
+        "2": "Nasal regurgitation is a different problem (related to soft palate failure).",
+        "3": "Food doesn't dissolve - it must be forcefully coughed out or it can cause pneumonia."
+      }
+    },
+    {
+      "id": "900.5.11.s08",
+      "arc": 3,
+      "arcTitle": "When Protection Fails",
+      "narrative": "'The epiglottis works with a whole team,' Ms. Frizzle explains as the coughing subsides. 'Vocal folds close. Larynx rises. But the epiglottis is the main shield.'",
+      "q": "Besides the epiglottis, what else protects the airway during swallowing?",
+      "options": [
+        "Nothing - epiglottis works alone",
+        "Vocal folds close and larynx elevates",
+        "The tongue blocks the airway",
+        "Breathing continues normally"
+      ],
+      "answer": 1,
+      "explain": "Airway protection is MULTI-LAYERED: the larynx rises (moving the airway out of the food path), vocal folds close (second barrier), AND the epiglottis covers the top (third barrier).",
+      "wrongExplains": {
+        "0": "The epiglottis has backup systems - vocal fold closure and laryngeal elevation.",
+        "2": "The tongue helps push food backward but doesn't directly block the airway.",
+        "3": "Breathing actually STOPS briefly during swallowing (swallowing apnea)."
+      }
+    },
+    {
+      "id": "900.5.11.s09",
+      "arc": 3,
+      "arcTitle": "When Protection Fails",
+      "narrative": "'Elderly patients, stroke survivors, people with neurological conditions,' Ms. Frizzle says seriously. 'When swallowing coordination fails, aspiration becomes a constant danger. Understanding this anatomy saves lives.'",
+      "q": "What is 'dysphagia'?",
+      "options": [
+        "Difficulty breathing",
+        "Difficulty swallowing",
+        "Difficulty speaking",
+        "Difficulty hearing"
+      ],
+      "answer": 1,
+      "explain": "DYSPHAGIA = 'dys-' (difficult) + 'phagia' (swallowing/eating). It's difficulty swallowing - often from neurological conditions affecting the epiglottis and swallowing coordination.",
+      "wrongExplains": {
+        "0": "Difficulty breathing is DYSPNEA (pnea = breathing). Dysphagia is swallowing.",
+        "2": "Difficulty speaking is DYSPHONIA or DYSARTHRIA. Dysphagia is swallowing.",
+        "3": "Hearing difficulty has other terms. Dysphagia specifically means swallowing difficulty."
+      }
+    },
+    {
+      "id": "900.5.11.s10",
+      "arc": 3,
+      "arcTitle": "When Protection Fails",
+      "narrative": "The coughing fit ends. Mr. Edgar breathes again, the epiglottis now upright and the glottis open. 'That leaf-shaped guardian,' Ms. Frizzle says. 'What's it called?'",
+      "q": "The flap of cartilage that covers the larynx during swallowing is the:",
+      "options": [
+        "Thyroid cartilage",
+        "Cricoid cartilage",
+        "Epiglottis",
+        "Arytenoid cartilage"
+      ],
+      "answer": 2,
+      "explain": "The EPIGLOTTIS - 'epi' (upon) + 'glottis' (vocal opening). This leaf-shaped, elastic cartilage flap tips backward during swallowing to cover the airway. Your life depends on it working, thousands of times daily.",
+      "wrongExplains": {
+        "0": "Thyroid cartilage is the Adam's apple - it provides structural support, not a moving valve.",
+        "1": "Cricoid cartilage is the complete ring below the thyroid. It doesn't move to cover the airway.",
+        "3": "Arytenoid cartilages control vocal fold tension for speaking. They're not protective flaps."
+      }
+    }
+  ]
+}

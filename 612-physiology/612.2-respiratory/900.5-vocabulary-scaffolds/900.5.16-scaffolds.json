@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.16",
+  "parentQuestion": "The nasal cavity is divided into two halves by the:",
+  "narrative": {
+    "setting": "The Magic School Bus enters Mr. Edgar's nostril, beginning the respiratory journey at the very start. Ahead, the nasal cavity stretches back toward the throat - but it's not one big open space. A vertical wall runs down the middle, creating two parallel passages. 'Every breath starts here,' Ms. Frizzle says. 'Left and right, separate but equal.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar complains of chronic stuffiness on one side. The structure dividing his nasal passages seems bent, blocking airflow. Understanding this anatomy could explain years of breathing difficulties."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.16.s01",
+      "arc": 1,
+      "arcTitle": "The Dividing Wall",
+      "narrative": "Ms. Frizzle approaches the central wall dividing the nasal cavity. 'The Romans named this,' she says. 'Septum. A wall that separates.'",
+      "q": "The Latin word 'septum' means:",
+      "options": [
+        "Opening",
+        "Partition or wall",
+        "Passage",
+        "Chamber"
+      ],
+      "answer": 1,
+      "explain": "'Septum' means PARTITION or WALL - something that divides or separates. A septum creates two distinct spaces from one. The nasal septum divides the nasal cavity into left and right halves.",
+      "wrongExplains": {
+        "0": "An opening would be 'ostium' or 'foramen'. Septum is a dividing wall.",
+        "2": "A passage would be 'meatus'. Septum is the wall that creates passages.",
+        "3": "A chamber would be 'cavity' or 'sinus'. Septum divides chambers apart."
+      }
+    },
+    {
+      "id": "900.5.16.s02",
+      "arc": 1,
+      "arcTitle": "The Dividing Wall",
+      "narrative": "'Feel it.' Ms. Frizzle lands the bus on the septum surface. The front is slightly springy; the back is rigid. 'Two different materials, working together.'",
+      "q": "What structures make up the nasal septum?",
+      "options": [
+        "Only soft cartilage",
+        "Cartilage anteriorly, bone posteriorly",
+        "Only bone throughout",
+        "Only muscle tissue"
+      ],
+      "answer": 1,
+      "explain": "The septum is COMPOSITE: CARTILAGE in front (septal cartilage - flexible) and BONE behind (ethmoid perpendicular plate and vomer bone - rigid). Both provide structure with different properties.",
+      "wrongExplains": {
+        "0": "The posterior septum is BONY (ethmoid, vomer). It's not all cartilage.",
+        "2": "The anterior septum is CARTILAGE. It's not all bone.",
+        "3": "The septum is structural (cartilage and bone), not muscular."
+      }
+    },
+    {
+      "id": "900.5.16.s03",
+      "arc": 1,
+      "arcTitle": "The Dividing Wall",
+      "narrative": "'The septum runs this way,' Ms. Frizzle traces its path - straight down from the skull base, extending forward to the nose tip, creating a vertical wall from front to back.",
+      "q": "The nasal septum runs in which direction?",
+      "options": [
+        "Horizontally (side to side)",
+        "Vertically (up and down, front to back)",
+        "Diagonally across",
+        "Circularly around"
+      ],
+      "answer": 1,
+      "explain": "The septum is VERTICAL - a midline wall running up-down and front-back. It divides the nasal cavity into LEFT and RIGHT halves, not top and bottom.",
+      "wrongExplains": {
+        "0": "Horizontal would divide upper from lower. The septum divides LEFT from RIGHT.",
+        "2": "The septum is midline, not diagonal. It runs straight down the center.",
+        "3": "It's a flat partition, not curved or circular."
+      }
+    },
+    {
+      "id": "900.5.16.s04",
+      "arc": 2,
+      "arcTitle": "When the Wall Bends",
+      "narrative": "'Mr. Edgar's septum isn't quite straight,' Ms. Frizzle observes, pointing to a curve in the partition. 'Very common. Almost nobody has a perfectly midline septum.'",
+      "q": "What is a 'deviated septum'?",
+      "options": [
+        "A hole in the septum",
+        "A septum that is bent or crooked to one side",
+        "A missing septum",
+        "An infected septum"
+      ],
+      "answer": 1,
+      "explain": "A DEVIATED septum is BENT or CROOKED to one side, narrowing one nasal passage while widening the other. Can cause chronic nasal congestion, snoring, and difficulty breathing on one side.",
+      "wrongExplains": {
+        "0": "A hole is a SEPTAL PERFORATION - different problem, different name.",
+        "2": "A missing septum would be septal agenesis - extremely rare congenital condition.",
+        "3": "Infection would be septal cellulitis or abscess. Deviation is structural bending."
+      }
+    },
+    {
+      "id": "900.5.16.s05",
+      "arc": 2,
+      "arcTitle": "When the Wall Bends",
+      "narrative": "'Don't confuse the septum with these,' Ms. Frizzle points to curved projections from the SIDE walls. 'Conchae - also called turbinates. They increase surface area, but they don't divide the cavity.'",
+      "q": "What are 'conchae' (also called turbinates)?",
+      "options": [
+        "Dividers down the middle",
+        "Curved bones projecting from the lateral nasal walls",
+        "The nostril openings",
+        "Mucus-producing glands"
+      ],
+      "answer": 1,
+      "explain": "CONCHAE (turbinates) are curved bony projections from the LATERAL (side) walls - superior, middle, and inferior conchae. They create turbulence, increasing contact with mucosa for warming and humidifying air.",
+      "wrongExplains": {
+        "0": "The midline divider is the SEPTUM. Conchae are on the SIDES.",
+        "2": "Nostril openings are NARES. Conchae are internal projections.",
+        "3": "Conchae are bones covered WITH mucosa, not glands themselves."
+      }
+    },
+    {
+      "id": "900.5.16.s06",
+      "arc": 2,
+      "arcTitle": "When the Wall Bends",
+      "narrative": "'Septum: middle, divides left from right. Conchae: sides, create air turbulence.' Ms. Frizzle draws the distinction clearly. 'Don't confuse them on an exam!'",
+      "q": "The key difference between septum and conchae is:",
+      "options": [
+        "Septum is on the sides, conchae in the middle",
+        "Septum divides the cavity; conchae increase surface area from the sides",
+        "They're the same structure",
+        "Conchae are softer than septum"
+      ],
+      "answer": 1,
+      "explain": "SEPTUM = midline DIVIDER (creates left/right passages). CONCHAE = lateral PROJECTIONS (create turbulence and surface area). Different locations, different functions.",
+      "wrongExplains": {
+        "0": "You have it backward! Septum is MIDLINE; conchae are on the SIDES.",
+        "2": "They're completely different structures with different jobs.",
+        "3": "Both contain bone. The difference is location and function, not hardness."
+      }
+    },
+    {
+      "id": "900.5.16.s07",
+      "arc": 3,
+      "arcTitle": "Function of Division",
+      "narrative": "'Why two passages instead of one big one?' Ms. Frizzle poses. 'Double the surface area. Double the capacity to condition incoming air.'",
+      "q": "What functions does the nasal cavity perform besides air passage?",
+      "options": [
+        "Nothing else - just air passage",
+        "Warming, humidifying, and filtering incoming air",
+        "Blood production",
+        "Hormone secretion"
+      ],
+      "answer": 1,
+      "explain": "The nasal cavity WARMS air (rich blood supply), HUMIDIFIES it (mucus secretion), and FILTERS it (cilia and mucus trap particles). The septum doubles the surface area for these crucial functions.",
+      "wrongExplains": {
+        "0": "The nasal cavity does FAR more than just conduct air!",
+        "2": "Blood production is in bone marrow. Nasal cavity conditions air.",
+        "3": "Hormones come from endocrine glands. Nasal cavity conditions inhaled air."
+      }
+    },
+    {
+      "id": "900.5.16.s08",
+      "arc": 3,
+      "arcTitle": "Function of Division",
+      "narrative": "'The nasal cycle,' Ms. Frizzle reveals something surprising. 'Your body alternates which nostril is more open - about every 2-4 hours. The septum creates the two channels that make this possible.'",
+      "q": "The 'nasal cycle' refers to:",
+      "options": [
+        "Breathing only through the mouth",
+        "Alternating congestion between left and right nostrils",
+        "Sneezing patterns",
+        "Mucus production rates"
+      ],
+      "answer": 1,
+      "explain": "The NASAL CYCLE: alternating congestion between sides, controlled by autonomic nervous system. One nostril decongests while the other swells, switching every 2-4 hours. You rarely notice unless one side is already blocked.",
+      "wrongExplains": {
+        "0": "Mouth breathing bypasses the nose entirely. The nasal cycle is about nostril alternation.",
+        "2": "Sneezing is a reflex, not a cycle. The nasal cycle is regular side-switching.",
+        "3": "Mucus production is relatively constant. The cycle is about blood vessel congestion in turbinates."
+      }
+    },
+    {
+      "id": "900.5.16.s09",
+      "arc": 3,
+      "arcTitle": "Function of Division",
+      "narrative": "'Severe deviation can be surgically corrected,' Ms. Frizzle notes. 'Septoplasty - repositioning the septum to restore balanced airflow.'",
+      "q": "Septoplasty is a surgical procedure to:",
+      "options": [
+        "Remove the septum entirely",
+        "Straighten a deviated septum",
+        "Enlarge the nostrils",
+        "Remove the turbinates"
+      ],
+      "answer": 1,
+      "explain": "SEPTOPLASTY: surgical STRAIGHTENING of a deviated septum. The surgeon repositions cartilage and bone to restore more balanced airflow through both nasal passages. Common outpatient procedure.",
+      "wrongExplains": {
+        "0": "Removing the septum would collapse the nose! Septoplasty repositions it.",
+        "2": "Nostril enlargement is a different procedure. Septoplasty works on the internal divider.",
+        "3": "Turbinate surgery is called turbinoplasty. Septoplasty addresses the septum."
+      }
+    },
+    {
+      "id": "900.5.16.s10",
+      "arc": 3,
+      "arcTitle": "Function of Division",
+      "narrative": "Air flows through both passages now, separated by the central partition. The vertical wall dividing left from right. 'That structure,' Ms. Frizzle asks. 'What divides the nasal cavity in two?'",
+      "q": "The nasal cavity is divided into two halves by the:",
+      "options": [
+        "Conchae",
+        "Nasal septum",
+        "Turbinates",
+        "Sinuses"
+      ],
+      "answer": 1,
+      "explain": "The NASAL SEPTUM - the vertical midline partition. Made of cartilage (front) and bone (back), it divides the nasal cavity into left and right passages. 'Septum' = wall/partition.",
+      "wrongExplains": {
+        "0": "Conchae project from the LATERAL walls. They don't divide the cavity in half.",
+        "2": "Turbinates = conchae. They're side projections, not the midline divider.",
+        "3": "Sinuses are air-filled CAVITIES in the skull bones that OPEN INTO the nasal cavity."
+      }
+    }
+  ]
+}

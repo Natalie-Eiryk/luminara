@@ -1,0 +1,88 @@
+{
+  "id": "611.9",
+  "title": "Histology System",
+  "category": "lab-exam-ii",
+  "description": "Lab practical questions for histology system anatomy",
+  "questions": [
+    {
+      "id": "611.9.01",
+      "q": "What is your universal slide drill before naming the tissue?",
+      "options": [
+        "Ask: What organ am I in",
+        "that",
+        "Lung",
+        "Trachea"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Histology",
+      "tags": [
+        "slide drill"
+      ],
+      "explain": "Ask: What organ am I in? What epithelium do I see? What supporting clue confirms it? What would I confuse it with, and why is it not that?",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Precisely. Ask: What organ am I in? What epithelium do I see? What supporting clue confirms it? What would I confuse it with, and why is it not that? Now walk with me — let me show you why this matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. This would be that, but the question asks for Ask: What organ am I in. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. This would be Lung, but the question asks for Ask: What organ am I in. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. This would be Trachea, but the question asks for Ask: What organ am I in. Come closer — I'll show you the distinction that matters."
+        }
+      ],
+      "mechanism": {
+        "title": "Ask: What organ am I in: Clinical Context",
+        "content": "Ask: What organ am I in? What epithelium do I see? What supporting clue confirms it? What would I confuse it with, and why is it not that?",
+        "metaphor": "Think of this as the key landmark that separates correct identification from common confusion."
+      },
+      "scaffoldFile": "611.9.01-scaffolds/611.9.01-scaffolds.json"
+    },
+    {
+      "id": "611.9.02",
+      "q": "What is the best way to separate trachea from esophagus on histology?",
+      "options": [
+        "Trachea has pseudostratified ciliated columnar epithelium and cartilage",
+        "Trachea",
+        "Esophagus",
+        "Lung"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Histology",
+      "tags": [
+        "comparison"
+      ],
+      "explain": "Trachea has pseudostratified ciliated columnar epithelium and cartilage. Esophagus has stratified squamous epithelium.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Precisely. Trachea has pseudostratified ciliated columnar epithelium and cartilage. Esophagus has stratified squamous epithelium. Now walk with me — let me show you why this matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. This would be Trachea, but the question asks for Trachea has pseudostratified ciliated columnar epithelium and cartilage. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. This would be Esophagus, but the question asks for Trachea has pseudostratified ciliated columnar epithelium and cartilage. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. This would be Lung, but the question asks for Trachea has pseudostratified ciliated columnar epithelium and cartilage. Come closer — I'll show you the distinction that matters."
+        }
+      ],
+      "mechanism": {
+        "title": "Trachea has pseudostratified ciliated columnar epithelium and cartilage: Clinical Context",
+        "content": "Trachea has pseudostratified ciliated columnar epithelium and cartilage. Esophagus has stratified squamous epithelium.",
+        "metaphor": "Think of this as the key landmark that separates correct identification from common confusion."
+      },
+      "scaffoldFile": "611.9.02-scaffolds/611.9.02-scaffolds.json"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "clusterId": "510.14",
+  "clusterName": "Measurement & Data",
+  "status": "pending",
+  "targetQuestions": 300,
+  "currentBatch": 0,
+  "totalBatches": 12,
+  "questionsGenerated": 0,
+  "scaffoldsGenerated": 0,
+  "lastUpdated": null,
+  "batches": [],
+  "isotopes": [
+    "510.14.length",
+    "510.14.mass",
+    "510.14.volume",
+    "510.14.time",
+    "510.14.data.reading",
+    "510.14.data.mean"
+  ],
+  "prerequisites": ["510.11.*", "510.12.*"],
+  "difficultyDistribution": {
+    "easy": 0,
+    "medium": 0,
+    "challenging": 0,
+    "hard": 0
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.62",
+  "parentQuestion": "COPD includes which two main conditions?",
+  "narrative": {
+    "setting": "The Magic School Bus travels through Mr. Edgar's lungs, seeing two types of damage. In some areas, alveolar walls are destroyed - large empty spaces where gas exchange should happen. In others, airways are inflamed and filled with thick mucus. Ms. Frizzle points at both. 'Two diseases, one acronym,' she says. 'COPD isn't one thing - it's TWO main pathologies, often coexisting.'",
+    "character": "Mr. Edgar",
+    "tension": "COPD kills over 3 million people annually worldwide. Patients slowly suffocate as their lungs fail. Some are 'pink puffers' gasping for air with barrel chests. Others are 'blue bloaters' cyanotic with chronic cough. Understanding COPD isn't just memorizing definitions - it's understanding why smoking cessation is the only intervention that changes disease trajectory."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.62.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'COPD,' Ms. Frizzle writes the acronym. 'Chronic Obstructive Pulmonary Disease. CHRONIC - long-lasting, progressive. OBSTRUCTIVE - airflow limitation. Not reversible like asthma.'",
+      "q": "What does COPD stand for?",
+      "options": [
+        "Chronic Obstructive Pulmonary Disease",
+        "Cardiac Output Perfusion Disorder",
+        "Central Oxygen Processing Deficiency",
+        "Controlled Oxygen Pulmonary Delivery"
+      ],
+      "answer": 0,
+      "explain": "COPD = CHRONIC OBSTRUCTIVE PULMONARY DISEASE. Progressive airflow limitation that is NOT fully reversible. Umbrella term for emphysema and chronic bronchitis.",
+      "wrongExplains": {
+        "1": "COPD is pulmonary, not cardiac. It's about lung airflow obstruction.",
+        "2": "COPD is about mechanical obstruction, not central oxygen processing.",
+        "3": "COPD is a disease state, not a controlled delivery system."
+      }
+    },
+    {
+      "id": "900.5.62.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Two main types,' Ms. Frizzle holds up two fingers. 'Emphysema - destroyed alveoli, lost elastic recoil, air trapping. Chronic bronchitis - inflamed airways, excessive mucus, chronic cough. Most COPD patients have BOTH.'",
+      "q": "The two main conditions that comprise COPD are:",
+      "options": [
+        "Asthma and bronchitis",
+        "Emphysema and chronic bronchitis",
+        "Pneumonia and pleurisy",
+        "Tuberculosis and lung cancer"
+      ],
+      "answer": 1,
+      "explain": "COPD = EMPHYSEMA (alveolar destruction, 'pink puffer') + CHRONIC BRONCHITIS (airway inflammation/mucus, 'blue bloater'). Often overlap in same patient.",
+      "wrongExplains": {
+        "0": "Asthma is REVERSIBLE obstruction - not part of COPD which is largely irreversible.",
+        "2": "Pneumonia and pleurisy are acute infections/inflammation, not chronic obstructive diseases.",
+        "3": "TB and lung cancer are serious but aren't the two components of COPD."
+      }
+    },
+    {
+      "id": "900.5.62.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'The main risk factor,' Ms. Frizzle emphasizes. 'SMOKING. About 80-90% of COPD is from cigarette smoke. Alpha-1 antitrypsin deficiency causes the remaining minority. But smoking is overwhelmingly the cause.'",
+      "q": "The primary risk factor for COPD is:",
+      "options": [
+        "Genetics only",
+        "Cigarette smoking",
+        "High altitude",
+        "Poor diet"
+      ],
+      "answer": 1,
+      "explain": "SMOKING causes 80-90% of COPD. Tobacco smoke damages airways and alveoli. Duration and pack-years directly correlate with risk. Smoking cessation is the only intervention that slows progression.",
+      "wrongExplains": {
+        "0": "Genetics (alpha-1 antitrypsin deficiency) causes <5% of COPD. Smoking is the main cause.",
+        "2": "High altitude doesn't cause COPD (though it worsens symptoms). Smoking is the culprit.",
+        "3": "Diet doesn't cause COPD. It's primarily tobacco smoke damage."
+      }
+    },
+    {
+      "id": "900.5.62.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Emphysema pathology,' Ms. Frizzle shows the destroyed alveolar walls. 'Proteases (elastase) break down elastin. Alveolar septa disappear, creating large air spaces (bullae). Lost elastic recoil means air trapping - can't exhale fully.'",
+      "q": "In emphysema, the primary pathology is:",
+      "options": [
+        "Airway inflammation",
+        "Destruction of alveolar walls",
+        "Excess mucus production",
+        "Pleural thickening"
+      ],
+      "answer": 1,
+      "explain": "EMPHYSEMA = ALVEOLAR WALL DESTRUCTION by protease enzymes. Creates large air spaces, loses elastic recoil, air trapping. Reduced gas exchange surface area.",
+      "wrongExplains": {
+        "0": "Airway inflammation is chronic bronchitis. Emphysema is alveolar destruction.",
+        "2": "Excess mucus is chronic bronchitis ('blue bloater'). Emphysema is structural alveolar damage.",
+        "3": "Pleural thickening isn't characteristic of emphysema. It's parenchymal destruction."
+      }
+    },
+    {
+      "id": "900.5.62.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Chronic bronchitis definition,' Ms. Frizzle recites. 'Productive cough for at least 3 months per year for 2 consecutive years. It's a CLINICAL diagnosis - based on symptoms, not pathology or spirometry.'",
+      "q": "Chronic bronchitis is clinically defined by:",
+      "options": [
+        "Acute infection",
+        "Productive cough for 3 months in 2 consecutive years",
+        "Collapsed lung",
+        "Single episode of cough"
+      ],
+      "answer": 1,
+      "explain": "CHRONIC BRONCHITIS clinical definition: productive cough (with sputum) for ≥3 months/year for ≥2 consecutive years. Distinguishes chronic from acute/occasional.",
+      "wrongExplains": {
+        "0": "ACUTE infection is acute bronchitis. CHRONIC bronchitis is defined by duration (3/2 rule).",
+        "2": "Collapsed lung is pneumothorax/atelectasis - unrelated to chronic bronchitis definition.",
+        "3": "One episode is acute bronchitis. Chronic requires 3 months × 2 years."
+      }
+    },
+    {
+      "id": "900.5.62.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Pink puffer versus blue bloater,' Ms. Frizzle draws two patients. 'Pink puffer - emphysema dominant, thin, barrel chest, pursed-lip breathing, maintains O2 (pink). Blue bloater - chronic bronchitis dominant, overweight, cyanotic (blue), peripheral edema, chronic cough/sputum.'",
+      "q": "The 'pink puffer' phenotype is associated with:",
+      "options": [
+        "Chronic bronchitis",
+        "Emphysema",
+        "Asthma",
+        "Pneumonia"
+      ],
+      "answer": 1,
+      "explain": "'PINK PUFFER' = EMPHYSEMA-dominant COPD. Thin, barrel chest, pursed-lip breathing, maintains oxygenation (pink), dyspneic. Contrast with 'blue bloater' (chronic bronchitis).",
+      "wrongExplains": {
+        "0": "'Blue bloater' is chronic bronchitis - overweight, cyanotic, edema. Pink puffer is emphysema.",
+        "2": "Asthma is reversible obstruction, not COPD. Pink puffer is emphysema phenotype.",
+        "3": "Pneumonia is acute infection. Pink puffer is a chronic emphysema presentation."
+      }
+    },
+    {
+      "id": "900.5.62.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Spirometry in COPD,' Ms. Frizzle shows the graph. 'FEV1/FVC ratio <0.7 confirms obstruction. But unlike asthma, there's minimal reversibility with bronchodilator - <12% improvement. That's the key difference.'",
+      "q": "On spirometry, COPD shows:",
+      "options": [
+        "Normal FEV1/FVC",
+        "Reduced FEV1/FVC with minimal bronchodilator response",
+        "Reduced total lung capacity only",
+        "Complete reversibility with bronchodilator"
+      ],
+      "answer": 1,
+      "explain": "COPD: FEV1/FVC <0.7 (obstruction) with MINIMAL reversibility (<12% improvement). This distinguishes it from asthma (>12% reversibility).",
+      "wrongExplains": {
+        "0": "Normal FEV1/FVC means no obstruction. COPD has reduced ratio (<0.7).",
+        "2": "Reduced TLC is restrictive disease. COPD is obstructive (may increase TLC from air trapping).",
+        "3": "Complete reversibility is ASTHMA. COPD has <12% improvement - mostly irreversible."
+      }
+    },
+    {
+      "id": "900.5.62.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Alpha-1 antitrypsin deficiency,' Ms. Frizzle explains. 'Genetic cause of emphysema, usually in younger patients (<45). Without this protease inhibitor, elastase destroys lung tissue unchecked. Affects lung bases more than apices.'",
+      "q": "Alpha-1 antitrypsin deficiency causes early-onset:",
+      "options": [
+        "Asthma",
+        "Emphysema",
+        "Chronic bronchitis only",
+        "Lung cancer"
+      ],
+      "answer": 1,
+      "explain": "Alpha-1 antitrypsin deficiency = genetic EMPHYSEMA (usually age <45). Without this protease inhibitor, elastase destroys alveoli. Also causes liver cirrhosis.",
+      "wrongExplains": {
+        "0": "Asthma is airway hyperreactivity, not protease-mediated alveolar destruction.",
+        "2": "Alpha-1 deficiency causes emphysema (alveolar destruction), not just bronchitis.",
+        "3": "It increases lung cancer risk but the primary pathology is emphysema."
+      }
+    },
+    {
+      "id": "900.5.62.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Treatment,' Ms. Frizzle lists options. 'Smoking cessation - ONLY thing that slows progression. Bronchodilators for symptom relief. Oxygen for hypoxemia. Steroids for exacerbations. Pulmonary rehab. But the damage is irreversible.'",
+      "q": "The only intervention that slows COPD progression is:",
+      "options": [
+        "Bronchodilators",
+        "Smoking cessation",
+        "Antibiotics",
+        "Surgery"
+      ],
+      "answer": 1,
+      "explain": "SMOKING CESSATION is the ONLY intervention that slows COPD progression. Everything else (bronchodilators, O2, rehab) improves symptoms/quality of life but doesn't stop disease progression.",
+      "wrongExplains": {
+        "0": "Bronchodilators improve symptoms but don't slow disease progression.",
+        "2": "Antibiotics treat infections but don't affect underlying COPD progression.",
+        "3": "Lung volume reduction surgery helps some severe cases but doesn't slow progression like smoking cessation."
+      }
+    },
+    {
+      "id": "900.5.62.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Ms. Frizzle looks at the damaged airways and destroyed alveoli. 'Two diseases under one umbrella. Emphysema and chronic bronchitis - often together, both from smoking, both irreversible. So, class: COPD includes which two main conditions?'",
+      "q": "COPD includes which two main conditions?",
+      "options": [
+        "Asthma and bronchitis",
+        "Emphysema and chronic bronchitis",
+        "Pneumonia and pleurisy",
+        "Tuberculosis and lung cancer"
+      ],
+      "answer": 1,
+      "explain": "COPD = EMPHYSEMA ('pink puffer' - barrel chest, alveolar destruction) + CHRONIC BRONCHITIS ('blue bloater' - cough/sputum). Often coexist. Largely irreversible. 80-90% from smoking.",
+      "wrongExplains": {
+        "0": "Asthma is REVERSIBLE obstruction - COPD is largely IRREVERSIBLE. Different disease category.",
+        "2": "Pneumonia and pleurisy are acute infections/inflammation, not chronic obstructive diseases.",
+        "3": "TB and lung cancer are serious but aren't the components of COPD."
+      }
+    }
+  ]
+}

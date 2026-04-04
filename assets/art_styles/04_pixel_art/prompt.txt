@@ -1,0 +1,13 @@
+A red fox sprite in 16-bit pixel art style, retro SNES game aesthetic. Fox rendered on 64x64
+pixel grid with visible pixel squares, no anti-aliasing, hard edges. Limited indexed color
+palette of 32 colors total: fox fur uses 6 shades (bright orange #FF6600, mid orange #CC5500,
+dark orange #994400, highlight #FFAA44, shadow #663300, outline #331100). Background forest
+uses complementary greens (5 shades from #88DD44 to #224400) and browns (4 shades). Strategic
+dithering pattern for subtle gradients on fox's body, checkerboard alternation of two shades
+creating optical mid-tone. Strong black outline (1-2 pixels wide) around all major forms for
+clarity. Simplified geometric shapes: triangular ears, almond eyes (4 pixels), bushy tail
+reduced to essential curves. Three-quarter view pose showing personality, sitting position.
+Background trees as simplified vertical columns with cluster-dither leaf canopy, parallax-ready
+layering. Readability test: silhouette recognizable when reduced to pure black. Retro video
+game sprite aesthetic, grid-aligned perfection, tile-ready composition, SNES era quality,
+hand-crafted pixel placement.

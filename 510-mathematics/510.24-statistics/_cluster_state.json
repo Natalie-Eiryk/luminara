@@ -1,0 +1,26 @@
+{
+  "clusterId": "510.24",
+  "clusterName": "Statistics & Probability",
+  "status": "pending",
+  "targetQuestions": 300,
+  "currentBatch": 0,
+  "totalBatches": 12,
+  "questionsGenerated": 0,
+  "scaffoldsGenerated": 0,
+  "lastUpdated": null,
+  "batches": [],
+  "isotopes": [
+    "510.24.statistics.measures",
+    "510.24.statistics.spread",
+    "510.24.probability.simple",
+    "510.24.probability.compound",
+    "510.24.probability.theoretical"
+  ],
+  "prerequisites": ["510.13.*", "510.20.*"],
+  "difficultyDistribution": {
+    "easy": 0,
+    "medium": 0,
+    "challenging": 0,
+    "hard": 0
+  }
+}

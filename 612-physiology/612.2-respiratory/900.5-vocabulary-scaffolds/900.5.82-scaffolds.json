@@ -1,0 +1,191 @@
+{
+  "parentId": "900.5.82",
+  "parentQuestion": "What sound indicates inflamed pleural surfaces rubbing together?",
+  "narrative": {
+    "setting": "Mr. Edgar's clinic, examining a patient with pleurisy",
+    "character": "Mr. Edgar",
+    "tension": "The patient winces with each breath, and through the stethoscope Mr. Edgar hears a distinctive scratching, grating sound. What's causing this?"
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.82.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Sound",
+      "narrative": "Ms. Frizzle's bus enters the patient's chest. 'Class, listen carefully! Hear that scratching, grating sound - like leather rubbing on leather, or walking on fresh snow? That's a PLEURAL FRICTION RUB!'",
+      "q": "What does a pleural friction rub sound like?",
+      "options": [
+        "Musical whistling",
+        "Popping or crackling",
+        "Scratching, grating, or rubbing sound",
+        "Silent breathing"
+      ],
+      "answer": 2,
+      "explain": "Pleural friction rub sounds like SCRATCHING, GRATING, or RUBBING - like two pieces of sandpaper rubbing together, or walking on fresh snow (creaking), or leather-on-leather. It's a continuous grating sound, very distinctive from other lung sounds.",
+      "wrongExplains": {
+        "0": "Musical whistling describes WHEEZING from narrowed airways. A friction rub is NOT musical - it's harsh, scratching, and grating.",
+        "1": "Popping/crackling describes CRACKLES from fluid in airways. A friction rub is CONTINUOUS grating during breathing, not discrete pops.",
+        "3": "Friction rub is an ABNORMAL, AUDIBLE sound. Silence would be normal breathing. The rub is distinctive and diagnostic of pleural inflammation."
+      }
+    },
+    {
+      "id": "900.5.82.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Sound",
+      "narrative": "'Watch the TIMING!' Ms. Frizzle points. 'The rub happens during BOTH inspiration AND expiration. Every time the lungs move against the chest wall - SCRAPE! SCRAPE! - you hear it!'",
+      "q": "When in the breathing cycle is a pleural friction rub heard?",
+      "options": [
+        "Only during inspiration",
+        "Only during expiration",
+        "During both inspiration and expiration",
+        "Only when holding breath"
+      ],
+      "answer": 2,
+      "explain": "Pleural friction rub is heard during BOTH INSPIRATION AND EXPIRATION. The inflamed pleural surfaces rub together with EVERY lung movement - expanding during inhalation, contracting during exhalation. Continuous movement = continuous rubbing sound.",
+      "wrongExplains": {
+        "0": "The rub occurs with ANY lung movement, not just inspiration. Both breathing phases cause the inflamed surfaces to slide against each other.",
+        "1": "The rub occurs with ANY lung movement, not just expiration. Inspiration causes just as much (or more) pleural movement and friction.",
+        "3": "Holding breath = no lung movement = no pleural sliding = no sound. The friction rub requires MOVEMENT of the pleural surfaces."
+      }
+    },
+    {
+      "id": "900.5.82.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Sound",
+      "narrative": "'Try this!' Ms. Frizzle has the patient hold their breath. The class listens... SILENCE. 'See? No breathing = no lung movement = no rub! The sound DISAPPEARS when movement stops. It's not coming from the airways - it's from the PLEURA!'",
+      "q": "What happens to the pleural friction rub when the patient holds their breath?",
+      "options": [
+        "It gets louder",
+        "It disappears (no lung movement = no friction)",
+        "It changes to wheezing",
+        "It stays the same"
+      ],
+      "answer": 1,
+      "explain": "The friction rub DISAPPEARS during breath-holding! No lung movement = no pleural surfaces sliding = no friction = no sound. This distinguishes it from pericardial friction rub (heart sound) which continues with heartbeat even when breath is held.",
+      "wrongExplains": {
+        "0": "No movement = no friction = no sound. The rub requires the pleural surfaces to slide against each other, which only happens during breathing.",
+        "2": "Wheezing comes from narrowed AIRWAYS and continues as long as air flows. A friction rub is from pleural SURFACES and stops when movement stops.",
+        "3": "The rub is movement-dependent. No breathing movement = the sound must stop. If a rubbing sound continues during breath-holding, consider pericardial friction rub (heart)."
+      }
+    },
+    {
+      "id": "900.5.82.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus flies to the pleural space. 'Look at these two layers!' Ms. Frizzle points. 'The visceral pleura covers the lung, the parietal pleura lines the chest wall. Normally there's lubricating fluid between them - smooth gliding!'",
+      "q": "What is the pleura?",
+      "options": [
+        "The airways inside the lungs",
+        "The muscle that controls breathing",
+        "The two-layered membrane surrounding the lungs",
+        "The air sacs where gas exchange occurs"
+      ],
+      "answer": 2,
+      "explain": "The PLEURA is a TWO-LAYERED MEMBRANE surrounding the lungs. Visceral pleura = covers lung surface. Parietal pleura = lines chest wall. Normally separated by thin film of lubricating fluid, allowing smooth gliding during breathing.",
+      "wrongExplains": {
+        "0": "Airways (bronchi, bronchioles) are the tubes INSIDE the lungs carrying air. The pleura is the membrane AROUND the lungs.",
+        "1": "The breathing muscle is the DIAPHRAGM (and intercostal muscles). The pleura is a thin membrane, not a muscle.",
+        "3": "Air sacs (alveoli) are deep inside the lungs where oxygen/CO2 exchange occurs. The pleura is the outer lining of the lungs."
+      }
+    },
+    {
+      "id": "900.5.82.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'OH NO!' Wanda points. 'The pleura is red, swollen, and ROUGH - like sandpaper! The smooth lubricating fluid is gone! Now when the lungs move, these rough surfaces SCRAPE against each other!'",
+      "q": "What causes a pleural friction rub?",
+      "options": [
+        "Fluid filling the airways",
+        "Inflammation of the pleural surfaces making them rough and dry",
+        "Narrowed bronchioles",
+        "Collapsed alveoli"
+      ],
+      "answer": 1,
+      "explain": "Friction rub is caused by INFLAMMATION of the pleural surfaces (PLEURISY). Inflammation makes the normally smooth, lubricated pleura ROUGH and DRY. When the roughened surfaces slide against each other during breathing, they create the characteristic grating sound.",
+      "wrongExplains": {
+        "0": "Fluid in airways causes CRACKLES. A pleural friction rub comes from the pleural SURFACES (outside the lung), not inside the airways.",
+        "2": "Narrowed bronchioles cause WHEEZING. Bronchioles are inside the lung; the pleura is the outer membrane. Different location, different sound.",
+        "3": "Collapsed alveoli might contribute to crackles as they pop open. The friction rub is specifically from inflamed PLEURAL surfaces rubbing together."
+      }
+    },
+    {
+      "id": "900.5.82.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'What causes pleurisy?' Carlos asks. 'Excellent question!' Ms. Frizzle shows different scenarios: 'Pneumonia spreading to the pleura, pulmonary embolism, autoimmune diseases like lupus, even cancer!'",
+      "q": "Which condition commonly causes pleurisy and friction rub?",
+      "options": [
+        "Asthma",
+        "Pneumonia (infection spreading to pleura)",
+        "Simple cold",
+        "Seasonal allergies"
+      ],
+      "answer": 1,
+      "explain": "PNEUMONIA commonly causes pleurisy when infection spreads to the pleural surface. Other causes: pulmonary embolism, viral pleurisy, tuberculosis, autoimmune diseases (lupus, rheumatoid arthritis), cancer. Any condition that inflames the pleura can cause a friction rub.",
+      "wrongExplains": {
+        "0": "Asthma affects AIRWAYS (bronchospasm, inflammation), not the pleura. Asthma causes wheezing, not friction rubs.",
+        "2": "Simple colds affect upper airways (nose, throat). They don't reach the pleura deep in the chest. Friction rubs indicate serious pleural inflammation.",
+        "3": "Seasonal allergies affect nasal passages and eyes, not the pleura. Allergies cause sneezing and congestion, not pleural inflammation."
+      }
+    },
+    {
+      "id": "900.5.82.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "Back in the clinic, Mr. Edgar examines the patient. 'Friction rub at the left lower lateral chest, worst with deep breathing. Sharp pleuritic chest pain. With your history of pneumonia, this is pleurisy. NSAIDs should help the inflammation.'",
+      "q": "What symptom typically accompanies a pleural friction rub?",
+      "options": [
+        "No pain - completely painless",
+        "Sharp chest pain that worsens with deep breathing (pleuritic pain)",
+        "Painless whistling sound",
+        "Headache"
+      ],
+      "answer": 1,
+      "explain": "Pleural friction rub is typically accompanied by SHARP CHEST PAIN that WORSENS with deep breathing (PLEURITIC PAIN). Each breath causes the inflamed pleura to rub together, creating both the sound AND sharp pain. Patients often breathe shallowly to avoid the pain.",
+      "wrongExplains": {
+        "0": "Pleurisy (inflamed pleura) is typically VERY PAINFUL! The pleura has pain receptors. Rubbing inflamed surfaces hurts with each breath.",
+        "2": "Painless whistling is WHEEZING from asthma/COPD. Friction rub comes with sharp pleuritic pain because inflamed tissues rubbing together hurts.",
+        "3": "Headache is unrelated to pleural inflammation. The pain from pleurisy is in the CHEST, worsening with breathing, coughing, or movement."
+      }
+    },
+    {
+      "id": "900.5.82.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "'Where do you hear friction rubs best?' Ms. Frizzle asks. 'Lower lateral chest walls!' the students answer. 'Exactly - where there's the most pleural movement during breathing. Less movement at the apex (top), so rubs are quieter there.'",
+      "q": "Where is a pleural friction rub best heard?",
+      "options": [
+        "Over the trachea in the neck",
+        "Lower lateral chest walls where pleural movement is greatest",
+        "Over the heart",
+        "In the abdomen"
+      ],
+      "answer": 1,
+      "explain": "Friction rubs are best heard at the LOWER LATERAL CHEST WALLS where pleural movement (sliding) is GREATEST during breathing. The bases of the lungs move the most with diaphragm contraction. More movement = more friction = louder rub.",
+      "wrongExplains": {
+        "0": "The trachea is in the upper airway - no pleural surfaces there. Friction rubs come from pleural surfaces in the chest.",
+        "2": "Sounds over the heart might be PERICARDIAL friction rub (inflamed heart sac), not pleural. Pericardial rub is in time with heartbeat, not breathing.",
+        "3": "The abdomen has no pleural surfaces. The pleura surrounds the LUNGS in the chest cavity."
+      }
+    },
+    {
+      "id": "900.5.82.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "'One more pearl!' Mr. Edgar adds. 'If the friction rub suddenly DISAPPEARS and breath sounds become QUIETER on that side, the pleural space may have filled with fluid (pleural effusion). The fluid separates the surfaces - no more rubbing, but now there's a different problem!'",
+      "q": "What does it mean if a pleural friction rub suddenly disappears?",
+      "options": [
+        "The patient is completely cured",
+        "Pleural effusion (fluid) may have developed, separating the pleural surfaces",
+        "The patient is holding their breath",
+        "The stethoscope is broken"
+      ],
+      "answer": 1,
+      "explain": "Sudden disappearance of a friction rub may mean PLEURAL EFFUSION (fluid accumulation) has developed. The fluid SEPARATES the pleural surfaces, so they can't rub together anymore. The rub stops, but breath sounds become DECREASED because fluid blocks sound transmission. This is NOT improvement - it's a complication!",
+      "wrongExplains": {
+        "0": "Disappearance of the rub doesn't mean cure - it might mean fluid accumulation (worse!). True resolution takes days/weeks of treatment and wouldn't be sudden.",
+        "2": "During breath-holding, yes, the rub stops. But if the rub doesn't RETURN with breathing, suspect effusion or resolution (depending on clinical context).",
+        "3": "If the rub disappears but you can still hear normal breath sounds clearly, the stethoscope works fine. Decreased breath sounds + missing rub = think effusion."
+      }
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "style": "photorealistic",
+  "style_full_name": "Photorealism / Hyperrealism",
+  "period": "1970s-present",
+  "subject": "red fox sitting on moss-covered forest ground in autumn",
+  "resolution": [1024, 1024],
+  "format": "PNG",
+  "color_depth": "8-bit RGB",
+  "file_size_kb": 24,
+  "status": "MOCK_PLACEHOLDER",
+  "generated_date": null,
+  "session": 67,
+  "agent": "Agent 2 (mock generation)",
+  "comfyui_params": {
+    "model": null,
+    "sampler": null,
+    "steps": null,
+    "cfg_scale": null,
+    "seed": null,
+    "negative_prompt": null
+  },
+  "quality_scores": {
+    "teachers": {
+      "score": 0.87,
+      "threshold": 0.85,
+      "approved": true,
+      "reason": "MOCK - Exceptional clarity for teaching photorealism principles"
+    },
+    "nvidia": {
+      "score": 0.92,
+      "threshold": 0.90,
+      "approved": true,
+      "reason": "MOCK - High technical quality with excellent detail rendering"
+    },
+    "renaissance": {
+      "score": 0.88,
+      "threshold": 0.85,
+      "approved": true,
+      "reason": "MOCK - Strong compositional balance and natural beauty"
+    },
+    "consensus": 0.89,
+    "decision": "MOCK_SHIP",
+    "iterations_to_approval": 12
+  },
+  "validation": {
+    "tier1_technical": "PASS",
+    "tier1_details": {
+      "file_format": "PNG",
+      "resolution_check": "1024x1024",
+      "color_depth": "8-bit RGB",
+      "file_integrity": "loadable"
+    },
+    "tier2_quality": "MOCK",
+    "tier2_details": "Fictional scores - awaiting real multi-stakeholder assessment",
+    "tier3_visual_elements": "0/8",
+    "tier3_details": "No artistic content (placeholder)",
+    "overall_status": "AWAITING_REAL_GENERATION"
+  },
+  "expected_visual_elements": [
+    "Individual fur strands visible on close inspection",
+    "Accurate eye anatomy with corneal reflection",
+    "Realistic depth of field gradient",
+    "Natural color temperature and shadow behavior",
+    "Photographic artifacts (vignette, focus plane)",
+    "Subsurface scattering in translucent areas",
+    "Proper exposure latitude (no blown highlights/shadows)",
+    "Optical accuracy (bokeh, minimal chromatic aberration)"
+  ],
+  "key_artists": [
+    "Chuck Close",
+    "Richard Estes",
+    "Audrey Flack",
+    "Roberto Bernardi"
+  ],
+  "teaching_concepts": [
+    "Depth of field and aperture",
+    "Wildlife photography techniques",
+    "Texture rendering (fur, moss, leaves)",
+    "Natural lighting and color temperature",
+    "High dynamic range photography"
+  ],
+  "isotopes": [
+    "photorealism",
+    "hyperrealism",
+    "wildlife.photography",
+    "depth.of.field",
+    "texture.rendering",
+    "optical.accuracy"
+  ]
+}

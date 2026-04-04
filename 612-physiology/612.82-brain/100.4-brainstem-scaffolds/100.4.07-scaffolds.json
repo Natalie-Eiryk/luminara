@@ -1,0 +1,159 @@
+{
+  "parentId": "100.4.07",
+  "parentQuestion": "A patient cannot voluntarily look to the left on command, but when you move a pen slowly to the left, his eyes smoothly track the object leftward. Where is the lesion?",
+  "scaffolds": [
+    {
+      "q": "What are the two main types of eye movements?",
+      "options": [
+        "Up and down only",
+        "Voluntary saccades (fast, intentional) and smooth pursuit (slow tracking)",
+        "Left and right only",
+        "Blinking and squinting"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Eye movements include SACCADES (fast, voluntary 'jump' movements) and SMOOTH PURSUIT (slow tracking of moving objects). Different brain circuits control each.",
+      "wrongExplains": {
+        "0": "These describe directions, not the fundamental movement types.",
+        "2": "These describe directions, not the fundamental movement types.",
+        "3": "Blinking and squinting are protective, not tracking movements."
+      }
+    },
+    {
+      "q": "What brain region controls voluntary eye movements (saccades)?",
+      "options": [
+        "The cerebellum",
+        "The frontal eye fields (in the frontal lobe)",
+        "The occipital lobe",
+        "The spinal cord"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The FRONTAL EYE FIELDS (FEF) in the frontal lobe control VOLUNTARY SACCADES. When you decide to look somewhere, FEF sends commands to brainstem gaze centers.",
+      "wrongExplains": {
+        "0": "Cerebellum coordinates timing, not voluntary gaze decisions.",
+        "2": "Occipital processes vision; frontal eye fields control voluntary gaze.",
+        "3": "Eye movements are controlled by brain, not spinal cord."
+      }
+    },
+    {
+      "q": "What brain pathway controls smooth pursuit tracking?",
+      "options": [
+        "Only the frontal eye fields",
+        "A different pathway using occipital-parietal cortex and cerebellum",
+        "Only the spinal cord",
+        "Only the medulla"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "SMOOTH PURSUIT uses a DIFFERENT PATHWAY — involving OCCIPITAL-PARIETAL cortex and CEREBELLUM. This is separate from the voluntary saccade circuit.",
+      "wrongExplains": {
+        "0": "Frontal eye fields control saccades; pursuit uses a different pathway.",
+        "2": "Eye movements are controlled by brain, not spinal cord.",
+        "3": "Medulla handles vital functions, not smooth pursuit."
+      }
+    },
+    {
+      "q": "Why can losing voluntary gaze preserve smooth pursuit?",
+      "options": [
+        "They're the same circuit",
+        "Because they use different circuits — damage one, spare the other",
+        "Smooth pursuit doesn't really exist",
+        "Voluntary gaze isn't real"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The DISSOCIATION proves the circuits are SEPARATE. Damage the voluntary circuit (FEF) and pursuit is preserved; they use different brain pathways.",
+      "wrongExplains": {
+        "0": "The dissociation proves they're different circuits.",
+        "2": "Smooth pursuit is a real eye movement type used for tracking.",
+        "3": "Voluntary gaze is real and controlled by frontal eye fields."
+      }
+    },
+    {
+      "q": "Which side does each frontal eye field control?",
+      "options": [
+        "Each FEF controls the same side (ipsilateral)",
+        "Each FEF controls voluntary gaze to the OPPOSITE side (contralateral)",
+        "Both FEFs control both sides equally",
+        "FEFs only control vertical gaze"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "It's CROSSED — the LEFT frontal eye field drives RIGHTWARD gaze. The RIGHT frontal eye field drives LEFTWARD gaze.",
+      "wrongExplains": {
+        "0": "FEF is contralateral; left FEF looks right.",
+        "2": "Each FEF preferentially controls contralateral gaze.",
+        "3": "FEFs control horizontal gaze; vertical involves different circuits."
+      }
+    },
+    {
+      "q": "What would damage to the LEFT frontal eye field cause?",
+      "options": [
+        "Can't look left voluntarily",
+        "Can't look RIGHT voluntarily",
+        "Total blindness",
+        "Hearing loss"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Since each FEF controls CONTRALATERAL gaze, LEFT FEF damage = can't look RIGHT voluntarily. The right FEF is intact for leftward gaze.",
+      "wrongExplains": {
+        "0": "Left FEF controls rightward gaze, not leftward.",
+        "2": "FEF damage affects gaze, not vision itself.",
+        "3": "FEF affects eye movements, not hearing."
+      }
+    },
+    {
+      "q": "What does it mean when someone can't look left voluntarily but CAN track left?",
+      "options": [
+        "Both circuits are damaged",
+        "Voluntary circuit is damaged but pursuit circuit is intact",
+        "They're faking",
+        "Complete blindness"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The DISSOCIATION points to a CORTICAL lesion (frontal eye field). If both were damaged (brainstem), neither voluntary nor pursuit would work to that side.",
+      "wrongExplains": {
+        "0": "Preserved pursuit means the pursuit circuit is intact.",
+        "2": "This is a real neurological finding, not faking.",
+        "3": "They can see; their pursuit tracking proves vision is intact."
+      }
+    },
+    {
+      "q": "Why does preserved pursuit localize the lesion to cortex rather than brainstem?",
+      "options": [
+        "Because the brainstem doesn't control gaze",
+        "Because a brainstem lesion would affect both voluntary AND pursuit gaze to that side",
+        "Because pursuit doesn't exist",
+        "Because cortex doesn't affect eye movements"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "A BRAINSTEM lesion would damage the FINAL COMMON PATHWAY — both voluntary and pursuit would fail. Preserved pursuit means the lesion is upstream, in cortex.",
+      "wrongExplains": {
+        "0": "The brainstem does control gaze via gaze centers.",
+        "2": "Pursuit is a real eye movement type.",
+        "3": "Cortex does control eye movements via frontal eye fields."
+      }
+    },
+    {
+      "q": "Can't look LEFT voluntarily + intact leftward tracking = lesion in the ___?",
+      "options": [
+        "Left frontal eye field",
+        "Right frontal eye field",
+        "Brainstem",
+        "Spinal cord"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "RIGHT FRONTAL EYE FIELD. The right FEF controls leftward voluntary gaze. Damage here impairs voluntary leftward gaze while sparing pursuit (different circuit).",
+      "wrongExplains": {
+        "0": "Left FEF controls rightward gaze, not leftward.",
+        "2": "Brainstem lesion would impair both voluntary and pursuit.",
+        "3": "Spinal cord doesn't control eye movements."
+      }
+    }
+  ]
+}

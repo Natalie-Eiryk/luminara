@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.37",
+  "parentQuestion": "Boyle's Law states that:",
+  "narrative": {
+    "setting": "The Magic School Bus has transformed into a balloon inside Mr. Edgar's chest cavity. Each time his diaphragm contracts, you feel the space around you expand. Pressure drops. Air rushes in. Ms. Frizzle gestures excitedly at glowing equations floating in the air: 'Class, every breath you take obeys a 17th-century law discovered by a man in a laboratory. Physics doesn't negotiate with biology - biology USES physics.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's chest is injured. His thoracic cavity can't expand properly. Understanding Boyle's Law is the key to saving his breathing."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.37.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "Ms. Frizzle pulls out a dusty book titled 'A Defence of the Doctrine Touching the Spring and Weight of the Air' - Robert Boyle, 1662. 'Before we understand breathing, we must understand what air DOES when you give it space.'",
+      "q": "Boyle's Law describes the relationship between:",
+      "options": [
+        "Pressure and temperature",
+        "Pressure and volume",
+        "Volume and temperature",
+        "Pressure and density"
+      ],
+      "answer": 1,
+      "explain": "Boyle's Law: PRESSURE and VOLUME are inversely related (when temperature is constant). Squeeze a balloon (decrease volume) → pressure goes UP. Expand a balloon (increase volume) → pressure goes DOWN. P and V are dance partners moving opposite directions.",
+      "wrongExplains": {
+        "0": "That's Charles's Law (V and T) or Gay-Lussac's Law (P and T). Boyle focused on pressure-volume at CONSTANT temperature.",
+        "2": "That's Charles's Law - volume changes with temperature. Boyle isolated pressure and volume by keeping temperature fixed.",
+        "3": "Density is related, but Boyle's Law specifically addresses VOLUME and pressure. It's about how much space the gas occupies."
+      }
+    },
+    {
+      "id": "900.5.37.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "A holographic graph appears: as one line goes up, the other goes down. They never meet, never parallel - always inverse. 'Watch the dance,' Ms. Frizzle says. 'When one partner rises, the other falls.'",
+      "q": "Boyle's Law states that pressure and volume are:",
+      "options": [
+        "Directly proportional",
+        "Inversely proportional",
+        "Equal to each other",
+        "Unrelated"
+      ],
+      "answer": 1,
+      "explain": "INVERSELY proportional: when one goes UP, the other goes DOWN. Double the pressure → volume halves. Double the volume → pressure halves. The product P×V stays constant. It's a mathematical seesaw.",
+      "wrongExplains": {
+        "0": "Direct means they move TOGETHER (both up or both down). Boyle found they move OPPOSITE - inverse relationship.",
+        "2": "Pressure and volume have different units and values. They're not equal - they're inversely related through multiplication.",
+        "3": "They're intimately related! Change one and the other MUST change to compensate (if temperature is constant)."
+      }
+    },
+    {
+      "id": "900.5.37.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "Ms. Frizzle writes on the windshield: P1V1 = P2V2. 'This equation,' she says reverently, 'explains every breath you've ever taken. Initial pressure times initial volume equals final pressure times final volume. The universe keeps perfect accounts.'",
+      "q": "If you decrease the volume of a gas container by half, the pressure will:",
+      "options": [
+        "Stay the same",
+        "Decrease by half",
+        "Double",
+        "Quadruple"
+      ],
+      "answer": 2,
+      "explain": "P1V1 = P2V2. If V2 = ½V1, then P2 must equal 2P1 to keep the equation balanced. Halve the volume → DOUBLE the pressure. Squeeze the space, pack the molecules tighter, collisions increase → pressure rises.",
+      "wrongExplains": {
+        "0": "The universe doesn't let you cheat! Decrease volume without temperature change → pressure MUST increase.",
+        "1": "That would be direct proportion. Boyle's Law is INVERSE - they move opposite. Volume down = pressure up.",
+        "3": "Not quadruple - just double. The relationship is inverse, not exponential. Halve volume → double pressure, not 4x."
+      }
+    },
+    {
+      "id": "900.5.37.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "You watch Mr. Edgar's diaphragm contract, pulling downward. The chest cavity expands like a bellows. 'Volume increases,' Ms. Frizzle narrates. 'What happens to pressure?'",
+      "q": "During inhalation, the chest cavity expands, which causes lung pressure to:",
+      "options": [
+        "Increase above atmospheric pressure",
+        "Decrease below atmospheric pressure",
+        "Equal atmospheric pressure exactly",
+        "Stay constant"
+      ],
+      "answer": 1,
+      "explain": "Chest expands → lung VOLUME increases → by Boyle's Law, pressure DECREASES. Now lung pressure is LESS than atmospheric pressure outside. Air rushes IN to equalize. Pressure difference is the driving force of breathing!",
+      "wrongExplains": {
+        "0": "That would push air OUT (exhalation). For inhalation, you need pressure LOWER than outside to suck air in.",
+        "2": "Pressure briefly equals atmospheric at the moment between breaths. During active inhalation, it must be lower to pull air in.",
+        "3": "If pressure stayed constant, no air would move! The pressure CHANGE is what creates airflow."
+      }
+    },
+    {
+      "id": "900.5.37.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The diaphragm relaxes. The chest cavity shrinks. You feel the space compressing around you. 'Now we're being squeezed,' Keesha observes. 'What happens now?'",
+      "q": "During exhalation, the chest cavity decreases in volume, causing lung pressure to:",
+      "options": [
+        "Decrease below atmospheric pressure",
+        "Increase above atmospheric pressure",
+        "Equal atmospheric pressure exactly",
+        "Remain constant"
+      ],
+      "answer": 1,
+      "explain": "Chest shrinks → lung VOLUME decreases → by Boyle's Law, pressure INCREASES. Now lung pressure is GREATER than atmospheric pressure. Air is pushed OUT. Boyle's Law drives both inhalation AND exhalation!",
+      "wrongExplains": {
+        "0": "Decreased volume means INCREASED pressure, not decreased. You're reversing the inverse relationship.",
+        "2": "Pressure equals atmospheric only at rest. During active exhalation, it must be higher to push air out.",
+        "3": "Volume is changing, so pressure MUST change. Constant pressure with changing volume violates Boyle's Law."
+      }
+    },
+    {
+      "id": "900.5.37.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "An alarm sounds - Mr. Edgar's chest wall has been injured. His ribs can't expand properly. The volume change is minimal. 'If volume can't increase,' Ms. Frizzle says urgently, 'pressure can't drop. And if pressure can't drop...'",
+      "q": "If the chest cavity cannot expand properly, inhalation will be impaired because:",
+      "options": [
+        "Temperature will rise too high",
+        "Pressure cannot decrease to draw air in",
+        "The diaphragm will stop contracting",
+        "Oxygen will be consumed too quickly"
+      ],
+      "answer": 1,
+      "explain": "No expansion → no volume increase → no pressure decrease → no pressure gradient → no airflow! Boyle's Law requires volume change to create pressure change. Restrict volume expansion and you suffocate. Physics is not optional.",
+      "wrongExplains": {
+        "0": "Temperature isn't the issue in chest wall injury. The problem is mechanical - can't create the volume change needed for pressure drop.",
+        "2": "The diaphragm may still TRY to contract, but if ribs are broken or restricted, volume can't increase enough.",
+        "3": "Oxygen consumption in tissues is separate. The problem is getting air IN through pressure changes in the first place."
+      }
+    },
+    {
+      "id": "900.5.37.s07",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "'Why does a pneumothorax collapse the lung?' Arnold asks. Ms. Frizzle points to air leaking into the chest cavity. 'Watch what happens when air fills the space around the lung.'",
+      "q": "In a pneumothorax (air in chest cavity), the lung collapses because:",
+      "options": [
+        "Air pressure around the lung equals atmospheric pressure, eliminating the gradient",
+        "The lung tissue becomes infected",
+        "Oxygen is displaced by nitrogen",
+        "The diaphragm becomes paralyzed"
+      ],
+      "answer": 0,
+      "explain": "Normally the chest cavity has NEGATIVE pressure (below atmospheric) holding the lung expanded. Pneumothorax lets air in → pressure equalizes → no pressure gradient → lung collapses inward like a deflated balloon. Boyle's Law in reverse!",
+      "wrongExplains": {
+        "1": "Pneumothorax is mechanical, not infectious. It's a physics problem - air where it shouldn't be, equalizing pressure.",
+        "2": "The gas composition doesn't matter. The problem is PRESSURE equalization destroying the gradient that keeps lungs inflated.",
+        "3": "The diaphragm still works in pneumothorax. But it can't expand the lung because the pressure gradient is gone."
+      }
+    },
+    {
+      "id": "900.5.37.s08",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "Ms. Frizzle pulls up a diagram of a mechanical ventilator. 'When lungs fail, machines can breathe for you. But they use the same physics - they just do it BACKWARDS.'",
+      "q": "A mechanical ventilator creates inhalation by:",
+      "options": [
+        "Decreasing pressure below atmospheric",
+        "Increasing pressure above atmospheric to push air in",
+        "Heating the air to make it expand",
+        "Chemically converting nitrogen to oxygen"
+      ],
+      "answer": 1,
+      "explain": "Ventilators use POSITIVE pressure - they push air IN by creating pressure higher than atmospheric. Your body uses negative pressure (expanding chest to pull air in). Different mechanism, same Boyle's Law: create a pressure gradient and air flows.",
+      "wrongExplains": {
+        "0": "That's how YOUR body breathes (negative pressure). Ventilators use the opposite - positive pressure pushing in.",
+        "2": "Temperature changes aren't the primary mechanism. Ventilators mechanically increase pressure to force airflow.",
+        "3": "Ventilators don't change gas composition chemically. They mechanically move air using pressure gradients."
+      }
+    },
+    {
+      "id": "900.5.37.s09",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "The bus shrinks further, diving into an alveolus. 'Even here,' Ms. Frizzle says, 'at the smallest air sacs, Boyle's Law rules. Surfactant reduces surface tension so these tiny bubbles can expand without enormous pressure changes.'",
+      "q": "Why is surfactant important in relation to Boyle's Law?",
+      "options": [
+        "It increases oxygen solubility",
+        "It prevents alveolar collapse by reducing surface tension",
+        "It speeds up gas diffusion across membranes",
+        "It neutralizes carbon dioxide"
+      ],
+      "answer": 1,
+      "explain": "By Boyle's Law, smaller alveoli require GREATER pressure to inflate (like small balloons are harder to inflate). Surfactant reduces surface tension, making it easier to expand small alveoli without enormous pressure changes. Physics made biological.",
+      "wrongExplains": {
+        "0": "Surfactant affects surface tension, not solubility. It's a mechanical lubricant, not a chemical reactor.",
+        "2": "Surfactant doesn't affect diffusion rates. It's about INFLATION mechanics - reducing the work of breathing.",
+        "3": "CO2 handling is separate. Surfactant's job is preventing collapse by reducing the pressure needed to inflate."
+      }
+    },
+    {
+      "id": "900.5.37.s10",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "Mr. Edgar takes a deep, full breath - his injury stabilized. The chest expands beautifully, pressure drops, air floods in. 'From Boyle's laboratory in 1662 to this moment,' Ms. Frizzle says. 'Same law, same breath.'",
+      "q": "Boyle's Law states that:",
+      "options": [
+        "Pressure and volume are directly proportional at constant temperature",
+        "Pressure and volume are inversely proportional at constant temperature",
+        "Pressure and temperature are inversely proportional at constant volume",
+        "Volume and temperature are directly proportional at constant pressure"
+      ],
+      "answer": 1,
+      "explain": "BOYLE'S LAW: At constant temperature, pressure and volume are INVERSELY proportional. P1V1 = P2V2. This is the physics of breathing - volume changes create pressure changes, pressure changes move air. Every breath is Boyle's Law in action.",
+      "wrongExplains": {
+        "0": "You've got the relationship backwards! Inverse means opposite directions - when volume increases, pressure decreases.",
+        "2": "That's Gay-Lussac's Law. Boyle focused on pressure and VOLUME, keeping temperature constant.",
+        "3": "That's Charles's Law. Boyle's innovation was studying pressure-volume while controlling temperature."
+      }
+    }
+  ]
+}

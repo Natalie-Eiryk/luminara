@@ -1,0 +1,783 @@
+{
+  "version": "1.0",
+  "source": "LUMI-OS Teaching Module",
+  "prefix": "100.5",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": "100.5.01",
+      "q": "The cerebrum is divided into left and right halves called:",
+      "options": [
+        "Lobes",
+        "Hemispheres",
+        "Ventricles",
+        "Gyri"
+      ],
+      "answer": 1,
+      "explain": "The cerebrum consists of two hemispheres — left and right — connected by the corpus callosum. Each hemisphere controls the opposite side of the body.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.5,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.5.02",
+      "q": "The shallow grooves on the brain surface are called:",
+      "options": [
+        "Fissures",
+        "Gyri",
+        "Sulci",
+        "Ventricles"
+      ],
+      "answer": 2,
+      "explain": "Sulci (singular: Sulcus) are the shallow grooves between brain folds. They increase surface area without increasing skull size.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.8,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.5.03",
+      "q": "Which lobe of the cerebrum is primarily responsible for vision?",
+      "options": [
+        "Frontal lobe",
+        "Parietal lobe",
+        "Temporal lobe",
+        "Occipital lobe"
+      ],
+      "answer": 3,
+      "explain": "The occipital lobe at the back of the brain processes visual information. Damage here causes cortical blindness even with healthy eyes.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.5.04",
+      "q": "The brainstem consists of the midbrain, pons, and:",
+      "options": [
+        "Thalamus",
+        "Hypothalamus",
+        "Medulla oblongata",
+        "Cerebellum"
+      ],
+      "answer": 2,
+      "explain": "The brainstem is three parts: Midbrain (superior), pons (middle), and medulla oblongata (inferior). It connects brain to spinal cord and controls vital functions.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.5,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.5.05",
+      "q": "The corpus callosum is composed of:",
+      "options": [
+        "Gray matter",
+        "White matter",
+        "Cerebrospinal fluid",
+        "Meningeal tissue"
+      ],
+      "answer": 1,
+      "explain": "The corpus callosum is the largest white matter tract in the brain — myelinated axons connecting left and right hemispheres.",
+      "mechanism": null,
+      "isotopes": [
+        "neurology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "100.5.06",
+      "q": "The primary motor cortex is located in which gyrus?",
+      "options": [
+        "Postcentral gyrus",
+        "Precentral gyrus",
+        "Superior temporal gyrus",
+        "Cingulate gyrus"
+      ],
+      "answer": 1,
+      "explain": "The precentral gyrus contains the primary motor cortex — immediately anterior to the central sulcus. 'Pre' means before/in front of.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.5,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.5.07",
+      "q": "The three protective membranes covering the brain and spinal cord are called the:",
+      "options": [
+        "Ventricles",
+        "Meninges",
+        "Plexuses",
+        "Commissures"
+      ],
+      "answer": 1,
+      "explain": "The meninges are three membrane layers — dura mater, arachnoid mater, and pia mater — protecting the CNS.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "100.5.08",
+      "q": "Which ventricle is located within the diencephalon?",
+      "options": [
+        "Lateral ventricles",
+        "Third ventricle",
+        "Fourth ventricle",
+        "Central canal"
+      ],
+      "answer": 1,
+      "explain": "The third ventricle is a narrow slit between the left and right thalamus, within the diencephalon.",
+      "mechanism": null,
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "100.5.09",
+      "q": "The thalamus functions primarily as a:",
+      "options": [
+        "Motor control center",
+        "Sensory relay station",
+        "Hormone production site",
+        "Memory storage center"
+      ],
+      "answer": 1,
+      "explain": "The thalamus relays sensory information to the cortex. Almost all sensory input passes through the thalamus before reaching conscious awareness.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "100.5.10",
+      "q": "The structure that coordinates voluntary muscle movements and maintains balance is the:",
+      "options": [
+        "Cerebrum",
+        "Hypothalamus",
+        "Cerebellum",
+        "Medulla"
+      ],
+      "answer": 2,
+      "explain": "The cerebellum — 'little brain' — coordinates movements, maintains posture, and processes balance information. Damage causes ataxia.",
+      "mechanism": null,
+      "isotopes": [
+        "muscle.structure"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.5.11",
+      "q": "Broca's area is located in which lobe?",
+      "options": [
+        "Parietal lobe",
+        "Frontal lobe",
+        "Temporal lobe",
+        "Occipital lobe"
+      ],
+      "answer": 1,
+      "explain": "Broca's area is in the left frontal lobe (usually) and controls speech production. Damage causes Broca's aphasia — halting, effortful speech.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.5.12",
+      "q": "The hippocampus is primarily involved in:",
+      "options": [
+        "Motor coordination",
+        "Memory formation",
+        "Visual processing",
+        "Hormone secretion"
+      ],
+      "answer": 1,
+      "explain": "The hippocampus converts short-term memories into long-term memories. Damage prevents forming new memories (anterograde amnesia).",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.5.13",
+      "q": "The dura mater is the:",
+      "options": [
+        "Innermost meningeal layer",
+        "Middle meningeal layer",
+        "Outermost meningeal layer",
+        "Fluid surrounding the brain"
+      ],
+      "answer": 2,
+      "explain": "Dura mater means 'tough mother' — it's the thick, outermost meningeal layer attached to the skull's inner surface.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "100.5.14",
+      "q": "The limbic system is primarily associated with:",
+      "options": [
+        "Motor control",
+        "Emotions and memory",
+        "Visual processing",
+        "Respiration"
+      ],
+      "answer": 1,
+      "explain": "The limbic system — including amygdala, hippocampus, and cingulate gyrus — processes emotions, motivation, and memory formation.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.5.15",
+      "q": "Cerebrospinal fluid is produced by the:",
+      "options": [
+        "Dura mater",
+        "Choroid plexuses",
+        "Arachnoid villi",
+        "Pia mater"
+      ],
+      "answer": 1,
+      "explain": "Choroid plexuses are specialized capillary networks in the ventricles that produce CSF by filtering blood plasma.",
+      "mechanism": null,
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.5,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.5.16",
+      "q": "The blood-brain barrier is formed primarily by:",
+      "options": [
+        "Neurons",
+        "Astrocytes and capillary endothelium",
+        "Oligodendrocytes",
+        "Microglia"
+      ],
+      "answer": 1,
+      "explain": "The blood-brain barrier is formed by tight junctions between capillary endothelial cells, supported by astrocyte end-feet wrapping around the vessels.",
+      "mechanism": null,
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "100.5.17",
+      "q": "The structure connecting the third and fourth ventricles is the:",
+      "options": [
+        "Interventricular foramen",
+        "Cerebral aqueduct",
+        "Central canal",
+        "Lateral aperture"
+      ],
+      "answer": 1,
+      "explain": "The cerebral aqueduct (of Sylvius) is a narrow channel through the midbrain connecting third ventricle to fourth ventricle.",
+      "mechanism": null,
+      "isotopes": [
+        "cardiology.structure"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "100.5.18",
+      "q": "Which structure controls the body's circadian rhythms?",
+      "options": [
+        "Thalamus",
+        "Pineal gland",
+        "Amygdala",
+        "Hippocampus"
+      ],
+      "answer": 1,
+      "explain": "The pineal gland secretes melatonin, regulated by light input from the eyes, controlling sleep-wake cycles and circadian rhythms.",
+      "mechanism": null,
+      "isotopes": [
+        "endocrine.structure"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.5.19",
+      "q": "The basal nuclei are primarily involved in:",
+      "options": [
+        "Sensory processing",
+        "Regulating voluntary movement",
+        "Memory formation",
+        "Language comprehension"
+      ],
+      "answer": 1,
+      "explain": "Basal nuclei (basal ganglia) filter and regulate voluntary movement. They help initiate wanted movements and suppress unwanted ones.",
+      "mechanism": null,
+      "isotopes": [
+        "ans.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "100.5.20",
+      "q": "The primary somatosensory cortex is located in the:",
+      "options": [
+        "Precentral gyrus",
+        "Postcentral gyrus",
+        "Superior temporal gyrus",
+        "Inferior frontal gyrus"
+      ],
+      "answer": 1,
+      "explain": "Primary somatosensory cortex occupies the postcentral gyrus — immediately posterior to the central sulcus. It receives touch, pressure, temperature, and pain signals.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "100.5.21",
+      "q": "The hypothalamus regulates all of the following EXCEPT:",
+      "options": [
+        "Body temperature",
+        "Hunger and thirst",
+        "Voluntary movement",
+        "Sleep-wake cycles"
+      ],
+      "answer": 2,
+      "explain": "Hypothalamus is the homeostatic control center — temperature, hunger, thirst, circadian rhythms, hormones. Voluntary movement is motor cortex and basal ganglia.",
+      "mechanism": null,
+      "isotopes": [
+        "ans.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.5,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.5.22",
+      "q": "Which cranial fossa contains the cerebellum?",
+      "options": [
+        "Anterior cranial fossa",
+        "Middle cranial fossa",
+        "Posterior cranial fossa",
+        "Superior cranial fossa"
+      ],
+      "answer": 2,
+      "explain": "The posterior cranial fossa — deepest and lowest — houses the cerebellum, pons, and medulla. Formed by occipital bone.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.5,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.5.23",
+      "q": "The amygdala is primarily responsible for:",
+      "options": [
+        "Balance and coordination",
+        "Fear and emotional processing",
+        "Speech production",
+        "Visual processing"
+      ],
+      "answer": 1,
+      "explain": "The amygdala — almond-shaped nuclei in the temporal lobes — processes fear, aggression, and emotional significance of stimuli.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.5.24",
+      "q": "The reticular formation is located in the:",
+      "options": [
+        "Cerebral cortex",
+        "Brainstem",
+        "Cerebellum",
+        "Thalamus"
+      ],
+      "answer": 1,
+      "explain": "The reticular formation is a netlike core of nuclei running through the brainstem, controlling arousal, attention, and sleep-wake transitions.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.5,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.5.25",
+      "q": "Wernicke's area is located in which lobe?",
+      "options": [
+        "Frontal lobe",
+        "Parietal lobe",
+        "Temporal lobe",
+        "Occipital lobe"
+      ],
+      "answer": 2,
+      "explain": "Wernicke's area is in the left temporal lobe (usually) and processes language comprehension. Damage causes fluent but meaningless speech.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.5,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    }
+  ]
+}

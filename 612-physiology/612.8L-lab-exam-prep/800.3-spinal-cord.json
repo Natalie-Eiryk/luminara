@@ -1,0 +1,354 @@
+{
+  "id": "800.3",
+  "title": "Spinal Cord Model (Exercise 19)",
+  "description": "Spinal cord anatomy, spinal nerves, gray matter regions, white matter columns, and cerebrospinal fluid",
+  "questions": [
+    {
+      "id": "800.3.01",
+      "q": "What is the shallow groove running along the dorsal (posterior) midline of the spinal cord?",
+      "options": ["Anterior median fissure", "Posterior median sulcus", "Central canal", "Dorsal root entry zone"],
+      "answer": 1,
+      "chapter": "Exercise 19 — Spinal Cord Model",
+      "explain": "The posterior (dorsal) median sulcus is a shallow groove on the back of the spinal cord, marking the midline posteriorly.",
+      "optionExplains": [
+        {"verdict": "incorrect", "text": "The anterior median fissure is on the FRONT (ventral) side — and it's a deep fissure, not a shallow sulcus."},
+        {"verdict": "correct", "text": "The posterior median sulcus is shallow compared to the deep anterior fissure. It extends about 4-6mm into the cord, with a glial septum (posterior median septum) continuing deeper. This landmark helps orient spinal cord cross-sections and separates the dorsal columns."},
+        {"verdict": "incorrect", "text": "The central canal is inside the cord (within gray matter) — not on the external surface."},
+        {"verdict": "incorrect", "text": "The dorsal root entry zone is where dorsal roots enter the cord laterally — not the midline groove."}
+      ],
+      "mechanism": {
+        "title": "Posterior Median Sulcus: The Dorsal Midline",
+        "content": "The posterior median sulcus is continuous with the posterior median septum, a glial partition that partially separates the two dorsal columns of white matter. This septum doesn't extend to the gray matter. The sulcus is a landmark for the dorsal (sensory) side of the cord. In cross-section, identify the posterior sulcus (shallow, dorsal) versus the anterior fissure (deep, ventral) to correctly orient the cord — this is critical for understanding which tracts are ascending (sensory) versus descending (motor).",
+        "metaphor": "The posterior median sulcus is like the subtle center seam on the back of a jacket — it marks the midline but doesn't cut deep, while the front zipper (anterior fissure) creates a much deeper division."
+      }
+    },
+    {
+      "id": "800.3.02",
+      "q": "What is the deep cleft running along the ventral (anterior) midline of the spinal cord?",
+      "options": ["Posterior median sulcus", "Anterior (ventral) median fissure", "Central canal", "Ventral root exit zone"],
+      "answer": 1,
+      "chapter": "Exercise 19 — Spinal Cord Model",
+      "explain": "The anterior (ventral) median fissure is a deep groove on the front of the spinal cord, extending about one-third of the way to the central canal.",
+      "optionExplains": [
+        {"verdict": "incorrect", "text": "The posterior median sulcus is on the BACK (dorsal) side and is shallow, not deep."},
+        {"verdict": "correct", "text": "The anterior median fissure is about 3mm deep, containing pia mater and branches of the anterior spinal artery. It nearly reaches the gray commissure. This deep groove helps orient cross-sections: the deep fissure is always ventral (front). Occlusion of the anterior spinal artery in the fissure can cause anterior spinal artery syndrome."},
+        {"verdict": "incorrect", "text": "The central canal is the CSF-filled tube in the center of the cord — not a surface groove."},
+        {"verdict": "incorrect", "text": "Ventral roots exit laterally through the anterolateral sulcus — the midline groove is the anterior fissure."}
+      ],
+      "mechanism": {
+        "title": "Anterior Median Fissure: The Ventral Divide",
+        "content": "The anterior median fissure penetrates deeply into the cord, lined by pia mater. The anterior spinal artery lies within it, supplying the anterior two-thirds of the cord. Motor fibers cross the midline just dorsal to the fissure (in the anterior white commissure). The decussation of the pyramidal (corticospinal) tracts occurs at the medulla, but additional motor system crossing occurs in the spinal cord via the anterior commissure. Damage to the anterior spinal artery causes motor weakness and loss of pain/temperature sensation (spinothalamic tracts), but preserves dorsal column sensations (proprioception, vibration).",
+        "metaphor": "The anterior median fissure is like a deep valley running down the front of a mountain range — it carries the main water supply (anterior spinal artery) and marks where the two halves almost separate."
+      }
+    },
+    {
+      "id": "800.3.03",
+      "q": "What is the gray matter bridge that connects the left and right gray matter around the central canal?",
+      "options": ["Dorsal horn", "Gray commissure", "White commissure", "Lateral horn"],
+      "answer": 1,
+      "chapter": "Exercise 19 — Spinal Cord Model",
+      "explain": "The gray commissure is the narrow band of gray matter surrounding the central canal, connecting the two halves of the spinal cord's gray matter.",
+      "optionExplains": [
+        {"verdict": "incorrect", "text": "The dorsal horn is the posterior portion of gray matter receiving sensory input — not the connecting bridge."},
+        {"verdict": "correct", "text": "The gray commissure surrounds the central canal and contains commissural neurons whose axons cross to the opposite side. It connects the anterior gray commissure (motor-related) and posterior gray commissure (sensory-related). This is where second-order pain/temperature neurons decussate before ascending in the spinothalamic tract."},
+        {"verdict": "incorrect", "text": "The white commissure is white matter (anterior white commissure) where axons cross — distinct from gray commissure."},
+        {"verdict": "incorrect", "text": "The lateral horn contains autonomic neurons in thoracic/lumbar levels — not the midline connecting bridge."}
+      ],
+      "mechanism": {
+        "title": "Gray Commissure: The Central Connection",
+        "content": "The gray commissure is divided into anterior gray commissure (ventral to central canal) and posterior gray commissure (dorsal to canal). Commissural interneurons in this region coordinate bilateral activity — essential for walking, maintaining posture, and bilateral reflexes. The decussating pain and temperature fibers (second-order neurons from dorsal horn to spinothalamic tract) cross in the anterior gray commissure. Syringomyelia (expansion of the central canal) first damages these crossing fibers, causing the characteristic bilateral loss of pain and temperature in a 'cape-like' distribution.",
+        "metaphor": "The gray commissure is like a central hallway connecting the left and right wings of a building — it's where messages (neurons) cross from one side to the other, and damage to this hallway blocks bilateral communication."
+      }
+    },
+    {
+      "id": "800.3.04",
+      "q": "What is the small, CSF-filled tube at the center of the spinal cord, surrounded by gray commissure?",
+      "options": ["Subarachnoid space", "Central canal", "Fourth ventricle", "Vertebral canal"],
+      "answer": 1,
+      "chapter": "Exercise 19 — Spinal Cord Model",
+      "explain": "The central canal is a tiny CSF-filled tube running the length of the spinal cord, surrounded by gray commissure and lined by ependymal cells.",
+      "optionExplains": [
+        {"verdict": "incorrect", "text": "The subarachnoid space surrounds the spinal cord externally — the central canal is internal."},
+        {"verdict": "correct", "text": "The central canal is continuous with the fourth ventricle superiorly and ends in the terminal ventricle at the conus medullaris. It's lined by ependymal cells. In adults, it's often partially obliterated, but it remains a potential space. CSF in the canal provides some nutrition to central gray matter."},
+        {"verdict": "incorrect", "text": "The fourth ventricle is in the brainstem — the central canal continues into the spinal cord below it."},
+        {"verdict": "incorrect", "text": "The vertebral canal is the bony spinal canal containing the spinal cord — not the CSF tube inside the cord."}
+      ],
+      "mechanism": {
+        "title": "Central Canal: The Inner Reservoir",
+        "content": "The central canal is a vestige of the neural tube lumen. It's about 0.1mm in diameter, lined by ciliated ependymal cells that help circulate the small amount of CSF within. The canal expands slightly at the conus medullaris to form the terminal ventricle. With age, the canal often becomes occluded by ependymal cell proliferation — this is usually asymptomatic since most CSF circulation is in the subarachnoid space. Pathological dilation (syringomyelia, hydromyelia) causes progressive neurological deficits.",
+        "metaphor": "The central canal is like an old underground aqueduct running through a city — it once served an important developmental purpose, but in adults, most water (CSF) flows through surface channels (subarachnoid space) instead."
+      }
+    },
+    {
+      "id": "800.3.05",
+      "q": "Spinal nerves form from the merger of which two structures?",
+      "options": ["Ventral and lateral horns", "Dorsal and ventral rami", "Dorsal and ventral roots", "Gray and white matter"],
+      "answer": 2,
+      "chapter": "Exercise 19 — Spinal Cord Model",
+      "explain": "Spinal nerves form when the dorsal root (sensory) and ventral root (motor) merge just outside the spinal cord, creating a mixed nerve.",
+      "optionExplains": [
+        {"verdict": "incorrect", "text": "Ventral and lateral horns are parts of gray matter — they don't merge to form spinal nerves."},
+        {"verdict": "incorrect", "text": "Dorsal and ventral rami are the BRANCHES of spinal nerves after they form — the nerve forms from roots."},
+        {"verdict": "correct", "text": "The dorsal root (carrying sensory fibers from the DRG) and ventral root (carrying motor fibers from the ventral horn) merge in the intervertebral foramen to form the very short spinal nerve. Almost immediately, this nerve divides into dorsal and ventral rami. The spinal nerve itself is only 1-2cm long."},
+        {"verdict": "incorrect", "text": "Gray and white matter are spinal cord tissue types — they don't merge to form peripheral nerves."}
+      ],
+      "mechanism": {
+        "title": "Spinal Nerve Formation: The Merger Point",
+        "content": "Spinal nerve formation follows a precise sequence: sensory neuron cell bodies in the dorsal root ganglion send central processes through the dorsal root into the spinal cord; motor neuron cell bodies in the ventral horn send axons out through the ventral root. These roots merge in the intervertebral foramen to form a mixed spinal nerve. The dorsal root is purely sensory (afferent); the ventral root is purely motor (efferent); but the spinal nerve and both rami are mixed, carrying both sensory and motor fibers.",
+        "metaphor": "Forming a spinal nerve is like two one-way streets (dorsal root bringing sensory traffic in, ventral root sending motor traffic out) merging into a single two-way road (spinal nerve) that immediately splits again into branches (rami) going to different destinations."
+      }
+    },
+    {
+      "id": "800.3.06",
+      "q": "What is the nerve root that carries sensory information into the spinal cord?",
+      "options": ["Ventral root", "Dorsal root", "Ventral ramus", "Dorsal ramus"],
+      "answer": 1,
+      "chapter": "Exercise 19 — Spinal Cord Model",
+      "explain": "The dorsal root carries sensory (afferent) information from peripheral receptors into the spinal cord via the dorsal horn.",
+      "optionExplains": [
+        {"verdict": "incorrect", "text": "The ventral root carries MOTOR (efferent) signals OUT of the spinal cord to muscles."},
+        {"verdict": "correct", "text": "The dorsal root is purely sensory, containing axons of pseudounipolar neurons whose cell bodies are in the dorsal root ganglion. These neurons transmit touch, pain, temperature, and proprioception from the body. The Bell-Magendie law describes this segregation: dorsal = sensory, ventral = motor."},
+        {"verdict": "incorrect", "text": "The ventral ramus is a mixed nerve branch AFTER the spinal nerve forms — not a root."},
+        {"verdict": "incorrect", "text": "The dorsal ramus is a mixed nerve branch to back muscles and skin — not the sensory root entering the cord."}
+      ],
+      "mechanism": {
+        "title": "Dorsal Root: The Sensory Highway",
+        "content": "The dorsal root contains the central processes of primary sensory neurons. Different fiber types carry different modalities: large myelinated Aα and Aβ fibers carry proprioception and fine touch; small myelinated Aδ fibers carry fast pain and cold; unmyelinated C fibers carry slow pain, heat, and itch. These fibers enter the cord and either synapse immediately (pain, temperature in dorsal horn) or ascend directly in dorsal columns (proprioception, fine touch). The dorsal root ganglion, containing sensory neuron cell bodies, creates a visible swelling on each dorsal root.",
+        "metaphor": "The dorsal root is like a bundle of incoming telephone lines from sensors throughout the body — carrying information about what you're touching, whether it hurts, if it's hot or cold, and where your limbs are in space."
+      }
+    },
+    {
+      "id": "800.3.07",
+      "q": "What is the nerve root that carries motor commands out of the spinal cord?",
+      "options": ["Dorsal root", "Ventral root", "Dorsal ramus", "Ventral ramus"],
+      "answer": 1,
+      "chapter": "Exercise 19 — Spinal Cord Model",
+      "explain": "The ventral root carries motor (efferent) signals from the spinal cord to skeletal muscles and autonomic targets.",
+      "optionExplains": [
+        {"verdict": "incorrect", "text": "The dorsal root is SENSORY — it brings information IN, not out."},
+        {"verdict": "correct", "text": "The ventral root contains axons of motor neurons whose cell bodies are in the ventral horn (for somatic motor) and lateral horn (for autonomic motor). These axons are efferent — carrying commands from the CNS to effectors. Alpha motor neurons control skeletal muscle; gamma motor neurons control muscle spindles; preganglionic autonomic neurons control glands and smooth/cardiac muscle."},
+        {"verdict": "incorrect", "text": "The dorsal ramus is a mixed branch after the spinal nerve forms — not the motor root."},
+        {"verdict": "incorrect", "text": "The ventral ramus is a mixed branch to limbs and trunk — not the pure motor root."}
+      ],
+      "mechanism": {
+        "title": "Ventral Root: The Motor Highway",
+        "content": "The ventral root is the efferent output of the spinal cord. It contains axons from alpha motor neurons (to extrafusal muscle fibers for movement), gamma motor neurons (to intrafusal fibers in muscle spindles for proprioceptive sensitivity adjustment), and preganglionic autonomic neurons (sympathetic from T1-L2, parasympathetic from S2-S4). All ventral root fibers are myelinated for fast conduction. Lower motor neuron damage (ventral horn or ventral root) causes flaccid paralysis, muscle atrophy, fasciculations, and absent reflexes.",
+        "metaphor": "The ventral root is like outgoing command cables from headquarters (spinal cord) to field units (muscles): it carries the orders that make your body move, without any incoming sensory traffic."
+      }
+    },
+    {
+      "id": "800.3.08",
+      "q": "What are the small fiber bundles that form the dorsal and ventral roots called?",
+      "options": ["Rami", "Rootlets", "Fascicles", "Ganglia"],
+      "answer": 1,
+      "chapter": "Exercise 19 — Spinal Cord Model",
+      "explain": "Rootlets are the fine fiber bundles that emerge from the spinal cord and converge to form the dorsal and ventral roots.",
+      "optionExplains": [
+        {"verdict": "incorrect", "text": "Rami are branches of the spinal nerve AFTER it forms — not the fibers entering/leaving the cord."},
+        {"verdict": "correct", "text": "Each dorsal and ventral root is actually composed of 6-8 smaller rootlets that emerge from the cord along a line (dorsal rootlets from the posterolateral sulcus, ventral rootlets from the anterolateral region). These rootlets converge to form the larger root proper. The rootlet attachment zone is the actual entry/exit point at the cord surface."},
+        {"verdict": "incorrect", "text": "Fascicles are bundles of nerve fibers within a peripheral nerve — not the rootlet term."},
+        {"verdict": "incorrect", "text": "Ganglia are collections of nerve cell bodies — not the fiber bundles forming roots."}
+      ],
+      "mechanism": {
+        "title": "Rootlets: The Root's Building Blocks",
+        "content": "Rootlets represent the actual attachment of spinal nerves to the cord. Dorsal rootlets enter along the posterolateral sulcus; ventral rootlets exit from the anterolateral region. Each rootlet contains fewer fibers than the complete root — they converge like tributaries forming a river. In surgical procedures (selective dorsal rhizotomy for spasticity), individual rootlets can be stimulated to identify which contain problematic fibers. The rootlet attachment zones are important landmarks for spinal cord anatomy.",
+        "metaphor": "Rootlets are like individual threads that weave together to form a rope (root): you can see them separately at their attachment to the cord, but they merge into a single cable as they travel toward the intervertebral foramen."
+      }
+    },
+    {
+      "id": "800.3.09",
+      "q": "What structure contains the cell bodies of sensory neurons and creates a swelling on the dorsal root?",
+      "options": ["Ventral horn", "Lateral horn", "Dorsal root ganglion", "Sympathetic chain ganglion"],
+      "answer": 2,
+      "chapter": "Exercise 19 — Spinal Cord Model",
+      "explain": "The dorsal root ganglion (DRG) is a cluster of sensory neuron cell bodies located on each dorsal root, outside the spinal cord.",
+      "optionExplains": [
+        {"verdict": "incorrect", "text": "The ventral horn contains MOTOR neuron cell bodies — inside the spinal cord."},
+        {"verdict": "incorrect", "text": "The lateral horn contains AUTONOMIC neuron cell bodies — inside the cord."},
+        {"verdict": "correct", "text": "The dorsal root ganglion contains pseudounipolar sensory neurons. Their cell bodies sit in the ganglion while one process extends peripherally to receptors and another enters the cord. The DRG is outside the blood-brain barrier and can be targeted by certain viruses (herpes zoster/shingles). Each spinal nerve has its own DRG."},
+        {"verdict": "incorrect", "text": "Sympathetic chain ganglia are paravertebral autonomic ganglia — not sensory neuron collections."}
+      ],
+      "mechanism": {
+        "title": "Dorsal Root Ganglion: Sensory Neuron Headquarters",
+        "content": "The DRG contains the cell bodies of all primary sensory neurons for that spinal level. These neurons are pseudounipolar: during development, their two processes fuse near the cell body. The peripheral process goes to sensory receptors (skin, muscle, joints); the central process enters the spinal cord. No synapse occurs at the DRG — it's a pass-through station. DRG neurons are surrounded by satellite glial cells for support. The ganglion sits in or near the intervertebral foramen, protected by the bony canal.",
+        "metaphor": "The DRG is like a relay station where all the sensory phone lines from your body pass through — the operators (cell bodies) monitor the lines but don't interrupt the calls, letting sensory signals flow directly through to the main office (spinal cord)."
+      }
+    },
+    {
+      "id": "800.3.10",
+      "q": "What are the three 'horns' of gray matter in spinal cord cross-section?",
+      "options": ["Superior, middle, and inferior", "Ventral, dorsal, and lateral", "Anterior, posterior, and central", "Medial, lateral, and central"],
+      "answer": 1,
+      "chapter": "Exercise 19 — Spinal Cord Model",
+      "explain": "The gray matter horns are ventral (anterior), dorsal (posterior), and lateral — each with distinct functional roles.",
+      "optionExplains": [
+        {"verdict": "incorrect", "text": "Superior/middle/inferior are vertical, not the cross-sectional organization of gray matter horns."},
+        {"verdict": "correct", "text": "The ventral (anterior) horn contains motor neurons; the dorsal (posterior) horn contains sensory relay neurons; the lateral horn (present only in T1-L2 and S2-S4) contains autonomic neurons. This organization follows the principle: sensory = dorsal, motor = ventral, autonomic = lateral."},
+        {"verdict": "incorrect", "text": "'Anterior' and 'posterior' are correct, but 'central' isn't a horn — it's where the gray commissure is."},
+        {"verdict": "incorrect", "text": "Medial/lateral describe positions within horns, not the horn names themselves."}
+      ],
+      "mechanism": {
+        "title": "Gray Matter Horns: Functional Zones",
+        "content": "The horns represent functional processing regions: the dorsal horn (Rexed laminae I-VI) receives and processes sensory input — pain/temperature in superficial laminae, touch/pressure in deeper laminae; the ventral horn (laminae VIII-IX) contains motor neurons — alpha (to skeletal muscle) and gamma (to muscle spindles); the lateral horn (lamina VII lateral portion, T1-L2) contains preganglionic sympathetic neurons, and the sacral parasympathetic nucleus (S2-S4). This organization reflects embryonic development and the flow of information.",
+        "metaphor": "The gray matter horns are like departments in a mail processing facility: sensory mail comes into the dorsal department for sorting, motor mail goes out from the ventral department, and the lateral department handles special autonomous deliveries (to glands and smooth muscle)."
+      }
+    },
+    {
+      "id": "800.3.11",
+      "q": "The dorsal horn primarily processes what type of information?",
+      "options": ["Motor commands to muscles", "Sensory information from the body", "Autonomic signals to organs", "Higher cognitive functions"],
+      "answer": 1,
+      "chapter": "Exercise 19 — Spinal Cord Model",
+      "explain": "The dorsal horn receives and processes sensory information including touch, pain, temperature, and proprioception from the body.",
+      "optionExplains": [
+        {"verdict": "incorrect", "text": "Motor commands come FROM the ventral horn — the dorsal horn is sensory."},
+        {"verdict": "correct", "text": "The dorsal horn contains interneurons and projection neurons that process sensory input from dorsal root fibers. Different laminae handle different modalities: laminae I-II (substantia gelatinosa) process pain and temperature; laminae III-IV receive light touch; deeper laminae integrate information. Second-order neurons then send signals to the brain via ascending tracts."},
+        {"verdict": "incorrect", "text": "Autonomic signals originate from the lateral horn — the dorsal horn processes sensory input."},
+        {"verdict": "incorrect", "text": "Cognitive functions are cerebral cortex territory — the dorsal horn handles spinal sensory processing."}
+      ],
+      "mechanism": {
+        "title": "Dorsal Horn: The Sensory Processor",
+        "content": "The dorsal horn is organized into layers (Rexed laminae I-VI) based on cell types and inputs. Lamina I (marginal zone) and II (substantia gelatinosa) process nociceptive (pain) and thermal information — this is where opioids act to reduce pain. Laminae III-IV (nucleus proprius) process touch. Lamina V receives convergent input from skin and viscera — explaining referred pain. Lamina VI integrates proprioceptive information from muscles. Many dorsal horn neurons are inhibitory interneurons that modulate pain transmission (gate control theory).",
+        "metaphor": "The dorsal horn is like a switchboard where incoming sensory calls are sorted: pain calls go to emergency services (laminae I-II), touch calls go to customer service (III-IV), and proprioception calls are routed to operations (V-VI). Local inhibitory operators can block or reduce certain calls (pain modulation)."
+      }
+    },
+    {
+      "id": "800.3.12",
+      "q": "The ventral horn primarily contains cell bodies of what neuron type?",
+      "options": ["Sensory neurons", "Motor neurons", "Interneurons only", "Autonomic neurons"],
+      "answer": 1,
+      "chapter": "Exercise 19 — Spinal Cord Model",
+      "explain": "The ventral horn contains motor neuron cell bodies (alpha and gamma) that control skeletal muscle.",
+      "optionExplains": [
+        {"verdict": "incorrect", "text": "Sensory neuron cell bodies are in the dorsal root ganglia — outside the cord."},
+        {"verdict": "correct", "text": "The ventral horn contains alpha motor neurons (large, control skeletal muscle fibers for movement) and gamma motor neurons (smaller, control muscle spindle sensitivity). Motor neurons are organized somatotopically: medial neurons control axial muscles; lateral neurons control limb muscles; flexor/extensor muscles are controlled by neurons in different ventral horn regions."},
+        {"verdict": "incorrect", "text": "Interneurons are throughout the gray matter — the ventral horn is specifically the motor neuron region."},
+        {"verdict": "incorrect", "text": "Autonomic neurons are in the lateral horn — the ventral horn is somatic motor."}
+      ],
+      "mechanism": {
+        "title": "Ventral Horn: Motor Neuron Central",
+        "content": "The ventral horn (Rexed laminae VIII-IX) contains the 'final common pathway' — motor neurons that directly innervate skeletal muscle. Each motor neuron and its muscle fibers form a motor unit. Alpha motor neurons have large cell bodies, heavily myelinated axons, and fast conduction velocity. Gamma motor neurons are smaller and regulate muscle spindle sensitivity. The ventral horn is organized into motor pools — groups of neurons innervating specific muscles. Diseases affecting ventral horn neurons (ALS, polio) cause characteristic lower motor neuron signs.",
+        "metaphor": "The ventral horn is like the motor pool at an army base — it contains all the drivers (motor neurons) who will operate the vehicles (muscles). Each driver is assigned to specific vehicles, and when headquarters sends an order, the drivers transmit it directly to their vehicles."
+      }
+    },
+    {
+      "id": "800.3.13",
+      "q": "The lateral horn contains cell bodies of preganglionic sympathetic neurons. At what spinal cord levels is the lateral horn present?",
+      "options": ["C1-C7 only", "T1-L2", "L3-S5", "Throughout the entire cord"],
+      "answer": 1,
+      "chapter": "Exercise 19 — Spinal Cord Model",
+      "explain": "The lateral horn (intermediolateral cell column) is present from T1 to L2 and contains preganglionic sympathetic neurons.",
+      "optionExplains": [
+        {"verdict": "incorrect", "text": "Cervical levels lack a lateral horn — sympathetic outflow begins at T1."},
+        {"verdict": "correct", "text": "The lateral horn (intermediolateral cell column, IML) spans T1-L2, corresponding to the thoracolumbar sympathetic outflow. Preganglionic sympathetic neurons send axons through ventral roots to sympathetic chain ganglia. This is why thoracic cord damage affects blood pressure regulation (sympathetic tone) and visceral functions."},
+        {"verdict": "incorrect", "text": "L3-S5 includes sacral parasympathetics (S2-S4) but is below the sympathetic outflow region."},
+        {"verdict": "incorrect", "text": "The lateral horn is NOT present throughout — it's limited to T1-L2 (sympathetic) and S2-S4 (parasympathetic)."}
+      ],
+      "mechanism": {
+        "title": "Lateral Horn: Autonomic Outpost",
+        "content": "The lateral horn contains the intermediolateral cell column (IML), which houses preganglionic sympathetic neurons from T1-L2. These neurons have their dendrites in the lateral horn, receive descending input from the hypothalamus and brainstem, and send axons out through ventral roots to synapse in sympathetic chain ganglia or prevertebral ganglia. A similar column in S2-S4 contains sacral parasympathetic neurons. The lateral horn is prominent in thoracic cross-sections, giving the gray matter a more 'winged' appearance than in cervical or lumbar sections.",
+        "metaphor": "The lateral horn is like a dispatch center for the body's emergency services (sympathetic nervous system): located in the thoracolumbar region, it sends out signals that prepare the body for action — increasing heart rate, dilating pupils, and redirecting blood flow."
+      }
+    },
+    {
+      "id": "800.3.14",
+      "q": "White matter in the spinal cord is organized into three regions called:",
+      "options": ["Tracts, fascicles, and funiculi", "Dorsal, lateral, and ventral columns (funiculi)", "Superior, middle, and inferior columns", "Gray, white, and mixed columns"],
+      "answer": 1,
+      "chapter": "Exercise 19 — Spinal Cord Model",
+      "explain": "The white matter is organized into dorsal (posterior), lateral, and ventral (anterior) columns (funiculi), each containing multiple tracts.",
+      "optionExplains": [
+        {"verdict": "incorrect", "text": "Tracts and fascicles are within funiculi — they're not the three main divisions."},
+        {"verdict": "correct", "text": "The dorsal column (between posterior median sulcus and dorsal horn) contains ascending sensory tracts (gracile and cuneate fasciculi); the lateral column (between dorsal and ventral horns) contains both ascending and descending tracts; the ventral column (between anterior median fissure and ventral horn) contains mostly descending tracts. This organization is fundamental for understanding spinal cord injury patterns."},
+        {"verdict": "incorrect", "text": "Superior/middle/inferior describe vertical position, not the cross-sectional organization."},
+        {"verdict": "incorrect", "text": "'Gray, white, and mixed' aren't the column names — white matter IS what the columns are made of."}
+      ],
+      "mechanism": {
+        "title": "White Matter Columns: The Information Highways",
+        "content": "Each column contains multiple tracts (fasciculi) with specific functions: the dorsal column carries fine touch and proprioception (fasciculus gracilis from lower body, fasciculus cuneatus from upper body); the lateral column contains the lateral corticospinal tract (voluntary movement), rubrospinal tract, and lateral spinothalamic tract (pain/temperature); the ventral column contains the anterior corticospinal tract, vestibulospinal tracts (balance), and anterior spinothalamic tract (crude touch). Knowing which tracts are in which column helps localize spinal cord lesions.",
+        "metaphor": "The white matter columns are like three parallel highways running alongside a city (gray matter): the dorsal highway carries sensory traffic going north to the brain, the ventral highway carries motor traffic going south to muscles, and the lateral highway has express lanes for both directions."
+      }
+    },
+    {
+      "id": "800.3.15",
+      "q": "The dorsal columns (fasciculus gracilis and fasciculus cuneatus) carry what type of sensory information?",
+      "options": ["Pain and temperature", "Fine touch, vibration, and proprioception", "Crude touch only", "Hearing and vision"],
+      "answer": 1,
+      "chapter": "Exercise 19 — Spinal Cord Model",
+      "explain": "The dorsal columns carry fine (discriminative) touch, vibration sense, and proprioception (position sense) — ascending directly to the medulla without synapsing in the cord.",
+      "optionExplains": [
+        {"verdict": "incorrect", "text": "Pain and temperature travel in the spinothalamic tracts (lateral column) — not dorsal columns."},
+        {"verdict": "correct", "text": "Dorsal column fibers enter the cord and ascend ipsilaterally without synapsing. The fasciculus gracilis carries information from the lower body (below T6); the fasciculus cuneatus carries upper body information. First synapse is in the medulla (nucleus gracilis/cuneatus), then fibers cross and ascend to the thalamus. Damage causes loss of two-point discrimination, vibration sense, and proprioception — patients can't tell where their limbs are without looking."},
+        {"verdict": "incorrect", "text": "Crude touch is in the anterior spinothalamic tract — dorsal columns carry fine, discriminative touch."},
+        {"verdict": "incorrect", "text": "Hearing and vision are special senses — not carried in spinal cord tracts."}
+      ],
+      "mechanism": {
+        "title": "Dorsal Columns: The Precision Sensors",
+        "content": "The dorsal column-medial lemniscus pathway carries high-fidelity sensory information. Large myelinated Aβ fibers from mechanoreceptors (Meissner's, Pacinian, Merkel's, Ruffini's) and proprioceptors (muscle spindles, Golgi tendon organs, joint receptors) enter the cord and ascend without synapsing. This preserves spatial precision — essential for two-point discrimination and graphesthesia (identifying shapes traced on skin). The pathway's first synapse in the medulla, then crossing, maintains precise somatotopic organization to the cortex.",
+        "metaphor": "The dorsal columns are like a high-definition video cable: they carry detailed sensory information with minimal processing or loss of quality, preserving the fine details of touch and position sense all the way to the brain."
+      }
+    },
+    {
+      "id": "800.3.16",
+      "q": "The lateral and ventral columns contain ascending tracts carrying pain and temperature. After entering the cord, where do these fibers cross?",
+      "options": ["In the medulla", "In the thalamus", "In the anterior white commissure of the spinal cord", "They don't cross"],
+      "answer": 2,
+      "chapter": "Exercise 19 — Spinal Cord Model",
+      "explain": "Pain and temperature fibers synapse in the dorsal horn, then the second-order neurons cross in the anterior white commissure of the spinal cord before ascending in the spinothalamic tract.",
+      "optionExplains": [
+        {"verdict": "incorrect", "text": "Medullary crossing is for dorsal column fibers — spinothalamic fibers cross IN the spinal cord."},
+        {"verdict": "incorrect", "text": "The thalamus is the target — fibers have already crossed by the time they reach it."},
+        {"verdict": "correct", "text": "First-order pain/temperature fibers synapse in the dorsal horn (laminae I-II). Second-order neurons then cross in the anterior white commissure (within 1-2 segments) to ascend in the contralateral lateral spinothalamic tract. This is why spinal cord hemisection (Brown-Séquard syndrome) causes contralateral loss of pain/temperature but ipsilateral loss of proprioception."},
+        {"verdict": "incorrect", "text": "Spinothalamic fibers do cross — that's why damage on one side affects the opposite body."}
+      ],
+      "mechanism": {
+        "title": "Spinothalamic Crossing: The Spinal Decussation",
+        "content": "Pain and temperature sensation follows the spinothalamic (anterolateral) pathway. Primary afferents (Aδ and C fibers) synapse in dorsal horn laminae I-II. Second-order neurons cross in the anterior white commissure (usually within 1-2 segments of entry) and ascend in the lateral spinothalamic tract (pain/temperature) or anterior spinothalamic tract (crude touch). This spinal crossing means that a unilateral cord lesion causes contralateral sensory loss BELOW the lesion level — the sensory loss starts a few segments below the injury due to the ascending crossing fibers.",
+        "metaphor": "Spinothalamic crossing is like changing trains early in your journey: pain signals switch to the opposite track right at the first station (spinal cord) before the long ride to the brain, while touch/proprioception signals stay on their original track until the terminal (medulla) before switching."
+      }
+    },
+    {
+      "id": "800.3.17",
+      "q": "What is the fluid that fills the central canal and bathes the spinal cord in the subarachnoid space?",
+      "options": ["Blood plasma", "Lymph", "Cerebrospinal fluid (CSF)", "Interstitial fluid"],
+      "answer": 2,
+      "chapter": "Exercise 19 — Spinal Cord Model",
+      "explain": "Cerebrospinal fluid (CSF) fills the central canal and the subarachnoid space surrounding the spinal cord, providing cushioning and nutrient delivery.",
+      "optionExplains": [
+        {"verdict": "incorrect", "text": "Blood plasma is in blood vessels — CSF is a filtered derivative that's outside the blood vessels."},
+        {"verdict": "incorrect", "text": "Lymph drains tissues — the CNS has CSF instead of conventional lymphatics (though glymphatics exist)."},
+        {"verdict": "correct", "text": "CSF is produced by choroid plexuses in the ventricles, flows through the ventricular system, exits to the subarachnoid space, and is absorbed by arachnoid granulations. Around the spinal cord, CSF in the subarachnoid space provides cushioning, nutrient delivery, and waste removal. The spinal subarachnoid space extends to S2, below the cord ending at L1-L2 — this is why lumbar puncture at L3-L4 is safe."},
+        {"verdict": "incorrect", "text": "Interstitial fluid is between tissue cells — CSF is the specialized CNS equivalent."}
+      ],
+      "mechanism": {
+        "title": "Cerebrospinal Fluid: The Brain and Cord's Bath",
+        "content": "CSF has multiple functions: it cushions the CNS (reducing the brain's effective weight from 1400g to ~50g), maintains stable ion concentrations for neural function, removes metabolic waste, and distributes neuroactive substances. About 500ml is produced daily, but only 150ml exists at any time (it's absorbed continuously). Lumbar puncture samples CSF from the lumbar cistern (below L2) for diagnosis of meningitis, subarachnoid hemorrhage, and other conditions. Normal CSF is clear, with low protein, low cell count, and glucose about 60% of blood glucose.",
+        "metaphor": "CSF is like a specialized coolant and cleaning fluid for the nervous system: it keeps the brain and spinal cord floating in a protective bath, delivers nutrients, and carries away waste — while being constantly refreshed like a fountain's water."
+      }
+    },
+    {
+      "id": "800.3.18",
+      "q": "How do you orient a spinal cord cross-section to identify anterior (ventral) versus posterior (dorsal)?",
+      "options": [
+        "The side with the deep fissure is posterior",
+        "The side with the deep fissure is anterior (ventral)",
+        "Gray matter is always anterior",
+        "White matter is always posterior"
+      ],
+      "answer": 1,
+      "chapter": "Exercise 19 — Spinal Cord Model",
+      "explain": "The anterior (ventral) median fissure is DEEP; the posterior (dorsal) median sulcus is SHALLOW. The deep fissure marks the front of the cord.",
+      "optionExplains": [
+        {"verdict": "incorrect", "text": "The deep fissure is on the ANTERIOR (ventral) side — posterior has the shallow sulcus."},
+        {"verdict": "correct", "text": "Orientation tip: 'Deep = Ventral, Shallow = Dorsal.' The anterior median fissure is about 3mm deep, nearly reaching the gray commissure. The posterior median sulcus is shallow. Once oriented, you can identify: ventral horns (motor, toward fissure), dorsal horns (sensory, toward sulcus), and lateral horns (autonomic, in between, at thoracic levels)."},
+        {"verdict": "incorrect", "text": "Gray matter is in the center shaped like a butterfly — it's not all on one side."},
+        {"verdict": "incorrect", "text": "White matter surrounds the gray matter completely — it's on all sides."}
+      ],
+      "mechanism": {
+        "title": "Orienting Spinal Cord Cross-Sections",
+        "content": "Correct orientation is essential for interpreting spinal cord anatomy. Key landmarks: (1) the anterior median fissure is deep and wide — this marks VENTRAL; (2) the posterior median sulcus is shallow — this marks DORSAL; (3) the central canal is in the gray matter center; (4) ventral horns are large and toward the fissure; (5) dorsal horns are thinner and toward the sulcus. Remember: sensory input enters dorsally, motor output exits ventrally — matching the positions of dorsal and ventral horns.",
+        "metaphor": "Orienting a spinal cord section is like finding north on a map: the deep 'valley' (anterior fissure) is your landmark — once you know that's the front, everything else falls into place: sensory territories to the back, motor territories to the front."
+      }
+    }
+  ]
+}

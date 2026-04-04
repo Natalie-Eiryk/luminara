@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.05",
+  "parentQuestion": "The voice box, containing the vocal cords, is called the:",
+  "narrative": {
+    "setting": "The Magic School Bus rises through the trachea and emerges into a hollow chamber made of cartilage and muscle. Strange folds of tissue stretch across the opening like curtains. Mr. Edgar clears his throat, and the folds vibrate violently - sound waves crash against the bus. 'The voice box,' Ms. Frizzle shouts over the noise. 'Where breath becomes speech!'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar has been hoarse for weeks. Something is wrong with his voice production. The folds look swollen, irritated. Understanding this chamber is key to understanding his problem."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.05.s01",
+      "arc": 1,
+      "arcTitle": "The Sound Chamber",
+      "narrative": "Ms. Frizzle pulls up an ancient Greek dictionary. 'The early anatomists named this chamber after what it does,' she explains. 'They chose a word that captures its purpose perfectly.'",
+      "q": "The Greek word 'larynx' is related to words meaning:",
+      "options": [
+        "To digest",
+        "To shout or sing",
+        "To breathe deeply",
+        "To swallow food"
+      ],
+      "answer": 1,
+      "explain": "'Larynx' connects to Greek words for SHOUTING and SINGING. The voice box produces sound - its very name celebrates this function. The ancients knew exactly what this organ was for.",
+      "wrongExplains": {
+        "0": "Digestion happens in the GI tract. The larynx is for voice production, not breaking down food.",
+        "2": "Breathing involves the larynx, but the name specifically refers to sound-making, not air movement.",
+        "3": "Swallowing involves the larynx (epiglottis protects it), but the etymology points to voice, not eating."
+      }
+    },
+    {
+      "id": "900.5.05.s02",
+      "arc": 1,
+      "arcTitle": "The Sound Chamber",
+      "narrative": "The bus approaches the strange folds stretching across the airway. 'Most people call them vocal cords,' Ms. Frizzle says, 'but that's not quite right. Look at them - they're not strings. They're folds of tissue.'",
+      "q": "What are the vocal cords actually called anatomically?",
+      "options": [
+        "Vocal strings",
+        "Vocal folds",
+        "Vocal membranes",
+        "Vocal ligaments"
+      ],
+      "answer": 1,
+      "explain": "VOCAL FOLDS is the anatomically correct term. They're folds of mucous membrane over muscle and ligament - not simple strings. 'Cords' is common but misleading.",
+      "wrongExplains": {
+        "0": "'Strings' is too musical - implies thin fibers. They're actual tissue folds with complex structure.",
+        "2": "'Membranes' misses the three-dimensional folded structure. They're not flat sheets.",
+        "3": "Ligaments are PART of the folds (the vocal ligament), but the whole structure includes muscle and mucosa too."
+      }
+    },
+    {
+      "id": "900.5.05.s03",
+      "arc": 1,
+      "arcTitle": "The Sound Chamber",
+      "narrative": "Mr. Edgar exhales, speaking a word. The bus shudders as the vocal folds vibrate hundreds of times per second. 'It's like a reed instrument,' Ms. Frizzle explains. 'Air doesn't just pass through - it makes them oscillate.'",
+      "q": "How do the vocal folds produce sound?",
+      "options": [
+        "They strike against each other like drums",
+        "Air passing through makes them vibrate",
+        "They scrape against cartilage",
+        "They produce electrical signals"
+      ],
+      "answer": 1,
+      "explain": "AIRFLOW causes the vocal folds to VIBRATE. As air pushes past, the folds open and close rapidly, chopping the air stream into pulses. These pulses of air create sound waves - just like a clarinet reed or trumpet lips.",
+      "wrongExplains": {
+        "0": "They don't strike like drums - they vibrate in airflow. The mechanism is more like wind instruments.",
+        "2": "No scraping occurs. The folds vibrate smoothly; scraping would damage the delicate tissue.",
+        "3": "Sound at this stage is mechanical vibration. Neural signals control the folds, but sound is physical waves."
+      }
+    },
+    {
+      "id": "900.5.05.s04",
+      "arc": 2,
+      "arcTitle": "Cartilage and Architecture",
+      "narrative": "Ms. Frizzle steers the bus around the chamber, pointing out the framework. 'Like a house needs beams, the voice box needs cartilage.' She taps on the large shield-shaped plate at the front. 'You can feel this one from outside - especially in men.'",
+      "q": "The Adam's apple is formed by which laryngeal cartilage?",
+      "options": [
+        "Cricoid cartilage",
+        "Thyroid cartilage",
+        "Arytenoid cartilage",
+        "Epiglottis"
+      ],
+      "answer": 1,
+      "explain": "The THYROID CARTILAGE forms the Adam's apple. 'Thyroid' means shield-shaped - and it's exactly that: a large shield of cartilage at the front of the larynx. It's more prominent in males due to testosterone effects during puberty.",
+      "wrongExplains": {
+        "0": "The cricoid is the complete ring BELOW the thyroid cartilage - you can't feel it as the Adam's apple.",
+        "2": "Arytenoid cartilages are small paired cartilages at the BACK - they control vocal fold tension.",
+        "3": "The epiglottis is a flap above the larynx, not the prominent anterior projection."
+      }
+    },
+    {
+      "id": "900.5.05.s05",
+      "arc": 2,
+      "arcTitle": "Cartilage and Architecture",
+      "narrative": "'Look there,' Ms. Frizzle points to the opening between the vocal folds. 'When they spread apart, you see the space between them. When they come together, that space closes.'",
+      "q": "What is the space between the vocal folds called?",
+      "options": [
+        "The pharynx",
+        "The glottis",
+        "The trachea",
+        "The sinus"
+      ],
+      "answer": 1,
+      "explain": "The GLOTTIS is the opening between the vocal folds. It's the space that opens for breathing and closes for speaking, swallowing, and straining. The epiGLOTTIS ('above the glottis') covers it during swallowing.",
+      "wrongExplains": {
+        "0": "The pharynx is the throat ABOVE the larynx - the shared passage for food and air.",
+        "2": "The trachea is BELOW the larynx. The glottis is specifically the vocal fold opening.",
+        "3": "Sinuses are air cavities in skull bones - nowhere near the vocal apparatus."
+      }
+    },
+    {
+      "id": "900.5.05.s06",
+      "arc": 2,
+      "arcTitle": "Cartilage and Architecture",
+      "narrative": "A diagram appears showing the intricate cartilage framework: thyroid cartilage in front, cricoid ring below, paired arytenoids controlling the vocal folds. 'Nine pieces of cartilage,' Ms. Frizzle counts. 'All working together.'",
+      "q": "The cricoid cartilage is unique because it:",
+      "options": [
+        "Is the largest cartilage",
+        "Forms a complete ring",
+        "Contains the vocal folds",
+        "Covers the glottis during swallowing"
+      ],
+      "answer": 1,
+      "explain": "The cricoid is the ONLY COMPLETE RING in the airway. All other tracheal and laryngeal cartilages have gaps. The cricoid forms a solid foundation - 'cricoid' means ring-shaped in Greek.",
+      "wrongExplains": {
+        "0": "The thyroid cartilage is actually larger. The cricoid is notable for being complete, not large.",
+        "2": "The vocal folds attach to the thyroid (front) and arytenoid (back) cartilages, not the cricoid.",
+        "3": "The EPIGLOTTIS covers the glottis during swallowing, not the cricoid."
+      }
+    },
+    {
+      "id": "900.5.05.s07",
+      "arc": 3,
+      "arcTitle": "Voice and Protection",
+      "narrative": "'The larynx has TWO jobs,' Ms. Frizzle emphasizes. 'Voice production is the famous one. But there's another job that keeps you alive every time you eat.'",
+      "q": "Besides voice production, what important function does the larynx perform?",
+      "options": [
+        "Food digestion",
+        "Protecting the airway during swallowing",
+        "Blood oxygenation",
+        "Hormone secretion"
+      ],
+      "answer": 1,
+      "explain": "The larynx PROTECTS the airway during swallowing. When you swallow, the larynx rises, the epiglottis folds down, and the vocal folds snap shut - creating a triple seal. Food slides past into the esophagus instead of into your lungs.",
+      "wrongExplains": {
+        "0": "Digestion happens in the stomach and intestines. The larynx is in the respiratory system.",
+        "2": "Blood oxygenation occurs in the alveoli of the lungs, not the larynx.",
+        "3": "The thyroid GLAND (different structure) secretes hormones. The thyroid cartilage is just structural."
+      }
+    },
+    {
+      "id": "900.5.05.s08",
+      "arc": 3,
+      "arcTitle": "Voice and Protection",
+      "narrative": "Mr. Edgar swallows. You watch the entire larynx elevate dramatically - pulled up by muscles, the epiglottis tipping back like a trap door. 'See how it rises?' Ms. Frizzle points. 'That's why your Adam's apple moves when you swallow.'",
+      "q": "During swallowing, the larynx:",
+      "options": [
+        "Drops lower in the neck",
+        "Elevates upward",
+        "Stays completely still",
+        "Moves sideways"
+      ],
+      "answer": 1,
+      "explain": "The larynx ELEVATES (rises) during swallowing. Muscles pull it up and forward under the base of the tongue, helping the epiglottis cover the airway. You can feel your Adam's apple rise when you swallow!",
+      "wrongExplains": {
+        "0": "Dropping would open the airway to food. Elevation is the protective movement.",
+        "2": "The larynx definitely moves - feel your throat while swallowing and you'll notice the rise.",
+        "3": "The larynx moves vertically (up/down), not laterally. Swallowing is a midline event."
+      }
+    },
+    {
+      "id": "900.5.05.s09",
+      "arc": 3,
+      "arcTitle": "Voice and Protection",
+      "narrative": "'When protection fails,' Ms. Frizzle says grimly, showing a diagram of food going down the wrong pipe, 'you aspirate - food enters the airway. That's why you cough violently. The larynx's cough reflex is the last line of defense.'",
+      "q": "When food or liquid enters the larynx, the protective response is:",
+      "options": [
+        "Sneezing",
+        "Coughing",
+        "Hiccupping",
+        "Yawning"
+      ],
+      "answer": 1,
+      "explain": "COUGHING is the explosive response when something enters the airway. The cough reflex rapidly expels foreign material. The larynx has extremely sensitive nerve endings that trigger this protective response instantly.",
+      "wrongExplains": {
+        "0": "Sneezing clears the NASAL passages. Coughing clears the lower airway.",
+        "2": "Hiccupping is a diaphragm spasm, unrelated to airway protection.",
+        "3": "Yawning increases oxygen intake but isn't a protective reflex against aspiration."
+      }
+    },
+    {
+      "id": "900.5.05.s10",
+      "arc": 3,
+      "arcTitle": "Voice and Protection",
+      "narrative": "Mr. Edgar speaks again - 'Hello' - and the vocal folds vibrate in perfect coordination, the cartilage framework holding everything in place. 'The voice box,' Ms. Frizzle smiles. 'What's it called?'",
+      "q": "The voice box, containing the vocal cords, is called the:",
+      "options": [
+        "Pharynx",
+        "Larynx",
+        "Trachea",
+        "Epiglottis"
+      ],
+      "answer": 1,
+      "explain": "The LARYNX - the voice box. A cartilage chamber containing the vocal folds that vibrate to produce sound. It also protects the airway during swallowing. Greek etymology links to 'shouting' - it's the organ of voice.",
+      "wrongExplains": {
+        "0": "The pharynx is the throat above the larynx. It resonates sound but doesn't produce it.",
+        "2": "The trachea is the windpipe BELOW the larynx. It has no vocal folds.",
+        "3": "The epiglottis is just ONE PART of the larynx - the flap that covers the glottis during swallowing."
+      }
+    }
+  ]
+}

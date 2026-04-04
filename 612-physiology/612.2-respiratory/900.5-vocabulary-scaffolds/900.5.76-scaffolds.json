@@ -1,0 +1,171 @@
+{
+  "parentId": "900.5.76",
+  "parentQuestion": "What breathing pattern is characterized by alternating periods of apnea and hyperpnea?",
+  "narrative": {
+    "setting": "Mr. Edgar's sleep clinic, monitoring a patient with heart failure overnight",
+    "character": "Mr. Edgar",
+    "tension": "The breathing pattern keeps cycling between long pauses and deep rapid breaths - what's causing this?"
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.76.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Pattern",
+      "narrative": "Ms. Frizzle shrinks the bus down and flies into the patient's bedroom. 'Class, watch his chest carefully. See how he STOPS breathing completely for about 10 seconds? That's APNEA - no breath at all!'",
+      "q": "What does 'apnea' mean?",
+      "options": [
+        "Fast breathing",
+        "No breathing at all",
+        "Deep breathing",
+        "Noisy breathing"
+      ],
+      "answer": 1,
+      "explain": "APNEA = NO BREATHING. 'A-' means without, 'pnea' means breath. Complete cessation of airflow for at least 10 seconds. During apnea, the chest doesn't move and no air enters the lungs.",
+      "wrongExplains": {
+        "0": "Fast breathing is called 'tachypnea' (tachy = fast). Apnea means the OPPOSITE - breathing completely stops.",
+        "2": "Deep breathing is 'hyperpnea' (hyper = increased). Apnea is when breathing stops entirely, not when it gets deeper.",
+        "3": "Noisy breathing has different names depending on the sound (wheezing, stridor, etc.). Apnea is characterized by SILENCE because no air moves."
+      }
+    },
+    {
+      "id": "900.5.76.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Pattern",
+      "narrative": "'Now watch what happens AFTER the pause!' Ms. Frizzle points as the patient suddenly gasps. 'His breathing gets faster and DEEPER for about 30 seconds. That's HYPERPNEA - increased ventilation!'",
+      "q": "What does 'hyperpnea' mean?",
+      "options": [
+        "No breathing",
+        "Shallow breathing",
+        "Increased depth and rate of breathing",
+        "Painful breathing"
+      ],
+      "answer": 2,
+      "explain": "HYPERPNEA = INCREASED BREATHING (both depth AND rate). 'Hyper-' means increased or excessive. The chest moves MORE, and breaths come FASTER, increasing total ventilation. This compensates for the preceding apnea period.",
+      "wrongExplains": {
+        "0": "No breathing is 'apnea.' Hyperpnea is the opposite - breathing is increased above normal.",
+        "1": "Shallow breathing is 'hypopnea' (reduced ventilation). Hyperpnea means breathing becomes DEEPER and more vigorous.",
+        "3": "Painful breathing is 'dyspnea' (difficult breathing). Hyperpnea just means increased ventilation, which may or may not be uncomfortable."
+      }
+    },
+    {
+      "id": "900.5.76.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Pattern",
+      "narrative": "'Watch the whole cycle!' Ms. Frizzle traces a wave in the air. 'Stop... crescendo... decrescendo... stop... crescendo... decrescendo. It repeats every 45-90 seconds like clockwork!'",
+      "q": "Cheyne-Stokes breathing is characterized by:",
+      "options": [
+        "Constant rapid breathing",
+        "Random irregular pauses",
+        "Regular cycles of apnea followed by crescendo-decrescendo breathing",
+        "Continuous deep breathing without pauses"
+      ],
+      "answer": 2,
+      "explain": "Cheyne-Stokes = REGULAR CYCLES of apnea → crescendo (building up) → decrescendo (winding down) → apnea again. The pattern is predictable and rhythmic, like a breathing metronome with built-in pauses.",
+      "wrongExplains": {
+        "0": "Constant rapid breathing would be simple tachypnea. Cheyne-Stokes alternates between NO breathing (apnea) and increased breathing.",
+        "1": "Random irregular pauses describe Biot's breathing or ataxic breathing. Cheyne-Stokes has a REGULAR, predictable cycle.",
+        "3": "Continuous deep breathing without pauses would be constant hyperpnea. Cheyne-Stokes is defined by the ALTERNATION between apnea and hyperpnea."
+      }
+    },
+    {
+      "id": "900.5.76.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus flies into the patient's chest. 'Now let's see WHY this happens! We're heading to the brainstem - specifically the medulla oblongata, where the breathing control center lives.'",
+      "q": "Which part of the brain controls automatic breathing rhythm?",
+      "options": [
+        "Cerebral cortex",
+        "Cerebellum",
+        "Medulla oblongata",
+        "Hippocampus"
+      ],
+      "answer": 2,
+      "explain": "MEDULLA OBLONGATA in the brainstem contains the respiratory control centers. These clusters of neurons automatically generate the breathing rhythm without conscious thought. Damage or dysfunction here causes abnormal breathing patterns.",
+      "wrongExplains": {
+        "0": "The cerebral cortex can OVERRIDE automatic breathing (holding your breath), but it doesn't generate the automatic rhythm. You breathe when unconscious because the medulla handles it.",
+        "1": "The cerebellum coordinates movement and balance, not breathing rhythm. It might help coordinate respiratory muscles during exercise, but doesn't set the basic rhythm.",
+        "3": "The hippocampus handles memory formation. It has nothing to do with breathing control."
+      }
+    },
+    {
+      "id": "900.5.76.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Look at that sluggish blood flow!' Ms. Frizzle points to the heart. 'In heart failure, blood circulates SLOWLY. Chemoreceptors detect CO2 changes LATE - so the brain overshoots and undershoots the target!'",
+      "q": "What causes the cycling in Cheyne-Stokes breathing?",
+      "options": [
+        "Lung disease blocking airways",
+        "Delayed feedback due to slow circulation time",
+        "Paralysis of breathing muscles",
+        "Too much oxygen in the blood"
+      ],
+      "answer": 1,
+      "explain": "DELAYED FEEDBACK from slow circulation causes cycling. CO2 rises during apnea, but takes LONG to reach the brain's chemoreceptors. By the time the brain detects it, CO2 is very high, triggering excessive breathing. Then CO2 drops too low, causing another apnea. Repeat!",
+      "wrongExplains": {
+        "0": "Lung disease (COPD, asthma) causes different breathing patterns. Cheyne-Stokes is a CENTRAL pattern - the brain's breathing control is oscillating, not the lungs blocking air.",
+        "2": "Muscle paralysis would cause hypoventilation or respiratory failure, not the regular cycling pattern of Cheyne-Stokes.",
+        "3": "Too much oxygen would suppress breathing drive in COPD patients, but doesn't cause the regular cycling seen in Cheyne-Stokes."
+      }
+    },
+    {
+      "id": "900.5.76.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'The brain is trying to hit a CO2 target, but the information keeps arriving too late!' Arnold exclaims. 'It's like steering a ship with a 30-second delay - you keep overcorrecting!'",
+      "q": "During the apnea phase of Cheyne-Stokes, what is happening to CO2 levels?",
+      "options": [
+        "CO2 is rising because no gas exchange is occurring",
+        "CO2 is falling rapidly",
+        "CO2 stays perfectly stable",
+        "CO2 disappears completely"
+      ],
+      "answer": 0,
+      "explain": "During APNEA, CO2 RISES because cells keep producing CO2 but no breathing removes it. This rising CO2 (plus falling O2) eventually triggers the chemoreceptors, ending the apnea and starting the hyperpnea phase.",
+      "wrongExplains": {
+        "1": "CO2 falls during the HYPERPNEA phase when rapid deep breathing blows off excess CO2. During apnea, no breathing means CO2 accumulates.",
+        "2": "CO2 can't stay stable during apnea. Metabolism continues producing CO2 every second, so levels must rise when breathing stops.",
+        "3": "CO2 never disappears - it's constantly produced by cellular metabolism. During apnea it accumulates in the blood."
+      }
+    },
+    {
+      "id": "900.5.76.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "Back at regular size, Ms. Frizzle points to Mr. Edgar's charts. 'Cheyne-Stokes is classic in heart failure patients. The failing heart pumps blood too slowly, creating that circulation delay we saw!'",
+      "q": "Cheyne-Stokes breathing is most commonly seen in patients with:",
+      "options": [
+        "Asthma",
+        "Congestive heart failure or stroke",
+        "Pneumonia",
+        "Broken ribs"
+      ],
+      "answer": 1,
+      "explain": "Cheyne-Stokes is classic in HEART FAILURE (slow circulation time) and STROKE (damaged brain respiratory centers). Both create the delay or instability in respiratory control that causes the cycling pattern. It's a CENTRAL breathing disorder.",
+      "wrongExplains": {
+        "0": "Asthma causes wheezing and difficulty exhaling due to airway constriction, not the regular apnea-hyperpnea cycling of Cheyne-Stokes.",
+        "2": "Pneumonia causes rapid shallow breathing (tachypnea) due to lung inflammation and poor oxygenation, not Cheyne-Stokes cycling.",
+        "3": "Broken ribs cause painful, shallow breathing because deep breaths hurt. This is mechanical limitation, not the central control problem of Cheyne-Stokes."
+      }
+    },
+    {
+      "id": "900.5.76.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "'Mr. Edgar, when you see Cheyne-Stokes in your clinic, what should you think?' Ms. Frizzle asks. 'Exactly,' Mr. Edgar nods, 'heart failure or neurological damage. Time to investigate!'",
+      "q": "What does Cheyne-Stokes breathing indicate about a patient's condition?",
+      "options": [
+        "Mild illness, will recover quickly",
+        "Serious condition affecting circulation or brain respiratory control",
+        "Simple anxiety or stress",
+        "Normal breathing for elderly people"
+      ],
+      "answer": 1,
+      "explain": "Cheyne-Stokes indicates SERIOUS PATHOLOGY - either poor cardiac output (heart failure) or damaged respiratory control centers (stroke, brain injury). It's a RED FLAG requiring investigation, not a benign finding.",
+      "wrongExplains": {
+        "0": "Cheyne-Stokes signals serious underlying disease. Mild illnesses don't disrupt the fundamental breathing control system this severely.",
+        "2": "Anxiety causes rapid breathing (hyperventilation) or sensation of breathlessness, not the regular cycling apnea-hyperpnea pattern of Cheyne-Stokes.",
+        "3": "While more common in elderly patients with heart disease, Cheyne-Stokes is NEVER normal. It always indicates pathology requiring evaluation and treatment."
+      }
+    }
+  ]
+}

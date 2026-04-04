@@ -1,0 +1,564 @@
+{
+  "id": "510.4",
+  "title": "Pre-Algebra Expressions",
+  "category": "concepts",
+  "gradeLevel": "6-8",
+  "description": "Working with variables, algebraic expressions, and integer operations",
+  "questions": [
+    {
+      "id": "510.4.01",
+      "q": "Evaluate the expression 3x + 7 when x = 4.",
+      "options": [
+        "14",
+        "19",
+        "28",
+        "34"
+      ],
+      "answer": 1,
+      "chapter": "Pre-Algebra - Evaluating Expressions",
+      "explain": "Substitute x = 4 into the expression! 3(4) + 7 = 12 + 7 = 19. Replace the variable with its value, then calculate.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "14 comes from 3 + 4 + 7 (adding instead of multiplying 3x). But 3x means 3 TIMES x, so 3 x 4 = 12."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 3x + 7 when x = 4 means 3(4) + 7 = 12 + 7 = 19. The x is a placeholder - when we know its value (4), we plug it in and compute. Algebra becomes arithmetic!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "28 might come from 4 x 7 = 28, but that's not our expression. We have 3x + 7, which is 3(4) + 7 = 19."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "34 comes from 3 x 4 x 7 / 7 + 7 or some other misreading. Our expression is simply 3x + 7 = 3(4) + 7 = 19."
+        }
+      ],
+      "mechanism": {
+        "title": "Evaluating Expressions: Substitution",
+        "content": "To evaluate an expression, substitute the given value for the variable, then compute following order of operations. Think of variables as empty boxes - when you know what goes in the box, fill it in and calculate. 3x + 7 with x=4 becomes 3(4) + 7 = 12 + 7 = 19.",
+        "metaphor": "Variables are like blank name tags. The expression '3x + 7' says 'triple the mystery person and add 7.' When we learn x is 4, we fill in the name tag and compute: 3(4) + 7 = 19. The mystery is solved!"
+      },
+      "scaffoldFile": "510.4-prealgebra-scaffolds/510.4.01-scaffolds.json"
+    },
+    {
+      "id": "510.4.02",
+      "q": "Simplify: 5a + 3b - 2a + 4b",
+      "options": [
+        "3a + 7b",
+        "7a + 3b",
+        "10ab",
+        "12ab"
+      ],
+      "answer": 0,
+      "chapter": "Pre-Algebra - Combining Like Terms",
+      "explain": "Combine LIKE terms (same variable)! 5a - 2a = 3a and 3b + 4b = 7b. Result: 3a + 7b.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Yes! Like terms have the same variable. Combine a-terms: 5a - 2a = 3a. Combine b-terms: 3b + 4b = 7b. Final answer: 3a + 7b. The terms stay separate because 'a' and 'b' are different variables!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "7a + 3b has the coefficients reversed. Check: 5a - 2a = 3a (not 7a), and 3b + 4b = 7b (not 3b)."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "10ab assumes we multiply the terms. But 5a + 3b are added, not multiplied. And 'a' and 'b' can't be combined because they're UNLIKE terms."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "12ab comes from adding all coefficients (5+3+2+4=14... wait, not even that). Like terms must have IDENTICAL variable parts. a and b don't mix!"
+        }
+      ],
+      "mechanism": {
+        "title": "Combining Like Terms",
+        "content": "LIKE TERMS have the same variable(s) raised to the same power. 5a and 2a are like (both have 'a'). 3b and 4b are like (both have 'b'). But 5a and 3b are UNLIKE - they can't be combined. Add/subtract ONLY the coefficients of like terms; the variable stays the same.",
+        "metaphor": "Like terms are like species in a zoo count. 5 tigers + 3 lions + 2 more tigers = 7 tigers + 3 lions. You can't combine tigers with lions into a single number - they stay separate. Same with 5a + 3b: different 'species' of terms."
+      },
+      "scaffoldFile": "510.4-prealgebra-scaffolds/510.4.02-scaffolds.json"
+    },
+    {
+      "id": "510.4.03",
+      "q": "What is -8 + 5?",
+      "options": [
+        "-13",
+        "-3",
+        "3",
+        "13"
+      ],
+      "answer": 1,
+      "chapter": "Pre-Algebra - Adding Integers",
+      "explain": "Adding a positive to a negative: Start at -8 on the number line, move 5 to the right. -8 + 5 = -3. The signs are different, so subtract and keep the sign of the larger absolute value.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "-13 comes from adding the numbers as if both were negative (-8 + -5). But +5 is positive, so we move RIGHT on the number line, not left."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! -8 + 5 = -3. When signs differ, subtract the smaller absolute value from the larger: |8| - |5| = 3. Keep the sign of the larger absolute value (8 > 5, and -8 is negative), so the answer is -3."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "3 has the right magnitude but wrong sign. Since |-8| > |5|, the result keeps the negative sign. Answer: -3."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "13 comes from adding absolute values (8 + 5 = 13). But with different signs, we SUBTRACT, not add, absolute values."
+        }
+      ],
+      "mechanism": {
+        "title": "Adding Integers: Same or Different Signs",
+        "content": "Same signs: Add absolute values, keep the common sign. (-8) + (-5) = -13. Different signs: Subtract absolute values, keep sign of larger. (-8) + 5 = -3. Think of positives as gains and negatives as losses. -8 + 5 means 'lose 8, gain 5' = net loss of 3.",
+        "metaphor": "Integers are like money. -8 is an $8 debt. +5 is earning $5. If you owe $8 but earn $5, you've paid off some debt but still owe $3. That's -8 + 5 = -3!"
+      },
+      "scaffoldFile": "510.4-prealgebra-scaffolds/510.4.03-scaffolds.json"
+    },
+    {
+      "id": "510.4.04",
+      "q": "What is -6 x (-4)?",
+      "options": [
+        "-24",
+        "-10",
+        "10",
+        "24"
+      ],
+      "answer": 3,
+      "chapter": "Pre-Algebra - Multiplying Integers",
+      "explain": "Negative times negative equals POSITIVE! -6 x -4 = +24. Two negatives make a positive when multiplying.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "-24 would be correct if only one number were negative. But BOTH are negative, and negative x negative = positive. So +24."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "-10 comes from adding (-6 + -4 = -10). But we're MULTIPLYING, not adding. Different operation, different rules."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "10 also confuses addition with multiplication. -6 + -4 = -10, but -6 x -4 = +24."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! Negative times negative = positive. -6 x -4 = +24. The rule: Same signs (both + or both -) give positive. Different signs give negative. Here, both are negative, so the product is positive!"
+        }
+      ],
+      "mechanism": {
+        "title": "Multiplying Integers: Sign Rules",
+        "content": "The sign rules for multiplication (and division): Positive x Positive = Positive. Negative x Negative = Positive. Positive x Negative = Negative. Negative x Positive = Negative. In short: Same signs = Positive result. Different signs = Negative result.",
+        "metaphor": "Think of it as double negation in language. 'I don't want nothing' (two negatives) actually means 'I want something' (positive). Negating a negative reverses it. -6 x -4 says 'the opposite of 6 groups of -4' which is +24!"
+      },
+      "scaffoldFile": "510.4-prealgebra-scaffolds/510.4.04-scaffolds.json"
+    },
+    {
+      "id": "510.4.05",
+      "q": "Which expression represents 'seven less than a number n'?",
+      "options": [
+        "7 - n",
+        "n - 7",
+        "7n",
+        "n + 7"
+      ],
+      "answer": 1,
+      "chapter": "Pre-Algebra - Translating Words to Algebra",
+      "explain": "'Seven LESS THAN n' means start with n, then subtract 7. That's n - 7. Careful: 'less than' reverses the order from how it's spoken!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "7 - n is 'seven minus n' or 'n SUBTRACTED FROM seven.' Different! 'Less than' puts the number AFTER the subtraction sign."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 'Seven less than n' means n - 7. It's tricky because the words come in reverse order. 'X less than Y' = Y - X. Think: 'What's 7 less than 20?' It's 20 - 7 = 13. Same pattern: 7 less than n is n - 7."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "7n means '7 times n' - that's multiplication, not subtraction. No subtraction happening here!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "n + 7 is 'n plus 7' or 'seven MORE than n.' 'Less than' means subtract, not add."
+        }
+      ],
+      "mechanism": {
+        "title": "Translating Verbal Expressions to Algebra",
+        "content": "Key phrases: 'more than' = +, 'less than' = - (reverse order!), 'times' = x, 'quotient' = /, 'squared' = ^2. Watch for order: '5 more than x' = x + 5, '5 less than x' = x - 5, 'x less than 5' = 5 - x. The variable usually comes from 'a number' or is given a letter.",
+        "metaphor": "Translating math is like translating languages. 'Less than' is a sneaky phrase - it puts the subtraction in reverse order. '7 less than n' is 'n - 7', just like 'the house of John' in Spanish becomes 'la casa de Juan' (John's house) - the order flips!"
+      },
+      "scaffoldFile": "510.4-prealgebra-scaffolds/510.4.05-scaffolds.json"
+    },
+    {
+      "id": "510.4.06",
+      "q": "Simplify: 2(x + 5)",
+      "options": [
+        "2x + 5",
+        "2x + 7",
+        "2x + 10",
+        "x + 10"
+      ],
+      "answer": 2,
+      "chapter": "Pre-Algebra - Distributive Property",
+      "explain": "Distribute the 2! Multiply 2 by EACH term inside: 2 x x = 2x and 2 x 5 = 10. Result: 2x + 10.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "2x + 5 only distributes to x, forgetting the 5. The 2 multiplies BOTH terms inside the parentheses: 2(x) + 2(5) = 2x + 10."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "2x + 7 adds 2 + 5 instead of multiplying. But distribution means 2 TIMES each term: 2 x 5 = 10, not 2 + 5 = 7."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! The distributive property: a(b + c) = ab + ac. So 2(x + 5) = 2x + 2(5) = 2x + 10. The 2 'visits' each term inside the parentheses and multiplies it!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x + 10 forgets to multiply x by 2. The distributive property affects EVERY term: 2(x) + 2(5) = 2x + 10."
+        }
+      ],
+      "mechanism": {
+        "title": "The Distributive Property",
+        "content": "The distributive property connects multiplication and addition: a(b + c) = ab + ac. You 'distribute' the outside factor to EACH term inside. This is reversible: ab + ac can be factored back to a(b + c). It's fundamental for simplifying expressions and solving equations!",
+        "metaphor": "Distribution is like giving gifts to everyone at a party. If you give 2 gifts to each person in a group of (x + 5) people, that's 2 gifts for x people PLUS 2 gifts for 5 people. Total gifts = 2x + 10!"
+      },
+      "scaffoldFile": "510.4-prealgebra-scaffolds/510.4.06-scaffolds.json"
+    },
+    {
+      "id": "510.4.07",
+      "q": "What is the value of 2^4?",
+      "options": [
+        "6",
+        "8",
+        "16",
+        "24"
+      ],
+      "answer": 2,
+      "chapter": "Pre-Algebra - Exponents",
+      "explain": "2^4 means 2 multiplied by itself 4 times: 2 x 2 x 2 x 2 = 16. The exponent tells you HOW MANY 2s to multiply.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "6 comes from adding (2 + 4) or multiplying once (2 x 3). But 2^4 means 2 used as a factor 4 times: 2 x 2 x 2 x 2 = 16."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "8 is 2^3 (2 x 2 x 2). We need one more 2 in the chain: 2 x 2 x 2 x 2 = 16."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 2^4 = 2 x 2 x 2 x 2 = 16. Powers of 2 are everywhere: 2^1=2, 2^2=4, 2^3=8, 2^4=16, 2^5=32... Each step doubles the previous!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "24 might come from 2 x 4 x 3 or some other calculation. But exponents mean repeated multiplication: 2^4 = 2 x 2 x 2 x 2 = 16."
+        }
+      ],
+      "mechanism": {
+        "title": "Exponents: Repeated Multiplication",
+        "content": "a^n means 'a multiplied by itself n times.' 2^4 = 2 x 2 x 2 x 2 = 16. The base (2) is what you multiply; the exponent (4) is how many times. Special cases: a^0 = 1 (for any a not 0), a^1 = a. Exponents grow FAST - that's exponential growth!",
+        "metaphor": "Exponents are like compound doubling. If you fold a paper in half 4 times (2^4), you get 16 layers. Each fold doubles the previous. That's why 2^10 = 1024 - just 10 folds creates over a thousand layers!"
+      },
+      "scaffoldFile": "510.4-prealgebra-scaffolds/510.4.07-scaffolds.json"
+    },
+    {
+      "id": "510.4.08",
+      "q": "What is -15 / (-3)?",
+      "options": [
+        "-18",
+        "-5",
+        "5",
+        "45"
+      ],
+      "answer": 2,
+      "chapter": "Pre-Algebra - Dividing Integers",
+      "explain": "Same sign rule applies to division! Negative / negative = positive. -15 / -3 = +5. Also, 15 / 3 = 5, and the signs match (both negative).",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "-18 comes from adding or subtracting. Division gives a smaller result (in absolute value): 15 / 3 = 5."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "-5 has the right magnitude but wrong sign. Both numbers are negative, so the result is POSITIVE. Same signs = positive answer."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! Same signs (both negative) = positive result. -15 / -3 = +5. The sign rules for division are identical to multiplication: Same signs give positive, different signs give negative."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "45 comes from multiplying (15 x 3 = 45). But we're DIVIDING: 15 / 3 = 5. Different operations!"
+        }
+      ],
+      "mechanism": {
+        "title": "Dividing Integers: Same Sign Rules as Multiplication",
+        "content": "Division follows the same sign rules as multiplication: Same signs = Positive result, Different signs = Negative result. -15 / -3 = +5 because both are negative. -15 / 3 = -5 because signs differ. Think: division is really multiplication by a reciprocal, so the rules match.",
+        "metaphor": "If multiplication of negatives makes positive (double negative), division must too. 'Undoing' a negative action (dividing by -3) reverses the negative result (-15), giving positive. Two wrongs (in math) make a right!"
+      },
+      "scaffoldFile": "510.4-prealgebra-scaffolds/510.4.08-scaffolds.json"
+    },
+    {
+      "id": "510.4.09",
+      "q": "Which is the correct way to write 'the sum of x and 3, multiplied by 4'?",
+      "options": [
+        "4x + 3",
+        "x + 3 x 4",
+        "4(x + 3)",
+        "(4x)(3)"
+      ],
+      "answer": 2,
+      "chapter": "Pre-Algebra - Writing Expressions",
+      "explain": "'Sum of x and 3' = (x + 3). 'Multiplied by 4' = 4 times that sum. Result: 4(x + 3). Parentheses show we add FIRST, then multiply!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "4x + 3 only multiplies x by 4, not the ENTIRE sum. 'The sum, multiplied by 4' means 4 times (x + 3)."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x + 3 x 4 = x + 12 (by order of operations). But we want the SUM multiplied by 4, which needs parentheses: 4(x + 3)."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 'The sum of x and 3' is (x + 3). 'Multiplied by 4' means 4 times that WHOLE thing: 4(x + 3). The parentheses are crucial - they make sure we add first, then multiply the result by 4!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "(4x)(3) = 12x, which is 4 times x times 3. That's not 'the sum of x and 3.' Sums use addition, not multiplication."
+        }
+      ],
+      "mechanism": {
+        "title": "Writing Expressions with Proper Grouping",
+        "content": "When translating phrases to algebra, identify what needs to happen FIRST. 'The sum of x and 3, multiplied by 4' - first we sum, then multiply. Parentheses enforce this: 4(x + 3). Without them, 4x + 3 multiplies 4 by x only, then adds 3. Reading comprehension is half the battle!",
+        "metaphor": "Think of parentheses as a box. 'The sum of x and 3' gets boxed together: (x + 3). Then we multiply the whole box by 4. If x is 5, the box contains 8, and 4 boxes of 8 = 32. Without the box, we'd get a different answer!"
+      },
+      "scaffoldFile": "510.4-prealgebra-scaffolds/510.4.09-scaffolds.json"
+    },
+    {
+      "id": "510.4.10",
+      "q": "Simplify: 4x^2 + 3x - 2x^2 + x",
+      "options": [
+        "2x^2 + 4x",
+        "5x^2 + 4x",
+        "2x^3 + 4x",
+        "6x^2 + 4x"
+      ],
+      "answer": 0,
+      "chapter": "Pre-Algebra - Like Terms with Exponents",
+      "explain": "Combine like terms! x^2 terms: 4x^2 - 2x^2 = 2x^2. x terms: 3x + x = 4x. Result: 2x^2 + 4x.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Yes! Group like terms: x^2 terms (4x^2 - 2x^2 = 2x^2) and x terms (3x + x = 4x). Final: 2x^2 + 4x. Remember: x^2 and x are NOT like terms - the exponents must match!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "5x^2 comes from adding 4 + 3 - 2 = 5 for the x^2 coefficient. But only x^2 terms are 4x^2 and -2x^2. The 3x is a different type (x, not x^2)."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "2x^3 has the wrong exponent. We had x^2 terms (4x^2, -2x^2) which stay x^2 when combined. Adding doesn't change the exponent!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "6x^2 comes from adding all coefficients including the x terms. But 3x and x are NOT x^2 terms - they can't be combined with 4x^2 and -2x^2."
+        }
+      ],
+      "mechanism": {
+        "title": "Combining Like Terms with Variables and Exponents",
+        "content": "Like terms must have the SAME variable AND the SAME exponent. 4x^2 and -2x^2 are like (both x^2). 3x and x are like (both x^1). But x^2 and x are NOT like - they're different powers. Combine coefficients of like terms only; the variable part stays the same.",
+        "metaphor": "Think of exponents as different denominations. x^2 is like dollars, x is like quarters. 4 dollars + 3 quarters - 2 dollars + 1 quarter = 2 dollars + 4 quarters. You can't combine dollars and quarters into one number - they stay separate (2x^2 + 4x)!"
+      },
+      "scaffoldFile": "510.4-prealgebra-scaffolds/510.4.10-scaffolds.json"
+    },
+    {
+      "id": "510.4.11",
+      "q": "What is the absolute value of -12?",
+      "options": [
+        "-12",
+        "0",
+        "12",
+        "24"
+      ],
+      "answer": 2,
+      "chapter": "Pre-Algebra - Absolute Value",
+      "explain": "Absolute value is DISTANCE from zero - always positive! |-12| = 12. It measures how far -12 is from 0 on the number line.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "-12 is the original number. Absolute value REMOVES the sign, giving just the distance: |-12| = 12."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "0 would be the absolute value of 0 itself. The absolute value of -12 is 12 - the distance from -12 to 0."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! |-12| = 12. Absolute value = distance from zero, which is always positive (or zero for |0|). Think of it as 'how far?' without 'which direction?' -12 is 12 units from zero, so |-12| = 12."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "24 would be |-12| + |-12| or some doubling. The absolute value is simply the distance: 12."
+        }
+      ],
+      "mechanism": {
+        "title": "Absolute Value: Distance from Zero",
+        "content": "Absolute value, written |x|, is the distance of x from 0 on the number line. Distance is always positive (or zero). |-12| = 12 and |12| = 12 - both are 12 units from zero, just in opposite directions. Absolute value ignores direction, keeping only magnitude.",
+        "metaphor": "Absolute value is like asking 'how far did you walk?' without caring about direction. Walking 12 blocks north or 12 blocks south - you walked 12 blocks either way. |-12| and |12| both equal 12 because distance doesn't care about direction!"
+      },
+      "scaffoldFile": "510.4-prealgebra-scaffolds/510.4.11-scaffolds.json"
+    },
+    {
+      "id": "510.4.12",
+      "q": "Simplify: -3(2x - 4)",
+      "options": [
+        "-6x - 4",
+        "-6x - 12",
+        "-6x + 12",
+        "6x - 12"
+      ],
+      "answer": 2,
+      "chapter": "Pre-Algebra - Distributing Negatives",
+      "explain": "Distribute -3 to BOTH terms! -3(2x) = -6x and -3(-4) = +12. Result: -6x + 12. Watch the signs carefully!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "-6x - 4 only distributes -3 to 2x, forgetting the -4. And the -4 needs to be multiplied by -3, giving +12!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "-6x - 12 treats -3(-4) as -12, but negative times negative = POSITIVE. -3 x -4 = +12."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! -3(2x) = -6x. -3(-4) = +12 (negative times negative = positive). Result: -6x + 12. The negative sign in front is crucial - it changes the sign of everything inside when distributed!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "6x - 12 has both signs wrong. -3 times 2x is -6x (not +6x), and -3 times -4 is +12 (not -12)."
+        }
+      ],
+      "mechanism": {
+        "title": "Distributing Negative Numbers",
+        "content": "When distributing a negative, each term's sign can change. -3(2x - 4) = (-3)(2x) + (-3)(-4) = -6x + 12. The -3 multiplies BOTH 2x and -4. Since -3 x -4 = +12 (negative times negative = positive), the subtraction becomes addition!",
+        "metaphor": "Distributing a negative is like an 'opposite day' multiplier. When -3 visits 2x, it makes it negative: -6x. When -3 visits -4, two negatives make a positive: +12. The negative distribution flips signs as it goes!"
+      },
+      "scaffoldFile": "510.4-prealgebra-scaffolds/510.4.12-scaffolds.json"
+    },
+    {
+      "id": "510.4.13",
+      "q": "What is the coefficient of x in the expression 8 + 5x - 3?",
+      "options": [
+        "3",
+        "5",
+        "8",
+        "10"
+      ],
+      "answer": 1,
+      "chapter": "Pre-Algebra - Identifying Parts",
+      "explain": "The COEFFICIENT is the number multiplied by the variable. In 5x, the coefficient is 5. It tells you 'how many' of that variable.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "3 is a constant term (well, -3 is). It's not attached to x, so it's not the coefficient of x."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! The coefficient of x is the number directly multiplied by x. In 5x, that's 5. The 8 and -3 are constant terms (no variable attached). Coefficients 'count' how many of each variable you have."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "8 is a constant term in this expression. It's not attached to x, so it's not the coefficient of x."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "10 might come from adding 8 + 5 - 3, but the coefficient is just the single number attached to x: 5."
+        }
+      ],
+      "mechanism": {
+        "title": "Parts of an Algebraic Expression",
+        "content": "TERMS are separated by + or -. COEFFICIENTS are numbers multiplied by variables. CONSTANTS are terms without variables. In 8 + 5x - 3: Three terms (8, 5x, -3). Coefficient of x is 5. Constants are 8 and -3. Understanding these parts helps with simplification!",
+        "metaphor": "An expression is like a recipe. 5x is '5 servings of x.' The coefficient (5) tells you the quantity. Constants (8, -3) are fixed ingredients that don't depend on x. Together, they make the expression."
+      },
+      "scaffoldFile": "510.4-prealgebra-scaffolds/510.4.13-scaffolds.json"
+    },
+    {
+      "id": "510.4.14",
+      "q": "Evaluate: 3^2 - 4(2)",
+      "options": [
+        "-1",
+        "1",
+        "10",
+        "17"
+      ],
+      "answer": 1,
+      "chapter": "Pre-Algebra - Order of Operations",
+      "explain": "PEMDAS! First exponents: 3^2 = 9. Then multiplication: 4(2) = 8. Finally subtraction: 9 - 8 = 1.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "-1 comes from doing 3 - 4 first, then squaring and multiplying. But exponents come before subtraction: 3^2 = 9 first!"
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! Follow PEMDAS: Exponents first (3^2 = 9), then multiplication (4 x 2 = 8), finally subtraction (9 - 8 = 1). Order matters! Without it, different people would get different answers from the same expression."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "10 might come from (3-4)^2 + 2 or some other misread. Our expression is 3^2 - 4(2) = 9 - 8 = 1."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "17 might come from 3^2 + 4(2) = 9 + 8. But we have SUBTRACTION between them: 9 - 8 = 1."
+        }
+      ],
+      "mechanism": {
+        "title": "Order of Operations (PEMDAS/BODMAS)",
+        "content": "PEMDAS: Parentheses, Exponents, Multiplication/Division (left to right), Addition/Subtraction (left to right). This universal agreement ensures everyone gets the same answer from the same expression. Always work in this order, even if it doesn't match left-to-right reading!",
+        "metaphor": "Order of operations is like building a house. You can't put up walls (multiplication) before the foundation (exponents). And you can't paint (addition/subtraction) until the walls are up. The order ensures the math 'house' is built correctly!"
+      },
+      "scaffoldFile": "510.4-prealgebra-scaffolds/510.4.14-scaffolds.json"
+    },
+    {
+      "id": "510.4.15",
+      "q": "Factor out the GCF: 12x + 8",
+      "options": [
+        "2(6x + 4)",
+        "4(3x + 2)",
+        "4(3x + 8)",
+        "12(x + 8)"
+      ],
+      "answer": 1,
+      "chapter": "Pre-Algebra - Factoring GCF",
+      "explain": "Find the GCF of 12 and 8: it's 4. Factor it out: 12x + 8 = 4(3x + 2). Check by distributing: 4(3x) + 4(2) = 12x + 8!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "2(6x + 4) is correct but not fully factored. 6 and 4 share a factor of 2, so we can factor more: 2(6x + 4) = 4(3x + 2). Always factor out the GREATEST common factor!"
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! GCF of 12 and 8 is 4. Divide each term by 4: 12x/4 = 3x and 8/4 = 2. So 12x + 8 = 4(3x + 2). Verify: 4(3x + 2) = 12x + 8. Factoring is the reverse of distributing!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "4(3x + 8) doesn't work. 4 x 8 = 32, not the 8 we started with. Always check by distributing!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "12(x + 8) doesn't work either. 12 x 8 = 96, way more than 8. The GCF of 12 and 8 is 4, not 12."
+        }
+      ],
+      "mechanism": {
+        "title": "Factoring Out the Greatest Common Factor",
+        "content": "Factoring reverses distribution. To factor out the GCF: 1) Find the GCF of all coefficients. 2) Divide each term by the GCF. 3) Write as GCF(result). For 12x + 8: GCF(12,8) = 4. Then 12x/4 = 3x and 8/4 = 2. Result: 4(3x + 2).",
+        "metaphor": "Factoring is like finding what everyone at a party has in common. 12x and 8 both have 4 as a factor. 'Extract' the 4 from both: 12x = 4(3x) and 8 = 4(2). What remains inside is 3x + 2, and the common factor 4 goes outside: 4(3x + 2)."
+      },
+      "scaffoldFile": "510.4-prealgebra-scaffolds/510.4.15-scaffolds.json"
+    }
+  ]
+}

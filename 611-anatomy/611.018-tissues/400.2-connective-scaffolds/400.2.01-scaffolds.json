@@ -1,0 +1,159 @@
+{
+  "parentId": "400.2.01",
+  "parentQuestion": "The shock-absorbing pads between the vertebrae are made of ___.",
+  "scaffolds": [
+    {
+      "q": "What is cartilage?",
+      "options": [
+        "A type of bone",
+        "A firm but flexible connective tissue that provides cushioning",
+        "A type of muscle",
+        "A nerve covering"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "CARTILAGE is a FIRM but FLEXIBLE CONNECTIVE TISSUE that provides CUSHIONING and support. It's softer than bone but firm enough to absorb shock.",
+      "wrongExplains": {
+        "0": "Bone is harder and more rigid than cartilage.",
+        "2": "Muscle contracts; cartilage provides structural support.",
+        "3": "Myelin covers nerves; cartilage cushions joints and structures."
+      }
+    },
+    {
+      "q": "What are the three types of cartilage?",
+      "options": [
+        "Compact, spongy, and dense",
+        "Hyaline, elastic, and fibrocartilage",
+        "White, red, and yellow",
+        "Smooth, rough, and mixed"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The THREE types of cartilage are HYALINE (smooth, for joints), ELASTIC (flexible, for ears), and FIBROCARTILAGE (tough, for shock absorption).",
+      "wrongExplains": {
+        "0": "Compact and spongy describe bone types.",
+        "2": "These describe bone marrow or muscle types.",
+        "3": "These aren't cartilage classifications."
+      }
+    },
+    {
+      "q": "What is fibrocartilage?",
+      "options": [
+        "Smooth cartilage for gliding",
+        "Tough cartilage with thick collagen fibers for shock absorption",
+        "Flexible cartilage that springs back",
+        "Cartilage that becomes bone"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "FIBROCARTILAGE contains THICK COLLAGEN FIBERS ('fibro' = fiber) making it TOUGH and resistant to COMPRESSION. Ideal for shock absorption.",
+      "wrongExplains": {
+        "0": "Hyaline cartilage is smooth for gliding in joints.",
+        "2": "Elastic cartilage springs back (like ears).",
+        "3": "Fibrocartilage remains cartilage; it doesn't become bone."
+      }
+    },
+    {
+      "q": "Where is fibrocartilage found?",
+      "options": [
+        "Covering joint surfaces",
+        "Intervertebral discs, knee menisci, and pubic symphysis",
+        "External ear and epiglottis",
+        "Nasal septum and larynx"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Fibrocartilage is found in INTERVERTEBRAL DISCS, KNEE MENISCI, and PUBIC SYMPHYSIS — anywhere needing tough cushioning against heavy compression.",
+      "wrongExplains": {
+        "0": "Hyaline cartilage covers joint surfaces for smooth gliding.",
+        "2": "Elastic cartilage is in the ear and epiglottis.",
+        "3": "Hyaline cartilage is in the nasal septum and most of larynx."
+      }
+    },
+    {
+      "q": "What is hyaline cartilage?",
+      "options": [
+        "Tough cartilage for compression",
+        "Smooth, glassy cartilage found on joint surfaces",
+        "Flexible cartilage in the ear",
+        "Cartilage that stores fat"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "HYALINE cartilage is SMOOTH and GLASSY (hyaline means glass-like). It covers joint surfaces for low-friction gliding during movement.",
+      "wrongExplains": {
+        "0": "Fibrocartilage handles compression.",
+        "2": "Elastic cartilage is in the ear.",
+        "3": "Adipose tissue stores fat; cartilage doesn't."
+      }
+    },
+    {
+      "q": "What is elastic cartilage?",
+      "options": [
+        "The hardest type of cartilage",
+        "Flexible cartilage with elastin fibers that springs back to shape",
+        "Cartilage that absorbs shock",
+        "Cartilage that becomes bone over time"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "ELASTIC cartilage contains ELASTIN FIBERS that allow it to bend and SPRING BACK to shape. Found in the ear, epiglottis, and parts of larynx.",
+      "wrongExplains": {
+        "0": "Elastic cartilage is the most flexible, not hardest.",
+        "2": "Fibrocartilage absorbs shock.",
+        "3": "Elastic cartilage remains cartilage; it doesn't ossify."
+      }
+    },
+    {
+      "q": "Why does the spine need shock-absorbing pads?",
+      "options": [
+        "To produce blood cells",
+        "To cushion vertebrae during walking, jumping, and movement",
+        "To store calcium",
+        "To conduct nerve signals"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Intervertebral discs CUSHION VERTEBRAE during movement, preventing bone-on-bone contact. Without them, the spine would grind with every step.",
+      "wrongExplains": {
+        "0": "Bone marrow produces blood cells.",
+        "2": "Bones store calcium; discs provide cushioning.",
+        "3": "Nerves conduct signals; discs provide mechanical cushioning."
+      }
+    },
+    {
+      "q": "Why is fibrocartilage better than hyaline for intervertebral discs?",
+      "options": [
+        "It's smoother",
+        "Its thick collagen fibers resist both compression and tension",
+        "It's more flexible",
+        "It has better blood supply"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "Fibrocartilage's THICK COLLAGEN FIBERS resist both COMPRESSION and TENSION. The spine experiences enormous forces that hyaline cartilage couldn't handle.",
+      "wrongExplains": {
+        "0": "Hyaline is smoother; fibrocartilage is tougher.",
+        "2": "Elastic cartilage is more flexible; fibrocartilage is stronger.",
+        "3": "All cartilage is avascular (no blood supply)."
+      }
+    },
+    {
+      "q": "The shock-absorbing pads between vertebrae are made of ___?",
+      "options": [
+        "Hyaline cartilage",
+        "Fibrocartilage",
+        "Elastic cartilage",
+        "Bone"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "Intervertebral discs are made of FIBROCARTILAGE. Its thick collagen bundles handle the crushing forces between vertebrae during movement.",
+      "wrongExplains": {
+        "0": "Hyaline is for smooth gliding, not shock absorption.",
+        "2": "Elastic is for flexibility (ears), not heavy-duty cushioning.",
+        "3": "Bone is rigid; it can't absorb shock like cartilage."
+      }
+    }
+  ]
+}

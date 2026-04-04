@@ -1,0 +1,564 @@
+{
+  "id": "510.5",
+  "title": "Equations & Inequalities",
+  "category": "concepts",
+  "gradeLevel": "7-8",
+  "description": "Solving equations, inequalities, and understanding mathematical relationships",
+  "questions": [
+    {
+      "id": "510.5.01",
+      "q": "Solve for x: x + 7 = 15",
+      "options": [
+        "x = 7",
+        "x = 8",
+        "x = 15",
+        "x = 22"
+      ],
+      "answer": 1,
+      "chapter": "Equations - One-Step Addition",
+      "explain": "To isolate x, do the OPPOSITE operation. x + 7 = 15 means subtract 7 from both sides: x = 15 - 7 = 8.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "x = 7 comes from just taking the number on the left. But we need to solve: what PLUS 7 equals 15? That's 8."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! x + 7 = 15. To solve, subtract 7 from BOTH sides: x + 7 - 7 = 15 - 7, so x = 8. Check: 8 + 7 = 15. It works! The equation is balanced."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x = 15 is the right side of the equation, not the solution. We need to find what number PLUS 7 gives 15."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x = 22 comes from adding 7 + 15. But solving means we need to UNDO the +7, so we subtract: 15 - 7 = 8."
+        }
+      ],
+      "mechanism": {
+        "title": "Solving One-Step Equations: Inverse Operations",
+        "content": "To solve an equation, isolate the variable by doing the OPPOSITE (inverse) operation to both sides. Addition undoes subtraction. Multiplication undoes division. Whatever you do to one side, do to the other - that keeps the equation balanced!",
+        "metaphor": "An equation is a balance scale. x + 7 = 15 means the left side (x + 7) weighs the same as the right (15). To find x alone, remove 7 from the left - but you must remove 7 from the right too, or the scale tips! 15 - 7 = 8, so x = 8."
+      },
+      "scaffoldFile": "510.5-equations-scaffolds/510.5.01-scaffolds.json"
+    },
+    {
+      "id": "510.5.02",
+      "q": "Solve for x: 3x = 21",
+      "options": [
+        "x = 3",
+        "x = 7",
+        "x = 18",
+        "x = 63"
+      ],
+      "answer": 1,
+      "chapter": "Equations - One-Step Multiplication",
+      "explain": "3x means 3 times x. To undo multiplication, DIVIDE both sides by 3: x = 21 / 3 = 7.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "x = 3 is the coefficient, not the solution. We need to find what number TIMES 3 equals 21."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 3x = 21 means '3 times x equals 21.' Divide both sides by 3: 3x/3 = 21/3, so x = 7. Check: 3(7) = 21. Perfect!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x = 18 comes from subtracting (21 - 3). But 3x means multiplication, so we need to DIVIDE to undo it."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x = 63 comes from multiplying (21 x 3). But to solve, we do the OPPOSITE: 21 / 3 = 7."
+        }
+      ],
+      "mechanism": {
+        "title": "Solving One-Step Equations: Division",
+        "content": "When a variable is multiplied by a number (3x = 21), divide both sides by that number to isolate the variable. 3x / 3 = 21 / 3 gives x = 7. Division is the inverse of multiplication - it undoes the times-3 operation.",
+        "metaphor": "3x = 21 is like saying '3 bags of x marbles total 21 marbles.' To find how many marbles in ONE bag, divide the total by the number of bags: 21 / 3 = 7 marbles per bag. So x = 7!"
+      },
+      "scaffoldFile": "510.5-equations-scaffolds/510.5.02-scaffolds.json"
+    },
+    {
+      "id": "510.5.03",
+      "q": "Solve for x: 2x + 5 = 13",
+      "options": [
+        "x = 4",
+        "x = 6",
+        "x = 8",
+        "x = 9"
+      ],
+      "answer": 0,
+      "chapter": "Equations - Two-Step",
+      "explain": "Two steps: First subtract 5 from both sides: 2x = 8. Then divide by 2: x = 4. Always undo addition/subtraction FIRST, then multiplication/division.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Yes! Step 1: Subtract 5 from both sides. 2x + 5 - 5 = 13 - 5, so 2x = 8. Step 2: Divide both sides by 2. 2x / 2 = 8 / 2, so x = 4. Check: 2(4) + 5 = 8 + 5 = 13. Correct!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "If x = 6, then 2(6) + 5 = 12 + 5 = 17, not 13. The solution must satisfy the original equation."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "If x = 8, then 2(8) + 5 = 16 + 5 = 21, not 13. Too big!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "If x = 9, then 2(9) + 5 = 18 + 5 = 23, not 13. Way too big!"
+        }
+      ],
+      "mechanism": {
+        "title": "Solving Two-Step Equations",
+        "content": "For equations like 2x + 5 = 13, think of PEMDAS in REVERSE. The expression was built by multiplying x by 2, then adding 5. To undo: first subtract 5, then divide by 2. Peel away operations layer by layer, working backwards from how the expression was constructed.",
+        "metaphor": "Two-step equations are like getting dressed. You put on socks first, then shoes. To get undressed, reverse the order: remove shoes first, then socks. 2x + 5: we added 5 last, so we subtract 5 first. Then we undo the multiplication."
+      },
+      "scaffoldFile": "510.5-equations-scaffolds/510.5.03-scaffolds.json"
+    },
+    {
+      "id": "510.5.04",
+      "q": "Which inequality represents 'x is greater than or equal to 5'?",
+      "options": [
+        "x > 5",
+        "x < 5",
+        "x >= 5",
+        "x <= 5"
+      ],
+      "answer": 2,
+      "chapter": "Equations - Inequality Notation",
+      "explain": "'Greater than OR equal' includes both > and =. The symbol is >= (or the fancy symbol with a line under). x can be 5, 6, 7, etc.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "x > 5 means 'strictly greater than' - it EXCLUDES 5 itself. But 'greater than or equal' INCLUDES 5 as a solution."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x < 5 means 'less than 5' - the opposite direction! This would be numbers like 4, 3, 2..."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! x >= 5 means 'x is greater than OR equal to 5.' This includes 5 itself, plus all numbers above it: 5, 5.5, 6, 100, etc. The line under the > symbol means 'or equal to.'"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x <= 5 means 'less than or equal to 5' - the opposite direction. This would include 5, 4, 3, 2..."
+        }
+      ],
+      "mechanism": {
+        "title": "Inequality Symbols",
+        "content": "< means less than, > means greater than. Adding = underneath (or writing <= or >=) means 'or equal to.' On a number line, < and > use open circles (not including the endpoint), while <= and >= use closed/filled circles (including the endpoint).",
+        "metaphor": "Think of the inequality symbol as a hungry alligator - it always wants to eat the BIGGER number. x > 5: x is bigger, the alligator points at x. The 'or equal to' part (>=) is like saying 'the alligator will settle for exactly 5 too!'"
+      },
+      "scaffoldFile": "510.5-equations-scaffolds/510.5.04-scaffolds.json"
+    },
+    {
+      "id": "510.5.05",
+      "q": "Solve: x - 9 = -3",
+      "options": [
+        "x = -12",
+        "x = -6",
+        "x = 6",
+        "x = 12"
+      ],
+      "answer": 2,
+      "chapter": "Equations - With Negatives",
+      "explain": "Add 9 to both sides: x - 9 + 9 = -3 + 9, so x = 6. The negative answer (-3) plus 9 gives positive 6.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "x = -12 comes from subtracting: -3 - 9 = -12. But to solve, we ADD 9 to both sides: -3 + 9 = 6."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x = -6 might come from -3 - 3 or another error. The correct step is to add 9: -3 + 9 = 6."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! Add 9 to both sides: x - 9 + 9 = -3 + 9, so x = 6. Check: 6 - 9 = -3. It works! When solving, negative numbers follow the same rules - just watch the signs."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x = 12 might come from |-3| + 9 = 12. But we don't use absolute value in solving - we add: -3 + 9 = 6."
+        }
+      ],
+      "mechanism": {
+        "title": "Solving Equations with Negative Numbers",
+        "content": "The process is the same: isolate x using inverse operations. When you have negatives, be careful with signs. x - 9 = -3: add 9 to both sides. -3 + 9 = 6 (adding a positive to a negative: subtract absolute values, take sign of larger). So x = 6.",
+        "metaphor": "Think of a number line. Starting at -3, we need to add 9 to undo the subtraction of 9. Moving 9 units right from -3 lands us at 6. The negative starting point doesn't change the process - we still add to undo subtraction."
+      },
+      "scaffoldFile": "510.5-equations-scaffolds/510.5.05-scaffolds.json"
+    },
+    {
+      "id": "510.5.06",
+      "q": "Solve for x: 4x - 3 = 2x + 7",
+      "options": [
+        "x = 2",
+        "x = 4",
+        "x = 5",
+        "x = 10"
+      ],
+      "answer": 2,
+      "chapter": "Equations - Variables on Both Sides",
+      "explain": "Get all x-terms on one side: 4x - 2x = 7 + 3, so 2x = 10. Then divide: x = 5.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "If x = 2: Left = 4(2) - 3 = 5. Right = 2(2) + 7 = 11. Not equal! Try again."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "If x = 4: Left = 4(4) - 3 = 13. Right = 2(4) + 7 = 15. Close, but not equal!"
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! Subtract 2x from both sides: 4x - 2x - 3 = 7, so 2x - 3 = 7. Add 3: 2x = 10. Divide: x = 5. Check: 4(5) - 3 = 17 and 2(5) + 7 = 17. Both sides equal!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "If x = 10: Left = 4(10) - 3 = 37. Right = 2(10) + 7 = 27. Not equal!"
+        }
+      ],
+      "mechanism": {
+        "title": "Equations with Variables on Both Sides",
+        "content": "When variables appear on BOTH sides, move all variable terms to one side and constants to the other. For 4x - 3 = 2x + 7: Subtract 2x from both sides (get x-terms together), add 3 to both sides (get constants together). Result: 2x = 10, so x = 5.",
+        "metaphor": "Think of two piles on a balance scale, each with x-boxes and weights. To find how heavy one x-box is, we need ALL boxes on one side. Move 2 boxes from right to left (subtract 2x). Now 2 boxes balance with the weights, and we can figure out each box's weight."
+      },
+      "scaffoldFile": "510.5-equations-scaffolds/510.5.06-scaffolds.json"
+    },
+    {
+      "id": "510.5.07",
+      "q": "Solve the inequality: x + 4 > 10",
+      "options": [
+        "x > 6",
+        "x < 6",
+        "x > 14",
+        "x < 14"
+      ],
+      "answer": 0,
+      "chapter": "Equations - Solving Inequalities",
+      "explain": "Solve like an equation: subtract 4 from both sides. x + 4 - 4 > 10 - 4, so x > 6. The inequality sign stays the same!",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Yes! Subtract 4 from both sides: x > 10 - 4 = 6. So x > 6. Solutions include 7, 8, 100, anything greater than 6. Adding/subtracting doesn't flip the inequality sign!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x < 6 has the wrong direction. When subtracting from both sides, the inequality direction stays the same. x > 6."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x > 14 comes from adding 4 + 10. But we SUBTRACT to isolate x: 10 - 4 = 6."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x < 14 has wrong value and direction. Subtract 4 from 10 to get 6, and the > sign stays the same."
+        }
+      ],
+      "mechanism": {
+        "title": "Solving Inequalities: Addition and Subtraction",
+        "content": "Solve inequalities just like equations - use inverse operations to isolate the variable. Adding or subtracting from both sides does NOT change the direction of the inequality. The inequality 'points' the same way before and after these operations.",
+        "metaphor": "Inequality is like 'taller than.' If Alex is taller than Ben (A > B), and both stand on identical 4-inch platforms, Alex is STILL taller than Ben. Adding the same height doesn't change who's taller - the inequality direction stays."
+      },
+      "scaffoldFile": "510.5-equations-scaffolds/510.5.07-scaffolds.json"
+    },
+    {
+      "id": "510.5.08",
+      "q": "Solve for x: x/5 = 8",
+      "options": [
+        "x = 3",
+        "x = 13",
+        "x = 40",
+        "x = 1.6"
+      ],
+      "answer": 2,
+      "chapter": "Equations - One-Step Division",
+      "explain": "x/5 means x divided by 5. To undo division, MULTIPLY both sides by 5: x = 8 x 5 = 40.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "x = 3 comes from 8 - 5. But x/5 means division, so we undo with multiplication: 8 x 5 = 40."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x = 13 comes from 8 + 5. But the operation is division, not addition. Undo with multiplication."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! x/5 = 8 means 'x divided by 5 equals 8.' Multiply both sides by 5: (x/5) x 5 = 8 x 5, so x = 40. Check: 40/5 = 8. Perfect!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x = 1.6 is 8/5, which divides again instead of undoing the division. Multiplication is the inverse of division."
+        }
+      ],
+      "mechanism": {
+        "title": "Solving One-Step Equations: Multiplication",
+        "content": "When a variable is divided by a number (x/5 = 8), multiply both sides by that number to isolate the variable. Multiplication undoes division. (x/5) x 5 = x, and 8 x 5 = 40, so x = 40.",
+        "metaphor": "x/5 = 8 is like asking 'If I split x dollars equally among 5 people and each gets $8, how much was x?' Multiply back: 5 people x $8 each = $40 total. So x = 40!"
+      },
+      "scaffoldFile": "510.5-equations-scaffolds/510.5.08-scaffolds.json"
+    },
+    {
+      "id": "510.5.09",
+      "q": "Solve the inequality: -2x < 10",
+      "options": [
+        "x < -5",
+        "x > -5",
+        "x < 5",
+        "x > 5"
+      ],
+      "answer": 1,
+      "chapter": "Equations - Inequalities with Negatives",
+      "explain": "Divide by -2, but FLIP the inequality sign! -2x < 10 becomes x > -5. Multiplying/dividing by a negative REVERSES the direction!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "x < -5 forgets to flip the inequality. When dividing by a NEGATIVE number, the inequality sign REVERSES!"
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! Divide by -2: x > 10/(-2) = -5. The inequality FLIPS from < to > because we divided by a negative! Check: if x = 0, then -2(0) = 0 < 10. True! And 0 > -5. The solution works."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x < 5 divides correctly (10/-2 = -5) but doesn't flip the sign, and gets the wrong answer."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x > 5 has the right direction (flipped) but wrong value. 10 / (-2) = -5, not 5."
+        }
+      ],
+      "mechanism": {
+        "title": "Inequalities: Multiplying/Dividing by Negatives",
+        "content": "CRUCIAL RULE: When multiplying or dividing an inequality by a NEGATIVE number, FLIP the inequality sign! -2x < 10 becomes x > -5 (not x < -5). Why? Because negatives reverse order: -1 < 2, but multiplying both by -1 gives 1 > -2. The direction reverses!",
+        "metaphor": "Multiplying by a negative is like looking in a mirror - everything reverses! If you're standing to the left of your friend (you < friend), in the mirror it looks like you're on the right (you > friend). Negatives flip the inequality world."
+      },
+      "scaffoldFile": "510.5-equations-scaffolds/510.5.09-scaffolds.json"
+    },
+    {
+      "id": "510.5.10",
+      "q": "What is the solution set for x if x + 3 <= 7?",
+      "options": [
+        "x <= 4",
+        "x >= 4",
+        "x < 4",
+        "x > 4"
+      ],
+      "answer": 0,
+      "chapter": "Equations - Solution Sets",
+      "explain": "Subtract 3 from both sides: x <= 7 - 3 = 4. The solution set is all values where x <= 4 (including 4 itself).",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Yes! Subtract 3: x + 3 - 3 <= 7 - 3, so x <= 4. The solution includes 4 and everything less than 4: {..., 1, 2, 3, 4}. On a number line, use a filled circle at 4 (since = is included) and shade left."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x >= 4 is the opposite direction. Subtracting 3 doesn't flip the inequality - only multiplying/dividing by negatives does that."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x < 4 is close but excludes 4 itself. The original has <= (less than OR EQUAL), so 4 is included in the solution."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x > 4 is completely opposite - wrong direction and excludes 4. We want x <= 4."
+        }
+      ],
+      "mechanism": {
+        "title": "Solution Sets and Number Line Graphs",
+        "content": "The solution set is all values that make the inequality true. x <= 4 includes 4, 3, 2, 1, 0, -1, -2, ... (infinitely many!). On a number line: use a FILLED circle at 4 (because = is included) and shade everything to the LEFT (the 'less than' direction).",
+        "metaphor": "The solution set is like a VIP list for a party. x <= 4 means '4 and under get in.' The bouncer (the inequality) checks each number: 4? Yes. 3? Yes. 5? No, too big. The filled circle at 4 means 4 is definitely on the list!"
+      },
+      "scaffoldFile": "510.5-equations-scaffolds/510.5.10-scaffolds.json"
+    },
+    {
+      "id": "510.5.11",
+      "q": "Solve: 3(x - 2) = 15",
+      "options": [
+        "x = 3",
+        "x = 5",
+        "x = 7",
+        "x = 9"
+      ],
+      "answer": 2,
+      "chapter": "Equations - With Distribution",
+      "explain": "Two ways: 1) Distribute first: 3x - 6 = 15, then 3x = 21, x = 7. OR 2) Divide first: x - 2 = 5, then x = 7.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "If x = 3: 3(3-2) = 3(1) = 3, not 15. Too small!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "If x = 5: 3(5-2) = 3(3) = 9, not 15. Getting closer but not quite."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! Method 1: Distribute. 3x - 6 = 15. Add 6: 3x = 21. Divide: x = 7. Method 2: Divide first. 15/3 = 5, so x - 2 = 5. Add 2: x = 7. Check: 3(7-2) = 3(5) = 15!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "If x = 9: 3(9-2) = 3(7) = 21, not 15. Too big!"
+        }
+      ],
+      "mechanism": {
+        "title": "Equations with Parentheses",
+        "content": "When parentheses appear, you have choices: 1) DISTRIBUTE first (multiply the outside number by each term inside), then solve. 2) DIVIDE first if the whole side is multiplied by a number. Both methods give the same answer - use whichever seems easier!",
+        "metaphor": "It's like opening a gift box. You can unwrap the ribbon (distribute) to reveal contents, OR you can figure out what's inside from the label (divide by 3 to see x-2 = 5). Either way, you find the prize inside: x = 7!"
+      },
+      "scaffoldFile": "510.5-equations-scaffolds/510.5.11-scaffolds.json"
+    },
+    {
+      "id": "510.5.12",
+      "q": "If 5x - 3 = 7, what is the value of 10x?",
+      "options": [
+        "2",
+        "10",
+        "14",
+        "20"
+      ],
+      "answer": 3,
+      "chapter": "Equations - Finding Related Values",
+      "explain": "First solve for x: 5x = 10, so x = 2. Then find 10x: 10(2) = 20. Or notice: 10x = 2(5x) = 2(10) = 20!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "2 is the value of x, not 10x. We need to multiply x by 10: 10(2) = 20."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "10 is 5x (from solving 5x - 3 = 7, we get 5x = 10). But we want 10x, which is double that: 20."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "14 is from the original equation (7 + 7 or other miscalculation). Let's trace through: x = 2, so 10x = 20."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! Solve first: 5x - 3 = 7, so 5x = 10, and x = 2. Then 10x = 10(2) = 20. Shortcut: 10x = 2(5x) = 2(10) = 20. You can work with expressions directly!"
+        }
+      ],
+      "mechanism": {
+        "title": "Using Solutions to Find Related Values",
+        "content": "Sometimes you don't just want x - you want an expression involving x. Option 1: Find x, then plug it in. Option 2: Manipulate the original equation. For 5x - 3 = 7: we know 5x = 10. Since 10x = 2(5x), we get 10x = 2(10) = 20. This trick saves time!",
+        "metaphor": "It's like knowing a recipe scale. If the recipe (5x - 3 = 7) tells us 5 eggs (5x) equals 10, and we want to make double the recipe (10x), we just double the eggs: 10 x 2 = 20!"
+      },
+      "scaffoldFile": "510.5-equations-scaffolds/510.5.12-scaffolds.json"
+    },
+    {
+      "id": "510.5.13",
+      "q": "Which value of x makes the equation x^2 = 25 true?",
+      "options": [
+        "x = 5 only",
+        "x = -5 only",
+        "x = 5 or x = -5",
+        "No solution"
+      ],
+      "answer": 2,
+      "chapter": "Equations - Quadratic Basics",
+      "explain": "Both 5^2 = 25 and (-5)^2 = 25! When solving x^2 = a, remember both positive AND negative roots. x = 5 or x = -5.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "x = 5 works (5^2 = 25), but it's not the ONLY solution. What about -5?"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x = -5 works ((-5)^2 = 25), but it's not the ONLY solution. What about +5?"
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! BOTH 5 and -5 work: 5^2 = 25 and (-5)^2 = 25. When squaring, a negative times a negative gives positive, so both roots exist. Always check for both solutions with x^2 = a!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "There ARE solutions! 25 is a perfect square, and both 5 and -5 squared give 25."
+        }
+      ],
+      "mechanism": {
+        "title": "Quadratic Equations: Two Solutions",
+        "content": "Equations like x^2 = 25 often have TWO solutions. Take the square root of both sides: x = plus or minus sqrt(25) = plus or minus 5. Remember: (-5)^2 = (-5)(-5) = +25. The square of ANY number (positive or negative) is positive!",
+        "metaphor": "Squaring is like taking a photograph - you lose information. Both 5 and -5 produce the same 'photo' (25) when squared. To find the original, you need to consider both possibilities, like considering both the photo and its mirror image!"
+      },
+      "scaffoldFile": "510.5-equations-scaffolds/510.5.13-scaffolds.json"
+    },
+    {
+      "id": "510.5.14",
+      "q": "Solve for y: 2y + 3x = 12, when x = 2",
+      "options": [
+        "y = 2",
+        "y = 3",
+        "y = 4",
+        "y = 6"
+      ],
+      "answer": 1,
+      "chapter": "Equations - Two Variables",
+      "explain": "Substitute x = 2: 2y + 3(2) = 12, so 2y + 6 = 12. Solve: 2y = 6, y = 3.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "If y = 2: 2(2) + 3(2) = 4 + 6 = 10, not 12. y needs to be bigger."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! Plug in x = 2: 2y + 3(2) = 12, so 2y + 6 = 12. Subtract 6: 2y = 6. Divide: y = 3. Check: 2(3) + 3(2) = 6 + 6 = 12. Perfect!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "If y = 4: 2(4) + 3(2) = 8 + 6 = 14, not 12. y needs to be smaller."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "If y = 6: 2(6) + 3(2) = 12 + 6 = 18, not 12. Way too big!"
+        }
+      ],
+      "mechanism": {
+        "title": "Equations with Two Variables: Substitution",
+        "content": "When an equation has two variables and you're given the value of one, SUBSTITUTE it in and solve for the other. 2y + 3x = 12 with x = 2 becomes 2y + 6 = 12, a one-variable equation. Now solve normally: 2y = 6, y = 3.",
+        "metaphor": "Two-variable equations are like recipes where you choose one ingredient. '2 cups flour + 3 cups sugar = 12 cups batter.' If you decide on 2 cups sugar (x = 2), that's 6 cups of sugar-contribution. The remaining 6 cups must come from flour: y = 3!"
+      },
+      "scaffoldFile": "510.5-equations-scaffolds/510.5.14-scaffolds.json"
+    },
+    {
+      "id": "510.5.15",
+      "q": "Which compound inequality represents 'x is between -2 and 5, inclusive'?",
+      "options": [
+        "-2 < x < 5",
+        "-2 <= x <= 5",
+        "x < -2 or x > 5",
+        "x <= -2 or x >= 5"
+      ],
+      "answer": 1,
+      "chapter": "Equations - Compound Inequalities",
+      "explain": "'Inclusive' means INCLUDING the endpoints -2 and 5. Use <= on both sides: -2 <= x <= 5. x can be -2, 5, or anything between.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "-2 < x < 5 EXCLUDES the endpoints (strict inequality). 'Inclusive' means we INCLUDE -2 and 5, so we need <=."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 'Inclusive' means the endpoints are included. -2 <= x <= 5 means x can be -2, can be 5, or anything in between: -2, -1, 0, 1, 2, 3, 4, 5 (and all decimals in that range). On a number line, use filled circles at both ends."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x < -2 or x > 5 is the OPPOSITE - it describes everything OUTSIDE the interval, not between!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x <= -2 or x >= 5 also describes everything OUTSIDE, just with endpoints included on the outside parts."
+        }
+      ],
+      "mechanism": {
+        "title": "Compound Inequalities: AND vs OR",
+        "content": "'Between a and b' means a < x < b (or with <= for inclusive). This is an AND compound inequality: x must satisfy BOTH conditions. 'Outside a and b' (x < a OR x > b) is an OR compound inequality: x satisfies AT LEAST ONE. The graph shows where both/either are true.",
+        "metaphor": "Compound inequalities define regions. 'Between -2 and 5 inclusive' is like a rope barrier at a concert: you must be past the -2 marker AND before the 5 marker to be in the VIP section. Everyone in [-2, 5] is a VIP. 'Inclusive' means the people RIGHT ON the ropes count too!"
+      },
+      "scaffoldFile": "510.5-equations-scaffolds/510.5.15-scaffolds.json"
+    }
+  ]
+}

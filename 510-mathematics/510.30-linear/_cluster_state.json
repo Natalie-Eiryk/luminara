@@ -1,0 +1,28 @@
+{
+  "clusterId": "510.30",
+  "clusterName": "Linear Functions",
+  "status": "pending",
+  "targetQuestions": 350,
+  "currentBatch": 0,
+  "totalBatches": 14,
+  "questionsGenerated": 0,
+  "scaffoldsGenerated": 0,
+  "lastUpdated": null,
+  "batches": [],
+  "isotopes": [
+    "510.30.slope",
+    "510.30.intercept",
+    "510.30.slope-intercept",
+    "510.30.graphing",
+    "510.30.systems.graphing",
+    "510.30.systems.substitution",
+    "510.30.systems.elimination"
+  ],
+  "prerequisites": ["510.22.*", "510.23.coordinate-plane"],
+  "difficultyDistribution": {
+    "easy": 0,
+    "medium": 0,
+    "challenging": 0,
+    "hard": 0
+  }
+}

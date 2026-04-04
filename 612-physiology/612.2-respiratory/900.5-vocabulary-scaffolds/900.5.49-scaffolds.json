@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.49",
+  "parentQuestion": "Functional residual capacity (FRC) is:",
+  "narrative": {
+    "setting": "The Magic School Bus floats in Mr. Edgar's lungs at the end of a normal exhalation. Ms. Frizzle gestures around at the vast pink landscape of alveoli still inflated around them. 'Class, Mr. Edgar just exhaled normally, yet we're surrounded by air. About 2400 milliliters of it. This is functional residual capacity - the air cushion that keeps his alveoli from collapsing. It's the difference between functional lungs and pancake lungs.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's emphysema has increased his FRC to dangerous levels. His lungs can't deflate properly, trapping air like an overinflated balloon. Every breath becomes a struggle against the old air that won't leave."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.49.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle projects the word 'functional' on the holographic display. 'Not anatomical - not just structure. Functional means it SERVES A PURPOSE. FRC is the volume that makes lungs FUNCTION properly between breaths.'",
+      "q": "What does 'functional' mean in medical terminology?",
+      "options": [
+        "Related to structure only",
+        "Related to how something works or its purpose",
+        "Related to disease",
+        "Related to surgical procedures"
+      ],
+      "answer": 1,
+      "explain": "'Functional' = about FUNCTION, how something WORKS or its PURPOSE. Functional residual capacity is the volume that serves a purpose: keeping alveoli open, providing an oxygen reservoir, buffering CO2 changes. It's operational, not just structural.",
+      "wrongExplains": {
+        "0": "Structure is anatomy. Function is physiology - what it does, not just what it is.",
+        "2": "Dysfunction is related to disease. Functional describes normal working state.",
+        "3": "Surgical is operative. Functional is about physiologic purpose."
+      }
+    },
+    {
+      "id": "900.5.49.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "The bus lands on an alveolar wall. 'Residual,' Ms. Frizzle explains, 'comes from Latin residuum - what remains. Like residue at the bottom of a cup. Residual air is what STAYS in the lungs even after you exhale.'",
+      "q": "What does 'residual' mean in the context of lung volumes?",
+      "options": [
+        "Air that can be voluntarily exhaled",
+        "Air that remains after maximal exhalation",
+        "Air that enters during inhalation",
+        "Air in the conducting airways"
+      ],
+      "answer": 1,
+      "explain": "'Residual' = what REMAINS, what you CAN'T exhale. Residual volume (RV) is the air trapped in your lungs even after you blow out as hard as you can. It's the irreducible minimum that keeps alveoli from collapsing completely.",
+      "wrongExplains": {
+        "0": "If you can exhale it, it's not residual. Residual is what's stuck, unreachable by voluntary effort.",
+        "2": "Air entering is inspiratory, not residual. Residual is specifically what stays behind.",
+        "3": "Dead space air can be exhaled. Residual volume is deeper - in the alveoli, permanently."
+      }
+    },
+    {
+      "id": "900.5.49.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle draws a diagram: lungs at the END of normal exhalation. 'Not maximal exhalation - just a relaxed breath out. This is the equilibrium point where chest wall wants to expand and lung elasticity wants to collapse. The balance point.'",
+      "q": "At what point in the breathing cycle is FRC measured?",
+      "options": [
+        "At the end of maximal inhalation",
+        "At the end of normal, relaxed exhalation",
+        "During mid-inhalation",
+        "At the end of maximal exhalation"
+      ],
+      "answer": 1,
+      "explain": "FRC is measured at the end of NORMAL (tidal) exhalation - the resting point. Not forced exhalation, just a relaxed breath out. This is the equilibrium where respiratory muscles are relaxed and lung volume naturally settles.",
+      "wrongExplains": {
+        "0": "That's total lung capacity (TLC), not FRC. FRC is after exhaling, not inhaling.",
+        "2": "Mid-inhalation is partway through a breath. FRC is specifically at the resting point after exhalation.",
+        "3": "That's residual volume (RV) - after forced exhalation. FRC is after NORMAL exhalation, so it's larger than RV."
+      }
+    },
+    {
+      "id": "900.5.49.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Ms. Frizzle pulls up a volume chart. 'FRC has TWO components. Expiratory reserve volume - air you COULD exhale if you tried. And residual volume - air you CAN'T exhale no matter what. Together, they equal FRC.'",
+      "q": "FRC is composed of which two lung volumes?",
+      "options": [
+        "Tidal volume + inspiratory reserve volume",
+        "Expiratory reserve volume (ERV) + residual volume (RV)",
+        "Vital capacity + residual volume",
+        "Inspiratory capacity + functional residual capacity"
+      ],
+      "answer": 1,
+      "explain": "FRC = ERV + RV. Expiratory reserve volume (extra air you can blow out) + Residual volume (air that's permanently stuck). FRC is the cushion: partly accessible (ERV), partly trapped (RV).",
+      "wrongExplains": {
+        "0": "That's inspiratory capacity (IC) - how much you can inhale from resting. FRC is about exhalation.",
+        "2": "Vital capacity + RV = total lung capacity (TLC). FRC is smaller - it's a subset.",
+        "3": "FRC doesn't contain itself! And IC is about inhalation space, not FRC."
+      }
+    },
+    {
+      "id": "900.5.49.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "The bus measures the surrounding air: 'ERV: 1200 mL. RV: 1200 mL. FRC: 2400 mL total.' Ms. Frizzle nods. 'That's average for an adult male. The numbers vary with body size, age, and disease, but the principle is constant.'",
+      "q": "What is the typical FRC in a healthy adult male?",
+      "options": [
+        "About 500 mL",
+        "About 1200 mL",
+        "About 2400 mL",
+        "About 6000 mL"
+      ],
+      "answer": 2,
+      "explain": "~2400 mL (2.4 liters) is typical FRC for a healthy adult male. Females average ~2000 mL. It's substantial - more air than a full tidal breath (500 mL). This cushion is critical for continuous gas exchange between breaths.",
+      "wrongExplains": {
+        "0": "500 mL is tidal volume - a single breath. FRC is the reserve, much larger.",
+        "1": "1200 mL is about one component (ERV or RV alone). FRC is their sum.",
+        "3": "6000 mL is total lung capacity (TLC). FRC is less than half of that."
+      }
+    },
+    {
+      "id": "900.5.49.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Mr. Edgar takes a breath in. Oxygen floods the alveoli, mixing with the 2400 mL already there. 'See?' Ms. Frizzle says. 'FRC buffers the composition. Each 500 mL tidal breath mixes with 2400 mL of FRC. It prevents wild swings in blood gases.'",
+      "q": "What is one major function of FRC?",
+      "options": [
+        "To provide an oxygen reservoir and buffer gas composition between breaths",
+        "To generate carbon dioxide",
+        "To filter out dust particles",
+        "To produce surfactant"
+      ],
+      "answer": 0,
+      "explain": "FRC acts as a GAS RESERVOIR and BUFFER. Between breaths (when you're not actively inhaling), FRC provides oxygen to the blood and absorbs CO2. It smooths out gas exchange, preventing oxygen levels from spiking and crashing with each breath.",
+      "wrongExplains": {
+        "1": "Tissues generate CO2 from metabolism. FRC doesn't produce it - it's a buffer zone for gas exchange.",
+        "2": "Filtering is done by nasal hairs and mucus in conducting airways. FRC is about gas buffering.",
+        "3": "Type II alveolar cells produce surfactant. FRC is a volume concept, not a secretion."
+      }
+    },
+    {
+      "id": "900.5.49.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle overlays Mr. Edgar's emphysema scan. 'His FRC is 4000 mL - nearly double normal. His lungs can't deflate because alveolar walls are destroyed. He's hyperinflated, trapped in inhalation.'",
+      "q": "What happens to FRC in obstructive lung diseases like emphysema?",
+      "options": [
+        "FRC decreases",
+        "FRC increases (hyperinflation)",
+        "FRC stays exactly the same",
+        "FRC drops to zero"
+      ],
+      "answer": 1,
+      "explain": "FRC INCREASES in emphysema/COPD. Loss of elastic recoil and airway obstruction trap air, causing HYPERINFLATION. The lungs overinflate, FRC rises, and patients can't exhale properly. They're breathing at a higher resting volume - exhausting.",
+      "wrongExplains": {
+        "0": "FRC decreases in RESTRICTIVE diseases (fibrosis). Obstructive diseases INCREASE FRC by trapping air.",
+        "2": "Emphysema dramatically alters FRC. It's one of the key findings - hyperinflation is the signature.",
+        "3": "FRC can't be zero - that would mean complete lung collapse. Emphysema increases it, not eliminates it."
+      }
+    },
+    {
+      "id": "900.5.49.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle shows a restrictive lung disease scan - pulmonary fibrosis. 'Stiff lungs can't expand. Look: FRC is only 1500 mL. The opposite problem from emphysema. Too little cushion, not too much.'",
+      "q": "What happens to FRC in restrictive lung diseases like pulmonary fibrosis?",
+      "options": [
+        "FRC increases",
+        "FRC decreases",
+        "FRC stays the same",
+        "FRC becomes negative"
+      ],
+      "answer": 1,
+      "explain": "FRC DECREASES in restrictive diseases. Stiff, fibrotic lungs can't expand properly, so all volumes shrink - including FRC. The lung's natural recoil is excessive, pulling the resting volume down. It's the opposite of emphysema.",
+      "wrongExplains": {
+        "0": "FRC increases in obstructive (emphysema), not restrictive. Fibrosis makes lungs stiff and SMALL.",
+        "2": "Restrictive diseases reduce lung compliance, shrinking all volumes. FRC drops significantly.",
+        "3": "Negative volume is impossible. FRC decreases but stays positive - there's always some air."
+      }
+    },
+    {
+      "id": "900.5.49.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle displays a formula: 'FRC = TLC - IC. Or FRC = ERV + RV. Two ways to calculate it. Body plethysmography measures it directly by detecting volume changes when you breathe against a closed airway.'",
+      "q": "How can FRC be calculated from other lung volumes?",
+      "options": [
+        "FRC = Tidal volume + Inspiratory reserve",
+        "FRC = ERV + RV (or TLC - IC)",
+        "FRC = Vital capacity - Tidal volume",
+        "FRC = Total lung capacity + Residual volume"
+      ],
+      "answer": 1,
+      "explain": "FRC = ERV + RV (directly). Or FRC = TLC - IC (indirectly). FRC is what's left after normal exhalation: the expiratory reserve you could exhale plus the residual you can't. Or total capacity minus what you can inhale.",
+      "wrongExplains": {
+        "0": "That's inspiratory capacity (IC) - the inhalation side. FRC is about exhalation and reserves.",
+        "2": "VC - TV doesn't give FRC. You'd need vital capacity minus inspiratory capacity, and that's complicated.",
+        "3": "Adding TLC + RV would exceed total lung capacity, which is impossible. You subtract, not add."
+      }
+    },
+    {
+      "id": "900.5.49.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "The bus rises to Mr. Edgar's resting lung level. 'FRC,' Ms. Frizzle says softly, 'is the volume of vigilance. It's why you don't suffocate between breaths. Now tell me: what is functional residual capacity?'",
+      "q": "Functional residual capacity (FRC) is:",
+      "options": [
+        "The maximum volume of air you can inhale",
+        "The volume of air in the lungs at the end of normal exhalation (ERV + RV)",
+        "The volume of air exhaled in one breath",
+        "The total volume of air the lungs can hold"
+      ],
+      "answer": 1,
+      "explain": "FRC = the volume of air in lungs at the END OF NORMAL (tidal) EXHALATION. It's ERV (expiratory reserve you could blow out) + RV (residual that's stuck). ~2400 mL in adult males. FRC serves as an oxygen reservoir and buffers gas composition, preventing wild swings between breaths.",
+      "wrongExplains": {
+        "0": "That's inspiratory capacity (IC) or vital capacity (VC). FRC is after exhalation, not about inhalation max.",
+        "2": "That's tidal volume (TV), about 500 mL. FRC is the reserve left after exhaling - much larger.",
+        "3": "That's total lung capacity (TLC), ~6000 mL. FRC is a subset - the resting volume after normal exhalation."
+      }
+    }
+  ]
+}

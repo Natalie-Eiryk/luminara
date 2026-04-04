@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.34",
+  "parentQuestion": "Orthopnea refers to:",
+  "narrative": {
+    "setting": "The Magic School Bus is positioned near Mr. Edgar's heart, which is struggling to pump effectively. Fluid is backing up into his lungs. Whenever he lies down, his breathing becomes severely labored - but when he sits up, he can breathe again. This positional breathing difficulty has a specific medical name.",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar can't lie down without suffocating. His heart failure is causing a specific breathing pattern."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.34.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "Ms. Frizzle shows an image of Mr. Edgar sitting bolt upright in bed, propped on three pillows. 'Notice his position,' she says. 'The prefix ortho- will help us understand why position matters for his breathing.'",
+      "q": "The prefix 'ortho-' means:",
+      "options": [
+        "Lying down",
+        "Straight or upright",
+        "Sideways",
+        "Inverted"
+      ],
+      "answer": 1,
+      "explain": "'ORTHO-' = STRAIGHT or UPRIGHT. From Greek 'orthos.' Orthodontics = straightening teeth. Orthopedics = straightening bones. Ortho- implies vertical, erect, upright position. Standing or sitting up straight.",
+      "wrongExplains": {
+        "0": "Lying down is 'supine' or 'recumbent.' Ortho- means the opposite - upright, vertical, standing or sitting.",
+        "2": "Sideways is 'lateral.' Ortho- means straight UP, vertical, erect - perpendicular to the ground.",
+        "3": "Inverted is 'inverse' or upside-down. Ortho- means upright, right-side-up, vertical."
+      }
+    },
+    {
+      "id": "900.5.34.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "'And you know -pnea means breathing,' Ms. Frizzle continues. 'So orthopnea literally describes breathing that requires a certain position. Let's put it together.'",
+      "q": "Combining 'ortho-' and '-pnea,' orthopnea means:",
+      "options": [
+        "Breathing while lying down",
+        "Breathing only when upright (sitting/standing)",
+        "Breathing on one side",
+        "Breathing upside down"
+      ],
+      "answer": 1,
+      "explain": "ORTHO (upright) + PNEA (breathing) = breathing that requires UPRIGHT position. People with orthopnea can't breathe lying down - they MUST sit or stand up. Lying flat causes severe breathlessness.",
+      "wrongExplains": {
+        "0": "That's normal! Orthopnea is specifically DIFFICULTY breathing when lying down. They need to be upright to breathe.",
+        "2": "One side would be 'lateral.' Ortho- means upright (vertical), not sideways (lateral).",
+        "3": "Nobody breathes upside down! Ortho- means upright - sitting up or standing, normal vertical position."
+      }
+    },
+    {
+      "id": "900.5.34.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "The bus watches as Mr. Edgar tries to lie down. Within seconds, fluid from his legs redistributes to his chest, overwhelming his weakened heart. His lungs fill with fluid. He gasps and sits up immediately.",
+      "q": "What happens when a person with orthopnea lies down?",
+      "options": [
+        "Their breathing improves",
+        "They experience severe difficulty breathing",
+        "Nothing changes",
+        "They breathe faster but comfortably"
+      ],
+      "answer": 1,
+      "explain": "They experience SEVERE DIFFICULTY BREATHING (dyspnea). Lying down redistributes fluid, worsens pulmonary congestion. They feel like they're drowning. They MUST sit up to breathe. It's not a preference - it's physiological necessity.",
+      "wrongExplains": {
+        "0": "Opposite! Lying down WORSENS breathing in orthopnea. That's the defining feature - can't breathe flat.",
+        "2": "Dramatic change! Lying down causes severe dyspnea (shortness of breath). They often sit up abruptly, gasping.",
+        "3": "They can't breathe comfortably at all when flat! It's not just faster - it's labored, distressing, suffocating."
+      }
+    },
+    {
+      "id": "900.5.34.s04",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "The bus zooms in on Mr. Edgar's failing heart. It can barely pump against the fluid buildup. 'Orthopnea is a classic sign of one particular disease,' Ms. Frizzle explains. 'Let's figure out what's happening.'",
+      "q": "Orthopnea is most commonly caused by:",
+      "options": [
+        "Asthma",
+        "Heart failure",
+        "Common cold",
+        "Broken ribs"
+      ],
+      "answer": 1,
+      "explain": "HEART FAILURE - the classic cause! Weak heart → fluid backs up into lungs. Lying down increases fluid return to heart and lungs → worsens congestion. Sitting up uses gravity to pool fluid in legs, relieving lung congestion. Orthopnea = suspect heart failure!",
+      "wrongExplains": {
+        "0": "Asthma doesn't typically vary with position. It causes wheezing and dyspnea but not specifically when lying down.",
+        "2": "Common cold doesn't cause positional breathing difficulty. You might cough more lying down, but that's not orthopnea.",
+        "3": "Broken ribs hurt in all positions. Pain might worsen in certain positions, but it's not the fluid-redistribution mechanism of orthopnea."
+      }
+    },
+    {
+      "id": "900.5.34.s05",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "Ms. Frizzle shows Mr. Edgar's bedroom. He sleeps propped up on 4 pillows. 'Doctors ask: how many pillows do you sleep on? The number matters - it quantifies the severity of orthopnea.'",
+      "q": "Why do people with orthopnea sleep with multiple pillows?",
+      "options": [
+        "It's more comfortable for their back",
+        "Elevation reduces fluid in lungs using gravity",
+        "It helps them snore less",
+        "It's a personal preference"
+      ],
+      "answer": 1,
+      "explain": "GRAVITY pulls fluid DOWN. Elevating the upper body keeps fluid in legs and abdomen, not lungs. More pillows = more upright = less lung congestion = easier breathing. 'Three-pillow orthopnea' tells doctors the severity. It's therapeutic, not comfort!",
+      "wrongExplains": {
+        "0": "This is about BREATHING, not back comfort! The pillows are medical necessity - gravity reduces pulmonary congestion.",
+        "2": "While elevation might reduce snoring, that's not why orthopnea patients do it. They need it to BREATHE, not just for quiet sleep.",
+        "3": "Not a preference - it's survival! They literally cannot breathe lying flat. The pillows are treatment for fluid redistribution."
+      }
+    },
+    {
+      "id": "900.5.34.s06",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "'There's a related term,' Ms. Frizzle says. 'PND - paroxysmal nocturnal dyspnea. It's like orthopnea's evil twin, happening in the middle of the night.'",
+      "q": "How does PND (paroxysmal nocturnal dyspnea) differ from orthopnea?",
+      "options": [
+        "They're the same thing",
+        "Orthopnea = immediate dyspnea when lying down; PND = waking suddenly after hours of sleep gasping for air",
+        "PND is normal; orthopnea is abnormal",
+        "PND happens during the day; orthopnea at night"
+      ],
+      "answer": 1,
+      "explain": "ORTHOPNEA = can't breathe AS SOON as you lie down. PND = fall asleep okay, then wake 2-4 hours later GASPING (paroxysmal = sudden attack). Both from heart failure, different timing. PND is often more terrifying - you wake up feeling like you're drowning.",
+      "wrongExplains": {
+        "0": "Different timing! Orthopnea is immediate. PND is delayed - happens hours into sleep after fluid redistributes slowly.",
+        "2": "Both are ABNORMAL, both suggest heart failure! PND might actually indicate worse fluid overload.",
+        "3": "Backwards! PND is Nocturnal (night) dyspnea. Both are worse at night/when lying down, but PND is specifically nighttime attacks."
+      }
+    },
+    {
+      "id": "900.5.34.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "'When a doctor hears about orthopnea,' Ms. Frizzle explains, 'they immediately think about the heart. It's such a specific symptom that it points directly to the diagnosis.'",
+      "q": "Orthopnea is a key symptom in diagnosing:",
+      "options": [
+        "Pneumonia",
+        "Congestive heart failure",
+        "Diabetes",
+        "Stroke"
+      ],
+      "answer": 1,
+      "explain": "CONGESTIVE HEART FAILURE (CHF). The heart can't pump effectively → fluid backs up → lungs get congested. Lying down worsens congestion. Classic triad: orthopnea + peripheral edema + dyspnea on exertion. If patient reports orthopnea, check the heart!",
+      "wrongExplains": {
+        "0": "Pneumonia causes dyspnea but not specifically when lying down. Orthopnea's positional component points to fluid redistribution (heart).",
+        "2": "Diabetes doesn't cause positional breathing difficulty. Different system - metabolic, not cardiac.",
+        "3": "Stroke affects brain/movement. While breathing might be affected, orthopnea isn't a stroke symptom. This is cardiac."
+      }
+    },
+    {
+      "id": "900.5.34.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "The medical team asks Mr. Edgar: 'How many pillows do you sleep on?' He answers: 'Four - and sometimes I sleep in my recliner.' The doctors exchange knowing looks.",
+      "q": "Why do doctors ask about the number of pillows?",
+      "options": [
+        "They're curious about bedding preferences",
+        "Number of pillows quantifies severity of orthopnea",
+        "It's an unimportant question",
+        "They're checking for neck problems"
+      ],
+      "answer": 1,
+      "explain": "NUMBER OF PILLOWS = SEVERITY MEASURE. One pillow = mild. Two pillows = moderate. Three+ pillows = severe. Sleeping in a chair = very severe. It's a quick assessment tool. 'Three-pillow orthopnea' tells the next doctor exactly how bad it is!",
+      "wrongExplains": {
+        "0": "This is clinical assessment, not chitchat! Pillow number directly correlates with fluid overload severity in heart failure.",
+        "2": "Very important! It quantifies disease severity and tracks treatment response. Fewer pillows needed = treatment working.",
+        "3": "While neck issues exist, in the context of dyspnea, pillow questions assess orthopnea severity - cardiac, not orthopedic."
+      }
+    },
+    {
+      "id": "900.5.34.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "'Treatment for orthopnea means treating the heart,' Ms. Frizzle says as Mr. Edgar receives diuretics. 'Watch what happens as we remove the excess fluid.'",
+      "q": "How do diuretics help orthopnea?",
+      "options": [
+        "They directly open the airways",
+        "They remove excess fluid, reducing lung congestion",
+        "They strengthen the heart muscle",
+        "They increase oxygen in the blood"
+      ],
+      "answer": 1,
+      "explain": "DIURETICS (water pills) make you urinate out excess fluid. Less fluid = less congestion = lungs clear = easier breathing in all positions. Over days, patient goes from 4 pillows to 2 pillows to lying flat. Fluid out = orthopnea improves!",
+      "wrongExplains": {
+        "0": "Diuretics don't open airways - they remove FLUID. Airways aren't blocked; lungs are waterlogged. Different mechanism.",
+        "2": "That's ACE inhibitors or other heart meds. Diuretics just remove fluid - indirect benefit to heart (less volume to pump).",
+        "3": "They don't add oxygen. They remove fluid so lungs can function normally, which THEN allows better oxygenation."
+      }
+    },
+    {
+      "id": "900.5.34.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "After a week of treatment, Mr. Edgar can lie flat without difficulty. The fluid is gone, his heart function improved. 'Orthopnea resolved,' his chart reads. Ms. Frizzle smiles. 'Final question!'",
+      "q": "Orthopnea refers to:",
+      "options": [
+        "Difficulty breathing during exercise",
+        "Difficulty breathing when lying flat",
+        "Difficulty breathing at high altitude",
+        "Difficulty breathing in cold air"
+      ],
+      "answer": 1,
+      "explain": "ORTHOPNEA = DIFFICULTY BREATHING WHEN LYING FLAT. Ortho- (upright) + -pnea (breathing). Must sit or stand to breathe comfortably. Classic sign of heart failure - fluid redistributes when horizontal, flooding lungs. Quantified by pillow count. Relief by sitting up is diagnostic!",
+      "wrongExplains": {
+        "0": "That's dyspnea on exertion. Orthopnea is specifically POSITIONAL - lying flat triggers it, not activity level.",
+        "2": "Altitude dyspnea is from low atmospheric oxygen. Orthopnea is from fluid redistribution with position change.",
+        "3": "Cold air can trigger reactive airway narrowing. Orthopnea is position-dependent, not temperature-dependent."
+      }
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "id": "1000.1",
+  "title": "GI System Overview",
+  "description": "Introduction to the gastrointestinal system - tube anatomy, layers, and basic functions",
+  "dewey": "612.3",
+  "chapter": "GI System",
+  "topic": "GI Overview",
+  "questions": [
+    {
+      "id": "gi-001",
+      "text": "The GI tract is essentially a muscular tube that runs from the mouth to the anus. What is the total approximate length of this tube in an adult?",
+      "options": [
+        "3-4 meters (10-13 feet)",
+        "6-9 meters (20-30 feet)",
+        "12-15 meters (40-50 feet)",
+        "1-2 meters (3-6 feet)"
+      ],
+      "answer": 1,
+      "explain": "The GI tract is approximately 6-9 meters (20-30 feet) long in a living person. It's shorter during life due to muscle tone - after death, it relaxes and can measure longer.",
+      "mechanism": {
+        "title": "The Alimentary Canal",
+        "content": "The GI tract (alimentary canal) is a continuous muscular tube with specialized regions: mouth, pharynx, esophagus, stomach, small intestine (duodenum, jejunum, ileum), and large intestine (cecum, colon, rectum, anal canal). Each region has unique structural adaptations for its function.",
+        "metaphor": "Think of the GI tract as a disassembly line - the reverse of a factory. Instead of building products, it takes complex food and breaks it down into simple parts (nutrients) that can be absorbed and used by the body."
+      },
+      "optionExplains": [
+        { "text": "Too short - this is closer to just the large intestine length", "verdict": "incorrect" },
+        { "text": "Correct! The small intestine alone is about 6 meters, plus another 1.5 meters for the large intestine", "verdict": "correct" },
+        { "text": "Too long - this would be measured in a cadaver where muscle tone is lost", "verdict": "incorrect" },
+        { "text": "Much too short - this barely covers the esophagus and stomach", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.3,
+      "tags": ["gi-anatomy", "overview", "measurements"]
+    },
+    {
+      "id": "gi-002",
+      "text": "The wall of the GI tract has four basic layers (tunics). From innermost to outermost, what is the correct order?",
+      "options": [
+        "Serosa, muscularis, submucosa, mucosa",
+        "Mucosa, submucosa, muscularis, serosa",
+        "Submucosa, mucosa, serosa, muscularis",
+        "Muscularis, mucosa, submucosa, serosa"
+      ],
+      "answer": 1,
+      "explain": "The four layers from lumen outward are: Mucosa (inner lining), Submucosa (connective tissue with vessels), Muscularis (muscle for peristalsis), and Serosa (outer protective covering).",
+      "mechanism": {
+        "title": "The Four Tunics",
+        "content": "**Mucosa**: Epithelium, lamina propria, muscularis mucosae - directly contacts food, secretes mucus and enzymes. **Submucosa**: Dense connective tissue with blood vessels, lymphatics, and the submucosal (Meissner's) plexus. **Muscularis externa**: Usually 2 layers (inner circular, outer longitudinal) with myenteric (Auerbach's) plexus between them. **Serosa/Adventitia**: Outermost layer - serosa where covered by peritoneum, adventitia where it binds to other structures.",
+        "metaphor": "Remember 'M-S-M-S' (Mucosa-Submucosa-Muscularis-Serosa) - or 'My Stomach Makes Sounds' to remember the order from inside out!"
+      },
+      "optionExplains": [
+        { "text": "This is the reverse order (outside to inside)", "verdict": "incorrect" },
+        { "text": "Correct! Inside to outside: Mucosa touches the food, Submucosa supports it, Muscularis moves it, Serosa protects it", "verdict": "correct" },
+        { "text": "This jumbles the order incorrectly", "verdict": "incorrect" },
+        { "text": "This starts with muscle, but mucosa is the innermost layer", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.4,
+      "tags": ["gi-anatomy", "histology", "wall-layers"]
+    },
+    {
+      "id": "gi-003",
+      "text": "Which layer of the GI tract wall contains the myenteric (Auerbach's) plexus, a major component of the enteric nervous system?",
+      "options": [
+        "Between the mucosa and submucosa",
+        "Within the submucosa",
+        "Between the circular and longitudinal muscle layers",
+        "In the serosa"
+      ],
+      "answer": 2,
+      "explain": "The myenteric (Auerbach's) plexus lies between the inner circular and outer longitudinal muscle layers of the muscularis externa. It primarily controls GI motility (peristalsis).",
+      "mechanism": {
+        "title": "The Enteric Nervous System",
+        "content": "The gut has its own 'brain' - the enteric nervous system (ENS) with over 100 million neurons! It has two main plexuses: **Myenteric (Auerbach's) plexus**: Between muscle layers, controls motility. **Submucosal (Meissner's) plexus**: In the submucosa, controls secretion and blood flow. The ENS can function independently but is modulated by the autonomic nervous system.",
+        "metaphor": "The myenteric plexus is like the conductor of an orchestra placed between the two muscle sections - it coordinates the circular (squeeze) and longitudinal (shorten) muscles to produce the wave-like motion of peristalsis."
+      },
+      "optionExplains": [
+        { "text": "That's where the muscularis mucosae is, not the myenteric plexus", "verdict": "incorrect" },
+        { "text": "The submucosa contains the SUBmucosal (Meissner's) plexus, not the myenteric", "verdict": "incorrect" },
+        { "text": "Correct! The MYenteric plexus is between the MYo (muscle) layers", "verdict": "correct" },
+        { "text": "The serosa is just a protective covering with no nerve plexus", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.5,
+      "tags": ["gi-anatomy", "enteric-nervous-system", "plexuses"]
+    },
+    {
+      "id": "gi-004",
+      "text": "The peritoneum is a serous membrane associated with the abdominal cavity. What are the two layers of the peritoneum called?",
+      "options": [
+        "Superficial and deep peritoneum",
+        "Parietal and visceral peritoneum",
+        "Somatic and splanchnic peritoneum",
+        "Outer and inner peritoneum"
+      ],
+      "answer": 1,
+      "explain": "The parietal peritoneum lines the abdominal wall, while the visceral peritoneum covers the organs. The potential space between them is the peritoneal cavity, containing a small amount of lubricating serous fluid.",
+      "mechanism": {
+        "title": "Peritoneum and Mesenteries",
+        "content": "The peritoneum is the largest serous membrane in the body. **Parietal peritoneum**: Lines the body wall. **Visceral peritoneum**: Covers organs. **Mesentery**: Double layer of peritoneum connecting organs to body wall, carrying blood vessels, nerves, and lymphatics. The greater and lesser omenta are specialized mesenteries. Some organs (kidneys, parts of colon) are retroperitoneal - behind the peritoneum.",
+        "metaphor": "Think of the peritoneum like a deflated balloon pushed into a bowl of organs. The balloon's outer surface (parietal) touches the bowl (body wall), while the inner surface (visceral) wraps around anything pushed into it (organs)."
+      },
+      "optionExplains": [
+        { "text": "These aren't standard anatomical terms for peritoneum layers", "verdict": "incorrect" },
+        { "text": "Correct! Parietal = wall, Visceral = organs. This naming convention is used for all serous membranes (pericardium, pleura too)", "verdict": "correct" },
+        { "text": "Somatic/splanchnic are nerve types, not peritoneal layers", "verdict": "incorrect" },
+        { "text": "Too vague - the proper anatomical terms are parietal and visceral", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.4,
+      "tags": ["gi-anatomy", "peritoneum", "serous-membranes"]
+    },
+    {
+      "id": "gi-005",
+      "text": "Peristalsis is the primary method of propulsion in the GI tract. What type of muscle contraction pattern does peristalsis involve?",
+      "options": [
+        "Simultaneous contraction of the entire tract",
+        "Sequential waves of contraction and relaxation",
+        "Rhythmic contractions in place without propulsion",
+        "Random contractions throughout the tract"
+      ],
+      "answer": 1,
+      "explain": "Peristalsis involves sequential waves of contraction behind a bolus of food and relaxation ahead of it. This coordinated pattern propels contents through the GI tract in one direction.",
+      "mechanism": {
+        "title": "Peristalsis: The Wave of Propulsion",
+        "content": "Peristalsis involves: 1) **Contraction** of circular muscle behind the bolus (narrowing the lumen), 2) **Relaxation** of circular muscle ahead of the bolus (widening to receive it), 3) **Coordination** by the myenteric plexus. The wave travels aborally (toward the anus) at about 2-25 cm/second depending on location. This is different from segmentation, which mixes food without significant propulsion.",
+        "metaphor": "Imagine squeezing a tube of toothpaste from the back - your fingers create a wave of pressure that pushes the contents forward. Your gut does this automatically, thousands of times per day!"
+      },
+      "optionExplains": [
+        { "text": "This would squeeze everything at once with no movement - not peristalsis", "verdict": "incorrect" },
+        { "text": "Correct! The wave-like pattern of contraction/relaxation moves contents forward like a rolling squeeze", "verdict": "correct" },
+        { "text": "This describes segmentation, which mixes but doesn't propel", "verdict": "incorrect" },
+        { "text": "Random contractions would cause chaos, not coordinated movement", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.3,
+      "tags": ["gi-physiology", "motility", "peristalsis"]
+    },
+    {
+      "id": "gi-006",
+      "text": "The stomach has an additional third muscle layer not found elsewhere in the GI tract. What is this layer and what is its function?",
+      "options": [
+        "Diagonal layer - for rotational mixing",
+        "Oblique layer - for churning and grinding",
+        "Spiral layer - for vortex creation",
+        "Radial layer - for expansion"
+      ],
+      "answer": 1,
+      "explain": "The stomach has an innermost oblique muscle layer in addition to the circular and longitudinal layers. This allows the stomach to churn, mix, and mechanically break down food into chyme.",
+      "mechanism": {
+        "title": "The Stomach's Muscular Powerhouse",
+        "content": "The stomach wall has three muscle layers: **Oblique** (innermost, unique to stomach), **Circular** (middle), and **Longitudinal** (outermost). The oblique layer enables powerful churning contractions that mechanically break down food. Combined with gastric acid and enzymes, this creates chyme - a semi-liquid mixture ready for intestinal absorption. The pyloric sphincter controls emptying into the duodenum.",
+        "metaphor": "The stomach is like a biological blender. The oblique muscles add a 'twist' to the circular and longitudinal movements, creating a grinding action that can turn a steak into slurry in about 2-6 hours."
+      },
+      "optionExplains": [
+        { "text": "Not the correct anatomical term - it's called the oblique layer", "verdict": "incorrect" },
+        { "text": "Correct! The oblique fibers run at an angle, adding the churning motion needed to mechanically digest food", "verdict": "correct" },
+        { "text": "Not an anatomical term for GI muscle layers", "verdict": "incorrect" },
+        { "text": "Radial isn't a GI muscle layer type", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.5,
+      "tags": ["gi-anatomy", "stomach", "muscle-layers"]
+    },
+    {
+      "id": "gi-007",
+      "text": "Which organ is considered the primary site of nutrient absorption in the GI tract?",
+      "options": [
+        "Stomach",
+        "Small intestine",
+        "Large intestine",
+        "Esophagus"
+      ],
+      "answer": 1,
+      "explain": "The small intestine is the primary site of nutrient absorption. Its enormous surface area (due to circular folds, villi, and microvilli) allows for efficient absorption of carbohydrates, proteins, lipids, vitamins, and minerals.",
+      "mechanism": {
+        "title": "Surface Area Amplification",
+        "content": "The small intestine maximizes absorption through three levels of surface area increase: **Circular folds (plicae circulares)**: Permanent ridges that increase surface 3x. **Villi**: Finger-like projections with blood vessels and a lacteal (lymph vessel). **Microvilli**: Brush border on epithelial cells, containing digestive enzymes. Combined, these structures increase absorptive surface area to approximately 200-300 square meters - about the size of a tennis court!",
+        "metaphor": "If your intestine were a flat tube, it would be about 0.5 square meters. But nature folded it like origami (circular folds), added carpet (villi), and made the carpet fuzzy (microvilli) - creating a tennis court of absorptive surface in your abdomen."
+      },
+      "optionExplains": [
+        { "text": "The stomach mainly absorbs alcohol, some drugs, and water - not nutrients", "verdict": "incorrect" },
+        { "text": "Correct! The small intestine absorbs about 90% of nutrients thanks to its massive surface area", "verdict": "correct" },
+        { "text": "The large intestine mainly absorbs water and electrolytes, and houses gut bacteria", "verdict": "incorrect" },
+        { "text": "The esophagus just transports food - no significant absorption occurs there", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.3,
+      "tags": ["gi-physiology", "absorption", "small-intestine"]
+    },
+    {
+      "id": "gi-008",
+      "text": "The small intestine has three segments. In order from proximal to distal, what are they?",
+      "options": [
+        "Jejunum, duodenum, ileum",
+        "Duodenum, ileum, jejunum",
+        "Ileum, jejunum, duodenum",
+        "Duodenum, jejunum, ileum"
+      ],
+      "answer": 3,
+      "explain": "The small intestine segments from proximal to distal are: Duodenum (first 25cm, receives bile and pancreatic juice), Jejunum (middle portion, primary absorption), and Ileum (last portion, absorbs B12 and bile salts).",
+      "mechanism": {
+        "title": "The Three Regions of the Small Intestine",
+        "content": "**Duodenum** (~25cm): C-shaped, surrounds pancreatic head, receives bile/pancreatic secretions, neutralizes stomach acid, starts chemical digestion. **Jejunum** (~2.5m): Deep red due to rich blood supply, thicker walls, larger villi - primary site of nutrient absorption. **Ileum** (~3.5m): Paler, thinner walls, numerous lymphoid follicles (Peyer's patches), absorbs vitamin B12 and bile salts.",
+        "metaphor": "Remember 'DJ Ily' (sounds like 'DJ, I Love You') - Duodenum, Jejunum, Ileum. The DJ (duodenum) starts the party, the dance floor (jejunum) is where most action happens, and things wind down in the chill zone (ileum)."
+      },
+      "optionExplains": [
+        { "text": "Wrong order - duodenum comes first, not jejunum", "verdict": "incorrect" },
+        { "text": "Ileum is last, not middle", "verdict": "incorrect" },
+        { "text": "This is completely reversed", "verdict": "incorrect" },
+        { "text": "Correct! D-J-I from stomach to large intestine", "verdict": "correct" }
+      ],
+      "difficulty": 0.3,
+      "tags": ["gi-anatomy", "small-intestine", "regions"]
+    },
+    {
+      "id": "gi-009",
+      "text": "The large intestine performs several important functions. Which of the following is NOT a primary function of the large intestine?",
+      "options": [
+        "Absorption of water and electrolytes",
+        "Absorption of carbohydrates and proteins",
+        "Formation and storage of feces",
+        "Housing beneficial bacteria (microbiome)"
+      ],
+      "answer": 1,
+      "explain": "Absorption of carbohydrates and proteins occurs primarily in the SMALL intestine. The large intestine absorbs water and electrolytes, houses the gut microbiome, and forms/stores feces.",
+      "mechanism": {
+        "title": "Large Intestine Functions",
+        "content": "The large intestine (~1.5m) has three main roles: **1) Water/electrolyte absorption**: Receives ~1.5L of chyme daily, absorbs most water, leaving ~100-200mL in feces. **2) Microbiome habitat**: Houses 100 trillion bacteria that ferment undigested carbs, produce vitamins (K, B vitamins), and protect against pathogens. **3) Fecal formation/storage**: Concentrates waste, stores until defecation. It does NOT absorb significant nutrients - that's the small intestine's job.",
+        "metaphor": "If the small intestine is a busy shopping mall extracting everything valuable, the large intestine is like a recycling center - it squeezes out remaining water, lets bacteria process the scraps, and compacts everything else for disposal."
+      },
+      "optionExplains": [
+        { "text": "This IS a primary function - the colon absorbs up to 1.3L of water daily", "verdict": "incorrect" },
+        { "text": "Correct! Carbs and proteins are absorbed in the SMALL intestine. The large intestine can only absorb what bacteria produce", "verdict": "correct" },
+        { "text": "This IS a primary function - feces are stored in the rectum until defecation", "verdict": "incorrect" },
+        { "text": "This IS a primary function - the gut microbiome is essential for health", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.4,
+      "tags": ["gi-physiology", "large-intestine", "functions"]
+    },
+    {
+      "id": "gi-010",
+      "text": "What is the name of the valve that controls the flow of chyme from the ileum into the cecum of the large intestine?",
+      "options": [
+        "Pyloric sphincter",
+        "Cardiac sphincter",
+        "Ileocecal valve",
+        "Anal sphincter"
+      ],
+      "answer": 2,
+      "explain": "The ileocecal valve (or sphincter) controls the flow of chyme from the ileum (end of small intestine) into the cecum (beginning of large intestine). It also prevents backflow of colonic contents.",
+      "mechanism": {
+        "title": "GI Sphincters and Valves",
+        "content": "Key GI sphincters from proximal to distal: **Upper esophageal sphincter**: Prevents air entering. **Lower esophageal (cardiac) sphincter**: Prevents reflux into esophagus. **Pyloric sphincter**: Controls stomach emptying. **Ileocecal valve**: Guards small-to-large intestine junction. **Internal/external anal sphincters**: Control defecation. Each sphincter is a thickening of circular muscle that can close the lumen.",
+        "metaphor": "GI sphincters are like one-way turnstiles at a subway station - they let traffic flow in one direction while preventing backflow. The ileocecal valve is particularly important because it keeps the bacterial-rich colon contents from contaminating the relatively sterile small intestine."
+      },
+      "optionExplains": [
+        { "text": "The pyloric sphincter is between the stomach and duodenum", "verdict": "incorrect" },
+        { "text": "The cardiac sphincter (LES) is between esophagus and stomach", "verdict": "incorrect" },
+        { "text": "Correct! The ILEO-CECAL valve connects the ILEUM to the CECUM", "verdict": "correct" },
+        { "text": "The anal sphincter is at the very end, controlling defecation", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.4,
+      "tags": ["gi-anatomy", "sphincters", "ileocecal"]
+    }
+  ]
+}

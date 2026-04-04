@@ -1,0 +1,260 @@
+{
+  "id": "1000.3",
+  "title": "Stomach Structure & Function",
+  "description": "Stomach anatomy, gastric secretions, chemical digestion, and gastric motility",
+  "dewey": "612.32",
+  "chapter": "GI System",
+  "topic": "Stomach",
+  "questions": [
+    {
+      "id": "stomach-001",
+      "text": "The stomach is divided into four main regions. What is the correct order from proximal to distal?",
+      "options": [
+        "Body, fundus, cardia, pylorus",
+        "Cardia, fundus, body, pylorus",
+        "Fundus, cardia, pylorus, body",
+        "Pylorus, body, fundus, cardia"
+      ],
+      "answer": 1,
+      "explain": "From esophagus to duodenum: Cardia (entrance), Fundus (dome-shaped top), Body (main portion), and Pylorus (exit). The pyloric sphincter controls emptying into the duodenum.",
+      "mechanism": {
+        "title": "Stomach Anatomy",
+        "content": "**Cardia**: Surrounds the lower esophageal sphincter, produces mucus. **Fundus**: Dome above the cardia, accumulates gas, contains many parietal cells. **Body**: Largest region, main site of chemical digestion. **Pylorus**: Funnel-shaped, thick smooth muscle (pyloric sphincter), controls gastric emptying. The lesser and greater curvatures are the inner and outer curves.",
+        "metaphor": "Think of the stomach as a J-shaped bag with a zipper at each end. Food enters through the cardia zipper, fills the fundus balloon at top, sits in the body bag, and exits through the pyloric zipper (which only opens for properly churned chyme)."
+      },
+      "optionExplains": [
+        { "text": "Wrong order - cardia is first, not body", "verdict": "incorrect" },
+        { "text": "Correct! Remember: 'Cardiac Food Before Pylorus' (Cardia, Fundus, Body, Pylorus)", "verdict": "correct" },
+        { "text": "Wrong order - fundus is second, not first", "verdict": "incorrect" },
+        { "text": "This is completely reversed", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.4,
+      "tags": ["stomach", "anatomy", "regions"]
+    },
+    {
+      "id": "stomach-002",
+      "text": "Parietal cells in the stomach secrete which two important substances?",
+      "options": [
+        "Pepsinogen and mucus",
+        "Hydrochloric acid (HCl) and intrinsic factor",
+        "Gastrin and histamine",
+        "Lipase and amylase"
+      ],
+      "answer": 1,
+      "explain": "Parietal (oxyntic) cells secrete hydrochloric acid (for digestion and killing microbes) and intrinsic factor (essential for vitamin B12 absorption in the ileum).",
+      "mechanism": {
+        "title": "Gastric Cell Types",
+        "content": "The gastric glands contain four main cell types: **Parietal cells**: HCl and intrinsic factor. **Chief cells**: Pepsinogen (inactive pepsin). **Mucous neck cells**: Mucus for protection. **G cells** (enteroendocrine): Gastrin hormone. HCl activates pepsinogen to pepsin and kills bacteria. Without intrinsic factor, B12 cannot be absorbed, causing pernicious anemia.",
+        "metaphor": "Parietal cells are the 'power generators' of the stomach - they produce the acid battery (HCl) that powers protein digestion, and they also produce intrinsic factor, the 'key' that unlocks B12 absorption way downstream in the ileum."
+      },
+      "optionExplains": [
+        { "text": "Pepsinogen is from chief cells, mucus is from mucous neck cells", "verdict": "incorrect" },
+        { "text": "Correct! Parietal cells produce HCl for digestion and intrinsic factor for B12 absorption", "verdict": "correct" },
+        { "text": "Gastrin is from G cells, histamine is from enterochromaffin-like cells", "verdict": "incorrect" },
+        { "text": "These are pancreatic enzymes, not gastric secretions", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.4,
+      "tags": ["stomach", "parietal-cells", "secretions"]
+    },
+    {
+      "id": "stomach-003",
+      "text": "What is the approximate pH of gastric juice in an actively digesting stomach?",
+      "options": [
+        "pH 5-6 (mildly acidic)",
+        "pH 1-2 (strongly acidic)",
+        "pH 7 (neutral)",
+        "pH 8-9 (basic/alkaline)"
+      ],
+      "answer": 1,
+      "explain": "Gastric juice has a pH of 1-2, making it extremely acidic. This activates pepsin, denatures proteins, and kills most ingested microorganisms.",
+      "mechanism": {
+        "title": "Gastric Acid Production",
+        "content": "Parietal cells use H+/K+-ATPase (proton pumps) to secrete H+ ions against a massive concentration gradient. The H+ combines with Cl- to form HCl. This creates one of the most acidic environments in the body (pH 1-2). The stomach protects itself with: thick mucus layer, bicarbonate secretion, rapid epithelial turnover, and tight junctions between cells.",
+        "metaphor": "The stomach is like a biological acid vat - it produces acid strong enough to dissolve metal (pH 1-2). The only reason your stomach doesn't digest itself is the 'force field' of mucus and bicarbonate constantly protecting the lining."
+      },
+      "optionExplains": [
+        { "text": "Too high - pH 5-6 would be ineffective for protein digestion", "verdict": "incorrect" },
+        { "text": "Correct! pH 1-2 is highly acidic, necessary for pepsin activity and sterilization", "verdict": "correct" },
+        { "text": "Neutral pH would not activate pepsin or kill bacteria", "verdict": "incorrect" },
+        { "text": "Basic pH is found in the intestines (due to pancreatic bicarbonate), not the stomach", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.3,
+      "tags": ["stomach", "pH", "gastric-acid"]
+    },
+    {
+      "id": "stomach-004",
+      "text": "Chief cells secrete pepsinogen. What converts this inactive enzyme to its active form, pepsin?",
+      "options": [
+        "Intrinsic factor",
+        "Gastrin",
+        "Hydrochloric acid (HCl)",
+        "Pancreatic amylase"
+      ],
+      "answer": 2,
+      "explain": "HCl converts pepsinogen to pepsin by cleaving off a small peptide fragment. Once activated, pepsin can also activate more pepsinogen (autocatalysis). Pepsin is only active in acidic conditions.",
+      "mechanism": {
+        "title": "Pepsinogen Activation",
+        "content": "Chief cells secrete pepsinogen (inactive zymogen) to prevent self-digestion. HCl cleaves pepsinogen to active pepsin. Pepsin then catalyzes the same reaction (autocatalysis). Pepsin is a protease that works optimally at pH 1.5-2.5 and becomes inactive above pH 5. This is why protein digestion stops when food enters the less acidic small intestine.",
+        "metaphor": "Chief cells are cautious - they ship pepsin as a 'safety-locked weapon' (pepsinogen). Only when it lands in the acid bath (HCl) does the safety lock (extra peptide) get dissolved, creating active pepsin that can break down proteins."
+      },
+      "optionExplains": [
+        { "text": "Intrinsic factor is for B12 absorption, not enzyme activation", "verdict": "incorrect" },
+        { "text": "Gastrin stimulates acid secretion but doesn't directly activate pepsinogen", "verdict": "incorrect" },
+        { "text": "Correct! HCl creates the acidic environment that cleaves pepsinogen to pepsin", "verdict": "correct" },
+        { "text": "Amylase is a carbohydrate enzyme, unrelated to pepsinogen", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.4,
+      "tags": ["stomach", "pepsin", "enzymes", "activation"]
+    },
+    {
+      "id": "stomach-005",
+      "text": "The hormone gastrin is released from G cells in the stomach. What is its PRIMARY action?",
+      "options": [
+        "Stimulate bile release from the gallbladder",
+        "Stimulate gastric acid (HCl) secretion",
+        "Inhibit gastric motility",
+        "Stimulate pancreatic enzyme secretion"
+      ],
+      "answer": 1,
+      "explain": "Gastrin's primary action is to stimulate parietal cells to secrete HCl. It also stimulates pepsinogen release, increases gastric motility, and promotes growth of gastric mucosa.",
+      "mechanism": {
+        "title": "Gastrin: The Gastric Hormone",
+        "content": "Gastrin is released when: protein enters stomach, stomach distends, vagal stimulation occurs. It acts on parietal cells (via CCK-B receptors) to increase HCl secretion. Gastrin also stimulates: chief cells (pepsinogen), ECL cells (histamine), and gastric smooth muscle (motility). It's inhibited by low pH (negative feedback) and somatostatin.",
+        "metaphor": "Gastrin is like a 'dinner bell hormone' - when food arrives in the stomach, G cells ring the gastrin bell, telling parietal cells to fire up the acid production, chief cells to prepare protein-digesting enzymes, and muscles to start churning."
+      },
+      "optionExplains": [
+        { "text": "Bile release is stimulated by CCK from the small intestine, not gastrin", "verdict": "incorrect" },
+        { "text": "Correct! Gastrin = gastric acid. It's the main stimulator of HCl secretion", "verdict": "correct" },
+        { "text": "Gastrin increases motility, not inhibits it", "verdict": "incorrect" },
+        { "text": "Pancreatic secretion is stimulated by CCK and secretin, not gastrin", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.4,
+      "tags": ["stomach", "gastrin", "hormones"]
+    },
+    {
+      "id": "stomach-006",
+      "text": "The semi-liquid mixture of partially digested food that leaves the stomach is called:",
+      "options": [
+        "Bolus",
+        "Chyme",
+        "Chyle",
+        "Feces"
+      ],
+      "answer": 1,
+      "explain": "Chyme is the acidic, semi-liquid mixture of food and gastric secretions that passes through the pyloric sphincter into the duodenum.",
+      "mechanism": {
+        "title": "Food Transformation",
+        "content": "Food undergoes several transformations: **In mouth**: Bolus (chewed ball of food mixed with saliva). **In stomach**: Chyme (acidic slurry after mechanical and chemical digestion). **In small intestine**: Chyle refers specifically to fat-containing lymph from lacteals. **In large intestine**: Feces (dehydrated waste). The stomach typically retains chyme for 2-6 hours depending on meal composition.",
+        "metaphor": "Food enters the stomach as a recognizable 'ball' (bolus), gets blended in the gastric smoothie-maker, and exits as 'chyme' - which literally means 'juice' in Greek. It's like the stomach turns your burger into a protein shake."
+      },
+      "optionExplains": [
+        { "text": "Bolus is what you swallow - a chewed ball of food from the mouth", "verdict": "incorrect" },
+        { "text": "Correct! Chyme = 'juice' = the acidic slurry leaving the stomach", "verdict": "correct" },
+        { "text": "Chyle is lymph containing absorbed fats from the small intestine", "verdict": "incorrect" },
+        { "text": "Feces is the final waste product after large intestine processing", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.3,
+      "tags": ["stomach", "chyme", "digestion"]
+    },
+    {
+      "id": "stomach-007",
+      "text": "Which type of meal typically takes the LONGEST to empty from the stomach?",
+      "options": [
+        "Pure carbohydrate meal (bread, pasta)",
+        "Pure protein meal (lean meat)",
+        "High-fat meal (fatty meat, fried foods)",
+        "Liquid meal (smoothie, soup)"
+      ],
+      "answer": 2,
+      "explain": "Fats take the longest to empty from the stomach (up to 6+ hours) because they inhibit gastric motility through the hormone CCK. Liquids empty fastest, followed by carbs, then proteins, then fats.",
+      "mechanism": {
+        "title": "Gastric Emptying Rates",
+        "content": "Emptying order (fastest to slowest): Liquids > Carbohydrates > Proteins > Fats. Fat in the duodenum triggers CCK release, which slows gastric emptying (enterogastric reflex). This ensures fats have adequate time for emulsification and digestion. Other factors slowing emptying: high acidity, high osmolarity, and duodenal distension.",
+        "metaphor": "The stomach is a smart bouncer at a club (duodenum). It lets simple guests (liquids, carbs) through quickly. Proteins need more processing. But fats? They need special handling, so the stomach holds them back, slowly releasing them so the intestine isn't overwhelmed."
+      },
+      "optionExplains": [
+        { "text": "Carbs empty relatively quickly (2-3 hours)", "verdict": "incorrect" },
+        { "text": "Proteins take moderate time (3-4 hours)", "verdict": "incorrect" },
+        { "text": "Correct! Fats slow gastric emptying via CCK - can take 6+ hours", "verdict": "correct" },
+        { "text": "Liquids empty fastest (minutes to ~1 hour)", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.4,
+      "tags": ["stomach", "gastric-emptying", "digestion-rates"]
+    },
+    {
+      "id": "stomach-008",
+      "text": "A peptic ulcer that develops in the stomach is called a:",
+      "options": [
+        "Duodenal ulcer",
+        "Gastric ulcer",
+        "Esophageal ulcer",
+        "Jejunal ulcer"
+      ],
+      "answer": 1,
+      "explain": "Gastric ulcers occur in the stomach, while duodenal ulcers occur in the first part of the small intestine. Most peptic ulcers are caused by H. pylori infection or NSAID use.",
+      "mechanism": {
+        "title": "Peptic Ulcer Disease",
+        "content": "Peptic ulcers occur when protective mechanisms fail: **H. pylori**: Bacteria that burrows into mucus layer, causes inflammation. **NSAIDs**: Block prostaglandins needed for mucus/bicarbonate production. **Excess acid**: Zollinger-Ellison syndrome (gastrin-secreting tumor). Gastric ulcers: pain with eating. Duodenal ulcers: pain relieved by eating (food buffers acid). Treatment: proton pump inhibitors, antibiotics for H. pylori.",
+        "metaphor": "The stomach lining is like castle walls - mucus and bicarbonate form the moat and ramparts. H. pylori is like a spy that sneaks under the walls. NSAIDs are like saboteurs who disable the repair crews. Either way, the acid army eventually breaches the walls, creating an ulcer 'crater.'"
+      },
+      "optionExplains": [
+        { "text": "Duodenal ulcers are in the duodenum, not the stomach", "verdict": "incorrect" },
+        { "text": "Correct! Gastric = stomach. A gastric ulcer is an ulcer in the stomach", "verdict": "correct" },
+        { "text": "Esophageal ulcers occur in the esophagus, often from severe reflux", "verdict": "incorrect" },
+        { "text": "Jejunal ulcers are rare and occur in the jejunum", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.3,
+      "tags": ["stomach", "ulcers", "pathology"]
+    },
+    {
+      "id": "stomach-009",
+      "text": "The vagus nerve (cranial nerve X) stimulates gastric activity. What neurotransmitter does it release to activate gastric secretion?",
+      "options": [
+        "Norepinephrine",
+        "Acetylcholine (ACh)",
+        "Dopamine",
+        "Serotonin"
+      ],
+      "answer": 1,
+      "explain": "The vagus nerve releases acetylcholine (ACh), which directly stimulates parietal cells to secrete HCl and chief cells to secrete pepsinogen. It also stimulates G cells to release gastrin.",
+      "mechanism": {
+        "title": "Vagal Control of Digestion",
+        "content": "The vagus nerve is the main parasympathetic supply to the GI tract. It releases ACh which: 1) Directly stimulates parietal cells (M3 receptors) to secrete HCl. 2) Stimulates chief cells to release pepsinogen. 3) Stimulates G cells to release gastrin. 4) Increases gastric motility. This is the 'cephalic phase' of digestion - triggered by sight, smell, taste of food.",
+        "metaphor": "The vagus nerve is like a 'rest and digest' hotline from the brain. When you see or smell food, your brain calls the stomach via the vagus nerve, using ACh as the message: 'Food incoming! Start the digestive engines!'"
+      },
+      "optionExplains": [
+        { "text": "Norepinephrine is sympathetic - it INHIBITS digestion (fight or flight)", "verdict": "incorrect" },
+        { "text": "Correct! ACh is the parasympathetic neurotransmitter that activates digestion", "verdict": "correct" },
+        { "text": "Dopamine is involved in motivation/reward, not gastric secretion", "verdict": "incorrect" },
+        { "text": "Serotonin is involved in GI motility but not as vagal neurotransmitter", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.5,
+      "tags": ["stomach", "vagus-nerve", "neurotransmitters", "ANS"]
+    },
+    {
+      "id": "stomach-010",
+      "text": "Gastroesophageal reflux disease (GERD) occurs when stomach contents reflux into the esophagus. Which structure's dysfunction is primarily responsible?",
+      "options": [
+        "Pyloric sphincter",
+        "Lower esophageal sphincter (LES)",
+        "Upper esophageal sphincter",
+        "Ileocecal valve"
+      ],
+      "answer": 1,
+      "explain": "The lower esophageal sphincter (LES), also called the cardiac sphincter, normally prevents reflux of gastric contents into the esophagus. When it weakens or relaxes inappropriately, GERD occurs.",
+      "mechanism": {
+        "title": "Lower Esophageal Sphincter",
+        "content": "The LES is a physiological sphincter (thickened circular muscle) at the gastroesophageal junction. It maintains a resting tone of ~15-30 mmHg. It relaxes during swallowing. GERD risk factors: obesity, hiatal hernia, pregnancy, certain foods (caffeine, chocolate, alcohol). Chronic GERD can cause Barrett's esophagus (metaplasia) and increase esophageal cancer risk.",
+        "metaphor": "The LES is like a one-way valve at the bottom of a vertical pipe. When it works properly, stuff goes down but can't come back up. When it gets weak or lazy, the acidic contents splash back up - that's heartburn. It has nothing to do with your heart!"
+      },
+      "optionExplains": [
+        { "text": "The pyloric sphincter is at the stomach's exit (to duodenum), not entrance", "verdict": "incorrect" },
+        { "text": "Correct! LES dysfunction allows acid to reflux into the esophagus, causing GERD", "verdict": "correct" },
+        { "text": "The upper esophageal sphincter is in the throat, preventing air from entering", "verdict": "incorrect" },
+        { "text": "The ileocecal valve is between small and large intestine - nowhere near the esophagus", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.4,
+      "tags": ["stomach", "GERD", "sphincters", "pathology"]
+    }
+  ]
+}

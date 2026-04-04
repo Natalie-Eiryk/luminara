@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="715px" height="530px" viewBox="0 0 715 530" enable-background="new 0 0 715 530" xml:space="preserve">
+<filter  id="AI_Shadow_1" filterUnits="objectBoundingBox">
+	<feGaussianBlur  in="SourceAlpha" result="blur" stdDeviation="2"></feGaussianBlur>
+	<feOffset  in="blur" result="offsetBlurredAlpha" dx="4" dy="4"></feOffset>
+	<feMerge>
+		<feMergeNode  in="offsetBlurredAlpha"></feMergeNode>
+		<feMergeNode  in="SourceGraphic"></feMergeNode>
+	</feMerge>
+</filter>
+<g>
+	<g filter="url(#AI_Shadow_1)">
+		<path fill="#BBE0E3" d="M693,369.729c0,32.865-26.943,59.509-60.178,59.509H75.178C41.942,429.238,15,402.594,15,369.729V124.748
+			c0-32.867,26.942-59.51,60.178-59.51h557.645c33.234,0,60.178,26.643,60.178,59.51V369.729z"/>
+		<path fill="none" stroke="#231F20" d="M693,369.729c0,32.865-26.943,59.509-60.178,59.509H75.178
+			C41.942,429.238,15,402.594,15,369.729V124.748c0-32.867,26.942-59.51,60.178-59.51h557.645c33.234,0,60.178,26.643,60.178,59.51
+			V369.729z"/>
+	</g>
+	<line fill="none" stroke="#231F20" x1="551" y1="233.238" x2="551" y2="429.238"/>
+	<line fill="none" stroke="#231F20" x1="15" y1="233.238" x2="693" y2="233.238"/>
+	<line fill="none" stroke="#231F20" x1="257" y1="65.238" x2="257" y2="233.238"/>
+	<path fill="none" stroke="#231F20" d="M519,372.238c0,16.568-13.432,30-30,30H86c-16.568,0-30-13.432-30-30v-69
+		c0-16.568,13.432-30,30-30h403c16.568,0,30,13.432,30,30V372.238z"/>
+	<line fill="none" stroke="#231F20" x1="178" y1="273.238" x2="178" y2="402.238"/>
+	<line fill="none" stroke="#231F20" x1="329" y1="273.238" x2="329" y2="402.238"/>
+	<g filter="url(#AI_Shadow_1)">
+		<path fill="#BBE0E3" d="M613,485.238c0,11.046-8.954,20-20,20H407c-11.046,0-20-8.954-20-20v-42c0-11.046,8.954-20,20-20h186
+			c11.046,0,20,8.954,20,20V485.238z"/>
+		<path fill="none" stroke="#231F20" d="M613,485.238c0,11.046-8.954,20-20,20H407c-11.046,0-20-8.954-20-20v-42
+			c0-11.046,8.954-20,20-20h186c11.046,0,20,8.954,20,20V485.238z"/>
+	</g>
+	<line fill="none" stroke="#231F20" x1="496" y1="423.238" x2="496" y2="505.238"/>
+	<text transform="matrix(1 0 0 1 122 149.2378)" font-family="'LucidaSans-Demi'" font-size="24">AN</text>
+	<text transform="matrix(1 0 0 1 460 149.2378)" font-family="'LucidaSans-Demi'" font-size="24">MD</text>
+	<text transform="matrix(1 0 0 1 99 344.9175)" font-family="'LucidaSans-Demi'" font-size="24">VA</text>
+	<text transform="matrix(1 0 0 1 232 344.9175)" font-family="'LucidaSans-Demi'" font-size="24">VL</text>
+	<text transform="matrix(1 0 0 1 357 344.9175)" font-family="'LucidaSans-Demi'" font-size="24">VPL</text>
+	<text transform="matrix(1 0 0 1 443 344.9175)" font-family="'LucidaSans-Demi'" font-size="24">VPM</text>
+	<text transform="matrix(1 0 0 1 589 330.5181)"><tspan x="0" y="0" font-family="'LucidaSans-Demi'" font-size="24">LNG</tspan><tspan x="0" y="28.8" font-family="'LucidaSans-Demi'" font-size="24">(PUL)</tspan></text>
+	<text transform="matrix(1 0 0 1 425 473.2378)" font-family="'LucidaSans-Demi'" font-size="24">LG</text>
+	<text transform="matrix(1 0 0 1 533 473.2378)" font-family="'LucidaSans-Demi'" font-size="24">MG</text>
+	<text transform="matrix(1 0 0 1 265 473.2378)" font-family="'LucidaSans-Demi'" font-size="24">MTh</text>
+	<text transform="matrix(1 0 0 1 250 263.2378)" font-family="'LucidaSans-Demi'" font-size="24">VNG</text>
+	<text transform="matrix(1 0 0 1 45.9316 36.2378)" font-family="'LucidaSans-Demi'" font-size="24">Thalamic Nuclei (lateral view - MNG on other side)</text>
+	<g>
+		<g>
+			<line fill="none" stroke="#231F20" stroke-width="2" x1="329" y1="464.238" x2="372.879" y2="464.238"/>
+			<g>
+				<polygon fill="#231F20" points="387,464.238 367.102,472.369 371.823,464.238 367.102,456.109 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

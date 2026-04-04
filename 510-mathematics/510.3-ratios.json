@@ -1,0 +1,564 @@
+{
+  "id": "510.3",
+  "title": "Ratios & Proportions",
+  "category": "concepts",
+  "gradeLevel": "6-7",
+  "description": "Understanding ratios, rates, proportions, and percent relationships",
+  "questions": [
+    {
+      "id": "510.3.01",
+      "q": "A recipe calls for 2 cups of flour for every 3 cups of sugar. What is the ratio of flour to sugar?",
+      "options": [
+        "3:2",
+        "2:3",
+        "5:3",
+        "2:5"
+      ],
+      "answer": 1,
+      "chapter": "Ratios - Writing Ratios",
+      "explain": "Ratios compare quantities IN ORDER. Flour TO sugar = 2 TO 3 = 2:3. The order matters! Flour comes first, sugar second.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "3:2 is sugar to flour, not flour to sugar. When writing ratios, the ORDER matches the ORDER in the question. 'Flour to sugar' means flour first."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 'Flour to sugar' means flour comes FIRST. 2 cups flour : 3 cups sugar = 2:3. We can also write this as 2/3 or '2 to 3.' The ratio tells you: for every 2 parts flour, use 3 parts sugar."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "5:3 adds the quantities (2+3=5). But a ratio COMPARES two things, it doesn't add them. We want flour vs sugar, not total vs sugar."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "2:5 uses the total (2+3=5) as one part. But we're comparing flour to SUGAR specifically, not flour to total ingredients."
+        }
+      ],
+      "mechanism": {
+        "title": "Ratios: Comparing Quantities",
+        "content": "A ratio compares two quantities using division. It can be written three ways: 2:3, 2 to 3, or 2/3. The ORDER matters - 'A to B' means A comes first. Ratios can be simplified like fractions: 4:6 = 2:3. They're used everywhere: recipes, maps, sports stats, probability!",
+        "metaphor": "A ratio is like a seesaw balance point. 2:3 tells you the relationship: for every 2 on one side, you need 3 on the other to maintain the same proportion. Change one, and you must change the other proportionally."
+      },
+      "scaffoldFile": "510.3-ratios-scaffolds/510.3.01-scaffolds.json"
+    },
+    {
+      "id": "510.3.02",
+      "q": "If 4 pencils cost $2.00, what is the unit rate (cost per pencil)?",
+      "options": [
+        "$0.25 per pencil",
+        "$0.40 per pencil",
+        "$0.50 per pencil",
+        "$2.00 per pencil"
+      ],
+      "answer": 2,
+      "chapter": "Ratios - Unit Rates",
+      "explain": "Unit rate means 'per ONE.' Divide total cost by number of items: $2.00 / 4 = $0.50 per pencil. Each pencil costs fifty cents!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "$0.25 would be correct if 8 pencils cost $2.00. But we have 4 pencils, so divide: $2.00 / 4 = $0.50."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "$0.40 doesn't divide evenly from $2.00 / 4. Let's check: $0.40 x 4 = $1.60, not $2.00."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! Unit rate = total / quantity = $2.00 / 4 pencils = $0.50 per pencil. Verify: $0.50 x 4 = $2.00. The 'per one' rate lets you calculate any quantity: 7 pencils would cost 7 x $0.50 = $3.50!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "$2.00 is the total cost for 4 pencils, not the cost per ONE pencil. We need to divide to find the unit rate."
+        }
+      ],
+      "mechanism": {
+        "title": "Unit Rates: Per One",
+        "content": "A UNIT rate has 1 in the denominator - it tells you the amount 'per one' of something. To find it, divide the total by the quantity. Unit rates make comparison easy: Which is better, 4 pencils for $2.00 or 5 pencils for $2.75? Calculate unit rates: $0.50 vs $0.55. The first deal is better!",
+        "metaphor": "Unit rate is like finding the 'atom' of a deal. Instead of comparing awkward amounts (4 for $2 vs 5 for $2.75), break it down to ONE unit. Then the comparison is crystal clear - $0.50 beats $0.55 every time!"
+      },
+      "scaffoldFile": "510.3-ratios-scaffolds/510.3.02-scaffolds.json"
+    },
+    {
+      "id": "510.3.03",
+      "q": "Are the ratios 6:8 and 15:20 equivalent?",
+      "options": [
+        "Yes, both simplify to 3:4",
+        "No, they have different values",
+        "Yes, both simplify to 2:3",
+        "Cannot be determined"
+      ],
+      "answer": 0,
+      "chapter": "Ratios - Equivalent Ratios",
+      "explain": "Simplify both! 6:8 = 3:4 (divide by 2). 15:20 = 3:4 (divide by 5). Same simplified ratio means they're EQUIVALENT!",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Yes! Both ratios simplify to 3:4. For 6:8: GCF is 2, so 6/2 : 8/2 = 3:4. For 15:20: GCF is 5, so 15/5 : 20/5 = 3:4. Equivalent ratios are like equivalent fractions - different numbers, same relationship!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "They DO have the same value! Simplify both to see: 6:8 = 3:4 and 15:20 = 3:4. Same simplified form means equivalent."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "2:3 is a different ratio entirely. 6:8 simplifies to 3:4 (divide both by 2), not 2:3."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "It CAN be determined! Simplify both ratios and compare. If they match, they're equivalent."
+        }
+      ],
+      "mechanism": {
+        "title": "Equivalent Ratios: Same Relationship",
+        "content": "Equivalent ratios represent the same relationship. To check, simplify both to lowest terms (divide by GCF). Or cross-multiply: 6:8 and 15:20 gives 6x20 = 120 and 8x15 = 120. Equal products mean equivalent ratios! Scaling a recipe uses equivalent ratios - doubling both parts keeps the same taste.",
+        "metaphor": "Equivalent ratios are like different zoom levels on the same photograph. 3:4 and 6:8 and 15:20 all show the same picture - just at different sizes. The PROPORTION between width and height stays constant."
+      },
+      "scaffoldFile": "510.3-ratios-scaffolds/510.3.03-scaffolds.json"
+    },
+    {
+      "id": "510.3.04",
+      "q": "Solve for x: 3/4 = x/20",
+      "options": [
+        "x = 5",
+        "x = 12",
+        "x = 15",
+        "x = 16"
+      ],
+      "answer": 2,
+      "chapter": "Ratios - Solving Proportions",
+      "explain": "Cross-multiply! 3 x 20 = 4 x x. So 60 = 4x. Divide: x = 15. Check: 3/4 = 15/20. Both equal 0.75!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "x = 5 doesn't work. 5/20 = 1/4, but we need 3/4. The numerator needs to be bigger."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x = 12 doesn't work. 12/20 = 3/5, not 3/4. Close, but not equivalent."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! Cross-multiply: 3 x 20 = 4 x x, so 60 = 4x, and x = 15. Or use scaling: 4 x 5 = 20, so 3 x 5 = 15. Verify: 3/4 = 15/20 = 0.75. The proportion holds!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "x = 16 doesn't work. 16/20 = 4/5, not 3/4. The proportion wouldn't balance."
+        }
+      ],
+      "mechanism": {
+        "title": "Solving Proportions: Cross-Multiplication",
+        "content": "A proportion states that two ratios are equal: a/b = c/d. To solve for an unknown, cross-multiply: ad = bc. For 3/4 = x/20: 3(20) = 4(x), so 60 = 4x, and x = 15. Alternatively, find the scale factor: 4 to 20 is x5, so 3 x 5 = 15.",
+        "metaphor": "Proportions are like a balanced scale with fractions on each side. If 3/4 balances x/20, then the 'weight' (cross-products) must be equal. 3x20 must equal 4x(x). Solve for x to keep the scale balanced!"
+      },
+      "scaffoldFile": "510.3-ratios-scaffolds/510.3.04-scaffolds.json"
+    },
+    {
+      "id": "510.3.05",
+      "q": "What is 40% of 75?",
+      "options": [
+        "30",
+        "35",
+        "40",
+        "115"
+      ],
+      "answer": 0,
+      "chapter": "Ratios - Percent of a Number",
+      "explain": "'Of' means multiply! 40% = 0.40 = 40/100. So 40% of 75 = 0.40 x 75 = 30. Or: 10% of 75 is 7.5, so 40% is 7.5 x 4 = 30!",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Yes! 40% of 75 = 0.40 x 75 = 30. Shortcut: 40% = 4 x 10%, and 10% of 75 = 7.5. So 4 x 7.5 = 30. Or: 40% = 2/5, and 75 / 5 = 15, so 15 x 2 = 30. Multiple paths, same answer!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "35 is close but not quite. That would be about 46.7% of 75. Check: 35/75 = 0.467 = 46.7%."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "40 is the PERCENT, not the answer. 40% of something is NOT equal to 40 (unless that something is 100)."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "115 comes from adding 40 + 75. But 'of' means MULTIPLY in math, not add. Percent of a number is always a multiplication."
+        }
+      ],
+      "mechanism": {
+        "title": "Percent of a Number",
+        "content": "Percent means 'per hundred.' 40% = 40/100 = 0.40. To find a percent of a number, multiply: percent x number. Convert the percent to a decimal or fraction first. Handy shortcuts: 10% = divide by 10, 50% = divide by 2, 25% = divide by 4.",
+        "metaphor": "Think of percent as a 'tax' on the whole. 40% of 75 means '40 cents for every dollar' applied to 75 dollars. Since 75 dollars = 75 groups of 100 cents, you're taking 40 cents from each, then converting back. Result: 30 dollars worth."
+      },
+      "scaffoldFile": "510.3-ratios-scaffolds/510.3.05-scaffolds.json"
+    },
+    {
+      "id": "510.3.06",
+      "q": "If a shirt's original price is $40 and it's on sale for 25% off, what is the sale price?",
+      "options": [
+        "$10",
+        "$15",
+        "$30",
+        "$50"
+      ],
+      "answer": 2,
+      "chapter": "Ratios - Percent Decrease",
+      "explain": "25% off means you PAY 75% of the original. 25% of $40 = $10 (the discount). $40 - $10 = $30. Or directly: 0.75 x $40 = $30.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "$10 is the DISCOUNT amount (25% of $40), not the sale price. You still pay the remaining $30!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "$15 would be if the discount were 62.5%, not 25%. The discount is only $10, leaving $30 to pay."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! Method 1: Find discount (25% of $40 = $10), then subtract ($40 - $10 = $30). Method 2: If it's 25% OFF, you pay 75% (100% - 25%). 75% of $40 = 0.75 x $40 = $30. Sale price: $30!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "$50 would be a 25% INCREASE, not decrease. A sale means the price goes DOWN, so the answer must be LESS than $40."
+        }
+      ],
+      "mechanism": {
+        "title": "Percent Decrease: Finding Sale Prices",
+        "content": "When something is 'X% off,' subtract that percent from 100% to find what you actually pay. 25% off = pay 75%. Then multiply by the original price. Alternatively, calculate the discount amount (25% of $40 = $10) and subtract from the original ($40 - $10 = $30). Both methods work!",
+        "metaphor": "Percent off is like eating pie. If you eat 25% of a pie, 75% remains. If a $40 shirt is 25% off, the store 'eats' $10 of the price, and 75% ($30) remains for you to pay!"
+      },
+      "scaffoldFile": "510.3-ratios-scaffolds/510.3.06-scaffolds.json"
+    },
+    {
+      "id": "510.3.07",
+      "q": "Express the ratio 5:8 as a percent (rounded to the nearest whole percent).",
+      "options": [
+        "40%",
+        "58%",
+        "63%",
+        "160%"
+      ],
+      "answer": 2,
+      "chapter": "Ratios - Ratio to Percent",
+      "explain": "5:8 as a fraction is 5/8. Divide: 5 / 8 = 0.625. As a percent: 0.625 x 100 = 62.5%, which rounds to 63%.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "40% would be 2/5 or 4/10. But 5/8 is larger than 1/2 (50%), so it must be more than 50%."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "58% isn't the result of 5/8. That's a common trap - just combining the digits. Actually divide: 5 / 8 = 0.625 = 62.5%."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 5/8 = 5 / 8 = 0.625 = 62.5% which rounds to 63%. Quick check: 5/8 is a bit more than 5/10 (50%), and 62.5% is indeed a bit more than 50%. Makes sense!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "160% would be 8/5, which is the ratio flipped. 5:8 means 5/8, not 8/5."
+        }
+      ],
+      "mechanism": {
+        "title": "Converting Ratios to Percents",
+        "content": "To convert a ratio to a percent: First write as a fraction (5:8 = 5/8). Then divide to get a decimal (5 / 8 = 0.625). Finally, multiply by 100 for percent (0.625 x 100 = 62.5%). Percent literally means 'per hundred' - so you're finding how many per 100.",
+        "metaphor": "Converting to percent is like scaling up to a class of 100. If 5 out of 8 students passed a test, how many would pass in a class of 100? Scale up: (5/8) x 100 = 62.5 students. That's 62.5%, or about 63%!"
+      },
+      "scaffoldFile": "510.3-ratios-scaffolds/510.3.07-scaffolds.json"
+    },
+    {
+      "id": "510.3.08",
+      "q": "A car travels 240 miles in 4 hours. What is its average speed?",
+      "options": [
+        "40 mph",
+        "60 mph",
+        "80 mph",
+        "960 mph"
+      ],
+      "answer": 1,
+      "chapter": "Ratios - Speed as a Rate",
+      "explain": "Speed is a rate: distance / time. 240 miles / 4 hours = 60 miles per hour (mph). The car averages 60 mph!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "40 mph would cover 160 miles in 4 hours (40 x 4 = 160). But the car went 240 miles, so it was faster."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! Speed = distance / time = 240 miles / 4 hours = 60 mph. Check: 60 mph x 4 hours = 240 miles. It works! Speed is just a special kind of rate - miles per hour."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "80 mph would cover 320 miles in 4 hours (80 x 4 = 320). That's farther than our car traveled."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "960 comes from MULTIPLYING 240 x 4. But to find a rate (per hour), we DIVIDE. Rates always involve division to find the 'per one' amount."
+        }
+      ],
+      "mechanism": {
+        "title": "Speed: A Rate of Distance Over Time",
+        "content": "Speed = distance / time. It's a unit rate - how far you go in ONE unit of time. 60 mph means 60 miles for every 1 hour. This rate lets you predict: at 60 mph, in 2 hours you'll go 120 miles, in 3 hours 180 miles, etc. The formula works three ways: d = rt, r = d/t, t = d/r.",
+        "metaphor": "Speed is the heartbeat of travel. Just as heartbeats per minute tells you how fast your heart pumps, miles per hour tells you how fast you're moving. Both are rates - something 'per' something else."
+      },
+      "scaffoldFile": "510.3-ratios-scaffolds/510.3.08-scaffolds.json"
+    },
+    {
+      "id": "510.3.09",
+      "q": "If 3 workers can complete a job in 12 days, how long would it take 6 workers (assuming same work rate)?",
+      "options": [
+        "6 days",
+        "8 days",
+        "18 days",
+        "24 days"
+      ],
+      "answer": 0,
+      "chapter": "Ratios - Inverse Proportion",
+      "explain": "This is INVERSE proportion! More workers = less time. Double the workers (3 to 6) means half the time (12 to 6). 6 workers finish in 6 days.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Yes! This is inverse proportion - when one doubles, the other halves. Workers x Time = constant work amount. 3 x 12 = 36 work-days. So 6 x ? = 36, meaning ? = 6 days. More hands make lighter (and faster) work!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "8 days would happen with different numbers. Let's verify: 3 workers x 12 days = 36 work-days total. 6 workers x ? = 36, so ? = 6 days, not 8."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "18 days would be if we ADDED workers' effects. But more workers should DECREASE time, not increase it! Inverse proportion means doubling one halves the other."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "24 days treats this as DIRECT proportion (double workers = double time). But that's backwards! More workers means the job finishes FASTER, not slower."
+        }
+      ],
+      "mechanism": {
+        "title": "Inverse Proportion: One Up, Other Down",
+        "content": "In INVERSE proportion, when one quantity increases, the other decreases proportionally. The product stays constant: workers x time = total work. If workers doubles, time halves. Contrast with DIRECT proportion (like distance and time at constant speed) where both increase together.",
+        "metaphor": "Inverse proportion is like sharing a pizza. More people (workers) = smaller slices (less work each) = faster it's gone (less time). The pizza (total work) stays the same, but how it's divided changes everything."
+      },
+      "scaffoldFile": "510.3-ratios-scaffolds/510.3.09-scaffolds.json"
+    },
+    {
+      "id": "510.3.10",
+      "q": "A map has a scale of 1 inch : 50 miles. If two cities are 3.5 inches apart on the map, how far apart are they in real life?",
+      "options": [
+        "53.5 miles",
+        "150 miles",
+        "175 miles",
+        "350 miles"
+      ],
+      "answer": 2,
+      "chapter": "Ratios - Scale Drawings",
+      "explain": "Set up a proportion! 1 inch / 50 miles = 3.5 inches / x miles. Cross-multiply or multiply directly: 3.5 x 50 = 175 miles.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "53.5 miles comes from adding 50 + 3.5. But we need to MULTIPLY to scale up, not add."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "150 miles would be 3 inches at this scale (3 x 50 = 150). But we have 3.5 inches, so a bit more."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! Scale means 'multiply by.' 1 inch represents 50 miles, so 3.5 inches represents 3.5 x 50 = 175 miles. Alternatively, set up a proportion: 1/50 = 3.5/x, cross-multiply: x = 175 miles. Map reading made mathematical!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "350 miles would be 7 inches at this scale (7 x 50 = 350). We only have 3.5 inches on the map."
+        }
+      ],
+      "mechanism": {
+        "title": "Scale Drawings and Maps",
+        "content": "A scale is a ratio comparing a drawing to reality. '1 inch : 50 miles' means every inch on the map equals 50 miles in the real world. To convert map distance to real distance, multiply by the scale factor. To go the other way, divide. Architects, engineers, and cartographers use scales constantly!",
+        "metaphor": "A map scale is like a magical shrink ray. The real world was 'shrunk' by a factor (1:50 miles per inch). To 'unshrink' and find real distances, we reverse the process - multiply by the shrink factor. The ratio is the recipe for conversion!"
+      },
+      "scaffoldFile": "510.3-ratios-scaffolds/510.3.10-scaffolds.json"
+    },
+    {
+      "id": "510.3.11",
+      "q": "What percent of 80 is 20?",
+      "options": [
+        "4%",
+        "20%",
+        "25%",
+        "40%"
+      ],
+      "answer": 2,
+      "chapter": "Ratios - Finding Percent",
+      "explain": "Set up the equation: what % of 80 = 20? That's (x/100) x 80 = 20. Or directly: 20/80 = 1/4 = 0.25 = 25%.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "4% of 80 is only 3.2 (0.04 x 80 = 3.2). We need to find what percent gives us 20, which is much larger."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "20% of 80 is 16 (0.20 x 80 = 16). Close to 20, but not exactly."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 20 out of 80 = 20/80 = 1/4 = 0.25 = 25%. Check: 25% of 80 = 0.25 x 80 = 20. It works! Think: 20 is one quarter of 80, and one quarter = 25%."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "40% of 80 is 32 (0.40 x 80 = 32). That's more than 20, so the percent is too high."
+        }
+      ],
+      "mechanism": {
+        "title": "Finding What Percent One Number is of Another",
+        "content": "To find what percent A is of B: divide A by B, then multiply by 100. What percent is 20 of 80? = (20/80) x 100 = 0.25 x 100 = 25%. The 'is' number goes on top, the 'of' number goes on bottom. Part / Whole x 100 = Percent.",
+        "metaphor": "Finding percent is like measuring a partial pie. If the whole pie is 80 and your slice is 20, what fraction of the pie do you have? 20/80 = 1/4. In 'percent speak' (per hundred), that's 25 pieces per 100 = 25%."
+      },
+      "scaffoldFile": "510.3-ratios-scaffolds/510.3.11-scaffolds.json"
+    },
+    {
+      "id": "510.3.12",
+      "q": "The ratio of boys to girls in a class is 3:5. If there are 24 students total, how many are boys?",
+      "options": [
+        "8",
+        "9",
+        "12",
+        "15"
+      ],
+      "answer": 1,
+      "chapter": "Ratios - Part-to-Whole",
+      "explain": "Boys:Girls = 3:5 means 3 parts boys, 5 parts girls, 8 parts total. Boys are 3/8 of the class. 3/8 of 24 = 9 boys!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "8 would be if boys were 1/3 of the class (8 x 3 = 24). But the ratio 3:5 means boys are 3 out of (3+5) = 3/8 of the class."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 3:5 means 3 parts boys + 5 parts girls = 8 total parts. Boys = 3/8 of total. 3/8 x 24 = 9 boys. Girls = 5/8 x 24 = 15 girls. Check: 9 + 15 = 24 students, and 9:15 = 3:5. Perfect!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "12 would be half the class, meaning a 1:1 ratio. But boys:girls is 3:5, so boys are LESS than half."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "15 is the number of GIRLS (5/8 x 24 = 15). The question asked for boys, which is the smaller group."
+        }
+      ],
+      "mechanism": {
+        "title": "Using Ratios to Find Parts of a Whole",
+        "content": "When a ratio gives parts (boys:girls = 3:5), first find the total parts (3+5=8). Each group is a fraction of the whole: boys = 3/8, girls = 5/8. Multiply the fraction by the total to find each group's size. This works for any ratio problem involving totals!",
+        "metaphor": "A ratio like 3:5 is a recipe. If the recipe serves 8 'parts,' and you need to serve 24, you're tripling everything. 3 parts boys x 3 = 9 boys. 5 parts girls x 3 = 15 girls. The ratio is the blueprint, the total tells you the scale!"
+      },
+      "scaffoldFile": "510.3-ratios-scaffolds/510.3.12-scaffolds.json"
+    },
+    {
+      "id": "510.3.13",
+      "q": "A price increased from $80 to $100. What was the percent increase?",
+      "options": [
+        "20%",
+        "25%",
+        "80%",
+        "100%"
+      ],
+      "answer": 1,
+      "chapter": "Ratios - Percent Change",
+      "explain": "Percent change = (change / original) x 100. Change = $100 - $80 = $20. Percent increase = ($20 / $80) x 100 = 25%.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "20% is the change ($20) expressed as if the whole were $100. But percent change uses the ORIGINAL as the base, not the final price. $20/$80 = 25%, not 20%."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! Percent increase = (new - old) / old x 100 = ($100 - $80) / $80 x 100 = $20 / $80 x 100 = 0.25 x 100 = 25%. The price rose by one quarter of the original (80 x 0.25 = 20)."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "80% would be if the original price were $25 and it increased by $20. But we started at $80."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "100% increase would double the price ($80 would become $160). We only went to $100, which is less than double."
+        }
+      ],
+      "mechanism": {
+        "title": "Percent Change: Increase or Decrease",
+        "content": "Percent change = (change / original) x 100. For increase: (new - old) / old x 100. For decrease: (old - new) / old x 100. Always divide by the ORIGINAL amount - that's your reference point. A 25% increase followed by a 25% decrease does NOT return to the original!",
+        "metaphor": "Percent change is relative to where you started. If you climb 20 feet up a 80-foot building, you've increased your height by 25% of the building. But if you climb 20 feet up a 100-foot building, it's only a 20% increase. Same 20 feet, different percentages!"
+      },
+      "scaffoldFile": "510.3-ratios-scaffolds/510.3.13-scaffolds.json"
+    },
+    {
+      "id": "510.3.14",
+      "q": "Which is the better buy: 6 apples for $2.40 or 8 apples for $3.60?",
+      "options": [
+        "6 apples for $2.40 (better unit price)",
+        "8 apples for $3.60 (better unit price)",
+        "They cost the same per apple",
+        "Cannot be determined"
+      ],
+      "answer": 0,
+      "chapter": "Ratios - Comparing Rates",
+      "explain": "Find unit prices! 6 for $2.40: $2.40/6 = $0.40 each. 8 for $3.60: $3.60/8 = $0.45 each. $0.40 < $0.45, so 6 for $2.40 is better!",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Yes! Compare unit rates. Deal A: $2.40/6 = $0.40 per apple. Deal B: $3.60/8 = $0.45 per apple. $0.40 is less than $0.45, so 6 apples for $2.40 is the better buy - you pay less per apple!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "The 8-apple deal has a HIGHER unit price ($0.45 vs $0.40). More apples doesn't automatically mean better value - you have to calculate!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "They do NOT cost the same. $0.40 and $0.45 are different unit prices. A 5-cent difference per apple adds up!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "It CAN be determined by finding unit rates. Divide price by quantity for each deal and compare. Math reveals the better bargain!"
+        }
+      ],
+      "mechanism": {
+        "title": "Comparing Unit Rates for Best Value",
+        "content": "To compare deals with different quantities, find the unit rate (price per one item) for each. The lower unit rate is the better deal. This works for any comparison: price per ounce, cost per mile, points per game. Unit rates level the playing field!",
+        "metaphor": "Unit rates are like a universal translator for shopping. '6 for $2.40' and '8 for $3.60' speak different languages. Translate both to 'dollars per apple' - now you're comparing apples to apples (literally!). $0.40 beats $0.45."
+      },
+      "scaffoldFile": "510.3-ratios-scaffolds/510.3.14-scaffolds.json"
+    },
+    {
+      "id": "510.3.15",
+      "q": "If a photo is enlarged by a scale factor of 3, and the original was 4 inches wide, how wide is the enlargement?",
+      "options": [
+        "7 inches",
+        "12 inches",
+        "15 inches",
+        "64 inches"
+      ],
+      "answer": 1,
+      "chapter": "Ratios - Scale Factor",
+      "explain": "Scale factor MULTIPLIES dimensions! 4 inches x 3 = 12 inches wide. Every dimension gets multiplied by 3, making the photo 3x bigger.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "7 inches comes from adding (4 + 3 = 7). But scale factor means MULTIPLY, not add. An enlargement of 3 triples every measurement."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! Scale factor = 3 means multiply every dimension by 3. 4 inches x 3 = 12 inches. If the original was also 6 inches tall, the enlargement would be 6 x 3 = 18 inches tall. The shape stays the same; the SIZE triples!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "15 inches doesn't result from this calculation. 4 x 3 = 12, not 15. Perhaps mixing up numbers from another problem?"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "64 inches comes from cubing (4^3 = 64). But length is one-dimensional - we just multiply once, not raise to a power. For AREA, we'd square the scale factor."
+        }
+      ],
+      "mechanism": {
+        "title": "Scale Factor: Resizing Dimensions",
+        "content": "Scale factor tells you how much to multiply each dimension. Scale factor 3 means 3 times as big. Scale factor 0.5 means half the size. Important: If scale factor is k, lengths multiply by k, but AREAS multiply by k^2 and VOLUMES by k^3. Tripling a photo makes it 3x as wide but 9x the area!",
+        "metaphor": "Scale factor is like a copier setting. 300% enlargement means scale factor 3 - every inch becomes 3 inches. The photo is 3x wider and 3x taller, but it takes 9x as much paper because area = length x width, and both tripled!"
+      },
+      "scaffoldFile": "510.3-ratios-scaffolds/510.3.15-scaffolds.json"
+    }
+  ]
+}

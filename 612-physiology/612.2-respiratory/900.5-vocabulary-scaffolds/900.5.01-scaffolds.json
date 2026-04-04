@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.01",
+  "parentQuestion": "The process of gas exchange between the lungs and the blood is called:",
+  "narrative": {
+    "setting": "The Magic School Bus has shrunk to microscopic size. You're floating in Mr. Edgar's bloodstream, approaching his lungs. He's been feeling short of breath for days, and something in his respiratory system isn't working right. Ms. Frizzle's voice crackles through the intercom: 'Class, we need to understand gas exchange to diagnose what's wrong. Mr. Edgar is counting on us.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's oxygen levels are dropping. Every wrong answer costs precious time."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.01.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Words",
+      "narrative": "Ms. Frizzle pulls up a holographic Latin dictionary. 'Before we dive in, let's decode the language. Medical terms are like treasure maps - if you know the roots, X marks the spot.'",
+      "q": "The prefix 'ex-' in Latin means:",
+      "options": [
+        "Inside, within",
+        "Outside, out of",
+        "Around, surrounding",
+        "Between, among"
+      ],
+      "answer": 1,
+      "explain": "'Ex-' means OUTSIDE or OUT OF. Think of 'exit' - the way OUT. External respiration involves exchange with the EXTERNAL environment. The air outside your body meets the blood inside.",
+      "wrongExplains": {
+        "0": "That's 'in-' or 'intra-'. You're thinking backwards - 'ex-' is the opposite direction, like an exit sign pointing OUT.",
+        "2": "That's 'circum-' or 'peri-'. 'Ex-' is more direct - it's about going outside, not circling around.",
+        "3": "That's 'inter-'. 'Ex-' doesn't mean between - it means OUT, like when you exhale."
+      }
+    },
+    {
+      "id": "900.5.01.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Words",
+      "narrative": "The bus shudders as you pass through a narrowing vessel. 'Spirare,' Ms. Frizzle whispers reverently. 'The ancient Romans knew that breath was life itself.'",
+      "q": "What does 'respiration' literally mean from its Latin roots?",
+      "options": [
+        "To eat again",
+        "To breathe again",
+        "To pump blood",
+        "To exchange fluids"
+      ],
+      "answer": 1,
+      "explain": "'Re-' (again) + 'spirare' (to breathe) = breathing again and again. Every breath is a repetition, a rhythm. The Romans understood that 'spirit' and 'breath' were connected - to breathe was to have life.",
+      "wrongExplains": {
+        "0": "That would be 're-' + 'cibum'. You're in the wrong system - we're talking lungs, not stomach.",
+        "2": "Blood pumping is circulation, controlled by the heart. Respiration is the breath of life, a different dance entirely.",
+        "3": "Fluids are involved, but 'spirare' specifically means to breathe. The word itself carries the sound of air moving."
+      }
+    },
+    {
+      "id": "900.5.01.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Words",
+      "narrative": "An alarm beeps softly. Mr. Edgar's oxygen saturation just dropped another point. 'Focus, class,' Ms. Frizzle says, her voice steady but urgent. 'Words matter. The difference between internal and external could save his life.'",
+      "q": "If 'internal' means inside the body's tissues, where would 'external' respiration logically occur?",
+      "options": [
+        "Deep within individual cells",
+        "At the lungs, where air meets blood",
+        "In the brain's respiratory center",
+        "Throughout the bloodstream"
+      ],
+      "answer": 1,
+      "explain": "EXTERNAL = involving the OUTSIDE. External respiration happens at the lungs because that's where your INTERNAL blood meets the EXTERNAL world (air). It's the border crossing, the interface between you and the atmosphere.",
+      "wrongExplains": {
+        "0": "That's as internal as it gets! Cellular respiration happens there. External means the boundary with outside air.",
+        "2": "The brain controls breathing but doesn't perform gas exchange. External respiration needs access to outside air.",
+        "3": "Blood carries the gases but doesn't exchange them. The exchange happens where blood meets air - at the lungs."
+      }
+    },
+    {
+      "id": "900.5.01.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "The bus emerges into a vast pink cavern - an alveolus. Millions of red blood cells stream past the thin walls. 'Watch closely,' Ms. Frizzle murmurs. 'This is where the magic happens. Two gases, passing like ships in the night.'",
+      "q": "During external respiration at the lungs, which gases are exchanged?",
+      "options": [
+        "Oxygen enters blood, nitrogen leaves blood",
+        "Oxygen enters blood, carbon dioxide leaves blood",
+        "Carbon dioxide enters blood, oxygen leaves blood",
+        "Nitrogen enters blood, oxygen leaves blood"
+      ],
+      "answer": 1,
+      "explain": "It's a two-way street: O2 rushes INTO the blood (your cells are starving for it), while CO2 - the waste product of metabolism - rushes OUT. Imagine a busy border crossing: fresh workers going in, tired workers going home.",
+      "wrongExplains": {
+        "0": "Nitrogen just rides along unchanged - it's 78% of air but your body doesn't use it. The action is between oxygen and carbon dioxide.",
+        "2": "That's backwards! Your body needs oxygen IN and wants carbon dioxide OUT. Flipping these would be suffocating.",
+        "3": "Nitrogen is inert in your body. The real exchange is oxygen coming in and carbon dioxide going out."
+      }
+    },
+    {
+      "id": "900.5.01.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "You watch a single red blood cell squeeze through a capillary wrapped around the alveolus. It enters dark purple, almost blue. Seconds later, it emerges bright red. 'The transformation,' Ms. Frizzle says. 'Deoxygenated becomes oxygenated. Right before your eyes.'",
+      "q": "What causes the color change in blood during external respiration?",
+      "options": [
+        "Blood absorbs red light from the alveoli",
+        "Hemoglobin binds oxygen, changing from dark to bright red",
+        "Carbon dioxide makes blood turn blue",
+        "The lung tissue dyes the blood cells"
+      ],
+      "answer": 1,
+      "explain": "Hemoglobin is a shape-shifter! When it grabs oxygen, its molecular structure changes, reflecting different wavelengths of light. Oxygenated = bright cherry red. Deoxygenated = darker, almost crimson. The color tells the story of the gas exchange.",
+      "wrongExplains": {
+        "0": "Blood doesn't absorb color from outside - the color change comes from inside the hemoglobin molecule itself.",
+        "2": "Blood is never actually blue (that's a myth). CO2-rich blood is just a darker shade of red, not blue.",
+        "3": "Lung tissue doesn't dye anything. The color change is purely chemical - oxygen binding to hemoglobin."
+      }
+    },
+    {
+      "id": "900.5.01.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "The bus's sensors detect a problem. Some alveoli nearby are flooded with fluid. 'Pneumonia,' Ms. Frizzle says grimly. 'When fluid fills the air sacs, external respiration fails. The gases can't cross.'",
+      "q": "Why does fluid in the alveoli prevent external respiration?",
+      "options": [
+        "Fluid is too heavy for oxygen molecules",
+        "Gases must diffuse across a thin, dry membrane",
+        "Fluid absorbs all the carbon dioxide",
+        "The lungs cannot inflate when wet"
+      ],
+      "answer": 1,
+      "explain": "Diffusion is fastest through thin, dry barriers. Add fluid and you add THICKNESS. It's like trying to hear someone through a wall versus through a thick pillow - the signal gets weaker. Gases diffuse poorly through fluid.",
+      "wrongExplains": {
+        "0": "Oxygen molecules are tiny and can move through fluid - it's just SLOWER. The issue is distance, not weight.",
+        "2": "Fluid doesn't selectively absorb CO2. It impairs ALL gas movement by increasing the diffusion distance.",
+        "3": "Lungs can still inflate when wet - the problem is that gas exchange is blocked at the cellular level."
+      }
+    },
+    {
+      "id": "900.5.01.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Pop quiz!' Ms. Frizzle announces. 'Mr. Edgar needs us to be precise. Doctors use specific terms for specific processes. Mixing them up could mean the wrong treatment.'",
+      "q": "How is external respiration different from ventilation?",
+      "options": [
+        "They are the same thing",
+        "Ventilation is air movement; external respiration is gas exchange",
+        "External respiration is air movement; ventilation is gas exchange",
+        "Both occur only in the bronchi"
+      ],
+      "answer": 1,
+      "explain": "VENTILATION = the bellows (moving air in and out). EXTERNAL RESPIRATION = the actual swap (O2 in, CO2 out). You can ventilate perfectly but still fail at external respiration if the membrane is damaged. They're partners, but different jobs.",
+      "wrongExplains": {
+        "0": "Dangerous confusion! You can ventilate a patient (breathe for them) without achieving gas exchange if the lungs are damaged.",
+        "2": "You've got them reversed. Ventilation moves air; respiration exchanges gases. Remember: ventilator = air mover.",
+        "3": "The bronchi conduct air but don't exchange gases. External respiration happens at the alveoli."
+      }
+    },
+    {
+      "id": "900.5.01.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "The bus follows a red blood cell leaving the lungs, now loaded with oxygen. It travels through the heart and out to a muscle cell in Mr. Edgar's hand. 'Watch,' Ms. Frizzle says. 'This is the OTHER respiration.'",
+      "q": "When oxygen leaves the blood to enter a muscle cell, this is called:",
+      "options": [
+        "External respiration",
+        "Internal respiration",
+        "Cellular respiration",
+        "Pulmonary ventilation"
+      ],
+      "answer": 1,
+      "explain": "INTERNAL respiration = gas exchange at the TISSUE level. It's 'internal' because it's deep INSIDE the body, far from outside air. Same principle as external respiration, different location. Oxygen goes to cells, CO2 comes back.",
+      "wrongExplains": {
+        "0": "External respiration is at the lungs, where blood meets AIR. This is in the tissues, far from air - so it's internal.",
+        "2": "Cellular respiration is what happens INSIDE the cell with that oxygen (making ATP). Internal respiration is the delivery system.",
+        "3": "Ventilation is breathing - moving air. This exchange at tissues has nothing to do with moving air."
+      }
+    },
+    {
+      "id": "900.5.01.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Final distinction,' Ms. Frizzle says as the bus hovers near a mitochondrion inside a cell. 'Once oxygen gets inside a cell, something completely different happens. Not exchange - transformation.'",
+      "q": "Cellular respiration differs from external respiration because cellular respiration:",
+      "options": [
+        "Occurs in the lungs",
+        "Produces ATP energy inside cells",
+        "Involves breathing movements",
+        "Exchanges gases with blood"
+      ],
+      "answer": 1,
+      "explain": "CELLULAR respiration is biochemistry, not gas exchange. It's the furnace inside each cell that BURNS oxygen to produce ATP (energy). External respiration delivers the oxygen; cellular respiration USES it. Delivery vs. consumption.",
+      "wrongExplains": {
+        "0": "External respiration occurs in the lungs. Cellular respiration is inside every cell with mitochondria.",
+        "2": "Breathing movements are ventilation. Cellular respiration is a chemical reaction, no movement involved.",
+        "3": "Gas exchange with blood is internal respiration. Cellular respiration is what cells DO with the oxygen."
+      }
+    },
+    {
+      "id": "900.5.01.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Mr. Edgar's monitors stabilize. 'You've learned to distinguish the terms,' Ms. Frizzle smiles. 'Now, the final question - the one that brought us here.'",
+      "q": "The process of gas exchange between the lungs and the blood is called:",
+      "options": [
+        "Ventilation",
+        "External respiration",
+        "Internal respiration",
+        "Cellular respiration"
+      ],
+      "answer": 1,
+      "explain": "EXTERNAL RESPIRATION: Gas exchange at the LUNGS. Oxygen from alveoli crosses into blood; carbon dioxide crosses out. It's 'external' because the lungs are where your INTERNAL blood meets the EXTERNAL world. The border crossing of breath.",
+      "wrongExplains": {
+        "0": "Ventilation is the MOVEMENT of air (breathing in and out). It delivers air to the lungs but isn't the exchange itself.",
+        "2": "Internal respiration occurs at the TISSUES, not the lungs. Same principle, different location - deep inside the body.",
+        "3": "Cellular respiration is the METABOLIC process inside cells that uses oxygen. It's chemistry, not gas exchange."
+      }
+    }
+  ]
+}

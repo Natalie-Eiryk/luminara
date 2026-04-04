@@ -1,0 +1,159 @@
+{
+  "parentId": "100.1.15",
+  "parentQuestion": "A 34-year-old patient presents with vision loss in the right visual field of BOTH eyes. They cannot see anything to their right, but left visual field is completely normal in both eyes. An MRI would most likely reveal a lesion in which location?",
+  "scaffolds": [
+    {
+      "q": "How is visual information organized in the brain?",
+      "options": [
+        "By which eye saw it",
+        "By visual FIELD (where in space the object is)",
+        "Randomly",
+        "Only by color"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Visual information is organized by VISUAL FIELD, not by eye. The brain cares about WHERE IN SPACE something is. Both eyes contribute to each visual field.",
+      "wrongExplains": {
+        "0": "The brain organizes by visual field location, not by individual eye.",
+        "2": "Visual processing is highly organized, not random.",
+        "3": "Spatial location is the primary organizational principle, not color."
+      }
+    },
+    {
+      "q": "Which hemisphere processes the RIGHT visual field?",
+      "options": [
+        "The right hemisphere",
+        "The left hemisphere",
+        "Both equally",
+        "Neither"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The LEFT HEMISPHERE processes the RIGHT visual field from both eyes. The visual system is CONTRALATERAL — the left brain handles the right side of visual space, and vice versa.",
+      "wrongExplains": {
+        "0": "Visual processing is contralateral. Right field goes to left hemisphere.",
+        "2": "Processing is lateralized — each hemisphere handles the opposite visual field.",
+        "3": "Visual information is definitely processed — in the contralateral hemisphere."
+      }
+    },
+    {
+      "q": "What happens at the optic chiasm?",
+      "options": [
+        "All fibers stay on the same side",
+        "Visual pathways partially cross (partial decussation)",
+        "All fibers cross completely",
+        "Vision is processed here"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "At the OPTIC CHIASM, NASAL retinal fibers CROSS to the opposite side. TEMPORAL retinal fibers STAY on the same side. This PARTIAL DECUSSATION sorts information by visual field.",
+      "wrongExplains": {
+        "0": "Some fibers cross (nasal) and some stay (temporal).",
+        "2": "Only nasal fibers cross. Temporal fibers stay ipsilateral.",
+        "3": "The chiasm is a crossing point, not a processing center."
+      }
+    },
+    {
+      "q": "What does each optic tract carry after the chiasm?",
+      "options": [
+        "Information from one eye only",
+        "Information from ONE visual field (from both eyes)",
+        "All visual information",
+        "Only color information"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "After the chiasm, each OPTIC TRACT carries information from ONE VISUAL FIELD (from both eyes). The LEFT tract carries RIGHT visual field from both eyes. The RIGHT tract carries LEFT visual field.",
+      "wrongExplains": {
+        "0": "After the chiasm, tracts carry visual field information, not single-eye information.",
+        "2": "Each tract carries half the visual field, not all information.",
+        "3": "All visual modalities are carried, organized by visual field."
+      }
+    },
+    {
+      "q": "What is homonymous hemianopsia?",
+      "options": [
+        "Vision loss in one eye only",
+        "Loss of the same visual field in BOTH eyes",
+        "Complete blindness",
+        "Loss of color vision"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "'HOMONYMOUS' = same side in both eyes. 'HEMIANOPSIA' = half vision loss. This pattern indicates damage AFTER the optic chiasm (optic tract, radiations, or visual cortex).",
+      "wrongExplains": {
+        "0": "One-eye loss would indicate optic nerve damage. Homonymous affects both eyes.",
+        "2": "Hemianopsia is half-field loss, not complete blindness.",
+        "3": "This describes visual field loss, not color vision specifically."
+      }
+    },
+    {
+      "q": "What does RIGHT homonymous hemianopsia indicate?",
+      "options": [
+        "Right optic nerve damage",
+        "Damage to the LEFT visual pathway (after the chiasm)",
+        "Right eye damage",
+        "Optic chiasm damage"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "RIGHT homonymous hemianopsia (right field loss in both eyes) = damage to the LEFT visual pathway (optic tract, radiations, or visual cortex). The left pathway carries right field information.",
+      "wrongExplains": {
+        "0": "Optic nerve damage would affect only one eye, not both.",
+        "2": "Eye damage would cause monocular, not homonymous, visual loss.",
+        "3": "Chiasm damage causes bitemporal hemianopsia, not homonymous."
+      }
+    },
+    {
+      "q": "Which tract carries the right visual field?",
+      "options": [
+        "Right optic tract",
+        "Left optic tract",
+        "Both tracts equally",
+        "Neither tract"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The LEFT OPTIC TRACT carries the RIGHT visual field (from both eyes). After the chiasm, visual information is organized by field, and processing is contralateral.",
+      "wrongExplains": {
+        "0": "The right tract carries left visual field. Right field goes to left tract.",
+        "2": "Visual fields are segregated — each tract carries one field.",
+        "3": "Visual information is definitely carried by the tracts."
+      }
+    },
+    {
+      "q": "What pattern does optic chiasm damage cause?",
+      "options": [
+        "Homonymous hemianopsia",
+        "Bitemporal hemianopsia (loss of outer fields in both eyes)",
+        "Complete blindness in one eye",
+        "Normal vision"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "OPTIC CHIASM damage causes BITEMPORAL HEMIANOPSIA — loss of the OUTER (temporal) visual fields in both eyes. This is different from the homonymous pattern in this patient.",
+      "wrongExplains": {
+        "0": "Homonymous hemianopsia indicates post-chiasm damage, not chiasm damage.",
+        "2": "Chiasm damage affects both eyes' crossing fibers, causing bilateral temporal loss.",
+        "3": "Chiasm damage definitely causes visual field deficits."
+      }
+    },
+    {
+      "q": "Where is the lesion most likely located in this patient?",
+      "options": [
+        "Right optic nerve",
+        "Left optic tract",
+        "Optic chiasm",
+        "Right eye"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "LEFT OPTIC TRACT. It carries the right visual field from both eyes. Damage here causes right homonymous hemianopsia. Not right optic nerve (that would affect only the right eye), not chiasm (that would cause bitemporal loss).",
+      "wrongExplains": {
+        "0": "Right optic nerve damage would affect only right eye vision, not both eyes.",
+        "2": "Optic chiasm damage causes bitemporal hemianopsia, not homonymous.",
+        "3": "Eye damage causes monocular loss. This patient has bilateral visual field loss."
+      }
+    }
+  ]
+}

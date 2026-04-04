@@ -1,0 +1,783 @@
+{
+  "version": "1.0",
+  "source": "LUMI-OS Teaching Module",
+  "prefix": "600.4",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": "600.4.01",
+      "q": "The photoreceptors responsible for color vision are:",
+      "options": [
+        "Rods",
+        "Cones",
+        "Bipolar cells",
+        "Ganglion cells"
+      ],
+      "answer": 1,
+      "explain": "Cones detect color and provide sharp central vision. Three types (red, green, blue) combine signals to create color perception.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "600.4.02",
+      "q": "The fovea centralis is the region of:",
+      "options": [
+        "Highest rod concentration",
+        "Highest cone concentration and visual acuity",
+        "Optic nerve exit",
+        "Peripheral vision"
+      ],
+      "answer": 1,
+      "explain": "The fovea is a tiny pit in the macula where cones are densely packed. It provides the sharpest vision for reading and detailed tasks.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "600.4.03",
+      "q": "The iris regulates the amount of light entering the eye by changing the size of the:",
+      "options": [
+        "Lens",
+        "Pupil",
+        "Cornea",
+        "Retina"
+      ],
+      "answer": 1,
+      "explain": "The iris is a muscular diaphragm that constricts or dilates the pupil — the central opening that admits light.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "600.4.04",
+      "q": "The structure that changes shape to focus light on the retina is the:",
+      "options": [
+        "Cornea",
+        "Iris",
+        "Lens",
+        "Vitreous humor"
+      ],
+      "answer": 2,
+      "explain": "The lens changes shape (accommodation) to focus light from objects at different distances onto the retina.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "600.4.05",
+      "q": "The cochlea is the structure responsible for:",
+      "options": [
+        "Balance",
+        "Hearing",
+        "Taste",
+        "Smell"
+      ],
+      "answer": 1,
+      "explain": "The cochlea is a spiral tube in the inner ear containing the organ of Corti — where sound vibrations are converted to neural signals.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "600.4.06",
+      "q": "The three small bones in the middle ear are called:",
+      "options": [
+        "Semicircular canals",
+        "Ossicles",
+        "Otoliths",
+        "Cochlear chambers"
+      ],
+      "answer": 1,
+      "explain": "The ossicles — malleus, incus, and stapes — form a chain that transmits and amplifies sound from the eardrum to the oval window.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "600.4.07",
+      "q": "The semicircular canals detect:",
+      "options": [
+        "Linear acceleration",
+        "Rotational acceleration",
+        "Sound frequency",
+        "Light intensity"
+      ],
+      "answer": 1,
+      "explain": "Semicircular canals detect rotational (angular) acceleration — head turning in any plane. Three canals oriented at right angles cover all rotations.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "600.4.08",
+      "q": "The retina is part of which tunic of the eye?",
+      "options": [
+        "Fibrous tunic",
+        "Vascular tunic (uvea)",
+        "Sensory tunic (neural)",
+        "Conjunctival layer"
+      ],
+      "answer": 2,
+      "explain": "The retina is the inner sensory tunic — containing photoreceptors and neural processing layers that detect light and begin visual processing.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "600.4.09",
+      "q": "The organ of Corti is located on the:",
+      "options": [
+        "Vestibular membrane",
+        "Basilar membrane",
+        "Tectorial membrane",
+        "Oval window"
+      ],
+      "answer": 1,
+      "explain": "The organ of Corti sits on the basilar membrane in the cochlea. Hair cells project into the tectorial membrane above.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "600.4.10",
+      "q": "Aqueous humor is produced by the:",
+      "options": [
+        "Lens",
+        "Ciliary body",
+        "Cornea",
+        "Retina"
+      ],
+      "answer": 1,
+      "explain": "The ciliary body produces aqueous humor, which fills the anterior and posterior chambers, nourishing the lens and cornea.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.5,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "600.4.11",
+      "q": "The eustachian tube connects the middle ear to the:",
+      "options": [
+        "Outer ear",
+        "Inner ear",
+        "Nasopharynx",
+        "Sinuses"
+      ],
+      "answer": 2,
+      "explain": "The eustachian (auditory) tube connects the middle ear to the nasopharynx, equalizing pressure across the eardrum.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "600.4.12",
+      "q": "Rhodopsin is the photopigment found in:",
+      "options": [
+        "Cones",
+        "Rods",
+        "Bipolar cells",
+        "Ganglion cells"
+      ],
+      "answer": 1,
+      "explain": "Rhodopsin is the visual pigment in rods — extremely sensitive to dim light. It consists of opsin protein plus retinal (vitamin A derivative).",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.5,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "600.4.13",
+      "q": "The optic disc is also known as the:",
+      "options": [
+        "Fovea",
+        "Blind spot",
+        "Macula",
+        "Ora serrata"
+      ],
+      "answer": 1,
+      "explain": "The optic disc is where ganglion cell axons exit to form the optic nerve. No photoreceptors exist here — creating a blind spot.",
+      "mechanism": null,
+      "isotopes": [
+        "ans.receptor"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "600.4.14",
+      "q": "The utricle and saccule detect:",
+      "options": [
+        "Sound waves",
+        "Rotational movement",
+        "Linear acceleration and head position",
+        "Light intensity"
+      ],
+      "answer": 2,
+      "explain": "The utricle and saccule are otolith organs — they detect linear acceleration (starting/stopping) and head position relative to gravity.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "600.4.15",
+      "q": "Olfactory receptors are located in the:",
+      "options": [
+        "Tongue",
+        "Nasal cavity roof",
+        "Pharynx",
+        "Larynx"
+      ],
+      "answer": 1,
+      "explain": "Olfactory epithelium lines the roof of the nasal cavity. Its bipolar neurons have cilia that detect odor molecules and send signals directly to the olfactory bulb.",
+      "mechanism": null,
+      "isotopes": [
+        "neurology.receptor"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.5,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "600.4.16",
+      "q": "The tympanic membrane is also called the:",
+      "options": [
+        "Oval window",
+        "Eardrum",
+        "Round window",
+        "Vestibule"
+      ],
+      "answer": 1,
+      "explain": "The tympanic membrane (eardrum) vibrates in response to sound waves, transferring energy to the ossicles.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "600.4.17",
+      "q": "The five primary taste sensations are sweet, sour, salty, bitter, and:",
+      "options": [
+        "Spicy",
+        "Umami",
+        "Metallic",
+        "Astringent"
+      ],
+      "answer": 1,
+      "explain": "Umami is the fifth basic taste — triggered by glutamate. It gives the savory, meaty flavor found in parmesan, soy sauce, and mushrooms.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "600.4.18",
+      "q": "The choroid layer of the eye:",
+      "options": [
+        "Is transparent",
+        "Contains blood vessels that nourish the retina",
+        "Refracts light",
+        "Produces aqueous humor"
+      ],
+      "answer": 1,
+      "explain": "The choroid is the vascular middle tunic — its rich blood supply nourishes the outer retina, and its pigment absorbs stray light.",
+      "mechanism": null,
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "600.4.19",
+      "q": "The sensory neurons for smell are:",
+      "options": [
+        "Multipolar neurons",
+        "Bipolar neurons",
+        "Unipolar neurons",
+        "Interneurons"
+      ],
+      "answer": 1,
+      "explain": "Olfactory sensory neurons are bipolar — one process extends to the nasal cavity surface, the other sends axons to the olfactory bulb.",
+      "mechanism": null,
+      "isotopes": [
+        "neurology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.5,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "600.4.20",
+      "q": "The sclera is the:",
+      "options": [
+        "Transparent front of the eye",
+        "White outer layer of the eye",
+        "Light-sensitive layer",
+        "Colored part of the eye"
+      ],
+      "answer": 1,
+      "explain": "The sclera is the tough, white outer coat of the eye — the 'white of the eye.' It protects and maintains eye shape.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "600.4.21",
+      "q": "Hair cells in the ear are:",
+      "options": [
+        "Neurons",
+        "Mechanoreceptors",
+        "Photoreceptors",
+        "Chemoreceptors"
+      ],
+      "answer": 1,
+      "explain": "Hair cells are mechanoreceptors — they convert mechanical bending of their stereocilia into electrical signals. They're not neurons themselves.",
+      "mechanism": null,
+      "isotopes": [
+        "neurology.receptor"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "600.4.22",
+      "q": "The vitreous humor fills the:",
+      "options": [
+        "Anterior chamber",
+        "Posterior chamber",
+        "Vitreous chamber",
+        "Middle ear"
+      ],
+      "answer": 2,
+      "explain": "The vitreous chamber (cavity) is the large space behind the lens, filled with vitreous humor — a gel-like substance maintaining eye shape.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "600.4.23",
+      "q": "Taste buds are located on projections called:",
+      "options": [
+        "Villi",
+        "Papillae",
+        "Cilia",
+        "Microvilli"
+      ],
+      "answer": 1,
+      "explain": "Papillae are the bumps on the tongue surface. Three types (circumvallate, fungiform, foliate) contain taste buds; filiform papillae do not.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "600.4.24",
+      "q": "The nerve that carries visual information to the brain is the:",
+      "options": [
+        "Oculomotor nerve",
+        "Trigeminal nerve",
+        "Optic nerve",
+        "Facial nerve"
+      ],
+      "answer": 2,
+      "explain": "The optic nerve (CN II) carries retinal ganglion cell axons from the eye to the brain — specifically to the lateral geniculate nucleus and visual cortex.",
+      "mechanism": null,
+      "isotopes": [
+        "ans.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.5,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "600.4.25",
+      "q": "The part of the ear that collects sound waves is the:",
+      "options": [
+        "Cochlea",
+        "Auricle (pinna)",
+        "Stapes",
+        "Vestibule"
+      ],
+      "answer": 1,
+      "explain": "The auricle (pinna) is the external ear flap that funnels sound waves into the ear canal toward the eardrum.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 15 — Special Senses",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    }
+  ]
+}

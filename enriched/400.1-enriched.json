@@ -1,0 +1,498 @@
+{
+  "version": "1.0",
+  "source": "LUMI-OS Teaching Module",
+  "prefix": "400.1",
+  "question_count": 14,
+  "questions": [
+    {
+      "id": "400.1.01",
+      "q": "Epithelial tissues have all of the following general characteristics except they ___.",
+      "options": [
+        "Have an__(apical/exposed) surface and a basal surface",
+        "Lack blood vessels (avascular)",
+        "Are composed of__(densely packed) cells with little extracellular matrix",
+        "Contain__(a__(lot of)) extracellular matrix"
+      ],
+      "answer": 3,
+      "explain": "Correct! Epithelia have minimal extracellular matrix. Their cells are densely packed together with minimal space between them. Having lots of ECM is connective tissue's specialty - this distinction is key to understanding tissue organization.",
+      "mechanism": {
+        "title": "Epithelial Tissue Characteristics",
+        "content": "Epithelial tissues have five defining features: (1) POLARITY: Apical and basal surfaces - one side faces the external environment or lumen, while the other anchors to the basement membrane. (2) AVASCULAR: No direct blood supply; nutrients arrive via diffusion from underlying connective tissue. (3) CELLULARITY: Densely packed cells with minimal ECM between them. (4) REGENERATION: High mitotic rate because these cells are constantly exposed to wear and damage. (5) INNERVATED: Well supplied with nerve endings for sensation. These characteristics reflect epithelial tissue's role as a protective and selective barrier.",
+        "metaphor": "Epithelial cells are like bathroom tiles - packed tightly together with essentially no space between them, forming a continuous barrier. Connective tissue cells are like furniture scattered across a room - few cells, lots of space (matrix) filling the area between them."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.1-epithelial-scaffolds/400.1.01-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "400.1.02",
+      "q": "Which one of the following would be found lining the digestive tract?",
+      "options": [
+        "Ciliated columnar epithelium",
+        "Pseudostratified columnar epithelium",
+        "Simple columnar epithelium",
+        "Simple squamous epithelium"
+      ],
+      "answer": 2,
+      "explain": "Correct! The digestive tract is lined by simple columnar epithelium. These tall cells are specialized for secretion and absorption, which require tremendous cellular machinery that simply won't fit in a flat cell. Form follows function with precision.",
+      "mechanism": {
+        "title": "Epithelial Distribution: Form Follows Function",
+        "content": "Epithelial type matches function across the body: SIMPLE SQUAMOUS: Thin barrier for diffusion/filtration - alveoli, capillaries, kidney glomerulus. SIMPLE CUBOIDAL: Secretion/absorption - kidney tubules, thyroid follicles. SIMPLE COLUMNAR: Heavy-duty absorption/secretion - GI tract, where tall cells pack in the organelles, enzymes, and transporters needed for nutrient processing. STRATIFIED SQUAMOUS: Protection from abrasion - skin, mouth, esophagus, vagina (surfaces subject to friction and mechanical stress). PSEUDOSTRATIFIED: Appears layered but all cells touch basement membrane - respiratory tract. Each location has architecture optimized for its specific demands.",
+        "metaphor": "Think of it as flooring choices: Thin linoleum where you need easy passage, thick protective layers where you get wear and tear, and tall structures where you need to pack in equipment. The GI tract needs tall columnar cells because absorption requires lots of machinery (organelles, enzymes, transporters), and you can't fit a factory into a flat cell."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.1-epithelial-scaffolds/400.1.02-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "400.1.03",
+      "q": "Transitional epithelium is found in the ___.",
+      "options": [
+        "Bladder",
+        "Trachea",
+        "Stomach",
+        "Esophagus"
+      ],
+      "answer": 0,
+      "explain": "Precisely. Transitional epithelium lines the urinary tract - bladder, ureters, and part of the urethra. It's specialized to stretch as these organs fill with urine. This tissue is uniquely suited to the urinary tract - it can stretch dramatically as the bladder fills without compromising the barrier function.",
+      "mechanism": {
+        "title": "Transitional Epithelium: The Stretchy Lining",
+        "content": "Transitional epithelium is unique to the urinary tract. When the bladder is empty, it appears 6-7 layers thick with dome-shaped surface cells (relaxed state). When the bladder fills, it stretches to appear only 2-3 layers thick with flat surface cells (stretched state). The cells don't disappear - they flatten and spread out, transforming themselves. Special membrane plaques in the cell surface allow this dramatic shape change without tearing or compromising the permeability barrier that keeps urine from leaking into surrounding tissues. This flexible architecture allows the bladder to expand from minimal volume to 400-600 mL capacity while maintaining leak-proof integrity.",
+        "metaphor": "Transitional epithelium is like a folding accordion or a telescope - it can compress into many apparent layers or expand to appear thin, all while maintaining its barrier function. When the bladder fills, the accordion stretches out; when it empties, it compresses back down. Same tissue, different configuration."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.1-epithelial-scaffolds/400.1.03-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.1.04",
+      "q": "Select the correct statement regarding epithelia.",
+      "options": [
+        "Simple epithelia form impermeable barriers",
+        "Stratified epithelia are present where protection from abrasion is important",
+        "Pseudostratified epithelia consist of at least two layers of cells stacked on top of one another",
+        "Stratified epithelia are tall, narrow cells"
+      ],
+      "answer": 1,
+      "explain": "Exactly. Stratified epithelia have multiple cell layers stacked like pancakes, making them ideal for protection against abrasion and mechanical stress. They exist because surface cells are constantly damaged and sloughed off. This is architecture designed for durability.",
+      "mechanism": {
+        "title": "Epithelial Layers and Protection",
+        "content": "Epithelial tissue architecture reflects function: SIMPLE (one layer): Allows passage - diffusion, filtration, absorption, secretion. Found where barrier function would interfere with the tissue's job. STRATIFIED (multiple layers): Provides protection - outer layers can be lost, abraded, or destroyed without damaging the organ. Basal cells continually divide to replace what dies. The outer layers are sacrificial, existing to protect deeper tissue. PSEUDOSTRATIFIED (one layer appearing as multiple): Not actually protective like true stratified epithelium - all cells touch the basement membrane, but nuclei at different levels create the illusion of layering. This architectural variation serves different physiological demands.",
+        "metaphor": "Simple epithelium is like a single sheet of plastic wrap - thin, excellent for selective wrapping and allowing things through, but terrible for protection. Stratified epithelium is like layers of duct tape stacked on top of each other - you can tear off the outer layers and there's still protection underneath. The outer layers are sacrificial."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.1-epithelial-scaffolds/400.1.04-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.5,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.1.05",
+      "q": "Choose which tissue would line the uterine (fallopian) tubes and function as a 'conveyer belt' to help move a fertilized egg towards the uterus.",
+      "options": [
+        "Simple cuboidal epithelium",
+        "Stratified squamous epithelium",
+        "Smooth muscle",
+        "Ciliated simple columnar epithelium"
+      ],
+      "answer": 3,
+      "explain": "Correct! Ciliated simple columnar epithelium lines the fallopian tubes. The cilia beat in coordinated waves, thousands of tiny bristles sweeping in perfect synchrony, moving the egg toward the uterus. This creates a microscopic current that propels the ovum along - a biological conveyor belt.",
+      "mechanism": {
+        "title": "Ciliated Epithelia: Biological Conveyor Belts",
+        "content": "Ciliated epithelia move substances across surfaces through coordinated beating: RESPIRATORY TRACT - moves mucus plus trapped debris upward (the mucociliary escalator). FALLOPIAN TUBES - moves ovum toward uterus. BRAIN VENTRICLES - circulates cerebrospinal fluid. Each cilium contains microtubules powered by dynein motor proteins, consuming ATP to bend and sweep. Thousands of cilia beat in waves, each slightly out of phase with its neighbors, creating coordinated currents. This synchronized movement allows directional transport without muscular contraction.",
+        "metaphor": "Cilia are like the bristles of thousands of tiny brushes sweeping in perfect synchrony, each one slightly delayed from the next to create a wave. In the fallopian tube, this coordinated sweeping creates a current that gently propels the egg along - a microscopic river created by cellular oars."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.1-epithelial-scaffolds/400.1.05-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "400.1.06",
+      "q": "Which of the following is NOT a function of epithelial tissue?",
+      "options": [
+        "Absorption",
+        "Secretion",
+        "Filtration",
+        "Support"
+      ],
+      "answer": 3,
+      "explain": "Precisely. Support is a function of connective tissue, not epithelial tissue. Epithelia are the interfaces and barriers - they handle absorption, secretion, filtration, protection, and sensory reception. But structural support is connective tissue's domain. This distinction is fundamental to tissue classification.",
+      "mechanism": {
+        "title": "Epithelial vs. Connective Tissue Functions",
+        "content": "Epithelial and connective tissues have distinct functional roles: EPITHELIAL FUNCTIONS: Protection (skin), absorption (intestines), secretion (glands), excretion (kidney tubules), filtration (glomeruli), sensory reception (taste buds, olfactory epithelium). These are all interface functions - epithelial tissue is where the body meets the world or creates internal compartments. CONNECTIVE TISSUE FUNCTIONS: Support, binding, storage, transport, protection. Epithelial tissue covers surfaces and forms barriers; connective tissue provides structural support with its abundant extracellular matrix. One creates interfaces, the other creates structure.",
+        "metaphor": "Epithelial tissue is like the tiles, paint, and wallpaper on a building - covering surfaces, protecting them, providing the interface with the environment. Connective tissue is like the steel beams, concrete foundation, and wooden framework - the structural support that holds everything up and keeps it from collapsing."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.1-epithelial-scaffolds/400.1.06-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.1.07",
+      "q": "Keratinized stratified squamous epithelium is found in the ___.",
+      "options": [
+        "Epidermis of skin",
+        "Esophagus",
+        "Oral cavity",
+        "Vagina"
+      ],
+      "answer": 0,
+      "explain": "Correct! Keratinized stratified squamous epithelium makes up the epidermis of skin. The surface cells are dead, completely filled with keratin, forming a tough, waterproof barrier. This protective layer consists of cells that have undergone programmed death to become your body's outermost armor.",
+      "mechanism": {
+        "title": "Keratinized vs. Non-Keratinized Stratified Squamous",
+        "content": "Stratified squamous epithelium exists in two forms: KERATINIZED: Epidermis of skin. Surface cells are dead and filled with tough, fibrous keratin protein. Waterproof, extremely abrasion-resistant. The cells undergo programmed cell death (cornification) as they move upward, sacrificing themselves to form protective armor. They die so the body can live. NON-KERATINIZED: Wet internal surfaces (oral cavity, esophagus, vagina). Surface cells remain alive and are kept moist by secretions. Still protective against abrasion but maintains flexibility and moisture. The surface cells eventually die and slough off from mechanical wear, not from keratinization. This distinction matters for understanding where moisture and flexibility are needed versus where waterproofing is paramount.",
+        "metaphor": "Keratinized epithelium is like laminated flooring - extremely tough, water-resistant, impermeable, but rigid and brittle. Non-keratinized epithelium is like rubber flooring - still protective but flexible, better when wet, and needs to stay that way to function properly."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.1-epithelial-scaffolds/400.1.07-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "400.1.08",
+      "q": "Which type of epithelium is found lining the alveoli of the lungs?",
+      "options": [
+        "Simple squamous",
+        "Simple columnar",
+        "Stratified squamous",
+        "Transitional"
+      ],
+      "answer": 0,
+      "explain": "Correct! Simple squamous epithelium lines the alveoli because gas exchange requires the thinnest possible barrier - only 0.5 micrometers thick. This minimal distance allows rapid O2 and CO2 diffusion across the respiratory membrane. Any thicker, and diffusion would be too slow to sustain life. The body has optimized this structure for maximum efficiency.",
+      "mechanism": {
+        "title": "Respiratory Membrane: Designed for Gas Exchange",
+        "content": "The respiratory membrane (blood-air barrier) is optimized for gas exchange. It consists of three fused layers: (1) alveolar epithelium (simple squamous type I pneumocytes - about 95% of alveolar surface), (2) fused basement membranes of epithelium and endothelium, and (3) capillary endothelium (also simple squamous). Total thickness: Only about 0.5 micrometers. This minimal distance allows rapid O2 and CO2 diffusion driven by partial pressure gradients. You have about 300 million alveoli creating roughly 70 square meters of gas exchange surface (the size of a tennis court) all packed into your chest. A tennis court of surface area, compressed into a space the size of two fists, with barriers so thin they're at the physical limit of cellular life.",
+        "metaphor": "The alveolar epithelium is like plastic wrap stretched across a window - it's there to separate the spaces (air from blood) while allowing gases to pass through freely. Make it any thicker and you'd be trying to breathe through drywall. The body optimized this barrier to the physical limits of what a living cell can be - any thinner and the cells couldn't survive."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.1-epithelial-scaffolds/400.1.08-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.5,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.1.09",
+      "q": "A patient with chronic acid reflux develops Barrett's esophagus, where the normal esophageal lining transforms into columnar epithelium with goblet cells resembling intestinal tissue. This adaptive process is called ___.",
+      "options": [
+        "Metaplasia",
+        "Dysplasia",
+        "Hyperplasia",
+        "Atrophy"
+      ],
+      "answer": 0,
+      "explain": "Precisely. This is metaplasia - the reversible replacement of one differentiated tissue type with another in response to chronic irritation. The esophagus, normally lined by stratified squamous epithelium, transforms into columnar epithelium to better withstand acid exposure. This adaptation helps the tissue survive, but it also increases cancer risk - many metaplasias are precancerous.",
+      "mechanism": {
+        "title": "Metaplasia: Tissue Transformation Under Stress",
+        "content": "Metaplasia is the reversible replacement of one differentiated cell type with another, usually in response to chronic irritation or inflammation. Classic examples: (1) Barrett's esophagus - stratified squamous to columnar with goblet cells (acid exposure), (2) Respiratory epithelium in smokers - pseudostratified ciliated columnar to stratified squamous (smoke irritation), (3) Bladder epithelium - transitional to squamous (chronic inflammation from kidney stones). The tissue adapts to survive, choosing a cell type better suited to the hostile environment. However, this adaptation often comes with a cost. Many metaplasias are precancerous - the tissue that changed to protect itself becomes vulnerable in new ways. This tension between survival and danger makes metaplasia clinically significant.",
+        "metaphor": "Metaplasia is like replacing the regular tiles in your shower (stratified squamous) with acid-resistant industrial tiles (columnar) because someone keeps throwing acid in there. The new tiles handle acid better, but they weren't designed for that location and may cause problems long-term. The adaptation solves one problem while potentially creating another."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.1-epithelial-scaffolds/400.1.09-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.1.10",
+      "q": "A patient with Fanconi syndrome has defective kidney tubules that cannot reabsorb glucose, amino acids, and phosphate despite normal blood levels. Which specialized epithelial feature is malfunctioning?",
+      "options": [
+        "Tight junctions",
+        "Transport proteins in cell membranes",
+        "Cilia",
+        "Keratin"
+      ],
+      "answer": 1,
+      "explain": "Precisely. This is transport protein failure in simple cuboidal kidney tubule epithelium. These cells contain specialized membrane transport proteins that actively reabsorb nutrients from the filtrate. When those transporters fail, glucose and amino acids spill into urine. The cellular structure looks normal, but the molecular machinery doesn't work.",
+      "mechanism": {
+        "title": "Epithelial Transport: The Molecular Machinery of Absorption",
+        "content": "Epithelial cells accomplish selective absorption and secretion through specialized membrane transport proteins. Simple cuboidal epithelium in kidney tubules contains: (1) APICAL MEMBRANE (faces the lumen/filtrate): Na+-glucose cotransporters (SGLT), amino acid transporters, phosphate transporters - these actively pull substances from the filtrate into the cell using energy. (2) BASOLATERAL MEMBRANE (faces the blood): GLUT transporters (glucose), other carriers that move substances from the cell into the blood. This is transcellular transport - substances move through cells via specific molecular machinery. In Fanconi syndrome, multiple proximal tubule transporters fail simultaneously, often due to genetic defects or toxic injury. The cells look normal under a microscope, but their molecular equipment is broken. Glucose, amino acids, phosphate, and bicarbonate all spill uselessly into urine. Structure without function is decoration without purpose.",
+        "metaphor": "Epithelial transport proteins are like conveyor belts and pumps in a factory - they actively move specific cargo (glucose, amino acids) from one side of the cell to the other. In Fanconi syndrome, these conveyor belts are broken. The factory building (cell structure) looks fine, but cargo just falls through and gets wasted because the machinery doesn't work."
+      },
+      "isotopes": [
+        "cardiology.function"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.1-epithelial-scaffolds/400.1.10-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.1.11",
+      "q": "A long-term smoker's respiratory epithelium undergoes changes, losing cilia and transforming into stratified squamous epithelium. What immediate functional consequence occurs?",
+      "options": [
+        "Improved gas exchange",
+        "Loss of the mucociliary escalator",
+        "Increased oxygen absorption",
+        "Enhanced immune defense"
+      ],
+      "answer": 1,
+      "explain": "Correct! When ciliated pseudostratified columnar epithelium transforms into stratified squamous, the mucociliary escalator is lost. No cilia means no upward sweeping of mucus and debris. The respiratory tract becomes a stagnant pond where bacteria and particulates accumulate. The protective conveyor belt has stopped.",
+      "mechanism": {
+        "title": "Mucociliary Escalator and Smoker's Metaplasia",
+        "content": "The mucociliary escalator is a critical defensive mechanism consisting of: (1) Goblet cells secreting mucus that traps inhaled debris, bacteria, particulates. (2) Cilia on columnar cells beating in coordinated waves (metachronal rhythm), sweeping the mucus blanket upward at about 1-2 cm/minute toward the throat. (3) The mucus is then swallowed or coughed out, removing the trapped contaminants. Chronic smoke exposure causes metaplasia - pseudostratified ciliated columnar transforms to stratified squamous. The tissue adapts to survive the smoke, becoming thicker and more protective, but it loses the cilia in the process. No cilia equals no escalator. Mucus and debris stagnate. Chronic bronchitis develops. Infections become frequent. The smoker coughs constantly (smoker's cough) trying to manually clear what the cilia used to handle automatically. The body's adaptation to toxins destroys the very mechanism designed to remove those toxins.",
+        "metaphor": "The mucociliary escalator is like an airport moving walkway coated with sticky flypaper - particles get stuck to the mucus, and the cilia (walkway) carry them up and out. Smoker's metaplasia is like replacing that moving walkway with a regular staircase. It's more durable against abuse, but it doesn't move anymore. The flypaper still catches particles, but they just sit there accumulating because there's no conveyor belt to remove them."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.1-epithelial-scaffolds/400.1.11-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.5,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.1.12",
+      "q": "A patient with primary ciliary dyskinesia (Kartagener syndrome) has immotile cilia throughout their body. Which of the following clinical manifestations would you NOT expect?",
+      "options": [
+        "Chronic respiratory infections",
+        "Infertility in males",
+        "Situs inversus (reversed organ placement)",
+        "Inability to absorb nutrients in the intestines"
+      ],
+      "answer": 3,
+      "explain": "Precisely. Intestinal nutrient absorption doesn't depend on cilia; it depends on microvilli (brush border) and membrane transport proteins in simple columnar epithelium. Cilia move things across surfaces; microvilli increase surface area for absorption. Different structures, different functions. This patient would have respiratory and fertility problems but normal digestion.",
+      "mechanism": {
+        "title": "Cilia vs. Microvilli: Function and Dysfunction",
+        "content": "Two cellular projections are often confused but serve completely different functions: CILIA: Long (5-10 micrometers), motile projections with 9+2 microtubule arrangement powered by dynein motor proteins. Function: Move substances across epithelial surfaces. Locations: Respiratory tract (mucociliary escalator), fallopian tubes (move ovum), brain ventricles (circulate CSF), embryonic node (establish body asymmetry). MICROVILLI: Short (1-2 micrometers), non-motile projections with actin filament core. Function: Increase surface area for absorption. Locations: Intestinal brush border, kidney proximal tubule. In primary ciliary dyskinesia, defective dynein arms paralyze cilia but don't affect microvilli at all. The patient suffers from failed mucociliary clearance (respiratory infections), immotile sperm (male infertility), failed embryonic ciliary flow (randomized organ placement, 50% situs inversus). But intestinal microvilli work perfectly. Motion versus surface area, movement versus absorption - different tools for different jobs.",
+        "metaphor": "Cilia are like the bristles on a broom that sweep - they're for moving things. Microvilli are like shag carpet fibers that increase surface area - they're for contact and absorption, not movement. Primary ciliary dyskinesia breaks the broom bristles but leaves the carpet intact. The patient can still absorb (intestines work fine) but can't sweep (respiratory clearance fails, sperm can't swim)."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.1-epithelial-scaffolds/400.1.12-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.8,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.1.13",
+      "q": "A patient undergoes cystoscopy, and the urologist observes that the bladder epithelium appears much thinner when the bladder is full compared to when it's empty. This observation is consistent with which epithelial property?",
+      "options": [
+        "Metaplasia",
+        "Keratinization",
+        "Transitional epithelium's ability to stretch",
+        "Epithelial regeneration"
+      ],
+      "answer": 2,
+      "explain": "Exactly. This demonstrates transitional epithelium's ability to transform without actually changing cell type. When relaxed, it appears 6-7 layers thick with dome-shaped surface cells. When stretched, it appears only 2-3 layers thick with flattened cells. Same cells, same tissue, two completely different appearances - mechanical flexibility at its finest.",
+      "mechanism": {
+        "title": "Transitional Epithelium: Mechanical Adaptability",
+        "content": "Transitional epithelium, found exclusively in the urinary tract (renal pelvis, ureters, bladder, proximal urethra), has remarkable mechanical properties: RELAXED STATE (empty organ): Appears 6-7 cell layers thick. Surface cells (umbrella cells) are large and dome-shaped. Tissue is folded and compressed. STRETCHED STATE (full organ): Appears 2-3 cell layers thick. Surface cells flatten dramatically into squamous shapes. Tissue unfolds and spreads. The cells don't multiply or disappear - they change shape and the tissue unfolds. Special features allow this: (1) Membrane plaques (composed of uroplakin proteins) in umbrella cells allow dramatic surface area expansion without membrane rupture. (2) Cells can slide past each other slightly. (3) The tissue has elastic properties that allow stretching and recoil. The bladder can hold 400-600 mL of urine, expanding from a small collapsed sac to a large distended organ, all while maintaining a leak-proof barrier.",
+        "metaphor": "Transitional epithelium is like an accordion or a folding paper lantern. When compressed (empty bladder), it has many visible folds and appears thick. When stretched (full bladder), it unfolds and flattens out, appearing much thinner. Same material, same cells, just different mechanical configurations. The cells transform from cube-like to flat without actually changing their fundamental identity."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.1-epithelial-scaffolds/400.1.13-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.1.14",
+      "q": "A patient presents with difficulty swallowing and endoscopy reveals white patches on the tongue and esophagus. Biopsy shows the normally non-keratinized epithelium has developed a keratinized layer. This abnormal keratinization is most likely caused by ___.",
+      "options": [
+        "Chronic mechanical irritation or chemical injury",
+        "Bacterial infection",
+        "Viral transformation",
+        "Improved epithelial protection"
+      ],
+      "answer": 0,
+      "explain": "Precisely. Abnormal keratinization of normally non-keratinized epithelium (like oral cavity or esophagus) usually signals chronic irritation or chemical injury. The tissue is trying to protect itself by developing armor where armor shouldn't exist. This is adaptation with consequences - keratinization in wet internal surfaces causes rigidity, interferes with normal function, and may indicate underlying pathology or precancerous changes.",
+      "mechanism": {
+        "title": "Pathologic Keratinization: When Protection Becomes Warning",
+        "content": "Keratinization serves different purposes in different locations: NORMAL KERATINIZATION: Epidermis of skin - surface cells fill with keratin, die, form tough waterproof barrier. This is appropriate for surfaces exposed to air and environmental stress. NON-KERATINIZED (NORMAL FOR WET SURFACES): Oral cavity, esophagus, vagina - surface cells stay alive and moist. These tissues need flexibility and are kept moist by secretions. PATHOLOGIC KERATINIZATION: When normally non-keratinized surfaces develop keratin. Causes include chronic mechanical irritation (dentures, tongue biting), chemical injury (smoking, alcohol, hot liquids), chronic inflammation, nutritional deficiencies. The appearance is leukoplakia - white patches that can't be scraped off (unlike thrush, which is fungal and can be removed). Leukoplakia may represent simple hyperkeratosis (benign) or dysplasia (precancerous). Biopsy is essential. The tissue develops armor to protect against chronic injury, but that armor may signal cellular transformation beneath. Protection and danger intertwined.",
+        "metaphor": "Pathologic keratinization is like putting waterproof sealant inside your mouth or throat - it might protect against the irritation you're causing, but it's not supposed to be there, it interferes with normal function (flexibility, moisture), and its very presence indicates something is chronically wrong. The protection itself becomes evidence of ongoing damage."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.1-epithelial-scaffolds/400.1.14-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    }
+  ]
+}

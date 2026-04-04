@@ -1,0 +1,157 @@
+{
+  "version": "1.0.0",
+  "batchId": "510.10.04",
+  "questionsScaffolded": 25,
+  "scaffolds": [
+    {
+      "parentId": "510.10.04.01",
+      "scaffolds": [
+        {"id": "510.10.04.01.s1", "type": "prerequisite", "q": "Is 7 odd or even?", "options": ["Odd", "Even", "Both", "Neither"], "answer": 0, "explain": "7 is odd - it can't be split into two equal groups.", "isotope": "510.10.ordering", "difficulty": 0.12, "zpdMoment": "odd_identify"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.02",
+      "scaffolds": [
+        {"id": "510.10.04.02.s1", "type": "prerequisite", "q": "60 - 10 = ?", "options": ["50", "70", "51", "610"], "answer": 0, "explain": "60 - 10 = 50.", "isotope": "510.10.place-value.intro", "difficulty": 0.1, "zpdMoment": "subtract_ten"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.03",
+      "scaffolds": [
+        {"id": "510.10.04.03.s1", "type": "prerequisite", "q": "10 - 1 = ?", "options": ["9", "10", "11", "0"], "answer": 0, "explain": "10 - 1 = 9.", "isotope": "510.10.counting.oral", "difficulty": 0.08, "zpdMoment": "ten_minus_one"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.04",
+      "scaffolds": [
+        {"id": "510.10.04.04.s1", "type": "prerequisite", "q": "10 ones = how many tens?", "options": ["0", "1", "10", "100"], "answer": 1, "explain": "10 ones = 1 ten.", "isotope": "510.10.place-value.intro", "difficulty": 0.15, "zpdMoment": "ones_to_ten"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.05",
+      "scaffolds": [
+        {"id": "510.10.04.05.s1", "type": "prerequisite", "q": "8 + 4 = ?", "options": ["10", "11", "12", "84"], "answer": 2, "explain": "8 + 4 = 12.", "isotope": "510.10.counting.oral", "difficulty": 0.1, "zpdMoment": "basic_add"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.06",
+      "scaffolds": [
+        {"id": "510.10.04.06.s1", "type": "prerequisite", "q": "Is 44 greater or less than 50?", "options": ["Greater", "Less", "Equal", "Cannot tell"], "answer": 1, "explain": "44 is less than 50.", "isotope": "510.10.comparison", "difficulty": 0.1, "zpdMoment": "fifties_compare"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.07",
+      "scaffolds": [
+        {"id": "510.10.04.07.s1", "type": "prerequisite", "q": "What number word comes after 'thirty-eight'?", "options": ["Thirty-seven", "Thirty-nine", "Forty", "Thirty-ten"], "answer": 1, "explain": "After thirty-eight comes thirty-nine.", "isotope": "510.10.counting.oral", "difficulty": 0.12, "zpdMoment": "verbal_next"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.08",
+      "scaffolds": [
+        {"id": "510.10.04.08.s1", "type": "prerequisite", "q": "35 + 10 = ?", "options": ["36", "45", "135", "350"], "answer": 1, "explain": "35 + 10 = 45.", "isotope": "510.10.place-value.intro", "difficulty": 0.1, "zpdMoment": "add_ten_mid"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.09",
+      "scaffolds": [
+        {"id": "510.10.04.09.s1", "type": "prerequisite", "q": "What comes after 97?", "options": ["96", "98", "100", "87"], "answer": 1, "explain": "After 97 comes 98.", "isotope": "510.10.counting.oral", "difficulty": 0.1, "zpdMoment": "high_nineties"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.10",
+      "scaffolds": [
+        {"id": "510.10.04.10.s1", "type": "prerequisite", "q": "Seventy = ?", "options": ["7", "17", "70", "700"], "answer": 2, "explain": "Seventy = 70.", "isotope": "510.10.counting.written", "difficulty": 0.1, "zpdMoment": "word_numeral"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.11",
+      "scaffolds": [
+        {"id": "510.10.04.11.s1", "type": "prerequisite", "q": "50 + 5 = ?", "options": ["10", "55", "505", "56"], "answer": 1, "explain": "50 + 5 = 55.", "isotope": "510.10.place-value.intro", "difficulty": 0.1, "zpdMoment": "compose_55"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.12",
+      "scaffolds": [
+        {"id": "510.10.04.12.s1", "type": "prerequisite", "q": "Which is biggest: 30, 50, or 40?", "options": ["30", "40", "50", "All same"], "answer": 2, "explain": "50 is the biggest.", "isotope": "510.10.comparison", "difficulty": 0.1, "zpdMoment": "max_three_tens"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.13",
+      "scaffolds": [
+        {"id": "510.10.04.13.s1", "type": "prerequisite", "q": "In 59, which is the ones digit?", "options": ["5", "9", "59", "14"], "answer": 1, "explain": "9 is in the ones place.", "isotope": "510.10.place-value.intro", "difficulty": 0.08, "zpdMoment": "ones_digit"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.14",
+      "scaffolds": [
+        {"id": "510.10.04.14.s1", "type": "prerequisite", "q": "What comes after 88?", "options": ["87", "89", "90", "78"], "answer": 1, "explain": "After 88 comes 89.", "isotope": "510.10.counting.oral", "difficulty": 0.08, "zpdMoment": "eighties_next"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.15",
+      "scaffolds": [
+        {"id": "510.10.04.15.s1", "type": "prerequisite", "q": "When counting, do we say every number in order?", "options": ["Yes, always", "No, skip some", "Sometimes", "Only evens"], "answer": 0, "explain": "When counting, we say each number in order.", "isotope": "510.10.counting.oral", "difficulty": 0.1, "zpdMoment": "sequence_rule"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.16",
+      "scaffolds": [
+        {"id": "510.10.04.16.s1", "type": "prerequisite", "q": "What is 3 + 4?", "options": ["6", "7", "8", "34"], "answer": 1, "explain": "3 + 4 = 7.", "isotope": "510.10.place-value.intro", "difficulty": 0.05, "zpdMoment": "basic_sum"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.17",
+      "scaffolds": [
+        {"id": "510.10.04.17.s1", "type": "prerequisite", "q": "Is 2 odd or even?", "options": ["Odd", "Even", "Both", "Neither"], "answer": 1, "explain": "2 is even - it splits into two equal groups.", "isotope": "510.10.ordering", "difficulty": 0.1, "zpdMoment": "even_identify"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.18",
+      "scaffolds": [
+        {"id": "510.10.04.18.s1", "type": "prerequisite", "q": "Is 45 closer to 40 or 50?", "options": ["40", "50", "Exactly in middle", "Neither"], "answer": 2, "explain": "45 is exactly between 40 and 50.", "isotope": "510.10.ordering", "difficulty": 0.18, "zpdMoment": "midpoint_practice"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.19",
+      "scaffolds": [
+        {"id": "510.10.04.19.s1", "type": "prerequisite", "q": "Does a single-digit number have a tens place?", "options": ["Yes", "No", "Sometimes", "Only 9"], "answer": 1, "explain": "Single-digit numbers only have a ones place.", "isotope": "510.10.place-value.intro", "difficulty": 0.15, "zpdMoment": "single_digit_places"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.20",
+      "scaffolds": [
+        {"id": "510.10.04.20.s1", "type": "prerequisite", "q": "Put in order smallest to biggest: 5, 3, 7", "options": ["7, 5, 3", "3, 5, 7", "5, 3, 7", "3, 7, 5"], "answer": 1, "explain": "Smallest to biggest: 3, 5, 7.", "isotope": "510.10.ordering", "difficulty": 0.1, "zpdMoment": "sort_three"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.21",
+      "scaffolds": [
+        {"id": "510.10.04.21.s1", "type": "prerequisite", "q": "10 + 10 = ?", "options": ["10", "20", "100", "1010"], "answer": 1, "explain": "10 + 10 = 20.", "isotope": "510.10.place-value.intro", "difficulty": 0.05, "zpdMoment": "double_ten"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.22",
+      "scaffolds": [
+        {"id": "510.10.04.22.s1", "type": "prerequisite", "q": "Is 52 between 50 and 60?", "options": ["Yes", "No", "It equals 50", "It equals 60"], "answer": 0, "explain": "52 is between 50 and 60.", "isotope": "510.10.ordering", "difficulty": 0.1, "zpdMoment": "between_check"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.23",
+      "scaffolds": [
+        {"id": "510.10.04.23.s1", "type": "prerequisite", "q": "Is 4 even?", "options": ["Yes", "No", "Sometimes", "Neither"], "answer": 0, "explain": "4 is even.", "isotope": "510.10.ordering", "difficulty": 0.08, "zpdMoment": "four_even"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.24",
+      "scaffolds": [
+        {"id": "510.10.04.24.s1", "type": "prerequisite", "q": "7 tens = ?", "options": ["7", "17", "70", "700"], "answer": 2, "explain": "7 tens = 70.", "isotope": "510.10.place-value.intro", "difficulty": 0.1, "zpdMoment": "seven_tens"}
+      ]
+    },
+    {
+      "parentId": "510.10.04.25",
+      "scaffolds": [
+        {"id": "510.10.04.25.s1", "type": "prerequisite", "q": "80 - 10 = ?", "options": ["70", "90", "81", "8"], "answer": 0, "explain": "80 - 10 = 70.", "isotope": "510.10.counting.oral", "difficulty": 0.1, "zpdMoment": "subtract_ten_from_80"}
+      ]
+    }
+  ]
+}

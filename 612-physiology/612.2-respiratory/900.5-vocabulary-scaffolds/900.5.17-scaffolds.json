@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.17",
+  "parentQuestion": "The normal oxygen saturation of arterial blood is approximately:",
+  "narrative": {
+    "setting": "The Magic School Bus hovers in Mr. Edgar's artery, surrounded by red blood cells. Ms. Frizzle pulls out a strange device - a pulse oximeter shaped like a clothespin. 'Time to check his oxygen levels,' she announces. 'This tells us how well his lungs are doing their job.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's lips have a bluish tinge. The pulse oximeter beeps a warning - his numbers are dropping. Understanding what 'saturation' means could help diagnose what's going wrong."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.17.s01",
+      "arc": 1,
+      "arcTitle": "What Saturation Means",
+      "narrative": "'Saturation,' Ms. Frizzle explains, watching hemoglobin molecules drift by. 'Like a sponge soaked with water. How much of its capacity is being used?'",
+      "q": "What does 'oxygen saturation' measure?",
+      "options": [
+        "How much oxygen is dissolved in plasma",
+        "What percentage of hemoglobin is carrying oxygen",
+        "Total oxygen in the atmosphere",
+        "Oxygen production by cells"
+      ],
+      "answer": 1,
+      "explain": "OXYGEN SATURATION measures what PERCENTAGE of hemoglobin molecules are bound to oxygen. 100% saturation = all hemoglobin carrying their full load of 4 O₂ each. 50% = only half full.",
+      "wrongExplains": {
+        "0": "DISSOLVED O₂ is measured separately as PaO₂ (partial pressure). Saturation is about hemoglobin.",
+        "2": "Atmospheric oxygen is about 21%. Saturation measures hemoglobin loading in blood.",
+        "3": "Cells CONSUME oxygen; they don't produce it. Saturation measures blood delivery capacity."
+      }
+    },
+    {
+      "id": "900.5.17.s02",
+      "arc": 1,
+      "arcTitle": "What Saturation Means",
+      "narrative": "'Different abbreviations for the same thing,' Ms. Frizzle shows the display. 'SaO₂ if measured directly from arterial blood. SpO₂ if measured by pulse oximeter through the skin.'",
+      "q": "What is the abbreviation SaO₂?",
+      "options": [
+        "Sodium oxygen level",
+        "Arterial oxygen saturation",
+        "Saturated carbon dioxide",
+        "Surface air quality"
+      ],
+      "answer": 1,
+      "explain": "SaO₂ = Arterial Oxygen Saturation. 'S' = saturation, 'a' = arterial, 'O₂' = oxygen. Measured by arterial blood gas (direct). SpO₂ is the same measurement via pulse oximetry (indirect).",
+      "wrongExplains": {
+        "0": "'Sa' means saturation arterial, not sodium. Sodium would be 'Na'.",
+        "2": "CO₂ would be written differently. SaO₂ specifically measures OXYGEN saturation.",
+        "3": "SaO₂ is a BLOOD measurement, not air quality. It tells us about hemoglobin loading."
+      }
+    },
+    {
+      "id": "900.5.17.s03",
+      "arc": 1,
+      "arcTitle": "What Saturation Means",
+      "narrative": "'Think of hemoglobin as a taxi with four seats,' Ms. Frizzle uses her favorite analogy. '100% saturation means all four seats are full. 75% means three seats occupied, one empty.'",
+      "q": "If oxygen saturation is 75%, this means:",
+      "options": [
+        "75% of red blood cells are present",
+        "75% of hemoglobin's oxygen-carrying capacity is being used",
+        "75% of lungs are working",
+        "Blood is 75% water"
+      ],
+      "answer": 1,
+      "explain": "75% saturation = hemoglobin is 75% loaded with oxygen. On average, 3 of every 4 oxygen-binding sites are occupied. The 'taxi' has 3 of 4 seats filled.",
+      "wrongExplains": {
+        "0": "Saturation isn't about cell count - it's about oxygen loading on existing hemoglobin.",
+        "2": "Lung function affects saturation but isn't what saturation measures directly.",
+        "3": "Blood composition (water content) is separate from oxygen saturation measurement."
+      }
+    },
+    {
+      "id": "900.5.17.s04",
+      "arc": 2,
+      "arcTitle": "Normal and Abnormal",
+      "narrative": "'What's normal?' Ms. Frizzle checks the oximeter. 'For arterial blood leaving the lungs, we expect near-perfect loading. 95% minimum, ideally higher.'",
+      "q": "What is the normal range for arterial oxygen saturation?",
+      "options": [
+        "70-75%",
+        "85-90%",
+        "95-100%",
+        "50-60%"
+      ],
+      "answer": 2,
+      "explain": "Normal arterial SaO₂ is 95-100%. At sea level with healthy lungs, hemoglobin should be nearly FULLY SATURATED when it leaves the pulmonary capillaries. Below 95% suggests a problem.",
+      "wrongExplains": {
+        "0": "70-75% is typical for VENOUS blood (after delivering O₂ to tissues). Arterial should be 95%+.",
+        "1": "85-90% indicates mild HYPOXEMIA (low oxygen). Normal is higher.",
+        "3": "50-60% is severe hypoxemia - life-threatening. Normal is 95-100%."
+      }
+    },
+    {
+      "id": "900.5.17.s05",
+      "arc": 2,
+      "arcTitle": "Normal and Abnormal",
+      "narrative": "'Below 90% and we start worrying,' Ms. Frizzle's expression turns serious. 'Below 80% is dangerous. The term is hypoxemia - low oxygen in the blood.'",
+      "q": "What SpO₂ reading would indicate hypoxemia (low blood oxygen)?",
+      "options": [
+        "98%",
+        "Below 90%",
+        "100%",
+        "95%"
+      ],
+      "answer": 1,
+      "explain": "BELOW 90% is considered HYPOXEMIA. Normal is 95-100%. At 90%, the oxygen-hemoglobin dissociation curve starts dropping steeply - small pressure changes cause big saturation drops.",
+      "wrongExplains": {
+        "0": "98% is NORMAL and healthy - well-oxygenated blood.",
+        "2": "100% is the maximum - perfectly saturated hemoglobin.",
+        "3": "95% is at the lower end of normal but not yet hypoxemia."
+      }
+    },
+    {
+      "id": "900.5.17.s06",
+      "arc": 2,
+      "arcTitle": "Normal and Abnormal",
+      "narrative": "'Look at Mr. Edgar's lips,' Ms. Frizzle points. The bluish tinge is unmistakable. 'That color change is a warning sign. It has a name.'",
+      "q": "What color change might indicate low oxygen saturation?",
+      "options": [
+        "Skin becomes red",
+        "Skin/lips become bluish (cyanosis)",
+        "Skin becomes yellow",
+        "No visible change"
+      ],
+      "answer": 1,
+      "explain": "CYANOSIS - bluish discoloration of skin, lips, and nail beds - indicates low oxygen saturation. Deoxygenated hemoglobin is darker (bluish-red), giving tissues a blue tinge.",
+      "wrongExplains": {
+        "0": "Red/pink indicates GOOD oxygenation. Blue indicates poor oxygenation.",
+        "2": "Yellow is JAUNDICE (bilirubin buildup). Blue/cyanosis is low oxygen.",
+        "3": "There IS a visible change - cyanosis is often the first visible sign of hypoxemia."
+      }
+    },
+    {
+      "id": "900.5.17.s07",
+      "arc": 3,
+      "arcTitle": "Measuring Saturation",
+      "narrative": "'The pulse oximeter,' Ms. Frizzle shows the device, 'uses light. Red and infrared beams pass through the finger. Oxygenated and deoxygenated hemoglobin absorb these wavelengths differently.'",
+      "q": "A pulse oximeter measures SpO₂ by shining light through the finger. Why?",
+      "options": [
+        "To warm the finger",
+        "Oxygenated and deoxygenated hemoglobin absorb light differently",
+        "To count red blood cells",
+        "To measure blood pressure"
+      ],
+      "answer": 1,
+      "explain": "OXY-hemoglobin and DEOXY-hemoglobin absorb RED and INFRARED light differently. The oximeter compares absorption ratios to calculate what percentage of hemoglobin is oxygenated.",
+      "wrongExplains": {
+        "0": "Warming isn't the purpose. The light is for measuring absorption differences.",
+        "2": "Oximeters measure SATURATION, not cell count. That would require different technology.",
+        "3": "Blood pressure uses a cuff and stethoscope. Oximeters use light absorption."
+      }
+    },
+    {
+      "id": "900.5.17.s08",
+      "arc": 3,
+      "arcTitle": "Measuring Saturation",
+      "narrative": "'Arterial blood: 95-100% saturated,' Ms. Frizzle recaps. 'But venous blood returning from tissues?' She measures a vein. 'Much lower - tissues extracted their share.'",
+      "q": "What is the typical oxygen saturation of venous blood (after delivering O₂ to tissues)?",
+      "options": [
+        "95-100%",
+        "70-75%",
+        "50%",
+        "100%"
+      ],
+      "answer": 1,
+      "explain": "VENOUS blood (after tissue extraction) is typically 70-75% saturated. Tissues extracted about 25% of the delivered oxygen. The 'taxi' returned with about 3 of 4 seats still full.",
+      "wrongExplains": {
+        "0": "95-100% is ARTERIAL blood before tissue extraction. Venous is lower.",
+        "2": "50% would indicate very high extraction (heavy exercise) or poor perfusion.",
+        "3": "100% after tissue extraction is impossible - tissues always take some oxygen."
+      }
+    },
+    {
+      "id": "900.5.17.s09",
+      "arc": 3,
+      "arcTitle": "Measuring Saturation",
+      "narrative": "'The difference between arterial and venous saturation tells us about tissue oxygen consumption,' Ms. Frizzle notes. 'High demand = bigger drop. Low demand = smaller drop.'",
+      "q": "The arterial-venous saturation difference increases when:",
+      "options": [
+        "Tissues are using less oxygen",
+        "Tissues are extracting more oxygen",
+        "Lungs are working better",
+        "Heart rate decreases"
+      ],
+      "answer": 1,
+      "explain": "Larger A-V difference = tissues are EXTRACTING MORE oxygen. During exercise, tissues pull more O₂ from blood, so venous saturation drops while arterial stays high (if lungs keep up).",
+      "wrongExplains": {
+        "0": "LESS oxygen use would mean SMALLER A-V difference (venous stays higher).",
+        "2": "Better lung function raises arterial saturation but doesn't directly increase extraction.",
+        "3": "Heart rate affects delivery speed but the A-V difference reflects extraction, not rate."
+      }
+    },
+    {
+      "id": "900.5.17.s10",
+      "arc": 3,
+      "arcTitle": "Measuring Saturation",
+      "narrative": "The oximeter reads 97%. Mr. Edgar's color improves. Healthy hemoglobin, fully loaded, delivering oxygen throughout his body. 'Normal arterial saturation,' Ms. Frizzle asks. 'What range?'",
+      "q": "The normal oxygen saturation of arterial blood is approximately:",
+      "options": [
+        "70-75%",
+        "85-90%",
+        "95-100%",
+        "50-60%"
+      ],
+      "answer": 2,
+      "explain": "Normal arterial SaO₂/SpO₂ is 95-100%. Hemoglobin should be nearly fully saturated when leaving the lungs. Below 95% suggests impaired oxygen loading - investigate the cause.",
+      "wrongExplains": {
+        "0": "70-75% is typical VENOUS saturation. Arterial should be 95%+.",
+        "1": "85-90% indicates HYPOXEMIA (mild). Normal arterial is higher.",
+        "3": "50-60% is SEVERE hypoxemia - medical emergency. Normal is 95-100%."
+      }
+    }
+  ]
+}

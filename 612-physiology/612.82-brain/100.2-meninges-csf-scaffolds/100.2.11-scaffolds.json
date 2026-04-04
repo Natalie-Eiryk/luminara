@@ -1,0 +1,159 @@
+{
+  "parentId": "100.2.11",
+  "parentQuestion": "A patient undergoing lumbar puncture at the L4-L5 level has CSF withdrawn from which space?",
+  "scaffolds": [
+    {
+      "q": "What is a lumbar puncture?",
+      "options": [
+        "Surgery on the spine",
+        "A procedure to obtain CSF by inserting a needle into the lower back",
+        "An X-ray of the spine",
+        "Spinal cord removal"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "A LUMBAR PUNCTURE (spinal tap) is a procedure to obtain CSF by inserting a needle into the LOWER BACK. It's used for diagnosis (meningitis, MS) and measuring CSF pressure.",
+      "wrongExplains": {
+        "0": "LP is a needle procedure, not surgery.",
+        "2": "LP collects CSF; X-rays produce images.",
+        "3": "The spinal cord is avoided, not removed."
+      }
+    },
+    {
+      "q": "Where does the spinal cord end in adults?",
+      "options": [
+        "At the sacrum (S5)",
+        "At L1-L2 vertebral level (conus medullaris)",
+        "At the skull base",
+        "At T12"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The spinal cord ends at the CONUS MEDULLARIS at L1-L2 level. Below this, only nerve roots (CAUDA EQUINA) float in CSF — no cord to damage.",
+      "wrongExplains": {
+        "0": "The cord ends much higher than S5.",
+        "2": "The cord starts at the skull base but ends at L1-L2.",
+        "3": "T12 is above where the cord ends."
+      }
+    },
+    {
+      "q": "Why is lumbar puncture done at L3-L4 or L4-L5?",
+      "options": [
+        "More CSF is produced there",
+        "It's below the spinal cord, avoiding cord damage",
+        "It's easier to reach",
+        "The vertebrae are larger"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "LP is done at L3-L4 or L4-L5 because this is BELOW where the cord ends (L1-L2). The needle enters CSF without risk of hitting the spinal cord itself.",
+      "wrongExplains": {
+        "0": "CSF production is in the ventricles, not lumbar region.",
+        "2": "Location choice is about safety, not convenience.",
+        "3": "Vertebral size isn't the primary consideration."
+      }
+    },
+    {
+      "q": "What fills the subarachnoid space?",
+      "options": [
+        "Air",
+        "Cerebrospinal fluid (CSF)",
+        "Blood only",
+        "Fat"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The SUBARACHNOID SPACE (between arachnoid and pia mater) is filled with CSF. This space surrounds the brain and spinal cord, extending to about S2.",
+      "wrongExplains": {
+        "0": "Air in CSF space would be pathological.",
+        "2": "Major vessels run through it, but CSF fills the space.",
+        "3": "Fat is in the epidural space, not subarachnoid."
+      }
+    },
+    {
+      "q": "What layers does the LP needle pass through?",
+      "options": [
+        "Only skin",
+        "Skin, ligaments, epidural space, dura, arachnoid",
+        "Only dura",
+        "Bone only"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The needle passes through: SKIN → LIGAMENTS → EPIDURAL SPACE → DURA MATER → ARACHNOID → SUBARACHNOID SPACE. You feel a 'pop' penetrating the dura.",
+      "wrongExplains": {
+        "0": "Multiple layers must be traversed to reach CSF.",
+        "2": "Multiple layers are crossed before reaching the dura.",
+        "3": "The needle goes between vertebrae, not through bone."
+      }
+    },
+    {
+      "q": "What is the epidural space?",
+      "options": [
+        "Where CSF is found",
+        "Space containing fat and veins, outside the dura",
+        "Inside the spinal cord",
+        "Between arachnoid and pia"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The EPIDURAL SPACE is OUTSIDE the dura mater, containing FAT and VEINS. This is where epidural anesthesia is placed — NOT where CSF is found.",
+      "wrongExplains": {
+        "0": "CSF is in the subarachnoid space, not epidural.",
+        "2": "The epidural space is around, not inside, the cord.",
+        "3": "Between arachnoid and pia is the subarachnoid space."
+      }
+    },
+    {
+      "q": "What is the subdural space?",
+      "options": [
+        "Where CSF circulates freely",
+        "A potential space between dura and arachnoid (normally no gap)",
+        "Where LP collects fluid",
+        "Inside the ventricles"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The SUBDURAL SPACE is a 'POTENTIAL SPACE' — the dura and arachnoid are normally touching. It only becomes a real space in pathology (subdural hematoma). CSF is NOT here.",
+      "wrongExplains": {
+        "0": "CSF is in the subarachnoid space, not subdural.",
+        "2": "LP targets the subarachnoid space.",
+        "3": "The ventricles are inside the brain, not between meninges."
+      }
+    },
+    {
+      "q": "What should normal LP fluid look like?",
+      "options": [
+        "Red and thick",
+        "Clear and colorless ('gin-clear')",
+        "Yellow and cloudy",
+        "Green"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "Normal CSF is CLEAR and COLORLESS — 'gin-clear.' Any color (red = blood, yellow = old blood or infection, cloudy = cells/bacteria) indicates pathology.",
+      "wrongExplains": {
+        "0": "Red CSF indicates hemorrhage or traumatic tap.",
+        "2": "Yellow/cloudy suggests old bleeding or infection.",
+        "3": "Green CSF is abnormal."
+      }
+    },
+    {
+      "q": "From which space is CSF withdrawn during lumbar puncture?",
+      "options": [
+        "Epidural space",
+        "Subarachnoid space",
+        "Subdural space",
+        "Central canal"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "SUBARACHNOID SPACE. The needle crosses all layers to reach the CSF-filled subarachnoid space. Not epidural (fat, no CSF), not subdural (potential space), not central canal (too small).",
+      "wrongExplains": {
+        "0": "Epidural contains fat, not CSF — used for anesthesia.",
+        "2": "Subdural is a potential space with no free fluid.",
+        "3": "The central canal is too small to target clinically."
+      }
+    }
+  ]
+}

@@ -1,0 +1,564 @@
+{
+  "version": "1.0",
+  "source": "LUMI-OS Teaching Module",
+  "prefix": "100.1",
+  "question_count": 16,
+  "questions": [
+    {
+      "id": "100.1.01",
+      "q": "Specific motor and sensory functions are localized in specific areas called domains, whereas memory and language have overlapping domains.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0,
+      "explain": "Correct! The brain divides its territory differently for different functions. Motor and sensory functions map to precise cortical real estate — your left thumb gets its own dedicated postal code on the precentral gyrus. But memory and language sprawl across distributed networks, borrowing resources from multiple domains.",
+      "mechanism": {
+        "title": "Cortical Organization: Why Some Functions Localize and Others Don't",
+        "content": "Simple functions localize because they map physical space. Your body surface has a position in 3D space, so the somatosensory cortex creates a topographic map — a literal neural representation where adjacent body parts occupy adjacent cortex. But 'understanding a joke'? That's not a physical location. It's a pattern, an emergent property requiring semantic networks, emotional context, memory of prior conversations, and theory of mind. You can't compress that into a single patch of cortex. It needs orchestration across regions.",
+        "metaphor": "The motor cortex is a piano keyboard — each key triggers one specific note, one specific muscle. But language and memory are like jazz improvisation — they need the whole band, trading solos, responding to each other's riffs in real time."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": "100.1-structure-scaffolds/100.1.01-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.1.02",
+      "q": "The three basic regions of the cerebrum are the cerebral cortical gray matter, internal white matter, and the superior and inferior colliculi.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explain": "Not quite. False! The colliculi aren't cerebral — they're midbrain bumps handling visual and auditory reflexes. The cerebrum's actual three regions: Cortical gray matter (processing shell), internal white matter (transmission cables), and basal nuclei (deep motor-filtering islands). Don't let the colliculi sneak into the cerebrum — they live downstairs.",
+      "mechanism": {
+        "title": "Cerebrum Architecture: The Three Layers",
+        "content": "The cerebrum organizes itself in three zones with different physics. The cortex — that 2-4mm outer shell — is where electrochemical computation happens in neuron somas and dendrites. Beneath it lies white matter: Billions of myelinated axons forming transmission highways, their fatty insulation allowing saltatory conduction at 70-120 m/s. Deep in the center sit the basal nuclei — islands of gray matter bathed in dopamine, filtering motor commands through direct and indirect pathways like a neural bouncer deciding which movements get past the velvet rope.",
+        "metaphor": "The cerebrum is a city with three districts: The cortex is downtown — dense skyscrapers where business happens. The white matter is the interstate highway system connecting districts. The basal nuclei are the traffic control centers deep underground, deciding which cars get green lights."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": "100.1-structure-scaffolds/100.1.02-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.1.03",
+      "q": "The brain stem consists of the ___.",
+      "options": [
+        "Cerebrum, pons, midbrain, and medulla",
+        "Midbrain, medulla, and pons",
+        "Pons, medulla, cerebellum, and midbrain",
+        "Midbrain only"
+      ],
+      "answer": 1,
+      "explain": "Not quite. Brainstem = midbrain + pons + medulla oblongata. Three structures stacked like a neural totem pole. The cerebrum sits on TOP of the brainstem (not part of it). The cerebellum clings to the BACK of the brainstem (also not part of it). The brainstem is the stalk connecting your conscious brain to your spinal cord — and it's where your body's autopilot lives.",
+      "mechanism": {
+        "title": "The Brainstem: The Body's Autopilot",
+        "content": "The brainstem is evolutionarily ancient — reptiles have elaborate brainstems but tiny cerebral cortexes. The midbrain contains the corpora quadrigemina (visual and auditory reflex centers) and the substantia nigra (dopamine factory for movement). The pons relays information between cerebrum and cerebellum and contains pneumotaxic centers modulating breathing rhythm. The medulla houses the cardiovascular center (regulating heart rate and vessel diameter) and the respiratory center (controlling breathing rate and depth). Your medulla keeps you alive while you sleep, think, or ignore it entirely.",
+        "metaphor": "If the cerebrum is the pilot making conscious navigational decisions, the brainstem is the plane's life support and autopilot systems. The pilot can override, but the brainstem keeps the engines running, maintains cabin pressure, and prevents stalls — whether the pilot is paying attention or not."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": "100.1-structure-scaffolds/100.1.03-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.5,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.1.04",
+      "q": "Which of the following best describes the cerebrum?",
+      "options": [
+        "Motor command center",
+        "Decussation center",
+        "Executive suite",
+        "Visceral command center"
+      ],
+      "answer": 2,
+      "explain": "Not quite. The cerebrum is the 'executive suite' — the corner office where strategy happens. Conscious thought, voluntary planning, sensory perception, memory encoding, language processing, personality, abstract reasoning... All the high-level functions that make you 'you' happen in the cerebrum. Motor commands originate here, but reducing the cerebrum to a 'motor center' is like calling a CEO 'the person who signs papers.' Technically true but missing the point.",
+      "mechanism": {
+        "title": "The Cerebrum: Your Conscious Self",
+        "content": "The cerebrum dominates at 83% of brain mass and divides into two hemispheres connected by the corpus callosum. Each hemisphere has four lobes with specialized functions. Frontal lobe houses the motor cortex (voluntary movement) and prefrontal cortex (planning, personality, executive function). Parietal lobe processes somatosensory information (touch, temperature, pain, proprioception). Temporal lobe handles auditory processing and memory formation (hippocampus lives here). Occipital lobe is pure visual processing — V1 through V5, dissecting the visual world into features. This is where consciousness emerges from electrochemical computation.",
+        "metaphor": "The cerebrum is the CEO's corner office in your neural corporation. The brainstem keeps the building operational — HVAC, plumbing, electrical — but the cerebrum is where strategic decisions happen. Lose the brainstem and the building becomes uninhabitable. Lose the cerebrum and the building still runs, but nobody's home."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": "100.1-structure-scaffolds/100.1.04-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.6
+      }
+    },
+    {
+      "id": "100.1.05",
+      "q": "An elevated ridge of the cortex is called a ___.",
+      "options": [
+        "Furrow",
+        "Fissure",
+        "Gyrus",
+        "Sulcus"
+      ],
+      "answer": 2,
+      "explain": "Not quite. Gyrus = ridge (the elevated peaks). Sulcus = shallow groove (the valleys). Fissure = deep groove (the canyons). This vocabulary describes the brain's topography. The cortex folds itself into this convoluted landscape to pack maximum surface area into the limited real estate of your skull — surface area is where processing happens, and evolution maximizes it ruthlessly.",
+      "mechanism": {
+        "title": "Cortical Folding: Why the Brain Isn't Smooth",
+        "content": "The human cortex is highly convoluted — about two-thirds of cortical surface area is hidden in sulci. If you flattened it, you'd get roughly 0.16 square meters of 2-4mm-thick gray matter. But evolution needs to pack that into a skull constrained by the birth canal (can't make newborn heads too large) and neck strength (can't make adult heads too heavy). Solution: Fold the cortex. The gyri-sulci pattern maximizes surface-to-volume ratio — the same physics that drives alveolar structure in lungs and intestinal villi in the gut. Nature solves the packing problem with geometry.",
+        "metaphor": "The brain's folding is like crumpling a bedsheet to fit it in a drawer. You want maximum fabric (cortical surface area) in minimum space (skull volume). The gyri are the peaks of the crumpled fabric. The sulci are the valleys. Unfold it and it's massive — but folded, it fits perfectly."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": "100.1-structure-scaffolds/100.1.05-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.5,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.6
+      }
+    },
+    {
+      "id": "100.1.06",
+      "q": "Which of these would you NOT find in the cerebral cortex?",
+      "options": [
+        "Fiber tracts",
+        "Interneurons",
+        "Dendrites",
+        "Cell bodies"
+      ],
+      "answer": 0,
+      "explain": "Correct! The cerebral cortex is gray matter — that means neuron cell bodies, dendrites, and interneurons performing local computation. Fiber tracts are white matter: Organized bundles of myelinated axons found BENEATH the cortex, transmitting signals between distant regions. Gray matter processes. White matter transmits. Different physics, different locations.",
+      "mechanism": {
+        "title": "Gray Matter vs. White Matter: Processing vs. Transmission",
+        "content": "Gray matter contains neuron cell bodies, dendrites, and synapses — the computation substrate. This is where electrochemical integration happens: Postsynaptic potentials summing at the axon hillock, action potentials initiated when threshold is reached. White matter contains myelinated axons — the transmission substrate. Myelin (lipid-rich glial wrapping) acts as electrical insulation, enabling saltatory conduction where action potentials jump between nodes of Ranvier at 70-120 m/s instead of propagating continuously at 0.5-2 m/s in unmyelinated axons. Gray matter thinks. White matter connects thinkers.",
+        "metaphor": "Gray matter is the office buildings where people work and make decisions — neurons integrating inputs, generating outputs. White matter is the fiber-optic cables connecting the buildings — myelinated axons transmitting signals at high speed with minimal loss. Different infrastructure, different functions."
+      },
+      "isotopes": [
+        "neurology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": "100.1-structure-scaffolds/100.1.06-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.1.07",
+      "q": "Which of the following is NOT a role of the basal nuclei?",
+      "options": [
+        "Initiating protective reflex actions",
+        "Playing a role in cognition and emotion",
+        "Controlling starting and stopping movements",
+        "Inhibiting unnecessary or antagonistic movements"
+      ],
+      "answer": 0,
+      "explain": "Correct! Protective reflexes are spinal cord and brainstem territory — they're fast, automatic, and bypass conscious control entirely. The basal nuclei work in the voluntary movement domain: They filter motor commands, facilitate desired movements through the direct pathway, inhibit competing movements through the indirect pathway, and modulate the balance with dopamine. They also participate in cognitive loops and reward circuits. But reflexes? Not their job.",
+      "mechanism": {
+        "title": "The Basal Nuclei: Motor Filter and More",
+        "content": "The basal nuclei receive cortical input (motor plans, cognitive goals) and project back to cortex via thalamus, forming loops. The direct pathway facilitates movement: Cortex → striatum → GPi/SNr (inhibitory) → thalamus (disinhibited) → cortex (excited). The indirect pathway suppresses movement: Cortex → striatum → GPe → STN → GPi/SNr (excited) → thalamus (inhibited) → cortex (suppressed). Dopamine from substantia nigra modulates the balance: Exciting D1 receptors (direct pathway) while inhibiting D2 receptors (indirect pathway). Lose dopamine (Parkinson's), and the indirect pathway dominates — movement becomes difficult to initiate. Lose striatal neurons (Huntington's), and movement filters fail — unwanted movements emerge.",
+        "metaphor": "The basal nuclei are like a ruthless editor reviewing every motor command before publication. The direct pathway is the 'approve and publish' stamp. The indirect pathway is the 'reject and suppress' stamp. Dopamine adjusts the editor's mood — more dopamine favors approval, less dopamine favors rejection. The system filters thousands of potential movements every second, letting only intended actions through."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": "100.1-structure-scaffolds/100.1.07-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.8,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.1.08",
+      "q": "The large commissure that connects the right and left sides of the brain is called the ___.",
+      "options": [
+        "Corpus callosum",
+        "Corona radiata",
+        "Internal capsule",
+        "Longitudinal fissure"
+      ],
+      "answer": 0,
+      "explain": "Correct! The corpus callosum ('hard body') is the massive commissural bridge connecting left and right cerebral hemispheres — approximately 200 million myelinated axons transmitting information between corresponding cortical regions. It enables interhemispheric communication, allowing your anatomically split brain to function as a unified consciousness.",
+      "mechanism": {
+        "title": "The Corpus Callosum: Interhemispheric Bridge",
+        "content": "The corpus callosum contains mostly homotopic connections — linking the same functional area on each hemisphere. The posterior region (splenium) connects occipital lobes (visual integration). The middle body connects parietal and temporal lobes (somatosensory and auditory integration). The anterior region (genu and rostrum) connects frontal lobes (motor planning and executive function). Information transfer speed varies with myelination — well-myelinated callosal axons transmit at 70-100 m/s, allowing near-instantaneous hemispheric coordination. Split the corpus callosum (callosotomy), and the hemispheres operate independently: The left hand literally doesn't know what the right hand is doing.",
+        "metaphor": "The corpus callosum is like a massive fiber-optic cable connecting two supercomputers. Each computer (hemisphere) runs its own processing, but they constantly share results through the cable. Cut the cable, and you have two independent computers — each capable, but unable to coordinate. The left computer can speak but can't process visual information from the right visual field. The right computer can draw but can't explain what it drew. Unity requires communication."
+      },
+      "isotopes": [
+        "neurology.function"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": "100.1-structure-scaffolds/100.1.08-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "100.1.09",
+      "q": "White matter is found in all of the following locations EXCEPT the ___.",
+      "options": [
+        "Outer portion of the spinal cord",
+        "Corpus callosum",
+        "Corticospinal tracts",
+        "Cerebral cortex"
+      ],
+      "answer": 3,
+      "explain": "Not quite. The cerebral cortex is gray matter — computation substrate with neuron somas and dendrites. White matter (myelinated axon bundles) is found deep to the cortex, in the corpus callosum (commissural fibers), in the corticospinal tracts (descending motor commands), and on the outside of the spinal cord (ascending/descending pathways). The brain and spinal cord organize matter oppositely: Brain puts gray outside, white inside. Spinal cord puts white outside, gray inside.",
+      "mechanism": {
+        "title": "Gray vs. White Matter Distribution",
+        "content": "The brain and spinal cord organize the same tissue types with opposite topologies. In the BRAIN: Gray matter is superficial (cerebral cortex, cerebellar cortex) and exists as deep nuclei (basal nuclei, thalamus), while white matter occupies the deep cerebral interior (association, commissural, and projection fibers). In the SPINAL CORD: Gray matter forms the central butterfly/H-shaped core (dorsal horns receive sensory input, ventral horns send motor output, lateral horns handle autonomic), while white matter forms the outer shell (dorsal columns carry proprioception/fine touch, lateral columns carry descending motor commands and ascending pain/temperature, ventral columns carry additional motor pathways). Different structural organization, same functional division: Gray computes, white transmits.",
+        "metaphor": "In the brain, gray matter is like the rind of an orange (cortex wrapping the outside) with seeds inside (deep nuclei), while white matter is the flesh between rind and seeds. In the spinal cord, it flips: Gray matter is the core of an apple, white matter is the flesh surrounding it. Same tissues, opposite arrangements."
+      },
+      "isotopes": [
+        "neurology.pathway"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": "100.1-structure-scaffolds/100.1.09-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.1.10",
+      "q": "The corpora quadrigemina are found in the ___.",
+      "options": [
+        "Cerebellum",
+        "Pons",
+        "Midbrain",
+        "Diencephalon"
+      ],
+      "answer": 2,
+      "explain": "Not quite. The corpora quadrigemina ('four little bodies') are the four bumps forming the posterior midbrain roof (tectum): Two superior colliculi handling visual reflexes (tracking moving objects, orienting eyes toward stimuli) and two inferior colliculi handling auditory reflexes (orienting head toward sounds). They're midbrain reflex centers — ancient, automatic, fast.",
+      "mechanism": {
+        "title": "The Corpora Quadrigemina: Visual and Auditory Reflex Centers",
+        "content": "The corpora quadrigemina form the midbrain tectum (roof). The superior colliculi receive visual input from the retina and visual cortex, forming retinotopic maps. They project to brainstem motor nuclei controlling eye movements (via oculomotor, trochlear, and abducens nerves) and cervical spinal cord (controlling neck muscles). When peripheral visual motion triggers superior collicular neurons, your eyes saccade toward the stimulus and your head orients — before conscious visual processing identifies what moved. The inferior colliculi receive auditory input from cochlear nuclei and process sound localization cues (interaural time and intensity differences). They project to thalamus (auditory pathway to cortex) and to motor nuclei controlling head orientation. Hear a sudden noise? The inferior colliculi orient you toward the sound source automatically — faster than thought.",
+        "metaphor": "The superior colliculi are like automated radar systems — detect movement in visual field, automatically aim eyes and head at target, alert conscious processing afterward. The inferior colliculi are like acoustic sensors — detect sound direction, automatically orient toward source, inform conscious hearing centers. Both operate with reflex speed: Stimulus → detection → motor response within milliseconds, bypassing deliberation."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": "100.1-structure-scaffolds/100.1.10-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.5,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.1.11",
+      "q": "A 45-year-old patient presents with inability to feel pain or temperature on the left side of their body below the neck, but motor function remains intact and they can still sense light touch and proprioception. A lesion has most likely damaged which pathway?",
+      "options": [
+        "Left dorsal column",
+        "Right spinothalamic tract",
+        "Left corticospinal tract",
+        "Right dorsal column"
+      ],
+      "answer": 1,
+      "explain": "Not quite. The spinothalamic tract carries pain and temperature sensation, and it decussates (crosses over) at the spinal level where it enters. Damage to the RIGHT spinothalamic tract causes loss of pain/temperature on the LEFT body. But the dorsal columns (carrying proprioception and fine touch) remain intact — they haven't crossed yet. Motor function is preserved because the corticospinal tract is untouched. Classic dissociated sensory loss — the anatomy speaks through the deficit.",
+      "mechanism": {
+        "title": "Dissociated Sensory Loss: When Pathways Diverge",
+        "content": "Sensory information travels in anatomically segregated pathways. Pain and temperature enter the dorsal horn, synapse immediately, decussate within 1-2 spinal segments, then ascend in the contralateral spinothalamic tract. But proprioception and fine touch ascend ipsilaterally in the dorsal columns without synapsing until they reach the medulla, where they finally decussate. A unilateral spinal cord lesion affecting the spinothalamic tract creates contralateral pain/temperature loss while sparing ipsilateral dorsal column sensations. This creates the Brown-Séquard pattern: Ipsilateral motor loss and proprioception loss (same-side corticospinal and dorsal column damage) with contralateral pain/temperature loss (opposite-side spinothalamic damage).",
+        "metaphor": "Imagine two highway systems carrying traffic from the same city. Highway A (spinothalamic) crosses to the opposite side of the country immediately after entering the interstate. Highway B (dorsal columns) stays on the same side until it reaches a major junction hundreds of miles north. Damage the right side of the road at mile 50, and you'll disrupt traffic from the left city (on Highway A, which already crossed) but not traffic from the right city (on Highway B, which hasn't crossed yet)."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": "100.1-structure-scaffolds/100.1.11-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.1.12",
+      "q": "Following a stroke, a 62-year-old patient can understand spoken language perfectly and follow complex instructions, but when asked to speak, produces only slow, effortful, telegraphic speech with poor grammar. Comprehension is intact. Which area is most likely damaged?",
+      "options": [
+        "Wernicke's area",
+        "Broca's area",
+        "Primary auditory cortex",
+        "Angular gyrus"
+      ],
+      "answer": 1,
+      "explain": "Not quite. Classic Broca's aphasia — expressive aphasia with intact comprehension. Broca's area in the inferior frontal gyrus (usually left hemisphere) handles speech production — the motor programming for articulation. Damage it, and you get slow, effortful, agrammatical speech while comprehension (Wernicke's area function) remains perfect. The patient knows what they want to say but can't coordinate the motor output.",
+      "mechanism": {
+        "title": "Broca's Aphasia: When Speech Production Fails",
+        "content": "Broca's area contains motor programs for speech articulation — the precise temporal sequences of tongue, lip, larynx, and respiratory muscle coordination needed to produce phonemes. It receives semantic content from Wernicke's area via the arcuate fasciculus, then translates meaning into motor commands sent to the motor cortex. Damage Broca's area, and the motor programming fails: The patient knows what they want to say (semantics intact), can understand others (Wernicke's intact), but cannot generate fluent motor output. Speech becomes effortful, agrammatical, telegraphic — content words preserved ('dog... Bite... Yesterday') but function words and grammar stripped away. The dissociation proves that semantic knowledge and motor execution separate at the neural level. Understanding lives in posterior temporal cortex. Production lives in inferior frontal cortex. Damage one, preserve the other.",
+        "metaphor": "Broca's area is like a conductor translating a musical score into specific instrumental instructions. Wernicke's area provides the score (semantic meaning). Broca's area tells each musician exactly when and how to play their note. Damage the conductor, and the musicians (motor cortex) still work, the score still makes sense, but nobody can coordinate the complex sequence to produce the symphony. You get individual notes (words) but lose the melody (fluent grammar)."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": "100.1-structure-scaffolds/100.1.12-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.1.13",
+      "q": "A patient arrives in the ER after a diving accident with spinal cord trauma at C6. They can shrug their shoulders and flex their elbows, but cannot extend their elbows or move their wrists or fingers. Sensation is present in the lateral arm and forearm but absent in the hand. Which anatomical principle explains this pattern?",
+      "options": [
+        "Spinal shock",
+        "Hemisection of the cord",
+        "Segmental innervation and dermatome mapping",
+        "Decussation of motor pathways"
+      ],
+      "answer": 2,
+      "explain": "Not quite. Segmental organization in action. Each spinal segment innervates specific muscles (myotome) and skin regions (dermatome). C5 controls shoulder and elbow flexors — preserved. C6 adds wrist extensors — borderline. C7-C8-T1 control elbow extensors, wrist/finger flexors and extensors — lost. The dermatomal pattern matches: Lateral arm (C5-C6) has sensation, hand (C6-C8) doesn't. The lesion is AT C6, so segments below are disconnected.",
+      "mechanism": {
+        "title": "Segmental Spinal Organization: Myotomes and Dermatomes",
+        "content": "The spinal cord is organized in 31 segments — 8 cervical, 12 thoracic, 5 lumbar, 5 sacral, 1 coccygeal. Each segment receives sensory input from its dermatome (a specific strip of skin) via dorsal roots and sends motor output to its myotome (specific muscles) via ventral roots. Cervical segments control the upper limb with precise territorial division: C5 = shoulder/elbow flexion, C6 = wrist extension, C7 = elbow extension, C8 = finger flexion, T1 = finger abduction. A lesion at C6 interrupts descending motor commands and ascending sensory pathways for all segments below — C7, C8, T1 lose brain connection. Muscles innervated by these segments become paralyzed. Dermatomes become anesthetic. The stepwise loss pattern lets clinicians determine exact lesion level by testing specific muscles and dermatomes — the body maps territory with millimeter precision.",
+        "metaphor": "The spinal cord is like a high-rise apartment building where each floor (segment) controls specific rooms (muscles and skin regions) via dedicated electrical circuits (spinal nerves). Cut the main power cable at floor 6, and floors 1-5 still have electricity (preserved function) but floors 7-30 go dark (lost function). The exact pattern of which rooms have power tells you precisely which floor was damaged."
+      },
+      "isotopes": [
+        "muscle.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": "100.1-structure-scaffolds/100.1.13-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.6
+      }
+    },
+    {
+      "id": "100.1.14",
+      "q": "A 58-year-old patient develops progressive difficulty with coordinated movement. They can initiate walking but their gait is wide-based and staggering. When reaching for objects, their hand overshoots the target, then oscillates back and forth before finally grasping. Muscle strength is normal. Which structure is most likely affected?",
+      "options": [
+        "Basal nuclei",
+        "Motor cortex",
+        "Cerebellum",
+        "Thalamus"
+      ],
+      "answer": 2,
+      "explain": "Not quite. Classic cerebellar dysfunction. The cerebellum doesn't initiate movement (that's cortex and basal nuclei), but it coordinates and fine-tunes ongoing movements. Damage it, and you get ataxia: Wide-based gait (truncal instability), intention tremor (oscillations during goal-directed movement), and dysmetria (overshooting targets). Muscle strength is preserved because motor cortex and spinal motor neurons function normally — the problem is coordination, not power.",
+      "mechanism": {
+        "title": "The Cerebellum: Real-Time Movement Coordination",
+        "content": "The cortex sends motor commands to both spinal cord (via corticospinal tract) AND cerebellum (via corticopontine-pontocerebellar pathways). The cerebellum receives this 'efference copy' — what movement was intended. Simultaneously, it receives proprioceptive feedback — what movement actually occurred. The cerebellar cortex compares intended vs. Actual in Purkinje cells, which compute error signals. These project to deep cerebellar nuclei (dentate, interposed, fastigial), which send corrective signals back to motor cortex via thalamus and to brainstem motor nuclei. This feedback loop runs in real-time at ~10-50 Hz, smoothing movements and correcting trajectory errors millisecond by millisecond. Damage the cerebellum, and movements become jerky, inaccurate, oscillatory — like a control system with the feedback loop severed.",
+        "metaphor": "The cerebellum is like a GPS navigation system with real-time traffic updates. The motor cortex programs the route ('turn right in 100 meters'). The cerebellum monitors actual position and compares it to intended position. If you start drifting left, the cerebellum sends corrections ('adjust 2 degrees right') before you notice consciously. Damage the cerebellum, and you still have the map (motor cortex plans) and the car (muscles), but you can't stay in your lane — you overshoot turns, oscillate back and forth, and lurch instead of gliding smoothly."
+      },
+      "isotopes": [
+        "neurology.function"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": "100.1-structure-scaffolds/100.1.14-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.1.15",
+      "q": "A 34-year-old patient presents with vision loss in the right visual field of BOTH eyes. They cannot see anything to their right, but left visual field is completely normal in both eyes. An MRI would most likely reveal a lesion in which location?",
+      "options": [
+        "Right optic nerve",
+        "Optic chiasm",
+        "Left optic tract",
+        "Left visual cortex"
+      ],
+      "answer": 2,
+      "explain": "Not quite. Visual pathway decussation at work. The right visual field from BOTH eyes is processed by the LEFT hemisphere. Here's why: Nasal retina of the left eye (seeing right visual field) crosses at the optic chiasm. Temporal retina of the right eye (also seeing right visual field) does NOT cross. Both pathways converge in the LEFT optic tract → LEFT lateral geniculate nucleus → LEFT visual cortex. Lesion in the LEFT optic tract = right visual field loss in both eyes (right homonymous hemianopsia).",
+      "mechanism": {
+        "title": "Visual Pathway Organization: From Retina to Cortex",
+        "content": "Light from the right visual field hits the nasal retina of the left eye and the temporal retina of the right eye. Retinal ganglion cells project via optic nerves to the optic chiasm. At the chiasm, nasal fibers decussate (cross) while temporal fibers remain ipsilateral. Post-chiasm, the left optic tract contains: (1) crossed nasal fibers from the left eye + (2) uncrossed temporal fibers from the right eye — both carrying right visual field information. The optic tract projects to the lateral geniculate nucleus of the thalamus, which projects via optic radiations to the primary visual cortex (V1) in the occipital lobe. This reorganization at the chiasm is critical: Pre-chiasm lesions cause monocular deficits (one eye affected). Post-chiasm lesions cause homonymous deficits (same visual field in both eyes affected). The visual system reorganizes from eye-based to field-based representation.",
+        "metaphor": "Imagine two cameras (eyes) filming a scene from slightly different angles. Before the editing room (optic chiasm), each camera's footage stays separate. In the editing room, the director cuts each camera's footage in half vertically and recombines: The left-side footage from both cameras goes to one monitor (left hemisphere), the right-side footage to another (right hemisphere). Now each monitor shows a unified view of one side of the scene. Damage the cable to the left monitor (left optic tract), and you lose the entire right side of the scene from both cameras."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": "100.1-structure-scaffolds/100.1.15-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "100.1.16",
+      "q": "A patient awakens from surgery unable to form new memories. They can recall childhood events perfectly and hold conversations, but 5 minutes later, they don't remember the conversation occurred. Procedural learning (motor skills) remains intact. Which structure was most likely damaged during surgery?",
+      "options": [
+        "Amygdala",
+        "Hippocampus",
+        "Prefrontal cortex",
+        "Basal nuclei"
+      ],
+      "answer": 1,
+      "explain": "Not quite. Classic hippocampal damage producing anterograde amnesia. The hippocampus in the medial temporal lobe is critical for encoding new declarative memories (facts and events). Damage it bilaterally, and you can't form new explicit memories — the famous patient H. M. Lived in a perpetual present after bilateral hippocampal removal. Old memories (already consolidated to cortex) remain accessible. Procedural memory (motor learning via cerebellum and basal nuclei) stays intact — a different neural system entirely.",
+      "mechanism": {
+        "title": "The Hippocampus: Encoding New Memories",
+        "content": "The hippocampus receives processed sensory information from association cortex via the entorhinal cortex. Perforant pathway fibers project to dentate gyrus → CA3 → CA1 → subiculum → back to entorhinal cortex and out to widespread cortical areas. This circuit binds together distributed cortical representations of an experience — the sights, sounds, smells, emotional context, spatial location — into a coherent episodic memory. Long-term potentiation (LTP) at CA3-CA1 synapses strengthens these associations. Over weeks to months, the hippocampus 'replays' the memory during sleep, gradually transferring it to cortical storage (systems consolidation). Once consolidated, the memory becomes hippocampus-independent; cortical networks can retrieve it directly. Bilateral hippocampal damage prevents new encoding (anterograde amnesia) and disrupts recent memories not yet fully consolidated (temporally graded retrograde amnesia), but spares remote memories (fully consolidated to cortex).",
+        "metaphor": "The hippocampus is like a librarian who catalogs new books (experiences) and files them in the permanent library (cortex). The librarian binds together all the related pages (sensory details, context, emotions) into one coherent volume, then gradually transfers it from the 'new arrivals' desk to the permanent stacks. Lose the librarian (hippocampal damage), and you can still read old books already filed (remote memories), but new books pile up unprocessed on the desk, accessible only while you're holding them (working memory), then lost forever when you put them down."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 12 — The Brain",
+      "scaffoldFile": "100.1-structure-scaffolds/100.1.16-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    }
+  ]
+}

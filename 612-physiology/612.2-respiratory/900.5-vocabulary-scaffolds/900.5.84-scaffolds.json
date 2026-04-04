@@ -1,0 +1,171 @@
+{
+  "parentId": "900.5.84",
+  "parentQuestion": "What vocal resonance finding produces an 'E-to-A' change over consolidation?",
+  "narrative": {
+    "setting": "Mr. Edgar's clinic during advanced physical diagnosis teaching",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar asks the patient to say 'eeeee' while he listens. Over the consolidated area, it sounds like 'aaay' through the stethoscope. What's this phenomenon?"
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.84.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Finding",
+      "narrative": "Ms. Frizzle's bus watches Mr. Edgar's examination. 'Class, this is called EGOPHONY - one of the coolest physical exam findings! Watch what happens when the patient says 'E'...'",
+      "q": "What is egophony?",
+      "options": [
+        "A type of breath sound",
+        "A change in voice resonance where 'E' sounds like 'A' through the stethoscope",
+        "A type of pneumonia",
+        "A breathing pattern"
+      ],
+      "answer": 1,
+      "explain": "EGOPHONY = voice resonance change where spoken 'EEEE' sounds like 'AAAY' (or 'AYYY') when heard through the stethoscope over abnormal lung. The name comes from Greek: 'ego' (goat) + 'phone' (sound) - it supposedly sounds like a goat bleating! It's a classic sign of consolidation or pleural effusion.",
+      "wrongExplains": {
+        "0": "Egophony is not a breath sound (like crackles or wheezing). It's a VOICE SOUND finding - testing how the patient's voice transmits through the chest.",
+        "2": "Egophony is a SIGN (examination finding), not the disease itself. It indicates underlying pathology like pneumonia or effusion, but isn't the infection.",
+        "3": "Egophony is not a breathing pattern (like Kussmaul or Cheyne-Stokes). It's about voice QUALITY transmission through abnormal lung tissue."
+      }
+    },
+    {
+      "id": "900.5.84.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Finding",
+      "narrative": "'Listen carefully!' Ms. Frizzle points. 'Over healthy lung: patient says EEEE, you hear eee (muffled). Over consolidation: patient says EEEE, you hear AAAY! The sound CHANGES quality!'",
+      "q": "In egophony, what does the examiner hear when the patient says 'E'?",
+      "options": [
+        "A clear 'E' sound",
+        "A nasal 'A' sound ('aaay' or 'ayyy')",
+        "Complete silence",
+        "A musical whistle"
+      ],
+      "answer": 1,
+      "explain": "With egophony, the examiner hears a nasal 'A' sound ('AAAY' or 'AYYY') when the patient says 'EEEE'. The E-to-A change is the HALLMARK of egophony. It's described as having a nasal, bleating quality - hence the 'goat sound' etymology.",
+      "wrongExplains": {
+        "0": "A clear 'E' would be simple bronchophony (increased clarity but no change in quality). Egophony specifically means the vowel CHANGES from E to A.",
+        "2": "Silence would suggest no sound transmission (pneumothorax, thick pleural effusion). Egophony is INCREASED and CHANGED transmission.",
+        "3": "Musical whistling would be wheezing. Egophony is about VOICE transmission, not airflow sounds."
+      }
+    },
+    {
+      "id": "900.5.84.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Finding",
+      "narrative": "'Why E specifically?' Ralphie asks. 'Because E is a high-frequency vowel,' Mr. Edgar explains. 'Consolidation changes how frequencies are transmitted, filtering high frequencies into a lower nasal A sound!'",
+      "q": "Why is the letter 'E' specifically used to test for egophony?",
+      "options": [
+        "It's the easiest letter to say",
+        "E is a high-frequency vowel that changes to 'A' when filtered through consolidation",
+        "It's the first letter of 'egophony'",
+        "Any letter works equally well"
+      ],
+      "answer": 1,
+      "explain": "'E' is a HIGH-FREQUENCY vowel. Consolidated lung or pleural effusion acts as a FILTER, changing the frequency characteristics - the high-frequency 'E' becomes lower, more nasal 'A' sound. This frequency shift is the basis of egophony. Other vowels don't demonstrate the change as clearly.",
+      "wrongExplains": {
+        "0": "'E' isn't particularly easy or hard to say. It's chosen because it produces the characteristic E-to-A transformation through consolidated lung.",
+        "2": "The etymology is coincidental! 'Egophony' comes from Greek for 'goat sound,' not from the letter E. We use E because it demonstrates the phenomenon best.",
+        "3": "Other vowels don't show the egophony change as clearly. 'A' stays 'A,' 'O' stays 'O.' The E-to-A transformation is specific and diagnostic."
+      }
+    },
+    {
+      "id": "900.5.84.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus flies into consolidated lung. 'Look at this!' Ms. Frizzle shows sound waves passing through. 'The fluid and inflammatory tissue act like an ACOUSTIC FILTER - certain frequencies pass, others are blocked or modified!'",
+      "q": "What lung pathology causes egophony?",
+      "options": [
+        "Normal healthy air-filled lung",
+        "Consolidation (pneumonia) or pleural effusion with compressed lung above it",
+        "Pneumothorax",
+        "Asthma"
+      ],
+      "answer": 1,
+      "explain": "Egophony is caused by CONSOLIDATION (pneumonia, edema) or PLEURAL EFFUSION with compressed lung above the fluid. The consolidated or compressed lung tissue acts as an acoustic filter, changing the frequency characteristics of transmitted voice - E becomes A. Classic finding at the upper border of pleural effusion.",
+      "wrongExplains": {
+        "0": "Normal healthy lung MUFFLES voice without changing quality. No E-to-A change in normal lung - that's abnormal (egophony).",
+        "2": "Pneumothorax (air in pleural space) causes DECREASED or absent breath sounds, not egophony. Egophony needs dense tissue/fluid to create the acoustic filtering.",
+        "3": "Asthma affects airways (wheezing, bronchospasm) but doesn't consolidate alveoli or create pleural effusion. No acoustic filtering = no egophony."
+      }
+    },
+    {
+      "id": "900.5.84.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'It's like an audio equalizer!' Carlos exclaims. 'Normal lung = all frequencies muffled equally. Consolidated lung = selective filtering, boosting some frequencies, blocking others - changes the sound quality!'",
+      "q": "How does consolidation change the voice sound quality?",
+      "options": [
+        "It blocks all sound completely",
+        "It acts as an acoustic filter, modifying frequency transmission",
+        "It amplifies all frequencies equally",
+        "It has no effect on sound"
+      ],
+      "answer": 1,
+      "explain": "Consolidation acts as an ACOUSTIC FILTER, MODIFYING FREQUENCY TRANSMISSION. Different frequencies are transmitted differently through the dense tissue/fluid - high frequencies of 'E' are filtered into lower nasal 'A' frequencies. It's selective filtering, not simple amplification or blocking.",
+      "wrongExplains": {
+        "0": "Consolidation INCREASES transmission (bronchophony, egophony), not blocks it. Complete blocking would be pneumothorax or thick pleural effusion.",
+        "2": "Simple equal amplification would be bronchophony (louder but same quality). Egophony involves FREQUENCY CHANGE, not just volume increase.",
+        "3": "Consolidation definitely affects sound - that's the whole point of percussion, auscultation, and voice tests! The effects are measurable and diagnostic."
+      }
+    },
+    {
+      "id": "900.5.84.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Where do you find egophony with pleural effusion?' Ms. Frizzle draws a diagram. 'At the UPPER BORDER of the fluid! The compressed lung above the effusion creates the filtering effect. Below the fluid = just dullness, no egophony.'",
+      "q": "In pleural effusion, where is egophony typically most pronounced?",
+      "options": [
+        "At the base of the lung (lowest point of fluid)",
+        "At the upper border of the effusion (compressed lung above fluid)",
+        "Equally throughout the entire lung",
+        "It doesn't occur with pleural effusion"
+      ],
+      "answer": 1,
+      "explain": "Egophony is most pronounced at the UPPER BORDER of pleural effusion where the lung is COMPRESSED above the fluid. The compressed atelectatic lung acts as the acoustic filter. Below (in the effusion itself) you hear DECREASED sounds. Above the effusion's upper border, you may hear egophony.",
+      "wrongExplains": {
+        "0": "At the base (in the fluid), you hear DULLNESS to percussion and DECREASED breath sounds. No egophony - sound doesn't transmit well through fluid alone.",
+        "2": "Egophony is a FOCAL finding at the transition zone. The entire lung doesn't have uniform acoustic properties with effusion.",
+        "3": "Egophony is a CLASSIC finding with pleural effusion! It's one of the key signs for detecting fluid at the bedside."
+      }
+    },
+    {
+      "id": "900.5.84.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "Back in the clinic, Mr. Edgar demonstrates. 'Right lower lobe: dullness, decreased breath sounds. Right middle lobe at the fluid border: egophony! Classic for pleural effusion. Time for a chest X-ray and possibly thoracentesis.'",
+      "q": "What is the clinical significance of finding egophony?",
+      "options": [
+        "Normal finding, no concern",
+        "Indicates consolidation or pleural effusion requiring further evaluation",
+        "Means the patient has asthma",
+        "Indicates upper airway obstruction"
+      ],
+      "answer": 1,
+      "explain": "Egophony indicates CONSOLIDATION (pneumonia, edema) or PLEURAL EFFUSION requiring further evaluation. It's an ABNORMAL finding that helps localize pathology. Chest X-ray confirms. Treatment depends on underlying cause - antibiotics for pneumonia, thoracentesis for large effusion.",
+      "wrongExplains": {
+        "0": "Egophony is NEVER normal! Any E-to-A change indicates underlying lung pathology (consolidation or effusion) requiring investigation.",
+        "2": "Asthma causes wheezing (airway narrowing), not egophony. Egophony indicates dense lung tissue or fluid, not bronchospasm.",
+        "3": "Upper airway obstruction causes STRIDOR. Egophony is a LOWER respiratory finding from consolidated lung or pleural effusion."
+      }
+    },
+    {
+      "id": "900.5.84.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "'Remember the full vocal resonance triad!' Mr. Edgar teaches. 'Whispered pectoriloquy is the most sensitive (whispered words heard clearly), bronchophony is intermediate (spoken words clear), egophony is the classic E-to-A change. All indicate consolidation!'",
+      "q": "How is egophony related to bronchophony?",
+      "options": [
+        "They are opposite findings",
+        "Both indicate increased sound transmission; egophony specifically involves E-to-A change",
+        "They never occur together",
+        "Egophony is normal; bronchophony is abnormal"
+      ],
+      "answer": 1,
+      "explain": "Both egophony and bronchophony indicate INCREASED SOUND TRANSMISSION through consolidated lung. Bronchophony = increased CLARITY. Egophony = increased clarity PLUS frequency change (E→A). They often occur TOGETHER over consolidation. Egophony is a specific TYPE of abnormal voice transmission.",
+      "wrongExplains": {
+        "0": "They're complementary findings, not opposite! Both indicate the same pathology (consolidation) with slightly different acoustic properties.",
+        "2": "They COMMONLY occur together over the same consolidated area! Finding one should prompt checking for the other.",
+        "3": "BOTH are abnormal! Both indicate consolidation or effusion. Neither is normal - they're diagnostic signs of pathology."
+      }
+    }
+  ]
+}

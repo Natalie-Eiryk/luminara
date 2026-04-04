@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.39",
+  "parentQuestion": "Dalton's Law of Partial Pressures states that:",
+  "narrative": {
+    "setting": "The Magic School Bus is hovering in Mr. Edgar's alveolus, surrounded by a swirling mixture of gases. Nitrogen molecules (78%) drift lazily past. Oxygen (21%) zips by energetically. A few CO2 molecules (0.04%) scatter in the background. Ms. Frizzle holds up a pressure gauge showing 760 mmHg. 'Class,' she announces, 'we're standing in a democracy of gases. Each one pushes on the walls independently. Together, they create the pressure you feel with every breath.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar is about to receive anesthesia. The anesthesiologist must calculate precise partial pressures of oxygen and anesthetic gas. One wrong calculation could mean hypoxia or overdose."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.39.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "Ms. Frizzle projects a hologram of John Dalton's notebook from 1801. 'Dalton realized something profound: in a mixture of gases, each gas behaves as if it's alone. Each contributes its own pressure, independent of the others.'",
+      "q": "The 'partial pressure' of a gas in a mixture refers to:",
+      "options": [
+        "The total pressure divided by the number of gases",
+        "The pressure that gas would exert if it occupied the space alone",
+        "The percentage of that gas in the mixture",
+        "The pressure multiplied by temperature"
+      ],
+      "answer": 1,
+      "explain": "PARTIAL PRESSURE = the pressure that ONE gas in the mixture would exert if it were the ONLY gas in the container. Each gas contributes independently. It's like each gas is playing a solo while part of an orchestra.",
+      "wrongExplains": {
+        "0": "That would only work if all gases were in equal amounts - but they're not! O2 is 21%, N2 is 78%. Partial pressure depends on percentage AND total pressure.",
+        "2": "Percentage tells you the FRACTION, but partial pressure is an actual PRESSURE value (in mmHg or kPa). Related but different units.",
+        "3": "Temperature affects pressure, but partial pressure specifically refers to each gas's independent contribution at a given temperature."
+      }
+    },
+    {
+      "id": "900.5.39.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "The pressure gauge glows with colored sections: Nitrogen (593 mmHg), Oxygen (159 mmHg), Other gases (8 mmHg). 'Add them up,' Ms. Frizzle challenges. '593 + 159 + 8 = ?'",
+      "q": "According to Dalton's Law, the total pressure of a gas mixture equals:",
+      "options": [
+        "The average of all partial pressures",
+        "The sum of all partial pressures",
+        "The largest partial pressure only",
+        "The product of all partial pressures"
+      ],
+      "answer": 1,
+      "explain": "DALTON'S LAW: Ptotal = P1 + P2 + P3 + ... Each gas adds its pressure to the total. It's democratic addition - every gas gets counted. At sea level: PN2 (593) + PO2 (159) + Pothers (8) = 760 mmHg total.",
+      "wrongExplains": {
+        "0": "Average would give you a middle value. Dalton's Law ADDS them - each gas contributes fully, not partially.",
+        "2": "The biggest gas (N2) can't ignore the others! Every gas contributes. Oxygen may be only 21%, but it matters hugely.",
+        "3": "Multiplication would give enormous values. Dalton's Law is simple addition - each gas's pressure adds to the pile."
+      }
+    },
+    {
+      "id": "900.5.39.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "Ms. Frizzle writes on the bus windshield: 'Partial Pressure = (% of gas) × (Total Pressure)'. 'It's a simple formula,' she says, 'but it controls your life with every breath.'",
+      "q": "If oxygen is 21% of air and atmospheric pressure is 760 mmHg, the partial pressure of oxygen is:",
+      "options": [
+        "21 mmHg",
+        "159.6 mmHg",
+        "760 mmHg",
+        "739 mmHg"
+      ],
+      "answer": 1,
+      "explain": "PO2 = 0.21 × 760 mmHg = 159.6 mmHg (often rounded to 160 mmHg). This is the atmospheric PO2 at sea level. It's what drives oxygen into your lungs. Change altitude or O2 percentage, and this number changes!",
+      "wrongExplains": {
+        "0": "You forgot to multiply by total pressure! 21% of 760 is not 21. You need 0.21 × 760 = 159.6 mmHg.",
+        "2": "That's the TOTAL pressure. Oxygen is only 21% of that, so its partial pressure must be less than total.",
+        "3": "That's roughly nitrogen's partial pressure (78% × 760). Oxygen is only 21%, giving ~160 mmHg."
+      }
+    },
+    {
+      "id": "900.5.39.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus rises to 10,000 feet altitude. The total pressure gauge drops to 523 mmHg. The oxygen percentage stays at 21%, but something critical has changed. 'Watch the oxygen partial pressure,' Ms. Frizzle warns.",
+      "q": "At 10,000 feet altitude where atmospheric pressure is 523 mmHg, the PO2 (still 21% of air) becomes:",
+      "options": [
+        "159.6 mmHg (unchanged)",
+        "109.8 mmHg",
+        "21 mmHg",
+        "523 mmHg"
+      ],
+      "answer": 1,
+      "explain": "PO2 = 0.21 × 523 = 109.8 mmHg. The PERCENTAGE is still 21%, but lower total pressure means lower PO2. This is why altitude causes hypoxia - same air composition, less pressure driving O2 into blood. Dalton's Law explains altitude sickness!",
+      "wrongExplains": {
+        "0": "PO2 drops with altitude! Total pressure decreased, so partial pressures must decrease too (same percentages but smaller total).",
+        "2": "You can't just use the percentage as the pressure. You must multiply: 21% × 523 mmHg = 109.8 mmHg.",
+        "3": "That's TOTAL pressure. Oxygen is only 21% of that mixture, so PO2 must be less than total pressure."
+      }
+    },
+    {
+      "id": "900.5.39.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "Back at sea level, the bus enters an anesthesia machine. A dial shows the mixture being prepared: 50% O2, 3% sevoflurane anesthetic, 47% N2. Total pressure: 760 mmHg. 'Each gas must be calculated precisely,' Ms. Frizzle says.",
+      "q": "In an anesthetic mixture with 50% O2 at 760 mmHg total pressure, the PO2 is:",
+      "options": [
+        "159.6 mmHg",
+        "380 mmHg",
+        "50 mmHg",
+        "760 mmHg"
+      ],
+      "answer": 1,
+      "explain": "PO2 = 0.50 × 760 = 380 mmHg. This is higher than atmospheric O2 (160 mmHg) - a safety margin during surgery. Anesthesiologists use Dalton's Law to ensure adequate oxygenation while delivering anesthetic gas.",
+      "wrongExplains": {
+        "0": "That's atmospheric O2 (21%). This mixture is 50% O2 - enriched for safety during surgery.",
+        "2": "Don't confuse percentage (50%) with partial pressure. You must multiply: 50% × 760 mmHg = 380 mmHg.",
+        "3": "That's total pressure. Oxygen is 50% of the mixture, so its partial pressure is half the total."
+      }
+    },
+    {
+      "id": "900.5.39.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "You watch the gas mixture flow through Mr. Edgar's breathing circuit. The sevoflurane (anesthetic gas) has a partial pressure of 22.8 mmHg (3% × 760). 'Too little and he wakes up mid-surgery,' Ms. Frizzle says. 'Too much and he doesn't wake up at all.'",
+      "q": "If an anesthetic gas is 3% of a mixture at 760 mmHg total pressure, its partial pressure is:",
+      "options": [
+        "3 mmHg",
+        "22.8 mmHg",
+        "253 mmHg",
+        "757 mmHg"
+      ],
+      "answer": 1,
+      "explain": "Panesthetic = 0.03 × 760 = 22.8 mmHg. Even though it's only 3% of the mixture, it has a measurable partial pressure that determines how much dissolves in blood (Henry's Law!) and therefore its anesthetic effect. Small percentage, big consequences.",
+      "wrongExplains": {
+        "0": "You must multiply the fraction by total pressure: 3% × 760 = 0.03 × 760 = 22.8 mmHg, not just 3.",
+        "2": "That's roughly a third of total pressure (33%). This gas is only 3%, so much smaller partial pressure.",
+        "3": "That would be if you SUBTRACTED 3 from 760. You need to multiply: 3% of 760, not 760 minus 3."
+      }
+    },
+    {
+      "id": "900.5.39.s07",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "'Why does CO2 matter if it's only 0.04% of air?' Ralphie asks. Ms. Frizzle grins. 'Because in alveoli, it's much higher - about 5.6%! Let me show you why.'",
+      "q": "In alveolar air, PCO2 is approximately 40 mmHg because:",
+      "options": [
+        "Atmospheric CO2 is concentrated during breathing",
+        "CO2 from blood mixes with inhaled air in the alveoli",
+        "The lungs produce CO2",
+        "Nitrogen converts to CO2"
+      ],
+      "answer": 1,
+      "explain": "Alveolar air is a MIX: fresh atmospheric air (low CO2) + CO2 exhaled from blood. The mixture has ~5.6% CO2 (40 mmHg at sea level). Atmospheric air has only 0.04% CO2. The difference is metabolic CO2 leaving your blood!",
+      "wrongExplains": {
+        "0": "Lungs don't concentrate atmospheric CO2 - there's almost none in air (0.04%). The high alveolar CO2 comes FROM YOUR BLOOD as waste.",
+        "2": "Lungs don't make CO2 - cells do (cellular respiration). Lungs are the EXHAUST PIPE, removing CO2 that cells produced.",
+        "3": "Nitrogen is inert - it doesn't convert to anything. CO2 in alveoli comes from blood carrying cellular waste."
+      }
+    },
+    {
+      "id": "900.5.39.s08",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "The bus travels to an ICU where a patient breathes pure oxygen through a mask. The gauge shows 100% O2 at 760 mmHg. 'Emergency oxygen therapy,' Ms. Frizzle explains. 'Maximum possible PO2 at sea level.'",
+      "q": "When breathing 100% oxygen at 760 mmHg, the PO2 is:",
+      "options": [
+        "159.6 mmHg",
+        "380 mmHg",
+        "500 mmHg",
+        "760 mmHg"
+      ],
+      "answer": 3,
+      "explain": "PO2 = 1.00 × 760 = 760 mmHg. ALL the pressure is from oxygen! This is the maximum PO2 possible at sea level (without hyperbaric chamber). Used in emergencies to maximize O2 delivery when tissues are starving.",
+      "wrongExplains": {
+        "0": "That's room air PO2 (21%). This patient is on 100% oxygen - nearly 5 times higher partial pressure!",
+        "1": "That's 50% oxygen. This patient has 100% - all nitrogen removed, pure O2.",
+        "2": "Close to 2/3 pressure, but 100% O2 means PO2 = total pressure. Every mmHg is oxygen pushing into the blood."
+      }
+    },
+    {
+      "id": "900.5.39.s09",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "'Here's where it gets elegant,' Ms. Frizzle says as you return to the alveolus. 'Dalton's Law tells you the partial pressures. Henry's Law uses those partial pressures to determine gas exchange. They work together!'",
+      "q": "Dalton's Law and Henry's Law work together in the lungs because:",
+      "options": [
+        "Dalton determines partial pressures; Henry uses them to predict gas dissolution",
+        "They are the same law applied differently",
+        "Dalton applies to liquids; Henry applies to gases",
+        "They contradict each other in biological systems"
+      ],
+      "answer": 0,
+      "explain": "Perfect partnership! DALTON'S LAW calculates PO2 and PCO2 in alveolar air. HENRY'S LAW then uses those partial pressures to determine how much O2/CO2 dissolves in blood. First law gives you the driving force; second law gives you the result.",
+      "wrongExplains": {
+        "1": "They're different laws for different phenomena! Dalton = gas mixtures. Henry = gas dissolution in liquids. But they collaborate beautifully.",
+        "2": "Backwards! Dalton is for GAS MIXTURES (air). Henry is for gas dissolving in LIQUIDS (blood). They're complementary.",
+        "3": "They don't contradict - they cooperate! Every breath depends on both laws working in sequence."
+      }
+    },
+    {
+      "id": "900.5.39.s10",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "Mr. Edgar breathes steadily under anesthesia. The monitors show perfect gas partial pressures: PO2 = 380 mmHg, Panesthetic = 22.8 mmHg, PN2 = 357.2 mmHg. They add to 760 mmHg. 'Democracy of gases,' Ms. Frizzle smiles. 'Each contributing, all summing.'",
+      "q": "Dalton's Law of Partial Pressures states that:",
+      "options": [
+        "Pressure and volume are inversely proportional",
+        "Gas solubility is proportional to partial pressure",
+        "The total pressure of a gas mixture equals the sum of the partial pressures",
+        "Gases diffuse from high to low concentration"
+      ],
+      "answer": 2,
+      "explain": "DALTON'S LAW: Ptotal = P1 + P2 + P3 + ... Each gas in a mixture exerts its own partial pressure independently, and they ADD to give total pressure. This law lets us calculate O2 and CO2 pressures in alveoli, critical for predicting gas exchange!",
+      "wrongExplains": {
+        "0": "That's Boyle's Law (pressure-volume). Dalton's Law is about how multiple gases in a mixture contribute to total pressure.",
+        "1": "That's Henry's Law (solubility-pressure). Dalton's Law is about partial pressures in GAS MIXTURES, before dissolution.",
+        "3": "That's Fick's Law of diffusion. Dalton's Law is specifically about how partial pressures ADD in gas mixtures."
+      }
+    }
+  ]
+}

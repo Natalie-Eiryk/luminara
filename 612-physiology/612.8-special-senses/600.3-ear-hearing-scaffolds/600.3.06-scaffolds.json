@@ -1,0 +1,69 @@
+{
+  "parentId": "600.3.06",
+  "parentQuestion": "As sound levels increase in the spiral organ (of Corti), outer hair cells stiffen the basilar membrane.",
+  "scaffolds": [
+    {
+      "q": "The organ of Corti contains two types of hair cells: inner and outer.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Yes! Inner hair cells (IHCs) send signals to the brain; outer hair cells (OHCs) modulate mechanics."
+    },
+    {
+      "q": "Inner hair cells are the primary sensory cells that signal sound to the brain.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Correct! ~95% of auditory nerve fibers connect to inner hair cells."
+    },
+    {
+      "q": "Outer hair cells can actively change their length (contract and elongate).",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Yes! OHCs contain prestin protein that makes them 'electromotile' — they move!"
+    },
+    {
+      "q": "The basilar membrane vibrates in response to sound waves.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Correct! Different frequencies cause maximum vibration at different locations."
+    },
+    {
+      "q": "Outer hair cells can amplify quiet sounds by adding energy to basilar membrane movement.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Yes! OHCs act as 'cochlear amplifiers' boosting sensitivity by ~40-60 dB."
+    },
+    {
+      "q": "Outer hair cells can also DAMPEN loud sounds to protect the inner ear.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Correct! OHC activity compresses the dynamic range — protecting from damage."
+    },
+    {
+      "q": "OHC electromotility can stiffen the basilar membrane in response to loud sounds.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Yes! At high intensities, OHCs modify membrane mechanics to limit movement."
+    },
+    {
+      "q": "Without outer hair cells, hearing becomes less sensitive and less frequency-selective.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Correct! OHC damage causes hearing loss with recruitment (abnormal loudness growth)."
+    },
+    {
+      "q": "Outer hair cells stiffen the basilar membrane at high sound levels, providing dynamic range compression.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "advanced",
+      "explain": "Yes! OHCs are the cochlea's gain control — amplifying quiet, compressing loud."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "clusterId": "510.32",
+  "clusterName": "Polynomial & Rational Functions",
+  "status": "pending",
+  "targetQuestions": 300,
+  "currentBatch": 0,
+  "totalBatches": 12,
+  "questionsGenerated": 0,
+  "scaffoldsGenerated": 0,
+  "lastUpdated": null,
+  "batches": [],
+  "isotopes": [
+    "510.32.polynomials.operations",
+    "510.32.polynomials.division",
+    "510.32.polynomials.zeros",
+    "510.32.rational.simplifying",
+    "510.32.rational.operations",
+    "510.32.asymptotes"
+  ],
+  "prerequisites": ["510.31.*"],
+  "difficultyDistribution": {
+    "easy": 0,
+    "medium": 0,
+    "challenging": 0,
+    "hard": 0
+  }
+}

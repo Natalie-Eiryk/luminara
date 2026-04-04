@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+  Scaffold Studio - Question & Image Pairing Tool
+  Ms. Luminara Quiz Suite
+
+  A standalone tool for:
+  - Viewing questions with auto-matched images
+  - Reviewing and editing image pairings
+  - Testing scaffold sequences
+  - Exporting refined pairings
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scaffold Studio - Ms. Luminara</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Crimson+Pro:wght@300;400;600&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --void: #03060d;
+  --surface: #0a0f1a;
+  --panel: #0e1525;
+  --border: rgba(56,189,248,0.12);
+  --primary: #38bdf8;
+  --warm: #f59e0b;
+  --lumi: #f472b6;
+  --correct: #4ade80;
+  --text: #e2ecf8;
+  --mid: #8ba5c2;
+  --dim: #3d5169;
+  --bright: #f0f7ff;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--void);
+  color: var(--text);
+  font-family: 'Crimson Pro', serif;
+  min-height: 100vh;
+}
+
+/* Layout */
+.app { display: flex; min-height: 100vh; }
+
+/* Sidebar */
+.sidebar {
+  width: 300px;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sidebar-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  color: var(--bright);
+  margin-bottom: 4px;
+}
+
+.sidebar-sub {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--dim);
+}
+
+/* File Loader */
+.file-loader {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.load-btn {
+  width: 100%;
+  padding: 10px 16px;
+  background: rgba(56,189,248,0.1);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--primary);
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.15s;
+  margin-bottom: 8px;
+}
+
+.load-btn:hover {
+  background: rgba(56,189,248,0.2);
+}
+
+.load-btn.active {
+  background: var(--primary);
+  color: var(--void);
+}
+
+/* Question List */
+.question-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px 0;
+}
+
+.question-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.15s;
+  border-left: 3px solid transparent;
+}
+
+.question-item:hover {
+  background: rgba(255,255,255,0.03);
+}
+
+.question-item.active {
+  background: rgba(56,189,248,0.08);
+  border-left-color: var(--primary);
+}
+
+.question-id {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--dim);
+  flex-shrink: 0;
+  width: 50px;
+}
+
+.question-preview {
+  font-size: 13px;
+  color: var(--mid);
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.question-item.active .question-preview {
+  color: var(--text);
+}
+
+.image-count {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--warm);
+  flex-shrink: 0;
+}
+
+/* Stats Bar */
+.stats-bar {
+  padding: 12px 20px;
+  border-top: 1px solid var(--border);
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--dim);
+  display: flex;
+  gap: 16px;
+}
+
+.stat-item span { color: var(--primary); }
+
+/* Main Content */
+.main {
+  flex: 1;
+  padding: 30px 40px;
+  overflow-y: auto;
+}
+
+/* Question Detail */
+.question-detail {
+  max-width: 900px;
+}
+
+.detail-header {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.detail-id {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--warm);
+  margin-bottom: 8px;
+}
+
+.detail-question {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: var(--bright);
+  line-height: 1.4;
+}
+
+/* Options */
+.detail-options {
+  margin: 20px 0;
+}
+
+.option-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.option-item.correct {
+  border-color: var(--correct);
+  background: rgba(74,222,128,0.08);
+}
+
+.option-marker {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--dim);
+  flex-shrink: 0;
+}
+
+.option-item.correct .option-marker {
+  background: var(--correct);
+  color: var(--void);
+}
+
+.option-text {
+  color: var(--text);
+}
+
+/* Explanation */
+.detail-explain {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 24px 0;
+}
+
+.explain-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--warm);
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+.explain-text {
+  color: var(--mid);
+  line-height: 1.6;
+}
+
+/* Image Section */
+.images-section {
+  margin: 32px 0;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: var(--bright);
+}
+
+.section-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  padding: 6px 12px;
+  background: rgba(56,189,248,0.08);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--mid);
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.action-btn:hover {
+  background: rgba(56,189,248,0.15);
+  color: var(--primary);
+}
+
+/* Image Grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.image-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.image-card:hover {
+  border-color: var(--primary);
+}
+
+.image-card.selected {
+  border-color: var(--correct);
+  box-shadow: 0 0 0 2px rgba(74,222,128,0.2);
+}
+
+.image-preview {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.3);
+  padding: 12px;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.image-info {
+  padding: 10px 12px;
+}
+
+.image-title {
+  font-size: 12px;
+  color: var(--bright);
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+
+.image-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-format {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--dim);
+}
+
+.image-score {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--warm);
+}
+
+.image-checkbox {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 20px;
+  height: 20px;
+  background: rgba(0,0,0,0.5);
+  border: 2px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.image-card.selected .image-checkbox {
+  background: var(--correct);
+  border-color: var(--correct);
+  color: var(--void);
+}
+
+/* Scaffolds Section */
+.scaffolds-section {
+  margin: 32px 0;
+}
+
+.scaffold-card {
+  background: var(--panel);
+  border: 1px solid rgba(244,114,182,0.2);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.scaffold-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.scaffold-number {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--lumi);
+  background: rgba(244,114,182,0.15);
+  padding: 4px 10px;
+  border-radius: 99px;
+}
+
+.scaffold-difficulty {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--dim);
+}
+
+.scaffold-question {
+  font-size: 15px;
+  color: var(--bright);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.scaffold-images {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.scaffold-images-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--dim);
+  margin-bottom: 8px;
+}
+
+.scaffold-images-mini {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+}
+
+.mini-image {
+  width: 60px;
+  height: 60px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.mini-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Empty State */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  color: var(--dim);
+}
+
+.empty-icon {
+  font-size: 64px;
+  opacity: 0.3;
+  margin-bottom: 16px;
+}
+
+.empty-text {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Export Panel */
+.export-panel {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: none;
+  z-index: 100;
+}
+
+.export-panel.visible { display: block; }
+
+.export-title {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.export-btn {
+  padding: 10px 20px;
+  background: var(--primary);
+  border: none;
+  border-radius: 6px;
+  color: var(--void);
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.export-btn:hover {
+  opacity: 0.9;
+}
+
+/* Attribution */
+.attribution {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--dim);
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--primary);
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h1 class="sidebar-title">Scaffold Studio</h1>
+      <p class="sidebar-sub">Question & Image Pairing Tool</p>
+    </div>
+
+    <div class="file-loader">
+      <button class="load-btn" onclick="loadQuestionFile('612-physiology/612.8-special-senses/600.1-eye-structure.json')">
+        Load Eye Structure (600.1)
+      </button>
+      <button class="load-btn" onclick="loadQuestionFile('612-physiology/612.8-special-senses/600.2-vision-pathways.json')">
+        Load Vision Pathways (600.2)
+      </button>
+      <button class="load-btn" onclick="loadQuestionFile('612-physiology/612.8-special-senses/600.3-ear-hearing.json')">
+        Load Ear & Hearing (600.3)
+      </button>
+    </div>
+
+    <div class="question-list" id="questionList">
+      <div class="empty-state" style="height:200px;">
+        <div class="empty-icon">📚</div>
+        <p class="empty-text">Load a question file<br>to get started</p>
+      </div>
+    </div>
+
+    <div class="stats-bar" id="statsBar">
+      <div class="stat-item">Questions: <span id="statQuestions">0</span></div>
+      <div class="stat-item">Images: <span id="statImages">0</span></div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main" id="mainContent">
+    <div class="empty-state">
+      <div class="empty-icon">🔬</div>
+      <p class="empty-text">Select a question to view<br>auto-matched images and scaffolds</p>
+    </div>
+  </main>
+</div>
+
+<!-- Export Panel -->
+<div class="export-panel" id="exportPanel">
+  <div class="export-title">Export Pairings</div>
+  <button class="export-btn" onclick="exportPairings()">Download JSON</button>
+</div>
+
+<script src="820.31-core/820.31.20-scaffold-module.js"></script>
+<script>
+// Initialize scaffold module
+const scaffoldModule = new ScaffoldModule({
+  basePath: '.',
+  imagePath: 'assets/diagrams'
+});
+
+const imageManager = new ScaffoldImageManager(scaffoldModule, {
+  basePath: 'assets/diagrams'
+});
+
+let currentQuestion = null;
+let customPairings = new Map(); // questionId -> selected image paths
+
+// Initialize on load
+document.addEventListener('DOMContentLoaded', async () => {
+  await scaffoldModule.init();
+  updateStats();
+});
+
+async function loadQuestionFile(path) {
+  // Update button states
+  document.querySelectorAll('.load-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.onclick.toString().includes(path));
+  });
+
+  const data = await scaffoldModule.loadQuestions(path);
+  if (!data) {
+    alert('Failed to load question file');
+    return;
+  }
+
+  renderQuestionList(data.questions);
+  updateStats();
+  document.getElementById('exportPanel').classList.add('visible');
+}
+
+function renderQuestionList(questions) {
+  const list = document.getElementById('questionList');
+
+  list.innerHTML = questions.map(q => {
+    const images = scaffoldModule.findImagesForQuestion(q);
+    return `
+      <div class="question-item" data-id="${q.id}" onclick="selectQuestion('${q.id}')">
+        <span class="question-id">${q.id}</span>
+        <span class="question-preview">${q.q}</span>
+        <span class="image-count">${images.length} img</span>
+      </div>
+    `;
+  }).join('');
+}
+
+async function selectQuestion(id) {
+  // Update selection state
+  document.querySelectorAll('.question-item').forEach(item => {
+    item.classList.toggle('active', item.dataset.id === id);
+  });
+
+  currentQuestion = scaffoldModule.questions.get(id);
+  if (!currentQuestion) return;
+
+  const images = scaffoldModule.findImagesForQuestion(currentQuestion);
+  const scaffolds = await scaffoldModule.getScaffoldsWithImages(id);
+
+  renderQuestionDetail(currentQuestion, images, scaffolds);
+}
+
+function renderQuestionDetail(question, images, scaffolds) {
+  const main = document.getElementById('mainContent');
+
+  main.innerHTML = `
+    <div class="question-detail">
+      <div class="detail-header">
+        <div class="detail-id">${question.id} — ${question.chapter || ''}</div>
+        <div class="detail-question">${question.q}</div>
+      </div>
+
+      <div class="detail-options">
+        ${question.options.map((opt, idx) => `
+          <div class="option-item ${idx === question.answer ? 'correct' : ''}">
+            <span class="option-marker">${idx === question.answer ? '✓' : String.fromCharCode(65 + idx)}</span>
+            <span class="option-text">${opt}</span>
+          </div>
+        `).join('')}
+      </div>
+
+      <div class="detail-explain">
+        <div class="explain-label">EXPLANATION</div>
+        <div class="explain-text">${question.explain || 'No explanation available'}</div>
+      </div>
+
+      <div class="images-section">
+        <div class="section-header">
+          <h3 class="section-title">Matched Images (${images.length})</h3>
+          <div class="section-actions">
+            <button class="action-btn" onclick="refreshImages()">Refresh Matches</button>
+            <button class="action-btn" onclick="searchMoreImages()">Search More</button>
+          </div>
+        </div>
+        <div class="image-grid">
+          ${images.map(img => `
+            <div class="image-card ${isImageSelected(question.id, img.file) ? 'selected' : ''}"
+                 onclick="toggleImageSelection('${question.id}', '${img.file}')">
+              <div class="image-checkbox">${isImageSelected(question.id, img.file) ? '✓' : ''}</div>
+              <div class="image-preview">
+                <img src="assets/diagrams/${img.file}"
+                     alt="${img.title}"
+                     onerror="this.parentElement.innerHTML='<span style=\\'color:var(--dim);font-size:10px;\\'>Unable to load</span>'">
+              </div>
+              <div class="image-info">
+                <div class="image-title">${img.title}</div>
+                <div class="image-meta">
+                  <span class="image-format">${img.format?.toUpperCase() || ''}</span>
+                  <span class="image-score">Score: ${img.score}</span>
+                </div>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+
+      ${scaffolds && scaffolds.length > 0 ? `
+        <div class="scaffolds-section">
+          <div class="section-header">
+            <h3 class="section-title">Scaffolds (${scaffolds.length})</h3>
+          </div>
+          ${scaffolds.map((s, idx) => `
+            <div class="scaffold-card">
+              <div class="scaffold-header">
+                <span class="scaffold-number">Scaffold ${idx + 1}</span>
+                <span class="scaffold-difficulty">${s.difficulty || 'foundation'}</span>
+              </div>
+              <div class="scaffold-question">${s.q}</div>
+              ${s.matchedImages && s.matchedImages.length > 0 ? `
+                <div class="scaffold-images">
+                  <div class="scaffold-images-label">SUGGESTED IMAGES</div>
+                  <div class="scaffold-images-mini">
+                    ${s.matchedImages.slice(0, 4).map(img => `
+                      <div class="mini-image">
+                        <img src="assets/diagrams/${img.file}" alt="${img.title}">
+                      </div>
+                    `).join('')}
+                  </div>
+                </div>
+              ` : ''}
+            </div>
+          `).join('')}
+        </div>
+      ` : ''}
+
+      <div class="attribution">
+        Medical images from <a href="https://smart.servier.com/" target="_blank">Servier Medical Art</a> (CC BY 4.0)
+      </div>
+    </div>
+  `;
+}
+
+function isImageSelected(questionId, imagePath) {
+  const selected = customPairings.get(questionId);
+  return selected ? selected.has(imagePath) : false;
+}
+
+function toggleImageSelection(questionId, imagePath) {
+  if (!customPairings.has(questionId)) {
+    customPairings.set(questionId, new Set());
+  }
+
+  const selected = customPairings.get(questionId);
+  if (selected.has(imagePath)) {
+    selected.delete(imagePath);
+  } else {
+    selected.add(imagePath);
+  }
+
+  // Re-render
+  if (currentQuestion && currentQuestion.id === questionId) {
+    selectQuestion(questionId);
+  }
+}
+
+function refreshImages() {
+  if (currentQuestion) {
+    selectQuestion(currentQuestion.id);
+  }
+}
+
+function searchMoreImages() {
+  const query = prompt('Search for images:');
+  if (!query) return;
+
+  const results = scaffoldModule.searchImages(query);
+  console.log('Search results:', results);
+  alert(`Found ${results.length} matching images. Check console for details.`);
+}
+
+function updateStats() {
+  const stats = scaffoldModule.getStats();
+  document.getElementById('statQuestions').textContent = stats.questionsLoaded;
+  document.getElementById('statImages').textContent = stats.totalImages;
+}
+
+function exportPairings() {
+  const pairings = scaffoldModule.exportPairings();
+
+  // Merge with custom selections
+  for (const pairing of pairings) {
+    if (customPairings.has(pairing.questionId)) {
+      pairing.selectedImages = [...customPairings.get(pairing.questionId)];
+    }
+  }
+
+  const blob = new Blob([JSON.stringify(pairings, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'question-image-pairings.json';
+  a.click();
+  URL.revokeObjectURL(url);
+}
+</script>
+</body>
+</html>

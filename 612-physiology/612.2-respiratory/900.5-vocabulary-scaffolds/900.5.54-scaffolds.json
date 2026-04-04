@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.54",
+  "parentQuestion": "The phrenic nerve:",
+  "narrative": {
+    "setting": "The Magic School Bus travels up Mr. Edgar's spinal cord to the cervical region - vertebrae C3, C4, and C5. Ms. Frizzle points to two glowing nerve bundles emerging from the spinal cord. 'Class, these are the phrenic nerves - left and right. They look delicate, but they're carrying the most important command in Mr. Edgar's body: BREATHE. These nerves control his diaphragm. If they're damaged, he can't breathe on his own. C3, C4, C5 keeps the diaphragm alive.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar was in a car accident. His C5 vertebra is fractured. If the phrenic nerve is damaged, his diaphragm will be paralyzed, and he'll need a ventilator to survive."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.54.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle projects the word 'phrenic' in glowing letters. 'From Greek phren - the diaphragm, or ancient concept of the mind/soul located there. The phrenic nerve is THE diaphragm nerve. Its sole purpose: control the breathing muscle.'",
+      "q": "What does 'phrenic' refer to in anatomy?",
+      "options": [
+        "The heart",
+        "The diaphragm",
+        "The lungs",
+        "The brain"
+      ],
+      "answer": 1,
+      "explain": "'Phrenic' = relating to the DIAPHRAGM. The phrenic nerve is named for what it controls: the diaphragm muscle. Ancient Greeks thought the diaphragm (phren) was the seat of intelligence - hence 'frenzy' (disturbed diaphragm) and 'phrenology' (studying the mind).",
+      "wrongExplains": {
+        "0": "Heart-related is 'cardiac.' The phrenic nerve goes to the diaphragm, not the heart.",
+        "2": "Lung-related is 'pulmonary.' The phrenic nerve innervates the diaphragm below the lungs.",
+        "3": "Brain-related is 'cerebral.' Though ancient Greeks associated phren with mind, anatomically it's the diaphragm."
+      }
+    },
+    {
+      "id": "900.5.54.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "The bus follows the phrenic nerve's path downward from the neck. 'It originates in the CERVICAL spine - the neck vertebrae,' Ms. Frizzle explains. 'Specifically C3, C4, C5. Medical students memorize: C3, 4, 5 keeps the diaphragm alive.'",
+      "q": "From which spinal cord levels does the phrenic nerve originate?",
+      "options": [
+        "T1-T3 (thoracic)",
+        "L1-L3 (lumbar)",
+        "C3-C5 (cervical)",
+        "S1-S3 (sacral)"
+      ],
+      "answer": 2,
+      "explain": "C3, C4, C5 (CERVICAL vertebrae 3, 4, 5). This is high in the neck. The mnemonic: 'C3, 4, 5 keeps the diaphragm alive.' Damage above C3 (like C1-C2) severs the phrenic nerve origin, causing diaphragm paralysis and ventilator dependence.",
+      "wrongExplains": {
+        "0": "T1-T3 are thoracic (chest level), too low. Phrenic originates higher, in the NECK (cervical).",
+        "1": "L1-L3 are lumbar (lower back), way too low. Phrenic comes from the upper neck region.",
+        "3": "S1-S3 are sacral (pelvis), far too low. Phrenic nerve roots are in the cervical spine."
+      }
+    },
+    {
+      "id": "900.5.54.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle highlights the diaphragm - a dome-shaped muscle separating chest from abdomen. 'This is what the phrenic nerve controls. When the nerve fires, the diaphragm contracts, flattens, pulls down. That creates negative pressure, sucking air in. It's your primary breathing muscle.'",
+      "q": "What muscle does the phrenic nerve innervate?",
+      "options": [
+        "External intercostals",
+        "Diaphragm",
+        "Abdominal muscles",
+        "Sternocleidomastoid"
+      ],
+      "answer": 1,
+      "explain": "The phrenic nerve innervates the DIAPHRAGM exclusively. It's the MOTOR nerve (provides movement signal) and also carries sensory information from the diaphragm. One nerve, one muscle. Phrenic nerve damage = diaphragm paralysis.",
+      "wrongExplains": {
+        "0": "External intercostals are innervated by intercostal nerves (T1-T11). Phrenic controls only the diaphragm.",
+        "2": "Abdominal muscles are controlled by thoracic and lumbar nerves. Phrenic is diaphragm-specific.",
+        "3": "Sternocleidomastoid (neck muscle) is innervated by the spinal accessory nerve (CN XI), not phrenic."
+      }
+    },
+    {
+      "id": "900.5.54.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "The bus watches a nerve impulse travel down the phrenic nerve - a wave of electrical activity racing from C3-C5 down through the chest. It reaches the diaphragm. Instantly, the muscle contracts, flattening. 'There!' Ms. Frizzle points. 'That's an inhalation starting.'",
+      "q": "What happens when the phrenic nerve is stimulated?",
+      "options": [
+        "The diaphragm relaxes and moves upward",
+        "The diaphragm contracts and moves downward (inhalation)",
+        "The heart beats faster",
+        "The lungs produce surfactant"
+      ],
+      "answer": 1,
+      "explain": "Phrenic nerve stimulation → diaphragm CONTRACTS → dome flattens, moves DOWNWARD → chest cavity expands → negative pressure → air rushes IN. It's the nerve signal that triggers inhalation. No phrenic signal = no diaphragm contraction = no breath.",
+      "wrongExplains": {
+        "0": "Relaxation is what happens when the phrenic nerve STOPS firing (exhalation). Stimulation causes contraction.",
+        "2": "The phrenic nerve controls the diaphragm, not the heart. Heart rate is controlled by vagus and sympathetic nerves.",
+        "3": "Surfactant is produced by type II alveolar cells, not controlled by the phrenic nerve."
+      }
+    },
+    {
+      "id": "900.5.54.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Ms. Frizzle shows the pathway: 'Brainstem respiratory center → C3-C5 spinal cord → phrenic nerve → diaphragm. This is the breathing command chain. Break any link and breathing stops. The phrenic nerve is the messenger.'",
+      "q": "Where does the signal to the phrenic nerve originate?",
+      "options": [
+        "The heart",
+        "The respiratory centers in the brainstem (medulla/pons)",
+        "The lungs themselves",
+        "The diaphragm sends its own signal"
+      ],
+      "answer": 1,
+      "explain": "The BRAINSTEM (medulla and pons) contains the respiratory control centers. They generate the rhythmic breathing signal, which travels down the spinal cord to C3-C5, out through the phrenic nerve, to the diaphragm. Brainstem → spinal cord → phrenic nerve → diaphragm = the breathing circuit.",
+      "wrongExplains": {
+        "0": "The heart controls its own rhythm via the SA node. Breathing is controlled by the brainstem.",
+        "2": "Lungs are passive - they don't initiate breathing. The brainstem sends the command.",
+        "3": "Muscles don't generate their own signals - they respond to nerve commands from the CNS."
+      }
+    },
+    {
+      "id": "900.5.54.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "The bus observes both phrenic nerves - left and right - firing in perfect synchrony. 'Bilateral,' Ms. Frizzle notes. 'Both sides work together. If one phrenic nerve is damaged, the opposite side can partially compensate. But lose both, and you can't breathe at all.'",
+      "q": "How many phrenic nerves are there?",
+      "options": [
+        "One",
+        "Two (left and right)",
+        "Three",
+        "Four"
+      ],
+      "answer": 1,
+      "explain": "TWO phrenic nerves - LEFT and RIGHT. Each innervates its side of the diaphragm. They work together to create symmetrical diaphragm contraction. Unilateral damage (one side) weakens breathing but is survivable. Bilateral damage (both sides) requires mechanical ventilation.",
+      "wrongExplains": {
+        "0": "There are two - one for each side of the diaphragm. Bilateral innervation for symmetrical breathing.",
+        "2": "Only two phrenic nerves. You might be thinking of other nerve pairs, but phrenic is just left and right.",
+        "3": "Two phrenic nerves, not four. Don't confuse with other paired cranial or spinal nerves."
+      }
+    },
+    {
+      "id": "900.5.54.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle shows Mr. Edgar's spine X-ray. The C5 fracture is millimeters from the nerve. 'If the fracture damages the phrenic nerve, his diaphragm will be paralyzed. He'll rely on accessory muscles - intercostals, neck muscles - but they can't sustain breathing long-term. He'll need a ventilator.'",
+      "q": "What happens if both phrenic nerves are damaged?",
+      "options": [
+        "Breathing becomes slightly harder but manageable",
+        "The diaphragm is paralyzed; mechanical ventilation is required",
+        "The heart stops",
+        "Only exhalation is affected"
+      ],
+      "answer": 1,
+      "explain": "Bilateral phrenic nerve damage = DIAPHRAGM PARALYSIS. The diaphragm is responsible for ~70% of normal breathing. Accessory muscles (intercostals) can't compensate adequately. Patients need mechanical ventilation to survive. It's a catastrophic injury.",
+      "wrongExplains": {
+        "0": "Losing the diaphragm is NOT manageable. It's the primary breathing muscle - accessory muscles can't sustain life.",
+        "2": "The heart is controlled separately (vagus, sympathetic nerves). Phrenic damage affects breathing, not heartbeat.",
+        "3": "Both inhalation AND exhalation are affected. Without diaphragm contraction, you can't generate negative pressure to inhale."
+      }
+    },
+    {
+      "id": "900.5.54.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle displays a chest X-ray with an elevated hemidiaphragm. 'Unilateral phrenic nerve palsy,' she explains. 'The paralyzed side of the diaphragm doesn't contract - it gets pushed UP by abdominal pressure. The lungs on that side can't expand fully.'",
+      "q": "What is a clinical sign of phrenic nerve damage?",
+      "options": [
+        "Elevated hemidiaphragm on chest X-ray",
+        "Increased lung compliance",
+        "Rapid heart rate only",
+        "Blue-colored lungs"
+      ],
+      "answer": 0,
+      "explain": "ELEVATED HEMIDIAPHRAGM is a classic sign. The paralyzed half of the diaphragm doesn't contract - it's pushed UPWARD by abdominal organs. On X-ray, one side of the diaphragm sits higher than the other. This reduces lung volume on the affected side.",
+      "wrongExplains": {
+        "1": "Compliance is a lung tissue property. Phrenic nerve damage affects muscle function, not tissue elasticity.",
+        "2": "Heart rate may increase to compensate for poor oxygenation, but it's not specific to phrenic damage.",
+        "3": "Lungs don't turn blue - that's not anatomically possible. Cyanosis (blue skin) can occur from hypoxemia, though."
+      }
+    },
+    {
+      "id": "900.5.54.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle shows the mnemonic on the board: 'C3, 4, 5 keeps the diaphragm alive.' She adds: 'Spinal cord injuries are classified by the HIGHEST intact level. C2 injury = no phrenic function. C6 injury = phrenic intact, diaphragm works.'",
+      "q": "A complete spinal cord injury at C2 would affect breathing how?",
+      "options": [
+        "No effect on breathing",
+        "Complete loss of diaphragm function (phrenic nerve origin is cut off)",
+        "Only affects exhalation",
+        "Only affects accessory muscles"
+      ],
+      "answer": 1,
+      "explain": "C2 injury is ABOVE C3-C5 (phrenic origin). The signal from the brainstem CAN'T reach the phrenic nerve. Total diaphragm paralysis results - patient is ventilator-dependent for life. C2 and above injuries are often fatal without immediate life support.",
+      "wrongExplains": {
+        "0": "C2 is catastrophic for breathing. It severs communication to the phrenic nerve - no diaphragm function.",
+        "2": "Both inhalation and exhalation are severely impaired. No diaphragm means minimal breathing of any kind.",
+        "3": "Accessory muscles are ALSO lost (intercostals are T1-T11, below the injury). Nothing works."
+      }
+    },
+    {
+      "id": "900.5.54.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "The bus exits the spinal cord. Mr. Edgar's surgery was successful - the phrenic nerve is intact. He breathes deeply, unconsciously. 'The phrenic nerve,' Ms. Frizzle says softly, 'is life itself. Now tell me: what is the phrenic nerve?'",
+      "q": "The phrenic nerve:",
+      "options": [
+        "Controls the heart rhythm",
+        "Originates from C3-C5 and innervates the diaphragm",
+        "Controls lung expansion directly",
+        "Is part of the sympathetic nervous system"
+      ],
+      "answer": 1,
+      "explain": "The PHRENIC NERVE originates from CERVICAL spinal cord levels C3, C4, C5 and innervates the DIAPHRAGM. It carries motor signals (brainstem → diaphragm) to trigger contraction for inhalation. Damage to the phrenic nerve or its origin causes diaphragm paralysis. Mnemonic: C3, 4, 5 keeps the diaphragm alive.",
+      "wrongExplains": {
+        "0": "Heart rhythm is controlled by the cardiac conduction system and autonomic nerves (vagus, sympathetic), not phrenic.",
+        "2": "The phrenic controls the DIAPHRAGM, which indirectly expands lungs. It doesn't innervate lung tissue directly.",
+        "3": "The phrenic is a SOMATIC motor nerve (voluntary nervous system), not sympathetic (autonomic)."
+      }
+    }
+  ]
+}

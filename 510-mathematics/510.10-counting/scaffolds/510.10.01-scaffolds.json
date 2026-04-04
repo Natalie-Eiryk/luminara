@@ -1,0 +1,429 @@
+{
+  "version": "1.0.0",
+  "batchId": "510.10.01",
+  "questionsScaffolded": 25,
+  "scaffolds": [
+    {
+      "parentId": "510.10.01.01",
+      "scaffolds": [
+        {
+          "id": "510.10.01.01.s1",
+          "type": "prerequisite",
+          "q": "What number comes right after 3?",
+          "options": ["2", "3", "4", "5"],
+          "answer": 2,
+          "explain": "After 3 comes 4 in the counting sequence.",
+          "isotope": "510.10.counting.oral",
+          "difficulty": 0.05,
+          "zpdMoment": "simple_successor"
+        },
+        {
+          "id": "510.10.01.01.s2",
+          "type": "prerequisite",
+          "q": "Count with me: 5, 6, ___. What comes next?",
+          "options": ["4", "7", "8", "5"],
+          "answer": 1,
+          "explain": "After 6 comes 7.",
+          "isotope": "510.10.counting.oral",
+          "difficulty": 0.08,
+          "zpdMoment": "sequence_continuation"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.02",
+      "scaffolds": [
+        {
+          "id": "510.10.01.02.s1",
+          "type": "prerequisite",
+          "q": "What number is missing? 1, 2, ___, 4",
+          "options": ["3", "5", "2", "1"],
+          "answer": 0,
+          "explain": "3 comes between 2 and 4.",
+          "isotope": "510.10.counting.oral",
+          "difficulty": 0.1,
+          "zpdMoment": "gap_filling"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.03",
+      "scaffolds": [
+        {
+          "id": "510.10.01.03.s1",
+          "type": "prerequisite",
+          "q": "If you count forward from 5, do the numbers get bigger or smaller?",
+          "options": ["Bigger", "Smaller", "Stay the same", "Change randomly"],
+          "answer": 0,
+          "explain": "Counting forward makes numbers bigger.",
+          "isotope": "510.10.counting.oral",
+          "difficulty": 0.1,
+          "zpdMoment": "direction_understanding"
+        },
+        {
+          "id": "510.10.01.03.s2",
+          "type": "confusion_clearing",
+          "q": "Counting backward is the opposite of counting forward. Going backward from 5 means: 5, 4, ___",
+          "options": ["5", "3", "6", "2"],
+          "answer": 1,
+          "explain": "Going backward: 5, 4, 3 - each number is one less.",
+          "isotope": "510.10.counting.oral",
+          "difficulty": 0.12,
+          "zpdMoment": "backward_practice"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.04",
+      "scaffolds": [
+        {
+          "id": "510.10.01.04.s1",
+          "type": "prerequisite",
+          "q": "When we start counting at 1, what is the first number we say?",
+          "options": ["0", "1", "2", "10"],
+          "answer": 1,
+          "explain": "We start counting at 1. It's the first counting number.",
+          "isotope": "510.10.counting.oral",
+          "difficulty": 0.08,
+          "zpdMoment": "start_point"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.05",
+      "scaffolds": [
+        {
+          "id": "510.10.01.05.s1",
+          "type": "prerequisite",
+          "q": "2, 4 - we are counting by ___?",
+          "options": ["Ones", "Twos", "Threes", "Fours"],
+          "answer": 1,
+          "explain": "2 to 4 is adding 2. We're counting by twos.",
+          "isotope": "510.10.counting.oral",
+          "difficulty": 0.15,
+          "zpdMoment": "skip_recognition"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.06",
+      "scaffolds": [
+        {
+          "id": "510.10.01.06.s1",
+          "type": "prerequisite",
+          "q": "The number word 'three' matches which digit?",
+          "options": ["2", "3", "4", "5"],
+          "answer": 1,
+          "explain": "'Three' is written as 3.",
+          "isotope": "510.10.counting.written",
+          "difficulty": 0.05,
+          "zpdMoment": "simple_matching"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.07",
+      "scaffolds": [
+        {
+          "id": "510.10.01.07.s1",
+          "type": "prerequisite",
+          "q": "In the number 14, the 1 is in which place?",
+          "options": ["Ones place", "Tens place", "Hundreds place", "First place"],
+          "answer": 1,
+          "explain": "The leftmost digit in a two-digit number is the tens place.",
+          "isotope": "510.10.place-value.intro",
+          "difficulty": 0.18,
+          "zpdMoment": "place_introduction"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.08",
+      "scaffolds": [
+        {
+          "id": "510.10.01.08.s1",
+          "type": "prerequisite",
+          "q": "What number comes after 9?",
+          "options": ["8", "10", "11", "90"],
+          "answer": 1,
+          "explain": "After 9 comes 10. This is the first two-digit number.",
+          "isotope": "510.10.counting.oral",
+          "difficulty": 0.12,
+          "zpdMoment": "single_to_double"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.09",
+      "scaffolds": [
+        {
+          "id": "510.10.01.09.s1",
+          "type": "prerequisite",
+          "q": "How do you write the number 'ten' with digits?",
+          "options": ["1", "01", "10", "100"],
+          "answer": 2,
+          "explain": "Ten is written as 10: one ten and zero ones.",
+          "isotope": "510.10.counting.written",
+          "difficulty": 0.12,
+          "zpdMoment": "ten_writing"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.10",
+      "scaffolds": [
+        {
+          "id": "510.10.01.10.s1",
+          "type": "prerequisite",
+          "q": "How many digits does the number 7 have?",
+          "options": ["0", "1", "2", "7"],
+          "answer": 1,
+          "explain": "7 is a single digit - it has 1 digit.",
+          "isotope": "510.10.counting.written",
+          "difficulty": 0.1,
+          "zpdMoment": "digit_counting"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.11",
+      "scaffolds": [
+        {
+          "id": "510.10.01.11.s1",
+          "type": "prerequisite",
+          "q": "Point to each star and count: * * *. How many stars?",
+          "options": ["2", "3", "4", "1"],
+          "answer": 1,
+          "explain": "Counting each star: 1, 2, 3. There are 3 stars.",
+          "isotope": "510.10.cardinality",
+          "difficulty": 0.05,
+          "zpdMoment": "basic_counting"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.12",
+      "scaffolds": [
+        {
+          "id": "510.10.01.12.s1",
+          "type": "prerequisite",
+          "q": "When you count 'one, two, three, four', what does 'four' tell you?",
+          "options": ["The last object", "The total count", "Start over", "Nothing"],
+          "answer": 1,
+          "explain": "The last number tells us how many altogether.",
+          "isotope": "510.10.cardinality",
+          "difficulty": 0.1,
+          "zpdMoment": "cardinality_meaning"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.13",
+      "scaffolds": [
+        {
+          "id": "510.10.01.13.s1",
+          "type": "confusion_clearing",
+          "q": "You count 4 buttons. If you count the same buttons again, how many will there be?",
+          "options": ["4", "8", "More", "Less"],
+          "answer": 0,
+          "explain": "Counting again doesn't change how many buttons exist.",
+          "isotope": "510.10.cardinality",
+          "difficulty": 0.15,
+          "zpdMoment": "conservation"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.14",
+      "scaffolds": [
+        {
+          "id": "510.10.01.14.s1",
+          "type": "prerequisite",
+          "q": "If nothing is added or taken away, does the count change?",
+          "options": ["Yes, always", "No, it stays the same", "Sometimes", "Only when recounting"],
+          "answer": 1,
+          "explain": "The count stays the same if nothing changes.",
+          "isotope": "510.10.cardinality",
+          "difficulty": 0.12,
+          "zpdMoment": "stability"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.15",
+      "scaffolds": [
+        {
+          "id": "510.10.01.15.s1",
+          "type": "prerequisite",
+          "q": "If you have 5 toys and give away 1, do you have more or fewer toys?",
+          "options": ["More", "Fewer", "The same", "5"],
+          "answer": 1,
+          "explain": "Giving away means you have fewer.",
+          "isotope": "510.10.cardinality",
+          "difficulty": 0.15,
+          "zpdMoment": "removal_effect"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.16",
+      "scaffolds": [
+        {
+          "id": "510.10.01.16.s1",
+          "type": "prerequisite",
+          "q": "Which is bigger: 2 or 4?",
+          "options": ["2", "4", "They are equal", "Cannot tell"],
+          "answer": 1,
+          "explain": "4 is bigger than 2.",
+          "isotope": "510.10.comparison",
+          "difficulty": 0.05,
+          "zpdMoment": "basic_compare"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.17",
+      "scaffolds": [
+        {
+          "id": "510.10.01.17.s1",
+          "type": "prerequisite",
+          "q": "If you have 5 cookies and I have 5 cookies, who has more?",
+          "options": ["You", "Me", "Neither - we have the same", "Cannot tell"],
+          "answer": 2,
+          "explain": "Same number means equal - neither has more.",
+          "isotope": "510.10.comparison",
+          "difficulty": 0.08,
+          "zpdMoment": "equality_intro"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.18",
+      "scaffolds": [
+        {
+          "id": "510.10.01.18.s1",
+          "type": "prerequisite",
+          "q": "The symbol > means:",
+          "options": ["Less than", "Greater than", "Equal to", "Plus"],
+          "answer": 1,
+          "explain": "> means 'greater than' - the open side faces the bigger number.",
+          "isotope": "510.10.comparison",
+          "difficulty": 0.12,
+          "zpdMoment": "symbol_meaning"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.19",
+      "scaffolds": [
+        {
+          "id": "510.10.01.19.s1",
+          "type": "prerequisite",
+          "q": "The symbol < means:",
+          "options": ["Less than", "Greater than", "Equal to", "Minus"],
+          "answer": 0,
+          "explain": "< means 'less than'.",
+          "isotope": "510.10.comparison",
+          "difficulty": 0.12,
+          "zpdMoment": "less_than_symbol"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.20",
+      "scaffolds": [
+        {
+          "id": "510.10.01.20.s1",
+          "type": "prerequisite",
+          "q": "Put in order from smallest to biggest: 3, 1, 2",
+          "options": ["3, 2, 1", "1, 2, 3", "2, 1, 3", "1, 3, 2"],
+          "answer": 1,
+          "explain": "Smallest to biggest: 1, 2, 3.",
+          "isotope": "510.10.ordering",
+          "difficulty": 0.1,
+          "zpdMoment": "simple_ordering"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.21",
+      "scaffolds": [
+        {
+          "id": "510.10.01.21.s1",
+          "type": "prerequisite",
+          "q": "In the counting sequence, what goes between 2 and 4?",
+          "options": ["1", "3", "5", "2"],
+          "answer": 1,
+          "explain": "3 comes between 2 and 4.",
+          "isotope": "510.10.ordering",
+          "difficulty": 0.08,
+          "zpdMoment": "between_numbers"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.22",
+      "scaffolds": [
+        {
+          "id": "510.10.01.22.s1",
+          "type": "prerequisite",
+          "q": "Put in order from biggest to smallest: 3, 5, 1",
+          "options": ["1, 3, 5", "5, 3, 1", "3, 5, 1", "1, 5, 3"],
+          "answer": 1,
+          "explain": "Biggest to smallest: 5, 3, 1.",
+          "isotope": "510.10.ordering",
+          "difficulty": 0.12,
+          "zpdMoment": "descending_intro"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.23",
+      "scaffolds": [
+        {
+          "id": "510.10.01.23.s1",
+          "type": "prerequisite",
+          "q": "2, 4, 6, 8 - this is counting by:",
+          "options": ["Ones", "Twos", "Threes", "Fours"],
+          "answer": 1,
+          "explain": "Each number is 2 more than the last - counting by twos.",
+          "isotope": "510.10.ordering",
+          "difficulty": 0.15,
+          "zpdMoment": "pattern_id"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.24",
+      "scaffolds": [
+        {
+          "id": "510.10.01.24.s1",
+          "type": "prerequisite",
+          "q": "In a race, who comes first: the 1st, 2nd, or 3rd place finisher?",
+          "options": ["1st place", "2nd place", "3rd place", "All at once"],
+          "answer": 0,
+          "explain": "1st place is first - that's what 'first' means!",
+          "isotope": "510.10.ordering",
+          "difficulty": 0.1,
+          "zpdMoment": "ordinal_intro"
+        }
+      ]
+    },
+    {
+      "parentId": "510.10.01.25",
+      "scaffolds": [
+        {
+          "id": "510.10.01.25.s1",
+          "type": "prerequisite",
+          "q": "Put these in order: 1, 5, 3. Least to greatest:",
+          "options": ["5, 3, 1", "1, 3, 5", "3, 1, 5", "1, 5, 3"],
+          "answer": 1,
+          "explain": "Smallest to biggest: 1, 3, 5.",
+          "isotope": "510.10.ordering",
+          "difficulty": 0.12,
+          "zpdMoment": "three_number_sort"
+        }
+      ]
+    }
+  ]
+}

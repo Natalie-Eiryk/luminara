@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.13",
+  "parentQuestion": "The respiratory centers that control breathing rate are located in the:",
+  "narrative": {
+    "setting": "The Magic School Bus navigates up Mr. Edgar's spine, past the spinal cord, through the foramen magnum, and into the skull. They arrive at the brainstem - the most ancient part of the brain, pulsing with automatic rhythms. 'Mission control for survival,' Ms. Frizzle announces. 'Heart rate, blood pressure, and... breathing. All controlled from here.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's breathing rate is fluctuating - sometimes fast, sometimes slow. The control centers must constantly adjust, responding to blood chemistry, activity level, and emotional state. If these centers fail, breathing stops. There is no backup."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.13.s01",
+      "arc": 1,
+      "arcTitle": "The Command Centers",
+      "narrative": "Ms. Frizzle points to the lowest part of the brainstem, where it connects to the spinal cord. 'The medulla oblongata,' she says. 'The name sounds fancy, but it just means the elongated part of the brain.'",
+      "q": "The 'medulla oblongata' is part of which brain structure?",
+      "options": [
+        "Cerebral cortex",
+        "Brainstem",
+        "Cerebellum",
+        "Thalamus"
+      ],
+      "answer": 1,
+      "explain": "The medulla oblongata is the lowest part of the BRAINSTEM. It controls vital AUTOMATIC functions: breathing rhythm, heart rate, blood pressure, swallowing, vomiting. Damage here is fatal.",
+      "wrongExplains": {
+        "0": "Cerebral cortex is for CONSCIOUS thought, not automatic survival functions.",
+        "2": "Cerebellum coordinates MOVEMENT and balance. Medulla controls vital signs.",
+        "3": "Thalamus is a sensory RELAY station. Medulla is the life-support computer."
+      }
+    },
+    {
+      "id": "900.5.13.s02",
+      "arc": 1,
+      "arcTitle": "The Command Centers",
+      "narrative": "'Just above the medulla,' Ms. Frizzle steers upward, 'is the pons.' The bus passes a bulging structure that looks like a bridge connecting brain regions. 'Pons means bridge in Latin.'",
+      "q": "The pons is located:",
+      "options": [
+        "In the cerebral cortex",
+        "In the brainstem, above the medulla",
+        "In the spinal cord",
+        "In the cerebellum"
+      ],
+      "answer": 1,
+      "explain": "The PONS is in the brainstem, positioned ABOVE the medulla. 'Pons' means 'bridge' - it connects the cerebrum, cerebellum, and medulla, relaying information between them.",
+      "wrongExplains": {
+        "0": "The cortex is at the TOP of the brain. Pons is deep in the brainstem.",
+        "2": "The spinal cord is BELOW the brainstem. Pons is above medulla, within the brainstem.",
+        "3": "Cerebellum is BEHIND the pons. The pons is anterior, in the brainstem proper."
+      }
+    },
+    {
+      "id": "900.5.13.s03",
+      "arc": 1,
+      "arcTitle": "The Command Centers",
+      "narrative": "'Together,' Ms. Frizzle draws a diagram, 'the medulla and pons form the respiratory control centers. But they have different jobs.' She highlights clusters of neurons firing rhythmically.",
+      "q": "The two brainstem structures that control breathing are:",
+      "options": [
+        "Cerebrum and cerebellum",
+        "Medulla oblongata and pons",
+        "Thalamus and hypothalamus",
+        "Corpus callosum and hippocampus"
+      ],
+      "answer": 1,
+      "explain": "MEDULLA OBLONGATA and PONS work together. The medulla generates the basic breathing RHYTHM; the pons MODIFIES and fine-tunes it for smooth transitions.",
+      "wrongExplains": {
+        "0": "Cerebrum is conscious thought; cerebellum is movement coordination. Neither generates breathing rhythm.",
+        "2": "Thalamus relays sensory info; hypothalamus controls hormones. Neither runs breathing.",
+        "3": "Corpus callosum connects hemispheres; hippocampus handles memory. Not breathing."
+      }
+    },
+    {
+      "id": "900.5.13.s04",
+      "arc": 2,
+      "arcTitle": "The Rhythm Generator",
+      "narrative": "Ms. Frizzle zooms into the medulla. 'See those neuron clusters?' she points. 'The ventral respiratory group is the pacemaker - it generates the basic inhale-exhale rhythm automatically.'",
+      "q": "Automatic breathing rhythm is generated primarily by which center?",
+      "options": [
+        "Cerebral cortex",
+        "Medulla's ventral respiratory group",
+        "Cerebellum",
+        "Hypothalamus"
+      ],
+      "answer": 1,
+      "explain": "The VENTRAL RESPIRATORY GROUP (VRG) in the medulla is the primary rhythm generator - like a pacemaker for breathing. It fires automatically, driving inhalation and exhalation.",
+      "wrongExplains": {
+        "0": "Cortex provides VOLUNTARY control (holding breath, speaking). Automatic rhythm is from medulla.",
+        "2": "Cerebellum coordinates movement, not breathing rhythm.",
+        "3": "Hypothalamus regulates temperature, hunger, hormones - not primary breathing rhythm."
+      }
+    },
+    {
+      "id": "900.5.13.s05",
+      "arc": 2,
+      "arcTitle": "The Rhythm Generator",
+      "narrative": "'The pons doesn't create the rhythm,' Ms. Frizzle clarifies, 'but it smooths the transitions. The pneumotaxic and apneustic centers fine-tune inspiration and expiration.'",
+      "q": "What role does the pons play in breathing?",
+      "options": [
+        "It generates the basic breathing rhythm",
+        "It modifies the rhythm for smooth breathing transitions",
+        "It has no role in breathing",
+        "It only controls voluntary breath holding"
+      ],
+      "answer": 1,
+      "explain": "The PONS fine-tunes breathing - the pneumotaxic center limits inspiration depth (prevents over-inflation), the apneustic center promotes inspiration. They smooth the inhale-exhale transitions.",
+      "wrongExplains": {
+        "0": "The MEDULLA generates the basic rhythm. Pons modifies and fine-tunes it.",
+        "2": "The pons has IMPORTANT roles in breathing modification.",
+        "3": "VOLUNTARY control is cortical. Pons handles automatic modifications."
+      }
+    },
+    {
+      "id": "900.5.13.s06",
+      "arc": 2,
+      "arcTitle": "The Rhythm Generator",
+      "narrative": "'So the breathing centers generate the automatic rhythm,' Arnold says, 'but I can hold my breath if I want to. How?' Ms. Frizzle smiles. 'You have override capability - from higher up.'",
+      "q": "Can you voluntarily hold your breath? What does this indicate?",
+      "options": [
+        "Breathing is entirely automatic",
+        "The cerebral cortex can override automatic breathing",
+        "The medulla doesn't control breathing",
+        "Breathing requires no brain control"
+      ],
+      "answer": 1,
+      "explain": "You CAN voluntarily hold your breath - the CEREBRAL CORTEX can OVERRIDE the automatic medullary rhythm. But not indefinitely! Rising CO₂ eventually forces you to breathe.",
+      "wrongExplains": {
+        "0": "If entirely automatic, you COULDN'T hold your breath at will.",
+        "2": "The medulla DOES control automatic breathing. Cortex just overrides temporarily.",
+        "3": "Breathing ABSOLUTELY requires brain control - from brainstem and cortex."
+      }
+    },
+    {
+      "id": "900.5.13.s07",
+      "arc": 3,
+      "arcTitle": "Life and Death",
+      "narrative": "'Here's the terrifying truth,' Ms. Frizzle says quietly. 'The brainstem is your life support. Damage it, and...' She doesn't finish. The implications are clear.",
+      "q": "What happens if the brainstem is severely damaged?",
+      "options": [
+        "Only vision is affected",
+        "Automatic breathing stops",
+        "Memory is impaired",
+        "Only hearing is affected"
+      ],
+      "answer": 1,
+      "explain": "Severe brainstem damage stops AUTOMATIC BREATHING and heart rate control - this is why it's life-threatening. 'Brain death' is often defined as irreversible brainstem failure.",
+      "wrongExplains": {
+        "0": "Vision involves OCCIPITAL cortex. Brainstem damage affects VITAL functions.",
+        "2": "Memory involves HIPPOCAMPUS. Brainstem damage stops breathing.",
+        "3": "Hearing involves TEMPORAL cortex. Brainstem controls life-sustaining functions."
+      }
+    },
+    {
+      "id": "900.5.13.s08",
+      "arc": 3,
+      "arcTitle": "Life and Death",
+      "narrative": "'The medulla monitors blood chemistry constantly,' Ms. Frizzle explains. 'When CO₂ rises, it makes you breathe faster. When CO₂ falls, it slows breathing. Automatic adjustment.'",
+      "q": "What primarily stimulates the breathing centers to increase breathing rate?",
+      "options": [
+        "Low oxygen levels",
+        "Rising carbon dioxide (CO₂) levels",
+        "High blood pressure",
+        "Low body temperature"
+      ],
+      "answer": 1,
+      "explain": "Rising CO₂ is the PRIMARY stimulus for breathing. The medulla has chemoreceptors sensitive to CO₂ (actually to the pH drop it causes). Oxygen levels are secondary triggers.",
+      "wrongExplains": {
+        "0": "Low O₂ is a SECONDARY stimulus (peripheral chemoreceptors). CO₂ is primary.",
+        "2": "Blood pressure is regulated by different brainstem reflexes, not breathing rate.",
+        "3": "Temperature affects metabolism but isn't the primary breathing stimulus."
+      }
+    },
+    {
+      "id": "900.5.13.s09",
+      "arc": 3,
+      "arcTitle": "Life and Death",
+      "narrative": "'During sleep, during anesthesia, even in a coma,' Ms. Frizzle notes, 'the brainstem keeps breathing going. No conscious thought required. That's why you don't die every time you fall asleep.'",
+      "q": "Why is the brainstem called the 'vital center'?",
+      "options": [
+        "It controls conscious thought",
+        "It controls automatic life-sustaining functions",
+        "It stores memories",
+        "It processes emotions"
+      ],
+      "answer": 1,
+      "explain": "The brainstem is 'VITAL' because it controls LIFE-SUSTAINING automatic functions: breathing, heart rate, blood pressure. Damage here = death. No other brain region is so immediately essential.",
+      "wrongExplains": {
+        "0": "CONSCIOUS thought is cortex territory. Brainstem handles automatic survival.",
+        "2": "MEMORY is hippocampus. Brainstem doesn't store memories.",
+        "3": "EMOTIONS involve limbic system. Brainstem handles basic survival functions."
+      }
+    },
+    {
+      "id": "900.5.13.s10",
+      "arc": 3,
+      "arcTitle": "Life and Death",
+      "narrative": "The bus hovers in the brainstem, surrounded by the ceaseless rhythm of neural firing. Breathe in. Breathe out. Automatic. Relentless. Life-sustaining. 'These control centers,' Ms. Frizzle asks. 'Where are they?'",
+      "q": "The respiratory centers that control breathing rate are located in the:",
+      "options": [
+        "Cerebral cortex",
+        "Cerebellum",
+        "Medulla oblongata and pons",
+        "Hypothalamus"
+      ],
+      "answer": 2,
+      "explain": "The MEDULLA OBLONGATA and PONS in the brainstem. The medulla's ventral respiratory group generates the rhythm; the pons fine-tunes transitions. Together, they keep you breathing automatically.",
+      "wrongExplains": {
+        "0": "Cortex provides VOLUNTARY breathing control only. Automatic rhythm is brainstem.",
+        "1": "Cerebellum coordinates movement and balance, not breathing rhythm.",
+        "3": "Hypothalamus regulates hormones and homeostasis, not primary breathing control."
+      }
+    }
+  ]
+}

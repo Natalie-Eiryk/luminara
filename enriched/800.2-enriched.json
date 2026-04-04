@@ -1,0 +1,1408 @@
+{
+  "version": "1.0",
+  "source": "LUMI-OS Teaching Module",
+  "prefix": "800.2",
+  "question_count": 40,
+  "questions": [
+    {
+      "id": "800.2.01",
+      "q": "What is the tough, outermost layer of the meninges attached to the skull?",
+      "options": [
+        "Pia mater",
+        "Arachnoid mater",
+        "Dura mater",
+        "Subarachnoid space"
+      ],
+      "answer": 2,
+      "explain": "The dura mater (Latin: 'tough mother') is the thick, fibrous outermost meningeal layer that attaches to the inner skull and provides primary protection.",
+      "mechanism": {
+        "title": "Dura Mater: The Protective Armor",
+        "content": "The cranial dura mater consists of two fused layers: the periosteal layer (attached to skull periosteum) and the meningeal layer (continuous with spinal dura). They separate to form venous sinuses like the superior sagittal sinus. Dural folds (septa) extend inward: the falx cerebri separates cerebral hemispheres; the tentorium cerebelli separates cerebrum from cerebellum; the falx cerebelli separates cerebellar hemispheres. The dura is richly innervated — hence the severe pain of meningitis and 'dural stretch' headaches.",
+        "metaphor": "The dura mater is like a tough leather jacket for the brain — protective on the outside, with pockets (sinuses) that collect fluid, and partitions that keep different brain compartments separated."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.2.02",
+      "q": "What is the delicate, web-like middle meningeal layer?",
+      "options": [
+        "Dura mater",
+        "Arachnoid mater",
+        "Pia mater",
+        "Periosteum"
+      ],
+      "answer": 1,
+      "explain": "The arachnoid mater (Greek: 'spider-like') is the middle meningeal layer with a web-like appearance due to trabeculae extending to the pia.",
+      "mechanism": {
+        "title": "Arachnoid Mater: The Web Between",
+        "content": "The arachnoid mater doesn't follow brain contours — it bridges over sulci while the pia dips into them. This creates the subarachnoid space, which varies in depth: it's expanded at certain locations forming subarachnoid cisterns (cisterna magna, pontine cistern, etc.). Arachnoid granulations (villi) project through the dura into venous sinuses, acting as one-way valves for CSF absorption. The arachnoid barrier cells form a tight junction barrier — important in meningeal infections.",
+        "metaphor": "The arachnoid is like a suspended ceiling in a building: it doesn't follow every contour of the structural ceiling above (dura) or the floor below (pia), creating a space (subarachnoid) where utilities (CSF) can flow."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.2.03",
+      "q": "Which meningeal layer is thin, highly vascular, and directly adherent to the brain surface?",
+      "options": [
+        "Dura mater",
+        "Arachnoid mater",
+        "Pia mater",
+        "Epidural space"
+      ],
+      "answer": 2,
+      "explain": "The pia mater (Latin: 'tender mother') is the thin, vascular innermost layer that closely follows every contour of the brain surface.",
+      "mechanism": {
+        "title": "Pia Mater: The Brain's Second Skin",
+        "content": "The pia mater is a single layer of flattened cells that follows every fold of the brain. Blood vessels entering the brain carry a pial sheath with them into the perivascular spaces. The pia contributes to the blood-brain barrier by helping maintain the vascular basement membrane. At the spinal cord, lateral extensions of pia (denticulate ligaments) anchor the cord to the dura. The pia's rich blood supply makes it a route for meningitis to spread across the brain surface.",
+        "metaphor": "The pia is like shrink-wrap for the brain: it conforms perfectly to every bump and groove, providing a final delicate barrier between the neural tissue and the CSF-filled space above."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.2.04",
+      "q": "Which cerebral lobe is located at the front of the brain, behind the forehead?",
+      "options": [
+        "Occipital lobe",
+        "Temporal lobe",
+        "Parietal lobe",
+        "Frontal lobe"
+      ],
+      "answer": 3,
+      "explain": "The frontal lobe is the anterior-most lobe, located behind the forehead. It contains the motor cortex, prefrontal cortex, and Broca's area.",
+      "mechanism": {
+        "title": "Frontal Lobe: The Executive Suite",
+        "content": "The frontal lobe is divided into functional regions: the precentral gyrus (primary motor cortex) controls voluntary movement with a somatotopic map (homunculus); the prefrontal cortex (anterior to motor areas) handles executive functions, decision-making, personality, and working memory; Broca's area (inferior frontal gyrus, usually left hemisphere) controls speech production. The frontal lobe is the last to fully myelinate (into the mid-20s), which explains adolescent risk-taking and impulsivity.",
+        "metaphor": "The frontal lobe is like the CEO's office: it makes decisions, plans ahead, controls output (movement and speech), and when damaged, the whole organization's judgment and behavior suffer."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.5,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "800.2.05",
+      "q": "Which cerebral lobe is located at the back of the brain and processes visual information?",
+      "options": [
+        "Frontal lobe",
+        "Parietal lobe",
+        "Temporal lobe",
+        "Occipital lobe"
+      ],
+      "answer": 3,
+      "explain": "The occipital lobe is the posterior-most lobe, containing the primary visual cortex and visual association areas.",
+      "mechanism": {
+        "title": "Occipital Lobe: The Visual Processing Center",
+        "content": "The primary visual cortex (V1, striate cortex, Brodmann area 17) lies along the calcarine sulcus. It receives input from the lateral geniculate nucleus of the thalamus and contains a retinotopic map of the visual field. Each hemisphere sees the contralateral visual field. Beyond V1, the visual association cortex processes increasingly complex features: V2 continues basic processing, V4 handles color, V5 (MT) processes motion. Two processing streams emerge: the 'what' pathway (ventral, to temporal lobe) and 'where' pathway (dorsal, to parietal lobe).",
+        "metaphor": "The occipital lobe is like a photo processing lab: raw visual data comes in from the cameras (eyes), gets developed in V1, then goes through different departments (V2-V5) for color correction, motion analysis, and feature identification."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "800.2.06",
+      "q": "Which cerebral lobe is located on the sides of the brain, below the lateral sulcus, and processes auditory information?",
+      "options": [
+        "Frontal lobe",
+        "Parietal lobe",
+        "Temporal lobe",
+        "Occipital lobe"
+      ],
+      "answer": 2,
+      "explain": "The temporal lobe is located laterally, below the lateral (Sylvian) fissure. It contains the auditory cortex, Wernicke's area, and hippocampus.",
+      "mechanism": {
+        "title": "Temporal Lobe: Sound and Memory",
+        "content": "The temporal lobe has distinct functional regions: the superior temporal gyrus contains primary auditory cortex (A1, receiving input from the medial geniculate nucleus) and auditory association areas; Wernicke's area interprets speech (damage causes fluent but meaningless speech — Wernicke's aphasia); the inferior temporal cortex recognizes faces and objects ('what' pathway endpoint); the medial temporal lobe houses the hippocampal formation (essential for forming new declarative memories) and amygdala (emotional processing, especially fear).",
+        "metaphor": "The temporal lobe is like a multimedia archive: sound comes in through the audio department (auditory cortex), language is interpreted (Wernicke's area), and everything gets filed in long-term storage (hippocampus) with emotional tags (amygdala)."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.5,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "800.2.07",
+      "q": "Which cerebral lobe is located between the frontal lobe and occipital lobe, processing sensory information?",
+      "options": [
+        "Temporal lobe",
+        "Parietal lobe",
+        "Insula",
+        "Limbic lobe"
+      ],
+      "answer": 1,
+      "explain": "The parietal lobe lies posterior to the central sulcus and anterior to the occipital lobe. It contains the somatosensory cortex and association areas.",
+      "mechanism": {
+        "title": "Parietal Lobe: The Body Map and Spatial Navigator",
+        "content": "The parietal lobe contains two main functional regions: the anterior parietal (postcentral gyrus, S1) has a somatotopic sensory map where face and hands are overrepresented due to their high receptor density; the posterior parietal cortex integrates multisensory information for spatial perception, attention, and numerical cognition. Damage to the right parietal lobe can cause hemispatial neglect — the patient ignores the left side of space. The intraparietal sulcus is crucial for eye-hand coordination.",
+        "metaphor": "The parietal lobe is like GPS combined with a body scanner: it tells you where things are in space, where your body parts are, and helps coordinate reaching and grasping movements."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.5,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "800.2.08",
+      "q": "What are the elevated ridges on the cerebral cortex called?",
+      "options": [
+        "Sulci",
+        "Gyri",
+        "Fissures",
+        "Ventricles"
+      ],
+      "answer": 1,
+      "explain": "Gyri (singular: gyrus) are the elevated ridges of the cerebral cortex that increase the surface area of the brain.",
+      "mechanism": {
+        "title": "Gyri: The Brain's Folded Surface",
+        "content": "Gyrification (folding) is a hallmark of large brains — it increases cortical surface area without increasing skull size. The degree of folding correlates roughly with cognitive capacity. Gyri form during fetal development as the cortex expands faster than underlying white matter. Primary gyri (like the precentral) form early and are consistent across individuals; secondary and tertiary gyri are more variable. Deep in each gyrus, the cortex continues on both 'walls' and the 'floor' of the adjacent sulcus.",
+        "metaphor": "Gyri are like the peaks of a crumpled piece of paper: the crumpling dramatically increases the paper's surface area while keeping it within a confined space — exactly what the brain needs to pack maximum processing power into the skull."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.8,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "800.2.09",
+      "q": "What are the shallow grooves between the gyri of the cerebral cortex called?",
+      "options": [
+        "Gyri",
+        "Sulci",
+        "Fissures",
+        "Cisterns"
+      ],
+      "answer": 1,
+      "explain": "Sulci (singular: sulcus) are the shallow grooves separating the gyri. They increase brain surface area along with the gyri.",
+      "mechanism": {
+        "title": "Sulci: The Brain's Valleys",
+        "content": "Sulci range from shallow grooves to deep indentations. The central sulcus is a key landmark separating motor (precentral gyrus) from sensory (postcentral gyrus) cortex. The lateral (Sylvian) sulcus separates the temporal lobe from frontal and parietal lobes; deep within it lies the insula. The parieto-occipital sulcus marks the boundary between parietal and occipital lobes on the medial surface. Blood vessels in the subarachnoid space follow sulci to reach the cortex.",
+        "metaphor": "Sulci are the valleys between the gyral mountains — and like valleys, they channel important resources (blood vessels and CSF) to the surrounding terrain."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.8,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "800.2.10",
+      "q": "What is the deep groove that separates the left and right cerebral hemispheres?",
+      "options": [
+        "Central sulcus",
+        "Lateral sulcus",
+        "Longitudinal fissure",
+        "Transverse fissure"
+      ],
+      "answer": 2,
+      "explain": "The longitudinal fissure (also called the median or interhemispheric fissure) runs anterior to posterior, separating the two cerebral hemispheres.",
+      "mechanism": {
+        "title": "Longitudinal Fissure: The Great Divide",
+        "content": "The longitudinal fissure nearly separates the cerebral hemispheres completely — only the corpus callosum, anterior commissure, and hippocampal commissure connect them deep within. The falx cerebri (a sickle-shaped dural fold) extends into this fissure, preventing excessive lateral brain movement during head rotation. The inferior sagittal sinus runs along the free edge of the falx, joining the straight sinus. In cases of severe brain swelling, one hemisphere can herniate under the falx (subfalcine herniation), compressing the opposite side.",
+        "metaphor": "The longitudinal fissure is like the seam running down a baseball — it divides the two halves but they're still connected deep inside (corpus callosum = the baseball's core)."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.2.11",
+      "q": "What is the groove that separates the cerebrum from the cerebellum?",
+      "options": [
+        "Longitudinal fissure",
+        "Transverse fissure",
+        "Central sulcus",
+        "Lateral sulcus"
+      ],
+      "answer": 1,
+      "explain": "The transverse fissure (also called the transverse cerebral fissure) separates the posterior cerebrum from the cerebellum below.",
+      "mechanism": {
+        "title": "Transverse Fissure: The Tent Line",
+        "content": "The transverse fissure marks where the tentorium cerebelli separates the supratentorial compartment (cerebrum) from the infratentorial (cerebellum and brainstem). This dural fold is important clinically: swelling above it can cause transtentorial (uncal) herniation, compressing the midbrain and potentially fatal. The straight sinus runs where the falx meets the tentorium. The cerebellum sits in the posterior cranial fossa, protected by the tentorium above and the skull below.",
+        "metaphor": "The transverse fissure and tentorium are like a protective floor separating the upper story (cerebrum) from the basement (cerebellum and brainstem) — if the upper floor collapses, it's a catastrophe for what's below."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.2.12",
+      "q": "What is the structure inferior to the cerebrum that coordinates movement and balance, showing a tree-like white matter pattern called arbor vitae?",
+      "options": [
+        "Thalamus",
+        "Cerebellum",
+        "Brainstem",
+        "Basal ganglia"
+      ],
+      "answer": 1,
+      "explain": "The cerebellum ('little brain') sits posterior and inferior to the cerebrum. When cut in sagittal section, its white matter shows a branching pattern called arbor vitae ('tree of life').",
+      "mechanism": {
+        "title": "Cerebellum and Arbor Vitae: The Motor Coordinator",
+        "content": "The cerebellum has three functional divisions: vestibulocerebellum (balance), spinocerebellum (movement coordination), and cerebrocerebellum (motor planning and learning). The arbor vitae ('tree of life') is the branching white matter core carrying fibers to and from the cerebellar cortex. Three cerebellar peduncles connect it to the brainstem: superior (output to thalamus), middle (input from pons/cortex), and inferior (input from spinal cord/vestibular). Damage causes ataxia, dysmetria, intention tremor, and difficulty with rapid alternating movements.",
+        "metaphor": "The cerebellum is like a precision motion sensor and autopilot: it constantly compares intended movements to actual movements and makes real-time corrections. The arbor vitae is the wiring tree that makes all this high-speed coordination possible."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.2.13",
+      "q": "What large fiber bundle connects the left and right cerebral hemispheres?",
+      "options": [
+        "Internal capsule",
+        "Fornix",
+        "Corpus callosum",
+        "Optic chiasm"
+      ],
+      "answer": 2,
+      "explain": "The corpus callosum is the largest commissure in the brain, containing ~200 million axons connecting corresponding areas of the two hemispheres.",
+      "mechanism": {
+        "title": "Corpus Callosum: The Great Commissure",
+        "content": "The corpus callosum enables the two hemispheres to share information and coordinate activity. Fibers are organized topographically: the genu connects prefrontal regions; the body connects motor and somatosensory areas; the splenium connects occipital and temporal regions. Split-brain studies showed that the left hemisphere (usually) dominates language, while the right excels at spatial tasks. Without the corpus callosum, a patient might recognize a face with their right hemisphere but be unable to name it (language in left hemisphere).",
+        "metaphor": "The corpus callosum is like a massive fiber optic cable connecting two supercomputers: without it, the left and right brain can still function independently, but they can't share data or coordinate on complex tasks."
+      },
+      "isotopes": [
+        "neurology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.2.14",
+      "q": "What structure on the dorsal midbrain contains the superior and inferior colliculi?",
+      "options": [
+        "Pons",
+        "Corpora quadrigemina",
+        "Thalamus",
+        "Pineal gland"
+      ],
+      "answer": 1,
+      "explain": "The corpora quadrigemina ('four-body' or 'quadruplet bodies') are four bumps on the dorsal midbrain — two superior colliculi and two inferior colliculi.",
+      "mechanism": {
+        "title": "Corpora Quadrigemina: The Midbrain's Four Hills",
+        "content": "The superior colliculi receive direct retinal input and control visual reflexes — particularly saccadic eye movements and turning toward visual stimuli. They contain a retinotopic map. The inferior colliculi are a mandatory relay in the auditory pathway: all ascending auditory information passes through before reaching the medial geniculate nucleus and auditory cortex. They contain a tonotopic map. Together, these structures enable quick orienting responses to sensory stimuli — essential survival reflexes.",
+        "metaphor": "The colliculi are like a security system's motion sensors: the superior colliculi detect visual movement and orient the eyes; the inferior colliculi detect sounds and orient attention — both faster than conscious perception."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.5,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "800.2.15",
+      "q": "What small endocrine gland, located posterior to the thalamus, secretes melatonin?",
+      "options": [
+        "Pituitary gland",
+        "Pineal gland",
+        "Hypothalamus",
+        "Mammillary body"
+      ],
+      "answer": 1,
+      "explain": "The pineal gland (pineal body or epiphysis cerebri) is a small midline structure that secretes melatonin, regulating circadian rhythms.",
+      "mechanism": {
+        "title": "Pineal Gland: The Body's Sundial",
+        "content": "The pineal gland is the body's light-dark detector. Light information travels from the retina to the suprachiasmatic nucleus (SCN, the master clock), then through a complex pathway to the pineal. In darkness, the pineal synthesizes melatonin from serotonin. Melatonin levels peak at night, promoting sleep and setting circadian rhythms. The pineal is outside the blood-brain barrier and highly vascularized. Descartes famously (but incorrectly) proposed it as the 'seat of the soul.'",
+        "metaphor": "The pineal gland is like an internal sundial: it tracks the light-dark cycle and broadcasts the time to the rest of the body via melatonin — telling every cell whether it's day or night."
+      },
+      "isotopes": [
+        "endocrine.structure"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "800.2.16",
+      "q": "Which cranial nerve carries visual information from the retina to the brain?",
+      "options": [
+        "Oculomotor nerve (III)",
+        "Optic nerve (II)",
+        "Trigeminal nerve (V)",
+        "Facial nerve (VII)"
+      ],
+      "answer": 1,
+      "explain": "The optic nerve (CN II) carries visual information from the retina to the thalamus and other visual centers.",
+      "mechanism": {
+        "title": "Optic Nerve: The Visual Highway",
+        "content": "The optic nerve (CN II) forms where retinal ganglion cell axons converge at the optic disc (blind spot — no photoreceptors there). It passes through the optic canal and joins its partner at the optic chiasm, where nasal fibers cross. After the chiasm, the optic tract carries information to the lateral geniculate nucleus (LGN) of the thalamus, then optic radiations reach V1. Some fibers bypass the LGN, going to the superior colliculus (reflexes) and pretectal area (pupillary light reflex).",
+        "metaphor": "The optic nerve is like a fiber optic bundle from a security camera: it carries all the visual data from the retina to the brain's processing centers, with a junction box (chiasm) where some cables cross to the opposite side."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.5,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "800.2.17",
+      "q": "Which cranial nerve (CN III) controls most eye movements and pupil constriction?",
+      "options": [
+        "Optic nerve",
+        "Oculomotor nerve",
+        "Abducens nerve",
+        "Trochlear nerve"
+      ],
+      "answer": 1,
+      "explain": "The oculomotor nerve (CN III) innervates four of six extraocular muscles, the levator palpebrae (eyelid), and carries parasympathetic fibers for pupil constriction.",
+      "mechanism": {
+        "title": "Oculomotor Nerve: The Eye's Master Controller",
+        "content": "CN III emerges from the midbrain and passes through the superior orbital fissure to reach the eye. Motor fibers from the oculomotor nucleus control four extraocular muscles and the eyelid. Parasympathetic fibers from the Edinger-Westphal nucleus synapse in the ciliary ganglion, then innervate the pupillary sphincter (constriction) and ciliary muscle (accommodation for near vision). An oculomotor palsy causes the classic triad: ptosis (drooping lid), mydriasis (dilated pupil), and lateral/inferior eye deviation.",
+        "metaphor": "The oculomotor nerve is like a puppeteer controlling most of the eye's strings: it moves the eye in most directions, opens the curtain (eyelid), and adjusts the camera aperture and focus (pupil and lens)."
+      },
+      "isotopes": [
+        "ans.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.2.18",
+      "q": "Which cranial nerve (CN IV) innervates the superior oblique muscle?",
+      "options": [
+        "Oculomotor nerve",
+        "Trochlear nerve",
+        "Trigeminal nerve",
+        "Abducens nerve"
+      ],
+      "answer": 1,
+      "explain": "The trochlear nerve (CN IV) is the only cranial nerve to emerge from the dorsal brainstem and innervates only the superior oblique muscle.",
+      "mechanism": {
+        "title": "Trochlear Nerve: The Single-Muscle Controller",
+        "content": "The trochlear nerve has the longest intracranial course of any cranial nerve. It's named for the trochlea ('pulley') through which the superior oblique tendon passes before attaching to the eye. The superior oblique's primary action depends on eye position: when looking medially, it depresses the eye; when looking ahead, it intorts (rotates the top toward the nose). Head tilt away from the affected side compensates for trochlear palsy.",
+        "metaphor": "The trochlear nerve is like a dedicated elevator cable for one specific floor: it only controls the superior oblique, but that muscle's unique pulley arrangement makes it essential for looking down and in — like when reading a book."
+      },
+      "isotopes": [
+        "muscle.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.2.19",
+      "q": "Which cranial nerve (CN V) has three divisions and carries sensory information from the face?",
+      "options": [
+        "Facial nerve",
+        "Trigeminal nerve",
+        "Glossopharyngeal nerve",
+        "Vagus nerve"
+      ],
+      "answer": 1,
+      "explain": "The trigeminal nerve (CN V) has three divisions: ophthalmic (V1), maxillary (V2), and mandibular (V3), covering facial sensation and mastication.",
+      "mechanism": {
+        "title": "Trigeminal Nerve: The Face's Sensory Giant",
+        "content": "The trigeminal nerve's three divisions exit through different foramina: V1 through the superior orbital fissure, V2 through foramen rotundum, V3 through foramen ovale. All sensory fibers have cell bodies in the trigeminal (semilunar/Gasserian) ganglion. The motor root travels only with V3 to mastication muscles. Trigeminal neuralgia ('tic douloureux') causes excruciating facial pain, often triggered by light touch. The corneal reflex tests V1 (sensory) and VII (motor blink).",
+        "metaphor": "The trigeminal nerve is like three security zones covering your face: V1 patrols the penthouse (forehead and eyes), V2 monitors the middle floors (cheeks), and V3 secures the ground level (jaw) — while also controlling the building's chewing machinery."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.2.20",
+      "q": "Which cranial nerve (CN VI) innervates the lateral rectus muscle to abduct the eye?",
+      "options": [
+        "Trochlear nerve",
+        "Oculomotor nerve",
+        "Abducens nerve",
+        "Optic nerve"
+      ],
+      "answer": 2,
+      "explain": "The abducens nerve (CN VI) innervates only the lateral rectus muscle, which abducts the eye (turns it laterally).",
+      "mechanism": {
+        "title": "Abducens Nerve: The Lateral Looker",
+        "content": "The abducens nerve has a simple function (lateral rectus only) but a complex course. It emerges from the pontomedullary junction, runs a long course over the clivus, through Dorello's canal, and the cavernous sinus before entering the orbit. This long path makes it the first nerve affected by increased intracranial pressure — 'sixth nerve palsy' is a false localizing sign. The medial longitudinal fasciculus (MLF) coordinates CN VI with the contralateral CN III for conjugate eye movements.",
+        "metaphor": "The abducens nerve is like a single cable running to a side-mounted motor: its only job is pulling the eye outward (lateral gaze), but its long, winding path through the skull makes it vulnerable to pressure from above."
+      },
+      "isotopes": [
+        "muscle.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.2.21",
+      "q": "The lateral, third, and fourth ventricles are CSF-filled cavities. Which ventricle is located in each cerebral hemisphere?",
+      "options": [
+        "Third ventricle",
+        "Fourth ventricle",
+        "Lateral ventricle",
+        "Cerebral aqueduct"
+      ],
+      "answer": 2,
+      "explain": "The lateral ventricles (one in each hemisphere) are the largest ventricles, extending into each of the four cerebral lobes.",
+      "mechanism": {
+        "title": "Lateral Ventricles: The Brain's Cisterns",
+        "content": "The lateral ventricles develop from the expanded neural tube cavity within the telencephalon. They're C-shaped, wrapping around the thalamus and basal ganglia. CSF flows from lateral ventricles through the interventricular foramina to the third ventricle, then through the cerebral aqueduct to the fourth ventricle, and out to the subarachnoid space. Enlargement of the lateral ventricles (hydrocephalus) can result from overproduction, obstruction, or poor absorption of CSF.",
+        "metaphor": "The lateral ventricles are like reservoirs within each hemisphere — connected to the main water treatment system (other ventricles and subarachnoid space) and constantly producing fresh CSF to cushion and nourish the brain."
+      },
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.2.22",
+      "q": "What is the narrow channel in the midbrain connecting the third and fourth ventricles?",
+      "options": [
+        "Foramen of Monro",
+        "Cerebral aqueduct",
+        "Central canal",
+        "Foramen of Luschka"
+      ],
+      "answer": 1,
+      "explain": "The cerebral aqueduct (aqueduct of Sylvius) is the narrow channel through the midbrain connecting the third ventricle to the fourth ventricle.",
+      "mechanism": {
+        "title": "Cerebral Aqueduct: The Critical Bottleneck",
+        "content": "The cerebral aqueduct is the narrowest point in the ventricular system, making it vulnerable to obstruction by tumors, inflammation, or congenital malformation. Obstruction here causes enlargement of the lateral and third ventricles while the fourth ventricle remains normal-sized. Periaqueductal gray matter surrounding the aqueduct is involved in pain modulation — it's a target for deep brain stimulation in intractable pain. The aqueduct is also surrounded by nuclei controlling eye movement (CN III, IV).",
+        "metaphor": "The cerebral aqueduct is like a single narrow drain pipe connecting two large water tanks: if it gets clogged, everything upstream backs up (hydrocephalus) while the downstream tank stays normal."
+      },
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.2.23",
+      "q": "What is the opening connecting each lateral ventricle to the third ventricle?",
+      "options": [
+        "Cerebral aqueduct",
+        "Foramen of Magendie",
+        "Interventricular foramen (of Monro)",
+        "Choroid fissure"
+      ],
+      "answer": 2,
+      "explain": "The interventricular foramina (foramina of Monro) are paired openings connecting each lateral ventricle to the midline third ventricle.",
+      "mechanism": {
+        "title": "Interventricular Foramen: The Connection Point",
+        "content": "The interventricular foramen (of Monro) is about 5mm in diameter, located at the junction of the fornix and thalamus. CSF from each lateral ventricle must pass through its foramen to reach the third ventricle. Colloid cysts often form here (from remnants of embryonic structures), and they can cause intermittent obstruction as they bob up and down with head position — the classic 'positional headache.' Bilateral obstruction causes hydrocephalus; unilateral causes asymmetric ventricular enlargement.",
+        "metaphor": "The interventricular foramina are like doorways between rooms: each lateral ventricle (bedroom) has its own door to the hallway (third ventricle). Block a door and that room floods while the others drain normally."
+      },
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.2.24",
+      "q": "On the brain's inferior surface, what is the X-shaped structure where optic nerve fibers partially cross?",
+      "options": [
+        "Optic tract",
+        "Optic chiasm",
+        "Mammillary body",
+        "Infundibulum"
+      ],
+      "answer": 1,
+      "explain": "The optic chiasm is where the two optic nerves meet and nasal retinal fibers cross to the opposite side (temporal fibers don't cross).",
+      "mechanism": {
+        "title": "Optic Chiasm: The Visual Crossroads",
+        "content": "The optic chiasm lies just anterior to the pituitary gland and infundibulum. The crossing pattern ensures that each hemisphere receives a complete picture of the contralateral visual field. Fibers from the nasal retina (viewing the temporal field) cross; fibers from the temporal retina (viewing the nasal field) don't cross. Lesions at different points in the visual pathway cause characteristic visual field defects: optic nerve lesion = ipsilateral blindness; chiasm lesion = bitemporal hemianopia; optic tract lesion = contralateral homonymous hemianopia.",
+        "metaphor": "The optic chiasm is like a highway interchange where traffic from the inside lanes (nasal retina) crosses over to the opposite direction, while outside lane traffic (temporal retina) continues straight — ensuring each 'city' (hemisphere) gets a complete view of the road ahead."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.2.25",
+      "q": "What are the two round structures posterior to the optic chiasm, involved in memory circuits?",
+      "options": [
+        "Superior colliculi",
+        "Mammillary bodies",
+        "Thalamic nuclei",
+        "Olfactory bulbs"
+      ],
+      "answer": 1,
+      "explain": "The mammillary bodies are paired structures on the inferior hypothalamus, part of the limbic system and Papez circuit for memory.",
+      "mechanism": {
+        "title": "Mammillary Bodies: Memory's Relay Station",
+        "content": "The mammillary bodies are hypothalamic nuclei that receive the main output of the hippocampus via the fornix. They project to the anterior thalamic nucleus via the mammillothalamic tract, which then projects to the cingulate gyrus — completing the Papez circuit. This circuit is essential for converting short-term memories to long-term storage. The mammillary bodies are exquisitely sensitive to thiamine (B1) deficiency, which is why alcoholics (who often have poor nutrition) develop the characteristic mammillary body lesions of Wernicke-Korsakoff syndrome.",
+        "metaphor": "The mammillary bodies are like relay towers in a memory transmission network: signals from the hippocampus (encoding center) pass through them on the way to the cortex (storage). Knock out the towers, and new memories can't reach their destination."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.2.26",
+      "q": "What is the small stalk connecting the hypothalamus to the pituitary gland?",
+      "options": [
+        "Fornix",
+        "Infundibulum",
+        "Optic tract",
+        "Mammillothalamic tract"
+      ],
+      "answer": 1,
+      "explain": "The infundibulum (pituitary stalk) is the thin structure connecting the hypothalamus to the posterior pituitary and carrying the hypophyseal portal system.",
+      "mechanism": {
+        "title": "Infundibulum: The Neuroendocrine Bridge",
+        "content": "The infundibulum is the critical link between the nervous and endocrine systems. Hypothalamic neurons in the supraoptic and paraventricular nuclei send axons through the infundibulum to the posterior pituitary, where they release oxytocin (milk ejection, uterine contraction) and ADH/vasopressin (water retention). Meanwhile, other hypothalamic neurons release hormones (TRH, CRH, GnRH, etc.) into the portal system, which carries them to the anterior pituitary. Stalk transection causes diabetes insipidus (loss of ADH) and varying degrees of anterior pituitary failure.",
+        "metaphor": "The infundibulum is like a control cable running from mission control (hypothalamus) to the body's chemical factory (pituitary): some signals travel as direct electrical commands (to posterior pituitary), others as chemical messages through a dedicated tube system (portal vessels to anterior pituitary)."
+      },
+      "isotopes": [
+        "endocrine.structure"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.2.27",
+      "q": "What endocrine gland hangs from the infundibulum and is often called the 'master gland'?",
+      "options": [
+        "Pineal gland",
+        "Thyroid gland",
+        "Pituitary gland",
+        "Adrenal gland"
+      ],
+      "answer": 2,
+      "explain": "The pituitary gland (hypophysis) hangs from the hypothalamus via the infundibulum and produces hormones that regulate other endocrine glands.",
+      "mechanism": {
+        "title": "Pituitary Gland: The Endocrine Commander",
+        "content": "The pituitary has two developmental origins: the anterior lobe (adenohypophysis) develops from oral ectoderm (Rathke's pouch); the posterior lobe (neurohypophysis) develops from neural tissue. This explains their different functions: the anterior lobe synthesizes and secretes hormones in response to hypothalamic releasing factors; the posterior lobe stores and releases hormones made in the hypothalamus. Pituitary tumors can cause hormone excess or deficiency, and visual field defects from chiasm compression.",
+        "metaphor": "The pituitary is like corporate middle management: it receives directives from the CEO (hypothalamus), then sends orders to regional offices (thyroid, adrenals, gonads). When it malfunctions, the whole organizational hierarchy is disrupted."
+      },
+      "isotopes": [
+        "endocrine.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.5,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "800.2.28",
+      "q": "Which brainstem structure is the large, bulging bridge between the midbrain and medulla?",
+      "options": [
+        "Medulla oblongata",
+        "Pons",
+        "Cerebral peduncles",
+        "Tectum"
+      ],
+      "answer": 1,
+      "explain": "The pons (Latin: 'bridge') is the prominent bulge on the ventral brainstem, connecting the midbrain above to the medulla below.",
+      "mechanism": {
+        "title": "Pons: The Brainstem Bridge",
+        "content": "The pons is named for its role bridging the cerebellum to the cerebrum via the corticopontocerebellar pathway: cortical fibers synapse in pontine nuclei, which project through the middle cerebellar peduncle to the cerebellum. This pathway refines voluntary movement. The pontine tegmentum contains reticular formation nuclei involved in arousal, sleep, and respiration. The basilar artery runs on the ventral pontine surface — its occlusion causes devastating 'locked-in syndrome' (aware but unable to move except for vertical eye movements).",
+        "metaphor": "The pons is a bridge in two senses: anatomically it bridges midbrain to medulla, and functionally it bridges the planning cerebrum to the coordinating cerebellum — like a railroad junction routing traffic between major stations."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.2.29",
+      "q": "What is the most inferior part of the brainstem, continuous with the spinal cord?",
+      "options": [
+        "Pons",
+        "Midbrain",
+        "Medulla oblongata",
+        "Diencephalon"
+      ],
+      "answer": 2,
+      "explain": "The medulla oblongata is the lowest part of the brainstem, transitioning to the spinal cord at the foramen magnum.",
+      "mechanism": {
+        "title": "Medulla Oblongata: The Vital Hub",
+        "content": "The medulla contains life-essential centers that operate without conscious input: the cardiovascular center regulates heart rate and blood vessel diameter; the respiratory center sets breathing rhythm; the vomiting center coordinates this protective reflex. It also contains relay nuclei for ascending sensory pathways. The pyramidal decussation at the lower medulla is why stroke on one side causes weakness on the opposite side. Damage to the medulla is often fatal — it controls the functions you can't live without.",
+        "metaphor": "The medulla is like an autopilot computer in an aircraft: it handles the essential functions (heartbeat, breathing, blood pressure) that must continue 24/7, freeing the main computer (cortex) for higher-level tasks."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.2.30",
+      "q": "What are the two raised ridges on the ventral medulla that contain descending motor fibers?",
+      "options": [
+        "Olives",
+        "Pyramids (medullary pyramids)",
+        "Inferior colliculi",
+        "Cerebellar peduncles"
+      ],
+      "answer": 1,
+      "explain": "The pyramids are paired ridges on the ventral medulla containing corticospinal tract fibers that control voluntary movement.",
+      "mechanism": {
+        "title": "Medullary Pyramids: The Motor Highway's Crossing",
+        "content": "The pyramids are named for their triangular cross-sectional shape. They contain the corticospinal tract fibers originating from the primary motor cortex (and premotor areas). The pyramidal decussation at the lower medulla is a visible landmark where fibers cross the midline. About 90% cross to form the lateral corticospinal tract (controlling limb muscles); 10% remain uncrossed as the anterior corticospinal tract (controlling axial muscles, crossing at segmental levels). This decussation explains contralateral motor control.",
+        "metaphor": "The pyramids are like a highway exchange where most traffic (90%) switches from the right lanes to the left lanes, and vice versa — explaining why damage to one side of the brain affects the opposite side of the body."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.2.31",
+      "q": "What thin membrane separates the two lateral ventricles and is visible in coronal brain sections?",
+      "options": [
+        "Corpus callosum",
+        "Fornix",
+        "Septum pellucidum",
+        "Falx cerebri"
+      ],
+      "answer": 2,
+      "explain": "The septum pellucidum is a thin, translucent membrane between the two lateral ventricles, stretched between the corpus callosum and fornix.",
+      "mechanism": {
+        "title": "Septum Pellucidum: The Transparent Wall",
+        "content": "The septum pellucidum ('translucent partition') is a double-layered membrane separating the lateral ventricles. It attaches above to the corpus callosum and below to the fornix. The cavum septi pellucidi (a potential space between the layers) is present in 80% of newborns but usually fuses. It can persist or enlarge pathologically. The septum is thin enough that hydrocephalus can cause it to bow. It's also a landmark for neurosurgeons approaching the third ventricle.",
+        "metaphor": "The septum pellucidum is like a sheer curtain dividing a large room into two: it separates the lateral ventricles but is thin enough that you can almost see through it."
+      },
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.2.32",
+      "q": "What C-shaped white matter tract connects the hippocampus to the mammillary bodies?",
+      "options": [
+        "Corpus callosum",
+        "Fornix",
+        "Cingulum",
+        "Internal capsule"
+      ],
+      "answer": 1,
+      "explain": "The fornix is an arching white matter bundle carrying the major output of the hippocampus to the hypothalamus (mammillary bodies).",
+      "mechanism": {
+        "title": "Fornix: The Memory Arch",
+        "content": "The fornix is the primary efferent pathway of the hippocampus. Hippocampal output travels through the fimbria, becomes the crus of the fornix, joins with the opposite side at the hippocampal commissure (psalterium), continues as the body of the fornix under the corpus callosum, then separates into columns that descend through the hypothalamus to reach the mammillary bodies. Precommissural fibers go to septal nuclei. The fornix is essential for episodic memory formation — its disruption is one reason Korsakoff patients can't form new memories.",
+        "metaphor": "The fornix is like a dedicated courier service from the hippocampus (the brain's event recorder) to the mammillary bodies (the relay station): it carries memory-related messages along a specific, curved route under the main office building (corpus callosum)."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "800.2.33",
+      "q": "What large egg-shaped structure sits on either side of the third ventricle and relays sensory information to the cortex?",
+      "options": [
+        "Hypothalamus",
+        "Thalamus",
+        "Basal ganglia",
+        "Amygdala"
+      ],
+      "answer": 1,
+      "explain": "The thalamus is the large diencephalic structure forming the walls of the third ventricle and serving as the brain's main sensory relay station.",
+      "mechanism": {
+        "title": "Thalamus: The Sensory Gateway",
+        "content": "The thalamus contains over 50 nuclei organized into groups: anterior (part of limbic system, memory), medial (frontal lobe connections, emotion), lateral (motor and sensory relay), and intralaminar (arousal, attention). Specific relay nuclei have point-to-point connections: the VPL receives body sensation, VPM receives face sensation, LGN receives vision, MGN receives audition. The reticular nucleus surrounds the thalamus and modulates thalamic activity. During sleep, thalamic gating blocks sensory input from reaching the cortex.",
+        "metaphor": "The thalamus is like a telephone switchboard: every incoming call (sensory signal) must pass through it to reach the appropriate department (cortical area). At night, it puts callers on hold (blocks sensory input during sleep)."
+      },
+      "isotopes": [
+        "cardiology.structure"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.2.34",
+      "q": "What midline structure connects the two halves of the thalamus across the third ventricle?",
+      "options": [
+        "Corpus callosum",
+        "Massa intermedia (interthalamic adhesion)",
+        "Anterior commissure",
+        "Posterior commissure"
+      ],
+      "answer": 1,
+      "explain": "The massa intermedia (interthalamic adhesion) is a midline gray matter bridge connecting the two thalami across the third ventricle.",
+      "mechanism": {
+        "title": "Massa Intermedia: The Thalamic Bridge",
+        "content": "The massa intermedia (interthalamic adhesion) is variable in size and may be absent in 20-30% of people with no apparent deficit. When present, it crosses the third ventricle at about the mid-thalamic level. It's composed of gray matter with some crossing fibers. Its function remains debated — it may synchronize thalamic activity or simply be a developmental remnant. It's useful as a landmark in neuroimaging and during surgery involving the third ventricle.",
+        "metaphor": "The massa intermedia is like a footbridge across a canal (third ventricle) connecting twin buildings (thalami) — it's not always present, and even when absent, both buildings function fine."
+      },
+      "isotopes": [
+        "cardiology.structure"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.2.35",
+      "q": "What are the mushroom-shaped structures extending anteriorly from the brain that receive olfactory input?",
+      "options": [
+        "Mammillary bodies",
+        "Optic nerves",
+        "Olfactory bulbs",
+        "Cerebral peduncles"
+      ],
+      "answer": 2,
+      "explain": "The olfactory bulbs are paired structures on the inferior frontal lobes that receive input from olfactory neurons in the nasal cavity.",
+      "mechanism": {
+        "title": "Olfactory Bulbs: Smell's First Stop",
+        "content": "The olfactory bulb is a complex processing structure, not just a relay. Olfactory receptor neurons (the only CNS neurons replaced throughout life) synapse on mitral and tufted cells in spherical structures called glomeruli. Each glomerulus receives input from neurons expressing the same odorant receptor. Periglomerular and granule cells modulate signals. The olfactory tract carries processed information to the piriform cortex, amygdala, and entorhinal cortex — explaining smell's powerful connection to memory and emotion.",
+        "metaphor": "The olfactory bulbs are like the first sorting office for mail (smell molecules): incoming letters (signals from 350+ receptor types) are sorted into specific bins (glomeruli), processed by clerks (interneurons), then forwarded to headquarters (olfactory cortex)."
+      },
+      "isotopes": [
+        "neurology.structure"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.2.36",
+      "q": "What white matter tract carries olfactory information from the bulb to the brain?",
+      "options": [
+        "Optic tract",
+        "Olfactory tract",
+        "Fornix",
+        "Cingulum"
+      ],
+      "answer": 1,
+      "explain": "The olfactory tract runs posteriorly from the olfactory bulb along the inferior frontal lobe, carrying processed olfactory information to cortical areas.",
+      "mechanism": {
+        "title": "Olfactory Tract: The Direct Line to Cortex",
+        "content": "The olfactory tract is unique among sensory pathways because it reaches the cortex without a thalamic relay. This 'fast track' may explain smell's immediacy and emotional impact. At the anterior perforated substance, the tract divides: the lateral olfactory stria goes to piriform cortex (conscious smell perception); the medial stria goes to septal nuclei and contralateral bulb; some fibers reach the amygdala directly (emotional processing) and entorhinal cortex (memory formation). This explains why a smell can instantly trigger vivid memories.",
+        "metaphor": "The olfactory tract is like a direct hotline bypassing the operator (thalamus): smell information reaches decision-makers (cortex, amygdala) immediately, which is why a scent can trigger an emotional memory before you consciously identify it."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "800.2.37",
+      "q": "What region below the thalamus controls autonomic functions, body temperature, hunger, thirst, and the endocrine system?",
+      "options": [
+        "Thalamus",
+        "Hypothalamus",
+        "Pituitary gland",
+        "Basal ganglia"
+      ],
+      "answer": 1,
+      "explain": "The hypothalamus is a small but critical region controlling homeostatic functions, circadian rhythms, and the endocrine system via the pituitary.",
+      "mechanism": {
+        "title": "Hypothalamus: The Body's Thermostat and More",
+        "content": "The hypothalamus contains dozens of nuclei with specific functions: the supraoptic and paraventricular nuclei produce oxytocin and ADH; the suprachiasmatic nucleus (SCN) is the master circadian clock; the lateral hypothalamus drives hunger and arousal; the ventromedial nucleus signals satiety; the preoptic area regulates temperature and sleep; the arcuate nucleus controls pituitary releasing hormones. Despite its small size, hypothalamic lesions can be fatal (loss of temperature regulation) or profoundly disabling (extreme obesity, sleep disorders, diabetes insipidus).",
+        "metaphor": "The hypothalamus is like a smart thermostat that controls not just temperature, but also when you eat, sleep, drink, and how your hormones flow — a tiny command center maintaining the body's internal stability."
+      },
+      "isotopes": [
+        "ans.function"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.2.38",
+      "q": "What large white matter bundles on the ventral midbrain carry motor fibers from the cortex to the brainstem and spinal cord?",
+      "options": [
+        "Cerebellar peduncles",
+        "Pyramids",
+        "Cerebral peduncles",
+        "Columns of the fornix"
+      ],
+      "answer": 2,
+      "explain": "The cerebral peduncles (crus cerebri) are the large paired fiber bundles on the ventral midbrain carrying descending cortical projections.",
+      "mechanism": {
+        "title": "Cerebral Peduncles: The Motor Columns",
+        "content": "Each cerebral peduncle carries about 20 million fibers. The organization is somatotopic: face fibers are medial (corticobulbar), upper limb fibers are intermediate, lower limb fibers are lateral (corticospinal). Corticopontine fibers (connecting cortex to pons to cerebellum) flank the corticospinal tract. The substantia nigra and red nucleus lie dorsal to the peduncles in the midbrain tegmentum. Weber syndrome (peduncular damage) causes contralateral hemiplegia plus ipsilateral CN III palsy.",
+        "metaphor": "The cerebral peduncles are like the main cables leaving a power plant: they carry the high-voltage motor commands from the cortex down to the workers (muscles) throughout the body, organized like colored wires for different circuits."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.2.39",
+      "q": "In the sheep brain, which structure is notably larger (relatively) compared to the human brain?",
+      "options": [
+        "Frontal lobes",
+        "Olfactory bulbs",
+        "Prefrontal cortex",
+        "Temporal lobes"
+      ],
+      "answer": 1,
+      "explain": "Sheep have relatively much larger olfactory bulbs than humans because they rely heavily on smell for survival, food finding, and social recognition.",
+      "mechanism": {
+        "title": "Comparative Brain Anatomy: Sheep vs. Human",
+        "content": "Sheep brain dissection reveals evolutionary adaptations: their olfactory bulbs and olfactory cortex are large (smell is essential); their cerebellum is prominent (coordinating quadrupedal movement); their cortex is relatively smooth (less gyrification than humans); and their prefrontal cortex is minimal (limited planning/abstract thought). In contrast, humans have expanded frontal and temporal lobes, dense gyrification, and reduced olfactory structures. Same basic plan, different emphases based on ecological needs.",
+        "metaphor": "Comparing sheep and human brains is like comparing a working dog and a smartphone: both process information, but one is optimized for sensory detection and physical navigation, while the other is built for complex reasoning and communication."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.5,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "800.2.40",
+      "q": "What is the small channel in the spinal cord, visible in cross-section, that is continuous with the fourth ventricle?",
+      "options": [
+        "Subarachnoid space",
+        "Central canal",
+        "Gray commissure",
+        "Posterior median sulcus"
+      ],
+      "answer": 1,
+      "explain": "The central canal of the spinal cord is continuous with the fourth ventricle of the brainstem, containing cerebrospinal fluid.",
+      "mechanism": {
+        "title": "Central Canal: The Cord's Inner Lake",
+        "content": "The central canal is a remnant of the embryonic neural tube lumen. It's lined by ependymal cells, the same ciliated cells that line the ventricles. CSF production in the canal is minimal compared to choroid plexus production. The canal narrows with age and may completely close in some segments. Syringomyelia (abnormal cavity formation, often near the canal) causes characteristic 'cape-like' sensory loss because expanding cavities first damage crossing fibers in the anterior white commissure.",
+        "metaphor": "The central canal is like an old aqueduct through the center of the spinal cord — it once carried more traffic (CSF flow during development), but in adults it's often silted up, with most fluid flowing around the outside instead."
+      },
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 17 — Brain Anatomy",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    }
+  ]
+}

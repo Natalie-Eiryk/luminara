@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.32",
+  "parentQuestion": "Tachypnea refers to:",
+  "narrative": {
+    "setting": "The Magic School Bus is positioned in Mr. Edgar's chest cavity, with sensors monitoring his breathing rate. His chest is heaving rapidly - 32 breaths per minute when normal should be 12-20. The respiratory monitor is flashing warnings. Something is driving his body to breathe faster than normal.",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's rapid breathing is exhausting him. Understanding why could save his energy reserves."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.32.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "Ms. Frizzle displays a speedometer on the bus's screen. 'The prefix tachy- is all about speed. You've seen it before - in tachometer, which measures RPMs. In medicine, it means the same thing: FAST.'",
+      "q": "The prefix 'tachy-' means:",
+      "options": [
+        "Slow",
+        "Fast or rapid",
+        "Difficult",
+        "Absent"
+      ],
+      "answer": 1,
+      "explain": "'TACHY-' = FAST or RAPID. From Greek 'tachys' (swift). Tachycardia = fast heart. Tachymeter = speed measure. Tachy- always indicates above-normal rate or speed. Think Sonic the Hedgehog fast!",
+      "wrongExplains": {
+        "0": "That's 'brady-', the opposite! Brady- = slow, tachy- = fast. Mirror image prefixes.",
+        "2": "Difficult is 'dys-'. Tachy- is about SPEED (fast), not difficulty.",
+        "3": "Absent is 'a-' or 'an-'. Tachy- means something is happening, just TOO FAST."
+      }
+    },
+    {
+      "id": "900.5.32.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "'And you already know -pnea from earlier,' Ms. Frizzle reminds the class. 'Put these two parts together and you have the medical term for what we're witnessing right now with Mr. Edgar.'",
+      "q": "Combining 'tachy-' and '-pnea,' tachypnea means:",
+      "options": [
+        "Slow breathing",
+        "Rapid breathing",
+        "Difficult breathing",
+        "Absent breathing"
+      ],
+      "answer": 1,
+      "explain": "TACHY (fast) + PNEA (breathing) = RAPID BREATHING. Abnormally high respiratory rate. More breaths per minute than normal. The word literally tells you: fast breathing. That's it!",
+      "wrongExplains": {
+        "0": "That's bradypnea (brady- = slow). Tachy- means the opposite - fast, rapid, accelerated.",
+        "2": "Difficult is dyspnea (dys- = difficult). Tachypnea is about RATE (how fast), not effort (how hard).",
+        "3": "Absent is apnea (a- = without). Tachypnea is breathing that's happening too MUCH, not too little."
+      }
+    },
+    {
+      "id": "900.5.32.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "The breathing monitor shows 32 breaths/minute. 'Normal adult rate is 12-20,' Ms. Frizzle notes. 'Mr. Edgar is breathing 50% faster than he should. That's tachypnea - a rate above the normal range.'",
+      "q": "What is the normal respiratory rate for an adult at rest?",
+      "options": [
+        "5-10 breaths/minute",
+        "12-20 breaths/minute",
+        "25-30 breaths/minute",
+        "40-50 breaths/minute"
+      ],
+      "answer": 1,
+      "explain": "NORMAL = 12-20 breaths/minute for adults at rest. Below 12 = bradypnea (slow). Above 20 = tachypnea (fast). Newborns breathe faster (30-60), but adults settle into this slower rhythm. Know the baseline to spot abnormal!",
+      "wrongExplains": {
+        "0": "That's bradypnea (too slow). Normal adults breathe more than 10 times per minute - your body needs regular oxygen intake.",
+        "2": "That's already tachypnea! Normal is 12-20. Above 20 is considered rapid breathing.",
+        "3": "That's severe tachypnea! Normal adults don't breathe that fast unless exercising hard or in respiratory distress."
+      }
+    },
+    {
+      "id": "900.5.32.s04",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "'Why is Mr. Edgar breathing so fast?' Ms. Frizzle asks. 'Tachypnea is a SYMPTOM, not a disease. Something is CAUSING his body to demand more breaths. Let's figure out what.'",
+      "q": "Which of these would cause tachypnea?",
+      "options": [
+        "Sleeping deeply",
+        "Fever, pain, or hypoxia",
+        "Hypothermia",
+        "Excessive sedation"
+      ],
+      "answer": 1,
+      "explain": "FEVER (increased metabolism), PAIN (stress response), or HYPOXIA (low oxygen) all trigger rapid breathing. The body compensates by breathing faster to get more oxygen or cool down or respond to stress. Tachypnea = body's emergency response!",
+      "wrongExplains": {
+        "0": "Deep sleep LOWERS respiratory rate. You breathe slower and deeper when relaxed, not faster.",
+        "2": "Hypothermia (cold) slows metabolism and breathing. Tachy- means fast - you need something that speeds up, not slows down.",
+        "3": "Sedation SLOWS breathing, even to dangerous levels. It would cause bradypnea (slow), not tachypnea (fast)."
+      }
+    },
+    {
+      "id": "900.5.32.s05",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "The bus's analysis shows Mr. Edgar's breaths are fast but shallow. 'Notice the pattern,' Ms. Frizzle points. 'Tachypnea tells us the RATE is high, but it doesn't tell us about DEPTH. That's a different measurement.'",
+      "q": "Can someone have tachypnea with shallow breaths?",
+      "options": [
+        "No, tachypnea always means deep breathing",
+        "Yes, tachypnea only describes rate, not depth",
+        "Tachypnea requires both fast and deep breaths",
+        "Shallow breaths prevent tachypnea"
+      ],
+      "answer": 1,
+      "explain": "TACHYPNEA = RATE only (fast). DEPTH is separate (tidal volume). You can breathe 30 times/minute with tiny shallow breaths - still tachypnea. Or 30 times/minute with deep breaths - also tachypnea. Rate and depth are independent measurements!",
+      "wrongExplains": {
+        "0": "Deep and fast is HYPERpnea or hyperventilation. TACHYpnea only means fast rate - depth is not specified.",
+        "2": "No! Fast + deep = hyperpnea. Tachypnea is JUST the rate. You can have rapid shallow breathing (like panting).",
+        "3": "Shallow + fast = rapid shallow breathing, still tachypnea! The rate defines tachypnea, not the volume per breath."
+      }
+    },
+    {
+      "id": "900.5.32.s06",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "'Let's compare related terms,' Ms. Frizzle says, pulling up definitions. 'Tachypnea and hyperventilation are often confused. They're related but not identical.'",
+      "q": "What's the key difference between tachypnea and hyperventilation?",
+      "options": [
+        "They're exactly the same thing",
+        "Tachypnea = fast rate; hyperventilation = breathing more than body needs",
+        "Hyperventilation = fast rate; tachypnea = breathing more than needed",
+        "Both mean slow breathing"
+      ],
+      "answer": 1,
+      "explain": "TACHYPNEA = rapid rate (>20 breaths/min), might be APPROPRIATE (like during exercise). HYPERVENTILATION = breathing MORE than metabolic needs, causing low CO2. Rate vs. appropriateness. You can have tachypnea that's justified!",
+      "wrongExplains": {
+        "0": "Different! Tachypnea during a sprint is appropriate. Hyperventilation from anxiety is excessive - you blow off too much CO2.",
+        "2": "Backwards! Tachypnea is about rate. Hyperventilation is about exceeding what your body needs (drops CO2 too low).",
+        "3": "Both involve FAST breathing! Brady- means slow. Tachy- and hyper- both indicate increased breathing, just measured differently."
+      }
+    },
+    {
+      "id": "900.5.32.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "'When a doctor sees tachypnea,' Ms. Frizzle explains, 'they have to figure out WHY. Fever? Low oxygen? Pain? Lung disease? Tachypnea is the body's alarm bell - something is wrong.'",
+      "q": "Tachypnea is best described as:",
+      "options": [
+        "A disease that needs treatment",
+        "A symptom that indicates an underlying problem",
+        "A normal finding in healthy adults",
+        "A breathing exercise"
+      ],
+      "answer": 1,
+      "explain": "Tachypnea is a SYMPTOM - a sign that something else is wrong. Like fever or pain, it points to an underlying cause. Treat the CAUSE (infection, hypoxia, pain), and the tachypnea resolves. It's the alarm, not the fire itself.",
+      "wrongExplains": {
+        "0": "It's not the disease itself! It's a sign of disease. You don't 'treat tachypnea,' you treat what's causing it.",
+        "2": "Tachypnea is ABNORMAL (>20/min at rest). Normal is 12-20. If it's happening at rest, investigate the cause.",
+        "3": "This isn't an exercise! It's the body's involuntary response to stress, hypoxia, fever, or disease."
+      }
+    },
+    {
+      "id": "900.5.32.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "A nurse charts Mr. Edgar's vital signs: 'RR 32, tachypneic, SpO2 88%.' Ms. Frizzle points to the abbreviation. 'Medical shorthand - RR stands for respiratory rate. This is how professionals communicate quickly.'",
+      "q": "In medical charts, 'RR' typically stands for:",
+      "options": [
+        "Resting rate",
+        "Respiratory rate",
+        "Rapid response",
+        "Reverse ratio"
+      ],
+      "answer": 1,
+      "explain": "RR = RESPIRATORY RATE. How many breaths per minute. One of the vital signs (temperature, pulse, RR, BP). Always documented. 'RR 32' means 32 breaths/minute - immediate red flag for tachypnea in an adult.",
+      "wrongExplains": {
+        "0": "While often measured at rest, RR specifically means RESPIRATORY rate - the number of breaths, not a generic resting measurement.",
+        "2": "Rapid response is a CODE or emergency team, not a vital sign. RR in vital signs = respiratory rate.",
+        "3": "Reverse ratio is specialized ventilator terminology. Standard RR = respiratory rate, a basic vital sign."
+      }
+    },
+    {
+      "id": "900.5.32.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "'Age matters,' Ms. Frizzle points out. 'Tachypnea in a newborn means something different than in an adult. The normal ranges change with age.'",
+      "q": "Why do newborns normally have higher respiratory rates than adults?",
+      "options": [
+        "They have lung disease",
+        "Higher metabolic rate and smaller lungs require more breaths",
+        "They're always in distress",
+        "It's abnormal and requires treatment"
+      ],
+      "answer": 1,
+      "explain": "Newborns have TINY lungs and HIGH metabolisms (growing fast!). Each breath moves less air, so they need MORE breaths to meet oxygen demands. Normal newborn: 30-60 breaths/min. Not tachypnea for them - it's age-appropriate!",
+      "wrongExplains": {
+        "0": "Healthy newborns breathe fast! It's normal for their age. Only rates >60 or with distress signs indicate disease.",
+        "2": "Fast breathing is normal for newborns. Distress shows other signs: grunting, flaring, retractions, cyanosis.",
+        "3": "30-60/min is NORMAL for newborns! What's tachypnea for an adult is normal for a baby. Context matters."
+      }
+    },
+    {
+      "id": "900.5.32.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "Oxygen therapy begins, and Mr. Edgar's respiratory rate gradually slows from 32 to 18 breaths per minute. 'Tachypnea resolving,' Ms. Frizzle notes. 'The symptom improves as we treat the cause. Final question!'",
+      "q": "Tachypnea refers to:",
+      "options": [
+        "Slow breathing rate",
+        "Rapid breathing rate",
+        "Deep breathing",
+        "Absent breathing"
+      ],
+      "answer": 1,
+      "explain": "TACHYPNEA = RAPID BREATHING RATE. Tachy- (fast) + -pnea (breathing). More than 20 breaths/minute in adults. A symptom of underlying problems: fever, hypoxia, pain, anxiety, lung disease. The body's way of saying 'I need more oxygen or I need to blow off CO2!'",
+      "wrongExplains": {
+        "0": "That's bradypnea (brady- = slow). Tachy- is the opposite prefix - it means fast, rapid, accelerated.",
+        "2": "Deep breathing is described by tidal volume or 'hyperpnea.' Tachypnea is specifically about RATE (how fast), not depth.",
+        "3": "Absent breathing is apnea (a- = without). Tachypnea is breathing that's happening TOO MUCH (too fast), not absent."
+      }
+    }
+  ]
+}

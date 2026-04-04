@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.33",
+  "parentQuestion": "Bradypnea refers to:",
+  "narrative": {
+    "setting": "The Magic School Bus is hovering in Mr. Edgar's chest, watching his respiratory muscles barely move. The breathing monitor shows only 8 breaths per minute - dangerously slow. His blood oxygen is dropping, CO2 is rising, but his brain's respiratory center seems to be suppressed. Time is running out.",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's breathing is dangerously slow. His brain may not be sending enough signals to breathe."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.33.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "Ms. Frizzle displays two contrasting speedometers - one needle in the red zone, one barely moving. 'We learned tachy- means fast. Now meet its opposite: brady-. These prefixes are mirror images.'",
+      "q": "The prefix 'brady-' means:",
+      "options": [
+        "Fast or rapid",
+        "Slow",
+        "Absent",
+        "Difficult"
+      ],
+      "answer": 1,
+      "explain": "'BRADY-' = SLOW. From Greek 'bradys' (slow). Bradycardia = slow heart rate. Bradykinesia = slow movement. The opposite of tachy- (fast). Think sloth slow, tortoise slow, molasses slow.",
+      "wrongExplains": {
+        "0": "That's tachy-, the opposite! Brady- = slow, tachy- = fast. These prefixes are antonyms.",
+        "2": "Absent is 'a-' or 'an-'. Brady- means something IS happening, just too SLOWLY.",
+        "3": "Difficult is 'dys-'. Brady- is about SPEED (slow), not difficulty or quality."
+      }
+    },
+    {
+      "id": "900.5.33.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "The respiratory monitor shows another minute passing with only 8 breaths. 'Combine brady- with -pnea,' Ms. Frizzle says, 'and you get the exact term for what we're witnessing.'",
+      "q": "Combining 'brady-' and '-pnea,' bradypnea means:",
+      "options": [
+        "Rapid breathing",
+        "Slow breathing",
+        "Deep breathing",
+        "Absent breathing"
+      ],
+      "answer": 1,
+      "explain": "BRADY (slow) + PNEA (breathing) = SLOW BREATHING. Abnormally low respiratory rate. Fewer breaths per minute than normal. The word literally describes the problem: breathing that's too slow.",
+      "wrongExplains": {
+        "0": "That's tachypnea (tachy- = fast). Brady- means the opposite - slow, reduced rate.",
+        "2": "Deep breathing is about volume (tidal volume), not rate. Bradypnea specifically means SLOW rate, not deep.",
+        "3": "Absent is apnea (a- = without). Bradypnea means breathing IS occurring, just too slowly (<12/min)."
+      }
+    },
+    {
+      "id": "900.5.33.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "Ms. Frizzle highlights the monitor showing 8 breaths/minute. 'Normal is 12-20 for adults. Mr. Edgar is breathing at only 40% of the minimum normal rate. This is dangerous - he's not getting enough ventilation.'",
+      "q": "At what respiratory rate would an adult be considered bradypneic?",
+      "options": [
+        "Below 12 breaths/minute",
+        "Below 20 breaths/minute",
+        "Below 6 breaths/minute",
+        "Below 30 breaths/minute"
+      ],
+      "answer": 0,
+      "explain": "BELOW 12 BREATHS/MINUTE = bradypnea in adults. Normal is 12-20. Below the lower limit = too slow. The body isn't ventilating enough to maintain normal gas exchange. CO2 builds up, O2 drops.",
+      "wrongExplains": {
+        "1": "20 is the UPPER limit of normal! Below 20 could still be normal (12-20 range). Bradypnea is below 12.",
+        "2": "6 is SEVERE bradypnea, almost respiratory arrest! Bradypnea starts at <12, but 6 is life-threatening.",
+        "3": "30 is tachypnea (too fast)! You've got the wrong direction. Bradypnea is BELOW normal, not above."
+      }
+    },
+    {
+      "id": "900.5.33.s04",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "The bus zooms to Mr. Edgar's brainstem, where the respiratory center controls breathing. 'Something is suppressing the signals,' Ms. Frizzle observes. 'Let's figure out what causes bradypnea.'",
+      "q": "Which of these commonly causes bradypnea?",
+      "options": [
+        "Anxiety and panic",
+        "Opioid overdose or brain injury",
+        "Exercise",
+        "Fever"
+      ],
+      "answer": 1,
+      "explain": "OPIOID OVERDOSE or BRAIN INJURY suppress the respiratory center. Opioids (morphine, fentanyl) slow breathing - that's why overdoses kill. Brain injury can damage the control center. Both depress the drive to breathe.",
+      "wrongExplains": {
+        "0": "Anxiety causes HYPERVENTILATION (too fast), not bradypnea. Panic makes you breathe rapidly, not slowly.",
+        "2": "Exercise increases breathing rate (tachypnea)! You need more oxygen when active, so you breathe faster, not slower.",
+        "3": "Fever increases metabolic rate, causing tachypnea (fast breathing). Heat makes you breathe faster to cool down."
+      }
+    },
+    {
+      "id": "900.5.33.s05",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "'Bradypnea creates a dangerous cascade,' Ms. Frizzle warns, pulling up blood gas values. 'When you don't breathe enough, CO2 accumulates and O2 drops. Two problems at once.'",
+      "q": "What blood gas abnormalities result from severe bradypnea?",
+      "options": [
+        "High O2 and low CO2",
+        "Low O2 and high CO2",
+        "Normal O2 and CO2",
+        "High O2 and high CO2"
+      ],
+      "answer": 1,
+      "explain": "LOW O2 (hypoxia) and HIGH CO2 (hypercapnia). Slow breathing = inadequate ventilation = can't bring in enough O2 OR blow off enough CO2. Both gases go the wrong direction. Respiratory failure!",
+      "wrongExplains": {
+        "0": "Opposite! That's from hyperventilation (too fast). Bradypnea causes the reverse: low O2, high CO2.",
+        "2": "Severe bradypnea definitely disrupts gas exchange! Both O2 and CO2 become abnormal with inadequate ventilation.",
+        "3": "O2 goes DOWN in bradypnea, not up! You're not breathing enough to maintain oxygen levels."
+      }
+    },
+    {
+      "id": "900.5.33.s06",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "Ms. Frizzle shows a comparison chart. 'Bradypnea versus apnea - both involve reduced breathing, but there's a critical difference in severity and definition.'",
+      "q": "How does bradypnea differ from apnea?",
+      "options": [
+        "They're the same thing",
+        "Bradypnea = slow breathing; apnea = no breathing",
+        "Apnea = slow breathing; bradypnea = no breathing",
+        "Bradypnea is faster than apnea"
+      ],
+      "answer": 1,
+      "explain": "BRADYPNEA = SLOW breathing (still happening, just <12/min). APNEA = NO breathing (complete cessation). Brady- = reduced rate. A- = absent. Both are dangerous, but apnea is more immediately life-threatening.",
+      "wrongExplains": {
+        "0": "Different severity! Bradypnea = too slow. Apnea = stopped completely. The difference can be life or death.",
+        "2": "Backwards! Brady- means slow (still breathing). A- means without (not breathing at all).",
+        "3": "Bradypnea is SLOWER than normal. Apnea is ZERO - can't be slower than stopped. Apnea is complete absence."
+      }
+    },
+    {
+      "id": "900.5.33.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "'When we see bradypnea,' Ms. Frizzle explains, 'the first question is WHY. Is it drugs? Brain injury? Hypothermia? Each cause has different treatments. Bradypnea is the symptom, not the disease.'",
+      "q": "Bradypnea is best described as:",
+      "options": [
+        "A disease requiring specific medication",
+        "A symptom indicating an underlying problem",
+        "A normal variation in healthy adults",
+        "An intentional breathing technique"
+      ],
+      "answer": 1,
+      "explain": "Bradypnea is a SYMPTOM - like fever or pain, it signals something wrong. The cause might be drug overdose, head injury, metabolic problems, or hypothermia. Treat the CAUSE, and bradypnea resolves. It's a warning light, not the engine problem itself.",
+      "wrongExplains": {
+        "0": "It's not the disease! You don't 'treat bradypnea' - you treat what's CAUSING it (reverse opioid, warm up hypothermia patient, etc.).",
+        "2": "Bradypnea (<12/min) is ABNORMAL! Normal is 12-20. If someone consistently breathes this slowly at rest, investigate why.",
+        "3": "This isn't yoga breathing! Bradypnea is usually involuntary, often from brain depression or metabolic issues."
+      }
+    },
+    {
+      "id": "900.5.33.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "The medical team administers naloxone, an opioid reversal drug. Within seconds, Mr. Edgar's respiratory rate climbs from 8 to 16 breaths per minute. 'Watch the power of treating the cause,' Ms. Frizzle says.",
+      "q": "Why does naloxone reverse opioid-induced bradypnea?",
+      "options": [
+        "It stimulates the lungs directly",
+        "It blocks opioid receptors in the brain's respiratory center",
+        "It increases oxygen in the blood",
+        "It removes CO2 from the bloodstream"
+      ],
+      "answer": 1,
+      "explain": "Naloxone BLOCKS opioid receptors in the brain. Opioids suppress the respiratory center; naloxone kicks them off the receptors. The brain's breathing control is restored. Rapid reversal - minutes matter in overdose!",
+      "wrongExplains": {
+        "0": "Naloxone works on the BRAIN, not the lungs. It reverses the central suppression of breathing drive.",
+        "2": "Naloxone doesn't add oxygen - it restores the DRIVE to breathe. Once breathing resumes, O2 levels rise naturally.",
+        "3": "Naloxone doesn't remove CO2 - it restores breathing, which then blows off CO2. It's indirect - fix brain, breathing follows."
+      }
+    },
+    {
+      "id": "900.5.33.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "'Some medications warn about respiratory depression,' Ms. Frizzle says, showing a pill bottle label. 'That's medical speak for bradypnea or apnea risk. Always a serious warning.'",
+      "q": "Which medication class most commonly causes respiratory depression (bradypnea)?",
+      "options": [
+        "Antibiotics",
+        "Opioid pain medications",
+        "Antihistamines",
+        "Blood pressure medications"
+      ],
+      "answer": 1,
+      "explain": "OPIOIDS (morphine, oxycodone, fentanyl, etc.) are the classic cause. They bind receptors in the brainstem's respiratory center, suppressing the drive to breathe. High doses → bradypnea → apnea → death. That's why opioid overdoses are so lethal.",
+      "wrongExplains": {
+        "0": "Antibiotics generally don't suppress breathing. They fight bacteria but don't affect the respiratory center.",
+        "2": "Some antihistamines cause drowsiness but rarely dangerous respiratory depression. Opioids are far more dangerous.",
+        "3": "Some BP meds can affect breathing indirectly, but opioids are the textbook example of respiratory depression."
+      }
+    },
+    {
+      "id": "900.5.33.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "Mr. Edgar's breathing stabilizes at 16 breaths per minute - solidly normal. The crisis is over. 'From bradypnea to normal breathing,' Ms. Frizzle says. 'Now prove you understand the term.'",
+      "q": "Bradypnea refers to:",
+      "options": [
+        "Rapid breathing rate",
+        "Slow breathing rate",
+        "Difficult breathing",
+        "Absent breathing"
+      ],
+      "answer": 1,
+      "explain": "BRADYPNEA = SLOW BREATHING RATE. Brady- (slow) + -pnea (breathing). Less than 12 breaths/minute in adults. Causes: opioids, brain injury, hypothermia, metabolic problems. Leads to hypoxia and hypercapnia. A critical warning sign of respiratory depression!",
+      "wrongExplains": {
+        "0": "That's tachypnea (tachy- = fast). Brady- is the opposite - slow, reduced, below normal rate.",
+        "2": "Difficult breathing is dyspnea (dys- = difficult). Bradypnea is about RATE (how slow), not effort.",
+        "3": "Absent breathing is apnea (a- = without). Bradypnea means breathing IS happening, just too slowly."
+      }
+    }
+  ]
+}

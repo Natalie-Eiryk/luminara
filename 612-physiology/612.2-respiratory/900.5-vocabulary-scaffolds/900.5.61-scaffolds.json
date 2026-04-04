@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.61",
+  "parentQuestion": "Asthma is characterized by:",
+  "narrative": {
+    "setting": "The Magic School Bus navigates Mr. Edgar's bronchioles as they suddenly constrict around them. Smooth muscle tightens, mucus floods in, the airway walls swell with inflammation. Ms. Frizzle grips the controls as the passage narrows. 'Asthma attack!' she calls out. 'But watch - if we give albuterol, these airways can open back up. REVERSIBLE obstruction.'",
+    "character": "Mr. Edgar",
+    "tension": "Children die from status asthmaticus when airways stay closed too long. Athletes can't compete during flares. Allergen exposure can turn a normal day into an emergency room visit in minutes. Understanding asthma isn't just pulmonology - it's understanding why some airway obstruction responds to treatment while COPD doesn't."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.61.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Obstruction,' Ms. Frizzle begins. 'Asthma is an OBSTRUCTIVE lung disease - it blocks airflow. Compare to RESTRICTIVE diseases that prevent lung expansion. Obstruction = hard to get air OUT.'",
+      "q": "Obstructive lung diseases primarily affect:",
+      "options": [
+        "Lung expansion",
+        "Airflow through airways",
+        "Oxygen-carrying capacity of blood",
+        "Chest wall movement"
+      ],
+      "answer": 1,
+      "explain": "OBSTRUCTIVE diseases block AIRFLOW through airways. Air gets trapped, hard to exhale. Examples: asthma, COPD. Contrast with restrictive diseases that limit lung expansion.",
+      "wrongExplains": {
+        "0": "Lung expansion limitation is RESTRICTIVE disease (fibrosis, scoliosis). Obstruction affects airflow.",
+        "2": "Oxygen-carrying capacity is affected by anemia or hemoglobin problems, not airway obstruction.",
+        "3": "Chest wall movement issues are restrictive (rib fractures, neuromuscular disease). Obstruction is in the airways."
+      }
+    },
+    {
+      "id": "900.5.61.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'The key word for asthma,' Ms. Frizzle emphasizes, 'is REVERSIBLE. With bronchodilators (albuterol), steroids, or just waiting, the obstruction goes away. COPD is largely irreversible - damaged airways don't recover.'",
+      "q": "What distinguishes asthma from COPD?",
+      "options": [
+        "Asthma is irreversible, COPD is reversible",
+        "Asthma is reversible, COPD is largely irreversible",
+        "Both are equally reversible",
+        "Neither responds to treatment"
+      ],
+      "answer": 1,
+      "explain": "ASTHMA = REVERSIBLE airway obstruction. Bronchodilators, steroids work. COPD = largely IRREVERSIBLE (structural damage). This is the key clinical distinction.",
+      "wrongExplains": {
+        "0": "Backward! Asthma is reversible (responds to bronchodilators). COPD is structural damage.",
+        "2": "COPD has permanent damage (destroyed alveoli, chronic inflammation). Asthma responds to treatment.",
+        "3": "Asthma responds well to bronchodilators and steroids. That's what makes it reversible."
+      }
+    },
+    {
+      "id": "900.5.61.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Three components of asthma obstruction,' Ms. Frizzle counts on her fingers. 'Bronchospasm - smooth muscle tightens. Inflammation - airway walls swell. Mucus production - airways fill with thick secretions. All three happen during an attack.'",
+      "q": "During an asthma attack, airways are obstructed by:",
+      "options": [
+        "Bronchospasm only",
+        "Inflammation only",
+        "Bronchospasm, inflammation, and mucus",
+        "Alveolar destruction"
+      ],
+      "answer": 2,
+      "explain": "Asthma = TRIPLE THREAT. (1) BRONCHOSPASM (smooth muscle contraction), (2) INFLAMMATION (airway edema), (3) MUCUS plugging. All three contribute to obstruction.",
+      "wrongExplains": {
+        "0": "Bronchospasm is part of it, but inflammation and mucus also contribute significantly.",
+        "1": "Inflammation is important, but bronchospasm and mucus are also key components.",
+        "3": "Alveolar destruction is EMPHYSEMA (COPD). Asthma affects airways, not alveoli."
+      }
+    },
+    {
+      "id": "900.5.61.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Triggers,' Ms. Frizzle lists them. 'Allergens - pollen, dust mites, pet dander. Exercise (exercise-induced bronchoconstriction). Cold air. Respiratory infections. Stress. Each person has different triggers, but the pathway is similar - airway hyperreactivity.'",
+      "q": "Common asthma triggers include all EXCEPT:",
+      "options": [
+        "Allergens (pollen, dust)",
+        "Exercise",
+        "Cold air",
+        "High altitude oxygen therapy"
+      ],
+      "answer": 3,
+      "explain": "Asthma triggers: allergens, exercise, cold air, infections, irritants. HIGH ALTITUDE (low O2) might worsen asthma, but oxygen THERAPY helps, not triggers.",
+      "wrongExplains": {
+        "0": "Allergens are classic triggers - IgE-mediated mast cell degranulation causes bronchospasm.",
+        "1": "Exercise-induced bronchoconstriction is a well-known asthma subtype.",
+        "2": "Cold air is a mechanical/temperature trigger that can cause bronchospasm."
+      }
+    },
+    {
+      "id": "900.5.61.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'The inflammatory cascade,' Ms. Frizzle draws it out. 'Mast cells release histamine, leukotrienes. Eosinophils infiltrate. Cytokines amplify. The airway becomes hyperreactive - tiny stimuli cause massive constriction.'",
+      "q": "Which inflammatory cells are characteristically increased in asthma?",
+      "options": [
+        "Neutrophils",
+        "Eosinophils",
+        "Red blood cells",
+        "Platelets"
+      ],
+      "answer": 1,
+      "explain": "EOSINOPHILS are the hallmark inflammatory cell in asthma. Allergic/Th2-driven inflammation. Also see mast cells, but eosinophils are characteristic.",
+      "wrongExplains": {
+        "0": "Neutrophils dominate in bacterial infections and COPD. Asthma is eosinophilic.",
+        "2": "RBCs carry oxygen - not involved in the inflammatory process of asthma.",
+        "3": "Platelets are for clotting. Asthma is an eosinophilic inflammatory disease."
+      }
+    },
+    {
+      "id": "900.5.61.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Beta-2 agonists like albuterol,' Ms. Frizzle explains. 'They activate beta-2 receptors on bronchial smooth muscle, causing relaxation and bronchodilation. Rapid relief within minutes. That's your rescue inhaler.'",
+      "q": "Albuterol (a short-acting beta-2 agonist) works by:",
+      "options": [
+        "Reducing mucus production",
+        "Killing bacteria",
+        "Relaxing bronchial smooth muscle",
+        "Destroying eosinophils"
+      ],
+      "answer": 2,
+      "explain": "Albuterol = BRONCHODILATOR. It relaxes bronchial SMOOTH MUSCLE by activating beta-2 receptors. Rapid relief of bronchospasm. Rescue medication.",
+      "wrongExplains": {
+        "0": "Albuterol doesn't reduce mucus - it opens airways. Steroids reduce inflammation/mucus.",
+        "1": "Antibiotics kill bacteria. Albuterol is a bronchodilator for airway smooth muscle.",
+        "3": "Albuterol doesn't affect eosinophils directly. Steroids reduce inflammation/eosinophils."
+      }
+    },
+    {
+      "id": "900.5.61.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Spirometry shows obstruction,' Ms. Frizzle displays a graph. 'FEV1/FVC ratio is REDUCED - you can't get air out quickly. But after bronchodilator, the ratio IMPROVES. That's the reversibility criterion for asthma diagnosis.'",
+      "q": "On spirometry, asthma typically shows:",
+      "options": [
+        "Normal FEV1/FVC that doesn't change",
+        "Reduced FEV1/FVC that improves with bronchodilator",
+        "Reduced total lung capacity",
+        "Increased diffusion capacity"
+      ],
+      "answer": 1,
+      "explain": "Asthma: REDUCED FEV1/FVC (obstruction) that IMPROVES >12% with bronchodilator. This reversibility distinguishes asthma from COPD.",
+      "wrongExplains": {
+        "0": "Normal FEV1/FVC means no obstruction. Asthma REDUCES the ratio.",
+        "2": "Reduced TLC is restrictive disease. Asthma is obstructive (may even increase TLC from air trapping).",
+        "3": "Diffusion capacity is normal in asthma (airways problem, not alveolar). Reduced in emphysema."
+      }
+    },
+    {
+      "id": "900.5.61.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Status asthmaticus,' Ms. Frizzle's voice is grave. 'Severe asthma attack that doesn't respond to usual treatment. Life-threatening. Requires hospital, IV steroids, possible intubation. This is the asthma that kills.'",
+      "q": "Status asthmaticus is:",
+      "options": [
+        "Mild asthma controlled with one medication",
+        "Severe asthma attack not responding to treatment",
+        "Asthma only triggered by aspirin",
+        "Asthma that resolves without medication"
+      ],
+      "answer": 1,
+      "explain": "STATUS ASTHMATICUS = severe, prolonged asthma attack REFRACTORY to initial treatment. Medical emergency. Risk of respiratory failure, death. Needs aggressive intervention.",
+      "wrongExplains": {
+        "0": "Status asthmaticus is the OPPOSITE of mild - it's severe, refractory, life-threatening.",
+        "2": "Aspirin-induced asthma exists (Samter's triad) but status asthmaticus is severity, not trigger.",
+        "3": "Status asthmaticus doesn't resolve without treatment - it requires intensive intervention."
+      }
+    },
+    {
+      "id": "900.5.61.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Inhaled corticosteroids,' Ms. Frizzle explains. 'The controller medication. They reduce inflammation, airway hyperreactivity, mucus production. Take daily, even when feeling good. Prevent attacks rather than treat acute symptoms.'",
+      "q": "Inhaled corticosteroids in asthma primarily:",
+      "options": [
+        "Provide immediate bronchodilation",
+        "Reduce chronic inflammation and prevent attacks",
+        "Kill bacteria",
+        "Thin mucus immediately"
+      ],
+      "answer": 1,
+      "explain": "Inhaled steroids = CONTROLLER medication. They REDUCE INFLAMMATION over days/weeks, prevent attacks, decrease airway hyperreactivity. Not for acute relief.",
+      "wrongExplains": {
+        "0": "Steroids don't provide immediate relief - that's bronchodilators (albuterol). Steroids work over days.",
+        "2": "Antibiotics kill bacteria. Steroids are anti-inflammatory.",
+        "3": "Steroids reduce inflammation/mucus production over time, not immediate thinning."
+      }
+    },
+    {
+      "id": "900.5.61.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Ms. Frizzle watches Mr. Edgar's airways respond to albuterol, the bronchioles relaxing and opening. 'Reversible obstruction - that's the key. So, class: what characterizes asthma?'",
+      "q": "Asthma is characterized by:",
+      "options": [
+        "Alveolar destruction",
+        "Airway inflammation and bronchoconstriction",
+        "Pleural effusion",
+        "Lung cancer"
+      ],
+      "answer": 1,
+      "explain": "ASTHMA = REVERSIBLE airway inflammation and bronchoconstriction. Triggered by allergens, exercise, cold air. Responds to bronchodilators and steroids. Distinguished from COPD by reversibility.",
+      "wrongExplains": {
+        "0": "Alveolar destruction is emphysema, not asthma. Asthma affects airways, not alveoli.",
+        "2": "Pleural effusion is fluid around the lung - unrelated to asthma's airway inflammation.",
+        "3": "Lung cancer is malignancy, not the inflammatory/bronchospastic process of asthma."
+      }
+    }
+  ]
+}

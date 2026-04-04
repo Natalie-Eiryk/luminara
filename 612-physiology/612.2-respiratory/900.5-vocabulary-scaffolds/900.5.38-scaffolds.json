@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.38",
+  "parentQuestion": "Henry's Law states that:",
+  "narrative": {
+    "setting": "The Magic School Bus is floating in a bottle of soda inside Mr. Edgar's kitchen - but this isn't an ordinary field trip. Ms. Frizzle has miniaturized you to observe the CO2 bubbles dissolved in the liquid. 'Pop the cap,' she instructs. Suddenly the pressure drops and bubbles explode all around you. 'THIS,' she shouts over the fizzing chaos, 'is Henry's Law! And it's happening in Mr. Edgar's blood RIGHT NOW as he surfaces from a deep scuba dive.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar is surfacing too quickly. Dissolved nitrogen is coming out of solution in his blood and tissues. Decompression sickness - the bends - could be fatal."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.38.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "Ms. Frizzle opens a dusty chemistry journal from 1803. 'William Henry noticed something curious about gases dissolving in liquids. The amount dissolved depends on pressure. More pressure, more dissolved. Less pressure...'",
+      "q": "Henry's Law describes the relationship between:",
+      "options": [
+        "Gas solubility in liquid and temperature",
+        "Gas solubility in liquid and partial pressure",
+        "Liquid volume and pressure",
+        "Gas volume and temperature"
+      ],
+      "answer": 1,
+      "explain": "HENRY'S LAW: The amount of gas that DISSOLVES in a liquid is directly proportional to the PARTIAL PRESSURE of that gas above the liquid. High pressure → more gas dissolves. Low pressure → gas comes out of solution. Like carbonation in soda.",
+      "wrongExplains": {
+        "0": "Temperature does affect solubility, but that's not Henry's Law. Henry focused on PRESSURE as the driving force for dissolution.",
+        "2": "Liquid volume isn't the key variable. Henry's Law is about how much gas DISSOLVES based on gas pressure.",
+        "3": "That's Charles's Law or Ideal Gas Law territory. Henry studied gas-liquid interfaces, not gas-only systems."
+      }
+    },
+    {
+      "id": "900.5.38.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "You watch CO2 molecules bombarding the surface of the soda. Some bounce off. Some plunge into the liquid and disappear. 'The more gas molecules hitting the surface,' Ms. Frizzle explains, 'the more get trapped inside.'",
+      "q": "According to Henry's Law, if you increase the partial pressure of a gas above a liquid, the amount dissolved will:",
+      "options": [
+        "Decrease",
+        "Increase",
+        "Stay the same",
+        "Become zero"
+      ],
+      "answer": 1,
+      "explain": "INCREASE! Higher pressure = more gas molecules bombarding the liquid surface = more get pushed into solution. It's directly proportional. Double the pressure → double the dissolved gas (at constant temperature).",
+      "wrongExplains": {
+        "0": "That's backwards! Higher pressure INCREASES solubility. Think of soda under pressure - tons of CO2 dissolved.",
+        "2": "Pressure directly controls solubility. Change pressure and dissolved gas amount MUST change to reach equilibrium.",
+        "3": "Gas doesn't completely leave solution with more pressure - the opposite happens! More pressure = more dissolved."
+      }
+    },
+    {
+      "id": "900.5.38.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "The soda bottle cap pops off. Pressure drops from 4 atmospheres to 1 atmosphere. Around you, dissolved CO2 molecules suddenly erupt out of solution, forming bubbles that rocket to the surface. 'Watch the phase change!' Ms. Frizzle yells.",
+      "q": "When you open a carbonated drink, bubbles form because:",
+      "options": [
+        "Temperature increases, reducing solubility",
+        "Pressure decreases, reducing gas solubility",
+        "Oxygen enters and displaces CO2",
+        "The liquid becomes acidic"
+      ],
+      "answer": 1,
+      "explain": "Pressure drops → Henry's Law says less gas can stay dissolved → CO2 comes out of solution as bubbles! The gas was stable under high pressure but becomes supersaturated at low pressure. Physics forcing a phase transition.",
+      "wrongExplains": {
+        "0": "Temperature isn't changing when you pop the cap. The change is PRESSURE - from high (sealed) to atmospheric (open).",
+        "2": "A tiny bit of O2 enters, but that's not why bubbles form. CO2 leaves because PRESSURE dropped, reducing its solubility.",
+        "3": "The liquid is already acidic from dissolved CO2. Bubbling is about pressure change, not pH change."
+      }
+    },
+    {
+      "id": "900.5.38.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus morphs back to normal size and dives into Mr. Edgar's bloodstream. He's 100 feet underwater, breathing compressed air. Sensors show nitrogen dissolving into his blood and tissues. 'Under pressure,' Ms. Frizzle says, 'his body is becoming a sponge for nitrogen.'",
+      "q": "At depth during scuba diving, increased pressure causes:",
+      "options": [
+        "Less nitrogen to dissolve in blood",
+        "More nitrogen to dissolve in blood and tissues",
+        "Nitrogen to convert to oxygen",
+        "No change in gas dissolution"
+      ],
+      "answer": 1,
+      "explain": "Henry's Law in action underwater! At 100 feet (4 atmospheres), the partial pressure of nitrogen is 4x higher than at surface. More pressure → more N2 dissolves into blood, tissues, even fat. The body saturates with inert gas.",
+      "wrongExplains": {
+        "0": "That violates Henry's Law! More pressure = MORE dissolved gas, not less. The whole body loads up with nitrogen at depth.",
+        "2": "Nitrogen doesn't convert to anything - it stays as N2. It just dissolves more at higher pressure (Henry's Law).",
+        "3": "Pressure has major effects on gas dissolution - that's the entire point of Henry's Law. More pressure = more dissolved."
+      }
+    },
+    {
+      "id": "900.5.38.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "Mr. Edgar starts ascending rapidly. The pressure drops. Around you, tiny nitrogen bubbles start forming in the bloodstream - in joints, in fat tissue, in the spinal cord. 'Too fast!' Ms. Frizzle warns. 'The nitrogen is coming out of solution!'",
+      "q": "If a diver surfaces too quickly, nitrogen bubbles form in tissues because:",
+      "options": [
+        "Temperature increases, forcing nitrogen out",
+        "Pressure decreases faster than nitrogen can be exhaled",
+        "Oxygen displaces nitrogen in the blood",
+        "The diver's metabolism speeds up"
+      ],
+      "answer": 1,
+      "explain": "Rapid ascent = rapid pressure drop. By Henry's Law, less N2 can stay dissolved at low pressure. If you surface too fast, N2 comes out as BUBBLES (like opening soda). Slow ascent lets you exhale it gradually. Too fast = bubble formation = the bends!",
+      "wrongExplains": {
+        "0": "Temperature isn't changing much. The problem is PRESSURE dropping faster than nitrogen can safely exit via lungs.",
+        "2": "O2 doesn't displace N2. The issue is Henry's Law - lower pressure means N2 can't stay dissolved, so it bubbles.",
+        "3": "Metabolism doesn't suddenly change during ascent. This is pure physics - pressure decrease causing gas to come out of solution."
+      }
+    },
+    {
+      "id": "900.5.38.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "A nitrogen bubble lodges in Mr. Edgar's shoulder joint. His face contorts in pain. Another bubble blocks a capillary in his spinal cord. 'Decompression sickness,' Ms. Frizzle says grimly. 'Gas bubbles where they should never be. Joint pain, paralysis, even death.'",
+      "q": "Decompression sickness (the bends) is caused by:",
+      "options": [
+        "Oxygen toxicity at depth",
+        "Nitrogen bubbles forming in blood and tissues during ascent",
+        "Carbon dioxide retention underwater",
+        "Hypothermia from cold water"
+      ],
+      "answer": 1,
+      "explain": "The bends = nitrogen bubble disease. At depth, high pressure dissolves lots of N2 (Henry's Law). Surface too fast, pressure drops too quickly, N2 can't be exhaled fast enough → forms bubbles in joints, blood, nervous tissue. Henry's Law turned weapon.",
+      "wrongExplains": {
+        "0": "O2 toxicity is a different problem (breathing high O2 at depth). The bends is specifically about NITROGEN bubbles from pressure changes.",
+        "2": "CO2 retention is a separate diving problem. The bends is nitrogen coming out of solution during ascent.",
+        "3": "Hypothermia is a temperature problem. The bends is a pressure/solubility problem - Henry's Law physics."
+      }
+    },
+    {
+      "id": "900.5.38.s07",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "'How do we fix this?' Wanda asks. Ms. Frizzle points to a hyperbaric chamber on shore. 'We RE-PRESSURIZE him. Force the bubbles back into solution, then decompress him SLOWLY over hours.'",
+      "q": "Hyperbaric oxygen treatment for decompression sickness works by:",
+      "options": [
+        "Heating the body to dissolve bubbles",
+        "Increasing pressure to force nitrogen back into solution",
+        "Filtering nitrogen out of the blood mechanically",
+        "Chemically converting nitrogen to harmless compounds"
+      ],
+      "answer": 1,
+      "explain": "Henry's Law in reverse! Increase pressure → bubbles dissolve back into blood. Then SLOWLY lower pressure over hours, allowing N2 to be exhaled safely. You're undoing the rapid ascent damage by controlling the pressure change.",
+      "wrongExplains": {
+        "0": "Heat isn't the main mechanism. PRESSURE is the variable Henry's Law uses to control gas solubility.",
+        "2": "You can't filter dissolved gases out of blood easily. The solution is pressure control - dissolve bubbles, then slow release.",
+        "3": "N2 doesn't react chemically in the body - it's inert. Treatment uses physics (pressure) to control physical dissolution."
+      }
+    },
+    {
+      "id": "900.5.38.s08",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "The bus travels to Mr. Edgar's lungs. 'This is where the magic happens normally,' Ms. Frizzle says. 'Oxygen dissolving into blood at the alveoli. Henry's Law, but with oxygen instead of nitrogen.'",
+      "q": "The partial pressure of oxygen in alveoli affects how much oxygen dissolves in blood because of:",
+      "options": [
+        "Boyle's Law",
+        "Henry's Law",
+        "Dalton's Law only",
+        "Charles's Law"
+      ],
+      "answer": 1,
+      "explain": "HENRY'S LAW! Higher PO2 in alveoli → more O2 dissolves in blood plasma (and binds to hemoglobin). This is why high-altitude (low PO2) causes hypoxia - less pressure, less dissolved O2. Every breath depends on Henry's Law.",
+      "wrongExplains": {
+        "0": "Boyle's Law is about pressure-volume in gases (breathing mechanics). Henry's Law is about gas dissolving into liquids.",
+        "2": "Dalton's Law tells you the partial pressures, but HENRY'S Law determines how much dissolves based on those partial pressures.",
+        "3": "Charles's Law is volume-temperature relationship. Henry's Law connects gas pressure to solubility in liquids."
+      }
+    },
+    {
+      "id": "900.5.38.s09",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "Ms. Frizzle pulls up Mr. Edgar's altitude training data. 'At high altitude, atmospheric pressure drops. By Henry's Law, less oxygen dissolves in blood. The body must adapt or suffer.'",
+      "q": "At high altitude, oxygen delivery to tissues decreases because:",
+      "options": [
+        "Temperature is lower, slowing metabolism",
+        "Lower atmospheric pressure reduces oxygen solubility in blood",
+        "More nitrogen dissolves at altitude",
+        "The lungs cannot expand properly"
+      ],
+      "answer": 1,
+      "explain": "Lower altitude pressure → lower PO2 → by Henry's Law, LESS O2 dissolves in blood plasma. Plus less O2 available to bind hemoglobin. It's a double hit - physics AND chemistry working against you. Altitude sickness is Henry's Law deficiency.",
+      "wrongExplains": {
+        "0": "Temperature does drop, but the main problem is PRESSURE. Low PO2 means less oxygen can dissolve (Henry's Law).",
+        "2": "Nitrogen partial pressure also drops at altitude. The problem is insufficient OXYGEN dissolution.",
+        "3": "Lungs expand fine (lower air density actually makes breathing easier mechanically). The issue is low O2 partial pressure."
+      }
+    },
+    {
+      "id": "900.5.38.s10",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "Mr. Edgar emerges from the hyperbaric chamber, breathing normally. The bubbles are gone, dissolved back into solution and safely exhaled. 'From a soda bottle to a scuba diver,' Ms. Frizzle smiles. 'Same law, different stakes.'",
+      "q": "Henry's Law states that:",
+      "options": [
+        "Gas volume is proportional to temperature",
+        "Gas solubility in a liquid is proportional to partial pressure",
+        "Pressure and volume are inversely related",
+        "Total pressure equals the sum of partial pressures"
+      ],
+      "answer": 1,
+      "explain": "HENRY'S LAW: The amount of gas dissolved in a liquid is directly proportional to the partial pressure of that gas above the liquid (at constant temperature). C = kP. This law governs O2/CO2 exchange in lungs, decompression sickness, altitude effects - all of respiratory physiology!",
+      "wrongExplains": {
+        "0": "That's Charles's Law. Henry focused on how PRESSURE affects how much gas DISSOLVES in liquid.",
+        "2": "That's Boyle's Law (pressure-volume for gases). Henry's Law is about gas dissolving INTO liquids based on pressure.",
+        "3": "That's Dalton's Law of partial pressures. Henry's Law uses those partial pressures to predict SOLUBILITY."
+      }
+    }
+  ]
+}

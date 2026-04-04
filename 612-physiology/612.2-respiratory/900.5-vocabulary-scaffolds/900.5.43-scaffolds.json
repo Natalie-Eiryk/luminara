@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.43",
+  "parentQuestion": "The oxygen-hemoglobin dissociation curve shifts to the RIGHT (decreased O2 affinity) when:",
+  "narrative": {
+    "setting": "The Magic School Bus has shrunk to molecular size and is clinging to a hemoglobin molecule inside one of Mr. Edgar's red blood cells. You're in his leg muscle during intense exercise. The environment is harsh: temperature rising, CO2 building up, pH dropping, metabolic acids accumulating. Around you, four oxygen molecules are bound to the hemoglobin's iron centers - but they're starting to wiggle loose. Ms. Frizzle checks her instruments: 'Class, we're witnessing one of physiology's most elegant mechanisms - the RIGHT SHIFT. Hemoglobin is sensing the tissue's distress and RELEASING oxygen exactly where it's needed most.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's muscles are screaming for oxygen during a marathon. His hemoglobin must release O2 efficiently or he'll hit the wall from hypoxia."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.43.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "Ms. Frizzle projects a graph on the bus windshield - an S-shaped curve plotting O2 saturation vs PO2. 'This is the oxygen-hemoglobin dissociation curve,' she explains. 'It's sigmoid - shaped like an S - because hemoglobin shows cooperativity. Each O2 binding makes the next one easier.'",
+      "q": "The oxygen-hemoglobin dissociation curve is S-shaped because:",
+      "options": [
+        "Hemoglobin randomly binds oxygen",
+        "Each oxygen binding increases hemoglobin's affinity for the next oxygen",
+        "Oxygen is toxic at high concentrations",
+        "The lungs have S-shaped alveoli"
+      ],
+      "answer": 1,
+      "explain": "COOPERATIVITY! Hemoglobin has 4 binding sites. The first O2 binding causes a shape change that makes binding the 2nd easier, which makes the 3rd easier, which makes the 4th easier. It's all-or-nothing - hemoglobin loads up FAST once it starts. This creates the steep middle portion of the S-curve.",
+      "wrongExplains": {
+        "0": "Binding is highly ordered, not random! Cooperativity means each binding event affects the next. It's coordinated chemistry.",
+        "2": "O2 toxicity exists at very high pressures, but that's not why the curve is S-shaped. The sigmoid reflects cooperative binding.",
+        "3": "Alveolar shape has nothing to do with the dissociation curve shape. The S-curve reflects hemoglobin's molecular behavior."
+      }
+    },
+    {
+      "id": "900.5.43.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "Ms. Frizzle draws two curves on the board - one labeled 'normal' and one shifted to the right. 'A RIGHT SHIFT,' she emphasizes, 'means hemoglobin holds oxygen more LOOSELY. Same PO2, lower saturation. It RELEASES O2 more readily to tissues.'",
+      "q": "A RIGHT shift of the O2-Hb curve means:",
+      "options": [
+        "Increased affinity for oxygen (holds tighter)",
+        "Decreased affinity for oxygen (releases easier)",
+        "No change in oxygen binding",
+        "Complete inability to bind oxygen"
+      ],
+      "answer": 1,
+      "explain": "RIGHT SHIFT = DECREASED affinity = EASIER release. At any given PO2, hemoglobin is LESS saturated (holding less O2). This is GOOD for tissues - more O2 unloading where it's needed. Think 'Right = Release' as a memory trick.",
+      "wrongExplains": {
+        "0": "That's a LEFT shift! Left = increased affinity (tighter binding). Right = decreased affinity (looser binding, easier release).",
+        "2": "The shift means affinity HAS changed - specifically decreased (right shift) or increased (left shift).",
+        "3": "Hemoglobin still binds oxygen with a right shift - it just binds more WEAKLY, releasing more readily at tissues."
+      }
+    },
+    {
+      "id": "900.5.43.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "A CO2 molecule drifts past and binds to the hemoglobin. You feel the molecule shudder and change shape. One of the four oxygen molecules suddenly pops off. 'The Bohr effect!' Ms. Frizzle exclaims. 'CO2 changes hemoglobin's shape, forcing it to release O2.'",
+      "q": "The Bohr effect describes how _____ affects oxygen binding:",
+      "options": [
+        "Temperature",
+        "CO2 and pH (H+ concentration)",
+        "Nitrogen levels",
+        "Blood glucose"
+      ],
+      "answer": 1,
+      "explain": "BOHR EFFECT: Increased CO2 and decreased pH (more H+) shift the curve RIGHT (decreased affinity). Christian Bohr discovered this in 1904. CO2 and H+ bind to hemoglobin at sites different from O2, causing conformational changes that RELEASE O2. Perfect for metabolically active tissues!",
+      "wrongExplains": {
+        "0": "Temperature DOES affect the curve, but that's not called the Bohr effect. Bohr specifically described CO2/pH effects.",
+        "2": "Nitrogen is inert in the body - it doesn't affect oxygen binding. CO2 and pH are the Bohr effect variables.",
+        "3": "Glucose can affect hemoglobin long-term (glycation in diabetes) but isn't part of the Bohr effect. Bohr = CO2/pH."
+      }
+    },
+    {
+      "id": "900.5.43.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus thermometer shows temperature rising: 37°C... 38°C... 39°C. Mr. Edgar's muscle is working hard, generating heat. You watch more oxygen molecules shake loose from hemoglobin. 'Heat speeds molecular motion,' Ms. Frizzle says. 'Bonds break easier. Another right shift mechanism.'",
+      "q": "Increased temperature causes the O2-Hb curve to shift:",
+      "options": [
+        "Left (increased affinity)",
+        "Right (decreased affinity)",
+        "No shift occurs",
+        "The curve becomes linear"
+      ],
+      "answer": 1,
+      "explain": "RIGHT shift! Higher temperature = more molecular motion = weaker O2-hemoglobin bonds = easier O2 release. This is perfect for exercising muscle (hot, active tissue needs more O2). Fever also right-shifts the curve, helping fight infections by delivering more O2 to tissues.",
+      "wrongExplains": {
+        "0": "Left shift would be INCREASED affinity. Temperature does the OPPOSITE - heat makes hemoglobin release O2 more readily (right shift).",
+        "2": "Temperature definitely affects O2 binding! It's one of the four main factors causing right shift.",
+        "3": "The curve stays sigmoid (S-shaped) but shifts position. Temperature doesn't change the cooperativity, just the affinity."
+      }
+    },
+    {
+      "id": "900.5.43.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "A strange molecule approaches - a small red compound with a tail. '2,3-BPG,' Ms. Frizzle identifies. 'Also called 2,3-DPG. Red blood cells make it. It wedges into hemoglobin's center, forcing the subunits apart and weakening O2 binding.'",
+      "q": "Increased 2,3-BPG (2,3-bisphosphoglycerate) causes:",
+      "options": [
+        "Left shift (increased O2 affinity)",
+        "Right shift (decreased O2 affinity)",
+        "Hemoglobin degradation",
+        "Increased CO2 transport"
+      ],
+      "answer": 1,
+      "explain": "RIGHT shift! 2,3-BPG binds in the central cavity of deoxygenated hemoglobin, stabilizing the low-affinity form. More 2,3-BPG = more O2 release. This increases during chronic hypoxia (altitude, anemia) as an adaptation - tissues extract more O2 from each passing red blood cell.",
+      "wrongExplains": {
+        "0": "Left shift would mean TIGHTER binding. 2,3-BPG does the opposite - it LOOSENS O2 binding (right shift).",
+        "2": "2,3-BPG doesn't destroy hemoglobin - it's a reversible regulator. It stabilizes the deoxygenated form.",
+        "3": "2,3-BPG affects O2 binding, not CO2 transport directly. Both exist in RBCs but have different roles."
+      }
+    },
+    {
+      "id": "900.5.43.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The pH meter flashes red: 7.40... 7.35... 7.30. 'Acidosis!' Ms. Frizzle warns. 'Lactic acid from anaerobic metabolism. The H+ ions are binding to hemoglobin's amino acids, changing its shape - forcing more O2 release.'",
+      "q": "Decreased pH (acidosis) affects oxygen-hemoglobin binding by:",
+      "options": [
+        "Increasing affinity (left shift)",
+        "Decreasing affinity (right shift)",
+        "No effect on binding",
+        "Preventing all oxygen binding"
+      ],
+      "answer": 1,
+      "explain": "RIGHT shift! Lower pH = more H+ ions = Bohr effect = decreased affinity. H+ ions protonate hemoglobin's histidine residues, stabilizing the deoxygenated (T) state. This is brilliant - metabolically active tissues produce acid AND need more O2, and the acid automatically triggers O2 release!",
+      "wrongExplains": {
+        "0": "Acidosis causes RIGHT shift (looser binding), not left shift. Remember: acid/CO2 both cause right shift via Bohr effect.",
+        "2": "pH has MAJOR effects! It's one of the primary regulators of O2 affinity via the Bohr effect.",
+        "3": "O2 still binds - it just binds more weakly. Right shift means easier release, not inability to bind."
+      }
+    },
+    {
+      "id": "900.5.43.s07",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "'Why is this so elegant?' Keesha asks. Ms. Frizzle lists on the windshield: 'Active tissue = high CO2 + low pH + high temp + high 2,3-BPG = RIGHT SHIFT = more O2 released EXACTLY where needed. It's automatic oxygen targeting!'",
+      "q": "During intense exercise, which changes cause a right shift?",
+      "options": [
+        "Decreased CO2, increased pH, decreased temperature",
+        "Increased CO2, decreased pH, increased temperature",
+        "No changes in blood chemistry occur",
+        "Only heart rate increases"
+      ],
+      "answer": 1,
+      "explain": "Perfect storm of RIGHT-SHIFT factors! Exercise → more cellular respiration → more CO2 (Bohr) + more H+/lactic acid (lower pH, Bohr) + more heat (temperature effect) + chronic exercise increases 2,3-BPG. All FOUR major factors shift right, maximizing O2 delivery to working muscles!",
+      "wrongExplains": {
+        "0": "That's the OPPOSITE of exercise! Those conditions would cause LEFT shift (tighter binding), retaining O2 - wrong for active tissue.",
+        "2": "Blood chemistry changes dramatically during exercise! CO2, pH, temp all shift to favor O2 release.",
+        "3": "Heart rate increases too, but the question is about curve shifts. Chemical changes (CO2, pH, temp) are what shift the curve."
+      }
+    },
+    {
+      "id": "900.5.43.s08",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "The bus travels to a person living at high altitude. 'After weeks here,' Ms. Frizzle explains, 'their red blood cells have increased 2,3-BPG production. Watch how efficiently they unload oxygen despite lower arterial PO2.'",
+      "q": "At high altitude, increased 2,3-BPG helps by:",
+      "options": [
+        "Increasing oxygen affinity to capture scarce O2",
+        "Decreasing oxygen affinity to release more O2 to tissues",
+        "Increasing red blood cell production",
+        "Converting CO2 to O2"
+      ],
+      "answer": 1,
+      "explain": "RIGHT shift strategy! At altitude, arterial PO2 is low (hard to load O2). But tissues still need the same amount of O2. Solution: right-shift the curve with 2,3-BPG so tissues can EXTRACT more O2 from each RBC. You load less but UNLOAD more efficiently. It's an adaptation that takes 2-3 weeks.",
+      "wrongExplains": {
+        "0": "That would be LEFT shift. But altitude causes RIGHT shift - you sacrifice loading efficiency to gain unloading efficiency at tissues.",
+        "2": "Altitude DOES increase RBC production (via erythropoietin), but that's separate from 2,3-BPG. Different adaptation mechanisms.",
+        "3": "CO2 doesn't convert to O2 anywhere. 2,3-BPG is about changing hemoglobin's O2 affinity, not making more O2."
+      }
+    },
+    {
+      "id": "900.5.43.s09",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "Ms. Frizzle shows a comparison: 'Fetal hemoglobin has a LEFT-shifted curve - higher affinity than adult hemoglobin. Why? Because the fetus must STEAL oxygen from maternal blood across the placenta. Higher affinity wins the tug-of-war.'",
+      "q": "Fetal hemoglobin has higher O2 affinity (left shift) because:",
+      "options": [
+        "Fetuses need less oxygen",
+        "It must extract oxygen from maternal blood at the placenta",
+        "Fetal blood has no CO2",
+        "It's defective hemoglobin"
+      ],
+      "answer": 1,
+      "explain": "Elegant design! Maternal blood (PO2 ~95 mmHg) meets fetal blood across placenta. Fetal Hb has HIGHER affinity (left shift) than adult Hb, so O2 moves from mom → fetus even at the same PO2. It's molecular oxygen piracy, but necessary for fetal survival. Different gamma chains instead of beta chains reduce 2,3-BPG binding.",
+      "wrongExplains": {
+        "0": "Fetuses need LOTS of oxygen - they're growing rapidly! Higher affinity helps them GET oxygen from mom's blood.",
+        "2": "Fetal blood has CO2 from metabolism - it just diffuses to maternal blood. But fetal Hb has less 2,3-BPG sensitivity.",
+        "3": "It's not defective - it's SPECIALIZED! Fetal Hb is perfectly designed for intrauterine life. Adult Hb takes over after birth."
+      }
+    },
+    {
+      "id": "900.5.43.s10",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "Mr. Edgar crosses the marathon finish line. His muscles relax. CO2 drops, pH rises, temperature normalizes. You watch the hemoglobin curve shift back to the left. 'Homeostasis,' Ms. Frizzle says. 'The curve shifts right when needed, left when not. Dynamic regulation.'",
+      "q": "The oxygen-hemoglobin dissociation curve shifts to the RIGHT (decreased O2 affinity) when:",
+      "options": [
+        "Temperature decreases, pH increases, CO2 decreases",
+        "Temperature increases, pH decreases, CO2 increases",
+        "Only at high altitude",
+        "Hemoglobin is damaged"
+      ],
+      "answer": 1,
+      "explain": "RIGHT SHIFT = Increased temp + Decreased pH + Increased CO2 (+ Increased 2,3-BPG). All these factors make hemoglobin release O2 more readily. They occur together in metabolically active tissue, creating an elegant auto-regulation system - O2 is delivered exactly where it's needed most!",
+      "wrongExplains": {
+        "0": "Those conditions cause LEFT shift (increased affinity, tighter binding) - the opposite of right shift.",
+        "2": "Altitude causes chronic 2,3-BPG increase (right shift) but isn't the ONLY condition. Exercise, fever, acidosis all cause right shift.",
+        "3": "These are normal regulatory mechanisms, not damage! Hemoglobin is designed to shift based on conditions. It's feature, not bug."
+      }
+    }
+  ]
+}

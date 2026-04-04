@@ -1,0 +1,159 @@
+{
+  "parentId": "200.3.05",
+  "parentQuestion": "A fall or improper injection to the buttocks may injure a nerve of which plexus?",
+  "scaffolds": [
+    {
+      "q": "What is the sacral plexus?",
+      "options": [
+        "A bone in the spine",
+        "The nerve network formed from L4-S4 that supplies the buttock and leg",
+        "A muscle in the hip",
+        "A joint in the pelvis"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The SACRAL PLEXUS is a NERVE NETWORK formed from L4-S4. It supplies the buttock, back of the thigh, and most of the leg below the knee — including the famous sciatic nerve.",
+      "wrongExplains": {
+        "0": "The sacrum is the bone; the sacral plexus is the nerve network near it.",
+        "2": "The plexus is nerves, not muscle. It supplies muscles but isn't one.",
+        "3": "Joints connect bones. The sacral plexus is a nerve network."
+      }
+    },
+    {
+      "q": "What is the sciatic nerve?",
+      "options": [
+        "A small nerve in the finger",
+        "The largest nerve in the body, running from buttock down the leg",
+        "A nerve in the arm",
+        "A nerve in the face"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The SCIATIC NERVE is the LARGEST NERVE in your body — about as thick as your thumb! It runs from the lower back through the buttock and down the back of the thigh.",
+      "wrongExplains": {
+        "0": "Finger nerves are small branches. The sciatic is massive and supplies the leg.",
+        "2": "Arm nerves come from the brachial plexus. The sciatic is in the leg.",
+        "3": "Facial nerves are cranial. The sciatic supplies the leg from the sacral plexus."
+      }
+    },
+    {
+      "q": "Where does the sciatic nerve pass through?",
+      "options": [
+        "Through the shoulder",
+        "Through the buttock (gluteal region)",
+        "Through the neck",
+        "Through the chest"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The sciatic nerve exits the pelvis through the GREATER SCIATIC FORAMEN and travels through the GLUTEAL (buttock) region. This is why buttock injuries can damage it.",
+      "wrongExplains": {
+        "0": "The shoulder has brachial plexus nerves. The sciatic is in the buttock.",
+        "2": "The neck has cervical plexus and brachial plexus. The sciatic is in the pelvis.",
+        "3": "The chest has thoracic nerves. The sciatic passes through the buttock."
+      }
+    },
+    {
+      "q": "Why is the sciatic nerve vulnerable in the buttock?",
+      "options": [
+        "It's not vulnerable there",
+        "It passes superficially through the gluteal region where it can be compressed or injected",
+        "It's protected by thick bone",
+        "It's in a different body part"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The sciatic nerve passes through the GLUTEAL REGION where it's relatively SUPERFICIAL. Falls can compress it against bone, and misplaced injections can pierce it directly.",
+      "wrongExplains": {
+        "0": "It is very vulnerable — that's why proper injection technique matters.",
+        "2": "Bone doesn't protect it well. Falls can compress it against the bone.",
+        "3": "The sciatic nerve definitely passes through the buttock."
+      }
+    },
+    {
+      "q": "Where is the safe zone for gluteal injections?",
+      "options": [
+        "Anywhere in the buttock",
+        "Upper outer quadrant only",
+        "Lower inner area",
+        "Center of the buttock"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The UPPER OUTER QUADRANT is the safe zone for gluteal injections. The sciatic nerve runs in the lower and medial areas — inject there and you risk permanent nerve damage.",
+      "wrongExplains": {
+        "0": "Not anywhere! The sciatic nerve is in danger in the lower and inner areas.",
+        "2": "The lower inner area is exactly where the sciatic nerve is — very dangerous.",
+        "3": "The center risks hitting the sciatic nerve. Only upper outer is safe."
+      }
+    },
+    {
+      "q": "What does the sciatic nerve supply?",
+      "options": [
+        "Only the face",
+        "The back of the thigh and most of the leg below the knee",
+        "Only the arm",
+        "Only the abdomen"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The sciatic nerve supplies the POSTERIOR THIGH (hamstrings) and nearly EVERYTHING BELOW THE KNEE. Its branches (tibial and common fibular) control foot movement and sensation.",
+      "wrongExplains": {
+        "0": "The face uses cranial nerves. The sciatic is for the leg.",
+        "2": "The arm uses brachial plexus nerves. The sciatic is in the leg.",
+        "3": "The abdomen uses thoracic and lumbar nerves. The sciatic is for the leg."
+      }
+    },
+    {
+      "q": "What is 'foot drop'?",
+      "options": [
+        "A dance move",
+        "Inability to lift the foot due to nerve damage",
+        "A type of shoe",
+        "A foot massage"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "FOOT DROP is the INABILITY TO LIFT THE FOOT (dorsiflex the ankle). It's caused by damage to the common fibular branch of the sciatic nerve. The foot drags when walking.",
+      "wrongExplains": {
+        "0": "Foot drop is a medical condition, not a dance move.",
+        "2": "It's a nerve damage symptom, not footwear.",
+        "3": "It's a pathological condition, not a therapy."
+      }
+    },
+    {
+      "q": "What happens if the sciatic nerve is severely damaged in the buttock?",
+      "options": [
+        "Only mild tingling",
+        "Weakness of the entire leg below the knee and loss of sensation",
+        "Only arm problems",
+        "Only breathing problems"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "Severe sciatic nerve damage causes DEVASTATING LEG WEAKNESS — loss of hamstring function, calf weakness, foot drop, and extensive sensory loss below the knee. It can be permanently disabling.",
+      "wrongExplains": {
+        "0": "Severe damage causes much more than tingling — major motor and sensory loss.",
+        "2": "The sciatic is in the leg, not the arm. Arm issues would be brachial plexus.",
+        "3": "Breathing involves the phrenic nerve. The sciatic controls leg function."
+      }
+    },
+    {
+      "q": "A fall or improper injection to the buttocks may injure nerves of which plexus?",
+      "options": [
+        "Cervical plexus",
+        "Brachial plexus",
+        "Lumbar plexus",
+        "Sacral plexus"
+      ],
+      "answer": 3,
+      "difficulty": "intermediate",
+      "explain": "The SACRAL PLEXUS! The sciatic nerve (from sacral plexus L4-S3) passes through the buttock where it's vulnerable. Falls compress it; improper injections can pierce it directly.",
+      "wrongExplains": {
+        "0": "The cervical plexus is in the neck for the diaphragm and neck muscles.",
+        "1": "The brachial plexus is for the arm, not in the buttock.",
+        "2": "The lumbar plexus supplies the anterior thigh, not the buttock region."
+      }
+    }
+  ]
+}

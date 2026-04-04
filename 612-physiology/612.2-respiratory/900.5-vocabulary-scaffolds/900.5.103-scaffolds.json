@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.103",
+  "parentQuestion": "Laryngitis affects the:",
+  "narrative": {
+    "setting": "The Magic School Bus descends deeper into Mr. Edgar's airway. You pass through the pharynx and arrive at a complex structure of cartilage and muscle - the larynx, the voice box. The vocal cords are red and swollen, barely able to vibrate. Mr. Edgar tries to speak but only a hoarse whisper emerges. Ms. Frizzle's voice is gentle: 'Laryngitis. His voice is gone because this incredible instrument is inflamed. We need to understand what 'laryngo-' means and why voice is lost.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar is a teacher who needs his voice to work. Is this acute laryngitis that will resolve, or chronic damage?"
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.103.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "Ms. Frizzle projects the anatomy. 'Larynx - from the Greek larynx, meaning voice box. The organ of phonation. The instrument that makes us human speakers.'",
+      "q": "The term 'larynx' refers to the:",
+      "options": [
+        "Throat",
+        "Voice box",
+        "Windpipe",
+        "Lungs"
+      ],
+      "answer": 1,
+      "explain": "'LARYNX' = VOICE BOX. The cartilaginous structure in the neck containing the vocal cords (vocal folds). Functions: phonation (voice production), airway protection during swallowing. Located between pharynx (above) and trachea (below).",
+      "wrongExplains": {
+        "0": "Throat is the PHARYNX. The larynx is the voice box, located BELOW the pharynx.",
+        "2": "Windpipe is the TRACHEA. The larynx is above the trachea - it's the voice box.",
+        "3": "Lungs are the organs of gas exchange. The larynx is in the neck, the voice production organ."
+      }
+    },
+    {
+      "id": "900.5.103.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "You float between the vocal cords - two bands of tissue stretched across the airway. Normally they vibrate to produce sound. Now they're thick, inflamed, barely moving. 'The vocal cords,' Ms. Frizzle says reverently.",
+      "q": "The larynx contains which structures critical for voice production?",
+      "options": [
+        "Alveoli",
+        "Vocal cords (vocal folds)",
+        "Tonsils",
+        "Turbinates"
+      ],
+      "answer": 1,
+      "explain": "The larynx contains the VOCAL CORDS (vocal folds) - bands of muscle and mucosa that vibrate when air passes through, creating sound. Also contains cartilages (thyroid, cricoid, arytenoid) that support and adjust vocal cord tension.",
+      "wrongExplains": {
+        "0": "Alveoli are in the lungs (gas exchange). The larynx is in the neck, contains vocal cords.",
+        "2": "Tonsils are in the pharynx (throat). The larynx contains vocal cords, not tonsils.",
+        "3": "Turbinates are in the nasal cavity (nose). The larynx contains vocal cords."
+      }
+    },
+    {
+      "id": "900.5.103.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "Air rushes up from the lungs, trying to make the vocal cords vibrate. But they're too swollen, too stiff. Only a raspy whisper emerges. 'Laryngitis,' Ms. Frizzle diagnoses. 'Inflammation of the larynx.'",
+      "q": "The suffix '-itis' in 'laryngitis' indicates:",
+      "options": [
+        "Surgical removal",
+        "Inflammation",
+        "Enlargement",
+        "Paralysis"
+      ],
+      "answer": 1,
+      "explain": "'-ITIS' = INFLAMMATION. Laryngitis = larynx inflammation. Causes: viral infection (most common), voice overuse, GERD, irritants (smoke). Primary symptom: HOARSENESS or voice loss.",
+      "wrongExplains": {
+        "0": "Removal is '-ectomy' (laryngectomy = surgical removal of larynx). '-itis' means inflammation.",
+        "2": "Enlargement is '-megaly'. '-itis' specifically means inflammation (swelling, redness, pain).",
+        "3": "Paralysis would be 'laryngeal palsy' or 'vocal cord paralysis'. '-itis' means inflammation."
+      }
+    },
+    {
+      "id": "900.5.103.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "Ms. Frizzle zooms in on the inflamed vocal cord surface. The delicate mucosa is red, edematous. 'Swelling,' she explains. 'When vocal cords swell, they can't vibrate properly. No vibration, no voice.'",
+      "q": "Why does laryngitis cause hoarseness or voice loss?",
+      "options": [
+        "The lungs stop producing air",
+        "Swollen vocal cords cannot vibrate normally",
+        "The brain forgets how to speak",
+        "The throat closes completely"
+      ],
+      "answer": 1,
+      "explain": "Inflamed vocal cords → SWELLING → altered VIBRATION → abnormal sound production. Mild swelling = hoarseness. Severe swelling = aphonia (no voice). The cords are too thick/stiff to vibrate at their normal frequency.",
+      "wrongExplains": {
+        "0": "The lungs still produce air flow. The problem is at the VOCAL CORDS, which can't vibrate properly when swollen.",
+        "2": "Speech centers are fine. The mechanical INSTRUMENT (vocal cords) is malfunctioning due to swelling.",
+        "3": "The airway is open (you can breathe). The vocal cords just can't produce normal sound when inflamed."
+      }
+    },
+    {
+      "id": "900.5.103.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "A viral particle - rhinovirus - is replicating in the laryngeal epithelium. 'Acute viral laryngitis,' Ms. Frizzle announces. 'Like the common cold, but targeting the voice box instead of the nose.'",
+      "q": "The most common cause of acute laryngitis is:",
+      "options": [
+        "Bacterial infection",
+        "Viral infection",
+        "Vocal cord tumor",
+        "Allergies"
+      ],
+      "answer": 1,
+      "explain": "VIRAL infection is the most common cause of ACUTE laryngitis. Viruses: rhinovirus, influenza, parainfluenza, adenovirus. Often accompanies upper respiratory infections (URIs). Self-limited, resolves in 1-2 weeks.",
+      "wrongExplains": {
+        "0": "Bacterial laryngitis is rare (though can occur in croup, epiglottitis). VIRAL is most common for acute cases.",
+        "2": "Tumors cause CHRONIC hoarseness (weeks-months), not acute laryngitis. Acute is usually viral.",
+        "3": "Allergies can cause throat irritation but rarely cause true laryngitis. Viral infection is the primary cause."
+      }
+    },
+    {
+      "id": "900.5.103.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus observes Mr. Edgar's history - teaching classes, yelling at a football game, singing karaoke. 'Voice abuse,' Ms. Frizzle notes. 'Overuse causes mechanical trauma to vocal cords, leading to inflammation.'",
+      "q": "Besides infection, what can cause laryngitis?",
+      "options": [
+        "Voice overuse, GERD, smoking, irritants",
+        "Only genetic factors",
+        "Drinking too much water",
+        "Eating spicy foods"
+      ],
+      "answer": 0,
+      "explain": "Non-infectious causes: (1) VOICE OVERUSE (yelling, singing), (2) GERD (acid reflux irritates larynx), (3) SMOKING/irritants, (4) allergies, (5) chronic cough. These cause mechanical or chemical irritation → inflammation.",
+      "wrongExplains": {
+        "1": "Genetic factors aren't a primary cause of laryngitis. It's usually environmental (infection, overuse, irritants).",
+        "2": "Hydration helps PREVENT laryngitis. Drinking water doesn't cause it.",
+        "3": "Spicy food might worsen GERD-related laryngitis, but isn't a direct cause of vocal cord inflammation."
+      }
+    },
+    {
+      "id": "900.5.103.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Acute versus chronic laryngitis,' Ms. Frizzle teaches. 'Acute is days to weeks. Chronic is months. Different causes, different concerns. Chronic hoarseness needs a laryngoscopy - could be cancer.'",
+      "q": "Chronic laryngitis (hoarseness > 3 weeks) should prompt evaluation for:",
+      "options": [
+        "Common cold",
+        "Vocal cord nodules, polyps, or laryngeal cancer",
+        "Tooth decay",
+        "Foot fungus"
+      ],
+      "answer": 1,
+      "explain": "CHRONIC hoarseness (>3 weeks) requires laryngoscopy to rule out: (1) VOCAL CORD LESIONS (nodules, polyps, cysts), (2) LARYNGEAL CANCER (especially in smokers), (3) vocal cord paralysis, (4) chronic GERD effects. Don't assume it's 'just laryngitis.'",
+      "wrongExplains": {
+        "0": "Common cold causes ACUTE laryngitis (days-weeks). Chronic hoarseness needs investigation for serious causes.",
+        "2": "Tooth decay affects teeth, not voice. Chronic hoarseness is a laryngeal problem.",
+        "3": "Completely unrelated. Chronic hoarseness points to laryngeal pathology."
+      }
+    },
+    {
+      "id": "900.5.103.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "A laryngoscope image appears - the doctor is looking directly at Mr. Edgar's vocal cords. 'Laryngoscopy,' Ms. Frizzle explains. 'Direct visualization of the larynx. Essential for chronic hoarseness.'",
+      "q": "Laryngoscopy is:",
+      "options": [
+        "Surgical removal of the larynx",
+        "Visual examination of the larynx with a scope",
+        "X-ray of the voice box",
+        "Blood test for throat infection"
+      ],
+      "answer": 1,
+      "explain": "LARYNGOSCOPY = visual examination of the LARYNX using a laryngoscope (flexible or rigid scope). Allows direct viewing of vocal cords, detection of masses, polyps, paralysis, cancer. '-scopy' = examination.",
+      "wrongExplains": {
+        "0": "Removal is laryngectomy. Laryngoscopy is EXAMINATION, not surgery.",
+        "2": "X-rays don't show vocal cord detail well. Laryngoscopy uses direct visualization with light and camera.",
+        "3": "Blood tests detect infection markers. Laryngoscopy is physical examination of the larynx itself."
+      }
+    },
+    {
+      "id": "900.5.103.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Treatment,' Ms. Frizzle announces. 'For acute viral laryngitis: voice rest, hydration, humidification. NO antibiotics - it's viral! For chronic: treat the underlying cause.'",
+      "q": "The primary treatment for acute viral laryngitis is:",
+      "options": [
+        "Antibiotics",
+        "Voice rest, hydration, time (self-limited)",
+        "Immediate surgery",
+        "Steroids in all cases"
+      ],
+      "answer": 1,
+      "explain": "Acute VIRAL laryngitis treatment: (1) VOICE REST (whisper or silence), (2) HYDRATION, (3) humidified air, (4) TIME (self-resolves 1-2 weeks). NO antibiotics (it's viral!). Steroids only for severe cases (singers, actors with urgent need).",
+      "wrongExplains": {
+        "0": "Antibiotics don't work on VIRUSES. Acute laryngitis is usually viral - antibiotics are inappropriate.",
+        "2": "Surgery is for structural problems (nodules, cancer), not acute inflammation. Rest and time are the cure.",
+        "3": "Steroids are reserved for special cases (professional voice users). Routine viral laryngitis doesn't need steroids."
+      }
+    },
+    {
+      "id": "900.5.103.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Mr. Edgar rests his voice. The inflammation subsides. Two weeks later, his voice returns to normal. 'Acute viral laryngitis,' Ms. Frizzle confirms. 'Self-limited, as expected. Final question!'",
+      "q": "Laryngitis affects the:",
+      "options": [
+        "Throat (pharynx)",
+        "Voice box (larynx)",
+        "Windpipe (trachea)",
+        "Lungs"
+      ],
+      "answer": 1,
+      "explain": "LARYNGITIS = inflammation of the LARYNX (voice box). Causes: viral infection (most common), voice overuse, GERD, smoking. Primary symptom: HOARSENESS or voice loss. Chronic hoarseness needs laryngoscopy to rule out serious causes.",
+      "wrongExplains": {
+        "0": "Throat (pharynx) inflammation is PHARYNGITIS (sore throat). Laryngitis is the voice box, below the throat.",
+        "2": "Windpipe (trachea) inflammation is TRACHEITIS. Laryngitis is the voice box, above the trachea.",
+        "3": "Lung inflammation is pneumonia or pneumonitis. Laryngitis is in the neck - the voice box."
+      }
+    }
+  ]
+}

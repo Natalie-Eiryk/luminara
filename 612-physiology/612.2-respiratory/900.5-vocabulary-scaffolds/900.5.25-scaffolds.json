@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.25",
+  "parentQuestion": "The law stating that gas diffuses from areas of high pressure to low pressure is:",
+  "narrative": {
+    "setting": "The Magic School Bus shrinks to molecular scale, watching oxygen and carbon dioxide molecules in motion. Ms. Frizzle pulls out a whiteboard in the cramped bus. 'Gas behavior follows laws,' she announces. 'Not suggestions, not guidelines - LAWS. And the physicist who quantified how gases diffuse gets his name on one of them.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar is at altitude, where atmospheric pressure is lower. His oxygen diffusion is compromised. Understanding the physical laws governing gas movement isn't abstract - it explains why climbers need supplemental oxygen, why premature babies struggle to breathe, and why certain lung diseases are so devastating."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.25.s01",
+      "arc": 1,
+      "arcTitle": "Gas Law Foundations",
+      "narrative": "'First, basic definitions,' Ms. Frizzle begins. 'Diffusion - the passive movement of molecules from areas of high concentration to low. No energy required. Just physics doing its thing.'",
+      "q": "What does 'diffusion' mean?",
+      "options": [
+        "Active pumping of molecules",
+        "Passive movement from high to low concentration",
+        "Conversion of one gas to another",
+        "Production of new molecules"
+      ],
+      "answer": 1,
+      "explain": "DIFFUSION is PASSIVE movement of molecules from HIGH concentration (or pressure) to LOW. No pumps, no energy expenditure - just molecules spreading out by random motion.",
+      "wrongExplains": {
+        "0": "Active pumping requires energy (ATP). Diffusion is passive and spontaneous.",
+        "2": "Diffusion is movement, not chemical conversion or reaction.",
+        "3": "Diffusion moves existing molecules - it doesn't create new ones."
+      }
+    },
+    {
+      "id": "900.5.25.s02",
+      "arc": 1,
+      "arcTitle": "Gas Law Foundations",
+      "narrative": "'Let's review the classic gas laws,' Ms. Frizzle draws on her whiteboard. 'Boyle's Law: pressure and volume are inversely related. When Mr. Edgar's chest expands, lung pressure drops.'",
+      "q": "Boyle's Law relates which two variables?",
+      "options": [
+        "Temperature and volume",
+        "Pressure and volume",
+        "Pressure and diffusion rate",
+        "Concentration and temperature"
+      ],
+      "answer": 1,
+      "explain": "BOYLE'S LAW: Pressure and volume are INVERSELY related (P1V1 = P2V2 at constant temperature). When volume increases, pressure decreases - the basis of breathing mechanics.",
+      "wrongExplains": {
+        "0": "Temperature-volume is CHARLES' LAW. Boyle's is pressure-volume.",
+        "2": "Pressure and diffusion rate relates to Fick's Law. Boyle's is P and V.",
+        "3": "That's a different relationship. Boyle's specifically relates pressure and volume."
+      }
+    },
+    {
+      "id": "900.5.25.s03",
+      "arc": 1,
+      "arcTitle": "Gas Law Foundations",
+      "narrative": "'Dalton's Law,' Ms. Frizzle continues. 'In a gas mixture, each gas exerts its own partial pressure. Total pressure equals the sum of all partial pressures. That's why we talk about PO2 and PCO2.'",
+      "q": "Dalton's Law states that:",
+      "options": [
+        "Gas diffuses from high to low pressure",
+        "Total pressure equals the sum of partial pressures",
+        "Pressure and volume are inversely related",
+        "Solubility depends on pressure"
+      ],
+      "answer": 1,
+      "explain": "DALTON'S LAW: Total pressure = sum of partial pressures of each gas. In air: P_total = P_N2 + P_O2 + P_CO2 + others. Each gas behaves independently.",
+      "wrongExplains": {
+        "0": "That describes diffusion behavior, which Fick's law quantifies.",
+        "2": "That's BOYLE'S LAW (P1V1 = P2V2).",
+        "3": "That's HENRY'S LAW (gas solubility in liquids)."
+      }
+    },
+    {
+      "id": "900.5.25.s04",
+      "arc": 2,
+      "arcTitle": "Henry's and Fick's Laws",
+      "narrative": "'Henry's Law,' Ms. Frizzle shows a diagram of gas dissolving in liquid. 'How much gas dissolves depends on its partial pressure. Higher pressure, more dissolves. That's why divers get nitrogen narcosis at depth.'",
+      "q": "Henry's Law describes:",
+      "options": [
+        "Gas movement in airways",
+        "How much gas dissolves in liquid depends on its partial pressure",
+        "Total pressure of gas mixtures",
+        "Breathing mechanics"
+      ],
+      "answer": 1,
+      "explain": "HENRY'S LAW: The amount of gas that dissolves in liquid is PROPORTIONAL to its partial pressure. Higher pressure = more gas dissolves. Relevant for oxygen in blood.",
+      "wrongExplains": {
+        "0": "Airway gas movement is ventilation mechanics. Henry's law is about solubility.",
+        "2": "That's DALTON'S LAW (sum of partial pressures).",
+        "3": "Breathing mechanics primarily involves Boyle's Law."
+      }
+    },
+    {
+      "id": "900.5.25.s05",
+      "arc": 2,
+      "arcTitle": "Henry's and Fick's Laws",
+      "narrative": "'Now for Fick,' Ms. Frizzle says. 'Adolf Fick, German physiologist. He quantified exactly HOW FAST gas diffuses. Not just that it moves from high to low, but the RATE of that movement.'",
+      "q": "Fick's Law of diffusion includes which factors?",
+      "options": [
+        "Only pressure gradient",
+        "Pressure gradient, surface area, membrane thickness, solubility",
+        "Only temperature",
+        "Only concentration"
+      ],
+      "answer": 1,
+      "explain": "FICK'S LAW: Rate = (Area x Pressure gradient x Solubility) / (Thickness x sqrt(Molecular Weight)). Multiple factors determine how fast gases cross membranes.",
+      "wrongExplains": {
+        "0": "Pressure gradient is important but not the only factor. Area and thickness matter hugely.",
+        "2": "Temperature isn't a primary factor in Fick's law for physiological conditions.",
+        "3": "Concentration (pressure gradient) is one factor, but Fick's includes area, thickness, and solubility."
+      }
+    },
+    {
+      "id": "900.5.25.s06",
+      "arc": 2,
+      "arcTitle": "Henry's and Fick's Laws",
+      "narrative": "'The equation,' Ms. Frizzle writes it out. 'Rate is proportional to area, gradient, and solubility. Rate is inversely proportional to thickness. This is why the respiratory membrane must be thin!'",
+      "q": "According to Fick's Law, what happens if membrane thickness doubles?",
+      "options": [
+        "Diffusion rate doubles",
+        "Diffusion rate halves",
+        "Diffusion rate stays the same",
+        "Diffusion stops completely"
+      ],
+      "answer": 1,
+      "explain": "Rate is INVERSELY proportional to thickness. Double the thickness = HALF the diffusion rate. This is why diseases that thicken the respiratory membrane (fibrosis, edema) impair gas exchange.",
+      "wrongExplains": {
+        "0": "Thicker barriers SLOW diffusion, they don't speed it up.",
+        "2": "Thickness absolutely affects rate - it's in Fick's equation inversely.",
+        "3": "Diffusion continues but at a reduced rate - it doesn't stop completely."
+      }
+    },
+    {
+      "id": "900.5.25.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Applications",
+      "narrative": "'Surface area matters too,' Ms. Frizzle emphasizes. 'Emphysema destroys alveoli - less surface area means slower diffusion even if each remaining membrane is normal.'",
+      "q": "In emphysema, gas exchange is impaired partly because:",
+      "options": [
+        "The gradient disappears",
+        "Surface area is reduced by alveolar destruction",
+        "The membrane becomes too thin",
+        "Hemoglobin stops working"
+      ],
+      "answer": 1,
+      "explain": "Emphysema DESTROYS ALVEOLI, reducing surface area for gas exchange. Per Fick's Law, less area = slower diffusion = impaired oxygenation despite adequate ventilation.",
+      "wrongExplains": {
+        "0": "The gradient still exists. The problem is reduced area.",
+        "2": "The membrane isn't too thin - the AREA is reduced by alveolar destruction.",
+        "3": "Hemoglobin function is separate. Emphysema affects the diffusion surface."
+      }
+    },
+    {
+      "id": "900.5.25.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Applications",
+      "narrative": "'Pulmonary fibrosis,' Ms. Frizzle shows another example. 'Scar tissue thickens the membrane. Per Fick's Law - thicker membrane, slower diffusion. Patients become hypoxic.'",
+      "q": "Why does pulmonary fibrosis impair gas exchange?",
+      "options": [
+        "It increases surface area too much",
+        "Scar tissue increases membrane thickness",
+        "It makes the gradient stronger",
+        "It produces too much surfactant"
+      ],
+      "answer": 1,
+      "explain": "Fibrosis deposits SCAR TISSUE, increasing membrane THICKNESS. Per Fick's Law, thicker membrane = slower diffusion = hypoxemia despite normal ventilation.",
+      "wrongExplains": {
+        "0": "Fibrosis doesn't increase area - if anything, it restricts it.",
+        "2": "The gradient doesn't change much. The problem is diffusion resistance from thickness.",
+        "3": "Surfactant production isn't the primary issue in fibrosis."
+      }
+    },
+    {
+      "id": "900.5.25.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Applications",
+      "narrative": "'At altitude,' Ms. Frizzle brings it back to Mr. Edgar, 'the gradient is reduced. Same percentage of oxygen, but lower total pressure. Per Fick's Law - smaller gradient, slower diffusion. That's why altitude sickness happens.'",
+      "q": "At high altitude, gas diffusion is reduced because:",
+      "options": [
+        "Surface area shrinks",
+        "The pressure gradient is smaller (lower atmospheric PO2)",
+        "The membrane thickens",
+        "Hemoglobin disappears"
+      ],
+      "answer": 1,
+      "explain": "At altitude, atmospheric pressure is lower, so PO2 is lower. The pressure GRADIENT between alveolar air and blood is reduced. Per Fick's Law, smaller gradient = slower diffusion.",
+      "wrongExplains": {
+        "0": "Lung surface area doesn't change with altitude.",
+        "2": "The membrane doesn't thicken at altitude. The gradient is the issue.",
+        "3": "Hemoglobin still works - there's just less oxygen pressure driving diffusion."
+      }
+    },
+    {
+      "id": "900.5.25.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Applications",
+      "narrative": "Molecules move from high pressure to low. The rate depends on area, thickness, and gradient. Adolf Fick quantified all of this. 'The law stating that gas diffuses from high to low pressure,' Ms. Frizzle asks. 'What's it called?'",
+      "q": "The law stating that gas diffuses from areas of high pressure to low pressure is:",
+      "options": [
+        "Henry's law",
+        "Boyle's law",
+        "Dalton's law",
+        "Fick's law"
+      ],
+      "answer": 3,
+      "explain": "FICK'S LAW describes diffusion rate based on pressure gradient (high to low), surface area, membrane thickness, and gas solubility. It quantifies how fast gases cross membranes.",
+      "wrongExplains": {
+        "0": "Henry's law is about gas SOLUBILITY in liquids, not diffusion rate.",
+        "1": "Boyle's law relates PRESSURE and VOLUME (P1V1 = P2V2), not diffusion.",
+        "2": "Dalton's law is about PARTIAL PRESSURES in mixtures (total = sum of partials)."
+      }
+    }
+  ]
+}

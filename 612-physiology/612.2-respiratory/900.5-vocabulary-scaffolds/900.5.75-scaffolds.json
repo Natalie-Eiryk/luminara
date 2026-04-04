@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.75",
+  "parentQuestion": "The primary stimulus for breathing is:",
+  "narrative": {
+    "setting": "The Magic School Bus floats in Mr. Edgar's medulla, watching the respiratory rhythm generator orchestrate each breath. Ms. Frizzle checks all the inputs - CO2 sensors firing constantly with every slight pH change, O2 sensors quiet (PO2 is normal), stretch receptors silent. 'See the pattern?' she asks. 'Breath after breath, the driver is CO2. Not oxygen. Not lung volume. Carbon dioxide and pH - that's the master controller of normal breathing.'",
+    "character": "Mr. Edgar",
+    "tension": "Hold your breath - it's not lack of oxygen that forces you to gasp, it's rising CO2. COPD patients lose this drive and rely on hypoxia. Opioids suppress CO2 sensitivity causing respiratory arrest. Hyperventilation blows off CO2 and you can hold your breath for minutes. Understanding the primary breathing stimulus isn't academic - it's understanding the chemical thermostat that regulates every autonomous breath."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.75.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Multiple inputs control breathing,' Ms. Frizzle begins. 'CO2, O2, pH, lung stretch, voluntary control, emotional state. The respiratory center integrates all of these. But in NORMAL, resting conditions, ONE dominates moment-to-moment control.'",
+      "q": "Respiratory control involves integration of:",
+      "options": [
+        "Only one single input",
+        "Multiple chemical and mechanical inputs",
+        "No inputs (random)",
+        "Only voluntary control"
+      ],
+      "answer": 1,
+      "explain": "Breathing is controlled by MULTIPLE INPUTS: CO2, O2, pH (chemoreceptors), lung stretch (mechanoreceptors), voluntary override, emotional/metabolic factors. Medulla integrates all. But CO2 dominates normally.",
+      "wrongExplains": {
+        "0": "Multiple inputs contribute (CO2, O2, stretch, etc). Not just one.",
+        "2": "Breathing is highly regulated, not random. Chemical/mechanical feedback systems.",
+        "3": "Autonomic control dominates (CO2 drive). Voluntary can override but isn't primary."
+      }
+    },
+    {
+      "id": "900.5.75.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'The CO2 dominance,' Ms. Frizzle emphasizes. 'Small changes in arterial PCO2 (±5 mmHg) cause LARGE changes in ventilation. The system is exquisitely CO2-sensitive. Central chemoreceptors (medulla) are the sensors. This is minute-to-minute, breath-to-breath control.'",
+      "q": "Small increases in arterial CO2 cause:",
+      "options": [
+        "No change in breathing",
+        "Large increase in ventilation",
+        "Decreased breathing",
+        "Stopped breathing"
+      ],
+      "answer": 1,
+      "explain": "Elevated CO2 → LOW pH in CSF → central chemoreceptors fire → LARGE INCREASE in ventilation. Very sensitive system. ±5 mmHg CO2 change → dramatic ventilation change. Primary respiratory drive.",
+      "wrongExplains": {
+        "0": "CO2 is the PRIMARY stimulus. Even small increases trigger increased breathing.",
+        "2": "High CO2 stimulates MORE breathing (hyperventilation), not less.",
+        "3": "High CO2 DRIVES breathing. It doesn't stop it - it increases it."
+      }
+    },
+    {
+      "id": "900.5.75.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Why CO2, not O2?' Ms. Frizzle asks. 'O2 stores are tiny - you'd pass out before O2 became a good controller. CO2 changes RAPIDLY and LINEARLY with metabolic rate. pH (from CO2) is tightly regulated. It's a better, faster, more reliable signal.'",
+      "q": "CO2 is a better breathing stimulus than O2 because:",
+      "options": [
+        "O2 changes too slowly",
+        "CO2 changes rapidly with metabolism and is tightly regulated",
+        "O2 is never important",
+        "CO2 has no effect"
+      ],
+      "answer": 1,
+      "explain": "CO2 is IDEAL stimulus: changes RAPIDLY with metabolism, LINEAR relationship to ventilation, tightly regulated pH. O2 stores are larger, changes slower, non-linear response. CO2 is primary, O2 is backup.",
+      "wrongExplains": {
+        "0": "O2 changes slower AND has non-linear response (hyperbolic). CO2 is faster, more linear.",
+        "2": "O2 IS important (hypoxic drive when <60 mmHg) but CO2 is primary, moment-to-moment controller.",
+        "3": "CO2 has HUGE effect - it's the primary respiratory stimulus under normal conditions."
+      }
+    },
+    {
+      "id": "900.5.75.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Central chemoreceptors - the CO2 sensors,' Ms. Frizzle reviews. 'In medulla, bathed in CSF. CO2 from blood crosses blood-brain barrier, becomes H+ in CSF, detected as pH change. ~75% of normal respiratory drive comes from these central receptors.'",
+      "q": "Central chemoreceptors account for what percentage of normal respiratory drive?",
+      "options": [
+        "0% (no role)",
+        "About 25%",
+        "About 75%",
+        "100% (only drive)"
+      ],
+      "answer": 2,
+      "explain": "Central chemoreceptors (CO2/pH in CSF) provide ~75% of normal respiratory drive. Peripheral chemoreceptors add ~25% (mostly O2, some CO2/pH). Central dominates under normal conditions.",
+      "wrongExplains": {
+        "0": "Central chemoreceptors provide the MAJORITY (~75%) of respiratory drive.",
+        "1": "25% is peripheral contribution. Central is ~75% (dominant).",
+        "3": "Not 100% - peripheral chemoreceptors contribute ~25%. But central is primary."
+      }
+    },
+    {
+      "id": "900.5.75.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'The oxygen backup system,' Ms. Frizzle explains. 'Peripheral chemoreceptors (carotid/aortic bodies) detect O2. But they're quiet until PO2 <60 mmHg. Below this threshold, they fire increasingly. Hypoxic drive - emergency backup when oxygenation fails.'",
+      "q": "Low oxygen becomes a major respiratory stimulus when PO2 falls below:",
+      "options": [
+        "100 mmHg (normal)",
+        "80 mmHg",
+        "60 mmHg",
+        "20 mmHg"
+      ],
+      "answer": 2,
+      "explain": "Hypoxic drive kicks in when PO2 <60 mmHg. Peripheral chemoreceptors fire minimally above 60, dramatically below. Backup system for severe hypoxemia. Normal PO2 = 80-100 mmHg.",
+      "wrongExplains": {
+        "0": "100 mmHg is NORMAL. Hypoxic drive doesn't activate until PO2 <60 (hypoxemia).",
+        "1": "80 mmHg is still acceptable. Hypoxic drive becomes significant <60 mmHg.",
+        "3": "20 mmHg is severely hypoxic (near-death). Drive increases starting at 60, maximal well before 20."
+      }
+    },
+    {
+      "id": "900.5.75.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'The breath-hold experiment,' Ms. Frizzle demonstrates. 'Hold your breath. CO2 builds up, pH drops. Central chemoreceptors fire increasingly. The overwhelming urge to breathe - that's CO2 drive, NOT lack of oxygen. You'll gasp long before O2 is dangerously low.'",
+      "q": "The overwhelming urge to breathe during breath-holding is primarily from:",
+      "options": [
+        "Low oxygen",
+        "High CO2 / low pH",
+        "Lung collapse",
+        "Voluntary control"
+      ],
+      "answer": 1,
+      "explain": "Breath-hold urge = rising CO2 / falling pH stimulating central chemoreceptors. NOT from low O2 (which takes longer). You gasp from CO2 buildup before O2 is critically low. Primary drive.",
+      "wrongExplains": {
+        "0": "O2 is still adequate when urge overwhelms. It's CO2 accumulation that forces breathing.",
+        "2": "Lungs don't collapse during breath-hold. The urge is chemical (CO2), not mechanical.",
+        "3": "Voluntary control is overridden by involuntary CO2 drive. You CAN'T hold breath indefinitely."
+      }
+    },
+    {
+      "id": "900.5.75.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Hyperventilation and apnea,' Ms. Frizzle shows the flip side. 'Deliberately hyperventilate → blow off CO2 → LOW PCO2 → reduced respiratory drive. You can hold breath for MINUTES because CO2 is low. Dangerous - can pass out from hypoxia before CO2 drive returns.'",
+      "q": "After hyperventilation, you can hold your breath longer because:",
+      "options": [
+        "O2 is higher",
+        "CO2 is lower (reduced stimulus)",
+        "Lungs are bigger",
+        "No reason"
+      ],
+      "answer": 1,
+      "explain": "Hyperventilation BLOWS OFF CO2 → LOW PCO2 → reduced respiratory drive. Can hold breath until CO2 rebuilds. DANGEROUS - may become hypoxic before CO2 drive returns. Proves CO2 is primary stimulus.",
+      "wrongExplains": {
+        "0": "O2 is slightly higher but CO2 is MUCH lower. The LOW CO2 (reduced drive) allows longer hold.",
+        "2": "Lung size doesn't change. It's the LOW CO2 (reduced stimulus) that allows longer hold.",
+        "3": "There's a clear mechanism - reduced CO2 reduces respiratory drive."
+      }
+    },
+    {
+      "id": "900.5.75.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'COPD and drive reversal,' Ms. Frizzle returns to this critical concept. 'Chronic CO2 retention → central receptors adapt (blunted). Patient switches to HYPOXIC DRIVE (peripheral, O2). Give high O2 → remove hypoxic stimulus → hypoventilation → CO2 rises further. Controlled O2 critical.'",
+      "q": "Chronic COPD patients with CO2 retention rely on:",
+      "options": [
+        "Normal central CO2 drive",
+        "Hypoxic drive from peripheral receptors",
+        "No drive",
+        "Only voluntary breathing"
+      ],
+      "answer": 1,
+      "explain": "Chronic hypercapnia → central receptors adapt. COPD patients rely on HYPOXIC DRIVE (peripheral O2 sensors). High O2 can suppress this → hypoventilation. Give CONTROLLED O2 (88-92% target).",
+      "wrongExplains": {
+        "0": "Central CO2 drive is BLUNTED in chronic CO2 retention. They switch to hypoxic drive.",
+        "2": "They have drive - just from HYPOXIA (O2), not CO2. Still breathing involuntarily.",
+        "3": "Still autonomic control, just hypoxic drive instead of CO2 drive."
+      }
+    },
+    {
+      "id": "900.5.75.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Opioid overdose mechanism,' Ms. Frizzle explains grimly. 'Opioids suppress central chemoreceptors (mu receptors in medulla). Blunted CO2 response → hypoventilation → respiratory arrest. Naloxone (opioid antagonist) reverses this, restoring CO2 sensitivity.'",
+      "q": "Opioid overdose causes respiratory depression by:",
+      "options": [
+        "Blocking airways",
+        "Suppressing central chemoreceptor response to CO2",
+        "Increasing oxygen",
+        "Paralyzing muscles"
+      ],
+      "answer": 1,
+      "explain": "Opioids SUPPRESS CENTRAL CHEMORECEPTORS (medulla). Blunted CO2 response → inadequate ventilation → hypercapnia, hypoxemia, respiratory arrest. Naloxone reverses by blocking mu receptors.",
+      "wrongExplains": {
+        "0": "Opioids don't physically block airways. They suppress the DRIVE to breathe (central receptors).",
+        "2": "Opioids don't increase O2. They suppress CO2 sensing → hypoventilation → LOW O2.",
+        "3": "Opioids affect central drive, not peripheral muscles. Diaphragm works but brain doesn't signal it."
+      }
+    },
+    {
+      "id": "900.5.75.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Ms. Frizzle watches the medullary chemoreceptors fire with each subtle pH change, driving breath after breath. 'Not oxygen. Not stretch. Carbon dioxide and pH - the primary controller. So, class: what's the primary stimulus for breathing?'",
+      "q": "The primary stimulus for breathing is:",
+      "options": [
+        "Low oxygen",
+        "High CO2/low pH",
+        "Lung stretch",
+        "Voluntary control"
+      ],
+      "answer": 1,
+      "explain": "PRIMARY breathing stimulus = HIGH CO2 / LOW pH detected by CENTRAL chemoreceptors (medulla, CSF). Minute-to-minute control. Low O2 is backup (<60 mmHg). Stretch is protective. CO2 dominates normally.",
+      "wrongExplains": {
+        "0": "Low oxygen DOES stimulate (peripheral) but only when very low (<60 mmHg). CO2 is the primary, moment-to-moment controller.",
+        "2": "Lung stretch inhibits breathing (Hering-Breuer) - it's a brake, not the main stimulus. CO2 drives breathing.",
+        "3": "Voluntary control can override but the PRIMARY autonomic stimulus is CO2/pH from central chemoreceptors."
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "parentId": "100.3.03",
+  "parentQuestion": "Which part of the cerebral cortex is involved in intellect, cognition, recall, and personality?",
+  "scaffolds": [
+    {
+      "q": "What is the prefrontal cortex?",
+      "options": [
+        "The back of the brain",
+        "The most anterior part of the frontal lobe — the 'executive' region",
+        "Part of the cerebellum",
+        "The primary motor cortex"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The PREFRONTAL CORTEX is the most ANTERIOR (front) part of the FRONTAL LOBE. It's the brain's EXECUTIVE CENTER — planning, judgment, personality.",
+      "wrongExplains": {
+        "0": "The back of the brain is the occipital lobe (vision).",
+        "2": "The cerebellum is separate from the cortex, below the occipital lobe.",
+        "3": "Primary motor cortex is in the precentral gyrus, posterior to prefrontal."
+      }
+    },
+    {
+      "q": "What are executive functions?",
+      "options": [
+        "Basic reflexes",
+        "Higher cognitive processes: Planning, decision-making, impulse control",
+        "Sensory detection",
+        "Motor coordination"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "EXECUTIVE FUNCTIONS are higher cognitive processes — PLANNING, DECISION-MAKING, WORKING MEMORY, IMPULSE CONTROL, JUDGMENT. The brain's CEO functions.",
+      "wrongExplains": {
+        "0": "Reflexes are automatic, not executive. Executive functions are deliberate.",
+        "2": "Sensory detection happens in sensory cortices, not prefrontal.",
+        "3": "Motor coordination is the cerebellum's role."
+      }
+    },
+    {
+      "q": "What did Phineas Gage's injury teach us?",
+      "options": [
+        "The cerebellum controls movement",
+        "The prefrontal cortex is crucial for personality and judgment",
+        "Vision is in the occipital lobe",
+        "Memory is in the hippocampus"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "PHINEAS GAGE's tamping iron destroyed his PREFRONTAL CORTEX. He survived but became impulsive and irresponsible — proving the PFC is crucial for PERSONALITY and JUDGMENT.",
+      "wrongExplains": {
+        "0": "Gage's injury was to the frontal lobe, not cerebellum.",
+        "2": "Vision wasn't affected in Gage's case.",
+        "3": "Memory wasn't Gage's primary deficit; personality was."
+      }
+    },
+    {
+      "q": "Why is the prefrontal cortex called the 'anterior association area'?",
+      "options": [
+        "It's at the back of the brain",
+        "It's at the front (anterior) and integrates information from multiple areas",
+        "It only processes sensory data",
+        "It has no connections to other areas"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "ANTERIOR = front. ASSOCIATION = integrating information. The prefrontal cortex receives input from everywhere and integrates it to guide complex behavior.",
+      "wrongExplains": {
+        "0": "Anterior means front, not back.",
+        "2": "It does much more than process sensory data — it integrates and plans.",
+        "3": "The prefrontal cortex has extensive connections throughout the brain."
+      }
+    },
+    {
+      "q": "When does the prefrontal cortex fully mature?",
+      "options": [
+        "At birth",
+        "Around age 25 — the last brain region to fully myelinate",
+        "By age 5",
+        "It never fully matures"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The prefrontal cortex is the LAST brain region to fully MYELINATE — around AGE 25. This explains adolescent impulsivity — the 'brake pedal' isn't fully connected yet.",
+      "wrongExplains": {
+        "0": "The PFC is very immature at birth.",
+        "2": "Age 5 is too early; the PFC continues developing for decades.",
+        "3": "It does fully mature, just later than other brain regions."
+      }
+    },
+    {
+      "q": "What is working memory?",
+      "options": [
+        "Long-term storage of facts",
+        "Temporarily holding and manipulating information — a prefrontal function",
+        "Muscle memory",
+        "Memory of traumatic events"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "WORKING MEMORY is the ability to temporarily HOLD and MANIPULATE information — like remembering a phone number while dialing. It's a key PREFRONTAL CORTEX function.",
+      "wrongExplains": {
+        "0": "Long-term storage involves hippocampus and cortical areas, not working memory.",
+        "2": "Muscle memory is procedural, involving cerebellum and basal nuclei.",
+        "3": "Traumatic memory involves amygdala and hippocampus."
+      }
+    },
+    {
+      "q": "Which functions does the prefrontal cortex control?",
+      "options": [
+        "Heart rate and breathing",
+        "Planning, personality, judgment, and abstract thinking",
+        "Balance and coordination",
+        "Visual processing"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The prefrontal cortex controls PLANNING, PERSONALITY, JUDGMENT, ABSTRACT THINKING, working memory, and impulse control — all higher 'executive' functions.",
+      "wrongExplains": {
+        "0": "Heart rate and breathing are controlled by the brainstem.",
+        "2": "Balance and coordination are cerebellum functions.",
+        "3": "Visual processing is in the occipital lobe."
+      }
+    },
+    {
+      "q": "Why is the prefrontal cortex compared to a CEO?",
+      "options": [
+        "It makes money",
+        "It coordinates other brain regions and makes decisions for the whole system",
+        "It's the largest brain area",
+        "It was discovered by a CEO"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "Like a CEO, the prefrontal cortex COORDINATES other brain regions and makes DECISIONS. It integrates information, sets goals, and guides behavior — executive leadership.",
+      "wrongExplains": {
+        "0": "The comparison is about function (leadership), not finances.",
+        "2": "Size isn't the reason for the comparison.",
+        "3": "The comparison is metaphorical about function, not about discovery."
+      }
+    },
+    {
+      "q": "Which cortical area handles intellect, cognition, recall, and personality?",
+      "options": [
+        "Occipital lobe",
+        "Prefrontal cortex (anterior association area)",
+        "Primary motor cortex",
+        "Cerebellum"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "PREFRONTAL CORTEX (anterior association area). It handles INTELLECT, COGNITION, working memory (RECALL), and PERSONALITY — the full suite of executive functions.",
+      "wrongExplains": {
+        "0": "The occipital lobe processes vision, not executive functions.",
+        "2": "Primary motor cortex executes movements, not cognitive functions.",
+        "3": "The cerebellum coordinates movement, not personality or intellect."
+      }
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "Ms. Luminara Comprehensive Exam",
+    "dewey": "612.8",
+    "exercises": "19-27",
+    "version": "2.0"
+  },
+  "sections": [
+    {
+      "id": "s19",
+      "label": "Ex 19",
+      "title": "Spinal Cord & Spinal Nerves",
+      "dewey": "612.83",
+      "color": "var(--s19)",
+      "sub": "Anatomy · Tracts · Plexuses · Clinical Scenarios",
+      "images": [
+        {"file": "200-nerves/Medulla_spinalis_-_Section_-_English.svg.png", "title": "Spinal Cord Cross Section"},
+        {"file": "200-nerves/Spinal_cord_tracts_-_English.svg.png", "title": "Spinal Cord Tracts"},
+        {"file": "200-nerves/Diagram_of_the_spinal_cord_CRUK_046.svg.png", "title": "Spinal Cord Diagram"}
+      ],
+      "questions": [
+        {
+          "id": "19m1",
+          "type": "match",
+          "pts": 1,
+          "q": "Match each spinal cord location to its primary neuron or fiber type.",
+          "items": ["Dorsal horn", "Ventral horn", "Dorsal root ganglion", "Dorsal root", "Ventral root", "Spinal nerve"],
+          "opts": ["Sensory (afferent) fibers", "Motor (efferent) fibers", "Somatic motor neuron cell bodies", "Sensory neuron cell bodies (pseudounipolar)", "Interneurons", "Both sensory and motor (mixed)"],
+          "ans": [4, 2, 3, 0, 1, 5],
+          "toughWords": {
+            "Dorsal": "Back side (posterior)",
+            "Ventral": "Front side (anterior)",
+            "Afferent": "Toward CNS (sensory)",
+            "Efferent": "Away from CNS (motor)",
+            "Pseudounipolar": "Neuron with one process that splits into two"
+          },
+          "explanation": "The dorsal horn contains interneurons that process sensory information. The ventral horn contains somatic motor neuron cell bodies that innervate skeletal muscles. The dorsal root ganglion houses sensory neuron cell bodies (pseudounipolar neurons). The dorsal root carries sensory (afferent) fibers into the spinal cord. The ventral root carries motor (efferent) fibers out of the spinal cord. The spinal nerve, formed by the fusion of dorsal and ventral roots, contains both sensory and motor fibers making it a mixed nerve."
+        },
+        {
+          "id": "19m2",
+          "type": "match",
+          "pts": 1,
+          "q": "Match each spinal cord tract to its direction and primary function.",
+          "items": ["Lateral spinothalamic", "Dorsal columns (gracilis + cuneatus)", "Lateral corticospinal", "Vestibulospinal", "Ventral spinothalamic"],
+          "opts": ["Ascending — pain and temperature", "Ascending — fine touch, vibration, proprioception", "Descending — voluntary skilled movement (crosses in medulla)", "Descending — postural reflexes and balance", "Ascending — crude touch and pressure"],
+          "ans": [0, 1, 2, 3, 4],
+          "toughWords": {
+            "Spinothalamic": "Spinal cord → thalamus pathway",
+            "Corticospinal": "Cortex → spinal cord pathway",
+            "Proprioception": "Sense of body position",
+            "Decussation": "Crossing over to opposite side"
+          },
+          "explanation": "The lateral spinothalamic tract is an ascending pathway carrying pain and temperature signals from the body to the thalamus. The dorsal columns (fasciculus gracilis and cuneatus) are ascending pathways carrying fine touch, vibration, and proprioception. The lateral corticospinal tract is a descending pathway carrying voluntary motor commands from the motor cortex, crossing at the medullary decussation. The vestibulospinal tract is a descending pathway that regulates postural reflexes and balance. The ventral spinothalamic tract is an ascending pathway carrying crude touch and pressure sensations."
+        },
+        {"id": "19t1", "type": "tf", "pts": 1, "q": "The dorsal root contains motor axons.", "ans": false, "explanation": "The dorsal root contains only sensory (afferent) axons from the dorsal root ganglion neurons. Motor axons exit through the ventral root."},
+        {"id": "19t2", "type": "tf", "pts": 1, "q": "The spinal cord terminates at approximately L1–L2 in adults.", "ans": true, "explanation": "The spinal cord ends at the conus medullaris around the L1-L2 vertebral level in adults. Below this level, only nerve roots (cauda equina) descend through the vertebral canal."},
+        {"id": "19t3", "type": "tf", "pts": 1, "q": "Lateral horns are present at all spinal cord levels.", "ans": false, "note": "Lateral horns are found only at T1–L2 (sympathetic preganglionic) and S2–S4 (sacral parasympathetic).", "explanation": "Lateral horns containing autonomic preganglionic neurons are present only at T1-L2 (sympathetic) and S2-S4 (parasympathetic sacral) levels, not throughout the entire spinal cord."},
+        {"id": "19t4", "type": "tf", "pts": 1, "q": "Denticulate ligaments are extensions of the pia mater.", "ans": true, "explanation": "Denticulate ligaments are lateral extensions of the pia mater that attach to the dura mater, helping to anchor and stabilize the spinal cord within the vertebral canal."},
+        {"id": "19t5", "type": "tf", "pts": 1, "q": "Cutting the lateral corticospinal tract ABOVE the medullary decussation produces contralateral weakness.", "ans": true, "explanation": "The lateral corticospinal tract crosses at the pyramidal decussation in the medulla. A lesion above this crossing point (in the brain or brainstem) damages fibers that will control the opposite side of the body, causing contralateral weakness."},
+        {"id": "19t6", "type": "tf", "pts": 1, "q": "The C8 spinal nerve exits above the C8 vertebra.", "ans": false, "note": "C8 exits BELOW C7 (the last cervical vertebra). All other cervical nerves exit above their numbered vertebra.", "explanation": "There is no C8 vertebra. The C8 spinal nerve exits below the C7 vertebra (the last cervical vertebra). All other cervical nerves (C1-C7) exit above their correspondingly numbered vertebrae, but C8 exits below C7, and from T1 onward, nerves exit below their numbered vertebrae."},
+        {"id": "19c1", "type": "mc", "pts": 1, "q": "Which tract carries pain and temperature signals to the brain?", "opts": ["Dorsal columns", "Lateral spinothalamic tract", "Lateral corticospinal tract", "Rubrospinal tract"], "ans": 1, "explanation": "The lateral spinothalamic tract carries pain and temperature sensations from the body to the thalamus. These fibers cross at the spinal level of entry (within 1-2 segments) and ascend contralaterally."},
+        {"id": "19c2", "type": "mc", "pts": 1, "q": "Wrist drop results from damage to which nerve?", "opts": ["Ulnar nerve", "Median nerve", "Radial nerve", "Axillary nerve"], "ans": 2, "explanation": "Radial nerve damage causes wrist drop due to paralysis of wrist and finger extensors. The radial nerve innervates the posterior forearm muscles responsible for extension movements."},
+        {"id": "19c3", "type": "mc", "pts": 1, "q": "Varicella-zoster (shingles virus) lies dormant in:", "opts": ["Ventral root", "Spinal cord white matter", "Dorsal root ganglion", "The spinal nerve trunk"], "ans": 2, "explanation": "After initial chickenpox infection, varicella-zoster virus remains latent in dorsal root ganglia. Reactivation causes shingles, with painful vesicular rash in the distribution of the affected dermatome."},
+        {"id": "19c4", "type": "mc", "pts": 1, "q": "The brachial plexus arises from spinal cord levels:", "opts": ["C1–C5", "C5–T1", "T1–T6", "L1–L4"], "ans": 1, "explanation": "The brachial plexus is formed from the ventral rami of spinal nerves C5, C6, C7, C8, and T1. It innervates the upper limb and shoulder region."},
+        {"id": "19c5", "type": "mc", "pts": 1, "q": "After a right-sided cortical stroke, a patient develops left-sided weakness of the arm and leg. Which tract was damaged?", "opts": ["Ventral spinothalamic tract", "Dorsal columns", "Rubrospinal tract", "Lateral corticospinal tract"], "ans": 3, "explanation": "The lateral corticospinal tract carries voluntary motor commands from the motor cortex to spinal motor neurons. It crosses at the medullary decussation, so right-sided cortical damage affects the left side of the body."},
+        {"id": "19c6", "type": "mc", "pts": 1, "q": "Which nerve innervates the diaphragm?", "opts": ["Vagus nerve (CN X)", "Long thoracic nerve", "Phrenic nerve (C3–C5)", "Axillary nerve"], "ans": 2, "explanation": "The phrenic nerve, originating from cervical nerve roots C3, C4, and C5, is the sole motor innervation to the diaphragm. The mnemonic 'C3, 4, 5 keeps the diaphragm alive' helps remember this clinically important relationship."},
+        {"id": "19c7", "type": "mc", "pts": 1, "q": "A hemisection of the spinal cord at T6 on the RIGHT side would produce (Brown-Séquard):", "opts": ["Right-sided pain/temperature loss below T6", "Left-sided motor weakness below T6", "Right-sided motor weakness AND left-sided pain/temperature loss below T6", "Complete bilateral sensorimotor loss"], "ans": 2, "explanation": "Brown-Sequard syndrome from hemisection causes ipsilateral motor weakness and proprioception loss (because these pathways have already crossed in the medulla) plus contralateral pain/temperature loss (because spinothalamic fibers cross at the spinal level of entry, before the lesion)."},
+        {"id": "19c8", "type": "mc", "pts": 1, "q": "The fasciculus gracilis carries proprioception and fine touch from:", "opts": ["T6 and above", "T6 and below", "The upper limbs only", "The face"], "ans": 1, "explanation": "The fasciculus gracilis (located medially in the dorsal columns) carries proprioception and fine touch from the lower body and lower limbs (T6 and below). The fasciculus cuneatus (lateral) carries these modalities from T6 and above, including the upper limbs."},
+        {
+          "id": "19e1",
+          "type": "essay",
+          "pts": 5,
+          "q": "A lumbar puncture is performed between L3–L4 or L4–L5. Explain the anatomical rationale — why is this site chosen and what structures are encountered?",
+          "explanation": "The spinal cord ends at approximately L1–L2 (the conus medullaris) in adults. Below this level, the vertebral canal contains only the loosely hanging nerve roots of the cauda equina floating in cerebrospinal fluid within the subarachnoid space — no cord tissue is present. A needle inserted between L3–L4 or L4–L5 slides between the nerve roots without piercing the cord, accessing the subarachnoid CSF without neurological risk. Structures encountered: skin → subcutaneous fat → supraspinous ligament → interspinous ligament → ligamentum flavum → epidural space (fat + blood vessels) → dura mater → arachnoid mater → subarachnoid space (CSF and cauda equina). In infants the cord extends to L3 — puncture site adjusted accordingly."
+        },
+        {
+          "id": "19e2",
+          "type": "essay",
+          "pts": 5,
+          "q": "Explain the clinical logic of the Brown-Séquard syndrome: why does a hemisection (half-cord lesion) produce ipsilateral motor loss but CONTRALATERAL pain/temperature loss below the level of injury?",
+          "explanation": "The two key systems decussate at different levels. The lateral corticospinal tract (voluntary motor) crosses in the medulla before entering the spinal cord — it is already 'on the wrong side' relative to the cortex. Damage to the cord on one side therefore removes the motor pathway serving the SAME (ipsilateral) side below the lesion. The lateral spinothalamic tract (pain/temperature) crosses at the SEGMENTAL LEVEL immediately upon entering the dorsal horn — it ascends on the contralateral side from its dermatome of origin. Damage to the cord on one side removes spinothalamic fibers that have already crossed from the OPPOSITE side — producing contralateral pain/temperature loss. This distinctive pattern — ipsilateral motor loss + contralateral sensory loss — is the diagnostic fingerprint of a cord hemisection and is clinically called Brown-Séquard syndrome."
+        }
+      ]
+    }
+  ]
+}

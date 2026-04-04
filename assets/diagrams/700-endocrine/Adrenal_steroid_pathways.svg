@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1025px" height="810px" viewBox="0 0 1025 810" enable-background="new 0 0 1025 810" xml:space="preserve">
+<title>Adrenal Steroids</title>
+<desc>Pathways of synthesis of adrenal steroids</desc>
+<metadata>
+  <rdf:RDF
+	   xmlns:rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	   xmlns:rdfs = "http://www.w3.org/2000/01/rdf-schema#"
+	   xmlns:dc = "http://purl.org/dc/elements/1.1/" >
+	<rdf:Description about="http://example.org/myfoo"
+		 dc:title="Adrenal Steroids"
+		 dc:description="Pathways of synthesis of adrenal steroids"
+		 dc:date="2014-02-10"
+		 dc:format="image/svg+xml"
+		 dc:language="en" >
+	     dc:creator="Matthew Colo"
+	</rdf:Description>
+  </rdf:RDF>
+</metadata>
+<g id="Background">
+	<rect fill="#3498DB" width="250" height="710"/>
+	<rect x="250" fill="#2ECC71" width="250" height="710"/>
+	<rect x="500" fill="#E67E22" width="250" height="710"/>
+	<rect x="775" fill="#F1C40F" width="250" height="710"/>
+	<rect y="760" fill="#2C3E50" width="750" height="50"/>
+	<rect x="775" y="760" fill="#2C3E50" width="250" height="50"/>
+	<rect y="710" fill="#2980B9" width="250" height="50"/>
+	<rect x="250" y="710" fill="#27AE60" width="250" height="50"/>
+	<rect x="500" y="710" fill="#D35400" width="250" height="50"/>
+	<rect x="775" y="710" fill="#F39C12" width="250" height="50"/>
+	<rect y="660" opacity="0.5" fill="#FFFFFF" width="750" height="50"/>
+	<rect x="775" y="660" opacity="0.5" fill="#FFFFFF" width="250" height="50"/>
+</g>
+<g id="Text">
+	<g id="Classes">
+		<text transform="matrix(1 0 0 1 44.4141 690.4072)" font-family="Liberation Sans" font-size="20">Mineralocorticoids</text>
+		<text transform="matrix(1 0 0 1 317.2021 690.4072)" font-family="Liberation Sans" font-size="20">Glucorticoids</text>
+		<text transform="matrix(1 0 0 1 576.6309 690.4072)" font-family="Liberation Sans" font-size="20">Androgens</text>
+		<text transform="matrix(1 0 0 1 829.9746 690.4072)" font-family="Liberation Sans" font-size="20">DHT, Estrogens</text>
+	</g>
+	<g id="Zones-Tissues">
+		<text transform="matrix(1 0 0 1 28.9473 741.4893)" fill="#FFFFFF" font-family="Liberation Sans" font-size="24">Zona glomerulosa</text>
+		<text transform="matrix(1 0 0 1 287.6191 741.4893)" fill="#FFFFFF" font-family="Liberation Sans" font-size="24">Zona fasciculata</text>
+		<text transform="matrix(1 0 0 1 542.9688 741.4893)" fill="#FFFFFF" font-family="Liberation Sans" font-size="24">Zona reticularis</text>
+		<text transform="matrix(1 0 0 1 278.2837 793.1123)" fill="#FFFFFF" font-family="Liberation Sans" font-size="30">Adrenal cortex</text>
+		<g>
+			<text transform="matrix(1 0 0 1 784.1094 793.1123)" fill="#FFFFFF" font-family="Liberation Sans" font-size="30">Peripheral Tissue</text>
+		</g>
+	</g>
+	<g id="Reactants-Products">
+		<text transform="matrix(1 0 0 1 10 34.3262)" font-family="Liberation Sans" font-size="16">Cholesterol</text>
+		<text transform="matrix(1 0 0 1 10 154.3262)" font-family="Liberation Sans" font-size="16">Pregnenolone</text>
+		<text transform="matrix(1 0 0 1 10 274.3262)" font-family="Liberation Sans" font-size="16">Progesterone</text>
+		<text transform="matrix(1 0 0 1 10 394.3262)" font-family="Liberation Sans" font-size="16">11-deoxycorticosterone</text>
+		<text transform="matrix(1 0 0 1 10 514.3271)" font-family="Liberation Sans" font-size="16">Corticosterone</text>
+		<text transform="matrix(1 0 0 1 10 634.3271)" font-family="Liberation Sans" font-size="16">Aldosterone</text>
+		<text transform="matrix(1 0 0 1 260 154.3262)" font-family="Liberation Sans" font-size="16">17-hydroxypregnenolone</text>
+		<text transform="matrix(1 0 0 1 260 274.3262)" font-family="Liberation Sans" font-size="16">17-hydroxyprogesterone</text>
+		<text transform="matrix(1 0 0 1 260 394.3262)" font-family="Liberation Sans" font-size="16">11-deoxycortisol</text>
+		<text transform="matrix(1 0 0 1 260 514.3271)" font-family="Liberation Sans" font-size="16">Cortisol</text>
+		<text transform="matrix(1 0 0 1 510 154.3262)" font-family="Liberation Sans" font-size="16">Dehydroepiandrosterone</text>
+		<text transform="matrix(1 0 0 1 510 274.3262)" font-family="Liberation Sans" font-size="16">Androstenedione</text>
+		<text transform="matrix(1 0 0 1 510 394.3262)" font-family="Liberation Sans" font-size="16">Testosterone</text>
+		<text transform="matrix(1 0 0 1 785 274.3262)" font-family="Liberation Sans" font-size="16">Estrone</text>
+		<text transform="matrix(1 0 0 1 785 394.3262)" font-family="Liberation Sans" font-size="16">Estradiol</text>
+		<text transform="matrix(1 0 0 1 785 514.3271)" font-family="Liberation Sans" font-size="16">Dihydrotestosterone</text>
+	</g>
+	<g id="V_Enzymes">
+		<text transform="matrix(1 0 0 1 50.0078 94.3262)" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">Cholesterol desmolase</text>
+		<g>
+			<text transform="matrix(1 0 0 1 50.0088 204.7261)"><tspan x="0" y="0" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">3β-hydroxysteroid</tspan><tspan x="0" y="19.2" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">dehydrogenase</tspan></text>
+		</g>
+		<text transform="matrix(1 0 0 1 50.0078 334.3262)" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">21-hydroxylase</text>
+		<text transform="matrix(1 0 0 1 50.0078 454.3262)" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">11β-hydroxylase</text>
+		<text transform="matrix(1 0 0 1 50.0078 574.3262)" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">Aldosterone synthase</text>
+		<g>
+			<text transform="matrix(1 0 0 1 300.0078 204.7261)"><tspan x="0" y="0" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">3β-hydroxysteroid</tspan><tspan x="0" y="19.2" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">dehydrogenase</tspan></text>
+		</g>
+		<text transform="matrix(1 0 0 1 300.1016 334.3262)" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">21-hydroxylase</text>
+		<text transform="matrix(1 0 0 1 300.0078 454.3262)" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">11β-hydroxylase</text>
+		<g>
+			<text transform="matrix(1 0 0 1 550.0078 204.7261)"><tspan x="0" y="0" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">3β-hydroxysteroid</tspan><tspan x="0" y="19.2" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">dehydrogenase</tspan></text>
+		</g>
+		<text transform="matrix(1 0 0 1 550.0078 324.7261)"><tspan x="0" y="0" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">17β-hydroxysteroid</tspan><tspan x="0" y="19.2" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">dehydrogenase</tspan></text>
+		<text transform="matrix(1 0 0 1 825.0078 334.3262)" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">Aromatase</text>
+	</g>
+	<g id="H_Enzymes">
+		<text transform="matrix(1 0 0 1 126.6875 141.145)" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">17α-hydroxylase</text>
+		<text transform="matrix(1 0 0 1 126.6875 261.145)" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">17α-hydroxylase</text>
+		<text transform="matrix(1 0 0 1 666.0283 261.145)" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">Aromatase</text>
+		<text transform="matrix(1 0 0 1 666.0273 381.1455)" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">Aromatase</text>
+		<text transform="matrix(1 0 0 1 649.7783 501.1455)" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">5α-reductase</text>
+		<g>
+			<text transform="matrix(1 0 0 1 449.5596 142.1465)" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">17,20</text>
+			<text transform="matrix(1 0 0 1 450.9033 166.5063)" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">lyase</text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 449.5596 262.1465)" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">17,20</text>
+			<text transform="matrix(1 0 0 1 450.9033 286.5063)" fill="#000066" font-family="'Liberation Sans" font-style="italic" font-size="16">lyase</text>
+		</g>
+	</g>
+</g>
+<g id="Arrows">
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="118" y1="150" x2="244.045" y2="150"/>
+			<g>
+				<polygon points="239.833,155.555 242.192,150 239.833,144.445 253,150"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="118" y1="270" x2="244.045" y2="270"/>
+			<g>
+				<polygon points="239.833,275.555 242.192,270 239.833,264.445 253,270"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="442.333" y1="150" x2="493.214" y2="150"/>
+			<g>
+				<polygon points="489.001,155.555 491.361,150 489.001,144.445 502.169,150"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="438.333" y1="270" x2="493.214" y2="270"/>
+			<g>
+				<polygon points="489.001,275.555 491.361,270 489.001,264.445 502.169,270"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="653.125" y1="270" x2="766.045" y2="270"/>
+			<g>
+				<polygon points="761.832,275.555 764.192,270 761.832,264.445 775,270"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="620.02" y1="390" x2="766.045" y2="390"/>
+			<g>
+				<polygon points="761.832,395.555 764.192,390 761.832,384.445 775,390"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="40" y1="60" x2="40" y2="111.045"/>
+			<g>
+				<polygon points="34.445,106.833 40,109.192 45.555,106.833 40,120"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="40" y1="180" x2="40" y2="231.045"/>
+			<g>
+				<polygon points="34.445,226.833 40,229.192 45.555,226.833 40,240"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="40" y1="300" x2="40" y2="351.045"/>
+			<g>
+				<polygon points="34.445,346.833 40,349.192 45.555,346.833 40,360"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="40" y1="420" x2="40" y2="471.046"/>
+			<g>
+				<polygon points="34.445,466.833 40,469.192 45.555,466.833 40,480"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="290" y1="180" x2="290" y2="231.045"/>
+			<g>
+				<polygon points="284.445,226.833 290,229.192 295.555,226.833 290,240"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="290" y1="300" x2="290" y2="351.045"/>
+			<g>
+				<polygon points="284.445,346.833 290,349.192 295.555,346.833 290,360"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="290" y1="420" x2="290" y2="471.046"/>
+			<g>
+				<polygon points="284.445,466.833 290,469.192 295.555,466.833 290,480"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="540" y1="180" x2="540" y2="231.045"/>
+			<g>
+				<polygon points="534.445,226.833 540,229.192 545.555,226.833 540,240"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="540" y1="300" x2="540" y2="351.045"/>
+			<g>
+				<polygon points="534.445,346.833 540,349.192 545.555,346.833 540,360"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<polyline fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" points="540,420 540.001,510 766.047,510"/>
+			<g>
+				<polygon points="761.834,515.555 764.193,510 761.834,504.445 775.001,510"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="815" y1="300" x2="815" y2="351.045"/>
+			<g>
+				<polygon points="809.445,346.833 815,349.192 820.555,346.833 815,360"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="40" y1="540" x2="40" y2="591.046"/>
+			<g>
+				<polygon points="34.445,586.833 40,589.192 45.555,586.833 40,600"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

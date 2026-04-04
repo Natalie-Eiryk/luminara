@@ -1,0 +1,171 @@
+{
+  "parentId": "900.5.87",
+  "parentQuestion": "How does restrictive lung disease affect FEV1 and FVC?",
+  "narrative": {
+    "setting": "Mr. Edgar's clinic, reviewing PFT results for a patient with pulmonary fibrosis",
+    "character": "Mr. Edgar",
+    "tension": "The spirometry shows FEV1 1.5L (45% predicted) and FVC 1.8L (40% predicted). Both are very low, but the ratio is 83%. What kind of disease pattern is this?"
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.87.s01",
+      "arc": 1,
+      "arcTitle": "Understanding Restriction",
+      "narrative": "Ms. Frizzle draws lungs on the board. 'In restrictive disease, the lungs are like a SMALL BALLOON instead of a big one. You can't blow it up fully! Total capacity is REDUCED.'",
+      "q": "What does 'restrictive' mean in restrictive lung disease?",
+      "options": [
+        "Airways are narrowed",
+        "Lungs cannot expand fully (reduced lung volumes)",
+        "Air exits too fast",
+        "Breathing is too easy"
+      ],
+      "answer": 1,
+      "explain": "RESTRICTIVE = LUNGS CANNOT EXPAND FULLY. Total lung capacity and vital capacity are REDUCED. Think of the lungs as a stiff, small balloon that won't inflate properly. Causes: pulmonary fibrosis (stiff lung tissue), neuromuscular disease (weak breathing muscles), chest wall deformity (rigid chest cage).",
+      "wrongExplains": {
+        "0": "Narrowed airways = OBSTRUCTIVE disease (asthma, COPD). Restrictive disease has normal airway diameter - the problem is reduced lung expansion, not airflow.",
+        "2": "Air exiting too fast would be abnormally HIGH FEV1 - not a typical problem. Restrictive disease has SMALL lungs but airways flow normally.",
+        "3": "Breathing in restrictive disease is HARD WORK - it takes effort to expand stiff lungs or overcome chest wall problems. Breathing is definitely not easy!"
+      }
+    },
+    {
+      "id": "900.5.87.s02",
+      "arc": 1,
+      "arcTitle": "Understanding Restriction",
+      "narrative": "'Watch what happens during spirometry!' Ms. Frizzle shows the test. 'Maximum breath in - not much air enters (lungs are small/stiff). Blow out forcefully - not much air exits. BOTH FEV1 AND FVC are LOW!'",
+      "q": "In restrictive lung disease, what happens to FVC?",
+      "options": [
+        "FVC increases above normal",
+        "FVC stays exactly normal",
+        "FVC decreases (reduced total lung capacity)",
+        "FVC becomes unmeasurable"
+      ],
+      "answer": 2,
+      "explain": "FVC DECREASES in restrictive disease! The lungs can't hold as much air (reduced total capacity), so less air is available to exhale. Example: normal FVC 5L, restrictive FVC 2.5L. The lungs are smaller or stiffer, limiting total volume.",
+      "wrongExplains": {
+        "0": "Small/stiff lungs can't hold MORE air! Restriction means REDUCED volumes. FVC goes down, not up.",
+        "1": "If FVC stayed normal with low FEV1, that would indicate OBSTRUCTION (low ratio). In restriction, FVC is also reduced.",
+        "3": "FVC is measurable even in severe restriction - it's just lower than normal. Complete unmeasurability would mean no breathing at all."
+      }
+    },
+    {
+      "id": "900.5.87.s03",
+      "arc": 1,
+      "arcTitle": "Understanding Restriction",
+      "narrative": "'Here's the key!' Mr. Edgar emphasizes. 'In restriction, BOTH FEV1 and FVC drop together PROPORTIONALLY. The ratio stays normal because airways aren't obstructed - the lungs are just smaller!'",
+      "q": "In restrictive disease, how do FEV1 and FVC change?",
+      "options": [
+        "Both decrease proportionally",
+        "FEV1 decreases but FVC stays normal",
+        "FEV1 stays normal but FVC decreases",
+        "Both increase"
+      ],
+      "answer": 0,
+      "explain": "Both FEV1 and FVC DECREASE PROPORTIONALLY in restrictive disease. If total lung volume is 50% of normal, both FEV1 and FVC will be about 50% of normal. The airways flow normally - there's just LESS lung to empty. This keeps the FEV1/FVC ratio normal (≥0.70).",
+      "wrongExplains": {
+        "1": "FEV1 low with normal FVC = OBSTRUCTIVE pattern (low ratio). In restriction, BOTH values decrease together.",
+        "2": "This combination doesn't match any typical pattern. Restriction affects total volume (FVC), which necessarily affects the first second (FEV1) too.",
+        "3": "Small stiff lungs can't have INCREASED volumes! Restriction = REDUCED lung capacity. Both measurements go down."
+      }
+    },
+    {
+      "id": "900.5.87.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus flies into fibrotic lungs. 'Look at all this SCAR TISSUE!' Wanda points. 'The normal elastic alveoli are replaced by thick, stiff collagen. The lungs can't STRETCH - they're like old dried-out rubber bands!'",
+      "q": "What causes pulmonary fibrosis (a restrictive disease)?",
+      "options": [
+        "Bronchospasm (muscle contraction in airways)",
+        "Scarring and thickening of lung tissue reducing elasticity",
+        "Fluid in the airways",
+        "Overinflation of alveoli"
+      ],
+      "answer": 1,
+      "explain": "Pulmonary fibrosis = SCARRING and THICKENING of lung tissue with collagen deposition, reducing elasticity. Causes: idiopathic (unknown), autoimmune diseases, chronic inflammation, drugs, radiation, asbestos. The stiff scarred lungs can't expand fully, creating restrictive pattern on PFTs.",
+      "wrongExplains": {
+        "0": "Bronchospasm = OBSTRUCTIVE disease (asthma). Fibrosis is scarring of the lung TISSUE itself, not airway muscle contraction.",
+        "2": "Fluid in airways causes crackles and can worsen gas exchange, but the restrictive pattern of fibrosis comes from permanent scarring, not fluid.",
+        "3": "Overinflation (hyperinflation) occurs in COPD/emphysema - actually increases total lung capacity initially. Fibrosis RESTRICTS expansion."
+      }
+    },
+    {
+      "id": "900.5.87.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Other causes of restriction!' Ms. Frizzle lists them: 'Neuromuscular disease - weak breathing muscles can't expand the chest. Kyphoscoliosis - deformed spine restricts chest wall. Obesity - belly weight limits diaphragm movement!'",
+      "q": "Which of these causes restrictive lung disease?",
+      "options": [
+        "Asthma (bronchospasm)",
+        "Severe kyphoscoliosis (spinal deformity limiting chest expansion)",
+        "Chronic bronchitis",
+        "Emphysema"
+      ],
+      "answer": 1,
+      "explain": "KYPHOSCOLIOSIS (severe spinal curvature) causes RESTRICTIVE disease by limiting chest wall expansion. The rigid, deformed chest cage can't expand fully during inspiration. Other restrictive causes: neuromuscular disease (ALS, muscular dystrophy), pleural disease, obesity, pregnancy.",
+      "wrongExplains": {
+        "0": "Asthma = OBSTRUCTIVE disease (narrow airways, low FEV1/FVC ratio). It doesn't restrict total lung capacity.",
+        "2": "Chronic bronchitis = OBSTRUCTIVE disease (part of COPD). Inflamed airways with mucus = obstruction, not restriction.",
+        "3": "Emphysema = OBSTRUCTIVE disease. Destroyed alveoli lose elastic recoil, airways collapse during exhalation. Low ratio."
+      }
+    },
+    {
+      "id": "900.5.87.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'During the test, watch the patient work!' Ms. Frizzle points. 'They're using accessory muscles, breathing fast and shallow - it's HARD to expand stiff fibrotic lungs. But when air DOES move, it flows normally through the airways!'",
+      "q": "Why is the FEV1/FVC ratio normal in restrictive disease?",
+      "options": [
+        "Airways are obstructed",
+        "Airways are normal - they're not the problem; lung volumes are reduced",
+        "The patient isn't trying hard enough",
+        "Restrictive disease always has abnormal ratio"
+      ],
+      "answer": 1,
+      "explain": "The ratio stays NORMAL because AIRWAYS ARE NORMAL in restrictive disease! The problem is lung SIZE/COMPLIANCE, not airflow. Air flows normally through the airways - there's just less lung to empty. Both FEV1 and FVC decrease equally, maintaining ratio ≥0.70.",
+      "wrongExplains": {
+        "0": "If airways were obstructed, you'd have OBSTRUCTIVE disease with low ratio. Restrictive disease has open airways - the lungs are just small/stiff.",
+        "2": "Assuming poor effort is dangerous! If spirometry quality criteria are met, low volumes with normal ratio indicate true restrictive physiology.",
+        "3": "Restrictive disease characteristically has NORMAL or HIGH ratio! That's how you distinguish it from obstruction. Low ratio = obstruction."
+      }
+    },
+    {
+      "id": "900.5.87.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "Mr. Edgar reviews the CT scan. 'See this honeycomb pattern and reticular opacities? Classic pulmonary fibrosis. With low FEV1, low FVC, but normal ratio on PFTs, everything fits restrictive disease.'",
+      "q": "A patient has FEV1 1.5L (45%), FVC 1.8L (40%), ratio 83%. What pattern is this?",
+      "options": [
+        "Obstructive (low ratio)",
+        "Restrictive (low volumes, normal ratio)",
+        "Normal",
+        "Mixed obstructive-restrictive"
+      ],
+      "answer": 1,
+      "explain": "RESTRICTIVE pattern: Both FEV1 and FVC are LOW (45% and 40% of predicted), but ratio is NORMAL (83%, which is >70%). Both volumes reduced proportionally. Think fibrosis, neuromuscular disease, or chest wall restriction. Need full PFTs (TLC) to confirm.",
+      "wrongExplains": {
+        "0": "The ratio is 83% - that's ABOVE 70% cutoff, so not obstructive! Low ratio would be <70%. This is restrictive (normal ratio, low volumes).",
+        "2": "Both values are well below predicted (45%, 40%) - definitely NOT normal! Normal would be >80% predicted for both.",
+        "3": "Mixed would show low volumes AND low ratio (<70%). This has normal ratio (83%), indicating pure restriction without obstruction component."
+      }
+    },
+    {
+      "id": "900.5.87.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "'To fully confirm restriction,' Mr. Edgar explains, 'we need FULL pulmonary function tests measuring TLC (total lung capacity). Spirometry suggests restriction, but TLC definitively proves it by showing reduced total volume.'",
+      "q": "What additional test confirms restrictive disease?",
+      "options": [
+        "Chest X-ray only",
+        "Total lung capacity (TLC) measurement showing reduced volumes",
+        "Bronchodilator response test",
+        "Restrictive disease can't be confirmed"
+      ],
+      "answer": 1,
+      "explain": "TOTAL LUNG CAPACITY (TLC) measurement confirms restriction. Spirometry (FEV1/FVC) suggests restriction, but TLC definitively proves it. Measured by body plethysmography or gas dilution. TLC <80% predicted confirms restriction. Obstructive disease can sometimes appear restrictive on spirometry alone.",
+      "wrongExplains": {
+        "0": "Chest X-ray shows structural abnormalities (fibrosis, effusion) but doesn't measure lung VOLUMES. You need PFTs with TLC measurement for physiologic confirmation.",
+        "2": "Bronchodilator testing distinguishes reversible from fixed obstruction (asthma vs. COPD), not obstruction from restriction.",
+        "3": "Restriction is very confirmable! Full PFTs with TLC measurement definitively diagnose and quantify restrictive disease."
+      }
+    }
+  ]
+}

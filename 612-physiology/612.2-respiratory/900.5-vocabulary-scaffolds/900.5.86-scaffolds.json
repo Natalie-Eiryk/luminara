@@ -1,0 +1,171 @@
+{
+  "parentId": "900.5.86",
+  "parentQuestion": "What does a reduced FEV1/FVC ratio indicate?",
+  "narrative": {
+    "setting": "Mr. Edgar's clinic, reviewing spirometry results with a patient",
+    "character": "Mr. Edgar",
+    "tension": "The patient's FEV1 is 2.0L and FVC is 3.5L. Mr. Edgar calculates: 2.0/3.5 = 0.57 (57%). That's abnormally low. What does this mean?"
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.86.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Ratio",
+      "narrative": "Ms. Frizzle draws on the board: 'FEV1/FVC ratio! FEV1 = volume in first second. FVC = TOTAL volume you can forcefully exhale. The ratio tells us what FRACTION comes out in the first second!'",
+      "q": "What does FVC stand for?",
+      "options": [
+        "Fast Vital Capacity",
+        "Forced Vital Capacity (total volume forcefully exhaled)",
+        "Final Volume Count",
+        "Functional Vascular Capacity"
+      ],
+      "answer": 1,
+      "explain": "FVC = FORCED VITAL CAPACITY - the TOTAL volume of air you can forcefully exhale after maximum inspiration. You breathe in maximally, then blow out until your lungs are completely empty. FVC measures the total exhaled volume, while FEV1 measures just the first second.",
+      "wrongExplains": {
+        "0": "'Forced' is correct, but it's VITAL capacity, not 'fast.' Vital capacity = maximum volume you can exhale. 'Forced' means maximal effort.",
+        "2": "FVC is a standard pulmonary function term meaning Forced Vital Capacity, not 'volume count.'",
+        "3": "FVC is about lung function, not blood vessels! Forced Vital Capacity measures air volume exhaled, not vascular capacity."
+      }
+    },
+    {
+      "id": "900.5.86.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Ratio",
+      "narrative": "'In healthy lungs, most air comes out FAST!' Ms. Frizzle shows a graph. 'If FVC is 5L, then FEV1 should be about 4L. Ratio: 4/5 = 0.80 or 80%. Most air exits in the first second!'",
+      "q": "What is a normal FEV1/FVC ratio?",
+      "options": [
+        "Less than 50%",
+        "Greater than 0.70-0.75 (70-75%)",
+        "Exactly 100%",
+        "Less than 30%"
+      ],
+      "answer": 1,
+      "explain": "Normal FEV1/FVC ratio = GREATER THAN 0.70-0.75 (70-75%). In healthy lungs, about 70-85% of total exhaled volume comes out in the FIRST SECOND because airways are wide open. Ratio <0.70 suggests obstruction (air exits slowly). The exact cutoff varies slightly with age.",
+      "wrongExplains": {
+        "0": "Less than 50% would be severe obstruction - very diseased airways. Normal is 70%+ of air exiting in the first second.",
+        "2": "100% would mean ALL air came out in the first second - physically impossible! Exhalation takes 6+ seconds even in healthy lungs. Normal is 70-85%, not 100%.",
+        "3": "Less than 30% would be profound obstruction - only 30% of air exiting in first second = very narrow airways. Normal is 70%+."
+      }
+    },
+    {
+      "id": "900.5.86.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Ratio",
+      "narrative": "'Why use a RATIO instead of just FEV1 alone?' Ralphie asks. 'Because it accounts for lung SIZE!' Mr. Edgar explains. 'A small person has low FEV1 AND low FVC. The ratio normalizes for size!'",
+      "q": "Why is the FEV1/FVC ratio more useful than FEV1 alone?",
+      "options": [
+        "The ratio is easier to calculate",
+        "The ratio accounts for lung size and distinguishes obstruction from restriction",
+        "FEV1 alone is always inaccurate",
+        "The ratio doesn't provide any additional information"
+      ],
+      "answer": 1,
+      "explain": "The RATIO accounts for LUNG SIZE and distinguishes obstruction from restriction. Small people have low FEV1 but also low FVC - ratio stays normal. Obstructive disease (COPD): low FEV1, normal/high FVC, LOW ratio. Restrictive disease (fibrosis): low FEV1, low FVC, NORMAL ratio. The ratio tells you the TYPE of disease!",
+      "wrongExplains": {
+        "0": "Both FEV1 and FVC are measured simultaneously during spirometry - the ratio isn't about ease of calculation, it's about diagnostic information.",
+        "2": "FEV1 alone is accurate, but it doesn't tell you if low values are from obstruction, restriction, or just small body size. The ratio provides that context.",
+        "3": "The ratio provides CRITICAL information - it's the KEY to distinguishing obstructive from restrictive disease! Essential diagnostic tool."
+      }
+    },
+    {
+      "id": "900.5.86.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus enters obstructed airways. 'Look!' Ms. Frizzle points. 'In the first second, only HALF the air escapes because airways are narrow. The rest dribbles out slowly over the next 5+ seconds. Low FEV1, normal FVC, LOW RATIO!'",
+      "q": "In obstructive lung disease (asthma, COPD), what happens to the FEV1/FVC ratio?",
+      "options": [
+        "Ratio increases above normal",
+        "Ratio decreases below 0.70 (reduced)",
+        "Ratio stays exactly normal",
+        "Ratio becomes unmeasurable"
+      ],
+      "answer": 1,
+      "explain": "In obstruction, FEV1/FVC ratio DECREASES below 0.70. Narrowed airways slow exhalation - less air exits in first second (low FEV1) but eventually most air gets out (normal or near-normal FVC). Example: FEV1=2L, FVC=4L, ratio=2/4=0.50=50% (abnormally LOW). This is the DEFINITION of obstructive disease!",
+      "wrongExplains": {
+        "0": "Obstruction can't make air exit FASTER! Narrowed airways slow airflow, reducing the ratio below normal, not increasing it.",
+        "2": "Normal ratio would mean no obstruction. The LOW ratio (<0.70) is the hallmark finding that DEFINES obstructive lung disease on spirometry.",
+        "3": "The ratio is always calculable as long as you can measure FEV1 and FVC. Even severe disease has measurable values."
+      }
+    },
+    {
+      "id": "900.5.86.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "Now the bus enters fibrotic stiff lungs. 'The lungs are SMALL and STIFF!' Wanda observes. 'BOTH FEV1 and FVC are low - but the RATIO stays normal because airways aren't narrowed. It's restriction, not obstruction!'",
+      "q": "In restrictive lung disease (pulmonary fibrosis), what happens to the FEV1/FVC ratio?",
+      "options": [
+        "Ratio decreases (reduced)",
+        "Ratio increases or stays normal/high (≥0.70)",
+        "Ratio always becomes zero",
+        "Restrictive disease can't be measured"
+      ],
+      "answer": 1,
+      "explain": "In restriction, FEV1/FVC ratio STAYS NORMAL or INCREASES (≥0.70). Both FEV1 and FVC decrease proportionally (lungs are small/stiff), but airways aren't obstructed, so the FRACTION exiting in first second is normal. Example: FEV1=2L, FVC=2.5L, ratio=2/2.5=0.80=80% (NORMAL ratio despite low volumes).",
+      "wrongExplains": {
+        "0": "Decreased ratio (<0.70) indicates OBSTRUCTION. Restrictive disease has normal/high ratio because airways flow normally - it's the total lung SIZE that's reduced.",
+        "2": "Zero ratio would mean no airflow at all (fatal). Restrictive disease can still breathe (just smaller volumes). Ratio stays in normal range.",
+        "3": "Restrictive disease is very measurable! You see low FEV1 AND low FVC, but the RATIO stays normal. That pattern = restriction."
+      }
+    },
+    {
+      "id": "900.5.86.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Here's the KEY!' Ms. Frizzle draws a table: 'Obstructive: FEV1 LOW, FVC normal, RATIO LOW. Restrictive: FEV1 LOW, FVC LOW, RATIO NORMAL. The ratio tells you which type of disease!'",
+      "q": "How do you distinguish obstructive from restrictive disease using spirometry?",
+      "options": [
+        "Obstructive: low ratio (<0.70); Restrictive: normal ratio (≥0.70)",
+        "Obstructive: normal ratio; Restrictive: low ratio",
+        "Both have low ratios",
+        "You can't distinguish them with spirometry"
+      ],
+      "answer": 0,
+      "explain": "OBSTRUCTIVE (asthma, COPD): LOW FEV1/FVC ratio (<0.70) - air exits slowly. RESTRICTIVE (fibrosis): NORMAL FEV1/FVC ratio (≥0.70) - airways flow fine, lungs just smaller. The RATIO is the key discriminator! This is fundamental to interpreting spirometry.",
+      "wrongExplains": {
+        "1": "You have it backwards! Obstructive = LOW ratio (narrow airways, slow flow). Restrictive = NORMAL ratio (airways OK, lungs small).",
+        "2": "Only obstructive disease has low ratio. Restrictive maintains normal ratio - that's how you tell them apart!",
+        "3": "Spirometry is THE test for distinguishing them! The ratio is specifically designed for this purpose. It's the foundation of pulmonary function diagnosis."
+      }
+    },
+    {
+      "id": "900.5.86.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "Mr. Edgar reviews the results: 'FEV1 2.0L (50% predicted), FVC 3.5L (70% predicted), ratio 57%. That low ratio confirms OBSTRUCTION. With smoking history and emphysema on CT, this is COPD.'",
+      "q": "A patient has FEV1 1.8L, FVC 2.2L, ratio 82%. What type of disease pattern is this?",
+      "options": [
+        "Obstructive (low ratio)",
+        "Restrictive (normal ratio with low volumes)",
+        "Normal lung function",
+        "Can't determine from these values"
+      ],
+      "answer": 1,
+      "explain": "RESTRICTIVE pattern: Low volumes (FEV1 1.8L, FVC 2.2L) but NORMAL RATIO (82%, which is >0.70). Both measurements reduced proportionally. Think pulmonary fibrosis, neuromuscular disease, chest wall restriction. Would need full PFTs including TLC (total lung capacity) to confirm restriction.",
+      "wrongExplains": {
+        "0": "The ratio is 82% which is ABOVE the 70% cutoff - that's normal/high, not low! Low ratio (<70%) would be obstructive. This is restrictive.",
+        "2": "Both FEV1 and FVC are likely below predicted values (would need patient size/age). Normal would have values around predicted and ratio >70%.",
+        "3": "You CAN determine the pattern! Normal ratio with low volumes = restrictive pattern. Low ratio = obstructive. This is how spirometry works."
+      }
+    },
+    {
+      "id": "900.5.86.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "'Mixed disease is possible too!' Ms. Frizzle adds. 'A smoker with COPD who also develops fibrosis might have low FEV1, low FVC, AND low ratio. Both obstruction and restriction together!'",
+      "q": "What does a low FEV1, low FVC, AND low ratio (<0.70) suggest?",
+      "options": [
+        "Pure restrictive disease",
+        "Pure obstructive disease",
+        "Mixed obstructive and restrictive disease",
+        "Normal lung function"
+      ],
+      "answer": 2,
+      "explain": "Low volumes with LOW RATIO = MIXED disease (both obstruction AND restriction). Example: COPD + pulmonary fibrosis, or severe COPD with hyperinflation reducing FVC. Both processes affect the lungs simultaneously. Less common than pure patterns but important to recognize.",
+      "wrongExplains": {
+        "0": "Pure restriction has NORMAL ratio (≥0.70). If ratio is low, there's obstruction present too - it's mixed disease.",
+        "1": "Pure obstruction typically has normal/high FVC (air gets out eventually). Low FVC suggests restriction is also present - it's mixed.",
+        "3": "All three measurements abnormal is definitely NOT normal! This represents significant lung disease, likely affecting multiple components."
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "parentId": "100.2.07",
+  "parentQuestion": "A 24-year-old presents with severe headache, neck stiffness, photophobia, and fever. CSF analysis shows elevated white blood cells (predominantly neutrophils), low glucose, and high protein. Which structure is inflamed?",
+  "scaffolds": [
+    {
+      "q": "What is meningitis?",
+      "options": [
+        "Inflammation of brain tissue",
+        "Inflammation of the meninges (protective brain coverings)",
+        "Inflammation of blood vessels",
+        "Inflammation of the skull"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "MENINGITIS is inflammation of the MENINGES — the protective membranes surrounding the brain and spinal cord. It can be caused by bacteria, viruses, or fungi.",
+      "wrongExplains": {
+        "0": "Inflammation of brain tissue is encephalitis, not meningitis.",
+        "2": "Inflammation of blood vessels is vasculitis.",
+        "3": "The skull is bone and doesn't become inflamed in this way."
+      }
+    },
+    {
+      "q": "Why does meningeal inflammation cause headache?",
+      "options": [
+        "Brain tissue has many pain receptors",
+        "The meninges have pain receptors, unlike brain tissue",
+        "The skull is expanding",
+        "Blood vessels are blocked"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The MENINGES have PAIN RECEPTORS, while brain tissue itself has none. That's why awake brain surgery is possible, but meningeal inflammation causes SEVERE HEADACHE.",
+      "wrongExplains": {
+        "0": "Brain tissue has no pain receptors — meninges do.",
+        "2": "The skull doesn't expand in meningitis.",
+        "3": "Headache is from meningeal inflammation, not vascular blockage."
+      }
+    },
+    {
+      "q": "Why does meningitis cause neck stiffness (nuchal rigidity)?",
+      "options": [
+        "Muscle weakness",
+        "Flexing the neck stretches inflamed meninges, causing pain",
+        "Spinal cord damage",
+        "Bone infection"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "NECK STIFFNESS occurs because flexing the neck STRETCHES the inflamed meninges. This is painful, so neck muscles GUARD against movement — a classic meningitis sign.",
+      "wrongExplains": {
+        "0": "It's protective guarding from pain, not muscle weakness.",
+        "2": "The spinal cord isn't damaged in typical meningitis.",
+        "3": "Meningitis affects membranes, not bones."
+      }
+    },
+    {
+      "q": "What is the classic triad of meningitis symptoms?",
+      "options": [
+        "Paralysis, blindness, deafness",
+        "Headache, neck stiffness, photophobia",
+        "Fever, cough, rash",
+        "Nausea, vomiting, diarrhea"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The CLASSIC TRIAD of meningitis: HEADACHE (pain receptors in meninges), NECK STIFFNESS (stretching hurts), PHOTOPHOBIA (light sensitivity). Plus fever indicates infection.",
+      "wrongExplains": {
+        "0": "These are not typical meningitis symptoms.",
+        "2": "This describes respiratory infection, not meningitis.",
+        "3": "These are GI symptoms, not meningitis."
+      }
+    },
+    {
+      "q": "What CSF finding indicates bacterial (vs. Viral) meningitis?",
+      "options": [
+        "Normal CSF",
+        "Elevated neutrophils, low glucose, high protein",
+        "Red blood cells only",
+        "Crystal clear CSF"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "BACTERIAL meningitis shows: ELEVATED NEUTROPHILS (immune response), LOW GLUCOSE (bacteria eat it), HIGH PROTEIN (barrier breakdown). Viral meningitis has lymphocytes and normal glucose.",
+      "wrongExplains": {
+        "0": "Normal CSF rules out meningitis.",
+        "2": "RBCs indicate hemorrhage, not infection.",
+        "3": "Clear CSF is normal; infected CSF is often cloudy."
+      }
+    },
+    {
+      "q": "Why is CSF glucose LOW in bacterial meningitis?",
+      "options": [
+        "Neurons use more glucose",
+        "Bacteria consume glucose as they multiply",
+        "The blood-brain barrier blocks glucose",
+        "CSF production decreases"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "BACTERIA consume GLUCOSE for energy as they multiply. Low CSF glucose is a key clue that bacteria are 'eating' the brain's sugar supply — it's being consumed by the infection.",
+      "wrongExplains": {
+        "0": "Neuronal glucose use doesn't change significantly in meningitis.",
+        "2": "Glucose still crosses the barrier; bacteria consume what arrives.",
+        "3": "CSF production continues; glucose is consumed by bacteria."
+      }
+    },
+    {
+      "q": "Why is CSF protein HIGH in meningitis?",
+      "options": [
+        "The liver produces more protein",
+        "Inflammation damages the blood-brain barrier, allowing proteins in",
+        "Bacteria produce protein",
+        "Neurons release protein"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "HIGH CSF PROTEIN indicates BLOOD-BRAIN BARRIER BREAKDOWN. Inflammation damages the barrier, allowing proteins that normally can't enter CSF to leak through.",
+      "wrongExplains": {
+        "0": "Liver protein production doesn't directly affect CSF.",
+        "2": "Bacterial products contribute, but barrier breakdown is the main cause.",
+        "3": "Neuronal protein release isn't the primary mechanism."
+      }
+    },
+    {
+      "q": "Which structure is inflamed in this presentation?",
+      "options": [
+        "Brain parenchyma (encephalitis)",
+        "Meninges (meningitis)",
+        "Choroid plexus",
+        "Spinal cord"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "The MENINGES are inflamed — this is BACTERIAL MENINGITIS. The triad (headache, neck stiffness, photophobia) plus CSF findings (neutrophils, low glucose, high protein) confirms it.",
+      "wrongExplains": {
+        "0": "Encephalitis presents with seizures and focal deficits, not this pattern.",
+        "2": "Choroid plexus inflammation doesn't cause this clinical picture.",
+        "3": "Spinal cord inflammation (myelitis) presents with motor/sensory deficits."
+      }
+    },
+    {
+      "q": "Why is bacterial meningitis a medical emergency?",
+      "options": [
+        "It's not serious",
+        "Bacteria multiply rapidly and can cause brain damage within hours",
+        "It only affects the skull",
+        "It resolves on its own"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "BACTERIAL MENINGITIS is a MEDICAL EMERGENCY. Bacteria multiply rapidly in the CSF, and without antibiotics, it can cause permanent brain damage or death within hours.",
+      "wrongExplains": {
+        "0": "Bacterial meningitis has ~25% mortality even with treatment.",
+        "2": "It affects the meninges and can spread to brain tissue.",
+        "3": "Without antibiotics, bacterial meningitis is often fatal."
+      }
+    }
+  ]
+}

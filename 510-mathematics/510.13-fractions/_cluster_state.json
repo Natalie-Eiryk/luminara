@@ -1,0 +1,28 @@
+{
+  "clusterId": "510.13",
+  "clusterName": "Fractions & Decimals",
+  "status": "pending",
+  "targetQuestions": 350,
+  "currentBatch": 0,
+  "totalBatches": 14,
+  "questionsGenerated": 0,
+  "scaffoldsGenerated": 0,
+  "lastUpdated": null,
+  "batches": [],
+  "isotopes": [
+    "510.13.fractions.naming",
+    "510.13.fractions.equivalent",
+    "510.13.fractions.comparing",
+    "510.13.fractions.adding",
+    "510.13.decimals.place-value",
+    "510.13.decimals.operations",
+    "510.13.conversion"
+  ],
+  "prerequisites": ["510.12.*"],
+  "difficultyDistribution": {
+    "easy": 0,
+    "medium": 0,
+    "challenging": 0,
+    "hard": 0
+  }
+}

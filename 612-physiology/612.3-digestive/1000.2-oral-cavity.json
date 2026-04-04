@@ -1,0 +1,210 @@
+{
+  "id": "1000.2",
+  "title": "Oral Cavity & Pharynx",
+  "description": "Mouth anatomy, teeth, tongue, salivary glands, and swallowing",
+  "dewey": "612.31",
+  "chapter": "GI System",
+  "topic": "Oral Cavity",
+  "questions": [
+    {
+      "id": "oral-001",
+      "text": "Saliva contains an enzyme that begins the digestion of which macronutrient?",
+      "options": [
+        "Proteins",
+        "Lipids (fats)",
+        "Carbohydrates (starches)",
+        "Nucleic acids"
+      ],
+      "answer": 2,
+      "explain": "Salivary amylase (ptyalin) begins the digestion of starches (complex carbohydrates) into smaller sugars like maltose. This is why bread tastes sweeter if you chew it longer.",
+      "mechanism": {
+        "title": "Salivary Amylase",
+        "content": "Salivary amylase breaks alpha-1,4 glycosidic bonds in starch molecules. It has an optimal pH of 6.7-7.0. Amylase is inactivated in the stomach when pH drops below 4, but some starch digestion continues in the center of the food bolus before acid penetrates. Starch digestion is completed in the small intestine by pancreatic amylase.",
+        "metaphor": "Think of starch as a pearl necklace - long chains of glucose beads. Salivary amylase is like scissors that snip between the pearls, breaking the necklace into smaller segments."
+      },
+      "optionExplains": [
+        { "text": "Protein digestion begins in the stomach with pepsin, not in the mouth", "verdict": "incorrect" },
+        { "text": "Lipid digestion begins in the small intestine with lipase (and lingual lipase plays a minor role)", "verdict": "incorrect" },
+        { "text": "Correct! Salivary amylase starts breaking down starches into simpler sugars", "verdict": "correct" },
+        { "text": "Nucleic acid digestion occurs in the small intestine", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.3,
+      "tags": ["oral-cavity", "saliva", "digestion", "enzymes"]
+    },
+    {
+      "id": "oral-002",
+      "text": "There are three pairs of major salivary glands. Which pair produces the most saliva and is located anterior to the ear?",
+      "options": [
+        "Submandibular glands",
+        "Sublingual glands",
+        "Parotid glands",
+        "Buccal glands"
+      ],
+      "answer": 2,
+      "explain": "The parotid glands are the largest salivary glands, located anterior to the ears. They produce about 25-30% of saliva and are primarily serous (watery, enzyme-rich). Mumps virus famously infects the parotid glands.",
+      "mechanism": {
+        "title": "The Major Salivary Glands",
+        "content": "**Parotid** (largest): Anterior to ear, serous secretion rich in amylase, duct opens near upper 2nd molar. **Submandibular**: Below jaw angle, mixed serous/mucous, produces 60-70% of saliva, duct opens under tongue. **Sublingual**: Under tongue, mostly mucous (thick, lubricating), multiple small ducts. Together they produce 1-1.5 liters of saliva daily!",
+        "metaphor": "Remember the glands by size and location: Parotid = Protrudes by ear (largest), Submandibular = Sits under Mandible (most productive), Sublingual = Slides under tongue (smallest, slimiest)."
+      },
+      "optionExplains": [
+        { "text": "Submandibular glands are under the jaw, not by the ear - but they produce the MOST saliva (60-70%)", "verdict": "incorrect" },
+        { "text": "Sublingual glands are under the tongue and are the smallest major pair", "verdict": "incorrect" },
+        { "text": "Correct! Parotid = 'para' (beside) + 'otic' (ear). They're the largest but produce less volume than submandibular", "verdict": "correct" },
+        { "text": "Buccal glands are minor salivary glands in the cheeks, not a major pair", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.4,
+      "tags": ["oral-cavity", "salivary-glands", "anatomy"]
+    },
+    {
+      "id": "oral-003",
+      "text": "An adult human normally has how many permanent teeth?",
+      "options": [
+        "20 teeth",
+        "28 teeth",
+        "32 teeth",
+        "36 teeth"
+      ],
+      "answer": 2,
+      "explain": "Adults have 32 permanent teeth: 8 incisors, 4 canines, 8 premolars, and 12 molars (including 4 wisdom teeth/third molars). Children have 20 deciduous (baby) teeth.",
+      "mechanism": {
+        "title": "Dental Formula",
+        "content": "Adult permanent dentition per quadrant: 2 incisors, 1 canine, 2 premolars, 3 molars = 8 teeth x 4 quadrants = 32 total. Written as dental formula: 2-1-2-3 / 2-1-2-3. **Incisors**: Cutting. **Canines**: Tearing. **Premolars (bicuspids)**: Crushing. **Molars**: Grinding. Third molars (wisdom teeth) often fail to erupt properly.",
+        "metaphor": "Your teeth are like a complete toolbox: incisors are scissors (cutting), canines are spears (tearing), premolars are pliers (crushing), and molars are grindstones (grinding). Each quadrant has 8 tools, total 32."
+      },
+      "optionExplains": [
+        { "text": "20 is the number of deciduous (baby/primary) teeth", "verdict": "incorrect" },
+        { "text": "28 would be the count if you excluded wisdom teeth (some people have this many)", "verdict": "incorrect" },
+        { "text": "Correct! 32 permanent teeth: 8 incisors + 4 canines + 8 premolars + 12 molars", "verdict": "correct" },
+        { "text": "Too many - humans don't have 36 teeth", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.3,
+      "tags": ["oral-cavity", "teeth", "dental-anatomy"]
+    },
+    {
+      "id": "oral-004",
+      "text": "The tongue is primarily made of which type of muscle?",
+      "options": [
+        "Smooth muscle",
+        "Cardiac muscle",
+        "Skeletal muscle",
+        "A mix of all three"
+      ],
+      "answer": 2,
+      "explain": "The tongue is composed almost entirely of skeletal muscle, making it one of the few skeletal muscles NOT attached to bone at both ends. This gives the tongue its remarkable flexibility and strength.",
+      "mechanism": {
+        "title": "Tongue Muscles",
+        "content": "The tongue has two muscle groups: **Intrinsic muscles**: Change tongue shape (longitudinal, transverse, vertical fibers). **Extrinsic muscles**: Move tongue position (genioglossus, hyoglossus, styloglossus, palatoglossus). All are skeletal muscle under voluntary control. The tongue's muscular hydrostatic mechanism allows it to stiffen, curl, and manipulate food precisely.",
+        "metaphor": "The tongue works like an octopus tentacle - it's a muscular hydrostat that can extend, retract, twist, and stiffen without any bones. The intrinsic muscles shape it, the extrinsic muscles move it."
+      },
+      "optionExplains": [
+        { "text": "Smooth muscle is found in the GI tract wall, not the tongue", "verdict": "incorrect" },
+        { "text": "Cardiac muscle is only in the heart", "verdict": "incorrect" },
+        { "text": "Correct! The tongue is skeletal muscle - you have voluntary control over its movements", "verdict": "correct" },
+        { "text": "The tongue is exclusively skeletal muscle, not a mix", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.3,
+      "tags": ["oral-cavity", "tongue", "muscle-types"]
+    },
+    {
+      "id": "oral-005",
+      "text": "Swallowing (deglutition) involves three phases. Which phase is the ONLY voluntary phase?",
+      "options": [
+        "Pharyngeal phase",
+        "Esophageal phase",
+        "Oral (buccal) phase",
+        "Gastric phase"
+      ],
+      "answer": 2,
+      "explain": "The oral phase is voluntary - you consciously form the bolus with your tongue and push it to the back of your throat. The pharyngeal and esophageal phases are reflexive (involuntary) once triggered.",
+      "mechanism": {
+        "title": "The Three Phases of Swallowing",
+        "content": "**Oral phase** (voluntary): Tongue forms bolus, pushes against hard palate, moves bolus to oropharynx. **Pharyngeal phase** (reflex): Soft palate elevates (blocks nasopharynx), epiglottis covers larynx, upper esophageal sphincter relaxes, pharyngeal muscles propel bolus. **Esophageal phase** (reflex): Peristalsis moves bolus to stomach, lower esophageal sphincter relaxes. The whole process takes about 8-10 seconds.",
+        "metaphor": "Swallowing is like pressing 'send' on an email - you consciously compose and hit send (oral phase), but then the message travels automatically through servers (pharynx) and networks (esophagus) without your control."
+      },
+      "optionExplains": [
+        { "text": "The pharyngeal phase is a reflex triggered when food touches the back of the throat", "verdict": "incorrect" },
+        { "text": "The esophageal phase is involuntary peristalsis", "verdict": "incorrect" },
+        { "text": "Correct! You voluntarily choose when to swallow and use your tongue to initiate it", "verdict": "correct" },
+        { "text": "The gastric phase refers to stomach activity, not swallowing", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.4,
+      "tags": ["oral-cavity", "swallowing", "deglutition", "phases"]
+    },
+    {
+      "id": "oral-006",
+      "text": "During swallowing, which structure prevents food from entering the trachea (airway)?",
+      "options": [
+        "Uvula",
+        "Soft palate",
+        "Epiglottis",
+        "Tongue"
+      ],
+      "answer": 2,
+      "explain": "The epiglottis is a flap of elastic cartilage that folds down to cover the laryngeal opening during swallowing, directing food into the esophagus and preventing aspiration.",
+      "mechanism": {
+        "title": "Airway Protection During Swallowing",
+        "content": "Multiple mechanisms protect the airway: **Epiglottis**: Flips down to cover larynx like a lid. **Larynx elevation**: Rises and tucks under epiglottis (you can feel your 'Adam's apple' rise). **Vocal folds close**: Secondary barrier. **Breathing stops**: Deglutition apnea briefly halts respiration. If these mechanisms fail, aspiration occurs, triggering violent coughing to expel foreign material.",
+        "metaphor": "The epiglottis is like a manhole cover over the airway. When you swallow, the larynx rises up (like the ground rising) and the epiglottis tips back to seal the hole, forcing traffic (food) down the esophagus instead."
+      },
+      "optionExplains": [
+        { "text": "The uvula is the dangly thing at the back of your throat - it helps with sealing the nasopharynx, not protecting the trachea", "verdict": "incorrect" },
+        { "text": "The soft palate elevates to prevent food entering the nasopharynx (nose), not the trachea", "verdict": "incorrect" },
+        { "text": "Correct! The epiglottis covers the laryngeal inlet to prevent aspiration into the lungs", "verdict": "correct" },
+        { "text": "The tongue pushes food back but doesn't cover the airway", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.3,
+      "tags": ["oral-cavity", "swallowing", "epiglottis", "airway-protection"]
+    },
+    {
+      "id": "oral-007",
+      "text": "Which taste sensation is detected by taste buds primarily located on the back of the tongue and is thought to protect against ingesting poisons?",
+      "options": [
+        "Sweet",
+        "Salty",
+        "Sour",
+        "Bitter"
+      ],
+      "answer": 3,
+      "explain": "Bitter taste receptors are concentrated at the back of the tongue. This is thought to be an evolutionary adaptation - bitter substances detected late in the swallowing process can still trigger a gag reflex to prevent swallowing toxins.",
+      "mechanism": {
+        "title": "Taste Sensation and Protection",
+        "content": "The five basic tastes serve biological purposes: **Sweet**: Indicates carbohydrates (energy). **Salty**: Indicates minerals/electrolytes. **Sour**: Indicates acids, potentially spoiled food. **Bitter**: Indicates potential toxins (most poisons taste bitter). **Umami**: Indicates proteins (amino acids like glutamate). The 'tongue map' showing distinct zones is largely a myth - all tastes can be detected everywhere, but bitter sensitivity IS higher at the back.",
+        "metaphor": "Your tongue's bitter sensors at the back are like a last-chance security checkpoint at an airport. If something toxic slips past the front (where sweet/salty/sour are strongest), the bitter sensors at the back can still trigger rejection before you swallow."
+      },
+      "optionExplains": [
+        { "text": "Sweet receptors are distributed but stronger at the front - sweets are safe, encouraging eating", "verdict": "incorrect" },
+        { "text": "Salty receptors are distributed throughout - we need salt for survival", "verdict": "incorrect" },
+        { "text": "Sour receptors detect acids, often at tongue sides", "verdict": "incorrect" },
+        { "text": "Correct! Bitter at the back = last chance to reject potential poisons before swallowing", "verdict": "correct" }
+      ],
+      "difficulty": 0.4,
+      "tags": ["oral-cavity", "taste", "gustation", "bitter"]
+    },
+    {
+      "id": "oral-008",
+      "text": "The hard palate forms the anterior portion of the roof of the mouth. What bones make up the hard palate?",
+      "options": [
+        "Maxillary and mandibular bones",
+        "Maxillary and palatine bones",
+        "Sphenoid and ethmoid bones",
+        "Zygomatic and temporal bones"
+      ],
+      "answer": 1,
+      "explain": "The hard palate is formed by the palatine processes of the maxillary bones (anterior 2/3) and the horizontal plates of the palatine bones (posterior 1/3). The soft palate extends behind it with no bony support.",
+      "mechanism": {
+        "title": "Palate Anatomy",
+        "content": "The roof of the mouth has two regions: **Hard palate** (anterior): Bony - maxillary bones (front) + palatine bones (back). Covered by thick mucosa with rugae (ridges) for food manipulation. **Soft palate** (posterior): Muscular, mobile, ends in uvula. Elevates during swallowing to seal nasopharynx. A cleft palate occurs when these bones fail to fuse during development.",
+        "metaphor": "The roof of your mouth is like a two-part ceiling: the hard palate is the structural beam (bones) at the front, and the soft palate is a curtain (muscle) at the back that can lift to seal off the nose when you swallow or speak."
+      },
+      "optionExplains": [
+        { "text": "The mandible is the lower jaw, not part of the palate", "verdict": "incorrect" },
+        { "text": "Correct! Maxillary (front 2/3) + Palatine (back 1/3) = Hard Palate", "verdict": "correct" },
+        { "text": "These are cranial bones, not part of the palate", "verdict": "incorrect" },
+        { "text": "These are facial bones for the cheek/temple, not the palate", "verdict": "incorrect" }
+      ],
+      "difficulty": 0.5,
+      "tags": ["oral-cavity", "palate", "anatomy", "bones"]
+    }
+  ]
+}

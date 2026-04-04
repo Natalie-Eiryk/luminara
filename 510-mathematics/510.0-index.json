@@ -1,0 +1,51 @@
+{
+  "id": "510",
+  "title": "Mathematics Foundations",
+  "category": "logic",
+  "description": "Grade 4-8 Mathematics: Building blocks of mathematical thinking",
+  "gradeRange": "4-8",
+  "banks": [
+    {
+      "id": "510.1",
+      "file": "510.1-number-sense.json",
+      "title": "Number Sense & Operations",
+      "gradeLevel": "4-5",
+      "questionCount": 15
+    },
+    {
+      "id": "510.2",
+      "file": "510.2-fractions.json",
+      "title": "Fractions & Decimals",
+      "gradeLevel": "4-6",
+      "questionCount": 15
+    },
+    {
+      "id": "510.3",
+      "file": "510.3-ratios.json",
+      "title": "Ratios & Proportions",
+      "gradeLevel": "6-7",
+      "questionCount": 15
+    },
+    {
+      "id": "510.4",
+      "file": "510.4-prealgebra.json",
+      "title": "Pre-Algebra Expressions",
+      "gradeLevel": "6-8",
+      "questionCount": 15
+    },
+    {
+      "id": "510.5",
+      "file": "510.5-equations.json",
+      "title": "Equations & Inequalities",
+      "gradeLevel": "7-8",
+      "questionCount": 15
+    },
+    {
+      "id": "510.6",
+      "file": "510.6-logic.json",
+      "title": "Logic & Reasoning",
+      "gradeLevel": "4-8",
+      "questionCount": 15
+    }
+  ]
+}

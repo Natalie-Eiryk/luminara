@@ -1,0 +1,36 @@
+{
+  "clusterId": "510.10",
+  "clusterName": "Counting & Cardinality",
+  "status": "in_progress",
+  "targetQuestions": 300,
+  "currentBatch": 8,
+  "totalBatches": 12,
+  "questionsGenerated": 200,
+  "scaffoldsGenerated": 200,
+  "lastUpdated": "2026-03-29T00:00:00Z",
+  "batches": [
+    {"batchNum": 1, "questions": 25, "generated": "2026-03-29T00:00:00Z"},
+    {"batchNum": 2, "questions": 25, "generated": "2026-03-29T00:00:00Z"},
+    {"batchNum": 3, "questions": 25, "generated": "2026-03-29T00:00:00Z"},
+    {"batchNum": 4, "questions": 25, "generated": "2026-03-29T00:00:00Z"},
+    {"batchNum": 5, "questions": 25, "generated": "2026-03-29T00:00:00Z"},
+    {"batchNum": 6, "questions": 25, "generated": "2026-03-29T00:00:00Z"},
+    {"batchNum": 7, "questions": 25, "generated": "2026-03-29T00:00:00Z"},
+    {"batchNum": 8, "questions": 25, "generated": "2026-03-29T00:00:00Z"}
+  ],
+  "isotopes": [
+    "510.10.counting.oral",
+    "510.10.counting.written",
+    "510.10.cardinality",
+    "510.10.comparison",
+    "510.10.ordering",
+    "510.10.place-value.intro"
+  ],
+  "prerequisites": [],
+  "difficultyDistribution": {
+    "easy": 0,
+    "medium": 0,
+    "challenging": 0,
+    "hard": 0
+  }
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 12.0.1, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_svg "http://www.w3.org/2000/svg">
+	<!ENTITY ns_xlink "http://www.w3.org/1999/xlink">
+]>
+<svg  version="1.1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 width="538" height="498" viewBox="-0.9414 -0.9683 538 498" enable-background="new -0.9414 -0.9683 538 498"
+	 xml:space="preserve">
+<defs>
+</defs>
+<path fill="#FFFFFF" stroke="#000000" d="M483.0967,152.5708c28.333,11.333,52.7607,40.75,52.7607,81.4165
+	c0,49.5967-40.2061,89.8027-89.8027,89.8027s-89.8027-40.2061-89.8027-89.8027c0-41.5859,20.1777-68.25,54.7842-82.791
+	c7.0518-2.9629,26.8213-20.6094,34.832-20.6094C454.7979,130.5869,475.209,149.4155,483.0967,152.5708z"/>
+<circle fill="#FFFFFF" stroke="#000000" cx="446.9297" cy="233.7373" r="65.4658"/>
+<path fill="#F6E0CF" stroke="#000000" d="M473.8789,172.8623c-13.4326,0.2065-16.791,13.0483-27.2031,13.2559h0.1689
+	c-10.4111-0.2075-13.7695-13.0493-27.2051-13.2559l0.8408-0.208c13.4326-0.2065,16.791-13.0483,27.2031-13.2559h-0.1689
+	c10.4111,0.2075,13.7695,13.0493,27.2051,13.2559L473.8789,172.8623z"/>
+<path fill="#00B2E6" stroke="#000000" d="M435.5967,135.4038c-3.834,10.5,4.833,26.5,4.833,26.5l14.167-0.333
+	c-1.5-5.667-11.334-16.167-1.834-29.167l-6.8945-1.8169l-10.6055,4.3169"/>
+<text transform="matrix(1 0 0 1 443.4766 115.8564)" font-family="'ArialMT'" font-size="18">Cupula</text>
+<text transform="matrix(1 0 0 1 415.8584 205.3804)"><tspan x="0" y="0" font-family="'ArialMT'" font-size="18">Christa</tspan><tspan x="0" y="21.6001" font-family="'ArialMT'" font-size="18">Ampullaris</tspan></text>
+<g>
+	<g>
+		<polygon fill="#FFFFFF" points="460.8887,152.8706 471.624,153.3945 467.7656,156.0796 468.1865,160.7612 		"/>
+	</g>
+	<g>
+		<path fill="none" stroke="#000000" stroke-width="2" d="M513.001,193.9517c-12.3809-19.0479-31.4277-31.4282-45.7139-38.0952"/>
+		<polygon points="454.4912,149.8848 475.9609,150.9331 468.2441,156.3027 469.0859,165.6665 		"/>
+	</g>
+</g>
+<path fill="#FFFFFF" stroke="#000000" d="M127.3447,152.5708c28.333,11.333,52.7607,40.75,52.7607,81.4165
+	c0,49.5967-40.2061,89.8027-89.8027,89.8027S0.5,283.584,0.5,233.9873c0-41.5859,20.1777-68.25,54.7842-82.791
+	c7.0518-2.9629,26.8213-20.6094,34.832-20.6094C99.0459,130.5869,119.457,149.4155,127.3447,152.5708z"/>
+<circle fill="#FFFFFF" stroke="#000000" cx="91.1777" cy="233.7373" r="65.4658"/>
+<path fill="#F6E0CF" stroke="#000000" d="M118.127,172.8623c-13.4326,0.2065-16.791,13.0483-27.2031,13.2559h0.1689
+	c-10.4111-0.2075-13.7695-13.0493-27.2051-13.2559l0.8408-0.208c13.4326-0.2065,16.791-13.0483,27.2031-13.2559h-0.1689
+	c10.4111,0.2075,13.7695,13.0493,27.2051,13.2559L118.127,172.8623z"/>
+<path fill="#00B2E6" stroke="#000000" d="M79.8447,135.4038c-3.834,10.5,4.833,26.5,4.833,26.5l14.167-0.333
+	c-1.5-5.667-11.334-16.167-1.834-29.167l-6.8945-1.8169l-10.6055,4.3169"/>
+<text transform="matrix(1 0 0 1 87.7246 115.8564)" font-family="'ArialMT'" font-size="18">Cupula</text>
+<text transform="matrix(1 0 0 1 60.1064 205.3804)"><tspan x="0" y="0" font-family="'ArialMT'" font-size="18">Christa</tspan><tspan x="0" y="21.6001" font-family="'ArialMT'" font-size="18">Ampullaris</tspan></text>
+<g>
+	<g>
+		<polygon fill="#FFFFFF" points="105.1372,152.8706 115.8721,153.3945 112.0137,156.0796 112.4346,160.7612 		"/>
+	</g>
+	<g>
+		<path fill="none" stroke="#000000" stroke-width="2" d="M157.249,193.9517c-12.3809-19.0479-31.4277-31.4282-45.7139-38.0952"/>
+		<polygon points="98.7388,149.8848 120.2095,150.9331 112.4917,156.3027 113.3335,165.6665 		"/>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 422.9639 377.7612)"><tspan x="0" y="0" font-family="'ArialMT'" font-size="18">right side:</tspan><tspan x="0" y="21.5996" font-family="'ArialMT'" font-size="18">excitation</tspan></text>
+<text transform="matrix(1 0 0 1 61.0596 377.7612)"><tspan x="0" y="0" font-family="'ArialMT'" font-size="18">left side:</tspan><tspan x="0" y="21.5996" font-family="'ArialMT'" font-size="18">inhibition</tspan></text>
+<path fill="none" stroke="#000000" stroke-width="2" d="M69.6299,56.8086c170.4766-68.5713,335.2383-37.1426,400-10.4761"/>
+<text transform="matrix(0.9957 -0.0922 0.0922 0.9957 224.7905 18.5986)"><tspan x="0" y="0" font-family="'ArialMT'" font-size="18">H</tspan><tspan x="12.9743" y="0.0142" font-family="'ArialMT'" font-size="18" rotate="1.0985">e</tspan><tspan x="23.0071" y="0.2067" font-family="'ArialMT'" font-size="18" rotate="2.0548">a</tspan><tspan x="32.9936" y="0.5651" font-family="'ArialMT'" font-size="18" rotate="3.0039">d</tspan><tspan x="42.9893" y="1.1049" font-family="'ArialMT'" font-size="18" rotate="3.7153"> </tspan><tspan x="47.9918" y="1.3889" font-family="'ArialMT'" font-size="18" rotate="4.6623">M</tspan><tspan x="62.9329" y="2.6325" font-family="'ArialMT'" font-size="18" rotate="5.8441">o</tspan><tspan x="72.883" y="3.6554" font-family="'ArialMT'" font-size="18" rotate="6.7423">v</tspan><tspan x="81.8211" y="4.7078" font-family="'ArialMT'" font-size="18" rotate="7.6429">e</tspan><tspan x="91.7527" y="6.0144" font-family="'ArialMT'" font-size="18" rotate="8.8327">m</tspan><tspan x="106.5795" y="8.3449" font-family="'ArialMT'" font-size="18" rotate="10.0322">e</tspan><tspan x="116.421" y="10.0855" font-family="'ArialMT'" font-size="18" rotate="10.9994">n</tspan><tspan x="126.253" y="12.0125" font-family="'ArialMT'" font-size="18" rotate="11.7338">t</tspan></text>
+<polygon points="489.2158,54.3975 456.9717,54.3086 468.166,45.7295 466.2578,31.7573 "/>
+</svg>

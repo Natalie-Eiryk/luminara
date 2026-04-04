@@ -1,0 +1,26 @@
+{
+  "clusterId": "510.21",
+  "clusterName": "Integers & Rational Numbers",
+  "status": "pending",
+  "targetQuestions": 350,
+  "currentBatch": 0,
+  "totalBatches": 14,
+  "questionsGenerated": 0,
+  "scaffoldsGenerated": 0,
+  "lastUpdated": null,
+  "batches": [],
+  "isotopes": [
+    "510.21.integers.number-line",
+    "510.21.integers.operations",
+    "510.21.integers.multiplication",
+    "510.21.rational.ordering",
+    "510.21.absolute-value"
+  ],
+  "prerequisites": ["510.13.*", "510.20.*"],
+  "difficultyDistribution": {
+    "easy": 0,
+    "medium": 0,
+    "challenging": 0,
+    "hard": 0
+  }
+}

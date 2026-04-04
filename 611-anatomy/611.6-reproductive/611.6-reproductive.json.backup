@@ -1,0 +1,208 @@
+{
+  "id": "611.6",
+  "title": "Reproductive System",
+  "category": "lab-exam-ii",
+  "description": "Lab practical questions for reproductive system anatomy",
+  "questions": [
+    {
+      "id": "611.6.01",
+      "q": "What is the sperm pathway from testis outward in the simplest lab version?",
+      "options": [
+        "Testis → epididymis → vas deferens → ejaculatory pathway → urethra",
+        "Urethra",
+        "Epididymis",
+        "Vas deferens"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Reproductive",
+      "tags": [
+        "male pathway"
+      ],
+      "explain": "Testis → epididymis → vas deferens → ejaculatory pathway → urethra.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Precisely. Testis → epididymis → vas deferens → ejaculatory pathway → urethra. Now walk with me — let me show you why this matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. This would be Urethra, but the question asks for Testis → epididymis → vas deferens → ejaculatory pathway → urethra. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. This would be Epididymis, but the question asks for Testis → epididymis → vas deferens → ejaculatory pathway → urethra. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. This would be Vas deferens, but the question asks for Testis → epididymis → vas deferens → ejaculatory pathway → urethra. Come closer — I'll show you the distinction that matters."
+        }
+      ],
+      "mechanism": {
+        "title": "Testis → epididymis → vas deferens → ejaculatory pathway → urethra: Clinical Context",
+        "content": "Testis → epididymis → vas deferens → ejaculatory pathway → urethra.",
+        "metaphor": "Think of this as the key landmark that separates correct identification from common confusion."
+      },
+      "scaffoldFile": "611.6.01-scaffolds/611.6.01-scaffolds.json"
+    },
+    {
+      "id": "611.6.02",
+      "q": "What are the two major labels to know on testis histology?",
+      "options": [
+        "Seminiferous tubules and interstitial cells",
+        "Seminiferous tubules",
+        "Interstitial cells",
+        "Seminal vesicles"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Reproductive",
+      "tags": [
+        "male histology"
+      ],
+      "explain": "Seminiferous tubules and interstitial cells.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Precisely. Seminiferous tubules and interstitial cells. Now walk with me — let me show you why this matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. This would be Seminiferous tubules, but the question asks for Seminiferous tubules and interstitial cells. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. This would be Interstitial cells, but the question asks for Seminiferous tubules and interstitial cells. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. This would be Seminal vesicles, but the question asks for Seminiferous tubules and interstitial cells. Come closer — I'll show you the distinction that matters."
+        }
+      ],
+      "mechanism": {
+        "title": "Seminiferous tubules and interstitial cells: Clinical Context",
+        "content": "Seminiferous tubules and interstitial cells.",
+        "metaphor": "Think of this as the key landmark that separates correct identification from common confusion."
+      },
+      "scaffoldFile": "611.6.02-scaffolds/611.6.02-scaffolds.json"
+    },
+    {
+      "id": "611.6.03",
+      "q": "How do you distinguish a primary follicle from a mature Graafian follicle?",
+      "options": [
+        "A primary follicle is smaller and earlier",
+        "Antrum",
+        "Seminal vesicles",
+        "Ejaculatory duct"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Reproductive",
+      "tags": [
+        "ovary histology"
+      ],
+      "explain": "A primary follicle is smaller and earlier. A mature Graafian follicle is much larger and has a prominent antrum.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Precisely. A primary follicle is smaller and earlier. A mature Graafian follicle is much larger and has a prominent antrum. Now walk with me — let me show you why this matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. This would be Antrum, but the question asks for A primary follicle is smaller and earlier. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. This would be Seminal vesicles, but the question asks for A primary follicle is smaller and earlier. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. This would be Ejaculatory duct, but the question asks for A primary follicle is smaller and earlier. Come closer — I'll show you the distinction that matters."
+        }
+      ],
+      "mechanism": {
+        "title": "A primary follicle is smaller and earlier: Clinical Context",
+        "content": "A primary follicle is smaller and earlier. A mature Graafian follicle is much larger and has a prominent antrum.",
+        "metaphor": "Think of this as the key landmark that separates correct identification from common confusion."
+      },
+      "scaffoldFile": "611.6.03-scaffolds/611.6.03-scaffolds.json"
+    },
+    {
+      "id": "611.6.04",
+      "q": "What three structures must you identify on penis histology?",
+      "options": [
+        "Corpora cavernosa, corpus spongiosum, and urethra",
+        "Urethra",
+        "Corpora cavernosa",
+        "Corpus spongiosum"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Reproductive",
+      "tags": [
+        "penis histology"
+      ],
+      "explain": "Corpora cavernosa, corpus spongiosum, and urethra.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Precisely. Corpora cavernosa, corpus spongiosum, and urethra. Now walk with me — let me show you why this matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. This would be Urethra, but the question asks for Corpora cavernosa, corpus spongiosum, and urethra. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. This would be Corpora cavernosa, but the question asks for Corpora cavernosa, corpus spongiosum, and urethra. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. This would be Corpus spongiosum, but the question asks for Corpora cavernosa, corpus spongiosum, and urethra. Come closer — I'll show you the distinction that matters."
+        }
+      ],
+      "mechanism": {
+        "title": "Corpora cavernosa, corpus spongiosum, and urethra: Clinical Context",
+        "content": "Corpora cavernosa, corpus spongiosum, and urethra.",
+        "metaphor": "Think of this as the key landmark that separates correct identification from common confusion."
+      },
+      "scaffoldFile": "611.6.04-scaffolds/611.6.04-scaffolds.json"
+    },
+    {
+      "id": "611.6.05",
+      "q": "How do you separate uterus, cervix, myometrium, vagina, ovary, and uterine tubes?",
+      "options": [
+        "Uterus is the central organ, cervix is the lower narrow part, myometrium is the uterine muscle layer, vagina is the canal below, ovary is the gonad, and uterine tubes lead from ovary region to uterus",
+        "Uterus",
+        "Cervix",
+        "Myometrium"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Reproductive",
+      "tags": [
+        "female"
+      ],
+      "explain": "Uterus is the central organ, cervix is the lower narrow part, myometrium is the uterine muscle layer, vagina is the canal below, ovary is the gonad, and uterine tubes lead from ovary region to uterus.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Precisely. Uterus is the central organ, cervix is the lower narrow part, myometrium is the uterine muscle layer, vagina is the canal below, ovary is the gonad, and uterine tubes lead from ovary region to uterus. Now walk with me — let me show you why this matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. This would be Uterus, but the question asks for Uterus is the central organ, cervix is the lower narrow part, myometrium is the uterine muscle layer, vagina is the canal below, ovary is the gonad, and uterine tubes lead from ovary region to uterus. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. This would be Cervix, but the question asks for Uterus is the central organ, cervix is the lower narrow part, myometrium is the uterine muscle layer, vagina is the canal below, ovary is the gonad, and uterine tubes lead from ovary region to uterus. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. This would be Myometrium, but the question asks for Uterus is the central organ, cervix is the lower narrow part, myometrium is the uterine muscle layer, vagina is the canal below, ovary is the gonad, and uterine tubes lead from ovary region to uterus. Come closer — I'll show you the distinction that matters."
+        }
+      ],
+      "mechanism": {
+        "title": "Uterus is the central organ, cervix is the lower narrow part, myometrium is the uterine muscle layer, vagina is the canal below, ovary is the gonad, and uterine tubes lead from ovary region to uterus: Clinical Context",
+        "content": "Uterus is the central organ, cervix is the lower narrow part, myometrium is the uterine muscle layer, vagina is the canal below, ovary is the gonad, and uterine tubes lead from ovary region to uterus.",
+        "metaphor": "Think of this as the key landmark that separates correct identification from common confusion."
+      },
+      "scaffoldFile": "611.6.05-scaffolds/611.6.05-scaffolds.json"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "clusterId": "510.42",
+  "clusterName": "Integrals Introduction",
+  "status": "pending",
+  "targetQuestions": 200,
+  "currentBatch": 0,
+  "totalBatches": 8,
+  "questionsGenerated": 0,
+  "scaffoldsGenerated": 0,
+  "lastUpdated": null,
+  "batches": [],
+  "isotopes": [
+    "510.42.antiderivative",
+    "510.42.integral.indefinite",
+    "510.42.integral.definite",
+    "510.42.ftc",
+    "510.42.applications.area"
+  ],
+  "prerequisites": ["510.41.*"],
+  "difficultyDistribution": {
+    "easy": 0,
+    "medium": 0,
+    "challenging": 0,
+    "hard": 0
+  }
+}

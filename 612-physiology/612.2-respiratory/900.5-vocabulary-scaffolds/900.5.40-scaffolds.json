@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.40",
+  "parentQuestion": "At sea level, the partial pressure of oxygen in atmospheric air is approximately:",
+  "narrative": {
+    "setting": "The Magic School Bus is perched on Mr. Edgar's nose as he stands at the beach, breathing the salty sea-level air. A digital display shows numbers floating in the atmosphere around you: N2 593 mmHg, O2 ???, H2O 10 mmHg, CO2 0.3 mmHg. Ms. Frizzle holds up a barometer reading exactly 760 mmHg. 'Class,' she announces, 'we're at sea level - the gold standard for all respiratory measurements. Everything else is measured relative to HERE. And the oxygen partial pressure at this altitude is the most important number in respiratory physiology.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar is about to climb Mount Everest. Understanding sea-level PO2 is critical - it's the baseline he'll lose as he ascends into thinner air."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.40.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "Ms. Frizzle pulls up a pie chart of atmospheric composition. The oxygen slice glows bright red. '21%. That's the magic number. For millions of years, Earth's atmosphere has been roughly 21% oxygen. But percentage alone doesn't tell us pressure.'",
+      "q": "Oxygen makes up approximately what percentage of atmospheric air?",
+      "options": [
+        "10%",
+        "21%",
+        "50%",
+        "78%"
+      ],
+      "answer": 1,
+      "explain": "21% - the goldilocks number. Not too much (fire hazard!), not too little (hypoxia). For comparison: nitrogen is 78%, argon 0.9%, CO2 0.04%. That 21% oxygen percentage has stayed remarkably stable, enabling complex aerobic life.",
+      "wrongExplains": {
+        "0": "That's too low! 10% oxygen would leave you gasping. 21% is the actual atmospheric percentage.",
+        "2": "That would be an oxygen-rich world (fire everywhere!). Atmospheric O2 is 21%, with nitrogen dominating at 78%.",
+        "3": "That's NITROGEN's percentage! N2 is 78% of air. Oxygen is much less - about 21%."
+      }
+    },
+    {
+      "id": "900.5.40.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "The barometer needle points to 760. 'Sea level standard atmospheric pressure,' Ms. Frizzle says. 'This is the baseline. One atmosphere. 760 mmHg. 101.3 kPa. 14.7 psi. Same pressure, different units - all meaning SEA LEVEL.'",
+      "q": "Standard atmospheric pressure at sea level is:",
+      "options": [
+        "760 mmHg",
+        "523 mmHg",
+        "1000 mmHg",
+        "159 mmHg"
+      ],
+      "answer": 0,
+      "explain": "760 mmHg (millimeters of mercury) at sea level. This is the weight of the entire atmosphere above you pressing down. It's the reference point for all pressure measurements in physiology. Also equals 1 atm, 101.3 kPa, or 14.7 psi.",
+      "wrongExplains": {
+        "1": "That's pressure at about 10,000 feet altitude. Sea level is higher - 760 mmHg.",
+        "2": "That's too high - you'd need to be below sea level (in a mine or hyperbaric chamber) for that pressure.",
+        "3": "That's close to oxygen's PARTIAL pressure (160 mmHg). Total atmospheric pressure is much higher - 760 mmHg."
+      }
+    },
+    {
+      "id": "900.5.40.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "Ms. Frizzle writes the equation on the bus windshield: 'PO2 = % O2 × Ptotal = 0.21 × 760 = ?'. 'This is Dalton's Law in action. Let's calculate the oxygen partial pressure together.'",
+      "q": "If oxygen is 21% of air and total pressure is 760 mmHg, what is the partial pressure of oxygen?",
+      "options": [
+        "21 mmHg",
+        "104 mmHg",
+        "160 mmHg",
+        "740 mmHg"
+      ],
+      "answer": 2,
+      "explain": "PO2 = 0.21 × 760 = 159.6 mmHg, typically rounded to 160 mmHg. This is atmospheric PO2 at sea level - the maximum driving force for oxygen loading in your lungs. This number is so fundamental it's worth memorizing!",
+      "wrongExplains": {
+        "0": "You forgot to multiply by total pressure! 21% doesn't mean 21 mmHg. It means 21% of 760 = 160 mmHg.",
+        "1": "That's alveolar PO2 (after mixing with CO2 and water vapor). Atmospheric PO2 is higher - about 160 mmHg.",
+        "3": "That's way too high! 740 would be almost ALL the atmospheric pressure. O2 is only 21%, so about 160 mmHg."
+      }
+    },
+    {
+      "id": "900.5.40.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "You watch oxygen molecules bombarding Mr. Edgar's alveolar membrane at 160 mmHg pressure. It's like rain hammering on a roof - each molecule collision pushes O2 into the blood. 'Pressure is the driving force,' Ms. Frizzle explains. 'No pressure gradient, no gas exchange.'",
+      "q": "Why is atmospheric PO2 important for respiration?",
+      "options": [
+        "It determines the driving force for oxygen to enter the blood",
+        "It controls heart rate",
+        "It regulates body temperature",
+        "It has no physiological relevance"
+      ],
+      "answer": 0,
+      "explain": "Atmospheric PO2 (160 mmHg) creates the PRESSURE GRADIENT. Blood entering lungs has ~40 mmHg PO2. The 120 mmHg difference DRIVES oxygen from air into blood by diffusion. No gradient, no oxygen transfer. It's physics in service of life.",
+      "wrongExplains": {
+        "1": "Heart rate is controlled by autonomic nervous system and pacemaker cells, not directly by PO2 (though low O2 can trigger compensatory increases).",
+        "2": "Body temperature is regulated by the hypothalamus. PO2 affects oxygen delivery but not thermal regulation directly.",
+        "3": "It's CRITICALLY relevant! PO2 is the driving force for all oxygen loading in the lungs. Life depends on this number."
+      }
+    },
+    {
+      "id": "900.5.40.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus displays two numbers side by side: 'Atmospheric PO2: 160 mmHg' and 'Alveolar PO2: 104 mmHg'. 'Wait,' Carlos says, 'why are they different? The air goes straight into the alveoli!'",
+      "q": "Why is alveolar PO2 (104 mmHg) lower than atmospheric PO2 (160 mmHg)?",
+      "options": [
+        "The alveoli absorb some oxygen into their walls",
+        "Alveolar air is diluted by CO2 from blood and water vapor",
+        "Oxygen is converted to carbon dioxide in the alveoli",
+        "The measurement is wrong"
+      ],
+      "answer": 1,
+      "explain": "Alveolar air is a MIXTURE: fresh atmospheric air + CO2 exhaled from blood + water vapor from moist airways. The CO2 and H2O 'dilute' the oxygen, lowering its partial pressure to ~104 mmHg. It's not a problem - 104 is still plenty for gas exchange!",
+      "wrongExplains": {
+        "0": "Alveolar walls are thin for gas exchange, not thick absorbers. The PO2 drop is due to mixing with CO2 and water vapor.",
+        "2": "O2 doesn't convert to CO2 in alveoli - that happens in CELLS during metabolism. CO2 arrives from blood via circulation.",
+        "3": "The measurement is correct! Alveolar PO2 is ALWAYS lower than atmospheric due to the mixing with CO2 and water vapor."
+      }
+    },
+    {
+      "id": "900.5.40.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus begins ascending a mountain. As altitude increases, the barometer drops: 760... 700... 650... 600... The oxygen PERCENTAGE stays at 21%, but something critical is changing.",
+      "q": "At high altitude, atmospheric PO2 decreases because:",
+      "options": [
+        "The percentage of oxygen in air decreases",
+        "Total atmospheric pressure decreases",
+        "Oxygen molecules move slower in cold air",
+        "More nitrogen displaces oxygen"
+      ],
+      "answer": 1,
+      "explain": "O2 percentage stays ~21% at ALL altitudes. But TOTAL PRESSURE drops with altitude (less atmosphere above you). PO2 = 0.21 × Ptotal, so if Ptotal decreases, PO2 must decrease. At Everest summit (253 mmHg total), PO2 ≈ 53 mmHg - barely enough to survive!",
+      "wrongExplains": {
+        "0": "O2 stays 21% regardless of altitude (until you're in space). The pressure drops, not the percentage.",
+        "2": "Molecular speed (temperature) affects diffusion rate but not partial pressure. PO2 drops because total pressure drops.",
+        "3": "N2 percentage also stays constant (~78%). Both O2 and N2 partial pressures drop together as total pressure falls."
+      }
+    },
+    {
+      "id": "900.5.40.s07",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "'What if we give supplemental oxygen?' Wanda asks. Ms. Frizzle grins and shows Mr. Edgar breathing from an O2 tank set to 40% instead of 21%. 'Watch what happens to PO2.'",
+      "q": "If a patient breathes 40% oxygen at sea level (760 mmHg), the PO2 becomes:",
+      "options": [
+        "160 mmHg",
+        "304 mmHg",
+        "40 mmHg",
+        "760 mmHg"
+      ],
+      "answer": 1,
+      "explain": "PO2 = 0.40 × 760 = 304 mmHg. Nearly DOUBLE normal atmospheric PO2! This is supplemental oxygen therapy - increasing the O2 percentage to compensate for lung disease or low cardiac output. More driving force for O2 to enter blood.",
+      "wrongExplains": {
+        "0": "That's room air (21% O2). This patient is getting enriched oxygen (40%), so PO2 must be higher.",
+        "2": "Don't confuse percentage with partial pressure. 40% of 760 mmHg = 304 mmHg, not 40 mmHg.",
+        "3": "That would require 100% oxygen. At 40% O2, the partial pressure is 40% of total = 304 mmHg."
+      }
+    },
+    {
+      "id": "900.5.40.s08",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "The bus reaches Mount Everest base camp (17,600 ft). The barometer reads 400 mmHg. Mr. Edgar is gasping. 'Calculate his PO2,' Ms. Frizzle says urgently. 'Is it survivable?'",
+      "q": "At Everest base camp (400 mmHg pressure, 21% O2), the atmospheric PO2 is approximately:",
+      "options": [
+        "160 mmHg",
+        "84 mmHg",
+        "40 mmHg",
+        "21 mmHg"
+      ],
+      "answer": 1,
+      "explain": "PO2 = 0.21 × 400 = 84 mmHg. That's about HALF sea level PO2! Barely enough to survive with acclimatization (increased red blood cells, faster breathing). This is why climbers need weeks to adapt before attempting higher peaks.",
+      "wrongExplains": {
+        "0": "That's sea level PO2. At altitude with lower total pressure, PO2 must be lower too. Altitude + 21% O2 = 84 mmHg.",
+        "2": "That's venous blood PO2. Atmospheric PO2 at this altitude is 84 mmHg - low but survivable with adaptation.",
+        "3": "That's way too low for survival. The calculation is 21% of 400 = 84 mmHg, not 21 mmHg."
+      }
+    },
+    {
+      "id": "900.5.40.s09",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "Ms. Frizzle shows data from deep-sea divers and astronauts. 'In a submarine or spacecraft, you can set any pressure and any O2 percentage you want. Engineers use PO2 = 160-170 mmHg as the target - sea level equivalent.'",
+      "q": "Why do spacecraft and submarines aim for PO2 around 160 mmHg?",
+      "options": [
+        "It matches sea level atmospheric PO2 that humans are adapted to",
+        "Higher PO2 would be toxic",
+        "Lower PO2 is more efficient",
+        "It's required by international law"
+      ],
+      "answer": 0,
+      "explain": "160 mmHg is SEA LEVEL atmospheric PO2 - what human physiology evolved with for millions of years. It's the 'goldilocks zone' - high enough for adequate oxygenation, low enough to avoid O2 toxicity. Submarines might use lower total pressure but adjust O2% to maintain ~160 mmHg PO2.",
+      "wrongExplains": {
+        "1": "While very high PO2 (>500 mmHg for prolonged periods) IS toxic, 160 mmHg is perfectly safe - it's normal sea level!",
+        "2": "Lower PO2 reduces oxygen safety margin. Engineers maintain sea-level equivalent for human comfort and safety.",
+        "3": "While some regulations exist, the 160 mmHg target is fundamentally about human physiology, not law."
+      }
+    },
+    {
+      "id": "900.5.40.s10",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "Mr. Edgar returns to sea level, breathing deeply. The monitors stabilize: Atmospheric PO2 = 160 mmHg, Alveolar PO2 = 104 mmHg, Arterial PO2 = 95 mmHg. 'The cascade of pressures,' Ms. Frizzle says. 'And it all starts with this number.'",
+      "q": "At sea level, the partial pressure of oxygen in atmospheric air is approximately:",
+      "options": [
+        "40 mmHg",
+        "104 mmHg",
+        "160 mmHg",
+        "760 mmHg"
+      ],
+      "answer": 2,
+      "explain": "160 mmHg (more precisely 159.6 mmHg). This is calculated from 21% O2 × 760 mmHg total pressure. This atmospheric PO2 is the starting point for the oxygen cascade: atmosphere (160) → alveoli (104) → arterial blood (95) → tissues (40) → cells.",
+      "wrongExplains": {
+        "0": "That's tissue/venous PO2 - the END of the oxygen cascade. Atmospheric PO2 is the START - 160 mmHg.",
+        "1": "That's alveolar PO2 (after mixing with CO2 and water vapor). Atmospheric PO2 before entering airways is ~160 mmHg.",
+        "3": "That's TOTAL atmospheric pressure. Oxygen is only 21% of that, giving PO2 of 160 mmHg."
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "parentId": "200.2.07",
+  "parentQuestion": "A 68-year-old diabetic patient steps on a tack but doesn't notice until she sees blood on the floor. She can still feel light touch on her feet with a cotton swab. Which sensory pathway has likely failed?",
+  "scaffolds": [
+    {
+      "q": "Can diabetes damage peripheral nerves?",
+      "options": [
+        "No, diabetes only affects blood sugar",
+        "Yes, high blood sugar damages nerves (diabetic neuropathy)",
+        "Only children get nerve damage from diabetes",
+        "Diabetes helps nerves"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "High blood sugar DAMAGES nerves, especially in the feet and hands. This is called DIABETIC NEUROPATHY — a common and serious complication.",
+      "wrongExplains": {
+        "0": "Diabetes affects many systems. Nerve damage is a major complication.",
+        "2": "Diabetic neuropathy occurs at any age, especially in long-standing diabetes.",
+        "3": "Diabetes damages nerves; it doesn't help them."
+      }
+    },
+    {
+      "q": "Are pain and light touch carried by the same nerve fibers?",
+      "options": [
+        "Yes, all sensations use identical fibers",
+        "No, different fiber types carry different sensations",
+        "Touch doesn't use nerve fibers",
+        "Pain doesn't exist"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Pain travels on SMALL, unmyelinated fibers (C and Aδ). Light touch travels on LARGER, myelinated fibers (Aβ). Different fibers, different vulnerabilities.",
+      "wrongExplains": {
+        "0": "Different sensations use different fiber types — that's why they can be selectively lost.",
+        "2": "Touch definitely uses nerve fibers. All sensations require neural transmission.",
+        "3": "Pain definitely exists and uses specific nerve fibers."
+      }
+    },
+    {
+      "q": "Which nerve fibers are more vulnerable to diabetic damage?",
+      "options": [
+        "Large fibers are damaged first",
+        "Small fibers are more vulnerable and damaged first",
+        "All fibers are equally vulnerable",
+        "Diabetes doesn't affect fibers"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "SMALL FIBERS have higher metabolic demands and are damaged FIRST. Pain and temperature sensation disappear BEFORE light touch.",
+      "wrongExplains": {
+        "0": "Large fibers are actually more resilient. Small fibers die first.",
+        "2": "Fibers have different vulnerabilities. Small fibers are affected earlier.",
+        "3": "Diabetes definitely damages nerve fibers, especially small ones."
+      }
+    },
+    {
+      "q": "What type of nerve fibers do nociceptors use?",
+      "options": [
+        "Large, heavily myelinated fibers",
+        "Small nerve fibers (unmyelinated C and thin Aδ)",
+        "No nerve fibers at all",
+        "Only motor fibers"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Pain signals travel on UNMYELINATED C fibers and thinly myelinated Aδ fibers. These SMALL FIBERS are fragile and die first in diabetes.",
+      "wrongExplains": {
+        "0": "Large myelinated fibers carry touch. Pain uses small fibers.",
+        "2": "Nociceptors definitely use nerve fibers to transmit pain signals.",
+        "3": "Motor fibers carry movement commands. Nociceptors are sensory."
+      }
+    },
+    {
+      "q": "What type of fibers do light touch receptors use?",
+      "options": [
+        "Small, unmyelinated fibers",
+        "Larger, more protected myelinated fibers (Aβ)",
+        "No fibers at all",
+        "Only pain fibers"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Light touch (like Meissner's corpuscles) travels on thick, well-MYELINATED Aβ fibers. These SURVIVE LONGER in diabetic neuropathy.",
+      "wrongExplains": {
+        "0": "Small unmyelinated fibers carry pain. Light touch uses larger fibers.",
+        "2": "Touch receptors definitely use nerve fibers.",
+        "3": "Touch uses distinct fibers from pain. They're separate pathways."
+      }
+    },
+    {
+      "q": "Can a patient lose pain sensation while keeping light touch?",
+      "options": [
+        "No, you always lose both together",
+        "Yes, if only the small fibers are damaged",
+        "You can only lose touch, not pain",
+        "Neither can be lost"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "This is called DISSOCIATED SENSORY LOSS. Small fibers die (no pain), large fibers survive (touch preserved). Different fibers, different fates.",
+      "wrongExplains": {
+        "0": "Because fibers are separate, they can be selectively damaged.",
+        "2": "Pain can definitely be lost while touch remains — that's this patient's situation.",
+        "3": "Both can be lost, but they can also be selectively affected."
+      }
+    },
+    {
+      "q": "What happened to this diabetic patient's sensation?",
+      "options": [
+        "She lost all sensation completely",
+        "She lost pain but kept touch (small fiber damage)",
+        "She lost touch but kept pain",
+        "Nothing is wrong with her sensation"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "She can feel the cotton swab (LIGHT TOUCH INTACT) but not the tack (PAIN LOST). Small fibers died, large fibers survived.",
+      "wrongExplains": {
+        "0": "She can still feel light touch. Only pain is lost.",
+        "2": "It's the opposite — she kept touch but lost pain.",
+        "3": "Something is definitely wrong — she couldn't feel a tack!"
+      }
+    },
+    {
+      "q": "Which receptors have likely failed in this patient?",
+      "options": [
+        "Meissner's corpuscles (light touch)",
+        "Free nerve endings (nociceptors)",
+        "Photoreceptors",
+        "Auditory receptors"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "FREE NERVE ENDINGS (nociceptors) have failed. The small fibers carrying pain signals are damaged. Large fibers carrying touch are intact.",
+      "wrongExplains": {
+        "0": "Meissner's are working — she can feel the cotton swab.",
+        "2": "Photoreceptors are in the eyes. This is about foot sensation.",
+        "3": "Auditory receptors are in the ears. This is about foot sensation."
+      }
+    },
+    {
+      "q": "The sensory pathway that has failed is carried by which receptors?",
+      "options": [
+        "Meissner's corpuscles",
+        "Free nerve endings (nociceptors)",
+        "Pacinian corpuscles",
+        "Muscle spindles"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "FREE NERVE ENDINGS (nociceptors)! These detect pain and travel on small, vulnerable fibers. Diabetic neuropathy killed her pain sensation while sparing touch.",
+      "wrongExplains": {
+        "0": "Meissner's corpuscles (touch) are working — she feels the cotton swab.",
+        "2": "Pacinian corpuscles detect vibration, not specifically pain.",
+        "3": "Muscle spindles detect position, not pain or touch."
+      }
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "version": "1.0.0",
+  "description": "Prerequisite relationships between math isotopes for ZPD navigation",
+  "graphType": "directed_acyclic",
+  "edges": [
+    {
+      "comment": "=== COUNTING TO ADDITION ===",
+      "from": "510.10.counting.oral", "to": "510.10.counting.written", "strength": 1.0, "type": "REQUIRED"
+    },
+    {"from": "510.10.counting.written", "to": "510.10.cardinality", "strength": 1.0, "type": "REQUIRED"},
+    {"from": "510.10.cardinality", "to": "510.10.comparison", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.10.comparison", "to": "510.10.ordering", "strength": 0.8, "type": "REQUIRED"},
+    {"from": "510.10.ordering", "to": "510.10.place-value.intro", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.10.cardinality", "to": "510.11.addition.facts", "strength": 1.0, "type": "REQUIRED"},
+    {"from": "510.10.place-value.intro", "to": "510.11.addition.regrouping", "strength": 1.0, "type": "REQUIRED"},
+
+    {
+      "comment": "=== ADDITION/SUBTRACTION ===",
+      "from": "510.11.addition.facts", "to": "510.11.subtraction.facts", "strength": 0.9, "type": "REQUIRED"
+    },
+    {"from": "510.11.addition.facts", "to": "510.11.inverse", "strength": 0.8, "type": "ENHANCES"},
+    {"from": "510.11.subtraction.facts", "to": "510.11.inverse", "strength": 0.8, "type": "ENHANCES"},
+    {"from": "510.11.addition.facts", "to": "510.11.addition.regrouping", "strength": 1.0, "type": "REQUIRED"},
+    {"from": "510.11.subtraction.facts", "to": "510.11.subtraction.borrowing", "strength": 1.0, "type": "REQUIRED"},
+    {"from": "510.11.addition.regrouping", "to": "510.11.addition.multi-digit", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.11.inverse", "to": "510.11.word-problems", "strength": 0.7, "type": "ENHANCES"},
+
+    {
+      "comment": "=== MULTIPLICATION/DIVISION ===",
+      "from": "510.11.addition.facts", "to": "510.12.multiplication.facts", "strength": 1.0, "type": "REQUIRED"
+    },
+    {"from": "510.12.multiplication.facts", "to": "510.12.division.facts", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.12.multiplication.facts", "to": "510.12.inverse", "strength": 0.8, "type": "ENHANCES"},
+    {"from": "510.12.division.facts", "to": "510.12.inverse", "strength": 0.8, "type": "ENHANCES"},
+    {"from": "510.12.multiplication.facts", "to": "510.12.multiplication.multi-digit", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.12.division.facts", "to": "510.12.division.long", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.12.multiplication.facts", "to": "510.12.factors", "strength": 0.8, "type": "REQUIRED"},
+    {"from": "510.12.multiplication.facts", "to": "510.12.multiples", "strength": 0.8, "type": "REQUIRED"},
+
+    {
+      "comment": "=== FRACTIONS/DECIMALS ===",
+      "from": "510.12.division.facts", "to": "510.13.fractions.naming", "strength": 1.0, "type": "REQUIRED"
+    },
+    {"from": "510.13.fractions.naming", "to": "510.13.fractions.equivalent", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.13.fractions.equivalent", "to": "510.13.fractions.comparing", "strength": 0.8, "type": "REQUIRED"},
+    {"from": "510.13.fractions.equivalent", "to": "510.13.fractions.adding", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.10.place-value.intro", "to": "510.13.decimals.place-value", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.13.decimals.place-value", "to": "510.13.decimals.operations", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.13.fractions.naming", "to": "510.13.conversion", "strength": 0.8, "type": "REQUIRED"},
+    {"from": "510.13.decimals.place-value", "to": "510.13.conversion", "strength": 0.8, "type": "REQUIRED"},
+
+    {
+      "comment": "=== RATIOS/PROPORTIONS ===",
+      "from": "510.13.fractions.equivalent", "to": "510.20.ratios.writing", "strength": 1.0, "type": "REQUIRED"
+    },
+    {"from": "510.20.ratios.writing", "to": "510.20.ratios.equivalent", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.20.ratios.equivalent", "to": "510.20.rates.unit", "strength": 0.8, "type": "REQUIRED"},
+    {"from": "510.20.rates.unit", "to": "510.20.proportions.solving", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.20.proportions.solving", "to": "510.20.percent", "strength": 0.8, "type": "REQUIRED"},
+
+    {
+      "comment": "=== INTEGERS ===",
+      "from": "510.10.ordering", "to": "510.21.integers.number-line", "strength": 0.8, "type": "REQUIRED"
+    },
+    {"from": "510.11.inverse", "to": "510.21.integers.operations", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.21.integers.number-line", "to": "510.21.integers.operations", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.21.integers.operations", "to": "510.21.integers.multiplication", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.13.fractions.comparing", "to": "510.21.rational.ordering", "strength": 0.8, "type": "REQUIRED"},
+    {"from": "510.21.integers.number-line", "to": "510.21.absolute-value", "strength": 0.8, "type": "REQUIRED"},
+
+    {
+      "comment": "=== EXPRESSIONS/EQUATIONS ===",
+      "from": "510.12.inverse", "to": "510.22.variables", "strength": 0.7, "type": "RECOMMENDED"
+    },
+    {"from": "510.22.variables", "to": "510.22.expressions.evaluating", "strength": 1.0, "type": "REQUIRED"},
+    {"from": "510.22.expressions.evaluating", "to": "510.22.expressions.simplifying", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.22.expressions.simplifying", "to": "510.22.equations.one-step", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.22.equations.one-step", "to": "510.22.equations.two-step", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.22.equations.one-step", "to": "510.22.inequalities", "strength": 0.8, "type": "REQUIRED"},
+
+    {
+      "comment": "=== GEOMETRY ===",
+      "from": "510.12.multiplication.facts", "to": "510.23.area", "strength": 0.9, "type": "REQUIRED"
+    },
+    {"from": "510.11.addition.facts", "to": "510.23.perimeter", "strength": 0.8, "type": "REQUIRED"},
+    {"from": "510.23.area", "to": "510.23.volume", "strength": 0.8, "type": "REQUIRED"},
+    {"from": "510.21.integers.number-line", "to": "510.23.coordinate-plane", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.10.comparison", "to": "510.23.shapes.2d", "strength": 0.6, "type": "RECOMMENDED"},
+    {"from": "510.23.shapes.2d", "to": "510.23.shapes.3d", "strength": 0.8, "type": "REQUIRED"},
+    {"from": "510.13.decimals.operations", "to": "510.23.angles", "strength": 0.7, "type": "RECOMMENDED"},
+
+    {
+      "comment": "=== STATISTICS ===",
+      "from": "510.11.addition.multi-digit", "to": "510.24.statistics.measures", "strength": 0.9, "type": "REQUIRED"
+    },
+    {"from": "510.12.division.facts", "to": "510.24.statistics.measures", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.24.statistics.measures", "to": "510.24.statistics.spread", "strength": 0.8, "type": "REQUIRED"},
+    {"from": "510.13.fractions.naming", "to": "510.24.probability.simple", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.24.probability.simple", "to": "510.24.probability.compound", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.24.probability.compound", "to": "510.24.probability.theoretical", "strength": 0.8, "type": "REQUIRED"},
+
+    {
+      "comment": "=== LINEAR FUNCTIONS ===",
+      "from": "510.23.coordinate-plane", "to": "510.30.graphing", "strength": 1.0, "type": "REQUIRED"
+    },
+    {"from": "510.22.equations.two-step", "to": "510.30.slope-intercept", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.20.rates.unit", "to": "510.30.slope", "strength": 0.8, "type": "REQUIRED"},
+    {"from": "510.30.slope", "to": "510.30.slope-intercept", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.30.slope-intercept", "to": "510.30.intercept", "strength": 0.7, "type": "ENHANCES"},
+    {"from": "510.30.graphing", "to": "510.30.systems.graphing", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.30.slope-intercept", "to": "510.30.systems.substitution", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.30.systems.substitution", "to": "510.30.systems.elimination", "strength": 0.8, "type": "REQUIRED"},
+
+    {
+      "comment": "=== QUADRATIC FUNCTIONS ===",
+      "from": "510.30.graphing", "to": "510.31.parabola", "strength": 0.9, "type": "REQUIRED"
+    },
+    {"from": "510.31.parabola", "to": "510.31.vertex", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.22.expressions.simplifying", "to": "510.31.factoring.basic", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.31.factoring.basic", "to": "510.31.factoring.advanced", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.31.factoring.basic", "to": "510.31.quadratic-formula", "strength": 0.7, "type": "RECOMMENDED"},
+    {"from": "510.31.quadratic-formula", "to": "510.31.discriminant", "strength": 0.8, "type": "REQUIRED"},
+    {"from": "510.31.vertex", "to": "510.31.completing-square", "strength": 0.8, "type": "REQUIRED"},
+
+    {
+      "comment": "=== POLYNOMIAL/RATIONAL ===",
+      "from": "510.31.factoring.advanced", "to": "510.32.polynomials.operations", "strength": 0.9, "type": "REQUIRED"
+    },
+    {"from": "510.32.polynomials.operations", "to": "510.32.polynomials.division", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.32.polynomials.division", "to": "510.32.polynomials.zeros", "strength": 0.8, "type": "REQUIRED"},
+    {"from": "510.13.fractions.equivalent", "to": "510.32.rational.simplifying", "strength": 0.7, "type": "RECOMMENDED"},
+    {"from": "510.32.rational.simplifying", "to": "510.32.rational.operations", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.32.polynomials.zeros", "to": "510.32.asymptotes", "strength": 0.8, "type": "REQUIRED"},
+
+    {
+      "comment": "=== TRIGONOMETRY ===",
+      "from": "510.23.angles", "to": "510.33.right-triangle", "strength": 1.0, "type": "REQUIRED"
+    },
+    {"from": "510.20.ratios.writing", "to": "510.33.right-triangle", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.33.right-triangle", "to": "510.33.unit-circle", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.33.unit-circle", "to": "510.33.trig-functions", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.33.right-triangle", "to": "510.33.identities.basic", "strength": 0.8, "type": "REQUIRED"},
+    {"from": "510.33.identities.basic", "to": "510.33.identities.sum-diff", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.33.trig-functions", "to": "510.33.solving.equations", "strength": 0.8, "type": "REQUIRED"},
+    {"from": "510.33.right-triangle", "to": "510.33.applications", "strength": 0.7, "type": "ENHANCES"},
+
+    {
+      "comment": "=== PRE-CALCULUS ===",
+      "from": "510.22.expressions.evaluating", "to": "510.34.functions.notation", "strength": 0.9, "type": "REQUIRED"
+    },
+    {"from": "510.34.functions.notation", "to": "510.34.functions.composition", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.34.functions.composition", "to": "510.34.functions.inverse", "strength": 0.8, "type": "REQUIRED"},
+    {"from": "510.22.expressions.evaluating", "to": "510.34.sequences.arithmetic", "strength": 0.8, "type": "REQUIRED"},
+    {"from": "510.34.sequences.arithmetic", "to": "510.34.sequences.geometric", "strength": 0.8, "type": "REQUIRED"},
+    {"from": "510.34.functions.notation", "to": "510.34.limits.intuitive", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.34.limits.intuitive", "to": "510.34.limits.notation", "strength": 0.9, "type": "REQUIRED"},
+
+    {
+      "comment": "=== LIMITS & CONTINUITY ===",
+      "from": "510.34.limits.notation", "to": "510.40.limits.definition", "strength": 1.0, "type": "REQUIRED"
+    },
+    {"from": "510.40.limits.definition", "to": "510.40.limits.laws", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.40.limits.laws", "to": "510.40.limits.infinity", "strength": 0.8, "type": "REQUIRED"},
+    {"from": "510.40.limits.definition", "to": "510.40.continuity.definition", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.40.continuity.definition", "to": "510.40.continuity.types", "strength": 0.8, "type": "REQUIRED"},
+
+    {
+      "comment": "=== DERIVATIVES ===",
+      "from": "510.40.limits.definition", "to": "510.41.derivative.definition", "strength": 1.0, "type": "REQUIRED"
+    },
+    {"from": "510.41.derivative.definition", "to": "510.41.derivative.power-rule", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.41.derivative.power-rule", "to": "510.41.derivative.product", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.41.derivative.product", "to": "510.41.derivative.quotient", "strength": 0.8, "type": "REQUIRED"},
+    {"from": "510.41.derivative.power-rule", "to": "510.41.derivative.chain", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.30.slope", "to": "510.41.applications.velocity", "strength": 0.8, "type": "RECOMMENDED"},
+    {"from": "510.41.derivative.definition", "to": "510.41.applications.velocity", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.31.vertex", "to": "510.41.applications.optimization", "strength": 0.7, "type": "RECOMMENDED"},
+    {"from": "510.41.derivative.power-rule", "to": "510.41.applications.optimization", "strength": 0.9, "type": "REQUIRED"},
+
+    {
+      "comment": "=== INTEGRALS ===",
+      "from": "510.41.derivative.power-rule", "to": "510.42.antiderivative", "strength": 1.0, "type": "REQUIRED"
+    },
+    {"from": "510.42.antiderivative", "to": "510.42.integral.indefinite", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.42.integral.indefinite", "to": "510.42.integral.definite", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.42.integral.definite", "to": "510.42.ftc", "strength": 0.9, "type": "REQUIRED"},
+    {"from": "510.23.area", "to": "510.42.applications.area", "strength": 0.7, "type": "RECOMMENDED"},
+    {"from": "510.42.integral.definite", "to": "510.42.applications.area", "strength": 0.9, "type": "REQUIRED"}
+  ],
+  "entryPoints": [
+    "510.10.counting.oral"
+  ],
+  "exitPoints": [
+    "510.42.ftc",
+    "510.42.applications.area"
+  ]
+}

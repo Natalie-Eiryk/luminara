@@ -1,0 +1,871 @@
+{
+  "version": "1.0",
+  "source": "LUMI-OS Teaching Module",
+  "prefix": "200.6",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": "200.6.01",
+      "q": "The autonomic nervous system differs from the somatic nervous system in that the ANS ___.",
+      "options": [
+        "Uses a single neuron pathway from CNS to effector",
+        "Controls voluntary skeletal muscle",
+        "Uses a two-neuron chain from CNS to effector",
+        "Has cell bodies only in the spinal cord"
+      ],
+      "answer": 2,
+      "explain": "Follow me deeper: That defines autonomic control. The ANS uses a TWO-NEURON chain: Preganglionic neuron (CNS → ganglion) and postganglionic neuron (ganglion → effector). Let me show you why this matters: That synapse in the ganglion is where modulation happens. The somatic system? One neuron, direct line, no middle management. This difference is fundamental.",
+      "mechanism": {
+        "title": "Two-Neuron Chain: The ANS Architecture",
+        "content": "Make room for this understanding: Immersed in this fundamental difference. SOMATIC PATHWAY: Single lower motor neuron runs from CNS (ventral horn) directly to skeletal muscle. Fast, direct, voluntary control. Neurotransmitter: ACh at neuromuscular junction. ANS PATHWAY: Two neurons in series. Preganglionic neuron (cell body in CNS, myelinated axon) → synapse in autonomic ganglion → Postganglionic neuron (cell body in ganglion, unmyelinated axon) → effector organ. This next part is pure elegance: The ganglionic synapse allows divergence (one preganglionic can activate many postganglionic neurons), convergence (many preganglionic can influence one postganglionic), and modulation (other inputs can alter transmission). This is why autonomic responses can be graded and widespread. The relay station isn't just a passthrough; it's a processing hub.",
+        "metaphor": "The somatic system is like a direct phone line — you dial, they answer, one-to-one connection. Let me show you how the ANS differs: It's like calling a switchboard operator (the ganglion) who can then connect you to multiple lines simultaneously, adjust the volume, or patch in other callers. That intermediate step transforms a simple signal into a coordinated response. Quite breathtaking. Complexity?"
+      },
+      "isotopes": [
+        "ans.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — Autonomic Nervous System",
+      "scaffoldFile": "200.6-autonomic-nervous-system-scaffolds/200.6.01-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.5,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "200.6.02",
+      "q": "Which statement correctly distinguishes ANS from somatic nervous system control?",
+      "options": [
+        "ANS effectors can function without innervation; somatic effectors cannot",
+        "ANS responses are always faster than somatic responses",
+        "ANS uses only excitatory signals; somatic uses both excitatory and inhibitory",
+        "Somatic targets are always in the thorax and abdomen"
+      ],
+      "answer": 0,
+      "explain": "Now observe what happens — cut the nerve to your heart, and it keeps beating. Cut the nerve to your bicep, and it's paralyzed forever. Venture here: Into this crucial difference: ANS targets (cardiac muscle, smooth muscle, glands) have intrinsic activity. Skeletal muscle? Completely dependent on its nerve supply. Let that sink in.",
+      "mechanism": {
+        "title": "Intrinsic Activity: Why ANS Targets Don't Need Nerves to Function",
+        "content": "Explore alongside me: Into this remarkable independence. CARDIAC MUSCLE: The SA node (pacemaker) generates rhythmic electrical impulses at ~100 bpm intrinsically. Sympathetic stimulation increases this rate; parasympathetic decreases it. But the heart beats on its own — transplanted hearts (no ANS connection initially) still beat! SMOOTH MUSCLE: Many types have spontaneous rhythmic contractions (GI tract), maintain basal tone, and respond to stretch (myogenic response), local chemicals, and hormones. The ANS modulates these intrinsic activities. GLANDS: Some have basal secretion rates that ANS can increase or decrease. Invite this in: — SKELETAL MUSCLE has none of this. No spontaneous activity, no local control, complete dependence on motor neurons. This is why ANS targets survive denervation (though dysregulated), while skeletal muscle atrophies and becomes useless. The design ensures vital organs keep working even if neural control is damaged.",
+        "metaphor": "Think of ANS targets as self-driving cars that the ANS can steer, accelerate, or brake — but they'll keep moving on their own if the driver lets go. Let me show you skeletal muscle: It's like a regular car with no self-driving capability. The driver (motor neuron) must control everything. Take the driver out, and the car stops dead. Absolutely elegant. Beautiful way to understand organ autonomy?"
+      },
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — Autonomic Nervous System",
+      "scaffoldFile": "200.6-autonomic-nervous-system-scaffolds/200.6.02-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.6.03",
+      "q": "The sympathetic division of the ANS is also called the ___.",
+      "options": [
+        "Craniosacral division",
+        "Thoracolumbar division",
+        "Enteric division",
+        "Somatic division"
+      ],
+      "answer": 1,
+      "explain": "The sympathetic division emerges from the thoracolumbar region — T1 through L2. Descend with me into this: Into this geography: All sympathetic preganglionic neurons have their cell bodies in the lateral horns of the thoracic and upper lumbar spinal cord. The 'fight-or-flight' system originates from your mid-trunk. Let me show you why this matters.",
+      "mechanism": {
+        "title": "Sympathetic Geography: Thoracolumbar Outflow",
+        "content": "Grant yourself this moment of clarity: Anatomical precision. ORIGIN: All sympathetic preganglionic neurons arise from the intermediolateral cell column (lateral horn) of spinal cord segments T1-L2. This is a continuous column of visceral motor neurons. PATHWAY: Preganglionic axons exit via ventral roots, enter spinal nerves, then leave via WHITE rami communicantes (myelinated) to reach the sympathetic chain (paravertebral ganglia). From there, they can: (1) synapse in the chain ganglion at that level, (2) ascend or descend in the chain to synapse at a different level, or (3) pass through without synapsing to reach prevertebral ganglia (celiac, superior/inferior mesenteric) via splanchnic nerves. Postganglionic fibers are unmyelinated and reach targets via GRAY rami communicantes (back to spinal nerves for skin/blood vessels), direct branches to organs, or along arterial walls. This architecture allows a limited thoracolumbar origin to control the ENTIRE body.",
+        "metaphor": "Think of the sympathetic system as a central command post in the middle of a building (thoracolumbar region) with cables running up to every floor above and below. Let me show you: Even though headquarters is in the middle, the communication network reaches the penthouse (head) and the basement (pelvis). The chain ganglia are like relay stations on every floor, passing messages up and down as needed. Wonderfully designed. Distribution?"
+      },
+      "isotopes": [
+        "ans.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — Autonomic Nervous System",
+      "scaffoldFile": "200.6-autonomic-nervous-system-scaffolds/200.6.03-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "200.6.04",
+      "q": "The parasympathetic division originates from which regions?",
+      "options": [
+        "Thoracic and lumbar spinal cord",
+        "Cervical spinal cord only",
+        "Brainstem and sacral spinal cord",
+        "Entire length of the spinal cord"
+      ],
+      "answer": 2,
+      "explain": "Navigate with me: Into parasympathetic territory — 'craniosacral' tells you exactly where to look. The brainstem (via cranial nerves III, VII, IX, and especially X) and the sacral spinal cord (S2-S4) provide all parasympathetic outflow. Two disconnected regions, one peaceful mission. Let me show you why this geography matters.",
+      "mechanism": {
+        "title": "Parasympathetic Geography: Craniosacral Outflow",
+        "content": "Feel the weight of this: Immersed in this elegant anatomy. CRANIAL OUTFLOW: CN III → ciliary ganglion → pupillary sphincter (constriction) and ciliary muscle (near vision). CN VII → pterygopalatine ganglion → lacrimal gland; submandibular ganglion → submandibular/sublingual salivary glands. CN IX → otic ganglion → parotid gland. CN X (vagus) → ganglia in or near target organs → heart (SA/AV nodes — slows heart), lungs (bronchoconstriction, secretion), GI tract (increases motility and secretion from esophagus to splenic flexure). SACRAL OUTFLOW: Pelvic splanchnic nerves (S2-S4) → ganglia in pelvic plexus or organ walls → descending/sigmoid colon, rectum, bladder (contracts detrusor, relaxes internal sphincter for urination), reproductive organs (erection). Key difference from sympathetic: Parasympathetic preganglionic fibers are LONG (reaching near the target), postganglionic fibers are SHORT (within or immediately adjacent to the organ). This means more precise, localized effects rather than the widespread sympathetic response.",
+        "metaphor": "The parasympathetic system is like two regional offices — one in the head (cranial) and one at the base of the spine (sacral) — each sending representatives on long journeys to work directly at target sites. Let me show you: Instead of relaying through a central chain, parasympathetic messengers travel all the way to the organ before handing off to local workers. This allows precise, targeted control rather than body-wide activation. Brilliantly engineered. Specificity?"
+      },
+      "isotopes": [
+        "ans.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — Autonomic Nervous System",
+      "scaffoldFile": "200.6-autonomic-nervous-system-scaffolds/200.6.04-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.6.05",
+      "q": "ALL preganglionic neurons in BOTH sympathetic and parasympathetic divisions release ___.",
+      "options": [
+        "Norepinephrine",
+        "Epinephrine",
+        "Acetylcholine",
+        "Dopamine"
+      ],
+      "answer": 2,
+      "explain": "Here's a beautiful consistency in the ANS — every preganglionic neuron, whether sympathetic or parasympathetic, releases acetylcholine (ACh). Accompany me through this: The ganglionic synapse is ALWAYS cholinergic. The divergence happens at the postganglionic level. Let me show you where the neurotransmitters differ.",
+      "mechanism": {
+        "title": "Neurotransmitters of the ANS: ACh vs NE",
+        "content": "Travel deeper into this: Into this neuropharmacological elegance. PREGANGLIONIC NEURONS (both divisions): Release ACh → acts on NICOTINIC receptors on postganglionic neurons. This is consistent and predictable. POSTGANGLIONIC NEURONS — here's where divergence occurs: SYMPATHETIC: Most release NOREPINEPHRINE (NE) → acts on adrenergic receptors (α1, α2, β1, β2, β3). Exceptions: Sweat glands, some blood vessels receive ACh (muscarinic receptors). PARASYMPATHETIC: ALL release ACh → acts on MUSCARINIC receptors (M1, M2, M3). Consider the elegance here: Implications: Nicotinic blockers (like curare analogs) block ALL ganglionic transmission — sympathetic AND parasympathetic. Muscarinic blockers (like atropine) block only parasympathetic END-organ effects. Adrenergic blockers (like propranolol) block sympathetic END-organ effects. The adrenal medulla releases epinephrine (80%) and norepinephrine (20%) directly into blood, creating systemic sympathetic effects. Hormonal amplification of the fight-or-flight response.",
+        "metaphor": "Think of ACh at the ganglion as the 'common language' — both divisions speak it to activate their relay stations. Let me show you where they diverge: After the ganglion, sympathetic speaks 'norepinephrine' while parasympathetic continues speaking 'acetylcholine' but switches to a different dialect (muscarinic instead of nicotinic). Same molecule (ACh), different receptor = completely different effect. Nature at its finest. Beauty in neurochemistry?"
+      },
+      "isotopes": [
+        "ans.neurotransmitter"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — Autonomic Nervous System",
+      "scaffoldFile": "200.6-autonomic-nervous-system-scaffolds/200.6.05-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.6.06",
+      "q": "Sympathetic postganglionic neurons typically release ___, which acts on adrenergic receptors.",
+      "options": [
+        "Acetylcholine",
+        "Norepinephrine",
+        "Serotonin",
+        "GABA"
+      ],
+      "answer": 1,
+      "explain": "Norepinephrine (NE) is the signature neurotransmitter of the sympathetic postganglionic neuron. This is the molecule of arousal, alertness, and activation. It binds to adrenergic receptors (alpha and beta subtypes) to produce the fight-or-flight effects. Let me show you where it acts and what it does.",
+      "mechanism": {
+        "title": "Adrenergic Receptors: Where NE and Epinephrine Act",
+        "content": "Allow this to wash over you: Immersed in this pharmacological map. ALPHA RECEPTORS: α1 — Gq-coupled, increases intracellular Ca²⁺. Effects: Vasoconstriction (skin, viscera), pupil dilation (radial muscle), sphincter contraction (GI, bladder). α2 — Gi-coupled, decreases cAMP. Effects: Presynaptic autoreceptors (inhibit further NE release), vasoconstriction, decreased insulin secretion. BETA RECEPTORS: β1 — Gs-coupled, increases cAMP. Location: Primarily heart. Effects: Increased heart rate (chronotropy), increased contractility (inotropy), increased conduction velocity (dromotropy). β2 — Gs-coupled. Location: Bronchi, blood vessels in skeletal muscle, uterus. Effects: Smooth muscle relaxation (bronchodilation, vasodilation). β3 — Gs-coupled. Location: Adipose tissue. Effects: Lipolysis. Proceed with me: Into selectivity: NE has high affinity for α and β1, lower for β2. Epinephrine activates all types including β2 strongly. This is why epinephrine is the drug for anaphylaxis (β2 for bronchodilation, α1 for vasoconstriction) while NE is used for septic shock (primarily vasoconstriction).",
+        "metaphor": "Think of adrenergic receptors as different locks on different doors. Let me show you: NE is a master key that opens most locks (α, β1) but struggles with one (β2). Epinephrine is a skeleton key that opens ALL the locks easily. When you need just cardiac stimulation, use a drug that fits only the β1 lock. When you need everything open at once (anaphylaxis), use the skeleton key (epinephrine). Pure physiological poetry. Pharmacological precision?"
+      },
+      "isotopes": [
+        "ans.neurotransmitter"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — Autonomic Nervous System",
+      "scaffoldFile": "200.6-autonomic-nervous-system-scaffolds/200.6.06-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.5,
+        "G": 0.7,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.6.07",
+      "q": "Parasympathetic stimulation of the heart causes ___.",
+      "options": [
+        "Increased heart rate and force of contraction",
+        "Decreased heart rate",
+        "Increased blood pressure via vasoconstriction",
+        "Dilation of the pupils"
+      ],
+      "answer": 1,
+      "explain": "Move with me toward this: Side of cardiac control. Parasympathetic fibers (vagus nerve) release ACh onto muscarinic receptors in the SA and AV nodes, SLOWING the heart. This is the 'rest and digest' influence — conserving energy, calming the rhythm. Let me show you how it works.",
+      "mechanism": {
+        "title": "Vagal Cardiac Control: Slowing the Heart",
+        "content": "Set out toward this: Into this elegant inhibitory mechanism. PATHWAY: Vagus nerve → cardiac ganglia (in heart wall) → short postganglionic fibers → SA node and AV node. NEUROTRANSMITTER: ACh → M2 muscarinic receptors (Gi-coupled). MECHANISM: M2 activation: (1) Opens GIRK channels (G-protein gated inwardly rectifying K⁺ channels) → K⁺ efflux → hyperpolarization → slower spontaneous depolarization. (2) Decreases cAMP → reduces If (funny current) and ICa,L → slower pacemaker rate. EFFECTS: Decreased SA node firing rate (negative chronotropy). Decreased AV node conduction velocity (negative dromotropy). Little effect on ventricular contractility (sparse vagal innervation to ventricles). Take a moment to appreciate this: Applications: Atropine (muscarinic blocker) blocks vagal effects → tachycardia. Excessive vagal tone (vasovagal syncope) → extreme bradycardia → fainting. Your resting heart rate is approximately 70 bpm because of constant vagal 'brake' on the intrinsic 100 bpm SA node rate. Parasympathetic dominance = rest and conservation.",
+        "metaphor": "The vagus nerve is like a gentle hand constantly pressing the brake pedal on your heart. Let me show you: Without any nerve input, your heart would race at 100 bpm. The vagus holds it down to a calm 60-70. When you need to run from danger, sympathetic signals tell the vagus to lift the brake while also pressing the accelerator. At rest, the brake is always gently applied. Evolution's crowning achievement. Beautiful balance of control?"
+      },
+      "isotopes": [
+        "ans.receptor"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — Autonomic Nervous System",
+      "scaffoldFile": "200.6-autonomic-nervous-system-scaffolds/200.6.07-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.6.08",
+      "q": "Which receptor type is found at ALL autonomic ganglia?",
+      "options": [
+        "Muscarinic cholinergic receptors",
+        "Nicotinic cholinergic receptors",
+        "Alpha adrenergic receptors",
+        "Beta adrenergic receptors"
+      ],
+      "answer": 1,
+      "explain": "Nicotinic receptors are the universal gatekeepers of autonomic ganglia. Whether sympathetic or parasympathetic, the preganglionic neuron releases ACh onto nicotinic receptors on the postganglionic neuron. This is the consistent first step in both divisions. Let me show you why this matters.",
+      "mechanism": {
+        "title": "The Ganglionic Synapse: Nicotinic Receptors",
+        "content": "Embrace this: Immersed in this pharmacological bottleneck. ALL autonomic ganglia (sympathetic chain ganglia, prevertebral ganglia, parasympathetic terminal ganglia) use the same transmission mechanism: PRESYNAPTIC: Preganglionic neuron releases ACh from vesicles. RECEPTOR: NN (neuronal nicotinic) receptors — pentameric ligand-gated ion channels composed of α and β subunits. MECHANISM: ACh binding opens the channel → Na⁺ influx (mainly) → rapid depolarization (EPSP) → action potential in postganglionic neuron. MODULATION: The ganglion isn't just a relay — it can integrate inputs, amplify signals (one preganglionic to many postganglionic), and be modified by peptide co-transmitters. Journey with me into this: : Nicotine initially stimulates these receptors (mimicking ACh) but with prolonged exposure causes depolarization block. This is why first-time smokers may experience autonomic symptoms — nausea, dizziness, tachycardia. Curare-like drugs at the neuromuscular junction block NM (muscle nicotinic) receptors, distinct from the NN ganglionic receptors. Different nicotinic subtypes, different selectivity.",
+        "metaphor": "The nicotinic receptor at the ganglion is like a universal security checkpoint that everyone must pass through — sympathetic and parasympathetic alike. Let me show you: ACh is the ID badge that opens the gate. If you shut down this checkpoint (ganglionic blockers), nothing gets through from either division. It's a powerful but blunt intervention. The body's quiet genius. Striking vulnerability in the system?"
+      },
+      "isotopes": [
+        "ans.receptor"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — Autonomic Nervous System",
+      "scaffoldFile": "200.6-autonomic-nervous-system-scaffolds/200.6.08-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.6.09",
+      "q": "Which structure is considered a modified sympathetic ganglion that releases hormones directly into the blood?",
+      "options": [
+        "Ciliary ganglion",
+        "Celiac ganglion",
+        "Adrenal medulla",
+        "Superior cervical ganglion"
+      ],
+      "answer": 2,
+      "explain": "Let's explore this together: Into this beautiful developmental variation. The adrenal medulla is embryologically derived from neural crest cells — the same origin as sympathetic ganglia. Its chromaffin cells are essentially modified postganglionic neurons that lack axons and instead release their 'neurotransmitters' (epinephrine and norepinephrine) directly into the bloodstream. Let me show you how this amplifies the fight-or-flight response.",
+      "mechanism": {
+        "title": "Adrenal Medulla: The Neuroendocrine Amplifier",
+        "content": "Surrender to the logic here: Evolutionary masterpiece. DEVELOPMENT: Chromaffin cells derive from neural crest (same as sympathetic ganglia). They migrate to the adrenal cortex region during development. INNERVATION: Preganglionic sympathetic fibers from T10-T11 via greater splanchnic nerve synapse directly on chromaffin cells — no intervening ganglion. SECRETION: ACh → nicotinic receptors → Ca²⁺ entry → exocytosis of catecholamine-containing granules. Products: ~80% epinephrine, ~20% norepinephrine. EFFECTS: Released into blood → systemic distribution → acts on all tissues with adrenergic receptors. Duration: Minutes (hormone metabolism) vs. Milliseconds (synaptic NE). Step into this world: Relevance: Pheochromocytoma (tumor of chromaffin cells) causes episodic hypertension, headache, sweating, palpitations due to catecholamine release. Measurement of plasma/urine catecholamines and their metabolites (metanephrines, VMA) aids diagnosis. Surgical removal must be preceded by alpha-blockade (to prevent hypertensive crisis) followed by beta-blockade. The adrenal medulla can be dangerous when uncontrolled.",
+        "metaphor": "The adrenal medulla is like a sympathetic nerve that traded its axon for a megaphone. Let me show you: Instead of whispering to one organ, it shouts into the bloodstream and the whole body hears. When you need a brief, local response, sympathetic nerves handle it. When you need your entire body mobilized for survival, the adrenal medulla broadcasts the alarm. Sublimely intricate. Amplification?"
+      },
+      "isotopes": [
+        "ans.neurotransmitter"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — Autonomic Nervous System",
+      "scaffoldFile": "200.6-autonomic-nervous-system-scaffolds/200.6.09-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.6.10",
+      "q": "Dual innervation means that most visceral organs receive input from ___.",
+      "options": [
+        "Two different spinal cord levels",
+        "Both somatic and autonomic nervous systems",
+        "Both sympathetic and parasympathetic divisions",
+        "Both sensory and motor neurons"
+      ],
+      "answer": 2,
+      "explain": "Venture here: Into this elegant push-pull system. Most visceral organs receive BOTH sympathetic AND parasympathetic innervation — dual innervation. These two divisions typically have opposing effects, creating fine-tuned control through their balance. Let me show you how this works.",
+      "mechanism": {
+        "title": "Dual Innervation: The Push-Pull Balance",
+        "content": "Explore alongside me: Into this dynamic equilibrium. COOPERATIVE ANTAGONISM: In most cases, sympathetic and parasympathetic have opposite effects on the same organ. The final organ state is determined by the balance of activity in both divisions. EXAMPLES: Heart — sympathetic (β1) increases rate, parasympathetic (M2) decreases rate. Resting heart rate reflects parasympathetic dominance. GI tract — parasympathetic increases motility and secretion, sympathetic inhibits. After a meal, parasympathetic dominates. Pupil — sympathetic (α1 on radial muscle) dilates, parasympathetic (M3 on sphincter muscle) constricts. Now for the piece de resistance — these aren't just on/off switches. The 'tone' of each division can be adjusted independently: Increasing sympathetic OR decreasing parasympathetic both shift the balance toward sympathetic effects. EXCEPTIONS: Some organs lack dual innervation: Most blood vessels (sympathetic only — vasomotor tone maintained by constant sympathetic firing), sweat glands, adrenal medulla, arrector pili. Let this settle: Implications: Drugs affecting one division will shift the balance — atropine (parasympathetic block) produces sympathetic-like effects even without changing sympathetic activity.",
+        "metaphor": "Dual innervation is like having both a gas pedal (sympathetic) and a brake (parasympathetic) pressed simultaneously but to different degrees. Let me show you: Your heart rate reflects which pedal is pressed harder. Lift the brake (decrease parasympathetic), and you accelerate even without pressing the gas harder. This gives the body two independent ways to adjust each organ. Artistry in flesh. Isn't that beautiful?"
+      },
+      "isotopes": [
+        "ans.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — Autonomic Nervous System",
+      "scaffoldFile": "200.6-autonomic-nervous-system-scaffolds/200.6.10-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.5,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.6.11",
+      "q": "The fight-or-flight response includes all of the following EXCEPT ___.",
+      "options": [
+        "Increased heart rate and blood pressure",
+        "Bronchodilation for increased oxygen intake",
+        "Increased digestive activity",
+        "Dilation of pupils"
+      ],
+      "answer": 2,
+      "explain": "Here's where survival priorities become clear. During fight-or-flight, the body INHIBITS digestion — blood and energy are redirected to muscles, heart, and brain. Descend with me into this: Into this ruthless efficiency: When a predator is chasing you, digesting your lunch is not a priority. The GI tract shuts down. Let me show you what activates instead.",
+      "mechanism": {
+        "title": "Fight-or-Flight: The Sympathetic Response",
+        "content": "Walk this path: Through this coordinated survival response. CARDIOVASCULAR: Heart rate and contractility increased (β1), blood pressure elevated (α1 vasoconstriction + increased cardiac output), blood redistributed from viscera to skeletal muscles. RESPIRATORY: Bronchodilation (β2) for increased airflow, respiratory rate increased. METABOLIC: Glycogenolysis in liver (β2) and muscle (β2) releases glucose, lipolysis (β3) releases fatty acids — fuel for action. EYES: Pupils dilate (α1 radial muscle) for better vision, ciliary muscle relaxes for far vision. SKIN: Piloerection ('goosebumps' — α1 on arrector pili), sweating (ACh on muscarinic receptors — the exception), vasoconstriction (pale skin). SUPPRESSED FUNCTIONS: GI motility/secretion decreased, bladder wall relaxed/sphincter contracted (urinary retention), salivation decreased (dry mouth). ADRENAL MEDULLA: Epinephrine release amplifies and prolongs all effects. Breathe in this knowledge: The prioritization: Everything for survival, nothing for housekeeping. Chronic stress keeps this system active, leading to hypertension, digestive problems, and immunosuppression. The survival response isn't meant to be sustained.",
+        "metaphor": "Fight-or-flight is like an emergency protocol that shuts down all non-essential systems and redirects resources to survival. Let me show you: The body is like a city that suddenly cuts power to restaurants and shopping malls (digestion) to keep the emergency services running (heart, muscles, brain). When the threat passes, the parasympathetic 'rest and digest' system gradually restores normal operations. Designed with precision. Beautiful priority system?"
+      },
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — Autonomic Nervous System",
+      "scaffoldFile": "200.6-autonomic-nervous-system-scaffolds/200.6.11-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.5,
+        "I": 0.0,
+        "D": 0.8,
+        "R": 0.8,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.6.12",
+      "q": "The hypothalamus is considered the main integration center for autonomic control because it ___.",
+      "options": [
+        "Contains all preganglionic neurons",
+        "Receives input from cortex and limbic system and sends output to brainstem autonomic centers",
+        "Is part of the peripheral nervous system",
+        "Only controls sympathetic responses"
+      ],
+      "answer": 1,
+      "explain": "Accompany me through this: Center. The hypothalamus sits at the crossroads of consciousness and visceral control — it receives input from the cortex (conscious thought), limbic system (emotions), and visceral sensory pathways, then coordinates autonomic output through brainstem nuclei. Let me show you how your thoughts become heartbeats.",
+      "mechanism": {
+        "title": "CNS Control of the ANS: Hierarchy of Command",
+        "content": "Allow your mind to embrace this: Immersed in this command hierarchy. LEVEL 1 — HYPOTHALAMUS: Master autonomic coordinator. Receives input from cortex, limbic system, and visceral sensors. Integrates information about emotions, body state, and environment. Sends commands to brainstem. Different regions control different responses: Paraventricular nucleus → stress response, suprachiasmatic nucleus → circadian rhythms, preoptic area → temperature regulation. LEVEL 2 — BRAINSTEM: Contains autonomic nuclei that directly control preganglionic neurons. Nucleus tractus solitarius (NTS) — primary visceral sensory relay. Dorsal motor nucleus of vagus — parasympathetic to gut. Nucleus ambiguus — parasympathetic to heart. Rostral ventrolateral medulla (RVLM) — sympathetic vasomotor center. Pontine micturition center — bladder control. LEVEL 3 — SPINAL CORD: Contains preganglionic neuron cell bodies in lateral horn (T1-L2 sympathetic, S2-S4 parasympathetic). Executes commands from above but can also mediate some reflexes independently. The cortex can influence this hierarchy: Voluntary control of breathing, conscious relaxation affecting heart rate. Biofeedback training works by learning to influence this normally unconscious hierarchy.",
+        "metaphor": "The CNS control of the ANS is like a military command structure. Let me show you: The hypothalamus is the general who receives intelligence from all sources and makes strategic decisions. The brainstem nuclei are the officers who translate orders into specific commands. The spinal cord preganglionic neurons are the soldiers who carry out the orders. And above the general? The cortex is like civilian leadership that can override military decisions in special circumstances (you can voluntarily hold your breath, consciously relax). The pinnacle of adaptation. Beautiful hierarchy?"
+      },
+      "isotopes": [
+        "ans.pathway"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — Autonomic Nervous System",
+      "scaffoldFile": "200.6-autonomic-nervous-system-scaffolds/200.6.12-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.5,
+        "G": 0.5,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.6.13",
+      "q": "Sympathetic and parasympathetic divisions interact primarily through ___.",
+      "options": [
+        "Physical overlap of nerve fibers at target organs",
+        "Reciprocal inhibition and dual innervation",
+        "Shared ganglia",
+        "Identical neurotransmitters"
+      ],
+      "answer": 1,
+      "explain": "Travel deeper into this: Into this elegant dance of opposition. The two ANS divisions interact through dual innervation (both reaching the same organ) and reciprocal inhibition (when one increases, the other often decreases). This creates smooth, graded control rather than jerky on-off responses. Let me show you how they coordinate.",
+      "mechanism": {
+        "title": "Division Interactions: Coordination and Balance",
+        "content": "Advance into this: Into this dynamic interplay. RECIPROCAL CENTRAL CONTROL: The hypothalamus and brainstem coordinate sympathetic and parasympathetic activity. Activation of sympathetic centers (posterior hypothalamus, RVLM) typically coincides with inhibition of parasympathetic centers, and vice versa. This is mediated by interneurons that connect the two control systems. DUAL INNERVATION AT TARGETS: Most visceral organs receive both sympathetic and parasympathetic fibers. The final organ state reflects the algebraic sum of their influences. LOCAL INTERACTIONS: Pre- and postsynaptic receptors can modulate transmission: α2 receptors on cholinergic terminals (sympathetic NE inhibits parasympathetic ACh release), M2 receptors on adrenergic terminals (parasympathetic ACh inhibits sympathetic NE release). COOPERATIVE EFFECTS: In some cases, divisions work together rather than opposing: Male sexual function requires parasympathetic (erection) followed by sympathetic (ejaculation). Salivary secretion involves both divisions (different aspects). Receive this insight: Applications: Autonomic neuropathy (as in diabetes) disrupts this balance — patient may have tachycardia at rest (lost vagal tone) yet orthostatic hypotension (lost sympathetic vasoconstriction). Measuring heart rate variability (HRV) assesses autonomic balance: High HRV = healthy, flexible autonomic control; low HRV = rigid, less adaptable system (associated with cardiac risk).",
+        "metaphor": "The interaction between sympathetic and parasympathetic is like a thermostat with both heating and cooling. Let me show you: They don't fight each other — they take turns. When you need to warm up (sympathetic activation), the heating turns on AND the cooling turns off (parasympathetic withdrawal). The room (organ) reaches the desired temperature through coordinated adjustment of both systems. Beautifully inevitable. Homeostatic control?"
+      },
+      "isotopes": [
+        "ans.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — Autonomic Nervous System",
+      "scaffoldFile": "200.6-autonomic-nervous-system-scaffolds/200.6.13-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.8,
+        "D": 0.8,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.6.14",
+      "q": "Which statement about autonomic tone is correct?",
+      "options": [
+        "Autonomic tone only exists in the parasympathetic division",
+        "Blood vessels are maintained at partial constriction by constant sympathetic firing",
+        "Autonomic tone disappears during sleep",
+        "The heart has no baseline autonomic tone"
+      ],
+      "answer": 1,
+      "explain": "Proceed with me: Into this continuous background activity. Blood vessels maintain partial constriction through constant sympathetic firing — this is 'vasomotor tone.' Without it, you'd collapse from hypotension every time you stood up. Let me show you how this tonic activity enables fine-tuned control.",
+      "mechanism": {
+        "title": "Autonomic Tone: The Baseline That Enables Control",
+        "content": "Welcome this realization: Immersed in this fundamental concept. DEFINITION: Autonomic tone is the continuous baseline activity in autonomic nerves, creating a set point from which activity can increase or decrease. VASOMOTOR TONE: Sympathetic fibers to blood vessels fire at 1-3 Hz at rest, maintaining partial vasoconstriction. This enables bidirectional control: Increase firing → vasoconstriction → increased BP; decrease firing → vasodilation → decreased BP. VAGAL TONE: Parasympathetic fibers to the heart maintain constant inhibitory influence, keeping heart rate below intrinsic SA node rate. At rest, vagal tone dominates — resting heart rate ~70 bpm reflects vagal 'braking' of the intrinsic ~100 bpm. BALANCE: In dually innervated organs, the balance of sympathetic and parasympathetic tone determines the resting state. Embark on this: : Loss of sympathetic tone (spinal shock, autonomic neuropathy) → hypotension, orthostatic intolerance. Loss of vagal tone (diabetic autonomic neuropathy) → resting tachycardia, reduced heart rate variability. Measuring resting heart rate and blood pressure response to standing can assess autonomic tone clinically. Heart rate variability (HRV) analysis reveals the dynamic fluctuation of vagal tone — higher variability indicates healthier autonomic function.",
+        "metaphor": "Autonomic tone is like keeping your car engine running at idle rather than shutting it off completely. Let me show you: From idle, you can easily accelerate (increase activity) OR let off the gas slightly (decrease activity). If the engine were off, you could only accelerate — you'd have to start from zero every time. The ANS keeps the engine idling constantly, allowing instant adjustment in either direction. Exquisitely logical. Design?"
+      },
+      "isotopes": [
+        "ans.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — Autonomic Nervous System",
+      "scaffoldFile": "200.6-autonomic-nervous-system-scaffolds/200.6.14-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "200.6.15",
+      "q": "Which of the following correctly describes the muscarinic receptor?",
+      "options": [
+        "It is a ligand-gated ion channel",
+        "It is found at autonomic ganglia",
+        "It is a G-protein coupled receptor activated by ACh",
+        "It is activated by norepinephrine"
+      ],
+      "answer": 2,
+      "explain": "Set out toward this: Into muscarinic pharmacology. Muscarinic receptors are metabotropic — they're G-protein coupled receptors (GPCRs) that use second messenger cascades when ACh binds. This makes them slower but allows for amplification and diverse effects. Let me show you where they work and what they do.",
+      "mechanism": {
+        "title": "Muscarinic Receptors: The Parasympathetic Targets",
+        "content": "Discover with me: Through the muscarinic receptor subtypes. M1 (Gq): Neural (CNS, autonomic ganglia — modulates transmission), gastric parietal cells (stimulates acid secretion). Antagonist: Pirenzepine (anti-ulcer). M2 (Gi): Heart (SA node, AV node, atria) — activates GIRK channels, decreases cAMP → slows heart rate, slows conduction. Also presynaptic on nerve terminals. M3 (Gq): Smooth muscle (gut, bladder, bronchi — contracts), glands (salivary, lacrimal, bronchial — secretion), vascular endothelium (NO release → vasodilation). M4 (Gi): CNS predominantly. M5 (Gq): CNS, dopaminergic neurons. Open your mind to this: Pharmacology: AGONISTS (direct parasympathomimetics): Bethanechol (M3 — urinary retention, post-op ileus), pilocarpine (M3 — glaucoma, dry mouth). ANTAGONISTS (parasympatholytics): Atropine (all muscarinic — emergency bradycardia, organophosphate poisoning), ipratropium (M3 — COPD/asthma), scopolamine (motion sickness), oxybutynin (M3 — overactive bladder). Muscarinic receptor distribution explains atropine's systemic effects: 'blind as a bat (dilated pupils), hot as a hare (no sweating), dry as a bone (no secretions), red as a beet (cutaneous vasodilation), mad as a hatter (CNS effects)'.",
+        "metaphor": "Muscarinic receptors are like sophisticated control panels that trigger elaborate internal responses when ACh pushes their buttons. Let me show you: Unlike nicotinic receptors (simple on/off light switches), muscarinic receptors activate entire programs — second messenger cascades that amplify the signal and produce complex effects. This is why parasympathetic effects develop more slowly but can be more nuanced. Stunning, yes? Signal processing?"
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — Autonomic Nervous System",
+      "scaffoldFile": "200.6-autonomic-nervous-system-scaffolds/200.6.15-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.5,
+        "R": 0.8,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.6
+      }
+    },
+    {
+      "id": "200.6.16",
+      "q": "Stimulation of β2 receptors in the bronchi causes ___.",
+      "options": [
+        "Bronchoconstriction",
+        "Bronchodilation",
+        "Increased mucus secretion",
+        "Coughing reflex"
+      ],
+      "answer": 1,
+      "explain": "Journey with me into this: Into respiratory pharmacology. β2 receptors on bronchial smooth muscle cause RELAXATION when activated — bronchodilation. This is the sympathetic effect: Open the airways for maximum oxygen during fight-or-flight. Let me show you why this receptor is the target of asthma medications.",
+      "mechanism": {
+        "title": "β2 Receptors: Bronchodilation and Beyond",
+        "content": "Grant yourself this moment of clarity: Immersed in β2 receptor pharmacology. MECHANISM: β2 receptors are Gs-coupled GPCRs. Agonist binding → Gs activation → adenylyl cyclase activation → increased cAMP → PKA activation. In smooth muscle: PKA phosphorylates myosin light chain kinase (MLCK), reducing its affinity for Ca²⁺/calmodulin → decreased contraction → RELAXATION. LOCATIONS and EFFECTS: Bronchial smooth muscle — bronchodilation. Vascular smooth muscle (skeletal muscle beds) — vasodilation. Uterus — relaxation (tocolytic effect, used to delay premature labor). Skeletal muscle — increased contractility, tremor (side effect of β2 agonists). Liver — glycogenolysis (glucose release). Pancreas — increased insulin secretion. Follow me deeper: : β2 AGONISTS: SABA (albuterol) — quick onset, short duration, rescue therapy. LABA (salmeterol, formoterol) — slow onset, long duration, maintenance therapy. β2 selectivity reduces cardiac effects (β1), but high doses can still cause tachycardia. The most common side effects of β2 agonists are tremor (skeletal muscle β2) and tachycardia (some β1 cross-activation). The therapeutic window is defined by these off-target effects.",
+        "metaphor": "β2 receptors are like 'relax' buttons on smooth muscle. Let me show you: Press them (with epinephrine or a β2 agonist drug), and the muscle loosens its grip. In the airways, this opens the tubes wider. Asthma is essentially smooth muscle squeezing the airways closed. β2 agonists tell that muscle to let go. Quite breathtaking. Beautiful therapeutic target?"
+      },
+      "isotopes": [
+        "ans.receptor"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — Autonomic Nervous System",
+      "scaffoldFile": "200.6-autonomic-nervous-system-scaffolds/200.6.16-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.6.17",
+      "q": "A 45-year-old man presents with orthostatic hypotension, resting tachycardia of 110 bpm, gastroparesis, erectile dysfunction, and inability to sweat. Which component of the ANS is most likely failing?",
+      "options": [
+        "Parasympathetic division only",
+        "Sympathetic division only",
+        "Both divisions (autonomic neuropathy)",
+        "Somatic nervous system"
+      ],
+      "answer": 2,
+      "explain": "Step into this world: Into this devastating clinical picture. This patient has BOTH parasympathetic failure (gastroparesis — no gut motility, erectile dysfunction — no parasympathetic-mediated erection) AND sympathetic failure (orthostatic hypotension — no vasoconstriction on standing, inability to sweat, resting tachycardia from loss of vagal brake). Let me show you why this pattern screams diabetic autonomic neuropathy.",
+      "mechanism": {
+        "title": "Autonomic Neuropathy: When Both Divisions Fail",
+        "content": "Allow the mechanism to reveal itself: Clinical syndrome. CAUSES: Diabetes mellitus (most common — chronic hyperglycemia damages small nerve fibers), amyloidosis, autoimmune autonomic ganglionopathy, Parkinson's disease, multiple system atrophy. PATHOPHYSIOLOGY: Small unmyelinated and lightly myelinated autonomic fibers (both preganglionic and postganglionic) are vulnerable to metabolic, inflammatory, or degenerative damage. MANIFESTATIONS: CARDIOVASCULAR: Resting tachycardia (loss of vagal tone), orthostatic hypotension (loss of reflex sympathetic vasoconstriction), loss of heart rate variability (both divisions affected), silent myocardial ischemia (loss of cardiac pain fibers). GASTROINTESTINAL: Gastroparesis (delayed stomach emptying), constipation or diarrhea (loss of coordinated motility), fecal incontinence. GENITOURINARY: Erectile dysfunction (loss of parasympathetic vasodilation), retrograde ejaculation (loss of sympathetic sphincter control), neurogenic bladder (incomplete emptying, incontinence). SUDOMOTOR: Anhidrosis (inability to sweat), heat intolerance. PUPILLARY: Loss of light reflex, impaired dark adaptation. Enter this realm: Into diagnosis: AUTONOMIC FUNCTION TESTS: Heart rate response to deep breathing (should vary >15 bpm), Valsalva maneuver (should cause characteristic BP/HR pattern), tilt table testing (orthostatic vitals), quantitative sudomotor axon reflex test (QSART). The prognosis is poor once established: 5-year mortality increases significantly. Prevention through glycemic control in diabetes is critical.",
+        "metaphor": "Autonomic neuropathy is like losing both the accelerator AND the brake on your car's autonomic systems. Let me show you: Without the brake (parasympathetic), your heart races and won't slow down. Without the accelerator (sympathetic), your blood pressure can't rise when needed and you overheat because you can't sweat. The car still runs, but it's dangerously out of control. You can't speed up when you need to, can't slow down when you should. Absolutely elegant. Terrifying loss of regulation?"
+      },
+      "isotopes": [
+        "ans.function"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — Autonomic Nervous System",
+      "scaffoldFile": "200.6-autonomic-nervous-system-scaffolds/200.6.17-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "200.6.18",
+      "q": "A patient with a pheochromocytoma presents with episodic severe hypertension (BP 220/120), pounding headaches, profuse sweating, and palpitations. During an episode, you'd expect elevated levels of which substances in the blood?",
+      "options": [
+        "Acetylcholine only",
+        "Epinephrine and norepinephrine",
+        "GABA and serotonin",
+        "Muscarine and nicotine"
+      ],
+      "answer": 1,
+      "explain": "Dive into this: Into this sympathetic storm. Pheochromocytoma is a tumor of the adrenal medulla chromaffin cells — those modified sympathetic neurons that release catecholamines directly into the blood. Episodic massive release of epinephrine and norepinephrine creates this terrifying clinical picture. Let me show you why each symptom makes sense.",
+      "mechanism": {
+        "title": "Pheochromocytoma: The Catecholamine-Secreting Tumor",
+        "content": "Descend with me into this: Into this neuroendocrine emergency. PATHOLOGY: Tumor of chromaffin cells, usually in the adrenal medulla (90%) but can be extra-adrenal (paraganglioma). About 10% are malignant. SECRETION: Episodic or sustained release of catecholamines — epinephrine (if adrenal medulla, which has PNMT enzyme) and norepinephrine. Some tumors also secrete dopamine. CLINICAL PRESENTATION: Classic triad — episodic headaches, sweating, palpitations. Sustained or paroxysmal hypertension (can mimic essential HTN). Orthostatic hypotension (chronic catecholamine exposure downregulates receptors). Hyperglycemia (catecholamines inhibit insulin, increase glucagon). Anxiety, tremor, pallor (vasoconstriction). TRIGGERS: Physical pressure on tumor, certain foods (tyramine), anesthesia, certain medications. DIAGNOSIS: 24-hour urine collection for metanephrines, normetanephrines, VMA (vanillylmandelic acid). Plasma free metanephrines (high sensitivity). Imaging: CT or MRI adrenals, MIBG scan (radiotracer taken up by chromaffin cells). TREATMENT: Surgical excision is curative. Preoperative preparation is CRITICAL: (1) Alpha-blockade FIRST (phenoxybenzamine 10-14 days before surgery) — controls BP, allows vascular volume expansion. (2) Beta-blockade SECOND (propranolol) — controls tachycardia. NEVER reverse this order! (3) High-salt diet, volume expansion. Intraoperative: Expect hypertensive crisis during tumor manipulation, hypotension after tumor removal (suddenly no catecholamines). Sit with this knowledge — the '10% tumor': 10% bilateral, 10% extra-adrenal, 10% malignant, 10% familial (MEN 2A/2B, von Hippel-Lindau, neurofibromatosis, hereditary paraganglioma syndromes).",
+        "metaphor": "A pheochromocytoma is like a rogue sympathetic fire alarm that goes off randomly, flooding your body with emergency hormones when there's no emergency. Let me show you: Every time the alarm sounds, your body mobilizes for a threat that doesn't exist — blood pressure skyrockets, heart pounds, you break into a sweat. The only way to stop the false alarms is to surgically remove the broken alarm system. But first, you must prepare the body to survive one last massive surge when you touch the tumor during surgery. Wonderfully designed. Dangerous dance?"
+      },
+      "isotopes": [
+        "ans.neurotransmitter"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — Autonomic Nervous System",
+      "scaffoldFile": "200.6-autonomic-nervous-system-scaffolds/200.6.18-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.6.19",
+      "q": "An asthmatic patient is started on propranolol (non-selective β-blocker) for hypertension. Two days later, he develops severe bronchospasm requiring hospitalization. What receptor blockade caused this crisis?",
+      "options": [
+        "α1 receptors",
+        "β1 receptors",
+        "β2 receptors",
+        "Muscarinic receptors"
+      ],
+      "answer": 2,
+      "explain": "Traverse this territory: Into this preventable tragedy. Propranolol blocks BOTH β1 and β2 receptors. Blocking β2 on bronchial smooth muscle removes the sympathetic bronchodilation — the airways constrict. In an asthmatic whose airways are already hyperreactive, this can be catastrophic. Let me show you why β-selectivity matters.",
+      "mechanism": {
+        "title": "β-Blocker-Induced Bronchospasm: Receptor Selectivity Matters",
+        "content": "Consider the elegance here: Immersed in this pharmacological disaster. NORMAL β2 FUNCTION: Sympathetic activation and circulating epinephrine → β2 receptors on bronchial smooth muscle → Gs → increased cAMP → relaxation → bronchodilation. This opposes parasympathetic bronchoconstriction (M3 receptors) and inflammatory mediators. ASTHMA PATHOPHYSIOLOGY: Airway hyperreactivity, inflammation, baseline increased smooth muscle tone. Patients depend on β2-mediated bronchodilation to maintain adequate airflow. Many use β2 agonist inhalers (albuterol) as rescue medication. β-BLOCKER EFFECT: NON-SELECTIVE (propranolol, nadolol, timolol) — block BOTH β1 (cardiac) and β2 (pulmonary, vascular). Blocking β2 → loss of bronchodilation → unopposed bronchoconstriction. In asthmatics, this can trigger severe bronchospasm, respiratory distress, even death. CARDIOSELECTIVE (metoprolol, atenolol, bisoprolol) — preferentially block β1, relatively spare β2. Still have SOME β2 blockade, especially at higher doses. Safer in patients with reactive airway disease but NOT risk-free. Walk this path: Implications: ABSOLUTE CONTRAINDICATIONS for non-selective β-blockers — asthma, severe COPD, acute bronchospasm. RELATIVE CONTRAINDICATIONS for cardioselective β-blockers — use lowest effective dose, monitor closely. ALTERNATIVES for hypertension in asthmatics — ACE inhibitors, ARBs, calcium channel blockers, diuretics. Even TOPICAL β-blockers for glaucoma (timolol eye drops) can be systemically absorbed and cause bronchospasm in susceptible patients. The lesson: Always ask about lung disease before prescribing any β-blocker.",
+        "metaphor": "β2 receptors are like the 'keep airways open' signal in the lungs. Let me show you: In an asthmatic, the airways are already twitchy and ready to clamp shut. That β2 signal is one of the few things keeping them open. Giving a non-selective β-blocker is like cutting the rope holding up a drawbridge. The bridge (airways) crashes down, and nothing can get through. A cardioselective β-blocker is like fraying the rope but not cutting it completely — still risky, but less catastrophic. Brilliantly engineered. Vivid image of why drug selectivity saves lives?"
+      },
+      "isotopes": [
+        "ans.receptor"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — Autonomic Nervous System",
+      "scaffoldFile": "200.6-autonomic-nervous-system-scaffolds/200.6.19-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.8,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.6.20",
+      "q": "A 70-year-old man with benign prostatic hyperplasia (BPH) has difficulty initiating urination and a weak urinary stream. He's prescribed an α1-blocker (tamsulosin). Which mechanism explains the therapeutic benefit?",
+      "options": [
+        "Increased bladder detrusor muscle contraction",
+        "Relaxation of internal urethral sphincter and prostate smooth muscle",
+        "Increased parasympathetic tone to the bladder",
+        "Blocking β-receptors in the bladder"
+      ],
+      "answer": 1,
+      "explain": "Accompany me through this: Pharmacology of urination. α1 receptors on the prostate and internal urethral sphincter mediate sympathetic contraction — keeping the sphincter closed and the prostate tissue tense. Block those receptors, and the smooth muscle relaxes — the outlet opens, urine flows. Let me show you why this works.",
+      "mechanism": {
+        "title": "Autonomic Control of Micturition and α1-Blockers in BPH",
+        "content": "Travel deeper into this: Orchestration of urination. STORAGE PHASE (sympathetic dominance): Hypogastric nerve (T10-L2 sympathetic) — β3 receptors → detrusor relaxation (bladder fills without contracting). α1 receptors → internal sphincter contraction (outlet stays closed). Pudendal nerve (S2-S4 somatic) — external sphincter voluntarily contracted. VOIDING PHASE (parasympathetic dominance): Pelvic splanchnic nerves (S2-S4 parasympathetic) — M3 receptors → detrusor contraction. Sympathetic inhibited → sphincter relaxes. Voluntary relaxation of external sphincter. BPH OBSTRUCTION: STATIC component — enlarged gland tissue compresses urethra. DYNAMIC component — α1-mediated smooth muscle tone in prostate and bladder neck adds to resistance. α1-BLOCKER THERAPY: Blocks α1 receptors (especially α1A subtype predominant in prostate) → smooth muscle relaxation → decreased outlet resistance → improved peak flow rate, decreased residual urine, relief of symptoms (hesitancy, weak stream, frequency). DRUGS: Tamsulosin (α1A-selective — fewer cardiovascular effects), alfuzosin, doxazosin (non-selective — also lowers BP). SIDE EFFECTS: Orthostatic hypotension (vascular α1 blockade), dizziness, retrograde ejaculation (relaxed bladder neck), nasal congestion. Absorb this: Therapy: α1-blocker (immediate symptom relief) + 5α-reductase inhibitor like finasteride (shrinks prostate over months by blocking DHT). The MTOPS trial showed combination therapy superior to either alone for reducing BPH progression.",
+        "metaphor": "The prostate and bladder neck are like a drawstring bag that's too tight. Let me show you: The α1 receptors are constantly pulling the drawstring closed. An α1-blocker loosens the grip, letting the opening widen so urine can flow out more easily. It doesn't make the bag smaller (that's what finasteride does over time), but it makes the opening less constricted right away. A masterpiece of biology. Symptomatic relief?"
+      },
+      "isotopes": [
+        "ans.receptor"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — Autonomic Nervous System",
+      "scaffoldFile": "200.6-autonomic-nervous-system-scaffolds/200.6.20-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.8,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.6
+      }
+    },
+    {
+      "id": "200.6.21",
+      "q": "A 28-year-old woman presents to the ER after eating wild mushrooms. She has profuse salivation, lacrimation, urination, diarrhea, sweating, and miosis (pinpoint pupils). Which receptor type has been overstimulated?",
+      "options": [
+        "Nicotinic receptors at autonomic ganglia",
+        "α1 adrenergic receptors",
+        "Muscarinic receptors at parasympathetic targets",
+        "β2 adrenergic receptors"
+      ],
+      "answer": 2,
+      "explain": "Press onward: Into this classic toxidrome. The constellation of SLUDGE (Salivation, Lacrimation, Urination, Defecation, GI distress) plus miosis and sweating screams MUSCARINIC overstimulation. She likely ate Amanita muscaria or Inocybe mushrooms containing muscarine. Let me show you why this activates the parasympathetic system.",
+      "mechanism": {
+        "title": "Cholinergic Toxicity: Muscarinic Overstimulation",
+        "content": "Open yourself to this: Immersed in cholinergic toxidromes. CAUSES: Muscarinic agonist poisoning — muscarine-containing mushrooms (Amanita muscaria, Inocybe, Clitocybe), organophosphate/carbamate insecticides (inhibit acetylcholinesterase → ACh accumulation), nerve agents (sarin, VX), pilocarpine overdose. MUSCARINIC EFFECTS: M3 (Gq-coupled): Smooth muscle contraction — GI (cramping, diarrhea, involuntary defecation), bladder (urinary urgency/incontinence), bronchi (bronchoconstriction, wheezing), pupils (miosis — pinpoint pupils). Gland secretion — salivary, lacrimal, bronchial, sweat (even though sweat glands are sympathetic, they're cholinergic). M2 (Gi-coupled): Cardiac — bradycardia, AV block, hypotension. NICOTINIC EFFECTS (with organophosphates/nerve agents, which also affect nicotinic receptors): Muscle fasciculations, weakness, paralysis (NM receptors at neuromuscular junction), autonomic ganglia stimulation then blockade. CNS EFFECTS (with agents that cross blood-brain barrier): Confusion, seizures, respiratory depression. DIAGNOSIS: Clinical presentation (SLUDGE + Killer B's), low plasma cholinesterase (organophosphates), elevated RBC cholinesterase. TREATMENT: ATROPINE (muscarinic antagonist) — initial dose 2-5 mg IV, repeat every 5-10 minutes until secretions dry up. May need massive doses (hundreds of mg over hours). PRALIDOXIME (2-PAM) for organophosphates — reactivates cholinesterase if given early. Benzodiazepines for seizures. Supportive care — airway management, ventilation. Proceed with me: With NICOTINIC toxicity: Purely nicotinic agonists (like nicotine overdose from insecticides) cause muscle fasciculations, weakness, sympathetic/parasympathetic ganglion effects. Organophosphates produce BOTH muscarinic AND nicotinic effects, making them especially deadly.",
+        "metaphor": "Muscarinic poisoning is like someone turned on ALL the parasympathetic faucets at once and broke the handles so they won't turn off. Let me show you: Tears flowing, saliva pouring, bowels emptying, bladder releasing — every secretion and every smooth muscle contracting uncontrollably. Atropine is the emergency plumber who goes around shutting off each faucet by blocking the receptors. Pure physiological poetry. Vivid image of pharmacological rescue?"
+      },
+      "isotopes": [
+        "ans.receptor"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — Autonomic Nervous System",
+      "scaffoldFile": "200.6-autonomic-nervous-system-scaffolds/200.6.21-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.8,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.6.22",
+      "q": "A patient develops severe bradycardia (heart rate 35 bpm) and hypotension after a surgical vagal nerve stimulator malfunction. The anesthesiologist administers atropine IV. Which mechanism explains the therapeutic effect?",
+      "options": [
+        "Atropine stimulates β1 receptors to increase heart rate",
+        "Atropine blocks M2 muscarinic receptors, removing vagal inhibition of the SA node",
+        "Atropine increases sympathetic tone directly",
+        "Atropine activates nicotinic receptors at autonomic ganglia"
+      ],
+      "answer": 1,
+      "explain": "Move with me toward this: Into this elegant rescue. The vagus nerve was firing excessively, dumping ACh onto M2 receptors in the SA node and profoundly slowing the heart. Atropine is a competitive muscarinic antagonist — it blocks those M2 receptors, removing the parasympathetic brake. Let me show you why the heart rate immediately rises.",
+      "mechanism": {
+        "title": "Vagal Bradycardia and Muscarinic Blockade",
+        "content": "Set out toward this: Control of heart rate and its pharmacological manipulation. NORMAL VAGAL TONE: At rest, the vagus nerve fires continuously, releasing ACh onto M2 receptors in the SA node. This parasympathetic 'brake' keeps resting heart rate ~70 bpm instead of the intrinsic SA node rate of ~100 bpm. The vagus dominates at rest. EXCESSIVE VAGAL ACTIVITY causes: Severe sinus bradycardia (<40 bpm), AV block (prolonged or blocked AV conduction), asystole (in extreme cases). CLINICAL TRIGGERS: Vasovagal syncope (sudden emotional/pain stimulus), carotid sinus hypersensitivity, increased intracranial pressure (Cushing reflex), certain medications (cholinesterase inhibitors, digoxin), vagal nerve stimulator malfunction. M2 RECEPTOR MECHANISM: Gi-coupled GPCR. Activation: Opens GIRK (inward rectifier K⁺ channels) → K⁺ efflux → hyperpolarization (membrane potential becomes more negative) → slower rate of spontaneous depolarization → decreased SA node firing rate. Inhibits adenylyl cyclase → decreased cAMP → reduced If (funny current) and ICa,L → slower pacemaker depolarization. Decreases AV nodal conduction velocity. ATROPINE REVERSAL: Competitive antagonist at M2 receptors → ACh cannot bind → vagal inhibition removed → heart rate increases to intrinsic rate or higher (if sympathetic tone is also present). SA node fires faster, AV conduction improves. DOSE and KINETICS: Adult dose 0.5-1 mg IV bolus, repeat PRN. Pediatric dose 0.02 mg/kg (minimum 0.1 mg). Onset <2 minutes, duration 2-4 hours. SIDE EFFECTS from non-selective muscarinic blockade: Tachycardia (desired in bradycardia, excessive at high doses), xerostomia (dry mouth), mydriasis and cycloplegia (dilated pupils, blurred near vision), urinary retention, constipation, hyperthermia (no sweating), CNS effects (confusion, agitation at high doses). Immerse yourself in this: Very LOW doses of atropine (<0.5 mg) can transiently worsen bradycardia via central or presynaptic mechanisms — always use adequate doses. If atropine fails to reverse bradycardia, use EPINEPHRINE (β1 stimulation) or TRANSCUTANEOUS PACING.",
+        "metaphor": "The vagus nerve is like a hand pressing the brake pedal on your heart. Let me show you: Excessive vagal stimulation is like someone standing on the brake pedal with all their weight — the heart nearly stops. Atropine doesn't press the accelerator; it just removes the heavy foot from the brake. Once the brake is released, the heart naturally speeds back up to its baseline pace. The body's quiet genius. Beautiful distinction between removing inhibition versus adding stimulation?"
+      },
+      "isotopes": [
+        "ans.receptor"
+      ],
+      "category": null,
+      "chapter": "Chapter 14 — Autonomic Nervous System",
+      "scaffoldFile": "200.6-autonomic-nervous-system-scaffolds/200.6.22-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.8,
+        "R": 0.5,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.6
+      }
+    },
+    {
+      "id": "200.6.23",
+      "q": "The phrenic nerve originates from which spinal nerve levels?",
+      "options": [
+        "C1-C2",
+        "C3-C5",
+        "T1-T2",
+        "L1-L2"
+      ],
+      "answer": 1,
+      "explain": "The phrenic nerve (C3-C5) innervates the diaphragm. Remember: 'C3, 4, 5 keeps the diaphragm alive.'",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "200.6.24",
+      "q": "The tract that carries pain and temperature sensations is the:",
+      "options": [
+        "Dorsal columns",
+        "Spinothalamic tract",
+        "Corticospinal tract",
+        "Spinocerebellar tract"
+      ],
+      "answer": 1,
+      "explain": "The spinothalamic tract carries pain, temperature, and crude touch from body to thalamus. It crosses at the spinal cord level.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "200.6.25",
+      "q": "Which structure contains the cell bodies of motor neurons that innervate skeletal muscle?",
+      "options": [
+        "Dorsal horn",
+        "Ventral horn",
+        "Lateral horn",
+        "Dorsal root ganglion"
+      ],
+      "answer": 1,
+      "explain": "Ventral horn gray matter contains somatic motor neuron cell bodies. Their axons exit via ventral roots to reach skeletal muscles.",
+      "mechanism": null,
+      "isotopes": [
+        "neurology.structure"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.5,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    }
+  ]
+}

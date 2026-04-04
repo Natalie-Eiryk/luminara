@@ -1,0 +1,564 @@
+{
+  "id": "510.1",
+  "title": "Number Sense & Operations",
+  "category": "concepts",
+  "gradeLevel": "4-5",
+  "description": "Understanding place value, whole number operations, and number relationships",
+  "questions": [
+    {
+      "id": "510.1.01",
+      "q": "In the number 47,382, what is the value of the digit 7?",
+      "options": [
+        "7",
+        "70",
+        "700",
+        "7,000"
+      ],
+      "answer": 3,
+      "chapter": "Number Sense - Place Value",
+      "explain": "Let me show you how place value works like an address system. The 7 sits in the thousands place, so its VALUE is 7,000. The digit tells you HOW MANY, but the PLACE tells you how MUCH each one is worth.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "That's the DIGIT, not its VALUE. The digit 7 appears, yes - but WHERE it sits determines its worth. In the thousands column, each 1 is worth 1,000. Seven of them? 7,000."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "70 would be the value if the 7 were in the tens place. But look again - there's an 8 in the tens place. The 7 is further left, in a more powerful position."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "700 would be the value if the 7 were in the hundreds place. But that spot is occupied by the 3. The 7 has more weight than that."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! The 7 is in the THOUSANDS place. Picture this: 47,382 = 40,000 + 7,000 + 300 + 80 + 2. The 7 represents 7 groups of 1,000. That's 7,000. Beautiful how each column is 10 times more valuable than the one to its right!"
+        }
+      ],
+      "mechanism": {
+        "title": "Place Value: The Power of Position",
+        "content": "Our number system is POSITIONAL - the same digit means different things depending on WHERE it sits. Moving one place LEFT multiplies the value by 10. Moving RIGHT divides by 10. This is why we can write ANY number using just ten digits (0-9). The position does the heavy lifting!",
+        "metaphor": "Think of place value like hotel floors. The same room number on floor 1, floor 10, or floor 100 has VERY different views and prices. The digit is the room number - the PLACE is which floor you're on."
+      },
+      "scaffoldFile": "510.1-number-sense-scaffolds/510.1.01-scaffolds.json"
+    },
+    {
+      "id": "510.1.02",
+      "q": "What is 3,456 rounded to the nearest hundred?",
+      "options": [
+        "3,000",
+        "3,400",
+        "3,500",
+        "3,460"
+      ],
+      "answer": 2,
+      "chapter": "Number Sense - Rounding",
+      "explain": "When rounding to the nearest hundred, look at the tens digit. It's 5, which means we round UP. The 456 becomes 500, giving us 3,500.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "3,000 is rounded to the nearest THOUSAND, not hundred. We're zooming in closer than that - to the hundreds place."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "3,400 would be correct if the tens digit were 0, 1, 2, 3, or 4. But we have 5 in the tens place - that's the tipping point where we round UP."
+        },
+        {
+          "verdict": "correct",
+          "text": "Perfect! The tens digit is 5. In rounding, 5 or more means round UP. So 456 rounds up to 500. The full answer: 3,500. Remember: 5 is where the magic happens - it tips us over to the next hundred."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "3,460 is rounded to the nearest TEN, not hundred. When rounding to hundreds, we only keep zeros in the tens and ones places."
+        }
+      ],
+      "mechanism": {
+        "title": "Rounding: The Art of Estimation",
+        "content": "Rounding is about finding the NEAREST benchmark. Look at the digit to the RIGHT of where you're rounding. If it's 5 or more, round UP. If it's 4 or less, round DOWN. Why 5? Because 5 is exactly halfway between 0 and 10 - we have to pick a direction, and UP is the convention.",
+        "metaphor": "Rounding is like choosing the closest bus stop. If you're at house 456 on a street where buses only stop at 400 and 500, you'd walk to 500 - it's closer than walking back to 400!"
+      },
+      "scaffoldFile": "510.1-number-sense-scaffolds/510.1.02-scaffolds.json"
+    },
+    {
+      "id": "510.1.03",
+      "q": "Which property is shown by: 7 + 9 = 9 + 7?",
+      "options": [
+        "Identity Property",
+        "Associative Property",
+        "Commutative Property",
+        "Distributive Property"
+      ],
+      "answer": 2,
+      "chapter": "Number Sense - Properties",
+      "explain": "The Commutative Property says you can SWAP the order of numbers when adding or multiplying. 7 + 9 equals 9 + 7 because addition doesn't care about order - it just cares about what you're combining.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "The Identity Property involves 0 (for addition) or 1 (for multiplication). It says a + 0 = a or a x 1 = a. There's no zero or one playing that role here."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "The Associative Property involves GROUPING - changing parentheses: (a + b) + c = a + (b + c). This example only has two numbers, so grouping isn't the focus."
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! COMMUTATIVE means you can COMMUTE (swap, exchange) the order. 7 + 9 = 9 + 7. Works for addition and multiplication, but NOT for subtraction or division. Try 9 - 7 vs 7 - 9... see the difference?"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "The Distributive Property connects multiplication and addition: a(b + c) = ab + ac. It DISTRIBUTES the multiplication. This example only uses addition."
+        }
+      ],
+      "mechanism": {
+        "title": "The Commutative Property: Order Doesn't Matter",
+        "content": "COMMUTATIVE comes from 'commute' - to travel or swap places. In math, it means the ORDER of numbers doesn't change the result for addition and multiplication. But be careful: 7 - 9 does NOT equal 9 - 7, and 8 / 2 does NOT equal 2 / 8. Subtraction and division are NOT commutative!",
+        "metaphor": "It's like a handshake - it doesn't matter who reaches out first. You shaking MY hand is the same as me shaking YOUR hand. The end result (a handshake) is identical regardless of order."
+      },
+      "scaffoldFile": "510.1-number-sense-scaffolds/510.1.03-scaffolds.json"
+    },
+    {
+      "id": "510.1.04",
+      "q": "What is the product of 24 and 15?",
+      "options": [
+        "39",
+        "240",
+        "350",
+        "360"
+      ],
+      "answer": 3,
+      "chapter": "Number Sense - Multiplication",
+      "explain": "Product means we multiply! 24 x 15 = 360. One strategy: Break 15 into 10 + 5. Then 24 x 10 = 240 and 24 x 5 = 120. Add them: 240 + 120 = 360.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "39 is the SUM (24 + 15 = 39). But 'product' means MULTIPLY, not add. These vocabulary words matter!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "240 is only 24 x 10. You forgot to multiply by the 5 in 15. The full calculation needs both parts of 15."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "350 doesn't come from this calculation. Let's verify: 24 x 15. Using the standard algorithm or breaking it apart, we get 360."
+        },
+        {
+          "verdict": "correct",
+          "text": "Excellent! 24 x 15 = 360. Here's a clever way: 24 x 15 = 24 x 10 + 24 x 5 = 240 + 120 = 360. Or: 24 x 15 = 12 x 30 = 360 (doubling one, halving the other). Multiple paths, same destination!"
+        }
+      ],
+      "mechanism": {
+        "title": "Multiplication Strategies",
+        "content": "Multiplication can be done many ways! Standard algorithm (column method), breaking apart (distributive property), or clever tricks like doubling/halving. The key is understanding that multiplication is REPEATED ADDITION: 24 x 15 means 24 added to itself 15 times, or 15 groups of 24.",
+        "metaphor": "Multiplication is like filling an egg carton. If each row has 24 eggs and you have 15 rows, counting one by one would take forever. Multiplication gives you the total instantly: 360 eggs!"
+      },
+      "scaffoldFile": "510.1-number-sense-scaffolds/510.1.04-scaffolds.json"
+    },
+    {
+      "id": "510.1.05",
+      "q": "Which number is a factor of both 24 and 36?",
+      "options": [
+        "5",
+        "8",
+        "9",
+        "12"
+      ],
+      "answer": 3,
+      "chapter": "Number Sense - Factors",
+      "explain": "A factor divides EVENLY into a number. 12 divides evenly into both 24 (24 / 12 = 2) and 36 (36 / 12 = 3). It's a COMMON factor of both!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "5 doesn't divide evenly into either 24 or 36. You'd get remainders: 24 / 5 = 4 R4, and 36 / 5 = 7 R1. No clean division means it's not a factor."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "8 is a factor of 24 (24 / 8 = 3), but NOT of 36 (36 / 8 = 4.5). To be a COMMON factor, it must divide evenly into BOTH numbers."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "9 is a factor of 36 (36 / 9 = 4), but NOT of 24 (24 / 9 = 2.67...). Close, but we need it to work for both!"
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 12 divides evenly into both: 24 / 12 = 2 and 36 / 12 = 3. In fact, 12 is the GREATEST Common Factor (GCF) of 24 and 36! Other common factors include 1, 2, 3, 4, and 6 - but 12 is the biggest."
+        }
+      ],
+      "mechanism": {
+        "title": "Factors and Common Factors",
+        "content": "Factors are numbers that divide evenly into another number. COMMON factors are shared by two or more numbers. Finding common factors helps with simplifying fractions, solving problems, and understanding number relationships. The GREATEST Common Factor (GCF) is the largest shared factor.",
+        "metaphor": "Factors are like the different ways you can arrange objects in a rectangle. 24 objects can be 1x24, 2x12, 3x8, or 4x6. Each dimension is a factor. Common factors are arrangements that work for BOTH numbers."
+      },
+      "scaffoldFile": "510.1-number-sense-scaffolds/510.1.05-scaffolds.json"
+    },
+    {
+      "id": "510.1.06",
+      "q": "What is the first step when using order of operations to solve: 3 + 4 x 2?",
+      "options": [
+        "Add 3 + 4",
+        "Multiply 4 x 2",
+        "Add 4 + 2",
+        "Multiply 3 x 4"
+      ],
+      "answer": 1,
+      "chapter": "Number Sense - Order of Operations",
+      "explain": "Order of operations says Multiplication comes BEFORE Addition (remember PEMDAS). So first we do 4 x 2 = 8, then 3 + 8 = 11. The answer is 11, not 14!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "If you add first, you get (3 + 4) x 2 = 14. But that's not what the expression says! Without parentheses forcing addition first, multiplication takes priority. Always."
+        },
+        {
+          "verdict": "correct",
+          "text": "Right! Multiplication before Addition. PEMDAS: Parentheses, Exponents, Multiplication/Division (left to right), Addition/Subtraction (left to right). First step: 4 x 2 = 8. Then: 3 + 8 = 11. The final answer is 11."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "There's no reason to add 4 + 2 - those numbers aren't connected by addition in this expression. The operations are + and x, not rearranged."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "The 3 and 4 aren't connected by multiplication - they're connected by addition. The multiplication is between 4 and 2."
+        }
+      ],
+      "mechanism": {
+        "title": "Order of Operations (PEMDAS)",
+        "content": "Without agreed-upon rules, 3 + 4 x 2 could equal 11 OR 14 depending on who's reading it. PEMDAS creates universal agreement: Parentheses first, then Exponents, then Multiplication/Division (left to right), then Addition/Subtraction (left to right). It's the grammar of mathematics!",
+        "metaphor": "Order of operations is like traffic lights at an intersection. Without them, chaos! Everyone would interpret the road differently. PEMDAS is the traffic system of math - it tells everyone which operations have the 'green light' first."
+      },
+      "scaffoldFile": "510.1-number-sense-scaffolds/510.1.06-scaffolds.json"
+    },
+    {
+      "id": "510.1.07",
+      "q": "What is 8,000 - 2,345?",
+      "options": [
+        "5,645",
+        "5,655",
+        "5,665",
+        "6,655"
+      ],
+      "answer": 1,
+      "chapter": "Number Sense - Subtraction",
+      "explain": "When subtracting from a number with zeros, we need to borrow carefully. 8,000 - 2,345 = 5,655. Each column requires borrowing from the left.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "5,645 is close but off by 10 in the tens column. Let's trace through the borrowing carefully to see where the difference lies."
+        },
+        {
+          "verdict": "correct",
+          "text": "Perfect! 8,000 - 2,345 = 5,655. Strategy: Think of 8,000 as 7,999 + 1. Then: 7,999 - 2,345 = 5,654, plus that extra 1 = 5,655. Or: 8,000 - 2,345 = 8,000 - 2,000 - 345 = 6,000 - 345 = 5,655."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "5,665 is 10 too high. Check the tens column borrowing - that's usually where errors creep in with multiple zeros."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "6,655 is way off - the thousands digit should be 5, not 6. Looks like there was an error in the thousands place borrowing."
+        }
+      ],
+      "mechanism": {
+        "title": "Subtraction with Regrouping (Borrowing)",
+        "content": "When a digit is too small to subtract from, we REGROUP (borrow) from the next column left. With zeros, this cascades: borrowing from 8,000 means the 8 becomes 7, one thousand becomes ten hundreds, one hundred becomes ten tens, and one ten becomes ten ones. It's like making change!",
+        "metaphor": "Borrowing is like breaking a big bill. If you have a $100 bill and need to give someone $45, you can't just tear the bill. You break it into smaller bills first, then make the payment. 8,000 is like one big bill that needs breaking into smaller pieces."
+      },
+      "scaffoldFile": "510.1-number-sense-scaffolds/510.1.07-scaffolds.json"
+    },
+    {
+      "id": "510.1.08",
+      "q": "What is the quotient when 156 is divided by 12?",
+      "options": [
+        "12",
+        "13",
+        "14",
+        "15"
+      ],
+      "answer": 1,
+      "chapter": "Number Sense - Division",
+      "explain": "Quotient means the result of division. 156 / 12 = 13. Check: 13 x 12 = 156. The multiplication undoes the division - they're inverse operations!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "12 x 12 = 144, which is less than 156. We have 12 more to account for, so the quotient must be higher."
+        },
+        {
+          "verdict": "correct",
+          "text": "Excellent! 156 / 12 = 13. Verification: 13 x 12 = 156. One strategy: 156 / 12 = (120 + 36) / 12 = 10 + 3 = 13. Breaking the dividend into friendly chunks makes division easier!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "14 x 12 = 168, which is more than 156. We've gone too far - the quotient is smaller."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "15 x 12 = 180, which is way more than 156. Definitely too high!"
+        }
+      ],
+      "mechanism": {
+        "title": "Division and Multiplication: Inverse Operations",
+        "content": "Division answers 'how many groups?' or 'how many in each group?' The quotient times the divisor should equal the dividend: Q x D = Dividend. This is why multiplication can CHECK division. They undo each other, like tying and untying a knot.",
+        "metaphor": "Division is like fairly sharing pizza. If you have 156 slices and 12 friends, each person gets 156 / 12 = 13 slices. Multiplication checks this: 12 people x 13 slices each = 156 total slices. Everything accounted for!"
+      },
+      "scaffoldFile": "510.1-number-sense-scaffolds/510.1.08-scaffolds.json"
+    },
+    {
+      "id": "510.1.09",
+      "q": "Which number is a multiple of both 6 and 8?",
+      "options": [
+        "16",
+        "18",
+        "24",
+        "28"
+      ],
+      "answer": 2,
+      "chapter": "Number Sense - Multiples",
+      "explain": "A multiple is the result of multiplying by whole numbers. 24 is a multiple of 6 (6 x 4 = 24) AND a multiple of 8 (8 x 3 = 24). It's a COMMON multiple!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "16 is a multiple of 8 (8 x 2), but NOT of 6. 16 / 6 = 2.67... with a remainder. It doesn't divide evenly."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "18 is a multiple of 6 (6 x 3), but NOT of 8. 18 / 8 = 2.25... with a remainder. Close, but not quite!"
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 24 is a multiple of BOTH. 6 x 4 = 24 and 8 x 3 = 24. In fact, 24 is the LEAST Common Multiple (LCM) of 6 and 8 - the smallest number that both 6 and 8 divide into evenly. Beautiful!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "28 is a multiple of neither 6 nor 8! 28 / 6 = 4.67... and 28 / 8 = 3.5. Both have remainders."
+        }
+      ],
+      "mechanism": {
+        "title": "Multiples and Common Multiples",
+        "content": "Multiples are what you get when you multiply: multiples of 6 are 6, 12, 18, 24, 30... Multiples of 8 are 8, 16, 24, 32... COMMON multiples appear in BOTH lists. The LEAST Common Multiple (LCM) is crucial for adding fractions with different denominators!",
+        "metaphor": "Multiples are like bus schedules. If Bus 6 comes every 6 minutes and Bus 8 comes every 8 minutes, they'll both arrive at minute 24, then 48, then 72... Those meeting times are the common multiples!"
+      },
+      "scaffoldFile": "510.1-number-sense-scaffolds/510.1.09-scaffolds.json"
+    },
+    {
+      "id": "510.1.10",
+      "q": "Which statement about prime numbers is TRUE?",
+      "options": [
+        "1 is a prime number",
+        "All prime numbers are odd",
+        "A prime number has exactly two factors: 1 and itself",
+        "There are only 10 prime numbers"
+      ],
+      "answer": 2,
+      "chapter": "Number Sense - Prime Numbers",
+      "explain": "A prime number has EXACTLY two factors: 1 and itself. That's the definition! Examples: 2, 3, 5, 7, 11... Each is divisible only by 1 and by itself.",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "1 is NOT prime. It only has ONE factor (itself). Prime numbers need EXACTLY TWO factors. 1 is in its own special category - it's neither prime nor composite."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not all primes are odd! 2 is the ONLY even prime number. It's divisible only by 1 and 2. Every other even number is divisible by 2, so can't be prime. 2 is special!"
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! The DEFINITION of prime: exactly TWO factors - 1 and the number itself. 7 is prime (factors: 1, 7). 12 is not (factors: 1, 2, 3, 4, 6, 12). The two-factor rule is the key to identifying primes."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "There are INFINITELY many primes! 2, 3, 5, 7, 11, 13, 17, 19, 23, 29... they never stop. This was proven by Euclid over 2,000 years ago. Primes go on forever!"
+        }
+      ],
+      "mechanism": {
+        "title": "Prime Numbers: The Atoms of Arithmetic",
+        "content": "Prime numbers are the building blocks of all whole numbers. Every number greater than 1 can be written as a product of primes (this is called prime factorization). 12 = 2 x 2 x 3. 30 = 2 x 3 x 5. Understanding primes helps with factors, multiples, and simplifying fractions.",
+        "metaphor": "Primes are like LEGO's smallest bricks - they can't be broken down further. Every complex LEGO creation is built from these fundamental pieces. Similarly, every number is built from prime 'bricks' multiplied together."
+      },
+      "scaffoldFile": "510.1-number-sense-scaffolds/510.1.10-scaffolds.json"
+    },
+    {
+      "id": "510.1.11",
+      "q": "What is 4,567 + 3,894?",
+      "options": [
+        "7,461",
+        "8,361",
+        "8,461",
+        "8,561"
+      ],
+      "answer": 2,
+      "chapter": "Number Sense - Addition",
+      "explain": "Line up the place values and add column by column, carrying when needed. 4,567 + 3,894 = 8,461. Each column may produce a carry to the next!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "7,461 is too low - looks like a carrying error in the thousands column. The sum of 4 + 3 plus any carry should give us 8 thousand."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "8,361 is off by 100. Check the hundreds column: 5 + 8 = 13, write 3 carry 1. The carried 1 affects the thousands!"
+        },
+        {
+          "verdict": "correct",
+          "text": "Perfect! Ones: 7+4=11 (write 1, carry 1). Tens: 6+9+1=16 (write 6, carry 1). Hundreds: 5+8+1=14 (write 4, carry 1). Thousands: 4+3+1=8. Result: 8,461!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "8,561 is 100 too high. Recheck the hundreds column - the carrying might have gotten tangled."
+        }
+      ],
+      "mechanism": {
+        "title": "Multi-Digit Addition with Carrying",
+        "content": "When a column adds up to 10 or more, we CARRY to the next column. The '1' we carry represents regrouping: 10 ones become 1 ten, 10 tens become 1 hundred, and so on. This is why place value is so important - each column is worth 10 times the column to its right.",
+        "metaphor": "Carrying is like overflow in a container. If a cup holds 10 items and you try to add more, the extras 'overflow' into the next bigger container. In math, 10 ones overflow into 1 ten, keeping everything organized."
+      },
+      "scaffoldFile": "510.1-number-sense-scaffolds/510.1.11-scaffolds.json"
+    },
+    {
+      "id": "510.1.12",
+      "q": "What is the value of 5 squared (5^2)?",
+      "options": [
+        "10",
+        "25",
+        "32",
+        "125"
+      ],
+      "answer": 1,
+      "chapter": "Number Sense - Exponents",
+      "explain": "5 squared means 5 times itself: 5^2 = 5 x 5 = 25. The exponent 2 tells you how many times to use 5 as a factor. It's multiplication, not addition!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "10 would be 5 + 5 (addition) or 5 x 2 (times 2). But 5 SQUARED means 5 x 5 (multiplied by ITSELF). The exponent says 'use this number as a factor this many times.'"
+        },
+        {
+          "verdict": "correct",
+          "text": "Yes! 5^2 = 5 x 5 = 25. The small 2 is called an EXPONENT. It tells us to multiply 5 by itself 2 times. We call this '5 squared' because a square with side length 5 has area 5 x 5 = 25 square units!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "32 is 2^5 (2 to the fifth power: 2x2x2x2x2). You might have mixed up the base and exponent!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "125 is 5^3 (5 CUBED: 5x5x5). That's 5 used as a factor THREE times, not two. The exponent makes a big difference!"
+        }
+      ],
+      "mechanism": {
+        "title": "Exponents: Repeated Multiplication",
+        "content": "Just as multiplication is repeated addition (5 x 3 = 5+5+5), exponents are repeated multiplication (5^3 = 5x5x5). The base tells you WHAT to multiply. The exponent tells you HOW MANY times. This notation becomes incredibly useful for expressing large numbers compactly: 10^6 = 1,000,000!",
+        "metaphor": "Exponents are like growth explosions. Adding repeatedly gives steady growth. Multiplying repeatedly gives EXPLOSIVE growth. 5+5+5 = 15, but 5x5x5 = 125. That's why compound interest and viral spread use exponential math - things grow FAST!"
+      },
+      "scaffoldFile": "510.1-number-sense-scaffolds/510.1.12-scaffolds.json"
+    },
+    {
+      "id": "510.1.13",
+      "q": "In which number does the digit 4 have the GREATEST value?",
+      "options": [
+        "4,721",
+        "2,471",
+        "1,274",
+        "7,124"
+      ],
+      "answer": 0,
+      "chapter": "Number Sense - Place Value Comparison",
+      "explain": "Compare where the 4 sits in each number! In 4,721, the 4 is in the THOUSANDS place = 4,000. That's bigger than 400, 40, or 4.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Yes! In 4,721, the 4 is in the THOUSANDS place, so its value is 4,000. Compare: In 2,471 the 4 = 400 (hundreds). In 1,274 the 4 = 4 (ones). In 7,124 the 4 = 4 (ones). 4,000 > 400 > 4. Position is power!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "In 2,471, the 4 is in the HUNDREDS place, so it equals 400. That's smaller than 4,000 (the value in 4,721)."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "In 1,274, the 4 is in the ONES place, so it equals just 4. Lowest value of all the options!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "In 7,124, the 4 is in the ONES place, so it equals just 4. Same as 1,274 - both have 4 in the weakest position."
+        }
+      ],
+      "mechanism": {
+        "title": "Comparing Place Values Across Numbers",
+        "content": "The SAME digit can have vastly different values depending on its position. A 4 in the thousands place is worth 1,000 times more than a 4 in the ones place! This is why reading numbers carefully matters - position changes everything.",
+        "metaphor": "It's like the same employee having different salaries at different companies. At Company A (thousands place), they earn $4,000. At Company B (hundreds place), $400. Same person, vastly different compensation based on position!"
+      },
+      "scaffoldFile": "510.1-number-sense-scaffolds/510.1.13-scaffolds.json"
+    },
+    {
+      "id": "510.1.14",
+      "q": "What is 432 / 4?",
+      "options": [
+        "18",
+        "108",
+        "112",
+        "128"
+      ],
+      "answer": 1,
+      "chapter": "Number Sense - Division",
+      "explain": "432 / 4 = 108. You can break it down: 400 / 4 = 100, and 32 / 4 = 8. Add them: 100 + 8 = 108!",
+      "optionExplains": [
+        {
+          "verdict": "incorrect",
+          "text": "18 would be 72 / 4. For 432 / 4, the quotient needs to be much larger since we're dividing a bigger number."
+        },
+        {
+          "verdict": "correct",
+          "text": "Perfect! 432 / 4 = 108. Strategy: Split the dividend! 432 = 400 + 32. Then 400/4 = 100 and 32/4 = 8. Total: 100 + 8 = 108. Check: 108 x 4 = 432. It works!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "112 x 4 = 448, which is more than 432. The quotient should be a bit smaller."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "128 x 4 = 512, way more than 432. This quotient is too high."
+        }
+      ],
+      "mechanism": {
+        "title": "Division by Breaking Apart",
+        "content": "Big division problems become easier when you break the dividend into friendly chunks. 432 = 400 + 32. Divide each chunk: 400/4 = 100, 32/4 = 8. Add the partial quotients: 108. This is called the 'partial quotients' method - very powerful for mental math!",
+        "metaphor": "It's like dividing a pizza order among friends. If you ordered 432 slices and have 4 friends, divide the hundreds (400 slices = 100 each) then the leftover 32 (8 each). Everyone gets 108 slices total!"
+      },
+      "scaffoldFile": "510.1-number-sense-scaffolds/510.1.14-scaffolds.json"
+    },
+    {
+      "id": "510.1.15",
+      "q": "Which expression equals 3,000 + 400 + 50 + 7?",
+      "options": [
+        "3,457",
+        "3,475",
+        "3,547",
+        "3,574"
+      ],
+      "answer": 0,
+      "chapter": "Number Sense - Expanded Form",
+      "explain": "This is EXPANDED FORM showing place values separately. 3,000 (thousands) + 400 (hundreds) + 50 (tens) + 7 (ones) = 3,457. Expanded form reveals how numbers are built!",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Yes! 3,000 + 400 + 50 + 7 = 3,457. Each piece goes in its proper place: 3 thousands, 4 hundreds, 5 tens, 7 ones. Expanded form shows the VALUE of each digit - it's like seeing the number's DNA!"
+        },
+        {
+          "verdict": "incorrect",
+          "text": "3,475 would be 3,000 + 400 + 70 + 5. But we have 50 (5 tens) and 7 (7 ones), not 70 and 5."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "3,547 would be 3,000 + 500 + 40 + 7. But we have 400 (4 hundreds) and 50 (5 tens), not 500 and 40."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "3,574 would be 3,000 + 500 + 70 + 4. The hundreds, tens, and ones are all different from what's given."
+        }
+      ],
+      "mechanism": {
+        "title": "Standard Form vs. Expanded Form",
+        "content": "STANDARD FORM is how we normally write numbers: 3,457. EXPANDED FORM shows the value of each digit: 3,000 + 400 + 50 + 7. Converting between them strengthens place value understanding. You can also write it as (3 x 1000) + (4 x 100) + (5 x 10) + (7 x 1).",
+        "metaphor": "Standard form is like a finished LEGO creation. Expanded form is that same creation taken apart so you can see every brick and where it goes. Both represent the same thing - one is assembled, one is exploded view!"
+      },
+      "scaffoldFile": "510.1-number-sense-scaffolds/510.1.15-scaffolds.json"
+    }
+  ]
+}

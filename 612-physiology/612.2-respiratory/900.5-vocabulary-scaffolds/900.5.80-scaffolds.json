@@ -1,0 +1,191 @@
+{
+  "parentId": "900.5.80",
+  "parentQuestion": "What lung sound is characterized by continuous musical sounds from narrowed airways?",
+  "narrative": {
+    "setting": "Mr. Edgar's emergency room, treating a patient with asthma exacerbation",
+    "character": "Mr. Edgar",
+    "tension": "The patient is struggling to breathe, and even without a stethoscope, Mr. Edgar can hear a high-pitched whistling sound. What's happening in the airways?"
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.80.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Sound",
+      "narrative": "Ms. Frizzle's bus flies toward the struggling patient. 'Hear that, class? That whistling, musical sound? That's WHEEZING! It's so loud you can hear it across the room - we call that audible wheezing!'",
+      "q": "What does wheezing sound like?",
+      "options": [
+        "Brief popping or crackling sounds",
+        "Continuous high-pitched whistling or musical sounds",
+        "A low-pitched snoring sound",
+        "Complete silence"
+      ],
+      "answer": 1,
+      "explain": "Wheezing sounds like CONTINUOUS HIGH-PITCHED WHISTLING or MUSICAL sounds - like air escaping from a balloon, or a kettle starting to boil. It's CONTINUOUS (lasts throughout breathing), unlike crackles which are brief pops.",
+      "wrongExplains": {
+        "0": "Brief popping/crackling describes CRACKLES (rales), caused by airways opening through fluid. Wheezing is CONTINUOUS, not brief pops.",
+        "2": "Low-pitched snoring sounds are called RHONCHI, from secretions in large airways. Wheezing is HIGH-PITCHED and musical.",
+        "3": "Wheezing is a LOUD, audible sound. Silence would be normal breathing or complete airway obstruction (no air moving = no sound = medical emergency)."
+      }
+    },
+    {
+      "id": "900.5.80.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Sound",
+      "narrative": "'Listen to the TIMING!' Ms. Frizzle points. 'The wheeze is loudest during EXPIRATION - when the patient breathes OUT. The airways compress during exhalation, making the narrowing worse!'",
+      "q": "When in the breathing cycle is wheezing typically loudest?",
+      "options": [
+        "Only during inspiration (breathing in)",
+        "Between breaths when not breathing",
+        "Primarily during expiration (breathing out)",
+        "Only when holding breath"
+      ],
+      "answer": 2,
+      "explain": "Wheezing is typically LOUDEST during EXPIRATION (breathing OUT). During exhalation, airways naturally get smaller, and narrowed airways compress even more, creating louder wheezing. Severe obstruction causes wheezing in both inspiration AND expiration.",
+      "wrongExplains": {
+        "0": "Inspiratory sounds suggest upper airway obstruction (stridor). Wheezing is predominantly EXPIRATORY because airways narrow further when exhaling.",
+        "1": "Wheezing requires AIR MOVEMENT through narrowed airways. Between breaths (no airflow), there's no sound.",
+        "3": "Holding your breath = no airflow = no sound. Wheezing occurs when air moves THROUGH narrowed airways, not when breath is held."
+      }
+    },
+    {
+      "id": "900.5.80.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Sound",
+      "narrative": "'Some wheezes are monophonic - one single pitch, like a flute,' Ms. Frizzle demonstrates. 'Others are polyphonic - multiple pitches at once, like a chord on a piano. Different narrowed airways vibrating at different frequencies!'",
+      "q": "What is the difference between monophonic and polyphonic wheezing?",
+      "options": [
+        "Monophonic = one pitch; Polyphonic = multiple pitches simultaneously",
+        "Monophonic = loud; Polyphonic = quiet",
+        "Monophonic = inspiration only; Polyphonic = expiration only",
+        "There is no difference"
+      ],
+      "answer": 0,
+      "explain": "MONOPHONIC wheezing = ONE SINGLE PITCH (one narrowed airway, like a tumor or foreign body). POLYPHONIC wheezing = MULTIPLE PITCHES simultaneously (widespread narrowing of many airways, like asthma or COPD). Multiple airways vibrating = complex musical sound.",
+      "wrongExplains": {
+        "1": "The distinction is about PITCH COMPLEXITY, not volume. Both can be loud or soft. Monophonic means one frequency, polyphonic means many frequencies at once.",
+        "2": "Both types can occur during inspiration or expiration. The timing depends on severity, not whether it's mono- or polyphonic.",
+        "3": "They are DIFFERENT! Distinguishing mono- from polyphonic helps diagnosis: single pitch suggests localized obstruction, multiple pitches suggest diffuse disease."
+      }
+    },
+    {
+      "id": "900.5.80.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus shrinks and enters a bronchiole. 'WHOA!' Carlos shouts. 'The airway is squeezed almost shut! The muscle around it is CONTRACTING - bronchospasm! And look at all that inflammation and mucus!'",
+      "q": "What causes the airways to narrow in asthma?",
+      "options": [
+        "Fluid filling the alveoli",
+        "Bronchospasm (muscle contraction), inflammation, and mucus",
+        "Collapsed lung",
+        "Bacterial infection"
+      ],
+      "answer": 1,
+      "explain": "Asthma airway narrowing has THREE components: (1) BRONCHOSPASM (smooth muscle around airways contracts), (2) INFLAMMATION (swelling of airway lining), (3) MUCUS (thick secretions blocking the lumen). All three reduce airway diameter = wheezing.",
+      "wrongExplains": {
+        "0": "Fluid in alveoli causes CRACKLES and is seen in pneumonia or pulmonary edema, not asthma. Asthma is AIRWAY narrowing, not alveolar flooding.",
+        "2": "Collapsed lung (pneumothorax) causes ABSENT breath sounds on one side, not wheezing. Wheezing requires air moving through narrowed (but open) airways.",
+        "3": "Bacterial infection causes pneumonia (crackles) or bronchitis. Asthma is typically triggered by allergens, exercise, or cold air, causing inflammation and bronchospasm."
+      }
+    },
+    {
+      "id": "900.5.80.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Think of it like a garden hose!' Ms. Frizzle demonstrates. 'Normal airway = wide hose, lots of water flows quietly. Narrow airway = pinch the hose, water shoots through fast and WHISTLES! Same with air through narrowed bronchioles!'",
+      "q": "Why does narrowed airway produce a whistling sound?",
+      "options": [
+        "Airway walls vibrate as turbulent air rushes through the narrow space",
+        "The diaphragm makes noise",
+        "Air moves so slowly it becomes silent",
+        "Fluid pops in the airways"
+      ],
+      "answer": 0,
+      "explain": "Narrowed airways cause the AIRWAY WALLS to VIBRATE as turbulent air rushes through the narrow space at high velocity. Like blowing across a bottle top or through pursed lips - the narrow opening creates vibration and sound. Narrower = higher pitch.",
+      "wrongExplains": {
+        "1": "The diaphragm is a muscle that moves silently. The sound comes from AIR moving through narrowed bronchioles, not from the breathing muscles.",
+        "2": "Air moves FASTER through narrowed spaces (Bernoulli's principle), not slower. Fast turbulent flow creates the whistling sound.",
+        "3": "Fluid popping creates CRACKLES (discontinuous sounds). Wheezing is CONTINUOUS vibration from air flowing through a narrow space."
+      }
+    },
+    {
+      "id": "900.5.80.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'See these smooth muscle cells wrapped around the bronchiole?' Ms. Frizzle points. 'In asthma, they CONTRACT in response to triggers - allergens, cold air, exercise. The airway gets SQUEEZED like a tightening belt!'",
+      "q": "What is 'bronchospasm'?",
+      "options": [
+        "Paralysis of the airways",
+        "Contraction of smooth muscle around airways, causing narrowing",
+        "Expansion of airways beyond normal",
+        "Complete closure of all airways"
+      ],
+      "answer": 1,
+      "explain": "BRONCHOSPASM = CONTRACTION of smooth muscle surrounding airways, causing NARROWING. The muscle squeezes the airway like a belt tightening around your waist. In asthma, this is triggered by allergens, irritants, or exercise. Bronchodilators (albuterol) RELAX this muscle.",
+      "wrongExplains": {
+        "0": "Paralysis would mean the muscles can't contract at all. Bronchospasm is the OPPOSITE - excessive, unwanted muscle contraction.",
+        "2": "Bronchodilation (widening) is what we WANT in asthma treatment. Bronchospasm is the problem - NARROWING from muscle contraction.",
+        "3": "Complete closure would be fatal (no air movement). Bronchospasm narrows airways significantly but doesn't close them completely - air still moves (creating wheezing)."
+      }
+    },
+    {
+      "id": "900.5.80.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "Back in the ER, Mr. Edgar listens with his stethoscope. 'Bilateral expiratory wheezes throughout both lung fields. Classic asthma exacerbation. Let's give nebulized albuterol to open those airways!'",
+      "q": "Wheezing heard throughout both lungs is most characteristic of:",
+      "options": [
+        "Pneumonia",
+        "Asthma or COPD (diffuse airway narrowing)",
+        "Pneumothorax (collapsed lung)",
+        "Pulmonary embolism"
+      ],
+      "answer": 1,
+      "explain": "Bilateral widespread wheezing = ASTHMA or COPD. These diseases cause DIFFUSE bronchospasm/narrowing throughout the lungs. Pneumonia causes localized crackles. Pneumothorax causes absent sounds. Wheezing = airway narrowing disease.",
+      "wrongExplains": {
+        "0": "Pneumonia causes CRACKLES (fluid/infection in alveoli), not wheezing. If you hear wheezing, think airway narrowing (asthma/COPD), not infection.",
+        "2": "Pneumothorax (collapsed lung) causes DECREASED or ABSENT breath sounds on one side. No air in the lung = no sound. Wheezing requires air moving through narrowed airways.",
+        "3": "Pulmonary embolism (blood clot in lung artery) typically has normal lung sounds or crackles. It doesn't cause diffuse wheezing."
+      }
+    },
+    {
+      "id": "900.5.80.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "'What medication opens up narrowed airways?' Ms. Frizzle asks. 'BRONCHODILATORS!' the class shouts. 'Exactly - albuterol relaxes the bronchospasm. After treatment, listen again - the wheezing should improve!'",
+      "q": "What is the first-line treatment for acute wheezing from asthma?",
+      "options": [
+        "Antibiotics",
+        "Bronchodilators (e.g., albuterol)",
+        "Diuretics (water pills)",
+        "Cough suppressants"
+      ],
+      "answer": 1,
+      "explain": "BRONCHODILATORS (e.g., albuterol, salbutamol) are first-line for asthma wheezing. They RELAX bronchospasm within minutes, opening airways. Delivered via inhaler or nebulizer. If severe, add corticosteroids to reduce inflammation.",
+      "wrongExplains": {
+        "0": "Antibiotics treat bacterial infections (pneumonia). Asthma is NOT an infection - it's bronchospasm and inflammation. Antibiotics won't open airways.",
+        "2": "Diuretics remove fluid and are used for pulmonary edema (heart failure). Asthma is airway narrowing, not fluid overload. Wrong disease, wrong treatment.",
+        "3": "Cough suppressants mask symptoms but don't treat the underlying bronchospasm. You need to OPEN the airways with bronchodilators, not just suppress the cough."
+      }
+    },
+    {
+      "id": "900.5.80.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "'One warning!' Mr. Edgar says seriously. 'If wheezing suddenly DISAPPEARS in a severe asthmatic, it might mean they're so obstructed that NO AIR is moving - a 'silent chest.' That's a medical emergency requiring immediate intubation!'",
+      "q": "What does 'silent chest' mean in severe asthma?",
+      "options": [
+        "The patient has recovered completely",
+        "Airways are so obstructed that little or no air moves (ominous sign)",
+        "The patient is sleeping peacefully",
+        "The asthma is mild"
+      ],
+      "answer": 1,
+      "explain": "SILENT CHEST = AIRWAYS SO OBSTRUCTED that little or no air moves - an OMINOUS sign! No air movement = no wheezing sound. It seems 'quiet,' but it's actually worse than loud wheezing. Indicates impending respiratory arrest. Requires immediate aggressive treatment, possibly intubation.",
+      "wrongExplains": {
+        "0": "Silent chest is the OPPOSITE of recovery - it's severe deterioration. Recovery means wheezing gradually decreases as breathing improves. Sudden silence = danger!",
+        "2": "A patient in severe respiratory distress can't sleep peacefully. Silent chest indicates near-total airway obstruction - a life-threatening emergency.",
+        "3": "Silent chest indicates SEVERE, life-threatening asthma, not mild. Mild asthma has good air movement (may not even wheeze much). Silent = critical."
+      }
+    }
+  ]
+}

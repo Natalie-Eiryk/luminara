@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.24",
+  "parentQuestion": "The mucus-secreting cells lining the respiratory tract that trap particles are called:",
+  "narrative": {
+    "setting": "The Magic School Bus cruises through Mr. Edgar's bronchus, surrounded by a landscape of epithelial cells. Some cells have waving cilia - hair-like projections beating rhythmically. But others are different. They're bulging, swollen with secretory granules, shaped like wine glasses. As the bus passes, one of these cells releases its contents - a blob of sticky mucus that spreads across the airway surface.",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar works in a dusty factory. Every breath brings thousands of particles - dust, pollen, bacteria, pollution. If these reach his alveoli, they could cause inflammation or infection. The mucus-secreting cells are his first line of defense, but in conditions like cystic fibrosis, they malfunction catastrophically."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.24.s01",
+      "arc": 1,
+      "arcTitle": "The Name's Origin",
+      "narrative": "'Look at the shape,' Ms. Frizzle points to the swollen cell. 'Narrow at the base, expanded at the top, full of secretory granules. What does it remind you of?' Arnold thinks. 'A wine glass?'",
+      "q": "The word 'goblet' describes what shape?",
+      "options": [
+        "Flat and thin",
+        "Cup or wine glass shaped",
+        "Long and tubular",
+        "Star-shaped"
+      ],
+      "answer": 1,
+      "explain": "A GOBLET is a cup or wine glass. Goblet cells have this CUP-LIKE shape - a narrow base and an expanded top filled with mucin granules ready to be released.",
+      "wrongExplains": {
+        "0": "Flat, thin cells are squamous epithelium. Goblet cells are cup-shaped.",
+        "2": "Tubular describes certain glands. Goblet cells bulge like wine glasses.",
+        "3": "Star-shaped might describe neurons or astrocytes. Goblet cells are cup-shaped."
+      }
+    },
+    {
+      "id": "900.5.24.s02",
+      "arc": 1,
+      "arcTitle": "The Name's Origin",
+      "narrative": "'Goblet cells are unusual,' Ms. Frizzle notes. 'They're glands - but single cells, not clusters. Each one is a complete mucus factory on its own.'",
+      "q": "Goblet cells are classified as what type of gland?",
+      "options": [
+        "Compound gland",
+        "Unicellular gland",
+        "Endocrine gland",
+        "Tubular gland"
+      ],
+      "answer": 1,
+      "explain": "Goblet cells are UNICELLULAR glands - single cells that secrete mucus directly onto the epithelial surface. No ducts, no clusters - just individual secretory cells scattered among other epithelium.",
+      "wrongExplains": {
+        "0": "Compound glands have multiple secretory units and ducts. Goblet cells are single-celled.",
+        "2": "Endocrine glands secrete hormones into blood. Goblet cells secrete mucus onto surfaces (exocrine).",
+        "3": "Tubular glands have tube-shaped structures. Goblet cells are individual cup-shaped cells."
+      }
+    },
+    {
+      "id": "900.5.24.s03",
+      "arc": 1,
+      "arcTitle": "The Name's Origin",
+      "narrative": "'What exactly do they secrete?' Ms. Frizzle asks. 'Not mucus directly - they secrete mucin. A glycoprotein that absorbs water and BECOMES the sticky mucus we know.'",
+      "q": "What do goblet cells secrete?",
+      "options": [
+        "Surfactant",
+        "Mucin (which becomes mucus)",
+        "Enzymes",
+        "Hormones"
+      ],
+      "answer": 1,
+      "explain": "Goblet cells secrete MUCIN - a glycoprotein that absorbs water and becomes sticky MUCUS. This mucus blanket traps inhaled particles, keeping them out of the lungs.",
+      "wrongExplains": {
+        "0": "Surfactant is made by Type II alveolar cells to reduce surface tension. Goblet cells make mucin.",
+        "2": "Digestive enzymes are made by different cells. Goblet cells specialize in mucus.",
+        "3": "Hormones are from endocrine cells. Goblet cells are exocrine - secreting onto surfaces."
+      }
+    },
+    {
+      "id": "900.5.24.s04",
+      "arc": 2,
+      "arcTitle": "The Mucociliary System",
+      "narrative": "'Mucus alone wouldn't be enough,' Ms. Frizzle points to neighboring cells with waving cilia. 'Goblet cells make the sticky trap. Ciliated cells move it. Together they form the mucociliary escalator.'",
+      "q": "What cells work WITH goblet cells to move mucus?",
+      "options": [
+        "Smooth muscle cells",
+        "Ciliated cells",
+        "Red blood cells",
+        "Nerve cells"
+      ],
+      "answer": 1,
+      "explain": "CILIATED CELLS have hair-like projections (cilia) that beat in coordinated waves, moving the mucus blanket - with trapped particles - upward toward the throat.",
+      "wrongExplains": {
+        "0": "Smooth muscle controls airway diameter but doesn't move mucus. Cilia do that.",
+        "2": "Red blood cells carry oxygen. Ciliated epithelial cells move mucus.",
+        "3": "Nerves transmit signals. Cilia physically move the mucus layer."
+      }
+    },
+    {
+      "id": "900.5.24.s05",
+      "arc": 2,
+      "arcTitle": "The Mucociliary System",
+      "narrative": "'The mucociliary escalator,' Ms. Frizzle names the system. 'Goblet cells make sticky mucus. Particles stick. Cilia beat upward. Like an escalator carrying debris up and out.'",
+      "q": "What is the 'mucociliary escalator'?",
+      "options": [
+        "A surgical device",
+        "The mucus-cilia system that moves trapped particles up and out",
+        "A breathing exercise",
+        "A type of lung disease"
+      ],
+      "answer": 1,
+      "explain": "The MUCOCILIARY ESCALATOR: Goblet cells produce mucus (traps particles), cilia beat upward (propel the mucus), moving debris toward the throat to be coughed out or swallowed.",
+      "wrongExplains": {
+        "0": "It's not a device - it's the natural defense system of the airways.",
+        "2": "It's an automatic physiological process, not an exercise.",
+        "3": "It's healthy function. When the escalator fails, THAT leads to disease."
+      }
+    },
+    {
+      "id": "900.5.24.s06",
+      "arc": 2,
+      "arcTitle": "The Mucociliary System",
+      "narrative": "'The cilia beat about 10-20 times per second,' Ms. Frizzle times them. 'Moving mucus at about 1-2 centimeters per minute. Slow but steady, constantly cleaning the airways.'",
+      "q": "How fast does the mucociliary escalator move mucus?",
+      "options": [
+        "Several meters per second",
+        "About 1-2 centimeters per minute",
+        "It doesn't move at all",
+        "Only during coughing"
+      ],
+      "answer": 1,
+      "explain": "Mucus moves about 1-2 cm/minute (some sources say up to 2 cm/min) - slow but continuous. It takes several hours for mucus to travel from deep airways to the throat.",
+      "wrongExplains": {
+        "0": "Meters per second would be too fast. It's centimeters per minute.",
+        "2": "It definitely moves - that's the 'escalator' function.",
+        "3": "It moves continuously, not just during coughing. Coughing adds forceful clearance."
+      }
+    },
+    {
+      "id": "900.5.24.s07",
+      "arc": 3,
+      "arcTitle": "Distribution and Function",
+      "narrative": "'Goblet cells are everywhere in the conducting airways,' Ms. Frizzle notes. 'Nose, trachea, bronchi - all lined with mucus producers. But somewhere, they stop. Where?'",
+      "q": "Where are goblet cells NOT found in the respiratory system?",
+      "options": [
+        "Trachea",
+        "Bronchi",
+        "Alveoli",
+        "Nasal passages"
+      ],
+      "answer": 2,
+      "explain": "ALVEOLI have NO goblet cells - mucus would interfere with gas exchange. The gas exchange surface must be thin and clear. Goblet cells are only in conducting airways.",
+      "wrongExplains": {
+        "0": "Trachea has abundant goblet cells for trapping particles.",
+        "1": "Bronchi have goblet cells in their epithelial lining.",
+        "3": "Nasal passages have goblet cells - they produce the mucus that humidifies and filters air."
+      }
+    },
+    {
+      "id": "900.5.24.s08",
+      "arc": 3,
+      "arcTitle": "Distribution and Function",
+      "narrative": "'Smoking damages goblet cells and cilia,' Ms. Frizzle warns. 'Cilia become paralyzed. Goblet cells overproduce thick mucus. The escalator fails. That's why smokers have chronic cough - trying to clear what cilia can't.'",
+      "q": "How does smoking affect the mucociliary escalator?",
+      "options": [
+        "It speeds up mucus clearance",
+        "It paralyzes cilia and causes goblet cell dysfunction",
+        "It has no effect",
+        "It replaces mucus with surfactant"
+      ],
+      "answer": 1,
+      "explain": "Smoking PARALYZES CILIA and causes goblet cells to overproduce thick, abnormal mucus. The escalator stalls. Debris accumulates. Chronic bronchitis and increased infection risk result.",
+      "wrongExplains": {
+        "0": "Smoking IMPAIRS clearance - it doesn't improve it.",
+        "2": "Smoking definitely damages the mucociliary system.",
+        "3": "Surfactant is made by Type II alveolar cells and isn't affected this way."
+      }
+    },
+    {
+      "id": "900.5.24.s09",
+      "arc": 3,
+      "arcTitle": "Distribution and Function",
+      "narrative": "'In cystic fibrosis,' Ms. Frizzle adds, 'the mucus itself is defective - too thick, too sticky. Goblet cells work, but the product is wrong. The escalator gets clogged.'",
+      "q": "In cystic fibrosis, what goes wrong with mucus?",
+      "options": [
+        "No mucus is produced",
+        "Mucus is too thick and sticky due to ion channel defects",
+        "Mucus is too watery",
+        "Mucus turns into surfactant"
+      ],
+      "answer": 1,
+      "explain": "In cystic fibrosis, defective CFTR chloride channels cause mucus to be abnormally THICK and STICKY. It clogs airways instead of flowing smoothly, leading to chronic infections.",
+      "wrongExplains": {
+        "0": "Mucus IS produced - it's just abnormally thick.",
+        "2": "The problem is thickness, not wateriness. CF mucus lacks normal hydration.",
+        "3": "Mucus doesn't become surfactant. They're completely different substances."
+      }
+    },
+    {
+      "id": "900.5.24.s10",
+      "arc": 3,
+      "arcTitle": "Distribution and Function",
+      "narrative": "The goblet cell releases another blob of mucin, which immediately hydrates into sticky mucus. Dust particles stick. Cilia wave. The escalator carries debris upward. 'These mucus-secreting cells,' Ms. Frizzle asks. 'What are they called?'",
+      "q": "The mucus-secreting cells lining the respiratory tract that trap particles are called:",
+      "options": [
+        "Ciliated cells",
+        "Goblet cells",
+        "Type I alveolar cells",
+        "Type II alveolar cells"
+      ],
+      "answer": 1,
+      "explain": "GOBLET CELLS - named for their goblet (wine glass) shape. They're unicellular exocrine glands that secrete mucin, which hydrates into mucus that traps inhaled particles.",
+      "wrongExplains": {
+        "0": "Ciliated cells MOVE mucus but don't produce it. Goblet cells make it.",
+        "2": "Type I alveolar cells are thin for gas exchange - no mucus production.",
+        "3": "Type II alveolar cells produce SURFACTANT, not mucus."
+      }
+    }
+  ]
+}

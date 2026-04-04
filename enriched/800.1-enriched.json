@@ -1,0 +1,533 @@
+{
+  "version": "1.0",
+  "source": "LUMI-OS Teaching Module",
+  "prefix": "800.1",
+  "question_count": 15,
+  "questions": [
+    {
+      "id": "800.1.01",
+      "q": "In a spinal cord smear (multipolar neuron smear), which cell type has a large cell body with multiple processes extending outward?",
+      "options": [
+        "Neuroglia",
+        "Neuron",
+        "Schwann cell",
+        "Satellite cell"
+      ],
+      "answer": 1,
+      "explain": "Neurons (multipolar neurons) have large cell bodies with multiple dendrites and one axon extending outward. They're the 'stars' of the smear — large, multipolar, and unmistakable.",
+      "mechanism": {
+        "title": "Multipolar Neuron Architecture",
+        "content": "Multipolar neurons are the classic neuron shape: one large cell body (soma) containing the nucleus, multiple dendrites branching out to receive signals, and one axon carrying signals away. In a spinal cord smear, these neurons appear as large stellate (star-shaped) cells. The dendrites receive inputs from thousands of other neurons, while the single axon can extend enormous distances — some motor neurons have axons over a meter long. The large cell body contains ribosomes, mitochondria, and Nissl bodies (rough ER) for the intense protein synthesis neurons require.",
+        "metaphor": "Think of a multipolar neuron as an oak tree: the cell body is the trunk, dendrites are branches reaching up to catch sunlight (signals), and the axon is the taproot driving deep into the ground (to distant targets)."
+      },
+      "isotopes": [
+        "neurology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 15 — Nervous Tissue Histology",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "800.1.02",
+      "q": "In a spinal cord smear, what are the smaller cells scattered among neurons that provide support and protection?",
+      "options": [
+        "Red blood cells",
+        "Neurons",
+        "Neuroglia (glial cells)",
+        "Muscle fibers"
+      ],
+      "answer": 2,
+      "explain": "Neuroglia (glial cells) are the smaller supporting cells in nervous tissue. They outnumber neurons 10:1 and provide metabolic support, insulation, and protection.",
+      "mechanism": {
+        "title": "The Glial Support Network",
+        "content": "Neuroglia ('nerve glue') includes several cell types: astrocytes regulate the blood-brain barrier and provide nutrients; oligodendrocytes form myelin sheaths in the CNS; microglia act as immune cells, phagocytizing debris; and ependymal cells line ventricles and produce CSF. In a smear, they appear as smaller cells with less prominent processes than neurons. Though once considered mere scaffolding, we now know glia actively regulate neural function, synaptic transmission, and brain metabolism.",
+        "metaphor": "Neurons are the musicians in an orchestra, but neuroglia are the stage crew — setting up the equipment, adjusting the acoustics, cleaning up between performances, and making sure the musicians have everything they need to perform."
+      },
+      "isotopes": [
+        "neurology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 15 — Nervous Tissue Histology",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.1.03",
+      "q": "In a medullated (teased) nerve fiber preparation, what is the central cable-like structure running through the fiber?",
+      "options": [
+        "Myelin sheath",
+        "Node of Ranvier",
+        "Axon",
+        "Endoneurium"
+      ],
+      "answer": 2,
+      "explain": "The axon is the central cable running through a nerve fiber. It's the actual conductor of electrical signals, wrapped by the myelin sheath.",
+      "mechanism": {
+        "title": "Axon: The Neural Highway",
+        "content": "The axon is a cylindrical extension of the neuron's cytoplasm, containing microtubules and neurofilaments that serve as transport highways. Motor proteins (kinesin and dynein) move cargo along these tracks: proteins, vesicles, and organelles traveling from the cell body to the axon terminal (anterograde transport) or back (retrograde transport). The axon membrane contains voltage-gated ion channels that propagate action potentials. In myelinated fibers, this propagation is 'saltatory' — jumping from node to node at speeds up to 120 m/s.",
+        "metaphor": "The axon is like a fiber optic cable: a thin core (the axon itself) carrying high-speed signals, wrapped in insulation (myelin) that prevents signal leakage and speeds transmission."
+      },
+      "isotopes": [
+        "neurology.structure"
+      ],
+      "category": null,
+      "chapter": "Exercise 15 — Nervous Tissue Histology",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.1.04",
+      "q": "In a teased nerve fiber, what is the white, fatty layer wrapping around the axon?",
+      "options": [
+        "Axon membrane",
+        "Myelin sheath",
+        "Perineurium",
+        "Satellite cell"
+      ],
+      "answer": 1,
+      "explain": "The myelin sheath is the white, lipid-rich layer that wraps around axons. It's formed by oligodendrocytes (CNS) or Schwann cells (PNS) and insulates the axon to speed signal conduction.",
+      "mechanism": {
+        "title": "Myelin: The Neural Insulation",
+        "content": "Myelin forms when glial cells wrap their plasma membranes around axons in a tight spiral — like tape wrapped around a wire. In the PNS, one Schwann cell myelinates one segment of one axon. In the CNS, one oligodendrocyte can myelinate segments of up to 50 different axons. The lipid-rich membrane layers exclude water and ions, increasing membrane resistance and decreasing capacitance. This means less ion leakage and faster charging of the membrane during action potentials.",
+        "metaphor": "Myelin is like the rubber coating on electrical wires. Without it, current would leak out and signal transmission would be slow and unreliable. With it, signals can jump rapidly from gap to gap."
+      },
+      "isotopes": [
+        "neurology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 15 — Nervous Tissue Histology",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.1.05",
+      "q": "In a teased nerve fiber preparation, what are the gaps or interruptions in the myelin sheath called?",
+      "options": [
+        "Synaptic clefts",
+        "Axon hillocks",
+        "Nodes of Ranvier",
+        "Terminal boutons"
+      ],
+      "answer": 2,
+      "explain": "Nodes of Ranvier are the gaps between myelin segments where the axon membrane is exposed. These are the 'relay stations' where action potentials regenerate during saltatory conduction.",
+      "mechanism": {
+        "title": "Nodes of Ranvier: The Action Potential Relay Stations",
+        "content": "At nodes of Ranvier, the axon membrane is exposed and densely packed with voltage-gated Na⁺ channels (1000-2000 per μm² vs. ~25 in internodal regions). When an action potential occurs at one node, the local currents spread passively through the myelinated internode to the next node, where they trigger a new action potential. This 'jumping' (saltatory) conduction is 50-100 times faster than continuous conduction in unmyelinated fibers. The nodes are spaced 0.2-2 mm apart, depending on axon diameter.",
+        "metaphor": "Nodes of Ranvier are like relay stations on a long-distance telegraph line. The signal doesn't have to be regenerated continuously — it jumps from station to station, covering much more ground much faster."
+      },
+      "isotopes": [
+        "neurology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 15 — Nervous Tissue Histology",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.5,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "800.1.06",
+      "q": "In a nerve cross-section, the circular profiles with dark rings around light centers represent what structures?",
+      "options": [
+        "Blood vessels",
+        "Myelinated axons",
+        "Connective tissue bundles",
+        "Neuronal cell bodies"
+      ],
+      "answer": 1,
+      "explain": "In cross-section, myelinated axons appear as circles with dark myelin rings (staining dark with osmic acid) surrounding pale axon centers.",
+      "mechanism": {
+        "title": "Nerve Cross-Section Architecture",
+        "content": "A peripheral nerve cross-section reveals a complex organization: individual myelinated axons (dark rings around light centers), unmyelinated axons (smaller, no rings, often grouped), endoneurium (delicate connective tissue around each fiber), and larger fascicles wrapped by perineurium. The entire nerve is surrounded by epineurium. The ratio of myelin thickness to axon diameter is remarkably constant (g-ratio ≈ 0.6-0.7) — an evolutionary optimization for conduction velocity.",
+        "metaphor": "A nerve cross-section is like looking at a telephone cable cut in half: many insulated wires (myelinated axons), some bare wires (unmyelinated axons), bundled together with packing material (endoneurium) and wrapped in a protective sheath."
+      },
+      "isotopes": [
+        "neurology.structure"
+      ],
+      "category": null,
+      "chapter": "Exercise 15 — Nervous Tissue Histology",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.5,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "800.1.07",
+      "q": "In a spinal cord cross-section, which structure is the shallow groove on the posterior (dorsal) side?",
+      "options": [
+        "Ventral median fissure",
+        "Central canal",
+        "Posterior median sulcus",
+        "Dorsal root"
+      ],
+      "answer": 2,
+      "explain": "The posterior median sulcus is the shallow groove on the dorsal (back) side of the spinal cord. It's much shallower than the ventral fissure.",
+      "mechanism": {
+        "title": "Spinal Cord Surface Landmarks",
+        "content": "The spinal cord's surface has distinct landmarks that help orient you to its anatomy. Posteriorly, the posterior median sulcus is a shallow groove extending partway into the cord. Anteriorly, the anterior (ventral) median fissure is a deep cleft (about 1/3 of cord depth) containing anterior spinal artery branches. Laterally, the anterolateral and posterolateral sulci mark where ventral and dorsal roots emerge. These surface features reflect the internal organization: the sulcus and fissure partially separate the left and right halves of the cord.",
+        "metaphor": "The spinal cord is like a hot dog bun: it has a shallow crease on top (posterior sulcus) where you'd normally split it, and a deeper cut on the bottom (anterior fissure) — both dividing left from right."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 15 — Nervous Tissue Histology",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.1.08",
+      "q": "In a spinal cord cross-section, which structure is the deep cleft on the anterior (ventral) side?",
+      "options": [
+        "Posterior median sulcus",
+        "Ventral (anterior) median fissure",
+        "Central canal",
+        "Gray commissure"
+      ],
+      "answer": 1,
+      "explain": "The ventral (anterior) median fissure is the deep cleft on the front of the spinal cord — about 3mm deep, much deeper than the posterior sulcus.",
+      "mechanism": {
+        "title": "Anterior Median Fissure: The Deep Divide",
+        "content": "The anterior median fissure penetrates deeply into the ventral spinal cord, nearly reaching the gray commissure. It's lined by pia mater and contains branches of the anterior spinal artery, which supplies the anterior 2/3 of the cord. The fissure's depth (vs. the shallow posterior sulcus) reflects the asymmetric vascular supply and developmental origins of the cord. In cross-section, this fissure is your best landmark for orienting which side is ventral.",
+        "metaphor": "If the spinal cord were a loaf of bread, the anterior fissure would be like a deep slice from below that almost cuts through to the center — while the posterior sulcus is just a gentle score mark on top."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 15 — Nervous Tissue Histology",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.1.09",
+      "q": "In a spinal cord cross-section, which structure appears as a butterfly or H-shaped region containing neuronal cell bodies?",
+      "options": [
+        "White matter",
+        "Gray matter",
+        "Dorsal root ganglion",
+        "Meninges"
+      ],
+      "answer": 1,
+      "explain": "Gray matter forms the distinctive butterfly or H-shaped region in the center of spinal cord cross-sections. It contains neuronal cell bodies, dendrites, and synapses.",
+      "mechanism": {
+        "title": "Gray Matter Architecture",
+        "content": "Spinal cord gray matter is organized into functional regions: the dorsal (posterior) horns receive sensory information from dorsal roots; the ventral (anterior) horns contain motor neuron cell bodies whose axons exit via ventral roots; lateral horns (T1-L2) contain preganglionic sympathetic neurons; and the gray commissure connects the two halves around the central canal. The gray matter is organized into laminae (Rexed's laminae I-X), each processing different types of information.",
+        "metaphor": "The gray matter butterfly is like a switchboard: sensory calls come in through the dorsal 'wings,' motor commands go out through the ventral 'wings,' and the central body routes signals between them."
+      },
+      "isotopes": [
+        "neurology.structure"
+      ],
+      "category": null,
+      "chapter": "Exercise 15 — Nervous Tissue Histology",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.5,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.5,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "800.1.10",
+      "q": "In a spinal cord cross-section, what is the tissue surrounding the gray matter that contains myelinated axon tracts?",
+      "options": [
+        "Gray matter",
+        "White matter",
+        "Pia mater",
+        "Dura mater"
+      ],
+      "answer": 1,
+      "explain": "White matter surrounds the gray matter and consists primarily of myelinated axons organized into ascending and descending tracts.",
+      "mechanism": {
+        "title": "White Matter: The Information Highways",
+        "content": "White matter contains myelinated axons organized into columns (funiculi) and tracts (fasciculi). Ascending tracts carry sensory information: the dorsal columns (fine touch, proprioception), spinothalamic tracts (pain, temperature, crude touch), and spinocerebellar tracts (unconscious proprioception). Descending tracts carry motor commands: corticospinal tracts (voluntary movement), reticulospinal, vestibulospinal, and others. The white:gray ratio increases from sacral to cervical levels as more tracts accumulate.",
+        "metaphor": "White matter is like the cable trunk running up a skyscraper: information highways bundled together, each cable (tract) connecting a specific floor (spinal level) to headquarters (brain)."
+      },
+      "isotopes": [
+        "neurology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 15 — Nervous Tissue Histology",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.5,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.1.11",
+      "q": "What structure can be seen attached to the dorsal side of the spinal cord, containing sensory neuron cell bodies?",
+      "options": [
+        "Ventral root",
+        "Dorsal root ganglion",
+        "Gray commissure",
+        "Central canal"
+      ],
+      "answer": 1,
+      "explain": "The dorsal root ganglion (DRG) is a swelling on the dorsal root containing the cell bodies of sensory (afferent) neurons.",
+      "mechanism": {
+        "title": "Dorsal Root Ganglia: Sensory Neuron Headquarters",
+        "content": "Dorsal root ganglia contain the cell bodies of primary sensory neurons — the first neurons in sensory pathways. These are pseudounipolar neurons: during development, their two processes fuse near the cell body, creating one continuous process with peripheral and central branches. The peripheral branch goes to sensory receptors (skin, muscles, joints), while the central branch enters the spinal cord via the dorsal root. Because no synapse occurs at the DRG, sensory signals pass through at high speed.",
+        "metaphor": "The DRG is like a satellite relay station: signals from your fingertips pass through without stopping — the cell body monitors the line but doesn't interrupt transmission."
+      },
+      "isotopes": [
+        "ans.structure"
+      ],
+      "category": null,
+      "chapter": "Exercise 15 — Nervous Tissue Histology",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.1.12",
+      "q": "In a spinal cord cross-section, which region would you find the cell bodies of motor neurons?",
+      "options": [
+        "Dorsal horn",
+        "Lateral column (white matter)",
+        "Ventral horn",
+        "Dorsal root ganglion"
+      ],
+      "answer": 2,
+      "explain": "Motor neuron cell bodies are located in the ventral (anterior) horn of the gray matter. Their axons exit via ventral roots to innervate muscles.",
+      "mechanism": {
+        "title": "Ventral Horn: Motor Neuron Central",
+        "content": "The ventral horn is organized somatotopically: neurons controlling axial muscles are medial; neurons controlling limb muscles are lateral; proximal limb muscles are controlled by more medial neurons than distal limb muscles. Alpha motor neurons are large (cell bodies 50-100 μm) with high metabolic demands — they're among the largest cells in the body. Their axons are heavily myelinated for fast conduction. Lower motor neuron damage (in the ventral horn or ventral roots) causes flaccid paralysis, muscle atrophy, and loss of reflexes.",
+        "metaphor": "The ventral horn is like the motor pool in an army base: each motor neuron is a commander sending orders (axons) out to its platoon of muscle fibers."
+      },
+      "isotopes": [
+        "neurology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 15 — Nervous Tissue Histology",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.1.13",
+      "q": "In a spinal cord cross-section, where would you find neurons that process incoming sensory information?",
+      "options": [
+        "Ventral horn",
+        "Dorsal horn",
+        "Ventral white column",
+        "Anterior median fissure"
+      ],
+      "answer": 1,
+      "explain": "The dorsal (posterior) horn receives and processes sensory information entering the spinal cord through the dorsal roots.",
+      "mechanism": {
+        "title": "Dorsal Horn: The Sensory Gateway",
+        "content": "Sensory neurons from the DRG send their central processes into the dorsal horn, where they synapse with second-order neurons. The dorsal horn is organized into Rexed laminae I-VI. Pain and temperature fibers (small diameter, unmyelinated or lightly myelinated) synapse in superficial laminae. Touch fibers (larger, myelinated) synapse in deeper laminae. The substantia gelatinosa (lamina II) is a key site for pain modulation — this is where enkephalins and endorphins act to reduce pain transmission.",
+        "metaphor": "The dorsal horn is like a mail sorting facility: incoming sensory 'letters' are sorted by type (pain, touch, proprioception), processed for priority, and either sent up to headquarters (brain) or handled locally (reflexes)."
+      },
+      "isotopes": [
+        "neurology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 15 — Nervous Tissue Histology",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "800.1.14",
+      "q": "What is the small, CSF-filled tube running through the center of the spinal cord's gray matter?",
+      "options": [
+        "Dorsal root",
+        "Gray commissure",
+        "Central canal",
+        "Posterior median sulcus"
+      ],
+      "answer": 2,
+      "explain": "The central canal is a small, ependyma-lined tube running through the center of the spinal cord, continuous with the fourth ventricle, containing cerebrospinal fluid.",
+      "mechanism": {
+        "title": "Central Canal: The Cord's Inner River",
+        "content": "The central canal is a tiny (~100 μm diameter) tube extending the length of the spinal cord, from the terminal ventricle (a small expansion at the conus medullaris) to the fourth ventricle at the brainstem. It's lined by ependymal cells — ciliated epithelial cells that help circulate CSF. During development, the neural tube forms around this central cavity. In many adults, the canal becomes partially occluded with age, but this usually has no clinical significance since CSF circulation around the cord (in the subarachnoid space) is far more important.",
+        "metaphor": "The central canal is like a tiny aqueduct running through the core of the spinal cord — a remnant of the original water main from when the nervous system was being built."
+      },
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 15 — Nervous Tissue Histology",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.5,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.1.15",
+      "q": "Looking at a spinal cord cross-section, you observe that the right side has larger ventral horns than a typical thoracic section. This likely indicates what spinal region?",
+      "options": [
+        "Thoracic region",
+        "Cervical or lumbar enlargement",
+        "Sacral region (below the cord)",
+        "Coccygeal region"
+      ],
+      "answer": 1,
+      "explain": "The cervical and lumbar enlargements have larger ventral horns due to the increased number of motor neurons innervating the limbs.",
+      "mechanism": {
+        "title": "Spinal Cord Enlargements: Where Limbs Connect",
+        "content": "The spinal cord isn't uniform in diameter — it has two enlargements where nerves to the limbs originate. The cervical enlargement (C4-T1) contains motor neurons for the arms and hands: the brachial plexus emerges here. The lumbar enlargement (L1-S3) contains motor neurons for the legs and feet: the lumbosacral plexus emerges here. These enlargements are widest in primates and other animals with complex limb movements. In cross-section, you can identify the enlargements by their large ventral horns (motor) and dorsal horns (sensory feedback from limbs).",
+        "metaphor": "The enlargements are like expanded terminal buildings at an airport: more gates (neurons) are needed where more passengers (motor signals) depart and arrive — and our limbs generate enormous traffic."
+      },
+      "isotopes": [
+        "neurology.general"
+      ],
+      "category": null,
+      "chapter": "Exercise 15 — Nervous Tissue Histology",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.8,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    }
+  ]
+}

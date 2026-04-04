@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ms. Luminara's Quiz - Study & Adventure Modes</title>
+
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="820.31-core/820.31.0-styles.css">
+  <link rel="stylesheet" href="820.31-core/820.31.99-mode-switcher.css">
+
+  <style>
+    /* Quick demo-specific overrides */
+    .demo-header {
+      padding: 1rem;
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .demo-logo {
+      font-family: 'Crimson Pro', serif;
+      font-size: 1.2rem;
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    .demo-content {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .demo-question-container {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with Mode Toggle -->
+  <div class="demo-header">
+    <div class="demo-logo">Ms. Luminara's Study Session</div>
+    <div id="modeToggleContainer"></div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="demo-content">
+    <h1 style="text-align: center; margin-bottom: 2rem;">Mode Switcher Demo</h1>
+
+    <!-- Sample Questions -->
+    <div class="demo-question-container" id="questionContainer"></div>
+  </div>
+
+  <!-- Core Scripts -->
+  <script src="820.31-core/820.31.98-quiz-modes.js"></script>
+  <script src="820.31-core/820.31.98.1-pedagogical-modes.js"></script>
+
+  <!-- Demo Script -->
+  <script>
+    // Sample question data
+    const sampleQuestions = [
+      {
+        id: 'demo-1',
+        q: 'Which respiratory-associated muscles would contract during forced expiration?',
+        options: [
+          'Diaphragm contracts, internal intercostals relax',
+          'Diaphragm contracts, external intercostals relax',
+          'Internal intercostals and abdominal muscles contract',
+          'External intercostals contract, diaphragm relaxes'
+        ],
+        answer: 2,
+        explain: 'Forced expiration requires active muscle work to compress the thorax beyond passive recoil.',
+        optionExplains: [
+          { text: 'Backwards - during EXPIRATION, the diaphragm RELAXES (domes upward), it doesn\'t contract.' },
+          { text: 'Again, diaphragm contraction = inspiration, not expiration.' },
+          { text: 'Correct! Internal intercostals pull ribs down and inward, while abdominal muscles compress upward.' },
+          { text: 'External intercostals are inspiratory muscles, not expiratory.' }
+        ],
+        mechanism: {
+          title: 'Active Squeeze',
+          content: 'Forced expiration recruits internal intercostals and abdominal muscles to actively compress the thorax.',
+          metaphor: 'Like squeezing a bellows - passive expiration lets it spring back, forced expiration crushes it with both hands.'
+        }
+      },
+      {
+        id: 'demo-2',
+        q: 'Tidal volume is air ______.',
+        options: [
+          'Forcibly expelled after normal expiration',
+          'Inhaled after normal inspiration',
+          'Remaining in lungs after forced expiration',
+          'Exchanged during normal breathing'
+        ],
+        answer: 3,
+        explain: 'Tidal volume is the volume of air moved in or out during a single normal breath at rest - typically ~500 mL.',
+        optionExplains: [
+          { text: 'This describes expiratory reserve volume (ERV).' },
+          { text: 'This describes inspiratory reserve volume (IRV).' },
+          { text: 'This describes residual volume (RV) - the ~1200 mL that stays even after maximal exhalation.' },
+          { text: 'Correct! Tidal volume is the air that moves during normal breathing - about 500 mL per cycle.' }
+        ],
+        mechanism: {
+          title: 'The Breathing Baseline',
+          content: 'Tidal volume represents normal resting breath volume - the automatic ventilation your body performs without conscious effort.',
+          metaphor: 'Like the normal water level fluctuation in a harbor - the regular ebb and flow.'
+        }
+      }
+    ];
+
+    // Render mode toggle button
+    function renderModeToggle() {
+      const container = document.getElementById('modeToggleContainer');
+      container.innerHTML = PedagogicalModes.renderModeToggleButton();
+      PedagogicalModes.attachToggleButtonHandler();
+    }
+
+    // Render a question card
+    function renderQuestionCard(q) {
+      const modeClass = PedagogicalModes.getCardModeClass();
+      const autoExpand = PedagogicalModes.shouldAutoExpandExplanations();
+
+      let optionExplainsHTML = '';
+      if (q.optionExplains) {
+        optionExplainsHTML = `
+          <div class="option-breakdown ${autoExpand ? 'show' : ''}" id="option-breakdown-${q.id}">
+            ${q.optionExplains.map((exp, i) => `
+              <div class="option-explain">
+                <span class="option-explain-marker ${i === q.answer ? 'correct' : 'wrong'}">
+                  ${String.fromCharCode(65 + i)}
+                </span>
+                ${exp.text || exp}
+              </div>
+            `).join('')}
+          </div>
+        `;
+      }
+
+      let mechanismHTML = '';
+      if (q.mechanism) {
+        mechanismHTML = `
+          <div class="mechanism ${autoExpand ? 'show' : ''}" id="mechanism-${q.id}">
+            <div class="mechanism-title">${q.mechanism.title}</div>
+            <div class="mechanism-content">${q.mechanism.content}</div>
+            ${q.mechanism.metaphor ? `
+              <div class="mechanism-metaphor">💡 ${q.mechanism.metaphor}</div>
+            ` : ''}
+          </div>
+        `;
+      }
+
+      const explainDeeperBtn = PedagogicalModes.renderExplainDeeperButton(q.id);
+
+      return `
+        <div class="question-card ${modeClass}" style="margin-bottom: 2rem;">
+          <div class="q-header">
+            <span class="q-meta">Demo Question ${q.id}</span>
+          </div>
+
+          <div class="q-body">
+            <div class="q-text">${q.q}</div>
+
+            <div class="options-grid">
+              ${q.options.map((opt, i) => `
+                <div class="option" data-qid="${q.id}" data-opt="${i}">
+                  <span class="option-marker">${String.fromCharCode(65 + i)}</span>
+                  <span class="option-text">${opt}</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <div class="layer-explain ${autoExpand ? 'show' : ''}" id="explain-${q.id}">
+            <div class="explain-text">${q.explain}</div>
+            ${optionExplainsHTML}
+            ${mechanismHTML}
+          </div>
+
+          ${explainDeeperBtn}
+        </div>
+      `;
+    }
+
+    // Render all questions
+    function renderQuestions() {
+      const container = document.getElementById('questionContainer');
+      container.innerHTML = sampleQuestions.map(renderQuestionCard).join('');
+      PedagogicalModes.attachExplainDeeperHandlers();
+    }
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', () => {
+      renderModeToggle();
+      renderQuestions();
+
+      // Listen for mode changes to re-render
+      const originalSetMode = PedagogicalModes.setPedagogicalMode;
+      PedagogicalModes.setPedagogicalMode = function(mode) {
+        originalSetMode.call(this, mode);
+        renderModeToggle();
+        renderQuestions();
+      };
+
+      console.log('[Demo] Mode switcher initialized');
+    });
+  </script>
+</body>
+</html>

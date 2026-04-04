@@ -1,0 +1,209 @@
+{
+  "version": "1.0.0",
+  "description": "Complete isotope registry for math curriculum from counting to calculus",
+  "totalIsotopes": 103,
+  "clusters": {
+    "510.10": {
+      "name": "Counting & Cardinality",
+      "isotopes": {
+        "510.10.counting.oral": {"description": "Verbal counting sequence", "difficulty": 0.1},
+        "510.10.counting.written": {"description": "Writing numerals", "difficulty": 0.15},
+        "510.10.cardinality": {"description": "Understanding 'how many'", "difficulty": 0.2},
+        "510.10.comparison": {"description": "More, less, equal", "difficulty": 0.25},
+        "510.10.ordering": {"description": "Sequencing numbers", "difficulty": 0.3},
+        "510.10.place-value.intro": {"description": "Ones and tens places", "difficulty": 0.35}
+      }
+    },
+    "510.11": {
+      "name": "Addition & Subtraction",
+      "isotopes": {
+        "510.11.addition.facts": {"description": "Basic addition facts 0-20", "difficulty": 0.2},
+        "510.11.addition.regrouping": {"description": "Carrying in addition", "difficulty": 0.4},
+        "510.11.addition.multi-digit": {"description": "2-3 digit addition", "difficulty": 0.5},
+        "510.11.subtraction.facts": {"description": "Basic subtraction facts 0-20", "difficulty": 0.25},
+        "510.11.subtraction.borrowing": {"description": "Regrouping in subtraction", "difficulty": 0.45},
+        "510.11.inverse": {"description": "Addition/subtraction relationship", "difficulty": 0.35},
+        "510.11.word-problems": {"description": "Story problems with add/subtract", "difficulty": 0.5}
+      }
+    },
+    "510.12": {
+      "name": "Multiplication & Division",
+      "isotopes": {
+        "510.12.multiplication.facts": {"description": "Times tables 0-12", "difficulty": 0.3},
+        "510.12.multiplication.multi-digit": {"description": "Standard algorithm", "difficulty": 0.5},
+        "510.12.division.facts": {"description": "Division facts 0-144", "difficulty": 0.35},
+        "510.12.division.long": {"description": "Long division algorithm", "difficulty": 0.6},
+        "510.12.inverse": {"description": "Multiplication/division relationship", "difficulty": 0.4},
+        "510.12.factors": {"description": "Factor pairs and prime factors", "difficulty": 0.5},
+        "510.12.multiples": {"description": "LCM, GCF, skip counting", "difficulty": 0.55}
+      }
+    },
+    "510.13": {
+      "name": "Fractions & Decimals",
+      "isotopes": {
+        "510.13.fractions.naming": {"description": "Numerator and denominator", "difficulty": 0.3},
+        "510.13.fractions.equivalent": {"description": "Equivalent fractions", "difficulty": 0.4},
+        "510.13.fractions.comparing": {"description": "Comparing and ordering fractions", "difficulty": 0.45},
+        "510.13.fractions.adding": {"description": "Add/subtract with common denominators", "difficulty": 0.5},
+        "510.13.decimals.place-value": {"description": "Tenths, hundredths, thousandths", "difficulty": 0.35},
+        "510.13.decimals.operations": {"description": "Add/subtract decimals", "difficulty": 0.45},
+        "510.13.conversion": {"description": "Fraction to decimal conversion", "difficulty": 0.5}
+      }
+    },
+    "510.14": {
+      "name": "Measurement & Data",
+      "isotopes": {
+        "510.14.length": {"description": "Linear measurement and conversion", "difficulty": 0.3},
+        "510.14.mass": {"description": "Grams, kilograms, pounds", "difficulty": 0.35},
+        "510.14.volume": {"description": "Liters, milliliters, cups", "difficulty": 0.35},
+        "510.14.time": {"description": "Clocks, calendars, elapsed time", "difficulty": 0.4},
+        "510.14.data.reading": {"description": "Reading charts and graphs", "difficulty": 0.35},
+        "510.14.data.mean": {"description": "Average/mean calculation", "difficulty": 0.45}
+      }
+    },
+    "510.20": {
+      "name": "Ratios & Proportions",
+      "isotopes": {
+        "510.20.ratios.writing": {"description": "Ratio notation (a:b, a/b)", "difficulty": 0.35},
+        "510.20.ratios.equivalent": {"description": "Equivalent ratios, scaling", "difficulty": 0.4},
+        "510.20.rates.unit": {"description": "Unit rate calculations", "difficulty": 0.45},
+        "510.20.proportions.solving": {"description": "Cross-multiplication", "difficulty": 0.5},
+        "510.20.percent": {"description": "Percentage calculations", "difficulty": 0.5}
+      }
+    },
+    "510.21": {
+      "name": "Integers & Rational Numbers",
+      "isotopes": {
+        "510.21.integers.number-line": {"description": "Negative numbers on number line", "difficulty": 0.4},
+        "510.21.integers.operations": {"description": "Adding/subtracting negatives", "difficulty": 0.5},
+        "510.21.integers.multiplication": {"description": "Multiplying/dividing with signs", "difficulty": 0.55},
+        "510.21.rational.ordering": {"description": "Comparing rational numbers", "difficulty": 0.45},
+        "510.21.absolute-value": {"description": "Distance from zero", "difficulty": 0.4}
+      }
+    },
+    "510.22": {
+      "name": "Expressions & Equations",
+      "isotopes": {
+        "510.22.variables": {"description": "Letters representing numbers", "difficulty": 0.35},
+        "510.22.expressions.evaluating": {"description": "Substitution and evaluation", "difficulty": 0.4},
+        "510.22.expressions.simplifying": {"description": "Combining like terms", "difficulty": 0.45},
+        "510.22.equations.one-step": {"description": "Single operation equations", "difficulty": 0.45},
+        "510.22.equations.two-step": {"description": "Multi-step equations", "difficulty": 0.55},
+        "510.22.inequalities": {"description": "Inequality solutions", "difficulty": 0.5}
+      }
+    },
+    "510.23": {
+      "name": "Geometry Foundations",
+      "isotopes": {
+        "510.23.shapes.2d": {"description": "Properties of 2D shapes", "difficulty": 0.35},
+        "510.23.shapes.3d": {"description": "Properties of 3D solids", "difficulty": 0.4},
+        "510.23.angles": {"description": "Angle measurement and relationships", "difficulty": 0.45},
+        "510.23.area": {"description": "Area of rectangles, triangles, circles", "difficulty": 0.5},
+        "510.23.perimeter": {"description": "Perimeter calculations", "difficulty": 0.4},
+        "510.23.volume": {"description": "Volume of prisms and cylinders", "difficulty": 0.55},
+        "510.23.coordinate-plane": {"description": "Plotting points in 4 quadrants", "difficulty": 0.45}
+      }
+    },
+    "510.24": {
+      "name": "Statistics & Probability",
+      "isotopes": {
+        "510.24.statistics.measures": {"description": "Mean, median, mode", "difficulty": 0.45},
+        "510.24.statistics.spread": {"description": "Range, IQR, standard deviation", "difficulty": 0.55},
+        "510.24.probability.simple": {"description": "Single event probability", "difficulty": 0.4},
+        "510.24.probability.compound": {"description": "Multiple event probability", "difficulty": 0.55},
+        "510.24.probability.theoretical": {"description": "Expected value", "difficulty": 0.6}
+      }
+    },
+    "510.30": {
+      "name": "Linear Functions",
+      "isotopes": {
+        "510.30.slope": {"description": "Rise over run, rate of change", "difficulty": 0.5},
+        "510.30.intercept": {"description": "Y-intercept meaning and calculation", "difficulty": 0.45},
+        "510.30.slope-intercept": {"description": "y = mx + b form", "difficulty": 0.5},
+        "510.30.graphing": {"description": "Plotting linear equations", "difficulty": 0.5},
+        "510.30.systems.graphing": {"description": "Solving systems by graphing", "difficulty": 0.55},
+        "510.30.systems.substitution": {"description": "Substitution method", "difficulty": 0.6},
+        "510.30.systems.elimination": {"description": "Elimination method", "difficulty": 0.6}
+      }
+    },
+    "510.31": {
+      "name": "Quadratic Functions",
+      "isotopes": {
+        "510.31.parabola": {"description": "Parabola shape and direction", "difficulty": 0.5},
+        "510.31.vertex": {"description": "Maximum and minimum points", "difficulty": 0.55},
+        "510.31.factoring.basic": {"description": "Factoring x^2 + bx + c", "difficulty": 0.55},
+        "510.31.factoring.advanced": {"description": "Factoring ax^2 + bx + c", "difficulty": 0.65},
+        "510.31.quadratic-formula": {"description": "Quadratic formula application", "difficulty": 0.6},
+        "510.31.completing-square": {"description": "Completing the square", "difficulty": 0.7},
+        "510.31.discriminant": {"description": "Nature of solutions", "difficulty": 0.6}
+      }
+    },
+    "510.32": {
+      "name": "Polynomial & Rational Functions",
+      "isotopes": {
+        "510.32.polynomials.operations": {"description": "Add, subtract, multiply polynomials", "difficulty": 0.55},
+        "510.32.polynomials.division": {"description": "Long and synthetic division", "difficulty": 0.65},
+        "510.32.polynomials.zeros": {"description": "Finding zeros, factor theorem", "difficulty": 0.65},
+        "510.32.rational.simplifying": {"description": "Simplifying rational expressions", "difficulty": 0.6},
+        "510.32.rational.operations": {"description": "Operations with rational expressions", "difficulty": 0.65},
+        "510.32.asymptotes": {"description": "Vertical and horizontal asymptotes", "difficulty": 0.7}
+      }
+    },
+    "510.33": {
+      "name": "Trigonometry",
+      "isotopes": {
+        "510.33.right-triangle": {"description": "SOH-CAH-TOA", "difficulty": 0.55},
+        "510.33.unit-circle": {"description": "Radian measure, unit circle", "difficulty": 0.65},
+        "510.33.trig-functions": {"description": "Graphing sin, cos, tan", "difficulty": 0.6},
+        "510.33.identities.basic": {"description": "Pythagorean identities", "difficulty": 0.65},
+        "510.33.identities.sum-diff": {"description": "Angle addition formulas", "difficulty": 0.7},
+        "510.33.solving.equations": {"description": "Solving trig equations", "difficulty": 0.7},
+        "510.33.applications": {"description": "Real-world trig applications", "difficulty": 0.65}
+      }
+    },
+    "510.34": {
+      "name": "Pre-Calculus",
+      "isotopes": {
+        "510.34.functions.notation": {"description": "Function notation f(x)", "difficulty": 0.5},
+        "510.34.functions.composition": {"description": "Composite functions f(g(x))", "difficulty": 0.6},
+        "510.34.functions.inverse": {"description": "Inverse functions", "difficulty": 0.65},
+        "510.34.sequences.arithmetic": {"description": "Arithmetic sequences", "difficulty": 0.55},
+        "510.34.sequences.geometric": {"description": "Geometric sequences", "difficulty": 0.6},
+        "510.34.limits.intuitive": {"description": "Intuitive limit concept", "difficulty": 0.65},
+        "510.34.limits.notation": {"description": "Limit notation and evaluation", "difficulty": 0.7}
+      }
+    },
+    "510.40": {
+      "name": "Limits & Continuity",
+      "isotopes": {
+        "510.40.limits.definition": {"description": "Epsilon-delta definition", "difficulty": 0.8},
+        "510.40.limits.laws": {"description": "Limit laws and properties", "difficulty": 0.7},
+        "510.40.limits.infinity": {"description": "Limits at infinity", "difficulty": 0.75},
+        "510.40.continuity.definition": {"description": "Definition of continuity", "difficulty": 0.7},
+        "510.40.continuity.types": {"description": "Types of discontinuity", "difficulty": 0.75}
+      }
+    },
+    "510.41": {
+      "name": "Derivatives",
+      "isotopes": {
+        "510.41.derivative.definition": {"description": "Derivative as rate of change", "difficulty": 0.7},
+        "510.41.derivative.power-rule": {"description": "Power rule for differentiation", "difficulty": 0.65},
+        "510.41.derivative.product": {"description": "Product rule", "difficulty": 0.7},
+        "510.41.derivative.quotient": {"description": "Quotient rule", "difficulty": 0.75},
+        "510.41.derivative.chain": {"description": "Chain rule", "difficulty": 0.8},
+        "510.41.applications.velocity": {"description": "Motion and velocity", "difficulty": 0.7},
+        "510.41.applications.optimization": {"description": "Maximum and minimum problems", "difficulty": 0.8}
+      }
+    },
+    "510.42": {
+      "name": "Integrals Introduction",
+      "isotopes": {
+        "510.42.antiderivative": {"description": "Antiderivative concept", "difficulty": 0.7},
+        "510.42.integral.indefinite": {"description": "Indefinite integrals", "difficulty": 0.7},
+        "510.42.integral.definite": {"description": "Definite integrals", "difficulty": 0.75},
+        "510.42.ftc": {"description": "Fundamental theorem of calculus", "difficulty": 0.8},
+        "510.42.applications.area": {"description": "Area between curves", "difficulty": 0.8}
+      }
+    }
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.90",
+  "parentQuestion": "What does an arterial blood gas (ABG) measure?",
+  "narrative": {
+    "setting": "Mr. Edgar's ICU, evaluating a critically ill patient",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar draws blood from the radial artery. The lab rushes the sample to the blood gas analyzer. Minutes later, critical values appear: pH 7.25, PO2 65, PCO2 55, HCO3 23. What do these numbers mean?"
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.90.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Test",
+      "narrative": "Ms. Frizzle's bus enters the lab where the ABG analyzer sits. 'Class, this machine measures FOUR critical values from arterial blood: pH, PO2, PCO2, and bicarbonate! It's the GOLD STANDARD for assessing respiratory and metabolic status!'",
+      "q": "What does ABG stand for?",
+      "options": [
+        "Abdominal Blood Glucose",
+        "Arterial Blood Gas analysis",
+        "Average Blood Gravity",
+        "Automated Breathing Guide"
+      ],
+      "answer": 1,
+      "explain": "ABG = ARTERIAL BLOOD GAS. Blood drawn from an ARTERY (not vein) and analyzed for gases (oxygen, carbon dioxide) plus pH and bicarbonate. Why arterial? Because it shows oxygen delivered TO tissues and CO2 removed FROM lungs - the most accurate assessment of respiratory function.",
+      "wrongExplains": {
+        "0": "ABG measures GASES (O2, CO2) and pH, not glucose. Glucose is measured by different tests. ABG = Arterial Blood Gas.",
+        "2": "ABG is Arterial Blood Gas, not 'gravity.' It analyzes the gas content and pH of arterial blood.",
+        "3": "ABG is a LABORATORY TEST (Arterial Blood Gas), not a guide or device. It provides numerical values about blood chemistry."
+      }
+    },
+    {
+      "id": "900.5.90.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Test",
+      "narrative": "'Why draw from an ARTERY instead of a vein?' Ralphie asks. 'Because arterial blood shows oxygen being DELIVERED to tissues!' Mr. Edgar explains. 'Venous blood shows oxygen AFTER tissues used it - very different numbers!'",
+      "q": "Why is ABG drawn from an artery instead of a vein?",
+      "options": [
+        "Arteries are easier to access",
+        "Arterial blood shows oxygen being delivered to tissues (before metabolism uses it)",
+        "Veins don't contain blood",
+        "It's just tradition with no reason"
+      ],
+      "answer": 1,
+      "explain": "ARTERIAL blood shows oxygen DELIVERED to tissues (fresh from lungs) and CO2 REMOVED from tissues (before lung exhalation). This reflects lung function and gas exchange. VENOUS blood shows oxygen AFTER tissues consumed it - much lower O2. ABG needs arterial blood for accurate respiratory assessment.",
+      "wrongExplains": {
+        "0": "Arteries are actually HARDER to access (deeper, higher pressure, more painful) than veins. We use arteries DESPITE difficulty because arterial blood provides the information we need.",
+        "2": "Veins definitely contain blood! But venous blood has LOW oxygen (tissues used it) and HIGH CO2 (tissues produced it). We need arterial values.",
+        "3": "There's a very important reason! Arterial blood reflects LUNG function. Venous blood reflects tissue metabolism. Different purposes."
+      }
+    },
+    {
+      "id": "900.5.90.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Test",
+      "narrative": "Ms. Frizzle lists the four main ABG values on the board: 'pH 7.35-7.45, PO2 80-100 mmHg, PCO2 35-45 mmHg, HCO3 22-26 mEq/L. These four numbers tell us EVERYTHING about respiratory and metabolic status!'",
+      "q": "What are the four main values measured in an ABG?",
+      "options": [
+        "Blood pressure, heart rate, temperature, glucose",
+        "pH, PO2 (oxygen), PCO2 (carbon dioxide), HCO3 (bicarbonate)",
+        "Red cells, white cells, platelets, hemoglobin",
+        "Sodium, potassium, chloride, calcium"
+      ],
+      "answer": 1,
+      "explain": "ABG measures: (1) pH (acid-base status, 7.35-7.45), (2) PO2 (partial pressure of oxygen, 80-100 mmHg), (3) PCO2 (partial pressure of CO2, 35-45 mmHg), (4) HCO3 (bicarbonate, 22-26 mEq/L). Together these assess oxygenation, ventilation, and acid-base balance.",
+      "wrongExplains": {
+        "0": "Those are vital signs and glucose - different measurements! ABG specifically measures GASES (O2, CO2) and acid-base status (pH, HCO3).",
+        "2": "That's a Complete Blood Count (CBC). ABG measures GASES and pH in blood, not blood cell counts.",
+        "3": "Those are ELECTROLYTES (Basic Metabolic Panel). ABG focuses on RESPIRATORY status - gases and acid-base balance."
+      }
+    },
+    {
+      "id": "900.5.90.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus enters an alveolus. 'Watch gas exchange!' Ms. Frizzle points. 'Oxygen diffuses FROM alveolus INTO blood (raising PO2). CO2 diffuses FROM blood INTO alveolus (lowering PCO2). ABG measures how well this works!'",
+      "q": "What does PO2 measure in an ABG?",
+      "options": [
+        "Partial pressure (amount) of oxygen dissolved in arterial blood",
+        "Pulse rate",
+        "Platelet count",
+        "Protein levels"
+      ],
+      "answer": 0,
+      "explain": "PO2 = PARTIAL PRESSURE OF OXYGEN in arterial blood (measured in mmHg). Normal = 80-100 mmHg. It measures dissolved oxygen (NOT the oxygen bound to hemoglobin - that's saturation). PO2 <60 = hypoxemia (low oxygen). PO2 shows how well lungs oxygenate blood.",
+      "wrongExplains": {
+        "1": "Pulse rate is measured by checking your pulse or pulse ox, not ABG. PO2 = partial pressure of OXYGEN.",
+        "2": "Platelet count is from Complete Blood Count (CBC). PO2 in ABG measures oxygen GAS in blood.",
+        "3": "Protein levels are from chemistry panels (albumin, total protein). PO2 measures OXYGEN partial pressure."
+      }
+    },
+    {
+      "id": "900.5.90.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Now watch CO2!' Ms. Frizzle shows CO2 leaving the blood. 'Cells produce CO2 as waste. It travels in blood to lungs. If you HYPOVENTILATE (breathe too little), CO2 builds up - high PCO2! If you HYPERVENTILATE (breathe too much), CO2 drops - low PCO2!'",
+      "q": "What does PCO2 measure, and what does high PCO2 indicate?",
+      "options": [
+        "PCO2 measures carbon dioxide; high PCO2 indicates hypoventilation (not breathing enough)",
+        "PCO2 measures oxygen; high PCO2 is good",
+        "PCO2 measures blood pressure",
+        "PCO2 measures pulse rate"
+      ],
+      "answer": 0,
+      "explain": "PCO2 = PARTIAL PRESSURE OF CARBON DIOXIDE. Normal = 35-45 mmHg. HIGH PCO2 (>45) = HYPOVENTILATION (respiratory acidosis) - not breathing enough to eliminate CO2. LOW PCO2 (<35) = HYPERVENTILATION (respiratory alkalosis) - breathing too much, blowing off excess CO2. PCO2 directly reflects ventilation adequacy!",
+      "wrongExplains": {
+        "1": "PCO2 measures CARBON DIOXIDE (not oxygen - that's PO2). High PCO2 is BAD - it means CO2 is accumulating because of inadequate breathing.",
+        "2": "PCO2 measures carbon dioxide GAS, not blood pressure. Blood pressure uses a cuff (sphygmomanometer).",
+        "3": "PCO2 measures carbon dioxide partial pressure, not pulse rate. Pulse is measured by palpation or monitoring."
+      }
+    },
+    {
+      "id": "900.5.90.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'pH tells us if blood is acidic or alkaline!' Ms. Frizzle shows the pH scale. 'Normal = 7.35-7.45. Below 7.35 = ACIDOSIS (too acidic). Above 7.45 = ALKALOSIS (too alkaline). Both are dangerous if severe!'",
+      "q": "What does pH measure in an ABG?",
+      "options": [
+        "Phosphate levels",
+        "Acidity/alkalinity of blood (normal 7.35-7.45)",
+        "Platelet count",
+        "Protein levels"
+      ],
+      "answer": 1,
+      "explain": "pH measures ACIDITY/ALKALINITY of blood. Normal = 7.35-7.45. pH <7.35 = ACIDOSIS (too acidic - excess H+ ions). pH >7.45 = ALKALOSIS (too alkaline - deficit of H+ ions). The body tightly regulates pH because enzymes and cellular functions require narrow pH range.",
+      "wrongExplains": {
+        "0": "pH measures acidity/alkalinity, not phosphate! Phosphate is measured in chemistry panels. pH is about H+ ion concentration.",
+        "2": "Platelet count is from CBC (Complete Blood Count). pH measures acid-base status in ABG.",
+        "3": "Protein levels are from chemistry panels. pH is a measure of acidity (H+ ion concentration) in blood."
+      }
+    },
+    {
+      "id": "900.5.90.s07",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Bicarbonate (HCO3) is the metabolic component!' Ms. Frizzle draws the buffer system. 'Kidneys control bicarbonate. It buffers acid. Low HCO3 = metabolic acidosis. High HCO3 = metabolic alkalosis or compensation for respiratory acidosis!'",
+      "q": "What does bicarbonate (HCO3) indicate in an ABG?",
+      "options": [
+        "Respiratory function only",
+        "Metabolic (kidney) regulation and acid-base buffering",
+        "Oxygen levels",
+        "Heart rate"
+      ],
+      "answer": 1,
+      "explain": "HCO3 (bicarbonate) indicates METABOLIC/KIDNEY component of acid-base balance. Normal = 22-26 mEq/L. Kidneys control HCO3 levels (takes hours-days). LOW HCO3 = metabolic acidosis (DKA, renal failure). HIGH HCO3 = metabolic alkalosis OR compensation for chronic respiratory acidosis (COPD).",
+      "wrongExplains": {
+        "0": "Bicarbonate is METABOLIC, not respiratory. PCO2 indicates respiratory function. HCO3 is controlled by kidneys, not lungs.",
+        "2": "Oxygen is measured by PO2 and saturation, not bicarbonate. HCO3 is about acid-base buffering.",
+        "3": "Heart rate is measured by checking pulse or monitor, not from ABG. HCO3 measures bicarbonate for acid-base assessment."
+      }
+    },
+    {
+      "id": "900.5.90.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "Mr. Edgar interprets the ABG: 'pH 7.25 (low), PCO2 55 (high), HCO3 23 (normal). The pH is acidic. PCO2 is high (respiratory problem). HCO3 is normal (no metabolic compensation yet). This is acute RESPIRATORY ACIDOSIS from hypoventilation!'",
+      "q": "How do you interpret: pH 7.25, PCO2 55, HCO3 23?",
+      "options": [
+        "Normal ABG",
+        "Respiratory acidosis (low pH from high CO2)",
+        "Metabolic alkalosis",
+        "Perfect oxygenation"
+      ],
+      "answer": 1,
+      "explain": "RESPIRATORY ACIDOSIS: pH 7.25 (ACIDIC, normal 7.35-7.45) + PCO2 55 (HIGH, normal 35-45) + HCO3 23 (normal, 22-26) = not breathing enough, CO2 accumulating, causing acidosis. Causes: COPD, sedation, neuromuscular weakness. Treatment: improve ventilation!",
+      "wrongExplains": {
+        "0": "This is very ABNORMAL! pH is too low (acidic), PCO2 is too high. The patient is in respiratory acidosis - serious condition requiring treatment.",
+        "2": "Alkalosis = pH >7.45 (too alkaline). This pH is 7.25 = ACIDOSIS (too acidic). Also, PCO2 is high (respiratory), not metabolic.",
+        "3": "This ABG doesn't even show PO2 (oxygenation)! The values shown indicate respiratory acidosis. You can't determine oxygenation from these three values alone."
+      }
+    },
+    {
+      "id": "900.5.90.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "'ABG vs pulse ox!' Ms. Frizzle compares. 'Pulse ox only shows SATURATION (SpO2). ABG shows PO2, PCO2, pH, HCO3 - complete respiratory and acid-base picture! ABG is invasive but gives WAY more information!'",
+      "q": "What information does ABG provide that pulse oximetry doesn't?",
+      "options": [
+        "Both provide exactly the same information",
+        "ABG provides PO2, PCO2, pH, and bicarbonate (complete acid-base status); pulse ox only shows oxygen saturation",
+        "Pulse ox provides more information than ABG",
+        "Neither provides useful information"
+      ],
+      "answer": 1,
+      "explain": "ABG provides COMPLETE respiratory/metabolic picture: PO2 (oxygenation), PCO2 (ventilation), pH (acid-base), HCO3 (metabolic status). Pulse ox ONLY shows SpO2 (oxygen saturation). ABG detects hypoventilation, acidosis, alkalosis - critical information pulse ox misses! ABG is the GOLD STANDARD but invasive.",
+      "wrongExplains": {
+        "0": "They provide DIFFERENT information! Pulse ox = saturation only (non-invasive, continuous). ABG = complete acid-base profile (invasive, intermittent) including CO2, pH, bicarbonate.",
+        "2": "ABG provides MUCH MORE information! Pulse ox is useful for continuous oxygen monitoring, but ABG gives complete metabolic and respiratory assessment.",
+        "3": "Both are extremely useful! Pulse ox for non-invasive continuous monitoring, ABG for detailed assessment of acid-base status and ventilation adequacy."
+      }
+    },
+    {
+      "id": "900.5.90.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "'One more example!' Mr. Edgar shows another ABG: 'pH 7.50, PCO2 30, HCO3 23. pH is high (alkalosis). PCO2 is low (hyperventilating). HCO3 normal. This is RESPIRATORY ALKALOSIS - the patient is hyperventilating, blowing off too much CO2!'",
+      "q": "Common causes of respiratory alkalosis (low PCO2, high pH) include:",
+      "options": [
+        "Hypoventilation",
+        "Hyperventilation from anxiety, pain, or hypoxia",
+        "COPD with CO2 retention",
+        "Diabetic ketoacidosis"
+      ],
+      "answer": 1,
+      "explain": "Respiratory alkalosis (low PCO2, high pH) = HYPERVENTILATION (breathing too much, blowing off excess CO2). Causes: anxiety/panic, pain, hypoxia (compensatory), pregnancy, high altitude, aspirin toxicity (early), pulmonary embolism. Treatment: address underlying cause, sometimes rebreathing bag for anxiety.",
+      "wrongExplains": {
+        "0": "HYPOventilation causes RESPIRATORY ACIDOSIS (high PCO2, low pH). Respiratory alkalosis is from HYPERventilation (too much breathing).",
+        "2": "COPD with CO2 retention = respiratory ACIDOSIS (high PCO2). The opposite of respiratory alkalosis.",
+        "3": "Diabetic ketoacidosis = METABOLIC acidosis (low HCO3, low pH), though they may hyperventilate to compensate (Kussmaul breathing). Primary problem is metabolic, not respiratory."
+      }
+    }
+  ]
+}

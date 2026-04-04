@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.63",
+  "parentQuestion": "In emphysema, the primary pathology is:",
+  "narrative": {
+    "setting": "The Magic School Bus floats in what should be hundreds of tiny alveoli but is now one massive air space. The walls have been destroyed, leaving a cavernous void. Ms. Frizzle points at the few remaining septa disintegrating before their eyes. 'This is emphysema,' she says quietly. 'Where gas exchange surfaces used to be, now there's just... empty space.'",
+    "character": "Mr. Edgar",
+    "tension": "Every cigarette smoked releases billions of neutrophils and macrophages that dump proteases. The lung's architecture - evolved over millions of years for maximum surface area - gets demolished. Patients develop barrel chests as air traps with nowhere to go. Understanding emphysema isn't abstract pathology - it's understanding irreversible destruction."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.63.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Alveoli,' Ms. Frizzle reminds the class. 'About 300 million in each lung. Total surface area of a tennis court - about 70 square meters. All for gas exchange. In emphysema, this gets destroyed.'",
+      "q": "The primary site of gas exchange in the lungs is the:",
+      "options": [
+        "Trachea",
+        "Bronchi",
+        "Alveoli",
+        "Pleura"
+      ],
+      "answer": 2,
+      "explain": "ALVEOLI are where gas exchange happens - ~300 million tiny air sacs with thin walls (0.5 μm) surrounded by capillaries. Total surface area ~70 m². Emphysema destroys these.",
+      "wrongExplains": {
+        "0": "Trachea is a conducting airway - no gas exchange. Too thick and distant from capillaries.",
+        "1": "Bronchi conduct air to deeper structures. Gas exchange is in alveoli only.",
+        "3": "Pleura is the lung lining - it doesn't participate in gas exchange."
+      }
+    },
+    {
+      "id": "900.5.63.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Elastin,' Ms. Frizzle explains. 'A protein in alveolar walls that gives lungs elastic recoil - like a rubber band. When you inhale, alveoli stretch. When you stop, elastin snaps them back and pushes air out passively. Exhalation is normally passive.'",
+      "q": "Normal exhalation is:",
+      "options": [
+        "An active process requiring muscle contraction",
+        "A passive process driven by elastic recoil",
+        "Impossible without surfactant",
+        "Controlled by swallowing"
+      ],
+      "answer": 1,
+      "explain": "Normal exhalation is PASSIVE - elastic recoil of lungs and chest wall pushes air out. No muscle work needed (except forced exhalation). In emphysema, lost elastin means lost recoil.",
+      "wrongExplains": {
+        "0": "Normal exhalation is passive. Active exhalation (using abdominal muscles) is only for forced breathing.",
+        "2": "Surfactant prevents alveolar collapse but exhalation is driven by elastic recoil.",
+        "3": "Swallowing is separate. Breathing is controlled by respiratory centers, elastic recoil."
+      }
+    },
+    {
+      "id": "900.5.63.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Proteases versus antiproteases,' Ms. Frizzle draws a balance scale. 'Normally balanced. Proteases (elastase, MMPs) break down damaged tissue. Antiproteases (alpha-1 antitrypsin) keep them in check. In emphysema - from smoking or genetic deficiency - proteases WIN.'",
+      "q": "In emphysema, what is the enzyme balance?",
+      "options": [
+        "Antiproteases dominate",
+        "Perfect balance",
+        "Proteases dominate, destroying alveolar walls",
+        "No enzymes involved"
+      ],
+      "answer": 2,
+      "explain": "Emphysema = PROTEASE > ANTIPROTEASE. Neutrophil elastase and other proteases overwhelm alpha-1 antitrypsin. Result: uncontrolled breakdown of elastin and alveolar walls.",
+      "wrongExplains": {
+        "0": "Antiprotease dominance would prevent damage. Emphysema is from protease excess.",
+        "1": "Perfect balance is normal. Emphysema disrupts this toward protease dominance.",
+        "3": "Proteases (especially elastase) are central to emphysema pathology."
+      }
+    },
+    {
+      "id": "900.5.63.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'The destruction,' Ms. Frizzle traces the process. 'Cigarette smoke recruits neutrophils and macrophages. They release elastase and matrix metalloproteinases. These enzymes digest elastin and collagen in alveolar septa. Walls disappear. Bullae form - large air pockets.'",
+      "q": "In emphysema, alveolar walls are destroyed by:",
+      "options": [
+        "Bacterial infection",
+        "Protease enzymes (elastase)",
+        "Excessive surfactant",
+        "High oxygen levels"
+      ],
+      "answer": 1,
+      "explain": "PROTEASE ENZYMES (especially neutrophil ELASTASE) destroy alveolar walls in emphysema. They break down elastin and collagen. Smoking and alpha-1 deficiency both lead to protease dominance.",
+      "wrongExplains": {
+        "0": "Bacterial infection causes pneumonia (pus in alveoli), not structural wall destruction.",
+        "2": "Surfactant prevents collapse. Excess isn't harmful and doesn't destroy walls.",
+        "3": "High O2 can cause oxidative damage but emphysema is protease-mediated destruction."
+      }
+    },
+    {
+      "id": "900.5.63.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Bullae,' Ms. Frizzle shows the large air spaces. 'Latin for bubbles. When alveolar walls are destroyed, adjacent air spaces merge into big pockets. No capillaries, no gas exchange - just wasted dead space. Large bullae can rupture, causing pneumothorax.'",
+      "q": "Bullae in emphysema are:",
+      "options": [
+        "Small, functional alveoli",
+        "Large air spaces from destroyed alveolar walls",
+        "Mucus plugs",
+        "Blood clots"
+      ],
+      "answer": 1,
+      "explain": "BULLAE = large air spaces (>1 cm) formed when alveolar walls are destroyed and spaces merge. Non-functional dead space. Can rupture → pneumothorax.",
+      "wrongExplains": {
+        "0": "Bullae are the OPPOSITE of small functional alveoli - they're large, merged, non-functional.",
+        "2": "Mucus plugs are in chronic bronchitis or asthma. Bullae are structural air spaces.",
+        "3": "Blood clots are emboli or thrombi. Bullae are air-filled spaces from destroyed tissue."
+      }
+    },
+    {
+      "id": "900.5.63.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Air trapping,' Ms. Frizzle demonstrates. 'Without elastic recoil, airways collapse during exhalation - air gets trapped in distal lung. Hyperinflation develops. Residual volume increases. Barrel chest appearance. Patients use pursed-lip breathing to keep airways open.'",
+      "q": "In emphysema, air trapping occurs because:",
+      "options": [
+        "Airways are blocked by mucus",
+        "Loss of elastic recoil causes airway collapse on exhalation",
+        "Alveoli are too stiff",
+        "Surfactant is excessive"
+      ],
+      "answer": 1,
+      "explain": "Lost ELASTIC RECOIL means airways collapse during exhalation, trapping air distally. Hyperinflation, increased residual volume, barrel chest result. Pursed-lip breathing helps.",
+      "wrongExplains": {
+        "0": "Mucus plugging is chronic bronchitis. Emphysema air trapping is from lost elastic support.",
+        "2": "Emphysema makes alveoli FLOPPY (lost elastin), not stiff. They over-expand and trap air.",
+        "3": "Surfactant prevents collapse at end-exhalation. Air trapping is from lost elastic recoil."
+      }
+    },
+    {
+      "id": "900.5.63.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Centriacinar versus panacinar,' Ms. Frizzle shows two patterns. 'Centriacinar - affects respiratory bronchioles first, upper lobes. From smoking. Panacinar - entire acinus destroyed, lower lobes. From alpha-1 antitrypsin deficiency.'",
+      "q": "Centriacinar emphysema is typically caused by:",
+      "options": [
+        "Alpha-1 antitrypsin deficiency",
+        "Cigarette smoking",
+        "Infections",
+        "High altitude"
+      ],
+      "answer": 1,
+      "explain": "CENTRIACINAR emphysema = SMOKING-related. Affects respiratory bronchioles and upper lobes first. Contrast with panacinar (alpha-1 deficiency, lower lobes, entire acinus).",
+      "wrongExplains": {
+        "0": "Alpha-1 deficiency causes PANACINAR emphysema (lower lobes). Centriacinar is from smoking.",
+        "2": "Infections cause acute damage (pneumonia). Centriacinar is chronic from smoking.",
+        "3": "High altitude doesn't cause emphysema. Smoking does."
+      }
+    },
+    {
+      "id": "900.5.63.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Diffusion capacity,' Ms. Frizzle explains. 'DLCO measures how well gas crosses from alveoli to blood. Emphysema REDUCES DLCO - less surface area for diffusion. Asthma and chronic bronchitis have normal DLCO.'",
+      "q": "In emphysema, diffusion capacity (DLCO) is:",
+      "options": [
+        "Increased",
+        "Normal",
+        "Decreased",
+        "Unaffected"
+      ],
+      "answer": 2,
+      "explain": "DLCO is DECREASED in emphysema - destroyed alveolar walls mean less surface area for gas diffusion. This distinguishes emphysema from asthma/chronic bronchitis (normal DLCO).",
+      "wrongExplains": {
+        "0": "Less surface area can't increase diffusion capacity. Emphysema reduces it.",
+        "1": "Normal DLCO is asthma or chronic bronchitis. Emphysema has reduced surface area.",
+        "3": "DLCO is very much affected - it's a key diagnostic finding in emphysema."
+      }
+    },
+    {
+      "id": "900.5.63.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Imaging findings,' Ms. Frizzle shows a chest X-ray. 'Hyperinflation - flattened diaphragms, increased AP diameter (barrel chest). Bullae - large black spaces. Reduced vascular markings - the 'pruned tree' appearance from destroyed capillaries.'",
+      "q": "Chest X-ray in emphysema typically shows:",
+      "options": [
+        "Normal findings",
+        "Hyperinflation, flattened diaphragms, bullae",
+        "Pleural effusion",
+        "Consolidation"
+      ],
+      "answer": 1,
+      "explain": "Emphysema X-ray: HYPERINFLATION (flattened diaphragms, increased AP diameter), BULLAE (large black spaces), reduced vascular markings. Classic findings.",
+      "wrongExplains": {
+        "0": "Emphysema has characteristic X-ray changes - hyperinflation, bullae, flattened diaphragms.",
+        "2": "Pleural effusion is fluid around lung - different pathology.",
+        "3": "Consolidation (white-out) is pneumonia. Emphysema is hyperinflation (too black)."
+      }
+    },
+    {
+      "id": "900.5.63.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Ms. Frizzle looks at the destroyed alveolar architecture, the lost gas exchange surface. 'Irreversible. The walls won't grow back. This is why prevention - never smoking or quitting early - is everything. So, class: in emphysema, what's the primary pathology?'",
+      "q": "In emphysema, the primary pathology is:",
+      "options": [
+        "Airway inflammation",
+        "Destruction of alveolar walls",
+        "Excess mucus production",
+        "Pleural thickening"
+      ],
+      "answer": 1,
+      "explain": "EMPHYSEMA = DESTRUCTION OF ALVEOLAR WALLS by protease enzymes. Creates bullae, reduces surface area, loses elastic recoil, air trapping. Reduced DLCO. Irreversible. Mostly from smoking.",
+      "wrongExplains": {
+        "0": "Airway inflammation is more characteristic of chronic bronchitis and asthma, not emphysema.",
+        "2": "Excess mucus production is chronic bronchitis ('blue bloater'), not emphysema.",
+        "3": "Pleural thickening isn't a feature of emphysema - it might occur with asbestosis or other diseases."
+      }
+    }
+  ]
+}

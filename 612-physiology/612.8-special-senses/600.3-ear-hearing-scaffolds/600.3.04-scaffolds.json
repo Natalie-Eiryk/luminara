@@ -1,0 +1,69 @@
+{
+  "parentId": "600.3.04",
+  "parentQuestion": "The receptor for static equilibrium is the macula.",
+  "scaffolds": [
+    {
+      "q": "Equilibrium means balance — knowing which way is up and how you're moving.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Yes! The vestibular system tracks head position and movement for balance."
+    },
+    {
+      "q": "'Static' equilibrium refers to sensing head POSITION relative to gravity.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Correct! Static = not moving. Sensing 'which way is down' even when still."
+    },
+    {
+      "q": "The vestibular system is located in the inner ear, near the cochlea.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Yes! The semicircular canals, utricle, and saccule share space with the cochlea."
+    },
+    {
+      "q": "The utricle and saccule contain sensors for linear motion and gravity.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Correct! These two organs detect linear acceleration and head tilt."
+    },
+    {
+      "q": "The macula is a sensory patch found in the utricle and saccule.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Yes! Each has a macula — a region with hair cells and otoliths for gravity detection."
+    },
+    {
+      "q": "Otoliths (tiny calcium carbonate crystals) sit on top of hair cells in the macula.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Correct! Otoliths add weight — gravity pulls them, bending hair cells."
+    },
+    {
+      "q": "When you tilt your head, gravity shifts the otoliths, bending hair cells.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Yes! Hair cell bending creates signals telling the brain about head position."
+    },
+    {
+      "q": "The macula detects linear acceleration (starting/stopping) and gravity orientation.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Correct! Both linear movement and static head position shift the weighted otoliths."
+    },
+    {
+      "q": "The maculae (in utricle and saccule) are the receptors for static equilibrium.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "advanced",
+      "explain": "Yes! Maculae detect head position and linear acceleration using gravity-weighted otoliths on hair cells."
+    }
+  ]
+}

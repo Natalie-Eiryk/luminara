@@ -1,0 +1,191 @@
+{
+  "parentId": "900.5.89",
+  "parentQuestion": "What does pulse oximetry measure?",
+  "narrative": {
+    "setting": "Mr. Edgar's emergency room, monitoring a patient with pneumonia",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar clips a small device onto the patient's finger. Within seconds, it displays '88%' - dangerously low. What is this device measuring?"
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.89.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Measurement",
+      "narrative": "Ms. Frizzle's bus shrinks down and enters the patient's bloodstream. 'Class, look at these red blood cells! See the hemoglobin molecules? When they carry oxygen, they're BRIGHT RED. Without oxygen, they're DARK RED. Pulse ox detects the color difference!'",
+      "q": "What does pulse oximetry measure?",
+      "options": [
+        "Blood pressure",
+        "Oxygen saturation of hemoglobin (SpO2)",
+        "Heart rate only",
+        "Blood sugar level"
+      ],
+      "answer": 1,
+      "explain": "Pulse oximetry measures OXYGEN SATURATION (SpO2) - the percentage of hemoglobin molecules carrying oxygen. Normal = 95-100% (nearly all hemoglobin is oxygenated). <90% = hypoxemia (low oxygen). The 'pulse' part refers to using arterial pulsations to measure, but the key value is SpO2.",
+      "wrongExplains": {
+        "0": "Blood pressure uses a different cuff device (sphygmomanometer). Pulse ox measures OXYGEN saturation, not pressure.",
+        "2": "Pulse ox DOES display heart rate (as a byproduct), but the primary measurement is oxygen SATURATION. Heart rate is secondary information.",
+        "3": "Blood sugar uses glucose meters (finger prick). Pulse ox measures OXYGEN in blood, not glucose."
+      }
+    },
+    {
+      "id": "900.5.89.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Measurement",
+      "narrative": "'How does it work without drawing blood?' Ralphie asks. 'LIGHT!' Ms. Frizzle explains. 'The device shines red and infrared light through your finger. Oxygenated hemoglobin absorbs light differently than deoxygenated hemoglobin. Math calculates the ratio!'",
+      "q": "How does pulse oximetry work?",
+      "options": [
+        "Draws blood and analyzes it in a lab",
+        "Shines light through tissue and measures absorption by oxygenated vs deoxygenated hemoglobin",
+        "Listens to lung sounds",
+        "Measures chest expansion"
+      ],
+      "answer": 1,
+      "explain": "Pulse ox uses LIGHT ABSORPTION. Device shines RED and INFRARED light through your finger. Oxygenated hemoglobin (HbO2) absorbs MORE infrared, LESS red. Deoxygenated Hb absorbs MORE red, LESS infrared. The ratio of absorption determines SpO2%. It's non-invasive and instant!",
+      "wrongExplains": {
+        "0": "Pulse ox is NON-INVASIVE - no needles, no blood draw! That's why it's so useful - continuous monitoring without hurting the patient.",
+        "2": "Listening to lungs is AUSCULTATION (stethoscope). Pulse ox uses LIGHT to detect oxygen in blood, not sound.",
+        "3": "Chest expansion measures breathing effort. Pulse ox measures OXYGEN SATURATION in blood - different measurement entirely."
+      }
+    },
+    {
+      "id": "900.5.89.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Measurement",
+      "narrative": "'What's a normal oxygen saturation?' Keesha asks. 'Healthy people at sea level should be 95-100%,' Mr. Edgar explains. 'Below 90% is hypoxemia - low oxygen requiring intervention. Below 85% is severe!'",
+      "q": "What is a normal oxygen saturation (SpO2) level?",
+      "options": [
+        "50-60%",
+        "70-80%",
+        "95-100%",
+        "110-120%"
+      ],
+      "answer": 2,
+      "explain": "Normal SpO2 = 95-100%. This means 95-100% of your hemoglobin molecules are carrying oxygen. 90-94% = mild hypoxemia (borderline, investigate). <90% = hypoxemia (low oxygen, needs treatment). <85% = severe hypoxemia (urgent intervention). You can't exceed 100% (all hemoglobin is saturated).",
+      "wrongExplains": {
+        "0": "50-60% is life-threateningly low! This level of oxygen means severe respiratory failure. Normal is 95-100%.",
+        "1": "70-80% is severely hypoxemic - patient would be in acute distress, possibly unconscious. Normal is 95-100%.",
+        "3": "You CAN'T exceed 100%! Once all hemoglobin is carrying oxygen, you're at 100%. Higher numbers are mathematically impossible (can't be >100% saturated)."
+      }
+    },
+    {
+      "id": "900.5.89.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus rides on a red blood cell through the lungs. 'Watch this!' Ms. Frizzle points as oxygen binds to hemoglobin. 'The hemoglobin changes from DARK RED to BRIGHT RED when it grabs oxygen! That color change is what pulse ox detects!'",
+      "q": "What changes in hemoglobin does pulse oximetry detect?",
+      "options": [
+        "Temperature of blood",
+        "Color change between oxygenated (bright red) and deoxygenated (dark red) hemoglobin",
+        "Amount of white blood cells",
+        "Blood pH"
+      ],
+      "answer": 1,
+      "explain": "Pulse ox detects the COLOR CHANGE in hemoglobin. Oxygenated hemoglobin (HbO2) = BRIGHT RED (absorbs more infrared light). Deoxygenated hemoglobin (Hb) = DARK RED/purple (absorbs more red light). The device measures light absorption ratios to calculate what % of hemoglobin is oxygenated.",
+      "wrongExplains": {
+        "0": "Blood temperature doesn't significantly change with oxygenation. Pulse ox uses LIGHT ABSORPTION, not temperature measurement.",
+        "2": "White blood cells aren't detected by pulse ox. It specifically measures oxygenated vs. deoxygenated HEMOGLOBIN (red blood cells).",
+        "3": "pH is measured by ARTERIAL BLOOD GAS (ABG) test. Pulse ox measures OXYGEN SATURATION, not acid-base status."
+      }
+    },
+    {
+      "id": "900.5.89.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus enters pneumonia-filled alveoli. 'The alveoli are full of pus and fluid!' Wanda exclaims. 'Oxygen can't cross into the blood! Look - the hemoglobin leaving these alveoli is DARK RED - unsaturated! SpO2 drops to 88%!'",
+      "q": "What causes low oxygen saturation (hypoxemia)?",
+      "options": [
+        "Too much oxygen in the air",
+        "Impaired gas exchange in lungs (pneumonia, COPD, etc.) or low inspired oxygen",
+        "High blood pressure",
+        "Eating too much sugar"
+      ],
+      "answer": 1,
+      "explain": "Low SpO2 is caused by IMPAIRED GAS EXCHANGE or LOW INSPIRED OXYGEN. Causes: (1) Lung disease (pneumonia, COPD, pulmonary edema, PE), (2) Hypoventilation (weak breathing), (3) Low ambient oxygen (high altitude), (4) Right-to-left cardiac shunt. Blood can't pick up enough oxygen in the lungs.",
+      "wrongExplains": {
+        "0": "Too much oxygen would INCREASE saturation (toward 100%), not decrease it. Hypoxemia means NOT ENOUGH oxygen getting into blood.",
+        "2": "High blood pressure affects circulation but doesn't directly cause low oxygen saturation. Hypoxemia is about oxygen transfer in the lungs.",
+        "3": "Blood sugar doesn't directly affect oxygen saturation. Diabetes can cause many complications, but acute hypoxemia isn't one of them."
+      }
+    },
+    {
+      "id": "900.5.89.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Why is the device on the FINGER?' Carlos asks. 'It needs a spot with good blood flow and thin enough for light to penetrate!' Mr. Edgar explains. 'Fingers, toes, earlobes work. It detects ARTERIAL pulsations - that's the pulse in pulse oximetry!'",
+      "q": "Why is the pulse oximeter typically placed on a finger or earlobe?",
+      "options": [
+        "Because that's where oxygen is made",
+        "Thin tissue with good arterial blood flow allows light transmission",
+        "To measure temperature",
+        "Random choice - any body part works equally well"
+      ],
+      "answer": 1,
+      "explain": "Fingers/earlobes work because: (1) THIN TISSUE allows light to pass through, (2) GOOD ARTERIAL BLOOD FLOW creates pulsations (the device distinguishes arterial from venous blood), (3) Easy to access. The device needs to detect the rhythmic arterial pulse to separate arterial oxygenation from tissue absorption.",
+      "wrongExplains": {
+        "0": "Oxygen is NOT made in fingers! It enters blood in the LUNGS. The finger is just a convenient measurement site with thin tissue and good blood flow.",
+        "2": "Temperature monitoring uses different sensors. Pulse ox measures OXYGEN SATURATION using light absorption, not temperature.",
+        "3": "Not just any spot works! You need thin tissue (light transmission) and strong arterial pulsations (signal detection). Thick muscle areas don't work well."
+      }
+    },
+    {
+      "id": "900.5.89.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "Mr. Edgar monitors the pneumonia patient. 'SpO2 88% on room air - that's hypoxemic. Let's start supplemental oxygen via nasal cannula. Goal is to get SpO2 above 92%.' Minutes later: 'SpO2 now 94% on 2L O2. Much better!'",
+      "q": "What is the typical treatment for low oxygen saturation?",
+      "options": [
+        "Ignore it - it will fix itself",
+        "Supplemental oxygen therapy to raise SpO2 to safe levels",
+        "Give antibiotics only",
+        "Restrict oxygen to train the body"
+      ],
+      "answer": 1,
+      "explain": "SUPPLEMENTAL OXYGEN therapy treats hypoxemia. Delivery methods: nasal cannula (1-6 L/min), face mask, non-rebreather, high-flow nasal cannula, ventilator (severe cases). Goal: maintain SpO2 ≥92% (some COPD patients target 88-92%). Also treat underlying cause (antibiotics for pneumonia, bronchodilators for COPD, etc.).",
+      "wrongExplains": {
+        "0": "Hypoxemia (<90%) is DANGEROUS and won't self-resolve without treating the underlying cause and providing supplemental oxygen. Low oxygen damages organs (brain, heart, kidneys).",
+        "2": "Antibiotics treat infection (pneumonia) but won't IMMEDIATELY raise oxygen levels. You need supplemental O2 while antibiotics work (takes days).",
+        "3": "Restricting oxygen when SpO2 is low is HARMFUL! The body NEEDS oxygen. Hypoxemia damages vital organs. Always treat low oxygen levels."
+      }
+    },
+    {
+      "id": "900.5.89.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "'Pulse ox has limitations!' Ms. Frizzle warns. 'Nail polish blocks light - false low reading. Poor circulation (cold hands, shock) - no signal. Carbon monoxide poisoning - false NORMAL reading because CO-bound hemoglobin looks red like oxygen!'",
+      "q": "Which situation can cause false pulse oximetry readings?",
+      "options": [
+        "Pulse oximetry is always 100% accurate",
+        "Nail polish, poor circulation, carbon monoxide poisoning",
+        "Eating food",
+        "Talking while being measured"
+      ],
+      "answer": 1,
+      "explain": "Pulse ox limitations: (1) NAIL POLISH (especially blue/black) blocks light = false low, (2) POOR CIRCULATION (cold, shock, vasoconstriction) = weak signal/no reading, (3) CARBON MONOXIDE - COHb looks red = false normal SpO2 despite severe hypoxemia, (4) Severe anemia, (5) Motion artifact. Always correlate with clinical picture!",
+      "wrongExplains": {
+        "0": "Pulse ox is USEFUL but NOT perfect! Many factors can interfere with readings. Always assess the patient clinically, not just the number.",
+        "2": "Eating doesn't affect pulse ox readings. The device measures light through your finger, not your digestive system.",
+        "3": "Talking doesn't typically affect finger pulse ox readings (though it might affect forehead sensors). Motion artifact from moving the hand can interfere, but talking alone doesn't."
+      }
+    },
+    {
+      "id": "900.5.89.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "'One critical point!' Mr. Edgar emphasizes. 'SpO2 92% might seem okay, but on the oxygen-hemoglobin dissociation curve, that's where things drop FAST. Even small decreases below 90% mean big drops in actual oxygen content. Monitor closely!'",
+      "q": "Why is an SpO2 of 88-90% concerning even though it seems close to normal?",
+      "options": [
+        "It's not concerning - perfectly normal",
+        "This is the steep part of the oxygen-hemoglobin curve where small SpO2 drops mean large oxygen content decreases",
+        "Any number above 50% is fine",
+        "SpO2 doesn't matter"
+      ],
+      "answer": 1,
+      "explain": "SpO2 88-90% is concerning because it's on the STEEP PART of the oxygen-hemoglobin dissociation curve. Below 90%, small SpO2 drops (90%→85%) mean LARGE decreases in oxygen content/delivery to tissues. Above 90% is the FLAT part - less critical. <90% = hypoxemia requiring treatment.",
+      "wrongExplains": {
+        "0": "88-90% is NOT normal - it's hypoxemia! Normal is 95-100%. Below 90% requires investigation and usually supplemental oxygen.",
+        "2": "50% would be life-threatening severe hypoxemia! Safe levels are ≥92% for most patients. Below 90% needs treatment.",
+        "3": "SpO2 is CRITICAL for monitoring oxygen delivery to tissues! Low oxygen damages brain, heart, kidneys. SpO2 guides oxygen therapy and assesses disease severity."
+      }
+    }
+  ]
+}

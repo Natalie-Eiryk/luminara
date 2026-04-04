@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Luminara Quiz">
+  <meta name="theme-color" content="#c9a55c">
+  <meta name="description" content="Gamified anatomy & physiology quiz with RPG mechanics - by Ms. Luminara">
+
+  <!-- Content Security Policy - Mitigate XSS attacks
+       All inline scripts extracted to external files for full CSP compliance.
+       'unsafe-inline' for styles retained for dynamic style manipulation. -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://cdn.jsdelivr.net;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net;
+    font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net;
+    img-src 'self' data: https: blob:;
+    connect-src 'self' https://luminara-scores.deno.dev https://fonts.googleapis.com https://fonts.gstatic.com;
+    frame-ancestors 'none';
+    base-uri 'self';
+    form-action 'self';
+  ">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Ms. Luminara's Quiz Lab">
+  <meta property="og:description" content="Gamified anatomy & physiology quiz with RPG mechanics, scaffolded learning, and roguelike adventures">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://luminara.natalie-eiryk.com/">
+  <meta property="og:image" content="https://luminara.natalie-eiryk.com/icons/og-image.png">
+  <meta property="og:image:alt" content="Ms. Luminara's Quiz Lab - Dark academic themed quiz interface with gold accents">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ms. Luminara's Quiz Lab">
+  <meta name="twitter:description" content="Gamified anatomy & physiology quiz with RPG mechanics">
+  <meta name="twitter:image" content="https://luminara.natalie-eiryk.com/icons/og-image.png">
+  <meta name="twitter:image:alt" content="Ms. Luminara's Quiz Lab - Dark academic themed quiz interface">
+
+  <title>Ms. Luminara's Quiz Lab</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- iOS Icons (SVG with PNG fallback for older iOS) -->
+  <!-- Note: apple-touch-icon links don't support alt text - icon purpose is implied by link type -->
+  <link rel="apple-touch-icon" href="icons/icon-192.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-192.svg">
+
+  <!-- Dark Academic Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- KaTeX for beautiful math rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="820.31-core/820.31.0-styles.css">
+  <link rel="stylesheet" href="820.31-core/820.31.0-dev-panel.css">
+  <link rel="stylesheet" href="820.31-core/820.31.1-game-modes.css">
+  <link rel="stylesheet" href="820.31-core/820.31.2-utilities.css">
+</head>
+<body>
+  <!-- Loading Overlay -->
+  <div id="loader" class="hidden">
+    <div class="loader-content">
+      <div class="spinner"></div>
+      <p>Loading questions...</p>
+    </div>
+  </div>
+
+  <!-- Error Message -->
+  <div id="errorMessage" class="hidden"></div>
+
+  <!-- Mode Navigation (Study + Stats only - Review/Test Prep accessed per-category) -->
+  <nav class="mode-nav" id="modeNav" aria-label="Quiz mode selection">
+    <button class="mode-tab active" data-mode="study" aria-label="Study mode - explore questions without penalty">
+      <span class="icon" aria-hidden="true">📖</span> Study
+    </button>
+    <button class="mode-tab" data-mode="stats" aria-label="Statistics - view your progress and achievements">
+      <span class="icon" aria-hidden="true">📊</span> Stats
+    </button>
+  </nav>
+
+  <!-- Study Module (Original landing + study view) -->
+  <div class="module-container active" id="module-study">
+    <!-- Landing Page -->
+    <div id="landing">
+      <div class="landing-content">
+        <div class="landing-header">
+          <h1>Ms. Luminara's Study Session</h1>
+        </div>
+        <div class="header-toolbar">
+          <span class="last-updated">Updated: Mar 31, 2026 v60</span>
+          <button class="gauntlet-btn leaderboard" data-action="show-high-scores" style="margin-left: auto;" aria-label="View leaderboard and high scores">
+            <span aria-hidden="true">🏆</span> Leaderboard
+          </button>
+        </div>
+        <p class="subtitle">Explore every answer. Learn the mechanism. No penalty for curiosity.</p>
+
+        <div class="luminara-welcome">
+          <div class="speaker">Ms. Luminara</div>
+          <p>"Ah, a fresh victim— I mean, <em>student</em>. Welcome to my domain. Here in Study Mode, I'll <em>graciously</em> let you poke around without consequence. Click any answer — I'll explain exactly why you're wrong. Consider it... reconnaissance before I crush you in the Gauntlet. 😈"</p>
+        </div>
+
+        <!-- Adventure Mode Selection -->
+        <div class="map-run-launcher" style="margin: 2rem 0;">
+          <h2 class="section-heading">
+            <span class="heading-flourish">❧</span>
+            Choose Your Adventure
+            <span class="heading-flourish">❧</span>
+          </h2>
+          <p class="section-subtitle" style="margin-bottom: 1.5rem;">Select your quest length and topics through the adventure portal</p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <button class="map-run-btn" data-action="start-map-run" data-run-type="quick" style="padding: 1rem 2rem; background: var(--bg-card); border: 2px solid var(--border); border-radius: 12px; cursor: pointer; transition: all 0.2s; display: flex; flex-direction: column; align-items: center; min-width: 140px;">
+              <span style="font-size: 2rem;">🏃</span>
+              <span style="font-weight: 600; color: var(--text-primary); font-size: 1.1rem;">Quick Run</span>
+              <span style="font-size: 0.75rem; color: var(--text-dim);">3 Acts · ~15 min</span>
+            </button>
+            <button class="map-run-btn" data-action="start-map-run" data-run-type="standard" style="padding: 1rem 2rem; background: linear-gradient(135deg, var(--bg-card) 0%, rgba(201, 165, 92, 0.1) 100%); border: 2px solid var(--gold); border-radius: 12px; cursor: pointer; transition: all 0.2s; display: flex; flex-direction: column; align-items: center; min-width: 140px; box-shadow: 0 0 20px rgba(201, 165, 92, 0.2);">
+              <span style="font-size: 2rem;">🗡️</span>
+              <span style="font-weight: 600; color: var(--gold); font-size: 1.1rem;">Standard</span>
+              <span style="font-size: 0.75rem; color: var(--text-dim);">5 Acts · ~30 min</span>
+            </button>
+            <button class="map-run-btn" data-action="start-map-run" data-run-type="epic" style="padding: 1rem 2rem; background: var(--bg-card); border: 2px solid var(--border); border-radius: 12px; cursor: pointer; transition: all 0.2s; display: flex; flex-direction: column; align-items: center; min-width: 140px;">
+              <span style="font-size: 2rem;">👑</span>
+              <span style="font-weight: 600; color: var(--text-primary); font-size: 1.1rem;">Epic Run</span>
+              <span style="font-size: 0.75rem; color: var(--text-dim);">7 Acts · ~45 min</span>
+            </button>
+          </div>
+        </div>
+
+        <div id="landingStats" class="landing-stats"></div>
+
+        <!-- Daily Challenges Panel -->
+        <div id="dailyChallengesPanel"></div>
+
+        <!-- Study Calendar -->
+        <div id="studyCalendarPanel"></div>
+
+        <!-- Featured Quiz Section -->
+        <div class="featured-quiz-section" style="margin: 2rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(56, 189, 248, 0.05) 0%, rgba(167, 139, 250, 0.05) 100%); border: 2px solid rgba(56, 189, 248, 0.2); border-radius: 14px;">
+          <h2 class="section-heading" style="margin-bottom: 1rem; color: var(--primary);">
+            <span class="heading-flourish">✨</span>
+            Featured Quiz
+            <span class="heading-flourish">✨</span>
+          </h2>
+          <p class="section-subtitle" style="margin-bottom: 1rem;">Deep-dive comprehensive physiology quizzes with detailed explanations</p>
+
+          <a href="612-physiology/612.2-respiratory/friday-night-quiz-4.3.26.html"
+             class="featured-quiz-btn"
+             target="_blank"
+             rel="noopener"
+             style="margin-bottom: 1rem;">
+            <span style="font-size: 1.5rem;">🫁</span>
+            <span>Friday Night Quiz: Respiratory System</span>
+            <span style="font-size: 0.8rem; opacity: 0.9;">21 questions · 4.3.26</span>
+          </a>
+
+          <a href="612-physiology/612.3-digestive/friday-night-quiz-digestive-4.3.26.html"
+             class="featured-quiz-btn"
+             target="_blank"
+             rel="noopener">
+            <span style="font-size: 1.5rem;">🍔</span>
+            <span>Friday Night Quiz Pt. 2: Digestive System</span>
+            <span style="font-size: 0.8rem; opacity: 0.9;">26 questions · 4.3.26</span>
+          </a>
+        </div>
+
+        <div class="progress-controls">
+          <button class="progress-btn" data-action="export-progress" title="Download your progress as a file" aria-label="Export progress - download your progress as a JSON file">
+            <span aria-hidden="true">💾</span> Export Progress
+          </button>
+          <button class="progress-btn" data-action="import-progress-click" title="Load progress from a file" aria-label="Import progress - load progress from a JSON file">
+            <span aria-hidden="true">📂</span> Import Progress
+          </button>
+          <input type="file" id="importFile" accept=".json" style="display:none" aria-label="Select progress file to import">
+          <button class="progress-btn danger" data-action="reset-progress" title="Start fresh" aria-label="Reset progress - start fresh with all progress cleared">
+            <span aria-hidden="true">🗑️</span> Reset Progress
+          </button>
+        </div>
+
+        <div class="reference-note">
+          <p><strong>Reference:</strong> Question banks organized using Dewey Decimal system</p>
+          <p>See <a href="https://github.com/Natalie-Eiryk/Ms-Luminara/blob/main/README.md" target="_blank" rel="noopener">documentation on GitHub</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Study View -->
+    <div id="studyView">
+      <div id="statsBar" class="stats-bar"></div>
+
+      <div class="progress-bar">
+        <div id="progressFill" class="progress-fill"></div>
+      </div>
+
+      <div class="nav-header">
+        <button class="nav-btn" data-action="go-home">← Back to Topics</button>
+        <span id="progressInfo">Question 1 of 10</span>
+      </div>
+
+      <div id="questionArea"></div>
+
+      <div class="nav-footer">
+        <button id="prevBtn" class="nav-btn" data-action="prev-question">← Previous</button>
+        <button id="nextBtn" class="nav-btn primary" data-action="next-question">Next →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Review Module (SRS) -->
+  <div class="module-container" id="module-review">
+    <div class="review-container">
+      <!-- D20 Stats Bar for Review Mode -->
+      <div id="reviewStatsBar" class="stats-bar"></div>
+      <div class="review-header">
+        <div class="review-due-info">
+          <div class="review-due-count" id="reviewDueCount">0</div>
+          <div class="review-due-label">questions to review</div>
+        </div>
+        <div class="review-badges" id="reviewBadges"></div>
+      </div>
+      <div id="reviewArea">
+        <div class="review-empty">
+          <div class="icon">✨</div>
+          <h3>All caught up!</h3>
+          <p>No reviews due right now. Come back later or study new topics.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Test Prep Module (7-Scaffold Gauntlet) -->
+  <div class="module-container" id="module-testprep">
+    <div class="testprep-container">
+      <!-- D20 Stats Bar for Test Prep -->
+      <div id="testprepStatsBar" class="stats-bar"></div>
+      <!-- Landing Page -->
+      <div class="testprep-landing" id="testprepLanding">
+        <div class="testprep-header">
+          <h1>🎯 Test Prep Gauntlet</h1>
+          <p class="testprep-subtitle">All 311 questions. 7 scaffolds each. One wrong answer ends the run.</p>
+        </div>
+
+        <div class="testprep-intro">
+          <div class="speaker">Ms. Luminara</div>
+          <p>"So, you think you're ready? <em>Adorable.</em> 311 questions stand between you and glory. One slip-up and it's GAME OVER. I've personally curated each question to maximize your suffering— er, <em>learning</em>. The current record? Let's just say the last challenger didn't make it past question 47. *shuffles papers menacingly* 📋"</p>
+        </div>
+
+        <!-- Mode Selection -->
+        <div class="mode-selection" id="modeSelection">
+          <h3 class="mode-selection-title">Choose Your Challenge</h3>
+          <div class="mode-cards">
+            <div class="mode-card gauntlet" id="modeCardGauntlet" data-action="select-mode" data-mode="gauntlet">
+              <div class="mode-icon">⚔️</div>
+              <div class="mode-name">GAUNTLET</div>
+              <div class="mode-desc">Pure skill. No power-ups. No mercy.</div>
+              <div class="mode-badge global">🌐 Global Leaderboard</div>
+              <div class="mode-features">
+                <span class="feature disabled">❌ No Power-ups</span>
+                <span class="feature disabled">❌ No Healing</span>
+                <span class="feature">✓ Fair Competition</span>
+              </div>
+            </div>
+            <div class="mode-card arcade selected" id="modeCardArcade" data-action="select-mode" data-mode="arcade">
+              <div class="mode-icon">🎮</div>
+              <div class="mode-name">ARCADE</div>
+              <div class="mode-desc">Power-ups. Progression. Glory.</div>
+              <div class="mode-badge global">🌐 Global Leaderboard</div>
+              <div class="mode-features">
+                <span class="feature enabled">✓ Power-ups Active</span>
+                <span class="feature enabled">✓ Healing Items</span>
+                <span class="feature">✓ Full RPG Experience</span>
+              </div>
+            </div>
+          </div>
+          <div class="mode-selected-indicator" id="modeIndicator">
+            <span class="mode-icon-small">🎮</span> ARCADE MODE
+          </div>
+        </div>
+
+        <div class="testprep-stats-box" id="testprepStatsBox">
+          <div class="tp-stat">
+            <span class="tp-value" id="tpBestPosition">0</span>
+            <span class="tp-label">Best Position</span>
+          </div>
+          <div class="tp-stat">
+            <span class="tp-value" id="tpAttempts">0</span>
+            <span class="tp-label">Attempts</span>
+          </div>
+          <div class="tp-stat">
+            <span class="tp-value" id="tpCompletions">0</span>
+            <span class="tp-label">Completions</span>
+          </div>
+          <button class="gauntlet-btn leaderboard" data-action="show-high-scores" style="margin-top: 1rem;">
+            🏆 Leaderboard
+          </button>
+        </div>
+
+        <div class="testprep-btn-row">
+          <button class="testprep-start-btn" data-action="start-gauntlet">
+            <span class="btn-icon">🚀</span>
+            Start Full Gauntlet
+            <span class="btn-subtitle">All questions • Battle mode</span>
+          </button>
+          <button class="testprep-start-btn testprep-secondary" data-action="start-gauntlet" data-topic="exam">
+            <span class="btn-icon">📝</span>
+            Exam Topics Only
+            <span class="btn-subtitle">Brain • Nerves • ANS • Senses • Endocrine</span>
+          </button>
+          <button class="testprep-start-btn testprep-lab" data-action="start-gauntlet" data-topic="800">
+            <span class="btn-icon">🔬</span>
+            Lab Exam 1 Prep
+            <span class="btn-subtitle">Nervous Tissue • Brain • Spinal Cord • Eye • Ear</span>
+          </button>
+        </div>
+
+        <!-- Standalone HTML Exams - Coming Soon
+             These exam files are planned but not yet created.
+             Uncomment when exam HTML files are added to the project.
+        <div class="topic-gauntlets" style="margin-top: 1.5rem;">
+          <h3>Standalone HTML Exams</h3>
+          <p style="color: var(--text-dim); font-size: 0.875rem; margin-bottom: 1rem;">
+            Coming soon - standalone exam pages for focused practice
+          </p>
+        </div>
+        -->
+
+        <div class="topic-gauntlets">
+          <h3>📚 Topic Focus</h3>
+          <div class="topic-btn-grid">
+            <button class="topic-gauntlet-btn" data-action="start-gauntlet" data-topic="100">
+              <span class="topic-icon">🧠</span>
+              <span class="topic-name">Brain</span>
+            </button>
+            <button class="topic-gauntlet-btn" data-action="start-gauntlet" data-topic="200">
+              <span class="topic-icon">⚡</span>
+              <span class="topic-name">Nerves</span>
+            </button>
+            <button class="topic-gauntlet-btn" data-action="start-gauntlet" data-topic="500">
+              <span class="topic-icon">💓</span>
+              <span class="topic-name">ANS</span>
+            </button>
+            <button class="topic-gauntlet-btn" data-action="start-gauntlet" data-topic="600">
+              <span class="topic-icon">👁️</span>
+              <span class="topic-name">Senses</span>
+            </button>
+            <button class="topic-gauntlet-btn" data-action="start-gauntlet" data-topic="700">
+              <span class="topic-icon">🧪</span>
+              <span class="topic-name">Endocrine</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Active Run UI -->
+      <div id="testprepActive" style="display:none;">
+        <!-- Progress Bar with Ghost Line -->
+        <div class="testprep-progress-container">
+          <div class="testprep-progress-bar" id="testprepProgressBar">
+            <div class="progress-ghost" id="testprepGhost"></div>
+            <div class="progress-fill" id="testprepFill"></div>
+          </div>
+          <div class="testprep-progress-labels">
+            <span id="testprepProgressText">Question 0/311</span>
+            <span id="testprepScaffoldText">Scaffold 0/7</span>
+          </div>
+        </div>
+
+        <!-- Question Type Indicator -->
+        <div class="testprep-question-type" id="testprepQuestionType">
+          <span class="type-badge scaffold">Scaffold 1/7</span>
+        </div>
+
+        <!-- Lifelines -->
+        <div class="lifelines-bar" id="lifelinesBar" role="toolbar" aria-label="Power-ups and lifelines">
+          <button class="lifeline-btn" id="lifeline5050" data-action="use-fifty-fifty" title="Eliminate 2 wrong answers" aria-label="50/50 - eliminate 2 wrong answers">
+            <span class="lifeline-icon" aria-hidden="true">🎯</span>
+            <span class="lifeline-name">50/50</span>
+            <span class="lifeline-count" id="count5050" aria-label="remaining uses">2</span>
+          </button>
+          <button class="lifeline-btn" id="lifelineHint" data-action="use-hint" title="Show a hint" aria-label="Hint - show a hint for the current question">
+            <span class="lifeline-icon" aria-hidden="true">💡</span>
+            <span class="lifeline-name">Hint</span>
+            <span class="lifeline-count" id="countHint" aria-label="remaining uses">2</span>
+          </button>
+          <button class="lifeline-btn" id="lifelineExtraLife" data-action="use-extra-life" title="5 lives - saves from wrong answers" aria-label="Extra lives - saves from wrong answers">
+            <span class="lifeline-icon" aria-hidden="true">❤️</span>
+            <span class="lifeline-name">Lives</span>
+            <span class="lifeline-count" id="countExtraLife" aria-label="remaining lives">5</span>
+          </button>
+          <div class="streak-display" id="streakDisplay" style="display:none;">
+            <span class="streak-icon">🔥</span>
+            <span class="streak-count" id="streakCount">0</span>
+          </div>
+        </div>
+
+        <!-- Question Card -->
+        <div id="testprepQuestion" class="testprep-question-card"></div>
+      </div>
+
+      <!-- Game Over Overlay -->
+      <div id="testprepGameOver" class="testprep-gameover" style="display:none;">
+        <div class="gameover-content">
+          <h2 class="gameover-title" id="testprepGameOverTitle">GAME OVER</h2>
+          <div class="gameover-stats">
+            <div class="go-stat-main">
+              <span class="go-label">You reached</span>
+              <span class="go-value" id="goReached">0/311</span>
+              <span class="go-percent" id="goPercent">(0%)</span>
+            </div>
+            <div class="go-stat-best">
+              <span class="go-label">Personal Best</span>
+              <span class="go-value" id="goBest">0/311</span>
+              <span class="go-percent" id="goBestPercent">(0%)</span>
+            </div>
+          </div>
+          <div class="gameover-progress-bar">
+            <div class="progress-ghost" id="goGhost"></div>
+            <div class="progress-fill" id="goFill"></div>
+          </div>
+          <div class="gameover-details">
+            <p><span class="detail-label">Scaffolds completed:</span> <span id="goScaffolds">0</span></p>
+            <p><span class="detail-label">Time:</span> <span id="goTime">0:00</span></p>
+            <p><span class="detail-label">Retries needed:</span> <span id="goRetries">0</span></p>
+          </div>
+          <div class="gameover-actions">
+            <button class="go-btn primary" data-action="start-gauntlet">Try Again</button>
+            <button class="go-btn secondary" data-action="exit-testprep">Back to Menu</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Boss Arena Module -->
+  <div class="module-container" id="bossArena">
+    <div class="boss-arena-container">
+      <div class="boss-display">
+        <div class="boss-sprite" id="bossSprite"></div>
+        <div class="boss-hp-bar">
+          <div class="boss-hp-fill" id="bossHPFill"></div>
+          <span class="boss-hp-text" id="bossHPText">200/200</span>
+        </div>
+        <div class="boss-name" id="bossName">The Forgetful One</div>
+        <div class="boss-subtitle" id="bossSubtitle">Destroyer of Short-Term Memory</div>
+      </div>
+
+      <div class="player-status">
+        <div class="player-lives" id="playerLives">❤️❤️❤️</div>
+        <div class="player-gear-score">Gear Score: <span id="playerGearScore">0</span></div>
+      </div>
+
+      <div class="boss-question-area" id="bossQuestionArea">
+        <!-- Question renders here -->
+      </div>
+
+      <div class="boss-progress">
+        <span>Question <span id="bossQNum">1</span>/<span id="bossQTotal">10</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats Module -->
+  <div class="module-container" id="module-stats">
+    <div class="stats-container">
+      <!-- Seasonal Event Banner -->
+      <div id="statsSeasonalBanner"></div>
+
+      <!-- Learning Analytics Dashboard Link -->
+      <div class="analytics-dashboard-link" style="margin-bottom: 1rem;">
+        <button class="analytics-btn" data-action="show-analytics" style="width: 100%; padding: 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 0.75rem;">
+          <span style="font-size: 1.5rem;">📊</span>
+          <span style="color: var(--text-primary); font-weight: 600;">Learning Analytics Dashboard</span>
+          <span style="font-size: 0.75rem; color: var(--text-dim); background: rgba(52, 211, 153, 0.2); padding: 0.2rem 0.5rem; border-radius: 4px;">Research-Based</span>
+        </button>
+      </div>
+
+      <div class="stats-grid" id="statsGrid"></div>
+
+      <!-- Daily Challenges in Stats -->
+      <div id="statsDailyChallenges" style="margin-bottom: 1.5rem;"></div>
+
+      <!-- Study Calendar in Stats -->
+      <div id="statsStudyCalendar" style="margin-bottom: 1.5rem;"></div>
+
+      <!-- Milestones Progress -->
+      <div class="mastery-section" id="milestonesSection">
+        <div class="mastery-title">🏆 Milestones</div>
+        <div id="milestonesProgress"></div>
+      </div>
+
+      <div class="mastery-section" id="masterySection">
+        <div class="mastery-title">Category Mastery</div>
+        <div id="masteryBars"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Map Mode Container (Slay the Spire-style roguelike) -->
+  <div id="map-container"></div>
+
+  <!-- Dev Panel -->
+  <div id="devPanel" class="dev-panel hidden">
+    <div class="dev-panel-header">
+      <span>Dev Tools</span>
+      <button data-action="toggle-dev-panel" class="dev-close" aria-label="Close developer panel">&times;</button>
+    </div>
+    <div class="dev-panel-content">
+      <div class="dev-section">
+        <h4>Quick Actions</h4>
+        <button data-action="reload-page" class="dev-btn">Refresh Page</button>
+        <button data-action="reload-styles" class="dev-btn">Reload CSS</button>
+        <button data-action="reload-questions" class="dev-btn">Reload Questions</button>
+      </div>
+      <div class="dev-section">
+        <h4>Live CSS Tweaks</h4>
+        <label>Background: <input type="color" id="devBgColor" value="#1a1612"></label>
+        <label>Glow: <input type="color" id="devGlowColor" value="#c9a55c"></label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Core Scripts (defer for non-blocking load) -->
+  <!-- Event Handlers - CSP-compliant event delegation (must load early) -->
+  <script defer src="820.31-core/820.31.97-event-handlers.js"></script>
+  <script defer src="820.31-core/820.31.0-dev-tools.js"></script>
+  <script defer src="820.31-core/820.31.4-persistence.js"></script>
+  <script defer src="820.31-core/820.31.3-gamification.js"></script>
+  <script defer src="820.31-core/820.31.6-scaffolding.js"></script>
+  <script defer src="820.31-core/820.31.7-d20-system.js"></script>
+  <script defer src="820.31-core/820.31.8-loot-system.js"></script>
+  <script defer src="820.31-core/820.31.14-scaffold-remediation.js"></script>
+  <script defer src="820.31-core/820.31.15-boss-system.js"></script>
+  <script defer src="820.31-core/820.31.16-run-manager.js?v=8"></script>
+  <script defer src="820.31-core/820.31.17-powerups.js"></script>
+  <script defer src="820.31-core/820.31.18-high-scores.js"></script>
+  <script defer src="820.31-core/820.31.19-battle-scene.js"></script>
+  <script defer src="820.31-core/820.31.20-vocab-helper.js"></script>
+  <script defer src="820.31-core/820.31.25-card-system.js"></script>
+  <script defer src="820.31-core/820.31.26-card-battle-ui.js"></script>
+
+  <!-- Card Templates - must load before MapRenderer uses it for tile positions -->
+  <script defer src="820.31-core/820.31.85-card-templates.js"></script>
+  <!-- Lesson Modal - must load before QuestionPresenter (help button dependency) -->
+  <script defer src="820.31-core/820.31.96-lesson-modal.js"></script>
+  <script defer src="820.31-core/820.31.90-question-presenter.js"></script>
+  <!-- Topic Selector - Category/topic selection modal for Map mode -->
+  <script defer src="820.31-core/820.31.91-topic-selector.js"></script>
+
+  <!-- Map Roguelike System -->
+  <script defer src="820.31-core/820.31.28-map-system.js"></script>
+  <script defer src="820.31-core/820.31.29-map-renderer.js"></script>
+  <script defer src="820.31-core/820.31.30-potion-system.js"></script>
+  <script defer src="820.31-core/820.31.31-act-system.js?v=2"></script>
+
+  <!-- Statistics-Driven ZPD System -->
+  <script defer src="820.31-core/820.31.32-question-statistics.js"></script>
+
+  <!-- Insight Detection Engine for Adaptive Scaffolding (Phase 1 of 510.108) -->
+  <script defer src="820.31-core/820.31.33-insight-detection.js"></script>
+
+  <!-- Learning Analytics Engine (Opportunities 1, 2, 4, 7 of 510.108) -->
+  <script defer src="820.31-core/820.31.34-learning-analytics.js"></script>
+
+  <!-- Scaffold Quality Audit Tool (Opportunity 5 of 510.108) -->
+  <script defer src="820.31-core/820.31.35-scaffold-quality-audit.js"></script>
+
+  <!-- Multi-Representational Pilot (Opportunity 6 of 510.108) -->
+  <script defer src="820.31-core/820.31.36-representation-engine.js"></script>
+
+  <!-- Vesicle Transmitter - Sends analytics back to LUMI-OS nucleus (340.50 VTP) -->
+  <script defer src="820.31-core/820.31.37-vesicle-transmitter.js"></script>
+
+  <!-- Path Follower - Character animation following dotted paths between nodes -->
+  <script defer src="820.31-core/820.31.38-path-follower.js"></script>
+
+  <!-- ========== GAME PATH ENGINES (820.31.40-46) ========== -->
+  <!-- Misconception Dungeon - Confusion matrix as roguelike dungeon -->
+  <script defer src="820.31-core/820.31.40-misconception-dungeon.js"></script>
+  <!-- Knowledge Ecology - Creature ecosystem with predator-prey dynamics -->
+  <script defer src="820.31-core/820.31.41-knowledge-ecology.js"></script>
+  <!-- Temporal Heist - Time-travel knowledge acquisition -->
+  <script defer src="820.31-core/820.31.42-temporal-heist.js"></script>
+  <!-- Reputation Engine - Faction-based learning relationships -->
+  <script defer src="820.31-core/820.31.43-reputation-engine.js"></script>
+  <!-- Dream Laboratory - Memory palace with surrealist dreamscapes -->
+  <script defer src="820.31-core/820.31.44-dream-laboratory.js"></script>
+  <!-- Crafting System - Knowledge as craftable artifacts -->
+  <script defer src="820.31-core/820.31.45-crafting-system.js"></script>
+  <!-- Metamorphosis Engine - Body transformation visualization -->
+  <script defer src="820.31-core/820.31.46-metamorphosis-engine.js"></script>
+
+  <!-- ========== TEACHING INTEGRATION ENGINES (820.31.50-56) ========== -->
+  <!-- Phase-Locked Encounters - 5E model driving game encounters -->
+  <script defer src="820.31-core/820.31.50-phase-locked-encounters.js"></script>
+  <!-- Curiosity Economy - Intrinsic motivation currency system -->
+  <script defer src="820.31-core/820.31.51-curiosity-economy.js"></script>
+  <!-- Scaffold Deck Builder - Metacognitive strategy cards -->
+  <script defer src="820.31-core/820.31.52-scaffold-deck-builder.js"></script>
+  <!-- Emotional Weather - Adaptive response to learner affect -->
+  <script defer src="820.31-core/820.31.53-emotional-weather.js"></script>
+  <!-- Representation Rotation - Multi-modal mastery enforcement -->
+  <script defer src="820.31-core/820.31.54-representation-rotation.js"></script>
+  <!-- Prerequisite Web - Visible knowledge graph navigation -->
+  <script defer src="820.31-core/820.31.55-prerequisite-web.js"></script>
+  <!-- Growth Signal Feedback - Learner contribution visibility -->
+  <script defer src="820.31-core/820.31.56-growth-signal-feedback.js"></script>
+
+  <!-- Engine Orchestrator - Wires all game paths and teaching integrations -->
+  <script defer src="820.31-core/820.31.60-engine-orchestrator.js"></script>
+
+  <script defer src="820.31-core/820.31.21-adaptive-engine.js"></script>
+  <script defer src="820.31-core/820.31.22-confused-words.js"></script>
+  <!-- Question Orchestrator - Single source of truth for all question loading -->
+  <script defer src="820.31-core/820.31.25-question-orchestrator.js"></script>
+  <script defer src="820.31-core/820.31.23-session-continuity.js"></script>
+  <script defer src="820.31-core/820.31.24-anatomy-diagrams.js"></script>
+
+  <!-- AAA Polish & Pedagogy Systems (820.31.80-84) -->
+  <script defer src="820.31-core/820.31.80-aaa-screen-effects.js"></script>
+  <script defer src="820.31-core/820.31.81-aaa-sound-system.js"></script>
+  <script defer src="820.31-core/820.31.82-metacognition-engine.js"></script>
+  <script defer src="820.31-core/820.31.83-dynamic-backgrounds.js"></script>
+  <script defer src="820.31-core/820.31.84-artistry-engine.js"></script>
+  <!-- 820.31.85-card-templates.js moved earlier (before map-renderer) -->
+
+  <!-- Story Engine - Narrative layer for map progression -->
+  <script defer src="820.31-core/820.31.95-story-engine.js"></script>
+
+  <!-- LUMI-OS Integration Modules -->
+  <script defer src="820.31-core/820.31.10-isotope-engine.js"></script>
+  <script defer src="820.31-core/820.31.11-zpd-system.js"></script>
+  <script defer src="820.31-core/820.31.13-lumi-bridge.js"></script>
+
+  <!-- Math Rendering (KaTeX) -->
+  <script defer src="820.31-core/820.31.70-math-renderer.js"></script>
+
+  <script defer src="820.31-core/820.31.2-renderer.js"></script>
+  <!-- Renderer Extension Modules -->
+  <script defer src="820.31-core/820.31.2.2-renderer-inventory.js"></script>
+  <script defer src="820.31-core/820.31.2.3-renderer-d20-ui.js"></script>
+  <script defer src="820.31-core/820.31.1-app.js?v=12"></script>
+  <!-- Game Mode Extensions -->
+  <script defer src="820.31-core/820.31.1.2-quiz-gauntlet.js"></script>
+  <script defer src="820.31-core/820.31.1.3-quiz-map.js"></script>
+  <script defer src="820.31-core/820.31.1.4-quiz-testprep.js"></script>
+
+  <!-- Quiz Modes & Initialization (external for CSP compliance) -->
+  <script defer src="820.31-core/820.31.98-quiz-modes.js"></script>
+  <script defer src="820.31-core/820.31.99-init.js"></script>
+
+  <!-- Build Timestamp (replaced by CI/CD on deploy) -->
+  <div id="buildTimestamp" style="position: fixed; bottom: 5px; right: 10px; font-size: 10px; color: rgba(255,255,255,0.3); pointer-events: none; z-index: 9999;">
+    Build: 2026-04-04 10:16 UTC | Commit: 3f1d73b</div>
+</body>
+</html>

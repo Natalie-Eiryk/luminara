@@ -1,0 +1,171 @@
+{
+  "parentId": "900.5.83",
+  "parentQuestion": "What finding indicates increased voice sound transmission over lung consolidation?",
+  "narrative": {
+    "setting": "Mr. Edgar's clinic, performing a lung exam on a patient with pneumonia",
+    "character": "Mr. Edgar",
+    "tension": "As Mr. Edgar listens with his stethoscope, he asks the patient to say 'ninety-nine.' The voice sounds unusually clear and loud. What does this mean?"
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.83.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Finding",
+      "narrative": "Ms. Frizzle's bus enters the exam room. 'Class, watch Mr. Edgar's technique! He's asking the patient to say 'ninety-nine' while listening with the stethoscope. This tests BRONCHOPHONY - voice sound transmission through the chest!'",
+      "q": "What is bronchophony?",
+      "options": [
+        "A type of breathing pattern",
+        "Increased clarity and loudness of spoken voice sounds heard through stethoscope",
+        "A lung infection",
+        "A type of chest X-ray"
+      ],
+      "answer": 1,
+      "explain": "BRONCHOPHONY = INCREASED CLARITY and LOUDNESS of spoken voice sounds when auscultated through the chest wall. Normally, voice sounds are muffled when heard through a stethoscope. With bronchophony, words like 'ninety-nine' sound clear and loud - as if the patient is speaking directly into the stethoscope!",
+      "wrongExplains": {
+        "0": "Bronchophony is not a breathing pattern (like Kussmaul or Cheyne-Stokes). It's a physical exam FINDING about voice transmission through lung tissue.",
+        "2": "Bronchophony is a SIGN (examination finding), not the disease itself. It indicates underlying pathology like pneumonia, but isn't the infection.",
+        "3": "Bronchophony is detected by AUSCULTATION (listening with stethoscope), not imaging. It's a bedside physical exam skill."
+      }
+    },
+    {
+      "id": "900.5.83.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Finding",
+      "narrative": "'Now listen to the NORMAL side,' Ms. Frizzle points to the healthy lung. The voice sounds muffled: 'mmm-mmm-mmm.' 'See? Normal air-filled lung MUFFLES voice. But over consolidation - crystal clear: 'NINETY-NINE!''",
+      "q": "How do voice sounds normally sound through the stethoscope over healthy lung?",
+      "options": [
+        "Crystal clear and loud",
+        "Muffled and indistinct",
+        "Silent - no sound at all",
+        "Musical and whistling"
+      ],
+      "answer": 1,
+      "explain": "Normal voice sounds through healthy lung are MUFFLED and INDISTINCT. Air-filled alveoli don't transmit sound well - they scatter and absorb it. You hear a low mumble, can't make out words clearly. This is NORMAL. Clear voice = ABNORMAL (bronchophony).",
+      "wrongExplains": {
+        "0": "Crystal clear voice is ABNORMAL (bronchophony)! It indicates consolidation or fluid replacing normal air-filled lung. Healthy lung muffles voice.",
+        "2": "Complete silence would be concerning - might indicate pleural effusion, pneumothorax, or obstruction blocking sound transmission. Normal lung transmits sound, just muffled.",
+        "3": "Musical whistling would be wheezing (narrowed airways). Voice sounds should be simple speech transmission, not musical tones."
+      }
+    },
+    {
+      "id": "900.5.83.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Finding",
+      "narrative": "'What word should you use?' Keesha asks. 'Tradition is ninety-nine,' Mr. Edgar explains, 'or 'one-one-one' or 'blue balloon.' Any phrase works - you're testing if voice sounds clear or muffled!'",
+      "q": "What phrase is traditionally used to test for bronchophony?",
+      "options": [
+        "'Ah' (open vowel)",
+        "'Ninety-nine' or 'one-one-one'",
+        "Whispered 'one-two-three'",
+        "The alphabet"
+      ],
+      "answer": 1,
+      "explain": "'NINETY-NINE' is the traditional phrase for bronchophony testing. The nasal 'n' sounds and vowels are good for transmission testing. 'One-one-one' works too. The key is asking the patient to speak normally (not whisper) while you auscultate and compare clarity between lung regions.",
+      "wrongExplains": {
+        "0": "'Ah' is used for tactile fremitus testing (feeling vibrations) or examining the throat, not specifically for bronchophony. You want words with consonants for bronchophony.",
+        "2": "WHISPERED voice is a different test (whispered pectoriloquy), which is even more sensitive for consolidation. Bronchophony uses NORMAL speaking voice.",
+        "3": "The alphabet would work but is unnecessarily long. A short phrase like 'ninety-nine' is sufficient and standardized."
+      }
+    },
+    {
+      "id": "900.5.83.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus flies into the normal lung. 'Look at all these air-filled alveoli!' Ms. Frizzle points. 'Sound waves bounce around, scatter, get absorbed. The lung acts like acoustic foam - it MUFFLES sound!'",
+      "q": "Why does normal air-filled lung muffle voice sounds?",
+      "options": [
+        "Air transmits sound very well, making it louder",
+        "Air-filled alveoli scatter and absorb sound waves",
+        "The chest wall blocks all sound",
+        "The diaphragm vibrates and cancels sound"
+      ],
+      "answer": 1,
+      "explain": "AIR-FILLED ALVEOLI SCATTER and ABSORB sound waves. Millions of tiny air sacs create countless air-tissue interfaces that reflect, scatter, and dampen sound. It's like acoustic foam - sound energy is dissipated rather than transmitted clearly to the chest wall.",
+      "wrongExplains": {
+        "0": "Air ALONE transmits sound well (that's why you can hear conversations), but air-TISSUE INTERFACES in millions of alveoli scatter sound. The lung's structure muffles, not amplifies.",
+        "2": "Sound DOES penetrate the chest wall - that's why you can hear breath sounds and voice. But normal lung tissue muffles it compared to solid consolidation.",
+        "3": "The diaphragm is a muscle that doesn't significantly affect voice transmission. The muffling comes from the lung tissue structure itself."
+      }
+    },
+    {
+      "id": "900.5.83.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Now let's fly to the pneumonia side!' The bus enters the consolidated lung. 'WHOA! No air! The alveoli are FILLED with fluid, pus, and inflammatory cells. It's SOLID, like tissue! Sound travels straight through!'",
+      "q": "What causes bronchophony (increased voice transmission)?",
+      "options": [
+        "Air-filled healthy lung",
+        "Lung consolidation (alveoli filled with fluid/pus instead of air)",
+        "Pneumothorax (collapsed lung)",
+        "Normal breathing"
+      ],
+      "answer": 1,
+      "explain": "LUNG CONSOLIDATION causes bronchophony. When alveoli fill with fluid, pus, or blood (pneumonia, edema, hemorrhage), the lung becomes SOLID like tissue. Solid tissue transmits sound BETTER than air-filled lung - voice travels clearly from bronchus → consolidated lung → chest wall → stethoscope.",
+      "wrongExplains": {
+        "0": "Air-filled healthy lung MUFFLES voice (normal finding). Consolidation (replacing air with fluid) is needed for increased transmission (bronchophony).",
+        "2": "Pneumothorax (air in pleural space) causes DECREASED or ABSENT breath sounds - sound doesn't transmit through the air gap. Opposite of bronchophony.",
+        "3": "Normal breathing with healthy lung creates normal (muffled) voice transmission. Bronchophony is ABNORMAL - it indicates pathology."
+      }
+    },
+    {
+      "id": "900.5.83.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'It's like the difference between shouting through a pillow versus a wooden door!' Arnold explains. 'Pillow = air-filled lung (muffles). Wooden door = consolidated lung (transmits clearly)!'",
+      "q": "Sound transmits better through:",
+      "options": [
+        "Air than solid tissue",
+        "Solid tissue than air-filled alveoli",
+        "Pleural effusion than normal lung",
+        "They transmit equally"
+      ],
+      "answer": 1,
+      "explain": "Sound transmits BETTER through SOLID TISSUE than air-filled alveoli. That's why consolidated lung (solid) creates bronchophony (clear voice transmission) while normal lung (air-filled) muffles voice. Physics: solids > liquids > gases for sound transmission.",
+      "wrongExplains": {
+        "0": "Actually backwards! Solid transmits better than air. That's why you can hear conversations through walls (solid) but air-filled lung muffles voice.",
+        "2": "Pleural effusion (fluid around lung) typically DECREASES breath sounds because fluid dampens sound. Consolidation (fluid IN lung) increases voice transmission.",
+        "3": "They don't transmit equally. The difference in transmission is the BASIS for detecting consolidation by physical exam!"
+      }
+    },
+    {
+      "id": "900.5.83.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "Back in the clinic, Mr. Edgar completes the exam. 'Bronchophony over the right lower lobe, plus crackles and dullness to percussion. Classic consolidation from pneumonia. Chest X-ray will confirm.'",
+      "q": "If you find bronchophony in a specific lung area, what does it suggest?",
+      "options": [
+        "Normal healthy lung in that area",
+        "Consolidation (pneumonia, edema, etc.) in that area",
+        "Pneumothorax",
+        "Asthma"
+      ],
+      "answer": 1,
+      "explain": "Bronchophony suggests CONSOLIDATION in that area - alveoli filled with fluid/pus (pneumonia), blood (pulmonary hemorrhage), or edema (heart failure). The solid consolidated lung transmits voice clearly. Other findings: crackles, dullness to percussion, increased tactile fremitus.",
+      "wrongExplains": {
+        "0": "Bronchophony is ABNORMAL. Normal healthy lung muffles voice sounds. Clear voice transmission = pathology (consolidation).",
+        "2": "Pneumothorax causes DECREASED or absent breath sounds (air in pleural space blocks transmission). Bronchophony is INCREASED transmission from consolidation.",
+        "3": "Asthma affects AIRWAYS (wheezing) but doesn't consolidate alveoli. Asthma has normal voice transmission, just difficulty breathing and wheezes."
+      }
+    },
+    {
+      "id": "900.5.83.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "'The classic triad for consolidation,' Mr. Edgar teaches, 'is increased tactile fremitus, dullness to percussion, and bronchophony. All three result from replacing air-filled lung with solid material.'",
+      "q": "Bronchophony is part of which classic clinical triad for consolidation?",
+      "options": [
+        "Wheezing, cough, fever",
+        "Increased tactile fremitus, dullness to percussion, bronchophony",
+        "Stridor, drooling, dysphagia",
+        "Tachypnea, hypoxia, cyanosis"
+      ],
+      "answer": 1,
+      "explain": "The classic CONSOLIDATION TRIAD: (1) Increased tactile fremitus (vibrations felt), (2) Dullness to percussion (solid sounds dull), (3) Bronchophony (clear voice transmission). All three indicate solid lung (consolidation) replacing air-filled alveoli.",
+      "wrongExplains": {
+        "0": "Wheezing/cough/fever are symptoms but not the physical exam triad. These are patient complaints; the triad describes specific exam findings for consolidation.",
+        "2": "Stridor/drooling/dysphagia is the '4 D's' of epiglottitis (upper airway obstruction), not lung consolidation. Different disease entirely.",
+        "3": "Tachypnea/hypoxia/cyanosis indicate respiratory distress (can occur with many conditions). The consolidation triad is about specific physical exam findings."
+      }
+    }
+  ]
+}

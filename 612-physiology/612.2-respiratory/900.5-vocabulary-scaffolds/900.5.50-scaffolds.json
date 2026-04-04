@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.50",
+  "parentQuestion": "Total lung capacity (TLC) is:",
+  "narrative": {
+    "setting": "The Magic School Bus watches as Mr. Edgar takes the deepest breath of his life. The alveoli expand to their absolute maximum, stretching like billions of tiny balloons. Ms. Frizzle gestures at the vast pink landscape. 'Class, this is it - total lung capacity. Every cubic centimeter of air his lungs can possibly hold. About 6000 milliliters. The maximum. The limit. One milliliter more and something would rupture.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's TLC is declining due to pulmonary fibrosis. His lungs are becoming stiff, unable to expand fully. Each year, his maximum breath becomes smaller, his reserve capacity shrinking."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.50.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle emphasizes the word 'TOTAL' in holographic letters. 'Not partial, not functional, not vital. TOTAL means EVERYTHING. Every last milliliter of air the lungs can contain at absolute maximum stretch.'",
+      "q": "What does 'total' mean in the context of total lung capacity?",
+      "options": [
+        "The air you breathe in one breath",
+        "The maximum volume including all lung compartments",
+        "Only the air involved in gas exchange",
+        "The air you can voluntarily control"
+      ],
+      "answer": 1,
+      "explain": "'Total' = EVERYTHING, the complete sum. TLC includes air you can breathe in, air you can force out, AND air you can never exhale. All compartments: tidal + inspiratory reserve + expiratory reserve + residual. The absolute maximum.",
+      "wrongExplains": {
+        "0": "One breath is tidal volume (~500 mL). Total capacity is the MAXIMUM - all volumes combined.",
+        "2": "TLC includes dead space and residual volume too, not just the functional exchange portion.",
+        "3": "TLC includes residual volume, which you CAN'T control. Total means everything, accessible or not."
+      }
+    },
+    {
+      "id": "900.5.50.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "The bus projects an anatomical diagram: lungs at maximal inhalation, ribs flared out, diaphragm maximally contracted. 'Lung capacity,' Ms. Frizzle explains, 'is how much space you have. Like a container's volume - the physical limit.'",
+      "q": "What is 'capacity' in respiratory physiology?",
+      "options": [
+        "A rate of breathing",
+        "A volume measurement combining two or more lung volumes",
+        "The speed of gas exchange",
+        "The pressure in the lungs"
+      ],
+      "answer": 1,
+      "explain": "'Capacity' = COMBINED VOLUMES. Unlike simple volumes (tidal, residual, etc.), capacities add multiple volumes together. TLC = ALL volumes combined. Vital capacity = tidal + inspiratory reserve + expiratory reserve. Capacities are composite measurements.",
+      "wrongExplains": {
+        "0": "Breathing rate is frequency (breaths per minute). Capacity is volume - how much space.",
+        "2": "Gas exchange speed is diffusion rate. Capacity is static volume, not a kinetic measurement.",
+        "3": "Pressure is measured in mmHg or cmH2O. Capacity is volume, measured in mL or liters."
+      }
+    },
+    {
+      "id": "900.5.50.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle draws a breath volume diagram with stacked bars. 'Four volumes stack up to make TLC: TV (tidal volume), IRV (inspiratory reserve), ERV (expiratory reserve), and RV (residual volume). Add them all: that's TLC.'",
+      "q": "Which volumes combine to form total lung capacity?",
+      "options": [
+        "Only tidal volume and residual volume",
+        "Tidal volume + inspiratory reserve + expiratory reserve + residual volume",
+        "Only inspiratory capacity and vital capacity",
+        "Functional residual capacity alone"
+      ],
+      "answer": 1,
+      "explain": "TLC = TV + IRV + ERV + RV. Every lung volume contributes. Tidal (normal breath) + inspiratory reserve (extra in) + expiratory reserve (extra out) + residual (trapped). It's the complete accounting - nothing left out.",
+      "wrongExplains": {
+        "0": "That's incomplete. TLC includes the reserve volumes too - all four basic volumes contribute.",
+        "2": "IC and VC are themselves capacities (combinations of volumes). TLC is built from basic volumes.",
+        "3": "FRC is a subset (~2400 mL). TLC is much larger (~6000 mL) - it includes inspiratory capacity too."
+      }
+    },
+    {
+      "id": "900.5.50.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Mr. Edgar inhales as deeply as he can. The bus's scanner reads the volume: 'TLC: 6000 mL.' Ms. Frizzle nods. 'Average for an adult male. Females average ~4500 mL. Athletes can reach 8000 mL. Size matters - bigger chest, bigger capacity.'",
+      "q": "What is the typical TLC for a healthy adult male?",
+      "options": [
+        "About 500 mL",
+        "About 2400 mL",
+        "About 6000 mL",
+        "About 10000 mL"
+      ],
+      "answer": 2,
+      "explain": "~6000 mL (6 liters) is typical TLC for adult males. Females average ~4500 mL. It varies with height, age, and fitness. TLC is the MAXIMUM - the full stretch of healthy lungs.",
+      "wrongExplains": {
+        "0": "500 mL is tidal volume - one normal breath. TLC is 12 times larger!",
+        "1": "2400 mL is functional residual capacity (FRC). TLC is 2.5 times larger - includes inspiratory capacity too.",
+        "3": "10,000 mL is abnormally high, even for elite athletes. Normal TLC is around 6000 mL."
+      }
+    },
+    {
+      "id": "900.5.50.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Ms. Frizzle pulls up a formula: 'TLC = VC + RV. Vital capacity (all the air you CAN move) plus residual volume (air you CAN'T move). Or TLC = IC + FRC. Multiple ways to calculate it, same result.'",
+      "q": "TLC can be calculated as:",
+      "options": [
+        "Vital capacity + residual volume",
+        "Tidal volume + inspiratory reserve",
+        "Functional residual capacity - residual volume",
+        "Expiratory reserve + tidal volume"
+      ],
+      "answer": 0,
+      "explain": "TLC = VC + RV. Vital capacity (the maximum you can breathe in and out) + residual volume (what's trapped). This makes sense: total = what you can move + what you can't. Alternative: TLC = IC + FRC.",
+      "wrongExplains": {
+        "1": "That's inspiratory capacity (IC), not total capacity. TLC includes expiratory reserve and residual too.",
+        "2": "Subtracting RV from FRC gives only ERV - a small fraction. TLC requires adding, not subtracting.",
+        "3": "ERV + TV is only part of vital capacity. TLC also includes inspiratory reserve and residual volume."
+      }
+    },
+    {
+      "id": "900.5.50.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "The bus watches as Mr. Edgar's lungs reach their physical limit. 'Chest wall stops expanding. Diaphragm can't descend further. Alveoli are maximally stretched. This is the mechanical limit - the absolute ceiling.'",
+      "q": "What determines the limit of total lung capacity?",
+      "options": [
+        "Heart size",
+        "Chest wall expansion limit and lung elasticity",
+        "Brain oxygen demand",
+        "Blood vessel diameter"
+      ],
+      "answer": 1,
+      "explain": "TLC is limited by CHEST WALL mechanics (ribs, muscles, how far they can expand) and LUNG tissue elasticity (how much alveoli can stretch). It's a mechanical/structural limit - the container's maximum size.",
+      "wrongExplains": {
+        "0": "Heart size affects circulation, not lung volume. TLC is about chest and lung mechanics.",
+        "2": "Brain oxygen demand affects breathing drive, not lung capacity. TLC is structural, not metabolic.",
+        "3": "Blood vessels affect perfusion, not air volume. TLC is determined by chest and lung stretch limits."
+      }
+    },
+    {
+      "id": "900.5.50.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle overlays Mr. Edgar's fibrosis scan. 'His TLC is 4200 mL - 30% below normal. Stiff, scarred lungs can't expand. Restrictive disease REDUCES TLC. The container has shrunk.'",
+      "q": "What happens to TLC in restrictive lung diseases like pulmonary fibrosis?",
+      "options": [
+        "TLC increases",
+        "TLC decreases",
+        "TLC stays the same",
+        "TLC becomes variable and unpredictable"
+      ],
+      "answer": 1,
+      "explain": "TLC DECREASES in restrictive diseases. Stiff lungs resist expansion, reducing maximum volume. Fibrosis, kyphoscoliosis, neuromuscular disease - all shrink TLC. The lungs can't reach their normal stretch.",
+      "wrongExplains": {
+        "0": "TLC increases in OBSTRUCTIVE diseases (emphysema). Restrictive diseases make lungs SMALLER, not bigger.",
+        "2": "Restrictive diseases dramatically reduce TLC - it's a defining feature. TLC drops significantly.",
+        "3": "TLC is consistently reduced in restriction. It's predictable - reduced compliance means reduced TLC."
+      }
+    },
+    {
+      "id": "900.5.50.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle shows an emphysema scan. 'Opposite problem: TLC is 8000 mL, 33% above normal. Loss of elastic recoil lets lungs overexpand. But big doesn't mean functional - most of that extra volume is trapped, useless.'",
+      "q": "What happens to TLC in obstructive lung diseases like emphysema?",
+      "options": [
+        "TLC decreases",
+        "TLC increases (hyperinflation)",
+        "TLC stays exactly normal",
+        "TLC drops to zero"
+      ],
+      "answer": 1,
+      "explain": "TLC INCREASES in emphysema. Loss of elastic recoil allows overexpansion, and air trapping increases residual volume. TLC can reach 8000+ mL. But it's dysfunctional hyperinflation - bigger lungs, worse gas exchange.",
+      "wrongExplains": {
+        "0": "TLC decreases in RESTRICTIVE diseases. Emphysema is obstructive - TLC goes UP from air trapping.",
+        "2": "Emphysema dramatically increases TLC due to loss of elastic recoil and air trapping.",
+        "3": "TLC can't be zero unless lungs completely collapse (pneumothorax). Emphysema increases it."
+      }
+    },
+    {
+      "id": "900.5.50.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle displays a spirometry trace. 'You can measure vital capacity with spirometry - just breathe in fully, then out fully. But you can't measure TLC directly because RV can't be exhaled. You need body plethysmography or gas dilution.'",
+      "q": "Why can't TLC be measured directly with simple spirometry?",
+      "options": [
+        "Spirometers are too small",
+        "TLC includes residual volume, which can't be exhaled",
+        "TLC changes too rapidly to measure",
+        "Spirometry only measures oxygen, not volume"
+      ],
+      "answer": 1,
+      "explain": "TLC = VC + RV. Spirometry can measure VC (what you breathe in/out), but RV stays trapped in the lungs. You can't exhale it, so you can't measure it with a simple spirometer. Need body plethysmography (pressure changes) or helium dilution to measure RV, then calculate TLC.",
+      "wrongExplains": {
+        "0": "Spirometer size isn't the issue. It's that residual volume is physically unreachable by exhalation.",
+        "2": "TLC is relatively stable. The problem isn't speed, it's that part of TLC (RV) can't be exhaled.",
+        "3": "Spirometry measures volume (mL), not gas composition. But it can't measure the trapped residual volume."
+      }
+    },
+    {
+      "id": "900.5.50.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "The bus exits Mr. Edgar's lungs as he exhales back to resting volume. 'TLC,' Ms. Frizzle says, 'is your ceiling - the maximum your lungs can achieve. Now tell me: what is total lung capacity?'",
+      "q": "Total lung capacity (TLC) is:",
+      "options": [
+        "The volume of one normal breath",
+        "The maximum volume of air the lungs can hold after maximal inhalation (~6000 mL)",
+        "The volume that remains after normal exhalation",
+        "The volume you can voluntarily exhale"
+      ],
+      "answer": 1,
+      "explain": "TLC = MAXIMUM lung volume after MAXIMAL INHALATION. It includes ALL lung volumes: tidal + inspiratory reserve + expiratory reserve + residual. ~6000 mL in adult males. It's the absolute ceiling - every cubic centimeter of air the lungs can contain. TLC = VC + RV (or IC + FRC).",
+      "wrongExplains": {
+        "0": "One normal breath is tidal volume (~500 mL). TLC is the MAXIMUM, 12 times larger.",
+        "2": "That's functional residual capacity (FRC), ~2400 mL. TLC is 2.5 times larger - the absolute max.",
+        "3": "That's vital capacity (VC). TLC includes VC PLUS residual volume (what you can't exhale)."
+      }
+    }
+  ]
+}

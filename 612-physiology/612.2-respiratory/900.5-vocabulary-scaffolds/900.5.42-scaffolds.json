@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.42",
+  "parentQuestion": "Normal arterial PCO2 is approximately:",
+  "narrative": {
+    "setting": "The Magic School Bus is flowing through Mr. Edgar's arterial system, riding the crimson current from his lungs toward his brain. Ms. Frizzle's CO2 detector beeps steadily: 40 mmHg... 40 mmHg... 40 mmHg. 'Look at that beautiful stability,' she marvels. 'Arterial PCO2 is one of the most tightly regulated variables in your entire body. Your brainstem guards this number like a dragon guards treasure. Stray too far from 40, and the chemoreceptors scream for correction.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's PCO2 is rising. 40... 45... 50... His respiratory center is being suppressed by medication. If it hits 60, he'll slip into CO2 narcosis."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.42.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "Ms. Frizzle holds up a chart labeled 'Normal Arterial Blood Gas Values'. The PCO2 line is highlighted in yellow: 35-45 mmHg, with 40 mmHg marked as the ideal setpoint. 'This is your body's target. Evolution tuned this number over millions of years.'",
+      "q": "Normal arterial PCO2 at sea level is approximately:",
+      "options": [
+        "0.3 mmHg",
+        "40 mmHg",
+        "95 mmHg",
+        "160 mmHg"
+      ],
+      "answer": 1,
+      "explain": "~40 mmHg (normal range 35-45 mmHg). This is the CO2 partial pressure in arterial blood leaving the lungs. It's tightly regulated by respiratory rate and depth - breathe faster, PCO2 drops; breathe slower, PCO2 rises. 40 is the setpoint.",
+      "wrongExplains": {
+        "0": "That's atmospheric CO2 - almost none in outside air! Arterial blood has WAY more CO2 (40 mmHg) from cellular metabolism.",
+        "2": "That's arterial PO2 (oxygen). CO2 is much lower in arterial blood - about 40 mmHg vs ~95 for O2.",
+        "3": "That's atmospheric oxygen partial pressure. Arterial CO2 is much lower - around 40 mmHg."
+      }
+    },
+    {
+      "id": "900.5.42.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "You pass through the alveoli. A stream of CO2 molecules exits the blood (46 mmHg) into alveolar air (40 mmHg). 'Watch the gradient,' Ms. Frizzle says. 'Venous blood arrives with PCO2 = 46 mmHg. It must drop to 40 mmHg before leaving as arterial blood.'",
+      "q": "Arterial PCO2 (40 mmHg) is lower than venous PCO2 (46 mmHg) because:",
+      "options": [
+        "CO2 is added to blood at the lungs",
+        "CO2 diffuses from blood into alveolar air at the lungs",
+        "Hemoglobin destroys CO2",
+        "The heart pumps CO2 out of the blood"
+      ],
+      "answer": 1,
+      "explain": "Blood RELEASES CO2 at the lungs! Venous blood (from tissues) arrives loaded with metabolic CO2 (PCO2 = 46 mmHg). At alveoli, CO2 diffuses OUT into alveolar air (PCO2 = 40 mmHg). Arterial blood leaves with PCO2 = 40 mmHg - cleaned and ready for another tissue round trip.",
+      "wrongExplains": {
+        "0": "Lungs REMOVE CO2, not add it! Blood picks up CO2 at tissues and dumps it at lungs.",
+        "2": "Hemoglobin carries CO2 (as carbaminohemoglobin and via buffering) but doesn't destroy it. CO2 is exhaled.",
+        "3": "The heart pumps blood, not individual gases. CO2 leaves blood by DIFFUSION at the alveolar membrane, not heart pumping."
+      }
+    },
+    {
+      "id": "900.5.42.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "Ms. Frizzle compares two numbers on the screen: 'Alveolar PCO2 = 40 mmHg. Arterial PCO2 = 40 mmHg. Perfect equilibration! Unlike oxygen, CO2 easily equilibrates across the membrane.'",
+      "q": "Why does arterial PCO2 equal alveolar PCO2 (both ~40 mmHg)?",
+      "options": [
+        "CO2 diffuses 20x faster than O2 across the alveolar membrane",
+        "CO2 is actively pumped to match alveolar levels",
+        "It's a coincidence with no physiological importance",
+        "Hemoglobin forces the values to match"
+      ],
+      "answer": 0,
+      "explain": "CO2 is HIGHLY diffusible - about 20x more than O2! It crosses membranes so easily that blood PCO2 almost perfectly equilibrates with alveolar PCO2. There's essentially no 'a-A gradient' for CO2 like there is for O2 (which has ~9 mmHg difference).",
+      "wrongExplains": {
+        "1": "No active pumping needed. CO2's high solubility and diffusivity cause passive equilibration. Physics does the work.",
+        "2": "This equilibration is critical! It means alveolar ventilation directly controls arterial PCO2. Change breathing, change PCO2 immediately.",
+        "3": "Hemoglobin carries CO2 but doesn't force equilibration. The high diffusivity of CO2 across membranes is the reason."
+      }
+    },
+    {
+      "id": "900.5.42.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus reaches the brainstem, where central chemoreceptors glow bright blue. They're bathed in cerebrospinal fluid with a pH sensor showing 7.40. 'These receptors,' Ms. Frizzle whispers, 'are the guardians of PCO2. They detect even tiny changes.'",
+      "q": "The primary stimulus for breathing regulation is:",
+      "options": [
+        "Arterial PO2 (oxygen level)",
+        "Arterial PCO2 (carbon dioxide level)",
+        "Blood glucose level",
+        "Heart rate"
+      ],
+      "answer": 1,
+      "explain": "ARTERIAL PCO2 is the PRIMARY respiratory drive! Central chemoreceptors in the brainstem detect CO2/H+ (via pH changes). Rise in PCO2 → increased breathing. Drop in PCO2 → decreased breathing. O2 is a secondary drive (peripheral chemoreceptors) that kicks in mainly when PO2 gets dangerously low.",
+      "wrongExplains": {
+        "0": "PO2 is a SECONDARY drive (peripheral chemoreceptors). The main controller is PCO2 sensed by central chemoreceptors.",
+        "2": "Glucose affects metabolism but doesn't directly control breathing rate. PCO2 is the respiratory master controller.",
+        "3": "Heart rate and breathing are coordinated but separately controlled. PCO2 drives breathing; autonomic system controls heart rate."
+      }
+    },
+    {
+      "id": "900.5.42.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "A warning alarm - Mr. Edgar's PCO2 climbs to 50 mmHg. The chemoreceptors fire frantically, sending signals to the respiratory center. But the signal is blocked by opioid medication. 'The sensors work,' Ms. Frizzle says, 'but the effector is paralyzed.'",
+      "q": "When arterial PCO2 rises above 45 mmHg (hypercapnia), the body normally responds by:",
+      "options": [
+        "Decreasing breathing rate to conserve energy",
+        "Increasing breathing rate and depth to blow off CO2",
+        "Stopping breathing entirely",
+        "Converting CO2 to oxygen"
+      ],
+      "answer": 1,
+      "explain": "High PCO2 → chemoreceptors activate → respiratory center increases ventilation → more CO2 exhaled → PCO2 drops back to 40 mmHg. It's negative feedback! The system fights to maintain 40 mmHg. This is why you automatically breathe harder during exercise (metabolism produces more CO2).",
+      "wrongExplains": {
+        "0": "That would make PCO2 WORSE! The body increases breathing to REMOVE excess CO2, not decrease breathing.",
+        "2": "Stopping breathing would be fatal. The response to high CO2 is the OPPOSITE - breathe MORE to clear it.",
+        "3": "CO2 doesn't convert to O2 anywhere in the body. The solution is EXHALATION - physically removing CO2 from the body."
+      }
+    },
+    {
+      "id": "900.5.42.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "You watch CO2 dissolve in blood plasma: CO2 + H2O ↔ H2CO3 ↔ H+ + HCO3-. The pH meter drops as PCO2 rises. 'CO2 IS an acid,' Ms. Frizzle explains. 'More CO2 = lower pH. That's respiratory acidosis.'",
+      "q": "Elevated arterial PCO2 (hypercapnia) causes:",
+      "options": [
+        "Respiratory alkalosis (increased pH)",
+        "Respiratory acidosis (decreased pH)",
+        "No change in pH",
+        "Metabolic alkalosis"
+      ],
+      "answer": 1,
+      "explain": "More CO2 → more H2CO3 (carbonic acid) → more H+ → pH DROPS = ACIDOSIS. The relationship is tight: increase PCO2 from 40 to 80 mmHg and pH drops from 7.40 to ~7.10. This is 'respiratory' acidosis because it's caused by inadequate ventilation (breathing problem).",
+      "wrongExplains": {
+        "0": "Alkalosis (high pH) occurs with LOW CO2 (hyperventilation). High CO2 causes ACIDOSIS (low pH).",
+        "2": "CO2 has major effects on pH! It forms carbonic acid. Change PCO2 and pH changes immediately.",
+        "3": "This is RESPIRATORY acidosis (breathing-related). Metabolic acidosis comes from non-respiratory sources (lactic acid, ketoacids, etc.)."
+      }
+    },
+    {
+      "id": "900.5.42.s07",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "'What happens if you hyperventilate?' Arnold asks, breathing rapidly into a paper bag. Ms. Frizzle shows his PCO2 plummeting: 40... 35... 30... 25... 'You're blowing off too MUCH CO2. Watch the consequences.'",
+      "q": "Hyperventilation causes arterial PCO2 to:",
+      "options": [
+        "Increase above 45 mmHg",
+        "Decrease below 35 mmHg",
+        "Stay at 40 mmHg",
+        "Equal atmospheric PCO2 (0.3 mmHg)"
+      ],
+      "answer": 1,
+      "explain": "Excessive breathing → MORE CO2 exhaled than produced → arterial PCO2 DROPS below 35 mmHg = hypocapnia. This causes respiratory ALKALOSIS (high pH), leading to dizziness, tingling, muscle spasms. Breathing into a bag adds back CO2 to normalize PCO2.",
+      "wrongExplains": {
+        "0": "That's HYPOventilation (too little breathing). HYPERventilation blows off CO2, decreasing PCO2.",
+        "2": "PCO2 is controlled by breathing rate. Hyperventilate and PCO2 MUST drop - you're removing more than you produce.",
+        "3": "PCO2 can't drop to atmospheric levels (almost zero) - your cells keep making CO2. It drops to ~25-30 mmHg with severe hyperventilation."
+      }
+    },
+    {
+      "id": "900.5.42.s08",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "The bus travels to a COPD patient who retains CO2. Their PCO2 is chronically 55 mmHg. 'Their chemoreceptors have adapted,' Ms. Frizzle explains. 'High CO2 becomes their new normal. Now they rely on LOW OXYGEN to drive breathing - dangerous!'",
+      "q": "In chronic CO2 retention (COPD), the respiratory drive may shift to:",
+      "options": [
+        "High CO2 levels (remains primary)",
+        "Low oxygen levels (hypoxic drive)",
+        "High oxygen levels",
+        "Blood glucose levels"
+      ],
+      "answer": 1,
+      "explain": "Normally, high PCO2 drives breathing. But in chronic hypercapnia, central chemoreceptors become DESENSITIZED. The body shifts to peripheral chemoreceptors sensing LOW PO2 (hypoxic drive). Giving too much O2 can eliminate this drive → hypoventilation → respiratory failure! Careful O2 titration needed.",
+      "wrongExplains": {
+        "0": "The central receptors become BLUNTED by chronic high CO2 - they stop responding normally. The drive shifts to O2 sensors.",
+        "2": "LOW oxygen drives breathing in these patients, not high. High O2 can actually be dangerous (removes the hypoxic drive).",
+        "3": "Glucose doesn't control breathing drive. In COPD with CO2 retention, the shift is to hypoxic (low O2) drive."
+      }
+    },
+    {
+      "id": "900.5.42.s09",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "Ms. Frizzle shows blood gas results from Mr. Edgar's ICU stay: 'pH 7.22, PCO2 65 mmHg, HCO3- 24 mEq/L'. The diagnosis flashes on screen: Acute Respiratory Acidosis. 'His breathing is failing. PCO2 is way too high.'",
+      "q": "Which blood gas result indicates respiratory acidosis?",
+      "options": [
+        "pH 7.50, PCO2 30 mmHg",
+        "pH 7.22, PCO2 65 mmHg",
+        "pH 7.40, PCO2 40 mmHg",
+        "pH 7.30, HCO3- 15 mEq/L (normal PCO2)"
+      ],
+      "answer": 1,
+      "explain": "RESPIRATORY ACIDOSIS: Low pH (acidosis) + High PCO2 (respiratory cause). pH 7.22 (low) and PCO2 65 mmHg (high) = failing to ventilate adequately. The primary problem is breathing (can't blow off CO2), causing acid buildup.",
+      "wrongExplains": {
+        "0": "That's respiratory ALKALOSIS - high pH (7.50) with low CO2 (30). Hyperventilation, not acidosis.",
+        "2": "That's NORMAL! pH 7.40 and PCO2 40 mmHg are perfect values. No acidosis.",
+        "3": "That's METABOLIC acidosis - low pH with normal PCO2 but low HCO3-. The problem is metabolic acid (lactic, keto), not breathing."
+      }
+    },
+    {
+      "id": "900.5.42.s10",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "Naloxone reverses the opioid. Mr. Edgar gasps, then begins breathing deeply and rapidly. The monitor updates: PCO2 dropping... 50... 45... 42... 40 mmHg. His chemoreceptors have reclaimed their target. 'Homeostasis restored,' Ms. Frizzle smiles.",
+      "q": "Normal arterial PCO2 is approximately:",
+      "options": [
+        "0.3 mmHg",
+        "40 mmHg",
+        "95 mmHg",
+        "760 mmHg"
+      ],
+      "answer": 1,
+      "explain": "40 mmHg (range 35-45 mmHg). This is the most tightly regulated respiratory variable. Your brainstem chemoreceptors guard this setpoint constantly, adjusting breathing rate and depth to maintain it. Deviation → immediate breathing compensation. It's the master controller of ventilation!",
+      "wrongExplains": {
+        "0": "That's atmospheric CO2 (almost zero). Arterial blood has CO2 from cellular metabolism - about 40 mmHg, not 0.3.",
+        "2": "That's arterial PO2 (oxygen). Arterial PCO2 is lower - around 40 mmHg, not 95.",
+        "3": "That's total atmospheric pressure. CO2 is only a tiny fraction of that - about 40 mmHg in arterial blood."
+      }
+    }
+  ]
+}

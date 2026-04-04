@@ -1,0 +1,159 @@
+{
+  "parentId": "100.1.16",
+  "parentQuestion": "A patient awakens from surgery unable to form new memories. They can recall childhood events perfectly and hold conversations, but 5 minutes later, they don't remember the conversation occurred. Procedural learning (motor skills) remains intact. Which structure was most likely damaged during surgery?",
+  "scaffolds": [
+    {
+      "q": "Is memory a single unified system?",
+      "options": [
+        "Yes, all memory is the same",
+        "No, there are different types stored in different brain regions",
+        "Memory doesn't require brain structures",
+        "Only one brain area handles all memory"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Memory is NOT a single system. DECLARATIVE memory (facts, events) uses different structures than PROCEDURAL memory (motor skills). They can be damaged separately.",
+      "wrongExplains": {
+        "0": "Different memory types use different brain structures.",
+        "2": "Memory absolutely requires specific brain structures.",
+        "3": "Multiple brain areas handle different types of memory."
+      }
+    },
+    {
+      "q": "What is the hippocampus's role in memory?",
+      "options": [
+        "Storing motor skills",
+        "Forming new declarative memories (facts and events)",
+        "Controlling movement",
+        "Processing vision"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The HIPPOCAMPUS (in the medial temporal lobe) is the 'MEMORY ENCODER' — it binds together new experiences into storable declarative memories (facts and events).",
+      "wrongExplains": {
+        "0": "Motor skills (procedural memory) use the cerebellum and basal nuclei, not hippocampus.",
+        "2": "Movement is controlled by motor cortex, basal nuclei, and cerebellum.",
+        "3": "Vision is processed in the occipital lobe."
+      }
+    },
+    {
+      "q": "What is anterograde amnesia?",
+      "options": [
+        "Loss of old memories",
+        "Inability to form NEW memories",
+        "Loss of motor skills",
+        "Hearing loss"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "ANTEROGRADE AMNESIA is the inability to form NEW memories. 'Anterograde' = going forward. The patient can't make new memories from this point on, though old memories may be preserved.",
+      "wrongExplains": {
+        "0": "Loss of old memories is retrograde amnesia. Anterograde is about new memories.",
+        "2": "Motor skills are procedural memory, which can be intact in anterograde amnesia.",
+        "3": "Hearing loss is unrelated to memory formation."
+      }
+    },
+    {
+      "q": "Why are old memories preserved after hippocampal damage?",
+      "options": [
+        "Old memories are stored in the hippocampus forever",
+        "Once consolidated to cortex, memories don't need the hippocampus for retrieval",
+        "Old memories don't exist",
+        "The hippocampus stores all memories"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Once memories are CONSOLIDATED to the CORTEX, they don't need the hippocampus to be retrieved. That's why childhood memories are preserved — they've already been transferred to long-term cortical storage.",
+      "wrongExplains": {
+        "0": "The hippocampus encodes but doesn't permanently store. Long-term storage is cortical.",
+        "2": "Old memories definitely exist and can be retrieved after hippocampal damage.",
+        "3": "The hippocampus encodes, but long-term storage is distributed in cortex."
+      }
+    },
+    {
+      "q": "What brain structures handle procedural memory (motor skills)?",
+      "options": [
+        "Only the hippocampus",
+        "Cerebellum and basal nuclei",
+        "Only the frontal lobe",
+        "Only the occipital lobe"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "PROCEDURAL MEMORY uses the CEREBELLUM and BASAL NUCLEI, NOT the hippocampus. That's why this patient can still learn motor skills — the procedural memory system is intact.",
+      "wrongExplains": {
+        "0": "The hippocampus handles declarative memory. Procedural uses different structures.",
+        "2": "The frontal lobe is involved but works with cerebellum and basal nuclei.",
+        "3": "The occipital lobe processes vision, not motor memory."
+      }
+    },
+    {
+      "q": "What brain region handles working memory (holding conversations)?",
+      "options": [
+        "Only the hippocampus",
+        "Prefrontal cortex",
+        "Only the cerebellum",
+        "Only the occipital lobe"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "WORKING MEMORY uses the PREFRONTAL CORTEX, not hippocampus. The patient can hold conversations because working memory is intact — they just can't transfer that information to long-term storage.",
+      "wrongExplains": {
+        "0": "The hippocampus is for encoding long-term declarative memories, not working memory.",
+        "2": "The cerebellum coordinates movement, not working memory.",
+        "3": "The occipital lobe processes vision, not working memory."
+      }
+    },
+    {
+      "q": "What does bilateral hippocampal damage cause?",
+      "options": [
+        "Only motor problems",
+        "Severe anterograde amnesia (can't form new declarative memories)",
+        "Only hearing loss",
+        "No symptoms"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "BILATERAL HIPPOCAMPAL DAMAGE causes SEVERE ANTEROGRADE AMNESIA. The famous patient H.M. Had this exact pattern after bilateral hippocampal removal — trapped in an eternal present.",
+      "wrongExplains": {
+        "0": "The hippocampus isn't for motor control. It's for declarative memory encoding.",
+        "2": "Hearing involves the auditory cortex, not the hippocampus.",
+        "3": "Bilateral hippocampal damage causes profound memory encoding deficits."
+      }
+    },
+    {
+      "q": "What memory pattern indicates hippocampal damage?",
+      "options": [
+        "All memory types are equally affected",
+        "Old memories preserved + new memories impossible + procedural learning intact",
+        "Only motor skills are affected",
+        "Perfect memory for everything"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "The HIPPOCAMPAL SIGNATURE: OLD memories preserved, NEW declarative memories impossible, PROCEDURAL learning intact. This dissociation pattern is unique to hippocampal damage.",
+      "wrongExplains": {
+        "0": "Different memory systems are affected differently. Declarative is specifically impaired.",
+        "2": "Motor skills (procedural memory) are intact with hippocampal damage.",
+        "3": "New declarative memory formation is severely impaired."
+      }
+    },
+    {
+      "q": "Which structure was most likely damaged during surgery?",
+      "options": [
+        "Amygdala",
+        "Hippocampus",
+        "Prefrontal cortex",
+        "Basal nuclei"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "HIPPOCAMPUS. The pattern is classic: Can't form new memories (hippocampus damaged), old memories intact (already consolidated), procedural learning works (cerebellum/basal nuclei intact), working memory fine (prefrontal intact).",
+      "wrongExplains": {
+        "0": "Amygdala damage affects emotional memory. This is declarative memory encoding.",
+        "2": "Prefrontal damage affects working memory, which is intact here (can hold conversations).",
+        "3": "Basal nuclei damage affects procedural memory, which is intact here (motor skills preserved)."
+      }
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.44",
+  "parentQuestion": "The Haldane effect describes:",
+  "narrative": {
+    "setting": "The Magic School Bus has split into two microscopic drones, each following a red blood cell. One drone is in Mr. Edgar's lungs where blood picks up oxygen. The other is in his leg muscles where blood drops off oxygen. Ms. Frizzle's voice crackles: 'Class, watch both cells at once. Something remarkable happens when oxygen leaves the blood - it makes room for carbon dioxide to board. This is the Haldane effect, and Mr. Edgar's body does this dance with every heartbeat.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's CO2 levels are rising. Understanding the Haldane effect could reveal why his body isn't clearing waste gases efficiently."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.44.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle pulls up a holographic portrait. 'Meet John Scott Haldane - Scottish physiologist, early 1900s. He discovered something brilliant about hemoglobin: it's a two-way courier that coordinates oxygen delivery with CO2 pickup.'",
+      "q": "The prefix 'effect' in science means:",
+      "options": [
+        "A disease or disorder",
+        "A result or consequence of a cause",
+        "A type of blood cell",
+        "A breathing technique"
+      ],
+      "answer": 1,
+      "explain": "An EFFECT is a RESULT - what happens BECAUSE of something else. The Haldane effect is what HAPPENS when oxygen unloads from hemoglobin. It's a consequence, a ripple effect in the blood's chemistry.",
+      "wrongExplains": {
+        "0": "Effects aren't diseases - they're outcomes. A fever is an effect of infection, not a disease itself.",
+        "2": "That's mixing biology with language. An effect is about cause and consequence, not cell types.",
+        "3": "Techniques are actions you do. Effects are results that happen to you."
+      }
+    },
+    {
+      "id": "900.5.44.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "The drone in the leg muscle zooms in on a hemoglobin molecule. 'Watch carefully,' Ms. Frizzle whispers. 'When oxygen leaves, the molecule changes shape. And that shape change... that's the key.'",
+      "q": "What does 'unload' mean in the context of gas transport?",
+      "options": [
+        "To add more cargo",
+        "To release or let go of cargo",
+        "To transform cargo chemically",
+        "To compress cargo into smaller space"
+      ],
+      "answer": 1,
+      "explain": "UNLOAD = let go, release, drop off. Like a delivery truck unloading packages at a house. Hemoglobin UNLOADS oxygen at tissues - it releases what it was carrying. The opposite of loading up at the lungs.",
+      "wrongExplains": {
+        "0": "That's loading, not unloading! Unload means to remove cargo, not add it.",
+        "2": "Unloading is physical transfer, not chemical change. The oxygen molecule stays the same.",
+        "3": "Compression changes how cargo is packed. Unloading means removing it entirely."
+      }
+    },
+    {
+      "id": "900.5.44.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Both drones' sensors flash simultaneously. At the lungs: oxygen binding. At the muscles: oxygen releasing. 'The timing is perfect,' Ms. Frizzle marvels. 'When one gas leaves, another takes its place. This coordination has a name.'",
+      "q": "If oxygen unloading happens at tissues (where cells use oxygen), where would oxygen LOADING logically happen?",
+      "options": [
+        "At the heart, which pumps blood",
+        "At the lungs, where air meets blood",
+        "At the liver, which filters blood",
+        "At the kidneys, which clean blood"
+      ],
+      "answer": 1,
+      "explain": "LOADING happens where the supply is! The lungs are where fresh oxygen from the air enters the blood. Hemoglobin LOADS UP at the lungs, then UNLOADS at the tissues. Pick up point vs. drop off point.",
+      "wrongExplains": {
+        "0": "The heart pumps blood around but doesn't add oxygen. It's the delivery vehicle, not the loading dock.",
+        "2": "The liver processes nutrients and toxins, not gases. Wrong warehouse entirely.",
+        "3": "Kidneys filter waste and water, not oxygen. They're plumbing, not a gas station."
+      }
+    },
+    {
+      "id": "900.5.44.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "The muscle tissue drone captures the moment: an oxygen molecule drifts away from hemoglobin. Instantly, the hemoglobin molecule shifts shape, like a flower opening. 'There!' Ms. Frizzle points. 'Deoxygenated hemoglobin is a better CO2 carrier. That's the Haldane effect.'",
+      "q": "What happens to hemoglobin's ability to carry CO2 when it releases oxygen?",
+      "options": [
+        "CO2 carrying ability decreases",
+        "CO2 carrying ability increases",
+        "CO2 carrying ability stays the same",
+        "Hemoglobin can no longer carry CO2 at all"
+      ],
+      "answer": 1,
+      "explain": "Deoxygenated hemoglobin is a BETTER CO2 carrier! When oxygen leaves, the molecule changes shape, exposing more binding sites for CO2. It's like a bus dropping off passengers (O2) at their stop, then immediately picking up new passengers (CO2) for the return trip.",
+      "wrongExplains": {
+        "0": "Backwards! Releasing oxygen IMPROVES CO2 carrying. The two gases coordinate - when one leaves, space opens for the other.",
+        "2": "The change is dramatic, not neutral. Deoxygenated hemoglobin can carry 10% more CO2 than oxygenated.",
+        "3": "Hemoglobin always carries some CO2, but it carries MORE when deoxygenated. It doesn't lose the ability."
+      }
+    },
+    {
+      "id": "900.5.44.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Now the lung drone shows the reverse. Oxygen floods in, binding to hemoglobin. The molecule shifts shape again. 'And just like that,' Ms. Frizzle narrates, 'CO2 is pushed out. The Haldane effect works both ways.'",
+      "q": "At the lungs, what happens to CO2 when hemoglobin binds oxygen?",
+      "options": [
+        "CO2 binds more tightly to hemoglobin",
+        "CO2 is released from hemoglobin into alveoli",
+        "CO2 converts to oxygen",
+        "CO2 stays bound and travels back to tissues"
+      ],
+      "answer": 1,
+      "explain": "When oxygen BINDS at the lungs, hemoglobin changes shape and RELEASES CO2. It's a trade - oxygen in, CO2 out. This is the Haldane effect working at the lungs: oxygenation decreases CO2 affinity, pushing CO2 into the alveoli to be exhaled.",
+      "wrongExplains": {
+        "0": "Opposite! Oxygenated hemoglobin holds CO2 LESS tightly. Binding oxygen pushes CO2 away.",
+        "2": "Gases don't transform into each other. CO2 and O2 are different molecules that get exchanged.",
+        "3": "That would defeat the purpose! CO2 is waste that must be exhaled. The Haldane effect helps get rid of it."
+      }
+    },
+    {
+      "id": "900.5.44.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Ms. Frizzle overlays both video feeds - tissues and lungs side by side. 'The elegance,' she breathes. 'At tissues: drop O2, grab CO2. At lungs: grab O2, drop CO2. The same molecule, dancing between two states.'",
+      "q": "The Haldane effect is most active in which two locations?",
+      "options": [
+        "Heart and liver",
+        "Tissues (O2 unloading) and lungs (O2 loading)",
+        "Brain and kidneys",
+        "Only in the lungs"
+      ],
+      "answer": 1,
+      "explain": "The Haldane effect is a TWO-PART dance: (1) At TISSUES - O2 unloads, CO2 carrying increases. (2) At LUNGS - O2 loads, CO2 is released. It's the coordination between these two locations that makes gas exchange so efficient.",
+      "wrongExplains": {
+        "0": "The heart pumps blood and the liver processes nutrients - neither is involved in the gas exchange coordination.",
+        "2": "The brain uses oxygen and the kidneys filter blood, but the Haldane effect specifically involves oxygen-carbon dioxide tradeoff.",
+        "3": "The Haldane effect happens at BOTH lungs and tissues. It's a complete cycle, not a single location."
+      }
+    },
+    {
+      "id": "900.5.44.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Mr. Edgar's monitor beeps. 'His CO2 is building up,' Ms. Frizzle notes. 'In some lung diseases, oxygen can't bind properly. If oxygen doesn't load at the lungs, the Haldane effect can't push CO2 out.'",
+      "q": "Why would impaired oxygen binding at the lungs lead to CO2 retention?",
+      "options": [
+        "The kidneys stop filtering CO2",
+        "Without the Haldane effect, CO2 isn't released efficiently at the lungs",
+        "CO2 production in tissues increases",
+        "The heart can't pump CO2-rich blood"
+      ],
+      "answer": 1,
+      "explain": "The Haldane effect DEPENDS on oxygen binding! If oxygen can't bind (due to lung disease), hemoglobin stays deoxygenated and holds onto CO2. It's like a bus that never arrives to pick up passengers - the CO2 just accumulates, unable to be released and exhaled.",
+      "wrongExplains": {
+        "0": "Kidneys don't filter gases - that's the lungs' job. CO2 leaves through breath, not urine.",
+        "2": "Tissues produce CO2 at a normal rate. The problem is getting rid of it, not making too much.",
+        "3": "The heart pumps fine - it's not a circulation problem. It's that the blood can't release CO2 at the lungs."
+      }
+    },
+    {
+      "id": "900.5.44.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle pulls up a graph showing two curves - one labeled 'with Haldane effect' and one 'without.' The difference is striking. 'This effect boosts CO2 transport by 5-10%. In a sick patient, that margin can be life or death.'",
+      "q": "How does the Haldane effect improve overall gas transport efficiency?",
+      "options": [
+        "It increases oxygen storage in the lungs",
+        "It coordinates O2 delivery with CO2 removal, improving both",
+        "It prevents hemoglobin from carrying any gases",
+        "It only affects oxygen, not carbon dioxide"
+      ],
+      "answer": 1,
+      "explain": "The Haldane effect is about COORDINATION. By making deoxygenated hemoglobin better at carrying CO2, it ensures that the SAME blood that delivers O2 to tissues is primed to pick up CO2 waste. It's efficient routing - one trip, two purposes.",
+      "wrongExplains": {
+        "0": "The Haldane effect works in the blood, not the lungs. It doesn't increase storage, it increases transport efficiency.",
+        "2": "Hemoglobin still carries gases - the Haldane effect makes it BETTER at the job by coordinating the tradeoff.",
+        "3": "The Haldane effect is ALL about CO2! It describes how oxygen status affects CO2 carrying capacity."
+      }
+    },
+    {
+      "id": "900.5.44.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "The bus merges back together. Mr. Edgar's breathing stabilizes. 'The Haldane effect,' Ms. Frizzle says softly, 'is one of those invisible miracles. Your body coordinates oxygen and carbon dioxide with every single heartbeat, and you never think about it.'",
+      "q": "The Haldane effect is the opposite of which other oxygen-related effect?",
+      "options": [
+        "The Bohr effect (how CO2 affects O2 binding)",
+        "The Doppler effect (sound waves)",
+        "The greenhouse effect (atmospheric warming)",
+        "The placebo effect (psychological response)"
+      ],
+      "answer": 0,
+      "explain": "The BOHR EFFECT and HALDANE EFFECT are opposite sides of the same coin: Bohr = how CO2 affects O2 binding. Haldane = how O2 affects CO2 binding. They're complementary, working together to coordinate gas exchange. Two perspectives on the same molecular dance.",
+      "wrongExplains": {
+        "1": "The Doppler effect is about sound waves and motion, not biology. Wrong field entirely.",
+        "2": "The greenhouse effect is atmospheric science - climate, not blood. Different kind of gas exchange!",
+        "3": "The placebo effect is psychology/medicine, about belief affecting outcomes. Nothing to do with hemoglobin."
+      }
+    },
+    {
+      "id": "900.5.44.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle turns to the class. 'Now, the question that will appear on your quiz. Tell me: what is the Haldane effect?'",
+      "q": "The Haldane effect describes:",
+      "options": [
+        "How CO2 increases oxygen binding to hemoglobin",
+        "How oxygen unloading enhances CO2 transport in blood",
+        "How nitrogen dilutes oxygen in the lungs",
+        "How blood pressure affects gas exchange"
+      ],
+      "answer": 1,
+      "explain": "The HALDANE EFFECT: Deoxygenated blood carries more CO2 than oxygenated blood. When hemoglobin UNLOADS oxygen at tissues, it becomes better at picking up CO2. This coordination ensures efficient waste removal - the bus that drops off supplies picks up trash on the same trip.",
+      "wrongExplains": {
+        "0": "That's the Bohr effect - how CO2 affects oxygen. The Haldane effect is the reverse: how oxygen affects CO2.",
+        "2": "Nitrogen is inert - it doesn't participate in gas exchange. The Haldane effect is about the O2-CO2 dance.",
+        "3": "Blood pressure affects perfusion but not the chemical coordination between gases. Haldane is about molecular binding."
+      }
+    }
+  ]
+}

@@ -1,0 +1,783 @@
+{
+  "version": "1.0",
+  "source": "LUMI-OS Teaching Module",
+  "prefix": "000.5",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": "000.5.01",
+      "q": "Which term describes the study of body structures and their relationships?",
+      "options": [
+        "Physiology",
+        "Anatomy",
+        "Histology",
+        "Pathology"
+      ],
+      "answer": 1,
+      "explain": "Anatomy is the study of body structures. The word comes from Greek 'anatome' meaning 'dissection' — literally cutting apart to see what's inside.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.6
+      }
+    },
+    {
+      "id": "000.5.02",
+      "q": "The term 'homeostasis' refers to:",
+      "options": [
+        "The study of tissues",
+        "The maintenance of stable internal conditions",
+        "The breakdown of molecules",
+        "The formation of new cells"
+      ],
+      "answer": 1,
+      "explain": "Homeostasis means 'staying the same' — the body's ability to maintain stable internal conditions despite external changes. Temperature, pH, glucose levels — all held within narrow ranges.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "000.5.03",
+      "q": "Which body cavity contains the heart and lungs?",
+      "options": [
+        "Abdominal cavity",
+        "Pelvic cavity",
+        "Thoracic cavity",
+        "Cranial cavity"
+      ],
+      "answer": 2,
+      "explain": "The thoracic cavity is the chest cavity — bounded by the ribs, protected by the sternum. It houses the heart, lungs, and great vessels.",
+      "mechanism": null,
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.5,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "000.5.04",
+      "q": "The anatomical term 'proximal' means:",
+      "options": [
+        "Toward the back",
+        "Toward the front",
+        "Closer to the trunk or point of attachment",
+        "Further from the trunk or point of attachment"
+      ],
+      "answer": 2,
+      "explain": "Proximal means closer to the origin or attachment point. Your elbow is proximal to your wrist — closer to where the arm connects to the body.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "000.5.05",
+      "q": "Which plane divides the body into anterior and posterior portions?",
+      "options": [
+        "Sagittal plane",
+        "Frontal (coronal) plane",
+        "Transverse plane",
+        "Midsagittal plane"
+      ],
+      "answer": 1,
+      "explain": "The frontal or coronal plane runs vertically from side to side, dividing the body into front (anterior) and back (posterior) portions.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "000.5.06",
+      "q": "The smallest living unit of the body is the:",
+      "options": [
+        "Organ",
+        "Tissue",
+        "Cell",
+        "Organ system"
+      ],
+      "answer": 2,
+      "explain": "The cell is the fundamental unit of life. Everything living is made of cells — they're the smallest structures that can perform all life functions independently.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "000.5.07",
+      "q": "Which term describes a solution with a pH below 7?",
+      "options": [
+        "Basic",
+        "Neutral",
+        "Acidic",
+        "Alkaline"
+      ],
+      "answer": 2,
+      "explain": "Acidic solutions have pH values below 7. They contain excess hydrogen ions (H+). The lower the pH, the more acidic — stomach acid is around pH 2.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.5,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.6
+      }
+    },
+    {
+      "id": "000.5.08",
+      "q": "The organelle responsible for ATP production is the:",
+      "options": [
+        "Ribosome",
+        "Golgi apparatus",
+        "Mitochondrion",
+        "Lysosome"
+      ],
+      "answer": 2,
+      "explain": "Mitochondria are the powerhouses of the cell. They perform cellular respiration, converting glucose and oxygen into ATP — the energy currency cells actually spend.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "000.5.09",
+      "q": "The plasma membrane is described as 'selectively permeable' because it:",
+      "options": [
+        "Allows all substances to pass through",
+        "Blocks all substances from entering",
+        "Allows some substances to pass while blocking others",
+        "Only functions during cell division"
+      ],
+      "answer": 2,
+      "explain": "Selectively permeable means the membrane chooses what crosses. Small nonpolar molecules slip through; charged ions need channels; large molecules need transporters.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.5,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.6
+      }
+    },
+    {
+      "id": "000.5.10",
+      "q": "Which type of tissue covers body surfaces and lines cavities?",
+      "options": [
+        "Connective tissue",
+        "Muscle tissue",
+        "Nervous tissue",
+        "Epithelial tissue"
+      ],
+      "answer": 3,
+      "explain": "Epithelial tissue forms coverings and linings — skin surfaces, organ linings, gland secretory units. It's the body's interface layer.",
+      "mechanism": null,
+      "isotopes": [
+        "endocrine.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "000.5.11",
+      "q": "The term 'lateral' refers to a position:",
+      "options": [
+        "Toward the midline",
+        "Away from the midline",
+        "Above another structure",
+        "Below another structure"
+      ],
+      "answer": 1,
+      "explain": "Lateral means away from the midline — toward the side. Your ears are lateral to your nose. Your shoulders are lateral to your sternum.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "000.5.12",
+      "q": "Negative feedback mechanisms:",
+      "options": [
+        "Amplify changes from the set point",
+        "Oppose changes to return to the set point",
+        "Only occur during disease states",
+        "Increase body temperature continuously"
+      ],
+      "answer": 1,
+      "explain": "Negative feedback opposes change. When something deviates from the set point, negative feedback pushes it back. It's the body's thermostat principle.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "000.5.13",
+      "q": "The serous membrane that lines the abdominal cavity wall is called the:",
+      "options": [
+        "Visceral peritoneum",
+        "Parietal peritoneum",
+        "Pleura",
+        "Pericardium"
+      ],
+      "answer": 1,
+      "explain": "Parietal peritoneum lines the abdominal WALL. Parietal means 'wall' — it's the membrane against the body cavity's outer boundary.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "000.5.14",
+      "q": "Which macromolecule stores genetic information?",
+      "options": [
+        "Carbohydrates",
+        "Lipids",
+        "Proteins",
+        "Nucleic acids"
+      ],
+      "answer": 3,
+      "explain": "Nucleic acids — DNA and RNA — store and transmit genetic information. DNA holds the permanent instructions; RNA copies and delivers them.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "000.5.15",
+      "q": "The movement of water across a selectively permeable membrane from high to low water concentration is called:",
+      "options": [
+        "Diffusion",
+        "Active transport",
+        "Osmosis",
+        "Filtration"
+      ],
+      "answer": 2,
+      "explain": "Osmosis is specifically water diffusion across a membrane. Water moves from where it's more concentrated (dilute solution) to where it's less concentrated (concentrated solution).",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.5,
+        "D": 0.5,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "000.5.16",
+      "q": "The region of the cell containing genetic material and surrounded by a double membrane is the:",
+      "options": [
+        "Cytoplasm",
+        "Nucleus",
+        "Ribosome",
+        "Endoplasmic reticulum"
+      ],
+      "answer": 1,
+      "explain": "The nucleus houses DNA within its double-membrane envelope. Nuclear pores control traffic between the nucleus and cytoplasm.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.5,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "000.5.17",
+      "q": "Which directional term means 'toward the head'?",
+      "options": [
+        "Caudal",
+        "Inferior",
+        "Superior (cranial)",
+        "Posterior"
+      ],
+      "answer": 2,
+      "explain": "Superior or cranial means toward the head end. The heart is superior to the intestines. The brain is the most superior structure.",
+      "mechanism": null,
+      "isotopes": [
+        "cardiology.structure"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "000.5.18",
+      "q": "A covalent bond forms when atoms:",
+      "options": [
+        "Transfer electrons completely",
+        "Share electrons",
+        "Are attracted by opposite charges",
+        "Lose their protons"
+      ],
+      "answer": 1,
+      "explain": "Covalent bonds form when atoms share electrons. Each atom contributes to a shared pair, creating a strong, stable bond.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "000.5.19",
+      "q": "The transverse plane divides the body into:",
+      "options": [
+        "Left and right portions",
+        "Anterior and posterior portions",
+        "Superior and inferior portions",
+        "Proximal and distal portions"
+      ],
+      "answer": 2,
+      "explain": "The transverse plane is horizontal — it creates cross-sections, dividing the body into upper (superior) and lower (inferior) portions.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "000.5.20",
+      "q": "The organelle that modifies, packages, and ships proteins is the:",
+      "options": [
+        "Ribosome",
+        "Golgi apparatus",
+        "Mitochondrion",
+        "Nucleus"
+      ],
+      "answer": 1,
+      "explain": "The Golgi apparatus is the cell's shipping department. Proteins arrive from the ER, get modified and packaged into vesicles, then shipped to their destinations.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "000.5.21",
+      "q": "Which term describes the front surface of the body?",
+      "options": [
+        "Posterior",
+        "Dorsal",
+        "Anterior (ventral)",
+        "Lateral"
+      ],
+      "answer": 2,
+      "explain": "Anterior or ventral refers to the front of the body. Your belly button is on your anterior surface. Your face is anterior to your brain.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.6
+      }
+    },
+    {
+      "id": "000.5.22",
+      "q": "Enzymes are which type of macromolecule?",
+      "options": [
+        "Carbohydrates",
+        "Lipids",
+        "Proteins",
+        "Nucleic acids"
+      ],
+      "answer": 2,
+      "explain": "Enzymes are proteins that catalyze biochemical reactions. Their 3D shape creates active sites where substrates bind and reactions accelerate.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "000.5.23",
+      "q": "The epigastric region is located:",
+      "options": [
+        "Below the umbilical region",
+        "Above the umbilical region",
+        "Lateral to the umbilical region",
+        "Posterior to the umbilical region"
+      ],
+      "answer": 1,
+      "explain": "The epigastric region is the upper central abdomen — 'epi' means above, 'gastric' refers to stomach. It's above the umbilicus, below the sternum.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "000.5.24",
+      "q": "Active transport differs from passive transport because it:",
+      "options": [
+        "Moves substances down their concentration gradient",
+        "Requires ATP energy",
+        "Only moves water",
+        "Occurs without membrane proteins"
+      ],
+      "answer": 1,
+      "explain": "Active transport requires ATP because it moves substances AGAINST their concentration gradient — from low to high concentration. It's swimming upstream.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.5,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "000.5.25",
+      "q": "The hypodermis (subcutaneous layer) is located:",
+      "options": [
+        "Above the epidermis",
+        "Between epidermis and dermis",
+        "Below the dermis",
+        "Inside the body cavities"
+      ],
+      "answer": 2,
+      "explain": "The hypodermis lies below the dermis — 'hypo' means under. It's the fatty layer connecting skin to underlying structures, providing insulation and cushioning.",
+      "mechanism": null,
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Foundations",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    }
+  ]
+}

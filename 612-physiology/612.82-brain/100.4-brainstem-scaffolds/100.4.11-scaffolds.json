@@ -1,0 +1,159 @@
+{
+  "parentId": "100.4.11",
+  "parentQuestion": "A 55-year-old man presents with progressive difficulty swallowing, hoarseness, and tongue deviation to the right when protruded. On examination, the right side of his tongue is atrophied and fasciculating. Where is the lesion?",
+  "scaffolds": [
+    {
+      "q": "What cranial nerve controls tongue movement?",
+      "options": [
+        "CN VII (facial)",
+        "CN XII (hypoglossal)",
+        "CN V (trigeminal)",
+        "CN X (vagus)"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "CN XII (HYPOGLOSSAL) innervates the tongue muscles. It controls tongue movement for speech, chewing, and swallowing.",
+      "wrongExplains": {
+        "0": "CN VII controls facial expression, not tongue movement.",
+        "2": "CN V handles face sensation and chewing muscles, not tongue.",
+        "3": "CN X handles pharynx/larynx, not tongue movement."
+      }
+    },
+    {
+      "q": "When CN XII is damaged on one side, which way does the tongue deviate?",
+      "options": [
+        "Away from the weak side",
+        "TOWARD the weak/damaged side",
+        "It doesn't deviate",
+        "Upward"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The tongue deviates TOWARD THE WEAK SIDE. The strong side pushes harder, deviating the tongue toward the damaged side. 'Tongue points to the lesion.'",
+      "wrongExplains": {
+        "0": "The tongue deviates toward the weak side, not away.",
+        "2": "Unilateral CN XII damage causes clear deviation.",
+        "3": "Deviation is horizontal, not vertical."
+      }
+    },
+    {
+      "q": "What cranial nerves control swallowing and voice?",
+      "options": [
+        "CN II and III",
+        "CN IX (glossopharyngeal) and CN X (vagus)",
+        "CN I and II",
+        "CN VI and VII"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "CN IX and CN X control the PHARYNX and LARYNX. Damage causes DYSPHAGIA (difficulty swallowing) and DYSPHONIA (hoarseness).",
+      "wrongExplains": {
+        "0": "CN II is vision; CN III is eye movement.",
+        "2": "CN I is smell; CN II is vision.",
+        "3": "CN VI is eye abduction; CN VII is facial expression."
+      }
+    },
+    {
+      "q": "Where do CN IX, X, and XII have their nuclei?",
+      "options": [
+        "Midbrain",
+        "Medulla",
+        "Pons",
+        "Cerebral cortex"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "CN IX, X, and XII all have nuclei in the MEDULLA. They're close neighbors, so a medullary lesion can damage multiple lower CNs.",
+      "wrongExplains": {
+        "0": "Midbrain houses CN III-IV; lower CNs are in medulla.",
+        "2": "Pons houses CN V-VIII; lower CNs are in medulla.",
+        "3": "Cranial nerve nuclei are in brainstem, not cortex."
+      }
+    },
+    {
+      "q": "What do atrophy and fasciculations indicate?",
+      "options": [
+        "Upper motor neuron damage",
+        "LOWER motor neuron damage (nuclear or peripheral)",
+        "Normal finding",
+        "Sensory loss"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "ATROPHY and FASCICULATIONS indicate LOWER MOTOR NEURON damage. UMN causes spasticity; LMN causes atrophy, fasciculations, and flaccid weakness.",
+      "wrongExplains": {
+        "0": "UMN causes spasticity; atrophy and fasciculations are LMN signs.",
+        "2": "Atrophy and fasciculations are pathological, not normal.",
+        "3": "These are motor signs, not sensory."
+      }
+    },
+    {
+      "q": "Tongue deviates RIGHT + right tongue atrophy = damage to which side?",
+      "options": [
+        "Left CN XII",
+        "Right CN XII",
+        "Both sides",
+        "Neither side"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "RIGHT CN XII damage. The tongue deviates TOWARD the lesion side, and atrophy is on the weak side. Both point to RIGHT-sided damage.",
+      "wrongExplains": {
+        "0": "Tongue deviates toward the weak side; right deviation = right damage.",
+        "2": "Unilateral atrophy indicates unilateral damage.",
+        "3": "Clear signs indicate definite damage."
+      }
+    },
+    {
+      "q": "What does dysphagia + hoarseness + tongue deviation to same side indicate?",
+      "options": [
+        "Cortical lesion",
+        "Ipsilateral medullary lesion affecting multiple lower cranial nerves",
+        "Cerebellar lesion",
+        "Spinal cord lesion"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "CN IX, X, and XII all live in the MEDULLA. This combination points to IPSILATERAL MEDULLARY damage affecting multiple lower cranial nerves.",
+      "wrongExplains": {
+        "0": "Cortical lesion would cause UMN signs, not LMN atrophy.",
+        "2": "Cerebellum handles coordination, not swallowing/tongue.",
+        "3": "Spinal cord lesion wouldn't affect cranial nerves."
+      }
+    },
+    {
+      "q": "Why are the lower motor neuron signs (atrophy, fasciculations) important for localization?",
+      "options": [
+        "They indicate cortical damage",
+        "They indicate the lesion is at the nucleus or below — not above (UMN)",
+        "They're not important",
+        "They indicate cerebellar damage"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "LMN signs (atrophy, fasciculations) indicate the lesion is at the NUCLEUS or PERIPHERAL nerve — not a UMN (cortical) lesion above.",
+      "wrongExplains": {
+        "0": "Cortical damage causes UMN signs, not LMN signs.",
+        "2": "LMN signs are critical for distinguishing lesion level.",
+        "3": "Cerebellum causes coordination problems, not atrophy."
+      }
+    },
+    {
+      "q": "Right tongue deviation + dysphagia + hoarseness + atrophy/fasciculations = lesion in the ___?",
+      "options": [
+        "Left medulla",
+        "Right medulla",
+        "Cerebral cortex",
+        "Pons"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "RIGHT MEDULLA. Lower cranial nerves (IX, X, XII) are all ipsilateral. Right tongue deviation + right atrophy = right CN XII = right medulla.",
+      "wrongExplains": {
+        "0": "Tongue deviates toward the lesion; right deviation = right lesion.",
+        "2": "Cortex would cause UMN signs (spasticity), not LMN signs (atrophy).",
+        "3": "Pons houses CN V-VIII; CN IX, X, XII are in medulla."
+      }
+    }
+  ]
+}

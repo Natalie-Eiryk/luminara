@@ -1,0 +1,159 @@
+{
+  "parentId": "000.1.03",
+  "parentQuestion": "A structure that is composed of two or more tissue types that work together to perform specific functions for the body is a(n) ___.",
+  "scaffolds": [
+    {
+      "q": "What is the organizational hierarchy of the body?",
+      "options": [
+        "Random arrangement",
+        "Levels of increasing complexity from atoms to organism",
+        "Only cells and organs",
+        "No organization"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The body is organized in LEVELS OF INCREASING COMPLEXITY: Atoms → molecules → organelles → cells → tissues → organs → organ systems → organism.",
+      "wrongExplains": {
+        "0": "The body is highly organized, not random.",
+        "2": "The hierarchy includes many levels, not just cells and organs.",
+        "3": "The body has precise hierarchical organization."
+      }
+    },
+    {
+      "q": "What are cells?",
+      "options": [
+        "Only found in plants",
+        "The basic units of life — smallest living units that can function independently",
+        "Same as atoms",
+        "Only found in blood"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "CELLS are the BASIC UNITS OF LIFE — the smallest living units that can function independently. All living things are made of cells.",
+      "wrongExplains": {
+        "0": "Cells are found in all living things, not just plants.",
+        "2": "Cells are made of atoms, but are much larger and living.",
+        "3": "Cells are found throughout the body, not just blood."
+      }
+    },
+    {
+      "q": "What is a tissue?",
+      "options": [
+        "A single cell",
+        "A group of similar cells working together for a common function",
+        "An organ system",
+        "A type of nutrient"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "A TISSUE is a group of SIMILAR CELLS working together. Muscle tissue = muscle cells. Nervous tissue = nerve cells. Similar cells, common function.",
+      "wrongExplains": {
+        "0": "A tissue is made of many cells, not just one.",
+        "2": "An organ system is multiple organs; tissue is multiple similar cells.",
+        "3": "Tissues are structural units, not nutrients."
+      }
+    },
+    {
+      "q": "What are the four primary tissue types?",
+      "options": [
+        "Bone, blood, fat, skin",
+        "Epithelial, connective, muscle, nervous",
+        "Heart, liver, lung, brain",
+        "Red, white, gray, brown"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The four PRIMARY TISSUE TYPES are: EPITHELIAL (covering), CONNECTIVE (support), MUSCLE (movement), and NERVOUS (communication).",
+      "wrongExplains": {
+        "0": "These are examples of tissues/organs, not the four primary types.",
+        "2": "These are organs, not tissue types.",
+        "3": "These are colors, not tissue classifications."
+      }
+    },
+    {
+      "q": "What defines an organ?",
+      "options": [
+        "A single tissue type",
+        "Two or more tissue types working together for specific functions",
+        "A single cell type",
+        "An entire body system"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "An ORGAN is made of TWO OR MORE TISSUE TYPES working together. The heart has muscle, connective, epithelial, and nervous tissue.",
+      "wrongExplains": {
+        "0": "A single tissue type is a tissue, not an organ.",
+        "2": "Organs contain multiple cell types organized into tissues.",
+        "3": "A body system is multiple organs; an organ is multiple tissues."
+      }
+    },
+    {
+      "q": "What is an organ system?",
+      "options": [
+        "A single organ",
+        "A group of organs working together for a common purpose",
+        "A single tissue",
+        "A type of cell"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "An ORGAN SYSTEM is a group of ORGANS working together. The cardiovascular system includes heart, blood vessels, and blood.",
+      "wrongExplains": {
+        "0": "An organ system includes multiple organs, not just one.",
+        "2": "A tissue is simpler than an organ system.",
+        "3": "Cells make up tissues, which make up organs, which make up organ systems."
+      }
+    },
+    {
+      "q": "What is the correct sequence in the organizational hierarchy?",
+      "options": [
+        "Organs → tissues → cells → organ systems",
+        "Cells → tissues → organs → organ systems → organism",
+        "Organ systems → organs → cells → tissues",
+        "Tissues → cells → organs → organism"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The hierarchy is: CELLS → TISSUES → ORGANS → ORGAN SYSTEMS → ORGANISM. Each level builds on the previous one.",
+      "wrongExplains": {
+        "0": "Tissues come before organs, not after.",
+        "2": "The sequence goes from simple to complex, not reverse.",
+        "3": "Cells come before tissues, not after."
+      }
+    },
+    {
+      "q": "The heart is made of muscle tissue, connective tissue, epithelial tissue, and nervous tissue. What level is the heart?",
+      "options": [
+        "Tissue",
+        "Organ",
+        "Cell",
+        "Molecule"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "The heart is an ORGAN because it contains MULTIPLE TISSUE TYPES working together for a specific function (pumping blood).",
+      "wrongExplains": {
+        "0": "A tissue is one cell type; the heart has multiple tissue types.",
+        "2": "A cell is the smallest living unit; the heart contains millions.",
+        "3": "A molecule is a chemical unit; the heart is an anatomical structure."
+      }
+    },
+    {
+      "q": "A structure composed of two or more tissue types working together is called a(n) ___?",
+      "options": [
+        "Tissue",
+        "Organ",
+        "Cell",
+        "Organ system"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "The answer is ORGAN. Not a tissue (single cell type), not a cell, not an organ system (multiple organs). An organ = 2+ tissue types, specific function.",
+      "wrongExplains": {
+        "0": "A tissue is one cell type; organs have multiple tissue types.",
+        "2": "A cell is simpler than an organ; organs contain many cells.",
+        "3": "An organ system is multiple organs working together."
+      }
+    }
+  ]
+}

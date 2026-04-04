@@ -1,0 +1,87 @@
+[
+  {
+    "term": "Hard palate",
+    "definition": "Bony front roof of the mouth.",
+    "system": "Fetal Pig"
+  },
+  {
+    "term": "Soft palate",
+    "definition": "Muscular back roof of the mouth.",
+    "system": "Fetal Pig"
+  },
+  {
+    "term": "Esophagus",
+    "definition": "Food tube leading to the stomach.",
+    "system": "Fetal Pig"
+  },
+  {
+    "term": "Stomach",
+    "definition": "Food-processing organ with rugae and curvatures.",
+    "system": "Fetal Pig"
+  },
+  {
+    "term": "Duodenum",
+    "definition": "First part of the small intestine.",
+    "system": "Fetal Pig"
+  },
+  {
+    "term": "Ileum",
+    "definition": "Distal part of the small intestine.",
+    "system": "Fetal Pig"
+  },
+  {
+    "term": "Mesentery",
+    "definition": "Membrane supporting the intestines.",
+    "system": "Fetal Pig"
+  },
+  {
+    "term": "Spiral colon",
+    "definition": "Pig large intestine arranged in a spiral pattern.",
+    "system": "Fetal Pig"
+  },
+  {
+    "term": "Cecum",
+    "definition": "Beginning pouch of the large intestine.",
+    "system": "Fetal Pig"
+  },
+  {
+    "term": "Rectum",
+    "definition": "Terminal part of the large intestine.",
+    "system": "Fetal Pig"
+  },
+  {
+    "term": "Parietal peritoneum",
+    "definition": "Body wall lining of the peritoneum.",
+    "system": "Fetal Pig"
+  },
+  {
+    "term": "Visceral peritoneum",
+    "definition": "Organ covering of the peritoneum.",
+    "system": "Fetal Pig"
+  },
+  {
+    "term": "Ureter",
+    "definition": "Tube carrying urine to the bladder.",
+    "system": "Fetal Pig"
+  },
+  {
+    "term": "Uterine horns",
+    "definition": "Female extensions of the uterus in the pig.",
+    "system": "Fetal Pig"
+  },
+  {
+    "term": "Testicular artery",
+    "definition": "Male vessel supplying the testis.",
+    "system": "Fetal Pig"
+  },
+  {
+    "term": "Inguinal canal",
+    "definition": "Passage in the body wall where structures travel toward the scrotal region.",
+    "system": "Fetal Pig"
+  },
+  {
+    "term": "Cowper’s glands",
+    "definition": "Male bulbourethral glands.",
+    "system": "Fetal Pig"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "clusterId": "510.34",
+  "clusterName": "Pre-Calculus",
+  "status": "pending",
+  "targetQuestions": 300,
+  "currentBatch": 0,
+  "totalBatches": 12,
+  "questionsGenerated": 0,
+  "scaffoldsGenerated": 0,
+  "lastUpdated": null,
+  "batches": [],
+  "isotopes": [
+    "510.34.functions.notation",
+    "510.34.functions.composition",
+    "510.34.functions.inverse",
+    "510.34.sequences.arithmetic",
+    "510.34.sequences.geometric",
+    "510.34.limits.intuitive",
+    "510.34.limits.notation"
+  ],
+  "prerequisites": ["510.32.*", "510.33.*"],
+  "difficultyDistribution": {
+    "easy": 0,
+    "medium": 0,
+    "challenging": 0,
+    "hard": 0
+  }
+}

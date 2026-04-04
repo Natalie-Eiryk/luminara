@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.45",
+  "parentQuestion": "The chloride shift refers to:",
+  "narrative": {
+    "setting": "The Magic School Bus has entered a red blood cell in Mr. Edgar's capillary, watching molecules move across the cell membrane. Ms. Frizzle points to a strange dance: bicarbonate ions streaming out while chloride ions pour in. 'Class, this is the chloride shift - one of the most elegant ion exchanges in your body. It's how blood maintains electrical balance while transporting carbon dioxide. Mr. Edgar's life depends on this molecular waltz happening billions of times per minute.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's blood pH is drifting. If the chloride shift fails, his body's electrical balance and acid-base homeostasis will collapse."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.45.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle pulls up a periodic table, highlighting element 17. 'Chlorine - one of the halogens. In your body, it exists as chloride ion, negatively charged. It's more than table salt; it's a key player in electrical balance.'",
+      "q": "What is chloride in chemical terms?",
+      "options": [
+        "A positively charged sodium atom",
+        "A negatively charged chlorine atom (Cl-)",
+        "A neutral chlorine molecule",
+        "A compound of chlorine and oxygen"
+      ],
+      "answer": 1,
+      "explain": "CHLORIDE = Cl- = chlorine atom with an EXTRA electron, making it NEGATIVELY charged. It's an ion, not a neutral atom. Think of it as chlorine that gained a passenger (electron), giving it a negative charge. This charge is crucial for the shift.",
+      "wrongExplains": {
+        "0": "That's sodium ION (Na+), positively charged. Chloride is negative, and it's chlorine, not sodium.",
+        "2": "Neutral chlorine is Cl2 gas - toxic! In the body, it's ionized: Cl- with a negative charge.",
+        "3": "That would be chlorate or hypochlorite. Simple chloride is just Cl-, a single atom with extra electron."
+      }
+    },
+    {
+      "id": "900.5.45.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "The bus watches as a bicarbonate ion (HCO3-) drifts toward the cell membrane. 'Bicarbonate,' Ms. Frizzle explains, 'is CO2's travel form. It's how carbon dioxide moves through blood without acidifying everything.'",
+      "q": "What does 'shift' mean in a physiological context?",
+      "options": [
+        "A permanent transformation",
+        "A movement or exchange across a barrier",
+        "A disease process",
+        "A breathing pattern"
+      ],
+      "answer": 1,
+      "explain": "A SHIFT is a MOVEMENT or EXCHANGE. Not a transformation - the molecules stay what they are - but they move from one place to another. The chloride shift is ions shifting ACROSS the red blood cell membrane. Like workers switching shifts, trading places.",
+      "wrongExplains": {
+        "0": "Shifts are reversible movements, not permanent changes. The ions move back and forth as needed.",
+        "2": "Shift is a normal process, not pathology. It's how healthy blood maintains balance.",
+        "3": "Breathing patterns are ventilation. The chloride shift is about ion movement at the cellular level."
+      }
+    },
+    {
+      "id": "900.5.45.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle points to the cell membrane, where a special protein sits like a revolving door. 'This is an exchanger - a protein that trades one ion for another. No exchanger, no chloride shift. It's that simple.'",
+      "q": "What is an 'ion exchange' in biology?",
+      "options": [
+        "Two ions trading places across a membrane",
+        "Ions being destroyed",
+        "Ions gaining or losing charge",
+        "Ions combining into molecules"
+      ],
+      "answer": 0,
+      "explain": "ION EXCHANGE = a swap, a trade. One ion goes OUT while another comes IN. The chloride shift is an exchange: HCO3- leaves the red blood cell while Cl- enters. It's like a revolving door - one passenger exits, another enters, keeping the system balanced.",
+      "wrongExplains": {
+        "1": "Ions aren't destroyed, they're moved. Exchange means trading locations, not eliminating them.",
+        "2": "That's oxidation/reduction, changing the charge. Exchange is about moving existing ions.",
+        "3": "That's bond formation, not exchange. Exchange keeps ions separate while swapping their locations."
+      }
+    },
+    {
+      "id": "900.5.45.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "The bus follows a CO2 molecule as it enters the red blood cell from tissue. Instantly, carbonic anhydrase converts it: CO2 + H2O → H2CO3 → H+ + HCO3-. 'Now watch,' Ms. Frizzle says. 'The bicarbonate has to leave, but it's charged. Enter the chloride shift.'",
+      "q": "Why does bicarbonate (HCO3-) need to leave the red blood cell?",
+      "options": [
+        "To destroy carbon dioxide permanently",
+        "To transport CO2 in the plasma without acidifying the RBC",
+        "To create more hemoglobin",
+        "To generate oxygen"
+      ],
+      "answer": 1,
+      "explain": "HCO3- carries CO2 in the PLASMA (the liquid part of blood), not inside the RBC. By moving out, it spreads CO2's buffering throughout the blood volume. Staying inside would concentrate acid in the cell and limit CO2 transport capacity. It's about distributing the load.",
+      "wrongExplains": {
+        "0": "Bicarbonate doesn't destroy CO2 - it's CO2 in disguise! At the lungs, it converts back to CO2 for exhalation.",
+        "2": "Hemoglobin is a protein made by the cell's ribosomes, not from bicarbonate. Wrong system.",
+        "3": "Bicarbonate has nothing to do with making oxygen. It's all about transporting CO2 waste."
+      }
+    },
+    {
+      "id": "900.5.45.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "The membrane exchanger protein lights up on the bus's scanner. 'Band 3 protein,' Ms. Frizzle reads. 'It trades HCO3- going OUT for Cl- coming IN. One-for-one. The cell's charge stays balanced even as the ion composition changes.'",
+      "q": "During the chloride shift, what happens at the RBC membrane?",
+      "options": [
+        "Chloride exits while bicarbonate enters",
+        "Bicarbonate exits while chloride enters",
+        "Both chloride and bicarbonate exit together",
+        "Neither ion moves; they stay in equilibrium"
+      ],
+      "answer": 1,
+      "explain": "BICARBONATE OUT, CHLORIDE IN. At tissues where CO2 is being loaded, HCO3- (the CO2 transport form) moves OUT into plasma, while Cl- moves IN to replace the negative charge. It's a one-for-one trade, maintaining electrical neutrality.",
+      "wrongExplains": {
+        "0": "Backwards! Chloride enters to replace the bicarbonate that leaves. Remember: HCO3- out, Cl- in.",
+        "2": "Both leaving would create a charge imbalance. The shift is an exchange - one in, one out.",
+        "3": "The shift is dynamic, especially at tissues. Ions are constantly moving to transport CO2 efficiently."
+      }
+    },
+    {
+      "id": "900.5.45.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Ms. Frizzle highlights a key principle on the holographic board: 'Electrical neutrality.' 'Cells can't accumulate charge,' she explains. 'For every negative ion that leaves, another must enter. That's why chloride shifts IN - to balance the bicarbonate shifting OUT.'",
+      "q": "Why is the chloride shift necessary for maintaining electrical balance?",
+      "options": [
+        "It prevents the RBC from becoming too positively charged",
+        "It prevents the RBC from becoming too negatively charged",
+        "It generates electricity for the cell",
+        "It has no effect on electrical balance"
+      ],
+      "answer": 0,
+      "explain": "Both HCO3- and Cl- are NEGATIVE ions. If HCO3- leaves without replacement, the cell LOSES negative charge and becomes more POSITIVE. Cl- entering restores the negative charge balance. It's like replacing a light bulb - one negative charge leaves, another enters, maintaining equilibrium.",
+      "wrongExplains": {
+        "1": "Losing negative charge makes the cell MORE positive, not negative. Chloride entering adds negativity back.",
+        "2": "The shift doesn't generate electricity - it maintains charge balance. Cells aren't batteries.",
+        "3": "Electrical balance is critical! Without it, cellular functions like osmotic pressure and enzyme activity fail."
+      }
+    },
+    {
+      "id": "900.5.45.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "The bus travels to the lungs, where the process reverses. 'Watch,' Ms. Frizzle says. 'At the lungs, HCO3- re-enters the RBC to convert back to CO2. And chloride? It shifts back OUT. The same exchange, reversed.'",
+      "q": "What happens to the chloride shift at the lungs?",
+      "options": [
+        "It stops completely",
+        "It reverses: chloride exits, bicarbonate enters",
+        "It accelerates in the same direction",
+        "Only chloride moves, not bicarbonate"
+      ],
+      "answer": 1,
+      "explain": "At the LUNGS, the chloride shift REVERSES! HCO3- moves back INTO the RBC to be converted to CO2 (for exhalation), and Cl- moves OUT. Tissues: HCO3- out, Cl- in. Lungs: HCO3- in, Cl- out. It's a bidirectional shuttle, matching the needs of gas exchange.",
+      "wrongExplains": {
+        "0": "The shift continues but in reverse. CO2 must be converted from HCO3- inside the RBC, so HCO3- must enter.",
+        "2": "Same direction would trap CO2 in the plasma as HCO3-, unable to be exhaled. Reversal is essential.",
+        "3": "Both ions move - it's an exchange. Bicarbonate entering requires chloride exiting to maintain balance."
+      }
+    },
+    {
+      "id": "900.5.45.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Mr. Edgar's blood work flashes on screen. 'His serum chloride is low,' Ms. Frizzle notes. 'Hypochloremia. If chloride can't shift properly, bicarbonate gets trapped, CO2 transport fails, and pH goes haywire.'",
+      "q": "What would happen if the chloride shift were blocked?",
+      "options": [
+        "CO2 transport capacity would decrease",
+        "Oxygen binding would stop",
+        "Hemoglobin would be destroyed",
+        "Blood pressure would spike"
+      ],
+      "answer": 0,
+      "explain": "Blocking the chloride shift traps HCO3- inside the RBC. With nowhere to go, CO2 can't be converted to HCO3- efficiently, so CO2 transport capacity PLUMMETS. It's like a traffic jam - if cars (HCO3-) can't leave the parking garage, new cars (CO2) can't enter.",
+      "wrongExplains": {
+        "1": "The chloride shift affects CO2, not oxygen. Oxygen binding is separate, though related through the Bohr effect.",
+        "2": "Hemoglobin isn't destroyed - it just can't transport CO2 as effectively. The protein remains intact.",
+        "3": "Blood pressure is cardiovascular. The chloride shift is molecular chemistry, different system."
+      }
+    },
+    {
+      "id": "900.5.45.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle pulls up a diagram of the entire CO2 transport system: dissolved CO2, carbaminohemoglobin, and bicarbonate. 'Bicarbonate is 70% of the CO2 story. And the chloride shift is what makes bicarbonate transport possible. It's the unsung hero.'",
+      "q": "What percentage of CO2 is transported as bicarbonate in the plasma?",
+      "options": [
+        "About 10%",
+        "About 30%",
+        "About 70%",
+        "About 100%"
+      ],
+      "answer": 2,
+      "explain": "~70% of CO2 travels as HCO3- in the PLASMA. It's the dominant form. The chloride shift is what gets HCO3- out of the RBC and into plasma where it can travel. The remaining 30% is dissolved CO2 (~7%) and carbaminohemoglobin (~23%).",
+      "wrongExplains": {
+        "0": "10% is too low - that's less than dissolved CO2 alone. Bicarbonate is the major player.",
+        "1": "30% is closer to carbaminohemoglobin (CO2 bound to hemoglobin). Bicarbonate is much more.",
+        "3": "Not 100% - some CO2 dissolves directly in plasma and some binds hemoglobin. But bicarbonate is the majority."
+      }
+    },
+    {
+      "id": "900.5.45.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "The bus exits the red blood cell. Mr. Edgar's monitors stabilize. 'The chloride shift,' Ms. Frizzle says, 'is one of those things you never see but couldn't live without. Now tell me: what is the chloride shift?'",
+      "q": "The chloride shift refers to:",
+      "options": [
+        "Oxygen moving from lungs to tissues",
+        "The exchange of HCO3- and Cl- across the RBC membrane to maintain charge balance",
+        "Chloride ions binding to hemoglobin",
+        "The movement of chloride from blood to urine"
+      ],
+      "answer": 1,
+      "explain": "The CHLORIDE SHIFT (Hamburger shift): HCO3- and Cl- EXCHANGE across the RBC membrane. At tissues: HCO3- out, Cl- in. At lungs: HCO3- in, Cl- out. This maintains electrical neutrality while allowing massive CO2 transport as bicarbonate in the plasma. It's the ion trade that makes CO2 transport possible.",
+      "wrongExplains": {
+        "0": "That's oxygen transport, not the chloride shift. Chloride shift is about CO2 and ion balance.",
+        "2": "Chloride doesn't bind hemoglobin - it exchanges across the membrane. Hemoglobin binds oxygen and some CO2, but not chloride.",
+        "3": "That's kidney function and electrolyte balance. The chloride shift happens in blood during gas transport."
+      }
+    }
+  ]
+}

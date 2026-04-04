@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.28",
+  "parentQuestion": "The suffix '-pnea' refers to:",
+  "narrative": {
+    "setting": "The Magic School Bus is monitoring Mr. Edgar's breathing from inside his chest cavity. His breathing pattern has been irregular - sometimes too fast, sometimes labored - and the class needs to understand the medical terms doctors use to describe different breathing patterns. Ms. Frizzle has breathing measurement devices displayed on screen.",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's breathing is unstable. Recognizing abnormal breathing patterns could be life-saving."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.28.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "Ms. Frizzle displays an ancient Greek text. 'Class, the word for breath in Greek is beautiful - pnoe. Say it with me: P-NO-E. The 'p' is silent to our ears now, but the Greeks pronounced it.'",
+      "q": "The Greek root 'pnoe' or 'pnein' means:",
+      "options": [
+        "Heart beating",
+        "Breathing",
+        "Blood flowing",
+        "Sleeping"
+      ],
+      "answer": 1,
+      "explain": "'PNOE' or 'PNEIN' = BREATHING in Greek. This root gives us '-pnea' in English medical terms. Every word ending in '-pnea' describes some type of breathing. The silent 'p' is a gift from Greek pronunciation.",
+      "wrongExplains": {
+        "0": "Heart is 'cardio-'. While breathing and heartbeat are linked, 'pnea' specifically refers to respiration, not circulation.",
+        "2": "Blood flow is 'hemo-' or circulation terms. 'Pnea' is about air movement, not liquid movement.",
+        "3": "Sleep is 'somn-' or 'hypn-'. Though sleep apnea exists (breathing during sleep), the 'pnea' part means breathing, not sleeping."
+      }
+    },
+    {
+      "id": "900.5.28.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "Watch Mr. Edgar's chest rise and fall,' Ms. Frizzle says, pointing to a rhythm monitor. 'Every medical term with -pnea describes HOW someone is breathing. The prefix tells you what's abnormal about it.'",
+      "q": "Which word correctly uses the '-pnea' suffix?",
+      "options": [
+        "Tachycardia (fast heart rate)",
+        "Dyspnea (difficult breathing)",
+        "Hematoma (blood clot)",
+        "Anemia (low red blood cells)"
+      ],
+      "answer": 1,
+      "explain": "DYSPNEA = DYS (difficult) + PNEA (breathing) = difficulty breathing. The other terms don't involve breathing at all - they're about heart, blood, and cells. Only '-pnea' words describe breathing patterns.",
+      "wrongExplains": {
+        "0": "Tachycardia ends in '-cardia' (heart), not '-pnea' (breathing). Fast heart rate, not fast breathing.",
+        "2": "Hematoma ends in '-oma' (tumor/mass) with 'hema-' (blood). Nothing to do with breathing.",
+        "3": "Anemia ends in '-emia' (blood condition). It's about red blood cells, not breathing pattern."
+      }
+    },
+    {
+      "id": "900.5.28.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "The monitor shows Mr. Edgar's breathing rate climbing. 'Notice,' Ms. Frizzle points out, 'we can attach different prefixes to -pnea to describe WHAT kind of breathing abnormality we're seeing.'",
+      "q": "If 'a-' means 'without' or 'absence of,' what would 'apnea' mean?",
+      "options": [
+        "Fast breathing",
+        "Absence of breathing",
+        "Painful breathing",
+        "Shallow breathing"
+      ],
+      "answer": 1,
+      "explain": "A (without) + PNEA (breathing) = WITHOUT BREATHING. Temporary stopping of breath. Sleep apnea = stopping breathing during sleep. It's the complete absence of airflow, not slow or shallow - complete cessation.",
+      "wrongExplains": {
+        "0": "Fast is 'tachy-'. Apnea is the opposite - NO breathing at all, not fast breathing.",
+        "2": "Painful is '-algia' or 'dys-'. Apnea means STOPPED breathing, not painful breathing.",
+        "3": "Shallow is hypopnea (reduced breathing). Apnea is ABSENT breathing - not reduced, but zero."
+      }
+    },
+    {
+      "id": "900.5.28.s04",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "Mr. Edgar struggles to catch his breath. He's breathing but it feels wrong, difficult, like breathing through a straw. 'This sensation has a name,' Ms. Frizzle says. 'And the name describes exactly what he's experiencing.'",
+      "q": "The prefix 'dys-' means:",
+      "options": [
+        "Without or absent",
+        "Difficult, painful, or abnormal",
+        "Fast or rapid",
+        "Slow or reduced"
+      ],
+      "answer": 1,
+      "explain": "'DYS-' = DIFFICULT, PAINFUL, or ABNORMAL. Dyspnea = difficult breathing. Dysfunctional = not working right. Dyslexia = reading difficulty. This prefix always signals something is wrong or hard, not merely absent.",
+      "wrongExplains": {
+        "0": "Without is 'a-' or 'an-'. Dyspnea is difficult breathing (you ARE breathing), not absent breathing.",
+        "2": "Fast is 'tachy-'. Dys- means something feels wrong or hard, not necessarily fast.",
+        "3": "Slow is 'brady-'. Dys- is about quality (difficult, abnormal), not speed."
+      }
+    },
+    {
+      "id": "900.5.28.s05",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "The breathing monitor alarm sounds. Mr. Edgar's respiratory rate has jumped to 35 breaths per minute - nearly twice normal. 'Tachypnea,' Ms. Frizzle announces. 'Let's decode it.'",
+      "q": "If 'tachy-' means fast or rapid, tachypnea means:",
+      "options": [
+        "Slow breathing",
+        "Rapid breathing",
+        "Deep breathing",
+        "Absent breathing"
+      ],
+      "answer": 1,
+      "explain": "TACHY (fast) + PNEA (breathing) = RAPID BREATHING. More breaths per minute than normal (normal adult: 12-20). Think tachometer = speed gauge. Tachycardia = fast heart. Tachy- always means fast.",
+      "wrongExplains": {
+        "0": "That's bradypnea (brady- = slow). Tachy- is the opposite - it means fast or rapid.",
+        "2": "Deep is 'hyper-' in hyperpnea. Tachypnea is about RATE (how many breaths), not depth.",
+        "3": "Absent is apnea. Tachy- means fast, and you can't breathe fast if you're not breathing at all!"
+      }
+    },
+    {
+      "id": "900.5.28.s06",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "Now Mr. Edgar's breathing slows dramatically - only 8 breaths per minute. The opposite problem. 'There's a term for this too,' Ms. Frizzle says. 'Medical language is precise about every abnormality.'",
+      "q": "If 'brady-' means slow, what is 'bradypnea'?",
+      "options": [
+        "Fast breathing",
+        "Slow breathing",
+        "Stopped breathing",
+        "Difficult breathing"
+      ],
+      "answer": 1,
+      "explain": "BRADY (slow) + PNEA (breathing) = SLOW BREATHING. Fewer breaths per minute than normal. Bradycardia = slow heart. Brady- always means slow. Opposite of tachy-.",
+      "wrongExplains": {
+        "0": "That's tachypnea. Brady- is the opposite of tachy- - it means slow, not fast.",
+        "2": "Stopped is apnea. Slow breathing is still breathing, just at a reduced rate.",
+        "3": "Difficult is dyspnea. Bradypnea is specifically about LOW RATE, not about difficulty or effort."
+      }
+    },
+    {
+      "id": "900.5.28.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "'Now for the tricky ones,' Ms. Frizzle warns. 'Some -pnea words specify WHEN or HOW breathing becomes difficult. Orthopnea is one - let me show you what makes it special.'",
+      "q": "The prefix 'ortho-' means straight or upright. What is 'orthopnea'?",
+      "options": [
+        "Breathing only through the mouth",
+        "Difficulty breathing when lying flat (must sit up)",
+        "Breathing in a regular pattern",
+        "Breathing deeply and slowly"
+      ],
+      "answer": 1,
+      "explain": "ORTHO (upright) + PNEA (breathing) = breathing that requires being UPRIGHT. People with heart failure can't breathe lying down - fluid backs up into lungs. They must sit up (ortho-). The position matters!",
+      "wrongExplains": {
+        "0": "Mouth breathing is oral respiration. Ortho- refers to body POSITION (upright), not which body opening.",
+        "2": "Regular pattern is eupnea (normal breathing). Orthopnea is specifically difficulty when lying down.",
+        "3": "Deep and slow would be described differently. Orthopnea is about POSITION - needing to be upright to breathe."
+      }
+    },
+    {
+      "id": "900.5.28.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "Mr. Edgar suddenly starts breathing very deeply and rapidly, more than his body needs. 'Hyperventilation,' Ms. Frizzle identifies. 'Hyper- is a prefix you'll see everywhere in medicine.'",
+      "q": "'Hyper-' means excessive or above normal. What is 'hyperpnea'?",
+      "options": [
+        "Breathing that's deeper/faster than normal",
+        "Breathing that's shallower than normal",
+        "Breathing that stops periodically",
+        "Breathing that's painful"
+      ],
+      "answer": 0,
+      "explain": "HYPER (excessive) + PNEA (breathing) = breathing MORE than normal - deeper, faster, or both. The prefix 'hyper-' always means above, beyond, excessive. Opposite of 'hypo-' (below normal).",
+      "wrongExplains": {
+        "1": "Shallow is 'hypo-' (below normal). Hyper- means MORE than normal, not less.",
+        "2": "Stopping is apnea. Hyper- means excessive, not absent or periodic.",
+        "3": "Painful is dys- (dyspnea). Hyper- describes AMOUNT or INTENSITY, not whether it hurts."
+      }
+    },
+    {
+      "id": "900.5.28.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "'Let's contrast two easily confused terms,' Ms. Frizzle says, pulling up side-by-side definitions. 'Hyperpnea and hyperventilation sound similar but mean different things clinically.'",
+      "q": "What's the difference between hyperpnea and hyperventilation?",
+      "options": [
+        "They're the same thing",
+        "Hyperpnea is appropriate for body's needs; hyperventilation is excessive",
+        "Hyperventilation is appropriate; hyperpnea is excessive",
+        "Hyperpnea is slow; hyperventilation is fast"
+      ],
+      "answer": 1,
+      "explain": "HYPERPNEA = increased breathing that MATCHES increased metabolic demand (like during exercise - your body needs more O2). HYPERVENTILATION = excessive breathing BEYOND what's needed (causes CO2 to drop too low). Context matters!",
+      "wrongExplains": {
+        "0": "They're clinically different! Hyperpnea is normal response to exercise. Hyperventilation can cause problems (dizziness, tingling).",
+        "2": "You've got it backwards. Hyperpnea matches need (appropriate). Hyperventilation exceeds need (excessive).",
+        "3": "Both involve increased breathing. The difference is whether it's APPROPRIATE for the body's needs, not the speed alone."
+      }
+    },
+    {
+      "id": "900.5.28.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "Mr. Edgar's breathing finally stabilizes at a normal rate and depth. 'Eupnea,' Ms. Frizzle says with relief. 'EU- means good or normal. Now, let's see if you've mastered the suffix.'",
+      "q": "The suffix '-pnea' refers to:",
+      "options": [
+        "Heart rate or rhythm",
+        "Breathing or respiration",
+        "Blood oxygen levels",
+        "Lung capacity"
+      ],
+      "answer": 1,
+      "explain": "'-PNEA' = BREATHING or RESPIRATION. From Greek 'pnoe' (breath). Every '-pnea' word describes a breathing pattern: apnea, dyspnea, tachypnea, bradypnea, orthopnea, hyperpnea. Know this suffix, decode them all!",
+      "wrongExplains": {
+        "0": "Heart rate is '-cardia'. While breathing and heart rate are related, '-pnea' specifically refers to respiration.",
+        "2": "Oxygen levels are measured by saturation or PaO2. '-pnea' describes the ACT of breathing, not the gas content.",
+        "3": "Lung capacity is measured in liters (vital capacity, etc.). '-pnea' describes breathing patterns, not volume measurements."
+      }
+    }
+  ]
+}

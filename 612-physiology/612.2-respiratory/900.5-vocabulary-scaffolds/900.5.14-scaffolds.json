@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.14",
+  "parentQuestion": "The condition of collapsed lung due to air in the pleural cavity is called:",
+  "narrative": {
+    "setting": "The Magic School Bus is in the pleural cavity - that thin space between Mr. Edgar's lung and chest wall. Suddenly, a puncture. Air rushes in through the breach. The delicate vacuum seal that kept the lung expanded begins to fail. 'Emergency!' Ms. Frizzle shouts as the lung starts to peel away from the chest wall, collapsing inward.",
+    "character": "Mr. Edgar",
+    "tension": "Air is flooding the pleural space - a space that should NEVER contain air. The vacuum is breaking. The lung is collapsing. Without the negative pressure seal, the elastic lung tissue recoils like a deflating balloon. Mr. Edgar gasps for breath that isn't coming."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.14.s01",
+      "arc": 1,
+      "arcTitle": "Breaking Down the Word",
+      "narrative": "Ms. Frizzle watches the air rush in. 'The Greeks had a word for this disaster,' she says grimly. 'Pneumo - meaning air or lung. Think of pneumonia, pneumatic.'",
+      "q": "The Greek root 'pneumo-' refers to:",
+      "options": [
+        "Blood",
+        "Air or lung",
+        "Heart",
+        "Bone"
+      ],
+      "answer": 1,
+      "explain": "'Pneumo-' means AIR or LUNG. PNEUMOnia = lung infection. PNEUMOthorax = air in the chest cavity. PNEUMatic tools = powered by air.",
+      "wrongExplains": {
+        "0": "Blood would be 'hemo-' (HEMOthorax = blood in chest). Pneumo- means air/lung.",
+        "2": "Heart would be 'cardio-'. Pneumo- relates to air and lungs.",
+        "3": "Bone would be 'osteo-'. Pneumo- is specifically air or lung."
+      }
+    },
+    {
+      "id": "900.5.14.s02",
+      "arc": 1,
+      "arcTitle": "Breaking Down the Word",
+      "narrative": "'And thorax?' Ms. Frizzle gestures at the surrounding chest cavity. 'The Greek word for chest. Where the lungs and heart live.'",
+      "q": "The Greek word 'thorax' refers to:",
+      "options": [
+        "The head",
+        "The chest",
+        "The abdomen",
+        "The arm"
+      ],
+      "answer": 1,
+      "explain": "'Thorax' means CHEST - the body cavity containing the lungs and heart. Pneumothorax = air (pneumo) in the chest (thorax) cavity.",
+      "wrongExplains": {
+        "0": "Head would be 'cephalon' or 'cranium'. Thorax specifically means chest.",
+        "2": "Abdomen is below the diaphragm. Thorax is the chest cavity above it.",
+        "3": "Arm would be 'brachium'. Thorax is the trunk, not a limb."
+      }
+    },
+    {
+      "id": "900.5.14.s03",
+      "arc": 1,
+      "arcTitle": "Breaking Down the Word",
+      "narrative": "'So pneumothorax literally means...' Arnold works it out. 'Air in the chest?' Ms. Frizzle nods. 'And air in the chest - specifically the PLEURAL space - is a disaster.'",
+      "q": "Put together, 'pneumothorax' literally means:",
+      "options": [
+        "Blood in the chest",
+        "Air in the chest cavity",
+        "Lung infection",
+        "Chest muscle pain"
+      ],
+      "answer": 1,
+      "explain": "PNEUMO-THORAX = air (pneumo) + chest (thorax). When air enters the pleural space, it's called a pneumothorax. The word tells you exactly what's happening.",
+      "wrongExplains": {
+        "0": "BLOOD in the chest is HEMO-thorax (hemo = blood). Different emergency.",
+        "2": "Lung infection is PNEUMONIA (pneumon- + -ia = lung + condition).",
+        "3": "Chest muscle pain would be myalgia or costochondritis. Pneumothorax is air in the space."
+      }
+    },
+    {
+      "id": "900.5.14.s04",
+      "arc": 2,
+      "arcTitle": "The Physics of Breathing",
+      "narrative": "'To understand the disaster,' Ms. Frizzle explains, 'you need to understand normal. The pleural cavity should NEVER have air in it.' She points to the thin film of fluid. 'Just this slippery lubricant.'",
+      "q": "The pleural cavity normally contains:",
+      "options": [
+        "Air",
+        "A thin layer of serous fluid only",
+        "Blood",
+        "Nothing (vacuum)"
+      ],
+      "answer": 1,
+      "explain": "Normal pleural cavity: SEROUS FLUID ONLY - a few milliliters of lubricating liquid. NO AIR. This fluid creates surface tension, like wet glass slides, keeping lung and chest wall coupled.",
+      "wrongExplains": {
+        "0": "AIR in the pleural space is ABNORMAL - that's pneumothorax!",
+        "2": "BLOOD in the pleural space is ABNORMAL - that's hemothorax!",
+        "3": "It's not a pure vacuum. There's lubricating fluid plus slightly negative pressure."
+      }
+    },
+    {
+      "id": "900.5.14.s05",
+      "arc": 2,
+      "arcTitle": "The Physics of Breathing",
+      "narrative": "'The pressure in here is slightly negative,' Ms. Frizzle demonstrates with a gauge. 'Lower than atmospheric. That's what keeps the lung expanded against the chest wall.'",
+      "q": "What keeps the lungs expanded against the chest wall?",
+      "options": [
+        "Muscles pulling the lung outward",
+        "Negative pressure in the pleural space",
+        "The lung's own rigid structure",
+        "Air pressure inside the lungs"
+      ],
+      "answer": 1,
+      "explain": "NEGATIVE PRESSURE (sub-atmospheric) in the pleural space creates a 'suction' effect. Combined with fluid surface tension, this couples the lung to the chest wall. When the chest expands, the lung follows.",
+      "wrongExplains": {
+        "0": "No muscles attach directly to lung tissue to pull it outward.",
+        "2": "Lungs are actually ELASTIC - they WANT to collapse inward. The negative pressure prevents this.",
+        "3": "Internal air pressure helps inflation, but the pleural vacuum keeps lung coupled to chest wall."
+      }
+    },
+    {
+      "id": "900.5.14.s06",
+      "arc": 2,
+      "arcTitle": "The Physics of Breathing",
+      "narrative": "Air continues rushing in. The negative pressure vanishes. Ms. Frizzle watches helplessly as the lung separates from the chest wall. 'Without the vacuum seal, the elastic lung does what it naturally wants to do...'",
+      "q": "What happens when air enters the pleural space?",
+      "options": [
+        "The lung expands more",
+        "The negative pressure is lost and the lung collapses",
+        "Nothing changes",
+        "The heart enlarges"
+      ],
+      "answer": 1,
+      "explain": "Air BREAKS the negative pressure seal. The lung, no longer held against the chest wall, follows its elastic nature and RECOILS INWARD, collapsing. The chest wall can expand, but the lung doesn't follow.",
+      "wrongExplains": {
+        "0": "Air in the pleural space causes COLLAPSE, not expansion. The vacuum is destroyed.",
+        "2": "This definitely causes dramatic changes - partial or complete lung collapse.",
+        "3": "The heart isn't directly affected initially, though severe pneumothorax can shift mediastinum."
+      }
+    },
+    {
+      "id": "900.5.14.s07",
+      "arc": 3,
+      "arcTitle": "Types and Treatment",
+      "narrative": "'Not all pneumothoraces are the same,' Ms. Frizzle notes. 'Spontaneous - happens without trauma, often in tall thin young men. Traumatic - from injury. Tension - the deadliest, where air keeps entering but can't escape.'",
+      "q": "A 'tension pneumothorax' is particularly dangerous because:",
+      "options": [
+        "It heals slower",
+        "Air enters with each breath but cannot escape",
+        "It only affects old people",
+        "It causes no symptoms"
+      ],
+      "answer": 1,
+      "explain": "TENSION pneumothorax: a one-way valve effect. Air enters with each breath but can't escape. Pressure builds, collapsing the lung completely and pushing on the heart (mediastinal shift). Life-threatening emergency.",
+      "wrongExplains": {
+        "0": "Speed of healing isn't the issue - the immediate pressure buildup is the danger.",
+        "2": "Tension pneumothorax can happen to anyone. Age isn't the distinguishing feature.",
+        "3": "It causes SEVERE symptoms: extreme dyspnea, hypotension, distended neck veins."
+      }
+    },
+    {
+      "id": "900.5.14.s08",
+      "arc": 3,
+      "arcTitle": "Types and Treatment",
+      "narrative": "'Treatment?' Ms. Frizzle shows the procedure. 'Remove the air. Let the vacuum seal reform.' A needle or chest tube drains the air, and the lung slowly re-expands.",
+      "q": "Primary treatment for pneumothorax involves:",
+      "options": [
+        "Adding more air to balance pressure",
+        "Removing air from the pleural space",
+        "Keeping the patient still",
+        "Increasing respiratory rate"
+      ],
+      "answer": 1,
+      "explain": "REMOVE THE AIR - via needle aspiration or chest tube. Once air is evacuated, negative pressure can re-establish, and the lung re-expands against the chest wall. The seal reforms.",
+      "wrongExplains": {
+        "0": "Adding air would make collapse worse! The goal is removing air.",
+        "2": "Keeping still doesn't fix the problem. Air must be evacuated.",
+        "3": "Faster breathing doesn't help if one lung is collapsed. Air removal is needed."
+      }
+    },
+    {
+      "id": "900.5.14.s09",
+      "arc": 3,
+      "arcTitle": "Types and Treatment",
+      "narrative": "'Don't confuse pneumothorax with atelectasis,' Ms. Frizzle warns. 'Both involve lung collapse, but from different causes.' She shows a blocked airway causing collapse from WITHIN versus air in pleural space causing collapse from WITHOUT.",
+      "q": "What is 'atelectasis'?",
+      "options": [
+        "Lung collapse from air in the pleural space",
+        "Lung collapse from airway blockage or surfactant lack",
+        "Lung infection",
+        "Rapid breathing"
+      ],
+      "answer": 1,
+      "explain": "ATELECTASIS = lung collapse from INTERNAL causes - blocked airways (mucus plug, tumor) or surfactant deficiency. Air can't reach alveoli, so they deflate. Different mechanism than pneumothorax.",
+      "wrongExplains": {
+        "0": "That's PNEUMOTHORAX. Atelectasis is collapse from internal airway obstruction.",
+        "2": "Infection is PNEUMONIA. Atelectasis is mechanical collapse, not infection.",
+        "3": "Rapid breathing is TACHYPNEA. Atelectasis is partial or complete lung collapse."
+      }
+    },
+    {
+      "id": "900.5.14.s10",
+      "arc": 3,
+      "arcTitle": "Types and Treatment",
+      "narrative": "The air is evacuated. The negative pressure returns. The lung slowly re-expands against the chest wall. Mr. Edgar breathes easier. 'That condition,' Ms. Frizzle asks. 'Air in the pleural space, lung collapsed - what's it called?'",
+      "q": "The condition of collapsed lung due to air in the pleural cavity is called:",
+      "options": [
+        "Atelectasis",
+        "Pneumothorax",
+        "Pleurisy",
+        "Emphysema"
+      ],
+      "answer": 1,
+      "explain": "PNEUMOTHORAX - 'pneumo' (air) + 'thorax' (chest). Air in the pleural space breaks the negative pressure seal, and the lung collapses. The word describes exactly what's happening: air where air should never be.",
+      "wrongExplains": {
+        "0": "Atelectasis is collapse from INTERNAL causes (blockage/surfactant). Pneumothorax is from pleural air.",
+        "2": "Pleurisy is pleural INFLAMMATION causing pain, not collapse from air.",
+        "3": "Emphysema is ALVEOLAR WALL DESTRUCTION (COPD), not pleural air."
+      }
+    }
+  ]
+}

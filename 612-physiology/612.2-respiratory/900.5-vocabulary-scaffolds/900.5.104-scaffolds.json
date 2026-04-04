@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.104",
+  "parentQuestion": "A tracheostomy is:",
+  "narrative": {
+    "setting": "The Magic School Bus is in the intensive care unit, observing an emergency. Mr. Edgar's airway is completely obstructed - a severe allergic reaction has swollen his throat shut. He can't breathe. A surgeon prepares instruments at his neck. Ms. Frizzle's voice is urgent but steady: 'Tracheostomy - a surgical airway. When the upper airway is blocked or damaged, we bypass it entirely. This procedure will save his life, but we need to understand the anatomy and the suffix -ostomy.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's oxygen saturation is plummeting. The surgeon has minutes to create an emergency airway."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.104.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "Ms. Frizzle points to the trachea on the anatomy diagram. 'Trachea - from the Greek tracheia arteria, meaning rough artery. The ancient Greeks thought it was a vessel because of the cartilage rings.'",
+      "q": "The 'trachea' is the:",
+      "options": [
+        "Voice box",
+        "Windpipe",
+        "Throat",
+        "Esophagus"
+      ],
+      "answer": 1,
+      "explain": "'TRACHEA' = WINDPIPE. The tube extending from the larynx (voice box) to the bronchi, supported by C-shaped cartilage rings. It's the main airway conducting air to/from the lungs. Located anterior (in front of) the esophagus.",
+      "wrongExplains": {
+        "0": "Voice box is the LARYNX. The trachea is the windpipe, located BELOW the larynx.",
+        "2": "Throat is the PHARYNX. The trachea is the windpipe, located BELOW the pharynx.",
+        "3": "Esophagus is the food tube (behind the trachea). Trachea is the AIR tube (windpipe)."
+      }
+    },
+    {
+      "id": "900.5.104.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "The surgeon makes an incision in Mr. Edgar's neck. 'The suffix -ostomy,' Ms. Frizzle explains. 'One of the most important surgical suffixes. Learn it and hundreds of procedures make sense.'",
+      "q": "The suffix '-ostomy' means:",
+      "options": [
+        "Surgical removal",
+        "Creating a surgical opening",
+        "Inflammation",
+        "Study of"
+      ],
+      "answer": 1,
+      "explain": "'-OSTOMY' = creating a surgical OPENING or STOMA (hole). From Greek 'stoma' = mouth/opening. Tracheostomy = opening in trachea. Colostomy = opening in colon. Gastrostomy = opening in stomach. The opening connects inside to outside.",
+      "wrongExplains": {
+        "0": "Removal is '-ectomy'. '-ostomy' creates an OPENING, doesn't remove the organ.",
+        "2": "Inflammation is '-itis'. '-ostomy' is a surgical procedure creating an opening.",
+        "3": "Study of is '-ology'. '-ostomy' is surgical creation of an opening."
+      }
+    },
+    {
+      "id": "900.5.104.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "The surgeon cuts through tissue layers - skin, fascia, muscle - carefully avoiding blood vessels and the thyroid gland. The trachea is exposed, its cartilage rings visible. 'Precision,' Ms. Frizzle whispers.",
+      "q": "A tracheostomy creates an opening in the:",
+      "options": [
+        "Pharynx (throat)",
+        "Trachea (windpipe)",
+        "Larynx (voice box)",
+        "Esophagus"
+      ],
+      "answer": 1,
+      "explain": "TRACHEOSTOMY = surgical opening in the TRACHEA. Usually between the 2nd and 4th tracheal rings (below the larynx). A tube is inserted to maintain the airway. It bypasses upper airway obstruction.",
+      "wrongExplains": {
+        "0": "Opening in pharynx isn't a tracheostomy. Tracheostomy is specifically in the TRACHEA (lower in the neck).",
+        "2": "Opening in larynx is a laryngotomy. Tracheostomy is below the larynx, in the trachea.",
+        "3": "Esophagus is for FOOD, behind the trachea. Tracheostomy is in the AIR tube (trachea)."
+      }
+    },
+    {
+      "id": "900.5.104.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The surgeon inserts a tracheostomy tube through the opening. Air flows directly into Mr. Edgar's lungs, bypassing the swollen throat. His oxygen saturation begins to rise. 'Life-saving,' Ms. Frizzle says.",
+      "q": "The primary purpose of a tracheostomy is to:",
+      "options": [
+        "Remove the trachea",
+        "Provide an alternative airway bypassing upper obstruction",
+        "Cure lung disease",
+        "Improve voice quality"
+      ],
+      "answer": 1,
+      "explain": "Tracheostomy provides an ALTERNATIVE AIRWAY that BYPASSES the mouth, nose, pharynx, and larynx. Used for: (1) upper airway obstruction, (2) prolonged mechanical ventilation, (3) protection from aspiration, (4) secretion management.",
+      "wrongExplains": {
+        "0": "Tracheostomy doesn't remove the trachea - it creates an opening in it. Removal would be tracheectomy.",
+        "2": "Tracheostomy doesn't cure lung disease. It's an airway management procedure.",
+        "3": "Tracheostomy ELIMINATES voice (air doesn't pass through vocal cords). Special valves can allow speech later."
+      }
+    },
+    {
+      "id": "900.5.104.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus observes different scenarios flash by: prolonged ventilator dependence, head and neck cancer, severe trauma. 'Many indications,' Ms. Frizzle notes. 'Emergency and elective.'",
+      "q": "Which is a common indication for tracheostomy?",
+      "options": [
+        "Mild cold symptoms",
+        "Prolonged mechanical ventilation or upper airway obstruction",
+        "Hearing loss",
+        "Stomachache"
+      ],
+      "answer": 1,
+      "explain": "Common indications: (1) PROLONGED VENTILATION (>2 weeks), (2) UPPER AIRWAY OBSTRUCTION (tumor, angioedema, trauma), (3) secretion management, (4) protection from aspiration, (5) facial/neck surgery. Emergency or planned.",
+      "wrongExplains": {
+        "0": "Mild colds don't need tracheostomy. It's for severe airway compromise or long-term ventilation needs.",
+        "2": "Hearing loss is an ear problem. Tracheostomy is for AIRWAY management.",
+        "3": "Stomachache is GI. Tracheostomy is RESPIRATORY - for airway access."
+      }
+    },
+    {
+      "id": "900.5.104.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "A cuffed tracheostomy tube inflates, sealing against the tracheal wall. 'The cuff,' Ms. Frizzle explains, 'prevents aspiration and allows positive pressure ventilation. But it must be managed carefully to avoid pressure necrosis.'",
+      "q": "A tracheostomy tube cuff serves to:",
+      "options": [
+        "Make the tube look decorative",
+        "Seal the airway to prevent aspiration and allow ventilation",
+        "Warm the air",
+        "Filter bacteria"
+      ],
+      "answer": 1,
+      "explain": "The CUFF (inflatable balloon) seals the trachea around the tube. Functions: (1) PREVENT ASPIRATION (oral secretions can't enter lungs), (2) allow POSITIVE PRESSURE VENTILATION (no air leak). Must monitor cuff pressure to avoid tracheal injury.",
+      "wrongExplains": {
+        "0": "Medical devices aren't decorative. The cuff has critical functions (sealing, preventing aspiration).",
+        "2": "The cuff doesn't warm air. Heat-moisture exchangers (HMEs) are used for humidification.",
+        "3": "The cuff seals, doesn't filter. Filters can be added separately to the circuit."
+      }
+    },
+    {
+      "id": "900.5.104.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Tracheostomy versus tracheotomy,' Ms. Frizzle warns. 'Medical students confuse these constantly. The difference is subtle but important.'",
+      "q": "How does tracheostomy differ from tracheotomy?",
+      "options": [
+        "They are exactly the same",
+        "Tracheostomy creates a stoma (permanent opening); tracheotomy is temporary incision",
+        "Tracheostomy is temporary; tracheotomy is permanent",
+        "Tracheostomy is in the throat; tracheotomy is in the trachea"
+      ],
+      "answer": 1,
+      "explain": "Technically: TRACHEOTOMY (-tomy = cutting) = incision into trachea. TRACHEOSTOMY (-ostomy = opening) = creating a STOMA (formalized opening). In practice, 'tracheostomy' is used for both, but '-ostomy' implies the intent to maintain an opening.",
+      "wrongExplains": {
+        "0": "Subtle difference in suffixes: -tomy (cut) vs. -ostomy (opening). In practice often used interchangeably.",
+        "2": "Backwards! Tracheostomy (-ostomy) implies maintained opening. Tracheotomy (-tomy) is just an incision.",
+        "3": "Both are in the TRACHEA. The difference is in the suffix: -tomy (incision) vs. -ostomy (opening/stoma)."
+      }
+    },
+    {
+      "id": "900.5.104.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Weeks pass. Mr. Edgar's allergic reaction has resolved. The tracheostomy is ready to be closed. 'Decannulation,' Ms. Frizzle explains. 'Removing the tube. The stoma will heal on its own in most cases.'",
+      "q": "When a tracheostomy is no longer needed, the process of removing the tube is called:",
+      "options": [
+        "Cannulation",
+        "Decannulation",
+        "Intubation",
+        "Extubation"
+      ],
+      "answer": 1,
+      "explain": "DECANNULATION = removing the tracheostomy tube. 'De-' (removing) + 'cannula' (tube). Done when: (1) upper airway is patent, (2) patient can protect airway, (3) no longer needs ventilation. The stoma usually closes spontaneously.",
+      "wrongExplains": {
+        "0": "CANNULATION is INserting a tube. DEcannulation is REmoving it.",
+        "2": "Intubation is placing an endotracheal tube (through mouth/nose). Removing a trach tube is decannulation.",
+        "3": "Extubation is removing an endotracheal tube. Removing a TRACH tube is specifically called decannulation."
+      }
+    },
+    {
+      "id": "900.5.104.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Complications flash on the screen: bleeding, infection, tracheal stenosis, tube displacement. 'No procedure is without risk,' Ms. Frizzle teaches. 'Vigilance and proper care are essential.'",
+      "q": "A potential complication of tracheostomy is:",
+      "options": [
+        "Perfect health",
+        "Tracheal stenosis, infection, or bleeding",
+        "Improved hearing",
+        "Enhanced sense of smell"
+      ],
+      "answer": 1,
+      "explain": "Complications: EARLY (bleeding, pneumothorax, tube displacement, subcutaneous emphysema), LATE (infection, tracheal stenosis, tracheoinnominate fistula, granulation tissue). Requires skilled care and monitoring.",
+      "wrongExplains": {
+        "0": "Tracheostomy has risks like any surgery. It's life-saving but not complication-free.",
+        "2": "Hearing is unaffected by tracheostomy. It's an airway procedure, not related to ears.",
+        "3": "Smell may actually decrease (less air through nose). Tracheostomy is airway-focused, not smell-enhancing."
+      }
+    },
+    {
+      "id": "900.5.104.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "The tracheostomy site has healed. Mr. Edgar is breathing normally through his upper airway again. 'A temporary bridge,' Ms. Frizzle reflects. 'Sometimes permanent, but always life-saving when needed. Final question.'",
+      "q": "A tracheostomy is:",
+      "options": [
+        "Removal of the trachea",
+        "Surgical creation of an opening in the trachea",
+        "Inflammation of the windpipe",
+        "X-ray of the chest"
+      ],
+      "answer": 1,
+      "explain": "TRACHEOSTOMY = surgical creation of an OPENING in the TRACHEA (windpipe), with insertion of a tube to maintain airway. Used for: upper airway obstruction, prolonged ventilation, secretion management. Can be temporary or permanent. '-ostomy' = creating an opening.",
+      "wrongExplains": {
+        "0": "Removal would be tracheectomy. Tracheostomy creates an OPENING, doesn't remove the organ.",
+        "2": "Inflammation is tracheitis. Tracheostomy is a SURGICAL PROCEDURE, not an inflammatory condition.",
+        "3": "X-ray is radiography. Tracheostomy is a surgical airway procedure."
+      }
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.53",
+  "parentQuestion": "Pulmonary fibrosis affects lung compliance by:",
+  "narrative": {
+    "setting": "The Magic School Bus navigates through Mr. Edgar's fibrotic lungs - a landscape transformed into rigid, scarred tissue. What should be delicate, elastic alveolar walls have become thick, stiff collagen bands. Ms. Frizzle touches the wall - it barely gives. 'Class, this is pulmonary fibrosis. The lung tissue is being replaced by scar tissue, like calluses forming inside the lungs. They're becoming stiff, unyielding. Mr. Edgar has to work three times as hard to take each breath.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's lungs are progressively stiffening. Every week, his compliance decreases. Soon, even his strongest inspiratory effort won't be enough to fully inflate his lungs."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.53.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle writes 'fibrosis' in glowing letters. 'From Latin fibra - fiber. Fibrosis is the formation of excess fibrous connective tissue - scar tissue. It's the body's repair mechanism gone overboard, replacing delicate lung tissue with tough, inflexible collagen.'",
+      "q": "What does 'fibrosis' mean in medical terminology?",
+      "options": [
+        "Inflammation and infection",
+        "Formation of excess scar tissue (fibrous connective tissue)",
+        "Loss of tissue structure",
+        "Accumulation of fluid"
+      ],
+      "answer": 1,
+      "explain": "'Fibrosis' = excessive SCAR TISSUE formation. When tissue is damaged, the body repairs it with collagen (fibrous protein). In fibrosis, this repair goes too far - scar tissue accumulates, replacing normal functional tissue. It's overhealing that creates stiffness.",
+      "wrongExplains": {
+        "0": "Inflammation is the initial response to injury. Fibrosis is what happens AFTER - the scarring phase.",
+        "2": "Fibrosis is EXCESS structure (too much collagen), not loss. It's overgrowth of connective tissue.",
+        "3": "Fluid accumulation is edema. Fibrosis is solid scar tissue deposition, not liquid."
+      }
+    },
+    {
+      "id": "900.5.53.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "The bus lands on a thickened alveolar wall. Ms. Frizzle points to dense collagen bundles. 'Normally, alveolar walls are thin - one cell layer thick, delicate. In fibrosis, they become thick, fibrous, rigid. Gas exchange distance increases. Compliance plummets.'",
+      "q": "What protein accumulates excessively in pulmonary fibrosis?",
+      "options": [
+        "Hemoglobin",
+        "Collagen",
+        "Elastin",
+        "Albumin"
+      ],
+      "answer": 1,
+      "explain": "COLLAGEN is the scar tissue protein. In fibrosis, fibroblasts produce excess collagen, thickening alveolar walls and creating rigid bands. Collagen is strong but inflexible - great for tendons, terrible for lungs. It's the opposite of elastin (stretchy). Too much collagen = stiff lungs.",
+      "wrongExplains": {
+        "0": "Hemoglobin is in red blood cells, carries oxygen. It's not a structural lung protein.",
+        "2": "Elastin is the stretchy protein that DECREASES in fibrosis. Collagen (rigid) increases, elastin decreases.",
+        "3": "Albumin is a blood protein that maintains osmotic pressure. Fibrosis involves collagen in tissue, not blood proteins."
+      }
+    },
+    {
+      "id": "900.5.53.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle displays the term 'restrictive lung disease.' 'Fibrosis is restrictive - it RESTRICTS lung expansion. The opposite of obstructive diseases like emphysema. Restrictive = lungs can't expand. Obstructive = lungs can't deflate.'",
+      "q": "Pulmonary fibrosis is classified as what type of lung disease?",
+      "options": [
+        "Obstructive (limits airflow)",
+        "Restrictive (limits lung expansion)",
+        "Infectious (caused by bacteria)",
+        "Vascular (affects blood vessels)"
+      ],
+      "answer": 1,
+      "explain": "Fibrosis is RESTRICTIVE. Stiff, scarred lungs RESIST expansion - they can't inflate properly. All lung volumes decrease. This is opposite to OBSTRUCTIVE diseases (emphysema, asthma) where air gets trapped and lungs overinflate. Restrictive = can't get air IN. Obstructive = can't get air OUT.",
+      "wrongExplains": {
+        "0": "Obstructive diseases have air trapping and overinflation (emphysema). Fibrosis restricts expansion - it's the opposite.",
+        "2": "Fibrosis can result from infection, but it's defined by the mechanics (restrictive), not the cause.",
+        "3": "Vascular diseases affect blood flow. Fibrosis is parenchymal - it affects the lung tissue itself."
+      }
+    },
+    {
+      "id": "900.5.53.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Mr. Edgar tries to inhale deeply. The bus watches the stiff alveolar walls barely budge. 'Look,' Ms. Frizzle points to the monitor. 'Pressure increase: 10 cmH2O. Volume increase: 50 mL. Compliance = 5 mL/cmH2O. That's one-twentieth of normal!'",
+      "q": "How does pulmonary fibrosis affect lung compliance?",
+      "options": [
+        "Increases compliance (lungs become stretchy)",
+        "Decreases compliance (lungs become stiff)",
+        "Compliance stays normal",
+        "Compliance becomes negative"
+      ],
+      "answer": 1,
+      "explain": "Fibrosis DECREASES compliance dramatically. Scar tissue is STIFF - it resists stretching. Compliance drops from normal (~150 mL/cmH2O) to <100, sometimes <50 mL/cmH2O in severe cases. Patients need enormous pressure to inflate their lungs even a little. It's exhausting.",
+      "wrongExplains": {
+        "0": "Stretchy lungs (high compliance) are emphysema. Fibrosis does the OPPOSITE - creates rigid, stiff tissue.",
+        "2": "Fibrosis massively reduces compliance. It's a defining feature - stiffness is the core pathology.",
+        "3": "Compliance can't be negative. It decreases toward zero (maximally stiff) but stays positive."
+      }
+    },
+    {
+      "id": "900.5.53.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Ms. Frizzle displays Mr. Edgar's lung volumes. 'TLC: 4000 mL - down from 6000. FRC: 1500 mL - down from 2400. RV: 800 mL - down from 1200. All volumes are REDUCED. The lungs have shrunk, unable to expand.'",
+      "q": "What happens to total lung capacity (TLC) in pulmonary fibrosis?",
+      "options": [
+        "TLC increases",
+        "TLC decreases",
+        "TLC stays exactly the same",
+        "TLC becomes variable"
+      ],
+      "answer": 1,
+      "explain": "TLC DECREASES in fibrosis. Stiff lungs can't expand to their normal maximum. TLC can drop from ~6000 mL to 4000 mL or less. ALL lung volumes shrink in restrictive disease - TLC, VC, FRC, RV. The lungs become small, rigid, unable to inflate.",
+      "wrongExplains": {
+        "0": "TLC increases in OBSTRUCTIVE disease (emphysema). Fibrosis is restrictive - TLC decreases.",
+        "2": "Fibrosis dramatically reduces TLC. Progressive scarring leads to progressive volume loss.",
+        "3": "TLC consistently decreases as fibrosis worsens. It's predictable - more scar tissue, lower TLC."
+      }
+    },
+    {
+      "id": "900.5.53.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "The bus measures the alveolar wall thickness. 'Normal: 0.5 micrometers. Fibrotic: 5 micrometers - ten times thicker! This increases the diffusion distance for oxygen. Gas exchange becomes impaired even when ventilation is adequate.'",
+      "q": "How does fibrosis affect gas exchange?",
+      "options": [
+        "Improves gas exchange by adding tissue",
+        "Impairs gas exchange by thickening the alveolar-capillary membrane",
+        "Has no effect on gas exchange",
+        "Only affects oxygen, not carbon dioxide"
+      ],
+      "answer": 1,
+      "explain": "Fibrosis IMPAIRS gas exchange by THICKENING the barrier between air and blood. Normal alveolar-capillary membrane is <1 micrometer. Fibrosis can make it 5-10x thicker. Fick's law: diffusion is inversely proportional to distance. Thicker membrane = slower O2/CO2 exchange = hypoxemia.",
+      "wrongExplains": {
+        "0": "More tissue is BAD for gas exchange. Thicker membranes slow diffusion, they don't help it.",
+        "2": "Fibrosis severely impairs gas exchange. Patients become hypoxemic, especially during exercise.",
+        "3": "Both O2 and CO2 are affected, but O2 more so (CO2 diffuses 20x faster, so it's less impaired initially)."
+      }
+    },
+    {
+      "id": "900.5.53.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle shows Mr. Edgar's oxygen saturation: 88% at rest, dropping to 75% when he walks. 'Hypoxemia,' she notes. 'The thickened membranes can't transfer oxygen fast enough. His heart races, trying to compensate. Exercise is becoming impossible.'",
+      "q": "Why do fibrosis patients often need supplemental oxygen?",
+      "options": [
+        "Their lungs produce less oxygen",
+        "Thickened alveolar walls impair oxygen diffusion into blood",
+        "They breathe too slowly",
+        "Their blood can't carry oxygen"
+      ],
+      "answer": 1,
+      "explain": "Fibrosis patients need O2 because DIFFUSION IS IMPAIRED. Thick, scarred alveolar-capillary membranes slow oxygen transfer from air to blood. Even if ventilation is adequate, O2 can't cross fast enough → hypoxemia. Supplemental O2 increases the driving gradient, improving diffusion.",
+      "wrongExplains": {
+        "0": "Lungs don't produce oxygen - they extract it from air. The problem is transfer, not production.",
+        "2": "Fibrosis patients often breathe FASTER (rapid, shallow) trying to compensate. Slow breathing isn't the issue.",
+        "3": "Hemoglobin is usually normal. The problem is getting O2 across the thickened membrane to the blood."
+      }
+    },
+    {
+      "id": "900.5.53.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle displays a comparison table: 'Emphysema: high compliance, air trapping, barrel chest. Fibrosis: low compliance, reduced volumes, restrictive. Both cause breathlessness, but through opposite mechanisms.'",
+      "q": "How does the breathing pattern differ between emphysema and fibrosis?",
+      "options": [
+        "Both show slow, deep breathing",
+        "Emphysema: slow, deep; Fibrosis: rapid, shallow",
+        "Emphysema: prolonged exhalation; Fibrosis: rapid, shallow breaths",
+        "Both patterns are identical"
+      ],
+      "answer": 2,
+      "explain": "EMPHYSEMA: prolonged exhalation (can't deflate easily). FIBROSIS: rapid, shallow breaths (can't inflate easily). Emphysema patients purse their lips, exhale slowly. Fibrosis patients take quick, small breaths because deep breaths require too much work against stiff lungs.",
+      "wrongExplains": {
+        "0": "Neither disease allows slow, deep breathing. Both cause breathlessness but through different mechanics.",
+        "1": "Emphysema breathing isn't particularly deep - it's prolonged exhalation. Fibrosis is rapid and shallow.",
+        "3": "The patterns are OPPOSITE. One struggles to exhale (emphysema), the other to inhale (fibrosis)."
+      }
+    },
+    {
+      "id": "900.5.53.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle shows the causes: 'Idiopathic (unknown), occupational exposures (asbestos, silica), autoimmune diseases, radiation therapy. Many roads lead to fibrosis, but the endpoint is the same: scar tissue replacing lung.'",
+      "q": "Which of the following can cause pulmonary fibrosis?",
+      "options": [
+        "Cigarette smoking only",
+        "Asbestos exposure, autoimmune disease, or idiopathic (unknown)",
+        "Only genetic factors",
+        "Bacterial infections"
+      ],
+      "answer": 1,
+      "explain": "Fibrosis has MULTIPLE causes: occupational (asbestos, silica), autoimmune (scleroderma, rheumatoid arthritis), drugs (bleomycin, amiodarone), radiation, or IDIOPATHIC (IPF - unknown cause, most common). Smoking causes emphysema, not typically fibrosis.",
+      "wrongExplains": {
+        "0": "Smoking causes emphysema (destruction), not fibrosis (scarring). Different pathology entirely.",
+        "2": "Some fibrosis is genetic (rare familial forms), but most cases are acquired from exposures or autoimmune disease.",
+        "3": "Infections cause acute illnesses. Fibrosis is chronic scarring, usually from toxic/inflammatory stimuli."
+      }
+    },
+    {
+      "id": "900.5.53.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "The bus exits the rigid, scarred lung landscape. Mr. Edgar's breathing is rapid and labored. 'Fibrosis,' Ms. Frizzle says grimly, 'is progressive and often irreversible. The lungs turn to stone. Now tell me: how does fibrosis affect compliance?'",
+      "q": "Pulmonary fibrosis affects lung compliance by:",
+      "options": [
+        "Increasing it (making lungs stretchy)",
+        "Decreasing it (making lungs stiff)",
+        "Having no effect",
+        "Making compliance oscillate"
+      ],
+      "answer": 1,
+      "explain": "Fibrosis DECREASES compliance. Excess collagen (scar tissue) makes lungs STIFF and resistant to expansion. Compliance drops from ~150 mL/cmH2O to <100, sometimes <50. All lung volumes decrease (TLC, VC, FRC, RV). Breathing is rapid and shallow. Diffusion is impaired. It's a restrictive disease - lungs can't expand properly.",
+      "wrongExplains": {
+        "0": "Stretchy lungs (high compliance) = emphysema. Fibrosis creates STIFF lungs with LOW compliance.",
+        "2": "Fibrosis dramatically reduces compliance - it's the defining pathology. Stiffness is the core problem.",
+        "3": "Compliance consistently decreases as fibrosis progresses. More scar tissue = lower compliance, predictably."
+      }
+    }
+  ]
+}

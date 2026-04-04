@@ -1,0 +1,171 @@
+{
+  "parentId": "900.5.78",
+  "parentQuestion": "What breathing pattern is characterized by irregular breathing with random pauses?",
+  "narrative": {
+    "setting": "Mr. Edgar's neurology ICU, monitoring a patient with brain injury",
+    "character": "Mr. Edgar",
+    "tension": "The breathing pattern is completely chaotic - sometimes three breaths, then a pause, then one breath, another pause. What does this mean for the brainstem?"
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.78.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Pattern",
+      "narrative": "Ms. Frizzle's bus enters the ICU. 'Class, watch this breathing pattern carefully. Three breaths... pause... two breaths... long pause... one breath... short pause. There's NO rhythm, NO pattern. This is Biot's breathing - completely ataxic!'",
+      "q": "What does 'ataxic' mean?",
+      "options": [
+        "Fast and regular",
+        "Deep and forceful",
+        "Uncoordinated and irregular",
+        "Slow and shallow"
+      ],
+      "answer": 2,
+      "explain": "ATAXIC = UNCOORDINATED and IRREGULAR. 'A-' means without, 'taxis' means order/coordination. Ataxic breathing has no predictable pattern - breaths and pauses occur randomly. It's breathing chaos.",
+      "wrongExplains": {
+        "0": "Fast and regular would be normal tachypnea. Ataxic breathing is the OPPOSITE of regular - it has no pattern.",
+        "1": "Deep and forceful describes Kussmaul breathing. Ataxic breathing varies in depth and force unpredictably.",
+        "3": "Slow and shallow might describe bradypnea or hypoventilation. Ataxic breathing isn't defined by rate or depth - it's defined by IRREGULARITY."
+      }
+    },
+    {
+      "id": "900.5.78.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Pattern",
+      "narrative": "'Try to predict the next breath!' Ms. Frizzle challenges. The students watch: breath... breath... pause... breath... pause pause... breath breath breath... pause. 'You can't!' Phoebe exclaims. 'Exactly - it's completely unpredictable!'",
+      "q": "How is Biot's breathing different from Cheyne-Stokes breathing?",
+      "options": [
+        "Biot's has a regular, predictable cycle; Cheyne-Stokes is irregular",
+        "Biot's is completely irregular; Cheyne-Stokes has regular cycles",
+        "They are the same pattern with different names",
+        "Biot's only occurs during sleep"
+      ],
+      "answer": 1,
+      "explain": "Biot's = COMPLETELY IRREGULAR (random pauses, unpredictable pattern). Cheyne-Stokes = REGULAR CYCLES (predictable apnea-crescendo-decrescendo pattern every 45-90 seconds). Both have pauses, but Cheyne-Stokes is rhythmic while Biot's is chaotic.",
+      "wrongExplains": {
+        "0": "You have them backwards! Cheyne-Stokes has the regular predictable cycle. Biot's breathing is the irregular, unpredictable one.",
+        "2": "They are DIFFERENT patterns with different causes. Cheyne-Stokes = heart failure/circulation delay (regular cycles). Biot's = brainstem damage (irregular chaos).",
+        "3": "Biot's breathing can occur awake or asleep. The key feature is IRREGULARITY, not sleep state."
+      }
+    },
+    {
+      "id": "900.5.78.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Pattern",
+      "narrative": "'Count the breaths between pauses,' Ms. Frizzle instructs. 'Sometimes one, sometimes five, sometimes none for 30 seconds. And the DEPTH changes too - shallow, deep, shallow, deep - no pattern!'",
+      "q": "In Biot's breathing, the pauses (apneic periods) are:",
+      "options": [
+        "Always exactly 10 seconds long",
+        "Progressively longer until the patient stops breathing",
+        "Variable and unpredictable in duration",
+        "Always accompanied by gasping"
+      ],
+      "answer": 2,
+      "explain": "Biot's breathing has VARIABLE, UNPREDICTABLE pauses - sometimes 5 seconds, sometimes 30 seconds, completely random. There's no crescendo-decrescendo pattern, no regularity. The respiratory control system is damaged and firing erratically.",
+      "wrongExplains": {
+        "0": "Fixed-duration pauses would be a regular pattern. Biot's breathing has IRREGULAR pauses of varying length.",
+        "1": "Progressive lengthening suggests agonal breathing (pre-terminal). Biot's breathing is irregular but can persist chronically without necessarily progressing to death.",
+        "3": "Gasping suggests agonal or hypoxic breathing. Biot's breathing may have normal breaths between pauses, or shallow ones, or deep ones - it varies randomly."
+      }
+    },
+    {
+      "id": "900.5.78.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus flies to the brainstem. 'Oh no!' Ms. Frizzle points to the medulla. 'Look at that damage! The respiratory centers are injured. Some neurons are firing, some aren't, and there's no coordination!'",
+      "q": "Biot's breathing indicates damage to which part of the nervous system?",
+      "options": [
+        "Spinal cord",
+        "Medulla oblongata (brainstem)",
+        "Cerebellum",
+        "Peripheral nerves"
+      ],
+      "answer": 1,
+      "explain": "Biot's breathing indicates MEDULLA OBLONGATA damage - specifically the respiratory control centers in the brainstem. When these centers are injured (trauma, stroke, tumor, infection), the normal rhythm generator fails and breathing becomes ataxic.",
+      "wrongExplains": {
+        "0": "Spinal cord injury below the medulla affects respiratory MUSCLES (especially high cervical injuries), causing weak breathing or paralysis, not the irregular pattern of Biot's breathing.",
+        "1": "Cerebellar damage causes ataxia of MOVEMENT (walking, reaching), not breathing rhythm. The cerebellum doesn't generate the breathing pattern.",
+        "3": "Peripheral nerve damage (phrenic nerve injury) causes muscle weakness or paralysis, not the central rhythm disturbance of Biot's breathing."
+      }
+    },
+    {
+      "id": "900.5.78.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'In normal breathing, neurons in the medulla fire rhythmically,' Ms. Frizzle shows a regular blinking pattern. 'But with damage, some neurons are dead, some fire randomly - there's no conductor for the orchestra!'",
+      "q": "What is the underlying problem in Biot's breathing?",
+      "options": [
+        "Lungs cannot expand properly",
+        "Loss of coordinated rhythm generation in the brainstem",
+        "Too much CO2 in the blood",
+        "Respiratory muscles are weak"
+      ],
+      "answer": 1,
+      "explain": "The problem is LOSS OF COORDINATED RHYTHM GENERATION in the brainstem. The medullary respiratory centers (pre-Bötzinger complex, etc.) are damaged and can't generate a regular breathing rhythm. The lungs and muscles work fine - the CONTROL CENTER is broken.",
+      "wrongExplains": {
+        "0": "If lungs couldn't expand, you'd see consistently shallow breathing or respiratory distress. Biot's breathing has unpredictable depth - sometimes deep breaths occur - indicating lungs can expand.",
+        "2": "High CO2 drives increased breathing (hyperventilation), not the chaotic irregularity of Biot's breathing. CO2 is a STIMULUS, not the pattern generator.",
+        "3": "Weak muscles cause consistently shallow breathing or respiratory failure. Biot's breathing can include NORMAL or DEEP breaths randomly, showing muscles work fine."
+      }
+    },
+    {
+      "id": "900.5.78.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Imagine trying to conduct an orchestra when half your musicians are injured and the others are playing random notes!' Arnold says. 'That's exactly what's happening in the medulla - damaged rhythm generation!'",
+      "q": "Which of these conditions could cause Biot's breathing?",
+      "options": [
+        "Asthma",
+        "Meningitis affecting the brainstem",
+        "Pneumonia",
+        "Broken ribs"
+      ],
+      "answer": 1,
+      "explain": "MENINGITIS affecting the brainstem can cause Biot's breathing by inflaming/damaging the medullary respiratory centers. Other causes: brainstem stroke, traumatic brain injury, brain tumor compressing the medulla, increased intracranial pressure. All involve CENTRAL damage.",
+      "wrongExplains": {
+        "0": "Asthma is a LUNG disease (airway constriction), not a brainstem problem. It causes wheezing and difficulty breathing, but the respiratory rhythm stays coordinated.",
+        "2": "Pneumonia is LUNG infection causing rapid shallow breathing from poor oxygenation. The brainstem rhythm generator works fine - the lungs are the problem.",
+        "3": "Broken ribs cause MECHANICAL limitation (pain with breathing), not disrupted central rhythm. Breathing stays regular, just shallow to avoid pain."
+      }
+    },
+    {
+      "id": "900.5.78.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "Back in the ICU, Mr. Edgar reviews the CT scan. 'See this brainstem hemorrhage? That's compressing the medulla. The irregular breathing makes sense now - and it's a very serious sign.'",
+      "q": "What does Biot's breathing indicate about prognosis?",
+      "options": [
+        "Excellent - the patient will recover quickly",
+        "Serious brainstem dysfunction with poor prognosis",
+        "Minor problem that will resolve on its own",
+        "Normal variation in breathing pattern"
+      ],
+      "answer": 1,
+      "explain": "Biot's breathing indicates SERIOUS BRAINSTEM DYSFUNCTION with POOR PROGNOSIS. It signals significant damage to vital respiratory control centers. Many patients with Biot's breathing have severe brain injury and high mortality. It's an ominous neurological sign.",
+      "wrongExplains": {
+        "0": "Brainstem damage causing Biot's breathing is NEVER a sign of quick recovery. It indicates severe injury to vital control centers.",
+        "2": "Biot's breathing doesn't resolve on its own - it requires treatment of the underlying brainstem injury, which is often severe and sometimes irreversible.",
+        "3": "Biot's breathing is NEVER normal. Any irregular, ataxic breathing pattern indicates serious neurological pathology requiring immediate evaluation."
+      }
+    },
+    {
+      "id": "900.5.78.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "'Who was Biot?' Keesha asks. 'Camille Biot was a French physician who described this in 1876 while studying patients with meningitis,' Ms. Frizzle explains. 'He recognized it as a sign of medullary dysfunction.'",
+      "q": "When you observe Biot's breathing in a patient, what should be your immediate concern?",
+      "options": [
+        "The patient needs asthma medication",
+        "The patient has severe brainstem pathology requiring urgent evaluation",
+        "The patient is anxious and needs reassurance",
+        "The patient's lungs are infected"
+      ],
+      "answer": 1,
+      "explain": "URGENT CONCERN: Severe BRAINSTEM PATHOLOGY. Biot's breathing is a neurological emergency requiring immediate imaging (CT/MRI), assessment for increased intracranial pressure, and possibly neurosurgical intervention. It indicates damage to vital respiratory centers.",
+      "wrongExplains": {
+        "0": "Asthma is a lung disease with wheezing and airflow obstruction, not irregular central breathing patterns. Biot's breathing is a BRAIN problem, not a lung problem.",
+        "2": "Anxiety doesn't cause the chaotic, irregular pauses of Biot's breathing. This is a STRUCTURAL brainstem problem, not psychological.",
+        "3": "Lung infection causes tachypnea (fast breathing), not the irregular ataxic pattern of Biot's breathing. The lungs are usually fine in Biot's - it's the brainstem that's damaged."
+      }
+    }
+  ]
+}

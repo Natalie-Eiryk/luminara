@@ -1,0 +1,157 @@
+{
+  "version": "1.0.0",
+  "batchId": "510.10.03",
+  "questionsScaffolded": 25,
+  "scaffolds": [
+    {
+      "parentId": "510.10.03.01",
+      "scaffolds": [
+        {"id": "510.10.03.01.s1", "type": "prerequisite", "q": "3 + 3 = ?", "options": ["3", "6", "9", "33"], "answer": 1, "explain": "3 + 3 = 6.", "isotope": "510.10.counting.oral", "difficulty": 0.08, "zpdMoment": "doubles"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.02",
+      "scaffolds": [
+        {"id": "510.10.03.02.s1", "type": "prerequisite", "q": "What is 49 + 1?", "options": ["48", "50", "59", "410"], "answer": 1, "explain": "49 + 1 = 50.", "isotope": "510.10.counting.oral", "difficulty": 0.12, "zpdMoment": "decade_transition"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.03",
+      "scaffolds": [
+        {"id": "510.10.03.03.s1", "type": "prerequisite", "q": "In the number 45, which digit is on the right?", "options": ["4", "5", "45", "9"], "answer": 1, "explain": "5 is the rightmost digit (ones place).", "isotope": "510.10.place-value.intro", "difficulty": 0.1, "zpdMoment": "right_digit"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.04",
+      "scaffolds": [
+        {"id": "510.10.03.04.s1", "type": "prerequisite", "q": "Which is smaller: 15 or 20?", "options": ["15", "20", "Same", "Cannot tell"], "answer": 0, "explain": "15 is smaller than 20.", "isotope": "510.10.comparison", "difficulty": 0.08, "zpdMoment": "two_digit_compare"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.05",
+      "scaffolds": [
+        {"id": "510.10.03.05.s1", "type": "prerequisite", "q": "Which is less: 3 or 5?", "options": ["3", "5", "Same", "Cannot tell"], "answer": 0, "explain": "3 is less than 5.", "isotope": "510.10.comparison", "difficulty": 0.05, "zpdMoment": "simple_less"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.06",
+      "scaffolds": [
+        {"id": "510.10.03.06.s1", "type": "prerequisite", "q": "6 tens = ?", "options": ["6", "16", "60", "600"], "answer": 2, "explain": "6 tens = 60.", "isotope": "510.10.place-value.intro", "difficulty": 0.1, "zpdMoment": "tens_value"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.07",
+      "scaffolds": [
+        {"id": "510.10.03.07.s1", "type": "prerequisite", "q": "20 - 5 = ?", "options": ["15", "25", "5", "10"], "answer": 0, "explain": "20 minus 5 equals 15.", "isotope": "510.10.counting.oral", "difficulty": 0.12, "zpdMoment": "subtract_five"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.08",
+      "scaffolds": [
+        {"id": "510.10.03.08.s1", "type": "prerequisite", "q": "In 25, how many tens are there?", "options": ["2", "5", "25", "7"], "answer": 0, "explain": "25 has 2 tens.", "isotope": "510.10.place-value.intro", "difficulty": 0.12, "zpdMoment": "tens_digit_read"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.09",
+      "scaffolds": [
+        {"id": "510.10.03.09.s1", "type": "prerequisite", "q": "What is 13 + 10?", "options": ["14", "23", "103", "130"], "answer": 1, "explain": "13 + 10 = 23.", "isotope": "510.10.place-value.intro", "difficulty": 0.12, "zpdMoment": "add_ten_teen"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.10",
+      "scaffolds": [
+        {"id": "510.10.03.10.s1", "type": "prerequisite", "q": "Is 99 a one-digit or two-digit number?", "options": ["One-digit", "Two-digit", "Three-digit", "Zero-digit"], "answer": 1, "explain": "99 has two digits.", "isotope": "510.10.place-value.intro", "difficulty": 0.1, "zpdMoment": "digit_count"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.11",
+      "scaffolds": [
+        {"id": "510.10.03.11.s1", "type": "prerequisite", "q": "10 = how many ones?", "options": ["1", "10", "100", "0"], "answer": 1, "explain": "1 ten = 10 ones.", "isotope": "510.10.place-value.intro", "difficulty": 0.1, "zpdMoment": "ten_as_ones"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.12",
+      "scaffolds": [
+        {"id": "510.10.03.12.s1", "type": "prerequisite", "q": "You count 5 buttons. If you count them again without any changes, how many are there?", "options": ["4", "5", "6", "10"], "answer": 1, "explain": "Same objects, same count: 5.", "isotope": "510.10.cardinality", "difficulty": 0.1, "zpdMoment": "stable_count"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.13",
+      "scaffolds": [
+        {"id": "510.10.03.13.s1", "type": "prerequisite", "q": "5 + 5 + 5 = ?", "options": ["10", "15", "55", "555"], "answer": 1, "explain": "Three fives: 5 + 5 + 5 = 15.", "isotope": "510.10.counting.oral", "difficulty": 0.15, "zpdMoment": "skip_foundation"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.14",
+      "scaffolds": [
+        {"id": "510.10.03.14.s1", "type": "prerequisite", "q": "1 ten = ?", "options": ["1", "10", "100", "11"], "answer": 1, "explain": "1 ten equals 10.", "isotope": "510.10.place-value.intro", "difficulty": 0.08, "zpdMoment": "one_ten"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.15",
+      "scaffolds": [
+        {"id": "510.10.03.15.s1", "type": "prerequisite", "q": "50 + 10 = ?", "options": ["51", "60", "510", "15"], "answer": 1, "explain": "50 + 10 = 60.", "isotope": "510.10.place-value.intro", "difficulty": 0.1, "zpdMoment": "tens_add"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.16",
+      "scaffolds": [
+        {"id": "510.10.03.16.s1", "type": "prerequisite", "q": "Ninety means how many tens?", "options": ["9", "90", "99", "0"], "answer": 0, "explain": "Ninety = 9 tens.", "isotope": "510.10.counting.written", "difficulty": 0.12, "zpdMoment": "ninety_tens"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.17",
+      "scaffolds": [
+        {"id": "510.10.03.17.s1", "type": "prerequisite", "q": "In 38, what is the value of the 3?", "options": ["3", "30", "8", "38"], "answer": 1, "explain": "3 in tens place = 30.", "isotope": "510.10.place-value.intro", "difficulty": 0.18, "zpdMoment": "digit_value"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.18",
+      "scaffolds": [
+        {"id": "510.10.03.18.s1", "type": "prerequisite", "q": "Count by 2s: 2, 4, ___", "options": ["5", "6", "7", "8"], "answer": 1, "explain": "4 + 2 = 6.", "isotope": "510.10.counting.oral", "difficulty": 0.1, "zpdMoment": "skip_by_two"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.19",
+      "scaffolds": [
+        {"id": "510.10.03.19.s1", "type": "prerequisite", "q": "Is 12, 15, 18 going up or down?", "options": ["Up", "Down", "Same", "Random"], "answer": 0, "explain": "Numbers are increasing.", "isotope": "510.10.ordering", "difficulty": 0.08, "zpdMoment": "trend_id"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.20",
+      "scaffolds": [
+        {"id": "510.10.03.20.s1", "type": "prerequisite", "q": "If you trade 10 pennies for 1 dime, do you have more, less, or the same value?", "options": ["More", "Less", "Same", "Cannot tell"], "answer": 2, "explain": "10 pennies = 1 dime = 10 cents.", "isotope": "510.10.cardinality", "difficulty": 0.15, "zpdMoment": "value_equivalence"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.21",
+      "scaffolds": [
+        {"id": "510.10.03.21.s1", "type": "prerequisite", "q": "What is half of 10?", "options": ["2", "5", "10", "20"], "answer": 1, "explain": "Half of 10 is 5.", "isotope": "510.10.ordering", "difficulty": 0.18, "zpdMoment": "half_concept"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.22",
+      "scaffolds": [
+        {"id": "510.10.03.22.s1", "type": "prerequisite", "q": "10 + 10 + 10 = ?", "options": ["10", "20", "30", "100"], "answer": 2, "explain": "Three tens = 30.", "isotope": "510.10.place-value.intro", "difficulty": 0.1, "zpdMoment": "three_tens"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.23",
+      "scaffolds": [
+        {"id": "510.10.03.23.s1", "type": "prerequisite", "q": "40 - 5 = ?", "options": ["35", "45", "9", "30"], "answer": 0, "explain": "40 - 5 = 35.", "isotope": "510.10.counting.oral", "difficulty": 0.12, "zpdMoment": "subtract_from_tens"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.24",
+      "scaffolds": [
+        {"id": "510.10.03.24.s1", "type": "prerequisite", "q": "Which place is the 4 in for the number 42?", "options": ["Ones", "Tens", "Hundreds", "First"], "answer": 1, "explain": "4 is in the tens place.", "isotope": "510.10.place-value.intro", "difficulty": 0.12, "zpdMoment": "place_id"}
+      ]
+    },
+    {
+      "parentId": "510.10.03.25",
+      "scaffolds": [
+        {"id": "510.10.03.25.s1", "type": "prerequisite", "q": "What even number comes after 14?", "options": ["15", "16", "17", "18"], "answer": 1, "explain": "14 + 2 = 16, the next even number.", "isotope": "510.10.ordering", "difficulty": 0.15, "zpdMoment": "even_next"}
+      ]
+    }
+  ]
+}

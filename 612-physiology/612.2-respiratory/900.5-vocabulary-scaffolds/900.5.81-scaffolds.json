@@ -1,0 +1,191 @@
+{
+  "parentId": "900.5.81",
+  "parentQuestion": "What sound indicates upper airway obstruction?",
+  "narrative": {
+    "setting": "Mr. Edgar's pediatric emergency room, examining a child with croup",
+    "character": "Mr. Edgar",
+    "tension": "A toddler is making a loud, high-pitched sound with each breath. Even from outside the exam room, Mr. Edgar knows this is urgent."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.81.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Sound",
+      "narrative": "Ms. Frizzle's bus arrives in the ER. 'Class, cover your ears - this is LOUD! Hear that high-pitched crowing sound? That's STRIDOR! It sounds like a seal barking or a high-pitched honk with each breath!'",
+      "q": "What does stridor sound like?",
+      "options": [
+        "Low-pitched musical whistling",
+        "High-pitched, harsh, crowing sound",
+        "Soft crackling or popping",
+        "Normal quiet breathing"
+      ],
+      "answer": 1,
+      "explain": "Stridor sounds like a HIGH-PITCHED, HARSH, CROWING or HONKING sound - like a goose honking or a seal barking. It's LOUD and audible without a stethoscope. The pitch is much HIGHER than wheezing because it comes from the narrow upper airway.",
+      "wrongExplains": {
+        "0": "Low-pitched musical whistling describes WHEEZING from lower airway narrowing (asthma, COPD). Stridor is much HIGHER-pitched and comes from the upper airway.",
+        "2": "Soft crackling/popping is CRACKLES (rales) from fluid in small airways. Stridor is LOUD, continuous, and high-pitched from upper airway obstruction.",
+        "3": "Stridor is an ABNORMAL, LOUD sound indicating serious upper airway obstruction. It's the opposite of normal quiet breathing."
+      }
+    },
+    {
+      "id": "900.5.81.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Sound",
+      "narrative": "'Watch the TIMING!' Ms. Frizzle points. 'The stridor is loudest during INSPIRATION - when he breathes IN. The narrowed upper airway collapses further when air rushes in, creating that harsh sound!'",
+      "q": "When in the breathing cycle is stridor typically heard?",
+      "options": [
+        "Only during expiration (breathing out)",
+        "Primarily during inspiration (breathing in)",
+        "Between breaths when not breathing",
+        "Only when coughing"
+      ],
+      "answer": 1,
+      "explain": "Stridor is typically heard during INSPIRATION (breathing IN). During inhalation, negative pressure in the airway causes the narrowed upper airway to collapse further inward, creating the sound. Severe obstruction causes stridor in both inspiration AND expiration (biphasic stridor).",
+      "wrongExplains": {
+        "0": "Expiratory sounds suggest LOWER airway obstruction (wheezing from asthma/COPD). Stridor is predominantly INSPIRATORY because the upper airway collapses inward during inhalation.",
+        "2": "Stridor requires AIR MOVEMENT through the narrowed airway. Between breaths (no airflow), there's no sound.",
+        "3": "Stridor occurs with BREATHING (especially inspiration), not just coughing. The continuous breathing sound is the key finding. Cough may be present but isn't required."
+      }
+    },
+    {
+      "id": "900.5.81.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Sound",
+      "narrative": "'Stridor is so LOUD you can hear it from across the room!' Wanda observes. 'Exactly!' Ms. Frizzle confirms. 'Wheezing usually needs a stethoscope. Stridor doesn't - it's audible to the naked ear because of the high-pitched frequency!'",
+      "q": "How does stridor differ from wheezing?",
+      "options": [
+        "Stridor = high-pitched, inspiratory, upper airway; Wheezing = lower-pitched, expiratory, lower airway",
+        "They are the same sound",
+        "Stridor is quiet; Wheezing is loud",
+        "Stridor is only in adults; Wheezing only in children"
+      ],
+      "answer": 0,
+      "explain": "STRIDOR = HIGH-PITCHED, INSPIRATORY, UPPER AIRWAY (larynx, trachea). WHEEZING = lower-pitched, expiratory, LOWER AIRWAY (bronchioles). Different locations, different timing, different pitches. Both indicate airway narrowing but in different parts of the respiratory tract.",
+      "wrongExplains": {
+        "1": "They are DIFFERENT sounds from different locations! Stridor = upper airway (trachea), Wheezing = lower airway (bronchioles). Confusing them delays correct diagnosis.",
+        "2": "STRIDOR is typically LOUDER and audible without a stethoscope. Wheezing may need a stethoscope in mild cases. Stridor's high pitch carries farther.",
+        "3": "Both can occur in any age group. Stridor is more common in children (smaller airways), but adults get it too (foreign body, anaphylaxis). Wheezing occurs in all ages."
+      }
+    },
+    {
+      "id": "900.5.81.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus flies into the child's throat. 'LOOK!' Carlos points. 'The larynx is swollen and the trachea is narrowed to a tiny opening! Air is rushing through that small space like a WHISTLING TEAKETTLE!'",
+      "q": "Where in the respiratory system does stridor originate?",
+      "options": [
+        "Small airways in the lung periphery (bronchioles)",
+        "Upper airway (larynx, trachea, upper bronchi)",
+        "Alveoli (air sacs)",
+        "Pleural space (lining of lungs)"
+      ],
+      "answer": 1,
+      "explain": "Stridor originates in the UPPER AIRWAY: larynx (voice box), trachea (windpipe), or upper bronchi. This is ABOVE the point where the trachea branches into smaller airways. Upper airway = big single tube = high-pitched sound when narrowed.",
+      "wrongExplains": {
+        "0": "Small peripheral airways (bronchioles) create WHEEZING when narrowed, not stridor. Stridor comes from the BIG central airway (trachea/larynx).",
+        "2": "Alveoli (air sacs) create CRACKLES when fluid-filled or popping open. They don't create the continuous high-pitched sound of stridor.",
+        "3": "Pleural space inflammation creates a FRICTION RUB (scratching/grating sound). Stridor comes from inside the airway itself, not the pleural lining."
+      }
+    },
+    {
+      "id": "900.5.81.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'What causes the upper airway to narrow?' Ms. Frizzle shows different scenarios: 'Infection and swelling from CROUP, allergic reaction from ANAPHYLAXIS, foreign object like a peanut, or even a tumor!'",
+      "q": "Which condition commonly causes stridor in young children?",
+      "options": [
+        "Asthma",
+        "Croup (viral upper airway infection)",
+        "Pneumonia",
+        "Pulmonary embolism"
+      ],
+      "answer": 1,
+      "explain": "CROUP is the most common cause of stridor in young children. Viral infection (parainfluenza) causes swelling of the larynx and subglottic area. Classic 'seal bark' cough + inspiratory stridor. More common in children because their airways are smaller.",
+      "wrongExplains": {
+        "0": "Asthma causes WHEEZING (lower airway narrowing), not stridor. Asthma affects bronchioles, not the larynx/trachea.",
+        "2": "Pneumonia causes CRACKLES (fluid in alveoli) and possibly decreased breath sounds. It affects lung tissue, not the upper airway.",
+        "3": "Pulmonary embolism (blood clot in lung artery) doesn't cause stridor. It may cause tachypnea (rapid breathing) but not upper airway sounds."
+      }
+    },
+    {
+      "id": "900.5.81.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'The narrower the opening, the HIGHER the pitch!' Ms. Frizzle demonstrates with different sized tubes. 'Blow through a wide tube - low sound. Blow through a narrow straw - HIGH-PITCHED whistle! Same with the trachea!'",
+      "q": "Why is stridor higher-pitched than wheezing?",
+      "options": [
+        "The upper airway is larger, so sound resonates at higher frequency",
+        "The upper airway is a single narrowed tube, creating higher-pitched vibration",
+        "Stridor is actually lower-pitched than wheezing",
+        "The lungs amplify the sound"
+      ],
+      "answer": 1,
+      "explain": "Stridor is higher-pitched because the UPPER AIRWAY is a SINGLE NARROWED TUBE. Air rushing through creates a higher frequency vibration (like blowing across a narrow bottle opening). Wheezing comes from many smaller bronchioles vibrating at lower frequencies.",
+      "wrongExplains": {
+        "0": "Larger doesn't mean higher pitch - actually the opposite! The upper airway creates high pitch because it's NARROWED to a critical small opening. Size + narrowing = pitch.",
+        "2": "Stridor is HIGHER-pitched than wheezing. That's why stridor carries across the room - higher frequencies are more audible.",
+        "3": "The lungs don't amplify stridor - it originates in the trachea/larynx. The sound you hear is direct vibration of the airway walls as air rushes through."
+      }
+    },
+    {
+      "id": "900.5.81.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "Back in the ER, Mr. Edgar quickly assesses the child. 'Inspiratory stridor, seal-bark cough, no drooling, gradual onset over 2 days. This is classic CROUP. Let's give nebulized epinephrine and dexamethasone to reduce the swelling.'",
+      "q": "What is the immediate concern with stridor?",
+      "options": [
+        "It's a harmless sound requiring no treatment",
+        "It indicates potential airway obstruction requiring urgent evaluation",
+        "It means the patient needs antibiotics",
+        "It only matters if the patient is coughing"
+      ],
+      "answer": 1,
+      "explain": "Stridor indicates POTENTIAL AIRWAY OBSTRUCTION - an URGENT concern! The upper airway is already narrowed. If swelling worsens, the airway could close completely, stopping breathing. Requires immediate evaluation, monitoring, and treatment to prevent complete obstruction.",
+      "wrongExplains": {
+        "0": "Stridor is NEVER harmless - it always indicates significant upper airway narrowing. Any stridor requires medical evaluation to assess severity and prevent worsening.",
+        "2": "Stridor itself doesn't indicate bacterial infection (croup is usually viral). The concern is AIRWAY OBSTRUCTION, not infection type. Antibiotics won't open a narrowed airway.",
+        "3": "Stridor is concerning WITH or WITHOUT cough. The sound itself indicates dangerous airway narrowing. Cough may be present (croup) or absent (foreign body, tumor)."
+      }
+    },
+    {
+      "id": "900.5.81.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "'The steeple sign!' Mr. Edgar shows the X-ray to Ms. Frizzle. 'See how the trachea narrows to a point? That's the classic X-ray finding in croup - subglottic narrowing shaped like a church steeple.'",
+      "q": "If stridor suddenly worsens and the patient becomes anxious and tripod-positioning (leaning forward), this suggests:",
+      "options": [
+        "The patient is improving",
+        "Severe airway obstruction requiring immediate intervention",
+        "The patient is just tired",
+        "Asthma attack"
+      ],
+      "answer": 1,
+      "explain": "Worsening stridor + anxiety + tripod positioning = SEVERE AIRWAY OBSTRUCTION! Tripod position (leaning forward, hands on knees) maximizes airway opening. This is a RED FLAG for impending complete obstruction. Requires immediate treatment, possibly emergency airway (intubation or cricothyrotomy).",
+      "wrongExplains": {
+        "0": "Worsening stridor and distress = DETERIORATION, not improvement. Improvement would be quieter breathing, less work of breathing, and patient lying comfortably.",
+        "2": "Tripod positioning is a DISTRESS sign, not fatigue. The patient is fighting for air and positioning themselves to maximize airway opening. This is an emergency.",
+        "3": "Asthma causes wheezing (lower airway), not stridor (upper airway). Tripod positioning can occur in severe asthma, but stridor indicates upper airway pathology."
+      }
+    },
+    {
+      "id": "900.5.81.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "'Remember the 4 D's of dangerous upper airway obstruction!' Ms. Frizzle lists: 'Drooling, Dysphagia (can't swallow), Distress, and Dysphonia (muffled voice). If you see these WITH stridor, think EPIGLOTTITIS - call for emergency airway backup immediately!'",
+      "q": "The '4 D's' (Drooling, Dysphagia, Distress, Dysphonia) with stridor suggest which life-threatening condition?",
+      "options": [
+        "Simple croup",
+        "Epiglottitis (swollen epiglottis blocking airway)",
+        "Asthma",
+        "Pneumonia"
+      ],
+      "answer": 1,
+      "explain": "The 4 D's + stridor = EPIGLOTTITIS until proven otherwise! The epiglottis (flap above the voice box) is swollen and can completely obstruct the airway. DO NOT lay patient flat, DO NOT examine throat (can trigger complete obstruction). Call anesthesia/ENT for emergency airway management.",
+      "wrongExplains": {
+        "0": "Simple croup has stridor and barky cough but typically NO drooling or trouble swallowing. Kids with croup can drink and swallow. The 4 D's suggest a more dangerous condition.",
+        "2": "Asthma causes wheezing, not stridor or the 4 D's. Asthma doesn't affect swallowing or cause drooling - it's a lower airway disease.",
+        "3": "Pneumonia affects lung tissue (crackles, decreased sounds), not the upper airway. No stridor, no trouble swallowing, no drooling in uncomplicated pneumonia."
+      }
+    }
+  ]
+}

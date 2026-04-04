@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.31",
+  "parentQuestion": "Cyanosis refers to:",
+  "narrative": {
+    "setting": "The Magic School Bus has shrunk to microscopic size and is traveling through Mr. Edgar's capillaries. Looking through the bus windows at his skin, the class notices a disturbing bluish tint to his lips and fingertips. Ms. Frizzle explains this visible sign has a specific medical name - and it's a warning that oxygen delivery is failing.",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's tissues are turning blue. This visible sign means oxygen crisis."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.31.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "Ms. Frizzle zooms in on Mr. Edgar's blue-tinged lips on the viewing screen. 'The word cyanosis comes from Greek. Cyan- is a color you've probably seen before - in printers, in art class. What color is it?'",
+      "q": "The prefix 'cyan-' refers to what color?",
+      "options": [
+        "Red",
+        "Blue",
+        "Purple",
+        "Green"
+      ],
+      "answer": 1,
+      "explain": "'CYAN-' = BLUE in Greek. Cyan ink in your printer = blue. Cyanobacteria = blue-green algae. Any medical term with 'cyan-' describes a blue discoloration. The color itself is the diagnostic sign.",
+      "wrongExplains": {
+        "0": "Red would be 'erythr-' or 'rubr-'. Cyan specifically means blue - like the blue in CMYK printing.",
+        "2": "Purple might be described as purpura. Cyan is specifically blue - cool, dark blue like the ocean depths.",
+        "3": "Green is 'chlor-'. Though cyanobacteria are blue-green, 'cyan-' alone means blue."
+      }
+    },
+    {
+      "id": "900.5.31.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "'Now the second part,' Ms. Frizzle continues. 'The suffix -osis. You've seen this before in many medical terms. It has a specific meaning that applies broadly.'",
+      "q": "The suffix '-osis' means:",
+      "options": [
+        "Inflammation",
+        "Surgical removal",
+        "Condition or disease state",
+        "Study of"
+      ],
+      "answer": 2,
+      "explain": "'-OSIS' = CONDITION or DISEASE STATE. An abnormal state or process. Cyanosis = blue condition. Acidosis = acidic condition. Stenosis = narrowing condition. It describes what IS, not what's being done.",
+      "wrongExplains": {
+        "0": "Inflammation is '-itis'. Cyanosis isn't inflammation - it's a color change indicating poor oxygenation.",
+        "1": "Surgical removal is '-ectomy'. -Osis describes a condition, not a procedure.",
+        "3": "Study of is '-ology'. -Osis means a condition exists, not that someone is studying it."
+      }
+    },
+    {
+      "id": "900.5.31.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "The bus passes by a cluster of red blood cells. Most are bright red, oxygenated. But some are dark, almost purple - deoxygenated. 'The color of blood tells us everything,' Ms. Frizzle says. 'And when skin turns blue, it's the blood underneath showing through.'",
+      "q": "Breaking down the word parts, 'cyanosis' literally means:",
+      "options": [
+        "Red coloring",
+        "Blue condition",
+        "Pale appearance",
+        "Yellow tint"
+      ],
+      "answer": 1,
+      "explain": "CYAN (blue) + -OSIS (condition) = BLUE CONDITION. Bluish discoloration of skin and mucous membranes. The literal name describes exactly what you see - the patient looks blue.",
+      "wrongExplains": {
+        "0": "Red is 'erythro-'. Cyanosis is specifically about blue discoloration, not red.",
+        "2": "Pale is 'pallor'. Cyanosis is blue, not white or pale - different sign, different meaning.",
+        "3": "Yellow is 'jaundice' or 'icter-'. Cyanosis is blue, caused by poor oxygenation, not liver problems."
+      }
+    },
+    {
+      "id": "900.5.31.s04",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "Ms. Frizzle holds up two blood samples - one bright red, one dark purple. 'The color difference is all about oxygen. Hemoglobin changes color depending on whether it's carrying oxygen or not.'",
+      "q": "What causes the blue color in cyanosis?",
+      "options": [
+        "Blue dye in the blood",
+        "Deoxygenated hemoglobin appearing blue through skin",
+        "Bruising from broken blood vessels",
+        "Cold temperature only"
+      ],
+      "answer": 1,
+      "explain": "DEOXYGENATED hemoglobin is dark red/purple. Through pale skin, it looks BLUE. When blood lacks oxygen, it's darker. Enough deoxygenated blood (>5g/dL) makes skin appear blue. It's not actually blue - it's dark blood showing through.",
+      "wrongExplains": {
+        "0": "There's no blue dye! The color comes from hemoglobin that's not carrying oxygen. It's molecular chemistry, not pigment.",
+        "2": "Bruising is different - that's blood outside vessels. Cyanosis is blood still IN vessels, just poorly oxygenated.",
+        "3": "Cold can worsen cyanosis by slowing circulation, but the blue color is from deoxygenated hemoglobin, not cold alone."
+      }
+    },
+    {
+      "id": "900.5.31.s05",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "The bus travels to Mr. Edgar's fingertips, which are distinctly blue. Then to his torso, which appears normal pink. 'There are different types of cyanosis,' Ms. Frizzle explains. 'Where you see the blue tells you what's wrong.'",
+      "q": "What's the difference between central and peripheral cyanosis?",
+      "options": [
+        "They're the same thing",
+        "Central = tongue/lips blue (whole body hypoxia); Peripheral = fingers/toes blue (poor circulation)",
+        "Central = fingers blue; Peripheral = lips blue",
+        "Central is mild; peripheral is severe"
+      ],
+      "answer": 1,
+      "explain": "CENTRAL cyanosis (tongue, lips) = whole body isn't getting oxygen (heart/lung problem). PERIPHERAL cyanosis (fingers, toes) = extremities have poor circulation but core is fine. Location of blue = different diagnosis!",
+      "wrongExplains": {
+        "0": "Very different! Central = systemic oxygen problem. Peripheral = circulation problem to extremities. Treatment differs based on type.",
+        "2": "Backwards! Central = core structures (lips, tongue). Peripheral = distant structures (fingers, toes).",
+        "3": "Severity isn't the difference - it's LOCATION and CAUSE. Central suggests heart/lung disease. Peripheral suggests vascular/circulation issues."
+      }
+    },
+    {
+      "id": "900.5.31.s06",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "'Here's a critical number,' Ms. Frizzle says, highlighting a measurement. 'You need at least 5 grams per deciliter of deoxygenated hemoglobin before cyanosis becomes visible. Less than that, and the blue won't show even if oxygen is low.'",
+      "q": "Why might a severely anemic patient NOT show cyanosis even with low oxygen?",
+      "options": [
+        "Anemic patients never get hypoxic",
+        "They don't have enough hemoglobin to produce visible blue color",
+        "Their skin is a different color",
+        "Cyanosis only occurs in children"
+      ],
+      "answer": 1,
+      "explain": "Anemia = not enough hemoglobin total. Even if what little hemoglobin they have is deoxygenated, they can't reach the 5g/dL threshold for visible cyanosis. Oxygen-starved but not blue! Blood test needed, not just visual check.",
+      "wrongExplains": {
+        "0": "Anemic patients absolutely can become hypoxic! They just might not show the blue color because they lack enough hemoglobin.",
+        "2": "Cyanosis visibility can vary with skin tone, but the key issue in anemia is insufficient total hemoglobin to produce blue color.",
+        "3": "Cyanosis occurs at any age if enough deoxygenated hemoglobin is present. Age isn't the limiting factor."
+      }
+    },
+    {
+      "id": "900.5.31.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "'Let's talk about where to look for cyanosis,' Ms. Frizzle instructs. 'Some body parts show it earlier and more clearly than others. Smart doctors know where to check.'",
+      "q": "Which body parts show cyanosis most easily?",
+      "options": [
+        "Chest and back",
+        "Lips, tongue, nail beds, mucous membranes",
+        "Arms and legs",
+        "Scalp and forehead"
+      ],
+      "answer": 1,
+      "explain": "LIPS, TONGUE, NAIL BEDS, MUCOUS MEMBRANES. These areas have thin skin/tissue and rich blood supply - the color shows through clearly. Tongue is best for central cyanosis. Nail beds for peripheral. Always check mucous membranes!",
+      "wrongExplains": {
+        "0": "Thick skin and fat hide the blood color. Chest/back are not good locations to assess cyanosis.",
+        "2": "Limbs can show peripheral cyanosis but not as reliably as lips and nail beds where blood is closer to surface.",
+        "3": "Hair-covered areas are poor for assessment. You need exposed, thin-skinned areas with visible blood vessels."
+      }
+    },
+    {
+      "id": "900.5.31.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "Mr. Edgar's medical chart shows a note about 'circumoral cyanosis.' Ms. Frizzle points to his mouth area. 'Medical language is precise. Circum- means around. Can you decode where the blue color is?'",
+      "q": "What does 'circumoral cyanosis' mean?",
+      "options": [
+        "Blue discoloration inside the mouth",
+        "Blue discoloration around the mouth",
+        "Blue discoloration of the tongue",
+        "Blue discoloration of the entire face"
+      ],
+      "answer": 1,
+      "explain": "CIRCUM- (around) + ORAL (mouth) + CYANOSIS (blue condition) = blue around the mouth. Often seen in children with respiratory distress or in cold exposure. The prefix tells you exactly where to look!",
+      "wrongExplains": {
+        "0": "Inside would be 'intraoral'. Circumoral specifically means the area AROUND the mouth, not inside it.",
+        "2": "Tongue would be 'lingual' or 'glossal'. Circum- means around, oral means mouth - it's the surrounding area.",
+        "3": "Entire face is too broad. Circum- + oral is specific: the ring of skin around the mouth opening."
+      }
+    },
+    {
+      "id": "900.5.31.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "'One more term you'll hear,' Ms. Frizzle says. 'Acrocyanosis. Acro- means extremity or tip. This is a specific pattern of peripheral cyanosis that's usually benign.'",
+      "q": "Where would you see acrocyanosis?",
+      "options": [
+        "Around the mouth",
+        "On the tongue",
+        "Hands and feet only",
+        "Throughout the entire body"
+      ],
+      "answer": 2,
+      "explain": "ACRO- (extremity/tip) + CYANOSIS = blue hands and feet. Common in newborns and in cold exposure. Just the tips - hands, feet, sometimes nose and ears. Usually harmless if core is pink, but check for circulation problems.",
+      "wrongExplains": {
+        "0": "That's circumoral cyanosis. Acro- means extremities/tips (hands, feet), not the face.",
+        "1": "Tongue is a central cyanosis location. Acro- specifically refers to hands and feet - the extremities.",
+        "3": "Acro- means tips/extremities only. Whole body blueness would be severe central cyanosis, not acrocyanosis."
+      }
+    },
+    {
+      "id": "900.5.31.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "Oxygen therapy begins, and Mr. Edgar's color improves. The blue fades from his lips as his blood oxygen rises. 'Color returning,' Ms. Frizzle announces. 'Now prove you understand what we just witnessed.'",
+      "q": "Cyanosis refers to:",
+      "options": [
+        "Redness from inflammation",
+        "Bluish discoloration from low oxygen",
+        "Yellowing from liver disease",
+        "Paleness from blood loss"
+      ],
+      "answer": 1,
+      "explain": "CYANOSIS = BLUISH DISCOLORATION from LOW OXYGEN. Cyan- (blue) + -osis (condition). Caused by deoxygenated hemoglobin. Visible when >5g/dL deoxygenated hemoglobin present. Central vs peripheral types indicate different problems. A critical visual diagnostic sign!",
+      "wrongExplains": {
+        "0": "Redness is erythema or rubor. Cyanosis is blue, caused by poor oxygenation, not inflammation.",
+        "2": "Yellow is jaundice (icterus), from bilirubin buildup in liver disease. Cyanosis is blue, from oxygen problems.",
+        "3": "Paleness is pallor, from anemia or vasoconstriction. Cyanosis is BLUE discoloration, different sign entirely."
+      }
+    }
+  ]
+}

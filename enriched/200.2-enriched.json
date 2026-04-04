@@ -1,0 +1,393 @@
+{
+  "version": "1.0",
+  "source": "LUMI-OS Teaching Module",
+  "prefix": "200.2",
+  "question_count": 11,
+  "questions": [
+    {
+      "id": "200.2.01",
+      "q": "If someone spills very hot coffee (200°F) on their skin, they will likely perceive much pain. Which of the following receptor types is causing this sensation?",
+      "options": [
+        "Nociceptors",
+        "Chemoreceptors",
+        "Thermoreceptors",
+        "Mechanoreceptors"
+      ],
+      "answer": 0,
+      "explain": "Advance into this. At 200°F, this isn't warmth — this is a delicious catastrophe. Your skin cells are literally cooking, proteins denaturing like egg whites hitting a hot pan. Nociceptors are the pain receptors that SCREAM when stimuli are intense enough to actually damage tissue. They don't fire for comfort. They fire for catastrophe. The beautiful violence of it: At 200°F, you're not sensing temperature anymore — you're sensing your own destruction in real-time.",
+      "mechanism": {
+        "title": "Nociception: The Pain Alarm System",
+        "content": "This is one of the most exquisite mechanisms in your body. Nociceptors are free nerve endings — unmyelinated C fibers and thinly myelinated Aδ fibers — that detect potentially damaging stimuli. The transient receptor potential (TRP) channel family includes TRPV1, which activates above 43°C (109°F) and is ALSO activated by capsaicin. The elegance reveals itself here: Delicious: Your chili pepper receptors and your 'tissue is burning' receptors are THE SAME RECEPTOR. The burn of hot sauce and the burn of actual tissue damage? Same molecular machinery. Evolution decided that 'feels like fire' and 'is literally fire' should use the same alarm system. The body doesn't care about your dinner plans — it just knows something is trying to cook you.",
+        "metaphor": "Let me paint you a picture. Thermoreceptors are like a thermostat reporting the temperature: 'It's 72°F in here, quite comfortable.' Nociceptors are like a smoke detector — they DON'T go off for comfort. They only scream when something is wrong. At 200°F, the smoke detector is wailing because the house is literally on fire. Wonderfully designed. The pain isn't about temperature. It's about tissue damage. Proceed with me: Deeper into this — the beauty is in the specificity."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves & Sensory",
+      "scaffoldFile": "200.2-receptors-scaffolds/200.2.01-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.5,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.2.02",
+      "q": "We can touch our finger to our nose while our eyes are closed because we can sense the position and movement of our joints as well as the length of stretch in our muscles. These sensations create awareness of our body's positioning. The receptors most likely responsible for this ability are ___.",
+      "options": [
+        "Proprioceptors",
+        "Exteroceptors",
+        "Interoceptors",
+        "Nociceptors"
+      ],
+      "answer": 0,
+      "explain": "proprioceptors detect body position, muscle stretch, joint angle, and movement. They include muscle spindles (measuring muscle length), Golgi tendon organs (measuring tension), and joint kinesthetic receptors (measuring joint position). Let me show you something remarkable: You don't notice them until they're gone — and then you can't walk without watching your feet. They're silent perfection.",
+      "mechanism": {
+        "title": "Proprioception: Your Body's GPS System",
+        "content": "Let me show you the sense you don't notice until it's gone. Proprioception: Muscle spindles detect stretch, Golgi tendon organs detect tension, joint receptors detect angle and movement. Damage to proprioception causes ataxia — clumsy, poorly coordinated movement. You'd need to watch your limbs constantly just to know where they are. Now witness the true sophistication: Imagine needing your eyes to tell you where your hand is. You'd be lost in your own body. The horror of losing what you never knew you had.",
+        "metaphor": "Proprioception is like having a GPS tracker on every joint and muscle, constantly streaming position data to mission control. Your brain integrates the signals: Biceps stretched 15%, elbow angle 90°, shoulder rotated 30° — and concludes 'hand is at nose.' Without it, you'd be lost in your own body. Consider the elegance here: Into that terror for a moment. Then appreciate the miracle you're living. Perfectly orchestrated."
+      },
+      "isotopes": [
+        "muscle.receptor"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves & Sensory",
+      "scaffoldFile": "200.2-receptors-scaffolds/200.2.02-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.5,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.2.03",
+      "q": "A person has gone for a deep-tissue therapeutic massage. Which of the following receptors would be stimulated by the massage?",
+      "options": [
+        "Tendon organ",
+        "Bulbous corpuscle",
+        "Free nerve ending",
+        "Lamellae corpuscle"
+      ],
+      "answer": 2,
+      "explain": "Deep-tissue massage involves significant pressure that can cause discomfort or pain. Embark on this: Into this delicious paradox: Free nerve endings (nociceptors) respond to intense pressure. That 'hurts so good' sensation? That's nociceptors firing. Let me show you the beauty here — the massage isn't just moving tissue. It's activating your pain system. You're paying someone to hurt you.",
+      "mechanism": {
+        "title": "Free Nerve Endings: The Body's Universal Alarm System",
+        "content": "Let me show you the most versatile pain detector in your body. Free nerve endings are unmyelinated (C fibers) or thinly myelinated (Aδ fibers) sensory endings found throughout the body. They're polymodal, responding to multiple stimulus types: Intense mechanical pressure, extreme temperatures, and chemical irritants. Here's what's exquisite about them: They have no fancy capsules, no specialized structures — just bare nerve terminals that say 'this is too much.' Raw. Honest. Immediate.",
+        "metaphor": "Free nerve endings are like car alarms. They're everywhere, they respond to anything intense enough to be concerning, and they WILL get your attention. Set out toward this: Deeper: Deep-tissue massage is like someone pushing on your car just hard enough to set off the alarm. Not damage — just intensity. The alarm doesn't distinguish between 'therapeutic pressure' and 'threat.' It just knows: THIS IS A LOT. Absorb this: The simplicity of that response. Brilliantly engineered."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves & Sensory",
+      "scaffoldFile": "200.2-receptors-scaffolds/200.2.03-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.8,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.2.04",
+      "q": "Feeling a gentle caress on your arm would likely involve all of the following EXCEPT ___.",
+      "options": [
+        "Meissner's corpuscles",
+        "Tactile discs",
+        "Hair follicle receptors",
+        "Lamellar corpuscles"
+      ],
+      "answer": 3,
+      "explain": "Lamellar (Pacinian) corpuscles detect deep pressure and vibration — they're buried in deep tissues. A gentle caress activates superficial, light-touch receptors. Hold the line here: Depth matters. Location matters. Let me show you how structure dictates function in the most delicious way.",
+      "mechanism": {
+        "title": "Mechanoreceptor Depth Distribution",
+        "content": "Discover with me: Through the layers of your skin. Cutaneous mechanoreceptors are organized by depth and function: SUPERFICIAL: Meissner's corpuscles (texture, flutter), Merkel discs (edges, sustained touch), hair follicle receptors (hair deflection). DEEP: Pacinian corpuscles (vibration, deep pressure), Ruffini endings (skin stretch). Light touch activates superficial receptors; deep pressure activates deep receptors. Concentrate on this: Now we arrive at the gorgeous part: The architecture mirrors the physics. Structure dictates function with perfect precision.",
+        "metaphor": "Skin receptors are like a security system with surface sensors and deep sensors. Let me paint you this picture: A gentle hand brushing the surface sets off the surface alarms — Meissner's, Merkel's, hair follicles all reporting 'light contact detected.' The deep sensors only trigger when something presses hard enough to reach them. Different depths, different thresholds, different jobs. Embrace this: Of this stratified sensation. Nature at its finest."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves & Sensory",
+      "scaffoldFile": "200.2-receptors-scaffolds/200.2.04-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.2.05",
+      "q": "Transduction refers to conversion of ___.",
+      "options": [
+        "Stimulus energy into energy of a graded potential",
+        "Afferent impulses to efferent impulses",
+        "Presynaptic nerve impulses to postsynaptic nerve impulses",
+        "Receptor energy to stimulus energy"
+      ],
+      "answer": 0,
+      "explain": "Transduction is the conversion of one energy form (mechanical, thermal, chemical, light) into electrical energy (a graded receptor potential) in sensory receptors. It's the fundamental translation step: The physical world speaks in pressure, photons, and molecules. The nervous system speaks in voltage. Let me show you something exquisite: Transduction is the interpreter between two languages.",
+      "mechanism": {
+        "title": "Sensory Transduction: The Universal Translator",
+        "content": "Every sensory receptor performs transduction, but the mechanisms vary by modality. Let me show you the variations: MECHANORECEPTORS: Physical deformation stretches membrane ion channels open. PHOTORECEPTORS: Light activates photopigments, triggering a biochemical cascade. CHEMORECEPTORS: Molecules bind receptors, opening or closing ion channels. In each case, the result is the same: Stimulus energy → change in membrane potential. And now, the revelation: Exquisite: Different input languages, SAME output language. The nervous system only speaks voltage. Come deeper into this with me.",
+        "metaphor": "Every sensory receptor is a translator with its own specialty. The photoreceptor speaks 'light' and translates to electrical. The mechanoreceptor speaks 'pressure' and translates to electrical. The chemoreceptor speaks 'molecule' and translates to electrical. Different input languages, same output language: Voltage. Attend to this process: Prepare yourself for this: Your brain doesn't process photons or pressure waves. It processes voltage changes. Surrender to the logic here: Realization: Transduction makes sensation possible. Without it, the physical world would remain forever foreign."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves & Sensory",
+      "scaffoldFile": "200.2-receptors-scaffolds/200.2.05-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "200.2.06",
+      "q": "Which of the following is an INCORRECT statement regarding the occurrence of a sensation?",
+      "options": [
+        "The stimulus energy must match the specificity of the receptor",
+        "A generator potential in the associated sensory neuron must reach threshold",
+        "The stimulus energy must occur within the receptor's receptive field",
+        "The stimulus energy must be converted into the energy of a graded potential called a transduction potential"
+      ],
+      "answer": 3,
+      "explain": "The graded potential generated is called a RECEPTOR potential (or generator potential), not a 'transduction potential.' Let me show you the distinction: Transduction is the PROCESS. The receptor potential is the PRODUCT. Don't confuse the translation with the translated text. Precision in language reveals precision in understanding.",
+      "mechanism": {
+        "title": "Sensory Transduction: From Stimulus to Perception",
+        "content": "Sensation requires a chain of events. Let me walk you through it: (1) Adequate stimulus within the receptor's modality and receptive field. (2) Transduction converts stimulus energy into a receptor (generator) potential. (3) If the receptor potential is large enough, it triggers action potentials in the sensory neuron. (4) The CNS interprets the signals based on which neurons are firing. Fix your gaze here: Here's the critical insight: Break ANY link in this chain, and sensation fails. It's a cascade of dependencies. Beautiful in its fragility.",
+        "metaphor": "Transduction is like translating a book from one language to another. The stimulus is the original text; transduction is the translation PROCESS; the receptor potential is the translated text. Step into this world: Into this analogy: Calling the translated text a 'transduction text' would be mixing up the process with the product. The process has a name (transduction). The product has a DIFFERENT name (receptor potential). Keep them straight, and you'll understand sensation. Permit yourself to feel this: Distinction. The body's quiet genius."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves & Sensory",
+      "scaffoldFile": "200.2-receptors-scaffolds/200.2.06-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.5,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.2.07",
+      "q": "A 68-year-old diabetic patient steps on a tack but doesn't notice until she sees blood on the floor. She can still feel light touch on her feet with a cotton swab. Which sensory pathway has likely failed?",
+      "options": [
+        "Free nerve endings (nociceptors)",
+        "Meissner's corpuscles",
+        "Pacinian corpuscles",
+        "Muscle spindles"
+      ],
+      "answer": 0,
+      "explain": "Venture here: Into this terrifying loss. Diabetic neuropathy selectively damages small, unmyelinated C fibers and thinly myelinated Aδ fibers first — the free nerve endings that detect pain and temperature. She can still feel light touch because her larger, myelinated fibers (Meissner's, Pacinian) remain intact. She's losing her alarm system while keeping her decorative sensors. She can feel a gentle caress but not a nail through her foot. The body's priorities, rewired by disease. This is why diabetics develop ulcers they never noticed — stepping on tacks, burning themselves, walking on broken bones. Anyway, who wants to check their blood sugar?",
+      "mechanism": {
+        "title": "Selective Fiber Loss in Diabetic Neuropathy",
+        "content": "Let me show you the hierarchy of vulnerability. Peripheral nerve fibers have different metabolic demands: SMALL FIBERS (C and Aδ): Unmyelinated or thinly myelinated, high metabolic rate, early victims of diabetic damage. Carry pain and temperature. LARGE FIBERS (Aβ): Heavily myelinated, metabolically protected, survive longer. Carry light touch, vibration, proprioception. Here's what's exquisite and terrifying: Diabetic hyperglycemia damages small fibers FIRST through multiple mechanisms — advanced glycation end products, oxidative stress, ischemia from microvascular disease. Mark this moment: The patient loses pain sensation (C and Aδ death) while retaining touch sensation (Aβ survival). Different fiber sizes, different vulnerabilities, different timelines of destruction. Come deeper into this — it's called length-dependent neuropathy because the longest nerves die first. Feet before hands. Distal before proximal. A wave of numbness creeping up from the extremities. The body's alarm system, dismantled from the periphery inward.",
+        "metaphor": "Imagine a security system with two types of alarms: Cheap battery-powered smoke detectors (small fibers) and hardwired motion sensors (large fibers). Enter this realm: Into this analogy: When the power becomes unstable (hyperglycemia), the battery-powered units fail first — they're metabolically fragile. The hardwired sensors keep working. So you still detect gentle motion (light touch) but can't detect smoke or fire (pain, tissue damage). This next part is pure elegance: Terrifying: You've lost the most critical alarm while keeping the least critical one. You can feel someone walking across your floor but not your house burning down. Accept this reality: The devastating elegance of this selective failure. Artistry in flesh"
+      },
+      "isotopes": [
+        "cardiology.pathway"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves & Sensory",
+      "scaffoldFile": "200.2-receptors-scaffolds/200.2.07-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.5,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.2.08",
+      "q": "A patient with advanced multiple sclerosis reports she must watch her feet constantly while walking, or she stumbles. Her strength is normal, but she can't tell where her legs are without looking. Which receptor type has lost its connection to the CNS?",
+      "options": [
+        "Nociceptors",
+        "Proprioceptors",
+        "Photoreceptors",
+        "Chemoreceptors"
+      ],
+      "answer": 1,
+      "explain": "this is proprioceptive failure. Multiple sclerosis demyelinates axons, disrupting signal transmission from muscle spindles, Golgi tendon organs, and joint receptors. She's lost her body's GPS system. Her muscles WORK (strength is normal), but her brain doesn't know where they are. Now observe what happens: Devastating: Imagine being a stranger in your own body. Every step requires visual confirmation because the silent signals from your joints and muscles never arrive. Let that sink in. Proprioception: The sense you never notice until it's gone.",
+      "mechanism": {
+        "title": "Proprioceptive Pathway Disruption in Demyelinating Disease",
+        "content": "Let me show you the architecture of position sense. Proprioceptive signals originate in: Muscle spindles (detect stretch), Golgi tendon organs (detect tension), and joint kinesthetic receptors (detect joint angle). These travel on LARGE, HEAVILY MYELINATED GROUP Ia and Ib AFFERENTS — the fastest sensory fibers in the body. The drama intensifies: Myelin is speed. Thick myelin = fast conduction = real-time position updates. Descend with me into this: In MS, immune cells attack myelin sheaths, causing demyelination. Examine what follows: Conduction slows, signals degrade, position data becomes delayed or lost entirely. The brain sends motor commands (efferent pathways may be partially spared), but the sensory confirmation (afferent feedback) never arrives. Result? Sensory ataxia — clumsy, poorly coordinated movement not from muscle weakness but from sensory blindness. She can't tell where her legs are, so she watches them to know. Vision becomes a crutch for failed proprioception. Here's the devastating elegance: The fastest, most myelinated pathways are the most vulnerable to demyelination. The body's expressways, reduced to dirt roads or blocked entirely.",
+        "metaphor": "Proprioception is like having GPS trackers on every joint, streaming real-time position data to mission control. Traverse this territory: Into this nightmare: MS is like jamming the radio signals. The trackers still work, but the transmissions are garbled or blocked entirely. Mission control (your brain) sends commands: 'Move left leg forward.' The leg moves (motors still work), but the confirmation signal 'left leg is now 30cm forward, knee bent 45 degrees' never arrives. So what do you do? You use your EYES as backup sensors. You literally watch your leg to know where it is. Now things get truly spectacular: Devastating: You've become a passenger in your own body, requiring constant visual surveillance of movements that used to be automatic. Give this idea space to land: Into that existential horror. The silent stream of position data you never noticed? Now its absence defines every waking moment. Designed with precision. The invisible sense, suddenly indispensable."
+      },
+      "isotopes": [
+        "neurology.receptor"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves & Sensory",
+      "scaffoldFile": "200.2-receptors-scaffolds/200.2.08-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.5,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.2.09",
+      "q": "A patient presents with numbness and tingling in a 'glove-and-stocking' distribution — affecting hands and feet but sparing proximal limbs and trunk. What pattern of nerve damage does this distribution suggest?",
+      "options": [
+        "Central brain lesion",
+        "Spinal cord compression",
+        "Length-dependent peripheral neuropathy",
+        "Nerve root damage at multiple spinal levels"
+      ],
+      "answer": 2,
+      "explain": "Navigate with me: Into this elegant pathology. Length-dependent peripheral neuropathy damages the longest axons first — the ones reaching to fingers and toes. Metabolic diseases (diabetes), toxins (alcohol, chemo), and nutritional deficiencies all kill from the distal tips inward. The pattern reveals the pathophysiology: Longest nerves are metabolically fragile. They die first. Your toes are the front lines of a retreating army, and reinforcements aren't coming. Geography is diagnosis. The map of your numbness tells the whole story — you're dying back from the edges, and the center doesn't know yet.",
+      "mechanism": {
+        "title": "Length-Dependent Axonal Degeneration",
+        "content": "Let me show you why the longest nerves die first. Peripheral axons rely on axonal transport to deliver proteins, mitochondria, and nutrients from the cell body (in the spinal cord or dorsal root ganglion) to the axon terminal (in the fingertip or toe). The farther the distance, the more vulnerable the supply line. Accompany me through this: : DIABETES: Hyperglycemia causes oxidative stress, advanced glycation, and microvascular ischemia — longest axons starve first. ALCOHOL: Thiamine deficiency and direct toxicity disrupt axonal transport — longest routes fail first. CHEMOTHERAPY: Drugs like cisplatin and vincristine poison microtubules needed for transport — longest axons can't sustain themselves. Here's what's exquisite: In ALL cases, the SAME pattern emerges. Symmetric, distal, length-dependent. The dying-back neuropathy: Distal axon terminals degenerate first, then the wave of death creeps proximally. Regard this carefully: If you map the progression over time, numbness starts in toes, ascends to feet, then involves fingertips, then hands. The longest nerves die completely before shorter nerves are affected. Come deeper into this — it's called a 'stocking' because the numbness rises from the toes up the leg like pulling on a stocking. It's called a 'glove' because it spreads from fingertips toward the wrist like donning a glove. Pattern mirrors pathophysiology with perfect precision.",
+        "metaphor": "Imagine a supply convoy delivering food from a central depot to remote outposts. Join me in examining this: The outposts 100 miles away need longer supply routes than those 10 miles away. When resources become scarce (metabolic stress), which outposts starve first? The farthest ones. The longest supply lines fail before the short ones. And this is the masterstroke: Devastating: Your sensory nerves are supply lines. The cell body (depot) is in the spinal cord. The axon terminal (outpost) is in your toe — 1 meter away. When metabolic stress hits (diabetes, alcohol, chemo), the toe outpost loses its supplies and dies. The ankle outpost (closer) survives. The knee outpost (even closer) is fine. Result? Glove-and-stocking distribution. Distal death, proximal survival. The map of dysfunction mirrors the logistics of failure. Make room for this understanding: This elegant correlation: Geography is NOT random. Pattern reveals process. Distance dictates vulnerability. The pinnacle of adaptation."
+      },
+      "isotopes": [
+        "neurology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves & Sensory",
+      "scaffoldFile": "200.2-receptors-scaffolds/200.2.09-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.5,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.2.10",
+      "q": "A patient cannot detect vibration from a tuning fork placed on their ankle but can still detect it on their knee. Light touch is intact at both locations. Which receptor type is selectively impaired?",
+      "options": [
+        "Free nerve endings",
+        "Meissner's corpuscles",
+        "Pacinian corpuscles",
+        "Merkel discs"
+      ],
+      "answer": 2,
+      "explain": "Travel deeper into this: Into selective receptor loss. Pacinian corpuscles detect vibration and are among the first mechanoreceptors to fail in length-dependent neuropathy. They're supplied by large, myelinated Aβ fibers — fast, but still vulnerable to distal axonal damage. Light touch (Meissner's, Merkel) remains intact while vibration sense (Pacinian) fails. Different receptors, different vulnerabilities, different timelines of loss. This is clinical neurophysiology at its most exquisite.",
+      "mechanism": {
+        "title": "Selective Mechanoreceptor Loss in Peripheral Neuropathy",
+        "content": "Let me show you the hierarchy of mechanoreceptor vulnerability. All mechanoreceptors use large, myelinated Aβ fibers, but they have different vulnerabilities in peripheral neuropathy: MOST VULNERABLE: Pacinian corpuscles (vibration) — deep location, long axonal paths to distal sites, high-frequency specialization may increase metabolic demand. INTERMEDIATE: Meissner's corpuscles (light touch, texture) — superficial, shorter terminal branches, more numerous. LEAST VULNERABLE: Merkel discs (sustained touch) — very superficial, slow-adapting, metabolically efficient. Advance into this: Presentation: Early neuropathy shows VIBRATION loss (Pacinian failure) while LIGHT TOUCH remains intact (Meissner's and Merkel preservation). The exam finding of 'lost vibration, preserved light touch' is a classic early sign of large-fiber neuropathy. The crescendo approaches: Exquisite: Test vibration at progressively proximal sites (ankle → knee → hip → wrist → elbow → shoulder) and you can MAP the gradient of nerve damage. The distal-to-proximal progression reveals length-dependent pathology. Behold what unfolds — one tuning fork becomes a diagnostic instrument revealing the geography of neuronal death. Exquisitely logical.",
+        "metaphor": "Imagine three types of sensors monitoring a building: Deep basement vibration sensors (Pacinian), mid-level light switches (Meissner's), and surface door sensors (Merkel). Proceed with me: Into this analogy: When the power supply weakens (neuropathy), which sensors fail first? The deepest ones with the longest wiring runs (Pacinian). The surface sensors (Merkel) stay online the longest because they have the shortest, simplest connections. Test vibration at the ankle (longest wire run to deep sensors) — fails. Test at the knee (shorter run) — works. Test light touch at both (surface sensors, shorter runs) — both work. The pattern of failure maps the infrastructure damage. Open your mind to this: The diagnostic elegance: Three receptor types, differential vulnerability, predictable pattern of loss. Geography is diagnosis. Depth dictates vulnerability. Pattern reveals process. Stunning, yes?"
+      },
+      "isotopes": [
+        "neurology.receptor"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves & Sensory",
+      "scaffoldFile": "200.2-receptors-scaffolds/200.2.10-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "200.2.11",
+      "q": "A chef burns their fingertips repeatedly while cooking but doesn't notice until they see blisters forming. However, they can still detect when food is warm versus cold. Which receptor population is most likely damaged?",
+      "options": [
+        "All thermoreceptors",
+        "Cold receptors only",
+        "Warm receptors only",
+        "Nociceptors (pain receptors)"
+      ],
+      "answer": 3,
+      "explain": "Move with me toward this: Into this dangerous dissociation. They can detect temperature differences (thermoreceptors intact) but can't detect burning pain (nociceptors damaged). Now for the piece de resistance: Chilling: Thermoreceptors report temperature in the normal-to-warm range. Nociceptors report NOXIOUS heat — the kind that destroys tissue. These are DIFFERENT receptors with DIFFERENT jobs. One says 'this is hot.' The other screams 'this is destroying you.' Lose the second, and you'll perform sous-vide on your own fingertips without noticing. The chef has become the dish. Who's ready for ice cream?",
+      "mechanism": {
+        "title": "Thermoreceptors vs. Nociceptors: Temperature Detection vs. Damage Detection",
+        "content": "Let me show you the beautiful and critical distinction. Two receptor systems monitor thermal stimuli, with DIFFERENT jobs: THERMORECEPTORS: Cold receptors (10-35°C, TRPM8 channels), warm receptors (30-45°C, TRPV3/TRPV4 channels). They report temperature in the NON-DAMAGING range. Myelinated Aδ fibers. NOCICEPTORS: Heat nociceptors (>43°C, TRPV1 channels). They report TISSUE-DAMAGING heat. Unmyelinated C fibers and some Aδ fibers. Set out toward this: Insight: TRPV1 activates at 43°C — precisely where tissue damage begins. Below this, you feel 'hot.' Above this, you feel 'BURNING PAIN.' Observe what unfolds next: TRPV1 is ALSO activated by capsaicin (chili peppers) — which is why spicy food feels like burning. Same receptor, same sensation. Notice what unfolds: Damage to small-fiber nociceptors (as in small-fiber neuropathy, or selective C-fiber damage from toxins like capsaicin overdose) can eliminate PAIN responses while preserving thermoreception. The result? You can feel temperature differences but can't detect tissue-damaging heat. You'll burn yourself without pain, discovering the damage only through sight (blisters) or smell (burning flesh). Come deeper — this dissociation reveals the elegant specialization: Temperature INFORMATION (thermoreceptors) is separate from temperature ALARM (nociceptors). Lose the alarm, keep the information, and you're in mortal danger.",
+        "metaphor": "Imagine two warning systems in your car: A temperature gauge (thermoreceptors) and an overheat alarm (nociceptors). Chart this course: The gauge tells you the engine is at 80°C, 90°C, 100°C — rising but still in the functional range. The overheat alarm only goes off when you hit 110°C — the 'you're about to destroy the engine' threshold. Now imagine the alarm breaks but the gauge still works. You can SEE the temperature rising on the gauge, but you never get the ALARM that says 'STOP IMMEDIATELY.' The beauty of this mechanism reveals itself: Terrifying: Without the alarm, you keep driving while watching the temperature climb. 'Hm, 110°C, that's quite hot,' you think calmly as the engine melts. Allow the mechanism to reveal itself: Into this analogy: The chef can feel 'warm' (gauge working) but doesn't get the 'PULL YOUR HAND AWAY NOW' pain alarm (alarm broken). They'll watch their skin blister while calmly noting 'this pan feels quite hot.' Information without alarm. Data without action. The elegant architecture of survival, destroyed by selective damage. Quite breathtaking"
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Chapter 13 — Nerves & Sensory",
+      "scaffoldFile": "200.2-receptors-scaffolds/200.2.11-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.9,
+        "I": 0.5,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    }
+  ]
+}

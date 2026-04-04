@@ -1,0 +1,69 @@
+{
+  "parentId": "600.3.03",
+  "parentQuestion": "Theoretically, an individual born without a middle ear would be able to hear by bone conduction with a hearing aid.",
+  "scaffolds": [
+    {
+      "q": "Sound can travel through solid materials, not just air.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Yes! Sound travels even better through solids than air — vibrations transfer directly."
+    },
+    {
+      "q": "The skull is made of bone and can transmit vibrations.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Correct! Bone conducts sound — that's why your voice sounds different to yourself."
+    },
+    {
+      "q": "The cochlea (inner ear) contains the actual hearing receptor cells.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Yes! Hair cells in the cochlea convert sound vibrations into neural signals."
+    },
+    {
+      "q": "The middle ear (ossicles) normally transmits sound from eardrum to cochlea.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Correct! Malleus, incus, stapes form the normal air conduction pathway."
+    },
+    {
+      "q": "Bone conduction bypasses the outer and middle ear entirely.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Yes! Skull vibrations go directly to the cochlea without needing eardrums or ossicles."
+    },
+    {
+      "q": "Bone conduction hearing aids vibrate the skull to stimulate the cochlea.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Correct! BAHAs (bone-anchored hearing aids) transmit sound through bone, not air."
+    },
+    {
+      "q": "If the inner ear (cochlea) is intact, bone conduction can restore hearing.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Yes! Middle ear problems can be bypassed if the cochlea and auditory nerve work."
+    },
+    {
+      "q": "The Weber test uses a tuning fork on the skull to test bone conduction hearing.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Correct! Placing a tuning fork on the forehead tests whether bone conduction pathways work."
+    },
+    {
+      "q": "Someone without a middle ear could hear via bone conduction if their inner ear works.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "advanced",
+      "explain": "Yes! Bone conduction hearing aids vibrate the skull, sending sound directly to the cochlea."
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.03",
+  "parentQuestion": "The dome-shaped muscle that separates the thoracic and abdominal cavities is the:",
+  "narrative": {
+    "setting": "The Magic School Bus rises from the alveolar depths, ascending through Mr. Edgar's chest. Something massive looms below - a curved wall of muscle stretching from one side of his body to the other. 'The floor of the chest,' Ms. Frizzle announces. 'The ceiling of the belly. And the engine of every breath he takes.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's breathing is labored. This muscle isn't moving as it should. Understanding how it works is the key to understanding why he's struggling."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.03.s01",
+      "arc": 1,
+      "arcTitle": "The Great Partition",
+      "narrative": "Ms. Frizzle steers the bus toward the muscular wall. 'The Greeks called it diaphragma,' she says. 'They understood it was something that divided the body into two kingdoms.'",
+      "q": "The Greek word 'diaphragma' means:",
+      "options": [
+        "Circular muscle",
+        "Partition or barrier",
+        "Breathing tube",
+        "Chest bone"
+      ],
+      "answer": 1,
+      "explain": "'Diaphragma' means PARTITION or BARRIER. The diaphragm is literally a muscular wall between two worlds - the thoracic cavity above (lungs, heart) and the abdominal cavity below (stomach, liver, intestines). It's the great divider.",
+      "wrongExplains": {
+        "0": "While the diaphragm IS dome-shaped, the word means 'partition' - it's about function (separating), not shape.",
+        "2": "The trachea is the breathing tube. The diaphragm is a partition that CREATES the breathing by moving.",
+        "3": "Bones like the sternum and ribs protect the chest. The diaphragm is pure muscle - flexible and powerful."
+      }
+    },
+    {
+      "id": "900.5.03.s02",
+      "arc": 1,
+      "arcTitle": "The Great Partition",
+      "narrative": "The bus lands on the muscle's surface. At rest, between Mr. Edgar's breaths, it curves upward into the chest like a dome. 'Notice the shape,' Ms. Frizzle says. 'Like an upside-down bowl pressing into the lungs.'",
+      "q": "What shape is the diaphragm when relaxed?",
+      "options": [
+        "Completely flat",
+        "Dome-shaped (curved upward)",
+        "Rectangular",
+        "Star-shaped"
+      ],
+      "answer": 1,
+      "explain": "At rest, the diaphragm is DOME-SHAPED, curving upward into the thoracic cavity like an inverted bowl. This is the relaxed position. When it contracts, it FLATTENS - pulling down like a piston to create space for air.",
+      "wrongExplains": {
+        "0": "FLAT is when it's CONTRACTED and working! Relaxed = dome-shaped. It's like a trampoline - at rest it curves up, push down and it flattens.",
+        "2": "The diaphragm follows the curved inner wall of the rib cage. There are no rectangular structures in the body's core.",
+        "3": "Star-shaped would create gaps. The diaphragm is a continuous sheet that must seal completely to separate the cavities."
+      }
+    },
+    {
+      "id": "900.5.03.s03",
+      "arc": 1,
+      "arcTitle": "The Great Partition",
+      "narrative": "'Hold on!' Ms. Frizzle warns. Suddenly the muscular floor beneath you contracts and FLATTENS, pulling downward. The thoracic cavity above expands dramatically. You feel yourself being pulled toward the lungs as air rushes in through Mr. Edgar's nose.",
+      "q": "What happens when the diaphragm contracts?",
+      "options": [
+        "It curves upward more",
+        "It flattens and moves downward",
+        "It stops working",
+        "It moves sideways"
+      ],
+      "answer": 1,
+      "explain": "When the diaphragm CONTRACTS, it FLATTENS and DESCENDS. Think of it like pushing down on a plunger. This increases the thoracic volume above, decreases the pressure, and air rushes INTO the lungs. Muscle contraction = inhalation.",
+      "wrongExplains": {
+        "0": "BACKWARDS! Curving MORE would SHRINK the chest cavity. Contraction flattens and lowers the diaphragm, EXPANDING the chest.",
+        "2": "Contraction IS the diaphragm's work! It's actively pulling down to create the vacuum that draws in air.",
+        "3": "The diaphragm is anchored at its edges. It can only move up (relax) or down (contract) - like a piston in a cylinder."
+      }
+    },
+    {
+      "id": "900.5.03.s04",
+      "arc": 2,
+      "arcTitle": "The Nerve of Breathing",
+      "narrative": "Ms. Frizzle traces a glowing nerve fiber from Mr. Edgar's neck down into the diaphragm. 'The phrenic nerve,' she says reverently. 'Cut this, and the diaphragm goes silent. There's a medical student's rhyme about it.'",
+      "q": "The diaphragm is innervated by which nerve?",
+      "options": [
+        "Vagus nerve",
+        "Phrenic nerve",
+        "Sciatic nerve",
+        "Facial nerve"
+      ],
+      "answer": 1,
+      "explain": "The PHRENIC nerve controls the diaphragm. It originates from C3, C4, and C5 in the neck. 'C3, 4, 5 keeps the diaphragm alive!' - that's the classic mnemonic. Damage to the cervical spine at this level can paralyze breathing.",
+      "wrongExplains": {
+        "0": "The vagus nerve controls many autonomic functions (heart rate, digestion) but NOT the diaphragm directly.",
+        "2": "The sciatic nerve is in your legs - the largest nerve in the body, but nowhere near the diaphragm.",
+        "3": "The facial nerve controls facial expressions. Different region, different function entirely."
+      }
+    },
+    {
+      "id": "900.5.03.s05",
+      "arc": 2,
+      "arcTitle": "The Nerve of Breathing",
+      "narrative": "'The diaphragm does most of the work during quiet breathing,' Ms. Frizzle explains. 'When you're sitting still, reading, sleeping - this muscle is your primary air mover.' The bus's sensors measure the breathing forces.",
+      "q": "What percentage of quiet breathing does the diaphragm account for?",
+      "options": [
+        "About 25%",
+        "About 75%",
+        "About 10%",
+        "100%"
+      ],
+      "answer": 1,
+      "explain": "The diaphragm drives about 75% of quiet breathing - it's the PRIMARY muscle of inspiration. The remaining ~25% comes from the external intercostals (between the ribs) lifting and expanding the rib cage.",
+      "wrongExplains": {
+        "0": "25% massively underestimates the diaphragm's contribution. It's the main event, not a supporting player.",
+        "2": "10% would make it trivial. In reality, the diaphragm is doing three-quarters of the work in every breath you take.",
+        "3": "The intercostal muscles contribute significantly, especially when breathing deeply. It's a team effort, but the diaphragm leads."
+      }
+    },
+    {
+      "id": "900.5.03.s06",
+      "arc": 2,
+      "arcTitle": "The Nerve of Breathing",
+      "narrative": "'One muscle, two kingdoms,' Ms. Frizzle muses. Above the diaphragm: lungs expanding, heart beating. Below: stomach churning, liver filtering. 'What a strategic location for a wall.'",
+      "q": "What cavities does the diaphragm separate?",
+      "options": [
+        "Cranial and spinal cavities",
+        "Thoracic and abdominal cavities",
+        "Left and right lung spaces",
+        "Pelvic and abdominal cavities"
+      ],
+      "answer": 1,
+      "explain": "The diaphragm is the FLOOR of the thoracic cavity (containing heart and lungs) and the ROOF of the abdominal cavity (containing digestive organs). It separates chest from belly - two completely different pressure environments.",
+      "wrongExplains": {
+        "0": "The skull separates cranial from spinal regions. The diaphragm is in the trunk, not near the head.",
+        "2": "The mediastinum (containing the heart) separates the two lung spaces. The diaphragm is BELOW both lungs.",
+        "3": "The pelvic brim (hip bones) separates the pelvic and abdominal cavities. The diaphragm is much higher."
+      }
+    },
+    {
+      "id": "900.5.03.s07",
+      "arc": 3,
+      "arcTitle": "The Engine Revealed",
+      "narrative": "'Pop quiz time!' Ms. Frizzle says as the diaphragm contracts again, flattening beneath you. 'We've seen the partition, traced the nerve, measured the work. But do you know what you're standing on?'",
+      "q": "The diaphragm is classified as what type of muscle?",
+      "options": [
+        "Cardiac muscle",
+        "Skeletal muscle",
+        "Smooth muscle",
+        "Connective tissue"
+      ],
+      "answer": 1,
+      "explain": "The diaphragm is SKELETAL muscle - striated, voluntary (though mostly automatic), and very fast to contract. Unlike the heart (cardiac) or gut (smooth), it's under your conscious control. You CAN hold your breath!",
+      "wrongExplains": {
+        "0": "Cardiac muscle is only in the heart. The diaphragm contracts differently - faster but not self-rhythmic.",
+        "2": "Smooth muscle is in blood vessels and the digestive tract. The diaphragm is striated and fast-contracting.",
+        "3": "Connective tissue provides support but can't contract. The diaphragm is pure muscle power."
+      }
+    },
+    {
+      "id": "900.5.03.s08",
+      "arc": 3,
+      "arcTitle": "The Engine Revealed",
+      "narrative": "A diagram appears showing the diaphragm from the side - its central tendon flat, its muscular edges attaching to the ribs and spine. 'Notice how it anchors,' Ms. Frizzle points. 'Solid connections all around.'",
+      "q": "The central part of the diaphragm is made of:",
+      "options": [
+        "Pure muscle fiber",
+        "Central tendon (aponeurosis)",
+        "Cartilage",
+        "Bone"
+      ],
+      "answer": 1,
+      "explain": "The CENTER of the diaphragm is the central tendon - a flat, strong sheet of connective tissue (aponeurosis). The PERIPHERAL muscle fibers radiate from this center and attach to the ribs and spine. It's like a tent with a flat top.",
+      "wrongExplains": {
+        "0": "The muscular portions are peripheral, radiating outward from the central tendon to the rib attachments.",
+        "2": "No cartilage in the diaphragm. Cartilage is too rigid - the diaphragm needs to flex and move constantly.",
+        "3": "Bone would be inflexible. The diaphragm must deform with every breath, thousands of times per day."
+      }
+    },
+    {
+      "id": "900.5.03.s09",
+      "arc": 3,
+      "arcTitle": "The Engine Revealed",
+      "narrative": "'Three openings,' Ms. Frizzle traces them. 'The aorta punches through here, the esophagus slides through there, and the great vein passes here.' Important structures need highways through this muscular wall.",
+      "q": "Major structures that pass through the diaphragm include:",
+      "options": [
+        "Only the trachea",
+        "Aorta, esophagus, and inferior vena cava",
+        "The spinal cord",
+        "Only blood vessels"
+      ],
+      "answer": 1,
+      "explain": "Three major openings: the AORTIC hiatus (aorta, thoracic duct), the ESOPHAGEAL hiatus (esophagus, vagus nerves), and the CAVAL opening (inferior vena cava). The diaphragm must let blood and food pass while still sealing the cavities.",
+      "wrongExplains": {
+        "0": "The trachea stays ABOVE the diaphragm - it branches into bronchi in the chest. It never passes through.",
+        "2": "The spinal cord is protected BEHIND the diaphragm in the vertebral column. It doesn't pass through the muscle.",
+        "3": "The esophagus (food tube) also passes through. You need to swallow food to your stomach below the diaphragm!"
+      }
+    },
+    {
+      "id": "900.5.03.s10",
+      "arc": 3,
+      "arcTitle": "The Engine Revealed",
+      "narrative": "Mr. Edgar takes a deep breath. The diaphragm flattens powerfully beneath you, the lungs fill above, and you feel the whole rhythm of life. 'Now,' Ms. Frizzle says, 'what is this magnificent structure called?'",
+      "q": "The dome-shaped muscle that separates the thoracic and abdominal cavities is the:",
+      "options": [
+        "Intercostal muscles",
+        "Diaphragm",
+        "Rectus abdominis",
+        "Scalene muscles"
+      ],
+      "answer": 1,
+      "explain": "The DIAPHRAGM - from Greek 'diaphragma' (partition). This dome-shaped skeletal muscle is the primary engine of breathing, separating chest from belly, controlled by the phrenic nerve (C3-4-5), and responsible for 75% of your quiet breathing. The floor and the engine, all in one.",
+      "wrongExplains": {
+        "0": "Intercostals are BETWEEN the ribs - they assist breathing but don't form the partition between cavities.",
+        "2": "Rectus abdominis is the 'six-pack' on the front of your belly. Different location, different function.",
+        "3": "Scalene muscles are in the NECK - accessory breathing muscles that elevate the upper ribs during forced inspiration."
+      }
+    }
+  ]
+}

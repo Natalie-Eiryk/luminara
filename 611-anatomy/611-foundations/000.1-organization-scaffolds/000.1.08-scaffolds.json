@@ -1,0 +1,159 @@
+{
+  "parentId": "000.1.08",
+  "parentQuestion": "A tissue consists of groups of similar cells that have a common function.",
+  "scaffolds": [
+    {
+      "q": "What is the organizational hierarchy of cells, tissues, and organs?",
+      "options": [
+        "Organs → tissues → cells",
+        "Cells → tissues → organs",
+        "Tissues → cells → organs",
+        "They're all the same level"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The body is organized hierarchically: CELLS → TISSUES → ORGANS. Each level builds on the one below it.",
+      "wrongExplains": {
+        "0": "This is the reverse order; cells are smaller than tissues.",
+        "2": "Cells come before tissues in the hierarchy.",
+        "3": "These represent distinct organizational levels."
+      }
+    },
+    {
+      "q": "Where does tissue fit in the organizational hierarchy?",
+      "options": [
+        "Below cells",
+        "Between cells and organs",
+        "Above organs",
+        "Same as molecules"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "A TISSUE is the level BETWEEN cells and organs. Cells group together to form tissues.",
+      "wrongExplains": {
+        "0": "Tissues are above cells in complexity.",
+        "2": "Organs are above tissues in complexity.",
+        "3": "Tissues are much larger and more complex than molecules."
+      }
+    },
+    {
+      "q": "What type of cells make up a tissue?",
+      "options": [
+        "Different types of cells",
+        "Similar cells — cells of the same type",
+        "Only blood cells",
+        "Only nerve cells"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Tissues are made of SIMILAR cells — cells of the same type. Muscle tissue = muscle cells. Nerve tissue = nerve cells.",
+      "wrongExplains": {
+        "0": "Tissues contain similar cells, not different types.",
+        "2": "Many tissues exist; they're not all blood cells.",
+        "3": "Many tissues exist; they're not all nerve cells."
+      }
+    },
+    {
+      "q": "What do the cells in a tissue do together?",
+      "options": [
+        "Nothing in common",
+        "Work together toward a common function",
+        "Compete against each other",
+        "Work independently"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The cells in a tissue work together toward a COMMON FUNCTION. Muscle tissue contracts. Nerve tissue transmits signals.",
+      "wrongExplains": {
+        "0": "Tissue cells share a common function.",
+        "2": "Tissue cells cooperate, not compete.",
+        "3": "Tissue cells work together, not independently."
+      }
+    },
+    {
+      "q": "What are the four primary tissue types?",
+      "options": [
+        "Bone, blood, fat, skin",
+        "Epithelial, connective, muscle, nervous",
+        "Heart, liver, lung, brain",
+        "Red, white, yellow, brown"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The four PRIMARY TISSUE TYPES are: EPITHELIAL, CONNECTIVE, MUSCLE, and NERVOUS. Every tissue fits into one of these categories.",
+      "wrongExplains": {
+        "0": "These are tissue examples, not the primary categories.",
+        "2": "These are organs, not tissue types.",
+        "3": "These are colors, not tissue classifications."
+      }
+    },
+    {
+      "q": "What does epithelial tissue do?",
+      "options": [
+        "Contracts for movement",
+        "Covers and lines surfaces",
+        "Stores fat",
+        "Transmits nerve signals"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "EPITHELIAL TISSUE covers and LINES SURFACES — skin surface, gut lining, blood vessel lining — all epithelium.",
+      "wrongExplains": {
+        "0": "Muscle tissue contracts; epithelium covers surfaces.",
+        "2": "Adipose (connective) tissue stores fat; epithelium covers.",
+        "3": "Nervous tissue transmits signals; epithelium covers."
+      }
+    },
+    {
+      "q": "What is the definition of a tissue?",
+      "options": [
+        "A single cell",
+        "Similar cells + common function",
+        "An organ",
+        "A molecule"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Definition: TISSUE = SIMILAR CELLS + COMMON FUNCTION. This is the precise definition of a tissue.",
+      "wrongExplains": {
+        "0": "A tissue is multiple cells, not a single cell.",
+        "2": "An organ is made of multiple tissues.",
+        "3": "Tissues are made of many molecules and cells."
+      }
+    },
+    {
+      "q": "Is this statement correct: 'A tissue consists of groups of similar cells that have a common function'?",
+      "options": [
+        "No, tissues have different cell types",
+        "Yes — this correctly defines tissue",
+        "No, tissues have no function",
+        "No, tissues are organs"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "Yes, this correctly defines tissue: GROUPS OF SIMILAR CELLS with a COMMON FUNCTION. Both parts of the definition are accurate.",
+      "wrongExplains": {
+        "0": "Tissues do have similar cell types.",
+        "2": "Tissues do have specific functions.",
+        "3": "Tissues and organs are different organizational levels."
+      }
+    },
+    {
+      "q": "The statement 'A tissue consists of groups of similar cells that have a common function' is ___?",
+      "options": [
+        "False — tissues have diverse cells",
+        "True — this is the standard definition of tissue",
+        "False — tissues have no function",
+        "False — this defines organs"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "The answer is TRUE. This is the STANDARD DEFINITION of tissue: Similar cells working together for a common function.",
+      "wrongExplains": {
+        "0": "Tissues contain similar cells, not diverse cells.",
+        "2": "Tissues have specific functions (contraction, covering, etc.).",
+        "3": "This defines tissues, not organs."
+      }
+    }
+  ]
+}

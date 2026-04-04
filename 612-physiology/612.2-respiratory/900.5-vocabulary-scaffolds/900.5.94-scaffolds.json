@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.94",
+  "parentQuestion": "Pulmonary arteries carry blood that is:",
+  "narrative": {
+    "setting": "The Magic School Bus floats in Mr. Edgar's right ventricle, watching it contract powerfully. A massive vessel opens before you - the pulmonary trunk, branching into left and right pulmonary arteries. The blood around you is dark purple. 'This confuses everyone,' Ms. Frizzle warns. 'We're in an ARTERY, but the blood looks venous. Mr. Edgar's lungs are screaming for this blood. We need to understand why.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's pulmonary arteries are narrowed. Understanding this circulation is critical."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.94.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "Ms. Frizzle holds up a textbook. 'First rule of arteries: they carry blood AWAY from the heart. Not necessarily oxygenated. That's the trick question that fails medical students.'",
+      "q": "By definition, an artery is a vessel that:",
+      "options": [
+        "Always carries oxygenated blood",
+        "Carries blood away from the heart",
+        "Always carries deoxygenated blood",
+        "Carries blood toward the heart"
+      ],
+      "answer": 1,
+      "explain": "ARTERY = blood vessel carrying blood AWAY from heart (regardless of oxygenation). VEIN = toward heart. The pulmonary artery is unique because it carries deoxygenated blood AWAY from the heart TO the lungs. It's still an artery by direction.",
+      "wrongExplains": {
+        "0": "MOST arteries carry oxygenated blood, but pulmonary arteries are the exception - they carry deoxygenated blood away from the heart.",
+        "2": "Only pulmonary arteries carry deoxygenated blood. Systemic arteries carry oxygenated. The definition is about direction, not oxygen content.",
+        "3": "That's a VEIN. Veins carry blood TOWARD the heart. Arteries go away."
+      }
+    },
+    {
+      "id": "900.5.94.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "The bus is swept into the pulmonary trunk as the right ventricle contracts. 'Pulmonary,' Ms. Frizzle shouts over the rushing blood. 'From the Latin pulmo - lung. These arteries have a destination.'",
+      "q": "The term 'pulmonary' refers to:",
+      "options": [
+        "The heart",
+        "The lungs",
+        "The liver",
+        "The kidneys"
+      ],
+      "answer": 1,
+      "explain": "'PULMONARY' = relating to the LUNGS. From Latin pulmo = lung. Pulmonary circulation = heart-lung-heart circuit. Pulmonary arteries = arteries TO the lungs. Pulmonary veins = veins FROM the lungs.",
+      "wrongExplains": {
+        "0": "Heart terms use 'cardiac' or 'coronary'. Pulmonary specifically means lung-related.",
+        "2": "Liver terms use 'hepatic'. Pulmonary is lungs only.",
+        "3": "Kidney terms use 'renal'. Pulmonary = lungs."
+      }
+    },
+    {
+      "id": "900.5.94.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "You watch the pulmonary trunk split into left and right branches. 'One artery for each lung,' Ms. Frizzle explains. 'But they both carry the same dark, oxygen-hungry blood from the same source.'",
+      "q": "Pulmonary arteries originate from which heart chamber?",
+      "options": [
+        "Left atrium",
+        "Right ventricle",
+        "Left ventricle",
+        "Right atrium"
+      ],
+      "answer": 1,
+      "explain": "Pulmonary arteries originate from the RIGHT VENTRICLE. Path: deoxygenated blood from body → right atrium → right ventricle → PULMONARY ARTERIES → lungs. The right side of the heart is the 'pulmonary pump.'",
+      "wrongExplains": {
+        "0": "Left atrium RECEIVES oxygenated blood FROM the lungs (via pulmonary veins). Arteries don't originate from atria.",
+        "2": "Left ventricle pumps to the AORTA (systemic circulation). Right ventricle pumps to pulmonary arteries.",
+        "3": "Right atrium receives deoxygenated blood from the body, then sends it to the right VENTRICLE, which pumps to pulmonary arteries."
+      }
+    },
+    {
+      "id": "900.5.94.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "Ms. Frizzle illuminates the blood around you with a spectrometer. 'Low oxygen saturation - around 75%. High CO2. This blood has already circulated through Mr. Edgar's body. Now it needs refreshment.'",
+      "q": "The blood in pulmonary arteries is:",
+      "options": [
+        "Oxygen-rich from the lungs",
+        "Oxygen-poor from the body's tissues",
+        "Pure oxygen with no CO2",
+        "Identical to aortic blood"
+      ],
+      "answer": 1,
+      "explain": "Pulmonary arteries carry DEOXYGENATED blood - blood that has already circulated through body tissues, delivered O2, and picked up CO2. It's returning to the lungs for a 'refill.' Dark purple/blue color, low O2 saturation (~75%).",
+      "wrongExplains": {
+        "0": "Oxygen-rich blood comes FROM the lungs via PULMONARY VEINS. Pulmonary ARTERIES carry blood TO the lungs (deoxygenated).",
+        "2": "Blood always has both O2 and CO2, just in varying amounts. Pulmonary artery blood is LOW O2, HIGH CO2.",
+        "3": "Aortic blood is oxygen-RICH (from left ventricle). Pulmonary artery blood is oxygen-POOR (from right ventricle). Opposite."
+      }
+    },
+    {
+      "id": "900.5.94.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus follows a pulmonary artery branch deeper into lung tissue, splitting into smaller and smaller vessels. 'We're headed for the capillaries,' Ms. Frizzle announces. 'That's where the transformation happens.'",
+      "q": "What happens when pulmonary artery blood reaches the alveolar capillaries?",
+      "options": [
+        "It picks up more CO2 from alveoli",
+        "It exchanges CO2 for O2 across the thin membrane",
+        "It bypasses the alveoli completely",
+        "It mixes with bronchial artery blood"
+      ],
+      "answer": 1,
+      "explain": "At the alveolar-capillary membrane: CO2 diffuses OUT (to be exhaled), O2 diffuses IN (from inhaled air). Deoxygenated blood becomes oxygenated. Color changes from dark purple to bright red. This is EXTERNAL RESPIRATION.",
+      "wrongExplains": {
+        "0": "Opposite! Blood DUMPS CO2 into alveoli and PICKS UP O2. The lungs are the release point for CO2, not the pickup point.",
+        "2": "The whole purpose is gas exchange at alveoli. Bypassing them would defeat pulmonary circulation's purpose.",
+        "3": "Bronchial and pulmonary circulations are mostly separate (though some venous drainage mixes). They don't exchange at capillaries."
+      }
+    },
+    {
+      "id": "900.5.94.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "You watch the blood transform in real-time. Dark purple becomes bright cherry red as oxygen binds to hemoglobin. 'The color change,' Ms. Frizzle whispers reverently, 'is life itself being renewed.'",
+      "q": "Why does blood color change as it passes through pulmonary capillaries?",
+      "options": [
+        "The lungs add red dye",
+        "Hemoglobin binding oxygen changes from dark to bright red",
+        "CO2 makes blood blue, O2 makes it red",
+        "Temperature changes affect color"
+      ],
+      "answer": 1,
+      "explain": "Hemoglobin changes shape when binding O2, reflecting different light wavelengths. DEOXYHEMOGLOBIN (in pulmonary arteries) = dark purple-red. OXYHEMOGLOBIN (in pulmonary veins) = bright cherry red. It's molecular geometry, not added color.",
+      "wrongExplains": {
+        "0": "No dye is added. The color change is purely from hemoglobin's molecular structure changing with oxygen binding.",
+        "2": "Blood is NEVER truly blue (common myth). Deoxygenated blood is dark red/purple. CO2-rich looks darker, O2-rich looks brighter.",
+        "3": "Temperature has minimal effect on color. The dramatic change is from oxygen binding to hemoglobin."
+      }
+    },
+    {
+      "id": "900.5.94.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'The great circulation flip!' Ms. Frizzle announces. 'This is where students get confused. In the lungs, arteries carry deoxygenated blood and veins carry oxygenated. Everywhere else, it's reversed.'",
+      "q": "How do pulmonary arteries differ from systemic arteries?",
+      "options": [
+        "They are identical in function",
+        "Pulmonary carry deoxygenated blood; systemic carry oxygenated",
+        "Pulmonary carry oxygenated; systemic carry deoxygenated",
+        "Pulmonary arteries are actually veins"
+      ],
+      "answer": 1,
+      "explain": "PULMONARY arteries = deoxygenated (going TO lungs for O2). SYSTEMIC arteries = oxygenated (going FROM heart to body). Same structure (thick walls), opposite content. It's the one exception to 'arteries carry oxygenated blood.'",
+      "wrongExplains": {
+        "0": "Completely different! Pulmonary carries deoxygenated, systemic carries oxygenated. Opposite oxygen content.",
+        "2": "Backwards! Pulmonary = deoxygenated, systemic = oxygenated. This is the classic trick question.",
+        "3": "They're true arteries by definition (away from heart) and structure (thick walls). The oxygen content doesn't change their classification."
+      }
+    },
+    {
+      "id": "900.5.94.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "The bus encounters a narrowed pulmonary artery - pulmonary hypertension. 'High pressure in these arteries,' Ms. Frizzle warns, 'strains the right ventricle. It's pumping against resistance.'",
+      "q": "Why is high pressure in pulmonary arteries dangerous?",
+      "options": [
+        "It damages the left ventricle",
+        "It forces the right ventricle to work harder, leading to right heart failure",
+        "It prevents breathing",
+        "It increases systemic blood pressure"
+      ],
+      "answer": 1,
+      "explain": "Pulmonary arteries normally have LOW pressure. When pressure rises (pulmonary hypertension), the RIGHT VENTRICLE must pump harder → RIGHT VENTRICULAR HYPERTROPHY → eventual right heart failure (cor pulmonale). The right side isn't built for high pressure.",
+      "wrongExplains": {
+        "0": "The left ventricle pumps to systemic circulation. Pulmonary hypertension affects the RIGHT ventricle.",
+        "2": "Breathing mechanics aren't directly prevented. The problem is cardiovascular - right heart strain.",
+        "3": "Pulmonary and systemic circulations have different pressures. Pulmonary hypertension doesn't directly raise systemic BP."
+      }
+    },
+    {
+      "id": "900.5.94.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "A blood clot shoots past the bus, lodging in a small pulmonary artery branch. 'Pulmonary embolism!' Ms. Frizzle cries. 'That lung segment is cut off from blood flow. No gas exchange possible there now.'",
+      "q": "A pulmonary embolism blocks:",
+      "options": [
+        "Oxygenated blood to the body",
+        "Deoxygenated blood to the lungs for gas exchange",
+        "Air flow in bronchi",
+        "Lymphatic drainage"
+      ],
+      "answer": 1,
+      "explain": "Pulmonary embolism = clot in PULMONARY ARTERY → blocks deoxygenated blood from reaching alveoli. That lung region gets ventilation but no perfusion (V/Q mismatch). Blood can't be oxygenated if it can't reach the alveoli.",
+      "wrongExplains": {
+        "0": "That describes systemic artery blockage (like stroke or MI). Pulmonary arteries carry deoxygenated blood TO lungs, not oxygenated blood to body.",
+        "2": "Embolism blocks BLOOD flow in arteries, not AIR flow in bronchi. The airways may be fine, but perfusion is blocked.",
+        "3": "Lymphatic system is separate. Pulmonary embolism is a vascular (blood vessel) blockage."
+      }
+    },
+    {
+      "id": "900.5.94.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "The clot dissolves with treatment. Mr. Edgar's pulmonary circulation is restored. 'Final question,' Ms. Frizzle says. 'Prove you understand this counterintuitive circulation.'",
+      "q": "Pulmonary arteries carry blood that is:",
+      "options": [
+        "Oxygen-rich and bright red",
+        "Oxygen-poor and dark purple/red",
+        "Pure oxygen with no hemoglobin",
+        "Identical to pulmonary vein blood"
+      ],
+      "answer": 1,
+      "explain": "Pulmonary arteries carry DEOXYGENATED blood (oxygen-poor, dark purple-red) from the right ventricle TO the lungs for oxygenation. It's the 'spent' blood from the body, returning for a refresh. The only arteries in the body that carry deoxygenated blood.",
+      "wrongExplains": {
+        "0": "That describes PULMONARY VEINS (and systemic arteries). Pulmonary ARTERIES are the exception - deoxygenated.",
+        "2": "Blood always contains hemoglobin (in red blood cells). Hemoglobin is what carries oxygen (or doesn't, in this case).",
+        "3": "Pulmonary VEINS carry oxygenated blood (bright red). Pulmonary ARTERIES carry deoxygenated (dark). Opposite content."
+      }
+    }
+  ]
+}

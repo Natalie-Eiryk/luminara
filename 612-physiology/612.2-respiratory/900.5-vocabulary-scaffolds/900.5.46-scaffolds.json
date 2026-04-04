@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.46",
+  "parentQuestion": "Carbaminohemoglobin is:",
+  "narrative": {
+    "setting": "The Magic School Bus has landed on a hemoglobin molecule inside a red blood cell in Mr. Edgar's muscle capillary. Ms. Frizzle points to the protein chains. 'Class, hemoglobin isn't just an oxygen carrier. Watch what happens when CO2 approaches. It binds directly to the protein - not to the iron, but to the amino acid chains themselves. This is carbaminohemoglobin formation, and it accounts for about 23% of all CO2 transport.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's CO2 is building up in his tissues. If carbaminohemoglobin can't form properly, waste gas will accumulate and his blood pH will plummet."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.46.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle breaks the word down on the holographic board: 'Carb-amino-hemoglobin. Three parts, three clues. Let's decode this molecular name together.'",
+      "q": "The prefix 'carb-' in chemistry refers to:",
+      "options": [
+        "Carbohydrates (sugars)",
+        "Carbon or carbon dioxide",
+        "Cardiac (heart-related)",
+        "Carbonate rocks"
+      ],
+      "answer": 1,
+      "explain": "'Carb-' in this context = CARBON, specifically CO2. Carbaminohemoglobin = CO2 bound to hemoglobin. The 'carb' tells you carbon dioxide is involved. Not sugars (carbohydrates), not heart (cardiac), but the carbon in CO2.",
+      "wrongExplains": {
+        "0": "Carbohydrates use 'carbo-' from carbon too, but carbaminohemoglobin specifically refers to CO2, not sugars.",
+        "2": "That's 'cardi-' from the Greek for heart. Different root, different meaning entirely.",
+        "3": "Carbonate rocks contain CO3-2, related but different. Carbamino- specifically means CO2 bound to amino groups."
+      }
+    },
+    {
+      "id": "900.5.46.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "The bus zooms in on the protein chains of hemoglobin. 'These chains are made of amino acids,' Ms. Frizzle explains. 'Little molecular building blocks with amino groups (-NH2). That's where the CO2 attaches.'",
+      "q": "What are amino acids?",
+      "options": [
+        "Fatty molecules in cell membranes",
+        "Building blocks of proteins",
+        "Types of carbohydrates",
+        "DNA nucleotides"
+      ],
+      "answer": 1,
+      "explain": "AMINO ACIDS = protein building blocks. Hemoglobin is made of 4 protein chains, and each chain is a string of amino acids. CO2 binds to the AMINO GROUPS on these acids. 'Carbamino-' means CO2 bound to an amino group.",
+      "wrongExplains": {
+        "0": "That's lipids or phospholipids. Amino acids build proteins, not membranes (though some amino acids are hydrophobic).",
+        "2": "Carbohydrates are sugars - glucose, fructose, etc. Amino acids have nitrogen; carbs don't.",
+        "3": "DNA uses nucleotides (A, T, G, C). Amino acids make proteins. Different molecules for different jobs."
+      }
+    },
+    {
+      "id": "900.5.46.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle highlights the globin part of the molecule, the protein chains surrounding the iron-containing heme. 'Hemo- is the heme with iron. Globin is the protein. Together: hemoglobin. The most famous protein in your body.'",
+      "q": "What is hemoglobin primarily known for carrying?",
+      "options": [
+        "Glucose to cells",
+        "Oxygen (and some CO2)",
+        "Hormones through blood",
+        "White blood cells"
+      ],
+      "answer": 1,
+      "explain": "Hemoglobin = oxygen carrier first, CO2 carrier second. The heme iron binds O2. But hemoglobin also carries CO2 in two ways: (1) as carbaminohemoglobin (CO2 bound to protein), and (2) indirectly via the Haldane effect affecting bicarbonate.",
+      "wrongExplains": {
+        "0": "Glucose dissolves in plasma; it doesn't need a carrier protein like hemoglobin. Wrong cargo.",
+        "2": "Some hormones are carried by other proteins, but hemoglobin's job is gas transport.",
+        "3": "White blood cells move on their own. Hemoglobin is in RED blood cells and carries gases, not cells."
+      }
+    },
+    {
+      "id": "900.5.46.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "A CO2 molecule drifts toward the hemoglobin. Ms. Frizzle slows down time. 'Watch where it goes. NOT to the iron atom where oxygen binds. CO2 heads for the protein chains - the globin part. It binds to amino groups.'",
+      "q": "Where does CO2 bind when forming carbaminohemoglobin?",
+      "options": [
+        "To the iron atom in the heme group",
+        "To the amino groups on the protein chains (globin)",
+        "To the cell membrane",
+        "To oxygen molecules"
+      ],
+      "answer": 1,
+      "explain": "CO2 binds to the AMINO GROUPS (-NH2) on the GLOBIN chains, NOT the heme iron. This is different from oxygen, which binds the iron. Carbaminohemoglobin uses the protein scaffold, not the metal center. Different binding site, different molecule.",
+      "wrongExplains": {
+        "0": "The iron binds OXYGEN. CO2 binds elsewhere - to the protein chains. They don't compete for the same site.",
+        "2": "Carbaminohemoglobin forms ON hemoglobin, inside the red blood cell, not at the membrane.",
+        "3": "CO2 doesn't bind oxygen. It binds the protein. O2 and CO2 are separate molecules with separate binding sites."
+      }
+    },
+    {
+      "id": "900.5.46.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "The reaction happens in an instant: CO2 + hemoglobin-NH2 → hemoglobin-NHCOOH → hemoglobin-NHCOO- + H+. 'There it is,' Ms. Frizzle says. 'Carbaminohemoglobin. CO2 chemically bonded to the protein, forming a carbamate group.'",
+      "q": "What is the chemical nature of carbaminohemoglobin?",
+      "options": [
+        "CO2 dissolved in the cytoplasm",
+        "CO2 covalently bound to hemoglobin protein",
+        "CO2 converted to bicarbonate",
+        "CO2 bound to the heme iron"
+      ],
+      "answer": 1,
+      "explain": "Carbaminohemoglobin = CO2 COVALENTLY BONDED to the protein. It's a chemical bond (carbamate linkage), not just CO2 floating around. This is different from dissolved CO2 (no bond) and bicarbonate (converted to HCO3-, not bound to protein).",
+      "wrongExplains": {
+        "0": "Dissolved CO2 is physically mixed, not chemically bonded. Carbaminohemoglobin is a chemical bond.",
+        "2": "Bicarbonate is CO2 after reacting with water. Carbaminohemoglobin is CO2 bonded DIRECTLY to protein.",
+        "3": "The heme iron binds oxygen, not CO2. Carbaminohemoglobin uses the globin chains."
+      }
+    },
+    {
+      "id": "900.5.46.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Ms. Frizzle projects a pie chart: 'CO2 Transport: 7% dissolved, 70% bicarbonate, 23% carbaminohemoglobin.' She taps the 23% slice. 'Nearly a quarter of all CO2 travels this way. It's a significant pathway.'",
+      "q": "Approximately what percentage of CO2 is transported as carbaminohemoglobin?",
+      "options": [
+        "About 5%",
+        "About 23%",
+        "About 50%",
+        "About 70%"
+      ],
+      "answer": 1,
+      "explain": "~23% of CO2 travels as carbaminohemoglobin. It's the second-largest pathway after bicarbonate (70%). Dissolved CO2 is only ~7%. Carbaminohemoglobin is substantial - nearly a quarter of the total CO2 load.",
+      "wrongExplains": {
+        "0": "5% is too low - that's less than dissolved CO2. Carbaminohemoglobin carries much more.",
+        "2": "50% would make it the dominant form. Bicarbonate (70%) is dominant; carbaminohemoglobin is second.",
+        "3": "70% is bicarbonate, the major form. Carbaminohemoglobin is smaller but still significant."
+      }
+    },
+    {
+      "id": "900.5.46.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "The bus travels to the lungs. Ms. Frizzle points as CO2 unbinds from the hemoglobin protein. 'Reversible,' she says. 'At tissues, CO2 binds. At lungs, it releases. The same equilibrium as oxygen, but on a different part of the molecule.'",
+      "q": "What happens to carbaminohemoglobin at the lungs?",
+      "options": [
+        "It becomes permanent",
+        "CO2 dissociates and is exhaled",
+        "It converts to bicarbonate",
+        "It binds more CO2"
+      ],
+      "answer": 1,
+      "explain": "At the lungs, carbaminohemoglobin RELEASES its CO2. The CO2 dissociates from the protein, diffuses into alveoli, and is exhaled. It's reversible binding - tissues (high CO2) promote binding, lungs (low CO2) promote release. Perfect transport system.",
+      "wrongExplains": {
+        "0": "Permanent binding would trap CO2 in the blood! The whole point is reversible binding - load at tissues, unload at lungs.",
+        "2": "Carbaminohemoglobin doesn't convert to bicarbonate - they're separate pathways. CO2 just dissociates from the protein.",
+        "3": "Lungs have low CO2, which favors RELEASE, not binding. Binding happens at tissues where CO2 is high."
+      }
+    },
+    {
+      "id": "900.5.46.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle overlays the Haldane effect graph. 'Notice: deoxygenated hemoglobin binds MORE CO2 as carbamino compounds. When oxygen leaves at tissues, it makes room for CO2 binding to the protein. They coordinate.'",
+      "q": "How does oxygen status affect carbaminohemoglobin formation?",
+      "options": [
+        "Oxygenated hemoglobin binds more CO2",
+        "Deoxygenated hemoglobin binds more CO2",
+        "Oxygen status has no effect",
+        "Only oxygenated hemoglobin can form carbaminohemoglobin"
+      ],
+      "answer": 1,
+      "explain": "DEOXYGENATED hemoglobin forms MORE carbaminohemoglobin. This is part of the Haldane effect! When O2 leaves at tissues, the protein structure changes, exposing more binding sites for CO2. It's coordination: deliver O2, pick up CO2 on the same trip.",
+      "wrongExplains": {
+        "0": "Backwards! Oxygenated hemoglobin is LESS receptive to CO2. Deoxygenation increases CO2 binding.",
+        "2": "Oxygen status matters hugely - it's the molecular switch. The Haldane effect describes this coupling.",
+        "3": "Both forms can bind CO2, but deoxygenated binds MORE. It's not all-or-nothing, it's a gradient."
+      }
+    },
+    {
+      "id": "900.5.46.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Mr. Edgar's monitor shows a concerning reading. 'Hemoglobin saturation dropping,' Ms. Frizzle notes. 'But look - his CO2 transport is compensating. Deoxygenated hemoglobin is picking up CO2 as carbamino compounds, preventing acidosis.'",
+      "q": "Why is carbaminohemoglobin formation important for CO2 transport?",
+      "options": [
+        "It's the only way CO2 can be transported",
+        "It accounts for ~23% of CO2 transport and helps prevent blood acidification",
+        "It converts CO2 to oxygen",
+        "It has no real function; bicarbonate does everything"
+      ],
+      "answer": 1,
+      "explain": "Carbaminohemoglobin handles ~23% of CO2 transport - a significant share. Plus, when CO2 binds as carbamino, it DOESN'T generate H+ ions (unlike bicarbonate formation), helping buffer blood pH. It's both quantitatively important and pH-friendly.",
+      "wrongExplains": {
+        "0": "Bicarbonate is 70% and dissolved CO2 is 7%. Carbaminohemoglobin is important but not the only pathway.",
+        "2": "CO2 and oxygen are different molecules - no conversion happens. They're transported separately.",
+        "3": "23% is too much to ignore! Carbaminohemoglobin is a major contributor to total CO2 transport."
+      }
+    },
+    {
+      "id": "900.5.46.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "The bus exits the bloodstream. Mr. Edgar's breathing stabilizes, his CO2 levels normalizing. 'Three pathways,' Ms. Frizzle summarizes. 'Dissolved, bicarbonate, and carbaminohemoglobin. Each vital. Now tell me: what is carbaminohemoglobin?'",
+      "q": "Carbaminohemoglobin is:",
+      "options": [
+        "Hemoglobin bound to oxygen",
+        "CO2 bound to the amino groups on hemoglobin protein chains",
+        "Bicarbonate dissolved in plasma",
+        "Hemoglobin broken down by CO2"
+      ],
+      "answer": 1,
+      "explain": "CARBAMINOHEMOGLOBIN = CO2 chemically bonded to AMINO GROUPS on the GLOBIN (protein chains) of hemoglobin. NOT the heme iron (that's for oxygen), but the protein scaffold. It accounts for ~23% of CO2 transport. Deoxygenated hemoglobin binds CO2 better, coordinating oxygen delivery with CO2 pickup.",
+      "wrongExplains": {
+        "0": "That's oxyhemoglobin - oxygen bound to heme iron. Carbaminohemoglobin is CO2 bound to protein.",
+        "2": "Bicarbonate (HCO3-) is dissolved in plasma after CO2 reacts with water. Carbaminohemoglobin is CO2 on the protein.",
+        "3": "CO2 doesn't destroy hemoglobin - it reversibly binds to it. The protein remains intact."
+      }
+    }
+  ]
+}

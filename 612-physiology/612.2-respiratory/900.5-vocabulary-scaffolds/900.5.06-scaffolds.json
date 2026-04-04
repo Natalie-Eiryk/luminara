@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.06",
+  "parentQuestion": "The membrane that lines the thoracic cavity wall is called the:",
+  "narrative": {
+    "setting": "The Magic School Bus exits the lung and enters a strange space - a narrow gap between the lung surface and the chest wall. Slippery fluid coats everything. 'We're in the pleural cavity,' Ms. Frizzle whispers. 'One of the body's most elegant mechanical systems. Two membranes, a thin film of fluid, and the physics that makes breathing possible.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar winces with every breath. Something is irritating these membranes, making them rub painfully. Understanding the two pleural layers is essential to finding the problem."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.06.s01",
+      "arc": 1,
+      "arcTitle": "The Language of Layers",
+      "narrative": "Ms. Frizzle points to the membrane lining the chest wall. 'The Romans had a word for this,' she says. 'When they described anatomy, they used words that told you exactly what something touched.'",
+      "q": "The Latin word 'parietal' comes from 'paries' meaning:",
+      "options": [
+        "Organ",
+        "Wall",
+        "Lung",
+        "Skin"
+      ],
+      "answer": 1,
+      "explain": "'Paries' means WALL. Parietal pleura lines the WALL of the thoracic cavity - the chest wall, diaphragm, and mediastinum. If it touches a wall, it's parietal.",
+      "wrongExplains": {
+        "0": "Organ is 'viscus' - that's where 'visceral' comes from. Parietal specifically means wall.",
+        "2": "Lung would be 'pulmo' (pulmonary). Parietal is about the wall, not the lung.",
+        "3": "Skin would be 'cutis' (cutaneous). Parietal pleura is internal, not skin-related."
+      }
+    },
+    {
+      "id": "900.5.06.s02",
+      "arc": 1,
+      "arcTitle": "The Language of Layers",
+      "narrative": "'Now look at the other membrane,' Ms. Frizzle steers toward the lung surface. 'This one is stuck to the organ itself. The Romans had a different word for things that cling to organs.'",
+      "q": "What does 'visceral' mean in anatomical terms?",
+      "options": [
+        "Related to walls",
+        "Related to organs",
+        "Related to bones",
+        "Related to blood"
+      ],
+      "answer": 1,
+      "explain": "'Visceral' comes from 'viscus' meaning ORGAN. Visceral pleura covers the lung (the organ) directly. If a membrane hugs an organ, it's visceral.",
+      "wrongExplains": {
+        "0": "Walls are 'parietal.' You're thinking of the opposite term.",
+        "2": "Bones would be 'osseous.' Visceral refers to soft internal organs.",
+        "3": "Blood would be 'vascular' or 'hematic.' Visceral means organ-covering."
+      }
+    },
+    {
+      "id": "900.5.06.s03",
+      "arc": 1,
+      "arcTitle": "The Language of Layers",
+      "narrative": "'Same principle everywhere,' Ms. Frizzle shows a diagram. 'Heart has pericardium - parietal outside, visceral on the heart. Abdomen has peritoneum - parietal on the wall, visceral on the organs. The pleura is just another example.'",
+      "q": "The pleura is a type of what membrane?",
+      "options": [
+        "Mucous membrane",
+        "Serous membrane",
+        "Synovial membrane",
+        "Cutaneous membrane"
+      ],
+      "answer": 1,
+      "explain": "The pleura is a SEROUS membrane - thin, slippery, and secretes serous fluid. The 'serous family' includes pleura (lungs), pericardium (heart), and peritoneum (abdomen). All share the same structure and function.",
+      "wrongExplains": {
+        "0": "Mucous membranes line OPEN passages (airways, GI tract). Serous membranes line CLOSED body cavities.",
+        "2": "Synovial membranes line JOINT cavities specifically - different structure, different fluid.",
+        "3": "Cutaneous membrane is SKIN - the external covering, not internal linings."
+      }
+    },
+    {
+      "id": "900.5.06.s04",
+      "arc": 2,
+      "arcTitle": "The Space Between",
+      "narrative": "The bus floats in the thin gap between the two pleural layers. The fluid here is barely visible - just a thin film. 'This is the pleural cavity,' Ms. Frizzle explains. 'A potential space, not a real room.'",
+      "q": "What is found between the parietal and visceral pleura?",
+      "options": [
+        "Air",
+        "A thin layer of serous fluid",
+        "Blood",
+        "Solid tissue"
+      ],
+      "answer": 1,
+      "explain": "The pleural cavity contains a thin layer of SEROUS FLUID - just a few milliliters. This fluid lubricates the surfaces, allowing the lungs to glide smoothly against the chest wall during breathing.",
+      "wrongExplains": {
+        "0": "AIR in the pleural space is ABNORMAL - that's pneumothorax, causing lung collapse!",
+        "2": "BLOOD in the pleural space is ABNORMAL - that's hemothorax, a medical emergency!",
+        "3": "It's a POTENTIAL space with fluid, not solid tissue. The membranes slide against each other."
+      }
+    },
+    {
+      "id": "900.5.06.s05",
+      "arc": 2,
+      "arcTitle": "The Space Between",
+      "narrative": "Mr. Edgar breathes, and you feel the lung surface sliding past the chest wall - smooth, frictionless. 'Like two wet glass slides,' Ms. Frizzle demonstrates. 'They slide easily but can't be pulled apart.'",
+      "q": "Why is the pleural fluid important for breathing?",
+      "options": [
+        "It provides oxygen to the lungs",
+        "It creates lubrication and surface tension",
+        "It pushes the lungs outward",
+        "It stores carbon dioxide"
+      ],
+      "answer": 1,
+      "explain": "Pleural fluid serves TWO purposes: LUBRICATION (reduces friction during breathing) and SURFACE TENSION (the membranes stick together, so when the chest wall expands, it pulls the lungs with it). Without it, breathing would be painful or impossible.",
+      "wrongExplains": {
+        "0": "Oxygen comes from the AIR, not the pleural fluid. The fluid is for mechanics, not gas exchange.",
+        "2": "The fluid doesn't push - the surface tension PULLS the lung along when the chest wall moves.",
+        "3": "No gas is stored in pleural fluid. It's a mechanical lubricant, not a gas reservoir."
+      }
+    },
+    {
+      "id": "900.5.06.s06",
+      "arc": 2,
+      "arcTitle": "The Space Between",
+      "narrative": "'If air gets in here,' Ms. Frizzle shows a simulation, 'the vacuum breaks. Watch what happens.' The lung separates from the chest wall and collapses inward. 'Pneumothorax. The lung can't follow the chest wall anymore.'",
+      "q": "Pneumothorax occurs when:",
+      "options": [
+        "Fluid fills the pleural cavity",
+        "Air enters the pleural cavity",
+        "The pleura becomes infected",
+        "The diaphragm stops working"
+      ],
+      "answer": 1,
+      "explain": "PNEUMOTHORAX = AIR ('pneumo') in the CHEST ('thorax'). When air enters the pleural space, it breaks the vacuum seal. The lung, no longer coupled to the chest wall, collapses. It's like letting air into a suction cup.",
+      "wrongExplains": {
+        "0": "Fluid accumulation is PLEURAL EFFUSION - different problem, different name.",
+        "2": "Pleural infection is PLEURISY or EMPYEMA. Pneumothorax specifically means air entry.",
+        "3": "Diaphragm paralysis affects breathing but doesn't put air in the pleural space."
+      }
+    },
+    {
+      "id": "900.5.06.s07",
+      "arc": 3,
+      "arcTitle": "Wall and Organ",
+      "narrative": "'Let's make sure you've got this straight,' Ms. Frizzle quizzes. 'Two layers, two attachments. One hugs the lung, one hugs the wall. Which is which?'",
+      "q": "Which pleural layer is attached to the lung itself?",
+      "options": [
+        "Parietal pleura",
+        "Visceral pleura",
+        "Both equally",
+        "Neither - they float free"
+      ],
+      "answer": 1,
+      "explain": "VISCERAL pleura is attached to the LUNG (the viscus/organ). It's so tightly adherent that you can't separate it from lung tissue. Parietal lines the wall; visceral covers the organ.",
+      "wrongExplains": {
+        "0": "PARIETAL lines the WALL (paries). It's attached to the chest wall, diaphragm, and mediastinum.",
+        "2": "They have very different attachments! One to wall, one to lung. That's the whole naming system.",
+        "3": "Visceral pleura is firmly fused to the lung surface. It doesn't float free."
+      }
+    },
+    {
+      "id": "900.5.06.s08",
+      "arc": 3,
+      "arcTitle": "Wall and Organ",
+      "narrative": "Ms. Frizzle traces the parietal pleura around the chest cavity. 'Notice what it covers - not just the ribs. It lines the entire inside of the thoracic container.'",
+      "q": "What structures does the parietal pleura line?",
+      "options": [
+        "Only the lung surfaces",
+        "The thoracic wall, diaphragm, and mediastinum",
+        "Only the ribs",
+        "The trachea and bronchi"
+      ],
+      "answer": 1,
+      "explain": "Parietal pleura lines ALL the walls of the thoracic cavity: the COSTAL part (ribs), DIAPHRAGMATIC part (diaphragm surface), and MEDIASTINAL part (mediastinum edges). It's the complete wall lining.",
+      "wrongExplains": {
+        "0": "That's VISCERAL pleura covering the lung surfaces. Parietal covers walls.",
+        "2": "The ribs are just part of it. Parietal pleura also covers the diaphragm and mediastinum.",
+        "3": "Trachea and bronchi have MUCOSAL linings inside. The pleura is a serous membrane around the lungs."
+      }
+    },
+    {
+      "id": "900.5.06.s09",
+      "arc": 3,
+      "arcTitle": "Wall and Organ",
+      "narrative": "'One more comparison,' Ms. Frizzle says. 'The abdominal cavity has peritoneum. The heart has pericardium. All serous membranes. All have parietal and visceral layers.'",
+      "q": "The parietal pleura is analogous to which layer around the heart?",
+      "options": [
+        "Visceral pericardium",
+        "Parietal pericardium",
+        "Myocardium",
+        "Endocardium"
+      ],
+      "answer": 1,
+      "explain": "PARIETAL pericardium (around the heart) = PARIETAL pleura (around the lungs). Same naming system! Parietal always means the outer, wall-attached layer of a serous membrane.",
+      "wrongExplains": {
+        "0": "Visceral pericardium is analogous to VISCERAL pleura - both cover the organ directly.",
+        "2": "Myocardium is heart MUSCLE - not a serous membrane layer at all.",
+        "3": "Endocardium is the inner lining of heart CHAMBERS - different system entirely."
+      }
+    },
+    {
+      "id": "900.5.06.s10",
+      "arc": 3,
+      "arcTitle": "Wall and Organ",
+      "narrative": "Mr. Edgar takes a deep breath. You watch the parietal pleura - still attached to the chest wall - pull the lung outward through the fluid coupling. 'The wall layer,' Ms. Frizzle says. 'What's it called?'",
+      "q": "The membrane that lines the thoracic cavity wall is called the:",
+      "options": [
+        "Visceral pleura",
+        "Parietal pleura",
+        "Pericardium",
+        "Peritoneum"
+      ],
+      "answer": 1,
+      "explain": "PARIETAL PLEURA - the wall layer. 'Paries' = wall. It lines the inner chest wall, diaphragm, and mediastinum, creating the outer boundary of the pleural cavity. Visceral covers the lung; parietal lines the wall.",
+      "wrongExplains": {
+        "0": "Visceral pleura covers the LUNG (the organ/viscus), not the wall.",
+        "2": "Pericardium is the serous membrane around the HEART, not the lungs.",
+        "3": "Peritoneum is the serous membrane in the ABDOMEN, not the thorax."
+      }
+    }
+  ]
+}

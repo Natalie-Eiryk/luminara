@@ -1,0 +1,159 @@
+{
+  "parentId": "400.3.02",
+  "parentQuestion": "Which of the following is NOT a step in tissue repair?",
+  "scaffolds": [
+    {
+      "q": "What is tissue repair?",
+      "options": [
+        "The growth of new organs",
+        "The process of restoring damaged tissue to a functional state",
+        "The creation of new blood cells",
+        "The breakdown of old tissue"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "TISSUE REPAIR is the process of RESTORING DAMAGED TISSUE to a functional state. The body follows a predictable sequence of healing steps.",
+      "wrongExplains": {
+        "0": "Organ development is organogenesis, not repair.",
+        "2": "Blood cell creation is hematopoiesis, not tissue repair.",
+        "3": "Breaking down tissue is catabolism; repair is rebuilding."
+      }
+    },
+    {
+      "q": "What is the first step of tissue repair?",
+      "options": [
+        "Regeneration",
+        "Inflammation",
+        "Fibrosis",
+        "Cell division"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Step 1 is INFLAMMATION — the cleanup phase. Blood flow increases, immune cells arrive, and debris gets cleared. Painful but necessary before rebuilding.",
+      "wrongExplains": {
+        "0": "Regeneration is a final outcome, not the first step.",
+        "2": "Fibrosis is a final outcome (scarring), not the first step.",
+        "3": "Cell division occurs later during proliferation."
+      }
+    },
+    {
+      "q": "What happens during the second step of tissue repair?",
+      "options": [
+        "Scar tissue is finalized",
+        "Granulation tissue forms, building a new tissue scaffold",
+        "The wound opens wider",
+        "Blood vessels close permanently"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Step 2 is GRANULATION TISSUE formation — building the scaffold. New blood vessels and connective tissue form a pink, granular foundation for repair.",
+      "wrongExplains": {
+        "0": "Scar finalization occurs in the remodeling phase.",
+        "2": "Wounds contract during healing, not widen.",
+        "3": "New blood vessels form; they don't close."
+      }
+    },
+    {
+      "q": "What is the final phase of tissue repair?",
+      "options": [
+        "Initial inflammation",
+        "Regeneration or fibrosis (the final outcome)",
+        "Granulation",
+        "Hemorrhage"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Step 3 is REGENERATION or FIBROSIS — the final outcome. Either you get original tissue back (regeneration) or scar tissue forms (fibrosis).",
+      "wrongExplains": {
+        "0": "Inflammation is the first phase, not the final one.",
+        "2": "Granulation is the second phase (proliferation).",
+        "3": "Hemorrhage is bleeding, not a repair phase."
+      }
+    },
+    {
+      "q": "What is osteoporosis?",
+      "options": [
+        "A tissue repair step",
+        "A disease causing weak, porous bones",
+        "A type of inflammation",
+        "A healing mechanism"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "OSTEOPOROSIS is a DISEASE causing WEAK, POROUS BONES. It's a pathological process of bone loss, NOT a tissue repair step.",
+      "wrongExplains": {
+        "0": "Osteoporosis is a disease, not a repair mechanism.",
+        "2": "It's a degenerative disease, not inflammation.",
+        "3": "It causes damage, not healing."
+      }
+    },
+    {
+      "q": "Which of these is a legitimate tissue repair step?",
+      "options": [
+        "Osteoporosis",
+        "Inflammation",
+        "Metastasis",
+        "Necrosis"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "INFLAMMATION is a legitimate repair step — the first phase where immune cells clean up damage. Osteoporosis, metastasis, and necrosis are all pathological processes, not repair.",
+      "wrongExplains": {
+        "0": "Osteoporosis is bone disease, not repair.",
+        "2": "Metastasis is cancer spread, not repair.",
+        "3": "Necrosis is cell death, not repair."
+      }
+    },
+    {
+      "q": "What are the three real steps of tissue repair in order?",
+      "options": [
+        "Fibrosis, granulation, inflammation",
+        "Inflammation, granulation tissue formation, regeneration/fibrosis",
+        "Osteoporosis, metaplasia, necrosis",
+        "Bleeding, clotting, scarring"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The three repair steps are: 1) INFLAMMATION (cleanup), 2) GRANULATION TISSUE (building scaffold), 3) REGENERATION or FIBROSIS (final outcome).",
+      "wrongExplains": {
+        "0": "The order is wrong; inflammation comes first.",
+        "2": "These are all pathological processes, not repair steps.",
+        "3": "This is overly simplified and misses key phases."
+      }
+    },
+    {
+      "q": "How can you identify what is NOT a tissue repair step?",
+      "options": [
+        "It has 'itis' in the name",
+        "It's a disease process rather than a healing phase",
+        "It involves blood vessels",
+        "It occurs in connective tissue"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "To find what's NOT a repair step, look for DISEASE PROCESSES rather than HEALING PHASES. Osteoporosis is a bone disease — it doesn't fit the repair sequence.",
+      "wrongExplains": {
+        "0": "'-itis' means inflammation, which IS a repair step.",
+        "2": "Blood vessels are involved in normal repair.",
+        "3": "Connective tissue repairs normally."
+      }
+    },
+    {
+      "q": "Which of the following is NOT a step in tissue repair?",
+      "options": [
+        "Inflammation",
+        "Osteoporosis",
+        "Granulation tissue formation",
+        "Regeneration"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "OSTEOPOROSIS is NOT a tissue repair step — it's a BONE DISEASE. The real repair steps are inflammation, granulation tissue formation, and regeneration/fibrosis.",
+      "wrongExplains": {
+        "0": "Inflammation is the first repair phase.",
+        "2": "Granulation tissue formation is the second phase.",
+        "3": "Regeneration is a possible final outcome."
+      }
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.66",
+  "parentQuestion": "Pulmonary embolism is typically caused by:",
+  "narrative": {
+    "setting": "The Magic School Bus travels through Mr. Edgar's pulmonary artery when suddenly a massive clot blocks the vessel ahead. Blood backs up, pressure spikes, the right heart strains. Ms. Frizzle checks the clot's composition. 'It didn't form here,' she says grimly. 'This came from a deep vein - probably the leg. Broke off, traveled through the heart, and lodged here. Classic pulmonary embolism.'",
+    "character": "Mr. Edgar",
+    "tension": "Post-surgical patients suddenly collapse. Long flights end in emergency rooms. DVT breaks free and becomes PE in minutes. Massive PEs cause sudden death - the clot blocks so much blood flow the heart fails. Understanding PE isn't just vascular pathology - it's understanding why immobility kills and why we give prophylactic anticoagulation."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.66.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Embolism means obstruction by traveling material,' Ms. Frizzle begins. 'PULMONARY embolism = obstruction of PULMONARY ARTERY. Usually by a blood clot. But can be fat, air, amniotic fluid, tumor. The clot forms elsewhere and travels.'",
+      "q": "An embolism is:",
+      "options": [
+        "Infection",
+        "Traveling obstruction (usually clot) lodging in a vessel",
+        "Inflammation",
+        "Cell death"
+      ],
+      "answer": 1,
+      "explain": "EMBOLISM = material that TRAVELS through blood and LODGES in a vessel, blocking flow. Usually a blood clot (thromboembolism). Can be fat, air, tumor, or amniotic fluid.",
+      "wrongExplains": {
+        "0": "Infection involves pathogens. Embolism is mechanical obstruction by traveling material.",
+        "2": "Inflammation is immune response. Embolism is physical blockage of vessels.",
+        "3": "Cell death (infarction) can RESULT from embolism, but embolism is the traveling clot."
+      }
+    },
+    {
+      "id": "900.5.66.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'DVT - Deep Vein Thrombosis,' Ms. Frizzle explains. 'Blood clot in deep veins, usually legs (femoral, popliteal, iliac). Forms from Virchow's triad: stasis, hypercoagulability, endothelial injury. When it breaks off, it becomes an embolus.'",
+      "q": "DVT stands for:",
+      "options": [
+        "Diabetes Vascular Treatment",
+        "Deep Vein Thrombosis",
+        "Decreased Ventilation Test",
+        "Diffuse Viral Therapy"
+      ],
+      "answer": 1,
+      "explain": "DVT = DEEP VEIN THROMBOSIS. Blood clot in deep veins (usually legs). Risk factors: immobility, surgery, cancer, clotting disorders. SOURCE of most pulmonary emboli.",
+      "wrongExplains": {
+        "0": "DVT isn't about diabetes. It's Deep Vein Thrombosis - clot in leg veins.",
+        "2": "DVT is vascular clotting, not a ventilation test.",
+        "3": "DVT isn't viral or treatment-related. It's a thrombosis (clot) in deep veins."
+      }
+    },
+    {
+      "id": "900.5.66.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'The journey of the clot,' Ms. Frizzle traces the path. 'Breaks off from leg vein → travels through inferior vena cava → right atrium → right ventricle → pulmonary artery → LODGES in pulmonary circulation. Blocks blood flow to lungs.'",
+      "q": "A clot from a leg DVT travels to the lungs via:",
+      "options": [
+        "Arteries directly",
+        "Inferior vena cava → right heart → pulmonary artery",
+        "Left heart → aorta",
+        "Lymphatic system"
+      ],
+      "answer": 1,
+      "explain": "DVT clot path: leg vein → INFERIOR VENA CAVA → RIGHT ATRIUM → RIGHT VENTRICLE → PULMONARY ARTERY. All venous return goes through right heart to lungs.",
+      "wrongExplains": {
+        "0": "Veins and arteries don't connect directly. Venous clots go through right heart to lungs.",
+        "2": "Left heart receives blood FROM lungs, sends to body. DVT goes right heart → lungs.",
+        "3": "Lymph drains to venous system but clots travel through blood vessels."
+      }
+    },
+    {
+      "id": "900.5.66.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Virchow's triad,' Ms. Frizzle lists the three factors. 'STASIS (immobility, long flights, bed rest), HYPERCOAGULABILITY (pregnancy, cancer, Factor V Leiden), ENDOTHELIAL INJURY (surgery, trauma, catheters). Any combination increases DVT/PE risk.'",
+      "q": "Virchow's triad includes:",
+      "options": [
+        "Only infection",
+        "Stasis, hypercoagulability, endothelial injury",
+        "Only blood pressure",
+        "Only age"
+      ],
+      "answer": 1,
+      "explain": "VIRCHOW'S TRIAD for thrombosis: (1) STASIS (slow flow), (2) HYPERCOAGULABILITY (clotting tendency), (3) ENDOTHELIAL INJURY (vessel damage). Risk factors for DVT/PE.",
+      "wrongExplains": {
+        "0": "Infection isn't in Virchow's triad. It's stasis, hypercoagulability, endothelial injury.",
+        "2": "Blood pressure isn't part of the triad. It's about flow, coagulation, and vessel damage.",
+        "3": "Age increases risk but the triad is stasis, hypercoagulability, injury."
+      }
+    },
+    {
+      "id": "900.5.66.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'The pathophysiology,' Ms. Frizzle diagrams. 'Clot blocks pulmonary artery → (1) Dead space - ventilation without perfusion. (2) Hypoxemia - shunt and V/Q mismatch. (3) Right heart strain - increased afterload. (4) Possible infarction if no collateral flow.'",
+      "q": "When a pulmonary embolism blocks blood flow, the affected lung region:",
+      "options": [
+        "Has normal gas exchange",
+        "Is ventilated but not perfused (dead space)",
+        "Has too much blood flow",
+        "Produces extra oxygen"
+      ],
+      "answer": 1,
+      "explain": "PE creates DEAD SPACE - ventilation WITHOUT perfusion. Air reaches alveoli but no blood flow for gas exchange. Also causes V/Q mismatch, hypoxemia, right heart strain.",
+      "wrongExplains": {
+        "0": "Blocked perfusion means NO gas exchange despite ventilation. Dead space.",
+        "2": "PE BLOCKS blood flow. The affected region has NO perfusion.",
+        "3": "Lungs don't produce oxygen - they exchange it. PE blocks this exchange."
+      }
+    },
+    {
+      "id": "900.5.66.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Clinical presentation - the triad,' Ms. Frizzle recites. 'Dyspnea, pleuritic chest pain, hemoptysis. But many are SILENT or present atypically. Sudden collapse if massive. Tachycardia, tachypnea, hypoxemia. High index of suspicion needed.'",
+      "q": "Classic symptoms of pulmonary embolism include:",
+      "options": [
+        "No symptoms",
+        "Dyspnea, pleuritic chest pain, tachycardia",
+        "Productive cough only",
+        "Fever only"
+      ],
+      "answer": 1,
+      "explain": "PE classic triad: DYSPNEA (sudden shortness of breath), PLEURITIC CHEST PAIN (sharp, worse with breathing), hemoptysis. Also tachycardia, tachypnea. But many are silent!",
+      "wrongExplains": {
+        "0": "Many PEs are silent but classic presentation includes dyspnea, chest pain, tachycardia.",
+        "2": "Productive cough is bronchitis. PE is acute dyspnea and pleuritic pain.",
+        "3": "Fever suggests infection. PE causes dyspnea, tachycardia, hypoxemia."
+      }
+    },
+    {
+      "id": "900.5.66.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'D-dimer test,' Ms. Frizzle explains. 'Elevated in clot breakdown. Sensitive but NOT specific - elevated in many conditions. Useful to RULE OUT PE if negative (high negative predictive value). But positive doesn't confirm PE.'",
+      "q": "D-dimer test in suspected PE:",
+      "options": [
+        "Confirms PE if positive",
+        "Rules out PE if negative (sensitive)",
+        "Is completely useless",
+        "Only detects old clots"
+      ],
+      "answer": 1,
+      "explain": "D-dimer: HIGH SENSITIVITY (negative result rules out PE). LOW SPECIFICITY (positive doesn't confirm - also elevated in pregnancy, infection, cancer). Use to EXCLUDE PE.",
+      "wrongExplains": {
+        "0": "Positive D-dimer doesn't confirm PE (not specific). Need CT angiography for confirmation.",
+        "2": "D-dimer is useful for ruling out PE when negative (high sensitivity).",
+        "3": "D-dimer detects active clot breakdown, not just old clots."
+      }
+    },
+    {
+      "id": "900.5.66.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'CT pulmonary angiography - CTPA,' Ms. Frizzle says. 'Gold standard imaging. IV contrast highlights pulmonary arteries. Directly visualizes the clot - filling defect in the vessel. Confirms diagnosis and estimates clot burden.'",
+      "q": "The gold standard imaging for PE diagnosis is:",
+      "options": [
+        "Chest X-ray",
+        "CT pulmonary angiography (CTPA)",
+        "Ultrasound only",
+        "MRI"
+      ],
+      "answer": 1,
+      "explain": "CTPA (CT PULMONARY ANGIOGRAPHY) is the gold standard for PE. IV contrast shows filling defects (clots) in pulmonary arteries. Confirms diagnosis, localizes clots.",
+      "wrongExplains": {
+        "0": "Chest X-ray is often normal in PE or shows non-specific findings. CTPA is diagnostic.",
+        "2": "Ultrasound is for DVT (leg veins). CTPA visualizes pulmonary arteries.",
+        "3": "MRI can detect PE but CTPA is faster, more available, and gold standard."
+      }
+    },
+    {
+      "id": "900.5.66.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Treatment,' Ms. Frizzle outlines. 'Anticoagulation - heparin initially, warfarin or DOACs long-term. Prevents clot growth and new clots. Thrombolytics for massive PE. IVC filter if anticoagulation contraindicated. Goal: prevent recurrence and allow natural lysis.'",
+      "q": "Immediate treatment of pulmonary embolism includes:",
+      "options": [
+        "Antibiotics",
+        "Anticoagulation (heparin)",
+        "Bronchodilators",
+        "Diuretics only"
+      ],
+      "answer": 1,
+      "explain": "PE treatment: immediate ANTICOAGULATION (heparin, LMWH, or DOAC). Prevents clot growth, new clots. Thrombolytics for massive PE. Long-term anticoagulation 3-6 months.",
+      "wrongExplains": {
+        "0": "Antibiotics treat infection. PE is a clot - needs anticoagulation.",
+        "2": "Bronchodilators help asthma. PE needs anticoagulation to prevent clot extension.",
+        "3": "Diuretics treat fluid overload. PE needs anticoagulation to manage thrombosis."
+      }
+    },
+    {
+      "id": "900.5.66.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Ms. Frizzle looks at the clot blocking the pulmonary artery, the backed-up blood, the strained right heart. 'From leg to lung in seconds. DVT becomes PE. So, class: what typically causes pulmonary embolism?'",
+      "q": "Pulmonary embolism is typically caused by:",
+      "options": [
+        "Bacterial infection",
+        "Blood clot from deep veins",
+        "Allergic reaction",
+        "Inhalation injury"
+      ],
+      "answer": 1,
+      "explain": "PE = blood clot (usually from DVT in LEGS) traveling to PULMONARY ARTERY. Risk factors: immobility, surgery, cancer, clotting disorders. Treated with anticoagulation. Diagnosed with CTPA.",
+      "wrongExplains": {
+        "0": "Bacterial infection causes pneumonia or septic emboli, not typical PE.",
+        "2": "Allergic reaction causes anaphylaxis or asthma - not embolism.",
+        "3": "Inhalation injury affects airways directly - not the same as a blood clot blocking pulmonary vessels."
+      }
+    }
+  ]
+}

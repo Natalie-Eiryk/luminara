@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.21",
+  "parentQuestion": "The right lung has how many lobes?",
+  "narrative": {
+    "setting": "The Magic School Bus pulls back for a wide view of Mr. Edgar's chest cavity. Two lungs hang in the thoracic space, glistening with pleural membrane. But something's different between them. 'Notice anything asymmetric?' Ms. Frizzle asks. The right lung is clearly larger than the left, with visible grooves dividing it into sections.",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar once had pneumonia that collapsed an entire lobe. Understanding lung anatomy - how many sections exist, why they're divided, why the sides differ - explains why surgeons can remove a lobe while leaving enough lung to survive. The body has built-in redundancy, but only if you know where the divisions are."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.21.s01",
+      "arc": 1,
+      "arcTitle": "Lung Divisions",
+      "narrative": "'The major divisions of the lungs,' Ms. Frizzle points to the visible grooves on the lung surface. 'Not segments - those are smaller. Not alveoli - those are microscopic. The big sections are called...'",
+      "q": "The lungs are divided into sections called:",
+      "options": [
+        "Segments",
+        "Lobes",
+        "Alveoli",
+        "Bronchi"
+      ],
+      "answer": 1,
+      "explain": "LOBES are the major divisions of the lungs, separated by deep fissures. Each lobe has its own bronchus and can function somewhat independently.",
+      "wrongExplains": {
+        "0": "Segments are SMALLER subdivisions within lobes. Lobes are the primary divisions.",
+        "2": "Alveoli are microscopic air sacs - millions per lung. Lobes are macroscopic sections.",
+        "3": "Bronchi are airways leading INTO lobes. Lobes are the tissue divisions themselves."
+      }
+    },
+    {
+      "id": "900.5.21.s02",
+      "arc": 1,
+      "arcTitle": "Lung Divisions",
+      "narrative": "'The grooves separating lobes are called fissures,' Ms. Frizzle traces one with her finger. 'Deep clefts that allow lobes to slide against each other during breathing. Like sections of an orange.'",
+      "q": "What is a fissure in lung anatomy?",
+      "options": [
+        "A blood vessel",
+        "A deep groove separating lobes",
+        "A nerve pathway",
+        "A type of alveolus"
+      ],
+      "answer": 1,
+      "explain": "A FISSURE is a deep groove that separates lobes. The right lung has oblique AND horizontal fissures; the left has only the oblique fissure.",
+      "wrongExplains": {
+        "0": "Blood vessels supply lobes but don't define their boundaries. Fissures are grooves.",
+        "2": "Nerves run alongside structures but don't create the lobe divisions.",
+        "3": "Alveoli are microscopic. Fissures are visible macroscopic divisions."
+      }
+    },
+    {
+      "id": "900.5.21.s03",
+      "arc": 1,
+      "arcTitle": "Lung Divisions",
+      "narrative": "'Why divide lungs into lobes at all?' Arnold asks. 'Surgical benefit,' Ms. Frizzle explains. 'Disease in one lobe can be removed without sacrificing the whole lung. Lobar pneumonia stays somewhat contained. Redundancy saves lives.'",
+      "q": "What is one advantage of having multiple lobes?",
+      "options": [
+        "It makes breathing harder",
+        "Disease can be isolated and a lobe can be surgically removed",
+        "It reduces lung capacity",
+        "It increases airway resistance"
+      ],
+      "answer": 1,
+      "explain": "Lobes provide SURGICAL OPTIONS - a diseased lobe can be removed (lobectomy) while preserving remaining lobes. Disease is also somewhat contained within lobe boundaries.",
+      "wrongExplains": {
+        "0": "Lobes don't make breathing harder - they slide freely against each other.",
+        "2": "Lobes don't reduce capacity. Total volume includes all lobes.",
+        "3": "Airways branch to each lobe but resistance isn't increased by lobe structure."
+      }
+    },
+    {
+      "id": "900.5.21.s04",
+      "arc": 2,
+      "arcTitle": "Right vs. Left",
+      "narrative": "Ms. Frizzle flies the bus to the left lung. It's clearly smaller, with an indentation carved into its medial border. 'The cardiac notch,' she identifies. 'The heart sits here, taking up space. The left lung sacrificed a lobe to make room.'",
+      "q": "Why is the left lung smaller than the right?",
+      "options": [
+        "The liver is on the left",
+        "The heart occupies space on the left side",
+        "The left lung develops later",
+        "Random variation"
+      ],
+      "answer": 1,
+      "explain": "The HEART sits mostly on the LEFT side of the thorax. The left lung is smaller (two lobes instead of three) with a cardiac notch carved into it to accommodate the heart.",
+      "wrongExplains": {
+        "0": "The liver is on the RIGHT (pushing up the diaphragm). Heart is on the left.",
+        "2": "Both lungs develop together. Size difference is anatomical, not developmental timing.",
+        "3": "It's not random - it's consistent anatomy. Heart position determines lung asymmetry."
+      }
+    },
+    {
+      "id": "900.5.21.s05",
+      "arc": 2,
+      "arcTitle": "Right vs. Left",
+      "narrative": "'Two lobes on the left,' Ms. Frizzle counts. 'Superior and inferior, separated by the oblique fissure. But the right lung...' She flies across the mediastinum. 'The right has room for more.'",
+      "q": "How many lobes does the LEFT lung have?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "answer": 1,
+      "explain": "The LEFT lung has TWO lobes - superior and inferior, separated by the oblique fissure. Smaller to accommodate the heart's leftward position.",
+      "wrongExplains": {
+        "0": "One lobe would be too simple. The left has two distinct lobes.",
+        "2": "Three lobes is the RIGHT lung. Left has only two.",
+        "3": "No lung has four lobes. Left has 2, right has 3."
+      }
+    },
+    {
+      "id": "900.5.21.s06",
+      "arc": 2,
+      "arcTitle": "Right vs. Left",
+      "narrative": "'The right lung,' Ms. Frizzle counts the visible sections. 'Superior lobe at the top. Middle lobe in front. Inferior lobe below. Three lobes separated by TWO fissures - oblique AND horizontal.'",
+      "q": "The right lung has which fissures?",
+      "options": [
+        "Only the oblique fissure",
+        "Oblique AND horizontal fissures",
+        "Only the horizontal fissure",
+        "No fissures"
+      ],
+      "answer": 1,
+      "explain": "The RIGHT lung has TWO fissures: the OBLIQUE fissure (separating superior/middle from inferior) and the HORIZONTAL fissure (separating superior from middle).",
+      "wrongExplains": {
+        "0": "Only oblique is the LEFT lung pattern. Right has both oblique AND horizontal.",
+        "2": "The horizontal fissure alone wouldn't create three lobes. Both fissures are needed.",
+        "3": "Fissures definitely exist - they're visible landmarks on chest X-rays."
+      }
+    },
+    {
+      "id": "900.5.21.s07",
+      "arc": 3,
+      "arcTitle": "Counting Lobes",
+      "narrative": "'Memory trick,' Ms. Frizzle offers. 'The heart is on the left - you only have ONE heart. The left lung has fewer lobes. Right has three - think of the three letters in R-I-G-H-T starting with odd numbers.'",
+      "q": "How many total lobes exist in both lungs combined?",
+      "options": [
+        "Three",
+        "Four",
+        "Five",
+        "Six"
+      ],
+      "answer": 2,
+      "explain": "FIVE total lobes: three in the right lung (superior, middle, inferior) + two in the left lung (superior, inferior). 3 + 2 = 5.",
+      "wrongExplains": {
+        "0": "Three is just the right lung. Total is 3 + 2 = 5.",
+        "1": "Four miscounts. Right has 3, left has 2, total = 5.",
+        "3": "Six is one too many. Right has 3, left has 2, total = 5."
+      }
+    },
+    {
+      "id": "900.5.21.s08",
+      "arc": 3,
+      "arcTitle": "Counting Lobes",
+      "narrative": "'Each lobe has bronchopulmonary segments,' Ms. Frizzle adds. 'About 10 in each lung. Even smaller divisions for surgical precision. But the major divisions - the lobes - are what we're counting today.'",
+      "q": "Bronchopulmonary segments are:",
+      "options": [
+        "The same as lobes",
+        "Smaller divisions within lobes",
+        "Larger than lobes",
+        "Found only in the trachea"
+      ],
+      "answer": 1,
+      "explain": "BRONCHOPULMONARY SEGMENTS are SMALLER divisions within lobes - about 10 per lung. Each has its own segmental bronchus and can be surgically isolated.",
+      "wrongExplains": {
+        "0": "Segments are smaller than lobes. Lobes contain multiple segments.",
+        "2": "Segments are smaller, not larger. Lobes are the major divisions.",
+        "3": "Segments are in lung tissue, not the trachea. Each lobe has multiple segments."
+      }
+    },
+    {
+      "id": "900.5.21.s09",
+      "arc": 3,
+      "arcTitle": "Counting Lobes",
+      "narrative": "'Right lung: three lobes. Left lung: two lobes. The heart explains the difference.' Ms. Frizzle circles back to the right side. 'Name those three lobes for me.'",
+      "q": "What are the three lobes of the right lung?",
+      "options": [
+        "Anterior, posterior, lateral",
+        "Superior, middle, inferior",
+        "Upper, lower, cardiac",
+        "Primary, secondary, tertiary"
+      ],
+      "answer": 1,
+      "explain": "The right lung has SUPERIOR (top), MIDDLE (front-middle), and INFERIOR (bottom) lobes. The horizontal fissure separates superior from middle; oblique separates middle from inferior.",
+      "wrongExplains": {
+        "0": "Those aren't lobe names. Superior, middle, and inferior describe position.",
+        "2": "'Cardiac' refers to the notch on the left lung, not a lobe name.",
+        "3": "Primary/secondary/tertiary describe bronchi divisions, not lobe names."
+      }
+    },
+    {
+      "id": "900.5.21.s10",
+      "arc": 3,
+      "arcTitle": "Counting Lobes",
+      "narrative": "The three lobes of the right lung are clearly visible - superior, middle, inferior - divided by oblique and horizontal fissures. Larger than the two-lobed left lung. 'How many lobes,' Ms. Frizzle asks, 'in the right lung?'",
+      "q": "The right lung has how many lobes?",
+      "options": [
+        "Two",
+        "Three",
+        "Four",
+        "Five"
+      ],
+      "answer": 1,
+      "explain": "The RIGHT lung has THREE lobes: superior, middle, and inferior. Separated by horizontal and oblique fissures. More than the left (2 lobes) because there's no heart taking up space.",
+      "wrongExplains": {
+        "0": "Two lobes is the LEFT lung. The right has three.",
+        "2": "No lung has four lobes.",
+        "3": "Five is the total of BOTH lungs combined (3 right + 2 left)."
+      }
+    }
+  ]
+}

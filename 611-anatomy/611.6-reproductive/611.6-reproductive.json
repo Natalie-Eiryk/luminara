@@ -1,0 +1,208 @@
+{
+  "id": "611.6",
+  "title": "Reproductive System",
+  "category": "lab-exam-ii",
+  "description": "Lab practical questions for reproductive system anatomy",
+  "questions": [
+    {
+      "id": "611.6.01",
+      "q": "What is the first structure sperm encounters after leaving the testis?",
+      "options": [
+        "Epididymis",
+        "Vas deferens",
+        "Urethra",
+        "Seminal vesicle"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Reproductive",
+      "tags": [
+        "male pathway"
+      ],
+      "explain": "The epididymis is the tightly coiled tube attached to the testis where sperm mature. From testis, sperm flow: testis → epididymis → vas deferens → ejaculatory duct → urethra.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Precisely. The epididymis is that tightly coiled structure hugging the testis. Sperm mature here before continuing their journey. Now walk with me — let me show you how this connects to the rest of the pathway."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. The vas deferens is indeed part of the pathway, but sperm must pass through the epididymis first — that's where they mature. Come closer — I'll show you the order that matters in lab identification."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. The urethra is the final exit point, but sperm have a long journey before reaching it. They first enter the epididymis directly from the testis. Come closer — I'll show you the step-by-step pathway."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. The seminal vesicle contributes fluid, but isn't directly connected to the testis. Sperm first enter the epididymis for maturation. Come closer — I'll show you how these structures relate anatomically."
+        }
+      ],
+      "mechanism": {
+        "title": "Sperm Maturation in the Epididymis",
+        "content": "The epididymis is a single, highly coiled tubule approximately 6 meters long when uncoiled. Sperm enter immature and non-motile from the testis via efferent ductules. During the 2-week transit through the epididymis, sperm acquire motility and the ability to fertilize through biochemical modifications to their surface proteins. The epididymis also stores mature sperm until ejaculation. Clinically, epididymal obstruction (from infection or vasectomy complications) can cause infertility despite normal sperm production in the testis.",
+        "metaphor": "The epididymis is like a finishing school for sperm — they enter immature and graduate with the skills needed for fertilization."
+      },
+      "scaffoldFile": "611.6.01-scaffolds/611.6.01-scaffolds.json"
+    },
+    {
+      "id": "611.6.02",
+      "q": "What are the two major histological features of testis tissue?",
+      "options": [
+        "Seminiferous tubules and interstitial cells",
+        "Seminiferous tubules only",
+        "Interstitial cells only",
+        "Sertoli cells and spermatogonia"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Reproductive",
+      "tags": [
+        "male histology"
+      ],
+      "explain": "Seminiferous tubules (the coiled structures where sperm form) and interstitial cells (Leydig cells producing testosterone) are the two major features visible in testis histology.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Precisely. You're seeing both the sperm factories (seminiferous tubules) and the hormone producers (interstitial cells) between them. Now walk with me — let me show you what's happening inside each structure."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. The seminiferous tubules are there — those are the large coiled structures. But look between them — see those clusters of cells? Those are interstitial (Leydig) cells producing testosterone. Both are essential lab identifications."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. The interstitial cells are present — those clusters between tubules producing testosterone. But you're missing the dominant feature: the seminiferous tubules where sperm form. Come closer — I'll show you both structures side by side."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. Sertoli cells and spermatogonia are both inside the seminiferous tubules — they're cellular details, not the major tissue-level features. At lab exam magnification, you identify the tubules themselves and the interstitial cells between them. Come closer — I'll show you the resolution difference."
+        }
+      ],
+      "mechanism": {
+        "title": "Testis Tissue Organization: Two Compartments",
+        "content": "The testis has two distinct functional compartments. The seminiferous tubules (80% of testis volume) are where spermatogenesis occurs — each tubule contains developing sperm cells supported by Sertoli cells. Between the tubules, the interstitial space contains Leydig cells that produce testosterone in response to LH. This compartmentalization creates a 'blood-testis barrier' protecting developing sperm from immune attack while allowing hormonal communication. Clinically, disruption of either compartment causes distinct problems: tubule damage impairs sperm production (infertility with normal testosterone), while Leydig cell failure causes low testosterone (low libido, muscle loss) despite normal sperm development if tubules are intact.",
+        "metaphor": "The testis is like a factory with two divisions: the production line (tubules making sperm) and the chemical plant (interstitial cells making hormones). Both must function for male fertility and secondary sex characteristics."
+      },
+      "scaffoldFile": "611.6.02-scaffolds/611.6.02-scaffolds.json"
+    },
+    {
+      "id": "611.6.03",
+      "q": "How do you distinguish a primary follicle from a mature Graafian follicle in ovarian histology?",
+      "options": [
+        "Primary follicle is small with a single oocyte layer; Graafian follicle is large with a fluid-filled antrum",
+        "Secondary follicle",
+        "Corpus luteum",
+        "Primordial follicle"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Reproductive",
+      "tags": [
+        "ovary histology"
+      ],
+      "explain": "A primary follicle is small with a single layer of cuboidal cells around the oocyte. A mature Graafian follicle is much larger with a prominent fluid-filled antrum (cavity) pushing the oocyte to one side.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Precisely. Size and the antrum are the key features. The Graafian follicle dominates the ovary with its fluid-filled cavity, while the primary follicle is small and compact. Now walk with me — let me show you the developmental stages between them."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. A secondary follicle is an intermediate stage — it has multiple cell layers but the antrum is just beginning to form. You're distinguishing primary (no antrum, single layer) from mature Graafian (large antrum, multilayered). Come closer — I'll show you the progression."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. The corpus luteum forms after ovulation — it's what remains when the Graafian follicle ruptures. You're distinguishing follicles before ovulation: primary (small, no antrum) from Graafian (large antrum). Come closer — I'll show you the sequence of changes."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. A primordial follicle is even earlier than primary — it has a single layer of flat (squamous) cells, not cuboidal. The question asks about primary (cuboidal layer, no antrum) versus Graafian (large antrum). Come closer — I'll show you the developmental timeline."
+        }
+      ],
+      "mechanism": {
+        "title": "Follicle Maturation: From Microscopic to Dominant",
+        "content": "Follicle development spans several weeks. A primordial follicle (dormant, flat cells around oocyte) activates into a primary follicle (cuboidal cells forming granulosa layer). With FSH stimulation, it becomes secondary (multilayered, antrum begins forming) then mature Graafian (2-2.5cm diameter, large antrum). The antrum forms when granulosa cells secrete follicular fluid rich in hormones and nutrients. At ovulation, the Graafian follicle ruptures, releasing the oocyte. The size difference is dramatic: primary follicles are ~50 micrometers, Graafian follicles are ~20,000 micrometers (400x larger). Clinically, ultrasonography tracks Graafian follicle growth to time ovulation for fertility treatment.",
+        "metaphor": "Follicle maturation is like inflating a balloon around a precious cargo — the antrum expands the structure from a tiny cell cluster to a visible fluid-filled sphere that dominates the ovary."
+      },
+      "scaffoldFile": "611.6.03-scaffolds/611.6.03-scaffolds.json"
+    },
+    {
+      "id": "611.6.04",
+      "q": "What three erectile tissue structures must you identify in penis histology?",
+      "options": [
+        "Two corpora cavernosa (dorsal) and one corpus spongiosum (ventral, surrounding urethra)",
+        "Urethra only",
+        "Corpora cavernosa only",
+        "Corpus spongiosum only"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Reproductive",
+      "tags": [
+        "penis histology"
+      ],
+      "explain": "The penis contains three cylindrical erectile tissues: two corpora cavernosa running along the dorsal side, and one corpus spongiosum along the ventral side surrounding the urethra.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Precisely. You've identified all three erectile columns — the paired dorsal corpora cavernosa and the ventral corpus spongiosum protecting the urethra. Now walk with me — let me show you how their distinct blood supplies create different clinical vulnerabilities."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. The urethra runs through the penis, but it's surrounded by erectile tissue. You need to identify the corpus spongiosum wrapping around it, plus the two corpora cavernosa above. Come closer — I'll show you how the erectile tissues protect the urethra during erection."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. The two corpora cavernosa are the major erectile bodies, but you're missing the corpus spongiosum — it's the ventral structure surrounding the urethra. All three together create the characteristic triangular cross-section. Come closer — I'll show you the complete architecture."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. The corpus spongiosum is there — wrapping around the urethra on the ventral side. But above it, you need to identify the paired corpora cavernosa. Together, these three structures define penis anatomy. Come closer — I'll show you how they're arranged."
+        }
+      ],
+      "mechanism": {
+        "title": "Erectile Tissue Architecture and Function",
+        "content": "The penis contains three parallel cylinders of erectile tissue. The two corpora cavernosa (dorsal) are the primary erectile bodies — they contain sinusoidal spaces that fill with blood during erection, creating rigidity. The corpus spongiosum (ventral) surrounds the urethra and also fills with blood, but to a lesser degree to keep the urethra open during ejaculation. Each corpus is surrounded by a tough fibrous sheath (tunica albuginea). During erection, parasympathetic signals dilate arterioles while compressing veins, trapping blood in the sinusoidal spaces. Clinically, this architecture matters: Peyronie's disease (fibrous plaques in tunica albuginea) causes curvature; priapism (prolonged erection) damages the corpora cavernosa if untreated.",
+        "metaphor": "The corpora are like inflatable support beams — they become rigid structural elements when filled, while the corpus spongiosum is a protective cushion keeping the urethra patent."
+      },
+      "scaffoldFile": "611.6.04-scaffolds/611.6.04-scaffolds.json"
+    },
+    {
+      "id": "611.6.05",
+      "q": "What structure separates the body of the uterus from the vagina?",
+      "options": [
+        "Cervix",
+        "Myometrium",
+        "Endometrium",
+        "Uterine tube"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Reproductive",
+      "tags": [
+        "female"
+      ],
+      "explain": "The cervix is the narrow, lower portion of the uterus that projects into the vagina. It connects the uterine body above to the vaginal canal below.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Precisely. The cervix is that narrow transitional region — you can see how it connects the wider uterine body to the vaginal canal. Now walk with me — let me show you why its structure matters for childbirth and cancer screening."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. The myometrium is the thick muscular layer forming the uterine wall — it's a tissue type, not a transitional structure. The cervix is the anatomical region separating uterus from vagina. Come closer — I'll show you how the myometrium thickens in the cervix for structural support."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. The endometrium is the inner lining of the uterus that sheds during menstruation — it's a layer, not a structural boundary. The cervix is the narrow region connecting uterus to vagina. Come closer — I'll show you how the endometrium changes character in the cervical canal."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. The uterine tubes (fallopian tubes) are at the top of the uterus, connecting to the ovaries — wrong end! The cervix is at the bottom, connecting to the vagina. Come closer — I'll show you the full anatomy from ovaries to vaginal opening."
+        }
+      ],
+      "mechanism": {
+        "title": "Cervix: Structure and Clinical Significance",
+        "content": "The cervix is approximately 3-4cm long and forms the lower third of the uterus. Its thick fibrous wall contains less smooth muscle than the uterine body, making it structurally rigid to keep the uterus closed during pregnancy. The cervical canal connects the uterine cavity to the vagina, lined with mucus-secreting cells that create a barrier to infection (thick mucus) except during ovulation (thin mucus allowing sperm passage). The transformation zone where cervical epithelium changes from columnar (canal) to squamous (vaginal surface) is the site where most cervical cancers arise, making it the target of Pap smears. During labor, cervical effacement (thinning) and dilation (opening to 10cm) allow passage of the fetus.",
+        "metaphor": "The cervix is like a drawbridge — normally closed and fortified (thick mucus, tight closure) but capable of opening wide when needed (ovulation for sperm, labor for birth)."
+      },
+      "scaffoldFile": "611.6.05-scaffolds/611.6.05-scaffolds.json"
+    }
+  ]
+}

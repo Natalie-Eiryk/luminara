@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.91",
+  "parentQuestion": "Respiratory acidosis results from:",
+  "narrative": {
+    "setting": "The Magic School Bus is swimming through Mr. Edgar's bloodstream. His breathing has slowed dangerously - each breath shallow and labored. Alarms flash on the dashboard as pH levels drop. Ms. Frizzle's face is serious: 'Class, Mr. Edgar's blood is becoming too acidic. We need to understand why CO2 retention causes this, and fast.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's blood pH is dropping. His brain function could be impaired within minutes."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.91.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "Ms. Frizzle pulls up a chemistry display. 'Before we tackle respiratory acidosis, let's decode the words. Each syllable is a clue to the emergency we're facing.'",
+      "q": "The suffix '-osis' in medical terminology means:",
+      "options": [
+        "A cure or treatment",
+        "A condition or disease state",
+        "A surgical procedure",
+        "An improvement"
+      ],
+      "answer": 1,
+      "explain": "'-osis' means a CONDITION or ABNORMAL STATE. Think: osteoporosis (bone condition), psychosis (mental condition), acidosis (acid condition). It's not a cure - it's the problem itself.",
+      "wrongExplains": {
+        "0": "That would be '-therapy' or '-iatry'. '-osis' describes the problem, not the solution.",
+        "2": "Surgical procedures end in '-otomy' (cut into) or '-ectomy' (cut out). '-osis' is a condition.",
+        "3": "'-osis' is neutral or negative - it describes abnormal states, not improvements."
+      }
+    },
+    {
+      "id": "900.5.91.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "A red blood cell floats by, CO2 molecules streaming off it. 'Acid,' Ms. Frizzle says quietly. 'From the Latin acidus - sour. But in blood, sour means danger.'",
+      "q": "What does 'acidosis' literally mean?",
+      "options": [
+        "Excess oxygen condition",
+        "Low pH / high acid condition",
+        "High pH / low acid condition",
+        "Normal acid balance"
+      ],
+      "answer": 1,
+      "explain": "ACIDOSIS = TOO MUCH ACID (low pH). Blood becomes more acidic than the normal 7.35-7.45 range. Think: acid-osis = condition of being acidic. The 'osis' tells you it's abnormal.",
+      "wrongExplains": {
+        "0": "Oxygen isn't acid. Acidosis is about pH, not oxygen levels - though they're often related.",
+        "2": "High pH is ALKALOSIS (the opposite). Acidosis means pH drops BELOW 7.35.",
+        "3": "Normal balance is homeostasis. The '-osis' suffix signals an abnormal condition."
+      }
+    },
+    {
+      "id": "900.5.91.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Term",
+      "narrative": "The bus sensors show CO2 levels climbing. 'Why respiratory?' Phoebe asks nervously. Ms. Frizzle points to Mr. Edgar's slow, shallow breathing. 'Because the problem starts with the breath - or lack of it.'",
+      "q": "The term 'respiratory acidosis' indicates the acid imbalance is caused by:",
+      "options": [
+        "Kidney malfunction",
+        "Lung/breathing dysfunction",
+        "Liver disease",
+        "Heart failure"
+      ],
+      "answer": 1,
+      "explain": "RESPIRATORY acidosis = caused by BREATHING problems. The lungs aren't blowing off enough CO2. When CO2 builds up, it forms carbonic acid, dropping pH. The name tells you where to look for the problem.",
+      "wrongExplains": {
+        "0": "Kidney problems cause METABOLIC acidosis, not respiratory. Different system, different name.",
+        "2": "Liver affects many things, but acidosis named 'respiratory' points to the lungs.",
+        "3": "Heart failure can secondarily affect breathing, but 'respiratory' specifically means the breathing system itself."
+      }
+    },
+    {
+      "id": "900.5.91.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "Ms. Frizzle zooms in on a CO2 molecule entering the bloodstream. 'Watch what happens next. This is the chemistry of doom - or diagnosis, if we understand it.'",
+      "q": "When CO2 dissolves in blood, it forms:",
+      "options": [
+        "Oxygen gas",
+        "Carbonic acid (H2CO3)",
+        "Sodium bicarbonate",
+        "Carbon monoxide"
+      ],
+      "answer": 1,
+      "explain": "CO2 + H2O → H2CO3 (CARBONIC ACID). This weak acid partially dissociates, releasing H+ ions that lower pH. More CO2 = more acid. It's an instant chemical reaction happening in every blood vessel.",
+      "wrongExplains": {
+        "0": "CO2 and oxygen are different molecules. CO2 doesn't turn into O2 - it turns into acid.",
+        "2": "Bicarbonate is part of the buffer system that NEUTRALIZES acid, not the acid itself.",
+        "3": "Carbon monoxide (CO) is a poison. Carbon dioxide (CO2) is normal waste that becomes acid."
+      }
+    },
+    {
+      "id": "900.5.91.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "Mr. Edgar takes another shallow breath. The bus sensors show CO2 climbing higher. 'He's hypoventilating,' Ms. Frizzle says. 'Breathing too slowly, too shallowly. CO2 can't escape.'",
+      "q": "Why does slow, shallow breathing cause CO2 retention?",
+      "options": [
+        "Lungs produce more CO2 when breathing slows",
+        "Less air exchange means less CO2 is exhaled",
+        "Shallow breathing blocks oxygen intake",
+        "The heart slows down CO2 transport"
+      ],
+      "answer": 1,
+      "explain": "You exhale CO2 with every breath. LESS breathing = LESS CO2 removal. It's simple math: if you only blow off 50% of normal CO2, the other 50% accumulates. The lungs are the exhaust pipe, and it's clogged.",
+      "wrongExplains": {
+        "0": "Lungs don't PRODUCE CO2 - cells do. Slow breathing just means the CO2 isn't expelled efficiently.",
+        "2": "Oxygen intake is affected too, but CO2 retention specifically comes from not exhaling enough.",
+        "3": "The heart transports CO2 fine - the problem is at the lungs, where CO2 can't be blown off."
+      }
+    },
+    {
+      "id": "900.5.91.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "A buffer system protein floats by, trying desperately to neutralize the rising acid. 'The body fights back,' Ms. Frizzle narrates, 'but buffers can only do so much. When CO2 keeps coming, the pH keeps dropping.'",
+      "q": "How does retained CO2 lower blood pH?",
+      "options": [
+        "CO2 directly destroys blood cells",
+        "CO2 forms carbonic acid, releasing H+ ions",
+        "CO2 removes oxygen from hemoglobin",
+        "CO2 dilutes the blood"
+      ],
+      "answer": 1,
+      "explain": "CO2 + H2O → H2CO3 → H+ + HCO3-. The H+ ions (hydrogen ions) ARE acid - they're what pH measures. More H+ = lower pH = more acidic. It's a direct chemical pathway from CO2 to acidity.",
+      "wrongExplains": {
+        "0": "CO2 doesn't destroy cells. It's a normal metabolic waste that becomes problematic in excess.",
+        "2": "CO2 does affect oxygen binding, but pH drops because CO2 forms ACID, not because of oxygen.",
+        "3": "Dilution would raise pH, not lower it. The issue is chemical conversion to acid."
+      }
+    },
+    {
+      "id": "900.5.91.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Two types of acidosis,' Ms. Frizzle announces, holding up two fingers. 'Respiratory and metabolic. Mix them up and you'll treat the wrong problem. Mr. Edgar's life depends on precision.'",
+      "q": "How is respiratory acidosis different from metabolic acidosis?",
+      "options": [
+        "They are the same condition",
+        "Respiratory is from CO2 retention; metabolic is from other acids",
+        "Metabolic is from CO2; respiratory is from lactic acid",
+        "Respiratory affects the lungs; metabolic affects breathing"
+      ],
+      "answer": 1,
+      "explain": "RESPIRATORY acidosis = CO2 buildup (breathing problem). METABOLIC acidosis = other acids accumulate OR bicarbonate lost (kidney/metabolic problem). Same result (low pH), different causes, different treatments.",
+      "wrongExplains": {
+        "0": "Critically different! Respiratory needs improved breathing; metabolic might need dialysis or bicarbonate.",
+        "2": "You have it backwards. Lactic acidosis is METABOLIC. CO2 retention is RESPIRATORY.",
+        "3": "Respiratory affects breathing AND causes acidosis. Metabolic acidosis isn't about breathing - it's about metabolism or kidneys."
+      }
+    },
+    {
+      "id": "900.5.91.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "The bus passes through Mr. Edgar's kidney. 'The kidneys are working overtime,' Ms. Frizzle observes. 'They can compensate for respiratory acidosis, but it takes days. The lungs work in minutes.'",
+      "q": "How can the kidneys compensate for respiratory acidosis?",
+      "options": [
+        "By producing more oxygen",
+        "By retaining bicarbonate to buffer the acid",
+        "By removing CO2 from blood",
+        "By stopping acid production"
+      ],
+      "answer": 1,
+      "explain": "Kidneys RETAIN HCO3- (bicarbonate) and EXCRETE H+ ions. Bicarbonate is a BASE that neutralizes acid. It's slow (days) but effective. The kidneys can't fix breathing, but they can shift pH back toward normal.",
+      "wrongExplains": {
+        "0": "Kidneys filter blood; they don't produce oxygen. That's the lungs' job.",
+        "2": "Only LUNGS remove CO2 (by exhaling). Kidneys handle other acids and bases.",
+        "3": "Cells constantly produce acids as metabolic waste. Kidneys manage the balance, not stop production."
+      }
+    },
+    {
+      "id": "900.5.91.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Alarms blare. Mr. Edgar's respiratory rate is dangerously low. 'Causes!' Ms. Frizzle shouts over the noise. 'What could cause hypoventilation this severe?'",
+      "q": "Which condition is MOST likely to cause respiratory acidosis?",
+      "options": [
+        "Hyperventilation (rapid breathing)",
+        "COPD with severe CO2 retention",
+        "Diarrhea with bicarbonate loss",
+        "Diabetic ketoacidosis"
+      ],
+      "answer": 1,
+      "explain": "COPD (Chronic Obstructive Pulmonary Disease) traps air and CO2. The lungs can't expel CO2 efficiently → CO2 builds up → respiratory acidosis. Classic cause. Also: respiratory depression from drugs, neuromuscular disease.",
+      "wrongExplains": {
+        "0": "Hyperventilation BLOWS OFF too much CO2, causing ALKALOSIS (opposite problem). Respiratory acidosis needs UNDERventilation.",
+        "2": "Diarrhea causes METABOLIC acidosis (bicarbonate loss), not respiratory. Different system.",
+        "3": "Ketoacidosis is METABOLIC acidosis (ketone acids), not respiratory. Though breathing may compensate, the cause isn't lung-based."
+      }
+    },
+    {
+      "id": "900.5.91.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Ms. Frizzle initiates emergency intervention. The bus deploys a mechanical ventilator. 'Now you understand,' she says as Mr. Edgar's pH stabilizes. 'The final question.'",
+      "q": "Respiratory acidosis results from:",
+      "options": [
+        "Excessive CO2 elimination",
+        "CO2 retention from inadequate ventilation",
+        "Kidney failure to produce bicarbonate",
+        "Lactic acid accumulation from exercise"
+      ],
+      "answer": 1,
+      "explain": "RESPIRATORY ACIDOSIS = CO2 RETENTION from HYPOVENTILATION. Breathing too little → exhaling too little CO2 → CO2 accumulates → forms carbonic acid → pH drops. The name tells the story: respiratory problem causes acidosis.",
+      "wrongExplains": {
+        "0": "Excessive CO2 elimination causes ALKALOSIS (opposite). Acidosis needs CO2 buildup.",
+        "2": "Kidney failure causes METABOLIC acidosis. Respiratory acidosis is a breathing/lung problem.",
+        "3": "Lactic acid = METABOLIC acidosis. Respiratory acidosis is specifically about CO2 from breathing failure."
+      }
+    }
+  ]
+}

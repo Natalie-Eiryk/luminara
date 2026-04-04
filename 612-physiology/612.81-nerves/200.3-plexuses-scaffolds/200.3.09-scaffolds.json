@@ -1,0 +1,159 @@
+{
+  "parentId": "200.3.09",
+  "parentQuestion": "A patient reports numbness and tingling in the thumb, index, and middle fingers, worse at night and when driving. Tapping the anterior wrist reproduces the symptoms (positive Tinel's sign). Which nerve is compressed?",
+  "scaffolds": [
+    {
+      "q": "What is carpal tunnel syndrome?",
+      "options": [
+        "A wrist fracture",
+        "Compression of the median nerve at the wrist causing hand numbness",
+        "A type of arthritis",
+        "A skin condition"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "CARPAL TUNNEL SYNDROME is COMPRESSION of the MEDIAN NERVE as it passes through the carpal tunnel at the wrist. It causes numbness and tingling in the thumb, index, and middle fingers.",
+      "wrongExplains": {
+        "0": "It's nerve compression, not a bone fracture.",
+        "2": "While arthritis can cause carpal tunnel, the syndrome itself is nerve compression.",
+        "3": "It's a nerve condition, not a skin problem."
+      }
+    },
+    {
+      "q": "What is the carpal tunnel?",
+      "options": [
+        "A subway station",
+        "A narrow passageway at the wrist through which nerves and tendons pass",
+        "A bone in the hand",
+        "A muscle in the forearm"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The CARPAL TUNNEL is a narrow PASSAGEWAY at the base of the palm. It's formed by carpal bones and the transverse carpal ligament. The median nerve and flexor tendons pass through it.",
+      "wrongExplains": {
+        "0": "The carpal tunnel is anatomical, not a transit structure.",
+        "2": "The carpal bones form the tunnel walls. The tunnel itself is a space.",
+        "3": "It's a passageway in the wrist, not a muscle."
+      }
+    },
+    {
+      "q": "Which fingers does the median nerve supply sensation to?",
+      "options": [
+        "Little finger only",
+        "Thumb, index, middle, and half of the ring finger",
+        "No fingers",
+        "Only the back of the hand"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The median nerve provides sensation to the THUMB, INDEX, MIDDLE, and lateral half of the RING FINGER (palmar side). Carpal tunnel syndrome causes numbness in these exact fingers.",
+      "wrongExplains": {
+        "0": "The little finger is ulnar nerve territory. Median is thumb-middle.",
+        "2": "The median nerve definitely supplies fingers — that's the clinical point.",
+        "3": "It supplies the palmar surface, not primarily the back of the hand."
+      }
+    },
+    {
+      "q": "Why are carpal tunnel symptoms often worse at night?",
+      "options": [
+        "It's purely psychological",
+        "Wrist flexion during sleep increases pressure in the carpal tunnel",
+        "The hand gets too cold",
+        "Blood pressure drops"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "During sleep, people often FLEX THEIR WRISTS, which INCREASES PRESSURE in the carpal tunnel. This compresses the median nerve more, causing symptoms that wake people up.",
+      "wrongExplains": {
+        "0": "The mechanism is real and physical — increased tunnel pressure.",
+        "2": "Temperature isn't the issue. Wrist positioning increases nerve compression.",
+        "3": "Blood pressure changes don't explain the wrist position relationship."
+      }
+    },
+    {
+      "q": "What is Tinel's sign?",
+      "options": [
+        "A street sign",
+        "Tingling that occurs when tapping over a compressed nerve",
+        "A test for hearing",
+        "A blood test"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "TINEL'S SIGN is when TAPPING over a compressed nerve causes TINGLING in the nerve's distribution. A positive Tinel's at the wrist means median nerve irritation at the carpal tunnel.",
+      "wrongExplains": {
+        "0": "It's a clinical nerve test, not a road sign.",
+        "2": "Hearing tests use different methods. Tinel's tests peripheral nerves.",
+        "3": "It's a physical exam finding, not a lab test."
+      }
+    },
+    {
+      "q": "What activities can worsen carpal tunnel symptoms?",
+      "options": [
+        "Sleeping only",
+        "Repetitive wrist movements, gripping, driving, typing",
+        "Walking",
+        "Watching TV"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Activities involving REPETITIVE WRIST MOVEMENTS, sustained grip, or wrist flexion/extension (like driving, typing, using tools) increase carpal tunnel pressure and worsen symptoms.",
+      "wrongExplains": {
+        "0": "Many activities can worsen symptoms, not just sleeping.",
+        "2": "Walking doesn't typically affect wrist nerve compression.",
+        "3": "Passive activities don't increase carpal tunnel pressure."
+      }
+    },
+    {
+      "q": "Why isn't the little finger affected in carpal tunnel syndrome?",
+      "options": [
+        "The little finger has no nerves",
+        "The ulnar nerve supplies the little finger, and it doesn't pass through the carpal tunnel",
+        "The little finger is immune to nerve problems",
+        "All fingers are always affected equally"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The LITTLE FINGER is supplied by the ULNAR NERVE, which passes through Guyon's canal, NOT the carpal tunnel. In carpal tunnel syndrome, only median nerve territory (thumb-middle) is affected.",
+      "wrongExplains": {
+        "0": "The little finger definitely has nerve supply — from the ulnar nerve.",
+        "2": "The little finger CAN have nerve problems — just from ulnar, not median compression.",
+        "3": "Different fingers have different nerve supplies. They're affected differently."
+      }
+    },
+    {
+      "q": "What causes carpal tunnel syndrome?",
+      "options": [
+        "Only trauma",
+        "Swelling, overuse, pregnancy, diabetes, or anything that narrows the tunnel",
+        "Only genetics",
+        "Only cold weather"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "Anything that NARROWS the carpal tunnel or increases pressure can cause CTS: SWELLING from overuse, PREGNANCY (fluid retention), DIABETES, thyroid disease, arthritis, or anatomical variations.",
+      "wrongExplains": {
+        "0": "Many conditions cause CTS, not just trauma.",
+        "2": "While genetics play a role, multiple factors can cause or worsen CTS.",
+        "3": "Cold weather isn't a primary cause of carpal tunnel syndrome."
+      }
+    },
+    {
+      "q": "Numbness in thumb, index, and middle fingers with positive Tinel's sign at the wrist indicates compression of which nerve?",
+      "options": [
+        "Ulnar nerve",
+        "Radial nerve",
+        "Median nerve",
+        "Sciatic nerve"
+      ],
+      "answer": 2,
+      "difficulty": "intermediate",
+      "explain": "The MEDIAN NERVE! The finger distribution (thumb, index, middle) + wrist location + positive Tinel's sign = classic CARPAL TUNNEL SYNDROME. The median nerve is compressed at the wrist.",
+      "wrongExplains": {
+        "0": "The ulnar nerve supplies the little and ring fingers. Symptoms here are median territory.",
+        "1": "The radial nerve supplies the back of the hand and extensors, not these fingers.",
+        "3": "The sciatic nerve is in the leg. This is a wrist/hand problem."
+      }
+    }
+  ]
+}

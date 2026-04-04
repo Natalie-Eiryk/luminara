@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.57",
+  "parentQuestion": "Type I alveolar cells (pneumocytes):",
+  "narrative": {
+    "setting": "The Magic School Bus glides across the inner surface of an alveolus in Mr. Edgar's lungs. Ms. Frizzle gestures at the delicate, paper-thin cells covering 95% of the alveolar surface. 'Class, these are Type I pneumocytes - the thinnest cells in your body. They're so thin you can barely see them, less than 0.2 micrometers thick. This thinness is NOT weakness - it's brilliant design. Gas exchange DEMANDS thinness. Every micrometer matters when oxygen and CO2 are racing across this membrane with every heartbeat.'",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's Type I cells have been damaged by viral pneumonia. The alveolar-capillary membrane has thickened, and oxygen can't diffuse across fast enough. He's hypoxemic despite breathing pure oxygen."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.57.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle writes 'pneumocyte' on the holographic board. 'From Greek: pneumo = lung, air. Cyte = cell. Pneumocyte = lung cell. There are two types of alveolar pneumocytes: Type I and Type II. Different shapes, different jobs.'",
+      "q": "What does 'pneumocyte' mean?",
+      "options": [
+        "Heart cell",
+        "Lung cell",
+        "Blood cell",
+        "Brain cell"
+      ],
+      "answer": 1,
+      "explain": "'Pneumocyte' = LUNG CELL, specifically cells lining the alveoli. 'Pneumo-' = lung/air (think pneumonia, pneumothorax). '-cyte' = cell. There are two types: Type I (thin, for gas exchange) and Type II (cuboidal, produce surfactant).",
+      "wrongExplains": {
+        "0": "Heart cells are cardiomyocytes. Pneumocytes are in the lungs.",
+        "2": "Blood cells are erythrocytes (RBC), leukocytes (WBC), thrombocytes (platelets). Pneumocytes line alveoli.",
+        "3": "Brain cells are neurons and glia. Pneumocytes are respiratory epithelial cells."
+      }
+    },
+    {
+      "id": "900.5.57.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "The bus lands on a Type I cell and measures it. 'Thickness: 0.15 micrometers. That's 1/500th of a millimeter. Compare to a typical cell, which is 10-30 micrometers. Type I cells are EXTREMELY thin - flattened, squamous epithelium.'",
+      "q": "What does 'squamous' mean in describing Type I cells?",
+      "options": [
+        "Cube-shaped",
+        "Flat and thin (like scales)",
+        "Columnar and tall",
+        "Spherical"
+      ],
+      "answer": 1,
+      "explain": "'Squamous' = FLAT, THIN, scale-like (from Latin squama = scale, like fish scales). Type I pneumocytes are squamous epithelium - extremely flattened to minimize diffusion distance. The thinner the cell, the faster gases cross. Form follows function.",
+      "wrongExplains": {
+        "0": "Cube-shaped is 'cuboidal' epithelium (like Type II pneumocytes). Squamous is flat.",
+        "2": "Columnar epithelium is tall and column-shaped (intestinal lining). Squamous is the opposite - flat.",
+        "3": "Spherical cells are round. Squamous cells are flattened like pancakes."
+      }
+    },
+    {
+      "id": "900.5.57.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Terms",
+      "narrative": "Ms. Frizzle projects a diagram: Type I cells covering 95% of alveolar surface area, with occasional Type II cells dotted between. 'Type I cells are the workhorses of gas exchange. Type II cells are the maintenance crew - they make surfactant and can divide to replace damaged Type I cells.'",
+      "q": "What percentage of alveolar surface area is covered by Type I cells?",
+      "options": [
+        "About 5%",
+        "About 50%",
+        "About 95%",
+        "100%"
+      ],
+      "answer": 2,
+      "explain": "Type I cells cover ~95% of alveolar surface area. They're thin and spread out, covering vast area. Type II cells are only ~5% of surface area (they're cuboidal and smaller), but they're MORE NUMEROUS (40% of all alveolar cells vs. 8% for Type I). Thin cells cover more ground.",
+      "wrongExplains": {
+        "0": "5% is Type II cells. Type I cells dominate the surface - they're thin and expansive.",
+        "1": "50-50 would be equal, but Type I cells are MUCH larger and cover far more area despite being fewer in number.",
+        "3": "Not 100% - Type II cells occupy ~5% of surface. But Type I cells dominate, covering 95%."
+      }
+    },
+    {
+      "id": "900.5.57.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "The bus watches an oxygen molecule approach the alveolar surface. It encounters a Type I cell - 0.15 micrometers thick. Beneath it: the basement membrane (0.05 micrometers), then a capillary endothelial cell (0.1 micrometer). 'Total barrier: 0.3 micrometers. That's the respiratory membrane.'",
+      "q": "What is the primary function of Type I alveolar cells?",
+      "options": [
+        "Produce surfactant",
+        "Form a thin barrier for rapid gas exchange",
+        "Fight infections",
+        "Produce mucus"
+      ],
+      "answer": 1,
+      "explain": "Type I cells' PRIMARY function: provide a THIN BARRIER for GAS EXCHANGE. They're the interface between air and blood. The thinner the barrier, the faster O2 and CO2 diffuse. Type I cells are optimized for SPEED - minimal thickness, maximal surface area.",
+      "wrongExplains": {
+        "0": "That's Type II cells - they produce surfactant. Type I cells are about gas exchange, not secretion.",
+        "2": "Alveolar macrophages fight infections (they roam the alveolar surface). Type I cells are structural gas exchange cells.",
+        "3": "Mucus is produced by goblet cells in the airways, not alveolar cells. Type I cells are thin membranes, not secretory."
+      }
+    },
+    {
+      "id": "900.5.57.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "Ms. Frizzle overlays Fick's law on the display: 'Diffusion rate is inversely proportional to membrane thickness. Double the thickness, halve the diffusion rate. Type I cells being thin isn't cosmetic - it's ESSENTIAL for life.'",
+      "q": "Why must Type I cells be extremely thin?",
+      "options": [
+        "To produce more surfactant",
+        "To minimize diffusion distance and maximize gas exchange speed",
+        "To increase lung volume",
+        "To strengthen the alveolar wall"
+      ],
+      "answer": 1,
+      "explain": "Thinness MINIMIZES DIFFUSION DISTANCE. Fick's law: diffusion is inversely proportional to thickness. At 0.15 micrometers, O2 can cross in milliseconds. If Type I cells were 10x thicker (like typical epithelium), gas exchange would be 10x SLOWER - you'd suffocate despite perfect ventilation.",
+      "wrongExplains": {
+        "0": "Type II cells produce surfactant. Type I cells are thin FOR gas exchange, not surfactant production.",
+        "2": "Cell thickness doesn't change lung volume. Thinness is about diffusion efficiency, not capacity.",
+        "3": "Thin cells are more FRAGILE, not stronger. But the tradeoff is worth it - speed trumps strength for gas exchange."
+      }
+    },
+    {
+      "id": "900.5.57.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Process",
+      "narrative": "The bus watches the alveolar surface during a breath. Type I cells stretch and recoil with each inflation. 'They're flexible but fragile,' Ms. Frizzle notes. 'Damage to Type I cells is serious - they CAN'T divide. Type II cells have to differentiate into Type I cells to repair the damage.'",
+      "q": "Can Type I alveolar cells divide and regenerate?",
+      "options": [
+        "Yes, they divide rapidly to repair damage",
+        "No, they cannot divide; Type II cells must differentiate to replace them",
+        "Yes, but only during childhood",
+        "They regenerate from blood cells"
+      ],
+      "answer": 1,
+      "explain": "Type I cells CANNOT divide - they're terminally differentiated, too specialized. When damaged, TYPE II CELLS differentiate into Type I cells to replace them. This is why severe lung injury is so dangerous - if Type II cells are also damaged, there's no replacement mechanism.",
+      "wrongExplains": {
+        "0": "Type I cells are post-mitotic (can't divide). They've sacrificed reproduction for extreme thinness and function.",
+        "2": "Type I cells can't divide at ANY age. Their extreme specialization (thinness) makes them non-dividing.",
+        "3": "Blood cells don't become lung epithelial cells. Type II pneumocytes are the progenitor cells for Type I."
+      }
+    },
+    {
+      "id": "900.5.57.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle shows Mr. Edgar's damaged alveoli on electron microscopy. 'Viral pneumonia has destroyed many Type I cells. The membrane is thickened by inflammation. Even on 100% oxygen, his saturation is only 88%. Thick membranes slow diffusion.'",
+      "q": "What happens if Type I cells are damaged?",
+      "options": [
+        "Oxygen production increases",
+        "Gas exchange is impaired due to thickened or absent barrier",
+        "Surfactant production increases",
+        "The heart compensates completely"
+      ],
+      "answer": 1,
+      "explain": "Type I cell damage IMPAIRS GAS EXCHANGE. The thin barrier is lost, replaced by inflammation, fluid, or fibrosis. Diffusion distance increases, O2/CO2 exchange slows, hypoxemia results. Severe damage → acute respiratory distress syndrome (ARDS).",
+      "wrongExplains": {
+        "0": "Lungs don't produce oxygen - they extract it from air. Damaged Type I cells reduce extraction efficiency.",
+        "2": "Surfactant is made by Type II cells, not Type I. Type I damage doesn't increase surfactant production.",
+        "3": "The heart can increase cardiac output to compensate, but it can't fix the diffusion barrier. Oxygen still can't cross."
+      }
+    },
+    {
+      "id": "900.5.57.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle contrasts Type I and Type II cells on a split screen: 'Type I: thin, 95% of surface, gas exchange, can't divide. Type II: cuboidal, 5% of surface, make surfactant, can divide and become Type I. Two cells, two completely different jobs.'",
+      "q": "How do Type I and Type II alveolar cells differ functionally?",
+      "options": [
+        "Both produce surfactant",
+        "Type I: gas exchange (thin); Type II: surfactant production and repair (cuboidal)",
+        "Both perform gas exchange equally",
+        "Type I fights infections; Type II exchanges gases"
+      ],
+      "answer": 1,
+      "explain": "TYPE I: thin (0.15 μm), 95% of surface area, GAS EXCHANGE, can't divide. TYPE II: cuboidal (thicker), 5% of surface, PRODUCE SURFACTANT, can divide and differentiate into Type I. Complementary roles: one is the worker, one is the maintainer.",
+      "wrongExplains": {
+        "0": "Only Type II cells produce surfactant. Type I cells are too thin and specialized for secretion.",
+        "2": "Only Type I cells perform significant gas exchange - they cover 95% of the surface. Type II are too small.",
+        "3": "Alveolar macrophages fight infections. Type I do gas exchange, Type II maintain (surfactant + repair)."
+      }
+    },
+    {
+      "id": "900.5.57.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "Ms. Frizzle shows a fibrosis patient's biopsy. 'Type I cells have been replaced by thick collagen. The alveolar-capillary membrane is 10 times thicker than normal. Oxygen can barely diffuse across. This is the endpoint of severe lung disease.'",
+      "q": "What happens to gas exchange when the alveolar-capillary membrane thickens?",
+      "options": [
+        "Gas exchange improves",
+        "Gas exchange is impaired (diffusion slows)",
+        "Only CO2 exchange is affected",
+        "Gas exchange is unaffected"
+      ],
+      "answer": 1,
+      "explain": "Thickened membrane SLOWS diffusion (Fick's law: diffusion ∝ 1/thickness). Fibrosis, pulmonary edema, inflammation - all thicken the barrier. O2 (which diffuses slower than CO2) is affected first → hypoxemia. It's like trying to breathe through a thick blanket vs. tissue paper.",
+      "wrongExplains": {
+        "0": "Thicker membrane IMPAIRS gas exchange, never improves it. Thinness is essential for speed.",
+        "2": "Both O2 and CO2 are affected, but O2 MORE (CO2 diffuses 20x faster, so it's more forgiving initially).",
+        "3": "Membrane thickness is CRITICAL. Thickening is a major cause of hypoxemia in lung disease."
+      }
+    },
+    {
+      "id": "900.5.57.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Connections",
+      "narrative": "The bus exits the alveolus. Mr. Edgar's inflammation is resolving, and Type II cells are differentiating to replace damaged Type I cells. 'Type I pneumocytes,' Ms. Frizzle says, 'are the thinnest barrier between life and death. Now tell me: what are they?'",
+      "q": "Type I alveolar cells (pneumocytes):",
+      "options": [
+        "Are thick cells that produce surfactant",
+        "Are extremely thin cells covering 95% of alveolar surface area for rapid gas exchange",
+        "Fight bacterial infections in the lungs",
+        "Control breathing rate"
+      ],
+      "answer": 1,
+      "explain": "TYPE I ALVEOLAR CELLS (pneumocytes): extremely THIN squamous epithelial cells (~0.15 μm thick), covering ~95% of alveolar SURFACE AREA. Their PRIMARY function: provide minimal-thickness barrier for rapid GAS EXCHANGE (O2 and CO2 diffusion). They CANNOT divide; Type II cells differentiate to replace them when damaged. Damage → impaired gas exchange and hypoxemia.",
+      "wrongExplains": {
+        "0": "That's Type II cells - cuboidal, produce surfactant. Type I cells are thin and do gas exchange.",
+        "2": "Alveolar macrophages (immune cells) fight infections. Type I cells are structural epithelium for gas exchange.",
+        "3": "Breathing rate is controlled by the brainstem respiratory centers. Type I cells are passive gas exchange membranes."
+      }
+    }
+  ]
+}

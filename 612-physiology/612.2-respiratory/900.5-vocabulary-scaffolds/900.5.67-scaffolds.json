@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.67",
+  "parentQuestion": "Pneumonia is:",
+  "narrative": {
+    "setting": "The Magic School Bus floats in Mr. Edgar's alveolus - but instead of air-filled space, they're swimming in pus. White blood cells, bacteria, and inflammatory exudate fill what should be pristine gas exchange surfaces. Ms. Frizzle points at the opacity on the portable X-ray. 'Consolidation,' she says. 'This whole lobe is infected - solid instead of aerated. Classic lobar pneumonia.'",
+    "character": "Mr. Edgar",
+    "tension": "Pneumonia kills more children worldwide than any other infectious disease. Elderly patients decompensate rapidly. Aspiration pneumonia follows strokes. Ventilator-associated pneumonia haunts ICUs. Understanding pneumonia isn't just microbiology - it's understanding how the lung's defenses fail and infection takes hold in the most vital gas exchange organ."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.67.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Pneumo- means lung, -ia means condition,' Ms. Frizzle begins. 'PNEUMONIA = lung inflammation from INFECTION. Bacteria, viruses, fungi, or rarely parasites invade lung parenchyma - the alveoli and interstitium. Not just airways like bronchitis.'",
+      "q": "The term 'pneumonia' refers to:",
+      "options": [
+        "Heart disease",
+        "Lung infection/inflammation",
+        "Bone fracture",
+        "Skin rash"
+      ],
+      "answer": 1,
+      "explain": "PNEUMONIA = LUNG INFECTION causing inflammation of alveoli and interstitium. Caused by bacteria (most common), viruses, fungi, or parasites. Distinct from bronchitis (airway infection).",
+      "wrongExplains": {
+        "0": "Cardio- refers to heart. Pneumo- refers to lungs.",
+        "2": "Bone fractures are orthopedic injuries. Pneumonia is lung infection.",
+        "3": "Dermatitis/rash affects skin. Pneumonia affects lung parenchyma."
+      }
+    },
+    {
+      "id": "900.5.67.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Alveoli fill with exudate,' Ms. Frizzle shows the fluid. 'Normally air-filled. In pneumonia: pus (WBCs), bacteria, protein, fluid. This consolidation - solid instead of aerated - is why the X-ray is white instead of black. Gas exchange fails.'",
+      "q": "In pneumonia, alveoli are filled with:",
+      "options": [
+        "Normal air",
+        "Inflammatory exudate (pus, fluid, cells)",
+        "Surfactant only",
+        "Nothing (empty)"
+      ],
+      "answer": 1,
+      "explain": "Pneumonia fills alveoli with INFLAMMATORY EXUDATE - pus (neutrophils), bacteria, protein, fluid. This consolidation impairs gas exchange. X-ray shows white instead of black.",
+      "wrongExplains": {
+        "0": "Normal alveoli are air-filled. Pneumonia fills them with infection/inflammation.",
+        "2": "Surfactant is always present (prevents collapse). Pneumonia adds pus/fluid.",
+        "3": "Alveoli aren't empty - they're filled with exudate in pneumonia."
+      }
+    },
+    {
+      "id": "900.5.67.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Concept",
+      "narrative": "'Consolidation,' Ms. Frizzle explains the term. 'Lung tissue becomes SOLID (consolidated) instead of aerated. Palpable on exam - increased tactile fremitus. Dull to percussion. Bronchial breath sounds. X-ray shows white-out - no air means no black.'",
+      "q": "Consolidation in pneumonia means:",
+      "options": [
+        "Lung tissue is extra aerated",
+        "Lung tissue is filled with exudate and becomes solid",
+        "Lung has normal air",
+        "Lung is hyperinflated"
+      ],
+      "answer": 1,
+      "explain": "CONSOLIDATION = lung becomes SOLID (consolidated) from exudate filling alveoli. Opposite of aerated. Creates white on X-ray, dullness to percussion, bronchial breath sounds.",
+      "wrongExplains": {
+        "0": "Consolidation is the OPPOSITE of aerated - solid, not extra air.",
+        "2": "Normal air is black on X-ray. Consolidation is white (solid).",
+        "3": "Hyperinflation (emphysema, asthma) is too much air. Consolidation is solid."
+      }
+    },
+    {
+      "id": "900.5.67.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Community-acquired pneumonia (CAP),' Ms. Frizzle lists the bugs. 'Streptococcus pneumoniae (most common), Haemophilus influenzae, Mycoplasma (atypical), viruses (influenza, COVID). Aspiration pneumonia - anaerobes from mouth.'",
+      "q": "The most common cause of community-acquired pneumonia is:",
+      "options": [
+        "Tuberculosis",
+        "Streptococcus pneumoniae",
+        "Candida",
+        "Parasites"
+      ],
+      "answer": 1,
+      "explain": "STREPTOCOCCUS PNEUMONIAE (pneumococcus) is the #1 cause of CAP. Gram-positive diplococci. Vaccine available (Prevnar, Pneumovax). Other causes: H. flu, Mycoplasma, viruses.",
+      "wrongExplains": {
+        "0": "TB causes chronic pneumonia but S. pneumoniae is more common for acute CAP.",
+        "2": "Candida causes pneumonia in severely immunocompromised. Bacteria are more common.",
+        "3": "Parasites are rare causes. Bacteria (especially S. pneumoniae) dominate."
+      }
+    },
+    {
+      "id": "900.5.67.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Lobar versus bronchopneumonia,' Ms. Frizzle compares patterns. 'LOBAR - entire lobe consolidated, often S. pneumoniae, sharp borders on X-ray. BRONCHOPNEUMONIA - patchy infiltrates around bronchi, multiple organisms, elderly/debilitated patients.'",
+      "q": "Lobar pneumonia typically:",
+      "options": [
+        "Affects multiple small patches",
+        "Consolidates an entire lobe",
+        "Only affects bronchi",
+        "Never shows on X-ray"
+      ],
+      "answer": 1,
+      "explain": "LOBAR PNEUMONIA = consolidation of ENTIRE LOBE. Usually S. pneumoniae. Sharp borders on X-ray. Contrast with bronchopneumonia (patchy infiltrates around bronchi).",
+      "wrongExplains": {
+        "0": "Multiple patches is BRONCHOPNEUMONIA. Lobar is entire lobe consolidated.",
+        "2": "Bronchi-only is bronchitis. Pneumonia affects alveoli/parenchyma.",
+        "3": "Lobar pneumonia creates dramatic white-out of entire lobe on X-ray."
+      }
+    },
+    {
+      "id": "900.5.67.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'Clinical presentation,' Ms. Frizzle lists. 'Fever, productive cough (purulent sputum), dyspnea, pleuritic chest pain. Crackles on auscultation. Hypoxemia. Elevated WBC. Confusion in elderly (atypical presentation).'",
+      "q": "Classic symptoms of bacterial pneumonia include:",
+      "options": [
+        "No symptoms",
+        "Fever, productive cough, dyspnea",
+        "Only rash",
+        "Only joint pain"
+      ],
+      "answer": 1,
+      "explain": "Pneumonia: FEVER, PRODUCTIVE COUGH (purulent sputum), DYSPNEA, pleuritic chest pain. Crackles, hypoxemia. Elderly may present atypically (confusion).",
+      "wrongExplains": {
+        "0": "Pneumonia has prominent symptoms - fever, cough, dyspnea. Not silent.",
+        "2": "Rash is dermatologic. Pneumonia is respiratory (cough, dyspnea, fever).",
+        "3": "Joint pain is arthritis. Pneumonia causes fever, cough, dyspnea."
+      }
+    },
+    {
+      "id": "900.5.67.s07",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Chest X-ray is diagnostic,' Ms. Frizzle emphasizes. 'Infiltrate (white) in lung field = pneumonia. Lobar pattern = entire lobe white. Patchy = bronchopneumonia. Interstitial = atypical (viral/Mycoplasma). Air bronchograms confirm alveolar filling.'",
+      "q": "Chest X-ray in pneumonia typically shows:",
+      "options": [
+        "Normal lung fields",
+        "Infiltrate (white opacity) in affected area",
+        "Hyperinflation",
+        "Pneumothorax"
+      ],
+      "answer": 1,
+      "explain": "Pneumonia X-ray: INFILTRATE (white opacity) where alveoli are filled with exudate. Lobar (entire lobe), patchy (bronchopneumonia), or interstitial pattern. Air bronchograms common.",
+      "wrongExplains": {
+        "0": "Pneumonia creates infiltrates. X-ray is NOT normal.",
+        "2": "Hyperinflation (black) is emphysema. Pneumonia is consolidation (white).",
+        "3": "Pneumothorax is air in pleural space (black). Pneumonia is alveolar filling (white)."
+      }
+    },
+    {
+      "id": "900.5.67.s08",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Treatment,' Ms. Frizzle outlines. 'Antibiotics - empiric initially (cover S. pneumoniae), adjusted by culture. CAP outpatient: amoxicillin or macrolide. Inpatient: beta-lactam + macrolide or fluoroquinolone. Supportive: oxygen, fluids.'",
+      "q": "Treatment of bacterial pneumonia includes:",
+      "options": [
+        "Antibiotics",
+        "Only rest",
+        "Surgery immediately",
+        "Antiviral only"
+      ],
+      "answer": 0,
+      "explain": "Bacterial pneumonia: ANTIBIOTICS (amoxicillin, macrolide, cephalosporin, or fluoroquinolone depending on severity/setting). Plus supportive care (oxygen, fluids). Viral pneumonia: supportive ± antiviral.",
+      "wrongExplains": {
+        "1": "Rest helps but bacterial pneumonia needs ANTIBIOTICS. Untreated can be fatal.",
+        "2": "Surgery is rare (empyema drainage). Medical treatment is antibiotics.",
+        "3": "Antiviral is for viral pneumonia (influenza). Bacterial needs antibiotics."
+      }
+    },
+    {
+      "id": "900.5.67.s09",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "'Complications,' Ms. Frizzle warns. 'Pleural effusion (parapneumonic). Empyema (pus in pleural space). Lung abscess. Sepsis. Respiratory failure. ARDS. Pneumococcal vaccine prevents many cases.'",
+      "q": "A serious complication of pneumonia is:",
+      "options": [
+        "Empyema (pus in pleural space)",
+        "Improved lung function",
+        "Weight gain",
+        "Hair loss"
+      ],
+      "answer": 0,
+      "explain": "Pneumonia complications: EMPYEMA (pus in pleural space), parapneumonic effusion, abscess, sepsis, respiratory failure, ARDS. Can be life-threatening.",
+      "wrongExplains": {
+        "1": "Pneumonia IMPAIRS lung function (consolidation). Doesn't improve it.",
+        "2": "Pneumonia causes weight loss (infection, poor intake). Not gain.",
+        "3": "Hair loss isn't a pneumonia complication. Empyema, sepsis, abscess are."
+      }
+    },
+    {
+      "id": "900.5.67.s10",
+      "arc": 3,
+      "arcTitle": "Making Distinctions",
+      "narrative": "Ms. Frizzle looks at the pus-filled alveolus, the neutrophils fighting bacteria, the consolidation on X-ray. 'Infection of the lung parenchyma - that's pneumonia. So, class: what is pneumonia?'",
+      "q": "Pneumonia is:",
+      "options": [
+        "Air in pleural space",
+        "Infection/inflammation of lung tissue",
+        "Lung collapse",
+        "Cancer"
+      ],
+      "answer": 1,
+      "explain": "PNEUMONIA = INFECTION/INFLAMMATION of lung parenchyma (alveoli). Caused by bacteria (most common), viruses, fungi. Alveoli fill with exudate (consolidation). Treated with antibiotics ± supportive care.",
+      "wrongExplains": {
+        "0": "Air in pleural space is pneumothorax (pneumo- = air, but different location).",
+        "2": "Lung collapse is atelectasis (or pneumothorax). Pneumonia is infection, not collapse.",
+        "3": "Cancer is malignancy. Pneumonia is infectious/inflammatory - different process."
+      }
+    }
+  ]
+}

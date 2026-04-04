@@ -1,0 +1,62 @@
+[
+  {
+    "term": "Pituitary gland",
+    "definition": "Master endocrine gland hanging below the brain.",
+    "system": "Endocrine"
+  },
+  {
+    "term": "Pineal gland",
+    "definition": "Small endocrine structure within the brain.",
+    "system": "Endocrine"
+  },
+  {
+    "term": "Thyroid gland",
+    "definition": "Endocrine gland in the neck with follicles.",
+    "system": "Endocrine"
+  },
+  {
+    "term": "Adrenal glands",
+    "definition": "Paired endocrine glands superior to the kidneys.",
+    "system": "Endocrine"
+  },
+  {
+    "term": "Pancreas",
+    "definition": "Mixed digestive/endocrine organ.",
+    "system": "Endocrine"
+  },
+  {
+    "term": "Ovaries",
+    "definition": "Female gonads with endocrine function.",
+    "system": "Endocrine"
+  },
+  {
+    "term": "Testes",
+    "definition": "Male gonads with endocrine function.",
+    "system": "Endocrine"
+  },
+  {
+    "term": "Anterior pituitary",
+    "definition": "Front lobe of the pituitary.",
+    "system": "Endocrine"
+  },
+  {
+    "term": "Posterior pituitary",
+    "definition": "Rear lobe of the pituitary.",
+    "system": "Endocrine"
+  },
+  {
+    "term": "Thyroid follicles",
+    "definition": "Round thyroid structures storing colloid.",
+    "system": "Endocrine"
+  },
+  {
+    "term": "Follicular cells",
+    "definition": "Cells forming the wall of thyroid follicles.",
+    "system": "Endocrine"
+  },
+  {
+    "term": "Adrenal layers",
+    "definition": "Different tissue zones of the adrenal gland.",
+    "system": "Endocrine"
+  }
+]

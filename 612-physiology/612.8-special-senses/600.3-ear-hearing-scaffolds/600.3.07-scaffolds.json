@@ -1,0 +1,69 @@
+{
+  "parentId": "600.3.07",
+  "parentQuestion": "Motion sickness seems to result from mismatch between visual and vestibular inputs.",
+  "scaffolds": [
+    {
+      "q": "The vestibular system (inner ear) detects head movement and position.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Yes! Semicircular canals detect rotation; maculae detect linear motion and gravity."
+    },
+    {
+      "q": "Your eyes also provide information about motion through visual cues.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Correct! Moving visual scenes tell your brain you're moving through space."
+    },
+    {
+      "q": "Normally, visual and vestibular systems agree about whether you're moving.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Yes! When walking, eyes see movement, vestibular system detects motion — they match."
+    },
+    {
+      "q": "Reading in a car: Vestibular says 'moving,' but eyes focused on book say 'stationary.'",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Correct! This mismatch confuses the brain — sensory conflict."
+    },
+    {
+      "q": "Motion sickness includes nausea, sweating, and malaise.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Yes! The brainstem responds to sensory conflict with autonomic symptoms."
+    },
+    {
+      "q": "Looking at the horizon in a car helps because it synchronizes visual and vestibular inputs.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Correct! Seeing external motion matches what the vestibular system detects."
+    },
+    {
+      "q": "The evolutionary theory: Sensory mismatch historically suggested poisoning, triggering vomiting.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Yes! Toxins can cause sensory disturbances. Vomiting would expel the poison."
+    },
+    {
+      "q": "VR sickness occurs because eyes see motion but vestibular system detects stillness.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Correct! 'Cybersickness' is the opposite mismatch of traditional motion sickness."
+    },
+    {
+      "q": "Motion sickness results from conflict between visual and vestibular sensory inputs.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "advanced",
+      "explain": "Yes! When eyes and inner ear disagree about motion, the brain triggers nausea."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "clusterId": "510.11",
+  "clusterName": "Addition & Subtraction",
+  "status": "pending",
+  "targetQuestions": 350,
+  "currentBatch": 0,
+  "totalBatches": 14,
+  "questionsGenerated": 0,
+  "scaffoldsGenerated": 0,
+  "lastUpdated": null,
+  "batches": [],
+  "isotopes": [
+    "510.11.addition.facts",
+    "510.11.addition.regrouping",
+    "510.11.addition.multi-digit",
+    "510.11.subtraction.facts",
+    "510.11.subtraction.borrowing",
+    "510.11.inverse",
+    "510.11.word-problems"
+  ],
+  "prerequisites": ["510.10.*"],
+  "difficultyDistribution": {
+    "easy": 0,
+    "medium": 0,
+    "challenging": 0,
+    "hard": 0
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.29",
+  "parentQuestion": "Hypoxia refers to:",
+  "narrative": {
+    "setting": "The Magic School Bus has entered Mr. Edgar's bloodstream and is traveling toward his brain. The oxygen sensors on the bus are alarming - oxygen levels in his tissues are dangerously low. His cells are starving, and if the class can't understand what's happening and why, permanent damage could occur.",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's brain cells are dying from oxygen starvation. Every second counts."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.29.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "Ms. Frizzle displays the word's etymology on screen. 'Class, hypoxia is built from two Greek roots. Let's start with the beginning: hypo-. This prefix appears in hundreds of medical terms.'",
+      "q": "The prefix 'hypo-' means:",
+      "options": [
+        "Above or excessive",
+        "Below or deficient",
+        "Without or absent",
+        "Difficult or painful"
+      ],
+      "answer": 1,
+      "explain": "'HYPO-' = BELOW or DEFICIENT. Under, beneath, less than normal. Hypothermia = below-normal temperature. Hypotension = low blood pressure. The opposite of 'hyper-' (above normal).",
+      "wrongExplains": {
+        "0": "That's 'hyper-', the opposite! Hypo- means BELOW, hyper- means ABOVE. Opposite prefixes.",
+        "2": "That's 'a-' or 'an-'. Hypo- means LOW or REDUCED, not completely absent.",
+        "3": "That's 'dys-'. Hypo- is about QUANTITY (too little), not quality (difficult)."
+      }
+    },
+    {
+      "id": "900.5.29.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "Now for the second part,' Ms. Frizzle continues. 'The suffix -oxia. Think of oxygen - that's where this root comes from. The chemical element that every cell needs to survive.'",
+      "q": "The root 'ox-' or '-oxia' refers to:",
+      "options": [
+        "Carbon dioxide",
+        "Oxygen",
+        "Nitrogen",
+        "Water"
+      ],
+      "answer": 1,
+      "explain": "'-OXIA' comes from OXYGEN. The Greeks called it 'oxys' (sharp, acid-forming). Any medical term ending in '-oxia' is describing oxygen levels. Hypoxia, anoxia, hyperoxia - all about O2.",
+      "wrongExplains": {
+        "0": "CO2 is 'capn-' as in hypercapnia. Different gas, different root. Oxia is specifically oxygen.",
+        "2": "Nitrogen is inert in your body - you don't have medical terms about its levels. Oxia = oxygen only.",
+        "3": "Water is 'hydro-'. While oxygen is in H2O, '-oxia' refers to O2 gas, not water molecules."
+      }
+    },
+    {
+      "id": "900.5.29.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "The bus's sensors show tissue oxygen levels dropping further. 'Put the parts together,' Ms. Frizzle urges. 'Hypo + oxia. What's the literal meaning?'",
+      "q": "Breaking down the word parts, 'hypoxia' literally means:",
+      "options": [
+        "Excessive oxygen",
+        "Below-normal oxygen",
+        "Absent oxygen",
+        "Difficult oxygen delivery"
+      ],
+      "answer": 1,
+      "explain": "HYPO (below) + OXIA (oxygen) = BELOW-NORMAL OXYGEN. Not completely absent, but deficient. Tissue oxygen levels are lower than what cells need to function properly. Low, but not zero.",
+      "wrongExplains": {
+        "0": "That's hyperoxia (hyper- = excessive). Opposite prefix, opposite meaning.",
+        "2": "That's anoxia (an- = without). Hypoxia is LOW oxygen, anoxia is NO oxygen. Hypoxia is less severe.",
+        "3": "Difficulty is 'dys-'. Hypoxia describes AMOUNT (too little oxygen), not whether delivery is hard."
+      }
+    },
+    {
+      "id": "900.5.29.s04",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "The bus passes a struggling neuron. Its mitochondria are slowing down, unable to produce enough ATP. 'This is what hypoxia does,' Ms. Frizzle explains gravely. 'Cells can't make energy without oxygen.'",
+      "q": "Hypoxia primarily affects which cellular process?",
+      "options": [
+        "DNA replication",
+        "Protein synthesis",
+        "ATP production (cellular respiration)",
+        "Cell membrane formation"
+      ],
+      "answer": 2,
+      "explain": "Cells use oxygen in CELLULAR RESPIRATION to make ATP (energy). No oxygen = no ATP. Without ATP, everything else fails - pumps stop, signals don't send, cells die. Oxygen is the final electron acceptor in the energy production chain.",
+      "wrongExplains": {
+        "0": "DNA replication needs energy (ATP) but doesn't directly use oxygen. Hypoxia kills cells by cutting off their energy supply.",
+        "1": "Protein synthesis needs ATP energy. It's affected by hypoxia indirectly - no oxygen means no ATP means no protein synthesis.",
+        "3": "Membrane formation doesn't require oxygen directly. The primary problem is ATP - the energy currency the cell needs for everything."
+      }
+    },
+    {
+      "id": "900.5.29.s05",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "'Hypoxia and anoxia,' Ms. Frizzle says, pulling up comparison charts. 'Students often confuse them. Let's be precise - in medicine, precision saves lives.'",
+      "q": "How does hypoxia differ from anoxia?",
+      "options": [
+        "They're the same condition",
+        "Hypoxia is low oxygen; anoxia is complete absence",
+        "Anoxia is low oxygen; hypoxia is complete absence",
+        "Hypoxia affects blood; anoxia affects tissues"
+      ],
+      "answer": 1,
+      "explain": "HYPOXIA (hypo- = below) = LOW oxygen. ANOXIA (a- = without) = NO oxygen at all. Hypoxia is less severe - cells struggle. Anoxia is more severe - cells die rapidly. Think hypo- vs. a-.",
+      "wrongExplains": {
+        "0": "Different severity! Hypoxia (low) can potentially be reversed. Anoxia (absent) causes rapid irreversible damage. The prefixes matter.",
+        "2": "Backwards! Remember: hypo- = below (some oxygen left). An- = without (zero oxygen).",
+        "3": "Both can affect blood or tissues. The difference is AMOUNT: hypoxia = reduced, anoxia = absent."
+      }
+    },
+    {
+      "id": "900.5.29.s06",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "The bus reaches Mr. Edgar's brain, where neurons are most sensitive to oxygen deprivation. 'Brain cells die after just 4-6 minutes of anoxia,' Ms. Frizzle says. 'But with hypoxia, we have more time - if we act fast.'",
+      "q": "Why is the brain particularly vulnerable to hypoxia?",
+      "options": [
+        "It has no blood supply",
+        "It consumes 20% of body's oxygen despite being 2% of body weight",
+        "It stores no oxygen reserves",
+        "It produces oxygen"
+      ],
+      "answer": 1,
+      "explain": "The brain is an OXYGEN HOG - it uses 20% of your oxygen but weighs only 2% of your body. Neurons have huge energy demands for signaling. No oxygen = no ATP = neurons stop firing and die. First organ to fail in hypoxia.",
+      "wrongExplains": {
+        "0": "The brain has rich blood supply! That's how it gets oxygen. The problem is how FAST it consumes oxygen, not lack of supply.",
+        "2": "True, but this applies to all tissues - none store oxygen. The key is the brain's HIGH consumption rate.",
+        "3": "No tissue produces oxygen! We breathe it in or we die. The brain's vulnerability is its huge oxygen DEMAND."
+      }
+    },
+    {
+      "id": "900.5.29.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "'There are different types of hypoxia,' Ms. Frizzle explains, pulling up a classification chart. 'Same problem - low tissue oxygen - but different causes. Hypoxic hypoxia is the first type.'",
+      "q": "'Hypoxic hypoxia' occurs when:",
+      "options": [
+        "Blood can't carry enough oxygen (anemia)",
+        "Not enough oxygen reaches the blood from the lungs",
+        "Blood flow is blocked",
+        "Cells can't use oxygen (poisoning)"
+      ],
+      "answer": 1,
+      "explain": "HYPOXIC hypoxia = problem at the LUNGS. Not enough O2 getting into blood from air. Causes: high altitude, lung disease, choking. The blood arrives at lungs but can't pick up enough oxygen to begin with.",
+      "wrongExplains": {
+        "0": "That's ANEMIC hypoxia - blood has reduced oxygen-carrying capacity. Different type, different cause.",
+        "2": "That's ISCHEMIC (or stagnant) hypoxia - circulation problem. Blood flow is blocked so oxygen can't reach tissues.",
+        "3": "That's HISTOTOXIC hypoxia - cells are poisoned (like cyanide) and can't use oxygen even when it's there."
+      }
+    },
+    {
+      "id": "900.5.29.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "Mr. Edgar's lab results appear on screen. His hemoglobin is very low. 'Anemia,' Ms. Frizzle says. 'His blood can't carry enough oxygen even though his lungs are working fine. This is anemic hypoxia.'",
+      "q": "In anemic hypoxia, the problem is:",
+      "options": [
+        "Not enough oxygen in the air",
+        "Lungs can't absorb oxygen",
+        "Blood has reduced oxygen-carrying capacity",
+        "Heart can't pump blood"
+      ],
+      "answer": 2,
+      "explain": "ANEMIC hypoxia = low HEMOGLOBIN. Hemoglobin carries oxygen. Fewer red blood cells or damaged hemoglobin = less oxygen delivery even if lungs and heart work perfectly. The taxi fleet is too small for all the passengers.",
+      "wrongExplains": {
+        "0": "That's hypoxic hypoxia - environmental problem. Anemic hypoxia occurs even with normal air and lungs.",
+        "1": "That's also hypoxic hypoxia - lung problem. In anemic hypoxia, lungs absorb oxygen fine, but blood can't carry it all.",
+        "3": "That's ischemic/stagnant hypoxia - circulation problem. Anemic hypoxia is about hemoglobin, not pump strength."
+      }
+    },
+    {
+      "id": "900.5.29.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "'One more type,' Ms. Frizzle says. 'Imagine oxygen reaches the cells, but the cells themselves are poisoned and can't use it. That's histotoxic hypoxia - the cellular machinery is broken.'",
+      "q": "Histotoxic hypoxia is caused by:",
+      "options": [
+        "Low hemoglobin",
+        "Poor lung function",
+        "Cellular poisons like cyanide",
+        "Blocked blood vessels"
+      ],
+      "answer": 2,
+      "explain": "HISTOTOXIC (histo- = tissue, toxic = poison) hypoxia = cells are POISONED. Cyanide blocks the enzyme that uses oxygen in mitochondria. Oxygen is there, delivered properly, but cells can't use it. The factory is poisoned.",
+      "wrongExplains": {
+        "0": "Low hemoglobin is anemic hypoxia. Histotoxic is when cells themselves can't use oxygen, even if delivery is fine.",
+        "1": "Poor lungs are hypoxic hypoxia. Histotoxic occurs even with perfect lungs, blood, and circulation.",
+        "3": "Blocked vessels are ischemic hypoxia. Histotoxic is about cellular poisoning, not delivery problems."
+      }
+    },
+    {
+      "id": "900.5.29.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "Mr. Edgar receives oxygen therapy and his tissue oxygen levels begin to rise. The neurons stabilize. 'Crisis averted,' Ms. Frizzle says. 'Now, show me you understand what we were fighting.'",
+      "q": "Hypoxia refers to:",
+      "options": [
+        "High carbon dioxide levels",
+        "Deficient oxygen in tissues",
+        "Excessive oxygen in blood",
+        "Rapid breathing rate"
+      ],
+      "answer": 1,
+      "explain": "HYPOXIA = DEFICIENT OXYGEN IN TISSUES. Hypo- (below) + -oxia (oxygen). Low tissue oxygen, regardless of cause. Can be from lung problems, anemia, poor circulation, or cellular poisoning. The key is tissues aren't getting enough O2.",
+      "wrongExplains": {
+        "0": "High CO2 is hypercapnia (hyper- = high, capn- = carbon dioxide). Different gas, different condition.",
+        "2": "Excessive oxygen is hyperoxia (hyper- = excessive). Opposite problem - too much, not too little.",
+        "3": "Rapid breathing is tachypnea. That might be a RESPONSE to hypoxia, but hypoxia itself is about oxygen levels, not breathing rate."
+      }
+    }
+  ]
+}

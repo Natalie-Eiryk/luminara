@@ -1,0 +1,91 @@
+{
+  "parentId": "800.5.04",
+  "parentQuestion": "What are the three tiny bones in the middle ear that transmit vibrations from the eardrum to the inner ear?",
+  "scaffolds": [
+    {
+      "q": "What are the three regions of the ear?",
+      "options": [
+        "Front ear, middle ear, back ear",
+        "Outer ear, middle ear, inner ear",
+        "Upper ear, central ear, lower ear",
+        "Cartilage ear, bone ear, fluid ear"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The ear has three regions: OUTER EAR (auricle + ear canal), MIDDLE EAR (air-filled cavity with ossicles), and INNER EAR (fluid-filled labyrinth for hearing and balance).",
+      "wrongExplains": {
+        "0": "The terms are outer, middle, and inner — not front, middle, back.",
+        "2": "The divisions aren't upper/central/lower — they're outer, middle, inner.",
+        "3": "While these descriptions partially apply, the standard terms are outer, middle, and inner ear."
+      }
+    },
+    {
+      "q": "What does the middle ear contain?",
+      "options": [
+        "The retina and lens",
+        "The cochlea and semicircular canals",
+        "The three auditory ossicles (ear bones)",
+        "The cerebral cortex"
+      ],
+      "answer": 2,
+      "difficulty": "foundation",
+      "explain": "The MIDDLE EAR is an air-filled cavity containing the THREE AUDITORY OSSICLES — tiny bones that transmit and amplify sound from the eardrum to the inner ear.",
+      "wrongExplains": {
+        "0": "Retina and lens are in the eye, not the ear.",
+        "1": "Cochlea and semicircular canals are in the INNER ear, not middle ear.",
+        "3": "The cerebral cortex is in the brain — definitely not in the ear."
+      }
+    },
+    {
+      "q": "What are the names of the three auditory ossicles in order from eardrum to inner ear?",
+      "options": [
+        "Stapes, incus, malleus",
+        "Malleus, incus, stapes",
+        "Incus, malleus, stapes",
+        "Hammer, stirrup, anvil"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "From eardrum to inner ear: MALLEUS (hammer) → INCUS (anvil) → STAPES (stirrup). The malleus touches the eardrum; the stapes touches the oval window.",
+      "wrongExplains": {
+        "0": "That's the reverse order. It goes malleus → incus → stapes.",
+        "2": "The malleus comes first (at the eardrum), not the incus.",
+        "3": "These are the English names (hammer, anvil, stirrup), but the order should be hammer → anvil → stirrup."
+      }
+    },
+    {
+      "q": "What Latin word does 'malleus' come from, and what does it mean?",
+      "options": [
+        "Mall = shopping, center",
+        "Malleus = hammer",
+        "Malleus = anvil",
+        "Malleus = stirrup"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "MALLEUS = HAMMER in Latin. It's shaped vaguely like a hammer, with its 'handle' (manubrium) attached to the eardrum.",
+      "wrongExplains": {
+        "0": "Not related to shopping! Malleus is Latin for hammer.",
+        "2": "Anvil is 'incus' in Latin. Malleus means hammer.",
+        "3": "Stirrup is 'stapes' in Latin. Malleus means hammer."
+      }
+    },
+    {
+      "q": "Why are the ossicles important for hearing?",
+      "options": [
+        "They produce sound waves",
+        "They amplify sound by transferring vibrations from air to fluid",
+        "They contain the hearing receptors",
+        "They block harmful sounds"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "The ossicles AMPLIFY sound about 20x by concentrating vibrations from the large eardrum onto the small oval window. This matches the impedance between air and cochlear fluid.",
+      "wrongExplains": {
+        "0": "Ossicles transmit sound, they don't produce it.",
+        "2": "Hearing receptors (hair cells) are in the cochlea of the inner ear, not in the ossicles.",
+        "3": "The acoustic reflex (stapedius/tensor tympani) can dampen sound, but the ossicles' main job is amplification."
+      }
+    }
+  ]
+}

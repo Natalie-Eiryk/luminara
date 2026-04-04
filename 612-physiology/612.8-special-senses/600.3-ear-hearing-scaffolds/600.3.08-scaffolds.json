@@ -1,0 +1,69 @@
+{
+  "parentId": "600.3.08",
+  "parentQuestion": "Tinnitus, vertigo, and gradual hearing loss typify the disorder called ________.",
+  "scaffolds": [
+    {
+      "q": "Tinnitus is the perception of ringing, buzzing, or roaring in the ears.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Yes! Tinnitus is 'phantom' sound — perceived without external stimulus."
+    },
+    {
+      "q": "Vertigo is a sensation of spinning or rotational dizziness.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Correct! Vertigo indicates vestibular system dysfunction — not just lightheadedness."
+    },
+    {
+      "q": "Sensorineural hearing loss affects the inner ear or auditory nerve.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Yes! Damage to cochlear hair cells or auditory nerve causes this type of hearing loss."
+    },
+    {
+      "q": "The cochlea (hearing) and vestibular system (balance) share the inner ear space.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "Correct! A disorder affecting one can often affect the other."
+    },
+    {
+      "q": "Ménière's disease involves excess fluid (endolymph) in the inner ear.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Yes! Endolymphatic hydrops — fluid buildup — is the underlying pathology."
+    },
+    {
+      "q": "Ménière's disease causes EPISODIC attacks of vertigo lasting minutes to hours.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Correct! Attacks come and go, often with warning signs like ear fullness."
+    },
+    {
+      "q": "Over time, Ménière's disease causes progressive hearing loss, especially low frequencies.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Yes! Repeated attacks damage hair cells, causing permanent hearing loss."
+    },
+    {
+      "q": "Conjunctivitis is an eye condition, strabismus is eye misalignment — neither causes hearing symptoms.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "intermediate",
+      "explain": "Correct! These are eye disorders, not inner ear disorders."
+    },
+    {
+      "q": "The triad of tinnitus + vertigo + progressive hearing loss defines Ménière's syndrome.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "difficulty": "advanced",
+      "explain": "Yes! Ménière's disease (endolymphatic hydrops) causes this classic symptom triad."
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.36",
+  "parentQuestion": "Hypoventilation leads to:",
+  "narrative": {
+    "setting": "The Magic School Bus is cruising through Mr. Edgar's respiratory control center in his brainstem. He's breathing too slowly and shallowly - something is suppressing his drive to breathe. Alarms flash red as CO2 levels climb. Ms. Frizzle grips the controls: 'Class, when you don't breathe enough, the consequences cascade. We need to understand hypoventilation before it's too late.'",
+    "character": "Mr. Edgar",
+    "tension": "CO2 is building up in Mr. Edgar's blood. His brain is becoming acidic. Every minute counts."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.36.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "Ms. Frizzle projects a glowing etymology map on the bus's windshield. 'Let's decode this word like scientists. Hypo-ventilation. Two pieces, one dangerous puzzle.'",
+      "q": "The prefix 'hypo-' means:",
+      "options": [
+        "Above, excessive",
+        "Below, deficient",
+        "Normal, balanced",
+        "Fast, rapid"
+      ],
+      "answer": 1,
+      "explain": "'Hypo-' means BELOW or LESS THAN normal. Think hypothermia (low temperature), hypoglycemia (low blood sugar). Hypoventilation = ventilating LESS than you should. Too little breathing.",
+      "wrongExplains": {
+        "0": "That's 'hyper-' - the opposite! Hyperventilation is breathing TOO MUCH. Hypo- is the low side of the seesaw.",
+        "2": "That's 'normo-' or 'eu-'. Hypo- means deficient, below the healthy baseline.",
+        "3": "Fast is 'tachy-'. Hypo- describes amount or level, not speed - though slow breathing often causes it."
+      }
+    },
+    {
+      "id": "900.5.36.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "You watch Mr. Edgar's chest barely moving. Ten seconds pass. Twenty. Finally, a shallow breath. 'Count the respirations,' Ms. Frizzle says urgently. 'Normal is 12-20 per minute. He's at 6.'",
+      "q": "Ventilation refers to:",
+      "options": [
+        "The movement of air in and out of the lungs",
+        "The beating of the heart",
+        "The production of ATP in cells",
+        "The absorption of oxygen into blood"
+      ],
+      "answer": 0,
+      "explain": "VENTILATION = air movement. The bellows action. Breathing in, breathing out. It's the mechanical process that moves fresh air to the alveoli and stale air out. The pump before the exchange.",
+      "wrongExplains": {
+        "1": "That's circulation, controlled by the heart. Ventilation is about moving AIR, not blood.",
+        "2": "That's cellular respiration - the metabolic furnace inside cells. Ventilation is the air delivery system.",
+        "3": "That's gas exchange (external respiration). Ventilation happens BEFORE that - it's getting air TO the lungs."
+      }
+    },
+    {
+      "id": "900.5.36.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Science",
+      "narrative": "The bus's CO2 detector starts beeping faster. The numbers climb: 45 mmHg... 50... 55... 'When you hypoventilate,' Ms. Frizzle explains, 'you keep the same stale air. CO2 accumulates like passengers who never get off the train.'",
+      "q": "What happens to CO2 levels during hypoventilation?",
+      "options": [
+        "CO2 levels decrease because less is produced",
+        "CO2 levels increase because it's not being exhaled adequately",
+        "CO2 levels stay the same regardless of breathing rate",
+        "CO2 levels increase because more is absorbed from air"
+      ],
+      "answer": 1,
+      "explain": "Your cells constantly PRODUCE CO2 as waste. Normally you breathe it out. But during hypoventilation, you're not exhaling enough - so CO2 BUILDS UP in your blood. Like a factory with clogged exhaust vents.",
+      "wrongExplains": {
+        "0": "Cells keep making CO2 at the same rate - metabolism doesn't stop. The problem is CO2 isn't being REMOVED fast enough.",
+        "2": "CO2 is tightly linked to breathing! Less breathing out = CO2 retention. The body can't ignore basic chemistry.",
+        "3": "You don't absorb CO2 from air - air has almost none (0.04%). You PRODUCE it and must exhale it."
+      }
+    },
+    {
+      "id": "900.5.36.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus dives into Mr. Edgar's bloodstream. Sensors show pH dropping: 7.40... 7.35... 7.32... 'Watch this,' Ms. Frizzle says. 'CO2 doesn't just sit there. It reacts with water to form acid.'",
+      "q": "When CO2 dissolves in blood, it forms:",
+      "options": [
+        "Oxygen and hydrogen",
+        "Carbonic acid, lowering pH",
+        "Calcium carbonate, raising pH",
+        "Carbon monoxide and water"
+      ],
+      "answer": 1,
+      "explain": "CO2 + H2O → H2CO3 (carbonic acid). The chemistry is automatic and immediate. More CO2 = more acid = lower pH. This is why hypoventilation causes RESPIRATORY ACIDOSIS. The acid comes from retained CO2.",
+      "wrongExplains": {
+        "0": "CO2 doesn't break down into O2. It combines WITH water to form carbonic acid (H2CO3).",
+        "2": "Carbonic acid LOWERS pH (makes blood acidic). Calcium carbonate is a rock, not relevant here.",
+        "3": "CO2 is carbon DIOXIDE - completely different from carbon MONOXIDE. CO2 forms carbonic acid with water."
+      }
+    },
+    {
+      "id": "900.5.36.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "A red blood cell drifts past, its hemoglobin molecules visibly strained. 'The Bohr effect,' Ms. Frizzle whispers. 'High CO2 and low pH make hemoglobin grip oxygen TIGHTER. The tissues are starving, but the blood won't let go.'",
+      "q": "High CO2 levels in blood cause:",
+      "options": [
+        "Increased oxygen release to tissues",
+        "Decreased oxygen release to tissues",
+        "No effect on oxygen delivery",
+        "Complete cessation of oxygen binding"
+      ],
+      "answer": 1,
+      "explain": "Wait - this is the RIGHT-shift effect! High CO2 (and low pH) actually causes hemoglobin to RELEASE more O2 to tissues. BUT in hypoventilation with inadequate O2 intake, you get a double problem: less O2 loaded at lungs + acidosis effects = tissues suffer.",
+      "wrongExplains": {
+        "0": "Actually correct via Bohr effect ALONE - but in hypoventilation you're not LOADING enough O2 at lungs in the first place. The release doesn't help if there's nothing to release.",
+        "2": "CO2 has major effects on oxygen-hemoglobin binding! The Bohr effect is one of physiology's critical mechanisms.",
+        "3": "Hemoglobin still binds oxygen - the effects shift the CURVE but don't eliminate binding completely."
+      }
+    },
+    {
+      "id": "900.5.36.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "You pass through Mr. Edgar's brain. Neurons are firing erratically. 'CO2 crosses the blood-brain barrier easily,' Ms. Frizzle says grimly. 'It acidifies the cerebrospinal fluid. Confusion, lethargy, even coma can follow.'",
+      "q": "Why is elevated CO2 (hypercapnia) dangerous to the brain?",
+      "options": [
+        "It causes vasoconstriction, reducing blood flow",
+        "It acidifies cerebrospinal fluid, affecting neural function",
+        "It prevents glucose from entering neurons",
+        "It increases brain temperature excessively"
+      ],
+      "answer": 1,
+      "explain": "CO2 crosses into cerebrospinal fluid and forms carbonic acid, lowering pH. Neurons are EXTREMELY sensitive to pH changes. Acidosis disrupts electrical signaling, causing confusion, drowsiness, and potentially respiratory depression - a vicious cycle!",
+      "wrongExplains": {
+        "0": "Actually CO2 causes cerebral VASODILATION (wider vessels, more blood flow). But that's not the main danger - the pH change is.",
+        "2": "CO2 doesn't block glucose transport. The problem is pH disruption of neural electrical activity.",
+        "3": "CO2 doesn't significantly affect brain temperature. The issue is chemical - acidosis interfering with neuron function."
+      }
+    },
+    {
+      "id": "900.5.36.s07",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "'What could cause this?' Carlos asks. Ms. Frizzle pulls up Mr. Edgar's medical chart. 'Opioid overdose. The medication suppressed his respiratory drive. His brainstem isn't sending the BREATHE signal.'",
+      "q": "Which condition would most likely cause hypoventilation?",
+      "options": [
+        "Anxiety attack",
+        "Opioid overdose",
+        "High-altitude exposure",
+        "Vigorous exercise"
+      ],
+      "answer": 1,
+      "explain": "Opioids suppress the RESPIRATORY CENTER in the brainstem - the control system that drives breathing. Patients breathe less frequently, less deeply, or stop entirely. This is the #1 cause of death in opioid overdose.",
+      "wrongExplains": {
+        "0": "Anxiety typically causes HYPERventilation (too much breathing). You breathe faster and deeper, lowering CO2.",
+        "2": "High altitude triggers INCREASED breathing (hyperventilation) to compensate for low oxygen. The opposite of hypoventilation.",
+        "3": "Exercise increases breathing rate and depth to meet oxygen demands and blow off CO2. That's increased ventilation."
+      }
+    },
+    {
+      "id": "900.5.36.s08",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "The bus hovers near the chemoreceptors in Mr. Edgar's carotid bodies. They're screaming chemical alarms, but the signal isn't getting through. 'His body KNOWS it needs to breathe,' Ms. Frizzle says. 'But the drugs have blocked the pathway.'",
+      "q": "How do chemoreceptors normally respond to rising CO2?",
+      "options": [
+        "They signal to increase breathing rate and depth",
+        "They signal to decrease breathing rate",
+        "They have no effect on breathing",
+        "They only respond to oxygen levels"
+      ],
+      "answer": 0,
+      "explain": "Central chemoreceptors (in the brainstem) and peripheral chemoreceptors (carotid/aortic bodies) detect rising CO2 and H+ (low pH). They send urgent signals: BREATHE MORE! Increase rate, increase depth. It's the body's CO2 alarm system.",
+      "wrongExplains": {
+        "1": "That would worsen CO2 buildup! Rising CO2 triggers INCREASED breathing to blow it off. Decrease would be suicidal.",
+        "2": "Chemoreceptors are the PRIMARY respiratory drive mechanism. High CO2 is their main trigger.",
+        "3": "Peripheral chemoreceptors do respond to low O2, but ALL chemoreceptors respond strongly to high CO2/low pH. It's the main signal."
+      }
+    },
+    {
+      "id": "900.5.36.s09",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "A medical team appears in the distance - they've given Mr. Edgar naloxone, the opioid reversal drug. His breathing suddenly deepens. The CO2 numbers start falling. 'Emergency averted,' Ms. Frizzle smiles. 'But the lesson remains.'",
+      "q": "The treatment for opioid-induced hypoventilation is:",
+      "options": [
+        "Giving supplemental oxygen alone",
+        "Administering naloxone to reverse opioid effects",
+        "Encouraging slow, shallow breathing",
+        "Applying a warm compress to the chest"
+      ],
+      "answer": 1,
+      "explain": "Naloxone (Narcan) is an OPIOID ANTAGONIST - it kicks the opioid off its receptors in the brain, immediately reversing respiratory depression. O2 helps but doesn't fix the root cause. Naloxone restores the drive to breathe.",
+      "wrongExplains": {
+        "0": "O2 addresses the hypoxemia (low O2) but doesn't fix the hypoventilation. You need to restore the drive to breathe, not just add oxygen.",
+        "2": "That would WORSEN hypoventilation! The patient needs to breathe MORE, not less.",
+        "3": "Warm compresses have no effect on respiratory drive. This is a neurological problem requiring a pharmacological solution."
+      }
+    },
+    {
+      "id": "900.5.36.s10",
+      "arc": 3,
+      "arcTitle": "Making Connections",
+      "narrative": "The bus returns to normal size as Mr. Edgar's breathing stabilizes. His eyes flutter open. 'Now you understand,' Ms. Frizzle says. 'The question that started our journey.'",
+      "q": "Hypoventilation leads to:",
+      "options": [
+        "Decreased CO2 and respiratory alkalosis",
+        "Increased CO2 and respiratory acidosis",
+        "Decreased O2 with no change in pH",
+        "Increased O2 and decreased CO2"
+      ],
+      "answer": 1,
+      "explain": "HYPOVENTILATION = inadequate breathing. CO2 is not exhaled enough → CO2 INCREASES → forms carbonic acid → pH DROPS = RESPIRATORY ACIDOSIS. Plus hypoxemia (low O2) because not enough fresh air reaches alveoli. It's a metabolic disaster.",
+      "wrongExplains": {
+        "0": "You've reversed it! Decreased CO2 and alkalosis happen with HYPERventilation (too much breathing).",
+        "2": "CO2 retention ALWAYS affects pH because CO2 forms acid in blood. You can't separate them - it's automatic chemistry.",
+        "3": "That's the opposite! Hypoventilation DECREASES O2 (not enough inhaled) and INCREASES CO2 (not enough exhaled)."
+      }
+    }
+  ]
+}

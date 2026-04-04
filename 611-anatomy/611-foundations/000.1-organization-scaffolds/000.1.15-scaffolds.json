@@ -1,0 +1,159 @@
+{
+  "parentId": "000.1.15",
+  "parentQuestion": "During childbirth, cervical stretch triggers oxytocin release, which intensifies contractions, causing more cervical stretch and more oxytocin release. This cycle accelerates until delivery occurs. A medical student asks, 'Why doesn't this kill the mother by continuing indefinitely?' What's the answer?",
+  "scaffolds": [
+    {
+      "q": "What is positive feedback?",
+      "options": [
+        "A mechanism that opposes change",
+        "A mechanism that amplifies the original stimulus",
+        "A mechanism that maintains balance",
+        "A mechanism that stops all change"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "POSITIVE FEEDBACK is a mechanism that AMPLIFIES the original stimulus. Unlike negative feedback which opposes change, positive feedback accelerates it.",
+      "wrongExplains": {
+        "0": "Opposing change is negative feedback, not positive.",
+        "2": "Maintaining balance is homeostasis via negative feedback.",
+        "3": "Positive feedback accelerates change rather than stopping it."
+      }
+    },
+    {
+      "q": "What happens during childbirth that exemplifies positive feedback?",
+      "options": [
+        "Contractions slow down to protect the mother",
+        "Cervical stretch triggers oxytocin, causing stronger contractions",
+        "The body stops releasing hormones",
+        "Pain causes contractions to stop"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "During childbirth, CERVICAL STRETCH triggers OXYTOCIN release, causing STRONGER CONTRACTIONS. Each contraction leads to more stretch and even more oxytocin.",
+      "wrongExplains": {
+        "0": "Contractions intensify during labor, not slow down.",
+        "2": "Oxytocin release increases, not stops.",
+        "3": "Pain doesn't stop contractions; the cycle continues."
+      }
+    },
+    {
+      "q": "What would happen if positive feedback continued forever?",
+      "options": [
+        "Nothing — the body adapts",
+        "The system would be destroyed",
+        "It would become negative feedback",
+        "The stimulus would disappear on its own"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "If positive feedback continued forever, THE SYSTEM WOULD BE DESTROYED. That's why positive feedback loops MUST have an endpoint.",
+      "wrongExplains": {
+        "0": "Unchecked positive feedback is dangerous, not adaptive.",
+        "2": "Positive feedback doesn't convert to negative feedback.",
+        "3": "Positive feedback amplifies the stimulus, not makes it disappear."
+      }
+    },
+    {
+      "q": "What terminates the positive feedback loop in childbirth?",
+      "options": [
+        "Pain receptors shutting down",
+        "Delivery of the baby",
+        "The mother's exhaustion",
+        "Oxytocin running out"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "DELIVERY OF THE BABY terminates the loop. Once the baby is born, CERVICAL STRETCH STOPS, ending the trigger for oxytocin release.",
+      "wrongExplains": {
+        "0": "Pain receptors don't end the loop; delivery does.",
+        "2": "Exhaustion doesn't stop the feedback mechanism.",
+        "3": "Oxytocin continues until cervical stretch stops."
+      }
+    },
+    {
+      "q": "Why do positive feedback loops need external termination events?",
+      "options": [
+        "They don't — they stop themselves",
+        "The loop can't stop itself — something external must end it",
+        "Only to prevent pain",
+        "Only for comfort reasons"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Positive feedback loops CAN'T STOP THEMSELVES — something EXTERNAL must end them. The self-amplifying nature prevents internal termination.",
+      "wrongExplains": {
+        "0": "Positive feedback is self-amplifying, not self-limiting.",
+        "2": "Termination is about system survival, not just pain.",
+        "3": "Termination is physiologically necessary, not just comfort."
+      }
+    },
+    {
+      "q": "How does delivery stop the childbirth feedback loop?",
+      "options": [
+        "By increasing oxytocin",
+        "By removing the stimulus (cervical stretch)",
+        "By causing more contractions",
+        "By adding new hormones"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "Delivery REMOVES THE STIMULUS — no more cervical stretch means no more oxytocin trigger, so contractions stop.",
+      "wrongExplains": {
+        "0": "Delivery decreases oxytocin by removing the stimulus.",
+        "2": "Delivery ends contractions, doesn't cause more.",
+        "3": "Removal of stimulus, not new hormones, ends the loop."
+      }
+    },
+    {
+      "q": "What distinguishes positive from negative feedback?",
+      "options": [
+        "Positive feedback maintains homeostasis",
+        "Positive feedback amplifies while negative feedback opposes change",
+        "They are the same mechanism",
+        "Negative feedback amplifies change"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "POSITIVE FEEDBACK AMPLIFIES while NEGATIVE FEEDBACK OPPOSES change. Positive accelerates, negative stabilizes.",
+      "wrongExplains": {
+        "0": "Negative feedback maintains homeostasis; positive disrupts it temporarily.",
+        "2": "They are opposite mechanisms.",
+        "3": "Negative feedback opposes change, not amplifies."
+      }
+    },
+    {
+      "q": "Why doesn't the childbirth feedback loop kill the mother?",
+      "options": [
+        "Pain eventually stops it",
+        "Delivery provides an external termination event",
+        "Desensitization stops the loop",
+        "Homeostasis overrides it"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "DELIVERY provides an EXTERNAL TERMINATION EVENT. The loop ends because the stimulus (cervical stretch) is removed when the baby is born.",
+      "wrongExplains": {
+        "0": "Pain doesn't terminate the feedback mechanism.",
+        "2": "Desensitization doesn't stop the loop; delivery does.",
+        "3": "Homeostasis can't override an ongoing positive feedback loop."
+      }
+    },
+    {
+      "q": "What's the answer to why childbirth's positive feedback doesn't continue indefinitely?",
+      "options": [
+        "The mother's body adapts to oxytocin",
+        "Positive feedback requires an external termination event (delivery)",
+        "Negative feedback eventually takes over",
+        "The contractions tire out"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "The answer: POSITIVE FEEDBACK REQUIRES AN EXTERNAL TERMINATION EVENT. Delivery removes cervical stretch, ending the oxytocin trigger.",
+      "wrongExplains": {
+        "0": "The loop ends due to delivery, not adaptation.",
+        "2": "Negative feedback doesn't override; the stimulus is removed.",
+        "3": "The mechanism ends from delivery, not muscle fatigue."
+      }
+    }
+  ]
+}

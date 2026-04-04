@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.35",
+  "parentQuestion": "Hyperventilation refers to:",
+  "narrative": {
+    "setting": "The Magic School Bus is monitoring Mr. Edgar's blood chemistry in real-time. He's anxious, breathing rapidly and deeply - 30 deep breaths per minute. His CO2 levels are plummeting, and strange symptoms are appearing: tingling fingers, dizziness, muscle spasms. The class needs to understand how breathing TOO MUCH can be just as dangerous as breathing too little.",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's excessive breathing is causing a cascade of dangerous symptoms. His blood chemistry is going haywire."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.35.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "Ms. Frizzle points to the word breakdown on screen. 'You've seen hyper- before in hypercapnia. It means the same thing here - but this time we're adding it to ventilation instead of a gas name.'",
+      "q": "The prefix 'hyper-' means:",
+      "options": [
+        "Below or deficient",
+        "Excessive or above normal",
+        "Without",
+        "Slow"
+      ],
+      "answer": 1,
+      "explain": "'HYPER-' = EXCESSIVE or ABOVE NORMAL. More than needed, too much. Hyperactive = too much activity. Hypertension = high blood pressure. The opposite of 'hypo-' (below normal). Hyper- is always about excess.",
+      "wrongExplains": {
+        "0": "That's 'hypo-', the opposite! Hyper- means ABOVE, hypo- means BELOW. These prefixes are antonyms.",
+        "2": "Without is 'a-' or 'an-'. Hyper- means there's TOO MUCH, not an absence.",
+        "3": "Slow is 'brady-'. Hyper- often implies fast but specifically means EXCESSIVE, more than needed."
+      }
+    },
+    {
+      "id": "900.5.35.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "'Ventilation,' Ms. Frizzle explains, pointing to Mr. Edgar's heaving chest, 'is the mechanical process of moving air in and out of the lungs. Like a bellows, pumping air.'",
+      "q": "What does 'ventilation' refer to in respiratory physiology?",
+      "options": [
+        "Gas exchange at the alveoli",
+        "The mechanical movement of air in and out of lungs",
+        "Oxygen binding to hemoglobin",
+        "Blood flow through the lungs"
+      ],
+      "answer": 1,
+      "explain": "VENTILATION = the physical ACT of breathing - moving air in and out. Inhale, exhale, repeat. It's the mechanical pump, not the gas exchange (that's respiration). Ventilate = pump air. A ventilator machine does the pumping for patients who can't.",
+      "wrongExplains": {
+        "0": "Gas exchange is RESPIRATION. Ventilation is just the air movement. You can ventilate without gas exchange (like in dead space).",
+        "2": "That's part of respiration (oxygen transport). Ventilation is just the mechanical pumping of air - happens before oxygen reaches blood.",
+        "3": "Blood flow is PERFUSION. Ventilation is AIR flow. Different fluids, different systems (though they must match!)."
+      }
+    },
+    {
+      "id": "900.5.35.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Root",
+      "narrative": "The bus's CO2 monitor shows levels dropping dangerously low. 'He's blowing off too much CO2,' Ms. Frizzle warns. 'Hyperventilation means ventilating MORE than your body needs.'",
+      "q": "Combining 'hyper-' and 'ventilation,' hyperventilation means:",
+      "options": [
+        "Breathing less than needed",
+        "Breathing more than metabolically needed",
+        "Normal breathing",
+        "Shallow breathing"
+      ],
+      "answer": 1,
+      "explain": "HYPER (excessive) + VENTILATION (air movement) = breathing MORE than your body needs. Breathing faster/deeper than required for your metabolism. Result: you blow off TOO MUCH CO2. More isn't always better!",
+      "wrongExplains": {
+        "0": "That's HYPOventilation (hypo- = below). Hyperventilation is the opposite - TOO MUCH breathing.",
+        "2": "Normal is EUventilation or normal ventilation. Hyper- means EXCESSIVE, above normal.",
+        "3": "Shallow or deep doesn't define hyperventilation. It's about TOTAL ventilation exceeding metabolic needs - can be fast shallow OR fast deep."
+      }
+    },
+    {
+      "id": "900.5.35.s04",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "Mr. Edgar's fingers start tingling. He feels lightheaded. 'Watch the pH,' Ms. Frizzle says, pointing to blood chemistry. 'When CO2 drops too low, blood becomes alkaline. That's why he feels strange.'",
+      "q": "What happens to blood pH during hyperventilation?",
+      "options": [
+        "It becomes more acidic",
+        "It becomes more alkaline (respiratory alkalosis)",
+        "It stays normal",
+        "It becomes neutral"
+      ],
+      "answer": 1,
+      "explain": "RESPIRATORY ALKALOSIS - blood becomes too ALKALINE (high pH). CO2 is acidic (forms carbonic acid). Blow off CO2 → less acid → pH rises → alkalosis. This causes the tingling, dizziness, muscle spasms. Blood chemistry goes wrong!",
+      "wrongExplains": {
+        "0": "Opposite! Less CO2 = less acid = MORE alkaline. Acidic blood comes from TOO MUCH CO2 (hypoventilation/hypercapnia).",
+        "2": "Definitely changes! CO2 is the body's main pH regulator. Excessive loss causes alkalosis, dramatic pH shift.",
+        "3": "Neutral would be pH 7.0. Blood is normally slightly alkaline (7.35-7.45). Hyperventilation pushes it even higher (>7.45)."
+      }
+    },
+    {
+      "id": "900.5.35.s05",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "'Hyperventilation and tachypnea,' Ms. Frizzle says. 'Students confuse these constantly. They're related but measure different things. Let's get this straight.'",
+      "q": "How does hyperventilation differ from tachypnea?",
+      "options": [
+        "They're the same thing",
+        "Tachypnea = fast rate; hyperventilation = ventilation exceeds metabolic needs",
+        "Hyperventilation = fast rate; tachypnea = exceeds needs",
+        "Both mean normal breathing"
+      ],
+      "answer": 1,
+      "explain": "TACHYPNEA = RATE (breaths/min is high). HYPERVENTILATION = EXCESS relative to needs (drops CO2 too low). You can have tachypnea that's appropriate (running) - not hyperventilation. Or hyperventilation at normal rate with very deep breaths. Different measures!",
+      "wrongExplains": {
+        "0": "Different! Tachypnea during exercise is normal. Hyperventilation from panic is pathological. One measures rate, one measures excess.",
+        "2": "Backwards! Tachy- = fast (rate). Hyper- = excessive (amount relative to needs).",
+        "3": "Both indicate ABNORMAL breathing patterns! Tachy- = too fast. Hyper- = too much."
+      }
+    },
+    {
+      "id": "900.5.35.s06",
+      "arc": 2,
+      "arcTitle": "Building the Word",
+      "narrative": "Mr. Edgar's hands start to cramp into a claw-like position. 'Carpopedal spasm,' Ms. Frizzle identifies. 'The alkalosis affects calcium ionization, causing involuntary muscle contractions. Classic hyperventilation sign.'",
+      "q": "What causes the muscle spasms and tingling in hyperventilation?",
+      "options": [
+        "Too much oxygen in blood",
+        "Alkalosis affecting calcium and nerve function",
+        "Too much CO2 in blood",
+        "Lack of oxygen"
+      ],
+      "answer": 1,
+      "explain": "ALKALOSIS (high pH) affects how calcium binds to proteins. It also makes nerves hyperexcitable. Result: tingling (paresthesias), muscle cramps, carpopedal spasm (hands/feet claw). The pH change, not oxygen or CO2 directly, causes these neurological symptoms!",
+      "wrongExplains": {
+        "0": "Oxygen levels are usually NORMAL in hyperventilation. The problem is CO2 too LOW (causes alkalosis), not oxygen issues.",
+        "2": "Opposite! Hyperventilation causes НИЗКИЙ CO2 (hypocapnia). Too much CO2 would cause acidosis, different symptoms.",
+        "3": "Oxygen is fine! The symptoms are from alkalosis (pH too high) affecting nerves and calcium, not hypoxia."
+      }
+    },
+    {
+      "id": "900.5.35.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "'The most common cause of hyperventilation,' Ms. Frizzle explains, 'isn't physical disease - it's psychological. Anxiety and panic trigger the breathing center inappropriately.'",
+      "q": "What's the most common cause of acute hyperventilation?",
+      "options": [
+        "Lung disease",
+        "Anxiety or panic attack",
+        "Heart attack",
+        "Altitude"
+      ],
+      "answer": 1,
+      "explain": "ANXIETY/PANIC ATTACK - the classic cause! Fear triggers fight-or-flight → breathing increases beyond metabolic need → CO2 drops → symptoms worsen → more anxiety → vicious cycle. Hyperventilation syndrome. It's real physiology from psychological trigger!",
+      "wrongExplains": {
+        "0": "Lung disease usually causes HYPOventilation or appropriate compensation, not true hyperventilation. Anxiety is far more common.",
+        "2": "Heart attack might cause dyspnea but not typically the excessive ventilation that drops CO2. Different breathing pattern.",
+        "3": "Altitude causes HYPOxia and appropriate increased ventilation (compensation). Hyperventilation syndrome is excessive, inappropriate breathing."
+      }
+    },
+    {
+      "id": "900.5.35.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "A nurse hands Mr. Edgar a paper bag. 'Breathe into this,' she says calmly. Ms. Frizzle nods. 'Classic treatment - let's see why it works.'",
+      "q": "Why does breathing into a paper bag help hyperventilation?",
+      "options": [
+        "It calms the person psychologically",
+        "It increases CO2 by rebreathing exhaled air",
+        "It increases oxygen supply",
+        "It cools the air"
+      ],
+      "answer": 1,
+      "explain": "REBREATHING CO2! The bag traps exhaled CO2. You breathe it back in → CO2 rises → pH normalizes → alkalosis corrects → symptoms resolve. It's physiological correction, not just psychological (though staying calm helps too). Restores the CO2 you blew off!",
+      "wrongExplains": {
+        "0": "There's a psychological component, but the main mechanism is CHEMICAL - you're rebreathing CO2 to restore blood chemistry.",
+        "2": "Actually DECREASES oxygen slightly! The bag has exhaled air (more CO2, less O2). But that's okay - oxygen wasn't the problem, CO2 was.",
+        "3": "Temperature is irrelevant. This is about GAS CONTENT - specifically raising CO2 to reverse respiratory alkalosis."
+      }
+    },
+    {
+      "id": "900.5.35.s09",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "'Sometimes hyperventilation is appropriate,' Ms. Frizzle notes. 'If you're running a marathon, you SHOULD breathe more. The key question: does it match metabolic demand?'",
+      "q": "When is increased ventilation NOT considered hyperventilation?",
+      "options": [
+        "During intense exercise",
+        "During a panic attack",
+        "During sleep",
+        "While watching TV"
+      ],
+      "answer": 0,
+      "explain": "EXERCISE! When running, you NEED more oxygen and PRODUCE more CO2. Increased breathing MATCHES increased metabolism. Your CO2 stays normal despite breathing faster/deeper. That's hyperpnea (appropriate), not hyperventilation (excessive). Match demand = normal!",
+      "wrongExplains": {
+        "1": "Panic attack is THE classic hyperventilation! Breathing increases WITHOUT increased metabolic need. CO2 drops inappropriately.",
+        "2": "During sleep you breathe LESS, not more. And if you breathed more during sleep, it wouldn't match low metabolic demands.",
+        "3": "Sitting watching TV has low metabolic demand. Breathing a lot while resting is textbook hyperventilation - no match to need."
+      }
+    },
+    {
+      "id": "900.5.35.s10",
+      "arc": 3,
+      "arcTitle": "Clinical Application",
+      "narrative": "Mr. Edgar's breathing slows, his CO2 normalizes, the tingling fades. He's calm now, breathing matching his needs. 'From hyperventilation to normal ventilation,' Ms. Frizzle says. 'Final question!'",
+      "q": "Hyperventilation refers to:",
+      "options": [
+        "Breathing slower than normal",
+        "Breathing faster/deeper than needed for metabolism",
+        "Difficulty breathing",
+        "Absent breathing"
+      ],
+      "answer": 1,
+      "explain": "HYPERVENTILATION = BREATHING FASTER/DEEPER THAN METABOLICALLY NEEDED. Hyper- (excessive) + ventilation (air movement). Causes: anxiety, panic, pain, rare metabolic disorders. Results in low CO2 (hypocapnia), respiratory alkalosis, tingling, dizziness, muscle spasms. Treat cause and/or rebreathe CO2!",
+      "wrongExplains": {
+        "0": "That's hypoventilation (hypo- = below). Hyperventilation is excessive breathing, not deficient.",
+        "2": "Difficulty is dyspnea. Hyperventilation is about AMOUNT (too much), not difficulty. You can hyperventilate easily (in panic).",
+        "3": "Absent is apnea. Hyperventilation is the opposite - TOO MUCH breathing, not absent breathing."
+      }
+    }
+  ]
+}

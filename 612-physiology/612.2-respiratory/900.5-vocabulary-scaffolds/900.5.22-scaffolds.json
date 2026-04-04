@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.22",
+  "parentQuestion": "The area in the lungs where bronchi, vessels, and nerves enter is called the:",
+  "narrative": {
+    "setting": "The Magic School Bus approaches the medial surface of Mr. Edgar's lung. Unlike the smooth outer surfaces, this inner face has a complex depression - a gateway where structures converge. Bronchus, pulmonary artery, pulmonary veins, lymphatics, and nerves all cluster at this single entry point. 'The lung's doorway,' Ms. Frizzle announces. 'Everything comes and goes through here.'",
+    "character": "Mr. Edgar",
+    "tension": "When a tumor grows at this central location, it can compress airways, blood vessels, and nerves simultaneously. Surgeons operating here must navigate a dense cluster of vital structures. Understanding this anatomy is understanding both the lung's supply line and its most vulnerable point."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.22.s01",
+      "arc": 1,
+      "arcTitle": "The Word's Meaning",
+      "narrative": "'The Romans gave us this word,' Ms. Frizzle explains. 'Hilum - meaning a small thing, a trifle. Anatomists borrowed it for the small but vital entry point where structures pass into an organ.'",
+      "q": "The Latin word 'hilum' (also spelled hilus) means:",
+      "options": [
+        "Opening or doorway",
+        "A small thing, a trifle (entry point)",
+        "The top or peak",
+        "The bottom or base"
+      ],
+      "answer": 1,
+      "explain": "'Hilum' literally means a SMALL THING or TRIFLE - used anatomically for the small but crucial entry/exit point where vessels and ducts connect to an organ.",
+      "wrongExplains": {
+        "0": "While it functions as an entry point, the Latin word literally means 'small thing.'",
+        "2": "Top/peak would be 'apex.' Hilum is the entry point on the medial surface.",
+        "3": "Bottom/base is 'basis.' Hilum is where structures enter medially."
+      }
+    },
+    {
+      "id": "900.5.22.s02",
+      "arc": 1,
+      "arcTitle": "The Word's Meaning",
+      "narrative": "'Other organs have hila too,' Ms. Frizzle notes. 'The kidney hilum. The spleen hilum. Liver hilum. Wherever there's a concentrated entry point for blood vessels, ducts, and nerves.'",
+      "q": "The term 'hilum' is used for which organs?",
+      "options": [
+        "Only the lungs",
+        "Any organ with a concentrated entry point for vessels and ducts",
+        "Only hollow organs",
+        "Only digestive organs"
+      ],
+      "answer": 1,
+      "explain": "HILUM is used for ANY organ with a concentrated entry point - lungs, kidneys, spleen, liver, lymph nodes. It's wherever vessels and ducts bundle together.",
+      "wrongExplains": {
+        "0": "Kidneys, spleen, liver, and lymph nodes all have hila too.",
+        "2": "Solid organs like kidneys and liver have hila. Not just hollow organs.",
+        "3": "It applies to many organs, not just digestive - lungs, kidneys, spleen, etc."
+      }
+    },
+    {
+      "id": "900.5.22.s03",
+      "arc": 1,
+      "arcTitle": "The Word's Meaning",
+      "narrative": "'Hilum, hilus - same thing,' Ms. Frizzle clarifies. 'Both spellings are correct. And the plural? Hila.' She points to both lungs. 'Two lungs, two hila - one on each medial surface.'",
+      "q": "What is the plural of hilum?",
+      "options": [
+        "Hilums",
+        "Hila",
+        "Hilae",
+        "Hili"
+      ],
+      "answer": 1,
+      "explain": "The plural is HILA (Latin neuter plural). Both lungs have a hilum, so together they have two hila.",
+      "wrongExplains": {
+        "0": "'Hilums' is English-style pluralization but the correct Latin plural is 'hila.'",
+        "2": "'Hilae' would be first declension feminine. Hilum is second declension neuter.",
+        "3": "'Hili' would be masculine. Hilum is neuter, so the plural is hila."
+      }
+    },
+    {
+      "id": "900.5.22.s04",
+      "arc": 2,
+      "arcTitle": "Location and Contents",
+      "narrative": "The bus hovers at the lung's medial surface - the side facing the mediastinum. 'This is where the hilum is located,' Ms. Frizzle points to the indented region. 'Not on the outer surface facing the ribs. The inner surface, facing the midline.'",
+      "q": "On which surface of the lung is the hilum located?",
+      "options": [
+        "The lateral surface (outer)",
+        "The medial surface (inner)",
+        "The superior surface (top)",
+        "The inferior surface (bottom)"
+      ],
+      "answer": 1,
+      "explain": "The hilum is on the MEDIAL (inner) surface - facing the mediastinum. This is where bronchi, vessels, and nerves connect the lung to the rest of the body.",
+      "wrongExplains": {
+        "0": "Lateral faces the ribs. The hilum is on the medial (midline-facing) surface.",
+        "2": "Superior is the apex. The hilum is on the medial surface.",
+        "3": "Inferior is the base on the diaphragm. The hilum is on the medial surface."
+      }
+    },
+    {
+      "id": "900.5.22.s05",
+      "arc": 2,
+      "arcTitle": "Location and Contents",
+      "narrative": "'Everything passes through here,' Ms. Frizzle lists as they enter the hilum. 'Main bronchus - the airway. Pulmonary artery - blood going TO the lungs. Pulmonary veins - blood returning. Lymphatics. Nerves. All bundled together.'",
+      "q": "What structures pass through the hilum?",
+      "options": [
+        "Only the trachea",
+        "Main bronchus, pulmonary artery, pulmonary veins, lymphatics, nerves",
+        "Only blood vessels",
+        "Only nerves"
+      ],
+      "answer": 1,
+      "explain": "EVERYTHING enters at the hilum: main bronchus (airway), pulmonary artery and veins (blood supply), lymphatics (drainage), and autonomic nerves (control).",
+      "wrongExplains": {
+        "0": "Trachea is above the lungs - it divides into main bronchi which enter at the hila.",
+        "2": "Blood vessels PLUS airways, lymphatics, and nerves all pass through.",
+        "3": "Nerves are just one component. Airways and vessels are equally important."
+      }
+    },
+    {
+      "id": "900.5.22.s06",
+      "arc": 2,
+      "arcTitle": "Location and Contents",
+      "narrative": "'Together, these structures form the ROOT of the lung,' Ms. Frizzle gestures at the bundle. 'Like the root of a plant connecting it to the ground - the lung root connects the lung to the mediastinum.'",
+      "q": "The 'root of the lung' refers to:",
+      "options": [
+        "The bottom of the lung",
+        "The structures at the hilum connecting lung to mediastinum",
+        "The first alveoli to develop",
+        "The main bronchi only"
+      ],
+      "answer": 1,
+      "explain": "The ROOT OF THE LUNG is the collection of structures at the hilum - bronchus, vessels, lymphatics, nerves - all wrapped in pleura, connecting the lung to the body.",
+      "wrongExplains": {
+        "0": "Bottom is the base resting on diaphragm. Root is the hilar attachment.",
+        "2": "Development order is different. Root is the anatomical connection point.",
+        "3": "Root includes bronchus PLUS vessels, nerves, and lymphatics - everything at the hilum."
+      }
+    },
+    {
+      "id": "900.5.22.s07",
+      "arc": 3,
+      "arcTitle": "Other Lung Landmarks",
+      "narrative": "'Don't confuse the hilum with other lung landmarks,' Ms. Frizzle warns. She points upward. 'The apex - the pointed superior tip that extends above the first rib, into the neck.'",
+      "q": "What is the apex of the lung?",
+      "options": [
+        "The entry point for vessels",
+        "The pointed superior tip extending above the first rib",
+        "The base resting on the diaphragm",
+        "The medial surface"
+      ],
+      "answer": 1,
+      "explain": "The APEX is the pointed SUPERIOR tip of the lung - it extends above the first rib into the root of the neck. Vulnerable to puncture wounds above the clavicle.",
+      "wrongExplains": {
+        "0": "Vessel entry is at the hilum. Apex is the top tip.",
+        "2": "That describes the base. Apex is the top, base is the bottom.",
+        "3": "Medial surface contains the hilum. Apex is the superior point."
+      }
+    },
+    {
+      "id": "900.5.22.s08",
+      "arc": 3,
+      "arcTitle": "Other Lung Landmarks",
+      "narrative": "'And the base,' Ms. Frizzle points downward. 'The inferior surface resting on the diaphragm. Concave - shaped to fit the dome of the diaphragm beneath it.'",
+      "q": "What is the base of the lung?",
+      "options": [
+        "The tip at the top",
+        "The inferior surface resting on the diaphragm",
+        "The entry point for bronchi",
+        "The space between lobes"
+      ],
+      "answer": 1,
+      "explain": "The BASE is the INFERIOR surface of the lung - concave to fit the dome of the diaphragm. When the diaphragm contracts and flattens, the base descends.",
+      "wrongExplains": {
+        "0": "Top tip is the apex. Base is the bottom surface.",
+        "2": "Bronchi enter at the hilum. Base is the diaphragmatic surface.",
+        "3": "Spaces between lobes are fissures. Base is the inferior surface."
+      }
+    },
+    {
+      "id": "900.5.22.s09",
+      "arc": 3,
+      "arcTitle": "Other Lung Landmarks",
+      "narrative": "'Apex at the top, base at the bottom, hilum in the middle-medial region.' Ms. Frizzle traces the lung's geography. 'And on the left lung - the cardiac notch, that indentation for the heart.'",
+      "q": "What is the cardiac notch?",
+      "options": [
+        "A hole in the heart",
+        "An indentation on the left lung for the heart",
+        "The entry point for pulmonary vessels",
+        "A groove between lobes"
+      ],
+      "answer": 1,
+      "explain": "The CARDIAC NOTCH is an indentation on the LEFT lung's anterior border where the heart sits. The left lung accommodates the heart's leftward position.",
+      "wrongExplains": {
+        "0": "The cardiac notch is on the lung, not a defect in the heart itself.",
+        "2": "Vessel entry is at the hilum. Cardiac notch is the heart indentation.",
+        "3": "Grooves between lobes are fissures. Cardiac notch is the heart impression."
+      }
+    },
+    {
+      "id": "900.5.22.s10",
+      "arc": 3,
+      "arcTitle": "Other Lung Landmarks",
+      "narrative": "They hover at the medial surface where all structures converge - bronchus, artery, veins, lymphatics, nerves. The lung's connection to the body. 'This entry point,' Ms. Frizzle asks. 'What is it called?'",
+      "q": "The area in the lungs where bronchi, vessels, and nerves enter is called the:",
+      "options": [
+        "Apex",
+        "Base",
+        "Hilum",
+        "Cardiac notch"
+      ],
+      "answer": 2,
+      "explain": "The HILUM - the lung's 'doorway' on the medial surface where all connecting structures (bronchi, vessels, nerves, lymphatics) enter and exit. Part of the lung root.",
+      "wrongExplains": {
+        "0": "Apex is the superior tip. Hilum is the medial entry point.",
+        "1": "Base is the inferior surface on diaphragm. Hilum is on the medial surface.",
+        "3": "Cardiac notch is the heart indentation on the left lung. Hilum is where structures enter."
+      }
+    }
+  ]
+}

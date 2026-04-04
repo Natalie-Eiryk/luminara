@@ -1,0 +1,428 @@
+{
+  "version": "1.0",
+  "source": "LUMI-OS Teaching Module",
+  "prefix": "400.2",
+  "question_count": 12,
+  "questions": [
+    {
+      "id": "400.2.01",
+      "q": "The shock-absorbing pads between the vertebrae are made of ___.",
+      "options": [
+        "Hyaline cartilage",
+        "Elastic connective tissue",
+        "Fibrocartilage",
+        "Reticular connective tissue"
+      ],
+      "answer": 2,
+      "explain": "Correct! Intervertebral discs are made of fibrocartilage. This tissue is tough, compressible, and resistant to tension - your body's built-in shock absorbers, cushioning the vertebrae during every step, jump, and movement.",
+      "mechanism": {
+        "title": "Fibrocartilage: Built for Compression",
+        "content": "Fibrocartilage has more collagen than hyaline cartilage, arranged in thick parallel bundles. This makes it resistant to both compression and tension. The intervertebral disc has two parts: The nucleus pulposus (gel-like center) and the annulus fibrosus (fibrocartilage rings surrounding it). The gel distributes pressure evenly while the rings contain it under enormous forces. This structure is precisely engineered to withstand the mechanical demands of spinal loading.",
+        "metaphor": "Intervertebral discs are jelly donuts. The gel center (nucleus pulposus) distributes pressure, and the tough fibrous rings (annulus fibrosus) contain it. Herniated disc? The jelly's escaping through a tear in those rings and pressing on your spinal nerves."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.2-connective-scaffolds/400.2.01-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "400.2.02",
+      "q": "The connective tissue that stores fat is called ___.",
+      "options": [
+        "Adipose tissue",
+        "Dense regular connective tissue",
+        "Areolar connective tissue",
+        "Reticular connective tissue"
+      ],
+      "answer": 0,
+      "explain": "Precisely. Adipose tissue stores fat in specialized cells called adipocytes. Each cell is essentially a giant droplet of triglyceride with the nucleus pushed to the edge like a signet ring. Your body's energy savings account - and it's more sophisticated than you might think.",
+      "mechanism": {
+        "title": "Adipose Tissue: Not Just Passive Storage",
+        "content": "Adipose tissue exists in two forms: White adipose tissue stores energy (single large lipid droplet per cell). Brown adipose tissue burns energy for heat (many small lipid droplets plus many mitochondria - it's brown because of all that mitochondrial iron). Adipose tissue also functions as an endocrine organ, secreting hormones like leptin (satiety signal to your brain) and adiponectin (insulin sensitivity regulator). Your fat is actively communicating with your brain about energy status.",
+        "metaphor": "Adipose tissue is your body's battery pack and the fuel gauge on the dashboard. It stores energy when you have excess, releases it when you need it. Unlike a simple battery, it also sends signals to headquarters about the current charge level - 'Hey brain, we're running low on reserves!' or 'All good, plenty stored here!'"
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.2-connective-scaffolds/400.2.02-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.5,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.5,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.2.03",
+      "q": "Which of the following connective tissues provides the framework for lymphoid organs?",
+      "options": [
+        "Dense regular",
+        "Dense irregular",
+        "Reticular",
+        "Areolar"
+      ],
+      "answer": 2,
+      "explain": "Exactly. Reticular connective tissue forms the internal framework (stroma) of lymph nodes, spleen, and bone marrow. It's the scaffolding that holds everything together - delicate, intricate, and essential.",
+      "mechanism": {
+        "title": "Reticular Tissue: The Lymphoid Scaffold",
+        "content": "Reticular tissue consists of reticular fibers (thin type III collagen) secreted by reticular cells. The fibers form a delicate meshwork that supports free cells - lymphocytes in lymph nodes, developing blood cells in bone marrow, macrophages in the spleen. The mesh allows cells to move while providing structural support. It's dynamic scaffolding - both rigid and permissive at once. The immune cells navigate this architecture, using it as both support structure and surveillance network.",
+        "metaphor": "Reticular tissue is like a 3D spiderweb inside lymphoid organs. Immune cells perch on the strands, crawl along them, and intercept whatever gets caught in the web. It's not just support - it's an active surveillance network."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.2-connective-scaffolds/400.2.03-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "400.2.04",
+      "q": "Which of the following statements about connective tissue is FALSE?",
+      "options": [
+        "Connective tissue has abundant extracellular matrix",
+        "Connective tissue is highly vascular",
+        "All connective tissues arise from mesenchyme",
+        "Connective tissue provides support and binding"
+      ],
+      "answer": 1,
+      "explain": "Precisely. Not all connective tissue is highly vascular - cartilage is avascular. It relies on diffusion for nutrients, which is why cartilage heals slowly. No blood supply means slow delivery of repair materials. This matters clinically.",
+      "mechanism": {
+        "title": "Connective Tissue Vascularity Varies",
+        "content": "Most connective tissues are well-vascularized: Bone (extensive blood supply), fat (needs blood for hormone secretion and triglyceride transport), loose connective tissues. However, cartilage is avascular - it gets nutrients by diffusion from the perichondrium. Dense regular connective tissue (tendons, ligaments) has poor blood supply. This is why both heal slowly after injury. No highways, just slow diffusion for nutrient delivery. The architecture dictates the healing timeline.",
+        "metaphor": "Think of vascularity like a delivery service. Most connective tissues get door-to-door delivery (well-vascularized) - fast, efficient, great for repair. Cartilage has to walk to the post office down the street (diffusion only) - slower, less efficient, harder to repair when damaged. Tendons? They get occasional deliveries, but the truck doesn't come often. This matters when you tear something."
+      },
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.2-connective-scaffolds/400.2.04-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.2.05",
+      "q": "The type of cartilage found in the external ear is ___.",
+      "options": [
+        "Hyaline cartilage",
+        "Elastic cartilage",
+        "Fibrocartilage",
+        "Reticular cartilage"
+      ],
+      "answer": 1,
+      "explain": "Correct! Elastic cartilage contains elastic fibers in addition to collagen, making it flexible yet able to maintain shape. Found in the ear, epiglottis, and parts of the larynx. You can fold your ear in half and it springs right back.",
+      "mechanism": {
+        "title": "Three Types of Cartilage",
+        "content": "The cartilage family has three members, each adapted for different mechanical demands: HYALINE: Most common, smooth, covers articular surfaces for frictionless gliding, forms embryonic skeleton. ELASTIC: Contains elastic fibers, flexible and springy, found in ear and epiglottis. FIBROCARTILAGE: Thick collagen bundles, tough and compressible, found in intervertebral discs and menisci. Each type is structurally optimized for its specific role. The specialization reflects the mechanical demands each location faces.",
+        "metaphor": "Hyaline cartilage is like firm rubber - smooth and somewhat springy for gliding movements. Elastic cartilage is like a rubber band - you can bend it repeatedly and it springs right back to shape. Fibrocartilage is like a dense sponge - compressible, tough, built to absorb crushing forces. Three materials, three jobs, perfect matches."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.2-connective-scaffolds/400.2.05-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.9,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.2.06",
+      "q": "The primary cell of mature bone tissue is the ___.",
+      "options": [
+        "Osteoblast",
+        "Osteoclast",
+        "Osteocyte",
+        "Chondrocyte"
+      ],
+      "answer": 2,
+      "explain": "Precisely. Osteocytes are mature bone cells that maintain the bone matrix. They live in lacunae (little caves) and communicate via canaliculi (little canals). They're entombed in the bone they helped build.",
+      "mechanism": {
+        "title": "Bone Cells: Building, Maintaining, and Destroying",
+        "content": "The bone cellular system has three key players: OSTEOBLASTS: Build bone - secrete osteoid (organic matrix) which then mineralizes with calcium phosphate. OSTEOCYTES: Maintain bone - trapped osteoblasts that detect mechanical stress and regulate remodeling. They communicate via long cytoplasmic extensions through canaliculi. OSTEOCLASTS: Destroy bone - large multinucleated cells that dissolve bone for remodeling or calcium release. They create an acidic microenvironment that eats away at the mineral, then enzymes digest the organic matrix. Building, monitoring, and destroying in perfect balance.",
+        "metaphor": "Osteoblasts are construction workers building the bone - laying down matrix and mineralizing it. Osteocytes are maintenance staff who get bricked into the walls - they monitor the building from inside and send signals when repairs are needed. Osteoclasts are the demolition crew with acid and jackhammers, tearing down old or damaged sections so osteoblasts can rebuild. The cycle never stops."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.2-connective-scaffolds/400.2.06-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "400.2.07",
+      "q": "A 45-year-old sailor presents with bleeding gums, poor wound healing, and bruising. Blood work shows normal clotting factors. Which connective tissue component requires the vitamin he's deficient in for proper synthesis?",
+      "options": [
+        "Elastin fibers",
+        "Collagen",
+        "Reticular fibers",
+        "Hyaluronic acid"
+      ],
+      "answer": 1,
+      "explain": "Correct! This patient is deficient in vitamin C (ascorbic acid). Without it, collagen synthesis fails. Vitamin C is a required cofactor for prolyl hydroxylase and lysyl hydroxylase - the enzymes that stabilize collagen's triple helix. No hydroxylation, no stable collagen, no tissue repair. The body falls apart without this one vitamin.",
+      "mechanism": {
+        "title": "Vitamin C and Collagen: The Hydroxylation Requirement",
+        "content": "Collagen synthesis occurs in several steps: Translation in the ER, then post-translational modifications including hydroxylation of proline and lysine residues by prolyl hydroxylase and lysyl hydroxylase. Both enzymes require vitamin C (ascorbic acid) as a cofactor. The hydroxylated residues form hydrogen bonds that stabilize the triple helix. Without vitamin C, you get under-hydroxylated collagen that can't form stable fibers - it degrades. Blood vessels start leaking (bleeding gums, bruising), wounds won't heal (poor fibroblast function), and even old scars can reopen. Scurvy is collagen failure on a systemic scale.",
+        "metaphor": "Think of collagen like a three-stranded rope. Vitamin C provides the chemical 'knots' (hydroxyl groups) that hold the three strands together in a tight braid. Without vitamin C, the rope is loosely twisted - it looks like rope, but pull on it and it falls apart. Your blood vessels, skin, and connective tissues are all made of this rope. No knots? Everything unravels."
+      },
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.2-connective-scaffolds/400.2.07-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "400.2.08",
+      "q": "A 28-year-old woman presents with hyperextensible joints (she can bend her thumb back to touch her forearm), thin skin that bruises easily, and poor wound healing with 'cigarette-paper' scars. Which protein is most likely defective?",
+      "options": [
+        "Elastin",
+        "Keratin",
+        "Collagen",
+        "Fibronectin"
+      ],
+      "answer": 2,
+      "explain": "Precisely. This is Ehlers-Danlos syndrome - a group of genetic collagen disorders with mutations affecting collagen synthesis, processing, or structure. The hypermobile joints, fragile skin, and abnormal scarring all indicate collagen defect. One protein's failure cascades through multiple organ systems.",
+      "mechanism": {
+        "title": "Ehlers-Danlos Syndrome: Collagen Gone Wrong",
+        "content": "Ehlers-Danlos syndrome includes 13+ subtypes, most commonly affecting type I or type III collagen: CLASSICAL EDS: Mutations in COL5A1/COL5A2 cause hyperextensible skin and joint hypermobility. VASCULAR EDS: Mutations in COL3A1 cause arterial/organ rupture (potentially lethal - median age of death around 50 years). The ligaments that stabilize joints, the dermis that gives skin strength, the adventitia of blood vessels - all depend on collagen. When collagen is structurally abnormal, everything becomes hyperflexible or fragile. The clinical phenotype maps directly to where each collagen type is expressed.",
+        "metaphor": "Normal collagen is like steel cables in a suspension bridge - strong, organized, resistant to tension. EDS collagen is like frayed or kinked cables - they're there, but they can't handle the load properly. Your joints overextend because the ligaments stretch too much. Your skin is fragile because the dermis can't resist tearing. Your wounds heal with thin scars because the new collagen is also defective. The entire structure is compromised from the molecular level up."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.2-connective-scaffolds/400.2.08-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.2.09",
+      "q": "A 62-year-old patient with osteoarthritis shows knee cartilage breaking down faster than it can be repaired. Which cells have FAILED in their regenerative function?",
+      "options": [
+        "Fibroblasts",
+        "Osteoblasts",
+        "Chondrocytes",
+        "Adipocytes"
+      ],
+      "answer": 2,
+      "explain": "Exactly. Chondrocytes are the cells that maintain cartilage matrix - they secrete collagen and proteoglycans. In osteoarthritis, chondrocytes can't keep up with matrix degradation. Remember that cartilage is avascular - no blood supply means slow nutrient delivery and slow repair. The cells are fighting a losing battle.",
+      "mechanism": {
+        "title": "Osteoarthritis: When Chondrocytes Can't Keep Up",
+        "content": "In healthy cartilage, chondrocytes maintain the extracellular matrix in dynamic balance: Synthesis equals degradation. In osteoarthritis, this balance fails. Mechanical stress, inflammatory cytokines (IL-1, TNF-alpha), and aging cause chondrocytes to upregulate matrix metalloproteinases (MMPs) that break down collagen and proteoglycans. The chondrocytes try to compensate by increasing matrix synthesis, but they can't keep up. Cartilage is avascular, so repair depends entirely on the resident chondrocytes - there's no influx of progenitor cells or growth factors from blood. The tissue literally starves while trying to repair itself. Progressive matrix loss, cartilage thinning, eventually bone-on-bone contact.",
+        "metaphor": "Think of chondrocytes as a road repair crew that has to fix a highway while traffic is still driving on it - constant mechanical stress. Now imagine they can only work at night (limited nutrients from diffusion), and every year they get fewer workers and slower tools (aging, reduced growth factor response). Eventually, the potholes appear faster than the crew can fill them. The road deteriorates, and there's no way to add more workers because there's no blood supply bringing reinforcements. The tissue is alone in its battle."
+      },
+      "isotopes": [
+        "cardiology.function"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.2-connective-scaffolds/400.2.09-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.2.10",
+      "q": "A 55-year-old woman falls and fractures her hip. Six months later, the fracture still hasn't healed despite proper immobilization. Blood work reveals normal calcium but very low vitamin D. Which cells are being deprived of the signal they need to deposit new bone?",
+      "options": [
+        "Osteoclasts",
+        "Chondrocytes",
+        "Osteoblasts",
+        "Fibroblasts"
+      ],
+      "answer": 2,
+      "explain": "Precisely. Vitamin D is crucial for calcium absorption and for osteoblast function. Without adequate vitamin D, osteoblasts can't effectively mineralize the new bone matrix they're building. It's like having construction workers without cement - they can frame the structure (lay down osteoid), but they can't harden it. One vitamin deficiency cripples bone healing.",
+      "mechanism": {
+        "title": "Vitamin D and Bone Formation: The Mineralization Problem",
+        "content": "Osteoblasts secrete osteoid - an organic matrix of type I collagen and other proteins. Then this matrix must mineralize with hydroxyapatite crystals (calcium phosphate). Vitamin D (specifically 1,25-dihydroxyvitamin D3, the active form) does two crucial things: (1) increases intestinal calcium absorption so there's enough calcium in the blood, and (2) directly promotes osteoblast differentiation and matrix mineralization. Without adequate vitamin D, you get normal or even increased osteoid production, but it doesn't mineralize. X-rays show persistent lucency (darkness) at the fracture site because unmineralized osteoid doesn't block X-rays like mineralized bone does. The tissue is there, but it's structurally weak. The scaffolding exists but the concrete never hardens.",
+        "metaphor": "Think of osteoblasts as construction workers building a concrete structure. They lay down the rebar framework (collagen matrix = osteoid), then pour concrete (calcium phosphate crystals = mineralization). Vitamin D is like the cement mixer and the supply truck bringing concrete. Without vitamin D, the workers can build the entire framework, but there's no concrete to pour - or it never hardens properly. The structure looks done from a distance, but touch it and it's soft, weak, can't bear load. That's osteomalacia."
+      },
+      "isotopes": [
+        "cardiology.function"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.2-connective-scaffolds/400.2.10-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.5,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.2.11",
+      "q": "A 70-year-old man with chronic kidney disease has persistently high blood calcium levels despite dietary calcium restriction. His bones are becoming progressively weaker and X-rays show 'moth-eaten' appearance. Which cells are being OVERSTIMULATED by the hormone his kidneys can no longer properly regulate?",
+      "options": [
+        "Osteoblasts",
+        "Osteocytes",
+        "Osteoclasts",
+        "Chondrocytes"
+      ],
+      "answer": 2,
+      "explain": "Correct! This is renal osteodystrophy. In chronic kidney disease, the kidneys can't activate vitamin D or excrete phosphate properly. This triggers secondary hyperparathyroidism - the parathyroid glands pump out excess PTH (parathyroid hormone). PTH stimulates osteoclasts to break down bone, releasing calcium into the blood. The bones are literally being dissolved to normalize serum calcium. The skeleton sacrifices itself.",
+      "mechanism": {
+        "title": "Renal Osteodystrophy: When PTH Won't Stop",
+        "content": "Normal calcium homeostasis: Kidneys activate vitamin D, which increases intestinal calcium absorption, serum calcium normalizes, PTH secretion decreases. In chronic kidney disease, this fails. The kidneys can't activate vitamin D (no 1-alpha-hydroxylase activity), so calcium absorption drops. The kidneys also can't excrete phosphate, so serum phosphate rises and binds calcium, further dropping free calcium. Low calcium signals the parathyroid glands to pump out PTH continuously. PTH stimulates osteoclasts (both directly and via RANKL signaling from osteoblasts) to dissolve bone and release calcium. The bones become porous, fragile, prone to fractures. The patient develops renal osteodystrophy: A combination of osteomalacia (undermineralized bone), osteitis fibrosa cystica (cystic bone lesions from excessive resorption), and adynamic bone disease (low turnover). This is what happens when one organ system's failure cascades to destroy another.",
+        "metaphor": "Think of your bones as the body's calcium bank. Normally, you make deposits (intestinal absorption) and only make small withdrawals (normal bone remodeling) to keep blood calcium stable. In chronic kidney disease, the deposit mechanism is broken (no vitamin D activation) and you're bleeding money (phosphate binding calcium). The parathyroid glands panic and scream 'WITHDRAW EVERYTHING!' - osteoclasts go into overdrive, smashing open the vaults and pulling calcium from the bones. The blood calcium stays normal or high, but the bank (skeleton) is being demolished. Eventually you're left with a structurally bankrupt skeleton that fractures under normal load."
+      },
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.2-connective-scaffolds/400.2.11-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.8,
+        "D": 0.5,
+        "R": 0.8,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.2.12",
+      "q": "A marathon runner develops severe knee pain. MRI shows a torn meniscus (fibrocartilage). The orthopedic surgeon explains this will heal very slowly and may require surgical repair. What property of this tissue makes healing so difficult?",
+      "options": [
+        "It's avascular (no blood supply)",
+        "It has no cells",
+        "It's too dense for growth factors to penetrate",
+        "The cells divide too rapidly and form scar tissue"
+      ],
+      "answer": 0,
+      "explain": "Precisely. Fibrocartilage, like all cartilage, is avascular - no blood vessels. Healing requires nutrients, oxygen, growth factors, and inflammatory cells to arrive at the injury site. Without blood supply, all of that has to arrive by diffusion from the edges. It's slow and often incomplete.",
+      "mechanism": {
+        "title": "Avascular Tissue: The Healing Penalty",
+        "content": "Vascularity determines healing speed: Vascularized tissues (skin, muscle, bone): When injured, blood vessels dilate and new capillaries sprout into the wound (angiogenesis). Blood delivers inflammatory cells (neutrophils, macrophages), growth factors (PDGF, TGF-beta, VEGF), nutrients, and oxygen rapidly. Healing is fast - days to weeks. Avascular cartilage: Injured area must rely on diffusion from the periphery (synovial fluid, perichondrium at edges). No rapid delivery of repair signals. Chondrocytes at the injury site are isolated and poorly stimulated. The meniscus is particularly challenging: Outer one-third is vascularized (the 'red zone') and can heal. Inner two-thirds is avascular (the 'white zone') and won't heal. Surgeons classify meniscal tears by location: Red-red (both edges vascularized, will heal), red-white (one edge vascularized, might heal), white-white (both edges avascular, won't heal). The anatomy determines the clinical outcome. This is why many meniscal tears require surgical removal rather than repair.",
+        "metaphor": "Healing is like emergency response after a disaster. Vascularized tissue has highways (blood vessels) that let ambulances (inflammatory cells), supply trucks (nutrients), and construction crews (fibroblasts) arrive within hours. Work starts immediately, repairs complete quickly. Avascular cartilage has no highways - responders have to walk in from the nearest road miles away. By the time they arrive (if they do), it's too late for effective repair. The damaged area is abandoned rather than rebuilt."
+      },
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.2-connective-scaffolds/400.2.12-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.6
+      }
+    }
+  ]
+}

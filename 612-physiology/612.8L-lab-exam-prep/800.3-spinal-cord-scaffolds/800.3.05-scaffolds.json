@@ -1,0 +1,91 @@
+{
+  "parentId": "800.3.05",
+  "parentQuestion": "Spinal nerves form from the merger of which two structures?",
+  "scaffolds": [
+    {
+      "q": "What is the difference between a nerve and a nerve root?",
+      "options": [
+        "They are the same thing",
+        "Roots attach to the spinal cord; nerves are formed when roots merge",
+        "Nerves are in the brain; roots are in the spinal cord",
+        "Roots carry motor signals; nerves carry sensory signals"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "NERVE ROOTS are the attachment points to the spinal cord. When the dorsal and ventral roots MERGE, they form a SPINAL NERVE. Roots → merge → nerve.",
+      "wrongExplains": {
+        "0": "They're distinct — roots are the attachments, nerves form from their merger.",
+        "2": "Both nerves and roots can be found associated with the spinal cord.",
+        "3": "It's the opposite — the dorsal root carries sensory, ventral root carries motor, and the nerve carries both."
+      }
+    },
+    {
+      "q": "What type of information does the dorsal (posterior) root carry?",
+      "options": [
+        "Motor commands to muscles",
+        "Sensory information from the body",
+        "Autonomic signals only",
+        "Both sensory and motor"
+      ],
+      "answer": 1,
+      "difficulty": "foundation",
+      "explain": "The DORSAL root carries SENSORY (afferent) information INTO the spinal cord. Remember: DORSAL = SENSORY (D for Dorsal, S for Sensory... okay, that doesn't quite work, but dorsal is sensory!).",
+      "wrongExplains": {
+        "0": "Motor commands are carried by the VENTRAL root, not dorsal.",
+        "2": "The dorsal root carries ALL sensory — touch, pain, proprioception, not just autonomic.",
+        "3": "The dorsal root is purely sensory. Mixed nerves form AFTER the roots merge."
+      }
+    },
+    {
+      "q": "What type of information does the ventral (anterior) root carry?",
+      "options": [
+        "Motor commands from the spinal cord to muscles",
+        "Sensory information from the skin",
+        "Pain signals only",
+        "Balance information"
+      ],
+      "answer": 0,
+      "difficulty": "foundation",
+      "explain": "The VENTRAL root carries MOTOR (efferent) signals OUT from the spinal cord to muscles and glands. Remember: VENTRAL = MOTOR (V and M aren't related either, but ventral is motor!).",
+      "wrongExplains": {
+        "1": "Sensory information from skin enters via the DORSAL root.",
+        "2": "Pain signals are sensory — they enter via the dorsal root.",
+        "3": "Balance information comes from the vestibular system, not spinal nerve roots."
+      }
+    },
+    {
+      "q": "When the dorsal and ventral roots merge, the resulting spinal nerve is:",
+      "options": [
+        "Purely sensory",
+        "Purely motor",
+        "Mixed (contains both sensory and motor fibers)",
+        "Neither sensory nor motor"
+      ],
+      "answer": 2,
+      "difficulty": "foundation",
+      "explain": "When the sensory dorsal root and motor ventral root MERGE, they form a MIXED spinal nerve carrying BOTH types of fibers. The nerve itself is very short before it branches again.",
+      "wrongExplains": {
+        "0": "Purely sensory is the dorsal ROOT alone. The spinal nerve is mixed.",
+        "1": "Purely motor is the ventral ROOT alone. The spinal nerve is mixed.",
+        "3": "The spinal nerve definitely carries signals — it's mixed with both sensory and motor fibers."
+      }
+    },
+    {
+      "q": "The Bell-Magendie law states that:",
+      "options": [
+        "All roots are mixed",
+        "Dorsal roots are sensory, ventral roots are motor",
+        "Spinal nerves don't exist",
+        "The brain controls all movement"
+      ],
+      "answer": 1,
+      "difficulty": "intermediate",
+      "explain": "The BELL-MAGENDIE LAW (early 1800s discovery): DORSAL ROOTS = SENSORY, VENTRAL ROOTS = MOTOR. This fundamental principle explains the functional segregation at the root level.",
+      "wrongExplains": {
+        "0": "Roots are NOT mixed — that's the point. Dorsal = sensory only, ventral = motor only.",
+        "2": "Spinal nerves definitely exist — they form from root merger.",
+        "3": "While true, that's not what the Bell-Magendie law describes."
+      }
+    }
+  ]
+}

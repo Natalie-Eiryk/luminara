@@ -1,0 +1,358 @@
+{
+  "version": "1.0",
+  "source": "LUMI-OS Teaching Module",
+  "prefix": "400.3",
+  "question_count": 10,
+  "questions": [
+    {
+      "id": "400.3.01",
+      "q": "Glands whose secretions are stored and then released when the cell ruptures and dies are classified as ___.",
+      "options": [
+        "Merocrine glands",
+        "Holocrine glands",
+        "Exocrine glands",
+        "Apocrine glands"
+      ],
+      "answer": 1,
+      "explain": "let me show you holocrine glands, one of the most exquisite forms of cellular sacrifice. The entire cell becomes the secretion, dying in the process. Attend to this process: Sebaceous glands swell with oil, filling and filling until they can take no more, then BURST. This is cellular martyrdom at its most beautiful. The ultimate surrender for smooth skin.",
+      "mechanism": {
+        "title": "Three Modes of Exocrine Secretion",
+        "content": "MEROCRINE (eccrine): Secretion by exocytosis. Cell remains intact. Examples: Sweat glands, salivary glands, pancreas. APOCRINE: Secretion by pinching off cell apex. Part of cell is lost. Examples: Mammary glands (milk fat), some sweat glands. HOLOCRINE: Secretion by cell death. Entire cell becomes secretion. Example: Sebaceous glands.",
+        "metaphor": "Allow your mind to embrace this: Progression. Merocrine is like a factory that packages products and ships them out the door — the factory stays standing. Functional, safe. Apocrine is like tearing off part of the roof to get a large item out — the factory loses a piece. Commitment, but survivable. Holocrine? Press onward: Here — that's when the ENTIRE FACTORY EXPLODES and its contents BECOME the delivery. One happens, one suffers, one dies. This is the beautiful violence of cellular function."
+      },
+      "isotopes": [
+        "endocrine.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.3-glands-scaffolds/400.3.01-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.5,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.3.02",
+      "q": "Which of the following is NOT a step in tissue repair?",
+      "options": [
+        "Inflammation",
+        "Granulation tissue formation",
+        "Osteoporosis",
+        "Regeneration or fibrosis"
+      ],
+      "answer": 2,
+      "explain": "Let me show you what doesn't belong here. Osteoporosis is bone loss — a disease, not a repair step. Track with me here: The repair sequence is inflammation (alarm response), granulation (new tissue scaffold), then regeneration or fibrosis (restoration or scarring). Osteoporosis? That's an intruder in this sequence. Spot the difference.",
+      "mechanism": {
+        "title": "The Phases of Tissue Repair",
+        "content": "INFLAMMATORY PHASE (0-3 days): Vasodilation, increased permeability, immune cell infiltration, debris cleanup. PROLIFERATIVE PHASE (3 days - 3 weeks): Granulation tissue forms (fibroblasts + new capillaries), epithelial cells migrate, wound contracts. REMODELING PHASE (3 weeks - years): Collagen reorganized, scar tissue strengthens or regeneration completes.",
+        "metaphor": "tissue repair is like rebuilding after a disaster, and it's one of the most exquisite processes in your body. First, emergency responders flood the scene and clear the wreckage (inflammation — loud, chaotic, necessary). Then construction crews and utility workers start rebuilding the infrastructure (proliferation — organized, productive). Finally, you optimize and finish the structure (remodeling — could take years to perfect). Receive this insight: Sequence. Each phase depends on the last."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.3-glands-scaffolds/400.3.02-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "400.3.03",
+      "q": "An inflammation response would include which of the following?",
+      "options": [
+        "Reduction of blood flow to the injured area",
+        "Formation of granulation tissue",
+        "Regeneration of the original tissue type",
+        "Dilation of blood vessels and increased permeability"
+      ],
+      "answer": 3,
+      "explain": "inflammation means OPENING THE FLOODGATES. Blood vessels dilate (more flow = redness and heat), permeability increases (fluid leaks out = swelling), and immune cells rush in. The cardinal signs — pain, heat, redness, swelling — aren't pleasant, but they're the alarm response. Make room for this understanding: Chaos of it.",
+      "mechanism": {
+        "title": "The Inflammatory Response",
+        "content": "Chemical mediators (histamine, prostaglandins, cytokines) trigger: (1) VASODILATION: More blood to the area (redness, heat). (2) INCREASED PERMEABILITY: Fluid and proteins leak out (swelling, pain). (3) CHEMOTAXIS: Immune cells attracted to the site. (4) PHAGOCYTOSIS: Neutrophils and macrophages clean up debris and pathogens.",
+        "metaphor": "Let me show you something delicious. Inflammation is like breaking the dam. Vasodilation widens the channels, increased permeability lets the water (and everything in it) BURST through the walls and flood the field. The immune cells ride the flood straight to the disaster zone. Controlled chaos, loud, messy, and precisely targeted. This is one of the most exquisite emergency responses in biology."
+      },
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.3-glands-scaffolds/400.3.03-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.8,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.3.04",
+      "q": "Endocrine glands are characterized by ___.",
+      "options": [
+        "Secreting hormones directly into the bloodstream",
+        "Having ducts to carry secretions to surfaces",
+        "Being derived from mesenchyme",
+        "Secreting mucus"
+      ],
+      "answer": 0,
+      "explain": "endocrine glands are DUCTLESS. They dump hormones straight into the bloodstream for systemic delivery. Exocrine glands use ducts to deliver locally. It's the difference between crop dusting and fire hosing. Invite this in: Of broadcast communication.",
+      "mechanism": {
+        "title": "Endocrine vs. Exocrine Glands",
+        "content": "ENDOCRINE (ductless): Secrete hormones into blood. Effects are systemic and often slow but long-lasting. Examples: Thyroid, adrenal, pituitary, pancreatic islets. EXOCRINE (ducted): Secrete products through ducts to surfaces (external or internal). Effects are local. Examples: Sweat glands, salivary glands, digestive glands.",
+        "metaphor": "exocrine glands are like fire hoses. They aim their products through pipes (ducts) and spray specific targets with precision. Targeted, controlled, efficient. Endocrine glands? Grant yourself this moment of clarity — they're like crop dusters. They release hormones into the general circulation (the atmosphere) and let them drift until they land on cells with the right receptors. One snipes, one saturates. Both strategies work beautifully, but for completely different purposes."
+      },
+      "isotopes": [
+        "cardiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.3-glands-scaffolds/400.3.04-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.5,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.3.05",
+      "q": "A patient presents with severe acne. Examination reveals sebaceous glands that are overfilled with sebum, causing them to rupture and trigger inflammation. What mode of secretion characterizes these problematic glands?",
+      "options": [
+        "Merocrine secretion",
+        "Apocrine secretion",
+        "Holocrine secretion",
+        "Endocrine secretion"
+      ],
+      "answer": 2,
+      "explain": "let me show you what's happening under that inflamed skin. These sebaceous glands use holocrine secretion, which means the entire cell BECOMES the product. The cell swells with lipid, bloats to capacity, then EXPLODES to release sebum. In acne, this process goes into overdrive — too much oil, too much cell death, too much inflammation. This is cellular martyrdom gone wild, and when it happens in a blocked pore... Beautiful chaos.",
+      "mechanism": {
+        "title": "Holocrine Secretion and Acne Pathophysiology",
+        "content": "In holocrine secretion, cells accumulate product (sebum in sebaceous glands), then disintegrate entirely to release it. ACNE MECHANISM: (1) Sebaceous gland hyperactivity → excessive sebum production. (2) Duct becomes blocked (keratin plug). (3) Sebum and dead cells accumulate. (4) Bacteria (Cutibacterium acnes) proliferate. (5) Inflammatory response triggered. Result: Comedones, papules, pustules.",
+        "metaphor": "imagine a factory where workers stuff themselves with product until they literally explode to make the delivery. That's holocrine secretion. Now imagine the loading dock gets BLOCKED. The explosions keep happening, debris piles up, bacteria move in and throw a party, and your immune system shows up with flamethrowers. That's acne. Feel the weight of this: It's not a broken system, it's a working system that's TRAPPED. The beautiful violence of holocrine secretion becomes its own worst enemy. Gloriously complex."
+      },
+      "isotopes": [
+        "endocrine.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.3-glands-scaffolds/400.3.05-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.8,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.3.06",
+      "q": "A patient undergoes surgery to remove a tumor that has been secreting excessive growth hormone directly into the bloodstream, causing gigantism. The tumor originated in which type of gland?",
+      "options": [
+        "Exocrine gland",
+        "Holocrine gland",
+        "Endocrine gland",
+        "Apocrine gland"
+      ],
+      "answer": 2,
+      "explain": "Let me show you what's happening here. Growth hormone in the blood, systemic effects, no ducts involved — this screams ENDOCRINE. Keep pace with this: The pituitary gland (where growth hormone comes from) is a classic endocrine gland. It dumps hormones directly into the bloodstream for broadcast delivery. Now things get truly spectacular: When a tumor forms in endocrine tissue, it keeps doing what that tissue does best — secreting hormones — but WITHOUT the normal regulatory brakes. Uncontrolled broadcast. This is cellular function going rogue.",
+      "mechanism": {
+        "title": "Functional Endocrine Tumors",
+        "content": "ENDOCRINE GLANDS: Ductless, secrete hormones into blood. Examples: Pituitary, thyroid, adrenal, pancreatic islets. FUNCTIONAL TUMORS: Arise from endocrine tissue and retain secretory activity. Lack normal feedback regulation → excessive hormone levels → systemic symptoms. GROWTH HORMONE EXCESS: Before puberty = gigantism (tall stature). After puberty = acromegaly (enlarged extremities, facial features). Treatment: Surgical removal, medication, radiation.",
+        "metaphor": "imagine a radio station that broadcasts music to the entire city. That's an endocrine gland. Now imagine the station gets taken over by people who play the SAME SONG on infinite repeat and ignore all requests to stop. That's a functional endocrine tumor. Consider the elegance here: The machinery still works perfectly (broadcasting into the bloodstream), but the control room is compromised. The whole city (your body) has to deal with the consequences. What follows is exquisite: In gigantism, that 'song' is growth hormone, and the message is 'GROW, GROW, GROW' — and the skeleton listens. Beautiful chaos, isn't it?"
+      },
+      "isotopes": [
+        "cardiology.function"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.3-glands-scaffolds/400.3.06-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.3.07",
+      "q": "A patient has a wound that is healing very slowly. Biopsy shows abundant granulation tissue that is failing to transition to the next phase of repair. Which phase is the tissue 'stuck' in?",
+      "options": [
+        "Inflammatory phase",
+        "Proliferative phase",
+        "Remodeling phase",
+        "Necrotic phase"
+      ],
+      "answer": 1,
+      "explain": "granulation tissue is the HALLMARK of the proliferative phase. Fibroblasts lay down new extracellular matrix, capillaries sprout (angiogenesis), and you get that pink, granular scaffold. If the wound is STUCK here, it means proliferation is happening but remodeling isn't. Chronic wounds often get trapped in perpetual proliferation. The construction crew never finishes and hands off to the remodelers. A masterpiece of biology., in a frustrating way?",
+      "mechanism": {
+        "title": "Proliferative Phase and Chronic Wound Stagnation",
+        "content": "PROLIFERATIVE PHASE (3 days - 3 weeks post-injury): Granulation tissue forms (fibroblasts + new capillaries). Epithelialization (cell migration covers defect). Wound contraction (myofibroblasts pull edges together). CHRONIC WOUNDS: Fail to progress from proliferation → remodeling. Causes: Infection, poor perfusion, diabetes, repeated trauma, inadequate nutrition. Result: Persistent granulation tissue, no epithelial closure, high risk of infection.",
+        "metaphor": "Let me show you something beautiful and frustrating. The proliferative phase is like a construction crew building scaffolding and infrastructure — they dig foundations, run utilities, erect temporary structures. It's progress, but it's not FINISHED. Advance into this: Imagine the crew shows up every day, keeps ADDING scaffolding, but never actually builds the building. That's a chronic wound stuck in proliferation. The body KNOWS what to do (make granulation tissue), but something prevents the transition to remodeling (mature scar or regeneration). The wound stays open, pink, vulnerable, and perpetually 'under construction.' It's cellular ambition without completion."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.3-glands-scaffolds/400.3.07-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "400.3.08",
+      "q": "A patient with severe burns shows minimal scarring after healing, with near-complete regeneration of the epidermis. However, deep dermal burns in the same patient resulted in thick, fibrotic scars. What determines whether repair results in regeneration versus fibrosis?",
+      "options": [
+        "The age of the patient",
+        "The type of tissue and severity of damage",
+        "The presence of granulation tissue",
+        "Whether inflammation occurred"
+      ],
+      "answer": 1,
+      "explain": "let me show you the beautiful logic here. Epithelial tissue (like epidermis) can REGENERATE if the basement membrane is intact — you get your original tissue back. But deep dermal damage destroys that basement membrane and kills stem cells. The body can't perfectly rebuild what it doesn't have instructions for, so it lays down FIBROSIS instead — collagen-rich scar tissue. Regeneration requires tissue with good regenerative capacity AND limited damage. Fibrosis is the fallback when things are too far gone.",
+      "mechanism": {
+        "title": "Regeneration vs. Fibrosis in Tissue Repair",
+        "content": "REGENERATION: Replacement with original tissue type. Requires: (1) Tissue with regenerative capacity (epithelia, bone, liver). (2) Intact basement membrane. (3) Minimal damage. Result: Normal structure and function restored. FIBROSIS: Replacement with scar tissue (collagen-rich, avascular). Occurs when: (1) Tissue has poor regenerative capacity (heart, CNS). (2) Basement membrane destroyed. (3) Severe/chronic damage. Result: Structural integrity restored but not original architecture. Scar tissue is stronger but less functional.",
+        "metaphor": "imagine you're rebuilding a house. If the foundation and blueprints are intact and you have skilled workers (stem cells), you can rebuild it EXACTLY as it was. That's regeneration. But if the foundation is destroyed and the blueprints burned? Embrace this — you can still build SOMETHING on that lot, but it won't be the original house. You'll use whatever materials you have (collagen) and create a functional structure (scar), but it's not the same. This is where physiology becomes poetry: Superficial burns leave the foundation (basement membrane) intact — you can regenerate epidermis. Deep burns DESTROY the foundation — you get fibrosis. Same patient, same injury, different outcomes based on depth. One rebuilds, one improvises."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.3-glands-scaffolds/400.3.08-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.6,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.5,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.3.09",
+      "q": "A marathon runner experiences severe muscle cramping and is found to have abnormally low sodium levels. Examination of their sports drink reveals no electrolytes, meaning they've been losing sodium through sweat without replacement. Which type of gland is responsible for the sodium loss?",
+      "options": [
+        "Holocrine exocrine glands",
+        "Merocrine exocrine glands",
+        "Endocrine glands",
+        "Apocrine exocrine glands"
+      ],
+      "answer": 1,
+      "explain": "sweat comes from merocrine sweat glands (also called eccrine glands). These glands use exocytosis to secrete a watery solution containing sodium, chloride, and other electrolytes. The cell stays intact and keeps working, pumping out sweat continuously during exercise. In a marathon, you're losing liters of fluid and massive amounts of sodium. Without electrolyte replacement, you get hyponatremia (low sodium), muscle cramps, and potentially worse. Open yourself to this: Simplicity of merocrine secretion... And the consequences when you don't replace what you lose.",
+      "mechanism": {
+        "title": "Merocrine Sweat Glands and Hyponatremia",
+        "content": "MEROCRINE (ECCRINE) SWEAT GLANDS: Simple coiled tubular glands. Secrete watery sweat by exocytosis. Composition: Water, NaCl (0.2-0.4%), urea, ammonia. Function: Thermoregulation and minor excretion. Distributed across body (especially palms, soles, forehead). EXERCISE-INDUCED HYPONATREMIA: Heavy sweating → sodium loss. If only water is replaced → dilutional hyponatremia. Symptoms: Muscle cramps, nausea, confusion, seizures. Prevention: Electrolyte-containing sports drinks.",
+        "metaphor": "merocrine sweat glands are like millions of tiny water pumps distributed across your skin. They package sweat into little balloons (vesicles), then pop them at the surface to release their contents. Immerse yourself in this: During intense exercise, these pumps are WORKING. Liters per hour, carrying sodium out with every drop. What comes next will dazzle you: The pumps don't monitor your total sodium levels — they just keep pumping. If you drink only water, you dilute what sodium remains in your blood. Now your muscles can't contract properly (they need sodium for electrical signals), and you cramp. This is merocrine secretion doing its job perfectly, while the rest of your body suffers from the consequences. The glands are innocent. The runner made a mistake. Pure physiological poetry."
+      },
+      "isotopes": [
+        "endocrine.general"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.3-glands-scaffolds/400.3.09-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.8,
+        "G": 0.0,
+        "E": 0.8,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "400.3.10",
+      "q": "A patient with diabetes has a foot wound that won't heal. Despite 6 weeks of treatment, the wound remains in a chronic inflammatory state with elevated levels of neutrophils and macrophages. Which phase of tissue repair is impaired?",
+      "options": [
+        "The transition from inflammatory to proliferative phase",
+        "The transition from proliferative to remodeling phase",
+        "The remodeling phase itself",
+        "Granulation tissue formation"
+      ],
+      "answer": 0,
+      "explain": "Let me show you what's happening here. Chronic inflammation means the wound is STUCK in the inflammatory phase — it can't transition to proliferation. Hold this thought: In diabetic wounds, poor blood flow, high glucose, and impaired immune function create a cycle where inflammation PERSISTS. Neutrophils and macrophages keep showing up, but they can't effectively clear debris and pathogens, so the alarm never gets turned off. You can't build the scaffold (proliferative phase) until you finish the cleanup (inflammatory phase). This is a wound trapped in perpetual emergency response. Beautiful in its dysfunction, isn't it?",
+      "mechanism": {
+        "title": "Chronic Inflammation in Diabetic Wounds",
+        "content": "NORMAL INFLAMMATION RESOLUTION: Debris cleared, pathogens controlled, anti-inflammatory signals (IL-10, TGF-β) released, macrophages switch to repair phenotype. Transition to proliferation begins. DIABETIC CHRONIC WOUNDS: Poor perfusion (reduced O2, nutrients). Hyperglycemia (impaired neutrophil function, advanced glycation end-products). Persistent infection. Elevated pro-inflammatory cytokines. Result: Inflammation NEVER resolves. Wound stuck in phase 1. No granulation tissue, no epithelialization, no healing.",
+        "metaphor": "Let me show you something tragic and beautiful. Normal inflammation is like emergency responders arriving at a disaster, clearing wreckage, securing the scene, then LEAVING so construction crews can rebuild. It's temporary, intense, and time-limited. Proceed with me: Diabetic chronic inflammation is like the emergency responders showing up but NEVER leaving. Now witness the true sophistication: They keep fighting the same fire that won't go out (poor perfusion means they lack water, high glucose means their hoses don't work right). The construction crews (proliferative phase) are waiting to start, but they CAN'T because the site is still an active emergency. The wound is trapped in perpetual crisis mode. Six weeks, six months, doesn't matter. Until inflammation resolves, healing can't begin. Breathe in this knowledge: The machinery is there, the sequence is known, but the transition is BLOCKED."
+      },
+      "isotopes": [
+        "cardiology.function"
+      ],
+      "category": null,
+      "chapter": "Tissues & Epithelia",
+      "scaffoldFile": "400.3-glands-scaffolds/400.3.10-scaffolds.json",
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.5,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    }
+  ]
+}

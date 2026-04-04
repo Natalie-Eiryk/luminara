@@ -1,0 +1,171 @@
+{
+  "parentId": "900.5.85",
+  "parentQuestion": "What does FEV1 measure in pulmonary function testing?",
+  "narrative": {
+    "setting": "Mr. Edgar's pulmonary function lab, testing a patient with suspected COPD",
+    "character": "Mr. Edgar",
+    "tension": "The patient takes a huge breath and blows into the spirometer as hard and fast as possible. The computer calculates FEV1 - a critical number for diagnosing lung disease."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.85.s01",
+      "arc": 1,
+      "arcTitle": "Understanding the Test",
+      "narrative": "Ms. Frizzle's bus enters the pulmonary function lab. 'Class, watch this test carefully! The patient will take the BIGGEST breath possible, then blow out as HARD and FAST as they can. We're measuring FEV1!'",
+      "q": "What does FEV1 stand for?",
+      "options": [
+        "First Expiratory Volume in 1 minute",
+        "Forced Expiratory Volume in 1 second",
+        "Final Exhalation Volume in 1 hour",
+        "Fast Elimination Value number 1"
+      ],
+      "answer": 1,
+      "explain": "FEV1 = FORCED EXPIRATORY VOLUME in 1 SECOND. It measures how much air you can forcefully exhale in the FIRST SECOND of a maximal exhalation. 'Forced' = max effort, 'Expiratory' = breathing out, 'Volume' = amount of air, '1' = one second. It's a key measurement in spirometry.",
+      "wrongExplains": {
+        "0": "It's 1 SECOND, not 1 minute! And 'forced' not 'first' (though it is the first second). The test is about rapid, forceful exhalation.",
+        "2": "It's 1 SECOND, not 1 hour! And 'volume' not 'value.' FEV1 measures air volume expelled in the first second of forced exhalation.",
+        "3": "FEV1 is a real medical term with specific meaning, not an abbreviation for 'value.' It's Forced Expiratory Volume in 1 second."
+      }
+    },
+    {
+      "id": "900.5.85.s02",
+      "arc": 1,
+      "arcTitle": "Understanding the Test",
+      "narrative": "'Watch the graph!' Ms. Frizzle points to the spirometer screen. 'Volume shoots up fast at first - that's the first second - then slows down. We measure the volume at the 1-second mark. That's FEV1!'",
+      "q": "How do you perform the FEV1 test?",
+      "options": [
+        "Breathe normally for 1 minute",
+        "Take maximum breath in, then exhale as hard and fast as possible while measuring volume at 1 second",
+        "Hold your breath for 1 second",
+        "Breathe slowly and gently out for 6 seconds"
+      ],
+      "answer": 1,
+      "explain": "FEV1 test: (1) Take MAXIMUM breath in (full inspiration), (2) Seal lips around mouthpiece, (3) Exhale as HARD and FAST as possible, (4) Keep blowing until lungs are empty. The spirometer measures volume expelled at the 1-second mark. Requires maximal effort!",
+      "wrongExplains": {
+        "0": "Normal breathing doesn't test lung function limits. FEV1 requires MAXIMAL EFFORT - biggest breath in, fastest breath out. It's a stress test for your lungs.",
+        "2": "Holding breath measures different things (like diffusion capacity). FEV1 measures how fast you can EMPTY your lungs, not how long you can hold air.",
+        "3": "Slow gentle breathing won't show airway obstruction. FORCED rapid exhalation is needed to detect narrowed airways - they collapse with forceful exhalation if diseased."
+      }
+    },
+    {
+      "id": "900.5.85.s03",
+      "arc": 1,
+      "arcTitle": "Understanding the Test",
+      "narrative": "'What's a normal FEV1?' Keesha asks. 'It depends on age, height, sex, and ethnicity,' Mr. Edgar explains. 'But typically 3-5 liters for adults. We compare your actual to predicted values.'",
+      "q": "What is a typical FEV1 value for a healthy adult?",
+      "options": [
+        "0.5-1 liter",
+        "3-5 liters (depending on size, age, sex)",
+        "10-15 liters",
+        "It doesn't vary between people"
+      ],
+      "answer": 1,
+      "explain": "Typical adult FEV1 = 3-5 LITERS (varies with height, age, sex, ethnicity). Taller people have larger lungs = higher FEV1. Men generally higher than women. Age decreases FEV1. We calculate 'predicted normal' for each patient and compare actual to predicted (% predicted).",
+      "wrongExplains": {
+        "0": "0.5-1 liter would be severely reduced - like advanced COPD or restrictive disease. Normal healthy adults can forcefully exhale 3-5 liters in the first second.",
+        "2": "10-15 liters would be superhuman! Total lung capacity is only about 6 liters. You can't exhale more than your lungs hold.",
+        "3": "FEV1 varies significantly! Tall young men have higher FEV1 than short elderly women. That's why we use % predicted (comparing to expected normal for that person)."
+      }
+    },
+    {
+      "id": "900.5.85.s04",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "The bus flies into normal healthy airways. 'Look how WIDE these bronchioles are!' Ms. Frizzle points. 'During forced exhalation, air rushes out easily. High flow rate = high FEV1!'",
+      "q": "In healthy lungs, what allows high FEV1?",
+      "options": [
+        "Narrowed airways that trap air",
+        "Wide open airways that allow rapid airflow",
+        "Stiff lungs that don't expand",
+        "Weak respiratory muscles"
+      ],
+      "answer": 1,
+      "explain": "Healthy lungs have WIDE OPEN AIRWAYS allowing RAPID AIRFLOW during forced exhalation. No obstruction = air exits fast = high volume in first second (high FEV1). The airways stay open even during forceful exhalation because they're structurally sound.",
+      "wrongExplains": {
+        "0": "Narrowed airways (asthma, COPD) REDUCE FEV1 because air can't exit quickly. Obstruction = slow flow = low FEV1.",
+        "2": "Stiff lungs affect total lung volume (restrictive disease) but if airways are open, FEV1 can be relatively preserved. FEV1 specifically tests airflow, not stiffness.",
+        "3": "Weak muscles might reduce total volume exhaled, but FEV1 tests FLOW RATE through airways, not just muscle strength. Obstruction is the main FEV1 reducer."
+      }
+    },
+    {
+      "id": "900.5.85.s05",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "Now the bus enters airways with COPD. 'OH NO!' Carlos shouts. 'The bronchioles are NARROWED and collapsing! During forced exhalation, they squeeze shut. Air gets TRAPPED. Low flow = low FEV1!'",
+      "q": "What happens to FEV1 in obstructive lung disease (asthma, COPD)?",
+      "options": [
+        "FEV1 increases above normal",
+        "FEV1 decreases (reduced airflow through narrowed airways)",
+        "FEV1 stays exactly normal",
+        "FEV1 becomes unmeasurable"
+      ],
+      "answer": 1,
+      "explain": "FEV1 DECREASES in obstructive disease (asthma, COPD, bronchitis). Narrowed airways limit how fast air can exit. During forced exhalation, diseased airways may collapse, trapping air. Slow airflow = low volume in first second = reduced FEV1. This is the HALLMARK of obstruction.",
+      "wrongExplains": {
+        "0": "Obstruction can't INCREASE airflow! Narrowed or collapsing airways reduce flow rate, decreasing FEV1 below normal.",
+        "2": "The whole point of measuring FEV1 is that it's REDUCED in obstructive disease! Normal FEV1 would suggest no significant obstruction.",
+        "3": "Even severe disease has measurable FEV1 (may be very low, like 0.5L). Completely unmeasurable would mean no exhalation at all (fatal)."
+      }
+    },
+    {
+      "id": "900.5.85.s06",
+      "arc": 2,
+      "arcTitle": "Seeing the Mechanism",
+      "narrative": "'After bronchodilator treatment, watch what happens!' Ms. Frizzle shows the airways relaxing and opening. 'The patient repeats the test - FEV1 goes UP! That improvement proves reversible obstruction - asthma!'",
+      "q": "What does improvement in FEV1 after bronchodilator indicate?",
+      "options": [
+        "The disease is getting worse",
+        "Reversible airway obstruction (typical of asthma)",
+        "The patient didn't try hard enough the first time",
+        "Restrictive lung disease"
+      ],
+      "answer": 1,
+      "explain": "FEV1 improvement after bronchodilator (like albuterol) indicates REVERSIBLE AIRWAY OBSTRUCTION - typical of ASTHMA. The medication relaxes bronchospasm, opening airways, allowing better airflow = higher FEV1. If FEV1 increases ≥12% AND ≥200mL, it's considered significant reversibility (asthma pattern).",
+      "wrongExplains": {
+        "0": "Improvement = getting BETTER! If FEV1 increases with treatment, the airways opened up - that's a good response showing the obstruction is treatable.",
+        "2": "We have quality criteria for spirometry. If both tests meet quality standards, change in FEV1 reflects real physiological change, not effort variation.",
+        "3": "Restrictive disease (fibrosis, chest wall problems) doesn't typically respond to bronchodilators because it's not primarily an airway problem. Bronchodilator response suggests obstruction."
+      }
+    },
+    {
+      "id": "900.5.85.s07",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "Mr. Edgar reviews the results. 'FEV1 is 60% of predicted - that's moderate obstruction. After albuterol, it improved to 75% - a 250mL increase. This confirms asthma with reversible obstruction.'",
+      "q": "FEV1 is most useful for diagnosing which type of lung disease?",
+      "options": [
+        "Obstructive diseases (asthma, COPD, bronchitis)",
+        "Heart disease",
+        "Kidney disease",
+        "Diabetes"
+      ],
+      "answer": 0,
+      "explain": "FEV1 is most useful for diagnosing and monitoring OBSTRUCTIVE LUNG DISEASES: asthma, COPD, chronic bronchitis. These diseases narrow airways, reducing airflow = low FEV1. It's the key measurement for assessing obstruction severity and response to treatment.",
+      "wrongExplains": {
+        "1": "Heart disease doesn't directly affect FEV1 (though severe heart failure can cause pulmonary edema affecting breathing). FEV1 tests airflow through lungs, not heart function.",
+        "2": "Kidney disease doesn't affect lung airflow or FEV1. Different organ system entirely.",
+        "3": "Diabetes doesn't typically affect FEV1 (though complications can affect lung function). FEV1 is specifically for airflow/lung disease assessment."
+      }
+    },
+    {
+      "id": "900.5.85.s08",
+      "arc": 3,
+      "arcTitle": "Clinical Recognition",
+      "narrative": "'COPD severity is staged by FEV1!' Ms. Frizzle teaches. 'Mild = 80%+ predicted, Moderate = 50-79%, Severe = 30-49%, Very Severe = under 30%. It guides treatment intensity!'",
+      "q": "How is COPD severity classified?",
+      "options": [
+        "By chest X-ray findings only",
+        "By symptoms only",
+        "By FEV1 % predicted (GOLD staging: Mild ≥80%, Moderate 50-79%, Severe 30-49%, Very Severe <30%)",
+        "COPD can't be measured"
+      ],
+      "answer": 2,
+      "explain": "COPD severity uses GOLD staging based on FEV1 % predicted: GOLD 1 (Mild) ≥80%, GOLD 2 (Moderate) 50-79%, GOLD 3 (Severe) 30-49%, GOLD 4 (Very Severe) <30%. Lower FEV1 = more severe obstruction = more aggressive treatment needed. Modern classification also includes symptoms and exacerbations.",
+      "wrongExplains": {
+        "0": "X-ray shows structural changes but doesn't quantify airflow obstruction. FEV1 provides objective numerical severity staging.",
+        "1": "Symptoms matter but can be subjective and variable. FEV1 provides OBJECTIVE measurement of lung function for severity classification.",
+        "3": "COPD is very measurable! Spirometry (including FEV1) is the GOLD STANDARD for diagnosis and severity staging. Objective measurement guides treatment."
+      }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+[
+  {
+    "term": "Kidney",
+    "definition": "Organ that filters blood and makes urine.",
+    "system": "Urinary"
+  },
+  {
+    "term": "Adrenal gland",
+    "definition": "Endocrine gland sitting atop the kidney.",
+    "system": "Urinary"
+  },
+  {
+    "term": "Renal artery",
+    "definition": "Artery bringing blood into the kidney.",
+    "system": "Urinary"
+  },
+  {
+    "term": "Renal vein",
+    "definition": "Vein carrying blood away from the kidney.",
+    "system": "Urinary"
+  },
+  {
+    "term": "Ureter",
+    "definition": "Tube carrying urine from kidney to bladder.",
+    "system": "Urinary"
+  },
+  {
+    "term": "Urinary bladder",
+    "definition": "Storage sac for urine.",
+    "system": "Urinary"
+  },
+  {
+    "term": "Cortex",
+    "definition": "Outer kidney region.",
+    "system": "Urinary"
+  },
+  {
+    "term": "Medulla",
+    "definition": "Inner kidney region.",
+    "system": "Urinary"
+  },
+  {
+    "term": "Medullary pyramids",
+    "definition": "Triangular structures in the kidney medulla.",
+    "system": "Urinary"
+  },
+  {
+    "term": "Minor calyx",
+    "definition": "Small cup collecting urine from a pyramid.",
+    "system": "Urinary"
+  },
+  {
+    "term": "Major calyx",
+    "definition": "Larger collecting branch receiving urine from minor calyces.",
+    "system": "Urinary"
+  },
+  {
+    "term": "Renal pelvis",
+    "definition": "Funnel-like urine collection region leading to ureter.",
+    "system": "Urinary"
+  },
+  {
+    "term": "Afferent arteriole",
+    "definition": "Vessel that enters the glomerulus.",
+    "system": "Urinary"
+  },
+  {
+    "term": "Efferent arteriole",
+    "definition": "Vessel that leaves the glomerulus.",
+    "system": "Urinary"
+  },
+  {
+    "term": "Nephron",
+    "definition": "Functional unit of the kidney.",
+    "system": "Urinary"
+  },
+  {
+    "term": "Renal corpuscle",
+    "definition": "Nephron start point made of glomerulus and Bowman’s capsule.",
+    "system": "Urinary"
+  },
+  {
+    "term": "Glomerulus",
+    "definition": "Capillary tuft inside the renal corpuscle.",
+    "system": "Urinary"
+  },
+  {
+    "term": "Bowman’s capsule",
+    "definition": "Capsule surrounding the glomerulus.",
+    "system": "Urinary"
+  },
+  {
+    "term": "Proximal convoluted tubule",
+    "definition": "First convoluted tubule after filtration.",
+    "system": "Urinary"
+  },
+  {
+    "term": "Distal convoluted tubule",
+    "definition": "Tubule segment after the loop of Henle.",
+    "system": "Urinary"
+  },
+  {
+    "term": "Collecting duct",
+    "definition": "Duct that receives fluid from several nephrons.",
+    "system": "Urinary"
+  }
+]

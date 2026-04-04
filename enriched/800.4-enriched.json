@@ -1,0 +1,708 @@
+{
+  "version": "1.0",
+  "source": "LUMI-OS Teaching Module",
+  "prefix": "800.4",
+  "question_count": 20,
+  "questions": [
+    {
+      "id": "800.4.01",
+      "q": "What is the transparent anterior portion of the fibrous tunic that refracts light entering the eye?",
+      "options": [
+        "Sclera",
+        "Cornea",
+        "Lens",
+        "Pupil"
+      ],
+      "answer": 1,
+      "explain": "The cornea is the transparent anterior part of the eye's outer layer that provides about 2/3 of the eye's refractive power.",
+      "mechanism": {
+        "title": "Cornea: The Eye's Primary Lens",
+        "content": "The cornea has five layers: epithelium (protection, regenerates quickly), Bowman's layer (basement membrane), stroma (90% of thickness, collagen fibers arranged in precise patterns for transparency), Descemet's membrane, and endothelium (pumps fluid out to maintain clarity). Its refractive power (~43 diopters) exceeds the lens (~15-20 diopters) because light bends most at the air-cornea interface (greatest change in refractive index). LASIK surgery reshapes the cornea to correct refractive errors.",
+        "metaphor": "The cornea is like the main lens of a camera — it does most of the focusing work, while the internal lens (inside the camera body) does fine adjustments. The cornea's curved surface bends light rays sharply because air and corneal tissue have very different optical properties."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Eye",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.4.02",
+      "q": "What is the colored part of the eye that controls the size of the pupil?",
+      "options": [
+        "Cornea",
+        "Sclera",
+        "Iris",
+        "Retina"
+      ],
+      "answer": 2,
+      "explain": "The iris is the pigmented, muscular diaphragm that controls pupil size and thus the amount of light entering the eye.",
+      "mechanism": {
+        "title": "Iris: The Eye's Aperture Control",
+        "content": "The iris is composed of two smooth muscle layers with opposite actions: the sphincter pupillae (circular fibers, parasympathetic innervation via CN III) constricts the pupil in bright light; the dilator pupillae (radial fibers, sympathetic innervation) dilates the pupil in dim light or during stress. The pupillary light reflex is consensual — shining light in one eye causes both pupils to constrict (direct and consensual response). Pupil size also changes with accommodation (near focus causes constriction) and emotional state.",
+        "metaphor": "The iris works like a camera's aperture ring: in bright light, it closes down (constricts pupil) to prevent overexposure; in dim light, it opens up (dilates pupil) to let more light reach the sensor (retina). The two muscle sets are like competing forces — whoever wins determines the aperture size."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Eye",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.4.03",
+      "q": "What type of muscle fibers in the iris cause pupil constriction?",
+      "options": [
+        "Radial fibers (dilator pupillae)",
+        "Circular fibers (sphincter pupillae)",
+        "Ciliary muscle",
+        "Extraocular muscles"
+      ],
+      "answer": 1,
+      "explain": "The circular fibers (sphincter pupillae) encircle the pupil and contract to make it smaller — like a drawstring closing a bag.",
+      "mechanism": {
+        "title": "Sphincter Pupillae: The Constrictor",
+        "content": "The sphincter pupillae is innervated by parasympathetic fibers from the Edinger-Westphal nucleus (preganglionic) via CN III to the ciliary ganglion (synapse), then short ciliary nerves to the muscle. When activated, the circular fibers contract concentrically, reducing pupil diameter from up to 8mm down to 2mm. This is part of the pupillary light reflex: light hitting the retina signals through the pretectal nucleus to the Edinger-Westphal nucleus bilaterally, causing both pupils to constrict.",
+        "metaphor": "The sphincter pupillae is like a drawstring on a bag: when you pull it (parasympathetic stimulation), the opening gets smaller. It's a ring muscle that tightens to reduce the opening — the opposite of the radial fibers that act like spokes pulling outward."
+      },
+      "isotopes": [
+        "muscle.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Eye",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.4.04",
+      "q": "What type of muscle fibers in the iris cause pupil dilation?",
+      "options": [
+        "Circular fibers (sphincter pupillae)",
+        "Radial fibers (dilator pupillae)",
+        "Ciliary muscle",
+        "Zonular fibers"
+      ],
+      "answer": 1,
+      "explain": "The radial fibers (dilator pupillae) run like spokes from the pupil margin to the iris periphery and contract to enlarge the pupil.",
+      "mechanism": {
+        "title": "Dilator Pupillae: The Opener",
+        "content": "The dilator pupillae is innervated by sympathetic fibers that travel a long path: from the hypothalamus, down through the brainstem and cervical spinal cord (ciliospinal center of Budge, C8-T2), up the sympathetic chain, synapsing in the superior cervical ganglion, then along the internal carotid artery, through the cavernous sinus, to the eye. Damage anywhere along this pathway (Horner syndrome) causes miosis (pupil constriction), ptosis (drooping eyelid), and anhidrosis (decreased facial sweating).",
+        "metaphor": "The dilator pupillae is like the spokes of a bicycle wheel pulling outward: when activated, the radial fibers contract and pull the pupil margin toward the periphery, opening up the aperture to let more light into the eye."
+      },
+      "isotopes": [
+        "muscle.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Eye",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.4.05",
+      "q": "What is the opening in the center of the iris through which light enters the eye?",
+      "options": [
+        "Lens",
+        "Pupil",
+        "Fovea",
+        "Optic disc"
+      ],
+      "answer": 1,
+      "explain": "The pupil is the adjustable opening in the center of the iris that controls how much light reaches the retina.",
+      "mechanism": {
+        "title": "Pupil: The Variable Aperture",
+        "content": "The pupil's size is dynamically controlled by competing sympathetic (dilation) and parasympathetic (constriction) inputs. Size affects two aspects of vision: in bright light, a small pupil reduces light reaching the retina and increases depth of field (everything is in focus); in dim light, a large pupil maximizes light gathering but reduces depth of field. The pupil also constricts during accommodation (near focus) — part of the 'near triad' with convergence and lens thickening.",
+        "metaphor": "The pupil is like the f-stop on a camera: a small aperture (high f-number) means sharp focus across distances but less light; a large aperture (low f-number) means more light but shallower focus. Unlike a camera, your pupil adjusts automatically in milliseconds."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Eye",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.5,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.4.06",
+      "q": "What structure produces aqueous humor and contains the muscle that changes lens shape?",
+      "options": [
+        "Cornea",
+        "Iris",
+        "Ciliary body",
+        "Choroid"
+      ],
+      "answer": 2,
+      "explain": "The ciliary body is a thickened ring of tissue that produces aqueous humor (via ciliary processes) and contains the ciliary muscle for accommodation.",
+      "mechanism": {
+        "title": "Ciliary Body: The Eye's Hydraulics and Focus",
+        "content": "The ciliary body has two parts: the ciliary processes (finger-like projections) produce aqueous humor through ultrafiltration and active secretion — about 2-3μL/minute to maintain intraocular pressure of 10-21 mmHg. The ciliary muscle (smooth muscle) controls accommodation. At rest (distance vision), the muscle is relaxed, zonular fibers are taut, and the lens is relatively flat. For near vision, the ciliary muscle contracts, relaxing the zonular fibers and allowing the elastic lens to bulge (increase curvature). This ability decreases with age (presbyopia).",
+        "metaphor": "The ciliary body is like a combined pump and focus motor: one part constantly produces the eye's internal fluid (like a pump maintaining water pressure), while another part adjusts the lens shape (like the autofocus motor in a camera)."
+      },
+      "isotopes": [
+        "muscle.structure"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Eye",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.5,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.5,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "800.4.07",
+      "q": "Where is aqueous humor located in the eye?",
+      "options": [
+        "Behind the lens (posterior segment)",
+        "In front of the lens (anterior and posterior chambers)",
+        "Between the retina and sclera",
+        "Inside the optic nerve"
+      ],
+      "answer": 1,
+      "explain": "Aqueous humor fills the anterior segment of the eye — both the anterior chamber (between cornea and iris) and posterior chamber (between iris and lens).",
+      "mechanism": {
+        "title": "Aqueous Humor: The Anterior Segment Fluid",
+        "content": "Aqueous humor serves multiple functions: it nourishes the avascular cornea and lens (delivering glucose, amino acids, ascorbate), removes metabolic waste, maintains intraocular pressure (important for eye shape and corneal clarity), and provides a clear optical medium. It's produced at ~2-3μL/min and is completely replaced every 100 minutes. The production-drainage balance determines intraocular pressure. Glaucoma occurs when drainage is impaired (most commonly at the trabecular meshwork), causing pressure buildup that damages the optic nerve.",
+        "metaphor": "Aqueous humor is like the coolant/nutrient fluid in the front compartment of the eye: constantly produced, circulated, and drained. If the drain gets clogged, pressure builds up — just like a sink backing up, but with serious consequences for the delicate optic nerve."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Eye",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.0
+      }
+    },
+    {
+      "id": "800.4.08",
+      "q": "What is the gel-like substance filling the posterior segment (behind the lens)?",
+      "options": [
+        "Aqueous humor",
+        "Vitreous humor",
+        "Cerebrospinal fluid",
+        "Blood plasma"
+      ],
+      "answer": 1,
+      "explain": "Vitreous humor is the clear, gel-like substance filling the large posterior cavity of the eye between the lens and retina.",
+      "mechanism": {
+        "title": "Vitreous Humor: The Eye's Gel Core",
+        "content": "Vitreous humor fills the vitreous chamber — about 80% of the eye's volume (4mL). It's transparent because it's avascular and has precisely organized collagen (type II) and hyaluronic acid. Unlike aqueous humor, vitreous is formed only during development and persists throughout life. Its gel structure maintains retinal position. Age-related liquefaction and shrinkage cause the vitreous to pull away from the retina (posterior vitreous detachment), which is usually harmless but can cause retinal tears. Vitreous floaters are shadows cast by debris.",
+        "metaphor": "Vitreous humor is like a clear gelatin filling inside the eye: it keeps everything in place (holds the retina against the wall), transmits light perfectly when healthy, but like old gelatin, it can shrink and liquefy with age, sometimes pulling on the retina as it separates."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Eye",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.4.09",
+      "q": "What is the innermost layer of the eye containing photoreceptors (rods and cones)?",
+      "options": [
+        "Choroid",
+        "Sclera",
+        "Retina",
+        "Cornea"
+      ],
+      "answer": 2,
+      "explain": "The retina is the innermost (neural) tunic of the eye, containing photoreceptors that convert light to neural signals.",
+      "mechanism": {
+        "title": "Retina: The Neural Image Processor",
+        "content": "The retina has 10 layers (outermost to innermost): pigmented epithelium, photoreceptor layer (rods and cones), outer nuclear layer, outer plexiform layer, inner nuclear layer (bipolar, horizontal, amacrine cells), inner plexiform layer, ganglion cell layer, nerve fiber layer, inner limiting membrane. Paradoxically, light must pass through all inner layers to reach the photoreceptors in back. The retina doesn't just detect light — it processes images through lateral inhibition, motion detection, and contrast enhancement before sending information via the optic nerve.",
+        "metaphor": "The retina is like a multi-layered image sensor that does its own photo editing: light comes in, gets converted by 120 million rods and 6 million cones, processed by multiple layers of 'editing' neurons, then compressed into 1 million optic nerve fibers — a remarkable data reduction and enhancement system."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Eye",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.4.10",
+      "q": "What vascular layer of the eye lies between the retina and sclera?",
+      "options": [
+        "Cornea",
+        "Choroid",
+        "Ciliary body",
+        "Iris"
+      ],
+      "answer": 1,
+      "explain": "The choroid is the pigmented, highly vascular middle layer that nourishes the outer layers of the retina.",
+      "mechanism": {
+        "title": "Choroid: The Eye's Nutrient Highway",
+        "content": "The choroid is packed with blood vessels arranged in layers: larger vessels externally, smaller choroidal capillaries (choriocapillaris) internally, directly beneath the retinal pigment epithelium. This blood supply is critical because the outer retina (photoreceptors) is avascular — it depends entirely on diffusion from the choriocapillaris. The choroidal melanin absorbs light that passes through the retina, preventing reflection that would degrade image quality. Some nocturnal animals have a tapetum lucidum here instead, which reflects light for better night vision.",
+        "metaphor": "The choroid is like the heating and ventilation system running behind a wall (retina): you don't see it, but it delivers essential supplies (oxygen, nutrients) and removes waste. Its dark color also acts like flat black paint inside a camera, absorbing stray light."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Eye",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.4.11",
+      "q": "What is the tough, white outer layer of the eye that provides structure and protection?",
+      "options": [
+        "Retina",
+        "Choroid",
+        "Sclera",
+        "Cornea"
+      ],
+      "answer": 2,
+      "explain": "The sclera is the white, fibrous outer coat of the eye that maintains eye shape and provides attachment for extraocular muscles.",
+      "mechanism": {
+        "title": "Sclera: The Eye's Protective Shell",
+        "content": "The sclera is about 1mm thick (thinnest near the limbus, thickest around the optic nerve). Its interwoven collagen fibers are opaque (unlike the cornea's precisely arranged fibers) because they're of varying diameters and arranged irregularly. The sclera resists intraocular pressure, maintains eye shape, and provides a stable attachment for the extraocular muscles. In young children it's thinner and slightly blue (underlying choroid shows through); in the elderly it may yellow due to lipid deposits.",
+        "metaphor": "The sclera is like the hard shell of a ping-pong ball: it maintains shape, protects the delicate interior, and provides attachment points for the muscles that move the eye around — all while being tough enough to resist the internal pressure of the eye's fluids."
+      },
+      "isotopes": [
+        "muscle.structure"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Eye",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.4.12",
+      "q": "What fibers suspend the lens and connect it to the ciliary body?",
+      "options": [
+        "Optic nerve fibers",
+        "Suspensory ligaments (zonular fibers)",
+        "Extraocular muscle fibers",
+        "Iris dilator fibers"
+      ],
+      "answer": 1,
+      "explain": "The suspensory ligaments (zonules of Zinn, zonular fibers) are fine strands that connect the lens to the ciliary body, controlling lens shape.",
+      "mechanism": {
+        "title": "Zonular Fibers: The Lens's Suspension System",
+        "content": "The zonular fibers (zonules of Zinn) are elastic microfibrils connecting the ciliary body to the lens capsule. They transmit the ciliary muscle's action to the lens. The system works paradoxically: muscle contraction RELAXES tension on the lens (allowing it to bulge), while muscle relaxation INCREASES tension (flattening the lens). This is because the ciliary muscle forms a ring — when it contracts, the ring gets smaller, moving closer to the lens and slackening the zonules. Zonular weakness (as in Marfan syndrome) can cause lens displacement.",
+        "metaphor": "Zonular fibers work like the spokes of a trampoline: when the outer ring (ciliary muscle) contracts and moves inward, the 'spokes' become slack, and the center (lens) bulges up. When the ring relaxes and expands, the spokes pull taut, flattening the center."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Eye",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.4.13",
+      "q": "What is the biconvex structure behind the iris that can change shape for focusing?",
+      "options": [
+        "Cornea",
+        "Pupil",
+        "Lens",
+        "Vitreous body"
+      ],
+      "answer": 2,
+      "explain": "The lens is a transparent, biconvex structure that changes shape (accommodation) to focus light on the retina for different distances.",
+      "mechanism": {
+        "title": "Lens: The Adjustable Focus Element",
+        "content": "The lens is avascular and depends on aqueous humor for nutrition. It continues growing throughout life, adding new lens fibers at the surface while compressing older fibers centrally. This causes increased lens density and decreased elasticity with age. At age 10, the lens can add ~14 diopters for near focus; by age 60, accommodation may be less than 1 diopter (presbyopia). Cataracts are opacities in the lens that scatter light and reduce vision — the most common cause of blindness worldwide, but surgically treatable.",
+        "metaphor": "The lens is like an autofocus element that loses flexibility with age: a young lens is like soft rubber that easily changes shape, but over decades it becomes more like hard plastic — explaining why you need reading glasses as you get older."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Eye",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.8,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.4.14",
+      "q": "Which extraocular muscles are controlled by CN III (oculomotor nerve)?",
+      "options": [
+        "Superior oblique and lateral rectus",
+        "Superior, inferior, and medial rectus; inferior oblique",
+        "All six extraocular muscles",
+        "Only the lateral rectus"
+      ],
+      "answer": 1,
+      "explain": "CN III controls four extraocular muscles: superior rectus, inferior rectus, medial rectus, and inferior oblique — plus the levator palpebrae.",
+      "mechanism": {
+        "title": "Oculomotor Nerve: The Main Eye Mover",
+        "content": "CN III emerges from the midbrain and carries both somatic motor (to four extraocular muscles plus levator palpebrae) and parasympathetic (to pupil sphincter and ciliary muscle) fibers. Damage causes: ptosis (drooping lid from levator paralysis), dilated pupil (loss of parasympathetic tone), and 'down and out' eye position (unopposed lateral rectus and superior oblique). The medial longitudinal fasciculus coordinates CN III with CN VI for conjugate eye movements.",
+        "metaphor": "CN III is like the main electrical cable to a complex robotic arm: it controls most of the motors (four of six muscles), the hood cover (eyelid), and the aperture and focus mechanisms (pupil and ciliary muscle). Damage to this one nerve causes multiple deficits."
+      },
+      "isotopes": [
+        "muscle.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Eye",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.4.15",
+      "q": "Which extraocular muscle rotates the eye downward and laterally (depresses and abducts)?",
+      "options": [
+        "Superior rectus",
+        "Inferior rectus",
+        "Superior oblique",
+        "Lateral rectus"
+      ],
+      "answer": 2,
+      "explain": "The superior oblique muscle (innervated by CN IV) depresses and intorts the eye, with abduction as a secondary action.",
+      "mechanism": {
+        "title": "Superior Oblique: The Trochlear Pulley System",
+        "content": "The superior oblique originates at the orbital apex, runs forward along the medial orbital wall, passes through the trochlea (a cartilaginous pulley), then angles backward and laterally to insert on the posterior-lateral eye. This pulley system changes the muscle's direction of pull by ~54°. When the eye is abducted, the superior oblique primarily depresses; when adducted, it primarily intorts. Testing it requires asking the patient to look 'down and in' — the direction where its depression action is strongest.",
+        "metaphor": "The superior oblique is like a rope going over a pulley: the pulley (trochlea) redirects the pulling force. Instead of pulling the eye toward the nose (where the muscle originates), the redirected force pulls the eye downward and rotates its top toward the nose."
+      },
+      "isotopes": [
+        "muscle.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Eye",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    },
+    {
+      "id": "800.4.16",
+      "q": "What is the cranial nerve (CN II) that carries visual information from the eye to the brain?",
+      "options": [
+        "Oculomotor nerve",
+        "Optic nerve",
+        "Trigeminal nerve",
+        "Abducens nerve"
+      ],
+      "answer": 1,
+      "explain": "The optic nerve (CN II) carries visual signals from the retina's ganglion cells to the thalamus and other visual centers.",
+      "mechanism": {
+        "title": "Optic Nerve: The Visual Data Highway",
+        "content": "The optic nerve begins where retinal ganglion cell axons converge at the optic disc (blind spot — no photoreceptors). It exits through the lamina cribrosa of the sclera, gains myelin and meningeal coverings, and travels through the optic canal. At the optic chiasm, nasal retinal fibers (viewing the temporal visual field) cross to the opposite side. The arrangement ensures each hemisphere receives information about the contralateral visual field. Damage to the optic nerve causes ipsilateral blindness; damage at the chiasm causes bitemporal hemianopia.",
+        "metaphor": "The optic nerve is like a fiber optic cable transmitting compressed visual data: 120 million photoreceptors' worth of information gets processed and compressed into 1 million nerve fibers — a remarkable data compression system sending the visual world to your brain."
+      },
+      "isotopes": [
+        "ans.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Eye",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.5,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.4.17",
+      "q": "What is the region of the retina where the optic nerve exits, creating a blind spot (no photoreceptors)?",
+      "options": [
+        "Fovea centralis",
+        "Optic disc",
+        "Macula lutea",
+        "Ora serrata"
+      ],
+      "answer": 1,
+      "explain": "The optic disc is where retinal ganglion cell axons converge and exit as the optic nerve — it contains no photoreceptors, creating the blind spot.",
+      "mechanism": {
+        "title": "Optic Disc: The Exit Point",
+        "content": "The optic disc marks where ~1 million ganglion cell axons collect and exit the eye. Blood vessels (central retinal artery and vein) also enter/exit here, making it a critical landmark during ophthalmoscopy. The cup-to-disc ratio (central depression size) is important in glaucoma monitoring — increased pressure causes 'cupping' (enlarged depression) as nerve fibers are damaged. The blind spot is normally unnoticed because the brain fills it in, and each eye's blind spot covers a different area of the visual field.",
+        "metaphor": "The optic disc is like the exit ramp of a highway: all the traffic (nerve signals) must funnel through this one point to leave the eye, creating a 'construction zone' where there's no room for the sensors (photoreceptors) that line the rest of the 'road' (retina)."
+      },
+      "isotopes": [
+        "ans.receptor"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Eye",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.5,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.4.18",
+      "q": "What is the yellowish region of the retina lateral to the optic disc that contains the fovea?",
+      "options": [
+        "Optic disc",
+        "Macula lutea",
+        "Ora serrata",
+        "Retinal pigment epithelium"
+      ],
+      "answer": 1,
+      "explain": "The macula lutea (Latin: 'yellow spot') is the pigmented area of the central retina containing the fovea centralis at its center.",
+      "mechanism": {
+        "title": "Macula Lutea: The Visual Bullseye",
+        "content": "The macula lutea receives the direct focus of light from the lens — it's what you use for reading, recognizing faces, and any detailed visual task. The xanthophyll pigments that give it a yellow appearance filter blue light and may provide antioxidant protection. Within the macula, cone density increases toward the center, reaching a peak at the fovea. Age-related macular degeneration (AMD) is a leading cause of blindness in developed countries, affecting central but not peripheral vision.",
+        "metaphor": "The macula is like the high-resolution center of a camera sensor: while the rest of the sensor (peripheral retina) captures context, the macula captures all the fine details you focus on directly. Its yellow filter helps protect this precious center from light damage."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Eye",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.5,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.5,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.4.19",
+      "q": "What is the small depression in the center of the macula where visual acuity is highest?",
+      "options": [
+        "Optic disc",
+        "Macula lutea",
+        "Fovea centralis",
+        "Blind spot"
+      ],
+      "answer": 2,
+      "explain": "The fovea centralis is a small pit in the center of the macula, containing only cones with no rods, providing the sharpest vision.",
+      "mechanism": {
+        "title": "Fovea Centralis: The High-Resolution Center",
+        "content": "The fovea's structure is optimized for resolution: the pit shape moves overlying layers aside so light reaches photoreceptors more directly; only densely packed cones are present (200,000/mm²); each cone has its own bipolar and ganglion cell (preserving point-to-point information); there are no blood vessels to cast shadows. The central foveola is rod-free and has the smallest cones. When you read this text, the word you're focusing on falls on your fovea while the rest of the page is seen by the peripheral retina.",
+        "metaphor": "The fovea is like the 'sweet spot' on a tennis racket — it's where you get the best performance. The eye constantly moves (saccades) to bring whatever you're interested in onto this tiny, high-resolution sensor that gives you your sharpest, most detailed vision."
+      },
+      "isotopes": [
+        "physiology.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Eye",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.7,
+        "E": 0.0,
+        "F": 0.9
+      }
+    },
+    {
+      "id": "800.4.20",
+      "q": "What muscles move the eyeball in its socket?",
+      "options": [
+        "Iris muscles",
+        "Ciliary muscles",
+        "Extrinsic eye muscles (extraocular muscles)",
+        "Lens fibers"
+      ],
+      "answer": 2,
+      "explain": "The extrinsic (extraocular) muscles — four recti and two obliques — move the eyeball within the orbit.",
+      "mechanism": {
+        "title": "Extraocular Muscles: The Eye Movers",
+        "content": "The six extraocular muscles produce the six cardinal directions of gaze plus torsion (rotation around the visual axis). The four rectus muscles (superior, inferior, medial, lateral) originate from the common tendinous ring at the orbital apex and insert into the sclera anterior to the equator. The superior oblique originates similarly but loops through the trochlea; the inferior oblique originates from the orbital floor. Eye movements are remarkably precise (resolving targets separated by 1 arcminute) and fast (saccades reach 700°/second).",
+        "metaphor": "The extraocular muscles are like six ropes attached to a ball in a socket: by pulling on different combinations, they can point the ball in any direction. The rectus muscles pull 'forward' while the obliques pull at angles, together covering every possible gaze direction."
+      },
+      "isotopes": [
+        "muscle.general"
+      ],
+      "category": null,
+      "chapter": "Exercises 23-25 — The Eye",
+      "scaffoldFile": null,
+      "zpd_zone": "proximal",
+      "difficulty": 0.5,
+      "operator_coord": {
+        "T": 0.0,
+        "A": 0.0,
+        "I": 0.0,
+        "D": 0.0,
+        "R": 0.0,
+        "G": 0.0,
+        "E": 0.0,
+        "F": 0.5
+      }
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "parentId": "900.5.20",
+  "parentQuestion": "Carbon dioxide is primarily transported in the blood as:",
+  "narrative": {
+    "setting": "The Magic School Bus follows a CO2 molecule emerging from a muscle cell into the bloodstream. 'Carbon dioxide - the waste product of cellular metabolism,' Ms. Frizzle announces. 'Watch carefully. This molecule won't travel alone for long.' They watch as the CO2 approaches a red blood cell and something remarkable happens.",
+    "character": "Mr. Edgar",
+    "tension": "Mr. Edgar's working muscles are generating CO2 faster than he can exhale it. If this waste accumulates, blood pH will plummet dangerously. The body has evolved an elegant chemical shuttle system - but understanding it means following the molecule through a series of transformations."
+  },
+  "scaffolds": [
+    {
+      "id": "900.5.20.s01",
+      "arc": 1,
+      "arcTitle": "Three Roads for CO2",
+      "narrative": "'CO2 has three options,' Ms. Frizzle holds up three fingers. 'It can dissolve directly in plasma - boring but simple. It can hitch a ride on hemoglobin. Or...' She pauses dramatically. 'It can transform into something else entirely.'",
+      "q": "What are the three ways CO2 is transported in blood?",
+      "options": [
+        "Only dissolved in plasma",
+        "Dissolved in plasma, bound to hemoglobin, and as bicarbonate ions",
+        "Only bound to hemoglobin",
+        "Only as bicarbonate"
+      ],
+      "answer": 1,
+      "explain": "THREE WAYS: (1) Dissolved in plasma (~7%), (2) Bound to hemoglobin as carbaminohemoglobin (~20-23%), (3) As bicarbonate ions (~70%). Most CO2 transforms into bicarbonate.",
+      "wrongExplains": {
+        "0": "Only ~7% dissolves directly in plasma. Most converts to bicarbonate.",
+        "2": "About 20-23% binds hemoglobin. The majority becomes bicarbonate.",
+        "3": "Bicarbonate is ~70%, but dissolved CO2 and carbaminohemoglobin also contribute."
+      }
+    },
+    {
+      "id": "900.5.20.s02",
+      "arc": 1,
+      "arcTitle": "Three Roads for CO2",
+      "narrative": "Ms. Frizzle shows the percentages: '7% dissolves directly. 23% rides hemoglobin. But 70% - the vast majority - becomes something different.' She points to red blood cells. 'Let's follow the 70%.'",
+      "q": "What is the PRIMARY way CO2 is transported?",
+      "options": [
+        "Dissolved in plasma",
+        "Bound to hemoglobin",
+        "As bicarbonate ions in plasma",
+        "As carbonic acid"
+      ],
+      "answer": 2,
+      "explain": "BICARBONATE IONS (~70%) are the primary transport form. CO2 is converted to bicarbonate inside red blood cells, then the bicarbonate travels in plasma.",
+      "wrongExplains": {
+        "0": "Dissolved CO2 is only ~7%. Most is chemically converted.",
+        "1": "Carbaminohemoglobin is ~23%. Bicarbonate is the majority.",
+        "3": "Carbonic acid is an unstable intermediate - it quickly dissociates to bicarbonate."
+      }
+    },
+    {
+      "id": "900.5.20.s03",
+      "arc": 1,
+      "arcTitle": "Three Roads for CO2",
+      "narrative": "They enter a red blood cell. An enzyme awaits - a protein machine that will catalyze the transformation. 'Carbonic anhydrase,' Ms. Frizzle introduces. 'One of the fastest enzymes in the body. Watch the magic.'",
+      "q": "What enzyme converts CO2 + H2O into carbonic acid?",
+      "options": [
+        "Hemoglobin",
+        "Carbonic anhydrase",
+        "Oxygen carrier",
+        "Bicarbonate"
+      ],
+      "answer": 1,
+      "explain": "CARBONIC ANHYDRASE catalyzes: CO2 + H2O ↔ H2CO3. This enzyme is extremely fast - each molecule can catalyze 1 million reactions per second!",
+      "wrongExplains": {
+        "0": "Hemoglobin carries gases but isn't an enzyme. Carbonic anhydrase does the chemistry.",
+        "2": "'Oxygen carrier' isn't a specific enzyme name. Carbonic anhydrase catalyzes this reaction.",
+        "3": "Bicarbonate is the PRODUCT. Carbonic anhydrase is the enzyme that makes it."
+      }
+    },
+    {
+      "id": "900.5.20.s04",
+      "arc": 2,
+      "arcTitle": "The Chemical Transformation",
+      "narrative": "CO2 meets water. Carbonic anhydrase brings them together. 'Carbonic acid,' Ms. Frizzle identifies the product. 'But watch - it's unstable. It's already falling apart.' H2CO3 splits into two pieces.",
+      "q": "What does carbonic acid (H2CO3) quickly dissociate into?",
+      "options": [
+        "CO2 and water",
+        "H+ and bicarbonate (HCO3-)",
+        "Oxygen and carbon",
+        "Sodium and chloride"
+      ],
+      "answer": 1,
+      "explain": "Carbonic acid instantly dissociates: H2CO3 → H+ + HCO3-. The bicarbonate ion is stable and travels in plasma. The H+ is buffered by hemoglobin.",
+      "wrongExplains": {
+        "0": "That's the REVERSE reaction (at the lungs). In tissues, H+ and bicarbonate form.",
+        "2": "No elemental oxygen or carbon is produced. The products are H+ and HCO3-.",
+        "3": "Sodium and chloride aren't involved in this reaction. H+ and bicarbonate form."
+      }
+    },
+    {
+      "id": "900.5.20.s05",
+      "arc": 2,
+      "arcTitle": "The Chemical Transformation",
+      "narrative": "'The H+ could be dangerous,' Ms. Frizzle notes. 'Acidic hydrogen ions lowering blood pH. But hemoglobin buffers them.' She points to hemoglobin grabbing the H+. 'The bicarbonate? It leaves the red blood cell.'",
+      "q": "What happens to the H+ produced when carbonic acid dissociates?",
+      "options": [
+        "It's exhaled immediately",
+        "It's buffered by hemoglobin",
+        "It leaves the red blood cell",
+        "It converts to oxygen"
+      ],
+      "answer": 1,
+      "explain": "HEMOGLOBIN BUFFERS the H+ ions, preventing dangerous pH drops. Deoxygenated hemoglobin is especially good at this - it picks up H+ as it releases O2.",
+      "wrongExplains": {
+        "0": "H+ isn't a gas - it stays in blood until the reaction reverses at the lungs.",
+        "2": "H+ stays WITH hemoglobin in the RBC. Bicarbonate leaves.",
+        "3": "H+ doesn't become oxygen. Hemoglobin holds it as a buffer."
+      }
+    },
+    {
+      "id": "900.5.20.s06",
+      "arc": 2,
+      "arcTitle": "The Chemical Transformation",
+      "narrative": "Bicarbonate ions stream out of the red blood cell. 'But wait,' Ms. Frizzle points to chloride ions entering. 'For every bicarbonate that leaves, a chloride enters. Electrical balance must be maintained.'",
+      "q": "What is the 'chloride shift'?",
+      "options": [
+        "Movement of oxygen into cells",
+        "Exchange of bicarbonate for chloride across the RBC membrane",
+        "Change in blood color",
+        "Movement of hemoglobin"
+      ],
+      "answer": 1,
+      "explain": "The CHLORIDE SHIFT: As HCO3- exits red blood cells, Cl- enters to maintain electrical neutrality. This ion exchange allows bicarbonate to travel freely in plasma.",
+      "wrongExplains": {
+        "0": "Oxygen movement is separate. The chloride shift is specifically about ion exchange.",
+        "2": "Blood color changes with oxygenation status, not chloride movement.",
+        "3": "Hemoglobin stays inside RBCs. Chloride and bicarbonate ions exchange across the membrane."
+      }
+    },
+    {
+      "id": "900.5.20.s07",
+      "arc": 3,
+      "arcTitle": "At the Lungs",
+      "narrative": "The bus reaches the pulmonary capillaries. 'Now everything reverses,' Ms. Frizzle announces. Bicarbonate re-enters the red blood cell. Chloride exits. Carbonic anhydrase runs backward. CO2 forms and diffuses into alveolar air.",
+      "q": "Where does the CO2-to-bicarbonate reaction reverse?",
+      "options": [
+        "In body tissues",
+        "In the lungs",
+        "In the heart",
+        "In the liver"
+      ],
+      "answer": 1,
+      "explain": "At the LUNGS, everything reverses: HCO3- + H+ → H2CO3 → CO2 + H2O. The regenerated CO2 diffuses into alveoli and is exhaled.",
+      "wrongExplains": {
+        "0": "Tissues is where CO2 is PRODUCED and converted TO bicarbonate. Lungs reverse it.",
+        "2": "The heart pumps blood but doesn't perform gas exchange or reverse this reaction.",
+        "3": "The liver processes many substances but CO2 release happens at the lungs."
+      }
+    },
+    {
+      "id": "900.5.20.s08",
+      "arc": 3,
+      "arcTitle": "At the Lungs",
+      "narrative": "'Some CO2 never converted,' Ms. Frizzle points to molecules bound to hemoglobin. 'Carbaminohemoglobin - CO2 attached to the protein chains. Not the heme iron where oxygen binds - a different site entirely.'",
+      "q": "When CO2 binds to hemoglobin, it forms:",
+      "options": [
+        "Oxyhemoglobin",
+        "Carbaminohemoglobin",
+        "Methemoglobin",
+        "Bicarbonate"
+      ],
+      "answer": 1,
+      "explain": "CARBAMINOHEMOGLOBIN: CO2 binds to the globin protein chains (amino groups), not the heme iron. About 20-23% of CO2 travels this way, released at the lungs.",
+      "wrongExplains": {
+        "0": "Oxyhemoglobin is O2-bound hemoglobin. CO2 forms carbaminohemoglobin.",
+        "2": "Methemoglobin has oxidized iron (Fe3+) - a different condition entirely.",
+        "3": "Bicarbonate is dissolved in plasma, not bound to hemoglobin protein."
+      }
+    },
+    {
+      "id": "900.5.20.s09",
+      "arc": 3,
+      "arcTitle": "At the Lungs",
+      "narrative": "'The Bohr effect and Haldane effect,' Ms. Frizzle adds. 'When oxygen binds, hemoglobin releases CO2 more readily. When CO2 binds, hemoglobin releases oxygen more readily. They help each other at the right places.'",
+      "q": "The Haldane effect describes:",
+      "options": [
+        "How oxygen binds to hemoglobin",
+        "How oxygenation of blood promotes CO2 release",
+        "How bicarbonate forms",
+        "How chloride shifts"
+      ],
+      "answer": 1,
+      "explain": "The HALDANE EFFECT: Oxygenated hemoglobin has LESS affinity for CO2 and H+. At the lungs where O2 is high, this promotes CO2 release for exhalation.",
+      "wrongExplains": {
+        "0": "Oxygen binding is described by the oxygen-hemoglobin dissociation curve.",
+        "2": "Bicarbonate formation is carbonic anhydrase chemistry. Haldane is about hemoglobin affinity.",
+        "3": "Chloride shift is membrane ion exchange. Haldane is about CO2-O2 interaction on hemoglobin."
+      }
+    },
+    {
+      "id": "900.5.20.s10",
+      "arc": 3,
+      "arcTitle": "At the Lungs",
+      "narrative": "CO2 streams out of the blood into alveolar air. Dissolved, converted from bicarbonate, released from hemoglobin - all forms ultimately reach the lungs. 'The main form during transport,' Ms. Frizzle quizzes. 'Which is it?'",
+      "q": "Carbon dioxide is primarily transported in the blood as:",
+      "options": [
+        "Dissolved CO2 in plasma",
+        "Bound to hemoglobin",
+        "Bicarbonate ions (HCO3-)",
+        "Carbonic acid"
+      ],
+      "answer": 2,
+      "explain": "BICARBONATE IONS (~70%) are the PRIMARY transport form. CO2 + H2O → H2CO3 → H+ + HCO3-. Bicarbonate travels in plasma, protected from pH effects.",
+      "wrongExplains": {
+        "0": "Dissolved CO2 is only ~7% of transport. Most is chemically converted.",
+        "1": "Carbaminohemoglobin is ~20-23%. Bicarbonate carries the majority.",
+        "3": "Carbonic acid (H2CO3) is an unstable intermediate that quickly dissociates."
+      }
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "id": "611.4",
+  "title": "Urinary System",
+  "category": "lab-exam-ii",
+  "description": "Lab practical questions for urinary system anatomy",
+  "questions": [
+    {
+      "id": "611.4.01",
+      "q": "What is the first collecting structure that urine enters after leaving the renal papilla?",
+      "options": [
+        "Minor calyx",
+        "Major calyx",
+        "Renal pelvis",
+        "Ureter"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Urinary",
+      "tags": [
+        "urine flow",
+        "gross"
+      ],
+      "explain": "Minor calyx. Urine drains from renal papilla -> minor calyx -> major calyx -> renal pelvis -> ureter. The minor calyx is the first collecting cup.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Precisely. Minor calyx. The renal papilla drips urine into the minor calyx like a funnel catching drips. From there it flows to major calyces, then pelvis, then ureter. Now walk with me — let me show you why this matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. The major calyx receives urine from several minor calyces — it's downstream, not first. The minor calyx is the direct catcher. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. The renal pelvis is the final collecting reservoir before the ureter — several steps downstream. The minor calyx is the first cup. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. The ureter is the transport tube to the bladder — far downstream. The minor calyx is the first collecting structure right at the papilla. Come closer — I'll show you the distinction that matters."
+        }
+      ],
+      "mechanism": {
+        "title": "Urine Flow Pathway: Clinical Context",
+        "content": "Understanding the drainage pathway is critical for interpreting kidney stones and hydronephrosis. A stone lodged in a minor calyx causes localized backup; a stone in the ureter causes entire kidney backup. The pathway is: renal papilla → minor calyx → major calyx → renal pelvis → ureter → bladder.",
+        "metaphor": "Think of it like a mountain stream system: the renal papilla is the spring, minor calyces are the small catchment pools, major calyces are larger streams, the renal pelvis is the lake, and the ureter is the river to the sea (bladder)."
+      },
+      "scaffoldFile": "611.4.01-scaffolds/611.4.01-scaffolds.json"
+    },
+    {
+      "id": "611.4.02",
+      "q": "How do you distinguish afferent and efferent arterioles at the glomerulus?",
+      "options": [
+        "Afferent is wider (entering); efferent is narrower (exiting)",
+        "Afferent is narrower; efferent is wider",
+        "Both are the same diameter",
+        "Efferent enters; afferent exits"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Urinary",
+      "tags": [
+        "vessels",
+        "glomerulus"
+      ],
+      "explain": "Afferent is wider (entering); efferent is narrower (exiting). This diameter difference creates high glomerular pressure for filtration.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Precisely. Afferent is wider (entering); efferent is narrower (exiting). This asymmetry creates a pressure dam — blood rushes in through a wide pipe, exits through a narrow one, so pressure builds in the glomerulus. That pressure drives filtration. Now walk with me — let me show you why this matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. If the afferent were narrower, pressure would drop before reaching the glomerulus — no filtration. The afferent is wider to deliver high flow, the efferent is narrower to trap pressure. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. If both were the same diameter, there'd be no pressure buildup in the glomerulus — just a highway with no dam. The narrower efferent creates the resistance that raises glomerular pressure. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. You have the direction backward. 'Afferent' means toward (af- = ad- = to); 'efferent' means away (ef- = ex- = out). Afferent enters, efferent exits. Come closer — I'll show you the distinction that matters."
+        }
+      ],
+      "mechanism": {
+        "title": "Afferent vs Efferent Arterioles: Clinical Context",
+        "content": "The wider afferent + narrower efferent creates high glomerular capillary pressure (~60 mmHg, much higher than typical capillaries at ~25 mmHg). This pressure drives ultrafiltration. Diseases that dilate the efferent (e.g., ACE inhibitor drugs) reduce filtration pressure and can cause acute kidney injury in certain patients. Conversely, constricting the efferent (e.g., angiotensin II) increases filtration pressure — this is why the kidney uses angiotensin II to maintain GFR when blood pressure drops.",
+        "metaphor": "Think of a garden hose with your thumb over the end: the hose is the afferent (wide), your thumb is the efferent (narrow), and the spray (high pressure) is the glomerular filtration."
+      },
+      "scaffoldFile": "611.4.02-scaffolds/611.4.02-scaffolds.json"
+    },
+    {
+      "id": "611.4.03",
+      "q": "What is the fastest histological clue that you are looking at kidney cortex (not medulla)?",
+      "options": [
+        "Renal corpuscles (glomeruli + Bowman's capsules)",
+        "Straight tubules running parallel",
+        "Loops of Henle descending into pyramids",
+        "Collecting ducts converging toward papilla"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Urinary",
+      "tags": [
+        "histology",
+        "cortex"
+      ],
+      "explain": "Renal corpuscles (glomeruli + Bowman's capsules). Only the cortex contains corpuscles. The medulla shows only tubules.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Precisely. Renal corpuscles (glomeruli + Bowman's capsules). If you see those pink globular glomeruli wrapped in Bowman's capsule, you're in the cortex. The medulla has no corpuscles — only tubules running in parallel. Now walk with me — let me show you why this matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. Straight tubules running parallel is the hallmark of the medulla, not cortex. The cortex is more chaotic with convoluted tubules and corpuscles scattered throughout. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. Loops of Henle descending into pyramids tells you you're looking at the medulla (the pyramids ARE the medulla). The cortex sits above the pyramids and contains the corpuscles. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. Collecting ducts converging toward the papilla is a medullary feature — they form the 'stripes' of the medullary pyramids. The cortex has corpuscles, not these converging ducts. Come closer — I'll show you the distinction that matters."
+        }
+      ],
+      "mechanism": {
+        "title": "Cortex vs Medulla: Clinical Context",
+        "content": "The cortex (outer region) contains ALL renal corpuscles — this is where filtration happens. The medulla (inner pyramids) contains only tubules — this is where concentration happens via the countercurrent multiplier. On histology, corpuscles = cortex, parallel tubules = medulla. Clinically, cortical damage (e.g., glomerulonephritis) impairs filtration; medullary damage (e.g., papillary necrosis from NSAIDs) impairs concentration, leading to polyuria and inability to concentrate urine.",
+        "metaphor": "Think of the cortex as the factory floor (where filtration assembly happens with all the corpuscle machinery) and the medulla as the shipping warehouse (where parallel conveyor belts — the tubules — concentrate and package the final product)."
+      },
+      "scaffoldFile": "611.4.03-scaffolds/611.4.03-scaffolds.json"
+    },
+    {
+      "id": "611.4.04",
+      "q": "Which nephron segment has the thickest brush border (microvilli) and why?",
+      "options": [
+        "Proximal convoluted tubule (reabsorbs 65% of filtrate)",
+        "Distal convoluted tubule (fine-tunes sodium)",
+        "Descending limb of loop of Henle (permeable to water)",
+        "Collecting duct (responds to ADH)"
+      ],
+      "answer": 0,
+      "chapter": "Lab Exam II — Urinary",
+      "tags": [
+        "nephron",
+        "histology"
+      ],
+      "explain": "Proximal convoluted tubule (reabsorbs 65% of filtrate). The thick brush border maximizes surface area for massive reabsorption.",
+      "optionExplains": [
+        {
+          "verdict": "correct",
+          "text": "Precisely. Proximal convoluted tubule (reabsorbs 65% of filtrate). That brush border is a forest of microvilli — the PCT reabsorbs most of the filtrate (water, glucose, amino acids, sodium), so it needs maximum surface area. The thicker the brush border, the more reabsorption machinery. Now walk with me — let me show you why this matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. The distal convoluted tubule does fine-tune sodium, but it handles only ~5% of the filtrate (much less than PCT's 65%). Its brush border is sparse or absent because it's not a bulk reabsorber — it's a fine-tuner. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. The descending limb is permeable to water, but it's a thin segment (simple squamous epithelium, no brush border). It's built for passive diffusion, not active transport. The PCT is the workhorse reabsorber. Come closer — I'll show you the distinction that matters."
+        },
+        {
+          "verdict": "incorrect",
+          "text": "Not quite. The collecting duct responds to ADH for water reabsorption, but it has no brush border — it uses aquaporin channels inserted into the apical membrane. The PCT has the thick brush border for bulk reabsorption. Come closer — I'll show you the distinction that matters."
+        }
+      ],
+      "mechanism": {
+        "title": "Proximal Convoluted Tubule Brush Border: Clinical Context",
+        "content": "The PCT reabsorbs ~65% of filtered water and sodium, plus 100% of filtered glucose and amino acids. The thick brush border (microvilli) increases surface area ~20-fold, packing in massive amounts of Na+/K+ ATPase pumps, glucose cotransporters (SGLT2), and other reabsorption machinery. Clinically, drugs like SGLT2 inhibitors (e.g., empagliflozin for diabetes) block glucose reabsorption here, causing glucosuria. Damage to the PCT (e.g., from heavy metals or aminoglycoside antibiotics) causes Fanconi syndrome: loss of glucose, amino acids, phosphate, and bicarbonate in urine despite normal blood levels.",
+        "metaphor": "Think of the PCT brush border like the villi of the small intestine: both are 'absorption champions' that use a fuzzy forest of projections to maximize contact area for grabbing nutrients and water back from the lumen."
+      },
+      "scaffoldFile": "611.4.04-scaffolds/611.4.04-scaffolds.json"
+    }
+  ]
+}
