@@ -231,6 +231,7 @@ function onBodyClick(event) {
   const stagePart = event.target.closest(".diagram-part");
   if (stagePart) {
     state.atlasPartId = stagePart.dataset.part;
+    emitV2TeachingSignal("atlas_focus", stagePart.dataset.part, { kind: "atlas_part" });
     renderAtlas();
     return;
   }
@@ -245,6 +246,11 @@ function onBodyClick(event) {
   if (quickChoiceButton) {
     state.quickSelection = quickChoiceButton.dataset.quickChoice;
     state.quickRevealed = true;
+    const item = currentQuickItem();
+    emitV2TeachingSignal("choice", item?.id, {
+      kind: promptKindForQuickItem(item),
+      selected: quickChoiceButton.dataset.quickChoice
+    });
     renderQuickRoll();
     return;
   }
@@ -483,6 +489,9 @@ function toggleQuickReveal() {
   state.quickRevealed = !state.quickRevealed;
   if (!state.quickRevealed) {
     state.quickSelection = "";
+  } else {
+    const item = currentQuickItem();
+    emitV2TeachingSignal("reveal", item?.id, { kind: promptKindForQuickItem(item) });
   }
   renderQuickRoll();
 }
@@ -509,6 +518,13 @@ function recordQuickAttempt(score) {
   record.streak = score === "easy" ? record.streak + 1 : 0;
   state.quickScored = true;
   saveProgress();
+  emitV2TeachingScore(item.id, score, {
+    kind: promptKindForQuickItem(item),
+    aggregateContext: {
+      attempts: record.attempts,
+      confidence: quickConfidence(item.id)
+    }
+  });
 }
 
 function stepQuickCard(direction) {
@@ -593,6 +609,9 @@ function toggleAnswer() {
   state.message = state.answerVisible
     ? "Compare your answer, then score the card."
     : "Answer hidden again.";
+  if (state.answerVisible) {
+    emitV2TeachingSignal("reveal", currentCard()?.id, { kind: "question" });
+  }
   renderQuiz();
 }
 
@@ -629,6 +648,14 @@ function scoreCurrentCard(score) {
   }
 
   saveProgress();
+  emitV2TeachingScore(card.id, score, {
+    kind: "question",
+    aggregateContext: {
+      attempts: record.attempts,
+      confidence: cardConfidence(card.id),
+      sessionAnswered: state.session.answered
+    }
+  });
   state.message = {
     easy: "Locked in. Next card ready.",
     shaky: "Marked shaky. This card will come back once more.",
@@ -672,6 +699,7 @@ function toggleFavorite() {
   record.favorite = !record.favorite;
   record.lastSeen = record.lastSeen || Date.now();
   saveProgress();
+  emitV2TeachingSignal(record.favorite ? "favorite" : "unfavorite", card.id, { kind: "question" });
   state.message = record.favorite ? "Card saved to favorites." : "Card removed from favorites.";
   renderApp();
 }
@@ -1800,4 +1828,18 @@ function isView(view) {
 
 function byId(id) {
   return document.getElementById(id);
+}
+
+function emitV2TeachingSignal(action, sourceId, detail = {}) {
+  if (!sourceId || !window.LabExamTeachingV2 || typeof window.LabExamTeachingV2.record !== "function") {
+    return null;
+  }
+  return window.LabExamTeachingV2.record(action, sourceId, detail);
+}
+
+function emitV2TeachingScore(sourceId, outcome, detail = {}) {
+  if (!sourceId || !window.LabExamTeachingV2 || typeof window.LabExamTeachingV2.score !== "function") {
+    return null;
+  }
+  return window.LabExamTeachingV2.score(sourceId, outcome, detail);
 }

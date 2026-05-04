@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://luminara.natalie-eiryk.com/schemas/teaching-module-v2/lumi-teaching-signal.json",
+  "title": "LumiTeachingSignal",
+  "type": "object",
+  "required": ["type", "payload"],
+  "properties": {
+    "type": { "const": "teaching_signal" },
+    "payload": {
+      "type": "object",
+      "required": ["moduleId", "itemId", "action", "timestamp"],
+      "properties": {
+        "moduleId": { "type": "string" },
+        "itemId": { "type": "string" },
+        "sourceId": { "type": "string" },
+        "sourceType": { "type": "string" },
+        "kind": { "type": "string" },
+        "deweyPath": { "type": "string" },
+        "system": { "type": "string" },
+        "topic": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "action": { "type": "string" },
+        "outcome": { "type": "string" },
+        "score": {},
+        "aggregateContext": { "type": "object" },
+        "timestamp": { "type": "string" }
+      }
+    }
+  }
+}

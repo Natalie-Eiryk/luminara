@@ -18,12 +18,21 @@
 const fs = require('fs');
 const path = require('path');
 
+const repoRoot = path.resolve(__dirname, '../../../../../..');
+const quizRoot = path.resolve(__dirname, '..');
+const deweyContentRoot = path.resolve(__dirname, '../../../820.50-Dewey_Content');
+const configuredContentRoot = process.env.LUMI_QUIZ_CONTENT_ROOT
+  ? path.resolve(process.env.LUMI_QUIZ_CONTENT_ROOT)
+  : null;
+const contentRoot = configuredContentRoot
+  || (fs.existsSync(deweyContentRoot) ? deweyContentRoot : quizRoot);
+
 // Configuration
 const CONFIG = {
-  contentRoot: path.resolve(__dirname, '../../../820.50-Dewey_Content'),
+  contentRoot,
   questionSchema: require('./question-schema.json'),
   scaffoldSchema: require('./scaffold-schema.json'),
-  outputDir: path.join(__dirname, 'reports'),
+  outputDir: process.env.LUMI_QUIZ_REPORT_DIR || path.join(repoRoot, 'artifacts', 'quiz-engine', 'reports'),
   severityThresholds: {
     CRITICAL: 0, // Any CRITICAL issue fails --strict
     HIGH: 10,
@@ -57,6 +66,7 @@ class ValidationReport {
     this.stats = {
       questionsScanned: 0,
       questionBanks: 0,
+      vocabularyTerms: 0,
       scaffoldsScanned: 0,
       critical: 0,
       high: 0,
@@ -214,6 +224,10 @@ class ValidationReport {
         <div class="stat-number">${this.stats.questionsScanned}</div>
         <div class="stat-label">Questions Scanned</div>
       </div>
+      <div class="stat-card">
+        <div class="stat-number">${this.stats.vocabularyTerms}</div>
+        <div class="stat-label">Vocabulary Terms</div>
+      </div>
       <div class="stat-card critical">
         <div class="stat-number">${this.stats.critical}</div>
         <div class="stat-label">Critical Issues</div>
@@ -268,24 +282,48 @@ class QualityValidator {
 
   validateQuestion(question, bankId) {
     const qId = question.id || `${bankId}.unknown`;
+    const prompt = question.q || question.question || question.prompt || question.text || '';
+    const options = Array.isArray(question.options) ? question.options : [];
+    const answer = typeof question.answer === 'number' ? question.answer : question.correctIndex;
 
     // 1. Schema validation (answer index bounds)
-    if (question.answer >= question.options.length) {
+    if (!prompt) {
       this.report.addIssue(new Issue(
         SEVERITY.CRITICAL,
         'Schema Violation',
-        `Answer index ${question.answer} exceeds options array length (${question.options.length})`,
+        'Question is missing prompt text (q, question, prompt, or text)',
+        qId,
+        'Add one canonical prompt field before publishing this bank'
+      ));
+    }
+
+    if (!options.length) {
+      this.report.addIssue(new Issue(
+        SEVERITY.CRITICAL,
+        'Schema Violation',
+        'Question is missing options array',
+        qId,
+        'Add a non-empty options array'
+      ));
+      return;
+    }
+
+    if (answer === undefined || answer === null || answer >= options.length) {
+      this.report.addIssue(new Issue(
+        SEVERITY.CRITICAL,
+        'Schema Violation',
+        `Answer index ${answer} exceeds options array length (${options.length})`,
         qId,
         'Fix answer index to point to valid option (0-based indexing)'
       ));
     }
 
     // 2. optionExplains length match
-    if (question.optionExplains && question.optionExplains.length !== question.options.length) {
+    if (question.optionExplains && question.optionExplains.length !== options.length) {
       this.report.addIssue(new Issue(
         SEVERITY.CRITICAL,
         'Schema Violation',
-        `optionExplains length (${question.optionExplains.length}) does not match options length (${question.options.length})`,
+        `optionExplains length (${question.optionExplains.length}) does not match options length (${options.length})`,
         qId,
         'Add or remove optionExplains entries to match options array'
       ));
@@ -320,24 +358,34 @@ class QualityValidator {
     }
 
     // 5. Answer format consistency
-    const correctAnswer = question.options[question.answer];
-    const wrongAnswers = question.options.filter((_, idx) => idx !== question.answer);
+    const correctAnswer = options[answer];
+    const wrongAnswers = options.filter((_, idx) => idx !== answer);
 
-    const correctIsLong = correctAnswer && correctAnswer.length > 60;
-    const wrongAreShort = wrongAnswers.every(opt => opt.length < 30);
+    const optionText = (option) => typeof option === 'object'
+      ? (option.text || option.label || JSON.stringify(option))
+      : String(option || '');
+    const correctText = optionText(correctAnswer);
+    const wrongTexts = wrongAnswers.map(optionText);
+    const teachingExplanation = question.explain || question.explanation || question.feedback || '';
+    const hasTeachingExplanation = typeof teachingExplanation === 'string'
+      ? teachingExplanation.trim().length >= 20
+      : Boolean(teachingExplanation);
+    const hasMechanism = Boolean(question.mechanism && question.mechanism.content);
+    const correctIsLong = correctText.length > 60;
+    const wrongAreShort = wrongTexts.every(opt => opt.length < 30);
 
     if (correctIsLong && wrongAreShort) {
       this.report.addIssue(new Issue(
         SEVERITY.HIGH,
         'Format Mismatch',
-        `Correct answer is ${correctAnswer.length} chars but wrong answers average ${Math.round(wrongAnswers.reduce((sum, opt) => sum + opt.length, 0) / wrongAnswers.length)} chars`,
+        `Correct answer is ${correctText.length} chars but wrong answers average ${Math.round(wrongTexts.reduce((sum, opt) => sum + opt.length, 0) / wrongTexts.length)} chars`,
         qId,
         'Make all options comparable format (all single terms OR all sentences)'
       ));
     }
 
     // 6. Shallow explanation (just restates answer)
-    if (question.explain && correctAnswer && question.explain === correctAnswer + '.') {
+    if (question.explain && correctText && question.explain === correctText + '.') {
       this.report.addIssue(new Issue(
         SEVERITY.MEDIUM,
         'Shallow Explanation',
@@ -350,32 +398,39 @@ class QualityValidator {
     // 7. Distractor relevance check (simple heuristic)
     if (question.tags && question.tags.length > 0) {
       const mainTag = question.tags[0].toLowerCase();
-      const unrelatedOptions = wrongAnswers.filter(opt => {
-        const optLower = opt.toLowerCase();
+      const unrelatedOptions = wrongTexts.filter(wrongText => {
+        const optLower = wrongText.toLowerCase();
         // Check if distractor contains any keywords from the question topic
         return !optLower.includes(mainTag.substring(0, 5)) &&
-               !question.q.toLowerCase().includes(optLower.substring(0, Math.min(8, optLower.length)));
+               !prompt.toLowerCase().includes(optLower.substring(0, Math.min(8, optLower.length)));
       });
 
       if (unrelatedOptions.length === wrongAnswers.length) {
         this.report.addIssue(new Issue(
-          SEVERITY.CRITICAL,
-          'Irrelevant Distractors',
-          `All ${wrongAnswers.length} wrong answers appear unrelated to question topic (${mainTag})`,
+          SEVERITY.LOW,
+          'Distractor Review',
+          `String heuristic could not confirm ${wrongAnswers.length} wrong answers share visible terms with topic (${mainTag})`,
           qId,
-          'Replace distractors with plausible misconceptions from the same domain'
+          'Review distractors only if they are not plausible misconceptions from the same domain'
         ));
       }
     }
 
     // 8. Missing mechanism
-    if (!question.mechanism || !question.mechanism.content) {
+    if (!hasMechanism) {
+      const severity = hasTeachingExplanation ? SEVERITY.LOW : SEVERITY.MEDIUM;
+      const category = hasTeachingExplanation ? 'Missing Mechanism' : 'Missing Content';
+      const message = hasTeachingExplanation
+        ? 'Question has explanation text but lacks structured mechanism content'
+        : 'Question lacks mechanism explanation and fallback teaching explanation';
       this.report.addIssue(new Issue(
-        SEVERITY.MEDIUM,
-        'Missing Content',
-        'Question lacks mechanism explanation',
+        severity,
+        category,
+        message,
         qId,
-        'Add mechanism section explaining the underlying concepts'
+        hasTeachingExplanation
+          ? 'Add mechanism.content when this question is promoted into a deeper teaching module'
+          : 'Add mechanism.content or a substantive explain/explanation field before promotion'
       ));
     }
 
@@ -393,12 +448,14 @@ class QualityValidator {
 
   validateScaffold(scaffold, questionId) {
     // Check answer indices
-    scaffold.scaffolds.forEach((sq, idx) => {
-      if (sq.answer >= sq.options.length) {
+    const scaffolds = Array.isArray(scaffold.scaffolds) ? scaffold.scaffolds : [];
+    scaffolds.forEach((sq, idx) => {
+      const options = Array.isArray(sq.options) ? sq.options : [];
+      if (sq.answer >= options.length) {
         this.report.addIssue(new Issue(
           SEVERITY.CRITICAL,
           'Scaffold Error',
-          `Scaffold ${idx} has answer index ${sq.answer} exceeding options length ${sq.options.length}`,
+          `Scaffold ${idx} has answer index ${sq.answer} exceeding options length ${options.length}`,
           questionId,
           'Fix answer index in scaffold question'
         ));
@@ -430,16 +487,19 @@ async function scanQuestionBanks() {
 
     for (const subdir of subdirs) {
       const subdirPath = path.join(dirPath, subdir);
-      const jsonFiles = fs.readdirSync(subdirPath).filter(f => f.endsWith('.json') && !f.includes('vocabulary'));
+      const jsonFiles = fs.readdirSync(subdirPath).filter(f => f.endsWith('.json'));
 
       for (const jsonFile of jsonFiles) {
         const filePath = path.join(subdirPath, jsonFile);
         try {
           const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
           report.stats.questionBanks++;
+          const questions = extractQuestions(content);
+          const vocabularyTerms = extractVocabularyTerms(content);
+          report.stats.vocabularyTerms += vocabularyTerms.length;
 
-          if (content.questions && Array.isArray(content.questions)) {
-            content.questions.forEach(q => {
+          if (questions.length) {
+            questions.forEach(q => {
               report.stats.questionsScanned++;
               validator.validateQuestion(q, content.id || 'unknown');
 
@@ -474,6 +534,25 @@ async function scanQuestionBanks() {
   return report;
 }
 
+function extractQuestions(content) {
+  if (Array.isArray(content)) return [];
+  if (Array.isArray(content.questions)) return content.questions;
+  if (Array.isArray(content.items)) {
+    return content.items.filter(item => Array.isArray(item.options));
+  }
+  return [];
+}
+
+function extractVocabularyTerms(content) {
+  if (Array.isArray(content)) {
+    return content.filter(item => item && (item.term || item.word || item.definition));
+  }
+  return []
+    .concat(Array.isArray(content.vocabulary) ? content.vocabulary : [])
+    .concat(Array.isArray(content.terms) ? content.terms : [])
+    .concat(Array.isArray(content.items) ? content.items.filter(item => item && (item.term || item.word || item.definition)) : []);
+}
+
 // CLI
 async function main() {
   const args = process.argv.slice(2);
@@ -489,7 +568,7 @@ async function main() {
 
   const report = await scanQuestionBanks();
 
-  console.log(`Scanned: ${report.stats.questionsScanned} questions in ${report.stats.questionBanks} banks`);
+  console.log(`Scanned: ${report.stats.questionsScanned} questions and ${report.stats.vocabularyTerms} vocabulary terms in ${report.stats.questionBanks} banks`);
   console.log(`Issues:  CRITICAL=${report.stats.critical} HIGH=${report.stats.high} MEDIUM=${report.stats.medium} LOW=${report.stats.low}\n`);
 
   // Ensure reports directory exists

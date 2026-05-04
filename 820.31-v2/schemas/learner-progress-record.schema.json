@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://luminara.natalie-eiryk.com/schemas/teaching-module-v2/learner-progress-record.json",
+  "title": "LearnerProgressRecord",
+  "type": "object",
+  "required": ["itemId", "attempts", "lastOutcome", "confidence", "lastSeenAt"],
+  "properties": {
+    "itemId": { "type": "string" },
+    "attempts": { "type": "integer", "minimum": 0 },
+    "lastOutcome": { "type": "string" },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 100 },
+    "lastSeenAt": { "type": ["string", "null"] },
+    "nextReviewAt": { "type": ["string", "null"] },
+    "favorite": { "type": "boolean" },
+    "notesLocalOnly": { "type": "string" }
+  }
+}

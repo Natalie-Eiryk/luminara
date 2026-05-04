@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://luminara.natalie-eiryk.com/schemas/teaching-module-v2/teaching-diagnostics.json",
+  "title": "TeachingDiagnostics",
+  "type": "object",
+  "required": ["moduleId", "generatedAt", "publicSafe", "totals", "validity", "privacy"],
+  "properties": {
+    "moduleId": { "type": "string" },
+    "generatedAt": { "type": "string" },
+    "publicSafe": { "type": "boolean" },
+    "totals": { "type": "object" },
+    "validity": { "type": "object" },
+    "routeHealth": { "type": "object" },
+    "privacy": {
+      "type": "object",
+      "properties": {
+        "containsLearnerRecords": { "type": "boolean" },
+        "containsNotes": { "type": "boolean" },
+        "containsPrivateLumiMemory": { "type": "boolean" }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "lab-exam-ii",
+  "title": "Lab Exam II Quick Roll",
+  "version": "2.0.0",
+  "route": "/lab-exam-ii/",
+  "deweyPath": "611-612",
+  "audience": "anatomy-physiology-lab",
+  "sourceRefs": [
+    "Lab Exam II Study Guide - SPRING2026",
+    "lab-exam-ii/study_data_core.js",
+    "lab-exam-ii/study_exam_guide_roll.js",
+    "lab-exam-ii/study_questions.js",
+    "lab-exam-ii/study_glossary_*.js",
+    "lab-exam-ii/study_atlas_*.js",
+    "lab-exam-ii/study_support.js"
+  ],
+  "itemCollections": [],
+  "diagnostics": {
+    "public": true,
+    "route": "diagnostics.html"
+  },
+  "lumiSync": {
+    "enabled": true,
+    "private": true,
+    "localFirst": true
+  }
+}

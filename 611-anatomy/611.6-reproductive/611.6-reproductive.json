@@ -89,9 +89,9 @@
       "q": "How do you distinguish a primary follicle from a mature Graafian follicle in ovarian histology?",
       "options": [
         "Primary follicle is small with a single oocyte layer; Graafian follicle is large with a fluid-filled antrum",
-        "Secondary follicle",
-        "Corpus luteum",
-        "Primordial follicle"
+        "Secondary follicle: multilayered follicle where the antrum is only beginning to form",
+        "Corpus luteum: post-ovulation remnant after a Graafian follicle ruptures",
+        "Primordial follicle: earliest flat-cell follicle, smaller than a primary follicle"
       ],
       "answer": 0,
       "chapter": "Lab Exam II — Reproductive",
@@ -129,9 +129,9 @@
       "q": "What three erectile tissue structures must you identify in penis histology?",
       "options": [
         "Two corpora cavernosa (dorsal) and one corpus spongiosum (ventral, surrounding urethra)",
-        "Urethra only",
-        "Corpora cavernosa only",
-        "Corpus spongiosum only"
+        "Urethral lumen only, without naming the surrounding erectile tissue columns",
+        "Paired corpora cavernosa only, missing the ventral corpus spongiosum",
+        "Corpus spongiosum only, missing the paired dorsal corpora cavernosa"
       ],
       "answer": 0,
       "chapter": "Lab Exam II — Reproductive",

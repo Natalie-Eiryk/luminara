@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://luminara.natalie-eiryk.com/schemas/teaching-module-v2/learning-item.json",
+  "title": "LearningItem",
+  "type": "object",
+  "required": ["id", "kind", "moduleId", "deweyPath", "system", "topic", "prompt", "answer", "tags"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "kind": {
+      "type": "string",
+      "enum": ["question", "quick_roll", "true_false", "spelling", "station", "vocabulary", "atlas_part", "scaffold"]
+    },
+    "moduleId": { "type": "string" },
+    "deweyPath": { "type": "string" },
+    "system": { "type": "string" },
+    "topic": { "type": "string" },
+    "prompt": { "type": "string" },
+    "answer": { "type": "string" },
+    "choices": { "type": "array" },
+    "feedback": { "type": "array" },
+    "explanation": { "type": "string" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "mediaRefs": { "type": "array" },
+    "scaffoldRefs": { "type": "array" },
+    "source": { "type": "object" }
+  }
+}
