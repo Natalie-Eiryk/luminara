@@ -62,12 +62,21 @@ button {
 }
 
 .site-shell {
-  max-width: 1600px;
+  max-width: 1720px;
   margin: 0 auto;
   padding: 24px;
   display: grid;
   grid-template-columns: 290px 1fr;
   gap: 24px;
+}
+
+.main-stage,
+.content-stack,
+.side-stack,
+.view-panel,
+.quick-card,
+.queue-shell {
+  min-width: 0;
 }
 
 .surface {
@@ -303,7 +312,7 @@ button {
 .workspace-grid {
   margin-top: 24px;
   display: grid;
-  grid-template-columns: 1fr 320px;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 320px);
   gap: 24px;
 }
 
@@ -460,7 +469,7 @@ button {
 .quick-roll-layout {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 310px;
+  grid-template-columns: minmax(560px, 1fr) minmax(260px, 300px);
   gap: 18px;
 }
 
@@ -937,17 +946,48 @@ kbd {
   font-size: 0.82rem;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1500px) {
   .site-shell,
   .workspace-grid,
   .quiz-layout,
-  .quick-roll-layout,
   .atlas-shell {
     grid-template-columns: 1fr;
   }
 
   .rail {
     position: static;
+    grid-template-columns: minmax(220px, 0.8fr) minmax(360px, 1.4fr) minmax(260px, 1fr);
+    align-items: start;
+  }
+
+  .rail-note {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 18px;
+  }
+
+  .rail-note .block-label {
+    flex-basis: 100%;
+  }
+
+  .view-nav {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  }
+
+  .nav-btn {
+    text-align: center;
+  }
+
+  .system-pills {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  }
+}
+
+@media (max-width: 1280px) {
+  .site-shell {
+    max-width: 1120px;
   }
 
   .side-stack {
@@ -955,9 +995,24 @@ kbd {
   }
 }
 
+@media (max-width: 1100px) {
+  .quick-roll-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 900px) {
   .site-shell {
     padding: 16px;
+  }
+
+  .rail {
+    grid-template-columns: 1fr;
+  }
+
+  .view-nav,
+  .system-pills {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
 
   .hero-panel,
@@ -1000,5 +1055,12 @@ kbd {
   .mini-btn,
   .ghost-icon {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .view-nav,
+  .system-pills {
+    grid-template-columns: 1fr;
   }
 }
