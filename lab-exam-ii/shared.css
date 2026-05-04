@@ -743,6 +743,7 @@ button {
 }
 
 .score-chip:disabled,
+.choice-btn:disabled,
 .ghost-icon:disabled {
   opacity: 0.4;
   cursor: not-allowed;

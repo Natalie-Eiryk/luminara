@@ -1,7 +1,9 @@
 const ALL_SYSTEMS = "All systems";
 const ALL_SECTIONS = "All sections";
 const STORAGE_KEY = "lab_exam_ii_study_progress_v2";
+const QUICK_RECORD_PREFIX = "quick:";
 const DEFAULT_VIEW = "quick";
+const QUICK_MODES = ["mixed", "multiple-choice", "true-false", "spelling", "identify", "visual", "histology", "station"];
 const QUIZ_MODES = {
   smart: "Smart mix",
   weak: "Weak spots",
@@ -21,6 +23,7 @@ const state = {
   quickCursor: 0,
   quickRevealed: false,
   quickSelection: "",
+  quickScored: false,
   glossaryQuery: "",
   queue: [],
   currentCardId: null,
@@ -64,6 +67,7 @@ const els = {
   quickRevealBtn: byId("quickRevealBtn"),
   quickPrevBtn: byId("quickPrevBtn"),
   quickNextBtn: byId("quickNextBtn"),
+  quickScoreButtons: [...document.querySelectorAll("[data-quick-score]")],
   quickQueueSummary: byId("quickQueueSummary"),
   quickQueuePreview: byId("quickQueuePreview"),
   quizSystemLabel: byId("quizSystemLabel"),
@@ -86,6 +90,7 @@ const els = {
   queueSummary: byId("queueSummary"),
   queuePreview: byId("queuePreview"),
   weakSpotList: byId("weakSpotList"),
+  guideWeakSpotList: byId("guideWeakSpotList"),
   favoriteList: byId("favoriteList"),
   recentWinsList: byId("recentWinsList"),
   glossarySystemSelect: byId("glossarySystemSelect"),
@@ -244,6 +249,12 @@ function onBodyClick(event) {
     return;
   }
 
+  const quickScoreButton = event.target.closest("[data-quick-score]");
+  if (quickScoreButton) {
+    scoreQuickCard(quickScoreButton.dataset.quickScore);
+    return;
+  }
+
   const action = event.target.closest("[data-action]");
   if (!action) {
     return;
@@ -290,6 +301,15 @@ function onKeydown(event) {
     }
     if (event.key.toLowerCase() === "b") {
       stepQuickCard(-1);
+    }
+    if (event.key === "1") {
+      scoreQuickCard("easy");
+    }
+    if (event.key === "2") {
+      scoreQuickCard("shaky");
+    }
+    if (event.key === "3") {
+      scoreQuickCard("hard");
     }
     return;
   }
@@ -351,7 +371,7 @@ function applyRoute() {
     state.quickSection = nextSection;
   }
 
-  if (nextQuickMode && ["mixed", "multiple-choice", "true-false", "spelling", "identify", "visual", "histology"].includes(nextQuickMode)) {
+  if (nextQuickMode && QUICK_MODES.includes(nextQuickMode)) {
     state.quickMode = nextQuickMode;
   }
 
@@ -448,6 +468,7 @@ function buildQuickQueue(renderNow = true, randomize = false) {
   state.quickCursor = 0;
   state.quickRevealed = false;
   state.quickSelection = "";
+  state.quickScored = false;
 
   if (renderNow) {
     renderApp();
@@ -466,6 +487,30 @@ function toggleQuickReveal() {
   renderQuickRoll();
 }
 
+function scoreQuickCard(score) {
+  if (!currentQuickItem() || !state.quickRevealed || state.quickScored) {
+    return;
+  }
+  recordQuickAttempt(score);
+  stepQuickCard(1);
+}
+
+function recordQuickAttempt(score) {
+  const item = currentQuickItem();
+  if (!item || !["easy", "shaky", "hard"].includes(score)) {
+    return;
+  }
+
+  const record = ensureQuickRecord(item.id);
+  record.attempts += 1;
+  record[score] += 1;
+  record.lastOutcome = score;
+  record.lastSeen = Date.now();
+  record.streak = score === "easy" ? record.streak + 1 : 0;
+  state.quickScored = true;
+  saveProgress();
+}
+
 function stepQuickCard(direction) {
   if (!state.quickQueue.length) {
     buildQuickQueue();
@@ -475,6 +520,7 @@ function stepQuickCard(direction) {
   state.quickCursor = (state.quickCursor + direction + size) % size;
   state.quickRevealed = false;
   state.quickSelection = "";
+  state.quickScored = false;
   renderQuickRoll();
 }
 
@@ -716,6 +762,9 @@ function renderQuickRoll() {
     els.quickRevealBtn.textContent = "Reload";
     els.quickPrevBtn.disabled = true;
     els.quickNextBtn.disabled = true;
+    els.quickScoreButtons.forEach((button) => {
+      button.disabled = true;
+    });
     els.quickQueueSummary.textContent = "No guide cards queued.";
     els.quickQueuePreview.innerHTML = `<p class="empty-state">Try all sections or all systems.</p>`;
     return;
@@ -723,31 +772,36 @@ function renderQuickRoll() {
 
   const promptKind = promptKindForQuickItem(item);
   const choiceState = quickChoiceState(item, promptKind);
+  const quickRecord = readQuickRecord(item.id);
   els.quickMeta.textContent = `${item.system} - ${item.section}`;
   els.quickPrompt.textContent = promptForQuickItem(item, promptKind, choiceState);
   els.quickCounter.textContent = `${state.quickCursor + 1}/${state.quickQueue.length}`;
   els.quickTagRow.innerHTML = [
     `<span class="chip">${escapeHtml(item.system)}</span>`,
     `<span class="chip">${escapeHtml(item.category)}</span>`,
-    `<span class="chip chip-soft">${escapeHtml(promptLabel(promptKind))}</span>`
+    `<span class="chip chip-soft">${escapeHtml(promptLabel(promptKind))}</span>`,
+    `<span class="chip chip-soft">${escapeHtml(quickStatusLabel(item.id))}</span>`
   ].join("");
   els.quickChoiceShell.innerHTML = renderQuickChoiceShell(item, promptKind, choiceState);
-  els.quickAnswerTerm.textContent = item.aliases.length
-    ? `${item.term} (${item.aliases.join("; ")})`
-    : item.term;
-  els.quickVisualCue.textContent = item.visual;
-  els.quickContext.textContent = item.section;
-  els.quickTrap.textContent = item.trap;
-  els.quickFigureStrip.innerHTML = figuresForSystem(item.system).slice(0, 2).map((figure) => `
-    <figure class="quick-figure-card">
-      <img src="${escapeHtml(figure.src)}" alt="${escapeHtml(figure.title)}" loading="lazy" />
-      <figcaption>${escapeHtml(figure.title)}</figcaption>
-    </figure>`).join("");
+  els.quickAnswerTerm.textContent = state.quickRevealed ? answerTextForQuickItem(item) : "";
+  els.quickVisualCue.textContent = state.quickRevealed ? item.visual : "";
+  els.quickContext.textContent = state.quickRevealed ? item.section : "";
+  els.quickTrap.textContent = state.quickRevealed ? item.trap : "";
+  els.quickFigureStrip.innerHTML = state.quickRevealed
+    ? figuresForSystem(item.system).slice(0, 2).map((figure) => `
+      <figure class="quick-figure-card">
+        <img src="${escapeHtml(figure.src)}" alt="${escapeHtml(figure.title)}" loading="lazy" />
+        <figcaption>${escapeHtml(figure.title)}</figcaption>
+      </figure>`).join("")
+    : "";
   els.quickAnswerCard.classList.toggle("is-visible", state.quickRevealed);
   els.quickRevealBtn.textContent = state.quickRevealed ? "Hide answer" : "Show answer";
   els.quickPrevBtn.disabled = state.quickQueue.length < 2;
   els.quickNextBtn.disabled = state.quickQueue.length < 2;
-  els.quickQueueSummary.textContent = `${state.quickQueue.length} guide card${state.quickQueue.length === 1 ? "" : "s"} in this roll.`;
+  els.quickScoreButtons.forEach((button) => {
+    button.disabled = !state.quickRevealed || state.quickScored;
+  });
+  els.quickQueueSummary.textContent = `${state.quickQueue.length} guide card${state.quickQueue.length === 1 ? "" : "s"} in this roll. Current: ${quickRecord.attempts ? quickStatusLabel(item.id) : "new"}.`;
   els.quickQueuePreview.innerHTML = queueItems.length
     ? queueItems.map((queueItem, index) => renderQuickQueueCard(queueItem, index === 0)).join("")
     : `<p class="empty-state">No queued guide cards.</p>`;
@@ -833,7 +887,7 @@ function renderQuiz() {
     const record = readRecord(card.id);
     els.quizSystemLabel.textContent = card.system;
     els.quizPrompt.textContent = card.prompt;
-    els.quizAnswerText.textContent = card.answer;
+    els.quizAnswerText.textContent = state.answerVisible ? card.answer : "Answer hidden until you reveal it.";
     els.quizTagRow.innerHTML = [
       ...card.tags.map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`),
       `<span class="chip chip-soft">${cardStatusLabel(card.id)}</span>`
@@ -870,6 +924,10 @@ function renderReview() {
   els.weakSpotList.innerHTML = renderReviewGroup(
     weakCards(focus).slice(0, 6),
     "No weak spots saved yet. Score a few cards first and this panel will sharpen."
+  );
+  els.guideWeakSpotList.innerHTML = renderGuideReviewGroup(
+    weakQuickItems(focus).slice(0, 6),
+    "No guide weak spots yet. Score Quick Roll cards to build this list."
   );
   els.favoriteList.innerHTML = renderReviewGroup(
     favoriteCards(focus).slice(0, 6),
@@ -1057,9 +1115,7 @@ function quickItemById(itemId) {
 function quickPool(system) {
   let items = [...(window.STUDY_DATA.quickRollItems || [])];
   if (system !== ALL_SYSTEMS) {
-    items = system === "Histology"
-      ? items.filter((item) => item.category === "histology")
-      : items.filter((item) => item.system === system);
+    items = filterQuickItemsBySystem(items, system);
   }
   if (state.quickSection !== ALL_SECTIONS) {
     items = items.filter((item) => item.section === state.quickSection);
@@ -1070,16 +1126,25 @@ function quickPool(system) {
   return items;
 }
 
+function filterQuickItemsBySystem(items, system) {
+  if (system === ALL_SYSTEMS) {
+    return items;
+  }
+  return system === "Histology"
+    ? items.filter((item) => item.category === "histology")
+    : items.filter((item) => item.system === system);
+}
+
 function promptKindForQuickItem(item) {
   if (state.quickMode !== "mixed") {
     return state.quickMode;
   }
   if (item.category === "histology") {
-    const histologyCycle = ["multiple-choice", "true-false", "histology", "identify"];
+    const histologyCycle = ["multiple-choice", "true-false", "histology", "station"];
     return histologyCycle[state.quickCursor % histologyCycle.length];
   }
-  const cycle = state.quickCursor % 5;
-  return ["multiple-choice", "true-false", "identify", "spelling", "visual"][cycle];
+  const cycle = state.quickCursor % 6;
+  return ["multiple-choice", "true-false", "station", "identify", "spelling", "visual"][cycle];
 }
 
 function promptForQuickItem(item, promptKind, choiceState = null) {
@@ -1096,6 +1161,8 @@ function promptForQuickItem(item, promptKind, choiceState = null) {
       return `Use the visual cue to name the hidden guide term: ${item.visual}`;
     case "histology":
       return `Slide drill: identify the structure or tissue from this clue: ${item.visual}`;
+    case "station":
+      return `Station practical: name the exact structure, then say one look-alike trap. Clue: ${item.visual}`;
     case "identify":
     default:
       return `Identify the guide term: ${item.visual}`;
@@ -1109,7 +1176,8 @@ function promptLabel(promptKind) {
     spelling: "spelling",
     identify: "identify",
     visual: "visual cue",
-    histology: "histology"
+    histology: "histology",
+    station: "station practical"
   };
   return labels[promptKind] || promptKind;
 }
@@ -1173,10 +1241,13 @@ function quickChoiceState(item, promptKind) {
 
 function renderQuickChoiceShell(item, promptKind, choiceState) {
   if (!isChoicePrompt(promptKind) || !choiceState) {
+    const stationCopy = promptKind === "station"
+      ? "Name the structure, name the source station, then name the nearest look-alike before you reveal."
+      : "Say the spelling out loud, picture the structure, then reveal when ready.";
     return `
       <div class="quick-think-card">
         <span>Think it first</span>
-        <p>Say the spelling out loud, picture the structure, then reveal when ready.</p>
+        <p>${escapeHtml(stationCopy)}</p>
       </div>`;
   }
 
@@ -1190,7 +1261,7 @@ function renderQuickChoiceShell(item, promptKind, choiceState) {
       isResolved && isSelected && !choice.correct ? "is-incorrect" : ""
     ].filter(Boolean).join(" ");
     return `
-      <button class="choice-btn ${stateClass}" type="button" data-quick-choice="${escapeHtml(choice.value)}">
+      <button class="choice-btn ${stateClass}" type="button" data-quick-choice="${escapeHtml(choice.value)}" data-quick-correct="${choice.correct ? "true" : "false"}" ${state.quickRevealed || state.quickScored ? "disabled" : ""}>
         <span>${escapeHtml(choice.label)}</span>
       </button>`;
   }).join("");
@@ -1288,6 +1359,18 @@ function readRecord(cardId) {
   };
 }
 
+function quickRecordId(itemId) {
+  return `${QUICK_RECORD_PREFIX}${itemId}`;
+}
+
+function ensureQuickRecord(itemId) {
+  return ensureRecord(quickRecordId(itemId));
+}
+
+function readQuickRecord(itemId) {
+  return readRecord(quickRecordId(itemId));
+}
+
 function loadProgress() {
   try {
     const raw = window.localStorage.getItem(STORAGE_KEY);
@@ -1360,6 +1443,19 @@ function favoriteCards(system) {
   return questionPool(system).filter((card) => readRecord(card.id).favorite);
 }
 
+function weakQuickItems(system) {
+  return filterQuickItemsBySystem([...(window.STUDY_DATA.quickRollItems || [])], system)
+    .filter((item) => {
+      const record = readQuickRecord(item.id);
+      return record.attempts && (record.lastOutcome !== "easy" || quickConfidence(item.id) < 80);
+    })
+    .sort((a, b) => {
+      const aRecord = readQuickRecord(a.id);
+      const bRecord = readQuickRecord(b.id);
+      return (quickConfidence(a.id) + aRecord.easy * 5) - (quickConfidence(b.id) + bRecord.easy * 5);
+    });
+}
+
 function recentWins(system) {
   return questionPool(system)
     .filter((card) => {
@@ -1391,6 +1487,14 @@ function cardPriority(card) {
 
 function cardConfidence(cardId) {
   const record = readRecord(cardId);
+  if (!record.attempts) {
+    return 0;
+  }
+  return Math.round(((record.easy + record.shaky * 0.55) / record.attempts) * 100);
+}
+
+function quickConfidence(itemId) {
+  const record = readQuickRecord(itemId);
   if (!record.attempts) {
     return 0;
   }
@@ -1544,6 +1648,27 @@ function renderReviewGroup(cards, emptyText) {
     .join("");
 }
 
+function renderGuideReviewGroup(items, emptyText) {
+  if (!items.length) {
+    return `<p class="empty-state">${escapeHtml(emptyText)}</p>`;
+  }
+
+  return items
+    .map((item) => {
+      const record = readQuickRecord(item.id);
+      return `
+        <article class="review-card">
+          <div class="note-head">
+            <span class="status-chip ${record.lastOutcome || "new"}">${escapeHtml(record.lastOutcome || "new")}</span>
+            <span>${quickConfidence(item.id)}% guide confidence</span>
+          </div>
+          <h4>${escapeHtml(item.term)}</h4>
+          <p>${escapeHtml(shortText(item.visual, 92))}</p>
+        </article>`;
+    })
+    .join("");
+}
+
 function renderQueueCard(cardId, isCurrent) {
   const card = questionById(cardId);
   if (!card) {
@@ -1568,7 +1693,7 @@ function renderQuickQueueCard(item, isCurrent) {
         <span>${escapeHtml(item.system)}</span>
       </div>
       <h4>${escapeHtml(shortText(item.visual, 82))}</h4>
-      <p>${escapeHtml(item.section)} - ${escapeHtml(item.category)}</p>
+      <p>${escapeHtml(item.section)} - ${escapeHtml(item.category)} - ${escapeHtml(quickStatusLabel(item.id))}</p>
     </article>`;
 }
 
@@ -1606,6 +1731,14 @@ function cardStatusLabel(cardId) {
     return `${cardConfidence(cardId)}% confidence · saved`;
   }
   return `${cardConfidence(cardId)}% confidence`;
+}
+
+function quickStatusLabel(itemId) {
+  const record = readQuickRecord(itemId);
+  if (!record.attempts) {
+    return "New guide card";
+  }
+  return `${quickConfidence(itemId)}% guide confidence`;
 }
 
 function shortText(text, maxLength) {
