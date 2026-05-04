@@ -20,6 +20,7 @@ const state = {
   quickQueue: [],
   quickCursor: 0,
   quickRevealed: false,
+  quickSelection: "",
   glossaryQuery: "",
   queue: [],
   currentCardId: null,
@@ -53,6 +54,7 @@ const els = {
   quickPrompt: byId("quickPrompt"),
   quickCounter: byId("quickCounter"),
   quickTagRow: byId("quickTagRow"),
+  quickChoiceShell: byId("quickChoiceShell"),
   quickAnswerCard: byId("quickAnswerCard"),
   quickAnswerTerm: byId("quickAnswerTerm"),
   quickVisualCue: byId("quickVisualCue"),
@@ -234,6 +236,14 @@ function onBodyClick(event) {
     return;
   }
 
+  const quickChoiceButton = event.target.closest("[data-quick-choice]");
+  if (quickChoiceButton) {
+    state.quickSelection = quickChoiceButton.dataset.quickChoice;
+    state.quickRevealed = true;
+    renderQuickRoll();
+    return;
+  }
+
   const action = event.target.closest("[data-action]");
   if (!action) {
     return;
@@ -341,7 +351,7 @@ function applyRoute() {
     state.quickSection = nextSection;
   }
 
-  if (nextQuickMode && ["mixed", "spelling", "identify", "visual", "histology"].includes(nextQuickMode)) {
+  if (nextQuickMode && ["mixed", "multiple-choice", "true-false", "spelling", "identify", "visual", "histology"].includes(nextQuickMode)) {
     state.quickMode = nextQuickMode;
   }
 
@@ -437,6 +447,7 @@ function buildQuickQueue(renderNow = true, randomize = false) {
   state.quickQueue = items.map((item) => item.id);
   state.quickCursor = 0;
   state.quickRevealed = false;
+  state.quickSelection = "";
 
   if (renderNow) {
     renderApp();
@@ -449,6 +460,9 @@ function toggleQuickReveal() {
     return;
   }
   state.quickRevealed = !state.quickRevealed;
+  if (!state.quickRevealed) {
+    state.quickSelection = "";
+  }
   renderQuickRoll();
 }
 
@@ -460,6 +474,7 @@ function stepQuickCard(direction) {
   const size = state.quickQueue.length;
   state.quickCursor = (state.quickCursor + direction + size) % size;
   state.quickRevealed = false;
+  state.quickSelection = "";
   renderQuickRoll();
 }
 
@@ -695,6 +710,7 @@ function renderQuickRoll() {
     els.quickVisualCue.textContent = "";
     els.quickContext.textContent = "";
     els.quickTrap.textContent = "";
+    els.quickChoiceShell.innerHTML = "";
     els.quickFigureStrip.innerHTML = "";
     els.quickAnswerCard.classList.remove("is-visible");
     els.quickRevealBtn.textContent = "Reload";
@@ -706,15 +722,16 @@ function renderQuickRoll() {
   }
 
   const promptKind = promptKindForQuickItem(item);
+  const choiceState = quickChoiceState(item, promptKind);
   els.quickMeta.textContent = `${item.system} - ${item.section}`;
-  els.quickPrompt.textContent = promptForQuickItem(item, promptKind);
+  els.quickPrompt.textContent = promptForQuickItem(item, promptKind, choiceState);
   els.quickCounter.textContent = `${state.quickCursor + 1}/${state.quickQueue.length}`;
   els.quickTagRow.innerHTML = [
     `<span class="chip">${escapeHtml(item.system)}</span>`,
     `<span class="chip">${escapeHtml(item.category)}</span>`,
-    `<span class="chip chip-soft">${escapeHtml(promptKind)}</span>`,
-    ...item.aliases.map((alias) => `<span class="chip chip-soft">${escapeHtml(alias)}</span>`)
+    `<span class="chip chip-soft">${escapeHtml(promptLabel(promptKind))}</span>`
   ].join("");
+  els.quickChoiceShell.innerHTML = renderQuickChoiceShell(item, promptKind, choiceState);
   els.quickAnswerTerm.textContent = item.aliases.length
     ? `${item.term} (${item.aliases.join("; ")})`
     : item.term;
@@ -727,7 +744,7 @@ function renderQuickRoll() {
       <figcaption>${escapeHtml(figure.title)}</figcaption>
     </figure>`).join("");
   els.quickAnswerCard.classList.toggle("is-visible", state.quickRevealed);
-  els.quickRevealBtn.textContent = state.quickRevealed ? "Hide" : "Reveal";
+  els.quickRevealBtn.textContent = state.quickRevealed ? "Hide answer" : "Show answer";
   els.quickPrevBtn.disabled = state.quickQueue.length < 2;
   els.quickNextBtn.disabled = state.quickQueue.length < 2;
   els.quickQueueSummary.textContent = `${state.quickQueue.length} guide card${state.quickQueue.length === 1 ? "" : "s"} in this roll.`;
@@ -1058,24 +1075,166 @@ function promptKindForQuickItem(item) {
     return state.quickMode;
   }
   if (item.category === "histology") {
-    return "histology";
+    const histologyCycle = ["multiple-choice", "true-false", "histology", "identify"];
+    return histologyCycle[state.quickCursor % histologyCycle.length];
   }
-  const cycle = state.quickCursor % 3;
-  return ["identify", "spelling", "visual"][cycle];
+  const cycle = state.quickCursor % 5;
+  return ["multiple-choice", "true-false", "identify", "spelling", "visual"][cycle];
 }
 
-function promptForQuickItem(item, promptKind) {
+function promptForQuickItem(item, promptKind, choiceState = null) {
   switch (promptKind) {
+    case "multiple-choice":
+      return `Choose the exact guide term for this clue: ${item.visual}`;
+    case "true-false":
+      return choiceState
+        ? choiceState.statement
+        : `True or false: this clue belongs with the hidden guide term: ${item.visual}`;
     case "spelling":
       return `Spell the exact guide term for this clue: ${item.visual}`;
     case "visual":
-      return `What should you look for to recognize ${item.term}?`;
+      return `Use the visual cue to name the hidden guide term: ${item.visual}`;
     case "histology":
       return `Slide drill: identify the structure or tissue from this clue: ${item.visual}`;
     case "identify":
     default:
       return `Identify the guide term: ${item.visual}`;
   }
+}
+
+function promptLabel(promptKind) {
+  const labels = {
+    "multiple-choice": "multiple choice",
+    "true-false": "true / false",
+    spelling: "spelling",
+    identify: "identify",
+    visual: "visual cue",
+    histology: "histology"
+  };
+  return labels[promptKind] || promptKind;
+}
+
+function isChoicePrompt(promptKind) {
+  return promptKind === "multiple-choice" || promptKind === "true-false";
+}
+
+function quickChoiceState(item, promptKind) {
+  if (promptKind === "multiple-choice") {
+    const distractors = quickDistractors(item, 3);
+    const choices = stableQuickShuffle([
+      {
+        label: item.term,
+        value: item.id,
+        correct: true
+      },
+      ...distractors.map((distractor) => ({
+        label: distractor.term,
+        value: distractor.id,
+        correct: false
+      }))
+    ], `${item.id}:${state.quickCursor}:mc`);
+
+    return {
+      kind: "multiple-choice",
+      choices,
+      correctValue: item.id,
+      feedback: `Answer: ${answerTextForQuickItem(item)}`
+    };
+  }
+
+  if (promptKind === "true-false") {
+    const falseItem = quickDistractors(item, 1)[0];
+    const isTrueStatement = !falseItem || stableHash(`${item.id}:${state.quickCursor}:tf`) % 2 === 0;
+    const displayedItem = isTrueStatement ? item : falseItem;
+    return {
+      kind: "true-false",
+      statement: `True or false: ${displayedItem.term} matches this clue: ${item.visual}`,
+      choices: [
+        {
+          label: "True",
+          value: "true",
+          correct: isTrueStatement
+        },
+        {
+          label: "False",
+          value: "false",
+          correct: !isTrueStatement
+        }
+      ],
+      correctValue: isTrueStatement ? "true" : "false",
+      feedback: isTrueStatement
+        ? `True. ${answerTextForQuickItem(item)} matches that clue.`
+        : `False. The clue points to ${answerTextForQuickItem(item)}, not ${displayedItem.term}.`
+    };
+  }
+
+  return null;
+}
+
+function renderQuickChoiceShell(item, promptKind, choiceState) {
+  if (!isChoicePrompt(promptKind) || !choiceState) {
+    return `
+      <div class="quick-think-card">
+        <span>Think it first</span>
+        <p>Say the spelling out loud, picture the structure, then reveal when ready.</p>
+      </div>`;
+  }
+
+  const selected = state.quickSelection;
+  const choices = choiceState.choices.map((choice) => {
+    const isSelected = selected === choice.value;
+    const isResolved = state.quickRevealed;
+    const stateClass = [
+      isSelected ? "is-selected" : "",
+      isResolved && choice.correct ? "is-correct" : "",
+      isResolved && isSelected && !choice.correct ? "is-incorrect" : ""
+    ].filter(Boolean).join(" ");
+    return `
+      <button class="choice-btn ${stateClass}" type="button" data-quick-choice="${escapeHtml(choice.value)}">
+        <span>${escapeHtml(choice.label)}</span>
+      </button>`;
+  }).join("");
+
+  const feedbackText = !selected
+    ? choiceState.feedback
+    : `${selected === choiceState.correctValue ? "Correct." : "Review."} ${choiceState.feedback}`;
+  const feedback = state.quickRevealed
+    ? `<p class="choice-feedback">${escapeHtml(feedbackText)}</p>`
+    : `<p class="choice-feedback is-muted">Answer stays hidden until you pick or reveal.</p>`;
+
+  return `
+    <div class="choice-grid" role="list">
+      ${choices}
+    </div>
+    ${feedback}`;
+}
+
+function answerTextForQuickItem(item) {
+  return item.aliases.length
+    ? `${item.term} (${item.aliases.join("; ")})`
+    : item.term;
+}
+
+function quickDistractors(item, count) {
+  const itemTerms = new Set([item.term, ...item.aliases].map(normalizeAnswerText));
+  const candidates = (window.STUDY_DATA.quickRollItems || [])
+    .filter((candidate) => candidate.id !== item.id)
+    .filter((candidate) => !itemTerms.has(normalizeAnswerText(candidate.term)))
+    .map((candidate) => ({
+      candidate,
+      score:
+        (candidate.system === item.system ? 0 : 8) +
+        (candidate.category === item.category ? 0 : 4) +
+        (candidate.section === item.section ? 0 : 2) +
+        (stableHash(`${item.id}:${candidate.id}`) % 2)
+    }))
+    .sort((a, b) => a.score - b.score || a.candidate.term.localeCompare(b.candidate.term));
+
+  return candidates.slice(0, count).map((entry) => entry.candidate);
+}
+
+function normalizeAnswerText(value) {
+  return String(value || "").trim().toLowerCase().replace(/\s+/g, " ");
 }
 
 function questionById(cardId) {
@@ -1408,8 +1567,8 @@ function renderQuickQueueCard(item, isCurrent) {
         <span class="status-chip ${isCurrent ? "current" : "queued"}">${isCurrent ? "Now" : "Next"}</span>
         <span>${escapeHtml(item.system)}</span>
       </div>
-      <h4>${escapeHtml(item.term)}</h4>
-      <p>${escapeHtml(item.section)}</p>
+      <h4>${escapeHtml(shortText(item.visual, 82))}</h4>
+      <p>${escapeHtml(item.section)} - ${escapeHtml(item.category)}</p>
     </article>`;
 }
 
@@ -1460,6 +1619,21 @@ function shuffle(items) {
     [copy[index], copy[swapIndex]] = [copy[swapIndex], copy[index]];
   }
   return copy;
+}
+
+function stableQuickShuffle(items, seed) {
+  return [...items].sort((a, b) =>
+    stableHash(`${seed}:${a.value}`) - stableHash(`${seed}:${b.value}`)
+  );
+}
+
+function stableHash(text) {
+  let hash = 2166136261;
+  String(text).split("").forEach((character) => {
+    hash ^= character.charCodeAt(0);
+    hash = Math.imul(hash, 16777619);
+  });
+  return hash >>> 0;
 }
 
 function escapeHtml(text) {

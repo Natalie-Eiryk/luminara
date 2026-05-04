@@ -27,6 +27,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
+  overflow-x: hidden;
   font-family: "Aptos", "Trebuchet MS", sans-serif;
   background:
     radial-gradient(circle at top left, rgba(86, 209, 179, 0.18), transparent 32%),
@@ -124,6 +125,7 @@ button {
 .hero-panel h2 {
   font-size: clamp(2rem, 3vw, 3.2rem);
   line-height: 1;
+  overflow-wrap: anywhere;
 }
 
 .rail-copy,
@@ -274,6 +276,7 @@ button {
 .atlas-tabs {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 12px;
 }
 
@@ -486,6 +489,7 @@ button {
 .quiz-card,
 .quick-card {
   display: grid;
+  align-content: start;
   gap: 18px;
 }
 
@@ -548,6 +552,95 @@ button {
   opacity: 1;
   transform: translateY(0);
   color: var(--text);
+}
+
+.quick-choice-shell {
+  display: grid;
+  gap: 12px;
+  min-height: 74px;
+}
+
+.quick-think-card,
+.choice-feedback {
+  border-radius: 14px;
+  border: 1px dashed rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--muted);
+  padding: 12px 14px;
+}
+
+.quick-think-card {
+  display: grid;
+  gap: 4px;
+}
+
+.quick-think-card span {
+  color: var(--accent-gold);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.quick-think-card p,
+.choice-feedback {
+  margin: 0;
+  line-height: 1.45;
+}
+
+.choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.choice-btn {
+  min-height: 58px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.045);
+  color: var(--text);
+  cursor: pointer;
+  padding: 12px 14px;
+  text-align: left;
+  transition: background 0.16s ease, border-color 0.16s ease, transform 0.16s ease;
+}
+
+.choice-btn:hover,
+.choice-btn:focus-visible {
+  border-color: rgba(86, 209, 179, 0.42);
+  background: rgba(86, 209, 179, 0.08);
+  transform: translateY(-1px);
+}
+
+.choice-btn span {
+  display: block;
+  font-weight: 800;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.choice-btn.is-selected {
+  border-color: rgba(255, 211, 106, 0.72);
+  background: rgba(255, 211, 106, 0.11);
+}
+
+.choice-btn.is-correct {
+  border-color: rgba(86, 209, 179, 0.72);
+  background: rgba(86, 209, 179, 0.14);
+}
+
+.choice-btn.is-incorrect {
+  border-color: rgba(255, 119, 119, 0.72);
+  background: rgba(255, 119, 119, 0.12);
+}
+
+.choice-feedback {
+  border-style: solid;
+}
+
+.choice-feedback.is-muted {
+  border-style: dashed;
 }
 
 .quick-answer {
@@ -1001,6 +1094,16 @@ kbd {
   }
 }
 
+@media (max-width: 680px) {
+  .choice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .choice-btn {
+    min-height: 52px;
+  }
+}
+
 @media (max-width: 900px) {
   .site-shell {
     padding: 16px;
@@ -1058,9 +1161,18 @@ kbd {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .view-nav,
   .system-pills {
     grid-template-columns: 1fr;
+  }
+
+  .hero-panel h2 {
+    font-size: 1.75rem;
+    line-height: 1.05;
+  }
+
+  .brand-block h1 {
+    font-size: 1.8rem;
   }
 }

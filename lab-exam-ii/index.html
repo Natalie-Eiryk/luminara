@@ -90,10 +90,12 @@
               <label class="control">
                 <span>Prompt type</span>
                 <select id="quickModeSelect">
-                  <option value="mixed">Mixed roll</option>
+                  <option value="mixed">Mixed quiz</option>
+                  <option value="multiple-choice">Multiple choice</option>
+                  <option value="true-false">True / false</option>
                   <option value="spelling">Spelling</option>
                   <option value="identify">Identify from clue</option>
-                  <option value="visual">What it looks like</option>
+                  <option value="visual">Visual cue drill</option>
                   <option value="histology">Histology only</option>
                 </select>
               </label>
@@ -113,6 +115,7 @@
                   <span class="badge" id="quickCounter">0/0</span>
                 </div>
                 <div class="chip-cluster" id="quickTagRow"></div>
+                <div class="quick-choice-shell" id="quickChoiceShell"></div>
                 <div class="quick-answer" id="quickAnswerCard">
                   <p class="eyebrow">Exact spelling</p>
                   <h4 id="quickAnswerTerm"></h4>
