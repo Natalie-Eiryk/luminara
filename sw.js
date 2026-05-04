@@ -4,7 +4,7 @@
  * Truly roguelike: every run starts fresh!
  */
 
-const CACHE_NAME = 'luminara-quiz-v128';
+const CACHE_NAME = 'luminara-quiz-v130';
 
 // Core assets that MUST exist - installation fails if any are missing
 const CRITICAL_ASSETS = [
@@ -27,10 +27,40 @@ const CRITICAL_ASSETS = [
 const OPTIONAL_ASSETS = [
   './mobile.html',
   './quick-quiz.html',
+  './lab-exam-ii/',
+  './lab-exam-ii/index.html',
+  './lab-exam-ii/app.js',
+  './lab-exam-ii/shared.css',
+  './lab-exam-ii/study_data_core.js',
+  './lab-exam-ii/study_questions.js',
+  './lab-exam-ii/study_glossary_1.js',
+  './lab-exam-ii/study_glossary_2.js',
+  './lab-exam-ii/study_exam_guide_roll.js',
+  './lab-exam-ii/study_atlas_respiratory.js',
+  './lab-exam-ii/study_atlas_digestive.js',
+  './lab-exam-ii/study_atlas_urinary.js',
+  './lab-exam-ii/study_atlas_endocrine.js',
+  './lab-exam-ii/study_atlas_reproductive.js',
+  './lab-exam-ii/study_atlas_fetal_pig.js',
+  './lab-exam-ii/study_atlas_histology.js',
+  './lab-exam-ii/study_support.js',
+  './lab-exam-ii/study_generated_questions.js',
+  './lab-exam-ii/assets/teaching/digestive-pancreas-structures.svg',
+  './lab-exam-ii/assets/teaching/digestive-pancreas.svg',
+  './lab-exam-ii/assets/teaching/endocrine-system.svg',
+  './lab-exam-ii/assets/teaching/endocrine-thyroid-system.svg',
+  './lab-exam-ii/assets/teaching/histology-breast.png',
+  './lab-exam-ii/assets/teaching/histology-sweat-gland.jpg',
+  './lab-exam-ii/assets/teaching/histology-trachea.jpg',
+  './lab-exam-ii/assets/teaching/histology-urethra.jpg',
+  './lab-exam-ii/assets/teaching/respiratory-conducting-zone.svg',
+  './lab-exam-ii/assets/teaching/respiratory-larynx.svg',
+  './lab-exam-ii/assets/teaching/urinary-nephron.png',
   './820.31-core/820.31.0-mobile.css',
   './820.31-core/820.31.0-dev-panel.css',
   './820.31-core/820.31.1-game-modes.css',
   './820.31-core/820.31.2-utilities.css',
+  './820.31-core/820.31.57-learning-annotations.css',
   './820.31-core/820.31.1.2-quiz-gauntlet.js',
   './820.31-core/820.31.1.3-quiz-map.js',
   './820.31-core/820.31.1.4-quiz-testprep.js',
@@ -52,6 +82,7 @@ const OPTIONAL_ASSETS = [
   './820.31-core/820.31.19-battle-scene.js',
   './820.31-core/820.31.20-vocab-helper.js',
   './820.31-core/820.31.21-adaptive-engine.js',
+  './820.31-core/820.31.57-learning-annotations.js',
   './820.31-core/820.31.25-question-orchestrator.js',
   './820.31-core/820.31.80-aaa-screen-effects.js',
   './820.31-core/820.31.81-aaa-sound-system.js',

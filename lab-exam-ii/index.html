@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ms. Luminara quick-roll study page for Lab Exam II spelling, anatomy identification, and visual recognition drills." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none';" />
+  <link rel="canonical" href="https://luminara.natalie-eiryk.com/lab-exam-ii/" />
+  <meta property="og:title" content="Lab Exam II Quick Roll | Ms. Luminara" />
+  <meta property="og:description" content="Fast non-gamified anatomy lab review for exact spellings, structure ID, and visual clues." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://luminara.natalie-eiryk.com/lab-exam-ii/" />
+  <title>Lab Exam II Quick Roll | Ms. Luminara</title>
+  <link rel="stylesheet" href="shared.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <aside class="rail surface">
+      <div class="rail-block brand-block">
+        <p class="eyebrow">Lab Exam II</p>
+        <h1>Study Studio</h1>
+        <p class="rail-copy">One place for quiz drills, glossary review, anatomy plates, and station scaffolds.</p>
+      </div>
+
+      <div class="rail-block">
+        <p class="block-label">Views</p>
+        <div class="view-nav" id="viewNav">
+          <button class="nav-btn is-active" type="button" data-nav-view="quick">Quick Roll</button>
+          <button class="nav-btn" type="button" data-nav-view="dashboard">Dashboard</button>
+          <button class="nav-btn" type="button" data-nav-view="quiz">Quiz Lab</button>
+          <button class="nav-btn" type="button" data-nav-view="review">Review</button>
+          <button class="nav-btn" type="button" data-nav-view="glossary">Glossary</button>
+          <button class="nav-btn" type="button" data-nav-view="atlas">Atlas</button>
+          <button class="nav-btn" type="button" data-nav-view="scaffolds">Scaffolds</button>
+        </div>
+      </div>
+
+      <div class="rail-block">
+        <div class="block-row">
+          <p class="block-label">System focus</p>
+          <button class="mini-btn" type="button" id="clearSystemBtn" data-action="clear-system">Show all</button>
+        </div>
+        <div class="system-pills" id="systemPills"></div>
+      </div>
+
+      <div class="rail-block rail-note">
+        <p class="block-label">Shortcuts</p>
+        <p><kbd>Space</kbd> reveal or next</p>
+        <p><kbd>N</kbd> next quick card</p>
+        <p><kbd>B</kbd> previous quick card</p>
+        <p><kbd>1</kbd> easy</p>
+        <p><kbd>2</kbd> shaky</p>
+        <p><kbd>3</kbd> hard</p>
+        <p><kbd>F</kbd> save current card</p>
+      </div>
+    </aside>
+
+    <main class="main-stage">
+      <section class="hero-panel surface">
+        <div class="hero-copy-block">
+          <p class="eyebrow">Lab Exam II study guide loaded</p>
+          <h2>Quick-roll spelling, structure ID, and visual clues.</h2>
+          <p>Move through the exact guide terms fast, reveal the spelling, and rehearse what each structure looks like without the game layer.</p>
+        </div>
+        <div class="hero-actions">
+          <button class="pill-action" type="button" data-jump-view="quick">Start quick roll</button>
+          <button class="pill-action" type="button" data-jump-view="quiz">Start smart quiz</button>
+          <button class="pill-action" type="button" data-jump-view="atlas">Open atlas</button>
+          <button class="pill-action" type="button" data-jump-view="glossary">Search spellings</button>
+        </div>
+        <div class="hero-metrics" id="heroMetrics"></div>
+      </section>
+
+      <div class="workspace-grid">
+        <section class="content-stack">
+          <section class="view-panel surface is-active" data-view="quick">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Quick Roll</p>
+                <h3>Exam-guide spelling and visual ID</h3>
+              </div>
+              <button class="mini-btn" type="button" id="quickShuffleBtn">Shuffle</button>
+            </div>
+
+            <div class="controls-grid quick-controls">
+              <label class="control">
+                <span>System</span>
+                <select id="quickSystemSelect"></select>
+              </label>
+              <label class="control">
+                <span>Prompt type</span>
+                <select id="quickModeSelect">
+                  <option value="mixed">Mixed roll</option>
+                  <option value="spelling">Spelling</option>
+                  <option value="identify">Identify from clue</option>
+                  <option value="visual">What it looks like</option>
+                  <option value="histology">Histology only</option>
+                </select>
+              </label>
+              <label class="control">
+                <span>Guide section</span>
+                <select id="quickSectionSelect"></select>
+              </label>
+            </div>
+
+            <div class="quick-roll-layout">
+              <article class="quick-card" id="quickCard">
+                <div class="quiz-topline">
+                  <div>
+                    <p class="status-label" id="quickMeta">All systems</p>
+                    <h4 id="quickPrompt">Loading guide cards.</h4>
+                  </div>
+                  <span class="badge" id="quickCounter">0/0</span>
+                </div>
+                <div class="chip-cluster" id="quickTagRow"></div>
+                <div class="quick-answer" id="quickAnswerCard">
+                  <p class="eyebrow">Exact spelling</p>
+                  <h4 id="quickAnswerTerm"></h4>
+                  <dl class="quick-detail-list">
+                    <div>
+                      <dt>Looks like / clue</dt>
+                      <dd id="quickVisualCue"></dd>
+                    </div>
+                    <div>
+                      <dt>Where it appears</dt>
+                      <dd id="quickContext"></dd>
+                    </div>
+                    <div>
+                      <dt>Watch-for</dt>
+                      <dd id="quickTrap"></dd>
+                    </div>
+                  </dl>
+                  <div class="quick-figure-strip" id="quickFigureStrip"></div>
+                </div>
+                <div class="action-row">
+                  <button class="primary-btn" type="button" id="quickRevealBtn">Reveal</button>
+                  <button class="ghost-btn" type="button" id="quickPrevBtn">Back</button>
+                  <button class="ghost-btn" type="button" id="quickNextBtn">Next</button>
+                </div>
+              </article>
+
+              <aside class="queue-shell">
+                <div class="section-heading compact">
+                  <h4>Guide queue</h4>
+                </div>
+                <p class="mini-copy" id="quickQueueSummary">No guide cards queued yet.</p>
+                <div class="queue-list" id="quickQueuePreview"></div>
+              </aside>
+            </div>
+          </section>
+
+          <section class="view-panel surface" data-view="dashboard">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Overview</p>
+                <h3>Study dashboard</h3>
+              </div>
+              <span class="badge" id="dashboardBadge">All systems loaded</span>
+            </div>
+            <div class="dashboard-grid">
+              <article class="feature-card">
+                <h4>Launch plan</h4>
+                <div id="launchPlan"></div>
+              </article>
+              <article class="feature-card">
+                <h4>Coverage snapshot</h4>
+                <div id="coverageSnapshot"></div>
+              </article>
+              <article class="feature-card feature-wide">
+                <h4>Focus ladder</h4>
+                <div id="focusLadder"></div>
+              </article>
+              <article class="feature-card feature-wide">
+                <h4>Scaffold tune-up</h4>
+                <div id="scaffoldPreview"></div>
+              </article>
+            </div>
+          </section>
+
+          <section class="view-panel surface" data-view="quiz">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Quiz lab</p>
+                <h3>Build a study session</h3>
+              </div>
+              <button class="mini-btn" type="button" id="rebuildSessionBtn">Rebuild session</button>
+            </div>
+            <div class="controls-grid">
+              <label class="control">
+                <span>System</span>
+                <select id="quizSystemSelect"></select>
+              </label>
+              <label class="control">
+                <span>Deck</span>
+                <select id="quizModeSelect">
+                  <option value="smart">Smart mix</option>
+                  <option value="weak">Weak spots</option>
+                  <option value="fresh">Fresh cards</option>
+                  <option value="favorites">Favorites</option>
+                  <option value="sprint">Random sprint</option>
+                </select>
+              </label>
+              <label class="control">
+                <span>Session size</span>
+                <select id="quizLengthSelect">
+                  <option value="5">5 cards</option>
+                  <option value="10">10 cards</option>
+                  <option value="15">15 cards</option>
+                  <option value="20">20 cards</option>
+                  <option value="999">All cards</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="quiz-layout">
+              <article class="quiz-card">
+                <div class="quiz-topline">
+                  <div>
+                    <p class="status-label" id="quizSystemLabel">All systems</p>
+                    <h4 id="quizPrompt">Build a session to start.</h4>
+                  </div>
+                  <button class="ghost-icon" type="button" id="favoriteCardBtn" data-action="favorite">Save</button>
+                </div>
+
+                <div class="chip-cluster" id="quizTagRow"></div>
+
+                <section class="support-shell">
+                  <div class="section-heading compact">
+                    <div>
+                      <p class="eyebrow">Adaptive scaffold</p>
+                      <h4 id="supportLevelLabel">Moderate support</h4>
+                    </div>
+                    <span class="badge" id="supportLevelBadge">Moderate</span>
+                  </div>
+                  <p class="mini-copy" id="supportLevelSummary">Warmups, traps, and challenge prompts will appear here.</p>
+                  <div class="support-grid">
+                    <article class="support-card">
+                      <h5>Warmup prompts</h5>
+                      <ul class="bullet-list" id="supportWarmups"></ul>
+                    </article>
+                    <article class="support-card">
+                      <h5>Anchor cues</h5>
+                      <ul class="bullet-list" id="supportAnchors"></ul>
+                    </article>
+                    <article class="support-card">
+                      <h5>Common traps</h5>
+                      <ul class="bullet-list" id="supportTraps"></ul>
+                    </article>
+                    <article class="support-card">
+                      <h5>Mechanism and challenge</h5>
+                      <ul class="bullet-list" id="supportChallenge"></ul>
+                    </article>
+                  </div>
+                </section>
+
+                <div class="answer-card" id="quizAnswerCard">
+                  <p id="quizAnswerText">The answer appears here once you reveal it.</p>
+                </div>
+
+                <div class="action-row">
+                  <button class="primary-btn" type="button" id="revealAnswerBtn" data-action="reveal">Reveal answer</button>
+                  <button class="ghost-btn" type="button" id="nextCardBtn" data-action="skip">Skip for now</button>
+                </div>
+
+                <div class="score-grid">
+                  <button class="score-chip easy" type="button" data-score="easy">1 Easy</button>
+                  <button class="score-chip shaky" type="button" data-score="shaky">2 Shaky</button>
+                  <button class="score-chip hard" type="button" data-score="hard">3 Hard</button>
+                </div>
+
+                <p class="mini-copy" id="quizFeedback">Your ratings are stored in this browser to build review sessions.</p>
+              </article>
+
+              <aside class="queue-shell">
+                <div class="section-heading compact">
+                  <h4>Session queue</h4>
+                </div>
+                <p class="mini-copy" id="queueSummary">No cards queued yet.</p>
+                <div class="queue-list" id="queuePreview"></div>
+              </aside>
+            </div>
+          </section>
+
+          <section class="view-panel surface" data-view="review">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Review</p>
+                <h3>Weak spots and saved cards</h3>
+              </div>
+            </div>
+            <div class="review-grid">
+              <article class="feature-card">
+                <h4>Weak spots</h4>
+                <div id="weakSpotList"></div>
+              </article>
+              <article class="feature-card">
+                <h4>Favorites</h4>
+                <div id="favoriteList"></div>
+              </article>
+              <article class="feature-card feature-wide">
+                <h4>Recent rebounds</h4>
+                <div id="recentWinsList"></div>
+              </article>
+            </div>
+          </section>
+
+          <section class="view-panel surface" data-view="glossary">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Glossary</p>
+                <h3>Searchable term bank</h3>
+              </div>
+            </div>
+            <div class="controls-grid glossary-controls">
+              <label class="control">
+                <span>System</span>
+                <select id="glossarySystemSelect"></select>
+              </label>
+              <label class="control control-search">
+                <span>Search</span>
+                <input id="glossarySearchInput" type="search" placeholder="Search term or definition" />
+              </label>
+            </div>
+            <p class="mini-copy" id="glossaryCount">0 terms shown</p>
+            <div class="glossary-grid" id="glossaryGrid"></div>
+          </section>
+
+          <section class="view-panel surface" data-view="atlas">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Atlas</p>
+                <h3>Anatomy visuals</h3>
+              </div>
+              <button class="mini-btn" type="button" id="toggleLabelsBtn">Hide labels</button>
+            </div>
+            <div class="atlas-tabs" id="atlasTabs"></div>
+            <div class="atlas-shell">
+              <div class="atlas-stage" id="atlasStage"></div>
+              <aside class="atlas-sidebar">
+                <h4 id="atlasTitle">Atlas title</h4>
+                <p class="mini-copy" id="atlasSummary"></p>
+                <div class="legend-list" id="atlasLegend"></div>
+                <article class="focus-card" id="atlasFocusCard"></article>
+                <div class="figure-gallery" id="atlasFigureGallery"></div>
+              </aside>
+            </div>
+          </section>
+
+          <section class="view-panel surface" data-view="scaffolds">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Scaffolds</p>
+                <h3>Station-by-station prompts</h3>
+              </div>
+            </div>
+            <div class="review-grid">
+              <article class="feature-card">
+                <h4>Universal checklist</h4>
+                <ol class="number-list" id="masterScaffoldList"></ol>
+              </article>
+              <article class="feature-card">
+                <h4 id="systemScaffoldHeading">System cues</h4>
+                <ol class="number-list" id="systemScaffoldList"></ol>
+              </article>
+              <article class="feature-card feature-wide">
+                <h4>How to use the scaffold</h4>
+                <div id="scaffoldCoach"></div>
+              </article>
+              <article class="feature-card feature-wide">
+                <h4>Adaptive scaffold ladder</h4>
+                <div id="scaffoldLadder"></div>
+              </article>
+            </div>
+          </section>
+        </section>
+
+        <aside class="side-stack">
+          <section class="surface side-card">
+            <div class="section-heading compact">
+              <h3>Session pulse</h3>
+            </div>
+            <div id="sessionPulse"></div>
+          </section>
+
+          <section class="surface side-card">
+            <div class="section-heading compact">
+              <h3>System confidence</h3>
+            </div>
+            <div id="systemConfidence"></div>
+          </section>
+
+          <section class="surface side-card">
+            <div class="section-heading compact">
+              <h3>Recent notes</h3>
+            </div>
+            <div id="recentNotes"></div>
+          </section>
+        </aside>
+      </div>
+    </main>
+  </div>
+
+  <script src="study_data_core.js"></script>
+  <script src="study_questions.js"></script>
+  <script src="study_glossary_1.js"></script>
+  <script src="study_glossary_2.js"></script>
+  <script src="study_exam_guide_roll.js"></script>
+  <script src="study_atlas_respiratory.js"></script>
+  <script src="study_atlas_digestive.js"></script>
+  <script src="study_atlas_urinary.js"></script>
+  <script src="study_atlas_endocrine.js"></script>
+  <script src="study_atlas_reproductive.js"></script>
+  <script src="study_atlas_fetal_pig.js"></script>
+  <script src="study_atlas_histology.js"></script>
+  <script src="study_support.js"></script>
+  <script src="study_generated_questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -18,7 +18,7 @@
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net;
     font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net;
     img-src 'self' data: https: blob:;
-    connect-src 'self' https://luminara-scores.deno.dev https://fonts.googleapis.com https://fonts.gstatic.com;
+    connect-src 'self' https://luminara-scores.deno.dev https://fonts.googleapis.com https://fonts.gstatic.com ws://localhost:8765 http://localhost:8765 ws://127.0.0.1:8765 http://127.0.0.1:8765 https://lumi.natalie-eiryk.com wss://lumi.natalie-eiryk.com;
     frame-ancestors 'none';
     base-uri 'self';
     form-action 'self';
@@ -67,6 +67,7 @@
   <link rel="stylesheet" href="820.31-core/820.31.0-dev-panel.css">
   <link rel="stylesheet" href="820.31-core/820.31.1-game-modes.css">
   <link rel="stylesheet" href="820.31-core/820.31.2-utilities.css">
+  <link rel="stylesheet" href="820.31-core/820.31.57-learning-annotations.css">
 </head>
 <body>
   <!-- Loading Overlay -->
@@ -105,6 +106,14 @@
           </button>
         </div>
         <p class="subtitle">Explore every answer. Learn the mechanism. No penalty for curiosity.</p>
+
+        <div style="margin: 1.5rem 0 2rem; padding: 1rem 1.1rem; border: 1px solid rgba(201, 165, 92, 0.28); border-radius: 14px; background: linear-gradient(135deg, rgba(201, 165, 92, 0.08) 0%, rgba(24, 36, 34, 0.7) 100%);">
+          <div style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.16em; color: var(--gold); margin-bottom: 0.8rem;">Return paths</div>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <a href="https://www.natalie-eiryk.com/" style="display: inline-flex; align-items: center; justify-content: center; min-height: 42px; padding: 0.7rem 1rem; border-radius: 999px; text-decoration: none; font-weight: 600; background: var(--gold); color: #1a1612;">Back to hub</a>
+            <a href="https://ragnarok.natalie-eiryk.com/" style="display: inline-flex; align-items: center; justify-content: center; min-height: 42px; padding: 0.7rem 1rem; border-radius: 999px; text-decoration: none; font-weight: 600; border: 1px solid rgba(201, 165, 92, 0.35); color: var(--text-primary);">Visit Ragnarok</a>
+        </div>
+        </div>
 
         <div class="luminara-welcome">
           <div class="speaker">Ms. Luminara</div>
@@ -153,7 +162,15 @@
             Featured Quiz
             <span class="heading-flourish">✨</span>
           </h2>
-          <p class="section-subtitle" style="margin-bottom: 1rem;">Deep-dive comprehensive physiology quizzes with detailed explanations</p>
+          <p class="section-subtitle" style="margin-bottom: 1rem;">Quick study templates and deep-dive physiology quizzes with detailed explanations</p>
+
+          <a href="lab-exam-ii/"
+             class="featured-quiz-btn"
+             style="margin-bottom: 1rem; border-color: rgba(86, 209, 179, 0.45); background: linear-gradient(135deg, rgba(86, 209, 179, 0.14), rgba(56, 189, 248, 0.06));">
+            <span style="font-size: 1.5rem;">⚡</span>
+            <span>Lab Exam II Quick Roll</span>
+            <span style="font-size: 0.8rem; opacity: 0.9;">192 guide cards · spelling + visual ID</span>
+          </a>
 
           <a href="612-physiology/612.2-respiratory/friday-night-quiz-4.3.26.html"
              class="featured-quiz-btn"
@@ -621,6 +638,7 @@
 
   <script defer src="820.31-core/820.31.21-adaptive-engine.js"></script>
   <script defer src="820.31-core/820.31.22-confused-words.js"></script>
+  <script defer src="820.31-core/820.31.57-learning-annotations.js"></script>
   <!-- Question Orchestrator - Single source of truth for all question loading -->
   <script defer src="820.31-core/820.31.25-question-orchestrator.js"></script>
   <script defer src="820.31-core/820.31.23-session-continuity.js"></script>
@@ -661,6 +679,6 @@
 
   <!-- Build Timestamp (replaced by CI/CD on deploy) -->
   <div id="buildTimestamp" style="position: fixed; bottom: 5px; right: 10px; font-size: 10px; color: rgba(255,255,255,0.3); pointer-events: none; z-index: 9999;">
-    Build: 2026-04-04 10:16 UTC | Commit: 3f1d73b</div>
+    Build: LOCAL DEV | Bug fixes + Accessibility + Vocab enhancements</div>
 </body>
 </html>
