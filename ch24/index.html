@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f2ea">
+  <meta name="description" content="Chapter 24 metabolism and nutrition practice questions for Luminara.">
+  <title>Chapter 24 Practice | Luminara</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="shared.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="back-link" href="../">Luminara</a>
+    <div class="topbar-status" aria-live="polite">
+      <span id="savedStatus">Ready</span>
+    </div>
+  </header>
+
+  <main class="study-shell">
+    <section class="control-panel" aria-labelledby="moduleTitle">
+      <div>
+        <p class="eyebrow">Chapter 24</p>
+        <h1 id="moduleTitle">Metabolism and Nutrition</h1>
+        <p class="deck-summary" id="deckSummary">29 text-only questions</p>
+      </div>
+
+      <div class="mode-grid" aria-label="Study filters">
+        <button class="mode-button active" type="button" data-filter="all">All</button>
+        <button class="mode-button" type="button" data-filter="matching">Matching</button>
+        <button class="mode-button" type="button" data-filter="multiple-choice">Choice</button>
+        <button class="mode-button" type="button" data-filter="true-false">T/F</button>
+        <button class="mode-button" type="button" data-filter="written">Written</button>
+        <button class="mode-button" type="button" data-filter="review">Review</button>
+      </div>
+
+      <div class="control-row">
+        <button class="secondary-button" type="button" id="hideAnswersButton">Hide answers</button>
+        <button class="secondary-button" type="button" id="resetButton">Reset</button>
+      </div>
+
+      <div class="progress-card" aria-live="polite">
+        <span class="progress-label">Session</span>
+        <strong id="scoreText">0 / 0</strong>
+        <div class="meter" aria-hidden="true">
+          <span id="scoreMeter"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="quiz-panel" aria-labelledby="questionListTitle">
+      <div class="list-header">
+        <div>
+          <p class="source-label">Practice worksheet</p>
+          <h2 id="questionListTitle">All questions</h2>
+        </div>
+        <span id="visibleCount">29 shown</span>
+      </div>
+      <div class="question-list" id="questionList"></div>
+    </section>
+
+    <aside class="review-panel" aria-labelledby="reviewTitle">
+      <h2 id="reviewTitle">Review Queue</h2>
+      <div id="reviewList" class="review-list"></div>
+    </aside>
+  </main>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

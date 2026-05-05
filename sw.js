@@ -4,7 +4,7 @@
  * Truly roguelike: every run starts fresh!
  */
 
-const CACHE_NAME = 'luminara-quiz-v132';
+const CACHE_NAME = 'luminara-quiz-v136';
 
 // Core assets that MUST exist - installation fails if any are missing
 const CRITICAL_ASSETS = [
@@ -49,6 +49,11 @@ const OPTIONAL_ASSETS = [
   './lab-exam-ii/study_atlas_histology.js',
   './lab-exam-ii/study_support.js',
   './lab-exam-ii/study_generated_questions.js',
+  './ch24/',
+  './ch24/index.html',
+  './ch24/shared.css',
+  './ch24/questions.js',
+  './ch24/app.js',
   './lab-exam-ii/assets/teaching/digestive-pancreas-structures.svg',
   './lab-exam-ii/assets/teaching/digestive-pancreas.svg',
   './lab-exam-ii/assets/teaching/endocrine-system.svg',
