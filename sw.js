@@ -4,7 +4,7 @@
  * Truly roguelike: every run starts fresh!
  */
 
-const CACHE_NAME = 'luminara-quiz-v136';
+const CACHE_NAME = 'luminara-quiz-v137';
 
 // Core assets that MUST exist - installation fails if any are missing
 const CRITICAL_ASSETS = [

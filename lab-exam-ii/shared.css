@@ -58,6 +58,10 @@ a {
   color: var(--accent);
 }
 
+[hidden] {
+  display: none !important;
+}
+
 button {
   cursor: pointer;
 }
@@ -76,6 +80,7 @@ button {
 .side-stack,
 .view-panel,
 .quick-card,
+.quick-long-card,
 .queue-shell {
   min-width: 0;
 }
@@ -476,6 +481,17 @@ button {
   gap: 18px;
 }
 
+.quick-long-layout {
+  margin-top: 20px;
+  display: grid;
+  gap: 16px;
+}
+
+.quick-long-list {
+  display: grid;
+  gap: 14px;
+}
+
 .quiz-card,
 .quick-card,
 .queue-shell,
@@ -486,8 +502,16 @@ button {
   padding: 20px;
 }
 
+.quick-long-card {
+  background: var(--surface-strong);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px;
+}
+
 .quiz-card,
-.quick-card {
+.quick-card,
+.quick-long-card {
   display: grid;
   align-content: start;
   gap: 18px;
@@ -535,6 +559,11 @@ button {
 .quiz-topline h4 {
   font-size: 1.45rem;
   line-height: 1.15;
+}
+
+.quick-long-card .quiz-topline h4 {
+  font-size: 1.12rem;
+  line-height: 1.35;
 }
 
 .answer-card {
@@ -663,6 +692,11 @@ button {
   letter-spacing: 0;
 }
 
+.quick-long-card .quick-answer h4 {
+  font-size: clamp(1.2rem, 2.4vw, 1.8rem);
+  line-height: 1.12;
+}
+
 .quick-detail-list {
   margin: 0;
   display: grid;
@@ -740,6 +774,13 @@ button {
 
 .score-chip.hard {
   border-color: rgba(255, 138, 138, 0.32);
+}
+
+.quick-long-actions {
+  display: grid;
+  grid-template-columns: minmax(140px, 180px) minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
 }
 
 .score-chip:disabled,
@@ -1102,6 +1143,10 @@ kbd {
 
   .choice-btn {
     min-height: 52px;
+  }
+
+  .quick-long-actions {
+    grid-template-columns: 1fr;
   }
 }
 

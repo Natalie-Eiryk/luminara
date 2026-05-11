@@ -24,6 +24,9 @@ const state = {
   quickRevealed: false,
   quickSelection: "",
   quickScored: false,
+  quickLongRevealed: {},
+  quickLongSelections: {},
+  quickLongScored: {},
   glossaryQuery: "",
   queue: [],
   currentCardId: null,
@@ -53,6 +56,10 @@ const els = {
   quickModeSelect: byId("quickModeSelect"),
   quickSectionSelect: byId("quickSectionSelect"),
   quickShuffleBtn: byId("quickShuffleBtn"),
+  quickRollLayout: byId("quickRollLayout"),
+  quickLongLayout: byId("quickLongLayout"),
+  quickLongSummary: byId("quickLongSummary"),
+  quickLongList: byId("quickLongList"),
   quickMeta: byId("quickMeta"),
   quickPrompt: byId("quickPrompt"),
   quickCounter: byId("quickCounter"),
@@ -255,6 +262,30 @@ function onBodyClick(event) {
     return;
   }
 
+  const quickLongChoiceButton = event.target.closest("[data-quick-long-choice]");
+  if (quickLongChoiceButton) {
+    chooseQuickLongChoice(
+      quickLongChoiceButton.dataset.quickItem,
+      quickLongChoiceButton.dataset.quickLongChoice
+    );
+    return;
+  }
+
+  const quickLongRevealButton = event.target.closest("[data-quick-long-reveal]");
+  if (quickLongRevealButton) {
+    toggleQuickLongReveal(quickLongRevealButton.dataset.quickItem);
+    return;
+  }
+
+  const quickLongScoreButton = event.target.closest("[data-quick-long-score]");
+  if (quickLongScoreButton) {
+    scoreQuickLongCard(
+      quickLongScoreButton.dataset.quickItem,
+      quickLongScoreButton.dataset.quickLongScore
+    );
+    return;
+  }
+
   const quickScoreButton = event.target.closest("[data-quick-score]");
   if (quickScoreButton) {
     scoreQuickCard(quickScoreButton.dataset.quickScore);
@@ -294,6 +325,9 @@ function onKeydown(event) {
   }
 
   if (state.view === "quick") {
+    if (isQuickLongSheet()) {
+      return;
+    }
     if (event.code === "Space") {
       event.preventDefault();
       if (state.quickRevealed) {
@@ -475,6 +509,9 @@ function buildQuickQueue(renderNow = true, randomize = false) {
   state.quickRevealed = false;
   state.quickSelection = "";
   state.quickScored = false;
+  state.quickLongRevealed = {};
+  state.quickLongSelections = {};
+  state.quickLongScored = {};
 
   if (renderNow) {
     renderApp();
@@ -506,8 +543,15 @@ function scoreQuickCard(score) {
 
 function recordQuickAttempt(score) {
   const item = currentQuickItem();
-  if (!item || !["easy", "shaky", "hard"].includes(score)) {
+  if (!recordQuickAttemptForItem(item, score)) {
     return;
+  }
+  state.quickScored = true;
+}
+
+function recordQuickAttemptForItem(item, score) {
+  if (!item || !["easy", "shaky", "hard"].includes(score)) {
+    return false;
   }
 
   const record = ensureQuickRecord(item.id);
@@ -516,7 +560,6 @@ function recordQuickAttempt(score) {
   record.lastOutcome = score;
   record.lastSeen = Date.now();
   record.streak = score === "easy" ? record.streak + 1 : 0;
-  state.quickScored = true;
   saveProgress();
   emitV2TeachingScore(item.id, score, {
     kind: promptKindForQuickItem(item),
@@ -525,6 +568,54 @@ function recordQuickAttempt(score) {
       confidence: quickConfidence(item.id)
     }
   });
+  return true;
+}
+
+function chooseQuickLongChoice(itemId, choiceId) {
+  const item = quickItemById(itemId);
+  if (!item || state.quickLongScored[item.id]) {
+    return;
+  }
+  state.quickLongSelections[item.id] = choiceId;
+  state.quickLongRevealed[item.id] = true;
+  emitV2TeachingSignal("choice", item.id, {
+    kind: "multiple-choice",
+    selected: choiceId
+  });
+  renderQuickRollPreservingScroll();
+}
+
+function toggleQuickLongReveal(itemId) {
+  const item = quickItemById(itemId);
+  if (!item) {
+    return;
+  }
+  const nextRevealed = !state.quickLongRevealed[item.id];
+  state.quickLongRevealed[item.id] = nextRevealed;
+  if (!nextRevealed) {
+    delete state.quickLongSelections[item.id];
+  } else {
+    emitV2TeachingSignal("reveal", item.id, { kind: "multiple-choice" });
+  }
+  renderQuickRollPreservingScroll();
+}
+
+function scoreQuickLongCard(itemId, score) {
+  const item = quickItemById(itemId);
+  if (!item || !state.quickLongRevealed[item.id] || state.quickLongScored[item.id]) {
+    return;
+  }
+  if (recordQuickAttemptForItem(item, score)) {
+    state.quickLongScored[item.id] = true;
+    renderQuickRollPreservingScroll();
+  }
+}
+
+function renderQuickRollPreservingScroll() {
+  const scrollX = window.scrollX;
+  const scrollY = window.scrollY;
+  renderQuickRoll();
+  requestAnimationFrame(() => window.scrollTo(scrollX, scrollY));
 }
 
 function stepQuickCard(direction) {
@@ -769,6 +860,16 @@ function renderHero() {
 }
 
 function renderQuickRoll() {
+  const longSheet = isQuickLongSheet();
+  if (els.quickRollLayout && els.quickLongLayout) {
+    els.quickRollLayout.hidden = longSheet;
+    els.quickLongLayout.hidden = !longSheet;
+  }
+  if (longSheet) {
+    renderQuickLongSheet();
+    return;
+  }
+
   const item = currentQuickItem();
   const queueItems = state.quickQueue
     .slice(state.quickCursor, state.quickCursor + 7)
@@ -833,6 +934,116 @@ function renderQuickRoll() {
   els.quickQueuePreview.innerHTML = queueItems.length
     ? queueItems.map((queueItem, index) => renderQuickQueueCard(queueItem, index === 0)).join("")
     : `<p class="empty-state">No queued guide cards.</p>`;
+}
+
+function isQuickLongSheet() {
+  return state.quickMode === "multiple-choice";
+}
+
+function renderQuickLongSheet() {
+  const items = state.quickQueue
+    .map((id) => quickItemById(id))
+    .filter(Boolean);
+
+  if (!els.quickLongSummary || !els.quickLongList) {
+    return;
+  }
+
+  const scope = [
+    state.selectedSystem === ALL_SYSTEMS ? "all systems" : state.selectedSystem,
+    state.quickSection === ALL_SECTIONS ? "all sections" : state.quickSection
+  ].join(" - ");
+  els.quickLongSummary.textContent = `${items.length} prompt${items.length === 1 ? "" : "s"} - ${scope}`;
+
+  if (!items.length) {
+    els.quickLongList.innerHTML = `<p class="empty-state">No multiple-choice prompts match this filter.</p>`;
+    return;
+  }
+
+  els.quickLongList.innerHTML = items
+    .map((item, index) => renderQuickLongCard(item, index, items.length))
+    .join("");
+}
+
+function renderQuickLongCard(item, index, total) {
+  const promptKind = "multiple-choice";
+  const choiceState = quickChoiceState(item, promptKind, index);
+  const selected = state.quickLongSelections[item.id] || "";
+  const revealed = Boolean(state.quickLongRevealed[item.id]);
+  const scored = Boolean(state.quickLongScored[item.id]);
+  const feedbackText = !selected
+    ? choiceState.feedback
+    : `${selected === choiceState.correctValue ? "Correct." : "Review."} ${choiceState.feedback}`;
+  const choiceButtons = choiceState.choices.map((choice) => {
+    const isSelected = selected === choice.value;
+    const stateClass = [
+      isSelected ? "is-selected" : "",
+      revealed && choice.correct ? "is-correct" : "",
+      revealed && isSelected && !choice.correct ? "is-incorrect" : ""
+    ].filter(Boolean).join(" ");
+    return `
+      <button class="choice-btn ${stateClass}" type="button" data-quick-item="${escapeHtml(item.id)}" data-quick-long-choice="${escapeHtml(choice.value)}" data-quick-correct="${choice.correct ? "true" : "false"}" ${revealed || scored ? "disabled" : ""}>
+        <span>${escapeHtml(choice.label)}</span>
+      </button>`;
+  }).join("");
+  const figures = revealed
+    ? figuresForSystem(item.system).slice(0, 2).map((figure) => `
+      <figure class="quick-figure-card">
+        <img src="${escapeHtml(figure.src)}" alt="${escapeHtml(figure.title)}" loading="lazy" />
+        <figcaption>${escapeHtml(figure.title)}</figcaption>
+      </figure>`).join("")
+    : "";
+
+  return `
+    <article class="quick-long-card ${revealed ? "is-revealed" : ""}" id="quick-long-${escapeHtml(item.id)}">
+      <div class="quiz-topline">
+        <div>
+          <p class="status-label">${escapeHtml(item.system)} - ${escapeHtml(item.section)}</p>
+          <h4>${escapeHtml(promptForQuickItem(item, promptKind, choiceState))}</h4>
+        </div>
+        <span class="badge">${index + 1}/${total}</span>
+      </div>
+      <div class="chip-cluster">
+        <span class="chip">${escapeHtml(item.system)}</span>
+        <span class="chip">${escapeHtml(item.category)}</span>
+        <span class="chip chip-soft">${escapeHtml(quickStatusLabel(item.id))}</span>
+      </div>
+      <div class="quick-choice-shell">
+        <div class="choice-grid" role="list">
+          ${choiceButtons}
+        </div>
+        ${revealed
+          ? `<p class="choice-feedback">${escapeHtml(feedbackText)}</p>`
+          : `<p class="choice-feedback is-muted">Pick one answer or reveal when ready.</p>`}
+      </div>
+      <div class="quick-answer ${revealed ? "is-visible" : ""}">
+        <p class="eyebrow">Exact spelling</p>
+        <h4>${revealed ? escapeHtml(answerTextForQuickItem(item)) : ""}</h4>
+        <dl class="quick-detail-list">
+          <div>
+            <dt>Looks like / clue</dt>
+            <dd>${revealed ? escapeHtml(item.visual) : ""}</dd>
+          </div>
+          <div>
+            <dt>Where it appears</dt>
+            <dd>${revealed ? escapeHtml(item.section) : ""}</dd>
+          </div>
+          <div>
+            <dt>Watch-for</dt>
+            <dd>${revealed ? escapeHtml(item.trap) : ""}</dd>
+          </div>
+        </dl>
+        <div class="quick-figure-strip">${figures}</div>
+      </div>
+      <div class="quick-long-actions">
+        <button class="primary-btn" type="button" data-quick-item="${escapeHtml(item.id)}" data-quick-long-reveal="true">${revealed ? "Hide answer" : "Reveal"}</button>
+        <div class="score-grid quick-score-grid">
+          <button class="score-chip easy" type="button" data-quick-item="${escapeHtml(item.id)}" data-quick-long-score="easy" ${!revealed || scored ? "disabled" : ""}>Easy</button>
+          <button class="score-chip shaky" type="button" data-quick-item="${escapeHtml(item.id)}" data-quick-long-score="shaky" ${!revealed || scored ? "disabled" : ""}>Shaky</button>
+          <button class="score-chip hard" type="button" data-quick-item="${escapeHtml(item.id)}" data-quick-long-score="hard" ${!revealed || scored ? "disabled" : ""}>Hard</button>
+        </div>
+      </div>
+    </article>`;
 }
 
 function renderDashboard() {
@@ -1214,7 +1425,7 @@ function isChoicePrompt(promptKind) {
   return promptKind === "multiple-choice" || promptKind === "true-false";
 }
 
-function quickChoiceState(item, promptKind) {
+function quickChoiceState(item, promptKind, queueIndex = state.quickCursor) {
   if (promptKind === "multiple-choice") {
     const distractors = quickDistractors(item, 3);
     const choices = stableQuickShuffle([
@@ -1228,7 +1439,7 @@ function quickChoiceState(item, promptKind) {
         value: distractor.id,
         correct: false
       }))
-    ], `${item.id}:${state.quickCursor}:mc`);
+    ], `${item.id}:${queueIndex}:mc`);
 
     return {
       kind: "multiple-choice",
@@ -1240,7 +1451,7 @@ function quickChoiceState(item, promptKind) {
 
   if (promptKind === "true-false") {
     const falseItem = quickDistractors(item, 1)[0];
-    const isTrueStatement = !falseItem || stableHash(`${item.id}:${state.quickCursor}:tf`) % 2 === 0;
+    const isTrueStatement = !falseItem || stableHash(`${item.id}:${queueIndex}:tf`) % 2 === 0;
     const displayedItem = isTrueStatement ? item : falseItem;
     return {
       kind: "true-false",
